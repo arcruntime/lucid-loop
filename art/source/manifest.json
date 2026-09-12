@@ -1,0 +1,62 @@
+{
+  "source_url": "https://www.figma.com/board/DpY7FoS77Uq9LAobMj47aN/Untitled",
+  "export_date": "2026-09-12",
+  "assets": [
+    {
+      "file": "characters/player-avatar.png",
+      "source_member": "images/043fbb61e1ff2798eca1068de28befc1fbe16eb7",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "d547990863d0e81560af6aa75bdd8694c17a94b9b24adc3e315f3872dd10079f"
+    },
+    {
+      "file": "characters/ren-model-sheet.png",
+      "source_member": "images/d41ec88280f0f0e0e04be19c8ced64808a32b592",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+    },
+    {
+      "file": "environments/nightclub-isometric-layout.png",
+      "source_member": "images/77faae0cd5153a02e40c6200bf679099d8e06894",
+      "width": 1672,
+      "height": 941,
+      "sha256": "e63395939d7b3fa1f9de0ed876c0fdd277d894300ad56e56d84ff00c33119ae8"
+    },
+    {
+      "file": "characters/cast-lineup.png",
+      "source_member": "images/4decb30d841e8309b3f416633ef568fe77425695",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7100d4dc2e1cce7532dca98b2440c4e115a8074685a2796bbeee1b5f035d72af"
+    },
+    {
+      "file": "environments/nightclub-interior-concept.png",
+      "source_member": "images/02f64f7c40dff3755047fcb73a41a8305120f635",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6f6194df6cecd3928bbe09c6253149086ccf2a65b34ba2862533ad095ad381f3"
+    },
+    {
+      "file": "characters/luca-model-sheet.png",
+      "source_member": "images/35398b20126207afb6283e1711c3050830dd811f",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "f7634b9cd55a592a0a174115f5c1525710e613340fff099eaea1385766c254b3"
+    },
+    {
+      "file": "characters/theo-model-sheet.png",
+      "source_member": "images/b08b9f7c0b7855c294e20138fe4bb0696544cf3e",
+      "width": 1522,
+      "height": 1033,
+      "sha256": "2409724132ad15f1b5a87521e41b3fed83dcfc13b104af13d3ee1b1b2babeb96"
+    },
+    {
+      "file": "characters/maya-model-sheet.png",
+      "source_member": "images/236258a1d805cd4c705c3334af0cc48099e43c21",
+      "width": 1522,
+      "height": 1033,
+      "sha256": "c324f2ee25ce7019faac83331ffea8163e356ff655a627c64172c043efb2b0c1"
+    }
+  ]
+}
