@@ -2,9 +2,11 @@
 
 ## Project direction
 
-- Create the game as a Unity LTS project in a subfolder of this repository (`B:\lucid-loop`), rather than at the repository root.
+- Create the game with **Unity 6.3 LTS** in a subfolder of this repository (`B:\lucid-loop`), rather than at the repository root.
+- Target phones first, in **landscape orientation**, with a **16:9 target aspect ratio**.
+- Minimum-spec phone: **iPhone 15 Plus**.
 - Use [osu-framework-unity-di](https://github.com/splatterfacegames/osu-framework-unity-di) as a core dependency for dependency injection.
-- Choose the exact Unity LTS release and project subfolder name when project setup begins; neither is locked yet.
+- Choose the exact Unity 6.3 LTS patch release and project subfolder name when project setup begins; neither is locked yet.
 
 ## Context
 
