@@ -1,0 +1,1 @@
+{"name":"LucidLoop.Gyms.Editor","references":["LucidLoop.Gyms","OsuFramework.Unity.Allocation","Unity.AI.Navigation","Unity.RenderPipelines.Universal.Runtime","Unity.RenderPipelines.Core.Runtime","Unity.ugui"],"includePlatforms":["Editor"]}
