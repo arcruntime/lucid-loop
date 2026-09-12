@@ -1,0 +1,52 @@
+name: Gyms
+
+on:
+  push:
+    paths:
+      - "server/**"
+      - ".github/workflows/gyms.yml"
+  pull_request:
+    paths:
+      - "server/**"
+      - ".github/workflows/gyms.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: server/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: docker build -t lucid-loop-live-relay:test .
+
+  live-smoke:
+    if: github.event_name == 'workflow_dispatch' && vars.RUN_GPT_LIVE_SMOKE == 'true'
+    needs: server
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: server
+    env:
+      RUN_GPT_LIVE_SMOKE: "1"
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: server/package-lock.json
+      - run: npm ci
+      - run: npm run test:live
