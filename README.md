@@ -6,7 +6,7 @@
 - Target phones first, in **landscape orientation**, with a **16:9 target aspect ratio**.
 - Minimum-spec phone: **iPhone 15 Plus**.
 - Use [osu-framework-unity-di](https://github.com/splatterfacegames/osu-framework-unity-di) as a core dependency for dependency injection.
-- Choose the exact Unity 6.3 LTS patch release and project subfolder name when project setup begins; neither is locked yet.
+- Project: `Unity/`, pinned to **Unity 6000.3.24f1** (Unity 6.3 LTS), with URP 17.3.
 
 ## Context
 
@@ -15,7 +15,14 @@
 
 ## Current status
 
-Project direction recorded only. Unity project creation and implementation are on hold pending further instruction.
+Two gyms are implemented in `Unity/Assets/Gyms/Scenes/`:
+
+- **CharacterGym**: offline nightclub blockout, tap/click navigation, hold a character to approach and enter a close-up conversation study.
+- **LiveGym**: separate voice studio with character selection, microphone streaming, captions, mute and explicit session close through the project-key backend. No SSO or API key in the Unity client.
+
+Open `Unity/` in Unity Hub, then open `CharacterGym.unity` and press Play. Use the top-right button to switch gyms. The local Windows development build is `Unity/Builds/Windows/LucidLoopGyms.exe`.
+
+See [gym setup and validation](docs/gyms.md) and [relay setup](server/README.md). Primitive characters and audio-driven mouth motion are temporary gym fixtures; final expressive character rigs and iPhone performance qualification remain production work.
 
 ## Git LFS
 

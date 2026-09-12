@@ -4,7 +4,7 @@
 
 ### Agreed foundation
 
-- Build in `B:\lucid-loop`, with a **Unity 6.3 LTS** project in a subfolder rather than at the repository root. The exact patch release and subfolder name have not been chosen.
+- Build in `B:\lucid-loop`, with a **Unity 6.3 LTS** project in a subfolder rather than at the repository root. The gym implementation now uses Unity 6000.3.24f1 in `Unity/`.
 - Target **phones first**, in **landscape orientation**, with a **16:9 target aspect ratio**. The minimum-spec phone is **iPhone 15 Plus**.
 - Use [osu-framework-unity-di](https://github.com/splatterfacegames/osu-framework-unity-di) as a core dependency for dependency injection.
 - Use the nightclub environment and character designs collected from the team's FigJam board.
@@ -89,3 +89,27 @@ Existing `art/ren.png` and `art/concepts.png` were retained and included in the 
 Reference collection and the initial repository push are complete. No Unity project, live API integration, gameplay implementation, rigging, or art-pipeline migration has been performed in this repository during this work.
 
 An untracked `research/` directory was present when this log was started. It was not inspected, changed, or included in the earlier initial commit by this task. This worklog is a new local documentation change; the verified push above predates it.
+
+## 2026-09-12 — Two gyms and live authentication requirement
+
+The user confirmed that the character/navigation gym must remain offline and requested a second gym for live conversation. The desired second-gym flow is OpenAI SSO using each player's own ChatGPT quota.
+
+Updated the character-gym spec and recorded the separate live-gym requirement under `docs/superpowers/specs/`. Official GPT-Live documentation currently describes project API-key authentication and API billing; the checked ChatGPT sign-in documentation applies to Codex surfaces. A public third-party SSO entitlement for GPT-Live was not established. Hackathon-specific SDK/access documentation may resolve this dependency. No substitute billing flow was selected, no credentials were accessed, and neither gym has been implemented yet.
+
+## 2026-09-12 — Build the offline and live gyms
+
+The user withdrew the earlier SSO/ChatGPT-quota requirement and approved a project API key stored as the GitHub repository secret `OPENAI_API_KEY`, with no SSO. They then explicitly authorized building both gyms.
+
+Created `Unity/` with Unity 6000.3.24f1 (Unity 6.3 LTS), URP 17.3 and the core osu-framework-unity-di dependency pinned to e68a6e4a2c3ac3d2ea4b42e50b1000bceec1df29. Its R3 prerequisites are pinned and included with NuGet manifests/licenses; managed DLLs use Git LFS. The DI root supplies the offline interaction session through the package's generated hierarchy-based resolution.
+
+CharacterGym is an offline 3D nightclub blockout based on the saved environment references: central magenta dance circle, raised rear DJ stage and steps, left cyan bar, right VIP seating, entrance, lights and temporary partygoers. Click/tap navigation follows a baked NavMesh. Holding a named character approaches them, stops at conversation distance and blends into a close-up with their model sheet and labeled sample dialogue. The overview uses a 45-degree pitch. Other characters are hidden during the solo conversation study and restored on return. Maya, Ren, Luca, Theo and the player use replaceable primitive stand-ins.
+
+LiveGym is a separate voice studio with character selection, runtime relay address/access token, microphone permission, streaming PCM playback, captions, mute acknowledgment and explicit close handling. The Node 24 relay owns prompts and the OpenAI key; Unity never receives that key. It bounds pending connections, upstream sessions, messages and session duration. Scene exit/app suspension stops local capture and releases the connection. The relay continues a bounded graceful close to collect final usage after client disconnect. No automatic reconnection is performed.
+
+Added a Docker image and GitHub Actions backend checks. An opt-in upstream smoke job references the assumed `OPENAI_API_KEY` secret, but no secret was read and no real OpenAI request was made. GitHub secrets do not themselves host the runtime backend; no public deployment target was supplied or deployed. Local fixture transport testing is separate from real voice quality and billing verification.
+
+The user also requested deleting the superseded Arkane Studios research and pushing that deletion. Removed its report and remaining research cross-references while retaining Arcane/Fortiche research. Commit 25b2e16 contains the deletion; origin/main was verified at aaa5c15 after preserving an incoming voice-casting commit. Gym work was excluded from that push.
+
+See [gym launch and validation instructions](docs/gyms.md). Windows builds and raw logs/captures are local ignored artifacts under `Unity/Builds/` and `.local/`. Final expressive English lip-sync, final hero/environment art and measured iPhone 15 Plus sustained 30 fps remain separate production work.
+
+Validation: Unity EditMode suite passed 8/8 (gesture discrimination/cancellation and PCM buffer conversion/bounds); Windows development build succeeded. The built-player acceptance run verified DI resolution, baked navigation to all four characters including the stage, arrival-triggered conversations, player visibility restoration, scene switching, and Unity WebSocket startup/audio/captions/graceful close against the free local fixture. Gameplay, all four close-ups and the live studio were captured and visually inspected. Backend suite passed 23 local tests with one explicitly skipped real OpenAI smoke test; Docker build passed. Independent review reproduced and then verified fixes for graceful shutdown races, unauthenticated connection bounds, invalid character identifiers and malformed-frame rejection. Physical touch, microphone recording/playback quality, real OpenAI connectivity and phone performance were not qualified.
