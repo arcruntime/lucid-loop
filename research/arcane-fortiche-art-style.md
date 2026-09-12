@@ -8,7 +8,7 @@
 
 ## 1. Direct answer
 
-People have reverse-engineered *Arcane* far more than they reverse-engineered Dishonored.
+Published studies examine how to recreate *Arcane* in real-time rendering.
 
 What exists:
 
@@ -247,4 +247,4 @@ Searches covered Arcane + Fortiche + painterly / NPR / shader / Blender / Unity 
 
 **Caveat on Noggi's "99% of shots":** fan compositing reverse-engineering. It is consistent with Fortiche saying they dose base/shadow/rim in comp and bake light into paint when it should stay, but it is not a studio document.
 
-**Wrong names that pollute search:** Arkane Studios; Arc System Works; Unity Arktoon; Asset Store ArcaneFX.
+**Wrong names that pollute search:** Arc System Works; Unity Arktoon; Asset Store ArcaneFX.
