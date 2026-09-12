@@ -1,0 +1,48 @@
+date,event,category,source_ids,confidence
+2009,"Fortiche founded in Paris by Jérôme Combe, Pascal Charrue, and Arnaud Delord.",Studio history,S041,VERIFIED
+2012-2013,Riot and Fortiche begin their long collaboration around Jinx and Get Jinxed.,Partnership,S010;S018;S024,VERIFIED
+2013-10-08,Get Jinxed publicly establishes the visual and musical language around Jinx.,Music video,S018,VERIFIED
+2014-09-17,Warriors expands Riot and Fortiche’s music-cinematic collaboration.,Music video,S019,VERIFIED
+2015-05-12,"Seconds develops Ekko through a short, highly graphic cinematic.",Character cinematic,S020,VERIFIED
+2015-2016,Arcane concept development begins inside Riot; early work tests whether a game company can sustain long-form television storytelling.,Development,S068;S069;S072,STRONGLY_SUPPORTED
+2016,"Early story and visual tests focus on Vi, Jinx/Powder, Piltover, and Zaun.",Development,S068;S069;S038,STRONGLY_SUPPORTED
+2017,A production-quality crisis forces substantial rethinking rather than a straight march from pitch to release.,Development reset,S069,VERIFIED
+2018-09-26,RISE demonstrates another large-scale Fortiche/Riot music-production workflow.,Music video,S021,VERIFIED
+2018-11-03,"POP/STARS demonstrates Riot’s ability to coordinate music, character performance and global event marketing.",Music video,S022,VERIFIED
+2019-10-15,Riot announces Arcane during League of Legends’ ten-year anniversary with a 2020 target.,Announcement,S001,VERIFIED
+2020-06-10,"Riot delays Arcane to 2021 because COVID-19 disrupts international, highly collaborative production.",Delay,S002,VERIFIED
+2021-10-28,Enemy music video launches before the series.,Music marketing,S017,VERIFIED
+2021-10-29,Riot announces the global Twitch co-streaming premiere.,Distribution innovation,S005,VERIFIED
+2021-10-31,Final trailer confirms the November 6 premiere.,Marketing,S003,VERIFIED
+2021-11-01,RiotX Arcane begins as a month-long ecosystem campaign.,Cross-platform launch,S004,VERIFIED
+2021-11-04,"Jinx enters Fortnite, the first League champion in a non-Riot game.",External crossover,S006,VERIFIED
+2021-11-06,Season One Act I premieres globally on Netflix; Tencent Video carries the series in China.,Release,S005;S010;S032,VERIFIED
+2021-11-13,Season One Act II releases.,Release,S032,VERIFIED
+2021-11-20,Season One Act III releases.,Release,S032,VERIFIED
+2021-11-21,Riot confirms Season Two is already in production.,Renewal,S009,VERIFIED
+2022-03-14,Riot announces a significant non-controlling equity stake in Fortiche and two Fortiche board seats.,Corporate,S010,VERIFIED
+2022-03,Arcane wins nine Annie Awards.,Awards,S023;S059;S066,VERIFIED
+2022-08-04,Bridging the Rift begins releasing its five-part production documentary.,Documentary,S068,VERIFIED
+2022-09,Arcane wins Outstanding Animated Program and three juried individual-achievement Emmys.,Awards,S053;S054,VERIFIED
+2022-12,Arcane wins Best Adaptation at The Game Awards.,Awards,S060;S023,VERIFIED
+2023-10-12,Riot announces that new Runeterra storytelling will operate under one shared canon.,Canon policy,S013,VERIFIED
+2024-06-10,GKIDS acquires global video and transactional rights for home entertainment.,Distribution,S033,VERIFIED
+2024-06-11,Riot says Arcane’s story had a clear ending and that Season Two would close it; other projects remained early.,Strategy,S014,VERIFIED
+2024-08-15,Riot separates film and television work into animation and live-action studios.,Organization,S011,VERIFIED
+2024-09-24,Season One becomes available to own digitally under the GKIDS rollout.,Home media,S034,VERIFIED
+2024-10-08,Season One standard disc editions launch.,Home media,S034,VERIFIED
+2024-10-22,Season One collector’s edition launches.,Home media,S034,VERIFIED
+2024-11-09,Season Two Act I premieres.,Release,S023;S027;S032,VERIFIED
+2024-11-16,Season Two Act II premieres.,Release,S023;S027;S032,VERIFIED
+2024-11-23,Season Two Act III and the series finale premiere.,Release,S023;S027;S032,VERIFIED
+2024-11-25,Netflix publishes a detailed Season Two production feature describing a three-year effort and roughly 450 artists at peak.,Production documentation,S024,VERIFIED
+2024-12-03,The Art and Making of Arcane is published.,Publishing,S038,VERIFIED
+2024-12-30,Los Angeles Times publishes a disputed $250 million production-and-marketing estimate and economic analysis.,Business reporting,S062,VERIFIED_AS_REPORTING
+2025-03-26,Autodesk publishes Fortiche’s Season Two crowd-production case study.,Technical documentation,S047;S048,VERIFIED
+2025,Ma Meilleure Ennemie receives a Fortiche-produced standalone music video extending the Ekko/Powder sequence.,Music extension,S043;S052,VERIFIED
+2025-09,"Season Two receives Emmys for Animated Program, Sound Editing, Background Design, and Color.",Awards,S056;S057;S058,VERIFIED
+2025-10-28,Season Two standard 4K and Blu-ray editions release.,Home media,S035;S036,VERIFIED
+2025-11-19,League stages an Arcane finale-anniversary event and returns Arcane skins.,Anniversary,S016,VERIFIED
+2025-12-11,Season Two collector’s edition release date.,Home media,S037,VERIFIED
+2025-2026,Fortiche continues Riot collaboration while reorganizing for multiple projects and original IP development.,Post-series strategy,S042;S045,VERIFIED
+2026-08-26,Research cutoff: no specific successor Arcane series is treated as officially announced.,Status control,S011;S014;S042,VERIFIED

@@ -1,0 +1,6385 @@
+1
+00:00:00,000 --> 00:00:02,150
+
+I recently figured out Arcane's secret
+
+2
+00:00:02,150 --> 00:00:02,160
+I recently figured out Arcane's secret
+ 
+
+3
+00:00:02,160 --> 00:00:03,830
+I recently figured out Arcane's secret
+lighting process, and in this video I'm
+
+4
+00:00:03,830 --> 00:00:03,840
+lighting process, and in this video I'm
+ 
+
+5
+00:00:03,840 --> 00:00:05,110
+lighting process, and in this video I'm
+going to show you exactly how to
+
+6
+00:00:05,110 --> 00:00:05,120
+going to show you exactly how to
+ 
+
+7
+00:00:05,120 --> 00:00:07,070
+going to show you exactly how to
+recreate it using Blender and DaVinci
+
+8
+00:00:07,070 --> 00:00:07,080
+recreate it using Blender and DaVinci
+ 
+
+9
+00:00:07,080 --> 00:00:09,990
+recreate it using Blender and DaVinci
+Resolve. [music]
+
+10
+00:00:09,990 --> 00:00:10,000
+
+ 
+
+11
+00:00:10,000 --> 00:00:13,190
+
+>> How screwed up is this place?
+
+12
+00:00:13,190 --> 00:00:13,200
+>> How screwed up is this place?
+ 
+
+13
+00:00:13,200 --> 00:00:16,150
+>> How screwed up is this place?
+I used to say I could fix anything.
+
+14
+00:00:16,150 --> 00:00:16,160
+I used to say I could fix anything.
+ 
+
+15
+00:00:16,160 --> 00:00:18,350
+I used to say I could fix anything.
+>> After an insane amount of requests, I'm
+
+16
+00:00:18,350 --> 00:00:18,360
+>> After an insane amount of requests, I'm
+ 
+
+17
+00:00:18,360 --> 00:00:20,030
+>> After an insane amount of requests, I'm
+finally doing this. I'm going to walk
+
+18
+00:00:20,030 --> 00:00:20,040
+finally doing this. I'm going to walk
+ 
+
+19
+00:00:20,040 --> 00:00:21,790
+finally doing this. I'm going to walk
+you through Arcane's special compositing
+
+20
+00:00:21,790 --> 00:00:21,800
+you through Arcane's special compositing
+ 
+
+21
+00:00:21,800 --> 00:00:23,710
+you through Arcane's special compositing
+workflow, what render passes you need
+
+22
+00:00:23,710 --> 00:00:23,720
+workflow, what render passes you need
+ 
+
+23
+00:00:23,720 --> 00:00:25,390
+workflow, what render passes you need
+from your 3D software, [music] and most
+
+24
+00:00:25,390 --> 00:00:25,400
+from your 3D software, [music] and most
+ 
+
+25
+00:00:25,400 --> 00:00:29,150
+from your 3D software, [music] and most
+importantly, the secret sauce.
+
+26
+00:00:29,150 --> 00:00:29,160
+importantly, the secret sauce.
+ 
+
+27
+00:00:29,160 --> 00:00:30,430
+importantly, the secret sauce.
+And after this video, you'll be
+
+28
+00:00:30,430 --> 00:00:30,440
+And after this video, you'll be
+ 
+
+29
+00:00:30,440 --> 00:00:32,630
+And after this video, you'll be
+surprised that the style of the bad guys
+
+30
+00:00:32,630 --> 00:00:32,640
+surprised that the style of the bad guys
+ 
+
+31
+00:00:32,640 --> 00:00:34,670
+surprised that the style of the bad guys
+or even Spider-Verse can also be
+
+32
+00:00:34,670 --> 00:00:34,680
+or even Spider-Verse can also be
+ 
+
+33
+00:00:34,680 --> 00:00:35,350
+or even Spider-Verse can also be
+recreated [music]
+
+34
+00:00:35,350 --> 00:00:35,360
+recreated [music]
+ 
+
+35
+00:00:35,360 --> 00:00:38,030
+recreated [music]
+with these techniques.
+
+36
+00:00:38,030 --> 00:00:38,040
+with these techniques.
+ 
+
+37
+00:00:38,040 --> 00:00:44,550
+with these techniques.
+So with that, let's get into it.
+
+38
+00:00:44,550 --> 00:00:44,560
+
+ 
+
+39
+00:00:44,560 --> 00:00:49,470
+
+Hi.
+
+40
+00:00:49,470 --> 00:00:49,480
+
+ 
+
+41
+00:00:49,480 --> 00:00:50,830
+
+Before we get into all the crazy
+
+42
+00:00:50,830 --> 00:00:50,840
+Before we get into all the crazy
+ 
+
+43
+00:00:50,840 --> 00:00:52,790
+Before we get into all the crazy
+lighting stuff, let's quickly talk about
+
+44
+00:00:52,790 --> 00:00:52,800
+lighting stuff, let's quickly talk about
+ 
+
+45
+00:00:52,800 --> 00:00:54,790
+lighting stuff, let's quickly talk about
+the backgrounds. You've probably heard
+
+46
+00:00:54,790 --> 00:00:54,800
+the backgrounds. You've probably heard
+ 
+
+47
+00:00:54,800 --> 00:00:56,670
+the backgrounds. You've probably heard
+that the backgrounds in Arcane are fully
+
+48
+00:00:56,670 --> 00:00:56,680
+that the backgrounds in Arcane are fully
+ 
+
+49
+00:00:56,680 --> 00:00:58,940
+that the backgrounds in Arcane are fully
+painted, and that's true, including the
+
+50
+00:00:58,940 --> 00:00:58,950
+painted, and that's true, including the
+ 
+
+51
+00:00:58,950 --> 00:01:00,990
+painted, and that's true, including the
+[music] lighting. So there are no real
+
+52
+00:01:00,990 --> 00:01:01,000
+[music] lighting. So there are no real
+ 
+
+53
+00:01:01,000 --> 00:01:03,030
+[music] lighting. So there are no real
+3D lights in the scene, but everything
+
+54
+00:01:03,030 --> 00:01:03,040
+3D lights in the scene, but everything
+ 
+
+55
+00:01:03,040 --> 00:01:04,670
+3D lights in the scene, but everything
+is painted into the textures of the
+
+56
+00:01:04,670 --> 00:01:04,680
+is painted into the textures of the
+ 
+
+57
+00:01:04,680 --> 00:01:06,710
+is painted into the textures of the
+background. They utilize a technique
+
+58
+00:01:06,710 --> 00:01:06,720
+background. They utilize a technique
+ 
+
+59
+00:01:06,720 --> 00:01:08,990
+background. They utilize a technique
+called camera projection, where they can
+
+60
+00:01:08,990 --> 00:01:09,000
+called camera projection, where they can
+ 
+
+61
+00:01:09,000 --> 00:01:11,590
+called camera projection, where they can
+paint the whole background in 2D
+
+62
+00:01:11,590 --> 00:01:11,600
+paint the whole background in 2D
+ 
+
+63
+00:01:11,600 --> 00:01:15,070
+paint the whole background in 2D
+and then project it onto 3D geometry.
+
+64
+00:01:15,070 --> 00:01:15,080
+and then project it onto 3D geometry.
+ 
+
+65
+00:01:15,080 --> 00:01:16,270
+and then project it onto 3D geometry.
+If you want to learn more about that
+
+66
+00:01:16,270 --> 00:01:16,280
+If you want to learn more about that
+ 
+
+67
+00:01:16,280 --> 00:01:17,750
+If you want to learn more about that
+process, check out Lightning Boy
+
+68
+00:01:17,750 --> 00:01:17,760
+process, check out Lightning Boy
+ 
+
+69
+00:01:17,760 --> 00:01:20,310
+process, check out Lightning Boy
+Studios' video on that subject. So now
+
+70
+00:01:20,310 --> 00:01:20,320
+Studios' video on that subject. So now
+ 
+
+71
+00:01:20,320 --> 00:01:21,710
+Studios' video on that subject. So now
+we get to the main section of this
+
+72
+00:01:21,710 --> 00:01:21,720
+we get to the main section of this
+ 
+
+73
+00:01:21,720 --> 00:01:22,390
+we get to the main section of this
+video, [music]
+
+74
+00:01:22,390 --> 00:01:22,400
+video, [music]
+ 
+
+75
+00:01:22,400 --> 00:01:24,830
+video, [music]
+Arcane's lighting process.
+
+76
+00:01:24,830 --> 00:01:24,840
+Arcane's lighting process.
+ 
+
+77
+00:01:24,840 --> 00:01:26,190
+Arcane's lighting process.
+If you were to add some lights in
+
+78
+00:01:26,190 --> 00:01:26,200
+If you were to add some lights in
+ 
+
+79
+00:01:26,200 --> 00:01:28,415
+If you were to add some lights in
+Blender, we get something like this.
+
+80
+00:01:28,415 --> 00:01:28,425
+Blender, we get something like this.
+ 
+
+81
+00:01:28,425 --> 00:01:29,430
+Blender, we get something like this.
+[screaming]
+
+82
+00:01:29,430 --> 00:01:29,440
+[screaming]
+ 
+
+83
+00:01:29,440 --> 00:01:32,230
+[screaming]
+Oh, oh, hell, no. Arcane uses a very
+
+84
+00:01:32,230 --> 00:01:32,240
+Oh, oh, hell, no. Arcane uses a very
+ 
+
+85
+00:01:32,240 --> 00:01:33,790
+Oh, oh, hell, no. Arcane uses a very
+different process to add lighting on
+
+86
+00:01:33,790 --> 00:01:33,800
+different process to add lighting on
+ 
+
+87
+00:01:33,800 --> 00:01:35,870
+different process to add lighting on
+their characters. All the magic happens
+
+88
+00:01:35,870 --> 00:01:35,880
+their characters. All the magic happens
+ 
+
+89
+00:01:35,880 --> 00:01:38,270
+their characters. All the magic happens
+in compositing. So generally, that means
+
+90
+00:01:38,270 --> 00:01:38,280
+in compositing. So generally, that means
+ 
+
+91
+00:01:38,280 --> 00:01:39,670
+in compositing. So generally, that means
+we export some render passes from
+
+92
+00:01:39,670 --> 00:01:39,680
+we export some render passes from
+ 
+
+93
+00:01:39,680 --> 00:01:41,430
+we export some render passes from
+Blender and then combine them in a
+
+94
+00:01:41,430 --> 00:01:41,440
+Blender and then combine them in a
+ 
+
+95
+00:01:41,440 --> 00:01:42,990
+Blender and then combine them in a
+compositing software to achieve the
+
+96
+00:01:42,990 --> 00:01:43,000
+compositing software to achieve the
+ 
+
+97
+00:01:43,000 --> 00:01:45,270
+compositing software to achieve the
+final result. For compositing, you could
+
+98
+00:01:45,270 --> 00:01:45,280
+final result. For compositing, you could
+ 
+
+99
+00:01:45,280 --> 00:01:47,150
+final result. For compositing, you could
+really use any compositing software you
+
+100
+00:01:47,150 --> 00:01:47,160
+really use any compositing software you
+ 
+
+101
+00:01:47,160 --> 00:01:49,190
+really use any compositing software you
+like. I truly recommend Blender's
+
+102
+00:01:49,190 --> 00:01:49,200
+like. I truly recommend Blender's
+ 
+
+103
+00:01:49,200 --> 00:01:51,270
+like. I truly recommend Blender's
+built-in compositor. You could also use
+
+104
+00:01:51,270 --> 00:01:51,280
+built-in compositor. You could also use
+ 
+
+105
+00:01:51,280 --> 00:01:53,590
+built-in compositor. You could also use
+After Effects or Nuke. I personally use
+
+106
+00:01:53,590 --> 00:01:53,600
+After Effects or Nuke. I personally use
+ 
+
+107
+00:01:53,600 --> 00:01:55,550
+After Effects or Nuke. I personally use
+DaVinci Resolve's Fusion tab, just
+
+108
+00:01:55,550 --> 00:01:55,560
+DaVinci Resolve's Fusion tab, just
+ 
+
+109
+00:01:55,560 --> 00:01:57,670
+DaVinci Resolve's Fusion tab, just
+because I got used to it.
+
+110
+00:01:57,670 --> 00:01:57,680
+because I got used to it.
+ 
+
+111
+00:01:57,680 --> 00:01:59,270
+because I got used to it.
+So let's cut to the chase. Let me give
+
+112
+00:01:59,270 --> 00:01:59,280
+So let's cut to the chase. Let me give
+ 
+
+113
+00:01:59,280 --> 00:02:00,550
+So let's cut to the chase. Let me give
+you a quick rundown of the first
+
+114
+00:02:00,550 --> 00:02:00,560
+you a quick rundown of the first
+ 
+
+115
+00:02:00,560 --> 00:02:02,350
+you a quick rundown of the first
+technique so you understand where we're
+
+116
+00:02:02,350 --> 00:02:02,360
+technique so you understand where we're
+ 
+
+117
+00:02:02,360 --> 00:02:04,630
+technique so you understand where we're
+going with this. We have a texture pass
+
+118
+00:02:04,630 --> 00:02:04,640
+going with this. We have a texture pass
+ 
+
+119
+00:02:04,640 --> 00:02:06,630
+going with this. We have a texture pass
+and we have a lighting pass. The texture
+
+120
+00:02:06,630 --> 00:02:06,640
+and we have a lighting pass. The texture
+ 
+
+121
+00:02:06,640 --> 00:02:08,510
+and we have a lighting pass. The texture
+pass includes just the colors of our
+
+122
+00:02:08,510 --> 00:02:08,520
+pass includes just the colors of our
+ 
+
+123
+00:02:08,520 --> 00:02:10,790
+pass includes just the colors of our
+model and the lighting pass all the pure
+
+124
+00:02:10,790 --> 00:02:10,800
+model and the lighting pass all the pure
+ 
+
+125
+00:02:10,800 --> 00:02:12,790
+model and the lighting pass all the pure
+lighting information. Now, what we're
+
+126
+00:02:12,790 --> 00:02:12,800
+lighting information. Now, what we're
+ 
+
+127
+00:02:12,800 --> 00:02:13,910
+lighting information. Now, what we're
+going to do is [music] use the
+
+128
+00:02:13,910 --> 00:02:13,920
+going to do is [music] use the
+ 
+
+129
+00:02:13,920 --> 00:02:15,949
+going to do is [music] use the
+brightness values of the lighting pass
+
+130
+00:02:15,949 --> 00:02:15,959
+brightness values of the lighting pass
+ 
+
+131
+00:02:15,959 --> 00:02:18,310
+brightness values of the lighting pass
+to reveal certain color adjustments. For
+
+132
+00:02:18,310 --> 00:02:18,320
+to reveal certain color adjustments. For
+ 
+
+133
+00:02:18,320 --> 00:02:20,150
+to reveal certain color adjustments. For
+example, let's say we have this base
+
+134
+00:02:20,150 --> 00:02:20,160
+example, let's say we have this base
+ 
+
+135
+00:02:20,160 --> 00:02:21,510
+example, let's say we have this base
+color and now we're going to create a
+
+136
+00:02:21,510 --> 00:02:21,520
+color and now we're going to create a
+ 
+
+137
+00:02:21,520 --> 00:02:23,590
+color and now we're going to create a
+new color adjustment and let's say we're
+
+138
+00:02:23,590 --> 00:02:23,600
+new color adjustment and let's say we're
+ 
+
+139
+00:02:23,600 --> 00:02:25,910
+new color adjustment and let's say we're
+just going to make it darker. Now, this
+
+140
+00:02:25,910 --> 00:02:25,920
+just going to make it darker. Now, this
+ 
+
+141
+00:02:25,920 --> 00:02:28,310
+just going to make it darker. Now, this
+will be our shadow color.
+
+142
+00:02:28,310 --> 00:02:28,320
+will be our shadow color.
+ 
+
+143
+00:02:28,320 --> 00:02:30,350
+will be our shadow color.
+And now by using all the dark parts of
+
+144
+00:02:30,350 --> 00:02:30,360
+And now by using all the dark parts of
+ 
+
+145
+00:02:30,360 --> 00:02:32,310
+And now by using all the dark parts of
+the lighting render, we're going to cut
+
+146
+00:02:32,310 --> 00:02:32,320
+the lighting render, we're going to cut
+ 
+
+147
+00:02:32,320 --> 00:02:34,270
+the lighting render, we're going to cut
+out the shadow color
+
+148
+00:02:34,270 --> 00:02:34,280
+out the shadow color
+ 
+
+149
+00:02:34,280 --> 00:02:36,790
+out the shadow color
+and merge it on top of the base color.
+
+150
+00:02:36,790 --> 00:02:36,800
+and merge it on top of the base color.
+ 
+
+151
+00:02:36,800 --> 00:02:38,510
+and merge it on top of the base color.
+So, that way we've added a simple
+
+152
+00:02:38,510 --> 00:02:38,520
+So, that way we've added a simple
+ 
+
+153
+00:02:38,520 --> 00:02:41,590
+So, that way we've added a simple
+shadow.
+
+154
+00:02:41,590 --> 00:02:41,600
+
+ 
+
+155
+00:02:41,600 --> 00:02:43,350
+
+Now, remember this is just the tip of
+
+156
+00:02:43,350 --> 00:02:43,360
+Now, remember this is just the tip of
+ 
+
+157
+00:02:43,360 --> 00:02:45,350
+Now, remember this is just the tip of
+the iceberg. There is much more to it
+
+158
+00:02:45,350 --> 00:02:45,360
+the iceberg. There is much more to it
+ 
+
+159
+00:02:45,360 --> 00:02:47,110
+the iceberg. There is much more to it
+than it first seems like, which we'll go
+
+160
+00:02:47,110 --> 00:02:47,120
+than it first seems like, which we'll go
+ 
+
+161
+00:02:47,120 --> 00:02:48,470
+than it first seems like, which we'll go
+through in this second half of the
+
+162
+00:02:48,470 --> 00:02:48,480
+through in this second half of the
+ 
+
+163
+00:02:48,480 --> 00:02:49,550
+through in this second half of the
+video.
+
+164
+00:02:49,550 --> 00:02:49,560
+video.
+ 
+
+165
+00:02:49,560 --> 00:02:51,230
+video.
+But now that you understand the general
+
+166
+00:02:51,230 --> 00:02:51,240
+But now that you understand the general
+ 
+
+167
+00:02:51,240 --> 00:02:52,990
+But now that you understand the general
+idea of what we're going for, let's
+
+168
+00:02:52,990 --> 00:02:53,000
+idea of what we're going for, let's
+ 
+
+169
+00:02:53,000 --> 00:02:55,110
+idea of what we're going for, let's
+start in the beginning step by step.
+
+170
+00:02:55,110 --> 00:02:55,120
+start in the beginning step by step.
+ 
+
+171
+00:02:55,120 --> 00:02:57,070
+start in the beginning step by step.
+First of all, which render passes do we
+
+172
+00:02:57,070 --> 00:02:57,080
+First of all, which render passes do we
+ 
+
+173
+00:02:57,080 --> 00:03:00,830
+First of all, which render passes do we
+need exactly?
+
+174
+00:03:00,830 --> 00:03:00,840
+
+ 
+
+175
+00:03:00,840 --> 00:03:03,750
+
+>> For weight to light, it's different.
+
+176
+00:03:03,750 --> 00:03:03,760
+>> For weight to light, it's different.
+ 
+
+177
+00:03:03,760 --> 00:03:05,470
+>> For weight to light, it's different.
+But it's so simple when you know the
+
+178
+00:03:05,470 --> 00:03:05,480
+But it's so simple when you know the
+ 
+
+179
+00:03:05,480 --> 00:03:06,830
+But it's so simple when you know the
+trick.
+
+180
+00:03:06,830 --> 00:03:06,840
+trick.
+ 
+
+181
+00:03:06,840 --> 00:03:08,632
+trick.
+You say, "Ah,
+
+182
+00:03:08,632 --> 00:03:08,642
+You say, "Ah,
+ 
+
+183
+00:03:08,642 --> 00:03:10,150
+You say, "Ah,
+>> [laughter]
+
+184
+00:03:10,150 --> 00:03:10,160
+>> [laughter]
+ 
+
+185
+00:03:10,160 --> 00:03:11,870
+>> [laughter]
+>> so simple."
+
+186
+00:03:11,870 --> 00:03:11,880
+>> so simple."
+ 
+
+187
+00:03:11,880 --> 00:03:13,990
+>> so simple."
+>> Exactly, it's so simple. [music]
+
+188
+00:03:13,990 --> 00:03:14,000
+>> Exactly, it's so simple. [music]
+ 
+
+189
+00:03:14,000 --> 00:03:15,110
+>> Exactly, it's so simple. [music]
+Let's take a look at what they show
+
+190
+00:03:15,110 --> 00:03:15,120
+Let's take a look at what they show
+ 
+
+191
+00:03:15,120 --> 00:03:17,550
+Let's take a look at what they show
+right here. They first show a typical
+
+192
+00:03:17,550 --> 00:03:17,560
+right here. They first show a typical
+ 
+
+193
+00:03:17,560 --> 00:03:19,390
+right here. They first show a typical
+texture pass. [music] All we have to do
+
+194
+00:03:19,390 --> 00:03:19,400
+texture pass. [music] All we have to do
+ 
+
+195
+00:03:19,400 --> 00:03:21,590
+texture pass. [music] All we have to do
+here is jump in the shader editor and
+
+196
+00:03:21,590 --> 00:03:21,600
+here is jump in the shader editor and
+ 
+
+197
+00:03:21,600 --> 00:03:23,310
+here is jump in the shader editor and
+directly connect the texture to the
+
+198
+00:03:23,310 --> 00:03:23,320
+directly connect the texture to the
+ 
+
+199
+00:03:23,320 --> 00:03:25,949
+directly connect the texture to the
+material output. That way you'll only
+
+200
+00:03:25,949 --> 00:03:25,959
+material output. That way you'll only
+ 
+
+201
+00:03:25,959 --> 00:03:27,430
+material output. That way you'll only
+render out the pure texture [music] of
+
+202
+00:03:27,430 --> 00:03:27,440
+render out the pure texture [music] of
+ 
+
+203
+00:03:27,440 --> 00:03:30,710
+render out the pure texture [music] of
+your model without any lighting.
+
+204
+00:03:30,710 --> 00:03:30,720
+your model without any lighting.
+ 
+
+205
+00:03:30,720 --> 00:03:32,350
+your model without any lighting.
+Then, if we go a bit [music] further, we
+
+206
+00:03:32,350 --> 00:03:32,360
+Then, if we go a bit [music] further, we
+ 
+
+207
+00:03:32,360 --> 00:03:34,430
+Then, if we go a bit [music] further, we
+can see a lighting pass. Now, there are
+
+208
+00:03:34,430 --> 00:03:34,440
+can see a lighting pass. Now, there are
+ 
+
+209
+00:03:34,440 --> 00:03:36,142
+can see a lighting pass. Now, there are
+many ways to reproduce this,
+
+210
+00:03:36,142 --> 00:03:36,152
+many ways to reproduce this,
+ 
+
+211
+00:03:36,152 --> 00:03:36,190
+many ways to reproduce this,
+>> [music]
+
+212
+00:03:36,190 --> 00:03:36,200
+>> [music]
+ 
+
+213
+00:03:36,200 --> 00:03:37,350
+>> [music]
+>> but here is one that is very
+
+214
+00:03:37,350 --> 00:03:37,360
+>> but here is one that is very
+ 
+
+215
+00:03:37,360 --> 00:03:38,910
+>> but here is one that is very
+beginner-friendly.
+
+216
+00:03:38,910 --> 00:03:38,920
+beginner-friendly.
+ 
+
+217
+00:03:38,920 --> 00:03:40,590
+beginner-friendly.
+For the character, we'll replace all the
+
+218
+00:03:40,590 --> 00:03:40,600
+For the character, we'll replace all the
+ 
+
+219
+00:03:40,600 --> 00:03:42,692
+For the character, we'll replace all the
+materials with a simple diffuse shader.
+
+220
+00:03:42,692 --> 00:03:42,702
+materials with a simple diffuse shader.
+ 
+
+221
+00:03:42,702 --> 00:03:43,509
+materials with a simple diffuse shader.
+[music]
+
+222
+00:03:43,509 --> 00:03:43,519
+[music]
+ 
+
+223
+00:03:43,519 --> 00:03:46,030
+[music]
+No textures applied, just a white base
+
+224
+00:03:46,030 --> 00:03:46,040
+No textures applied, just a white base
+ 
+
+225
+00:03:46,040 --> 00:03:54,350
+No textures applied, just a white base
+color. Now, let's add a sunlight.
+
+226
+00:03:54,350 --> 00:03:54,360
+
+ 
+
+227
+00:03:54,360 --> 00:03:56,447
+
+I increase the strength and the angle
+
+228
+00:03:56,447 --> 00:03:56,457
+I increase the strength and the angle
+ 
+
+229
+00:03:56,457 --> 00:04:00,110
+I increase the strength and the angle
+[music] of this sunlight.
+
+230
+00:04:00,110 --> 00:04:00,120
+
+ 
+
+231
+00:04:00,120 --> 00:04:01,710
+
+Next, we go to the world settings and
+
+232
+00:04:01,710 --> 00:04:01,720
+Next, we go to the world settings and
+ 
+
+233
+00:04:01,720 --> 00:04:04,190
+Next, we go to the world settings and
+turn the strength down to zero.
+
+234
+00:04:04,190 --> 00:04:04,200
+turn the strength down to zero.
+ 
+
+235
+00:04:04,200 --> 00:04:05,950
+turn the strength down to zero.
+That way there's no extra light coming
+
+236
+00:04:05,950 --> 00:04:05,960
+That way there's no extra light coming
+ 
+
+237
+00:04:05,960 --> 00:04:07,270
+That way there's no extra light coming
+from the sky.
+
+238
+00:04:07,270 --> 00:04:07,280
+from the sky.
+ 
+
+239
+00:04:07,280 --> 00:04:09,030
+from the sky.
+And lastly, let's change one setting in
+
+240
+00:04:09,030 --> 00:04:09,040
+And lastly, let's change one setting in
+ 
+
+241
+00:04:09,040 --> 00:04:10,202
+And lastly, let's change one setting in
+the render properties.
+
+242
+00:04:10,202 --> 00:04:10,212
+the render properties.
+ 
+
+243
+00:04:10,212 --> 00:04:10,510
+the render properties.
+>> [music]
+
+244
+00:04:10,510 --> 00:04:10,520
+>> [music]
+ 
+
+245
+00:04:10,520 --> 00:04:12,830
+>> [music]
+>> Under light paths, turn the total number
+
+246
+00:04:12,830 --> 00:04:12,840
+>> Under light paths, turn the total number
+ 
+
+247
+00:04:12,840 --> 00:04:15,670
+>> Under light paths, turn the total number
+of light bounces down to zero.
+
+248
+00:04:15,670 --> 00:04:15,680
+of light bounces down to zero.
+ 
+
+249
+00:04:15,680 --> 00:04:17,550
+of light bounces down to zero.
+So now all that's left in our scene is
+
+250
+00:04:17,550 --> 00:04:17,560
+So now all that's left in our scene is
+ 
+
+251
+00:04:17,560 --> 00:04:20,550
+So now all that's left in our scene is
+the pure direct lighting information.
+
+252
+00:04:20,550 --> 00:04:20,560
+the pure direct lighting information.
+ 
+
+253
+00:04:20,560 --> 00:04:22,830
+the pure direct lighting information.
+Let's get back to the making of. If we
+
+254
+00:04:22,830 --> 00:04:22,840
+Let's get back to the making of. If we
+ 
+
+255
+00:04:22,840 --> 00:04:24,630
+Let's get back to the making of. If we
+go a bit further, we can see another
+
+256
+00:04:24,630 --> 00:04:24,640
+go a bit further, we can see another
+ 
+
+257
+00:04:24,640 --> 00:04:26,430
+go a bit further, we can see another
+lighting pass. In this case, [music] the
+
+258
+00:04:26,430 --> 00:04:26,440
+lighting pass. In this case, [music] the
+ 
+
+259
+00:04:26,440 --> 00:04:28,230
+lighting pass. In this case, [music] the
+light comes from behind the character,
+
+260
+00:04:28,230 --> 00:04:28,240
+light comes from behind the character,
+ 
+
+261
+00:04:28,240 --> 00:04:30,830
+light comes from behind the character,
+slightly angled to the right.
+
+262
+00:04:30,830 --> 00:04:30,840
+slightly angled to the right.
+ 
+
+263
+00:04:30,840 --> 00:04:32,190
+slightly angled to the right.
+Actually, throughout the whole making
+
+264
+00:04:32,190 --> 00:04:32,200
+Actually, throughout the whole making
+ 
+
+265
+00:04:32,200 --> 00:04:34,110
+Actually, throughout the whole making
+of, we can see the use of these lighting
+
+266
+00:04:34,110 --> 00:04:34,120
+of, we can see the use of these lighting
+ 
+
+267
+00:04:34,120 --> 00:04:36,310
+of, we can see the use of these lighting
+passes. So what can we do with them? And
+
+268
+00:04:36,310 --> 00:04:36,320
+passes. So what can we do with them? And
+ 
+
+269
+00:04:36,320 --> 00:04:38,230
+passes. So what can we do with them? And
+why are they so important? Well, let me
+
+270
+00:04:38,230 --> 00:04:38,240
+why are they so important? Well, let me
+ 
+
+271
+00:04:38,240 --> 00:04:39,023
+why are they so important? Well, let me
+show you.
+
+272
+00:04:39,023 --> 00:04:39,033
+show you.
+ 
+
+273
+00:04:39,033 --> 00:04:39,150
+show you.
+>> [music]
+
+274
+00:04:39,150 --> 00:04:39,160
+>> [music]
+ 
+
+275
+00:04:39,160 --> 00:04:41,150
+>> [music]
+>> This is DaVinci Resolve's Fusion tab,
+
+276
+00:04:41,150 --> 00:04:41,160
+>> This is DaVinci Resolve's Fusion tab,
+ 
+
+277
+00:04:41,160 --> 00:04:43,390
+>> This is DaVinci Resolve's Fusion tab,
+and it lets you composite with nodes. If
+
+278
+00:04:43,390 --> 00:04:43,400
+and it lets you composite with nodes. If
+ 
+
+279
+00:04:43,400 --> 00:04:45,190
+and it lets you composite with nodes. If
+you have no experience with nodes, I'll
+
+280
+00:04:45,190 --> 00:04:45,200
+you have no experience with nodes, I'll
+ 
+
+281
+00:04:45,200 --> 00:04:46,030
+you have no experience with nodes, I'll
+leave some links [music] in the
+
+282
+00:04:46,030 --> 00:04:46,040
+leave some links [music] in the
+ 
+
+283
+00:04:46,040 --> 00:04:47,670
+leave some links [music] in the
+description, but don't worry, it's
+
+284
+00:04:47,670 --> 00:04:47,680
+description, but don't worry, it's
+ 
+
+285
+00:04:47,680 --> 00:04:49,950
+description, but don't worry, it's
+actually pretty simple. With shift
+
+286
+00:04:49,950 --> 00:04:49,960
+actually pretty simple. With shift
+ 
+
+287
+00:04:49,960 --> 00:04:52,190
+actually pretty simple. With shift
+space, we can bring in any node we need.
+
+288
+00:04:52,190 --> 00:04:52,200
+space, we can bring in any node we need.
+ 
+
+289
+00:04:52,200 --> 00:04:55,150
+space, we can bring in any node we need.
+Let's first search for the loader node,
+
+290
+00:04:55,150 --> 00:04:55,160
+Let's first search for the loader node,
+ 
+
+291
+00:04:55,160 --> 00:04:56,053
+Let's first search for the loader node,
+and then just hit
+
+292
+00:04:56,053 --> 00:04:56,063
+and then just hit
+ 
+
+293
+00:04:56,063 --> 00:04:56,070
+and then just hit
+>> [music]
+
+294
+00:04:56,070 --> 00:04:56,080
+>> [music]
+ 
+
+295
+00:04:56,080 --> 00:04:57,190
+>> [music]
+>> enter.
+
+296
+00:04:57,190 --> 00:04:57,200
+>> enter.
+ 
+
+297
+00:04:57,200 --> 00:04:58,390
+>> enter.
+Here we're going to search for our
+
+298
+00:04:58,390 --> 00:04:58,400
+Here we're going to search for our
+ 
+
+299
+00:04:58,400 --> 00:05:00,790
+Here we're going to search for our
+texture pass, and then just double-click
+
+300
+00:05:00,790 --> 00:05:00,800
+texture pass, and then just double-click
+ 
+
+301
+00:05:00,800 --> 00:05:02,790
+texture pass, and then just double-click
+the image sequence. And now, as you can
+
+302
+00:05:02,790 --> 00:05:02,800
+the image sequence. And now, as you can
+ 
+
+303
+00:05:02,800 --> 00:05:04,568
+the image sequence. And now, as you can
+see, our texture pass has been imported
+
+304
+00:05:04,568 --> 00:05:04,578
+see, our texture pass has been imported
+ 
+
+305
+00:05:04,578 --> 00:05:06,750
+see, our texture pass has been imported
+[music] as a node. We can preview it by
+
+306
+00:05:06,750 --> 00:05:06,760
+[music] as a node. We can preview it by
+ 
+
+307
+00:05:06,760 --> 00:05:09,350
+[music] as a node. We can preview it by
+hitting either one or two for the first
+
+308
+00:05:09,350 --> 00:05:09,360
+hitting either one or two for the first
+ 
+
+309
+00:05:09,360 --> 00:05:10,909
+hitting either one or two for the first
+or second viewer.
+
+310
+00:05:10,909 --> 00:05:10,919
+or second viewer.
+ 
+
+311
+00:05:10,919 --> 00:05:12,150
+or second viewer.
+Now for this tutorial, I'm going to show
+
+312
+00:05:12,150 --> 00:05:12,160
+Now for this tutorial, I'm going to show
+ 
+
+313
+00:05:12,160 --> 00:05:13,750
+Now for this tutorial, I'm going to show
+you the final composite in the first
+
+314
+00:05:13,750 --> 00:05:13,760
+you the final composite in the first
+ 
+
+315
+00:05:13,760 --> 00:05:14,393
+you the final composite in the first
+viewer,
+
+316
+00:05:14,393 --> 00:05:14,403
+viewer,
+ 
+
+317
+00:05:14,403 --> 00:05:14,470
+viewer,
+>> [music]
+
+318
+00:05:14,470 --> 00:05:14,480
+>> [music]
+ 
+
+319
+00:05:14,480 --> 00:05:16,030
+>> [music]
+>> but anytime I want to preview one
+
+320
+00:05:16,030 --> 00:05:16,040
+>> but anytime I want to preview one
+ 
+
+321
+00:05:16,040 --> 00:05:17,670
+>> but anytime I want to preview one
+specific node, I'll show it in the
+
+322
+00:05:17,670 --> 00:05:17,680
+specific node, I'll show it in the
+ 
+
+323
+00:05:17,680 --> 00:05:19,510
+specific node, I'll show it in the
+second viewer, just so there's no
+
+324
+00:05:19,510 --> 00:05:19,520
+second viewer, just so there's no
+ 
+
+325
+00:05:19,520 --> 00:05:20,750
+second viewer, just so there's no
+confusion.
+
+326
+00:05:20,750 --> 00:05:20,760
+confusion.
+ 
+
+327
+00:05:20,760 --> 00:05:22,190
+confusion.
+But for now, I'm just going to expand
+
+328
+00:05:22,190 --> 00:05:22,200
+But for now, I'm just going to expand
+ 
+
+329
+00:05:22,200 --> 00:05:23,750
+But for now, I'm just going to expand
+this.
+
+330
+00:05:23,750 --> 00:05:23,760
+this.
+ 
+
+331
+00:05:23,760 --> 00:05:25,190
+this.
+Let's also bring in our background
+
+332
+00:05:25,190 --> 00:05:25,200
+Let's also bring in our background
+ 
+
+333
+00:05:25,200 --> 00:05:29,510
+Let's also bring in our background
+render as a lighting reference.
+
+334
+00:05:29,510 --> 00:05:29,520
+
+ 
+
+335
+00:05:29,520 --> 00:05:30,830
+
+Now you might realize that we don't have
+
+336
+00:05:30,830 --> 00:05:30,840
+Now you might realize that we don't have
+ 
+
+337
+00:05:30,840 --> 00:05:32,990
+Now you might realize that we don't have
+any layers. So how are we supposed to
+
+338
+00:05:32,990 --> 00:05:33,000
+any layers. So how are we supposed to
+ 
+
+339
+00:05:33,000 --> 00:05:34,790
+any layers. So how are we supposed to
+merge our texture pass on top of our
+
+340
+00:05:34,790 --> 00:05:34,800
+merge our texture pass on top of our
+ 
+
+341
+00:05:34,800 --> 00:05:36,008
+merge our texture pass on top of our
+background?
+
+342
+00:05:36,008 --> 00:05:36,018
+background?
+ 
+
+343
+00:05:36,018 --> 00:05:36,470
+background?
+>> [music]
+
+344
+00:05:36,470 --> 00:05:36,480
+>> [music]
+ 
+
+345
+00:05:36,480 --> 00:05:39,510
+>> [music]
+>> We can do that with a simple merge node.
+
+346
+00:05:39,510 --> 00:05:39,520
+>> We can do that with a simple merge node.
+ 
+
+347
+00:05:39,520 --> 00:05:40,670
+>> We can do that with a simple merge node.
+The merge node is going to be the most
+
+348
+00:05:40,670 --> 00:05:40,680
+The merge node is going to be the most
+ 
+
+349
+00:05:40,680 --> 00:05:41,870
+The merge node is going to be the most
+complicated one we're going to cover
+
+350
+00:05:41,870 --> 00:05:41,880
+complicated one we're going to cover
+ 
+
+351
+00:05:41,880 --> 00:05:44,870
+complicated one we're going to cover
+today, and even that is really simple.
+
+352
+00:05:44,870 --> 00:05:44,880
+today, and even that is really simple.
+ 
+
+353
+00:05:44,880 --> 00:05:46,790
+today, and even that is really simple.
+The yellow socket is the background
+
+354
+00:05:46,790 --> 00:05:46,800
+The yellow socket is the background
+ 
+
+355
+00:05:46,800 --> 00:05:48,390
+The yellow socket is the background
+input, and the green one is the
+
+356
+00:05:48,390 --> 00:05:48,400
+input, and the green one is the
+ 
+
+357
+00:05:48,400 --> 00:05:50,630
+input, and the green one is the
+foreground input. So, let's drag our
+
+358
+00:05:50,630 --> 00:05:50,640
+foreground input. So, let's drag our
+ 
+
+359
+00:05:50,640 --> 00:05:52,750
+foreground input. So, let's drag our
+background into the background and our
+
+360
+00:05:52,750 --> 00:05:52,760
+background into the background and our
+ 
+
+361
+00:05:52,760 --> 00:05:55,070
+background into the background and our
+character into the foreground. Now, if
+
+362
+00:05:55,070 --> 00:05:55,080
+character into the foreground. Now, if
+ 
+
+363
+00:05:55,080 --> 00:05:56,710
+character into the foreground. Now, if
+we preview this merge node by hitting
+
+364
+00:05:56,710 --> 00:05:56,720
+we preview this merge node by hitting
+ 
+
+365
+00:05:56,720 --> 00:05:58,630
+we preview this merge node by hitting
+one, we can see we've just merged our
+
+366
+00:05:58,630 --> 00:05:58,640
+one, we can see we've just merged our
+ 
+
+367
+00:05:58,640 --> 00:06:00,670
+one, we can see we've just merged our
+character on top of our background.
+
+368
+00:06:00,670 --> 00:06:00,680
+character on top of our background.
+ 
+
+369
+00:06:00,680 --> 00:06:02,150
+character on top of our background.
+Easy, right?
+
+370
+00:06:02,150 --> 00:06:02,160
+Easy, right?
+ 
+
+371
+00:06:02,160 --> 00:06:04,470
+Easy, right?
+Now, let's drag it down a little
+
+372
+00:06:04,470 --> 00:06:04,480
+Now, let's drag it down a little
+ 
+
+373
+00:06:04,480 --> 00:06:05,670
+Now, let's drag it down a little
+so we can do all our character
+
+374
+00:06:05,670 --> 00:06:05,680
+so we can do all our character
+ 
+
+375
+00:06:05,680 --> 00:06:07,710
+so we can do all our character
+adjustments here before they get merged
+
+376
+00:06:07,710 --> 00:06:07,720
+adjustments here before they get merged
+ 
+
+377
+00:06:07,720 --> 00:06:10,070
+adjustments here before they get merged
+on top of the background.
+
+378
+00:06:10,070 --> 00:06:10,080
+on top of the background.
+ 
+
+379
+00:06:10,080 --> 00:06:11,590
+on top of the background.
+Now, the first thing I'm going to do is
+
+380
+00:06:11,590 --> 00:06:11,600
+Now, the first thing I'm going to do is
+ 
+
+381
+00:06:11,600 --> 00:06:13,470
+Now, the first thing I'm going to do is
+color adjust the character to match the
+
+382
+00:06:13,470 --> 00:06:13,480
+color adjust the character to match the
+ 
+
+383
+00:06:13,480 --> 00:06:15,470
+color adjust the character to match the
+background better. So, let's hit shift
+
+384
+00:06:15,470 --> 00:06:15,480
+background better. So, let's hit shift
+ 
+
+385
+00:06:15,480 --> 00:06:17,430
+background better. So, let's hit shift
+space and bring in a color corrector
+
+386
+00:06:17,430 --> 00:06:17,440
+space and bring in a color corrector
+ 
+
+387
+00:06:17,440 --> 00:06:19,550
+space and bring in a color corrector
+node.
+
+388
+00:06:19,550 --> 00:06:19,560
+node.
+ 
+
+389
+00:06:19,560 --> 00:06:21,350
+node.
+If we hold down shift and drag it in
+
+390
+00:06:21,350 --> 00:06:21,360
+If we hold down shift and drag it in
+ 
+
+391
+00:06:21,360 --> 00:06:24,110
+If we hold down shift and drag it in
+here, it connects into the stream.
+
+392
+00:06:24,110 --> 00:06:24,120
+here, it connects into the stream.
+ 
+
+393
+00:06:24,120 --> 00:06:25,790
+here, it connects into the stream.
+So, now if we follow the stream, we can
+
+394
+00:06:25,790 --> 00:06:25,800
+So, now if we follow the stream, we can
+ 
+
+395
+00:06:25,800 --> 00:06:27,590
+So, now if we follow the stream, we can
+see our texture pass gets color
+
+396
+00:06:27,590 --> 00:06:27,600
+see our texture pass gets color
+ 
+
+397
+00:06:27,600 --> 00:06:29,630
+see our texture pass gets color
+corrected and then it gets merged on top
+
+398
+00:06:29,630 --> 00:06:29,640
+corrected and then it gets merged on top
+ 
+
+399
+00:06:29,640 --> 00:06:31,230
+corrected and then it gets merged on top
+of the background. So, the color
+
+400
+00:06:31,230 --> 00:06:31,240
+of the background. So, the color
+ 
+
+401
+00:06:31,240 --> 00:06:32,550
+of the background. So, the color
+correction will only affect our
+
+402
+00:06:32,550 --> 00:06:32,560
+correction will only affect our
+ 
+
+403
+00:06:32,560 --> 00:06:34,470
+correction will only affect our
+character because the background merging
+
+404
+00:06:34,470 --> 00:06:34,480
+character because the background merging
+ 
+
+405
+00:06:34,480 --> 00:06:36,030
+character because the background merging
+happens later.
+
+406
+00:06:36,030 --> 00:06:36,040
+happens later.
+ 
+
+407
+00:06:36,040 --> 00:06:37,710
+happens later.
+I'm going to make the character slightly
+
+408
+00:06:37,710 --> 00:06:37,720
+I'm going to make the character slightly
+ 
+
+409
+00:06:37,720 --> 00:06:39,390
+I'm going to make the character slightly
+more blue
+
+410
+00:06:39,390 --> 00:06:39,400
+more blue
+ 
+
+411
+00:06:39,400 --> 00:06:41,670
+more blue
+and more dark.
+
+412
+00:06:41,670 --> 00:06:41,680
+and more dark.
+ 
+
+413
+00:06:41,680 --> 00:06:43,430
+and more dark.
+And now, as you can see, it already fits
+
+414
+00:06:43,430 --> 00:06:43,440
+And now, as you can see, it already fits
+ 
+
+415
+00:06:43,440 --> 00:06:45,390
+And now, as you can see, it already fits
+the [music] tone much better.
+
+416
+00:06:45,390 --> 00:06:45,400
+the [music] tone much better.
+ 
+
+417
+00:06:45,400 --> 00:06:47,430
+the [music] tone much better.
+I'm going to call this result the base
+
+418
+00:06:47,430 --> 00:06:47,440
+I'm going to call this result the base
+ 
+
+419
+00:06:47,440 --> 00:06:49,150
+I'm going to call this result the base
+color.
+
+420
+00:06:49,150 --> 00:06:49,160
+color.
+ 
+
+421
+00:06:49,160 --> 00:06:50,670
+color.
+So, now to the most complicated, but
+
+422
+00:06:50,670 --> 00:06:50,680
+So, now to the most complicated, but
+ 
+
+423
+00:06:50,680 --> 00:06:52,510
+So, now to the most complicated, but
+also most important part of the whole
+
+424
+00:06:52,510 --> 00:06:52,520
+also most important part of the whole
+ 
+
+425
+00:06:52,520 --> 00:06:55,790
+also most important part of the whole
+process. We're going to add a shadow.
+
+426
+00:06:55,790 --> 00:06:55,800
+process. We're going to add a shadow.
+ 
+
+427
+00:06:55,800 --> 00:06:57,390
+process. We're going to add a shadow.
+First of all, let's import our lighting
+
+428
+00:06:57,390 --> 00:06:57,400
+First of all, let's import our lighting
+ 
+
+429
+00:06:57,400 --> 00:07:00,470
+First of all, let's import our lighting
+render.
+
+430
+00:07:00,470 --> 00:07:00,480
+
+ 
+
+431
+00:07:00,480 --> 00:07:02,950
+
+Our lighting render looks like this.
+
+432
+00:07:02,950 --> 00:07:02,960
+Our lighting render looks like this.
+ 
+
+433
+00:07:02,960 --> 00:07:04,190
+Our lighting render looks like this.
+Now, I'm previewing this in the second
+
+434
+00:07:04,190 --> 00:07:04,200
+Now, I'm previewing this in the second
+ 
+
+435
+00:07:04,200 --> 00:07:05,630
+Now, I'm previewing this in the second
+viewer, [music] and as you can see, all
+
+436
+00:07:05,630 --> 00:07:05,640
+viewer, [music] and as you can see, all
+ 
+
+437
+00:07:05,640 --> 00:07:07,390
+viewer, [music] and as you can see, all
+the shadows are black and everywhere the
+
+438
+00:07:07,390 --> 00:07:07,400
+the shadows are black and everywhere the
+ 
+
+439
+00:07:07,400 --> 00:07:09,670
+the shadows are black and everywhere the
+light hits, it gets white.
+
+440
+00:07:09,670 --> 00:07:09,680
+light hits, it gets white.
+ 
+
+441
+00:07:09,680 --> 00:07:11,070
+light hits, it gets white.
+So, now I'm going to bring in a merge
+
+442
+00:07:11,070 --> 00:07:11,080
+So, now I'm going to bring in a merge
+ 
+
+443
+00:07:11,080 --> 00:07:13,110
+So, now I'm going to bring in a merge
+node once again
+
+444
+00:07:13,110 --> 00:07:13,120
+node once again
+ 
+
+445
+00:07:13,120 --> 00:07:15,590
+node once again
+and connect it into the stream.
+
+446
+00:07:15,590 --> 00:07:15,600
+and connect it into the stream.
+ 
+
+447
+00:07:15,600 --> 00:07:17,030
+and connect it into the stream.
+And now, before we connect anything,
+
+448
+00:07:17,030 --> 00:07:17,040
+And now, before we connect anything,
+ 
+
+449
+00:07:17,040 --> 00:07:19,310
+And now, before we connect anything,
+let's create our shadow color.
+
+450
+00:07:19,310 --> 00:07:19,320
+let's create our shadow color.
+ 
+
+451
+00:07:19,320 --> 00:07:20,790
+let's create our shadow color.
+We simply bring in another color
+
+452
+00:07:20,790 --> 00:07:20,800
+We simply bring in another color
+ 
+
+453
+00:07:20,800 --> 00:07:22,710
+We simply bring in another color
+correction node
+
+454
+00:07:22,710 --> 00:07:22,720
+correction node
+ 
+
+455
+00:07:22,720 --> 00:07:24,470
+correction node
+and plug the base color into that color
+
+456
+00:07:24,470 --> 00:07:24,480
+and plug the base color into that color
+ 
+
+457
+00:07:24,480 --> 00:07:25,950
+and plug the base color into that color
+correction.
+
+458
+00:07:25,950 --> 00:07:25,960
+correction.
+ 
+
+459
+00:07:25,960 --> 00:07:27,909
+correction.
+Now, this will be our shadow color, so
+
+460
+00:07:27,909 --> 00:07:27,919
+Now, this will be our shadow color, so
+ 
+
+461
+00:07:27,919 --> 00:07:33,030
+Now, this will be our shadow color, so
+let's make it quite a bit darker.
+
+462
+00:07:33,030 --> 00:07:33,040
+
+ 
+
+463
+00:07:33,040 --> 00:07:34,830
+
+And now, we can connect everything. So,
+
+464
+00:07:34,830 --> 00:07:34,840
+And now, we can connect everything. So,
+ 
+
+465
+00:07:34,840 --> 00:07:36,630
+And now, we can connect everything. So,
+the base color is already connected into
+
+466
+00:07:36,630 --> 00:07:36,640
+the base color is already connected into
+ 
+
+467
+00:07:36,640 --> 00:07:38,550
+the base color is already connected into
+the yellow background input. Let's
+
+468
+00:07:38,550 --> 00:07:38,560
+the yellow background input. Let's
+ 
+
+469
+00:07:38,560 --> 00:07:40,350
+the yellow background input. Let's
+connect our shadow color into the green
+
+470
+00:07:40,350 --> 00:07:40,360
+connect our shadow color into the green
+ 
+
+471
+00:07:40,360 --> 00:07:42,190
+connect our shadow color into the green
+foreground input.
+
+472
+00:07:42,190 --> 00:07:42,200
+foreground input.
+ 
+
+473
+00:07:42,200 --> 00:07:43,990
+foreground input.
+Now, into the blue input, we can plug in
+
+474
+00:07:43,990 --> 00:07:44,000
+Now, into the blue input, we can plug in
+ 
+
+475
+00:07:44,000 --> 00:07:46,310
+Now, into the blue input, we can plug in
+a mask that lets us control where the
+
+476
+00:07:46,310 --> 00:07:46,320
+a mask that lets us control where the
+ 
+
+477
+00:07:46,320 --> 00:07:48,390
+a mask that lets us control where the
+foreground input appears.
+
+478
+00:07:48,390 --> 00:07:48,400
+foreground input appears.
+ 
+
+479
+00:07:48,400 --> 00:07:50,030
+foreground input appears.
+So in this case, we will just plug in
+
+480
+00:07:50,030 --> 00:07:50,040
+So in this case, we will just plug in
+ 
+
+481
+00:07:50,040 --> 00:07:51,710
+So in this case, we will just plug in
+our lighting render.
+
+482
+00:07:51,710 --> 00:07:51,720
+our lighting render.
+ 
+
+483
+00:07:51,720 --> 00:07:53,510
+our lighting render.
+Now nothing has happened yet, so let's
+
+484
+00:07:53,510 --> 00:07:53,520
+Now nothing has happened yet, so let's
+ 
+
+485
+00:07:53,520 --> 00:07:55,030
+Now nothing has happened yet, so let's
+select the merge node, go into the merge
+
+486
+00:07:55,030 --> 00:07:55,040
+select the merge node, go into the merge
+ 
+
+487
+00:07:55,040 --> 00:07:56,750
+select the merge node, go into the merge
+node settings, and then switch the
+
+488
+00:07:56,750 --> 00:07:56,760
+node settings, and then switch the
+ 
+
+489
+00:07:56,760 --> 00:07:59,750
+node settings, and then switch the
+channel from alpha to luminance. That
+
+490
+00:07:59,750 --> 00:07:59,760
+channel from alpha to luminance. That
+ 
+
+491
+00:07:59,760 --> 00:08:02,070
+channel from alpha to luminance. That
+way it actually uses the luminance, aka
+
+492
+00:08:02,070 --> 00:08:02,080
+way it actually uses the luminance, aka
+ 
+
+493
+00:08:02,080 --> 00:08:03,990
+way it actually uses the luminance, aka
+the brightness values of our lighting
+
+494
+00:08:03,990 --> 00:08:04,000
+the brightness values of our lighting
+ 
+
+495
+00:08:04,000 --> 00:08:05,390
+the brightness values of our lighting
+render.
+
+496
+00:08:05,390 --> 00:08:05,400
+render.
+ 
+
+497
+00:08:05,400 --> 00:08:07,150
+render.
+Now we can see something has changed,
+
+498
+00:08:07,150 --> 00:08:07,160
+Now we can see something has changed,
+ 
+
+499
+00:08:07,160 --> 00:08:09,070
+Now we can see something has changed,
+but right now it uses the bright parts
+
+500
+00:08:09,070 --> 00:08:09,080
+but right now it uses the bright parts
+ 
+
+501
+00:08:09,080 --> 00:08:11,110
+but right now it uses the bright parts
+to reveal the shadow color. We want the
+
+502
+00:08:11,110 --> 00:08:11,120
+to reveal the shadow color. We want the
+ 
+
+503
+00:08:11,120 --> 00:08:13,310
+to reveal the shadow color. We want the
+exact opposite. We want it to appear in
+
+504
+00:08:13,310 --> 00:08:13,320
+exact opposite. We want it to appear in
+ 
+
+505
+00:08:13,320 --> 00:08:15,630
+exact opposite. We want it to appear in
+only the dark parts. So all we have to
+
+506
+00:08:15,630 --> 00:08:15,640
+only the dark parts. So all we have to
+ 
+
+507
+00:08:15,640 --> 00:08:17,590
+only the dark parts. So all we have to
+do is go back into the merge node and
+
+508
+00:08:17,590 --> 00:08:17,600
+do is go back into the merge node and
+ 
+
+509
+00:08:17,600 --> 00:08:20,270
+do is go back into the merge node and
+click apply mask inverted.
+
+510
+00:08:20,270 --> 00:08:20,280
+click apply mask inverted.
+ 
+
+511
+00:08:20,280 --> 00:08:22,190
+click apply mask inverted.
+So now it uses the dark parts of the
+
+512
+00:08:22,190 --> 00:08:22,200
+So now it uses the dark parts of the
+ 
+
+513
+00:08:22,200 --> 00:08:24,350
+So now it uses the dark parts of the
+lighting render to reveal our shadow
+
+514
+00:08:24,350 --> 00:08:24,360
+lighting render to reveal our shadow
+ 
+
+515
+00:08:24,360 --> 00:08:25,830
+lighting render to reveal our shadow
+color.
+
+516
+00:08:25,830 --> 00:08:25,840
+color.
+ 
+
+517
+00:08:25,840 --> 00:08:27,990
+color.
+And as you can see, we've added a simple
+
+518
+00:08:27,990 --> 00:08:28,000
+And as you can see, we've added a simple
+ 
+
+519
+00:08:28,000 --> 00:08:29,190
+And as you can see, we've added a simple
+shadow.
+
+520
+00:08:29,190 --> 00:08:29,200
+shadow.
+ 
+
+521
+00:08:29,200 --> 00:08:30,630
+shadow.
+Here you can play around with any color
+
+522
+00:08:30,630 --> 00:08:30,640
+Here you can play around with any color
+ 
+
+523
+00:08:30,640 --> 00:08:32,550
+Here you can play around with any color
+adjustment you like to get the exact
+
+524
+00:08:32,550 --> 00:08:32,560
+adjustment you like to get the exact
+ 
+
+525
+00:08:32,560 --> 00:08:34,630
+adjustment you like to get the exact
+look you're going for.
+
+526
+00:08:34,630 --> 00:08:34,640
+look you're going for.
+ 
+
+527
+00:08:34,640 --> 00:08:35,830
+look you're going for.
+And it's only going to get easier from
+
+528
+00:08:35,830 --> 00:08:35,840
+And it's only going to get easier from
+ 
+
+529
+00:08:35,840 --> 00:08:37,230
+And it's only going to get easier from
+here.
+
+530
+00:08:37,230 --> 00:08:37,240
+here.
+ 
+
+531
+00:08:37,240 --> 00:08:38,550
+here.
+So wait, am I saying that all the
+
+532
+00:08:38,550 --> 00:08:38,560
+So wait, am I saying that all the
+ 
+
+533
+00:08:38,560 --> 00:08:40,110
+So wait, am I saying that all the
+shadows we see in Arcane are just the
+
+534
+00:08:40,110 --> 00:08:40,120
+shadows we see in Arcane are just the
+ 
+
+535
+00:08:40,120 --> 00:08:41,589
+shadows we see in Arcane are just the
+base texture that was simply color
+
+536
+00:08:41,589 --> 00:08:41,599
+base texture that was simply color
+ 
+
+537
+00:08:41,599 --> 00:08:43,909
+base texture that was simply color
+adjusted to be a bit darker? So no real
+
+538
+00:08:43,909 --> 00:08:43,919
+adjusted to be a bit darker? So no real
+ 
+
+539
+00:08:43,919 --> 00:08:45,550
+adjusted to be a bit darker? So no real
+3D shadows, but just manually [music]
+
+540
+00:08:45,550 --> 00:08:45,560
+3D shadows, but just manually [music]
+ 
+
+541
+00:08:45,560 --> 00:08:47,550
+3D shadows, but just manually [music]
+tweaked values?
+
+542
+00:08:47,550 --> 00:08:47,560
+tweaked values?
+ 
+
+543
+00:08:47,560 --> 00:08:55,910
+tweaked values?
+Yeah, that's exactly it. Take a look.
+
+544
+00:08:55,910 --> 00:08:55,920
+
+ 
+
+545
+00:08:55,920 --> 00:08:57,750
+
+Because of this technique, we simplify a
+
+546
+00:08:57,750 --> 00:08:57,760
+Because of this technique, we simplify a
+ 
+
+547
+00:08:57,760 --> 00:09:00,510
+Because of this technique, we simplify a
+lot of data. We don't get any ambient
+
+548
+00:09:00,510 --> 00:09:00,520
+lot of data. We don't get any ambient
+ 
+
+549
+00:09:00,520 --> 00:09:02,990
+lot of data. We don't get any ambient
+occlusion,
+
+550
+00:09:02,990 --> 00:09:03,000
+occlusion,
+ 
+
+551
+00:09:03,000 --> 00:09:05,430
+occlusion,
+specular highlights,
+
+552
+00:09:05,430 --> 00:09:05,440
+specular highlights,
+ 
+
+553
+00:09:05,440 --> 00:09:08,550
+specular highlights,
+or bounce lighting from the environment.
+
+554
+00:09:08,550 --> 00:09:08,560
+or bounce lighting from the environment.
+ 
+
+555
+00:09:08,560 --> 00:09:09,470
+or bounce lighting from the environment.
+And that's exactly [music]
+
+556
+00:09:09,470 --> 00:09:09,480
+And that's exactly [music]
+ 
+
+557
+00:09:09,480 --> 00:09:12,070
+And that's exactly [music]
+the effect we see in Arcane. Now before
+
+558
+00:09:12,070 --> 00:09:12,080
+the effect we see in Arcane. Now before
+ 
+
+559
+00:09:12,080 --> 00:09:14,070
+the effect we see in Arcane. Now before
+moving on to the secret sauce, let's
+
+560
+00:09:14,070 --> 00:09:14,080
+moving on to the secret sauce, let's
+ 
+
+561
+00:09:14,080 --> 00:09:16,070
+moving on to the secret sauce, let's
+clear up some stuff. You might be a bit
+
+562
+00:09:16,070 --> 00:09:16,080
+clear up some stuff. You might be a bit
+ 
+
+563
+00:09:16,080 --> 00:09:20,110
+clear up some stuff. You might be a bit
+overwhelmed.
+
+564
+00:09:20,110 --> 00:09:20,120
+
+ 
+
+565
+00:09:20,120 --> 00:09:21,390
+
+Me as well. You might be a bit
+
+566
+00:09:21,390 --> 00:09:21,400
+Me as well. You might be a bit
+ 
+
+567
+00:09:21,400 --> 00:09:22,790
+Me as well. You might be a bit
+overwhelmed, but let me actually show
+
+568
+00:09:22,790 --> 00:09:22,800
+overwhelmed, but let me actually show
+ 
+
+569
+00:09:22,800 --> 00:09:24,790
+overwhelmed, but let me actually show
+you how easy this is.
+
+570
+00:09:24,790 --> 00:09:24,800
+you how easy this is.
+ 
+
+571
+00:09:24,800 --> 00:09:27,030
+you how easy this is.
+99% of the shots in Arcane have the
+
+572
+00:09:27,030 --> 00:09:27,040
+99% of the shots in Arcane have the
+ 
+
+573
+00:09:27,040 --> 00:09:29,829
+99% of the shots in Arcane have the
+exact same lighting structure.
+
+574
+00:09:29,829 --> 00:09:29,839
+exact same lighting structure.
+ 
+
+575
+00:09:29,839 --> 00:09:31,590
+exact same lighting structure.
+We start out with the base color, then
+
+576
+00:09:31,590 --> 00:09:31,600
+We start out with the base color, then
+ 
+
+577
+00:09:31,600 --> 00:09:33,630
+We start out with the base color, then
+we add the shadow, and then the rim
+
+578
+00:09:33,630 --> 00:09:33,640
+we add the shadow, and then the rim
+ 
+
+579
+00:09:33,640 --> 00:09:35,590
+we add the shadow, and then the rim
+lights. And this three-layer lighting
+
+580
+00:09:35,590 --> 00:09:35,600
+lights. And this three-layer lighting
+ 
+
+581
+00:09:35,600 --> 00:09:37,790
+lights. And this three-layer lighting
+structure is everywhere. [music]
+
+582
+00:09:37,790 --> 00:09:37,800
+structure is everywhere. [music]
+ 
+
+583
+00:09:37,800 --> 00:09:39,710
+structure is everywhere. [music]
+It's always base color, shadow, rim
+
+584
+00:09:39,710 --> 00:09:39,720
+It's always base color, shadow, rim
+ 
+
+585
+00:09:39,720 --> 00:09:43,310
+It's always base color, shadow, rim
+lights. Base color, shadow, rim lights.
+
+586
+00:09:43,310 --> 00:09:43,320
+lights. Base color, shadow, rim lights.
+ 
+
+587
+00:09:43,320 --> 00:09:45,790
+lights. Base color, shadow, rim lights.
+She she she she. [\h__\h] me. We've just
+
+588
+00:09:45,790 --> 00:09:45,800
+She she she she. [\h__\h] me. We've just
+ 
+
+589
+00:09:45,800 --> 00:09:47,630
+She she she she. [\h__\h] me. We've just
+discussed how to add a shadow, but for
+
+590
+00:09:47,630 --> 00:09:47,640
+discussed how to add a shadow, but for
+ 
+
+591
+00:09:47,640 --> 00:09:49,270
+discussed how to add a shadow, but for
+the rim lights, it's actually even more
+
+592
+00:09:49,270 --> 00:09:49,280
+the rim lights, it's actually even more
+ 
+
+593
+00:09:49,280 --> 00:09:51,470
+the rim lights, it's actually even more
+simple. So, instead of color correcting
+
+594
+00:09:51,470 --> 00:09:51,480
+simple. So, instead of color correcting
+ 
+
+595
+00:09:51,480 --> 00:09:53,190
+simple. So, instead of color correcting
+our texture pass, we're just going to
+
+596
+00:09:53,190 --> 00:09:53,200
+our texture pass, we're just going to
+ 
+
+597
+00:09:53,200 --> 00:09:55,150
+our texture pass, we're just going to
+bring in a solid [music] color. This
+
+598
+00:09:55,150 --> 00:09:55,160
+bring in a solid [music] color. This
+ 
+
+599
+00:09:55,160 --> 00:09:56,590
+bring in a solid [music] color. This
+color will be the color of the rim
+
+600
+00:09:56,590 --> 00:09:56,600
+color will be the color of the rim
+ 
+
+601
+00:09:56,600 --> 00:09:58,190
+color will be the color of the rim
+light. Then we're going to bring in our
+
+602
+00:09:58,190 --> 00:09:58,200
+light. Then we're going to bring in our
+ 
+
+603
+00:09:58,200 --> 00:09:59,321
+light. Then we're going to bring in our
+rim light render,
+
+604
+00:09:59,321 --> 00:09:59,331
+rim light render,
+ 
+
+605
+00:09:59,331 --> 00:09:59,550
+rim light render,
+>> [music]
+
+606
+00:09:59,550 --> 00:09:59,560
+>> [music]
+ 
+
+607
+00:09:59,560 --> 00:10:01,390
+>> [music]
+>> and again use the brightness values to
+
+608
+00:10:01,390 --> 00:10:01,400
+>> and again use the brightness values to
+ 
+
+609
+00:10:01,400 --> 00:10:03,830
+>> and again use the brightness values to
+cut out the solid color and merge it on
+
+610
+00:10:03,830 --> 00:10:03,840
+cut out the solid color and merge it on
+ 
+
+611
+00:10:03,840 --> 00:10:06,870
+cut out the solid color and merge it on
+top of the rest.
+
+612
+00:10:06,870 --> 00:10:06,880
+
+ 
+
+613
+00:10:06,880 --> 00:10:08,310
+
+And this is super quickly done. We're
+
+614
+00:10:08,310 --> 00:10:08,320
+And this is super quickly done. We're
+ 
+
+615
+00:10:08,320 --> 00:10:12,110
+And this is super quickly done. We're
+going to bring in a merge node.
+
+616
+00:10:12,110 --> 00:10:12,120
+
+ 
+
+617
+00:10:12,120 --> 00:10:16,790
+
+We bring in the rim light render.
+
+618
+00:10:16,790 --> 00:10:16,800
+
+ 
+
+619
+00:10:16,800 --> 00:10:18,790
+
+And now we need a solid [music] color.
+
+620
+00:10:18,790 --> 00:10:18,800
+And now we need a solid [music] color.
+ 
+
+621
+00:10:18,800 --> 00:10:21,590
+And now we need a solid [music] color.
+Here it's called the background node.
+
+622
+00:10:21,590 --> 00:10:21,600
+Here it's called the background node.
+ 
+
+623
+00:10:21,600 --> 00:10:22,950
+Here it's called the background node.
+Don't get confused by the name. It's not
+
+624
+00:10:22,950 --> 00:10:22,960
+Don't get confused by the name. It's not
+ 
+
+625
+00:10:22,960 --> 00:10:24,430
+Don't get confused by the name. It's not
+supposed to be a background. [music]
+
+626
+00:10:24,430 --> 00:10:24,440
+supposed to be a background. [music]
+ 
+
+627
+00:10:24,440 --> 00:10:26,950
+supposed to be a background. [music]
+It's literally just a solid color.
+
+628
+00:10:26,950 --> 00:10:26,960
+It's literally just a solid color.
+ 
+
+629
+00:10:26,960 --> 00:10:28,510
+It's literally just a solid color.
+I'm going to make this a nice bright
+
+630
+00:10:28,510 --> 00:10:28,520
+I'm going to make this a nice bright
+ 
+
+631
+00:10:28,520 --> 00:10:30,390
+I'm going to make this a nice bright
+yellow.
+
+632
+00:10:30,390 --> 00:10:30,400
+yellow.
+ 
+
+633
+00:10:30,400 --> 00:10:31,750
+yellow.
+Now the solid color goes into the
+
+634
+00:10:31,750 --> 00:10:31,760
+Now the solid color goes into the
+ 
+
+635
+00:10:31,760 --> 00:10:33,910
+Now the solid color goes into the
+foreground input, the rim light into the
+
+636
+00:10:33,910 --> 00:10:33,920
+foreground input, the rim light into the
+ 
+
+637
+00:10:33,920 --> 00:10:35,630
+foreground input, the rim light into the
+blue mask input.
+
+638
+00:10:35,630 --> 00:10:35,640
+blue mask input.
+ 
+
+639
+00:10:35,640 --> 00:10:37,110
+blue mask input.
+And now go into the merge node settings
+
+640
+00:10:37,110 --> 00:10:37,120
+And now go into the merge node settings
+ 
+
+641
+00:10:37,120 --> 00:10:38,870
+And now go into the merge node settings
+and change the channel from alpha to
+
+642
+00:10:38,870 --> 00:10:38,880
+and change the channel from alpha to
+ 
+
+643
+00:10:38,880 --> 00:10:40,630
+and change the channel from alpha to
+luminance. And as you can see, it
+
+644
+00:10:40,630 --> 00:10:40,640
+luminance. And as you can see, it
+ 
+
+645
+00:10:40,640 --> 00:10:42,150
+luminance. And as you can see, it
+already works.
+
+646
+00:10:42,150 --> 00:10:42,160
+already works.
+ 
+
+647
+00:10:42,160 --> 00:10:44,190
+already works.
+Now you could also go back to this tab
+
+648
+00:10:44,190 --> 00:10:44,200
+Now you could also go back to this tab
+ 
+
+649
+00:10:44,200 --> 00:10:45,310
+Now you could also go back to this tab
+and change the blending mode to
+
+650
+00:10:45,310 --> 00:10:45,320
+and change the blending mode to
+ 
+
+651
+00:10:45,320 --> 00:10:47,829
+and change the blending mode to
+something like linear dodge, so it
+
+652
+00:10:47,829 --> 00:10:47,839
+something like linear dodge, so it
+ 
+
+653
+00:10:47,839 --> 00:10:49,870
+something like linear dodge, so it
+blends in nicer.
+
+654
+00:10:49,870 --> 00:10:49,880
+blends in nicer.
+ 
+
+655
+00:10:49,880 --> 00:10:51,470
+blends in nicer.
+And that's it.
+
+656
+00:10:51,470 --> 00:10:51,480
+And that's it.
+ 
+
+657
+00:10:51,480 --> 00:10:52,430
+And that's it.
+Another great thing about this [music]
+
+658
+00:10:52,430 --> 00:10:52,440
+Another great thing about this [music]
+ 
+
+659
+00:10:52,440 --> 00:10:54,230
+Another great thing about this [music]
+technique is that we can manipulate our
+
+660
+00:10:54,230 --> 00:10:54,240
+technique is that we can manipulate our
+ 
+
+661
+00:10:54,240 --> 00:10:56,990
+technique is that we can manipulate our
+lighting render however we want to. We
+
+662
+00:10:56,990 --> 00:10:57,000
+lighting render however we want to. We
+ 
+
+663
+00:10:57,000 --> 00:10:58,670
+lighting render however we want to. We
+could, for example, add some curves
+
+664
+00:10:58,670 --> 00:10:58,680
+could, for example, add some curves
+ 
+
+665
+00:10:58,680 --> 00:11:00,630
+could, for example, add some curves
+adjustments to make the lighting more
+
+666
+00:11:00,630 --> 00:11:00,640
+adjustments to make the lighting more
+ 
+
+667
+00:11:00,640 --> 00:11:02,230
+adjustments to make the lighting more
+sharp.
+
+668
+00:11:02,230 --> 00:11:02,240
+sharp.
+ 
+
+669
+00:11:02,240 --> 00:11:03,550
+sharp.
+It also kind of flattens the [music]
+
+670
+00:11:03,550 --> 00:11:03,560
+It also kind of flattens the [music]
+ 
+
+671
+00:11:03,560 --> 00:11:05,110
+It also kind of flattens the [music]
+lighting render and adds another
+
+672
+00:11:05,110 --> 00:11:05,120
+lighting render and adds another
+ 
+
+673
+00:11:05,120 --> 00:11:08,230
+lighting render and adds another
+important layer of the 2D stylized feel.
+
+674
+00:11:08,230 --> 00:11:08,240
+important layer of the 2D stylized feel.
+ 
+
+675
+00:11:08,240 --> 00:11:10,030
+important layer of the 2D stylized feel.
+It's also something we always see in
+
+676
+00:11:10,030 --> 00:11:10,040
+It's also something we always see in
+ 
+
+677
+00:11:10,040 --> 00:11:12,430
+It's also something we always see in
+Arcane. No matter the condition, the
+
+678
+00:11:12,430 --> 00:11:12,440
+Arcane. No matter the condition, the
+ 
+
+679
+00:11:12,440 --> 00:11:15,390
+Arcane. No matter the condition, the
+light is mostly super sharp.
+
+680
+00:11:15,390 --> 00:11:15,400
+light is mostly super sharp.
+ 
+
+681
+00:11:15,400 --> 00:11:18,829
+light is mostly super sharp.
+Here is another example.
+
+682
+00:11:18,829 --> 00:11:18,839
+
+ 
+
+683
+00:11:18,839 --> 00:11:20,350
+
+Even here, where the lighting seems to
+
+684
+00:11:20,350 --> 00:11:20,360
+Even here, where the lighting seems to
+ 
+
+685
+00:11:20,360 --> 00:11:22,190
+Even here, where the lighting seems to
+be very [music] soft, we can clearly see
+
+686
+00:11:22,190 --> 00:11:22,200
+be very [music] soft, we can clearly see
+ 
+
+687
+00:11:22,200 --> 00:11:25,590
+be very [music] soft, we can clearly see
+this hard edge.
+
+688
+00:11:25,590 --> 00:11:25,600
+
+ 
+
+689
+00:11:25,600 --> 00:11:27,950
+
+But wait, how could that be? How can we
+
+690
+00:11:27,950 --> 00:11:27,960
+But wait, how could that be? How can we
+ 
+
+691
+00:11:27,960 --> 00:11:29,790
+But wait, how could that be? How can we
+feel soft lighting even though we see
+
+692
+00:11:29,790 --> 00:11:29,800
+feel soft lighting even though we see
+ 
+
+693
+00:11:29,800 --> 00:11:32,270
+feel soft lighting even though we see
+hard edges in the shadows?
+
+694
+00:11:32,270 --> 00:11:32,280
+hard edges in the shadows?
+ 
+
+695
+00:11:32,280 --> 00:11:33,470
+hard edges in the shadows?
+Just in case you don't understand the
+
+696
+00:11:33,470 --> 00:11:33,480
+Just in case you don't understand the
+ 
+
+697
+00:11:33,480 --> 00:11:35,830
+Just in case you don't understand the
+issue here. Usually soft lighting makes
+
+698
+00:11:35,830 --> 00:11:35,840
+issue here. Usually soft lighting makes
+ 
+
+699
+00:11:35,840 --> 00:11:37,750
+issue here. Usually soft lighting makes
+soft shadows, but that's something we
+
+700
+00:11:37,750 --> 00:11:37,760
+soft shadows, but that's something we
+ 
+
+701
+00:11:37,760 --> 00:11:39,830
+soft shadows, but that's something we
+never see in Arcane. But then again,
+
+702
+00:11:39,830 --> 00:11:39,840
+never see in Arcane. But then again,
+ 
+
+703
+00:11:39,840 --> 00:11:41,590
+never see in Arcane. But then again,
+when you think of hard lighting, you
+
+704
+00:11:41,590 --> 00:11:41,600
+when you think of hard lighting, you
+ 
+
+705
+00:11:41,600 --> 00:11:43,870
+when you think of hard lighting, you
+wouldn't think of this. Like it feels
+
+706
+00:11:43,870 --> 00:11:43,880
+wouldn't think of this. Like it feels
+ 
+
+707
+00:11:43,880 --> 00:11:45,790
+wouldn't think of this. Like it feels
+soft and we see soft gradients from
+
+708
+00:11:45,790 --> 00:11:45,800
+soft and we see soft gradients from
+ 
+
+709
+00:11:45,800 --> 00:11:47,750
+soft and we see soft gradients from
+light to dark. But then we
+
+710
+00:11:47,750 --> 00:11:47,760
+light to dark. But then we
+ 
+
+711
+00:11:47,760 --> 00:11:50,270
+light to dark. But then we
+simultaneously have hard shadows. So,
+
+712
+00:11:50,270 --> 00:11:50,280
+simultaneously have hard shadows. So,
+ 
+
+713
+00:11:50,280 --> 00:11:51,990
+simultaneously have hard shadows. So,
+what's going on here? Like you know what
+
+714
+00:11:51,990 --> 00:11:52,000
+what's going on here? Like you know what
+ 
+
+715
+00:11:52,000 --> 00:11:55,270
+what's going on here? Like you know what
+I mean? This is super paradoxical.
+
+716
+00:11:55,270 --> 00:11:55,280
+I mean? This is super paradoxical.
+ 
+
+717
+00:11:55,280 --> 00:11:57,230
+I mean? This is super paradoxical.
+There must be some kind of
+
+718
+00:11:57,230 --> 00:11:57,240
+There must be some kind of
+ 
+
+719
+00:11:57,240 --> 00:12:00,498
+There must be some kind of
+secret sauce.
+
+720
+00:12:00,498 --> 00:12:00,508
+
+ 
+
+721
+00:12:00,508 --> 00:12:07,310
+
+>> [snorts]
+
+722
+00:12:07,310 --> 00:12:07,320
+
+ 
+
+723
+00:12:07,320 --> 00:12:20,870
+
+>> I'm breaking into 4K right now.
+
+724
+00:12:20,870 --> 00:12:20,880
+
+ 
+
+725
+00:12:20,880 --> 00:12:25,030
+
+Oh my god.
+
+726
+00:12:25,030 --> 00:12:25,040
+
+ 
+
+727
+00:12:25,040 --> 00:12:26,590
+
+Masks.
+
+728
+00:12:26,590 --> 00:12:26,600
+Masks.
+ 
+
+729
+00:12:26,600 --> 00:12:28,950
+Masks.
+Let me explain from the beginning.
+
+730
+00:12:28,950 --> 00:12:28,960
+Let me explain from the beginning.
+ 
+
+731
+00:12:28,960 --> 00:12:30,510
+Let me explain from the beginning.
+So, as we know, our lighting render
+
+732
+00:12:30,510 --> 00:12:30,520
+So, as we know, our lighting render
+ 
+
+733
+00:12:30,520 --> 00:12:32,630
+So, as we know, our lighting render
+dictates what the base color is and what
+
+734
+00:12:32,630 --> 00:12:32,640
+dictates what the base color is and what
+ 
+
+735
+00:12:32,640 --> 00:12:34,630
+dictates what the base color is and what
+the shadow color is. In this case,
+
+736
+00:12:34,630 --> 00:12:34,640
+the shadow color is. In this case,
+ 
+
+737
+00:12:34,640 --> 00:12:36,870
+the shadow color is. In this case,
+everything black is the shadow color and
+
+738
+00:12:36,870 --> 00:12:36,880
+everything black is the shadow color and
+ 
+
+739
+00:12:36,880 --> 00:12:38,190
+everything black is the shadow color and
+everything [music] white is the base
+
+740
+00:12:38,190 --> 00:12:38,200
+everything [music] white is the base
+ 
+
+741
+00:12:38,200 --> 00:12:40,190
+everything [music] white is the base
+color. And remember, our lighting render
+
+742
+00:12:40,190 --> 00:12:40,200
+color. And remember, our lighting render
+ 
+
+743
+00:12:40,200 --> 00:12:42,590
+color. And remember, our lighting render
+is just a black and white image. Now, we
+
+744
+00:12:42,590 --> 00:12:42,600
+is just a black and white image. Now, we
+ 
+
+745
+00:12:42,600 --> 00:12:45,110
+is just a black and white image. Now, we
+take a solid black color, cut a part of
+
+746
+00:12:45,110 --> 00:12:45,120
+take a solid black color, cut a part of
+ 
+
+747
+00:12:45,120 --> 00:12:47,630
+take a solid black color, cut a part of
+it out with a mask,
+
+748
+00:12:47,630 --> 00:12:47,640
+it out with a mask,
+ 
+
+749
+00:12:47,640 --> 00:12:50,110
+it out with a mask,
+blur it slightly, and then merge it on
+
+750
+00:12:50,110 --> 00:12:50,120
+blur it slightly, and then merge it on
+ 
+
+751
+00:12:50,120 --> 00:12:51,588
+blur it slightly, and then merge it on
+top of the lighting render.
+
+752
+00:12:51,588 --> 00:12:51,598
+top of the lighting render.
+ 
+
+753
+00:12:51,598 --> 00:12:51,750
+top of the lighting render.
+>> [music]
+
+754
+00:12:51,750 --> 00:12:51,760
+>> [music]
+ 
+
+755
+00:12:51,760 --> 00:12:53,710
+>> [music]
+>> This has created a dark spot wherever
+
+756
+00:12:53,710 --> 00:12:53,720
+>> This has created a dark spot wherever
+ 
+
+757
+00:12:53,720 --> 00:12:55,150
+>> This has created a dark spot wherever
+our mask is.
+
+758
+00:12:55,150 --> 00:12:55,160
+our mask is.
+ 
+
+759
+00:12:55,160 --> 00:12:56,790
+our mask is.
+Now, that means that our shadow color
+
+760
+00:12:56,790 --> 00:12:56,800
+Now, that means that our shadow color
+ 
+
+761
+00:12:56,800 --> 00:12:58,670
+Now, that means that our shadow color
+will also show up in the part where
+
+762
+00:12:58,670 --> 00:12:58,680
+will also show up in the part where
+ 
+
+763
+00:12:58,680 --> 00:13:01,190
+will also show up in the part where
+we've [music] created that mask.
+
+764
+00:13:01,190 --> 00:13:01,200
+we've [music] created that mask.
+ 
+
+765
+00:13:01,200 --> 00:13:02,750
+we've [music] created that mask.
+We can also control how visible this
+
+766
+00:13:02,750 --> 00:13:02,760
+We can also control how visible this
+ 
+
+767
+00:13:02,760 --> 00:13:04,590
+We can also control how visible this
+adjustment is just by [music] changing
+
+768
+00:13:04,590 --> 00:13:04,600
+adjustment is just by [music] changing
+ 
+
+769
+00:13:04,600 --> 00:13:07,870
+adjustment is just by [music] changing
+the opacity of the mask.
+
+770
+00:13:07,870 --> 00:13:07,880
+the opacity of the mask.
+ 
+
+771
+00:13:07,880 --> 00:13:09,190
+the opacity of the mask.
+And we can also apply this technique the
+
+772
+00:13:09,190 --> 00:13:09,200
+And we can also apply this technique the
+ 
+
+773
+00:13:09,200 --> 00:13:11,350
+And we can also apply this technique the
+other way around. If we merge a white
+
+774
+00:13:11,350 --> 00:13:11,360
+other way around. If we merge a white
+ 
+
+775
+00:13:11,360 --> 00:13:14,350
+other way around. If we merge a white
+color on top of our lighting render,
+
+776
+00:13:14,350 --> 00:13:14,360
+color on top of our lighting render,
+ 
+
+777
+00:13:14,360 --> 00:13:16,190
+color on top of our lighting render,
+it will essentially bring back our base
+
+778
+00:13:16,190 --> 00:13:16,200
+it will essentially bring back our base
+ 
+
+779
+00:13:16,200 --> 00:13:18,910
+it will essentially bring back our base
+color.
+
+780
+00:13:18,910 --> 00:13:18,920
+
+ 
+
+781
+00:13:18,920 --> 00:13:20,670
+
+That is the basic [music] explanation of
+
+782
+00:13:20,670 --> 00:13:20,680
+That is the basic [music] explanation of
+ 
+
+783
+00:13:20,680 --> 00:13:22,870
+That is the basic [music] explanation of
+this technique. Now, don't underestimate
+
+784
+00:13:22,870 --> 00:13:22,880
+this technique. Now, don't underestimate
+ 
+
+785
+00:13:22,880 --> 00:13:24,829
+this technique. Now, don't underestimate
+this. These masks make a huge
+
+786
+00:13:24,829 --> 00:13:24,839
+this. These masks make a huge
+ 
+
+787
+00:13:24,839 --> 00:13:26,110
+this. These masks make a huge
+difference.
+
+788
+00:13:26,110 --> 00:13:26,120
+difference.
+ 
+
+789
+00:13:26,120 --> 00:13:27,910
+difference.
+They [music] allow us to really craft a
+
+790
+00:13:27,910 --> 00:13:27,920
+They [music] allow us to really craft a
+ 
+
+791
+00:13:27,920 --> 00:13:29,470
+They [music] allow us to really craft a
+whole composition.
+
+792
+00:13:29,470 --> 00:13:29,480
+whole composition.
+ 
+
+793
+00:13:29,480 --> 00:13:31,030
+whole composition.
+This process is super artistically
+
+794
+00:13:31,030 --> 00:13:31,040
+This process is super artistically
+ 
+
+795
+00:13:31,040 --> 00:13:31,544
+This process is super artistically
+driven
+
+796
+00:13:31,544 --> 00:13:31,554
+driven
+ 
+
+797
+00:13:31,554 --> 00:13:31,710
+driven
+>> [music]
+
+798
+00:13:31,710 --> 00:13:31,720
+>> [music]
+ 
+
+799
+00:13:31,720 --> 00:13:33,470
+>> [music]
+>> and we literally go, "Ah, let's add a
+
+800
+00:13:33,470 --> 00:13:33,480
+>> and we literally go, "Ah, let's add a
+ 
+
+801
+00:13:33,480 --> 00:13:35,350
+>> and we literally go, "Ah, let's add a
+bit more of the shadow here and ah,
+
+802
+00:13:35,350 --> 00:13:35,360
+bit more of the shadow here and ah,
+ 
+
+803
+00:13:35,360 --> 00:13:36,950
+bit more of the shadow here and ah,
+let's slightly bring back the base color
+
+804
+00:13:36,950 --> 00:13:36,960
+let's slightly bring back the base color
+ 
+
+805
+00:13:36,960 --> 00:13:38,590
+let's slightly bring back the base color
+in those parts."
+
+806
+00:13:38,590 --> 00:13:38,600
+in those parts."
+ 
+
+807
+00:13:38,600 --> 00:13:40,310
+in those parts."
+And I get it. You might be skeptical and
+
+808
+00:13:40,310 --> 00:13:40,320
+And I get it. You might be skeptical and
+ 
+
+809
+00:13:40,320 --> 00:13:42,350
+And I get it. You might be skeptical and
+this seems super unprofessional to just
+
+810
+00:13:42,350 --> 00:13:42,360
+this seems super unprofessional to just
+ 
+
+811
+00:13:42,360 --> 00:13:44,230
+this seems super unprofessional to just
+draw random masks around the character
+
+812
+00:13:44,230 --> 00:13:44,240
+draw random masks around the character
+ 
+
+813
+00:13:44,240 --> 00:13:45,750
+draw random masks around the character
+and you're just like, "What the hell,
+
+814
+00:13:45,750 --> 00:13:45,760
+and you're just like, "What the hell,
+ 
+
+815
+00:13:45,760 --> 00:13:46,790
+and you're just like, "What the hell,
+man? This is stupid."
+
+816
+00:13:46,790 --> 00:13:46,800
+man? This is stupid."
+ 
+
+817
+00:13:46,800 --> 00:13:47,990
+man? This is stupid."
+>> Stupid.
+
+818
+00:13:47,990 --> 00:13:48,000
+>> Stupid.
+ 
+
+819
+00:13:48,000 --> 00:13:49,590
+>> Stupid.
+>> And yes, you're right. This technique
+
+820
+00:13:49,590 --> 00:13:49,600
+>> And yes, you're right. This technique
+ 
+
+821
+00:13:49,600 --> 00:13:50,950
+>> And yes, you're right. This technique
+completely breaks physics and
+
+822
+00:13:50,950 --> 00:13:50,960
+completely breaks physics and
+ 
+
+823
+00:13:50,960 --> 00:13:53,470
+completely breaks physics and
+theoretically doesn't make sense at all.
+
+824
+00:13:53,470 --> 00:13:53,480
+theoretically doesn't make sense at all.
+ 
+
+825
+00:13:53,480 --> 00:13:55,230
+theoretically doesn't make sense at all.
+But here's why it works so surprisingly
+
+826
+00:13:55,230 --> 00:13:55,240
+But here's why it works so surprisingly
+ 
+
+827
+00:13:55,240 --> 00:13:55,779
+But here's why it works so surprisingly
+well.
+
+828
+00:13:55,779 --> 00:13:55,789
+well.
+ 
+
+829
+00:13:55,789 --> 00:13:56,150
+well.
+>> [music]
+
+830
+00:13:56,150 --> 00:13:56,160
+>> [music]
+ 
+
+831
+00:13:56,160 --> 00:13:57,910
+>> [music]
+>> You see, this isn't a new technique.
+
+832
+00:13:57,910 --> 00:13:57,920
+>> You see, this isn't a new technique.
+ 
+
+833
+00:13:57,920 --> 00:14:00,230
+>> You see, this isn't a new technique.
+It's really commonly used in anime.
+
+834
+00:14:00,230 --> 00:14:00,240
+It's really commonly used in anime.
+ 
+
+835
+00:14:00,240 --> 00:14:01,910
+It's really commonly used in anime.
+There, every shadow you see is
+
+836
+00:14:01,910 --> 00:14:01,920
+There, every shadow you see is
+ 
+
+837
+00:14:01,920 --> 00:14:04,190
+There, every shadow you see is
+hand-drawn and they rely on these masks
+
+838
+00:14:04,190 --> 00:14:04,200
+hand-drawn and they rely on these masks
+ 
+
+839
+00:14:04,200 --> 00:14:05,610
+hand-drawn and they rely on these masks
+and gradients to make the lighting more
+
+840
+00:14:05,610 --> 00:14:05,620
+and gradients to make the lighting more
+ 
+
+841
+00:14:05,620 --> 00:14:08,270
+and gradients to make the lighting more
+[music] understandable and cinematic.
+
+842
+00:14:08,270 --> 00:14:08,280
+[music] understandable and cinematic.
+ 
+
+843
+00:14:08,280 --> 00:14:09,750
+[music] understandable and cinematic.
+But now Arcane uses these same
+
+844
+00:14:09,750 --> 00:14:09,760
+But now Arcane uses these same
+ 
+
+845
+00:14:09,760 --> 00:14:12,154
+But now Arcane uses these same
+techniques in their 3D animations.
+
+846
+00:14:12,154 --> 00:14:12,164
+techniques in their 3D animations.
+ 
+
+847
+00:14:12,164 --> 00:14:12,470
+techniques in their 3D animations.
+>> [music]
+
+848
+00:14:12,470 --> 00:14:12,480
+>> [music]
+ 
+
+849
+00:14:12,480 --> 00:14:14,030
+>> [music]
+>> That's why they intentionally make their
+
+850
+00:14:14,030 --> 00:14:14,040
+>> That's why they intentionally make their
+ 
+
+851
+00:14:14,040 --> 00:14:16,190
+>> That's why they intentionally make their
+lighting hard to get that cell-shaded
+
+852
+00:14:16,190 --> 00:14:16,200
+lighting hard to get that cell-shaded
+ 
+
+853
+00:14:16,200 --> 00:14:17,830
+lighting hard to get that cell-shaded
+anime aesthetic.
+
+854
+00:14:17,830 --> 00:14:17,840
+anime aesthetic.
+ 
+
+855
+00:14:17,840 --> 00:14:19,350
+anime aesthetic.
+And on top of that, they use the same
+
+856
+00:14:19,350 --> 00:14:19,360
+And on top of that, they use the same
+ 
+
+857
+00:14:19,360 --> 00:14:21,590
+And on top of that, they use the same
+mask and gradient techniques. As far as
+
+858
+00:14:21,590 --> 00:14:21,600
+mask and gradient techniques. As far as
+ 
+
+859
+00:14:21,600 --> 00:14:23,310
+mask and gradient techniques. As far as
+I know, this was never seen in 3D
+
+860
+00:14:23,310 --> 00:14:23,320
+I know, this was never seen in 3D
+ 
+
+861
+00:14:23,320 --> 00:14:25,750
+I know, this was never seen in 3D
+before, at least not to that extent. And
+
+862
+00:14:25,750 --> 00:14:25,760
+before, at least not to that extent. And
+ 
+
+863
+00:14:25,760 --> 00:14:27,219
+before, at least not to that extent. And
+that's what makes Arcane's style
+
+864
+00:14:27,219 --> 00:14:27,229
+that's what makes Arcane's style
+ 
+
+865
+00:14:27,229 --> 00:14:27,310
+that's what makes Arcane's style
+>> [music]
+
+866
+00:14:27,310 --> 00:14:27,320
+>> [music]
+ 
+
+867
+00:14:27,320 --> 00:14:29,829
+>> [music]
+>> so iconic. The lighting is essentially a
+
+868
+00:14:29,829 --> 00:14:29,839
+>> so iconic. The lighting is essentially a
+ 
+
+869
+00:14:29,839 --> 00:14:32,460
+>> so iconic. The lighting is essentially a
+combination of 3D rendered lights and 2D
+
+870
+00:14:32,460 --> 00:14:32,470
+combination of 3D rendered lights and 2D
+ 
+
+871
+00:14:32,470 --> 00:14:34,510
+combination of 3D rendered lights and 2D
+[music] placed masks, which enhances the
+
+872
+00:14:34,510 --> 00:14:34,520
+[music] placed masks, which enhances the
+ 
+
+873
+00:14:34,520 --> 00:14:36,829
+[music] placed masks, which enhances the
+concept of mixing 2D and 3D even
+
+874
+00:14:36,829 --> 00:14:36,839
+concept of mixing 2D and 3D even
+ 
+
+875
+00:14:36,839 --> 00:14:38,790
+concept of mixing 2D and 3D even
+further. And that's what makes it look
+
+876
+00:14:38,790 --> 00:14:38,800
+further. And that's what makes it look
+ 
+
+877
+00:14:38,800 --> 00:14:41,710
+further. And that's what makes it look
+super surreal and so handcrafted. So,
+
+878
+00:14:41,710 --> 00:14:41,720
+super surreal and so handcrafted. So,
+ 
+
+879
+00:14:41,720 --> 00:14:43,510
+super surreal and so handcrafted. So,
+when you think about it, it isn't stupid
+
+880
+00:14:43,510 --> 00:14:43,520
+when you think about it, it isn't stupid
+ 
+
+881
+00:14:43,520 --> 00:14:50,145
+when you think about it, it isn't stupid
+at all. It's freaking genius.
+
+882
+00:14:50,145 --> 00:14:50,155
+
+ 
+
+883
+00:14:50,155 --> 00:14:52,390
+
+>> [applause]
+
+884
+00:14:52,390 --> 00:14:52,400
+
+ 
+
+885
+00:14:52,400 --> 00:14:53,990
+
+>> Now, we can't just randomly apply these
+
+886
+00:14:53,990 --> 00:14:54,000
+>> Now, we can't just randomly apply these
+ 
+
+887
+00:14:54,000 --> 00:14:56,270
+>> Now, we can't just randomly apply these
+masks anywhere we want. So, before we
+
+888
+00:14:56,270 --> 00:14:56,280
+masks anywhere we want. So, before we
+ 
+
+889
+00:14:56,280 --> 00:14:57,950
+masks anywhere we want. So, before we
+jump into our project file, let's
+
+890
+00:14:57,950 --> 00:14:57,960
+jump into our project file, let's
+ 
+
+891
+00:14:57,960 --> 00:15:00,790
+jump into our project file, let's
+quickly analyze some shots from Arcane.
+
+892
+00:15:00,790 --> 00:15:00,800
+quickly analyze some shots from Arcane.
+ 
+
+893
+00:15:00,800 --> 00:15:02,550
+quickly analyze some shots from Arcane.
+So, as we know, our character is split
+
+894
+00:15:02,550 --> 00:15:02,560
+So, as we know, our character is split
+ 
+
+895
+00:15:02,560 --> 00:15:04,230
+So, as we know, our character is split
+into the base color and the shadow
+
+896
+00:15:04,230 --> 00:15:04,240
+into the base color and the shadow
+ 
+
+897
+00:15:04,240 --> 00:15:06,110
+into the base color and the shadow
+color. So, everywhere we see the base
+
+898
+00:15:06,110 --> 00:15:06,120
+color. So, everywhere we see the base
+ 
+
+899
+00:15:06,120 --> 00:15:07,990
+color. So, everywhere we see the base
+color, it should generally stay at the
+
+900
+00:15:07,990 --> 00:15:08,000
+color, it should generally stay at the
+ 
+
+901
+00:15:08,000 --> 00:15:10,470
+color, it should generally stay at the
+same brightness, right?
+
+902
+00:15:10,470 --> 00:15:10,480
+same brightness, right?
+ 
+
+903
+00:15:10,480 --> 00:15:11,870
+same brightness, right?
+Right?
+
+904
+00:15:11,870 --> 00:15:11,880
+Right?
+ 
+
+905
+00:15:11,880 --> 00:15:13,730
+Right?
+But now, if we take a look at Arcane, we
+
+906
+00:15:13,730 --> 00:15:13,740
+But now, if we take a look at Arcane, we
+ 
+
+907
+00:15:13,740 --> 00:15:14,790
+But now, if we take a look at Arcane, we
+[music] can see that the more we get
+
+908
+00:15:14,790 --> 00:15:14,800
+[music] can see that the more we get
+ 
+
+909
+00:15:14,800 --> 00:15:16,590
+[music] can see that the more we get
+into the shadow side, the more we can
+
+910
+00:15:16,590 --> 00:15:16,600
+into the shadow side, the more we can
+ 
+
+911
+00:15:16,600 --> 00:15:19,510
+into the shadow side, the more we can
+see the base color gets darker.
+
+912
+00:15:19,510 --> 00:15:19,520
+see the base color gets darker.
+ 
+
+913
+00:15:19,520 --> 00:15:21,110
+see the base color gets darker.
+And that is because we have a very soft
+
+914
+00:15:21,110 --> 00:15:21,120
+And that is because we have a very soft
+ 
+
+915
+00:15:21,120 --> 00:15:22,790
+And that is because we have a very soft
+gradient that slowly brings in the
+
+916
+00:15:22,790 --> 00:15:22,800
+gradient that slowly brings in the
+ 
+
+917
+00:15:22,800 --> 00:15:24,550
+gradient that slowly brings in the
+shadow color the further we get away
+
+918
+00:15:24,550 --> 00:15:24,560
+shadow color the further we get away
+ 
+
+919
+00:15:24,560 --> 00:15:27,150
+shadow color the further we get away
+from the light source.
+
+920
+00:15:27,150 --> 00:15:27,160
+from the light source.
+ 
+
+921
+00:15:27,160 --> 00:15:29,030
+from the light source.
+And here again, the parts where we see
+
+922
+00:15:29,030 --> 00:15:29,040
+And here again, the parts where we see
+ 
+
+923
+00:15:29,040 --> 00:15:31,230
+And here again, the parts where we see
+the base color transition more and more
+
+924
+00:15:31,230 --> 00:15:31,240
+the base color transition more and more
+ 
+
+925
+00:15:31,240 --> 00:15:33,230
+the base color transition more and more
+into the shadow color the more we get to
+
+926
+00:15:33,230 --> 00:15:33,240
+into the shadow color the more we get to
+ 
+
+927
+00:15:33,240 --> 00:15:35,470
+into the shadow color the more we get to
+the right side.
+
+928
+00:15:35,470 --> 00:15:35,480
+the right side.
+ 
+
+929
+00:15:35,480 --> 00:15:37,470
+the right side.
+So, how do you get this effect? Well, by
+
+930
+00:15:37,470 --> 00:15:37,480
+So, how do you get this effect? Well, by
+ 
+
+931
+00:15:37,480 --> 00:15:39,430
+So, how do you get this effect? Well, by
+using soft masks we can edit our
+
+932
+00:15:39,430 --> 00:15:39,440
+using soft masks we can edit our
+ 
+
+933
+00:15:39,440 --> 00:15:41,190
+using soft masks we can edit our
+lighting render to look something like
+
+934
+00:15:41,190 --> 00:15:41,200
+lighting render to look something like
+ 
+
+935
+00:15:41,200 --> 00:15:42,150
+lighting render to look something like
+this.
+
+936
+00:15:42,150 --> 00:15:42,160
+this.
+ 
+
+937
+00:15:42,160 --> 00:15:43,550
+this.
+And as you know, [music] the darker the
+
+938
+00:15:43,550 --> 00:15:43,560
+And as you know, [music] the darker the
+ 
+
+939
+00:15:43,560 --> 00:15:45,070
+And as you know, [music] the darker the
+lighting render gets the more of the
+
+940
+00:15:45,070 --> 00:15:45,080
+lighting render gets the more of the
+ 
+
+941
+00:15:45,080 --> 00:15:47,350
+lighting render gets the more of the
+shadow color gets revealed. So, that way
+
+942
+00:15:47,350 --> 00:15:47,360
+shadow color gets revealed. So, that way
+ 
+
+943
+00:15:47,360 --> 00:15:49,710
+shadow color gets revealed. So, that way
+this hard edge isn't so sudden anymore
+
+944
+00:15:49,710 --> 00:15:49,720
+this hard edge isn't so sudden anymore
+ 
+
+945
+00:15:49,720 --> 00:15:53,630
+this hard edge isn't so sudden anymore
+and the lighting feels way more soft.
+
+946
+00:15:53,630 --> 00:15:53,640
+and the lighting feels way more soft.
+ 
+
+947
+00:15:53,640 --> 00:15:55,190
+and the lighting feels way more soft.
+And this is usually how you use these
+
+948
+00:15:55,190 --> 00:15:55,200
+And this is usually how you use these
+ 
+
+949
+00:15:55,200 --> 00:15:57,230
+And this is usually how you use these
+masks. [music] The initial goal is to
+
+950
+00:15:57,230 --> 00:15:57,240
+masks. [music] The initial goal is to
+ 
+
+951
+00:15:57,240 --> 00:15:59,470
+masks. [music] The initial goal is to
+make the lighting more soft and improve
+
+952
+00:15:59,470 --> 00:15:59,480
+make the lighting more soft and improve
+ 
+
+953
+00:15:59,480 --> 00:16:01,830
+make the lighting more soft and improve
+the overall composition.
+
+954
+00:16:01,830 --> 00:16:01,840
+the overall composition.
+ 
+
+955
+00:16:01,840 --> 00:16:03,950
+the overall composition.
+Here is another example. On the bottom
+
+956
+00:16:03,950 --> 00:16:03,960
+Here is another example. On the bottom
+ 
+
+957
+00:16:03,960 --> 00:16:05,750
+Here is another example. On the bottom
+of the character there's a very soft
+
+958
+00:16:05,750 --> 00:16:05,760
+of the character there's a very soft
+ 
+
+959
+00:16:05,760 --> 00:16:07,950
+of the character there's a very soft
+gradient that slowly fades in the shadow
+
+960
+00:16:07,950 --> 00:16:07,960
+gradient that slowly fades in the shadow
+ 
+
+961
+00:16:07,960 --> 00:16:09,550
+gradient that slowly fades in the shadow
+color.
+
+962
+00:16:09,550 --> 00:16:09,560
+color.
+ 
+
+963
+00:16:09,560 --> 00:16:11,110
+color.
+And this is actually a super common
+
+964
+00:16:11,110 --> 00:16:11,120
+And this is actually a super common
+ 
+
+965
+00:16:11,120 --> 00:16:13,430
+And this is actually a super common
+gradient since it emulates the natural
+
+966
+00:16:13,430 --> 00:16:13,440
+gradient since it emulates the natural
+ 
+
+967
+00:16:13,440 --> 00:16:15,670
+gradient since it emulates the natural
+ambient light from above.
+
+968
+00:16:15,670 --> 00:16:15,680
+ambient light from above.
+ 
+
+969
+00:16:15,680 --> 00:16:17,150
+ambient light from above.
+But sometimes you can use these masks
+
+970
+00:16:17,150 --> 00:16:17,160
+But sometimes you can use these masks
+ 
+
+971
+00:16:17,160 --> 00:16:19,190
+But sometimes you can use these masks
+for other purposes. Like for example
+
+972
+00:16:19,190 --> 00:16:19,200
+for other purposes. Like for example
+ 
+
+973
+00:16:19,200 --> 00:16:19,881
+for other purposes. Like for example
+here.
+
+974
+00:16:19,881 --> 00:16:19,891
+here.
+ 
+
+975
+00:16:19,891 --> 00:16:19,910
+here.
+>> [music]
+
+976
+00:16:19,910 --> 00:16:19,920
+>> [music]
+ 
+
+977
+00:16:19,920 --> 00:16:21,310
+>> [music]
+>> In this shot we can see a mask being
+
+978
+00:16:21,310 --> 00:16:21,320
+>> In this shot we can see a mask being
+ 
+
+979
+00:16:21,320 --> 00:16:23,030
+>> In this shot we can see a mask being
+used to blend between two different
+
+980
+00:16:23,030 --> 00:16:23,040
+used to blend between two different
+ 
+
+981
+00:16:23,040 --> 00:16:25,230
+used to blend between two different
+versions of the base color. One a bit
+
+982
+00:16:25,230 --> 00:16:25,240
+versions of the base color. One a bit
+ 
+
+983
+00:16:25,240 --> 00:16:28,470
+versions of the base color. One a bit
+more red and one a bit more blue.
+
+984
+00:16:28,470 --> 00:16:28,480
+more red and one a bit more blue.
+ 
+
+985
+00:16:28,480 --> 00:16:30,630
+more red and one a bit more blue.
+By creating all these masks manually the
+
+986
+00:16:30,630 --> 00:16:30,640
+By creating all these masks manually the
+ 
+
+987
+00:16:30,640 --> 00:16:32,350
+By creating all these masks manually the
+artist literally shapes how they want
+
+988
+00:16:32,350 --> 00:16:32,360
+artist literally shapes how they want
+ 
+
+989
+00:16:32,360 --> 00:16:34,110
+artist literally shapes how they want
+the light to be and really guides the
+
+990
+00:16:34,110 --> 00:16:34,120
+the light to be and really guides the
+ 
+
+991
+00:16:34,120 --> 00:16:35,950
+the light to be and really guides the
+viewers attention to the vocal point
+
+992
+00:16:35,950 --> 00:16:35,960
+viewers attention to the vocal point
+ 
+
+993
+00:16:35,960 --> 00:16:39,510
+viewers attention to the vocal point
+which most often is the face.
+
+994
+00:16:39,510 --> 00:16:39,520
+which most often is the face.
+ 
+
+995
+00:16:39,520 --> 00:16:41,110
+which most often is the face.
+And this is also what I meant earlier
+
+996
+00:16:41,110 --> 00:16:41,120
+And this is also what I meant earlier
+ 
+
+997
+00:16:41,120 --> 00:16:43,070
+And this is also what I meant earlier
+with having a super hard shadow but
+
+998
+00:16:43,070 --> 00:16:43,080
+with having a super hard shadow but
+ 
+
+999
+00:16:43,080 --> 00:16:44,771
+with having a super hard shadow but
+still getting that soft lighting effect
+
+1000
+00:16:44,771 --> 00:16:44,781
+still getting that soft lighting effect
+ 
+
+1001
+00:16:44,781 --> 00:16:46,829
+still getting that soft lighting effect
+[music] because with these masks you can
+
+1002
+00:16:46,829 --> 00:16:46,839
+[music] because with these masks you can
+ 
+
+1003
+00:16:46,839 --> 00:16:50,270
+[music] because with these masks you can
+make this hard edge not feel as hard.
+
+1004
+00:16:50,270 --> 00:16:50,280
+make this hard edge not feel as hard.
+ 
+
+1005
+00:16:50,280 --> 00:16:51,990
+make this hard edge not feel as hard.
+And that is the critical effect we need
+
+1006
+00:16:51,990 --> 00:16:52,000
+And that is the critical effect we need
+ 
+
+1007
+00:16:52,000 --> 00:16:54,470
+And that is the critical effect we need
+to achieve the [music] arcane style. So,
+
+1008
+00:16:54,470 --> 00:16:54,480
+to achieve the [music] arcane style. So,
+ 
+
+1009
+00:16:54,480 --> 00:16:56,590
+to achieve the [music] arcane style. So,
+let me show you how to do it. So, now
+
+1010
+00:16:56,590 --> 00:16:56,600
+let me show you how to do it. So, now
+ 
+
+1011
+00:16:56,600 --> 00:16:58,390
+let me show you how to do it. So, now
+let's finally get into the technical
+
+1012
+00:16:58,390 --> 00:16:58,400
+let's finally get into the technical
+ 
+
+1013
+00:16:58,400 --> 00:17:00,750
+let's finally get into the technical
+aspect. It's actually pretty simple.
+
+1014
+00:17:00,750 --> 00:17:00,760
+aspect. It's actually pretty simple.
+ 
+
+1015
+00:17:00,760 --> 00:17:02,470
+aspect. It's actually pretty simple.
+Just as a reminder, this is the base
+
+1016
+00:17:02,470 --> 00:17:02,480
+Just as a reminder, this is the base
+ 
+
+1017
+00:17:02,480 --> 00:17:04,630
+Just as a reminder, this is the base
+color, this is the shadow color and this
+
+1018
+00:17:04,630 --> 00:17:04,640
+color, this is the shadow color and this
+ 
+
+1019
+00:17:04,640 --> 00:17:06,309
+color, this is the shadow color and this
+is the lighting render which tells the
+
+1020
+00:17:06,309 --> 00:17:06,319
+is the lighting render which tells the
+ 
+
+1021
+00:17:06,319 --> 00:17:08,230
+is the lighting render which tells the
+merge node where to reveal the shadow
+
+1022
+00:17:08,230 --> 00:17:08,240
+merge node where to reveal the shadow
+ 
+
+1023
+00:17:08,240 --> 00:17:09,006
+merge node where to reveal the shadow
+color.
+
+1024
+00:17:09,006 --> 00:17:09,016
+color.
+ 
+
+1025
+00:17:09,016 --> 00:17:09,470
+color.
+>> [music]
+
+1026
+00:17:09,470 --> 00:17:09,480
+>> [music]
+ 
+
+1027
+00:17:09,480 --> 00:17:11,309
+>> [music]
+>> So, now we can make any changes we want
+
+1028
+00:17:11,309 --> 00:17:11,319
+>> So, now we can make any changes we want
+ 
+
+1029
+00:17:11,319 --> 00:17:13,069
+>> So, now we can make any changes we want
+to this lighting render as long as the
+
+1030
+00:17:13,069 --> 00:17:13,079
+to this lighting render as long as the
+ 
+
+1031
+00:17:13,079 --> 00:17:14,990
+to this lighting render as long as the
+final output connects to this mask
+
+1032
+00:17:14,990 --> 00:17:15,000
+final output connects to this mask
+ 
+
+1033
+00:17:15,000 --> 00:17:16,910
+final output connects to this mask
+socket.
+
+1034
+00:17:16,910 --> 00:17:16,920
+socket.
+ 
+
+1035
+00:17:16,920 --> 00:17:19,390
+socket.
+Let's start with some curves adjustments
+
+1036
+00:17:19,390 --> 00:17:19,400
+Let's start with some curves adjustments
+ 
+
+1037
+00:17:19,400 --> 00:17:30,190
+Let's start with some curves adjustments
+to make this edge a bit sharper.
+
+1038
+00:17:30,190 --> 00:17:30,200
+
+ 
+
+1039
+00:17:30,200 --> 00:17:32,550
+
+And now let's add a mask. For that, I'm
+
+1040
+00:17:32,550 --> 00:17:32,560
+And now let's add a mask. For that, I'm
+ 
+
+1041
+00:17:32,560 --> 00:17:34,390
+And now let's add a mask. For that, I'm
+going to put a merge node
+
+1042
+00:17:34,390 --> 00:17:34,400
+going to put a merge node
+ 
+
+1043
+00:17:34,400 --> 00:17:36,870
+going to put a merge node
+right here.
+
+1044
+00:17:36,870 --> 00:17:36,880
+right here.
+ 
+
+1045
+00:17:36,880 --> 00:17:38,470
+right here.
+Now we need a background node, which
+
+1046
+00:17:38,470 --> 00:17:38,480
+Now we need a background node, which
+ 
+
+1047
+00:17:38,480 --> 00:17:40,910
+Now we need a background node, which
+gives us a solid black color,
+
+1048
+00:17:40,910 --> 00:17:40,920
+gives us a solid black color,
+ 
+
+1049
+00:17:40,920 --> 00:17:43,630
+gives us a solid black color,
+and connect it into the foreground.
+
+1050
+00:17:43,630 --> 00:17:43,640
+and connect it into the foreground.
+ 
+
+1051
+00:17:43,640 --> 00:17:45,470
+and connect it into the foreground.
+And now we're going to take a polygon
+
+1052
+00:17:45,470 --> 00:17:45,480
+And now we're going to take a polygon
+ 
+
+1053
+00:17:45,480 --> 00:17:47,430
+And now we're going to take a polygon
+node
+
+1054
+00:17:47,430 --> 00:17:47,440
+node
+ 
+
+1055
+00:17:47,440 --> 00:17:49,310
+node
+and connect it into the blue mask input
+
+1056
+00:17:49,310 --> 00:17:49,320
+and connect it into the blue mask input
+ 
+
+1057
+00:17:49,320 --> 00:17:50,910
+and connect it into the blue mask input
+of the merge node.
+
+1058
+00:17:50,910 --> 00:17:50,920
+of the merge node.
+ 
+
+1059
+00:17:50,920 --> 00:17:52,470
+of the merge node.
+For this one, I'm going to create a soft
+
+1060
+00:17:52,470 --> 00:17:52,480
+For this one, I'm going to create a soft
+ 
+
+1061
+00:17:52,480 --> 00:17:58,910
+For this one, I'm going to create a soft
+mask on the bottom of the character.
+
+1062
+00:17:58,910 --> 00:17:58,920
+
+ 
+
+1063
+00:17:58,920 --> 00:18:00,750
+
+And as you can see, it fades in the
+
+1064
+00:18:00,750 --> 00:18:00,760
+And as you can see, it fades in the
+ 
+
+1065
+00:18:00,760 --> 00:18:03,510
+And as you can see, it fades in the
+shadow color.
+
+1066
+00:18:03,510 --> 00:18:03,520
+shadow color.
+ 
+
+1067
+00:18:03,520 --> 00:18:08,070
+shadow color.
+Let's increase the soft edge slider.
+
+1068
+00:18:08,070 --> 00:18:08,080
+
+ 
+
+1069
+00:18:08,080 --> 00:18:10,070
+
+And in the merge node, we can decrease
+
+1070
+00:18:10,070 --> 00:18:10,080
+And in the merge node, we can decrease
+ 
+
+1071
+00:18:10,080 --> 00:18:12,350
+And in the merge node, we can decrease
+this blend slider to decrease the
+
+1072
+00:18:12,350 --> 00:18:12,360
+this blend slider to decrease the
+ 
+
+1073
+00:18:12,360 --> 00:18:15,630
+this blend slider to decrease the
+opacity of the mask.
+
+1074
+00:18:15,630 --> 00:18:15,640
+opacity of the mask.
+ 
+
+1075
+00:18:15,640 --> 00:18:18,550
+opacity of the mask.
+And that is everything you need to know.
+
+1076
+00:18:18,550 --> 00:18:18,560
+And that is everything you need to know.
+ 
+
+1077
+00:18:18,560 --> 00:18:20,430
+And that is everything you need to know.
+So, this is how my final project file
+
+1078
+00:18:20,430 --> 00:18:20,440
+So, this is how my final project file
+ 
+
+1079
+00:18:20,440 --> 00:18:23,910
+So, this is how my final project file
+looks like.
+
+1080
+00:18:23,910 --> 00:18:23,920
+
+ 
+
+1081
+00:18:23,920 --> 00:18:25,950
+
+If we zoom in,
+
+1082
+00:18:25,950 --> 00:18:25,960
+If we zoom in,
+ 
+
+1083
+00:18:25,960 --> 00:18:27,710
+If we zoom in,
+I've used the mask to blend between two
+
+1084
+00:18:27,710 --> 00:18:27,720
+I've used the mask to blend between two
+ 
+
+1085
+00:18:27,720 --> 00:18:29,550
+I've used the mask to blend between two
+different base colors.
+
+1086
+00:18:29,550 --> 00:18:29,560
+different base colors.
+ 
+
+1087
+00:18:29,560 --> 00:18:31,870
+different base colors.
+One is dark and blue, and the other is
+
+1088
+00:18:31,870 --> 00:18:31,880
+One is dark and blue, and the other is
+ 
+
+1089
+00:18:31,880 --> 00:18:34,350
+One is dark and blue, and the other is
+more warm and brighter.
+
+1090
+00:18:34,350 --> 00:18:34,360
+more warm and brighter.
+ 
+
+1091
+00:18:34,360 --> 00:18:35,590
+more warm and brighter.
+Now, for the actual shadow, I'm going to
+
+1092
+00:18:35,590 --> 00:18:35,600
+Now, for the actual shadow, I'm going to
+ 
+
+1093
+00:18:35,600 --> 00:18:37,910
+Now, for the actual shadow, I'm going to
+preview the lighting render so you can
+
+1094
+00:18:37,910 --> 00:18:37,920
+preview the lighting render so you can
+ 
+
+1095
+00:18:37,920 --> 00:18:39,550
+preview the lighting render so you can
+see all the adjustments getting made
+
+1096
+00:18:39,550 --> 00:18:39,560
+see all the adjustments getting made
+ 
+
+1097
+00:18:39,560 --> 00:18:42,830
+see all the adjustments getting made
+before it gets used as a mask.
+
+1098
+00:18:42,830 --> 00:18:42,840
+before it gets used as a mask.
+ 
+
+1099
+00:18:42,840 --> 00:18:44,470
+before it gets used as a mask.
+First, I've added this mask that darkens
+
+1100
+00:18:44,470 --> 00:18:44,480
+First, I've added this mask that darkens
+ 
+
+1101
+00:18:44,480 --> 00:18:46,790
+First, I've added this mask that darkens
+the bottom of the character.
+
+1102
+00:18:46,790 --> 00:18:46,800
+the bottom of the character.
+ 
+
+1103
+00:18:46,800 --> 00:18:48,150
+the bottom of the character.
+Then another one to further define the
+
+1104
+00:18:48,150 --> 00:18:48,160
+Then another one to further define the
+ 
+
+1105
+00:18:48,160 --> 00:18:49,990
+Then another one to further define the
+shape of the face.
+
+1106
+00:18:49,990 --> 00:18:50,000
+shape of the face.
+ 
+
+1107
+00:18:50,000 --> 00:18:52,430
+shape of the face.
+Another one for the hair.
+
+1108
+00:18:52,430 --> 00:18:52,440
+Another one for the hair.
+ 
+
+1109
+00:18:52,440 --> 00:18:54,190
+Another one for the hair.
+And then I've used a mask that merges a
+
+1110
+00:18:54,190 --> 00:18:54,200
+And then I've used a mask that merges a
+ 
+
+1111
+00:18:54,200 --> 00:18:56,390
+And then I've used a mask that merges a
+white color on top, essentially removing
+
+1112
+00:18:56,390 --> 00:18:56,400
+white color on top, essentially removing
+ 
+
+1113
+00:18:56,400 --> 00:18:59,150
+white color on top, essentially removing
+some of the shadow from the face.
+
+1114
+00:18:59,150 --> 00:18:59,160
+some of the shadow from the face.
+ 
+
+1115
+00:18:59,160 --> 00:19:01,310
+some of the shadow from the face.
+And now this is the final result, before
+
+1116
+00:19:01,310 --> 00:19:01,320
+And now this is the final result, before
+ 
+
+1117
+00:19:01,320 --> 00:19:04,943
+And now this is the final result, before
+the masks and after.
+
+1118
+00:19:04,943 --> 00:19:04,953
+
+ 
+
+1119
+00:19:04,953 --> 00:19:05,270
+
+>> [snorts]
+
+1120
+00:19:05,270 --> 00:19:05,280
+>> [snorts]
+ 
+
+1121
+00:19:05,280 --> 00:19:07,830
+>> [snorts]
+>> Nice. And these techniques are also used
+
+1122
+00:19:07,830 --> 00:19:07,840
+>> Nice. And these techniques are also used
+ 
+
+1123
+00:19:07,840 --> 00:19:10,230
+>> Nice. And these techniques are also used
+in many other animated pieces. Valorant
+
+1124
+00:19:10,230 --> 00:19:10,240
+in many other animated pieces. Valorant
+ 
+
+1125
+00:19:10,240 --> 00:19:11,550
+in many other animated pieces. Valorant
+and League of Legends cinematics are
+
+1126
+00:19:11,550 --> 00:19:11,560
+and League of Legends cinematics are
+ 
+
+1127
+00:19:11,560 --> 00:19:14,270
+and League of Legends cinematics are
+basically the exact same.
+
+1128
+00:19:14,270 --> 00:19:14,280
+basically the exact same.
+ 
+
+1129
+00:19:14,280 --> 00:19:15,830
+basically the exact same.
+But even in less similar ones like The
+
+1130
+00:19:15,830 --> 00:19:15,840
+But even in less similar ones like The
+ 
+
+1131
+00:19:15,840 --> 00:19:17,910
+But even in less similar ones like The
+Bad Guys, they make use of these
+
+1132
+00:19:17,910 --> 00:19:17,920
+Bad Guys, they make use of these
+ 
+
+1133
+00:19:17,920 --> 00:19:20,070
+Bad Guys, they make use of these
+techniques. For example, the rim lights
+
+1134
+00:19:20,070 --> 00:19:20,080
+techniques. For example, the rim lights
+ 
+
+1135
+00:19:20,080 --> 00:19:21,910
+techniques. For example, the rim lights
+look like they were made the exact same
+
+1136
+00:19:21,910 --> 00:19:21,920
+look like they were made the exact same
+ 
+
+1137
+00:19:21,920 --> 00:19:24,150
+look like they were made the exact same
+way because they have the same 2D
+
+1138
+00:19:24,150 --> 00:19:24,160
+way because they have the same 2D
+ 
+
+1139
+00:19:24,160 --> 00:19:27,830
+way because they have the same 2D
+flattened look to them.
+
+1140
+00:19:27,830 --> 00:19:27,840
+
+ 
+
+1141
+00:19:27,840 --> 00:19:29,270
+
+And they also seem to use masks and
+
+1142
+00:19:29,270 --> 00:19:29,280
+And they also seem to use masks and
+ 
+
+1143
+00:19:29,280 --> 00:19:31,470
+And they also seem to use masks and
+gradients to darken certain sections of
+
+1144
+00:19:31,470 --> 00:19:31,480
+gradients to darken certain sections of
+ 
+
+1145
+00:19:31,480 --> 00:19:34,670
+gradients to darken certain sections of
+their characters.
+
+1146
+00:19:34,670 --> 00:19:34,680
+
+ 
+
+1147
+00:19:34,680 --> 00:19:36,590
+
+And even Spider-Verse can be recreated
+
+1148
+00:19:36,590 --> 00:19:36,600
+And even Spider-Verse can be recreated
+ 
+
+1149
+00:19:36,600 --> 00:19:38,710
+And even Spider-Verse can be recreated
+with these techniques.
+
+1150
+00:19:38,710 --> 00:19:38,720
+with these techniques.
+ 
+
+1151
+00:19:38,720 --> 00:19:40,390
+with these techniques.
+We can render out a rim light and
+
+1152
+00:19:40,390 --> 00:19:40,400
+We can render out a rim light and
+ 
+
+1153
+00:19:40,400 --> 00:19:42,030
+We can render out a rim light and
+manipulate it in a way so it shows
+
+1154
+00:19:42,030 --> 00:19:42,040
+manipulate it in a way so it shows
+ 
+
+1155
+00:19:42,040 --> 00:19:44,270
+manipulate it in a way so it shows
+halftones. And then we use these
+
+1156
+00:19:44,270 --> 00:19:44,280
+halftones. And then we use these
+ 
+
+1157
+00:19:44,280 --> 00:19:45,870
+halftones. And then we use these
+brightness values to reveal [music] a
+
+1158
+00:19:45,870 --> 00:19:45,880
+brightness values to reveal [music] a
+ 
+
+1159
+00:19:45,880 --> 00:19:48,830
+brightness values to reveal [music] a
+solid color.
+
+1160
+00:19:48,830 --> 00:19:48,840
+
+ 
+
+1161
+00:19:48,840 --> 00:19:53,670
+
+And the same thing for the hatching.
+
+1162
+00:19:53,670 --> 00:19:53,680
+
+ 
+
+1163
+00:19:53,680 --> 00:19:56,670
+
+>> You got to tell them I can do this.
+
+1164
+00:19:56,670 --> 00:19:56,680
+>> You got to tell them I can do this.
+ 
+
+1165
+00:19:56,680 --> 00:19:58,910
+>> You got to tell them I can do this.
+>> So that's it. The two main techniques
+
+1166
+00:19:58,910 --> 00:19:58,920
+>> So that's it. The two main techniques
+ 
+
+1167
+00:19:58,920 --> 00:20:00,950
+>> So that's it. The two main techniques
+Arcane uses is the lighting render
+
+1168
+00:20:00,950 --> 00:20:00,960
+Arcane uses is the lighting render
+ 
+
+1169
+00:20:00,960 --> 00:20:03,030
+Arcane uses is the lighting render
+technique as a base of everything, and
+
+1170
+00:20:03,030 --> 00:20:03,040
+technique as a base of everything, and
+ 
+
+1171
+00:20:03,040 --> 00:20:04,670
+technique as a base of everything, and
+then they manually add masks [music] to
+
+1172
+00:20:04,670 --> 00:20:04,680
+then they manually add masks [music] to
+ 
+
+1173
+00:20:04,680 --> 00:20:06,030
+then they manually add masks [music] to
+further define how the lighting is
+
+1174
+00:20:06,030 --> 00:20:06,040
+further define how the lighting is
+ 
+
+1175
+00:20:06,040 --> 00:20:08,030
+further define how the lighting is
+shaped and add way more depth and
+
+1176
+00:20:08,030 --> 00:20:08,040
+shaped and add way more depth and
+ 
+
+1177
+00:20:08,040 --> 00:20:10,390
+shaped and add way more depth and
+composition to the image. And now since
+
+1178
+00:20:10,390 --> 00:20:10,400
+composition to the image. And now since
+ 
+
+1179
+00:20:10,400 --> 00:20:12,110
+composition to the image. And now since
+you know the secrets, you can tell that
+
+1180
+00:20:12,110 --> 00:20:12,120
+you know the secrets, you can tell that
+ 
+
+1181
+00:20:12,120 --> 00:20:14,110
+you know the secrets, you can tell that
+it's not some mysterious filter, but
+
+1182
+00:20:14,110 --> 00:20:14,120
+it's not some mysterious filter, but
+ 
+
+1183
+00:20:14,120 --> 00:20:15,790
+it's not some mysterious filter, but
+actually a super straightforward way of
+
+1184
+00:20:15,790 --> 00:20:15,800
+actually a super straightforward way of
+ 
+
+1185
+00:20:15,800 --> 00:20:17,390
+actually a super straightforward way of
+doing it [music] with the most basic
+
+1186
+00:20:17,390 --> 00:20:17,400
+doing it [music] with the most basic
+ 
+
+1187
+00:20:17,400 --> 00:20:19,270
+doing it [music] with the most basic
+tools.
+
+1188
+00:20:19,270 --> 00:20:19,280
+tools.
+ 
+
+1189
+00:20:19,280 --> 00:20:21,950
+tools.
+>> It's not magical trick. It's just artist
+
+1190
+00:20:21,950 --> 00:20:21,960
+>> It's not magical trick. It's just artist
+ 
+
+1191
+00:20:21,960 --> 00:20:24,630
+>> It's not magical trick. It's just artist
+and people who doing beautiful things.
+
+1192
+00:20:24,630 --> 00:20:24,640
+and people who doing beautiful things.
+ 
+
+1193
+00:20:24,640 --> 00:20:25,870
+and people who doing beautiful things.
+>> And this is exactly what these
+
+1194
+00:20:25,870 --> 00:20:25,880
+>> And this is exactly what these
+ 
+
+1195
+00:20:25,880 --> 00:20:28,390
+>> And this is exactly what these
+techniques are. We can really put in the
+
+1196
+00:20:28,390 --> 00:20:28,400
+techniques are. We can really put in the
+ 
+
+1197
+00:20:28,400 --> 00:20:30,950
+techniques are. We can really put in the
+colors and values we want, disconnecting
+
+1198
+00:20:30,950 --> 00:20:30,960
+colors and values we want, disconnecting
+ 
+
+1199
+00:20:30,960 --> 00:20:32,390
+colors and values we want, disconnecting
+from reality and actually [music]
+
+1200
+00:20:32,390 --> 00:20:32,400
+from reality and actually [music]
+ 
+
+1201
+00:20:32,400 --> 00:20:34,590
+from reality and actually [music]
+showing what we want to express.
+
+1202
+00:20:34,590 --> 00:20:34,600
+showing what we want to express.
+ 
+
+1203
+00:20:34,600 --> 00:20:36,670
+showing what we want to express.
+And that is what makes Arcane so special
+
+1204
+00:20:36,670 --> 00:20:36,680
+And that is what makes Arcane so special
+ 
+
+1205
+00:20:36,680 --> 00:20:39,190
+And that is what makes Arcane so special
+and so unbelievably inspiring.
+
+1206
+00:20:39,190 --> 00:20:39,200
+and so unbelievably inspiring.
+ 
+
+1207
+00:20:39,200 --> 00:20:41,510
+and so unbelievably inspiring.
+So with that, let's finish this.
+
+1208
+00:20:41,510 --> 00:20:41,520
+So with that, let's finish this.
+ 
+
+1209
+00:20:41,520 --> 00:20:42,870
+So with that, let's finish this.
+Here's a quick way to level up your
+
+1210
+00:20:42,870 --> 00:20:42,880
+Here's a quick way to level up your
+ 
+
+1211
+00:20:42,880 --> 00:20:45,150
+Here's a quick way to level up your
+shot. I brighten up the eyes to make
+
+1212
+00:20:45,150 --> 00:20:45,160
+shot. I brighten up the eyes to make
+ 
+
+1213
+00:20:45,160 --> 00:20:46,469
+shot. I brighten up the eyes to make
+them stand out more.
+
+1214
+00:20:46,469 --> 00:20:46,479
+them stand out more.
+ 
+
+1215
+00:20:46,479 --> 00:20:46,710
+them stand out more.
+>> [music]
+
+1216
+00:20:46,710 --> 00:20:46,720
+>> [music]
+ 
+
+1217
+00:20:46,720 --> 00:20:48,270
+>> [music]
+>> If you take a look at Arcane, they also
+
+1218
+00:20:48,270 --> 00:20:48,280
+>> If you take a look at Arcane, they also
+ 
+
+1219
+00:20:48,280 --> 00:20:50,070
+>> If you take a look at Arcane, they also
+do this. The eyes should be way darker
+
+1220
+00:20:50,070 --> 00:20:50,080
+do this. The eyes should be way darker
+ 
+
+1221
+00:20:50,080 --> 00:20:51,270
+do this. The eyes should be way darker
+in this shot, but they are freaking
+
+1222
+00:20:51,270 --> 00:20:51,280
+in this shot, but they are freaking
+ 
+
+1223
+00:20:51,280 --> 00:20:52,550
+in this shot, but they are freaking
+glowing.
+
+1224
+00:20:52,550 --> 00:20:52,560
+glowing.
+ 
+
+1225
+00:20:52,560 --> 00:20:53,750
+glowing.
+And now we're fully done with our
+
+1226
+00:20:53,750 --> 00:20:53,760
+And now we're fully done with our
+ 
+
+1227
+00:20:53,760 --> 00:20:55,750
+And now we're fully done with our
+character and we just have to do a few
+
+1228
+00:20:55,750 --> 00:20:55,760
+character and we just have to do a few
+ 
+
+1229
+00:20:55,760 --> 00:20:57,390
+character and we just have to do a few
+more effects to the background and the
+
+1230
+00:20:57,390 --> 00:20:57,400
+more effects to the background and the
+ 
+
+1231
+00:20:57,400 --> 00:20:58,790
+more effects to the background and the
+whole image.
+
+1232
+00:20:58,790 --> 00:20:58,800
+whole image.
+ 
+
+1233
+00:20:58,800 --> 00:21:00,590
+whole image.
+First of all, some haze and glows in the
+
+1234
+00:21:00,590 --> 00:21:00,600
+First of all, some haze and glows in the
+ 
+
+1235
+00:21:00,600 --> 00:21:03,030
+First of all, some haze and glows in the
+background to add more depth.
+
+1236
+00:21:03,030 --> 00:21:03,040
+background to add more depth.
+ 
+
+1237
+00:21:03,040 --> 00:21:04,830
+background to add more depth.
+And then some final lens effects like
+
+1238
+00:21:04,830 --> 00:21:04,840
+And then some final lens effects like
+ 
+
+1239
+00:21:04,840 --> 00:21:06,190
+And then some final lens effects like
+lens blur, [music]
+
+1240
+00:21:06,190 --> 00:21:06,200
+lens blur, [music]
+ 
+
+1241
+00:21:06,200 --> 00:21:09,350
+lens blur, [music]
+motion blur, chromatic aberration, some
+
+1242
+00:21:09,350 --> 00:21:09,360
+motion blur, chromatic aberration, some
+ 
+
+1243
+00:21:09,360 --> 00:21:12,110
+motion blur, chromatic aberration, some
+grain, and finally a lens flare, a
+
+1244
+00:21:12,110 --> 00:21:12,120
+grain, and finally a lens flare, a
+ 
+
+1245
+00:21:12,120 --> 00:21:14,390
+grain, and finally a lens flare, a
+vignette, and a little bit of exposure
+
+1246
+00:21:14,390 --> 00:21:14,400
+vignette, and a little bit of exposure
+ 
+
+1247
+00:21:14,400 --> 00:21:16,750
+vignette, and a little bit of exposure
+flicker to add that natural camera feel.
+
+1248
+00:21:16,750 --> 00:21:16,760
+flicker to add that natural camera feel.
+ 
+
+1249
+00:21:16,760 --> 00:21:18,550
+flicker to add that natural camera feel.
+And now, ladies and gentlemen, let me
+
+1250
+00:21:18,550 --> 00:21:18,560
+And now, ladies and gentlemen, let me
+ 
+
+1251
+00:21:18,560 --> 00:21:31,230
+And now, ladies and gentlemen, let me
+show you what we've created.
+
+1252
+00:21:31,230 --> 00:21:31,240
+
+ 
+
+1253
+00:21:31,240 --> 00:21:32,470
+
+Thank you so much for watching this
+
+1254
+00:21:32,470 --> 00:21:32,480
+Thank you so much for watching this
+ 
+
+1255
+00:21:32,480 --> 00:21:33,750
+Thank you so much for watching this
+video. I hope you've learned something
+
+1256
+00:21:33,750 --> 00:21:33,760
+video. I hope you've learned something
+ 
+
+1257
+00:21:33,760 --> 00:21:34,284
+video. I hope you've learned something
+new.
+
+1258
+00:21:34,284 --> 00:21:34,294
+new.
+ 
+
+1259
+00:21:34,294 --> 00:21:34,310
+new.
+>> [music]
+
+1260
+00:21:34,310 --> 00:21:34,320
+>> [music]
+ 
+
+1261
+00:21:34,320 --> 00:21:35,790
+>> [music]
+>> I have some crazy projects planned that
+
+1262
+00:21:35,790 --> 00:21:35,800
+>> I have some crazy projects planned that
+ 
+
+1263
+00:21:35,800 --> 00:21:37,110
+>> I have some crazy projects planned that
+I'm super excited to share with you
+
+1264
+00:21:37,110 --> 00:21:37,120
+I'm super excited to share with you
+ 
+
+1265
+00:21:37,120 --> 00:21:38,910
+I'm super excited to share with you
+guys. So, if you don't want to miss out,
+
+1266
+00:21:38,910 --> 00:21:38,920
+guys. So, if you don't want to miss out,
+ 
+
+1267
+00:21:38,920 --> 00:21:40,630
+guys. So, if you don't want to miss out,
+feel free to subscribe. Love you all,
+
+1268
+00:21:40,630 --> 00:21:40,640
+feel free to subscribe. Love you all,
+ 
+
+1269
+00:21:40,640 --> 00:21:46,730
+feel free to subscribe. Love you all,
+and I'll see you in the next one.
+
+1270
+00:21:46,730 --> 00:21:46,740
+
+ 
+
+1271
+00:21:46,740 --> 00:21:50,990
+
+>> [music]
+
+1272
+00:21:50,990 --> 00:21:51,000
+
+ 
+
+1273
+00:21:51,000 --> 00:21:55,245
+
+>> Secret sauce.
+
+1274
+00:21:55,245 --> 00:21:55,255
+
+ 
+
+1275
+00:21:55,255 --> 00:21:55,710
+
+>> [laughter]
+
+1276
+00:21:55,710 --> 00:21:55,720
+>> [laughter]
+ 
+
+1277
+00:21:55,720 --> 00:21:58,360
+>> [laughter]
+>> [\h__\h] me.
+

@@ -1,0 +1,3835 @@
+1
+00:00:00,040 --> 00:00:03,869
+
+I recruited Arcane on my own for $0 the
+
+2
+00:00:03,869 --> 00:00:03,879
+I recruited Arcane on my own for $0 the
+ 
+
+3
+00:00:03,879 --> 00:00:05,430
+I recruited Arcane on my own for $0 the
+series holds the record of being the
+
+4
+00:00:05,430 --> 00:00:05,440
+series holds the record of being the
+ 
+
+5
+00:00:05,440 --> 00:00:07,630
+series holds the record of being the
+most expensive animated series ever
+
+6
+00:00:07,630 --> 00:00:07,640
+most expensive animated series ever
+ 
+
+7
+00:00:07,640 --> 00:00:09,990
+most expensive animated series ever
+created now I wanted to see if I can
+
+8
+00:00:09,990 --> 00:00:10,000
+created now I wanted to see if I can
+ 
+
+9
+00:00:10,000 --> 00:00:12,070
+created now I wanted to see if I can
+recreate a scene from the show without
+
+10
+00:00:12,070 --> 00:00:12,080
+recreate a scene from the show without
+ 
+
+11
+00:00:12,080 --> 00:00:14,270
+recreate a scene from the show without
+spending any money at all all the tools
+
+12
+00:00:14,270 --> 00:00:14,280
+spending any money at all all the tools
+ 
+
+13
+00:00:14,280 --> 00:00:16,430
+spending any money at all all the tools
+I use will be free and all the assets I
+
+14
+00:00:16,430 --> 00:00:16,440
+I use will be free and all the assets I
+ 
+
+15
+00:00:16,440 --> 00:00:18,630
+I use will be free and all the assets I
+need will be made by me and after
+
+16
+00:00:18,630 --> 00:00:18,640
+need will be made by me and after
+ 
+
+17
+00:00:18,640 --> 00:00:20,070
+need will be made by me and after
+looking at every official making of
+
+18
+00:00:20,070 --> 00:00:20,080
+looking at every official making of
+ 
+
+19
+00:00:20,080 --> 00:00:21,910
+looking at every official making of
+material I could find I think I've not
+
+20
+00:00:21,910 --> 00:00:21,920
+material I could find I think I've not
+ 
+
+21
+00:00:21,920 --> 00:00:23,509
+material I could find I think I've not
+only discovered the techniques they've
+
+22
+00:00:23,509 --> 00:00:23,519
+only discovered the techniques they've
+ 
+
+23
+00:00:23,519 --> 00:00:25,589
+only discovered the techniques they've
+used to create the show but also what it
+
+24
+00:00:25,589 --> 00:00:25,599
+used to create the show but also what it
+ 
+
+25
+00:00:25,599 --> 00:00:31,709
+used to create the show but also what it
+takes to create something truly special
+
+26
+00:00:31,709 --> 00:00:31,719
+
+ 
+
+27
+00:00:31,719 --> 00:00:35,389
+
+yeah you make me
+
+28
+00:00:35,389 --> 00:00:35,399
+yeah you make me
+ 
+
+29
+00:00:35,399 --> 00:00:39,510
+yeah you make me
+nous true this was probably the most
+
+30
+00:00:39,510 --> 00:00:39,520
+nous true this was probably the most
+ 
+
+31
+00:00:39,520 --> 00:00:41,470
+nous true this was probably the most
+important part of this whole project if
+
+32
+00:00:41,470 --> 00:00:41,480
+important part of this whole project if
+ 
+
+33
+00:00:41,480 --> 00:00:42,830
+important part of this whole project if
+I can't recreate this rocket launcher
+
+34
+00:00:42,830 --> 00:00:42,840
+I can't recreate this rocket launcher
+ 
+
+35
+00:00:42,840 --> 00:00:44,950
+I can't recreate this rocket launcher
+close enough I might as well cancel the
+
+36
+00:00:44,950 --> 00:00:44,960
+close enough I might as well cancel the
+ 
+
+37
+00:00:44,960 --> 00:00:46,790
+close enough I might as well cancel the
+whole project because it will only
+
+38
+00:00:46,790 --> 00:00:46,800
+whole project because it will only
+ 
+
+39
+00:00:46,800 --> 00:00:48,830
+whole project because it will only
+really get harder from here and I need
+
+40
+00:00:48,830 --> 00:00:48,840
+really get harder from here and I need
+ 
+
+41
+00:00:48,840 --> 00:00:50,750
+really get harder from here and I need
+it for the actual scene anyway so I
+
+42
+00:00:50,750 --> 00:00:50,760
+it for the actual scene anyway so I
+ 
+
+43
+00:00:50,760 --> 00:00:53,229
+it for the actual scene anyway so I
+might as well start with it as a 3D
+
+44
+00:00:53,229 --> 00:00:53,239
+might as well start with it as a 3D
+ 
+
+45
+00:00:53,239 --> 00:00:55,470
+might as well start with it as a 3D
+artist creating the model wasn't really
+
+46
+00:00:55,470 --> 00:00:55,480
+artist creating the model wasn't really
+ 
+
+47
+00:00:55,480 --> 00:00:57,389
+artist creating the model wasn't really
+an issue I was more worried about the
+
+48
+00:00:57,389 --> 00:00:57,399
+an issue I was more worried about the
+ 
+
+49
+00:00:57,399 --> 00:01:00,509
+an issue I was more worried about the
+special technique Arcane uses to shade
+
+50
+00:01:00,509 --> 00:01:00,519
+special technique Arcane uses to shade
+ 
+
+51
+00:01:00,519 --> 00:01:03,549
+special technique Arcane uses to shade
+their 3D objects they paint every model
+
+52
+00:01:03,549 --> 00:01:03,559
+their 3D objects they paint every model
+ 
+
+53
+00:01:03,559 --> 00:01:05,310
+their 3D objects they paint every model
+including some of the shadows and
+
+54
+00:01:05,310 --> 00:01:05,320
+including some of the shadows and
+ 
+
+55
+00:01:05,320 --> 00:01:07,670
+including some of the shadows and
+highlights by hand the last time I
+
+56
+00:01:07,670 --> 00:01:07,680
+highlights by hand the last time I
+ 
+
+57
+00:01:07,680 --> 00:01:09,070
+highlights by hand the last time I
+painted a model in this way it was
+
+58
+00:01:09,070 --> 00:01:09,080
+painted a model in this way it was
+ 
+
+59
+00:01:09,080 --> 00:01:11,350
+painted a model in this way it was
+almost 2 years ago so I wasn't really
+
+60
+00:01:11,350 --> 00:01:11,360
+almost 2 years ago so I wasn't really
+ 
+
+61
+00:01:11,360 --> 00:01:13,190
+almost 2 years ago so I wasn't really
+sure if I could recreate the style well
+
+62
+00:01:13,190 --> 00:01:13,200
+sure if I could recreate the style well
+ 
+
+63
+00:01:13,200 --> 00:01:15,789
+sure if I could recreate the style well
+enough now I started by blocking out the
+
+64
+00:01:15,789 --> 00:01:15,799
+enough now I started by blocking out the
+ 
+
+65
+00:01:15,799 --> 00:01:18,070
+enough now I started by blocking out the
+basic colors and some simple Shadows to
+
+66
+00:01:18,070 --> 00:01:18,080
+basic colors and some simple Shadows to
+ 
+
+67
+00:01:18,080 --> 00:01:20,429
+basic colors and some simple Shadows to
+define the basic shapes of the model
+
+68
+00:01:20,429 --> 00:01:20,439
+define the basic shapes of the model
+ 
+
+69
+00:01:20,439 --> 00:01:22,069
+define the basic shapes of the model
+afterwards I refined the most important
+
+70
+00:01:22,069 --> 00:01:22,079
+afterwards I refined the most important
+ 
+
+71
+00:01:22,079 --> 00:01:23,710
+afterwards I refined the most important
+parts which also allowed me to add
+
+72
+00:01:23,710 --> 00:01:23,720
+parts which also allowed me to add
+ 
+
+73
+00:01:23,720 --> 00:01:25,910
+parts which also allowed me to add
+smaller details that aren't actually in
+
+74
+00:01:25,910 --> 00:01:25,920
+smaller details that aren't actually in
+ 
+
+75
+00:01:25,920 --> 00:01:28,590
+smaller details that aren't actually in
+the 3D model itself now it already looks
+
+76
+00:01:28,590 --> 00:01:28,600
+the 3D model itself now it already looks
+ 
+
+77
+00:01:28,600 --> 00:01:30,749
+the 3D model itself now it already looks
+pretty good but it doesn't really react
+
+78
+00:01:30,749 --> 00:01:30,759
+pretty good but it doesn't really react
+ 
+
+79
+00:01:30,759 --> 00:01:33,350
+pretty good but it doesn't really react
+to any Lighting in the 3D scene yet so
+
+80
+00:01:33,350 --> 00:01:33,360
+to any Lighting in the 3D scene yet so
+ 
+
+81
+00:01:33,360 --> 00:01:34,990
+to any Lighting in the 3D scene yet so
+to finish it I plugged the final
+
+82
+00:01:34,990 --> 00:01:35,000
+to finish it I plugged the final
+ 
+
+83
+00:01:35,000 --> 00:01:36,710
+to finish it I plugged the final
+textures into a Shader so that it looks
+
+84
+00:01:36,710 --> 00:01:36,720
+textures into a Shader so that it looks
+ 
+
+85
+00:01:36,720 --> 00:01:38,429
+textures into a Shader so that it looks
+like it is actually living in the
+
+86
+00:01:38,429 --> 00:01:38,439
+like it is actually living in the
+ 
+
+87
+00:01:38,439 --> 00:01:41,030
+like it is actually living in the
+environment around it and this is the
+
+88
+00:01:41,030 --> 00:01:41,040
+environment around it and this is the
+ 
+
+89
+00:01:41,040 --> 00:01:43,550
+environment around it and this is the
+final result I think this looks good
+
+90
+00:01:43,550 --> 00:01:43,560
+final result I think this looks good
+ 
+
+91
+00:01:43,560 --> 00:01:46,030
+final result I think this looks good
+enough to continue so now let's go a
+
+92
+00:01:46,030 --> 00:01:46,040
+enough to continue so now let's go a
+ 
+
+93
+00:01:46,040 --> 00:01:47,709
+enough to continue so now let's go a
+little bit more in depth and see what it
+
+94
+00:01:47,709 --> 00:01:47,719
+little bit more in depth and see what it
+ 
+
+95
+00:01:47,719 --> 00:01:52,950
+little bit more in depth and see what it
+takes to create a full Arcane style
+
+96
+00:01:52,950 --> 00:01:52,960
+
+ 
+
+97
+00:01:52,960 --> 00:01:56,149
+
+animation St for a minute just like
+
+98
+00:01:56,149 --> 00:01:56,159
+animation St for a minute just like
+ 
+
+99
+00:01:56,159 --> 00:01:57,789
+animation St for a minute just like
+creating the rocket launcher you can
+
+100
+00:01:57,789 --> 00:01:57,799
+creating the rocket launcher you can
+ 
+
+101
+00:01:57,799 --> 00:01:59,109
+creating the rocket launcher you can
+separate the process for the whole
+
+102
+00:01:59,109 --> 00:01:59,119
+separate the process for the whole
+ 
+
+103
+00:01:59,119 --> 00:02:01,709
+separate the process for the whole
+animation into two main steps as well
+
+104
+00:02:01,709 --> 00:02:01,719
+animation into two main steps as well
+ 
+
+105
+00:02:01,719 --> 00:02:03,429
+animation into two main steps as well
+with one bonus Step at the end that the
+
+106
+00:02:03,429 --> 00:02:03,439
+with one bonus Step at the end that the
+ 
+
+107
+00:02:03,439 --> 00:02:05,990
+with one bonus Step at the end that the
+creators like to call the secret
+
+108
+00:02:05,990 --> 00:02:06,000
+creators like to call the secret
+ 
+
+109
+00:02:06,000 --> 00:02:08,469
+creators like to call the secret
+ingredient this three-step process is
+
+110
+00:02:08,469 --> 00:02:08,479
+ingredient this three-step process is
+ 
+
+111
+00:02:08,479 --> 00:02:10,229
+ingredient this three-step process is
+what most objects go through to reach
+
+112
+00:02:10,229 --> 00:02:10,239
+what most objects go through to reach
+ 
+
+113
+00:02:10,239 --> 00:02:12,589
+what most objects go through to reach
+their final look in the show including
+
+114
+00:02:12,589 --> 00:02:12,599
+their final look in the show including
+ 
+
+115
+00:02:12,599 --> 00:02:18,229
+their final look in the show including
+of course Jinx no off I'm I'm try Focus
+
+116
+00:02:18,229 --> 00:02:18,239
+of course Jinx no off I'm I'm try Focus
+ 
+
+117
+00:02:18,239 --> 00:02:20,670
+of course Jinx no off I'm I'm try Focus
+figh I started by sculpting her body
+
+118
+00:02:20,670 --> 00:02:20,680
+figh I started by sculpting her body
+ 
+
+119
+00:02:20,680 --> 00:02:22,270
+figh I started by sculpting her body
+with the help of some references from
+
+120
+00:02:22,270 --> 00:02:22,280
+with the help of some references from
+ 
+
+121
+00:02:22,280 --> 00:02:23,030
+with the help of some references from
+the
+
+122
+00:02:23,030 --> 00:02:23,040
+the
+ 
+
+123
+00:02:23,040 --> 00:02:25,309
+the
+show in most big Productions you would
+
+124
+00:02:25,309 --> 00:02:25,319
+show in most big Productions you would
+ 
+
+125
+00:02:25,319 --> 00:02:27,229
+show in most big Productions you would
+start with 2D concept art for each
+
+126
+00:02:27,229 --> 00:02:27,239
+start with 2D concept art for each
+ 
+
+127
+00:02:27,239 --> 00:02:30,309
+start with 2D concept art for each
+character and then 3D artists try to cre
+
+128
+00:02:30,309 --> 00:02:30,319
+character and then 3D artists try to cre
+ 
+
+129
+00:02:30,319 --> 00:02:33,460
+character and then 3D artists try to cre
+those Concepts as closely as
+
+130
+00:02:33,460 --> 00:02:33,470
+those Concepts as closely as
+ 
+
+131
+00:02:33,470 --> 00:02:36,869
+those Concepts as closely as
+[Music]
+
+132
+00:02:36,869 --> 00:02:36,879
+
+ 
+
+133
+00:02:36,879 --> 00:02:38,869
+
+possible the scene I'm trying to
+
+134
+00:02:38,869 --> 00:02:38,879
+possible the scene I'm trying to
+ 
+
+135
+00:02:38,879 --> 00:02:41,030
+possible the scene I'm trying to
+recreate is the one at the end of season
+
+136
+00:02:41,030 --> 00:02:41,040
+recreate is the one at the end of season
+ 
+
+137
+00:02:41,040 --> 00:02:43,309
+recreate is the one at the end of season
+1 where she fires the rocket launcher
+
+138
+00:02:43,309 --> 00:02:43,319
+1 where she fires the rocket launcher
+ 
+
+139
+00:02:43,319 --> 00:02:45,390
+1 where she fires the rocket launcher
+for the first time I already have one
+
+140
+00:02:45,390 --> 00:02:45,400
+for the first time I already have one
+ 
+
+141
+00:02:45,400 --> 00:02:47,630
+for the first time I already have one
+part of it so all that's missing now is
+
+142
+00:02:47,630 --> 00:02:47,640
+part of it so all that's missing now is
+ 
+
+143
+00:02:47,640 --> 00:02:49,710
+part of it so all that's missing now is
+jinx there's also the environment but I
+
+144
+00:02:49,710 --> 00:02:49,720
+jinx there's also the environment but I
+ 
+
+145
+00:02:49,720 --> 00:02:51,990
+jinx there's also the environment but I
+don't need to create a 3D model for that
+
+146
+00:02:51,990 --> 00:02:52,000
+don't need to create a 3D model for that
+ 
+
+147
+00:02:52,000 --> 00:02:53,910
+don't need to create a 3D model for that
+and I will explain why a bit later
+
+148
+00:02:53,910 --> 00:02:53,920
+and I will explain why a bit later
+ 
+
+149
+00:02:53,920 --> 00:02:56,710
+and I will explain why a bit later
+during the process for now the main and
+
+150
+00:02:56,710 --> 00:02:56,720
+during the process for now the main and
+ 
+
+151
+00:02:56,720 --> 00:02:58,949
+during the process for now the main and
+most important goal is to recreate jinx
+
+152
+00:02:58,949 --> 00:02:58,959
+most important goal is to recreate jinx
+ 
+
+153
+00:02:58,959 --> 00:03:01,589
+most important goal is to recreate jinx
+as closely as possible the biggest
+
+154
+00:03:01,589 --> 00:03:01,599
+as closely as possible the biggest
+ 
+
+155
+00:03:01,599 --> 00:03:03,229
+as closely as possible the biggest
+problem with that is just like her
+
+156
+00:03:03,229 --> 00:03:03,239
+problem with that is just like her
+ 
+
+157
+00:03:03,239 --> 00:03:05,110
+problem with that is just like her
+rocket launcher a lot of the details on
+
+158
+00:03:05,110 --> 00:03:05,120
+rocket launcher a lot of the details on
+ 
+
+159
+00:03:05,120 --> 00:03:07,149
+rocket launcher a lot of the details on
+her have been added while painting her
+
+160
+00:03:07,149 --> 00:03:07,159
+her have been added while painting her
+ 
+
+161
+00:03:07,159 --> 00:03:09,229
+her have been added while painting her
+textures they're not part of the actual
+
+162
+00:03:09,229 --> 00:03:09,239
+textures they're not part of the actual
+ 
+
+163
+00:03:09,239 --> 00:03:11,030
+textures they're not part of the actual
+3D model which makes working with
+
+164
+00:03:11,030 --> 00:03:11,040
+3D model which makes working with
+ 
+
+165
+00:03:11,040 --> 00:03:13,270
+3D model which makes working with
+references a lot harder luckily I
+
+166
+00:03:13,270 --> 00:03:13,280
+references a lot harder luckily I
+ 
+
+167
+00:03:13,280 --> 00:03:15,149
+references a lot harder luckily I
+actually found a render of her without
+
+168
+00:03:15,149 --> 00:03:15,159
+actually found a render of her without
+ 
+
+169
+00:03:15,159 --> 00:03:16,910
+actually found a render of her without
+the textures as well look at how
+
+170
+00:03:16,910 --> 00:03:16,920
+the textures as well look at how
+ 
+
+171
+00:03:16,920 --> 00:03:19,190
+the textures as well look at how
+different she looks so much smoother
+
+172
+00:03:19,190 --> 00:03:19,200
+different she looks so much smoother
+ 
+
+173
+00:03:19,200 --> 00:03:20,869
+different she looks so much smoother
+than you might expect this is
+
+174
+00:03:20,869 --> 00:03:20,879
+than you might expect this is
+ 
+
+175
+00:03:20,879 --> 00:03:23,030
+than you might expect this is
+intentional to make the textures look as
+
+176
+00:03:23,030 --> 00:03:23,040
+intentional to make the textures look as
+ 
+
+177
+00:03:23,040 --> 00:03:24,949
+intentional to make the textures look as
+good as possible once you add lighting
+
+178
+00:03:24,949 --> 00:03:24,959
+good as possible once you add lighting
+ 
+
+179
+00:03:24,959 --> 00:03:27,630
+good as possible once you add lighting
+to them as well but that cre another
+
+180
+00:03:27,630 --> 00:03:27,640
+to them as well but that cre another
+ 
+
+181
+00:03:27,640 --> 00:03:29,429
+to them as well but that cre another
+problem for me I can try to create the
+
+182
+00:03:29,429 --> 00:03:29,439
+problem for me I can try to create the
+ 
+
+183
+00:03:29,439 --> 00:03:31,309
+problem for me I can try to create the
+3D model as closely as possible but
+
+184
+00:03:31,309 --> 00:03:31,319
+3D model as closely as possible but
+ 
+
+185
+00:03:31,319 --> 00:03:33,270
+3D model as closely as possible but
+until I have painted her textures I
+
+186
+00:03:33,270 --> 00:03:33,280
+until I have painted her textures I
+ 
+
+187
+00:03:33,280 --> 00:03:34,910
+until I have painted her textures I
+don't really know if I've captured her
+
+188
+00:03:34,910 --> 00:03:34,920
+don't really know if I've captured her
+ 
+
+189
+00:03:34,920 --> 00:03:37,149
+don't really know if I've captured her
+look well enough if everything goes
+
+190
+00:03:37,149 --> 00:03:37,159
+look well enough if everything goes
+ 
+
+191
+00:03:37,159 --> 00:03:40,149
+look well enough if everything goes
+wrong I might have to redo the whole 3D
+
+192
+00:03:40,149 --> 00:03:40,159
+wrong I might have to redo the whole 3D
+ 
+
+193
+00:03:40,159 --> 00:03:42,869
+wrong I might have to redo the whole 3D
+model these moments of uncertainty
+
+194
+00:03:42,869 --> 00:03:42,879
+model these moments of uncertainty
+ 
+
+195
+00:03:42,879 --> 00:03:44,589
+model these moments of uncertainty
+happened multiple times during this
+
+196
+00:03:44,589 --> 00:03:44,599
+happened multiple times during this
+ 
+
+197
+00:03:44,599 --> 00:03:46,149
+happened multiple times during this
+project either because I had to work up
+
+198
+00:03:46,149 --> 00:03:46,159
+project either because I had to work up
+ 
+
+199
+00:03:46,159 --> 00:03:48,149
+project either because I had to work up
+to a certain step to see if the results
+
+200
+00:03:48,149 --> 00:03:48,159
+to a certain step to see if the results
+ 
+
+201
+00:03:48,159 --> 00:03:50,869
+to a certain step to see if the results
+look good enough or even worse I tried a
+
+202
+00:03:50,869 --> 00:03:50,879
+look good enough or even worse I tried a
+ 
+
+203
+00:03:50,879 --> 00:03:53,789
+look good enough or even worse I tried a
+technique I've never really used before
+
+204
+00:03:53,789 --> 00:03:53,799
+technique I've never really used before
+ 
+
+205
+00:03:53,799 --> 00:03:55,630
+technique I've never really used before
+and with jinx's body and outfit looking
+
+206
+00:03:55,630 --> 00:03:55,640
+and with jinx's body and outfit looking
+ 
+
+207
+00:03:55,640 --> 00:03:57,470
+and with jinx's body and outfit looking
+pretty good so far one of those scary
+
+208
+00:03:57,470 --> 00:03:57,480
+pretty good so far one of those scary
+ 
+
+209
+00:03:57,480 --> 00:04:02,869
+pretty good so far one of those scary
+steps was coming up next
+
+210
+00:04:02,869 --> 00:04:02,879
+
+ 
+
+211
+00:04:02,879 --> 00:04:05,550
+
+the hair in Arcane has a very unique
+
+212
+00:04:05,550 --> 00:04:05,560
+the hair in Arcane has a very unique
+ 
+
+213
+00:04:05,560 --> 00:04:07,949
+the hair in Arcane has a very unique
+look it's made up of these very big and
+
+214
+00:04:07,949 --> 00:04:07,959
+look it's made up of these very big and
+ 
+
+215
+00:04:07,959 --> 00:04:10,149
+look it's made up of these very big and
+Broad shapes combined with smaller
+
+216
+00:04:10,149 --> 00:04:10,159
+Broad shapes combined with smaller
+ 
+
+217
+00:04:10,159 --> 00:04:12,190
+Broad shapes combined with smaller
+sometimes very fine strands which
+
+218
+00:04:12,190 --> 00:04:12,200
+sometimes very fine strands which
+ 
+
+219
+00:04:12,200 --> 00:04:14,309
+sometimes very fine strands which
+confused me a little bit at first I
+
+220
+00:04:14,309 --> 00:04:14,319
+confused me a little bit at first I
+ 
+
+221
+00:04:14,319 --> 00:04:16,670
+confused me a little bit at first I
+watched every making off video I could
+
+222
+00:04:16,670 --> 00:04:16,680
+watched every making off video I could
+ 
+
+223
+00:04:16,680 --> 00:04:18,629
+watched every making off video I could
+find to figure out how they created it
+
+224
+00:04:18,629 --> 00:04:18,639
+find to figure out how they created it
+ 
+
+225
+00:04:18,639 --> 00:04:21,509
+find to figure out how they created it
+until I found this 1 second clip that
+
+226
+00:04:21,509 --> 00:04:21,519
+until I found this 1 second clip that
+ 
+
+227
+00:04:21,519 --> 00:04:24,070
+until I found this 1 second clip that
+told me that they've used xgen it's a
+
+228
+00:04:24,070 --> 00:04:24,080
+told me that they've used xgen it's a
+ 
+
+229
+00:04:24,080 --> 00:04:26,189
+told me that they've used xgen it's a
+common tool mainly used to create 3D
+
+230
+00:04:26,189 --> 00:04:26,199
+common tool mainly used to create 3D
+ 
+
+231
+00:04:26,199 --> 00:04:28,430
+common tool mainly used to create 3D
+hairstyles with individual strands just
+
+232
+00:04:28,430 --> 00:04:28,440
+hairstyles with individual strands just
+ 
+
+233
+00:04:28,440 --> 00:04:30,350
+hairstyles with individual strands just
+like real hair and unfortunately it's
+
+234
+00:04:30,350 --> 00:04:30,360
+like real hair and unfortunately it's
+ 
+
+235
+00:04:30,360 --> 00:04:33,070
+like real hair and unfortunately it's
+part of Maya which costs all the money
+
+236
+00:04:33,070 --> 00:04:33,080
+part of Maya which costs all the money
+ 
+
+237
+00:04:33,080 --> 00:04:34,990
+part of Maya which costs all the money
+so I had to stick to using blender
+
+238
+00:04:34,990 --> 00:04:35,000
+so I had to stick to using blender
+ 
+
+239
+00:04:35,000 --> 00:04:37,990
+so I had to stick to using blender
+myself but now I had to make a decision
+
+240
+00:04:37,990 --> 00:04:38,000
+myself but now I had to make a decision
+ 
+
+241
+00:04:38,000 --> 00:04:40,150
+myself but now I had to make a decision
+I can either create a reliable and
+
+242
+00:04:40,150 --> 00:04:40,160
+I can either create a reliable and
+ 
+
+243
+00:04:40,160 --> 00:04:41,430
+I can either create a reliable and
+pretty good looking hairstyle with
+
+244
+00:04:41,430 --> 00:04:41,440
+pretty good looking hairstyle with
+ 
+
+245
+00:04:41,440 --> 00:04:43,830
+pretty good looking hairstyle with
+blender's hair prodicle system or create
+
+246
+00:04:43,830 --> 00:04:43,840
+blender's hair prodicle system or create
+ 
+
+247
+00:04:43,840 --> 00:04:46,230
+blender's hair prodicle system or create
+a great looking hairstyle by basically
+
+248
+00:04:46,230 --> 00:04:46,240
+a great looking hairstyle by basically
+ 
+
+249
+00:04:46,240 --> 00:04:49,670
+a great looking hairstyle by basically
+programming my own unique hair system
+
+250
+00:04:49,670 --> 00:04:49,680
+programming my own unique hair system
+ 
+
+251
+00:04:49,680 --> 00:04:51,990
+programming my own unique hair system
+using geometry nodes that is much
+
+252
+00:04:51,990 --> 00:04:52,000
+using geometry nodes that is much
+ 
+
+253
+00:04:52,000 --> 00:04:54,350
+using geometry nodes that is much
+riskier unstable and might not even work
+
+254
+00:04:54,350 --> 00:04:54,360
+riskier unstable and might not even work
+ 
+
+255
+00:04:54,360 --> 00:04:56,590
+riskier unstable and might not even work
+at all and could easily waste more than
+
+256
+00:04:56,590 --> 00:04:56,600
+at all and could easily waste more than
+ 
+
+257
+00:04:56,600 --> 00:05:00,909
+at all and could easily waste more than
+20 hours in the process
+
+258
+00:05:00,909 --> 00:05:00,919
+
+ 
+
+259
+00:05:00,919 --> 00:05:03,110
+
+I decided to do option two and guess
+
+260
+00:05:03,110 --> 00:05:03,120
+I decided to do option two and guess
+ 
+
+261
+00:05:03,120 --> 00:05:06,230
+I decided to do option two and guess
+what it only took uh 44 hours and I'm
+
+262
+00:05:06,230 --> 00:05:06,240
+what it only took uh 44 hours and I'm
+ 
+
+263
+00:05:06,240 --> 00:05:08,270
+what it only took uh 44 hours and I'm
+sure nothing will go wrong with it in
+
+264
+00:05:08,270 --> 00:05:08,280
+sure nothing will go wrong with it in
+ 
+
+265
+00:05:08,280 --> 00:05:10,469
+sure nothing will go wrong with it in
+the future anyway let me show you how it
+
+266
+00:05:10,469 --> 00:05:10,479
+the future anyway let me show you how it
+ 
+
+267
+00:05:10,479 --> 00:05:12,990
+the future anyway let me show you how it
+works to summarize the very boring math
+
+268
+00:05:12,990 --> 00:05:13,000
+works to summarize the very boring math
+ 
+
+269
+00:05:13,000 --> 00:05:15,550
+works to summarize the very boring math
+behind this first you create a tube like
+
+270
+00:05:15,550 --> 00:05:15,560
+behind this first you create a tube like
+ 
+
+271
+00:05:15,560 --> 00:05:17,629
+behind this first you create a tube like
+this then the system turns it into these
+
+272
+00:05:17,629 --> 00:05:17,639
+this then the system turns it into these
+ 
+
+273
+00:05:17,639 --> 00:05:19,350
+this then the system turns it into these
+hair strands and afterwards you can
+
+274
+00:05:19,350 --> 00:05:19,360
+hair strands and afterwards you can
+ 
+
+275
+00:05:19,360 --> 00:05:21,670
+hair strands and afterwards you can
+customize it with the settings the last
+
+276
+00:05:21,670 --> 00:05:21,680
+customize it with the settings the last
+ 
+
+277
+00:05:21,680 --> 00:05:23,749
+customize it with the settings the last
+thing missing is the Shader which I
+
+278
+00:05:23,749 --> 00:05:23,759
+thing missing is the Shader which I
+ 
+
+279
+00:05:23,759 --> 00:05:25,550
+thing missing is the Shader which I
+learned how to create through this
+
+280
+00:05:25,550 --> 00:05:25,560
+learned how to create through this
+ 
+
+281
+00:05:25,560 --> 00:05:28,350
+learned how to create through this
+tutorial by lightning Boy Studio now
+
+282
+00:05:28,350 --> 00:05:28,360
+tutorial by lightning Boy Studio now
+ 
+
+283
+00:05:28,360 --> 00:05:30,230
+tutorial by lightning Boy Studio now
+with her 3D model finished there are two
+
+284
+00:05:30,230 --> 00:05:30,240
+with her 3D model finished there are two
+ 
+
+285
+00:05:30,240 --> 00:05:32,950
+with her 3D model finished there are two
+more steps to finish the 3D portion of
+
+286
+00:05:32,950 --> 00:05:32,960
+more steps to finish the 3D portion of
+ 
+
+287
+00:05:32,960 --> 00:05:35,950
+more steps to finish the 3D portion of
+this project for her to move she needs
+
+288
+00:05:35,950 --> 00:05:35,960
+this project for her to move she needs
+ 
+
+289
+00:05:35,960 --> 00:05:38,029
+this project for her to move she needs
+to have a rig basically a skeleton to
+
+290
+00:05:38,029 --> 00:05:38,039
+to have a rig basically a skeleton to
+ 
+
+291
+00:05:38,039 --> 00:05:39,830
+to have a rig basically a skeleton to
+move the different parts of her body
+
+292
+00:05:39,830 --> 00:05:39,840
+move the different parts of her body
+ 
+
+293
+00:05:39,840 --> 00:05:41,749
+move the different parts of her body
+this process can get very complex
+
+294
+00:05:41,749 --> 00:05:41,759
+this process can get very complex
+ 
+
+295
+00:05:41,759 --> 00:05:43,510
+this process can get very complex
+depending on how much control you want
+
+296
+00:05:43,510 --> 00:05:43,520
+depending on how much control you want
+ 
+
+297
+00:05:43,520 --> 00:05:45,870
+depending on how much control you want
+to have while animating luckily blender
+
+298
+00:05:45,870 --> 00:05:45,880
+to have while animating luckily blender
+ 
+
+299
+00:05:45,880 --> 00:05:48,350
+to have while animating luckily blender
+has an amazing free add-on called rigify
+
+300
+00:05:48,350 --> 00:05:48,360
+has an amazing free add-on called rigify
+ 
+
+301
+00:05:48,360 --> 00:05:49,749
+has an amazing free add-on called rigify
+that allows you to create one of these
+
+302
+00:05:49,749 --> 00:05:49,759
+that allows you to create one of these
+ 
+
+303
+00:05:49,759 --> 00:05:52,430
+that allows you to create one of these
+complex rigs with a single button press
+
+304
+00:05:52,430 --> 00:05:52,440
+complex rigs with a single button press
+ 
+
+305
+00:05:52,440 --> 00:05:54,510
+complex rigs with a single button press
+all you need to do is place the basic
+
+306
+00:05:54,510 --> 00:05:54,520
+all you need to do is place the basic
+ 
+
+307
+00:05:54,520 --> 00:05:56,550
+all you need to do is place the basic
+bones and the add-on will do the rest
+
+308
+00:05:56,550 --> 00:05:56,560
+bones and the add-on will do the rest
+ 
+
+309
+00:05:56,560 --> 00:05:58,510
+bones and the add-on will do the rest
+automatically and after a little bit of
+
+310
+00:05:58,510 --> 00:05:58,520
+automatically and after a little bit of
+ 
+
+311
+00:05:58,520 --> 00:06:00,670
+automatically and after a little bit of
+tweaking and adjusting it works pretty
+
+312
+00:06:00,670 --> 00:06:00,680
+tweaking and adjusting it works pretty
+ 
+
+313
+00:06:00,680 --> 00:06:02,590
+tweaking and adjusting it works pretty
+well you can actually do quite a lot
+
+314
+00:06:02,590 --> 00:06:02,600
+well you can actually do quite a lot
+ 
+
+315
+00:06:02,600 --> 00:06:04,309
+well you can actually do quite a lot
+with this rig now but one thing you
+
+316
+00:06:04,309 --> 00:06:04,319
+with this rig now but one thing you
+ 
+
+317
+00:06:04,319 --> 00:06:07,270
+with this rig now but one thing you
+can't do is this right here forti the
+
+318
+00:06:07,270 --> 00:06:07,280
+can't do is this right here forti the
+ 
+
+319
+00:06:07,280 --> 00:06:09,950
+can't do is this right here forti the
+studio behind arcade not only used rigs
+
+320
+00:06:09,950 --> 00:06:09,960
+studio behind arcade not only used rigs
+ 
+
+321
+00:06:09,960 --> 00:06:12,029
+studio behind arcade not only used rigs
+to control their characters but also
+
+322
+00:06:12,029 --> 00:06:12,039
+to control their characters but also
+ 
+
+323
+00:06:12,039 --> 00:06:14,469
+to control their characters but also
+shape Keys shape keys are optional
+
+324
+00:06:14,469 --> 00:06:14,479
+shape Keys shape keys are optional
+ 
+
+325
+00:06:14,479 --> 00:06:16,430
+shape Keys shape keys are optional
+deformations on the model that you can
+
+326
+00:06:16,430 --> 00:06:16,440
+deformations on the model that you can
+ 
+
+327
+00:06:16,440 --> 00:06:18,749
+deformations on the model that you can
+use to create certain effects they're
+
+328
+00:06:18,749 --> 00:06:18,759
+use to create certain effects they're
+ 
+
+329
+00:06:18,759 --> 00:06:20,270
+use to create certain effects they're
+often used for example to make
+
+330
+00:06:20,270 --> 00:06:20,280
+often used for example to make
+ 
+
+331
+00:06:20,280 --> 00:06:23,150
+often used for example to make
+Expressions more expressive or here for
+
+332
+00:06:23,150 --> 00:06:23,160
+Expressions more expressive or here for
+ 
+
+333
+00:06:23,160 --> 00:06:24,990
+Expressions more expressive or here for
+example they created them to make Jinx
+
+334
+00:06:24,990 --> 00:06:25,000
+example they created them to make Jinx
+ 
+
+335
+00:06:25,000 --> 00:06:27,350
+example they created them to make Jinx
+look younger and more innocent I created
+
+336
+00:06:27,350 --> 00:06:27,360
+look younger and more innocent I created
+ 
+
+337
+00:06:27,360 --> 00:06:29,670
+look younger and more innocent I created
+that same slider from my model 2 as well
+
+338
+00:06:29,670 --> 00:06:29,680
+that same slider from my model 2 as well
+ 
+
+339
+00:06:29,680 --> 00:06:31,309
+that same slider from my model 2 as well
+as two more to have a bit more control
+
+340
+00:06:31,309 --> 00:06:31,319
+as two more to have a bit more control
+ 
+
+341
+00:06:31,319 --> 00:06:33,070
+as two more to have a bit more control
+over her lips but you could go a lot
+
+342
+00:06:33,070 --> 00:06:33,080
+over her lips but you could go a lot
+ 
+
+343
+00:06:33,080 --> 00:06:35,589
+over her lips but you could go a lot
+further with these if you really wanted
+
+344
+00:06:35,589 --> 00:06:35,599
+further with these if you really wanted
+ 
+
+345
+00:06:35,599 --> 00:06:38,589
+further with these if you really wanted
+to and now the last 3D part of this
+
+346
+00:06:38,589 --> 00:06:38,599
+to and now the last 3D part of this
+ 
+
+347
+00:06:38,599 --> 00:06:40,909
+to and now the last 3D part of this
+project is the actual animation of
+
+348
+00:06:40,909 --> 00:06:40,919
+project is the actual animation of
+ 
+
+349
+00:06:40,919 --> 00:06:42,870
+project is the actual animation of
+course she can't just look like Jinx she
+
+350
+00:06:42,870 --> 00:06:42,880
+course she can't just look like Jinx she
+ 
+
+351
+00:06:42,880 --> 00:06:45,150
+course she can't just look like Jinx she
+also needs to move like her so to
+
+352
+00:06:45,150 --> 00:06:45,160
+also needs to move like her so to
+ 
+
+353
+00:06:45,160 --> 00:06:46,790
+also needs to move like her so to
+recreate the scene as closely as
+
+354
+00:06:46,790 --> 00:06:46,800
+recreate the scene as closely as
+ 
+
+355
+00:06:46,800 --> 00:06:48,990
+recreate the scene as closely as
+possible I placed the original animation
+
+356
+00:06:48,990 --> 00:06:49,000
+possible I placed the original animation
+ 
+
+357
+00:06:49,000 --> 00:06:51,749
+possible I placed the original animation
+with transparency over my 3D camera my
+
+358
+00:06:51,749 --> 00:06:51,759
+with transparency over my 3D camera my
+ 
+
+359
+00:06:51,759 --> 00:06:53,710
+with transparency over my 3D camera my
+first goal was to match the most
+
+360
+00:06:53,710 --> 00:06:53,720
+first goal was to match the most
+ 
+
+361
+00:06:53,720 --> 00:06:56,270
+first goal was to match the most
+significant poses as best as I can
+
+362
+00:06:56,270 --> 00:06:56,280
+significant poses as best as I can
+ 
+
+363
+00:06:56,280 --> 00:06:58,029
+significant poses as best as I can
+afterwards I can blend between them with
+
+364
+00:06:58,029 --> 00:06:58,039
+afterwards I can blend between them with
+ 
+
+365
+00:06:58,039 --> 00:07:00,550
+afterwards I can blend between them with
+a few more in between poses and blenders
+
+366
+00:07:00,550 --> 00:07:00,560
+a few more in between poses and blenders
+ 
+
+367
+00:07:00,560 --> 00:07:02,550
+a few more in between poses and blenders
+automatic interpolation which fills the
+
+368
+00:07:02,550 --> 00:07:02,560
+automatic interpolation which fills the
+ 
+
+369
+00:07:02,560 --> 00:07:04,790
+automatic interpolation which fills the
+rest of the frames this is actually how
+
+370
+00:07:04,790 --> 00:07:04,800
+rest of the frames this is actually how
+ 
+
+371
+00:07:04,800 --> 00:07:06,670
+rest of the frames this is actually how
+most animations are created first you
+
+372
+00:07:06,670 --> 00:07:06,680
+most animations are created first you
+ 
+
+373
+00:07:06,680 --> 00:07:08,550
+most animations are created first you
+lay out the most important poses then
+
+374
+00:07:08,550 --> 00:07:08,560
+lay out the most important poses then
+ 
+
+375
+00:07:08,560 --> 00:07:10,629
+lay out the most important poses then
+you create the rest to blend between
+
+376
+00:07:10,629 --> 00:07:10,639
+you create the rest to blend between
+ 
+
+377
+00:07:10,639 --> 00:07:11,950
+you create the rest to blend between
+them the difference between me and the
+
+378
+00:07:11,950 --> 00:07:11,960
+them the difference between me and the
+ 
+
+379
+00:07:11,960 --> 00:07:13,950
+them the difference between me and the
+actual animators on Arcane is of course
+
+380
+00:07:13,950 --> 00:07:13,960
+actual animators on Arcane is of course
+ 
+
+381
+00:07:13,960 --> 00:07:15,990
+actual animators on Arcane is of course
+that they didn't have this perfect
+
+382
+00:07:15,990 --> 00:07:16,000
+that they didn't have this perfect
+ 
+
+383
+00:07:16,000 --> 00:07:18,749
+that they didn't have this perfect
+reference to trace instead they filmed
+
+384
+00:07:18,749 --> 00:07:18,759
+reference to trace instead they filmed
+ 
+
+385
+00:07:18,759 --> 00:07:20,270
+reference to trace instead they filmed
+themselves acting out the scenes to
+
+386
+00:07:20,270 --> 00:07:20,280
+themselves acting out the scenes to
+ 
+
+387
+00:07:20,280 --> 00:07:21,469
+themselves acting out the scenes to
+better understand how the character
+
+388
+00:07:21,469 --> 00:07:21,479
+better understand how the character
+ 
+
+389
+00:07:21,479 --> 00:07:23,350
+better understand how the character
+needs to move during them so they don't
+
+390
+00:07:23,350 --> 00:07:23,360
+needs to move during them so they don't
+ 
+
+391
+00:07:23,360 --> 00:07:25,510
+needs to move during them so they don't
+have to guess the whole animation
+
+392
+00:07:25,510 --> 00:07:25,520
+have to guess the whole animation
+ 
+
+393
+00:07:25,520 --> 00:07:27,390
+have to guess the whole animation
+process went surprisingly smooth there
+
+394
+00:07:27,390 --> 00:07:27,400
+process went surprisingly smooth there
+ 
+
+395
+00:07:27,400 --> 00:07:28,790
+process went surprisingly smooth there
+were not really any problems that
+
+396
+00:07:28,790 --> 00:07:28,800
+were not really any problems that
+ 
+
+397
+00:07:28,800 --> 00:07:31,110
+were not really any problems that
+occurred during this step except for my
+
+398
+00:07:31,110 --> 00:07:31,120
+occurred during this step except for my
+ 
+
+399
+00:07:31,120 --> 00:07:33,670
+occurred during this step except for my
+custom hair system of course and if I
+
+400
+00:07:33,670 --> 00:07:33,680
+custom hair system of course and if I
+ 
+
+401
+00:07:33,680 --> 00:07:35,670
+custom hair system of course and if I
+can't fix this issue I might have to
+
+402
+00:07:35,670 --> 00:07:35,680
+can't fix this issue I might have to
+ 
+
+403
+00:07:35,680 --> 00:07:37,950
+can't fix this issue I might have to
+create the entire hairstyle again from
+
+404
+00:07:37,950 --> 00:07:37,960
+create the entire hairstyle again from
+ 
+
+405
+00:07:37,960 --> 00:07:40,790
+create the entire hairstyle again from
+scant with the other system but you know
+
+406
+00:07:40,790 --> 00:07:40,800
+scant with the other system but you know
+ 
+
+407
+00:07:40,800 --> 00:07:43,430
+scant with the other system but you know
+what this can wait let's do something
+
+408
+00:07:43,430 --> 00:07:43,440
+what this can wait let's do something
+ 
+
+409
+00:07:43,440 --> 00:07:45,630
+what this can wait let's do something
+more exciting
+
+410
+00:07:45,630 --> 00:07:45,640
+more exciting
+ 
+
+411
+00:07:45,640 --> 00:07:47,309
+more exciting
+[Music]
+
+412
+00:07:47,309 --> 00:07:47,319
+[Music]
+ 
+
+413
+00:07:47,319 --> 00:07:49,629
+[Music]
+first texture painting is one of the
+
+414
+00:07:49,629 --> 00:07:49,639
+first texture painting is one of the
+ 
+
+415
+00:07:49,639 --> 00:07:51,749
+first texture painting is one of the
+things I was the least comfortable with
+
+416
+00:07:51,749 --> 00:07:51,759
+things I was the least comfortable with
+ 
+
+417
+00:07:51,759 --> 00:07:53,149
+things I was the least comfortable with
+during this whole project but after
+
+418
+00:07:53,149 --> 00:07:53,159
+during this whole project but after
+ 
+
+419
+00:07:53,159 --> 00:07:54,830
+during this whole project but after
+painting the rocket launcher I felt at
+
+420
+00:07:54,830 --> 00:07:54,840
+painting the rocket launcher I felt at
+ 
+
+421
+00:07:54,840 --> 00:07:57,589
+painting the rocket launcher I felt at
+least a bit more confident in my skills
+
+422
+00:07:57,589 --> 00:07:57,599
+least a bit more confident in my skills
+ 
+
+423
+00:07:57,599 --> 00:07:59,189
+least a bit more confident in my skills
+I basically just followed the same
+
+424
+00:07:59,189 --> 00:07:59,199
+I basically just followed the same
+ 
+
+425
+00:07:59,199 --> 00:08:01,149
+I basically just followed the same
+process again first blocking out the
+
+426
+00:08:01,149 --> 00:08:01,159
+process again first blocking out the
+ 
+
+427
+00:08:01,159 --> 00:08:03,110
+process again first blocking out the
+general shapes and colors then refining
+
+428
+00:08:03,110 --> 00:08:03,120
+general shapes and colors then refining
+ 
+
+429
+00:08:03,120 --> 00:08:07,600
+general shapes and colors then refining
+everything and adding some more
+
+430
+00:08:07,600 --> 00:08:07,610
+
+ 
+
+431
+00:08:07,610 --> 00:08:10,029
+
+[Music]
+
+432
+00:08:10,029 --> 00:08:10,039
+[Music]
+ 
+
+433
+00:08:10,039 --> 00:08:12,510
+[Music]
+detail on its own blender's texture
+
+434
+00:08:12,510 --> 00:08:12,520
+detail on its own blender's texture
+ 
+
+435
+00:08:12,520 --> 00:08:14,830
+detail on its own blender's texture
+painting has always been extremely
+
+436
+00:08:14,830 --> 00:08:14,840
+painting has always been extremely
+ 
+
+437
+00:08:14,840 --> 00:08:16,629
+painting has always been extremely
+annoying and tedious to me but there
+
+438
+00:08:16,629 --> 00:08:16,639
+annoying and tedious to me but there
+ 
+
+439
+00:08:16,639 --> 00:08:18,309
+annoying and tedious to me but there
+were two things I used during this
+
+440
+00:08:18,309 --> 00:08:18,319
+were two things I used during this
+ 
+
+441
+00:08:18,319 --> 00:08:20,189
+were two things I used during this
+project that made the process a lot more
+
+442
+00:08:20,189 --> 00:08:20,199
+project that made the process a lot more
+ 
+
+443
+00:08:20,199 --> 00:08:22,350
+project that made the process a lot more
+enjoyable the first is a free add-on
+
+444
+00:08:22,350 --> 00:08:22,360
+enjoyable the first is a free add-on
+ 
+
+445
+00:08:22,360 --> 00:08:24,950
+enjoyable the first is a free add-on
+called yuku paint it adds essential
+
+446
+00:08:24,950 --> 00:08:24,960
+called yuku paint it adds essential
+ 
+
+447
+00:08:24,960 --> 00:08:27,350
+called yuku paint it adds essential
+features like paint layers as well as
+
+448
+00:08:27,350 --> 00:08:27,360
+features like paint layers as well as
+ 
+
+449
+00:08:27,360 --> 00:08:28,909
+features like paint layers as well as
+some really great quality of life
+
+450
+00:08:28,909 --> 00:08:28,919
+some really great quality of life
+ 
+
+451
+00:08:28,919 --> 00:08:30,390
+some really great quality of life
+features like automatic Shadow
+
+452
+00:08:30,390 --> 00:08:30,400
+features like automatic Shadow
+ 
+
+453
+00:08:30,400 --> 00:08:32,550
+features like automatic Shadow
+Generation or a much easier way to work
+
+454
+00:08:32,550 --> 00:08:32,560
+Generation or a much easier way to work
+ 
+
+455
+00:08:32,560 --> 00:08:34,909
+Generation or a much easier way to work
+out basic colors if you do a lot of
+
+456
+00:08:34,909 --> 00:08:34,919
+out basic colors if you do a lot of
+ 
+
+457
+00:08:34,919 --> 00:08:37,149
+out basic colors if you do a lot of
+texture painting this add-on is really
+
+458
+00:08:37,149 --> 00:08:37,159
+texture painting this add-on is really
+ 
+
+459
+00:08:37,159 --> 00:08:38,829
+texture painting this add-on is really
+really good especially in combination
+
+460
+00:08:38,829 --> 00:08:38,839
+really good especially in combination
+ 
+
+461
+00:08:38,839 --> 00:08:40,870
+really good especially in combination
+with the second thing which is my own
+
+462
+00:08:40,870 --> 00:08:40,880
+with the second thing which is my own
+ 
+
+463
+00:08:40,880 --> 00:08:42,829
+with the second thing which is my own
+custom brush pack blender itself only
+
+464
+00:08:42,829 --> 00:08:42,839
+custom brush pack blender itself only
+ 
+
+465
+00:08:42,839 --> 00:08:46,430
+custom brush pack blender itself only
+really has a single round default brush
+
+466
+00:08:46,430 --> 00:08:46,440
+really has a single round default brush
+ 
+
+467
+00:08:46,440 --> 00:08:48,470
+really has a single round default brush
+which is exactly why I created this
+
+468
+00:08:48,470 --> 00:08:48,480
+which is exactly why I created this
+ 
+
+469
+00:08:48,480 --> 00:08:50,829
+which is exactly why I created this
+brush pack with 50 custom brushes to
+
+470
+00:08:50,829 --> 00:08:50,839
+brush pack with 50 custom brushes to
+ 
+
+471
+00:08:50,839 --> 00:08:53,030
+brush pack with 50 custom brushes to
+cover as many use cases as possible for
+
+472
+00:08:53,030 --> 00:08:53,040
+cover as many use cases as possible for
+ 
+
+473
+00:08:53,040 --> 00:08:54,630
+cover as many use cases as possible for
+this Arcane project it actually worked
+
+474
+00:08:54,630 --> 00:08:54,640
+this Arcane project it actually worked
+ 
+
+475
+00:08:54,640 --> 00:08:57,470
+this Arcane project it actually worked
+pretty well to only use the hard round
+
+476
+00:08:57,470 --> 00:08:57,480
+pretty well to only use the hard round
+ 
+
+477
+00:08:57,480 --> 00:08:58,870
+pretty well to only use the hard round
+brush to paint everything but in my
+
+478
+00:08:58,870 --> 00:08:58,880
+brush to paint everything but in my
+ 
+
+479
+00:08:58,880 --> 00:09:00,829
+brush to paint everything but in my
+previous project for example I use it to
+
+480
+00:09:00,829 --> 00:09:00,839
+previous project for example I use it to
+ 
+
+481
+00:09:00,839 --> 00:09:02,790
+previous project for example I use it to
+paint This Grass Hill covered in snow
+
+482
+00:09:02,790 --> 00:09:02,800
+paint This Grass Hill covered in snow
+ 
+
+483
+00:09:02,800 --> 00:09:05,150
+paint This Grass Hill covered in snow
+for my berserk animation or to recreate
+
+484
+00:09:05,150 --> 00:09:05,160
+for my berserk animation or to recreate
+ 
+
+485
+00:09:05,160 --> 00:09:07,509
+for my berserk animation or to recreate
+this scene from Spirited Away if you're
+
+486
+00:09:07,509 --> 00:09:07,519
+this scene from Spirited Away if you're
+ 
+
+487
+00:09:07,519 --> 00:09:08,750
+this scene from Spirited Away if you're
+interested in getting this pack for
+
+488
+00:09:08,750 --> 00:09:08,760
+interested in getting this pack for
+ 
+
+489
+00:09:08,760 --> 00:09:10,230
+interested in getting this pack for
+yourself make sure to check out the
+
+490
+00:09:10,230 --> 00:09:10,240
+yourself make sure to check out the
+ 
+
+491
+00:09:10,240 --> 00:09:12,069
+yourself make sure to check out the
+first link in the description and now
+
+492
+00:09:12,069 --> 00:09:12,079
+first link in the description and now
+ 
+
+493
+00:09:12,079 --> 00:09:13,910
+first link in the description and now
+with my custom brushes in hand my plan
+
+494
+00:09:13,910 --> 00:09:13,920
+with my custom brushes in hand my plan
+ 
+
+495
+00:09:13,920 --> 00:09:15,630
+with my custom brushes in hand my plan
+for the texture painting was once again
+
+496
+00:09:15,630 --> 00:09:15,640
+for the texture painting was once again
+ 
+
+497
+00:09:15,640 --> 00:09:17,870
+for the texture painting was once again
+to only really refine the parts that are
+
+498
+00:09:17,870 --> 00:09:17,880
+to only really refine the parts that are
+ 
+
+499
+00:09:17,880 --> 00:09:20,069
+to only really refine the parts that are
+clearly visible and leave the rest in a
+
+500
+00:09:20,069 --> 00:09:20,079
+clearly visible and leave the rest in a
+ 
+
+501
+00:09:20,079 --> 00:09:22,150
+clearly visible and leave the rest in a
+fairly rough State just to save a little
+
+502
+00:09:22,150 --> 00:09:22,160
+fairly rough State just to save a little
+ 
+
+503
+00:09:22,160 --> 00:09:24,430
+fairly rough State just to save a little
+bit of time that I could then use to fix
+
+504
+00:09:24,430 --> 00:09:24,440
+bit of time that I could then use to fix
+ 
+
+505
+00:09:24,440 --> 00:09:27,940
+bit of time that I could then use to fix
+my hair system
+
+506
+00:09:27,940 --> 00:09:27,950
+
+ 
+
+507
+00:09:27,950 --> 00:09:32,670
+
+[Music]
+
+508
+00:09:32,670 --> 00:09:32,680
+
+ 
+
+509
+00:09:32,680 --> 00:09:34,949
+
+now it was finally time to see whether
+
+510
+00:09:34,949 --> 00:09:34,959
+now it was finally time to see whether
+ 
+
+511
+00:09:34,959 --> 00:09:36,870
+now it was finally time to see whether
+my Jinx looks like the original or I
+
+512
+00:09:36,870 --> 00:09:36,880
+my Jinx looks like the original or I
+ 
+
+513
+00:09:36,880 --> 00:09:39,630
+my Jinx looks like the original or I
+have to redo a bunch of stuff the
+
+514
+00:09:39,630 --> 00:09:39,640
+have to redo a bunch of stuff the
+ 
+
+515
+00:09:39,640 --> 00:09:41,030
+have to redo a bunch of stuff the
+biggest thing I struggled with was
+
+516
+00:09:41,030 --> 00:09:41,040
+biggest thing I struggled with was
+ 
+
+517
+00:09:41,040 --> 00:09:42,790
+biggest thing I struggled with was
+imitating this looseness that the
+
+518
+00:09:42,790 --> 00:09:42,800
+imitating this looseness that the
+ 
+
+519
+00:09:42,800 --> 00:09:45,030
+imitating this looseness that the
+original has sometimes the colors blend
+
+520
+00:09:45,030 --> 00:09:45,040
+original has sometimes the colors blend
+ 
+
+521
+00:09:45,040 --> 00:09:46,990
+original has sometimes the colors blend
+really well together and sometimes you
+
+522
+00:09:46,990 --> 00:09:47,000
+really well together and sometimes you
+ 
+
+523
+00:09:47,000 --> 00:09:49,310
+really well together and sometimes you
+can clearly see some very broad brush
+
+524
+00:09:49,310 --> 00:09:49,320
+can clearly see some very broad brush
+ 
+
+525
+00:09:49,320 --> 00:09:50,990
+can clearly see some very broad brush
+Strokes that look kind of rough but
+
+526
+00:09:50,990 --> 00:09:51,000
+Strokes that look kind of rough but
+ 
+
+527
+00:09:51,000 --> 00:09:53,389
+Strokes that look kind of rough but
+still somehow work really well together
+
+528
+00:09:53,389 --> 00:09:53,399
+still somehow work really well together
+ 
+
+529
+00:09:53,399 --> 00:09:55,550
+still somehow work really well together
+you can almost see the confidence and
+
+530
+00:09:55,550 --> 00:09:55,560
+you can almost see the confidence and
+ 
+
+531
+00:09:55,560 --> 00:09:57,949
+you can almost see the confidence and
+intention behind every one of them the
+
+532
+00:09:57,949 --> 00:09:57,959
+intention behind every one of them the
+ 
+
+533
+00:09:57,959 --> 00:10:01,310
+intention behind every one of them the
+confidence that I myself was lacking but
+
+534
+00:10:01,310 --> 00:10:01,320
+confidence that I myself was lacking but
+ 
+
+535
+00:10:01,320 --> 00:10:03,389
+confidence that I myself was lacking but
+with enough time and patience I think I
+
+536
+00:10:03,389 --> 00:10:03,399
+with enough time and patience I think I
+ 
+
+537
+00:10:03,399 --> 00:10:05,670
+with enough time and patience I think I
+am pretty happy with the result now
+
+538
+00:10:05,670 --> 00:10:05,680
+am pretty happy with the result now
+ 
+
+539
+00:10:05,680 --> 00:10:08,550
+am pretty happy with the result now
+let's see if I can figure this miss out
+
+540
+00:10:08,550 --> 00:10:08,560
+let's see if I can figure this miss out
+ 
+
+541
+00:10:08,560 --> 00:10:10,870
+let's see if I can figure this miss out
+and I actually did it only took 6 hours
+
+542
+00:10:10,870 --> 00:10:10,880
+and I actually did it only took 6 hours
+ 
+
+543
+00:10:10,880 --> 00:10:13,269
+and I actually did it only took 6 hours
+this time basically nothing now it's
+
+544
+00:10:13,269 --> 00:10:13,279
+this time basically nothing now it's
+ 
+
+545
+00:10:13,279 --> 00:10:15,430
+this time basically nothing now it's
+basically perfect except for this
+
+546
+00:10:15,430 --> 00:10:15,440
+basically perfect except for this
+ 
+
+547
+00:10:15,440 --> 00:10:17,430
+basically perfect except for this
+flickering that I just could not nope
+
+548
+00:10:17,430 --> 00:10:17,440
+flickering that I just could not nope
+ 
+
+549
+00:10:17,440 --> 00:10:19,710
+flickering that I just could not nope
+you know what I want that to be there
+
+550
+00:10:19,710 --> 00:10:19,720
+you know what I want that to be there
+ 
+
+551
+00:10:19,720 --> 00:10:21,509
+you know what I want that to be there
+anyway speaking of texture painting I
+
+552
+00:10:21,509 --> 00:10:21,519
+anyway speaking of texture painting I
+ 
+
+553
+00:10:21,519 --> 00:10:23,870
+anyway speaking of texture painting I
+also painted the environment well at
+
+554
+00:10:23,870 --> 00:10:23,880
+also painted the environment well at
+ 
+
+555
+00:10:23,880 --> 00:10:25,790
+also painted the environment well at
+least partially I basically grabbed a
+
+556
+00:10:25,790 --> 00:10:25,800
+least partially I basically grabbed a
+ 
+
+557
+00:10:25,800 --> 00:10:28,389
+least partially I basically grabbed a
+shot from the original and used photo a
+
+558
+00:10:28,389 --> 00:10:28,399
+shot from the original and used photo a
+ 
+
+559
+00:10:28,399 --> 00:10:30,430
+shot from the original and used photo a
+free web version version of Photoshop to
+
+560
+00:10:30,430 --> 00:10:30,440
+free web version version of Photoshop to
+ 
+
+561
+00:10:30,440 --> 00:10:32,470
+free web version version of Photoshop to
+remove Jinx from the shot and if that
+
+562
+00:10:32,470 --> 00:10:32,480
+remove Jinx from the shot and if that
+ 
+
+563
+00:10:32,480 --> 00:10:34,230
+remove Jinx from the shot and if that
+didn't work completely I fixed the rest
+
+564
+00:10:34,230 --> 00:10:34,240
+didn't work completely I fixed the rest
+ 
+
+565
+00:10:34,240 --> 00:10:36,790
+didn't work completely I fixed the rest
+in blender using texture painting now
+
+566
+00:10:36,790 --> 00:10:36,800
+in blender using texture painting now
+ 
+
+567
+00:10:36,800 --> 00:10:38,110
+in blender using texture painting now
+there are only two more steps left
+
+568
+00:10:38,110 --> 00:10:38,120
+there are only two more steps left
+ 
+
+569
+00:10:38,120 --> 00:10:40,110
+there are only two more steps left
+before the animation is fully done one
+
+570
+00:10:40,110 --> 00:10:40,120
+before the animation is fully done one
+ 
+
+571
+00:10:40,120 --> 00:10:42,590
+before the animation is fully done one
+of them is fairly simple the other one
+
+572
+00:10:42,590 --> 00:10:42,600
+of them is fairly simple the other one
+ 
+
+573
+00:10:42,600 --> 00:10:44,750
+of them is fairly simple the other one
+is the step I was the most excited but
+
+574
+00:10:44,750 --> 00:10:44,760
+is the step I was the most excited but
+ 
+
+575
+00:10:44,760 --> 00:10:47,040
+is the step I was the most excited but
+also the most scared
+
+576
+00:10:47,040 --> 00:10:47,050
+also the most scared
+ 
+
+577
+00:10:47,050 --> 00:10:51,389
+also the most scared
+[Music]
+
+578
+00:10:51,389 --> 00:10:51,399
+
+ 
+
+579
+00:10:51,399 --> 00:10:55,310
+
+of the first one are the 2D VFX in the
+
+580
+00:10:55,310 --> 00:10:55,320
+of the first one are the 2D VFX in the
+ 
+
+581
+00:10:55,320 --> 00:10:57,430
+of the first one are the 2D VFX in the
+actual show 2D animators created these
+
+582
+00:10:57,430 --> 00:10:57,440
+actual show 2D animators created these
+ 
+
+583
+00:10:57,440 --> 00:10:59,590
+actual show 2D animators created these
+extra Effects by painting on top of the
+
+584
+00:10:59,590 --> 00:10:59,600
+extra Effects by painting on top of the
+ 
+
+585
+00:10:59,600 --> 00:11:02,190
+extra Effects by painting on top of the
+3D animation probably in a software made
+
+586
+00:11:02,190 --> 00:11:02,200
+3D animation probably in a software made
+ 
+
+587
+00:11:02,200 --> 00:11:04,670
+3D animation probably in a software made
+for 2D animation that costs a lot of
+
+588
+00:11:04,670 --> 00:11:04,680
+for 2D animation that costs a lot of
+ 
+
+589
+00:11:04,680 --> 00:11:06,389
+for 2D animation that costs a lot of
+money but you can create something
+
+590
+00:11:06,389 --> 00:11:06,399
+money but you can create something
+ 
+
+591
+00:11:06,399 --> 00:11:08,710
+money but you can create something
+pretty similar in blender as well by
+
+592
+00:11:08,710 --> 00:11:08,720
+pretty similar in blender as well by
+ 
+
+593
+00:11:08,720 --> 00:11:10,710
+pretty similar in blender as well by
+adding a grease pencil object into the
+
+594
+00:11:10,710 --> 00:11:10,720
+adding a grease pencil object into the
+ 
+
+595
+00:11:10,720 --> 00:11:12,949
+adding a grease pencil object into the
+3D scene you can paint basically
+
+596
+00:11:12,949 --> 00:11:12,959
+3D scene you can paint basically
+ 
+
+597
+00:11:12,959 --> 00:11:16,550
+3D scene you can paint basically
+anywhere in 3D space so to paint the VX
+
+598
+00:11:16,550 --> 00:11:16,560
+anywhere in 3D space so to paint the VX
+ 
+
+599
+00:11:16,560 --> 00:11:18,710
+anywhere in 3D space so to paint the VX
+on top I just place the drawing layer in
+
+600
+00:11:18,710 --> 00:11:18,720
+on top I just place the drawing layer in
+ 
+
+601
+00:11:18,720 --> 00:11:21,110
+on top I just place the drawing layer in
+front of my 3D camera so it covers the
+
+602
+00:11:21,110 --> 00:11:21,120
+front of my 3D camera so it covers the
+ 
+
+603
+00:11:21,120 --> 00:11:23,590
+front of my 3D camera so it covers the
+scene behind it now all I had to do is
+
+604
+00:11:23,590 --> 00:11:23,600
+scene behind it now all I had to do is
+ 
+
+605
+00:11:23,600 --> 00:11:25,590
+scene behind it now all I had to do is
+redraw the animation from the original
+
+606
+00:11:25,590 --> 00:11:25,600
+redraw the animation from the original
+ 
+
+607
+00:11:25,600 --> 00:11:27,910
+redraw the animation from the original
+frame by frame which wasn't really that
+
+608
+00:11:27,910 --> 00:11:27,920
+frame by frame which wasn't really that
+ 
+
+609
+00:11:27,920 --> 00:11:32,550
+frame by frame which wasn't really that
+hard it just took a long time
+
+610
+00:11:32,550 --> 00:11:32,560
+
+ 
+
+611
+00:11:32,560 --> 00:11:39,350
+
+[Music]
+
+612
+00:11:39,350 --> 00:11:39,360
+
+ 
+
+613
+00:11:39,360 --> 00:11:41,910
+
+time for this I also decided not to
+
+614
+00:11:41,910 --> 00:11:41,920
+time for this I also decided not to
+ 
+
+615
+00:11:41,920 --> 00:11:44,069
+time for this I also decided not to
+trace the frames exactly like I did for
+
+616
+00:11:44,069 --> 00:11:44,079
+trace the frames exactly like I did for
+ 
+
+617
+00:11:44,079 --> 00:11:46,030
+trace the frames exactly like I did for
+the 3D animations because I thought
+
+618
+00:11:46,030 --> 00:11:46,040
+the 3D animations because I thought
+ 
+
+619
+00:11:46,040 --> 00:11:48,150
+the 3D animations because I thought
+drawing them myself would be more fun
+
+620
+00:11:48,150 --> 00:11:48,160
+drawing them myself would be more fun
+ 
+
+621
+00:11:48,160 --> 00:11:50,069
+drawing them myself would be more fun
+it's a pretty simple process overall and
+
+622
+00:11:50,069 --> 00:11:50,079
+it's a pretty simple process overall and
+ 
+
+623
+00:11:50,079 --> 00:11:51,750
+it's a pretty simple process overall and
+I'm sure I've missed some steps that
+
+624
+00:11:51,750 --> 00:11:51,760
+I'm sure I've missed some steps that
+ 
+
+625
+00:11:51,760 --> 00:11:53,790
+I'm sure I've missed some steps that
+made this process a lot better but also
+
+626
+00:11:53,790 --> 00:11:53,800
+made this process a lot better but also
+ 
+
+627
+00:11:53,800 --> 00:11:56,030
+made this process a lot better but also
+a lot harder in the actual show but
+
+628
+00:11:56,030 --> 00:11:56,040
+a lot harder in the actual show but
+ 
+
+629
+00:11:56,040 --> 00:11:58,110
+a lot harder in the actual show but
+that's how I created these shots for my
+
+630
+00:11:58,110 --> 00:11:58,120
+that's how I created these shots for my
+ 
+
+631
+00:11:58,120 --> 00:12:00,310
+that's how I created these shots for my
+own version now on to the last and
+
+632
+00:12:00,310 --> 00:12:00,320
+own version now on to the last and
+ 
+
+633
+00:12:00,320 --> 00:12:03,190
+own version now on to the last and
+probably also most important step of
+
+634
+00:12:03,190 --> 00:12:03,200
+probably also most important step of
+ 
+
+635
+00:12:03,200 --> 00:12:08,949
+probably also most important step of
+them
+
+636
+00:12:08,949 --> 00:12:08,959
+
+ 
+
+637
+00:12:08,959 --> 00:12:11,470
+
+all the secret ingredient that makes
+
+638
+00:12:11,470 --> 00:12:11,480
+all the secret ingredient that makes
+ 
+
+639
+00:12:11,480 --> 00:12:15,189
+all the secret ingredient that makes
+Arcane look so great this tiny clip
+
+640
+00:12:15,189 --> 00:12:15,199
+Arcane look so great this tiny clip
+ 
+
+641
+00:12:15,199 --> 00:12:17,790
+Arcane look so great this tiny clip
+perfectly shows what that means all the
+
+642
+00:12:17,790 --> 00:12:17,800
+perfectly shows what that means all the
+ 
+
+643
+00:12:17,800 --> 00:12:19,590
+perfectly shows what that means all the
+elements of the scene are already there
+
+644
+00:12:19,590 --> 00:12:19,600
+elements of the scene are already there
+ 
+
+645
+00:12:19,600 --> 00:12:21,790
+elements of the scene are already there
+in the shot but what gives the show its
+
+646
+00:12:21,790 --> 00:12:21,800
+in the shot but what gives the show its
+ 
+
+647
+00:12:21,800 --> 00:12:24,310
+in the shot but what gives the show its
+unique look and feel is being created
+
+648
+00:12:24,310 --> 00:12:24,320
+unique look and feel is being created
+ 
+
+649
+00:12:24,320 --> 00:12:26,870
+unique look and feel is being created
+during the composition stage they are
+
+650
+00:12:26,870 --> 00:12:26,880
+during the composition stage they are
+ 
+
+651
+00:12:26,880 --> 00:12:28,990
+during the composition stage they are
+intentionally vague about this process
+
+652
+00:12:28,990 --> 00:12:29,000
+intentionally vague about this process
+ 
+
+653
+00:12:29,000 --> 00:12:30,470
+intentionally vague about this process
+in they're making off videos so it's
+
+654
+00:12:30,470 --> 00:12:30,480
+in they're making off videos so it's
+ 
+
+655
+00:12:30,480 --> 00:12:32,470
+in they're making off videos so it's
+hard to find any concrete info but
+
+656
+00:12:32,470 --> 00:12:32,480
+hard to find any concrete info but
+ 
+
+657
+00:12:32,480 --> 00:12:35,189
+hard to find any concrete info but
+here's how I think they did it looking
+
+658
+00:12:35,189 --> 00:12:35,199
+here's how I think they did it looking
+ 
+
+659
+00:12:35,199 --> 00:12:37,509
+here's how I think they did it looking
+at this clip again the process seems to
+
+660
+00:12:37,509 --> 00:12:37,519
+at this clip again the process seems to
+ 
+
+661
+00:12:37,519 --> 00:12:40,230
+at this clip again the process seems to
+start with the raw textures without any
+
+662
+00:12:40,230 --> 00:12:40,240
+start with the raw textures without any
+ 
+
+663
+00:12:40,240 --> 00:12:42,629
+start with the raw textures without any
+lighting then during compositing the
+
+664
+00:12:42,629 --> 00:12:42,639
+lighting then during compositing the
+ 
+
+665
+00:12:42,639 --> 00:12:45,430
+lighting then during compositing the
+lighting gets added in some sort of way
+
+666
+00:12:45,430 --> 00:12:45,440
+lighting gets added in some sort of way
+ 
+
+667
+00:12:45,440 --> 00:12:47,189
+lighting gets added in some sort of way
+on top of that we can also see some more
+
+668
+00:12:47,189 --> 00:12:47,199
+on top of that we can also see some more
+ 
+
+669
+00:12:47,199 --> 00:12:49,509
+on top of that we can also see some more
+typical effects like lens dird or glare
+
+670
+00:12:49,509 --> 00:12:49,519
+typical effects like lens dird or glare
+ 
+
+671
+00:12:49,519 --> 00:12:50,829
+typical effects like lens dird or glare
+that you would usually add during
+
+672
+00:12:50,829 --> 00:12:50,839
+that you would usually add during
+ 
+
+673
+00:12:50,839 --> 00:12:52,790
+that you would usually add during
+compositing as well as the 2D effects of
+
+674
+00:12:52,790 --> 00:12:52,800
+compositing as well as the 2D effects of
+ 
+
+675
+00:12:52,800 --> 00:12:54,269
+compositing as well as the 2D effects of
+course that need to be combined with the
+
+676
+00:12:54,269 --> 00:12:54,279
+course that need to be combined with the
+ 
+
+677
+00:12:54,279 --> 00:12:57,030
+course that need to be combined with the
+3D animation at some point to me it
+
+678
+00:12:57,030 --> 00:12:57,040
+3D animation at some point to me it
+ 
+
+679
+00:12:57,040 --> 00:12:59,350
+3D animation at some point to me it
+seems like they collect all the elements
+
+680
+00:12:59,350 --> 00:12:59,360
+seems like they collect all the elements
+ 
+
+681
+00:12:59,360 --> 00:13:01,670
+seems like they collect all the elements
+that make up a scene separately and then
+
+682
+00:13:01,670 --> 00:13:01,680
+that make up a scene separately and then
+ 
+
+683
+00:13:01,680 --> 00:13:03,590
+that make up a scene separately and then
+combine them all together in compositing
+
+684
+00:13:03,590 --> 00:13:03,600
+combine them all together in compositing
+ 
+
+685
+00:13:03,600 --> 00:13:06,509
+combine them all together in compositing
+to create the final look the reason why
+
+686
+00:13:06,509 --> 00:13:06,519
+to create the final look the reason why
+ 
+
+687
+00:13:06,519 --> 00:13:08,269
+to create the final look the reason why
+I think they do it that way is because
+
+688
+00:13:08,269 --> 00:13:08,279
+I think they do it that way is because
+ 
+
+689
+00:13:08,279 --> 00:13:10,509
+I think they do it that way is because
+that gives them ultimate creative
+
+690
+00:13:10,509 --> 00:13:10,519
+that gives them ultimate creative
+ 
+
+691
+00:13:10,519 --> 00:13:12,269
+that gives them ultimate creative
+control don't like the shading on the
+
+692
+00:13:12,269 --> 00:13:12,279
+control don't like the shading on the
+ 
+
+693
+00:13:12,279 --> 00:13:14,030
+control don't like the shading on the
+face just remove it from where you don't
+
+694
+00:13:14,030 --> 00:13:14,040
+face just remove it from where you don't
+ 
+
+695
+00:13:14,040 --> 00:13:15,829
+face just remove it from where you don't
+want it and enhance it where you need
+
+696
+00:13:15,829 --> 00:13:15,839
+want it and enhance it where you need
+ 
+
+697
+00:13:15,839 --> 00:13:17,870
+want it and enhance it where you need
+more don't like the hair color well now
+
+698
+00:13:17,870 --> 00:13:17,880
+more don't like the hair color well now
+ 
+
+699
+00:13:17,880 --> 00:13:19,189
+more don't like the hair color well now
+you can change it want to put more
+
+700
+00:13:19,189 --> 00:13:19,199
+you can change it want to put more
+ 
+
+701
+00:13:19,199 --> 00:13:21,710
+you can change it want to put more
+emphasis on the eyes select only the
+
+702
+00:13:21,710 --> 00:13:21,720
+emphasis on the eyes select only the
+ 
+
+703
+00:13:21,720 --> 00:13:23,829
+emphasis on the eyes select only the
+eyes to brighten them so they stick out
+
+704
+00:13:23,829 --> 00:13:23,839
+eyes to brighten them so they stick out
+ 
+
+705
+00:13:23,839 --> 00:13:26,629
+eyes to brighten them so they stick out
+more this ultimate flexibility is I
+
+706
+00:13:26,629 --> 00:13:26,639
+more this ultimate flexibility is I
+ 
+
+707
+00:13:26,639 --> 00:13:28,670
+more this ultimate flexibility is I
+think what allowed them to create such a
+
+708
+00:13:28,670 --> 00:13:28,680
+think what allowed them to create such a
+ 
+
+709
+00:13:28,680 --> 00:13:30,670
+think what allowed them to create such a
+unique animation style in the first
+
+710
+00:13:30,670 --> 00:13:30,680
+unique animation style in the first
+ 
+
+711
+00:13:30,680 --> 00:13:32,949
+unique animation style in the first
+place the 3D render gives you photo
+
+712
+00:13:32,949 --> 00:13:32,959
+place the 3D render gives you photo
+ 
+
+713
+00:13:32,959 --> 00:13:34,509
+place the 3D render gives you photo
+realistic shading but you don't have to
+
+714
+00:13:34,509 --> 00:13:34,519
+realistic shading but you don't have to
+ 
+
+715
+00:13:34,519 --> 00:13:36,389
+realistic shading but you don't have to
+use it if you think it looks better
+
+716
+00:13:36,389 --> 00:13:36,399
+use it if you think it looks better
+ 
+
+717
+00:13:36,399 --> 00:13:38,189
+use it if you think it looks better
+without it maybe you want to add your
+
+718
+00:13:38,189 --> 00:13:38,199
+without it maybe you want to add your
+ 
+
+719
+00:13:38,199 --> 00:13:40,310
+without it maybe you want to add your
+own lighting whatever it is you can do
+
+720
+00:13:40,310 --> 00:13:40,320
+own lighting whatever it is you can do
+ 
+
+721
+00:13:40,320 --> 00:13:42,230
+own lighting whatever it is you can do
+it now I think I managed to create some
+
+722
+00:13:42,230 --> 00:13:42,240
+it now I think I managed to create some
+ 
+
+723
+00:13:42,240 --> 00:13:43,870
+it now I think I managed to create some
+of this myself but I'm still very
+
+724
+00:13:43,870 --> 00:13:43,880
+of this myself but I'm still very
+ 
+
+725
+00:13:43,880 --> 00:13:45,670
+of this myself but I'm still very
+unexperienced in the step of the process
+
+726
+00:13:45,670 --> 00:13:45,680
+unexperienced in the step of the process
+ 
+
+727
+00:13:45,680 --> 00:13:48,629
+unexperienced in the step of the process
+so it could have been a lot better but I
+
+728
+00:13:48,629 --> 00:13:48,639
+so it could have been a lot better but I
+ 
+
+729
+00:13:48,639 --> 00:13:51,269
+so it could have been a lot better but I
+think that's also another maybe the most
+
+730
+00:13:51,269 --> 00:13:51,279
+think that's also another maybe the most
+ 
+
+731
+00:13:51,279 --> 00:13:54,310
+think that's also another maybe the most
+important reason for why Arcane looks
+
+732
+00:13:54,310 --> 00:13:54,320
+important reason for why Arcane looks
+ 
+
+733
+00:13:54,320 --> 00:13:57,110
+important reason for why Arcane looks
+and feels so good it's because so many
+
+734
+00:13:57,110 --> 00:13:57,120
+and feels so good it's because so many
+ 
+
+735
+00:13:57,120 --> 00:13:59,389
+and feels so good it's because so many
+experts from so many different fields
+
+736
+00:13:59,389 --> 00:13:59,399
+experts from so many different fields
+ 
+
+737
+00:13:59,399 --> 00:14:02,030
+experts from so many different fields
+came together to create this show as a
+
+738
+00:14:02,030 --> 00:14:02,040
+came together to create this show as a
+ 
+
+739
+00:14:02,040 --> 00:14:04,069
+came together to create this show as a
+single person you only have a limited
+
+740
+00:14:04,069 --> 00:14:04,079
+single person you only have a limited
+ 
+
+741
+00:14:04,079 --> 00:14:06,110
+single person you only have a limited
+amount of time to learn all parts of the
+
+742
+00:14:06,110 --> 00:14:06,120
+amount of time to learn all parts of the
+ 
+
+743
+00:14:06,120 --> 00:14:07,910
+amount of time to learn all parts of the
+process so you'll never be as good as
+
+744
+00:14:07,910 --> 00:14:07,920
+process so you'll never be as good as
+ 
+
+745
+00:14:07,920 --> 00:14:10,910
+process so you'll never be as good as
+someone who has dedicated their life to
+
+746
+00:14:10,910 --> 00:14:10,920
+someone who has dedicated their life to
+ 
+
+747
+00:14:10,920 --> 00:14:13,150
+someone who has dedicated their life to
+one of those things by yourself you
+
+748
+00:14:13,150 --> 00:14:13,160
+one of those things by yourself you
+ 
+
+749
+00:14:13,160 --> 00:14:14,910
+one of those things by yourself you
+might be able to create something great
+
+750
+00:14:14,910 --> 00:14:14,920
+might be able to create something great
+ 
+
+751
+00:14:14,920 --> 00:14:16,949
+might be able to create something great
+but only with a team can you go beyond
+
+752
+00:14:16,949 --> 00:14:16,959
+but only with a team can you go beyond
+ 
+
+753
+00:14:16,959 --> 00:14:20,189
+but only with a team can you go beyond
+that and create something truly
+
+754
+00:14:20,189 --> 00:14:20,199
+that and create something truly
+ 
+
+755
+00:14:20,199 --> 00:14:23,949
+that and create something truly
+remarkable I drift
+
+756
+00:14:23,949 --> 00:14:23,959
+remarkable I drift
+ 
+
+757
+00:14:23,959 --> 00:14:29,150
+remarkable I drift
+as to find you in my dream
+
+758
+00:14:29,150 --> 00:14:29,160
+as to find you in my dream
+ 
+
+759
+00:14:29,160 --> 00:14:33,670
+as to find you in my dream
+tell me is it real cuz I wake up feeling
+
+760
+00:14:33,670 --> 00:14:33,680
+tell me is it real cuz I wake up feeling
+ 
+
+761
+00:14:33,680 --> 00:14:35,220
+tell me is it real cuz I wake up feeling
+like it
+
+762
+00:14:35,220 --> 00:14:35,230
+like it
+ 
+
+763
+00:14:35,230 --> 00:14:38,150
+like it
+[Music]
+
+764
+00:14:38,150 --> 00:14:38,160
+[Music]
+ 
+
+765
+00:14:38,160 --> 00:14:54,180
+[Music]
+is you make me nous yes true
+
+766
+00:14:54,180 --> 00:14:54,190
+
+ 
+
+767
+00:14:54,190 --> 00:15:02,249
+
+[Music]
+
