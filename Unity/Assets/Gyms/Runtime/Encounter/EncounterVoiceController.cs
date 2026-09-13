@@ -235,9 +235,11 @@ namespace LucidLoop.Gyms
                 {
                     string code = (string)message["code"];
                     if (IsReady && (code == "unsupported_event" || code == "invalid_message" || code == "not_ready")) SetStatus("command_rejected");
+                    else if ((code == "out_of_range" || code == "character_out_of_range")) Fail("They moved out of range. Leave, then tap Talk to approach again.");
                     else Fail(IsConnecting ? "startup_rejected" : "relay_error");
                 }
             }
+            else if (type == "game.intent_result") { if (!IsClosing) SetStatus(EncounterIntentFeedback.Describe(message)); }
             else if (type == "game.error") { SetStatus("game_request_rejected"); }
             else if (type == "error")
             { if (IsConnecting) Fail("provider_startup_rejected"); else SetStatus("provider_command_rejected"); }

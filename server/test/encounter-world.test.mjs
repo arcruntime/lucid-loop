@@ -42,6 +42,60 @@ test('input only accepts sequenced player destinations; collision routes and spe
   assert.deepEqual(previous, { x: 10, z: -1.7 });
 });
 
+test('approach chooses a reachable stand point around furniture and publishes the unchanged live gate', () => {
+  const config = structuredClone(CLUB_WORLD_CONFIG); config.spawns.player = { x: -12, z: 0 };
+  const f = fixture(config), loopId = f.state().loopId;
+  assert.deepEqual(f.world.snapshot().conversations.luca, { eligible: false, reason: 'out_of_range' });
+  const accepted = f.world.input({ type: 'approach', loopId, sequence: 0, npcId: 'luca' });
+  assert.equal(accepted.accepted, true); assert.equal(accepted.frame, f.world.snapshot().frame);
+  assert.ok(Math.hypot(accepted.destination.x + 7, accepted.destination.z - 2) < 2.2);
+  for (let i = 0; i < 200; i++) {
+    f.world.tick(0.1);
+    const p = f.world.snapshot().actors.player.position;
+    for (const r of config.obstacles) assert.ok(!(p.x >= r.minX - 0.35 && p.x <= r.maxX + 0.35 && p.z >= r.minZ - 0.35 && p.z <= r.maxZ + 0.35), r.id);
+    if (Math.hypot(p.x - accepted.destination.x, p.z - accepted.destination.z) < 0.02) break;
+  }
+  assert.deepEqual(f.world.snapshot().actors.player.position, accepted.destination);
+  for (const id of ['maya', 'ren', 'luca', 'theo']) assert.equal(f.world.snapshot().conversations[id].eligible, f.world.canConverse(id).ok);
+  assert.equal(f.world.canConverse('luca').ok, true);
+  // A fresh Talk on an eligible NPC stops an earlier walk rather than leaving a
+  // hidden destination to resume after voice closes.
+  assert.equal(f.world.input({ type: 'move_to', loopId, sequence: 1, destination: { x: 0, z: -8 } }).accepted, true);
+  const stopped = f.world.input({ type: 'approach', loopId, sequence: 2, npcId: 'luca' });
+  assert.equal(stopped.accepted, true); f.run(1);
+  assert.deepEqual(f.world.snapshot().actors.player.position, stopped.destination);
+});
+
+test('approach rejects noninteractive actors, fenced input and unreachable rooms without consuming sequence', () => {
+  const config = structuredClone(CLUB_WORLD_CONFIG);
+  config.obstacles.push({ id: 'sealed-divider', minX: -13, maxX: 13, minZ: 3, maxZ: 3.1, blocksSight: true });
+  const f = fixture(config), loopId = f.state().loopId;
+  assert.equal(f.world.input({ type: 'approach', loopId, sequence: 0, npcId: 'affair_partner' }).reason, 'unknown_npc');
+  assert.equal(f.world.input({ type: 'approach', loopId, sequence: 0, npcId: 'ren' }).reason, 'no_reachable_conversation_point');
+  assert.equal(f.world.snapshot().sequence, -1);
+  assert.equal(f.world.input({ type: 'approach', loopId: 'old-loop', sequence: 0, npcId: 'luca' }).reason, 'stale_loop');
+  assert.equal(f.world.input({ type: 'approach', loopId, sequence: 0, npcId: 'luca', destination: { x: 8, z: 0 } }).reason, 'invalid_input');
+  assert.equal(f.world.input({ type: 'approach', loopId, sequence: 0, npcId: 'luca' }).accepted, true);
+  assert.equal(f.world.input({ type: 'approach', loopId, sequence: 0, npcId: 'maya' }).reason, 'stale_sequence');
+  assert.equal(f.world.input({ type: 'move_to', loopId, sequence: 1, destination: { x: 0, z: -6 } }).accepted, true);
+  f.run(2); assert.deepEqual(f.world.snapshot().actors.player.position, { x: 0, z: -6 });
+  assert.equal(f.world.input({ type: 'approach', loopId, sequence: 2, npcId: 'luca' }).accepted, true);
+  assert.equal(f.world.input({ type: 'stop', loopId, sequence: 3 }).accepted, true);
+  f.run(2); assert.deepEqual(f.world.snapshot().actors.player.position, { x: 0, z: -6 });
+});
+
+test('approach goes around a sightline blocker instead of granting conversation through it', () => {
+  const config = structuredClone(CLUB_WORLD_CONFIG); config.spawns.player = { x: -7, z: 0 };
+  config.obstacles.push({ id: 'conversation-screen', minX: -7.5, maxX: -6.5, minZ: 0.9, maxZ: 1.1, blocksSight: true });
+  const f = fixture(config), loopId = f.state().loopId;
+  assert.equal(f.world.canConverse('luca').ok, false, 'two metres away through the screen is not eligible');
+  const result = f.world.input({ type: 'approach', loopId, sequence: 0, npcId: 'luca' });
+  assert.equal(result.accepted, true); f.run(5);
+  assert.deepEqual(f.world.snapshot().actors.player.position, result.destination);
+  assert.equal(f.world.snapshot().conversations.luca.eligible, true);
+  assert.equal(f.world.canConverse('luca').ok, true);
+});
+
 test('pauses stop movement and clock, and catch-up drops stalls', () => {
   const f = fixture(); f.move(0, 0); const before = f.world.snapshot();
   for (const reason of ['paused', 'voiceActive', 'suspended']) assert.equal(f.world.tick(60, { [reason]: true }).steps, 0);
@@ -61,6 +115,9 @@ test('default opening derives recognition, actual intervention at table, and a f
   assert.ok(f.state().scenario.elapsedSeconds >= 20);
   const frozen = f.world.snapshot(); f.run(10); assert.deepEqual(f.world.snapshot(), frozen);
   assert.equal(f.world.canConverse('luca').reason, 'encounter_ended');
+  assert.equal(f.world.snapshot().conversations.luca.eligible, false);
+  assert.equal(f.world.input({ type: 'approach', loopId: f.state().loopId, sequence: 100, npcId: 'luca' }).reason, 'encounter_ended');
+  assert.equal(f.world.snapshot().sequence, frozen.sequence);
 });
 
 test('recognition requires both sightlines; no entry or timer invents a catastrophe', () => {

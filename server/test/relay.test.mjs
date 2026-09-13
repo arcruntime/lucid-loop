@@ -34,6 +34,52 @@ test("world channel advances server positions and rejects forged destinations an
   } finally { await bounded(relay.close(), "relay close"); }
 });
 
+test("world approach protocol exposes eligibility, correlates rejection and shares walk/stop sequencing", async () => {
+  const games = createGameSessions({ definitionFactory: createDemoDefinition, encounterFactory: createDemoScenario });
+  const { relay, url } = await makeRelay({ apiKey: "", gameSessions: games, worldFactory: createEncounterWorld });
+  try {
+    const client = await openClient(url.replace('/live', '/game'));
+    client.send(JSON.stringify({ type: "game.create" }));
+    const ready = await untilJson(client, "game.ready"), initial = await untilJson(client, "game.world");
+    assert.equal(initial.world.conversations.ren.eligible, false);
+    const send = event => client.send(JSON.stringify({ loopId: ready.snapshot.loopId, ...event }));
+    send({ type: "game.approach", sequence: 1, npcId: "affair_partner" });
+    const rejected = await untilJson(client, "game.approach_result");
+    assert.equal(rejected.reason, "unknown_npc"); assert.equal(rejected.sequence, 1);
+    assert.equal(rejected.loopId, ready.snapshot.loopId); assert.equal(rejected.npcId, "affair_partner");
+    send({ type: "game.approach", sequence: 1, npcId: "ren" });
+    const approach = await untilJson(client, "game.approach_result");
+    assert.equal(approach.accepted, true); assert.equal(approach.npcId, "ren");
+    assert.ok(Number.isSafeInteger(approach.frame)); assert.ok(Number.isFinite(approach.destination.x));
+    send({ type: "game.walk", sequence: 2, destination: { x: 0, z: -6 } });
+    assert.equal((await untilJson(client, "game.move_result")).accepted, true);
+    let arrived;
+    for (let i = 0; i < 30; i++) {
+      const update = await untilJson(client, "game.world");
+      if (update.world.sequence === 2 && Math.hypot(update.world.actors.player.position.x, update.world.actors.player.position.z + 6) < 0.02) { arrived = update.world; break; }
+    }
+    assert.ok(arrived, "newer walk must replace the Ren approach destination");
+    assert.equal(arrived.conversations.ren.eligible, false);
+    assert.deepEqual((await untilJson(client, "game.world")).world.actors.player.position, { x: 0, z: -6 });
+    send({ type: "game.approach", sequence: 3, npcId: "ren" });
+    assert.equal((await untilJson(client, "game.approach_result")).accepted, true);
+    send({ type: "game.stop", sequence: 4 });
+    assert.equal((await untilJson(client, "game.move_result")).accepted, true);
+    send({ type: "game.walk", sequence: 4, destination: { x: 0, z: -6 } });
+    assert.equal((await untilJson(client, "game.move_result")).reason, "stale_sequence");
+    send({ type: "game.approach", loopId: "obsolete", sequence: 5, npcId: "ren" });
+    const stale = await untilJson(client, "game.approach_result");
+    assert.equal(stale.reason, "stale_loop"); assert.equal(stale.loopId, "obsolete"); assert.equal(stale.sequence, 5);
+    send({ type: "game.pause", paused: true }); await untilJson(client, "game.pause");
+    send({ type: "game.approach", sequence: 5, npcId: "ren" });
+    assert.equal((await untilJson(client, "game.approach_result")).reason, "paused");
+    send({ type: "game.walk", sequence: 5, destination: { x: 0, z: -6 } });
+    assert.equal((await untilJson(client, "game.move_result")).reason, "paused");
+    send({ type: "game.stop", sequence: 5 });
+    assert.equal((await untilJson(client, "game.move_result")).accepted, true, "paused/invalid commands must not consume sequence and stop must cancel during pause");
+  } finally { await bounded(relay.close(), "relay close"); }
+});
+
 test("typed gameplay request reaches validated interpreter and commits through the active NPC lease", async () => {
   const games = createGameSessions({ definitionFactory: () => ({ authorizeAction: () => true }) });
   const created = games.create();

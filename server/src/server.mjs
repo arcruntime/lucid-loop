@@ -166,7 +166,15 @@ export function createRelayServer(options = {}) {
         }
         // World facts and action commits are intentionally absent from player RPCs.
         if (event.type === "game.walk" && worldRecord) {
-          respond({ type: "game.move_result", ...worldRecord.world.input({ type: "move_to", loopId: event.loopId, sequence: event.sequence, destination: event.destination }) });
+          respond({ type: "game.move_result", ...(worldRecord.paused ? { accepted: false, reason: "paused" } :
+            worldRecord.world.input({ type: "move_to", loopId: event.loopId, sequence: event.sequence, destination: event.destination })) });
+        } else if (event.type === "game.approach" && worldRecord) {
+          respond({ type: "game.approach_result", ...(typeof event.loopId === "string" ? { loopId: event.loopId } : {}),
+            ...(Number.isSafeInteger(event.sequence) ? { sequence: event.sequence } : {}), ...(typeof event.npcId === "string" ? { npcId: event.npcId } : {}),
+            ...(worldRecord.paused ? { accepted: false, reason: "paused" } :
+              worldRecord.world.input({ type: "approach", loopId: event.loopId, sequence: event.sequence, npcId: event.npcId })) });
+        } else if (event.type === "game.stop" && worldRecord) {
+          respond({ type: "game.move_result", ...worldRecord.world.input({ type: "stop", loopId: event.loopId, sequence: event.sequence }) });
         } else if (event.type === "game.pause" && worldRecord && typeof event.paused === "boolean") {
           worldRecord.paused = event.paused;
           respond({ type: "game.pause", paused: worldRecord.paused });

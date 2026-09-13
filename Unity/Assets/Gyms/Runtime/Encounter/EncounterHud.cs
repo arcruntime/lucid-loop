@@ -22,12 +22,12 @@ namespace LucidLoop.Gyms
         EncounterHudLayout responsiveLayout;
         Text stateLabel, clueLabel, statusLabel, speakerLabel, transcript, guidance;
         InputField address, access, reply;
-        Button send, mic, resume, pause, reset, openingRoute;
+        Button send, mic, resume, pause, reset, openingRoute, talk;
         ScrollRect historyScroll;
         bool microphoneEnabled, wired;
         bool paused;
-        Vector2 pointerDown;
-        bool pointerOwned;
+        readonly EncounterTapGesture floorTap = new EncounterTapGesture();
+        bool suppressTouches;
         string historyText = "", previousRole;
         const int MaxDisplayedCharacters = 24000;
         static readonly Color Gold = new Color(.89f, .73f, .43f);
@@ -71,7 +71,12 @@ namespace LucidLoop.Gyms
             string[] ids = { "maya", "ren", "luca", "theo" }, names = { "Maya", "Ren", "Luca", "Theo" };
             for (int i = 0; i < ids.Length; i++)
             { string id = ids[i]; GymUI.Button(GymUI.Box(panel, "Select " + id, 20 + i * 133, 80, 124, 52), names[i], () => SelectNpc(id)); }
-            GymUI.Button(GymUI.Box(panel, "Talk", 20, 150, 245, 56), "Talk", () => { responsiveLayout.ConversationExpanded = true; if (!Coordinator.RequestConversation(SelectedNpcId)) ShowConversationStatus("Connect before talking."); });
+            talk = GymUI.Button(GymUI.Box(panel, "Talk", 20, 150, 245, 56), "Talk", () =>
+            {
+                if (Coordinator.PendingConversationNpc != null) { Coordinator.CancelPendingConversation(); return; }
+                responsiveLayout.ConversationExpanded = true;
+                if (!Coordinator.RequestConversation(SelectedNpcId)) ShowConversationStatus(Coordinator.IsReady ? "Conversation unavailable right now." : "Connect before talking.");
+            });
             GymUI.Button(GymUI.Box(panel, "History", 283, 150, 250, 56), "History", () => { responsiveLayout.ConversationExpanded = true; if (!Coordinator.RequestHistory(SelectedNpcId)) ShowConversationStatus("Connect to load history."); });
             statusLabel = GymUI.Label(panel, "Connect to begin", 20, 223, 513, 62, 21);
             var scrollArea = GymUI.Rect(panel, "History scroll", Vector2.zero, Vector2.one, new Vector2(20, 240), new Vector2(-20, -306));
@@ -121,6 +126,7 @@ namespace LucidLoop.Gyms
             Coordinator.StateChanged += ShowState; Coordinator.StatusChanged += ShowStatus;
             Coordinator.HistoryReceived += ShowHistory; Coordinator.ConversationRequested += OnConversation;
             Coordinator.ConversationInvalidated += OnInvalidated;
+            Coordinator.ApproachStatusChanged += ShowApproachStatus;
             Coordinator.WorldChanged += ShowWorld; Coordinator.PauseChanged += ShowPause;
             if (Voice) { Voice.Ready += OnVoiceReady; Voice.StatusChanged += ShowConversationStatus; Voice.TranscriptFragment += AppendTranscriptFragment; }
             wired = true;
@@ -134,6 +140,14 @@ namespace LucidLoop.Gyms
             if (pause) pause.interactable = Coordinator.IsReady;
             if (openingRoute) openingRoute.interactable = Coordinator.IsReady && Coordinator.State.LoopIndex == 1 &&
                 Coordinator.State.Phase != "catastrophe" && Coordinator.State.Phase != "unresolved" && Coordinator.State.Phase != "victory";
+            if (talk)
+            {
+                Coordinator.ConversationEligibility(SelectedNpcId, out var eligible, out var reason);
+                talk.interactable = !paused;
+                talk.GetComponentInChildren<Text>().text = Coordinator.PendingConversationNpc != null ? "Cancel" : eligible ? "Talk" : "Walk & talk";
+            }
+            if (Coordinator.PendingConversationNpc != null && guidance) guidance.text = "Walking to " + Coordinator.PendingConversationNpc + ". Talk opens when you arrive. Tap the floor or Cancel to change your mind.";
+            else if (Voice && (Voice.IsReady || Voice.IsConnecting) && guidance) guidance.text = "The night is paused while you talk. Tap Leave to resume movement and let actions take effect.";
             ReadFloorTap();
             if (Voice && mic && microphoneEnabled != Voice.MicrophoneEnabled && !Voice.IsConnecting)
             { microphoneEnabled = Voice.MicrophoneEnabled; mic.GetComponentInChildren<Text>().text = microphoneEnabled ? "Mic on" : "Mic off"; }
@@ -141,16 +155,34 @@ namespace LucidLoop.Gyms
 
         void ReadFloorTap()
         {
-            if (!Coordinator.IsReady || paused || !Rig || Rig.Target || (reply && reply.isFocused)) { pointerOwned = false; return; }
-            if (Input.GetMouseButtonDown(0))
+            if (!Coordinator.IsReady || paused || !Rig || Rig.Target || (reply && reply.isFocused)) { floorTap.Cancel(); return; }
+            Vector2 position;
+            bool tap;
+            if (Input.touchCount > 0)
             {
-                pointerDown = Input.mousePosition;
-                int pointerId = Input.touchCount > 0 ? Input.GetTouch(0).fingerId : -1;
-                pointerOwned = !EventSystem.current || !EventSystem.current.IsPointerOverGameObject(pointerId);
+                // Reject the entire multi-touch sequence, including the last remaining finger.
+                if (Input.touchCount != 1) { suppressTouches = true; floorTap.Cancel(); return; }
+                if (suppressTouches) return;
+                var touch = Input.GetTouch(0);
+                position = touch.position;
+                bool overUi = EventSystem.current && EventSystem.current.IsPointerOverGameObject(touch.fingerId);
+                if (touch.phase == TouchPhase.Canceled) { floorTap.Cancel(); return; }
+                if (touch.phase == TouchPhase.Began) floorTap.Begin(touch.fingerId, position, 30f, overUi);
+                floorTap.Move(touch.fingerId, position);
+                tap = touch.phase == TouchPhase.Ended && floorTap.End(touch.fingerId, position, overUi);
             }
-            if (!Input.GetMouseButtonUp(0)) return;
-            bool tap = pointerOwned && Vector2.Distance(pointerDown, Input.mousePosition) < 20f; pointerOwned = false;
-            if (!tap || !Rig.Camera || !Physics.Raycast(Rig.Camera.ScreenPointToRay(Input.mousePosition), out var hit, 150)) return;
+            else
+            {
+                suppressTouches = false;
+                // iOS mouse emulation must not replay a touch release as a floor click.
+                if (Application.isMobilePlatform) { floorTap.Cancel(); return; }
+                position = Input.mousePosition;
+                bool overUi = EventSystem.current && EventSystem.current.IsPointerOverGameObject();
+                if (Input.GetMouseButtonDown(0)) floorTap.Begin(-1, position, 20f, overUi);
+                floorTap.Move(-1, position);
+                tap = Input.GetMouseButtonUp(0) && floorTap.End(-1, position, overUi);
+            }
+            if (!tap || !Rig.Camera || !Physics.Raycast(Rig.Camera.ScreenPointToRay(position), out var hit, 150)) return;
             var actor = hit.collider.GetComponentInParent<CharacterActor>();
             if (actor)
             {
@@ -162,6 +194,7 @@ namespace LucidLoop.Gyms
 
         void SelectNpc(string id)
         {
+            if (SelectedNpcId != id) Coordinator.CancelPendingConversation();
             if (SelectedNpcId != id) Leave();
             SelectedNpcId = id; historyText = ""; previousRole = null; RenderHistory();
             foreach (var actor in Coordinator.Characters)
@@ -172,8 +205,8 @@ namespace LucidLoop.Gyms
         {
             responsiveLayout.ConversationExpanded = true;
             SelectedNpcId = request.CharacterId; historyText = ""; previousRole = null; RenderHistory();
-            if (Rig) { Rig.Overview(); foreach (var actor in Coordinator.Characters) if (actor && actor.Id == SelectedNpcId) Rig.Target = actor; }
             ShowConversationStatus("Connecting…"); SetConversationInputEnabled(false, false);
+            if (Rig) { Rig.Overview(); foreach (var actor in Coordinator.Characters) if (actor && actor.Id == SelectedNpcId) Rig.Target = actor; }
         }
         void OnInvalidated() { if (responsiveLayout) responsiveLayout.ConversationExpanded = false; microphoneEnabled = false; if (mic) mic.GetComponentInChildren<Text>().text = "Mic off"; SetConversationInputEnabled(false, false); if (Rig) Rig.Overview(); }
         void OnVoiceReady() { SetConversationInputEnabled(true, true); ShowConversationStatus("Ready · microphone off"); }
@@ -199,7 +232,24 @@ namespace LucidLoop.Gyms
             if (Voice) Voice.EnableMicrophone(microphoneEnabled);
             mic.GetComponentInChildren<Text>().text = microphoneEnabled ? "Mic on" : "Mic off";
         }
-        void Leave() { if (reply) reply.DeactivateInputField(); if (Voice) Voice.Leave(); LeaveRequested?.Invoke(); OnInvalidated(); ShowConversationStatus("Choose a character and tap Talk."); }
+        void Leave() { Coordinator.CancelPendingConversation(); if (reply) reply.DeactivateInputField(); if (Voice) Voice.Leave(); LeaveRequested?.Invoke(); OnInvalidated(); ShowConversationStatus("Choose a character and tap Talk."); }
+
+        void ShowApproachStatus(string value)
+        {
+            if (value == "approaching")
+            { if (responsiveLayout) responsiveLayout.ConversationExpanded = false; if (Rig) Rig.Overview(); }
+            if (value == "conversation_starting") return;
+            string text = value == "approaching" ? "Walking into conversation range..." :
+                value == "approach_target_moved" ? "They moved or the path was blocked. Tap Talk to approach again." :
+                value == "approach_timed_out" ? "Approach timed out. Tap Talk to try again." :
+                value == "encounter_ended" ? "The encounter has ended. Rewind to try again." :
+                value == "approach_unavailable" ? "No conversation point is reachable right now." : "Approach cancelled. Tap the floor to walk.";
+            ShowConversationStatus(text);
+            if (guidance) guidance.text = text;
+        }
+        void CancelPointerGesture() { floorTap.Cancel(); suppressTouches = Input.touchCount > 0; }
+        void OnDisable() { CancelPointerGesture(); if (Coordinator) Coordinator.CancelPendingConversation(); }
+        void OnApplicationFocus(bool focused) { if (!focused) { CancelPointerGesture(); if (Coordinator) Coordinator.CancelPendingConversation(); } }
 
         void ShowStatus(string value)
         {
@@ -270,6 +320,7 @@ namespace LucidLoop.Gyms
                 Coordinator.StateChanged -= ShowState; Coordinator.StatusChanged -= ShowStatus;
                 Coordinator.HistoryReceived -= ShowHistory; Coordinator.ConversationRequested -= OnConversation;
                 Coordinator.ConversationInvalidated -= OnInvalidated;
+                Coordinator.ApproachStatusChanged -= ShowApproachStatus;
                 Coordinator.WorldChanged -= ShowWorld; Coordinator.PauseChanged -= ShowPause;
             }
             if (wired && Voice) { Voice.Ready -= OnVoiceReady; Voice.StatusChanged -= ShowConversationStatus; Voice.TranscriptFragment -= AppendTranscriptFragment; }

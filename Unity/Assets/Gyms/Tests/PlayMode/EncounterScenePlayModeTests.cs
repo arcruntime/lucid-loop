@@ -25,6 +25,43 @@ namespace LucidLoop.Gyms.PlayModeTests
         [UnityTest, Explicit("Requires the real local relay; previews phone HUD in the Editor Game view.")]
         public IEnumerator PhoneOpeningAndExpandableRetainedClues() => RunOpening(true);
 
+        [UnityTest, Explicit("Requires the local relay; validates approach without opening a paid voice session.")]
+        public IEnumerator ApproachStartsConversationOnlyAfterServerEligibility()
+        {
+            deadline = Time.realtimeSinceStartup + 90f;
+            var loading = SceneManager.LoadSceneAsync("BeforeTheDrop", LoadSceneMode.Single);
+            while (!loading.isDone) { CheckDeadline("approach scene"); yield return null; }
+            yield return null;
+            coordinator = UnityEngine.Object.FindFirstObjectByType<EncounterCoordinator>();
+            var voice = UnityEngine.Object.FindFirstObjectByType<EncounterVoiceController>();
+            voice.enabled = false; // Exercise the real world transport and camera, not the provider.
+            var hud = UnityEngine.Object.FindFirstObjectByType<EncounterHud>();
+            hud.Voice = null;
+            int requests = 0;
+            coordinator.ConversationRequested += request =>
+            {
+                Assert.That(coordinator.ConversationEligibility(request.CharacterId, out var eligible, out _), Is.True);
+                Assert.That(eligible, Is.True);
+                requests++;
+            };
+            string relay = Environment.GetEnvironmentVariable("LUCID_LOOP_SMOKE_GAME_URL") ?? "ws://127.0.0.1:8789/game";
+            Assert.That(coordinator.ConnectNew(relay), Is.True);
+            while (!coordinator.IsReady || !coordinator.ConversationEligibility("ren", out _, out _))
+            { CheckDeadline("approach world ready"); yield return null; }
+            Assert.That(coordinator.RequestConversation("ren"), Is.True);
+            Assert.That(requests, Is.Zero);
+            Assert.That(hud.Rig.Target, Is.Null, "Camera must stay in overview during approach.");
+            while (requests == 0) { CheckDeadline("approaching Ren"); yield return null; }
+            Assert.That(requests, Is.EqualTo(1));
+            Assert.That(hud.Rig.Target.Id, Is.EqualTo("ren"));
+            Assert.That(coordinator.RequestConversation("luca"), Is.True);
+            Assert.That(coordinator.SendDestination(new Vector3(0, 0, -8)), Is.True);
+            Assert.That(coordinator.PendingConversationNpc, Is.Null);
+            yield return new WaitForSecondsRealtime(1f);
+            Assert.That(requests, Is.EqualTo(1), "A cancelled approach must not open a later conversation.");
+            LogAssert.NoUnexpectedReceived();
+        }
+
         IEnumerator RunOpening(bool phone)
         {
             deadline = Time.realtimeSinceStartup + 90f;

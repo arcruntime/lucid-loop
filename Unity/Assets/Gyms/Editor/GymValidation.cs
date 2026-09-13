@@ -59,6 +59,12 @@ namespace LucidLoop.Gyms.Editor
             "LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.PhoneOpeningAndExpandableRetainedClues"
         });
 
+        [MenuItem("Lucid Loop/Validate conversation approach PlayMode smoke")]
+        public static void RunApproachPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "approach-playmode", "APPROACH_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.ApproachStartsConversationOnlyAfterServerEligibility"
+        });
+
         static void Run(TestMode mode, string assembly, string filename, string marker, string[] groups = null, string[] testNames = null)
         {
             if (runner != null || EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode)

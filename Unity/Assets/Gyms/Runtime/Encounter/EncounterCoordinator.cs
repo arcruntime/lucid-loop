@@ -35,6 +35,16 @@ namespace LucidLoop.Gyms
         public event Action<string, string> NavigationFailed;
         public event Action<JObject> WorldChanged;
         public event Action<bool> PauseChanged;
+        public event Action<string> ApproachStatusChanged;
+        readonly EncounterApproachIntent approach = new EncounterApproachIntent();
+        JObject conversations;
+        public string PendingConversationNpc => approach.NpcId;
+        public bool ConversationEligibility(string npc, out bool eligible, out string reason)
+            => EncounterConversationEligibility.TryRead(conversations, npc, out eligible, out reason);
+        public void CancelPendingConversation(bool stopMovement = true)
+        { if (!approach.Pending) return; if (stopMovement) StopApproachMovement(); approach.Cancel(); ApproachStatusChanged?.Invoke(approach.Outcome); }
+        void StopApproachMovement()
+        { if (IsReady && worldLoop == State.LoopId) Send(new JObject { ["type"] = "game.stop", ["loopId"] = State.LoopId, ["sequence"] = ++moveSequence }); }
 
         readonly Dictionary<string, CharacterActor> actors = new Dictionary<string, CharacterActor>(StringComparer.Ordinal);
         readonly Dictionary<string, NpcActionExecutor> executors = new Dictionary<string, NpcActionExecutor>(StringComparer.Ordinal);
@@ -104,6 +114,7 @@ namespace LucidLoop.Gyms
             while (active != null && connection == active && budget-- > 0 && active.TryRead(out var message)) Handle(message);
             if (IsConnecting && Time.unscaledTime > deadline) Fail("startup_timeout");
             if (IsReady && ServerOwnsMovement) RenderWorld();
+            if (approach.Tick(Time.unscaledTime)) { StopApproachMovement(); ApproachStatusChanged?.Invoke(approach.Outcome); }
         }
 
         void Handle(JObject message)
@@ -124,7 +135,10 @@ namespace LucidLoop.Gyms
             else if (type == "game.state") { if (IsReady) ApplySnapshot(message["snapshot"] as JObject, false); }
             else if (type == "game.history") { if (IsReady) HistoryReceived?.Invoke((JObject)message.DeepClone()); }
             else if (type == "game.world") { if (IsReady) ApplyWorld(message["world"] as JObject); }
-            else if (type == "game.pause" && message["paused"]?.Type == JTokenType.Boolean) PauseChanged?.Invoke((bool)message["paused"]);
+            else if (type == "game.approach_result")
+            { if (IsReady && approach.AcceptResult(message) && !approach.Pending) ApproachStatusChanged?.Invoke(approach.Outcome); }
+            else if (type == "game.pause" && message["paused"]?.Type == JTokenType.Boolean)
+            { if ((bool)message["paused"]) CancelPendingConversation(); PauseChanged?.Invoke((bool)message["paused"]); }
             else if (type == "game.move_result" && message["accepted"]?.Type == JTokenType.Boolean && !(bool)message["accepted"]) SetStatus("destination_unavailable");
             else if (type == "game.reset_result" && message["accepted"]?.Type == JTokenType.Boolean && !(bool)message["accepted"]) SetStatus("reset_unavailable");
             else if (type == "game.error")
@@ -173,13 +187,16 @@ namespace LucidLoop.Gyms
         public bool RequestSnapshot() => Send(new JObject { ["type"] = "game.snapshot" });
         public bool SendDestination(Vector3 destination)
         {
+            // Stop the old approach first: a rejected replacement walk preserves
+            // the server's prior destination, so cancellation alone is insufficient.
+            CancelPendingConversation();
             if (!IsReady || worldLoop != State.LoopId || !Finite(destination.x) || !Finite(destination.z) ||
                 destination.x < -13 || destination.x > 13 || destination.z < -11 || destination.z > 11) return false;
             return Send(new JObject { ["type"] = "game.walk", ["loopId"] = State.LoopId, ["sequence"] = ++moveSequence,
                 ["destination"] = new JObject { ["x"] = destination.x, ["z"] = destination.z } });
         }
-        public bool Pause(bool paused) => Send(new JObject { ["type"] = "game.pause", ["paused"] = paused });
-        public bool Reset() => Send(new JObject { ["type"] = "game.reset", ["loopId"] = State.LoopId, ["revision"] = State.Revision });
+        public bool Pause(bool paused) { if (paused) CancelPendingConversation(); return Send(new JObject { ["type"] = "game.pause", ["paused"] = paused }); }
+        public bool Reset() { CancelPendingConversation(); return Send(new JObject { ["type"] = "game.reset", ["loopId"] = State.LoopId, ["revision"] = State.Revision }); }
 
         void ApplyWorld(JObject world)
         {
@@ -214,7 +231,15 @@ namespace LucidLoop.Gyms
                 if (snap) actor.transform.position = pair.Value;
             }
             worldArrival = Time.unscaledTime;
+            conversations = world["conversations"] is JObject availability ? (JObject)availability.DeepClone() : null;
             WorldChanged?.Invoke((JObject)world.DeepClone());
+            if (approach.Pending)
+            {
+                ConversationEligibility(approach.NpcId, out var eligible, out var unavailable);
+                string npc = approach.Observe(worldLoop, sequence, frame, eligible, unavailable, (string)body["player"]?["motion"], Time.unscaledTime);
+                if (!approach.Pending) ApproachStatusChanged?.Invoke(approach.Outcome);
+                if (npc != null) OpenConversation(npc);
+            }
         }
         void RenderWorld()
         {
@@ -228,7 +253,7 @@ namespace LucidLoop.Gyms
                 if (direction.sqrMagnitude > .0001f) actor.transform.rotation = Quaternion.LookRotation(direction);
             }
         }
-        void ClearWorld() { worldFrame = moveSequence = -1; worldLoop = null; worldFrom.Clear(); worldTo.Clear(); }
+        void ClearWorld() { CancelPendingConversation(); conversations = null; worldFrame = moveSequence = -1; worldLoop = null; worldFrom.Clear(); worldTo.Clear(); }
         static bool Finite(float value) => !float.IsNaN(value) && !float.IsInfinity(value);
         static bool TryCoordinate(JToken token, float min, float max, out float value)
         {
@@ -247,6 +272,21 @@ namespace LucidLoop.Gyms
         }
 
         public bool RequestConversation(string npcId)
+        {
+            CancelPendingConversation();
+            if (!IsReady || !CanResume || !IsTalkable(npcId) || !actors.ContainsKey(npcId) || worldLoop != State.LoopId) return false;
+            ConversationEligibility(npcId, out _, out var reason);
+            if (reason == "encounter_ended") { ApproachStatusChanged?.Invoke(reason); return false; }
+            ConversationInvalidated?.Invoke();
+            long sequence = ++moveSequence;
+            approach.Begin(State.LoopId, npcId, sequence, Time.unscaledTime);
+            if (!Send(new JObject { ["type"] = "game.approach", ["loopId"] = State.LoopId, ["sequence"] = sequence, ["npcId"] = npcId }))
+            { CancelPendingConversation(); return false; }
+            ApproachStatusChanged?.Invoke("approaching");
+            return true;
+        }
+
+        bool OpenConversation(string npcId)
         {
             if (!IsReady || !CanResume || !IsTalkable(npcId) || !actors.ContainsKey(npcId)) return false;
             var live = new UriBuilder(address) { Path = "/live" }.Uri.AbsoluteUri;

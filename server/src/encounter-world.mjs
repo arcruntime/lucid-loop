@@ -91,6 +91,30 @@ export function createEncounterWorld({ registry, credentials, config = CLUB_WORL
   }
   const initial = state(); if (!initial) throw new TypeError('Unauthorized world credentials'); sync(initial);
   const ended = s => Boolean(s.catastrophe || s.victory || s.phase === 'unresolved');
+  function eligibility(s, npcId) {
+    if (!NPC_IDS.includes(npcId)) return { ok: false, reason: 'unknown_npc' };
+    if (ended(s)) return { ok: false, reason: 'encounter_ended' };
+    return distance(positions.player, positions[npcId]) <= cfg.conversationDistance && sight(positions.player, positions[npcId]) ? { ok: true } : { ok: false, reason: 'out_of_range' };
+  }
+  function conversationDestination(npcId) {
+    const start = positions.player, target = positions[npcId];
+    // Resolve a single destination from this frame, never silently chase a moving
+    // NPC. Bound the search to 64 stand points inside the existing talk radius.
+    const bearing = Math.atan2(start.z - target.z, start.x - target.x);
+    const candidates = [0.93, 0.55].flatMap(scale => Array.from({ length: 32 }, (_, i) => {
+      const angle = bearing + i * Math.PI / 16, radius = cfg.conversationDistance * scale;
+      return point(target.x + Math.cos(angle) * radius, target.z + Math.sin(angle) * radius);
+    })).filter(p => walkable(p) && sight(p, target)).sort((a, b) => distance(start, a) - distance(start, b));
+    let best = null, bestCost = Infinity;
+    for (const candidate of candidates) {
+      if (distance(start, candidate) >= bestCost) continue;
+      const path = route(start, candidate); if (!path) continue;
+      let cost = 0, previous = start;
+      for (const waypoint of path) { cost += distance(previous, waypoint); previous = waypoint; }
+      if (cost < bestCost) { best = candidate; bestCost = cost; }
+    }
+    return best;
+  }
   function observe(method, payload) { const s = state(); if (!s) return { ok: false, reason: 'unauthorized' }; return registry.trustedWorld(credentials, method, { ...payload, loopId: s.loopId, revision: s.revision }); }
   function towards(id, target, stop = 0, speed = cfg.npcSpeed) {
     const here = positions[id], d = distance(here, target);
@@ -151,6 +175,7 @@ export function createEncounterWorld({ registry, credentials, config = CLUB_WORL
   function snapshot() {
     const s = state(); if (!s) return { ok: false, reason: 'unauthorized' }; sync(s);
     return { ok: true, version: cfg.version, loopId, frame, sequence, elapsedSeconds: s.scenario?.elapsedSeconds ?? 0,
+      conversations: Object.fromEntries(NPC_IDS.map(id => { const result = eligibility(s, id); return [id, { eligible: result.ok, ...(result.reason ? { reason: result.reason } : {}) }]; })),
       actors: Object.fromEntries(ACTOR_IDS.map(id => [id, { position: { ...positions[id] }, motion: s.actors[id].action.type === 'fall' ? 'fallen' : motions[id], action: structuredClone(s.actors[id].action) }])) };
   }
   return Object.freeze({
@@ -160,7 +185,15 @@ export function createEncounterWorld({ registry, credentials, config = CLUB_WORL
       if (command?.loopId !== loopId) return { accepted: false, reason: 'stale_loop' };
       if (!Number.isSafeInteger(command.sequence) || command.sequence <= sequence || command.sequence < 0) return { accepted: false, reason: 'stale_sequence' };
       if (ended(s)) return { accepted: false, reason: 'encounter_ended' };
-      if (!['move_to', 'stop'].includes(command.type) || Object.keys(command).some(k => !['type', 'loopId', 'sequence', 'destination'].includes(k))) return { accepted: false, reason: 'invalid_input' };
+      const fields = ['type', 'loopId', 'sequence', ...(command.type === 'approach' ? ['npcId'] : command.type === 'move_to' ? ['destination'] : [])];
+      if (!['move_to', 'stop', 'approach'].includes(command.type) || Object.keys(command).some(k => !fields.includes(k))) return { accepted: false, reason: 'invalid_input' };
+      if (command.type === 'approach') {
+        if (!NPC_IDS.includes(command.npcId)) return { accepted: false, reason: 'unknown_npc' };
+        const stand = eligibility(s, command.npcId).ok ? { ...positions.player } : conversationDestination(command.npcId);
+        if (!stand) return { accepted: false, reason: 'no_reachable_conversation_point' };
+        sequence = command.sequence; destination = stand;
+        return { accepted: true, loopId, sequence, frame, npcId: command.npcId, destination: { ...stand } };
+      }
       if (command.type === 'move_to' && (!finitePoint(command.destination) || Object.keys(command.destination).some(k => !['x', 'z'].includes(k)) || !route(positions.player, command.destination))) return { accepted: false, reason: 'unwalkable_destination' };
       sequence = command.sequence; destination = command.type === 'stop' ? null : { ...command.destination };
       return { accepted: true, loopId, sequence };
@@ -176,9 +209,7 @@ export function createEncounterWorld({ registry, credentials, config = CLUB_WORL
     },
     canConverse(npcId) {
       const s = state(); if (!s) return { ok: false, reason: 'unauthorized' }; sync(s);
-      if (!NPC_IDS.includes(npcId)) return { ok: false, reason: 'unknown_npc' };
-      if (ended(s)) return { ok: false, reason: 'encounter_ended' };
-      return distance(positions.player, positions[npcId]) <= cfg.conversationDistance && sight(positions.player, positions[npcId]) ? { ok: true } : { ok: false, reason: 'out_of_range' };
+      return eligibility(s, npcId);
     },
     reset(command) { const result = registry.reset(credentials, command); if (result.ok && result.outcome.accepted) sync(state()); return result; },
   });

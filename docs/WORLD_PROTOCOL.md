@@ -1,6 +1,6 @@
 # Authoritative club world
 
-`server/src/encounter-world.mjs` implements the bounded planar world for [A Quiet Way Out](DEMO_SCENARIO.md). The server moves actors and derives recognition, intervention, and separation from those accepted positions. Unity renders them with interpolation. This module is implemented and deterministically tested; transport wiring, visual staging, and device playtesting are separate integration work.
+`server/src/encounter-world.mjs` implements the bounded planar world for [A Quiet Way Out](DEMO_SCENARIO.md). The server moves actors and derives recognition, intervention, and separation from those accepted positions. Unity renders them with interpolation. World transport and approach-to-talk are integrated and tested in the actual Unity scene; final visual staging and device playtesting remain acceptance work. See [validation evidence](IMPLEMENTATION_VALIDATION.md).
 
 ## Host interface
 
@@ -15,11 +15,35 @@ world.reset({ loopId, revision });
 
 Create one world per authenticated game, using the same registry credentials and scenario instance as dialogue. Do not expose `trustedWorld`, `trustedFull`, config, tick, or arbitrary method dispatch to clients or models. The host owns a 100 ms timer and supplies monotonic elapsed time. Tick consumes fixed 0.1 s steps and at most five steps per call; it drops excess stall time. The same pause flags stop movement and scenario time. `voiceActive` must include connecting, connected, and reconnecting foreground conversation states; `suspended` includes application suspension and loss of the authoritative world connection. A pause clears fractional accumulated time. Do not derive these flags from model output.
 
-`input` returns `{ accepted, reason? , loopId?, sequence? }`. Commands are either `move_to` with a finite `{ x, z }` destination or `stop`. Sequences are nonnegative safe integers, strictly increasing within each loop. Rejected commands do not consume the sequence. Stale loops, unknown fields/action types, and blocked/out-of-bounds/unreachable destinations are rejected. This implementation rejects a destination on furniture rather than silently projecting it somewhere else; the client should keep the previous marker when rejection occurs. Clients cannot submit positions, NPC destinations, elapsed time, facts, or stage booleans.
+`input` returns `{ accepted, reason? , loopId?, sequence? }`. Commands are `move_to` with a finite `{ x, z }` destination, semantic `approach` with an interactable `npcId`, or `stop`. Sequences are nonnegative safe integers, strictly increasing within each loop. Rejected commands do not consume the sequence. Stale loops, unknown fields/action types, and blocked/out-of-bounds/unreachable destinations are rejected. This implementation rejects a destination on furniture rather than silently projecting it somewhere else; the client should keep the previous marker when rejection occurs. Clients cannot submit positions, NPC destinations, elapsed time, facts, or stage booleans.
 
 `canConverse(npcId)` returns `{ ok: true }` only for Maya, Ren, Luca, or Theo within 2.2 m of the player and with an unobstructed eye-height sightline. Reject the live-session attach before connecting to a provider when this gate fails. Recheck against the current world when switching NPCs. The affair partner is not interactable. Terminal encounters reject conversations and movement.
 
 `reset` delegates to the registry revision fence, then restores original positions, destinations, stage cache, elapsed-step accumulator, and input sequence. The adapter also notices a loop reset performed by another trusted caller. Player discoveries are retained by the scenario, never by this geometry module.
+
+## Approach-to-talk wire protocol
+
+On the authenticated `/game` connection, send `{ type: 'game.approach', loopId, sequence, npcId }`. It shares the sequence stream with `game.walk` and `game.stop`. The server responds:
+
+```json
+{
+  "type": "game.approach_result",
+  "accepted": true,
+  "loopId": "game-id:loop:1",
+  "sequence": 7,
+  "frame": 42,
+  "npcId": "ren",
+  "destination": { "x": 2.02, "z": 5.41 }
+}
+```
+
+The example destination is illustrative; the server computes the actual point. The bounded solver samples 64 stand points on two rings inside the existing 2.2 m interaction radius, filters out furniture, bounds violations and blocked sightlines, and chooses the shortest reachable route among them. It may fail closed for an unusual narrow layout rather than claim that an unreachable NPC can be approached. An already eligible approach chooses the player's current position, cancelling a previous walk without moving away from the NPC. Approach never relaxes or bypasses the live-session gate.
+
+Rejected replies carry `accepted: false` and a `reason`: `stale_loop`, `stale_sequence`, `unknown_npc`, `invalid_input`, `no_reachable_conversation_point`, `encounter_ended`, or `paused`. The wire reply echoes correctly typed request `loopId`, `sequence`, and `npcId` even on rejection, so an old reply cannot cancel a newer client intent. Walk and approach are rejected during explicit world pause without consuming sequence. `game.stop` remains available to cancel queued movement during pause; it uses `{ type: 'game.stop', loopId, sequence }` and replies with `game.move_result`.
+
+Every `game.world` event includes `world.conversations`, a map for `maya`, `ren`, `luca`, and `theo`, each containing `{ eligible: true }` or `{ eligible: false, reason }`. This projection calls the same eligibility helper as `canConverse`; it is a current-frame observation, not a future conversation reservation. The server still checks the live-session gate when a client opens Live.
+
+The client should keep an explicit Talk intent keyed by loop, sequence, and NPC. Approach resolves one destination from the NPC's current position; it is not continuous pursuit and never opens voice by itself. A newer walk, approach, or stop replaces that destination. Reset clears it. When cancelling Talk for selection, pause, disconnect, or another interaction, clear the client intent; use a newer stop if movement must also stop. Open voice only for the matching accepted intent and a current eligible world frame. The first snapshot after accepting movement can still report the prior `idle` motion, so do not interpret idle as a failed approach until `world.frame > approach_result.frame`. If a later stopped/blocked frame is ineligible because the NPC moved, cancel the intent and let the player explicitly request Talk again.
 
 ## Public world frame
 
