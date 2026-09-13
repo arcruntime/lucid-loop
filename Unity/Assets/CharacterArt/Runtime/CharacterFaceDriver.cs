@@ -187,7 +187,35 @@ namespace LucidLoop.CharacterArt
             ApplyPose();
         }
 
-        void LateUpdate() => ApplyPostAnimationOffsets();
+        void LateUpdate()
+        {
+            EvaluateMotion(Time.deltaTime);
+            ApplyPostAnimationOffsets();
+        }
+
+        void EvaluateMotion(float deltaTime)
+        {
+            if (!motionGraph.IsValid() || !motionAnimator) return;
+            // applyRootMotion=false only suppresses extracted root motion. Explicit Transform
+            // curves can still write the Animator root, even with that transform masked out.
+            // Evaluate synchronously and preserve the CURRENT navigation-owned pose around
+            // this one operation. Never restore a rest pose or an earlier Update snapshot:
+            // navigation in Update/FixedUpdate or an earlier LateUpdate must remain authoritative.
+            var root = motionAnimator.transform;
+            var position = root.localPosition;
+            var rotation = root.localRotation;
+            var scale = root.localScale;
+            RestorePostAnimationOffsets();
+            try
+            {
+                motionGraph.Evaluate(deltaTime);
+            }
+            finally
+            {
+                root.SetLocalPositionAndRotation(position, rotation);
+                root.localScale = scale;
+            }
+        }
 
         public void Bind()
         {
@@ -612,7 +640,7 @@ namespace LucidLoop.CharacterArt
             animator.applyRootMotion = false;
 
             motionGraph = PlayableGraph.Create(name + " Character Motion");
-            motionGraph.SetTimeUpdateMode(DirectorUpdateMode.GameTime);
+            motionGraph.SetTimeUpdateMode(DirectorUpdateMode.Manual);
             motionMixer = AnimationLayerMixerPlayable.Create(motionGraph, 3);
             if (profile.IdleClip)
             {

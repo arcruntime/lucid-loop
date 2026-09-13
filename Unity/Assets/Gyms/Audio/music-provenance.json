@@ -1,0 +1,47 @@
+{
+  "provenance": "Original procedural composition and synthesized audio created for Lucid Loop. No third-party audio samples.",
+  "loops": [
+    {
+      "mood": "aggressive",
+      "bpm": 120,
+      "bars": 8,
+      "sample_rate": 48000,
+      "channels": 2,
+      "samples_per_channel": 768000,
+      "duration_seconds": 16.0,
+      "peak_dbfs": -2.8533500713746314,
+      "rms_dbfs": -17.43770135501872,
+      "boundary_delta_pcm": [
+        14.0,
+        6.0
+      ],
+      "interior_delta_p99_pcm": 2418.0,
+      "clipped_samples": 0,
+      "seam_check": true,
+      "audition": "Not auditioned; numerical checks do not establish musical quality.",
+      "file": "club_aggressive_120bpm.wav",
+      "sha256": "eaec24ccdb5decc6e53de70a28ad68d3306b79475d46d616998dac00f4136c15"
+    },
+    {
+      "mood": "intimate",
+      "bpm": 96,
+      "bars": 8,
+      "sample_rate": 48000,
+      "channels": 2,
+      "samples_per_channel": 960000,
+      "duration_seconds": 20.0,
+      "peak_dbfs": -2.8533500713746314,
+      "rms_dbfs": -17.582043052876813,
+      "boundary_delta_pcm": [
+        165.0,
+        167.0
+      ],
+      "interior_delta_p99_pcm": 1931.0,
+      "clipped_samples": 0,
+      "seam_check": true,
+      "audition": "Not auditioned; numerical checks do not establish musical quality.",
+      "file": "club_intimate_96bpm.wav",
+      "sha256": "46a5e6220032cd91931369aa048d6bfdfa74ffbca18842fdd845615c62979f98"
+    }
+  ]
+}

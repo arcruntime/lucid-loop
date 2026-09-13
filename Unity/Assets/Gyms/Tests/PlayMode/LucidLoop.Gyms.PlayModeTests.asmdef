@@ -1,0 +1,15 @@
+{
+  "name": "LucidLoop.Gyms.PlayModeTests",
+  "references": [
+    "LucidLoop.Gyms",
+    "Unity.ugui"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "overrideReferences": true,
+  "precompiledReferences": [
+    "nunit.framework.dll",
+    "Newtonsoft.Json.dll"
+  ]
+}

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <IsTestProject>true</IsTestProject>
+    <BaseOutputPath>../../.local/live-speech-tests/bin/</BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Unity/Assets/LiveSpeech/ThirdParty/Core/*.cs" />
+    <Compile Include="../../Unity/Assets/LiveSpeech/Runtime/EnglishSpeechStream.cs" />
+    <Compile Include="../../Unity/Assets/LiveSpeech/Tests/Editor/EnglishSpeechStreamTests.cs" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+  </ItemGroup>
+</Project>

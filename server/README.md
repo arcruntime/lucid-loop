@@ -2,6 +2,8 @@
 
 This Node 24 service holds the project OpenAI key and relays a deliberately small WebSocket protocol between the Unity gym and GPT-Live. It never accepts an upstream URL, model, voice, prompt, tools, or session configuration from the client.
 
+For the project's iPhone development setup, use [the local LAN relay guide](../docs/IOS_LOCAL_RELAY.md), including the `/game` encounter connection, separate access token, and Development Build network policy.
+
 ## Run locally
 
 ```sh

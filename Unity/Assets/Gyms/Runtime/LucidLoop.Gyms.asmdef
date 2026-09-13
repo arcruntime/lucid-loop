@@ -1,1 +1,1 @@
-{"name":"LucidLoop.Gyms","references":["OsuFramework.Unity.Allocation","Unity.AI.Navigation","Unity.RenderPipelines.Universal.Runtime","Unity.RenderPipelines.Core.Runtime","Unity.ugui","Unity.Newtonsoft.Json"],"autoReferenced":true}
+{"name":"LucidLoop.Gyms","references":["OsuFramework.Unity.Allocation","Unity.AI.Navigation","Unity.RenderPipelines.Universal.Runtime","Unity.RenderPipelines.Core.Runtime","Unity.ugui","Unity.Newtonsoft.Json","LucidLoop.LiveSpeech","LucidLoop.CharacterArt"],"autoReferenced":true}

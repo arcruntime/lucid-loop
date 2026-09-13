@@ -8,6 +8,8 @@
 
 ## 1. Authority, provenance, and scope
 
+**Relay hosting decision (2026-09-14):** Use a local development relay for now. The Editor connects over loopback; a physical iPhone connects to the development computer's LAN address. OpenAI credentials remain on the relay. A hosted deployment is outside the current setup decision.
+
 This document turns the [GDD](GDD.md) and the additional source review into engineering requirements. **The [BTD Battlemap FigJam board](https://www.figma.com/board/pCX5z7C3Izwe6sfIg53nC1/BTD-Battlemap?node-id=0-1) overrides the [Google design document](https://docs.google.com/document/d/1JxbEgu6D5qHtuyGlwKqmO1IJJdrY7MZikN055f87FXA/edit) where they conflict.** Draft labels in either source remain draft labels. A missing rule is a decision to author, not permission for runtime AI to invent it.
 
 See the [design source audit](DESIGN_SOURCE_AUDIT.md) for extraction coverage and reconciliation, and the [animation handoff](../art/animation-handoff/README.md) for downloaded assets and outstanding import work.

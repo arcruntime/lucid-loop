@@ -1,0 +1,16 @@
+{
+  "scope": "Actual Unity Editor PlayMode runtime behavior; not H art/rig/phoneme/iPhone performance acceptance",
+  "unityVersion": "6000.3.24f1",
+  "editorBuildTarget": "iOS",
+  "tests": 9,
+  "passed": 9,
+  "sourceHashes": {
+    "Unity/Assets/CharacterArt/Runtime/CharacterFaceDriver.cs": "05c3c3a8ca727d5b4da59d01211874d77503d316d63b7cf6528d3d1ed6c1c6c6",
+    "Unity/Assets/CharacterArt/Tests/PlayMode/CharacterFaceDriverPlayModeTests.cs": "015139d54f98c2648395df5df0257547bc36c51f93c184338e4626f25e727c06",
+    "Unity/Assets/CharacterArt/Tests/PlayMode/CharacterSpeechFramePlayModeTests.cs": "9879a2d954a8e7e2d45d65784f82bcabb128e4c2cc3da7cb9ea5aa1ec27c0d4d",
+    "Unity/Assets/CharacterArt/Runtime/SpeechFrameResolver.cs": "ef4591d9d2e50b8880b46786e52a6422f99a601cc6dc376a2bf213f7fe2fc3d9"
+  },
+  "sourceHashEncoding": "UTF-8 source bytes normalized to LF to match Git text storage",
+  "resultXml": "root-motion-and-speech-playmode.xml",
+  "resultSha256": "8b137e6c4f79b30cf864a7875514a15047198df1e601ab14a887f2f4c76f107f"
+}

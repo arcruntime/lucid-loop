@@ -1,1 +1,1 @@
-{"name":"LucidLoop.Gyms.Tests","references":["LucidLoop.Gyms"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"]}
+{"name":"LucidLoop.Gyms.Tests","references":["LucidLoop.Gyms","LucidLoop.Gyms.Editor"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"],"overrideReferences":true,"precompiledReferences":["nunit.framework.dll","Newtonsoft.Json.dll"]}

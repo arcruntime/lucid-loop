@@ -1,0 +1,7 @@
+{
+  "name": "LucidLoop.LiveSpeech.Tests",
+  "references": ["LucidLoop.LiveSpeech", "SplatterfaceGames.LipSync.Core"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

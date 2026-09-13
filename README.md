@@ -1,8 +1,14 @@
 # Lucid Loop
 
-Two playable Unity gyms are implemented: an offline nightclub for movement and character conversations, and a separate live voice studio backed by the project's OpenAI relay.
+The primary game prototype is **Before the Drop**: a server-authoritative nightclub encounter with an authored catastrophe, rewind, retained clues, and OpenAI Live conversation integration. The original offline nightclub and separate Live voice studio remain available as diagnostic gyms. Final character animation, Japanese speech, and physical iPhone acceptance remain in progress.
 
-**Try them:** open `Unity/` in Unity 6000.3.24f1, load `Assets/Gyms/Scenes/CharacterGym.unity`, and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.
+**Try the encounter:** open `Unity/` in Unity 6000.3.24f1 and load `Assets/Gyms/Scenes/BeforeTheDrop.unity`. Start the local relay and follow the [encounter quickstart](docs/ENCOUNTER_QUICKSTART.md). Use **Walk toward Theo** to see the opening, then **Rewind** to begin another attempt with the witnessed clue retained. Real NPC conversations require an OpenAI key in the relay process environment; the GitHub CI secret is not automatically available locally.
+
+**iOS is the primary target.** Use the [iOS build instructions](docs/IOS_BUILD.md) and [local development relay setup](docs/IOS_LOCAL_RELAY.md). Nightclub lighting uses a shared Forward pipeline with bounded local lights and shader feature stripping; see the [rendering policy](docs/IOS_RENDERING.md). [Validation evidence](docs/IMPLEMENTATION_VALIDATION.md) separates passing tests from pending device and presentation checks.
+
+The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored demo scenario](docs/DEMO_SCENARIO.md), and [source audit](docs/DESIGN_SOURCE_AUDIT.md) describe what is being built. Figma takes precedence over the Google document. The [animation handoff](art/animation-handoff/README.md) contains 17 downloaded source FBX files and their unresolved mapping/retargeting notes.
+
+**Try the original gyms:** load `Assets/Gyms/Scenes/CharacterGym.unity` and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.
 
 **Builds:** [Unity builds on GitHub Actions](https://github.com/jethac/lucid-loop/actions/workflows/unity-builds.yml) is configured for every push to `main`, same-repository pull requests, daily at 03:17 JST, and manual runs. Successful runs publish a Windows ZIP with a commit ID and SHA-256 checksum. Mac builds are deferred. Download them from the run's **Artifacts** section; diagnostics are uploaded on failures too.
 
@@ -11,7 +17,7 @@ Two playable Unity gyms are implemented: an offline nightclub for movement and c
 ## Project direction
 
 - The **Unity 6.3 LTS** project lives in the `Unity/` subfolder.
-- Target phones first, in **landscape orientation**, with a **16:9 target aspect ratio**.
+- Target **iOS** first, in **landscape orientation**. Use 16:9 as a composition reference while adapting UI to the device's actual aspect ratio and safe area.
 - Minimum-spec phone: **iPhone 15 Plus**.
 - Performance target: **sustained 30 fps on iPhone 15 Plus**.
 - Characters require **full expressive real-time lip-sync** for OpenAI live speech, with **English and Japanese facial coverage**.

@@ -54,10 +54,7 @@ namespace LucidLoop.Gyms.Editor
             if(!renderer){renderer=ScriptableObject.CreateInstance<UniversalRendererData>();AssetDatabase.CreateAsset(renderer,Base+"/GymRenderer.asset");}
             var pipeline=AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>(Base+"/GymPipeline.asset");
             if(!pipeline){pipeline=UniversalRenderPipelineAsset.Create(renderer);AssetDatabase.CreateAsset(pipeline,Base+"/GymPipeline.asset");}
-            pipeline.supportsHDR=true;pipeline.msaaSampleCount=2;pipeline.renderScale=1;
-            pipeline.shadowDistance=40;pipeline.mainLightShadowmapResolution=1024;
-            pipeline.maxAdditionalLightsCount=4;
-            pipeline.supportsCameraDepthTexture=false;
+            IosRenderingPolicy.Apply(pipeline);
             GraphicsSettings.defaultRenderPipeline=pipeline;QualitySettings.renderPipeline=pipeline;
             EditorUtility.SetDirty(pipeline);
             dark=Mat("Ink",new Color(.045f,.045f,.085f));metal=Mat("Metal",new Color(.12f,.13f,.2f));
@@ -70,7 +67,7 @@ namespace LucidLoop.Gyms.Editor
             string path=Base+"/"+name+".mat";m=AssetDatabase.LoadAssetAtPath<Material>(path);
             if(!m){m=new Material(Shader.Find("Universal Render Pipeline/Lit"));AssetDatabase.CreateAsset(m,path);}
             m.color=color;m.SetFloat("_Smoothness",.32f);m.SetFloat("_Metallic",.1f);
-            if(emission>0){m.EnableKeyword("_EMISSION");m.SetColor("_EmissionColor",color*emission);}
+            GymMaterialEmission.Configure(m, emission > 0 ? color * emission : Color.black);
             EditorUtility.SetDirty(m);materials[name]=m;return m;
         }
         static GameObject Shape(string name,PrimitiveType type,Vector3 pos,Vector3 scale,Material material,bool collider=false,Transform parent=null)

@@ -101,13 +101,45 @@ namespace LucidLoop.CharacterArt.PlayModeTests
             Assert.That(animator.applyRootMotion, Is.False);
             var body = Own(RotationClip("Armature/Hips/LeftLeg", "localEulerAnglesRaw.z", 30f));
             body.SetCurve("", typeof(Transform), "m_LocalPosition.x", AnimationCurve.Constant(0f, 1f, 100f));
+            body.SetCurve("", typeof(Transform), "localEulerAnglesRaw.y", AnimationCurve.Constant(0f, 1f, 90f));
+            body.SetCurve("", typeof(Transform), "m_LocalScale.x", AnimationCurve.Constant(0f, 1f, 10f));
             driver.transform.position = new Vector3(4f, 0f, 2f);
+            driver.transform.localRotation = Quaternion.Euler(0f, 25f, 0f);
+            driver.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
             Assert.That(driver.PlayBodyMotion(body, true), Is.True);
             yield return null;
             yield return null;
             Assert.That(Vector3.Distance(driver.transform.position, new Vector3(4f, 0f, 2f)), Is.LessThan(.001f));
+            Assert.That(Quaternion.Angle(driver.transform.localRotation, Quaternion.Euler(0f, 25f, 0f)), Is.LessThan(.001f));
+            Assert.That(Vector3.Distance(driver.transform.localScale, new Vector3(1.5f, 1.5f, 1.5f)), Is.LessThan(.001f));
             driver.enabled = false;
             Assert.That(animator.applyRootMotion, Is.True);
+        }
+
+        [UnityTest]
+        public IEnumerator NavigationCanKeepMovingInUpdateAndLateUpdateDuringBodyMotion()
+        {
+            var driver = BodyFixture(out var leg, out _);
+            var body = Own(RotationClip("Armature/Hips/LeftLeg", "localEulerAnglesRaw.z", 30f));
+            body.SetCurve("", typeof(Transform), "m_LocalPosition.x", AnimationCurve.Constant(0f, 1f, 100f));
+            driver.transform.localPosition = new Vector3(4f, 0f, 2f);
+            var navigation = driver.gameObject.AddComponent<CharacterMotionTestNavigation>();
+            navigation.Configure(false);
+            Assert.That(driver.PlayBodyMotion(body, true), Is.True);
+            for (var frame = 0; frame < 8; frame++)
+            {
+                yield return null;
+                Assert.That(Vector3.Distance(driver.transform.localPosition, navigation.ExpectedPosition), Is.LessThan(.001f));
+            }
+            Assert.That(navigation.MoveCount, Is.GreaterThan(0));
+            Assert.That(Quaternion.Angle(leg.localRotation, Quaternion.Euler(0f, 0f, 30f)), Is.LessThan(1f));
+            navigation.Configure(true);
+            for (var frame = 0; frame < 8; frame++)
+            {
+                yield return null;
+                Assert.That(Vector3.Distance(driver.transform.localPosition, navigation.ExpectedPosition), Is.LessThan(.001f));
+            }
+            Assert.That(navigation.MoveCount, Is.GreaterThan(0));
         }
 
         CharacterFaceDriver BodyFixture(out Transform leg, out Transform arm)
@@ -214,6 +246,34 @@ namespace LucidLoop.CharacterArt.PlayModeTests
             clip.SetCurve(path, typeof(Transform), property,
                 AnimationCurve.Constant(0f, duration, value));
             return clip;
+        }
+    }
+
+    // Runs after the driver in both phases: Update movement precedes manual animation
+    // evaluation; LateUpdate movement follows it. Accumulating deltas reveals lost movement.
+    [DefaultExecutionOrder(10000)]
+    public sealed class CharacterMotionTestNavigation : MonoBehaviour
+    {
+        bool inLateUpdate;
+        public Vector3 ExpectedPosition { get; private set; }
+        public int MoveCount { get; private set; }
+
+        public void Configure(bool lateUpdate)
+        {
+            inLateUpdate = lateUpdate;
+            ExpectedPosition = transform.localPosition;
+            MoveCount = 0;
+        }
+
+        void Update() { if (!inLateUpdate) Move(); }
+        void LateUpdate() { if (inLateUpdate) Move(); }
+
+        void Move()
+        {
+            var delta = new Vector3(.125f, 0f, .05f);
+            ExpectedPosition += delta;
+            transform.localPosition += delta;
+            MoveCount++;
         }
     }
 }

@@ -17,12 +17,14 @@ python tools/audit_ios_rendering.py
 | CharacterGym lights | 8: one directional, three point, four moving spot lights |
 | LiveGym lights | 3: one directional, two point lights |
 | Shadow requests | One directional light in each scene; additional lights have no shadows |
-| Gym materials | 25, all reference URP Lit; 18 have no material keywords, seven use `_EMISSION` |
+| Gym materials | 25, all reference URP Lit; after the iOS import all 25 serialize an empty material keyword set (the pre-import audit had seven `_EMISSION` entries) |
 | Effective quality pipelines | Six quality levels currently resolve to GymPipeline: five inherit default, Ultra explicitly references it |
 | Renderer | Forward, no renderer features |
 | Global stripping | Strip Unused Variants already enabled; variant JSON export already enabled; unused post-processing stripping remains disabled |
 
 These are serialized counts, not measured visible light overlap, draw calls, compiled variants, or GPU timing. The original pipeline already used four additional per-pixel lights per object, one 1024 main shadow cascade, no additional-light shadows, no soft-shadow support, HDR, 2x MSAA, and SRP Batcher. Scene lights request soft directional shadows, but the pipeline does not support them, so soft shadows are not the current rendered contract.
+
+The iOS reimport exposed an existing emission-authoring bug: all seven positive-emission materials had `EmissiveIsBlack` GI flags, so URP validation removed `_EMISSION`. The local package confirms shader GUID `933532a4fcc9baf4fa0491de14d08ed7` is **URP Lit**. Losing these seven glow variants is a visual regression, not an optimization. The seven materials now carry `BakedEmissive` flags and their emission keyword; [GymMaterialEmission](../Unity/Assets/Gyms/Editor/GymMaterialEmission.cs) sets the flags before URP's own material validation whenever the builder authors a material. This does not enable realtime GI or create additional lights. The audit now reports any positive-emission material whose keyword/GI flags disagree, and regression tests force reimport of all seven materials.
 
 ## Implemented policy
 
@@ -67,3 +69,11 @@ The static audit and direct C# compilation of the policy against the installed U
 4. Profile bloom, transparent beams, shadow distance, render scale and local-light overlap individually. Prefer fewer local lights, reduced overlap, a tighter shadow distance, and reduced bloom resolution before introducing another rendering path or material feature family.
 
 Post-processing variant stripping stays off until the volume inventory and runtime effect creation are settled. The builder already serializes bloom and tonemapping into a profile, but death/rewind effects are still being authored. Once their profiles are represented in project assets, review enabling that additional stripping option and rerun the complete transition test.
+
+## Implemented mood presentation
+
+[EncounterMoodPresentation](../Unity/Assets/Gyms/Runtime/Encounter/EncounterMoodPresentation.cs) now binds the authoritative mood event and transitions only the existing local lights: aggressive crimson/violet to intimate warm rose/amber, with a lower intensity. It scales `ClubLighting`'s pulse after that component updates. It creates no lights and changes no shader keywords. The key light and green beacon are outside the controlled array.
+
+Two original procedural eight-bar music loops are included with their [generator](../tools/generate_club_loops.py) and [provenance](../Unity/Assets/Gyms/Audio/music-provenance.json). The component crossfades and ducks them during Live connection/conversation, and pauses them with the encounter. The scoped importer uses streaming compressed audio to bound memory; that trades some decoding work for lower clip residency. See [Unity audio import settings](https://docs.unity3d.com/6000.3/Documentation/Manual/class-AudioClip.html). Originals pass numeric clipping and boundary checks but have not been auditioned here; listen to compressed iOS playback before accepting musical quality or seamlessness.
+
+New scenes receive the binding automatically. For an existing saved `BeforeTheDrop` scene, use **Lucid Loop > Encounter > Apply mood presentation to current encounter**; this preserves the rest of the scene. A focused PlayMode test checks that the intensity multiplier does not accumulate across frames and that disabling the component restores the original light state.

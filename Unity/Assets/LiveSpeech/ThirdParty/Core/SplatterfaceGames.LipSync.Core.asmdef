@@ -1,0 +1,6 @@
+{
+  "name": "SplatterfaceGames.LipSync.Core",
+  "rootNamespace": "SplatterfaceGames.LipSync",
+  "noEngineReferences": true,
+  "autoReferenced": false
+}

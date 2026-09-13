@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/splatterfacegames/unity-realtime-lipsync",
+  "commit": "acea62e125aa2200648a489900de750c3e3587fa",
+  "installation": "vendored unmodified MIT core source; project-owned asmdef",
+  "files": [
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/GaussianClassifier.cs",
+      "destination": "ThirdParty/Core/GaussianClassifier.cs",
+      "sha256": "c1ca6f1ba578a8f7459c2ee6bb0635e679d9d6e36879a98e9f18f19afcbeae82"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/GaussianModel.cs",
+      "destination": "ThirdParty/Core/GaussianModel.cs",
+      "sha256": "cd518032adb6fad1e333f4c19ecda822ed3e7f2cd59071a44e66ee3fd1f43d2a"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/Mfcc.cs",
+      "destination": "ThirdParty/Core/Mfcc.cs",
+      "sha256": "5f84334c25a3e4683ba7eb6ce26927142eb418ee07c7d0ac90d23439b4a8d368"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/Parameters.cs",
+      "destination": "ThirdParty/Core/Parameters.cs",
+      "sha256": "62531c47a4b5d1949c6c6d91ebbf9af1d8cdb601f940ade85e87257c6cbb4a97"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/Pcm16.cs",
+      "destination": "ThirdParty/Core/Pcm16.cs",
+      "sha256": "a84423e9e1ec75f12c37500004bfe5dd96f2093f3706d3cee4b1721695b72165"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/RingBuffer.cs",
+      "destination": "ThirdParty/Core/RingBuffer.cs",
+      "sha256": "838e48add6adf93636dedb608163694cdc60897237c1e153292046f16ea4fb9e"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/VadGate.cs",
+      "destination": "ThirdParty/Core/VadGate.cs",
+      "sha256": "53134d3ba8e593781ceae81ce2e9ea6ef02ba68778d5eac23b47cc355c4cb615"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/VisemeAnalyzer.cs",
+      "destination": "ThirdParty/Core/VisemeAnalyzer.cs",
+      "sha256": "a903d87518619a7f7cdc019474b4f0c01b588a7ec816d846cec5c5372fecc12b"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/VisemeLabels.cs",
+      "destination": "ThirdParty/Core/VisemeLabels.cs",
+      "sha256": "8a60b229109002745317c05cb513733f3773fc191603765f2b2f05f914c40c57"
+    },
+    {
+      "source": "LICENSE",
+      "destination": "ThirdParty/LICENSE.txt",
+      "sha256": "d54c8fb37fea2a8110f58eb4067a310708a1b34152c2b2b488a9432d6e11b1b8"
+    },
+    {
+      "source": "src/THIRD-PARTY-NOTICES.md",
+      "destination": "ThirdParty/THIRD-PARTY-NOTICES.md",
+      "sha256": "aa44b831328c7d7e4f4355a0c5da52d301148535f4d1dbdf838eee8bbfd81122"
+    },
+    {
+      "source": "src/SplatterfaceGames.LipSync.Core/models/model-en-mixed.bin",
+      "destination": "Resources/LiveSpeech/model-en-mixed.bytes",
+      "sha256": "0358f68989b5861f9b7d18871b010fa6cbf88a53bda4954a954d8c548bbcf251"
+    }
+  ]
+}

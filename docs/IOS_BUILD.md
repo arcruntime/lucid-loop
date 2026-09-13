@@ -2,6 +2,8 @@
 
 **iOS is the Unity project's primary target**, per the user's platform direction. The baseline device is iPhone 15 Plus, with landscape presentation and a sustained 30 fps target. Runtime `GymRoot` already requests 30 fps; that setting does not prove device performance. Desktop gym builds are secondary diagnostics and their existing CI entry points remain available.
 
+For the selected local development relay, follow [iPhone LAN relay setup](IOS_LOCAL_RELAY.md). Development exports permit scoped private-LAN WebSockets and include the local-network usage description; remote release connections require TLS.
+
 The versioned Editor entry point is `LucidLoop.Gyms.Editor.IosBuild`. It uses Unity's supported settings/build APIs instead of hand-writing a serialized Build Profile asset. `Configure` persists iPhone-only, device SDK, iOS 17 minimum, IL2CPP, .NET Standard, landscape and microphone permission settings. It retains the existing bundle identifier and signing settings. `Activate` selects the iOS active build target. `ExportDevelopment` exports all enabled scenes from the shared build scene list to `Unity/Builds/iOS/Xcode`; it does not rebuild gym geometry or modify character assets. Export first validates the iOS rendering policy and fails if an incompatible pipeline remains selected.
 
 An Editor target switch requires asset reimport and assembly reload. In batch mode supply `-buildTarget iOS` at launch; setting the target inside an executing batch method is insufficient. See Unity's [SwitchActiveBuildTarget documentation](https://docs.unity3d.com/6000.0/Documentation/ScriptReference/EditorUserBuildSettings.SwitchActiveBuildTarget.html) and [command-line build guidance](https://docs.unity3d.com/6000.0/Documentation/Manual/build-command-line.html).
@@ -27,4 +29,4 @@ Device acceptance must measure sustained frame rate, memory, safe-area layout, t
 
 ## Verification status
 
-Read-only inspection confirmed existing iOS 17 and landscape project settings, the pinned Editor version, runtime 30 fps request, clean tracked `ProjectSettings` files before this change, and installed iOS module files. The Editor helper APIs were checked against installed Unity API metadata and official documentation. This task did not launch Unity, change the active Editor target, serialize ProjectSettings, export Xcode or run on a device. Activation is a coordinated next step, not a completed build claim.
+The existing shared Unity 6000.3.24f1 Editor has successfully activated iOS: `IOS_TARGET_ACTIVE: iOS` was logged and the window reports iOS. The helper serialized iPhone-only, IL2CPP and microphone settings. Xcode export, shader variant reports and physical-device acceptance remain pending. The local development relay is the selected connection setup; no hosted relay is required for this phase.

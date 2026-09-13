@@ -1,0 +1,5 @@
+{
+  "name": "LucidLoop.LiveSpeech",
+  "references": ["LucidLoop.CharacterArt", "SplatterfaceGames.LipSync.Core"],
+  "autoReferenced": true
+}

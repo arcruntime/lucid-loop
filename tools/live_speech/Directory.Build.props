@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)../../.local/live-speech-tests/obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
