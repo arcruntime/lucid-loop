@@ -13,7 +13,12 @@ LOD0**, including face, eyes, mouth interior, hair, body, all clothing and acces
 This uses Unity's triangle count as the working interpretation of "polygons";
 quad authoring faces are counted as two triangles after triangulation. Preserve
 face detail first because close conversation views concentrate attention there.
-The per-part allocation and Tripo reduction strategy are being investigated.
+The [polygon budget and reduction study](REN_POLYGON_BUDGET.md) allocates 16,800
+triangles to the head and facial assemblies, 8,000 to hair, and the remainder to
+the dressed body and accessories, with a 1,400-triangle integration reserve.
+Keep the current 13,790-triangle head surface; reduce oversampled eye shells and
+hair first. Tripo retopology is an option for isolated static parts, subject to
+visual review, rather than a verified way to preserve the facial blendshapes.
 
 The Tripo texture trial completed for 30 credits and is visible in the browser.
 The Unity comparison is also built: clay on the left, static Tripo on the right.

@@ -1,0 +1,2164 @@
+{
+  "status": "LOCAL_FEASIBILITY_ONLY_NO_ASSET_MODIFICATIONS",
+  "blender": "5.2.1 LTS",
+  "inventories": [
+    {
+      "path": "art\\generated\\characters\\ren\\meshy\\model.glb",
+      "sha256": "0f1172a6dc175f16d26cbedb2f4ad07f0c4ad5f2a56e2a59182325f250cc28de",
+      "meshes": [
+        {
+          "name": "Mesh_0",
+          "vertices": 51893,
+          "polygons": 41259,
+          "triangles": 41259,
+          "shape_keys": [],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [
+            "Material_0"
+          ],
+          "hidden_render": false
+        }
+      ],
+      "raw_mesh_triangles": 41259,
+      "visible_mesh_triangles": 41259,
+      "source_unchanged": true
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\meshy\\model-pre-remeshed.glb",
+      "sha256": "38e968a52d2ac20f2908f63bf83bf086f3e38e02436afaaeaace6eb52de07a08",
+      "meshes": [
+        {
+          "name": "mesh_node",
+          "vertices": 971850,
+          "polygons": 1944104,
+          "triangles": 1944104,
+          "shape_keys": [],
+          "uv_layers": [],
+          "materials": [],
+          "hidden_render": false
+        }
+      ],
+      "raw_mesh_triangles": 1944104,
+      "visible_mesh_triangles": 1944104,
+      "source_unchanged": true
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\meshy\\rigged-character.glb",
+      "sha256": "373bd363da98940c960d3f1adb408c377ae2c3378b5eab0d50550ffafbe894a9",
+      "meshes": [
+        {
+          "name": "char1",
+          "vertices": 51846,
+          "polygons": 41231,
+          "triangles": 41231,
+          "shape_keys": [],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [
+            "Material_1"
+          ],
+          "hidden_render": false
+        },
+        {
+          "name": "Icosphere",
+          "vertices": 42,
+          "polygons": 80,
+          "triangles": 80,
+          "shape_keys": [],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [],
+          "hidden_render": false
+        }
+      ],
+      "raw_mesh_triangles": 41311,
+      "visible_mesh_triangles": 41311,
+      "source_unchanged": true
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\canonical-body-v2\\ren_canonical_v2.blend",
+      "sha256": "04201616df94ec346deec0787fcfd29cebea72287eea84a2ab066a8e886e28b9",
+      "meshes": [
+        {
+          "name": "char1",
+          "vertices": 51846,
+          "polygons": 41231,
+          "triangles": 41231,
+          "shape_keys": [],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [
+            "Material_1"
+          ],
+          "hidden_render": false
+        },
+        {
+          "name": "Icosphere",
+          "vertices": 42,
+          "polygons": 80,
+          "triangles": 80,
+          "shape_keys": [],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [],
+          "hidden_render": false
+        },
+        {
+          "name": "QA_Ground",
+          "vertices": 4,
+          "polygons": 1,
+          "triangles": 2,
+          "shape_keys": [],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [
+            "QA_Ground_Material"
+          ],
+          "hidden_render": false
+        },
+        {
+          "name": "QA_Ground.001",
+          "vertices": 4,
+          "polygons": 1,
+          "triangles": 2,
+          "shape_keys": [],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [
+            "QA_Ground_Material.001"
+          ],
+          "hidden_render": false
+        }
+      ],
+      "raw_mesh_triangles": 41315,
+      "visible_mesh_triangles": 41315,
+      "source_unchanged": true
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\anime-face\\rig-study\\Ren_source_shared_female_candidate.blend",
+      "sha256": "447d436ebc538566ea7ba6038416e26f3d2d66f416dbb580263fabb9e3eaa3f1",
+      "meshes": [
+        {
+          "name": "Mesh_0",
+          "vertices": 54417,
+          "polygons": 45927,
+          "triangles": 45927,
+          "shape_keys": [
+            "Basis",
+            "jawOpen"
+          ],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [
+            "Material_0"
+          ],
+          "hidden_render": false
+        },
+        {
+          "name": "Ren_OralBacking",
+          "vertices": 186,
+          "polygons": 125,
+          "triangles": 308,
+          "shape_keys": [
+            "Basis",
+            "jawOpen"
+          ],
+          "uv_layers": [],
+          "materials": [
+            "Ren_OralInterior_Wine"
+          ],
+          "hidden_render": false
+        },
+        {
+          "name": "Ren_UpperLidLeft",
+          "vertices": 561,
+          "polygons": 512,
+          "triangles": 1024,
+          "shape_keys": [
+            "Basis",
+            "eyeBlinkLeft",
+            "eyeBlinkLeft__25",
+            "eyeBlinkLeft__50",
+            "eyeBlinkLeft__75"
+          ],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [
+            "Ren_LidLeft_Study",
+            "Ren_LinerLeft_Study"
+          ],
+          "hidden_render": false
+        },
+        {
+          "name": "Ren_UpperLidRight",
+          "vertices": 561,
+          "polygons": 512,
+          "triangles": 1024,
+          "shape_keys": [
+            "Basis",
+            "eyeBlinkRight",
+            "eyeBlinkRight__25",
+            "eyeBlinkRight__50",
+            "eyeBlinkRight__75"
+          ],
+          "uv_layers": [
+            "UVMap"
+          ],
+          "materials": [
+            "Ren_LidRight_Study",
+            "Ren_LinerRight_Study"
+          ],
+          "hidden_render": false
+        }
+      ],
+      "raw_mesh_triangles": 48283,
+      "visible_mesh_triangles": 48283,
+      "source_unchanged": true
+    }
+  ],
+  "head_inventory": {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\Ren_P2_Face_EyeUV.blend",
+    "sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+    "meshes": [
+      {
+        "name": "Ren_Eye_L_Iris",
+        "vertices": 282,
+        "polygons": 280,
+        "triangles": 472,
+        "shape_keys": [
+          "Basis",
+          "gazeLeft",
+          "gazeRight",
+          "gazeUp",
+          "gazeDown"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_Pupil",
+          "Ren_Pupil",
+          "Ren_IrisGreyBlue",
+          "Ren_IrisGreyBlue",
+          "Ren_UpperLiner",
+          "Ren_IrisCatchlight"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_L_LowerLiner",
+        "vertices": 46,
+        "polygons": 22,
+        "triangles": 44,
+        "shape_keys": [
+          "Basis",
+          "eyeBlinkL"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_LowerLiner"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_L_OuterLash",
+        "vertices": 9,
+        "polygons": 3,
+        "triangles": 3,
+        "shape_keys": [
+          "Basis",
+          "eyeBlinkL"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_UpperLiner"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_L_Sclera",
+        "vertices": 1986,
+        "polygons": 2048,
+        "triangles": 3968,
+        "shape_keys": [],
+        "uv_layers": [
+          "UVMap"
+        ],
+        "materials": [
+          "Ren_Sclera"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_L_UpperLiner",
+        "vertices": 46,
+        "polygons": 22,
+        "triangles": 44,
+        "shape_keys": [
+          "Basis",
+          "eyeBlinkL"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_UpperLiner"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_R_Iris",
+        "vertices": 282,
+        "polygons": 280,
+        "triangles": 472,
+        "shape_keys": [
+          "Basis",
+          "gazeLeft",
+          "gazeRight",
+          "gazeUp",
+          "gazeDown"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_Pupil",
+          "Ren_Pupil",
+          "Ren_IrisGreyBlue",
+          "Ren_IrisGreyBlue",
+          "Ren_UpperLiner",
+          "Ren_IrisCatchlight"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_R_LowerLiner",
+        "vertices": 46,
+        "polygons": 22,
+        "triangles": 44,
+        "shape_keys": [
+          "Basis",
+          "eyeBlinkR"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_LowerLiner"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_R_OuterLash",
+        "vertices": 9,
+        "polygons": 3,
+        "triangles": 3,
+        "shape_keys": [
+          "Basis",
+          "eyeBlinkR"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_UpperLiner"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_R_Sclera",
+        "vertices": 1986,
+        "polygons": 2048,
+        "triangles": 3968,
+        "shape_keys": [],
+        "uv_layers": [
+          "UVMap"
+        ],
+        "materials": [
+          "Ren_Sclera"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Eye_R_UpperLiner",
+        "vertices": 46,
+        "polygons": 22,
+        "triangles": 44,
+        "shape_keys": [
+          "Basis",
+          "eyeBlinkR"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_UpperLiner"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_Head",
+        "vertices": 6966,
+        "polygons": 7535,
+        "triangles": 13790,
+        "shape_keys": [
+          "Basis",
+          "mouthSeal",
+          "jawOpen_A",
+          "eyeBlinkL",
+          "eyeBlinkR"
+        ],
+        "uv_layers": [
+          "tripo_91cffa7c_85c1_4bd0_a680_5d60ac518631_NewUVMap",
+          "FaceUV_v1"
+        ],
+        "materials": [
+          "Ren_Draft_Skin",
+          "Ren_Oral_Cavity",
+          "Ren_Draft_RoseLips"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_P2_LowerTeeth",
+        "vertices": 200,
+        "polygons": 194,
+        "triangles": 396,
+        "shape_keys": [
+          "Basis",
+          "mouthSeal",
+          "jawOpen_A"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_Anime_Teeth"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_P2_Tongue",
+        "vertices": 390,
+        "polygons": 388,
+        "triangles": 776,
+        "shape_keys": [
+          "Basis",
+          "mouthSeal",
+          "jawOpen_A"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_Tongue"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Ren_P2_UpperTeeth",
+        "vertices": 200,
+        "polygons": 194,
+        "triangles": 396,
+        "shape_keys": [
+          "Basis",
+          "mouthSeal",
+          "jawOpen_A"
+        ],
+        "uv_layers": [],
+        "materials": [
+          "Ren_Anime_Teeth"
+        ],
+        "hidden_render": false
+      }
+    ],
+    "raw_mesh_triangles": 24420,
+    "visible_mesh_triangles": 24420,
+    "source_unchanged": true
+  },
+  "apply_on_shape_keyed_duplicate": {
+    "error": "Error: Modifier cannot be applied to a mesh with shape keys\n"
+  },
+  "naive_independent_pose_decimation": [
+    {
+      "pose": "closed_rest",
+      "vertices": 3509,
+      "triangles": 6894,
+      "source_triangles": 13790,
+      "triangle_index_sha256": "1f0b8fa8e888d45458773841c809443a50eef500720a47dfec10b27e181d80af",
+      "shape_keys_remaining": 0,
+      "sampled_source_vertex_surface_error_units": {
+        "p95": 0.00044341906323097646,
+        "max": 0.0018705562688410282
+      },
+      "changed_vertex_regions": {
+        "mouthSeal": {
+          "samples": 571,
+          "p95": 0.00043424534669611603,
+          "max": 0.0013312926748767495
+        },
+        "jawOpen_A": {
+          "samples": 678,
+          "p95": 0.00046960586187196887,
+          "max": 0.0013312926748767495
+        },
+        "eyeBlinkL": {
+          "samples": 206,
+          "p95": 0.00034835444239433855,
+          "max": 0.0005178812425583601
+        },
+        "eyeBlinkR": {
+          "samples": 205,
+          "p95": 0.00036177174188196655,
+          "max": 0.0007735791732557118
+        }
+      },
+      "metric_caveat": "One-way source-vertex to reduced-surface sample distances. Not silhouette, eye/mouth aperture, shading, or animation acceptance; thin opposing surfaces can bias nearest-surface distances."
+    },
+    {
+      "pose": "open_a",
+      "vertices": 3509,
+      "triangles": 6894,
+      "source_triangles": 13790,
+      "triangle_index_sha256": "f4864f0c6ff499ed4d96b3d75c116e2791ece21a9612b633263ccb6d5f7858f5",
+      "shape_keys_remaining": 0,
+      "sampled_source_vertex_surface_error_units": {
+        "p95": 0.000447380960395094,
+        "max": 0.0018705562688410282
+      },
+      "changed_vertex_regions": {
+        "mouthSeal": {
+          "samples": 571,
+          "p95": 0.0004639154358301312,
+          "max": 0.0007491493597626686
+        },
+        "jawOpen_A": {
+          "samples": 678,
+          "p95": 0.00047986351128201924,
+          "max": 0.0011861829552799463
+        },
+        "eyeBlinkL": {
+          "samples": 206,
+          "p95": 0.00034835444239433855,
+          "max": 0.0005178812425583601
+        },
+        "eyeBlinkR": {
+          "samples": 205,
+          "p95": 0.00036177174188196655,
+          "max": 0.0007735791732557118
+        }
+      },
+      "metric_caveat": "One-way source-vertex to reduced-surface sample distances. Not silhouette, eye/mouth aperture, shading, or animation acceptance; thin opposing surfaces can bias nearest-surface distances."
+    },
+    {
+      "pose": "blink",
+      "vertices": 3501,
+      "triangles": 6894,
+      "source_triangles": 13790,
+      "triangle_index_sha256": "f06cc37df2a6e62108c60a2caf8c6664ab3a3bc8a091394ecfac2635fc4d7bc5",
+      "shape_keys_remaining": 0,
+      "sampled_source_vertex_surface_error_units": {
+        "p95": 0.0004472576329135336,
+        "max": 0.0018705562688410282
+      },
+      "changed_vertex_regions": {
+        "mouthSeal": {
+          "samples": 571,
+          "p95": 0.00043424534669611603,
+          "max": 0.0013312926748767495
+        },
+        "jawOpen_A": {
+          "samples": 678,
+          "p95": 0.00046960586187196887,
+          "max": 0.0013312926748767495
+        },
+        "eyeBlinkL": {
+          "samples": 206,
+          "p95": 0.00028907490195706487,
+          "max": 0.0013171040918678045
+        },
+        "eyeBlinkR": {
+          "samples": 205,
+          "p95": 0.0003695405030157417,
+          "max": 0.0012472544331103563
+        }
+      },
+      "metric_caveat": "One-way source-vertex to reduced-surface sample distances. Not silhouette, eye/mouth aperture, shading, or animation acceptance; thin opposing surfaces can bias nearest-surface distances."
+    }
+  ],
+  "naive_decimation_has_corresponding_triangle_indices": false,
+  "head_source_unchanged": true,
+  "hair_inventory": {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\hair-cleanup-v1\\fitted-v5\\fitted-hair-workspace.blend",
+    "sha256": "15097b2938d2f44457f2aa174851a48427fa95ca0bf7c84511b01f3c2ff9c864",
+    "meshes": [
+      {
+        "name": "Fitted_root_base",
+        "vertices": 2305,
+        "polygons": 2304,
+        "triangles": 4512,
+        "shape_keys": [],
+        "uv_layers": [],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_lower_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_lower_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_lower_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_lower_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_lower_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_lower_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_lower_6",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_lower_7",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_left_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_left_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_left_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_left_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_left_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_left_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_right_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_right_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_right_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_right_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_right_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_outer_right_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_source_bang_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_source_bang_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_left_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_left_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_left_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_left_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_left_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_left_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_right_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_right_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_right_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_right_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_right_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_fitted_upper_right_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_rebuilt_lower_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_lower_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_lower_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_lower_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_lower_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_lower_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_lower_6",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_lower_7",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_left_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_left_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_left_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_left_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_left_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_left_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_right_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_right_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_right_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_right_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_right_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_outer_right_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_source_bang_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_source_bang_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_left_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_left_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_left_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_left_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_left_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_left_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_right_0",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_right_1",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_right_2",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_right_3",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_right_4",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_rebuilt_upper_right_5",
+        "vertices": 588,
+        "polygons": 578,
+        "triangles": 1172,
+        "shape_keys": [],
+        "uv_layers": [
+          "LongitudinalClumpUV"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_retained_front_bangs",
+        "vertices": 2204,
+        "polygons": 2181,
+        "triangles": 4094,
+        "shape_keys": [],
+        "uv_layers": [
+          "tripo_1a8b7598_cddf_4b6c_a344_9e9ae16dcd5d_NewUVMap"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_root_foundation",
+        "vertices": 916,
+        "polygons": 865,
+        "triangles": 1724,
+        "shape_keys": [],
+        "uv_layers": [],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Hair_short_flyaway_0",
+        "vertices": 312,
+        "polygons": 300,
+        "triangles": 588,
+        "shape_keys": [],
+        "uv_layers": [
+          "UVMap"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_short_flyaway_1",
+        "vertices": 312,
+        "polygons": 300,
+        "triangles": 588,
+        "shape_keys": [],
+        "uv_layers": [
+          "UVMap"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": false
+      },
+      {
+        "name": "Hair_source",
+        "vertices": 26361,
+        "polygons": 28234,
+        "triangles": 51054,
+        "shape_keys": [],
+        "uv_layers": [
+          "tripo_1a8b7598_cddf_4b6c_a344_9e9ae16dcd5d_NewUVMap"
+        ],
+        "materials": [
+          "HairClay"
+        ],
+        "hidden_render": true
+      },
+      {
+        "name": "Head_clearance_readonly",
+        "vertices": 10242,
+        "polygons": 10147,
+        "triangles": 19152,
+        "shape_keys": [],
+        "uv_layers": [
+          "tripo_91cffa7c_85c1_4bd0_a680_5d60ac518631_NewUVMap"
+        ],
+        "materials": [
+          "HeadClay"
+        ],
+        "hidden_render": false
+      }
+    ],
+    "raw_mesh_triangles": 161408,
+    "visible_mesh_triangles": 64688,
+    "source_unchanged": true
+  },
+  "hair_candidate_meshes": [
+    {
+      "name": "Fitted_root_base",
+      "vertices": 2305,
+      "polygons": 2304,
+      "triangles": 4512,
+      "shape_keys": [],
+      "uv_layers": [],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_lower_0",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_lower_1",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_lower_2",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_lower_3",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_lower_4",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_lower_5",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_lower_6",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_lower_7",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_left_0",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_left_1",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_left_2",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_left_3",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_left_4",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_left_5",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_right_0",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_right_1",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_right_2",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_right_3",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_right_4",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_outer_right_5",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_source_bang_3",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_source_bang_4",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_left_0",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_left_1",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_left_2",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_left_3",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_left_4",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_left_5",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_right_0",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_right_1",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_right_2",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_right_3",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_right_4",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_fitted_upper_right_5",
+      "vertices": 588,
+      "polygons": 578,
+      "triangles": 1172,
+      "shape_keys": [],
+      "uv_layers": [
+        "LongitudinalClumpUV"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_short_flyaway_0",
+      "vertices": 312,
+      "polygons": 300,
+      "triangles": 588,
+      "shape_keys": [],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    },
+    {
+      "name": "Hair_short_flyaway_1",
+      "vertices": 312,
+      "polygons": 300,
+      "triangles": 588,
+      "shape_keys": [],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "HairClay"
+      ],
+      "hidden_render": false
+    }
+  ],
+  "hair_candidate_triangles": 45536,
+  "hair_selection_note": "Exact object names from fitted-v5/report.json. Workspace also contains raw/rejected/reference hair; those are excluded from candidate total.",
+  "reproduction_script": "tools/character_art/audit_ren_lod_budget.py",
+  "output_path": "art/generated/characters/ren/parts-workflow-v1/lod-budget-v1/audit.json",
+  "note": "Measured by identical local script logic; promoted to committed locations after run. Source inventories retain exact source hashes. No source mesh saved or modified.",
+  "script_sha256": "8666c938b4c207da4cff66a8983910087cac77ffa3599b7550103f22b21c05c4"
+}

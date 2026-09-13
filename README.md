@@ -24,6 +24,7 @@ Two playable Unity gyms are implemented: an offline nightclub for movement and c
 - Game design source: the Game Design Document, REWIND gameplay concept, and Character Guide sections of the [design document](https://docs.google.com/document/d/1JxbEgu6D5qHtuyGlwKqmO1IJJdrY7MZikN055f87FXA/edit).
 - Earlier exploratory work lives in the separate `openai-hackathon-game` repository.
 - Current character work: [Ren implementation goal](docs/REN_CHARACTER_GOAL.md) and [Japanese creator workflow research](research/japanese-anime-character-workflows-2026-09.md).
+- Ren's complete LOD0 target is **40,000 rendered triangles**, including all clothing and accessories. See the [face-prioritized allocation and Tripo reduction study](docs/REN_POLYGON_BUDGET.md).
 
 ## Launch the Ren bust comparisons
 
