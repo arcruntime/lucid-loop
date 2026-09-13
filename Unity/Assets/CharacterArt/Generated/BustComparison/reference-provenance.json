@@ -1,0 +1,92 @@
+[
+  {
+    "source": "art/characters/ren-model-sheet.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/ren-model-sheet.png",
+    "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/closed-rest-front-v2.png",
+    "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/closed-rest-profile.png",
+    "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-front.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/vowel-a-front.png",
+    "sha256": "c053b44fc1ddd0ec964b8acff51e9d6a497664f8acb3d4d9591d2bea762d62d3"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-profile.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/vowel-a-profile.png",
+    "sha256": "ffdb3cf36ee2bd4ad3a9f69e0791186b713f033e5db8715aa30a07f217da4328"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/00-closed-rest-v2.png",
+    "sha256": "68cd0e3a8bf706814d47e54a340061efe5161716ae526d49777a216d93577c42"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/01-neutral.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/01-neutral.png",
+    "sha256": "4cbfda475c7ebe6df47ff5765b2aef9c5971aed4c5fbf8e8cc7c3d84bb376a6b"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/02-amused-v2.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/02-amused-v2.png",
+    "sha256": "292178adc183d9d1b93ea20e5dcd5efd20efcce469a00f6f47726946787395bb"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/03-skeptical.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/03-skeptical.png",
+    "sha256": "9e627fda6bcea0462f25060c326b432e9b4e50a2d5e552cb1f553557b2a7fee2"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/04-focused.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/04-focused.png",
+    "sha256": "5777b424e9f8ad097c61fd8133e98a329c1831740fa6ac4f113242dcec97b422"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/05-alert.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/05-alert.png",
+    "sha256": "1bc1b0256ff26d4388708e9be988a906c406ab7b9123de6f4c52942d6b9643d6"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/06-guarded.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/06-guarded.png",
+    "sha256": "94a68f835e37e8e4dd5ffbf93bd1f2fa0b52066782dd8f3ebf85f9601196756e"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/07-blink.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/07-blink.png",
+    "sha256": "082874431f4772e641a5bda5765e345869041278528fb9ac2ca7fdc69ffb0dd4"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/08-vowel-a.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/08-vowel-a.png",
+    "sha256": "a51fcbab7c7fe2899802d51bd6e18f9ac42703e331e05539a24bf0ed6c4d13e4"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/09-vowel-i.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/09-vowel-i.png",
+    "sha256": "66343bc241d24fffa3d10490e43f6d2a6f9e1f16dc9f9c22485393ae4bccaea4"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/10-vowel-u-v2.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/10-vowel-u-v2.png",
+    "sha256": "4b8e345ecb1849c83b9d0df381b13bba0ae325cf90ec0e3d56e338241f06944b"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/11-vowel-e.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/11-vowel-e.png",
+    "sha256": "50d8bd8cf5d7b88fb1f9afe9d1b0aa501d8db898ab0e77c1bfd71cbf230c569b"
+  },
+  {
+    "source": "art/generated/characters/ren/head-reference-sheets-v1/12-vowel-o.png",
+    "copy": "Assets/CharacterArt/Generated/BustComparison/References/12-vowel-o.png",
+    "sha256": "7f6e61c8cd11afba4c83c846ec1e169e889f5235ed5857e7e49a892f55091288"
+  }
+]

@@ -1,0 +1,207 @@
+{
+    "unityVersion": "6000.3.24f1",
+    "manifest": "Assets/CharacterArt/Generated/BustComparison/bust-comparison.json",
+    "scene": "Assets/CharacterArt/Generated/Preview/Scenes/RenBustComparison.unity",
+    "projection": "Orthographic; all busts normalized to 1.65 units overall bounds height; target at (0, 0.825, 0) relative to each stage; ortho size 0.98.",
+    "materials": "Base color is URP/Unlit. Lit diagnostics use diffuse URP/Lit with supplied base color, metallic 0, smoothness 0, specular highlights and environment reflections disabled, double sided. Default captures retain geometry normals and disable supplied normal maps. Metallic/roughness source maps are retained but not assumed to be URP packed maps.",
+    "lighting": "Neutral: flat ambient 0.58; white directional key intensity 0.65 at Euler (20,-20,0); per-stage white point fill intensity 1.5 and cool rim intensity 0.6. No shadows or post-processing.",
+    "nightclubLighting": "Club: flat ambient RGB (0.30,0.28,0.34); gently cool directional key RGB (0.88,0.92,1), intensity 0.55 at Euler (20,-15,0); per-stage magenta point intensity 1 and cyan point intensity 1.4. Diffuse response, no specular highlights, shadows, post-processing, or tone mapping.",
+    "defaultSourceNormalMaps": false,
+    "additionalSourceNormalDiagnostics": true,
+    "limitations": "Static generated source geometry. No facial-control or mobile-performance claim. Source texture import is uncompressed for desktop review.",
+    "candidates": [
+        {
+            "id": "tripo-h-closed",
+            "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/tripo-h-closed.fbx",
+            "importedTriangles": 1859218,
+            "sourceReportedTriangles": 1859218,
+            "frontYaw": 0.0,
+            "normalizationScale": 1.6828683614730836,
+            "sourceBoundsSize": {
+                "x": 0.79937744140625,
+                "y": 0.9804688096046448,
+                "z": 0.7705689072608948
+            },
+            "textures": [
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-baseColor-9a3e4cec3e.jpg",
+                    "format": "RGBA32",
+                    "type": "Default",
+                    "filtering": "Trilinear",
+                    "width": 8192,
+                    "height": 8192,
+                    "mipCount": 14,
+                    "sRGB": true
+                },
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-normal-68a8bb7d79.jpg",
+                    "format": "RGBA32",
+                    "type": "NormalMap",
+                    "filtering": "Trilinear",
+                    "width": 4096,
+                    "height": 4096,
+                    "mipCount": 13,
+                    "sRGB": false
+                },
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-metallic-1363969d6f.jpg",
+                    "format": "RGBA32",
+                    "type": "Default",
+                    "filtering": "Trilinear",
+                    "width": 4096,
+                    "height": 4096,
+                    "mipCount": 13,
+                    "sRGB": false
+                }
+            ]
+        },
+        {
+            "id": "meshy-closed",
+            "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/meshy-closed.fbx",
+            "importedTriangles": 3028819,
+            "sourceReportedTriangles": 3028819,
+            "frontYaw": 0.0,
+            "normalizationScale": 0.8250000476837158,
+            "sourceBoundsSize": {
+                "x": 1.6321659088134766,
+                "y": 1.9999998807907105,
+                "z": 1.4830520153045655
+            },
+            "textures": [
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-baseColor-910bd579d8.png",
+                    "format": "RGBA32",
+                    "type": "Default",
+                    "filtering": "Trilinear",
+                    "width": 8192,
+                    "height": 8192,
+                    "mipCount": 14,
+                    "sRGB": true
+                },
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-normal-b4ae348b46.png",
+                    "format": "RGBA32",
+                    "type": "NormalMap",
+                    "filtering": "Trilinear",
+                    "width": 4096,
+                    "height": 4096,
+                    "mipCount": 13,
+                    "sRGB": false
+                },
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-metallic-e858765d59.png",
+                    "format": "RGBA32",
+                    "type": "Default",
+                    "filtering": "Trilinear",
+                    "width": 4096,
+                    "height": 4096,
+                    "mipCount": 13,
+                    "sRGB": false
+                },
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-roughness-d382248852.png",
+                    "format": "RGBA32",
+                    "type": "Default",
+                    "filtering": "Trilinear",
+                    "width": 4096,
+                    "height": 4096,
+                    "mipCount": 13,
+                    "sRGB": false
+                }
+            ]
+        },
+        {
+            "id": "meshy-a",
+            "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/meshy-a.fbx",
+            "importedTriangles": 2439591,
+            "sourceReportedTriangles": 2439591,
+            "frontYaw": 0.0,
+            "normalizationScale": 0.824999988079071,
+            "sourceBoundsSize": {
+                "x": 1.6200339794158936,
+                "y": 2.0,
+                "z": 1.529568076133728
+            },
+            "textures": [
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-baseColor-1294357aec.png",
+                    "format": "RGBA32",
+                    "type": "Default",
+                    "filtering": "Trilinear",
+                    "width": 8192,
+                    "height": 8192,
+                    "mipCount": 14,
+                    "sRGB": true
+                },
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-normal-3a979ef1a9.png",
+                    "format": "RGBA32",
+                    "type": "NormalMap",
+                    "filtering": "Trilinear",
+                    "width": 4096,
+                    "height": 4096,
+                    "mipCount": 13,
+                    "sRGB": false
+                },
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-metallic-c025598ff6.png",
+                    "format": "RGBA32",
+                    "type": "Default",
+                    "filtering": "Trilinear",
+                    "width": 4096,
+                    "height": 4096,
+                    "mipCount": 13,
+                    "sRGB": false
+                },
+                {
+                    "asset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-roughness-8aac593dcd.png",
+                    "format": "RGBA32",
+                    "type": "Default",
+                    "filtering": "Trilinear",
+                    "width": 4096,
+                    "height": 4096,
+                    "mipCount": 13,
+                    "sRGB": false
+                }
+            ]
+        }
+    ],
+    "renders": [
+        "tripo-h-closed--basecolor--front.png",
+        "tripo-h-closed--basecolor--three-quarter.png",
+        "tripo-h-closed--basecolor--profile.png",
+        "tripo-h-closed--neutral--front.png",
+        "tripo-h-closed--neutral--three-quarter.png",
+        "tripo-h-closed--neutral--profile.png",
+        "tripo-h-closed--club--front.png",
+        "tripo-h-closed--club--three-quarter.png",
+        "tripo-h-closed--club--profile.png",
+        "tripo-h-closed--neutral-source-normals--front.png",
+        "tripo-h-closed--neutral-source-normals--three-quarter.png",
+        "tripo-h-closed--neutral-source-normals--profile.png",
+        "meshy-closed--basecolor--front.png",
+        "meshy-closed--basecolor--three-quarter.png",
+        "meshy-closed--basecolor--profile.png",
+        "meshy-closed--neutral--front.png",
+        "meshy-closed--neutral--three-quarter.png",
+        "meshy-closed--neutral--profile.png",
+        "meshy-closed--club--front.png",
+        "meshy-closed--club--three-quarter.png",
+        "meshy-closed--club--profile.png",
+        "meshy-closed--neutral-source-normals--front.png",
+        "meshy-closed--neutral-source-normals--three-quarter.png",
+        "meshy-closed--neutral-source-normals--profile.png",
+        "meshy-a--basecolor--front.png",
+        "meshy-a--basecolor--three-quarter.png",
+        "meshy-a--basecolor--profile.png",
+        "meshy-a--neutral--front.png",
+        "meshy-a--neutral--three-quarter.png",
+        "meshy-a--neutral--profile.png",
+        "meshy-a--club--front.png",
+        "meshy-a--club--three-quarter.png",
+        "meshy-a--club--profile.png",
+        "meshy-a--neutral-source-normals--front.png",
+        "meshy-a--neutral-source-normals--three-quarter.png",
+        "meshy-a--neutral-source-normals--profile.png"
+    ]
+}

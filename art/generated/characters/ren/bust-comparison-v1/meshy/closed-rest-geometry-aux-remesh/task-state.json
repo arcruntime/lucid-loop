@@ -1,0 +1,69 @@
+{
+  "accepted_at": "2026-09-13T05:33:23.899120Z",
+  "endpoint": "multi-image-to-3d",
+  "last_checked_at": "2026-09-13T05:35:26.029227Z",
+  "progress": 99,
+  "provider": "Meshy",
+  "remote_status": "FAILED",
+  "request": {
+    "character": "ren",
+    "docs_checked_at": "2026-09-13",
+    "documentation": "https://docs.meshy.ai/en/api/multi-image-to-3d",
+    "expression": "closed-rest",
+    "geometry_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+        "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+        "view": "front",
+        "width": 1122
+      },
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+        "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+        "view": "profile",
+        "width": 1122
+      }
+    ],
+    "settings": {
+      "ai_model": "meshy-7",
+      "image_enhancement": false,
+      "pose_mode": "",
+      "save_pre_remeshed_model": true,
+      "should_remesh": true,
+      "should_texture": false,
+      "target_formats": [
+        "glb"
+      ],
+      "target_polycount": 300000,
+      "topology": "triangle",
+      "ultra_mode": true
+    },
+    "source_policy": "Auxiliary remesh export workaround: preserve and USE pre-remeshed GLB as the high-detail source; remeshed model.glb is not the candidate",
+    "texture_views": []
+  },
+  "request_fingerprint": "c0fed0f583be91fea5cd2df5af9bf778e72e50bdbc0760de70e01364588d30e8",
+  "response": {
+    "available_model_formats": [],
+    "consumed_credits": 0,
+    "created_at": 1789277601219,
+    "expires_at": 1789536919311,
+    "finished_at": 1789277719311,
+    "id": "01a09941-5bd7-7006-b631-b985321caa24",
+    "progress": 99,
+    "started_at": 1789277601222,
+    "status": "FAILED",
+    "task_error": "Generation failed due to resource constraints. Please retry. If this persists, try simplifying your input.",
+    "type": "multi-image-to-3d",
+    "ultra_mode": true
+  },
+  "schema_version": 1,
+  "status": "FAILED",
+  "submitted_at": "2026-09-13T05:33:14.482987Z",
+  "task_id": "01a09941-5bd7-7006-b631-b985321caa24"
+}

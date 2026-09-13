@@ -1,0 +1,489 @@
+{
+  "schema": "lucid-loop/ren-head-reference-sheets/v1",
+  "createdDate": "2026-09-13",
+  "status": "generated-and-visually-reviewed",
+  "generation": {
+    "tool": "built-in image_gen.imagegen",
+    "modelId": "not exposed by built-in tool; not inferred",
+    "outputHandling": "Exact original PNG outputs copied into workspace; no programmatic image editing, cropping or upscaling.",
+    "calls": 21
+  },
+  "sourceAuthority": {
+    "file": "art/characters/ren-model-sheet.png",
+    "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+    "capOff": "Original artist's explicitly labeled CASUAL LOOK (Cap Off) establishes exposed hair.",
+    "alsoVisuallyInspected": "art/ren.png",
+    "catalog": "art/characters/expression-catalog.json"
+  },
+  "finalReferenceSheetCount": 13,
+  "finalProviderInputCount": 4,
+  "finalReferenceSheets": [
+    "00-closed-rest-v2.png",
+    "01-neutral.png",
+    "02-amused-v2.png",
+    "03-skeptical.png",
+    "04-focused.png",
+    "05-alert.png",
+    "06-guarded.png",
+    "07-blink.png",
+    "08-vowel-a.png",
+    "09-vowel-i.png",
+    "10-vowel-u-v2.png",
+    "11-vowel-e.png",
+    "12-vowel-o.png"
+  ],
+  "providerInputSets": {
+    "closedRest": {
+      "front": "generation-inputs/closed-rest-front-v2.png",
+      "profile": "generation-inputs/closed-rest-profile.png"
+    },
+    "openA": {
+      "front": "generation-inputs/vowel-a-front.png",
+      "profile": "generation-inputs/vowel-a-profile.png"
+    }
+  },
+  "limits": [
+    "These generated extrapolations are not drawings approved by the original character artist.",
+    "Three views guide construction but are not mathematically calibrated orthographic projections of a shared 3D asset.",
+    "Unseen angles and speech/blink extensions are inferred; GUARDED mouth is inferred because a hand hides it in source.",
+    "Cap, shoulders, hands, necklace and neck headphones deliberately omitted to expose facial construction.",
+    "A/I/U/E/O plus blink are visual targets, not a complete English/Japanese viseme rig or proof of realtime blending.",
+    "Delivered dimensions are below the dimensions requested in prompts; actual sizes and hashes are recorded per file.",
+    "Fine hair strands and small ear hardware vary slightly between separately generated single-view inputs.",
+    "No meshes, blendshapes, rigs or Unity assets were created by this image-generation task."
+  ],
+  "assets": [
+    {
+      "id": "00-closed-rest",
+      "file": "00-closed-rest.png",
+      "label": "CLOSED REST",
+      "kind": "construction-extension",
+      "selected": false,
+      "replacedBy": "00-closed-rest-v2.png",
+      "promptFile": "prompts/00-closed-rest.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-511fd82d-f582-47d1-b1e4-68e3fe9cca04.png",
+      "review": "Superseded: tiny tooth-like gap in three-quarter mouth.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f31e4898f456010f0b4985e7a4d74205826a10fb9af23c735cf2c28c6a031b3d",
+      "bytes": 2068817,
+      "promptSha256": "bc7df8168e69b81e28b185aa2b54875d0dc0efd3f5f4ebd390c438674f416a97",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "00-closed-rest-v2",
+      "file": "00-closed-rest-v2.png",
+      "label": "CLOSED REST",
+      "kind": "construction-extension",
+      "selected": true,
+      "promptFile": "prompts/00-closed-rest-v2.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest.png",
+        "B:/lucid-loop/art/characters/ren-model-sheet.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-b4afeb81-ebd8-4f03-a02b-e51c9cfb0c9b.png",
+      "review": "Closed seam corrected; source likeness/style/framing basis accepted by parent agent for this reference experiment.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "68cd0e3a8bf706814d47e54a340061efe5161716ae526d49777a216d93577c42",
+      "bytes": 2037272,
+      "promptSha256": "7b84c1f3ce261c0220af5da24df233baabefcd25a926312f0785e2d962394a81",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "01-neutral",
+      "file": "01-neutral.png",
+      "label": "NEUTRAL",
+      "kind": "artist-expression",
+      "selected": true,
+      "promptFile": "prompts/01-neutral.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-f5dd3597-57fe-43f1-8855-1c68dce702f9.png",
+      "cue": "Artist expression NEUTRAL. Eyes relaxed and half-lidded, brows at rest, lips SLIGHTLY PARTED with a thin visible dark mouth opening, as in the original NEUTRAL panel. Do not make it a smile. This is distinct from the fully closed resting base.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4cbfda475c7ebe6df47ff5765b2aef9c5971aed4c5fbf8e8cc7c3d84bb376a6b",
+      "bytes": 2048747,
+      "promptSha256": "6586c4663d5ba2847fd3bb796d575d163005ccdb55a46dc164f17a3fdb5759ac",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "02-amused",
+      "file": "02-amused.png",
+      "label": "AMUSED",
+      "kind": "artist-expression",
+      "selected": false,
+      "replacedBy": "02-amused-v2.png",
+      "promptFile": "prompts/02-amused.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-298ff244-22a4-4ccf-beab-86e6786ca359.png",
+      "cue": "Artist expression AMUSED. One eye narrows subtly more than the other; one mouth corner lifts into a small knowing asymmetric smirk. Keep restrained, cool adult expression. Preserve slight asymmetry consistently in character-space across views. No broad grin, no cheek-puff, no head tilt; carry the source acting through lids and mouth corner.",
+      "review": "Superseded: front smirk corner side inconsistent with remaining angles.",
+      "width": 1672,
+      "height": 940,
+      "sha256": "47710036748505f85a4302a4aeeff130f3aeb10c5e7c5d43cfd6760637d87711",
+      "bytes": 2049247,
+      "promptSha256": "9912cd72d081f0a7db3ced2fd4c4c6c6afa27689edf0775ac72b5798bcbd2ec9",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "03-skeptical",
+      "file": "03-skeptical.png",
+      "label": "SKEPTICAL",
+      "kind": "artist-expression",
+      "selected": true,
+      "promptFile": "prompts/03-skeptical.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-f7ab906a-8576-4cb6-804d-00c0075c7cd7.png",
+      "cue": "Artist expression SKEPTICAL. Eyes cut slightly sideways, one eyebrow raised modestly above the other, lips slightly parted with an uneven line, echoing the original SKEPTICAL panel. Use subtle natural brow asymmetry and uneven mouth tension rather than an exaggerated angry face. Preserve the same character-space asymmetry and gaze direction when head rotates.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "9e627fda6bcea0462f25060c326b432e9b4e50a2d5e552cb1f553557b2a7fee2",
+      "bytes": 2047874,
+      "promptSha256": "02edc7a02f56235bc70bd8034cc160d524bfec1b7673b5de6e4a6faec0b14e7e",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "04-focused",
+      "file": "04-focused.png",
+      "label": "FOCUSED",
+      "kind": "artist-expression",
+      "selected": true,
+      "promptFile": "prompts/04-focused.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-2d70e4d9-8c40-4327-9962-f5d2d6efb1ce.png",
+      "cue": "Artist expression FOCUSED. Brows draw inward and slightly down, eyes narrow intently while looking slightly upward, mouth firmly but naturally CLOSED in a near-flat line. No teeth, no snarl, no sadness. Keep the head at the same level as the neutral reference; translate source's chin-lowered acting into brow and gaze cues, not a posed head tilt.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5777b424e9f8ad097c61fd8133e98a329c1831740fa6ac4f113242dcec97b422",
+      "bytes": 2050467,
+      "promptSha256": "db0fe9484ebff45a2c955bc6ee3b160e36fa539b35bd05d5201e9169010790d9",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "05-alert",
+      "file": "05-alert.png",
+      "label": "ALERT",
+      "kind": "artist-expression",
+      "selected": true,
+      "promptFile": "prompts/05-alert.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-28f1e22d-56f5-4aef-9a92-7ed744f4dd5b.png",
+      "cue": "Artist expression ALERT. Eyes open a little wider than neutral and look attentively slightly to the side; brows lift slightly. Mouth CLOSED and relaxed, no gasp and no smile. This must be an attentive Ren, not wide round doll eyes or fear. Maintain her narrow almond eye design even with raised upper lids.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "1bc1b0256ff26d4388708e9be988a906c406ab7b9123de6f4c52942d6b9643d6",
+      "bytes": 2046154,
+      "promptSha256": "55ad454b3bbbfc901ace77afdd7772cc485515414216708a1a5a24e0333b4f1d",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "06-guarded",
+      "file": "06-guarded.png",
+      "label": "GUARDED",
+      "kind": "artist-expression-extrapolated-mouth",
+      "selected": true,
+      "promptFile": "prompts/06-guarded.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-1f1bf7db-5b38-491d-81d9-640c60bc37d2.png",
+      "cue": "Artist expression GUARDED. Eyes narrow with restrained wary tension and a subtle forward/sideways gaze; brows hold a small inward tension. A restrained CLOSED mouth with no smile, lightly compressed lips and subtly tense corners. The original artist's hand partly hides this mouth; here REMOVE THE HAND and expose the entire lower face to make a useful modeling reference. The visible closed mouth is a conservative extrapolation from the hidden source mouth. Do not add an arm, hand, cap, or other obstruction. No dramatic angry snarl. Keep the head level.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "94a68f835e37e8e4dd5ffbf93bd1f2fa0b52066782dd8f3ebf85f9601196756e",
+      "bytes": 2050073,
+      "promptSha256": "9f6878c49951fc45ceec5b59a0abad48c4810af742c49a20310941fefa0b54ef",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "07-blink",
+      "file": "07-blink.png",
+      "label": "BLINK — CLOSED",
+      "kind": "construction-extension",
+      "selected": true,
+      "promptFile": "prompts/07-blink.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-8122742f-ce5d-40b6-801c-589375c6f6c5.png",
+      "cue": "Full neutral BLINK with both eyelids completely CLOSED, all irises and sclera hidden. Eyelid closure must follow the eye sphere and preserve the original mature anime lashes and natural upper-lid fold. Lash contact lines curve gently down in relaxed closed-eye rest, NOT upward happy smile arcs. Brows and cheeks completely relaxed; mouth CLOSED exactly as in the neutral base. No squint expression, smile, furrow, or wink. Profile must clearly show the closed upper and lower eyelids in contact.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "082874431f4772e641a5bda5765e345869041278528fb9ac2ca7fdc69ffb0dd4",
+      "bytes": 2043809,
+      "promptSha256": "38a5561a5d5ac759199ed58a361ff5fc4870fb2b0f23e59ef03bbd568cf58f54",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "08-vowel-a",
+      "file": "08-vowel-a.png",
+      "label": "A / あ",
+      "kind": "speech-extension",
+      "selected": true,
+      "promptFile": "prompts/08-vowel-a.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-9f8a6955-73b7-4e64-9ff6-6d1f4292332f.png",
+      "cue": "Japanese speech vowel A / あ. Otherwise keep neutral brows, relaxed half-lidded eyes, neutral gaze and cheeks. Jaw opens naturally downward to form a medium-large vertically open mouth, wider than O without lateral smiling tension. Show a coherent dark mouth cavity, a subtle upper tooth strip only where anatomically visible, and tongue resting low inside; avoid a huge laughing anime cavity. No emotional smile, no surprise in eyes, no head tilt. Lips retain Ren's graphic rose contour and modest natural volume. Profile must show believable open-jaw rotation with restrained lip projection.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a51fcbab7c7fe2899802d51bd6e18f9ac42703e331e05539a24bf0ed6c4d13e4",
+      "bytes": 2048069,
+      "promptSha256": "c78e5d98ce0670ea453b17a310101a141d14105612289680b53ec4875c33222f",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "09-vowel-i",
+      "file": "09-vowel-i.png",
+      "label": "I / い",
+      "kind": "speech-extension",
+      "selected": true,
+      "promptFile": "prompts/09-vowel-i.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-09c942cf-958e-4e95-b3c7-6f78a8d3c078.png",
+      "cue": "Japanese speech vowel I / い. Otherwise keep neutral brows, relaxed half-lidded eyes, neutral gaze and cheeks. Mouth pulls horizontally WIDE and SHALLOW with a small jaw opening, lips spread laterally in speech articulation but WITHOUT raised smiling cheek corners. A slim tooth strip can be visible inside the thin horizontal opening; do not clamp all teeth together into a forced smile. I is the widest and shallowest of this vowel set. Preserve neutral eye expression and Ren's actual lip design in all three views.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "66343bc241d24fffa3d10490e43f6d2a6f9e1f16dc9f9c22485393ae4bccaea4",
+      "bytes": 2035516,
+      "promptSha256": "0b4855fd1d1ffd32fc2e8062dabe70873ab61c76751f3e9447090dae705f4b8a",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "10-vowel-u",
+      "file": "10-vowel-u.png",
+      "label": "U / う",
+      "kind": "speech-extension",
+      "selected": false,
+      "replacedBy": "10-vowel-u-v2.png",
+      "promptFile": "prompts/10-vowel-u.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-257ea5d5-5b04-43a8-b916-b4798ec26569.png",
+      "cue": "Japanese speech vowel U / う. Otherwise keep neutral brows, relaxed half-lidded eyes, neutral gaze and cheeks. Mouth forms a SMALL COMPRESSED opening with lips gently brought inward; low jaw opening, minimal forward protrusion, much smaller aperture than O. Japanese U should read as restrained compressed/unrounded articulation, NOT a cartoon kiss, fish mouth or projecting duck lips. Show only a small dark aperture, no giant teeth or visible tongue sticking out. Maintain original lip volume and style.",
+      "review": "Superseded: mouth aperture too close to closed seam.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "a5794e7bb058cc10ef9d9e3ed3c92621ed144ea532a8b5b24e99ee520712369e",
+      "bytes": 1996562,
+      "promptSha256": "b26d94a848314dda44dcdde654c713468d425e9db78569ea395a049d8cc80ecc",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "11-vowel-e",
+      "file": "11-vowel-e.png",
+      "label": "E / え",
+      "kind": "speech-extension",
+      "selected": true,
+      "promptFile": "prompts/11-vowel-e.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-80a44ab4-b8e9-433b-9d50-12461b114b64.png",
+      "cue": "Japanese speech vowel E / え. Otherwise keep neutral brows, relaxed half-lidded eyes, neutral gaze and cheeks. Mouth horizontally WIDE with a moderate vertical jaw opening, distinctly more vertically open than I and less vertically open than A. Corners spread slightly for articulation WITHOUT emotional grin, cheek lift or smile eyes. Dark mouth interior, subtle upper teeth where visible and low tongue. E is wide/open, I is wide/shallow; do not draw the same thin I mouth. Profile must show the intermediate natural jaw opening.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "50d8bd8cf5d7b88fb1f9afe9d1b0aa501d8db898ab0e77c1bfd71cbf230c569b",
+      "bytes": 2039768,
+      "promptSha256": "82c3e6634457b7cf9e3a8a5ffbef31b884ecf076fc1d4daa7b84bf84f9ba9696",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "12-vowel-o",
+      "file": "12-vowel-o.png",
+      "label": "O / お",
+      "kind": "speech-extension",
+      "selected": true,
+      "promptFile": "prompts/12-vowel-o.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-29edd63c-5360-4621-bde5-e13a69254844.png",
+      "cue": "Japanese speech vowel O / お. Otherwise keep neutral brows, relaxed half-lidded eyes, neutral gaze and cheeks. Mouth forms a clearly ROUNDED vertical oval opening, medium jaw opening, with a little natural lip rounding and slight forward projection; opening is appreciably LARGER and more rounded than U, narrower than A. Mouth interior dark and coherent, tongue stays inside. Avoid comic shock, huge donut lips, kiss-face, or extra-full photoreal lips. Profile must show natural restrained rounding.",
+      "review": "Visually checked: correct three-view layout, consistent identity, expression visible, head/neck-only framing.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "7f6e61c8cd11afba4c83c846ec1e169e889f5235ed5857e7e49a892f55091288",
+      "bytes": 2035845,
+      "promptSha256": "ce4fe85a69b331cf7b804e82712c1d87b20433bb14ae8bcaada23d3d402e20fe",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "02-amused-v2",
+      "file": "02-amused-v2.png",
+      "label": "AMUSED",
+      "kind": "artist-expression",
+      "selected": true,
+      "promptFile": "prompts/02-amused-v2.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/02-amused.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-9bd33f28-e069-4098-a12d-da6c8335472e.png",
+      "review": "Front mouth asymmetry corrected to match the anatomical side of the raised corner in other angles.",
+      "width": 1672,
+      "height": 940,
+      "sha256": "292178adc183d9d1b93ea20e5dcd5efd20efcce469a00f6f47726946787395bb",
+      "bytes": 2022482,
+      "promptSha256": "bfdecc3baf83e1984c3d5b59f9b67116f47105741d63d7e60bc8498f61504148",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "10-vowel-u-v2",
+      "file": "10-vowel-u-v2.png",
+      "label": "U / う",
+      "kind": "speech-extension",
+      "selected": true,
+      "promptFile": "prompts/10-vowel-u-v2.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/10-vowel-u.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-b8846bfb-6692-4399-ae9a-c1ccaa71d0e4.png",
+      "review": "Small visible compressed opening corrected; distinct from taller rounded O.",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4b8e345ecb1849c83b9d0df381b13bba0ae325cf90ec0e3d56e338241f06944b",
+      "bytes": 1985359,
+      "promptSha256": "448df20c5aa3794e53bc751be7deb5741ebf415b81d3cb9ef8688e86df30b02a",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "input-closed-rest-front",
+      "file": "generation-inputs/closed-rest-front.png",
+      "label": "closed-rest-front",
+      "kind": "provider-input",
+      "selected": false,
+      "replacedBy": "generation-inputs/closed-rest-front-v2.png",
+      "promptFile": "prompts/input-closed-rest-front.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-12468fc9-ec88-45a9-99ee-d5aef36f5c59.png",
+      "review": "Superseded: a few flyaways touched or crossed canvas boundary.",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "5657bb6895eaa191f67ab344b6277d63b8e073089860a09571c35cfb7d647292",
+      "bytes": 2153652,
+      "promptSha256": "5ac260d5862db05744d8fe1dd020a5c90b849d5ed3fcbbaee7edcf9ffcac061e",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "input-closed-rest-profile",
+      "file": "generation-inputs/closed-rest-profile.png",
+      "label": "closed-rest-profile",
+      "kind": "provider-input",
+      "selected": true,
+      "promptFile": "prompts/input-closed-rest-profile.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-cfc51e12-fd25-4797-8e56-7aa519cdd425.png",
+      "review": "Visually checked: one unlabeled front/profile view, complete hair/head/neck and distinct closed/A mouth, same source design.",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+      "bytes": 2029400,
+      "promptSha256": "c0a437a135b6780502878e43eab3d423c7c8f968c1affa3cd71a7a9fd42f6e12",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "input-vowel-a-front",
+      "file": "generation-inputs/vowel-a-front.png",
+      "label": "vowel-a-front",
+      "kind": "provider-input",
+      "selected": true,
+      "promptFile": "prompts/input-vowel-a-front.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/08-vowel-a.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-5adbb111-55e9-4fed-ae19-14c400d42086.png",
+      "review": "Visually checked: one unlabeled front/profile view, complete hair/head/neck and distinct closed/A mouth, same source design.",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "c053b44fc1ddd0ec964b8acff51e9d6a497664f8acb3d4d9591d2bea762d62d3",
+      "bytes": 1885589,
+      "promptSha256": "94a70c4e990cb449a3f68812d7e3518b0a5de6ec1c2de601716490d445c061b4",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "input-vowel-a-profile",
+      "file": "generation-inputs/vowel-a-profile.png",
+      "label": "vowel-a-profile",
+      "kind": "provider-input",
+      "selected": true,
+      "promptFile": "prompts/input-vowel-a-profile.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/08-vowel-a.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-e2edec0b-0620-487c-88c4-4c2654038782.png",
+      "review": "Visually checked: one unlabeled front/profile view, complete hair/head/neck and distinct closed/A mouth, same source design.",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "ffdb3cf36ee2bd4ad3a9f69e0791186b713f033e5db8715aa30a07f217da4328",
+      "bytes": 2092593,
+      "promptSha256": "9a4b01226c5a647078838f46b02879e19cb9a8557579a275f4c8003fba97ea8d",
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "input-closed-rest-front-v2",
+      "file": "generation-inputs/closed-rest-front-v2.png",
+      "label": "closed-rest-front",
+      "kind": "provider-input",
+      "selected": true,
+      "promptFile": "prompts/input-closed-rest-front-v2.txt",
+      "referencedImagePaths": [
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-a0b87348-7896-427b-b305-f8ff65b07815.png",
+      "review": "Framing corrected so entire head and flyaways fit with visible margin; closed mouth seam preserved.",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+      "bytes": 1998422,
+      "promptSha256": "041b9cc6da1df59723c87df5a34162d571e51afdb038dc1fe30e6c0de4e1bf6a",
+      "byteIdenticalToToolOutput": true
+    }
+  ]
+}

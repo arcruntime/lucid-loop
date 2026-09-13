@@ -1,0 +1,66 @@
+{
+  "accepted_at": "2026-09-13T05:31:16.898507Z",
+  "endpoint": "multi-image-to-3d",
+  "last_checked_at": "2026-09-13T05:32:18.266851Z",
+  "progress": 99,
+  "provider": "Meshy",
+  "remote_status": "FAILED",
+  "request": {
+    "character": "ren",
+    "docs_checked_at": "2026-09-13",
+    "documentation": "https://docs.meshy.ai/en/api/multi-image-to-3d",
+    "expression": "closed-rest",
+    "geometry_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+        "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+        "view": "front",
+        "width": 1122
+      },
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+        "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+        "view": "profile",
+        "width": 1122
+      }
+    ],
+    "settings": {
+      "ai_model": "meshy-7",
+      "image_enhancement": false,
+      "pose_mode": "",
+      "should_remesh": false,
+      "should_texture": false,
+      "target_formats": [
+        "glb"
+      ],
+      "ultra_mode": true
+    },
+    "source_policy": "Reviewed head and neck only; one expression per task",
+    "texture_views": []
+  },
+  "request_fingerprint": "029f98fcc2dff1918b4ff295149103c11321cdfba516ead979eb92f5c6ff3eba",
+  "response": {
+    "available_model_formats": [],
+    "consumed_credits": 0,
+    "created_at": 1789277474275,
+    "expires_at": 1789536727126,
+    "finished_at": 1789277527126,
+    "id": "01a0993f-7651-7735-909c-bc32312bbbb3",
+    "progress": 99,
+    "started_at": 1789277474277,
+    "status": "FAILED",
+    "task_error": "An unexpected error occurred. Please retry. If this persists, contact support with your task ID.",
+    "type": "multi-image-to-3d",
+    "ultra_mode": true
+  },
+  "schema_version": 1,
+  "status": "FAILED",
+  "submitted_at": "2026-09-13T05:31:10.125505Z",
+  "task_id": "01a0993f-7651-7735-909c-bc32312bbbb3"
+}

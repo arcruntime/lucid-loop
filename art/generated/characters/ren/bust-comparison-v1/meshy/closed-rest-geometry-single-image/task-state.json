@@ -1,0 +1,76 @@
+{
+  "accepted_at": "2026-09-13T05:37:45.148554Z",
+  "completed_at": "2026-09-13T05:39:23.036409Z",
+  "downloads": [
+    {
+      "bytes": 54875864,
+      "path": "model.glb",
+      "sha256": "74b2dde3ca97be43716db929cae99f4c43e7df9e85f2ad22b7011e8d7da98039"
+    },
+    {
+      "bytes": 185459,
+      "format": "PNG",
+      "height": 512,
+      "mode": "RGBA",
+      "path": "preview.png",
+      "sha256": "0c060e58f406ffb65e3b023c31f01834488fd6430142eff02fec06883253ce8b",
+      "width": 512
+    }
+  ],
+  "endpoint": "image-to-3d",
+  "last_checked_at": "2026-09-13T05:39:16.998544Z",
+  "progress": 100,
+  "provider": "Meshy",
+  "remote_status": "SUCCEEDED",
+  "request": {
+    "character": "ren",
+    "docs_checked_at": "2026-09-13",
+    "documentation": "https://docs.meshy.ai/en/api/image-to-3d",
+    "expression": "closed-rest",
+    "geometry_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+        "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+        "view": "front",
+        "width": 1122
+      }
+    ],
+    "settings": {
+      "ai_model": "meshy-7",
+      "image_enhancement": false,
+      "model_type": "standard",
+      "pose_mode": "",
+      "should_remesh": false,
+      "should_texture": false,
+      "target_formats": [
+        "glb"
+      ],
+      "ultra_mode": true
+    },
+    "source_policy": "Reviewed head and neck only; one expression per task; single front geometry input, profile reserved for later texture guidance",
+    "texture_views": []
+  },
+  "request_fingerprint": "0b872ecefb781952dc40aca2b2c544591dcb4063c729f242d17595c73cc1c165",
+  "response": {
+    "available_model_formats": [
+      "glb"
+    ],
+    "consumed_credits": 25,
+    "created_at": 1789277862577,
+    "expires_at": 1789537124488,
+    "finished_at": 1789277924488,
+    "id": "01a09945-4231-765f-bd7d-c0dd02d225da",
+    "progress": 100,
+    "started_at": 1789277862579,
+    "status": "SUCCEEDED",
+    "type": "image-to-3d",
+    "ultra_mode": true
+  },
+  "schema_version": 1,
+  "status": "SUCCEEDED",
+  "submitted_at": "2026-09-13T05:37:29.249704Z",
+  "task_id": "01a09945-4231-765f-bd7d-c0dd02d225da"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "job_id": "h3.1-closed-rest-right-v2",
+  "preset": "h3.1-ultra",
+  "created_at": "2026-09-13T05:48:25.045360Z",
+  "status": "PREPARED",
+  "requested_settings": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 2000000,
+    "quad": false,
+    "smart_low_poly": false,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "extreme",
+    "texture_alignment": "original_image",
+    "auto_size": false,
+    "export_uv": true,
+    "model_seed": 20260913,
+    "texture_seed": 20260913
+  },
+  "sources": [
+    {
+      "view": "front",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+      "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+      "bytes": 1998422,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "view": "right",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+      "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+      "bytes": 2029400,
+      "width": 1122,
+      "height": 1402
+    }
+  ],
+  "fingerprint": "b93806c7238f3edea1593670425fd09957f7578aa5fd325110aa275481f202e0",
+  "downloads": [],
+  "source_review_note": "Parent visually reviewed exact portraits. Live Studio RIGHT icon faces screen-right; RIGHT mapping approved 2026-09-13. Replaces earlier unsubmitted LEFT inference. Prepared only; do not submit while Studio counterpart is pending.",
+  "documentation": {
+    "h_series": "https://developers.tripo3d.ai/en/docs/generation-multiview-to-model/standard",
+    "p_series": "https://developers.tripo3d.ai/en/docs/generation-multiview-to-model/p",
+    "upload": "https://developers.tripo3d.ai/en/docs/files",
+    "task": "https://developers.tripo3d.ai/en/docs/task-query",
+    "changelog": "https://developers.tripo3d.ai/en/docs/changelog"
+  },
+  "documentation_checked_at": "2026-09-13"
+}

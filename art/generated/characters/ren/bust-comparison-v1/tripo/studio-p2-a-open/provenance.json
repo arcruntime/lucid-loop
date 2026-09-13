@@ -1,0 +1,41 @@
+{
+  "route": "Tripo Studio",
+  "status": "COMPLETED_AWAITING_EXPORT",
+  "recorded_utc": "2026-09-13T06:15:41.457048Z",
+  "displayed_model_label": "P2.0 - Preview",
+  "exact_served_model_identity": null,
+  "settings": {
+    "topology": "Quad",
+    "polycount": 25000,
+    "privacy": "Private",
+    "texture_quality_control": null,
+    "texture_stage_note": "Current P2 form exposes Topology only, with no texture quality or PBR control. Inspect output/export and use a separate native texture step if required for 8K."
+  },
+  "displayed_charge": {
+    "base_credits": 100,
+    "promotional_credits": 0,
+    "trial_label": "Trial x1",
+    "actual_charged_credits": null
+  },
+  "visible_balance_before": 24915,
+  "sources": [
+    {
+      "view": "Front",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-front.png",
+      "sha256": "c053b44fc1ddd0ec964b8acff51e9d6a497664f8acb3d4d9591d2bea762d62d3"
+    },
+    {
+      "view": "Right",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-profile.png",
+      "sha256": "ffdb3cf36ee2bd4ad3a9f69e0791186b713f033e5db8715aa30a07f217da4328"
+    }
+  ],
+  "view_convention": "Studio visible RIGHT reference icon faces screen-right; exact supplied right-facing profile uploaded to RIGHT. Supersedes earlier unsubmitted API LEFT inference.",
+  "requested_scope": "Parent released P2 closed-rest/A-open at maximum native topology and 8K texture; UI texture controls absent at geometry stage",
+  "asset_id": "da64bb0e-6e34-4f1e-a0bf-aafeaa660870",
+  "asset_url": "https://studio.tripo3d.ai/workspace/generate/da64bb0e-6e34-4f1e-a0bf-aafeaa660870",
+  "accepted_utc": "2026-09-13T06:16:51.258392Z",
+  "balance_after_submission": 24915,
+  "completion_evidence": "Asset card replaced Generating status with a named rendered thumbnail in the Studio Assets panel; original export still pending.",
+  "export_blocker": "H A-open preview stalled. Screenshot/locator calls timed out after 60 seconds; navigation away timed out after 120 seconds; final fresh recovery could not complete session naming/tab listing. No paid job repeated. See STUDIO-EXPORT-HANDOFF.md."
+}

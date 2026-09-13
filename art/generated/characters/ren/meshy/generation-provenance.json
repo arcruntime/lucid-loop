@@ -1,0 +1,83 @@
+{
+  "character_id": "ren",
+  "consumed_credits": 30,
+  "documentation": "https://docs.meshy.ai/en/api/multi-image-to-3d",
+  "downloads": [
+    {
+      "bytes": 11592520,
+      "path": "model.glb",
+      "sha256": "0f1172a6dc175f16d26cbedb2f4ad07f0c4ad5f2a56e2a59182325f250cc28de"
+    },
+    {
+      "bytes": 34992240,
+      "path": "model-pre-remeshed.glb",
+      "sha256": "38e968a52d2ac20f2908f63bf83bf086f3e38e02436afaaeaace6eb52de07a08"
+    },
+    {
+      "bytes": 88462,
+      "path": "preview-alpha.png",
+      "sha256": "3e3c6bc0f6ef5bba5296a15a2a67d14086b938ad01f34b6d2746c4e9762a68bb"
+    },
+    {
+      "bytes": 88462,
+      "path": "preview.png",
+      "sha256": "3e3c6bc0f6ef5bba5296a15a2a67d14086b938ad01f34b6d2746c4e9762a68bb"
+    },
+    {
+      "bytes": 7503482,
+      "path": "texture-0-base-color.png",
+      "sha256": "b736ec39351a8f693c51b2c000c27db5d2606b42d930d06b624dd8a23d30a968"
+    },
+    {
+      "bytes": 147543,
+      "path": "texture-0-emission.png",
+      "sha256": "e66c1ebd2159ea4495a3612ffb078da056b58c3434f92adaaab662e7fca82fe7"
+    },
+    {
+      "bytes": 47312,
+      "path": "texture-0-metallic.png",
+      "sha256": "b0f4ae9230966f5d2cc80f5538f51812061421b416dbcd4237c1801e96cbcbc7"
+    },
+    {
+      "bytes": 5520383,
+      "path": "texture-0-normal.png",
+      "sha256": "841230b8ebd7bbaf90c31683b8f6a7d20f847aaf7d3b0dcf847e509972219601"
+    },
+    {
+      "bytes": 1355718,
+      "path": "texture-0-roughness.png",
+      "sha256": "47253129bd0590bd9d32f58a4bfdc7c9f8b67de9bfb42b4f39be55e0b05bec1f"
+    }
+  ],
+  "provider": "Meshy",
+  "request": {
+    "ai_model": "meshy-7",
+    "alpha_thumbnail": true,
+    "art_direction": "Arcane-inspired painted character reference",
+    "enable_pbr": true,
+    "image_enhancement": false,
+    "pose_mode": "a-pose",
+    "reference": {
+      "media_type": "image/png",
+      "path": "art/generated/characters/ren/reference.png",
+      "sha256": "543d84734f33d71d43e4e22d660188892f944ef029eb70ac099d7fec2c9b64e5"
+    },
+    "remove_lighting": true,
+    "save_pre_remeshed_model": true,
+    "should_remesh": true,
+    "should_texture": true,
+    "target_formats": [
+      "glb"
+    ],
+    "target_polycount": 40000,
+    "texture_prompt": "Faithfully preserve the approved Arcane-inspired painted character design, silhouette, face, hair, costume, palette, and graphic details. Use clean PBR materials without baked lighting.",
+    "texture_resolution": "2k",
+    "topology": "triangle",
+    "ultra_mode": false
+  },
+  "request_fingerprint": "sha256:3978026cb42e8ecd8ab34946e605c1bf1d59556e2064b1cc0b8f76d4cebab514",
+  "schema_version": 1,
+  "stage": "generation",
+  "status": "SUCCEEDED",
+  "task_id": "01a095dd-2a98-723c-92f0-52bfe4abfeed"
+}

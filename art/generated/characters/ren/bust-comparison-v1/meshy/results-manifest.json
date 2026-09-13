@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "character": "ren",
+  "date": "2026-09-13",
+  "comparison_note": "Best available outputs. Meshy geometry is front-only; texturing is front plus profile after multiview generation failed server-side.",
+  "candidates": [
+    {
+      "id": "meshy-7-ultra-closed-rest",
+      "label": "Meshy 7 Ultra / closed-rest",
+      "provider": "Meshy",
+      "generation_model_requested": "meshy-7",
+      "served_model_identity": null,
+      "served_model_note": "API responses omit served model identity; explicit requested identifiers and returned Ultra/texture settings are recorded.",
+      "ultra_mode": true,
+      "geometry_input_views": [
+        "front"
+      ],
+      "texture_input_views": [
+        "front",
+        "profile"
+      ],
+      "source_geometry": {
+        "path": "art/generated/characters/ren/bust-comparison-v1/meshy/closed-rest-geometry-single-image/model.glb",
+        "task_id": "01a09945-4231-765f-bd7d-c0dd02d225da",
+        "sha256": "74b2dde3ca97be43716db929cae99f4c43e7df9e85f2ad22b7011e8d7da98039",
+        "triangles": 3051192,
+        "vertices": 1521731,
+        "has_uvs": false
+      },
+      "textured_model": {
+        "path": "art/generated/characters/ren/bust-comparison-v1/meshy/closed-rest-8k/model.glb",
+        "task_id": "01a09947-e259-7035-8f82-aabb8a52199b",
+        "sha256": "d62134d371d33a03d9b013b6fe9e154105c8c43d26c49c05775ecf1cab5c663d",
+        "triangles": 3028819,
+        "vertices_with_uv_splits": 1708194
+      },
+      "external_base_color": {
+        "bytes": 63227651,
+        "format": "PNG",
+        "height": 8192,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/bust-comparison-v1/meshy/closed-rest-8k/texture-0-base-color.png",
+        "sha256": "910bd579d809c7ea306120f2b340c075be57f124cff46cdf1733aaf354b33d7b",
+        "width": 8192,
+        "material_index": 0,
+        "texture_index": 0,
+        "embedded_image_index": 0,
+        "import_note": "Use this original PNG instead of re-encoding the embedded JPEG."
+      },
+      "pbr_resolution": 4096,
+      "morph_targets": 0,
+      "skin_count": 0,
+      "total_consumed_credits": 40,
+      "geometry_stage_comparison": "art/generated/characters/ren/bust-comparison-v1/meshy/closed-rest-8k/geometry-stage-comparison.json"
+    },
+    {
+      "id": "meshy-7-ultra-a-open",
+      "label": "Meshy 7 Ultra / a-open",
+      "provider": "Meshy",
+      "generation_model_requested": "meshy-7",
+      "served_model_identity": null,
+      "served_model_note": "API responses omit served model identity; explicit requested identifiers and returned Ultra/texture settings are recorded.",
+      "ultra_mode": true,
+      "geometry_input_views": [
+        "front"
+      ],
+      "texture_input_views": [
+        "front",
+        "profile"
+      ],
+      "source_geometry": {
+        "path": "art/generated/characters/ren/bust-comparison-v1/meshy/a-open-geometry-single-image/model.glb",
+        "task_id": "01a09948-2a3a-730c-b856-a12de1a0bd2e",
+        "sha256": "3998da572174041f6e9faa84f0fe71e2287832ce0fea13fee662c39a7955ca14",
+        "triangles": 2558256,
+        "vertices": 1243515,
+        "has_uvs": false
+      },
+      "textured_model": {
+        "path": "art/generated/characters/ren/bust-comparison-v1/meshy/a-open-8k/model.glb",
+        "task_id": "01a0994a-d152-745d-bc89-f4035680f952",
+        "sha256": "bab10c8052106b84793f33a491ba22085e35bd59b0641f15b3742d9594866e38",
+        "triangles": 2439591,
+        "vertices_with_uv_splits": 3663151
+      },
+      "external_base_color": {
+        "bytes": 44655007,
+        "format": "PNG",
+        "height": 8192,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/bust-comparison-v1/meshy/a-open-8k/texture-0-base-color.png",
+        "sha256": "1294357aecfe19d188b106cb466778b4e7044c20f0f57bfc42a69d31581d18e0",
+        "width": 8192,
+        "material_index": 0,
+        "texture_index": 0,
+        "embedded_image_index": 0,
+        "import_note": "Use this original PNG instead of re-encoding the embedded JPEG."
+      },
+      "pbr_resolution": 4096,
+      "morph_targets": 0,
+      "skin_count": 0,
+      "total_consumed_credits": 40,
+      "geometry_stage_comparison": "art/generated/characters/ren/bust-comparison-v1/meshy/a-open-8k/geometry-stage-comparison.json"
+    }
+  ],
+  "failed_attempts": 6,
+  "failed_attempt_consumed_credits": 0,
+  "total_successful_consumed_credits": 80
+}

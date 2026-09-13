@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-09-13T07:15:57.0005320Z",
+  "status": "BLOCKED_PAGE_INSPECTION",
+  "requested_scope": "Recover H A-open and P2 closed-rest/A-open existing Studio originals without duplicate generation",
+  "skill": "C:/Users/jetha/.codex/plugins/cache/openai-bundled/browser/26.818.41509/skills/control-in-app-browser/SKILL.md",
+  "recovery_docs": [
+    "chrome-troubleshooting",
+    "bootstrap-troubleshooting"
+  ],
+  "browser_family": "Chrome",
+  "browser_id": "-dce6-4703-ba04-0aa96b43cfaa",
+  "existing_owned_tab": "1432647605",
+  "fresh_owned_tab": "1432647639",
+  "fresh_tab_url": "https://studio.tripo3d.ai/assets",
+  "checks": [
+    {
+      "action": "Runtime connection and full browser documentation",
+      "result": "success"
+    },
+    {
+      "action": "Name browser session",
+      "result": "success"
+    },
+    {
+      "action": "List owned tabs",
+      "result": "success"
+    },
+    {
+      "action": "Create fresh owned tab",
+      "result": "success"
+    },
+    {
+      "action": "Navigate fresh tab to Studio Assets library",
+      "result": "success"
+    },
+    {
+      "action": "Read fresh tab DOM snapshot",
+      "result": "Timed out after 3000ms waiting for CDP Runtime.evaluate"
+    },
+    {
+      "action": "Wait two seconds and retry DOM snapshot once",
+      "result": "Tool timed out after 20 seconds and reset its JavaScript session"
+    }
+  ],
+  "conclusion": "Page inspection still fails in a fresh asset-library tab, not only in the original heavy H preview. Stopped after one bounded retry.",
+  "original_downloads_added": [],
+  "paid_actions": 0,
+  "account_payment_profile_changes": 0,
+  "unrelated_chrome_processes_killed": 0,
+  "asset_states": "H A-open, P2 closed-rest, P2 A-open remain COMPLETED_AWAITING_EXPORT",
+  "next_action": "Recover browser page inspection or export the existing Studio assets manually. Exact URLs and native quad/texture requirements are in STUDIO-EXPORT-HANDOFF.md."
+}

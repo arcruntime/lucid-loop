@@ -1,0 +1,92 @@
+{
+  "accepted_at": "2026-09-13T05:22:29.174485Z",
+  "endpoint": "multi-image-to-3d",
+  "last_checked_at": "2026-09-13T05:25:00.438959Z",
+  "progress": 45,
+  "provider": "Meshy",
+  "remote_status": "FAILED",
+  "request": {
+    "character": "ren",
+    "docs_checked_at": "2026-09-13",
+    "documentation": "https://docs.meshy.ai/en/api/multi-image-to-3d",
+    "expression": "a-open",
+    "geometry_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-front.png",
+        "sha256": "c053b44fc1ddd0ec964b8acff51e9d6a497664f8acb3d4d9591d2bea762d62d3",
+        "view": "front",
+        "width": 1122
+      },
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-profile.png",
+        "sha256": "ffdb3cf36ee2bd4ad3a9f69e0791186b713f033e5db8715aa30a07f217da4328",
+        "view": "profile",
+        "width": 1122
+      }
+    ],
+    "settings": {
+      "ai_model": "meshy-7",
+      "alpha_thumbnail": true,
+      "enable_pbr": true,
+      "image_enhancement": false,
+      "multi_view_thumbnails": true,
+      "pose_mode": "",
+      "remove_lighting": true,
+      "save_pre_remeshed_model": true,
+      "should_remesh": false,
+      "should_texture": true,
+      "target_formats": [
+        "glb"
+      ],
+      "texture_resolution": "8k",
+      "ultra_mode": true
+    },
+    "source_policy": "Reviewed head and neck only; one expression per task",
+    "texture_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-front.png",
+        "sha256": "c053b44fc1ddd0ec964b8acff51e9d6a497664f8acb3d4d9591d2bea762d62d3",
+        "view": "front",
+        "width": 1122
+      },
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-profile.png",
+        "sha256": "ffdb3cf36ee2bd4ad3a9f69e0791186b713f033e5db8715aa30a07f217da4328",
+        "view": "profile",
+        "width": 1122
+      }
+    ]
+  },
+  "request_fingerprint": "287a602fd6735e5cddd1979cf679629b00f2bf53774f18569dc5da3017d57024",
+  "response": {
+    "available_model_formats": [],
+    "consumed_credits": 0,
+    "created_at": 1789276946318,
+    "expires_at": 1789536280316,
+    "finished_at": 1789277080316,
+    "id": "01a09937-1a64-75d1-aa3c-09943a700ff1",
+    "progress": 45,
+    "started_at": 1789276946320,
+    "status": "FAILED",
+    "task_error": "Generation failed due to resource constraints. Please retry. If this persists, try simplifying your input.",
+    "texture_resolution": "8k",
+    "type": "multi-image-to-3d",
+    "ultra_mode": true
+  },
+  "schema_version": 1,
+  "status": "FAILED",
+  "submitted_at": "2026-09-13T05:22:02.401790Z",
+  "task_id": "01a09937-1a64-75d1-aa3c-09943a700ff1"
+}

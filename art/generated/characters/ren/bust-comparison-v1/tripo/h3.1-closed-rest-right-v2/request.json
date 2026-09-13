@@ -1,0 +1,37 @@
+{
+  "endpoint": "https://openapi.tripo3d.ai/v3/generation/multiview-to-model",
+  "settings": {
+    "model": "v3.1-20260211",
+    "geometry_quality": "detailed",
+    "face_limit": 2000000,
+    "quad": false,
+    "smart_low_poly": false,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "extreme",
+    "texture_alignment": "original_image",
+    "auto_size": false,
+    "export_uv": true,
+    "model_seed": 20260913,
+    "texture_seed": 20260913
+  },
+  "inputs": [
+    {
+      "view": "front",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+      "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+      "bytes": 1998422,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "view": "right",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+      "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+      "bytes": 2029400,
+      "width": 1122,
+      "height": 1402
+    }
+  ],
+  "note": "Upload references use file tokens kept only in ignored local state."
+}

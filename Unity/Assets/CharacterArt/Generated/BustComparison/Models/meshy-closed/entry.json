@@ -1,0 +1,28 @@
+{
+  "id": "meshy-closed",
+  "label": "Meshy / Closed rest",
+  "provider": "Meshy",
+  "modelLabel": "Meshy 7 Ultra + 8K",
+  "pose": "Closed rest",
+  "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/meshy-closed.fbx",
+  "materials": [
+    {
+      "sourceName": "Material_0",
+      "baseColorFactor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "baseColorAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-baseColor-910bd579d8.png",
+      "normalAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-normal-b4ae348b46.png",
+      "normalScale": 1.0,
+      "metallicAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-metallic-e858765d59.png",
+      "roughnessAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-roughness-d382248852.png"
+    }
+  ],
+  "triangleCount": 3028819,
+  "textureSummary": "4096x4096, 8192x8192",
+  "frontYaw": 0,
+  "notes": "Stronger lip color, tangled lashes and thin hair strands. Front-only geometry, front/profile texture. Static source."
+}

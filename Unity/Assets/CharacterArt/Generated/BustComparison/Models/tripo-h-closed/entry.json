@@ -1,0 +1,28 @@
+{
+  "id": "tripo-h-closed",
+  "label": "Tripo H / Closed rest",
+  "provider": "Tripo",
+  "modelLabel": "Tripo v3.1 Ultra / 8K",
+  "pose": "Closed rest",
+  "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/tripo-h-closed.fbx",
+  "materials": [
+    {
+      "sourceName": "tripo_material_5e31d589-61b1-4f73-8956-7487823ff534",
+      "baseColorFactor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "baseColorAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-baseColor-9a3e4cec3e.jpg",
+      "normalAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-normal-68a8bb7d79.jpg",
+      "normalScale": 1.0,
+      "metallicAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-metallic-1363969d6f.jpg",
+      "roughnessAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-metallic-1363969d6f.jpg"
+    }
+  ],
+  "triangleCount": 1859218,
+  "textureSummary": "4096x4096, 8192x8192",
+  "frontYaw": 0,
+  "notes": "Cleaner hair masses and lash edges; pale painted contrast. Front + right profile. Static source; facial topology still needs construction."
+}

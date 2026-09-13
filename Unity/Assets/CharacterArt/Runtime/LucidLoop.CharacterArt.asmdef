@@ -1,0 +1,9 @@
+{
+  "name": "LucidLoop.CharacterArt",
+  "references": [
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.ugui"
+  ],
+  "autoReferenced": true
+}

@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\meshy\\closed-rest-8k\\model.glb",
+  "sourceSha256": "d62134d371d33a03d9b013b6fe9e154105c8c43d26c49c05775ecf1cab5c663d",
+  "blenderVersion": "5.1.1",
+  "geometryPolicy": "No decimation, topology edits, modifiers, or vertex fitting; native transforms exported",
+  "fbx": "B:\\lucid-loop\\Unity\\Assets\\CharacterArt\\Generated\\BustComparison\\Models\\meshy-closed\\meshy-closed.fbx",
+  "fbxSha256": "eb1c00b512546662b637e967f167735daf76c163c722bf2bf24dd9c0d0a96219",
+  "blend": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\unity-import\\meshy-closed\\meshy-closed.blend",
+  "blendSha256": "c996fc19449fff6e38f6a714097f0efc930efe8dedea33fd04f97b9013d1525c",
+  "meshes": [
+    {
+      "object": "Mesh_0",
+      "vertices": 1708194,
+      "triangles": 3028819,
+      "polygons": 3028819,
+      "uvLayers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Material_0"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blendshapes": 0
+    }
+  ],
+  "textures": [
+    {
+      "path": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-baseColor-910bd579d8.png",
+      "sha256": "910bd579d809c7ea306120f2b340c075be57f124cff46cdf1733aaf354b33d7b",
+      "width": 8192,
+      "height": 8192,
+      "bytes": 63227651,
+      "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\meshy\\closed-rest-8k\\texture-0-base-color.png",
+      "transfer": "byte-identical; no image re-encoding"
+    },
+    {
+      "path": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-normal-b4ae348b46.png",
+      "sha256": "b4ae348b4646bc7b9e41731ca73c8eb453e8e846bd8f80f703c428b365042f21",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 13414815,
+      "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\meshy\\closed-rest-8k\\texture-0-normal.png",
+      "transfer": "byte-identical; no image re-encoding"
+    },
+    {
+      "path": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-metallic-e858765d59.png",
+      "sha256": "e858765d59c3c960f7b8277d2d471b4043a386ac0fd3493759428bf9f283e29f",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 2326070,
+      "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\meshy\\closed-rest-8k\\texture-0-metallic.png",
+      "transfer": "byte-identical; no image re-encoding"
+    },
+    {
+      "path": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-roughness-d382248852.png",
+      "sha256": "d3822488520a5b8d3aa3fc29b8d84f848c6fbb74cb6cda7215be507d6bc8020a",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 6373233,
+      "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\meshy\\closed-rest-8k\\texture-0-roughness.png",
+      "transfer": "byte-identical; no image re-encoding"
+    }
+  ],
+  "entry": {
+    "id": "meshy-closed",
+    "label": "Meshy / Closed rest",
+    "provider": "Meshy",
+    "modelLabel": "Meshy 7 Ultra + 8K",
+    "pose": "Closed rest",
+    "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/meshy-closed.fbx",
+    "materials": [
+      {
+        "sourceName": "Material_0",
+        "baseColorFactor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "baseColorAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-baseColor-910bd579d8.png",
+        "normalAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-normal-b4ae348b46.png",
+        "normalScale": 1.0,
+        "metallicAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-metallic-e858765d59.png",
+        "roughnessAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-roughness-d382248852.png"
+      }
+    ],
+    "triangleCount": 3028819,
+    "textureSummary": "4096x4096, 8192x8192",
+    "frontYaw": 0,
+    "notes": "Native provider surface; no retopology, facial rig or mobile optimization."
+  }
+}

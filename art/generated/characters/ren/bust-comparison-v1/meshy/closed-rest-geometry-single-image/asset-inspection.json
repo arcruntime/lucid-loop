@@ -1,0 +1,25 @@
+{
+  "models": [
+    {
+      "bytes": 54875864,
+      "file": "model.glb",
+      "images": [],
+      "material_count": 0,
+      "materials": [],
+      "mesh_count": 1,
+      "primitives": [
+        {
+          "has_uv0": false,
+          "mesh": "mesh",
+          "mode": 4,
+          "morph_targets": 0,
+          "triangles": 3051192,
+          "vertices": 1521731
+        }
+      ],
+      "skin_count": 0,
+      "triangles": 3051192,
+      "unique_position_vertices": 1521731
+    }
+  ]
+}

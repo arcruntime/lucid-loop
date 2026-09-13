@@ -1,0 +1,42 @@
+{
+  "route": "Tripo Studio",
+  "status": "COMPLETED_AWAITING_EXPORT",
+  "recorded_utc": "2026-09-13T06:11:18.5141862Z",
+  "displayed_model_label": "P2.0 - Preview",
+  "exact_served_model_identity": null,
+  "settings": {
+    "topology": "Quad",
+    "polycount": 25000,
+    "privacy": "Private",
+    "texture_quality_control": null,
+    "texture_stage_note": "Current P2 form exposes Topology only, with no texture quality or PBR control. Inspect output/export and use a separate native texture step if required for 8K.",
+    "maximum_verification_note": "25000 was configured before switching reference input mode and loading images. No later topology dialog capture was taken for this job. Verify returned polygon count/Property because selecting P2 on a new blank form later restored its 5000 default."
+  },
+  "displayed_charge": {
+    "base_credits": 100,
+    "promotional_credits": 0,
+    "trial_label": "Trial x2",
+    "actual_charged_credits": null
+  },
+  "visible_balance_before": 24915,
+  "sources": [
+    {
+      "view": "Front",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+      "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585"
+    },
+    {
+      "view": "Right",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+      "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc"
+    }
+  ],
+  "view_convention": "Studio visible RIGHT reference icon faces screen-right; exact supplied right-facing profile uploaded to RIGHT. Supersedes earlier unsubmitted API LEFT inference.",
+  "requested_scope": "Parent released P2 closed-rest/A-open at maximum native topology and 8K texture; UI texture controls absent at geometry stage",
+  "asset_id": "ece79f26-5f86-46ee-87b1-25647bf685ed",
+  "asset_url": "https://studio.tripo3d.ai/workspace/generate/ece79f26-5f86-46ee-87b1-25647bf685ed",
+  "accepted_utc": "2026-09-13T06:12:37.2669688Z",
+  "balance_after_submission": 24915,
+  "completion_evidence": "Asset card replaced Generating status with a named rendered thumbnail in the Studio Assets panel; original export still pending.",
+  "export_blocker": "H A-open preview stalled. Screenshot/locator calls timed out after 60 seconds; navigation away timed out after 120 seconds; final fresh recovery could not complete session naming/tab listing. No paid job repeated. See STUDIO-EXPORT-HANDOFF.md."
+}

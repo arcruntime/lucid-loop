@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-09-13T06:47:02.479246Z",
+  "finished_utc": "2026-09-13T06:47:10.491623Z",
+  "command": [
+    "npx",
+    "--yes",
+    "tripo-cli@latest",
+    "task",
+    "get",
+    "4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be",
+    "--json",
+    "--no-open"
+  ],
+  "credential_source": "BWS TRIPO_API_KEY; child environment only",
+  "exit_code": 8,
+  "stdout": "{\"error\": \"Task not found (same key that created it? right region?) (The task is not found)\", \"exit_code\": 8, \"api_code\": 2001, \"request_id\": \"70ad1d41-e2bc-4d81-8e77-66201d582152\", \"http_status\": 404, \"suggestion\": \"Check if the task is committed by you or whether the format is correct\"}\n",
+  "stderr": "✗ Task not found (same key that created it? right region?) (The task is not found)\n  → Check if the task is committed by you or whether the format is correct\n  request_id: 70ad1d41-e2bc-4d81-8e77-66201d582152\n",
+  "output_note": "Secrets and URL queries redacted. Original signed URLs are not cached here."
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "job_id": "p2-closed-rest",
+  "preset": "p2-quad",
+  "created_at": "2026-09-13T05:23:10.580145Z",
+  "status": "PREPARED",
+  "requested_settings": {
+    "model": "P2-20260801",
+    "face_limit": 25000,
+    "quad": true,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "extreme",
+    "texture_alignment": "original_image",
+    "auto_size": false,
+    "export_uv": true,
+    "model_seed": 20260913,
+    "texture_seed": 20260913
+  },
+  "sources": [
+    {
+      "view": "front",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+      "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+      "bytes": 1998422,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "view": "left",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+      "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+      "bytes": 2029400,
+      "width": 1122,
+      "height": 1402
+    }
+  ],
+  "fingerprint": "d695b6b9a3a2ff7b973477e5929613d8d102dec2030606de09a50479e4ccb8de",
+  "downloads": [],
+  "source_review_note": "Parent visually reviewed these exact input portraits on 2026-09-13. Screen-right-facing profile is bound to API LEFT using a camera-left convention as an explicit inference; official anatomical/side mapping remains unverified. Closed-rest geometry will be reviewed before A-open submission.",
+  "documentation": {
+    "h_series": "https://developers.tripo3d.ai/en/docs/generation-multiview-to-model/standard",
+    "p_series": "https://developers.tripo3d.ai/en/docs/generation-multiview-to-model/p",
+    "upload": "https://developers.tripo3d.ai/en/docs/files",
+    "task": "https://developers.tripo3d.ai/en/docs/task-query",
+    "changelog": "https://developers.tripo3d.ai/en/docs/changelog"
+  },
+  "documentation_checked_at": "2026-09-13"
+}

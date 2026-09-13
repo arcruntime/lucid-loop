@@ -1,0 +1,45 @@
+{
+  "route": "Tripo Studio",
+  "status": "COMPLETED_AWAITING_EXPORT",
+  "recorded_utc": "2026-09-13T06:05:45.3520331Z",
+  "displayed_model_label": "v3.1 – Best Quality",
+  "exact_served_model_identity": null,
+  "settings": {
+    "ultra_mesh_quality": true,
+    "texture_quality": "8K",
+    "pbr": true,
+    "remove_lighting": true,
+    "topology": "Triangle",
+    "polycount": 2000000,
+    "ai_complete": false,
+    "generate_in_parts": false,
+    "privacy": "Private"
+  },
+  "displayed_charge": {
+    "base_credits": 65,
+    "promotional_credits": null,
+    "trial_label": null,
+    "actual_charged_credits": 65
+  },
+  "visible_balance_before": 24980,
+  "sources": [
+    {
+      "view": "Front",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-front.png",
+      "sha256": "c053b44fc1ddd0ec964b8acff51e9d6a497664f8acb3d4d9591d2bea762d62d3"
+    },
+    {
+      "view": "Right",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/vowel-a-profile.png",
+      "sha256": "ffdb3cf36ee2bd4ad3a9f69e0791186b713f033e5db8715aa30a07f217da4328"
+    }
+  ],
+  "view_convention": "Studio visible RIGHT reference icon faces screen-right; exact supplied right-facing profile uploaded to RIGHT. Supersedes earlier unsubmitted API LEFT inference.",
+  "requested_scope": "Parent released H A-open plus P2 closed-rest/A-open after inspecting H closed-rest",
+  "asset_id": "4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be",
+  "asset_url": "https://studio.tripo3d.ai/workspace/generate/4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be",
+  "accepted_utc": "2026-09-13T06:06:58.6678326Z",
+  "balance_after_submission": 24915,
+  "completion_evidence": "Asset card replaced Generating status with a named rendered thumbnail in the Studio Assets panel; original export still pending.",
+  "export_blocker": "H A-open preview stalled. Screenshot/locator calls timed out after 60 seconds; navigation away timed out after 120 seconds; final fresh recovery could not complete session naming/tab listing. No paid job repeated. See STUDIO-EXPORT-HANDOFF.md."
+}

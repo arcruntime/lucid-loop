@@ -1,0 +1,92 @@
+{
+  "accepted_at": "2026-09-13T05:26:04.408272Z",
+  "endpoint": "multi-image-to-3d",
+  "last_checked_at": "2026-09-13T05:28:36.639646Z",
+  "progress": 45,
+  "provider": "Meshy",
+  "remote_status": "FAILED",
+  "request": {
+    "character": "ren",
+    "docs_checked_at": "2026-09-13",
+    "documentation": "https://docs.meshy.ai/en/api/multi-image-to-3d",
+    "expression": "closed-rest",
+    "geometry_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+        "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+        "view": "front",
+        "width": 1122
+      },
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+        "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+        "view": "profile",
+        "width": 1122
+      }
+    ],
+    "settings": {
+      "ai_model": "meshy-7",
+      "alpha_thumbnail": true,
+      "enable_pbr": true,
+      "image_enhancement": false,
+      "multi_view_thumbnails": true,
+      "pose_mode": "",
+      "remove_lighting": true,
+      "save_pre_remeshed_model": true,
+      "should_remesh": false,
+      "should_texture": true,
+      "target_formats": [
+        "glb"
+      ],
+      "texture_resolution": "8k",
+      "ultra_mode": true
+    },
+    "source_policy": "Reviewed head and neck only; one expression per task",
+    "texture_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+        "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+        "view": "front",
+        "width": 1122
+      },
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+        "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+        "view": "profile",
+        "width": 1122
+      }
+    ]
+  },
+  "request_fingerprint": "294b0ee31fa7f8e0d17a0f65d23ea7333040cab2f68b703f5f054c842a4f9a62",
+  "response": {
+    "available_model_formats": [],
+    "consumed_credits": 0,
+    "created_at": 1789277161551,
+    "expires_at": 1789536484840,
+    "finished_at": 1789277284840,
+    "id": "01a0993a-5e2d-7658-9913-811c5ff6f20a",
+    "progress": 45,
+    "started_at": 1789277161556,
+    "status": "FAILED",
+    "task_error": "Generation failed due to resource constraints. Please retry. If this persists, try simplifying your input.",
+    "texture_resolution": "8k",
+    "type": "multi-image-to-3d",
+    "ultra_mode": true
+  },
+  "schema_version": 1,
+  "status": "FAILED",
+  "submitted_at": "2026-09-13T05:25:35.782794Z",
+  "task_id": "01a0993a-5e2d-7658-9913-811c5ff6f20a"
+}

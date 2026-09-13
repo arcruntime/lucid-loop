@@ -1,0 +1,69 @@
+{
+  "schema": "lucid-loop-expression-catalog/v1",
+  "style": "Arcane/Fortiche",
+  "characters": [
+    {
+      "id": "maya",
+      "displayName": "Maya",
+      "source": "art/characters/maya-model-sheet.png",
+      "expressions": [
+        { "id": "happy", "label": "HAPPY", "gesture": "head tilt, hand beside hair", "facialCue": "curved closed eyes, broad open smile and upper teeth" },
+        { "id": "teasing", "label": "TEASING", "gesture": "index finger to lips", "facialCue": "half lids, asymmetric open smile" },
+        { "id": "concerned", "label": "CONCERNED", "gesture": "mild head tilt", "facialCue": "raised inner brows, side gaze, slightly parted lips" },
+        { "id": "serious", "label": "SERIOUS", "gesture": "steady forward pose", "facialCue": "lowered brows, forward eyes, closed flat lips" },
+        { "id": "surprised", "label": "SURPRISED", "gesture": "slight backward reaction", "facialCue": "raised brows, wide eyes, small rounded open mouth" },
+        { "id": "soft", "label": "SOFT", "gesture": "cheek supported by hand", "facialCue": "relaxed half lids, faint closed smile" }
+      ]
+    },
+    {
+      "id": "ren",
+      "displayName": "Ren",
+      "source": "art/characters/ren-model-sheet.png",
+      "expressions": [
+        { "id": "neutral", "label": "NEUTRAL", "gesture": "mild head angle", "facialCue": "relaxed half lids, slightly parted lips" },
+        { "id": "amused", "label": "AMUSED", "gesture": "head tilt", "facialCue": "asymmetric narrowed lids and raised mouth corner" },
+        { "id": "skeptical", "label": "SKEPTICAL", "gesture": "slight head angle", "facialCue": "side gaze, asymmetric brow, uneven parted lips" },
+        { "id": "focused", "label": "FOCUSED", "gesture": "chin lowered", "facialCue": "upward eyes, inward brows, closed firm mouth" },
+        { "id": "alert", "label": "ALERT", "gesture": "attentive turn", "facialCue": "open side-looking eyes, slightly raised brows" },
+        { "id": "guarded", "label": "GUARDED", "gesture": "raised hand partly covers mouth, chin tucked", "facialCue": "narrowed eyes, restrained mouth" }
+      ]
+    },
+    {
+      "id": "luca",
+      "displayName": "Luca",
+      "source": "art/characters/luca-model-sheet.png",
+      "expressions": [
+        { "id": "neutral", "label": "NEUTRAL", "gesture": "relaxed posture", "facialCue": "side gaze, relaxed brows, nearly flat closed lips" },
+        { "id": "friendly", "label": "FRIENDLY", "gesture": "relaxed posture", "facialCue": "side gaze, subtle closed smile" },
+        { "id": "listening", "label": "LISTENING", "gesture": "slight head turn", "facialCue": "side gaze, one mildly raised brow, closed lips" },
+        { "id": "doubtful", "label": "DOUBTFUL", "gesture": "head angled down", "facialCue": "pinched brows, downward side gaze, uneven mouth downturn" },
+        { "id": "worried", "label": "WORRIED", "gesture": "restrained head angle", "facialCue": "raised knit inner brows, side gaze, downturned corners" },
+        { "id": "distracted", "label": "DISTRACTED", "gesture": "head turns upward", "facialCue": "upward side gaze, asymmetric raised brows, slight mouth downturn" }
+      ]
+    },
+    {
+      "id": "theo",
+      "displayName": "Theo",
+      "source": "art/characters/theo-model-sheet.png",
+      "expressions": [
+        { "id": "welcoming_smile", "label": "WELCOMING SMILE", "gesture": "welcoming head tilt", "facialCue": "open upper-teeth smile, warmly narrowed eyes" },
+        { "id": "laughing", "label": "LAUGHING", "gesture": "head tipped back", "facialCue": "wide open mouth, both dental rows, closed eyes" },
+        { "id": "amused", "label": "AMUSED", "gesture": "hand near mouth, chin lowered", "facialCue": "asymmetric closed smile" },
+        { "id": "talking", "label": "TALKING", "gesture": "raised presenting hand", "facialCue": "mid-syllable open mouth, relaxed brows" },
+        { "id": "surprised", "label": "SURPRISED", "gesture": "slight reaction", "facialCue": "raised brows, wide eyes, rounded open mouth" },
+        { "id": "glasses_lowered", "label": "GLASSES LOWERED", "gesture": "hand lowers glasses", "facialCue": "direct gaze above lenses, lowered brows, sharp closed smile" }
+      ]
+    },
+    {
+      "id": "player",
+      "displayName": "Player",
+      "source": "art/characters/player-avatar.png",
+      "expressions": [],
+      "note": "No artist-labeled expressions supplied. Default masked resting pose, blink and gaze are supported; any additional emotions are extensions, not source-derived."
+    }
+  ],
+  "notes": [
+    "Labels are verbatim artist captions. Cue and gesture descriptions are implementation interpretations of the drawings.",
+    "The catalog is acceptance metadata, not evidence that a model or rig implements these poses."
+  ]
+}

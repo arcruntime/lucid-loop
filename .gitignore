@@ -15,5 +15,12 @@ server/node_modules/
 .env.*
 !.env.example
 *.log
+# Blender's automatic save backups are local recovery files.
+*.blend1
+*.blend2
+# Local Python bytecode from the character-art tools.
+tools/character_art/**/__pycache__/
+tools/character_art/__pycache__/
+
 artifacts/
 tools/ci/__pycache__/

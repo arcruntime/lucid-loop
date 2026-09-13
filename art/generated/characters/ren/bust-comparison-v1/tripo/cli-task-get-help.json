@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-09-13T06:45:58.147737Z",
+  "finished_utc": "2026-09-13T06:46:05.194948Z",
+  "command": [
+    "npx",
+    "--yes",
+    "tripo-cli@latest",
+    "task",
+    "get",
+    "--help"
+  ],
+  "credential_source": "BWS TRIPO_API_KEY; child environment only",
+  "exit_code": 0,
+  "stdout": "Usage: tripo task get [options] <task-id>\n\nfetch one task (accepts @last/@name)\n\nOptions:\n  --step            include pipeline step details\n  --download        download artifacts if successful\n  -o, --out <dir>   output directory for --download\n  --json            machine-readable output on stdout\n  --yes             skip confirmations\n  --quiet           suppress progress logs on stderr\n  --no-open         never auto-open the browser/viewer\n  --profile <name>  use a named account profile\n  -h, --help        display help for command\n",
+  "stderr": "",
+  "output_note": "Secrets and URL queries redacted. Original signed URLs are not cached here."
+}

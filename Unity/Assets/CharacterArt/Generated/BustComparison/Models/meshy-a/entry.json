@@ -1,0 +1,28 @@
+{
+  "id": "meshy-a",
+  "label": "Meshy / A open mouth",
+  "provider": "Meshy",
+  "modelLabel": "Meshy 7 Ultra + 8K",
+  "pose": "A open mouth",
+  "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/meshy-a.fbx",
+  "materials": [
+    {
+      "sourceName": "Material_0",
+      "baseColorFactor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "baseColorAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-baseColor-1294357aec.png",
+      "normalAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-normal-3a979ef1a9.png",
+      "normalScale": 1.0,
+      "metallicAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-metallic-c025598ff6.png",
+      "roughnessAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-roughness-8aac593dcd.png"
+    }
+  ],
+  "triangleCount": 2439591,
+  "textureSummary": "4096x4096, 8192x8192",
+  "frontYaw": 0,
+  "notes": "Separate open-mouth study; head proportions and topology differ from closed rest. Front-only geometry, front/profile texture."
+}

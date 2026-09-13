@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "title": "Ren / Tripo and Meshy bust comparison",
+  "entries": [
+    {
+      "id": "tripo-h-closed",
+      "label": "Tripo H / Closed rest",
+      "provider": "Tripo",
+      "modelLabel": "Tripo v3.1 Ultra / 8K",
+      "pose": "Closed rest",
+      "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/tripo-h-closed.fbx",
+      "materials": [
+        {
+          "sourceName": "tripo_material_5e31d589-61b1-4f73-8956-7487823ff534",
+          "baseColorFactor": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "baseColorAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-baseColor-9a3e4cec3e.jpg",
+          "normalAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-normal-68a8bb7d79.jpg",
+          "normalScale": 1.0,
+          "metallicAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-metallic-1363969d6f.jpg",
+          "roughnessAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-metallic-1363969d6f.jpg"
+        }
+      ],
+      "triangleCount": 1859218,
+      "textureSummary": "4096x4096, 8192x8192",
+      "frontYaw": 0,
+      "notes": "Cleaner hair masses and lash edges; pale painted contrast. Front + right profile. Static source; facial topology still needs construction."
+    },
+    {
+      "id": "meshy-closed",
+      "label": "Meshy / Closed rest",
+      "provider": "Meshy",
+      "modelLabel": "Meshy 7 Ultra + 8K",
+      "pose": "Closed rest",
+      "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/meshy-closed.fbx",
+      "materials": [
+        {
+          "sourceName": "Material_0",
+          "baseColorFactor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "baseColorAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-baseColor-910bd579d8.png",
+          "normalAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-normal-b4ae348b46.png",
+          "normalScale": 1.0,
+          "metallicAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-metallic-e858765d59.png",
+          "roughnessAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-closed/Textures/Material_0-roughness-d382248852.png"
+        }
+      ],
+      "triangleCount": 3028819,
+      "textureSummary": "4096x4096, 8192x8192",
+      "frontYaw": 0,
+      "notes": "Stronger lip color, tangled lashes and thin hair strands. Front-only geometry, front/profile texture. Static source."
+    },
+    {
+      "id": "meshy-a",
+      "label": "Meshy / A open mouth",
+      "provider": "Meshy",
+      "modelLabel": "Meshy 7 Ultra + 8K",
+      "pose": "A open mouth",
+      "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/meshy-a.fbx",
+      "materials": [
+        {
+          "sourceName": "Material_0",
+          "baseColorFactor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "baseColorAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-baseColor-1294357aec.png",
+          "normalAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-normal-3a979ef1a9.png",
+          "normalScale": 1.0,
+          "metallicAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-metallic-c025598ff6.png",
+          "roughnessAsset": "Assets/CharacterArt/Generated/BustComparison/Models/meshy-a/Textures/Material_0-roughness-8aac593dcd.png"
+        }
+      ],
+      "triangleCount": 2439591,
+      "textureSummary": "4096x4096, 8192x8192",
+      "frontYaw": 0,
+      "notes": "Separate open-mouth study; head proportions and topology differ from closed rest. Front-only geometry, front/profile texture."
+    }
+  ],
+  "references": [
+    {
+      "label": "Original artist design",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/ren-model-sheet.png"
+    },
+    {
+      "label": "Generation input / closed front",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/closed-rest-front-v2.png"
+    },
+    {
+      "label": "Generation input / closed profile",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/closed-rest-profile.png"
+    },
+    {
+      "label": "Generation input / A front",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/vowel-a-front.png"
+    },
+    {
+      "label": "Generation input / A profile",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/vowel-a-profile.png"
+    },
+    {
+      "label": "Closed rest",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/00-closed-rest-v2.png"
+    },
+    {
+      "label": "Neutral",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/01-neutral.png"
+    },
+    {
+      "label": "Amused",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/02-amused-v2.png"
+    },
+    {
+      "label": "Skeptical",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/03-skeptical.png"
+    },
+    {
+      "label": "Focused",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/04-focused.png"
+    },
+    {
+      "label": "Alert",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/05-alert.png"
+    },
+    {
+      "label": "Guarded",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/06-guarded.png"
+    },
+    {
+      "label": "Blink",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/07-blink.png"
+    },
+    {
+      "label": "A",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/08-vowel-a.png"
+    },
+    {
+      "label": "I",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/09-vowel-i.png"
+    },
+    {
+      "label": "U",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/10-vowel-u-v2.png"
+    },
+    {
+      "label": "E",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/11-vowel-e.png"
+    },
+    {
+      "label": "O",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/12-vowel-o.png"
+    }
+  ],
+  "defaults": {
+    "leftId": "tripo-h-closed",
+    "rightId": "meshy-closed"
+  }
+}

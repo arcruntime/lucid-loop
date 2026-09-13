@@ -1,0 +1,86 @@
+{
+  "file": "ren-tripo-studio-h3.1-closed-rest-original-8k.glb",
+  "bytes": 56769408,
+  "sha256": "4743a85883df56b2adcca72ed9f429eb537d92b93eff28eb2495966e95a39f0a",
+  "asset": {
+    "version": "2.0",
+    "generator": "Tripo"
+  },
+  "extensions_used": [
+    "KHR_materials_volume",
+    "FB_ngon_encoding"
+  ],
+  "nodes": 1,
+  "meshes": 1,
+  "primitives": [
+    {
+      "name": "meshes[0]",
+      "mode": 4,
+      "vertices": 988591,
+      "indices": 5577654,
+      "triangles": 1859218,
+      "bounds_min": [
+        -0.399688720703125,
+        0.0,
+        -0.385284423828125
+      ],
+      "bounds_max": [
+        0.399688720703125,
+        0.98046875,
+        0.385284423828125
+      ],
+      "extensions": []
+    }
+  ],
+  "images": [
+    {
+      "index": 0,
+      "name": "ren-tripo-studio-h3.1-closed-rest-original-8k_basecolor.jpg",
+      "mime_type": "image/jpeg",
+      "width": 8192,
+      "height": 8192,
+      "mode": "RGB",
+      "bytes": 1922133,
+      "sha256": "9a3e4cec3ec32404ac7363f49bd50d6e496c31edd3fec2e1e0269b8a2efc2dea",
+      "extracted_file": "embedded-original-textures/image-00.jpg"
+    },
+    {
+      "index": 1,
+      "name": "ren-tripo-studio-h3.1-closed-rest-original-8k_rm.jpg",
+      "mime_type": "image/jpeg",
+      "width": 4096,
+      "height": 4096,
+      "mode": "RGB",
+      "bytes": 596133,
+      "sha256": "1363969d6f030c9435a65acc999a0aba86b957e2d7104b1dd80ee003d7f08068",
+      "extracted_file": "embedded-original-textures/image-01.jpg"
+    },
+    {
+      "index": 2,
+      "name": "ren-tripo-studio-h3.1-closed-rest-original-8k_normal.jpg",
+      "mime_type": "image/jpeg",
+      "width": 4096,
+      "height": 4096,
+      "mode": "RGB",
+      "bytes": 303535,
+      "sha256": "68a8bb7d7992b4280ee0020edff8cc3d97a38ca509c756a73b1cd33792a2fe42",
+      "extracted_file": "embedded-original-textures/image-02.jpg"
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_material_5e31d589-61b1-4f73-8956-7487823ff534",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        }
+      },
+      "normalTexture": {
+        "index": 2
+      }
+    }
+  ]
+}

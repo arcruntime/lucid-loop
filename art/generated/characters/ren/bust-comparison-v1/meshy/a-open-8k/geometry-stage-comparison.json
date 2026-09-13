@@ -1,0 +1,31 @@
+{
+  "native_triangles": 2558256,
+  "textured_triangles": 2439591,
+  "triangle_change": -118665,
+  "triangle_change_percent": -4.638511548492411,
+  "service_normalization": {
+    "uniform_scale": 1.0512431681744034,
+    "translation": [
+      0.020079162723197926,
+      0.00044898288974485923,
+      -0.0003800266870843027
+    ]
+  },
+  "method": "Deterministic 100000-vertex samples (seed7319), nearest vertices after matching AABB center and uniform bust height; does not establish identical triangle connectivity.",
+  "native_to_textured": {
+    "samples": 100000,
+    "p50_bust_heights": 2.502679441539598e-07,
+    "p95_bust_heights": 3.931691053724345e-07,
+    "p99_bust_heights": 4.4690339664839834e-05,
+    "maximum_bust_heights": 0.0036436633666304193,
+    "fraction_within_one_millionth_of_bust_height": 0.95463
+  },
+  "textured_to_native": {
+    "samples": 100000,
+    "p50_bust_heights": 2.4673484516824333e-07,
+    "p95_bust_heights": 3.4735376879435693e-07,
+    "p99_bust_heights": 3.8186523989488825e-07,
+    "maximum_bust_heights": 4.480365998043882e-07,
+    "fraction_within_one_millionth_of_bust_height": 1.0
+  }
+}

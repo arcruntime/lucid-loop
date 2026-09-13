@@ -1,0 +1,75 @@
+{
+  "models": [
+    {
+      "bytes": 188113700,
+      "file": "model.glb",
+      "images": [
+        {
+          "format": "JPEG",
+          "height": 8192,
+          "index": 0,
+          "mime_type": "image/jpeg",
+          "mode": "RGB",
+          "name": null,
+          "sha256": "2f195d606da43fc451f0ed12dbb3aa6a843b2d280f438846b1b0e963db4faee4",
+          "width": 8192
+        },
+        {
+          "format": "JPEG",
+          "height": 4096,
+          "index": 1,
+          "mime_type": "image/jpeg",
+          "mode": "RGB",
+          "name": null,
+          "sha256": "1f5485f6ebfee95995a04019459a3ffdbfde45e9aa929c0a6e70db9602d32799",
+          "width": 4096
+        },
+        {
+          "format": "JPEG",
+          "height": 4096,
+          "index": 2,
+          "mime_type": "image/jpeg",
+          "mode": "RGB",
+          "name": null,
+          "sha256": "5cd627cdeee0dd41631139a41b4b4c95736c1b5f9f5a71cd654617a1b705dc0d",
+          "width": 4096
+        }
+      ],
+      "material_count": 1,
+      "materials": [
+        {
+          "index": 0,
+          "name": null,
+          "texture_bindings": {
+            "base_color": {
+              "image_index": 0,
+              "texture_index": 0
+            },
+            "metallic_roughness": {
+              "image_index": 1,
+              "texture_index": 1
+            },
+            "normal": {
+              "image_index": 2,
+              "texture_index": 2
+            }
+          }
+        }
+      ],
+      "mesh_count": 1,
+      "primitives": [
+        {
+          "has_uv0": true,
+          "mesh": null,
+          "mode": 4,
+          "morph_targets": 0,
+          "triangles": 2439591,
+          "vertices": 3663151
+        }
+      ],
+      "skin_count": 0,
+      "triangles": 2439591,
+      "unique_position_vertices": 3663151
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "accepted_at": "2026-09-13T05:40:33.425462Z",
+  "completed_at": "2026-09-13T05:46:01.806128Z",
+  "downloads": [
+    {
+      "bytes": 135481612,
+      "path": "model.glb",
+      "sha256": "d62134d371d33a03d9b013b6fe9e154105c8c43d26c49c05775ecf1cab5c663d"
+    },
+    {
+      "bytes": 204018,
+      "format": "PNG",
+      "height": 512,
+      "mode": "RGBA",
+      "path": "preview-alpha.png",
+      "sha256": "6971f11b52bc7fb93c28fab70cecd39f6ef219600d87fcc82ef52768bc5890f0",
+      "width": 512
+    },
+    {
+      "bytes": 204018,
+      "format": "PNG",
+      "height": 512,
+      "mode": "RGBA",
+      "path": "preview.png",
+      "sha256": "6971f11b52bc7fb93c28fab70cecd39f6ef219600d87fcc82ef52768bc5890f0",
+      "width": 512
+    },
+    {
+      "bytes": 63227651,
+      "format": "PNG",
+      "height": 8192,
+      "mode": "RGB",
+      "path": "texture-0-base-color.png",
+      "sha256": "910bd579d809c7ea306120f2b340c075be57f124cff46cdf1733aaf354b33d7b",
+      "width": 8192
+    },
+    {
+      "bytes": 2326070,
+      "format": "PNG",
+      "height": 4096,
+      "mode": "RGB",
+      "path": "texture-0-metallic.png",
+      "sha256": "e858765d59c3c960f7b8277d2d471b4043a386ac0fd3493759428bf9f283e29f",
+      "width": 4096
+    },
+    {
+      "bytes": 13414815,
+      "format": "PNG",
+      "height": 4096,
+      "mode": "RGB",
+      "path": "texture-0-normal.png",
+      "sha256": "b4ae348b4646bc7b9e41731ca73c8eb453e8e846bd8f80f703c428b365042f21",
+      "width": 4096
+    },
+    {
+      "bytes": 6373233,
+      "format": "PNG",
+      "height": 4096,
+      "mode": "RGB",
+      "path": "texture-0-roughness.png",
+      "sha256": "d3822488520a5b8d3aa3fc29b8d84f848c6fbb74cb6cda7215be507d6bc8020a",
+      "width": 4096
+    }
+  ],
+  "endpoint": "retexture",
+  "last_checked_at": "2026-09-13T05:45:37.890902Z",
+  "progress": 100,
+  "provider": "Meshy",
+  "remote_status": "SUCCEEDED",
+  "request": {
+    "character": "ren",
+    "docs_checked_at": "2026-09-13",
+    "documentation": "https://docs.meshy.ai/en/api/retexture",
+    "expression": "closed-rest",
+    "geometry_source": {
+      "endpoint": "image-to-3d",
+      "model_url_key": "glb",
+      "path": "art/generated/characters/ren/bust-comparison-v1/meshy/closed-rest-geometry-single-image/model.glb",
+      "request": {
+        "character": "ren",
+        "docs_checked_at": "2026-09-13",
+        "documentation": "https://docs.meshy.ai/en/api/image-to-3d",
+        "expression": "closed-rest",
+        "geometry_views": [
+          {
+            "format": "PNG",
+            "height": 1402,
+            "mode": "RGB",
+            "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+            "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+            "view": "front",
+            "width": 1122
+          }
+        ],
+        "settings": {
+          "ai_model": "meshy-7",
+          "image_enhancement": false,
+          "model_type": "standard",
+          "pose_mode": "",
+          "should_remesh": false,
+          "should_texture": false,
+          "target_formats": [
+            "glb"
+          ],
+          "ultra_mode": true
+        },
+        "source_policy": "Reviewed head and neck only; one expression per task; single front geometry input, profile reserved for later texture guidance",
+        "texture_views": []
+      },
+      "sha256": "74b2dde3ca97be43716db929cae99f4c43e7df9e85f2ad22b7011e8d7da98039",
+      "task_id": "01a09945-4231-765f-bd7d-c0dd02d225da"
+    },
+    "geometry_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+        "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+        "view": "front",
+        "width": 1122
+      }
+    ],
+    "settings": {
+      "ai_model": "meshy-7",
+      "alpha_thumbnail": true,
+      "enable_original_uv": false,
+      "enable_pbr": true,
+      "target_formats": [
+        "glb"
+      ],
+      "texture_resolution": "8k"
+    },
+    "source_policy": "Retexture original Ultra native geometry with identical reference views",
+    "texture_views": [
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+        "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585",
+        "view": "front",
+        "width": 1122
+      },
+      {
+        "format": "PNG",
+        "height": 1402,
+        "mode": "RGB",
+        "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+        "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc",
+        "view": "profile",
+        "width": 1122
+      }
+    ],
+    "uv_policy": "Source has no complete UV layer; Meshy must generate UVs before 8K texturing"
+  },
+  "request_fingerprint": "a85caa17964ba7bb595763ca150f79415fc2c8b7068bdfc96e93d412c5839ca9",
+  "response": {
+    "available_model_formats": [
+      "glb"
+    ],
+    "consumed_credits": 15,
+    "created_at": 1789278030777,
+    "expires_at": 1789537507215,
+    "finished_at": 1789278307215,
+    "id": "01a09947-e259-7035-8f82-aabb8a52199b",
+    "progress": 100,
+    "started_at": 1789278030779,
+    "status": "SUCCEEDED",
+    "texture_resolution": "8k",
+    "type": "retexture"
+  },
+  "schema_version": 1,
+  "status": "SUCCEEDED",
+  "submitted_at": "2026-09-13T05:40:21.554813Z",
+  "task_id": "01a09947-e259-7035-8f82-aabb8a52199b"
+}

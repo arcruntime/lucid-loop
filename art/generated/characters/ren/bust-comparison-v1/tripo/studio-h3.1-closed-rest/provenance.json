@@ -1,0 +1,65 @@
+{
+  "route": "Tripo Studio",
+  "status": "COMPLETE",
+  "recorded_utc": "2026-09-13T05:45:19.3562803Z",
+  "displayed_model_label": "v3.1 \u2013 Best Quality",
+  "exact_served_model_identity": null,
+  "settings": {
+    "ultra_mesh_quality": true,
+    "texture_quality": "8K",
+    "pbr": true,
+    "remove_lighting": true,
+    "topology": "Triangle",
+    "polycount": 2000000,
+    "ai_complete": false,
+    "generate_in_parts": false,
+    "privacy": "Private"
+  },
+  "displayed_charge": {
+    "base_credits": 65,
+    "promotional_credits": 0,
+    "trial_label": "Trial x1",
+    "actual_charged_credits": 0,
+    "charge_evidence": "Generate showed 65 struck through and 0; balance stayed 24980 before, after submission, and after completion. No separate transaction receipt available."
+  },
+  "visible_balance_before": 24980,
+  "sources": [
+    {
+      "view": "Front",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+      "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585"
+    },
+    {
+      "view": "Right",
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-profile.png",
+      "sha256": "e791764b3c2a74ed9cde47dca44a23a24acaf8dc84c1b7b83b69737956542acc"
+    }
+  ],
+  "view_convention": "Studio visible RIGHT reference icon faces screen-right; exact supplied right-facing profile uploaded to RIGHT. Supersedes earlier unsubmitted API LEFT inference.",
+  "requested_scope": "One H closed-rest job; hold P2 and A-open pending geometry review",
+  "asset_id": "67b0819b-9627-444c-aa7d-5785b46ef026",
+  "asset_url": "https://studio.tripo3d.ai/workspace/generate/67b0819b-9627-444c-aa7d-5785b46ef026",
+  "submit_clicked_utc": "2026-09-13T05:46:22.5383585Z",
+  "accepted_utc": "2026-09-13T05:46:54.2480459Z",
+  "balance_after_submission": 24980,
+  "completed_utc": "2026-09-13T06:00:22.367830+00:00",
+  "displayed_result": {
+    "faces": 1859218,
+    "vertices": 988593,
+    "topology": "Triangle"
+  },
+  "export": {
+    "format": "GLB",
+    "texture_resolution": "8k Current",
+    "native_geometry_preserved": true,
+    "download_route": "Studio Export button to normal Chrome Downloads; copied byte-for-byte into project"
+  },
+  "downloads": [
+    {
+      "file": "ren-tripo-studio-h3.1-closed-rest-original-8k.glb",
+      "bytes": 56769408,
+      "sha256": "4743a85883df56b2adcca72ed9f429eb537d92b93eff28eb2495966e95a39f0a"
+    }
+  ],
+  "balance_after_completion": 24980
+}

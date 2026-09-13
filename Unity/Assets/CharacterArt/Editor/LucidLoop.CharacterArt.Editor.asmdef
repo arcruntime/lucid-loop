@@ -1,0 +1,12 @@
+{
+  "name": "LucidLoop.CharacterArt.Editor",
+  "references": [
+    "LucidLoop.CharacterArt",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.ugui"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

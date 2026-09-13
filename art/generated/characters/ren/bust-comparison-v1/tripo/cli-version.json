@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-09-13T06:44:41.979866Z",
+  "finished_utc": "2026-09-13T06:45:17.333067Z",
+  "command": [
+    "npx",
+    "--yes",
+    "tripo-cli@latest",
+    "--version"
+  ],
+  "credential_source": "BWS TRIPO_API_KEY; child environment only",
+  "exit_code": 0,
+  "stdout": "0.4.0\n",
+  "stderr": "",
+  "output_note": "Secrets and URL queries redacted. Original signed URLs are not cached here."
+}

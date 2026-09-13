@@ -44,5 +44,6 @@
 *.asset whitespace=-blank-at-eol
 *.meta whitespace=-blank-at-eol
 *.mat whitespace=-blank-at-eol
+*.prefab whitespace=-blank-at-eol
 # Preserve upstream package formatting verbatim.
 Unity/Assets/Plugins/R3/** whitespace=-blank-at-eol,-blank-at-eof

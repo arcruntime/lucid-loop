@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\tripo\\studio-h3.1-closed-rest\\ren-tripo-studio-h3.1-closed-rest-original-8k.glb",
+  "sourceSha256": "4743a85883df56b2adcca72ed9f429eb537d92b93eff28eb2495966e95a39f0a",
+  "blenderVersion": "5.1.1",
+  "geometryPolicy": "No decimation, topology edits, modifiers, or vertex fitting; native transforms exported",
+  "fbx": "B:\\lucid-loop\\Unity\\Assets\\CharacterArt\\Generated\\BustComparison\\Models\\tripo-h-closed\\tripo-h-closed.fbx",
+  "fbxSha256": "f92774ca24d3cef2e5dfe9a7cde5f4e32c1b0a03a891541fb9a2368900a20003",
+  "blend": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\unity-import\\tripo-h-closed\\tripo-h-closed.blend",
+  "blendSha256": "7f8e12113e327a2ec8d3ec58711bfa7ca70b77e9c7f2c88ff2ed9751c042d908",
+  "meshes": [
+    {
+      "object": "tripo_node_5e31d589-61b1-4f73-8956-7487823ff534",
+      "vertices": 988591,
+      "triangles": 1859218,
+      "polygons": 1859218,
+      "uvLayers": [
+        "UVMap"
+      ],
+      "materials": [
+        "tripo_material_5e31d589-61b1-4f73-8956-7487823ff534"
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "blendshapes": 0
+    }
+  ],
+  "textures": [
+    {
+      "path": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-baseColor-9a3e4cec3e.jpg",
+      "sha256": "9a3e4cec3ec32404ac7363f49bd50d6e496c31edd3fec2e1e0269b8a2efc2dea",
+      "width": 8192,
+      "height": 8192,
+      "bytes": 1922133,
+      "source": "Original packed/provider GLB texture bytes",
+      "transfer": "byte-identical; no image re-encoding"
+    },
+    {
+      "path": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-normal-68a8bb7d79.jpg",
+      "sha256": "68a8bb7d7992b4280ee0020edff8cc3d97a38ca509c756a73b1cd33792a2fe42",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 303535,
+      "source": "Original packed/provider GLB texture bytes",
+      "transfer": "byte-identical; no image re-encoding"
+    },
+    {
+      "path": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-metallic-1363969d6f.jpg",
+      "sha256": "1363969d6f030c9435a65acc999a0aba86b957e2d7104b1dd80ee003d7f08068",
+      "width": 4096,
+      "height": 4096,
+      "bytes": 596133,
+      "source": "Original packed/provider GLB texture bytes",
+      "transfer": "byte-identical; no image re-encoding"
+    }
+  ],
+  "entry": {
+    "id": "tripo-h-closed",
+    "label": "Tripo H / Closed rest",
+    "provider": "Tripo",
+    "modelLabel": "Tripo v3.1 Ultra / 8K",
+    "pose": "Closed rest",
+    "fbxAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/tripo-h-closed.fbx",
+    "materials": [
+      {
+        "sourceName": "tripo_material_5e31d589-61b1-4f73-8956-7487823ff534",
+        "baseColorFactor": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "baseColorAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-baseColor-9a3e4cec3e.jpg",
+        "normalAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-normal-68a8bb7d79.jpg",
+        "normalScale": 1.0,
+        "metallicAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-metallic-1363969d6f.jpg",
+        "roughnessAsset": "Assets/CharacterArt/Generated/BustComparison/Models/tripo-h-closed/Textures/tripo_material_5e31d589-61b1-4f73-8956-7487823ff534-metallic-1363969d6f.jpg"
+      }
+    ],
+    "triangleCount": 1859218,
+    "textureSummary": "4096x4096, 8192x8192",
+    "frontYaw": 0,
+    "notes": "Native provider surface; no retopology, facial rig or mobile optimization."
+  }
+}
