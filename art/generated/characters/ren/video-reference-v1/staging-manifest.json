@@ -1,0 +1,181 @@
+{
+  "scope": "Video-reference analysis only; no scene/rig/Unity edits or Git operations.",
+  "sourceVideoDependency": {
+    "path": "DanielDuguay87_2093375826557296673.mp4",
+    "bytes": 4175971,
+    "sha256": "d479c1eeb5eab7a15fa0c489766ef1e22983289d33a5ef51ab32398dc73ea2f1",
+    "note": "Original user-supplied MP4, immutable. Stage source or its existing repository location with runtime package as parent decides."
+  },
+  "paths": [
+    "art/generated/characters/ren/video-reference-v1/acting-beats.json",
+    "art/generated/characters/ren/video-reference-v1/audio-assessment.json",
+    "art/generated/characters/ren/video-reference-v1/build_reference_timeline.py",
+    "art/generated/characters/ren/video-reference-v1/control-curves-unity.json",
+    "art/generated/characters/ren/video-reference-v1/control-curves.csv",
+    "art/generated/characters/ren/video-reference-v1/control-curves.json",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-01.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-02.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-03.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-04.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-05.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-06.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-07.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-08.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-09.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/face-timing-10.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/overview-01.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence/overview-02.jpg",
+    "art/generated/characters/ren/video-reference-v1/evidence-index.json",
+    "art/generated/characters/ren/video-reference-v1/extract_reference_evidence.py",
+    "art/generated/characters/ren/video-reference-v1/mixed-pose-tests.json",
+    "art/generated/characters/ren/video-reference-v1/README.md",
+    "art/generated/characters/ren/video-reference-v1/source-frame-times.json",
+    "art/generated/characters/ren/video-reference-v1/source-metadata.json",
+    "art/generated/characters/ren/video-reference-v1/timeline-validation.json",
+    "art/generated/characters/ren/video-reference-v1/staging-manifest.json"
+  ],
+  "files": [
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/acting-beats.json",
+      "bytes": 9005,
+      "sha256": "e12183b80376072341b0fcbc69c5819e51ac007668a451dd2fbf261127c25dfd"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/audio-assessment.json",
+      "bytes": 1832,
+      "sha256": "6fba37df6808558f3167a239681a8d175c53f2f658b5a5ecca3d6919866d9cdc"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/build_reference_timeline.py",
+      "bytes": 18720,
+      "sha256": "9899860a59c5bc53320d4cfa6aebc7e8e85c55d46085eb1939de98470a50c628"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/control-curves-unity.json",
+      "bytes": 405086,
+      "sha256": "71262584f06bc086552e611f7f46aaceb347cd4645af85054c7765b3d09cc96c"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/control-curves.csv",
+      "bytes": 22917,
+      "sha256": "b9efad9ec3c87960ae50a8c7800bb36b48203c65db643be9069a689be0518ff6"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/control-curves.json",
+      "bytes": 238887,
+      "sha256": "cacde42b0f67a527ea5acec8c475d87cc85f06596b79b5c098c610d39b728788"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-01.jpg",
+      "bytes": 364691,
+      "sha256": "d51c623893651abeccf6f830ddd5e2782df2fa26c1890dfd4e8fa9fec252d254"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-02.jpg",
+      "bytes": 366062,
+      "sha256": "14ff12eec660c159f041082972490575f040a4dcd51fcff7111884a13946d1ae"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-03.jpg",
+      "bytes": 346103,
+      "sha256": "07986ca86bf2299ce0802dfdcd9cebbcb4ce0ae046ae7ebe4e8d90e8f59b6e48"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-04.jpg",
+      "bytes": 353089,
+      "sha256": "1c0831554634c5338f362255d1f72ab19f7600cac50f14eb40143ab990137bdd"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-05.jpg",
+      "bytes": 353926,
+      "sha256": "277f61c3bc5c1a8d14cef8a2fa3c872814a48c5cfb6d6e4df7b1f707ac05e8df"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-06.jpg",
+      "bytes": 365875,
+      "sha256": "17c099c8cb6a7d87a4e7967f4cb8a38e5bb62e1f36b8790f35241ff5d353ce84"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-07.jpg",
+      "bytes": 353740,
+      "sha256": "2c6e5a1beefe649fa2614b1ed9d5d8f47e638a2ce6f1d8d7ed1dbcf9f9dc88f6"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-08.jpg",
+      "bytes": 358351,
+      "sha256": "541d6149650339a1b4750662f6f505cf42722343d77f9e74ffe23d9bbfe92b95"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-09.jpg",
+      "bytes": 347777,
+      "sha256": "82a76b089c7d9db7a321d040097ae1143a4556ee43f007021cbbbe70b3f22da8"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/face-timing-10.jpg",
+      "bytes": 344114,
+      "sha256": "535cbe12df2362025f60c6f8ed60bdd2d62cbb613a45976dd896dfc323acfbb1"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/overview-01.jpg",
+      "bytes": 575993,
+      "sha256": "d400471ad0fe6c37d76e4357d7d5f54d78d3b05a15b00a9c8598c138a807809d"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence/overview-02.jpg",
+      "bytes": 548986,
+      "sha256": "db5e14ec601e13431f5a60cf734cd7441d1a886cfe666733979ee5a57fcb21b7"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/evidence-index.json",
+      "bytes": 3151,
+      "sha256": "ff5a81b4b956d3a2c179d70335b4bc436539c2fdfd34ba8fe6f659b094b98c77"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/extract_reference_evidence.py",
+      "bytes": 5239,
+      "sha256": "862150e24cc44ed9a34e0a1a994b795ed6291bf1767da286602c3ca455514ad5"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/mixed-pose-tests.json",
+      "bytes": 32523,
+      "sha256": "99e15d0f25280ee61176406b843508b5f2d14bb2e321e7d6fe0ddd194e25153e"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/README.md",
+      "bytes": 12266,
+      "sha256": "1bd62faf50d962dfb3fe2b16566ac3df5db5c99ab6001dbac50ed71332d62fea"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/source-frame-times.json",
+      "bytes": 29308,
+      "sha256": "1ebd58bf5c3b4cbe682aac9cbc5f5b45ac72f89681d9b0bd57735b3d8a404794"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/source-metadata.json",
+      "bytes": 3843,
+      "sha256": "1aa8ec123dbf92de92390c46d29c520b8e0f876590e31b87741a3f6ebf24b942"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/timeline-validation.json",
+      "bytes": 366,
+      "sha256": "2e95241aa18be9242d9c25e8d40203a82b50bf4a5653e588bdb5b8744e117001"
+    }
+  ],
+  "packageBytesExcludingThisManifest": 5461850,
+  "largeFileThresholdBytes": 10000000,
+  "filesOverThreshold": [],
+  "excludedIntermediates": [
+    ".local/ren-video-reference/reproduced/ decoded PNG/WAV",
+    ".local/ren-video-reference/initial-2hz-frames/ original sampled PNGs",
+    ".local/ren-video-reference/audio-asr-unverified.json unreliable transcript",
+    ".local/ren-video-reference/rejected-machine-visemes/ 1.4MB unreliable dense classifier"
+  ],
+  "validation": {
+    "sourceShaUnchanged": true,
+    "jsonParses": true,
+    "allCurveEvidenceReferencesExist": true,
+    "sourceVideoUploaded": false,
+    "characterOrUnityEdits": false,
+    "gitStaged": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "keyframes": 152,
+  "visuallyClassifiedSamples": 151,
+  "controls": 32,
+  "timeStrictlyIncreasing": true,
+  "rangesPass": true,
+  "mouthExclusionPass": true,
+  "eyeExclusionPass": true,
+  "geometryValidated": false,
+  "audioDerivedControls": false,
+  "note": "Assertions validate authored data structure only, not rig behavior or visual fidelity."
+}

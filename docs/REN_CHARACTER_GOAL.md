@@ -15,6 +15,16 @@ comparison. Build the corrected head from that surface, restore detailed hair,
 and apply the painterly NPR treatment before judging the animated result.
 P2 remains a historical construction scaffold, not the neutral shape authority.
 
+The attempted P2 surface transfer failed around the mouth, nostrils and eye
+surroundings. The small native H mouth patch preserved those central features,
+but its visible junction with P2 introduced gaps and pinching. Both trials are
+rejected. Continue with a coherent H-native visible face and neck surface,
+retaining original H triangle/UV provenance and placing extraction boundaries
+under hair or behind the ears. Reconstruct local eye and oral interfaces around
+that surface. P2 may provide hidden support only where it cannot alter the
+approved face or hair silhouette. Dense intermediate geometry is acceptable for
+this review; it does not satisfy the final 40k whole-character budget.
+
 Use `B:\lucid-loop\DanielDuguay87_2093375826557296673.mp4` as the
 performance reference for a control-driven test animation. Preserve the supplied
 15.093-second clip unchanged (SHA-256

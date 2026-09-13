@@ -1,0 +1,106 @@
+{
+  "sourceSha256": "d479c1eeb5eab7a15fa0c489766ef1e22983289d33a5ef51ab32398dc73ea2f1",
+  "pixelMethod": "Actual decoded video frames, only fixed crop/downsample and timestamp labels; no synthesis or retouching.",
+  "overview": "Every15 source frames, 4 columns, 16 panels per sheet. 31 total panels.",
+  "faceTiming": "Every3 source frames; fixed crop x0 y0 w720 h800 to240x266; 5 columns and3 rows,15 panels per sheet. 0.0--14.9 s; final15.0 s on overview02.",
+  "timestamps": "Label rounded to .01 s; exact PTS in source-frame-times.json.",
+  "ffmpegVersion": "ffmpeg version 8.0.1-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers",
+  "files": [
+    {
+      "file": "evidence/face-timing-01.jpg",
+      "sha256": "d51c623893651abeccf6f830ddd5e2782df2fa26c1890dfd4e8fa9fec252d254",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-02.jpg",
+      "sha256": "14ff12eec660c159f041082972490575f040a4dcd51fcff7111884a13946d1ae",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-03.jpg",
+      "sha256": "07986ca86bf2299ce0802dfdcd9cebbcb4ce0ae046ae7ebe4e8d90e8f59b6e48",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-04.jpg",
+      "sha256": "1c0831554634c5338f362255d1f72ab19f7600cac50f14eb40143ab990137bdd",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-05.jpg",
+      "sha256": "277f61c3bc5c1a8d14cef8a2fa3c872814a48c5cfb6d6e4df7b1f707ac05e8df",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-06.jpg",
+      "sha256": "17c099c8cb6a7d87a4e7967f4cb8a38e5bb62e1f36b8790f35241ff5d353ce84",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-07.jpg",
+      "sha256": "2c6e5a1beefe649fa2614b1ed9d5d8f47e638a2ce6f1d8d7ed1dbcf9f9dc88f6",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-08.jpg",
+      "sha256": "541d6149650339a1b4750662f6f505cf42722343d77f9e74ffe23d9bbfe92b95",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-09.jpg",
+      "sha256": "82a76b089c7d9db7a321d040097ae1143a4556ee43f007021cbbbe70b3f22da8",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/face-timing-10.jpg",
+      "sha256": "535cbe12df2362025f60c6f8ed60bdd2d62cbb613a45976dd896dfc323acfbb1",
+      "dimensions": [
+        1200,
+        888
+      ]
+    },
+    {
+      "file": "evidence/overview-01.jpg",
+      "sha256": "d400471ad0fe6c37d76e4357d7d5f54d78d3b05a15b00a9c8598c138a807809d",
+      "dimensions": [
+        960,
+        1840
+      ]
+    },
+    {
+      "file": "evidence/overview-02.jpg",
+      "sha256": "db5e14ec601e13431f5a60cf734cd7441d1a886cfe666733979ee5a57fcb21b7",
+      "dimensions": [
+        960,
+        1840
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "sourceSha256": "d479c1eeb5eab7a15fa0c489766ef1e22983289d33a5ef51ab32398dc73ea2f1",
+  "auditionStatus": "No audio-capable audition tool; no human-verified transcript or language.",
+  "decode": {
+    "sampleRate": 16000,
+    "channels": 1,
+    "sampleWidthBytes": 2,
+    "samples": 241488,
+    "duration": 15.093,
+    "sha256": "45e7658cf9e6c42af3ef586fa99a6e60f12eef8d63c669077c7064d20aee7352",
+    "rmsDbfs": -15.720999034285231,
+    "peakDbfs": -5.163589053216695,
+    "energyUsedForPhonemes": false
+  },
+  "asr": {
+    "method": "Local cached faster-whisper large-v3 CPU int8, no cloud upload",
+    "candidateLanguage": "en",
+    "languageProbability": 0.5600146651268005,
+    "decision": "REJECTED_AS_TRANSCRIPT_OR_PHONEME_TRUTH",
+    "reason": "Low language probability and implausible low-confidence phrase candidates; raw output kept private.",
+    "rawPrivatePath": ".local/ren-video-reference/audio-asr-unverified.json"
+  },
+  "headaudio": {
+    "producer": "headaudio@acea62e node-harness chunkSizes=997,480,2048,333 inputRate=16000",
+    "windows": 942,
+    "labelCounts": {
+      "sil": 7,
+      "RR": 221,
+      "E": 4,
+      "DD": 196,
+      "I": 71,
+      "U": 25,
+      "PP": 53,
+      "CH": 307,
+      "kk": 5,
+      "FF": 11,
+      "SS": 24,
+      "O": 2,
+      "aa": 11,
+      "TH": 5
+    },
+    "nonSilenceFraction": 0.9925690021231423,
+    "decision": "REJECTED_AS_ACTING_OR_PHONEME_TRUTH",
+    "reason": "Unverified language, large CH/DD/RR occupancy, no validated relation to this exaggerated visual performance. No audio classifier data enters control curves.",
+    "workspaceReadOnly": true,
+    "rawPrivatePath": ".local/ren-video-reference/rejected-machine-visemes/reference-mono16k.reference.json"
+  },
+  "cloudUpload": false,
+  "paidCalls": false
+}

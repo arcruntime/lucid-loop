@@ -1,0 +1,284 @@
+{
+  "schema": "ren-observed-acting-beats/v1",
+  "sourceSha256": "d479c1eeb5eab7a15fa0c489766ef1e22983289d33a5ef51ab32398dc73ea2f1",
+  "timingPrecision": "Manual interval estimates from source samples every3frames, about +/-0.1s; exact sampled-frame PTS in source-frame-times.json.",
+  "shots": [
+    {
+      "id": "continuous_portrait",
+      "start": 0,
+      "end": 15.066693,
+      "observed": "Single continuous seated portrait view, effectively fixed camera, subject leans and gestures.",
+      "cutsObserved": false
+    }
+  ],
+  "beats": [
+    {
+      "id": "rest_to_pressed",
+      "start": 0,
+      "end": 0.9,
+      "observed": "Small head roll settles; lip opening closes to a slight uneven smile and press; bilateral closures near0.5/0.9.",
+      "inferredNeeds": [
+        "mouthSeal",
+        "mouthSmileL/R",
+        "lipPress",
+        "eyeBlinkL/R",
+        "headRoll"
+      ],
+      "gesture": "Clasped hands low.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "wide_convergent_round",
+      "start": 1,
+      "end": 1.4,
+      "observed": "Eyes widen, chin lifts; apparent convergence1.1-1.3. Small round mouth becomes pressed and then smile.",
+      "inferredNeeds": [
+        "eyeWideL/R",
+        "browRaiseL/R",
+        "gazeConverge",
+        "headPitch",
+        "mouthPucker",
+        "lipPress"
+      ],
+      "confidenceCaveat": "Apparent convergence has lower confidence than visible eye widening; source not calibrated.",
+      "gesture": "Index fingers beneath chin.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "open_and_relax",
+      "start": 1.5,
+      "end": 1.9,
+      "observed": "Vertical mouth opening, tongue visible inside; smaller smiling aperture. Lids lower/reopen then close.",
+      "inferredNeeds": [
+        "jawOpen_A",
+        "mouthSmileL/R",
+        "eyeSquintL/R",
+        "eyeBlinkL/R"
+      ],
+      "gesture": "Fingers near chin and lips.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "knit_brow_smirk",
+      "start": 2,
+      "end": 2.6,
+      "observed": "Chin down, brows knit, eyes narrow. Rounded opening closes to uneven smirk; brief closure2.6.",
+      "inferredNeeds": [
+        "browFrownL/R",
+        "mouthSmileL",
+        "mouthLeft",
+        "mouthSeal",
+        "headPitch"
+      ],
+      "gesture": "Thumb/index at chin.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "wide_open_close_round",
+      "start": 2.7,
+      "end": 3.3,
+      "observed": "Lean back and wide eyes; large opening2.8, close2.9, round3.0-3.1, close3.2, round3.3.",
+      "inferredNeeds": [
+        "eyeWideL/R",
+        "jawOpen_A",
+        "mouthSeal",
+        "mouthFunnel",
+        "mouthPucker",
+        "lean"
+      ],
+      "gesture": "Open/index hand gestures.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "closed_eyes_round_pulses",
+      "start": 3.4,
+      "end": 4.5,
+      "observed": "Sustained full/nearly full closure, small alternating head rolls and lean toward camera; repeated rounded openings and lip contact.",
+      "inferredNeeds": [
+        "eyeBlinkL/R",
+        "mouthPucker",
+        "mouthFunnel",
+        "mouthSeal",
+        "headRoll",
+        "lean"
+      ],
+      "gesture": "Fists frame cheeks.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "reset_wide_open",
+      "start": 4.6,
+      "end": 5.3,
+      "observed": "Lean back; eye closures4.7/5.3 and wide eyes5.0-5.2; round/closed/open/uneven-teeth mouth sequence.",
+      "inferredNeeds": [
+        "eyeBlinkL/R",
+        "eyeWideL/R",
+        "jawOpen_A",
+        "upperLipRaiseL/R",
+        "mouthSeal"
+      ],
+      "gesture": "Hands spread then meet near sternum.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "side_glance_tongue",
+      "start": 5.4,
+      "end": 6.3,
+      "observed": "Screen-left glance, uneven brows, counterclockwise roll in image; upper-lip curl and tongue protrudes screen-right5.7-5.8 then retracts.",
+      "inferredNeeds": [
+        "gazeX",
+        "browRaiseL/R",
+        "headRoll",
+        "upperLipRaiseL/R",
+        "mouthLeft",
+        "tongueOut",
+        "tongueSide"
+      ],
+      "gesture": "Finger points at cheek/lip.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "wide_scrunched_curl",
+      "start": 6.4,
+      "end": 7.2,
+      "observed": "Close6.4, wide6.6-6.9, close7.1. Round opening becomes crooked upper lip with visible nose scrunch6.7-6.9.",
+      "inferredNeeds": [
+        "eyeWideL/R",
+        "eyeBlinkL/R",
+        "upperLipRaiseL/R",
+        "mouthLeft",
+        "mouthPucker",
+        "noseWrinkle"
+      ],
+      "gesture": "Claw hands above/below face toward lens.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "half_lid_smile_bounce",
+      "start": 7.3,
+      "end": 8.6,
+      "observed": "Head roll and mostly lowered lids, uneven squint then closure8.6; repeated open and horizontally stretched tooth-smile states.",
+      "inferredNeeds": [
+        "eyeSquintL/R",
+        "mouthSmileL/R",
+        "jawOpen_A",
+        "headRoll"
+      ],
+      "gesture": "Index fingers bounce.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "thinking_glances",
+      "start": 8.7,
+      "end": 9.5,
+      "observed": "Side glance then upward glance9.1, raised brows, chin lift/lower; lip press and one-sided closed smile.",
+      "inferredNeeds": [
+        "gazeX",
+        "gazeY",
+        "browRaiseL/R",
+        "headPitch",
+        "lipPress",
+        "mouthSmileL"
+      ],
+      "gesture": "Finger cheek to chin-cradle.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "wide_pressed_to_closed_smile",
+      "start": 9.6,
+      "end": 10,
+      "observed": "Wide eyes with apparent convergence9.6 to smiling squint to full closure; pressed closed smiling lips.",
+      "inferredNeeds": [
+        "eyeWideL/R",
+        "eyeSquintL/R",
+        "eyeBlinkL/R",
+        "mouthSeal",
+        "lipPress",
+        "mouthSmileL/R",
+        "gazeConverge"
+      ],
+      "gesture": "Index fingers at chin corners.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "tongue_and_curl_second",
+      "start": 10.1,
+      "end": 10.5,
+      "observed": "Open and widen eyes; rounded/vertical opening to tongue protrusion10.3, tongue screen-left10.4, then upper-lip curl10.5.",
+      "inferredNeeds": [
+        "jawOpen_A",
+        "eyeWideL/R",
+        "tongueOut",
+        "tongueSide",
+        "upperLipRaiseL/R"
+      ],
+      "gesture": "Claw hands close to lens.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "toothy_squint_grin",
+      "start": 10.6,
+      "end": 11.2,
+      "observed": "Broad horizontally stretched toothy grin, smiling squint and lifted cheeks, small head sway.",
+      "inferredNeeds": [
+        "mouthSmileL/R",
+        "upperLipRaiseL/R",
+        "eyeSquintL/R",
+        "headRoll"
+      ],
+      "gesture": "Fingers/fists near cheeks.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "chin_lift_smirk_shrug",
+      "start": 11.3,
+      "end": 12.4,
+      "observed": "Chin lift then lower, half-lids/brief closure11.7, widen12.4; round/closed smirk to vertical/round openings and uneven teeth.",
+      "inferredNeeds": [
+        "headPitch",
+        "eyeSquintL/R",
+        "mouthSmileL",
+        "jawOpen_A",
+        "mouthPucker",
+        "mouthFunnel"
+      ],
+      "gesture": "Index gesture then palms-up shrug.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "closed_eyes_grin_sways",
+      "start": 12.5,
+      "end": 14.1,
+      "observed": "Lean forward; full/nearly full closure12.6 onward, broad tooth grin, repeated side-to-side translation with a mostly clockwise head tilt. Translation is distinct from roll.",
+      "inferredNeeds": [
+        "eyeBlinkL/R",
+        "mouthSmileL/R",
+        "upperLipRaiseL/R",
+        "headRoll",
+        "lean",
+        "headShiftX"
+      ],
+      "gesture": "Fists frame cheeks.",
+      "gestureAvailableOnBust": false
+    },
+    {
+      "id": "open_final_heart",
+      "start": 14.2,
+      "end": 15,
+      "observed": "Lean back, eyes reopen/widen; open/uneven teeth, large opening14.5, close14.6, round14.7-14.8, final large opening15.0.",
+      "inferredNeeds": [
+        "eyeWideL/R",
+        "jawOpen_A",
+        "mouthSeal",
+        "mouthPucker",
+        "mouthFunnel",
+        "lean"
+      ],
+      "gesture": "Both hands form heart near sternum.",
+      "gestureAvailableOnBust": false
+    }
+  ],
+  "phonemeStatus": "UNVERIFIED: all aperture labels are visual shapes, not identified vowels/consonants.",
+  "loop": false,
+  "geometryOrAnimationImplementedByThisPackage": false
+}
