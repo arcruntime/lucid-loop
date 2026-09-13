@@ -125,3 +125,7 @@ CI validation: Actionlint and three Python validation tests passed. A fresh Wind
 ## 2026-09-13 — Defer Mac CI and make README portable
 
 At the user's request, removed macOS from the active Unity build matrix and deferred Mac storage, Unity installation and runner provisioning. Retained the Mac build scripts and documented how to restore the lane. Windows push, PR, daily and manual builds remain configured; repository admin access is still pending for runner registration. Replaced the README's machine-specific exploratory-repository path with its repository name and described build output relative to the checkout.
+
+## 2026-09-13 — Repository transfer and Windows runner registration
+
+The repository transferred from arcruntime/lucid-loop to jethac/lucid-loop. Updated origin and current documentation links, verified admin access, and registered the dedicated lucid-loop-windows runner on the stadia-testbed dockurr VM. GitHub reports it online with Windows, X64, stadia-testbed and lucid-loop labels. It runs as an automatic service under NETWORK SERVICE; other projects' runners are unchanged. Unity editor provisioning and license activation remain outstanding. Mac builds remain deferred.

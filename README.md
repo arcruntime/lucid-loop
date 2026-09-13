@@ -4,9 +4,9 @@ Two playable Unity gyms are implemented: an offline nightclub for movement and c
 
 **Try them:** open `Unity/` in Unity 6000.3.24f1, load `Assets/Gyms/Scenes/CharacterGym.unity`, and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.
 
-**Builds:** [Unity builds on GitHub Actions](https://github.com/arcruntime/lucid-loop/actions/workflows/unity-builds.yml) is configured for every push to `main`, same-repository pull requests, daily at 03:17 JST, and manual runs. Successful runs publish a Windows ZIP with a commit ID and SHA-256 checksum. Mac builds are deferred. Download them from the run's **Artifacts** section; diagnostics are uploaded on failures too.
+**Builds:** [Unity builds on GitHub Actions](https://github.com/jethac/lucid-loop/actions/workflows/unity-builds.yml) is configured for every push to `main`, same-repository pull requests, daily at 03:17 JST, and manual runs. Successful runs publish a Windows ZIP with a commit ID and SHA-256 checksum. Mac builds are deferred. Download them from the run's **Artifacts** section; diagnostics are uploaded on failures too.
 
-**CI provisioning is pending:** the Windows VM on stadia-testbed needs a dedicated Lucid Loop runner and licensed Unity 6000.3.24f1. Runner registration is waiting on requested repository admin access. Mac provisioning and builds are deferred. No successful remote Unity builds are claimed yet. See [CI setup and host status](docs/CI.md).
+**CI provisioning is pending:** the dedicated Windows runner on stadia-testbed is registered and online. Unity 6000.3.24f1 installation and license activation remain prerequisites for successful builds. Mac provisioning and builds are deferred. No successful remote Unity builds are claimed yet. See [CI setup and host status](docs/CI.md).
 
 ## Project direction
 

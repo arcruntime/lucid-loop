@@ -10,7 +10,7 @@ CI builds the versioned scenes without regenerating the nightclub. `GymBuilder` 
 
 Provision Windows now. Mac requirements below are retained for future resumption; no Mac job is scheduled.
 
-Register **additional** repository-scoped runners for `https://github.com/arcruntime/lucid-loop`; preserve the runners serving other repositories. Registration requires repository admin access. Use the installation commands generated in Settings → Actions → Runners.
+Register **additional** repository-scoped runners for `https://github.com/jethac/lucid-loop`; preserve the runners serving other repositories. Registration requires repository admin access. Use the installation commands generated in Settings → Actions → Runners.
 
 | Host | Suggested runner name | Required labels (in addition to defaults) |
 | --- | --- | --- |
@@ -27,9 +27,9 @@ Optional repository variables `UNITY_EDITOR_WINDOWS` and `UNITY_EDITOR_MACOS` ov
 
 - stadia-testbed is Linux and hosts the running `win-soccer` dockurr Windows VM. Its existing `sg-win-microprose` runner is scoped to `jethac/tokyoretro-microprose-soccer`, not Lucid Loop. The VM has roughly 22 GiB free; Unity was absent from the standard installation path.
 - The Mac mini is reachable and its Tokyo Retro / MicroProse runner services are active. No Unity editor was found under `/Applications/Unity`; the prior MacMiniOffload volume is not mounted. Internal data storage has about 2.4 GiB free. The earlier hackathon runner points to that unavailable volume.
-- The connected `jethac` GitHub account has push but not admin/maintain access to Lucid Loop; the runner API returns 403. Runner registration and remote builds are pending that access and host provisioning. Existing runner registrations, services and disks were left intact.
+- After transfer to `jethac/lucid-loop`, repository admin access is confirmed. The dedicated `lucid-loop-windows` runner is registered and online with the required labels, installed as an automatic Windows service under `NT AUTHORITY\NETWORK SERVICE`. Existing runners remain intact. Unity installation and activation are still pending; the runner account must have access to the activated license.
 
-Once Windows prerequisites are met, register its dedicated runner with the labels above and dispatch **Unity builds**. Confirm the Windows job runs and produces an archive before removing its pending notice from the README. Resume Mac provisioning only when requested, then restore its matrix entry with `platform: macos`, labels `["self-hosted", "macOS", "ARM64", "mac-mini", "lucid-loop"]`, `python: python3`, and `editor_variable: UNITY_EDITOR_MACOS`.
+Once Windows Unity installation and licensing are ready, dispatch **Unity builds** using the registered runner. Confirm the Windows job runs and produces an archive before removing its pending notice from the README. Resume Mac provisioning only when requested, then restore its matrix entry with `platform: macos`, labels `["self-hosted", "macOS", "ARM64", "mac-mini", "lucid-loop"]`, `python: python3`, and `editor_variable: UNITY_EDITOR_MACOS`.
 
 References: [GitHub self-hosted runner setup](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners), [Unity command-line reference](https://docs.unity3d.com/6000.3/Documentation/Manual/EditorCommandLineArguments.html).
 
