@@ -1,8 +1,16 @@
 # Lucid Loop
 
+Two playable Unity gyms are implemented: an offline nightclub for movement and character conversations, and a separate live voice studio backed by the project's OpenAI relay.
+
+**Try them:** open `Unity/` in Unity 6000.3.24f1, load `Assets/Gyms/Scenes/CharacterGym.unity`, and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.
+
+**Builds:** [Unity builds on GitHub Actions](https://github.com/arcruntime/lucid-loop/actions/workflows/unity-builds.yml) is configured for every push to `main`, same-repository pull requests, daily at 03:17 JST, and manual runs. Successful runs publish a Windows ZIP and a macOS app tarball, with commit IDs and SHA-256 checksums. Download them from the run's **Artifacts** section; diagnostics are uploaded on failures too.
+
+**CI provisioning is pending:** the intended hosts are the Windows VM on stadia-testbed and the Mac mini. Dedicated Lucid Loop runner registration requires repository admin access; both need licensed Unity 6000.3.24f1, and the Mac needs working build storage. No successful remote Unity builds are claimed yet. See [CI setup and host status](docs/CI.md).
+
 ## Project direction
 
-- Create the game with **Unity 6.3 LTS** in a subfolder of this repository (`B:\lucid-loop`), rather than at the repository root.
+- The **Unity 6.3 LTS** project lives in the `Unity/` subfolder.
 - Target phones first, in **landscape orientation**, with a **16:9 target aspect ratio**.
 - Minimum-spec phone: **iPhone 15 Plus**.
 - Use [osu-framework-unity-di](https://github.com/splatterfacegames/osu-framework-unity-di) as a core dependency for dependency injection.
