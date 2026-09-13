@@ -17,6 +17,7 @@ concurrency:
 
 jobs:
   desktop:
+    name: ${{ matrix.platform }} gyms
     # Never run fork code on the private build machines.
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     strategy:
@@ -26,16 +27,18 @@ jobs:
           - platform: windows
             labels: '["self-hosted", "Windows", "X64", "stadia-testbed", "lucid-loop"]'
             python: python
+            editor_variable: UNITY_EDITOR_WINDOWS
           - platform: macos
             labels: '["self-hosted", "macOS", "ARM64", "mac-mini", "lucid-loop"]'
             python: python3
+            editor_variable: UNITY_EDITOR_MACOS
     runs-on: ${{ fromJSON(matrix.labels) }}
     timeout-minutes: 90
     defaults:
       run:
         shell: bash
     env:
-      UNITY_EDITOR: ${{ matrix.platform == 'windows' && vars.UNITY_EDITOR_WINDOWS || vars.UNITY_EDITOR_MACOS }}
+      UNITY_EDITOR: ${{ vars[matrix.editor_variable] }}
     steps:
       - uses: actions/checkout@v4
         with:

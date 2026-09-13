@@ -30,3 +30,7 @@ Optional repository variables `UNITY_EDITOR_WINDOWS` and `UNITY_EDITOR_MACOS` ov
 Once these prerequisites are met, register the two dedicated runners with the labels above and dispatch **Unity builds**. Confirm both jobs actually run and produce archives before removing the pending notice from the README.
 
 References: [GitHub self-hosted runner setup](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners), [Unity command-line reference](https://docs.unity3d.com/6000.3/Documentation/Manual/EditorCommandLineArguments.html).
+
+## Local validation
+
+Actionlint accepts the workflow and all three Python validation tests pass. A clean Windows checkout passed all eight Unity EditMode tests, built both committed scenes and produced a 66 MB Windows ZIP with a SHA-256 checksum. A subsequent `-batchmode -nographics` run also passed all eight tests and the Windows player build, validating the headless command used by the VM job. This is local workstation evidence, not evidence of execution on the remote VM or Mac mini; the Mac build remains unverified until its host is provisioned.

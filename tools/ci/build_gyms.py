@@ -48,7 +48,7 @@ def run_editor(editor, args, log):
         startup = subprocess.STARTUPINFO()
         startup.dwFlags |= subprocess.STARTF_USESHOWWINDOW
         startup.wShowWindow = 0
-    command = [str(editor), "-batchmode", "-projectPath", str(ROOT / "Unity"),
+    command = [str(editor), "-batchmode", "-nographics", "-projectPath", str(ROOT / "Unity"),
                "-logFile", str(log)] + args
     print("Unity: " + " ".join(command), flush=True)
     try:
@@ -69,6 +69,7 @@ def main():
     packages = ROOT / "artifacts/packages"
     diagnostics.mkdir(parents=True, exist_ok=True)
     packages.mkdir(parents=True, exist_ok=True)
+    (diagnostics / "failure.txt").unlink(missing_ok=True)
     # Remove only this script's known output paths; never clean shared caches.
     output = ROOT / "Unity/Builds" / ("Windows" if target == "windows" else "macOS")
     if output.resolve().parent != (ROOT / "Unity/Builds").resolve():
@@ -103,7 +104,10 @@ def main():
         else:
             contents = output / "LucidLoopGyms.app/Contents"
             with (contents / "Info.plist").open("rb") as source:
-                executable = plistlib.load(source)["CFBundleExecutable"]
+                info = plistlib.load(source)
+            executable = info["CFBundleExecutable"]
+            if not info.get("NSMicrophoneUsageDescription"):
+                raise RuntimeError("Mac app is missing its microphone permission description")
             if Path(executable).name != executable:
                 raise RuntimeError("Invalid app executable name in Info.plist")
             required = [contents / "MacOS" / executable, contents / "Info.plist",
