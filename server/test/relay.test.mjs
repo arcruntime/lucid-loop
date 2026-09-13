@@ -3,8 +3,118 @@ import { once } from "node:events";
 import test from "node:test";
 import WebSocket, { WebSocketServer } from "ws";
 import { createRelayServer } from "../src/server.mjs";
+import { createGameSessions } from "../src/game-sessions.mjs";
+import { createDemoDefinition, createDemoScenario } from "../src/demo-scenario.mjs";
+import { createEncounterWorld } from "../src/encounter-world.mjs";
 
 const START = JSON.stringify({ type: "gym.start", character: "maya" });
+
+test("world channel advances server positions and rejects forged destinations and premature reset", async () => {
+  const games = createGameSessions({ definitionFactory: createDemoDefinition, encounterFactory: createDemoScenario });
+  const { relay, url } = await makeRelay({ apiKey: "", gameSessions: games, worldFactory: createEncounterWorld });
+  try {
+    const client = await openClient(url.replace('/live', '/game'));
+    const until = async type => { let event; do { event = await nextJson(client); } while (event.type !== type); return event; };
+    client.send(JSON.stringify({ type: "game.create" }));
+    const ready = await until("game.ready");
+    const first = await until("game.world");
+    assert.ok(first.world.actors.player.position);
+    client.send(JSON.stringify({ type: "game.walk", loopId: ready.snapshot.loopId, sequence: 1, destination: { x: 1, z: -5 } }));
+    assert.equal((await until("game.move_result")).accepted, true);
+    const moved = await until("game.world");
+    assert.notDeepEqual(moved.world.actors.player.position, first.world.actors.player.position);
+    client.send(JSON.stringify({ type: "game.walk", loopId: ready.snapshot.loopId, sequence: 2, destination: { x: 99999, z: 0 } }));
+    const rejected = await until("game.move_result");
+    assert.equal(rejected.accepted, false);
+    client.send(JSON.stringify({ type: "game.reset", loopId: ready.snapshot.loopId, revision: ready.snapshot.revision }));
+    assert.equal((await until("game.error")).code, "reset_unavailable");
+    client.send(JSON.stringify({ type: "game.pause", paused: true }));
+    assert.equal((await until("game.pause")).paused, true);
+  } finally { await relay.close(); }
+});
+
+test("typed gameplay request reaches validated interpreter and commits through the active NPC lease", async () => {
+  const games = createGameSessions({ definitionFactory: () => ({ authorizeAction: () => true }) });
+  const created = games.create();
+  const upstream = await makeUpstream({ onConnection(socket) {
+    socket.on("message", raw => {
+      if (JSON.parse(raw).type === "session.start") socket.send(JSON.stringify({ type: "session.started", session: { id: "live_game" } }));
+    });
+  } });
+  const { relay, url } = await makeRelay({ upstreamUrl: upstream.url, gameSessions: games,
+    intentModel: "test-interpreter", intentInterpreter: async body => {
+      assert.equal(body.model, "test-interpreter");
+      return { status: "completed", output: [{ type: "message", role: "assistant", status: "completed",
+        content: [{ type: "output_text", text: JSON.stringify({ kind: "action_proposal", action: "wait", targetId: null, mood: null, clarification: null }) }] }] };
+    },
+  });
+  try {
+    const client = await openClient(url);
+    client.send(JSON.stringify({ type: "gym.start", character: "maya", ...created.credentials }));
+    let event;
+    do { event = await nextJson(client); } while (event.status !== "ready");
+    client.send(JSON.stringify({ type: "game.text", requestId: "wait_request", text: "Please wait here." }));
+    do { event = await nextJson(client); } while (event.type !== "game.intent_result");
+    assert.equal(event.ok, true);
+    assert.equal(games.publicState(created.credentials).snapshot.actors.maya.action.type, "wait");
+    assert.equal(games.history(created.credentials).history.fragments[0].source, "typed");
+  } finally { await closeRelay(relay, upstream); }
+});
+
+test("game channel creates/resumes safe state and cannot inject private world mutations", async () => {
+  const games = createGameSessions({ definitionFactory: () => ({ npcs: { theo: { secrets: ["hidden"] } } }) });
+  const { relay, url } = await makeRelay({ gameSessions: games, apiKey: "" });
+  try {
+    const client = await openClient(url.replace('/live', '/game'));
+    client.send(JSON.stringify({ type: "game.create" }));
+    const ready = await nextJson(client);
+    assert.equal(ready.type, "game.ready");
+    assert.doesNotMatch(JSON.stringify(ready), /hidden|secrets|knowledge/);
+    client.send(JSON.stringify({ type: "game.confirmFact", factId: "invented" }));
+    assert.equal((await nextJson(client)).code, "unsupported_event");
+    const second = await openClient(url.replace('/live', '/game'));
+    second.send(JSON.stringify({ type: "game.resume", ...ready.credentials }));
+    const resumed = await nextJson(second);
+    assert.deepEqual(resumed.snapshot, ready.snapshot);
+    const bad = await openClient(url.replace('/live', '/game'));
+    bad.send(JSON.stringify({ type: "game.resume", gameId: ready.credentials.gameId, resumeToken: "wrong" }));
+    assert.equal((await nextJson(bad)).code, "unauthorized");
+  } finally { await relay.close(); }
+});
+
+test("game conversations restore private NPC context and persist transcripts across connections", async () => {
+  const games = createGameSessions({ definitionFactory: () => ({
+    npcs: { maya: { objective: "Stay with my friend" }, theo: { secrets: ["PRIVATE_THEO"] } },
+  }) });
+  const created = games.create();
+  const starts = [];
+  const upstream = await makeUpstream({ onConnection(socket) {
+    socket.on("message", raw => {
+      const event = JSON.parse(raw);
+      if (event.type === "session.start") {
+        starts.push(event);
+        socket.send(JSON.stringify({ type: "session.started", session: { id: `live_${starts.length}` } }));
+        socket.send(JSON.stringify({ type: "session.input_transcript.delta", event_id: "t1", delta: "Please wait.", start_ms: 0, end_ms: 100 }));
+      } else if (event.type === "session.close") socket.send(JSON.stringify({ type: "session.closed", usage: { seconds: 1 } }));
+    });
+  } });
+  const { relay, url } = await makeRelay({ upstreamUrl: upstream.url, gameSessions: games });
+  try {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const client = await openClient(url);
+      client.send(JSON.stringify({ type: "gym.start", character: "maya", ...created.credentials }));
+      let received;
+      do { received = await nextJson(client); } while (received.type !== "session.input_transcript.delta");
+      const closed = once(client, "close");
+      client.send(JSON.stringify({ type: "session.close" }));
+      await closed;
+    }
+    assert.match(starts[0].session.instructions, /Stay with my friend/);
+    assert.doesNotMatch(starts[0].session.instructions, /PRIVATE_THEO/);
+    assert.equal(starts[1].session.input[0].content[0].text, "Please wait.");
+    assert.equal(games.history(created.credentials).history.fragments.length, 2);
+  } finally { await closeRelay(relay, upstream); }
+});
 
 async function openClient(url) {
   const socket = new WebSocket(url);

@@ -8,7 +8,7 @@
     "start": "node src/main.mjs",
     "fixture": "node src/fixture-cli.mjs",
     "test": "node --test",
-    "test:live": "node --test test/live-smoke.test.mjs"
+    "test:live": "node --test test/live-smoke.test.mjs test/gameplay-live-smoke.test.mjs"
   },
   "dependencies": {
     "ws": "8.21.0"

@@ -3,6 +3,8 @@ import { timingSafeEqual } from "node:crypto";
 import WebSocket, { WebSocketServer } from "ws";
 import { isLoopbackHost, validateConfig } from "./config.mjs";
 import { buildSessionStart } from "./prompts.mjs";
+import { createGameplayDelegation } from "./gameplay-delegation.mjs";
+import { createIntentInterpreter } from "./responses-client.mjs";
 
 const OPEN = WebSocket.OPEN;
 const ALLOWED_AFTER_READY = new Set([
@@ -72,6 +74,27 @@ export function createRelayServer(options = {}) {
   });
   const sessions = new Set();
   const pending = new Set();
+  const worlds = new Map();
+  const worldTimer = config.worldFactory ? setInterval(() => {
+    config.gameSessions.cleanup();
+    for (const [id, record] of worlds) {
+      if (!record.clients.size) {
+        if (Date.now() - record.lastSeen > 30 * 60_000) worlds.delete(id);
+        continue;
+      }
+      record.lastSeen = Date.now();
+      if (!config.gameSessions.authorize(record.credentials).ok) { worlds.delete(id); continue; }
+      const voiceActive = [...sessions].some(s => s.gameCredentials?.gameId === id && s.phase !== "closed");
+      try {
+        const result = record.world.tick(0.1, { paused: record.paused, voiceActive });
+        if (result.ok) for (const client of record.clients) sendJson(client, { type: "game.world", world: record.world.snapshot() }, config.maxBufferedBytes);
+      } catch {
+        record.paused = true;
+        for (const client of record.clients) sendJson(client, { type: "game.error", code: "world_update_failed" }, config.maxBufferedBytes);
+      }
+    }
+  }, 100) : null;
+  worldTimer?.unref();
   let listening = false;
 
   const httpServer = http.createServer((request, response) => {
@@ -88,7 +111,7 @@ export function createRelayServer(options = {}) {
   httpServer.on("upgrade", (request, socket, head) => {
     let pathname;
     try { pathname = new URL(request.url, "http://relay.invalid").pathname; } catch { socket.destroy(); return; }
-    if (pathname !== "/live") { socket.write("HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n"); socket.destroy(); return; }
+    if (pathname !== "/live" && !(pathname === "/game" && config.gameSessions)) { socket.write("HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n"); socket.destroy(); return; }
     if (pending.size >= config.maxPendingConnections || wsServer.clients.size >= config.maxSessions + config.maxPendingConnections) {
       socket.write("HTTP/1.1 503 Service Unavailable\r\nConnection: close\r\nContent-Length: 0\r\n\r\n");
       socket.destroy();
@@ -97,7 +120,70 @@ export function createRelayServer(options = {}) {
     wsServer.handleUpgrade(request, socket, head, client => wsServer.emit("connection", client, request));
   });
 
-  wsServer.on("connection", client => {
+  wsServer.on("connection", (client, request) => {
+    if (new URL(request.url, "http://relay.invalid").pathname === "/game") {
+      let credentials;
+      let worldRecord;
+      let unsubscribe = () => {};
+      const timer = setTimeout(() => closeSocket(client, 1008, "start_timeout"), config.startTimeoutMs);
+      timer.unref?.();
+      const respond = value => {
+        if (!sendJson(client, value, config.maxBufferedBytes)) closeSocket(client, 1011, "client_backpressure");
+      };
+      client.on("error", () => closeSocket(client, 1011, "client_error"));
+      client.on("close", () => { clearTimeout(timer); unsubscribe(); worldRecord?.clients.delete(client); });
+      client.on("message", (raw, binary) => {
+        const parsed = parseMessage(raw, binary, config.maxMessageBytes);
+        if (parsed.error) { closeSocket(client, 1008, parsed.error); return; }
+        const event = parsed.value;
+        if (!credentials) {
+          if (!tokenMatches(event.token, config.accessToken)) { closeSocket(client, 1008, "unauthorized"); return; }
+          if (event.type !== "game.create" && event.type !== "game.resume") {
+            respond({ type: "game.error", code: "invalid_start" }); return;
+          }
+          const supplied = { gameId: event.gameId, resumeToken: event.resumeToken };
+          const result = event.type === "game.create" ? config.gameSessions.create() : config.gameSessions.resume(supplied);
+          if (!result.ok) { respond({ type: "game.error", code: result.reason }); return; }
+          credentials = result.credentials ?? supplied;
+          if (config.worldFactory) {
+            worldRecord = worlds.get(credentials.gameId);
+            if (!worldRecord) {
+              worldRecord = { credentials, world: config.worldFactory({ registry: config.gameSessions, credentials }), clients: new Set(), paused: false, lastSeen: Date.now() };
+              worlds.set(credentials.gameId, worldRecord);
+            }
+            worldRecord.clients.add(client);
+          }
+          const subscription = config.gameSessions.subscribe(credentials, update => {
+            if (update.type === "expired") { respond({ type: "game.error", code: "expired" }); closeSocket(client, 1008, "expired"); }
+            else respond({ type: "game.state", snapshot: update.snapshot });
+          });
+          if (!subscription.ok) { respond({ type: "game.error", code: subscription.reason }); closeSocket(client, 1013, "capacity"); return; }
+          unsubscribe = subscription.unsubscribe;
+          clearTimeout(timer);
+          respond({ type: "game.ready", ...result, credentials });
+          if (worldRecord) respond({ type: "game.world", world: worldRecord.world.snapshot() });
+          return;
+        }
+        // World facts and action commits are intentionally absent from player RPCs.
+        if (event.type === "game.walk" && worldRecord) {
+          respond({ type: "game.move_result", ...worldRecord.world.input({ type: "move_to", loopId: event.loopId, sequence: event.sequence, destination: event.destination }) });
+        } else if (event.type === "game.pause" && worldRecord && typeof event.paused === "boolean") {
+          worldRecord.paused = event.paused;
+          respond({ type: "game.pause", paused: worldRecord.paused });
+        } else if (event.type === "game.reset" && worldRecord) {
+          const current = config.gameSessions.publicState(credentials);
+          if (!current.ok || !["catastrophe", "unresolved", "victory"].includes(current.snapshot.phase)) respond({ type: "game.error", code: "reset_unavailable" });
+          else respond({ type: "game.reset_result", ...worldRecord.world.reset({ loopId: event.loopId, revision: event.revision }) });
+        } else if (event.type === "game.snapshot") {
+          const result = config.gameSessions.publicState(credentials);
+          respond(result.ok ? { type: "game.state", snapshot: result.snapshot } : { type: "game.error", code: result.reason });
+        } else if (event.type === "game.history") {
+          const result = config.gameSessions.history(credentials, { npcId: event.npcId, loopIndex: event.loopIndex });
+          respond(result.ok ? { type: "game.history", ...result.history } : { type: "game.error", code: result.reason });
+        } else respond({ type: "game.error", code: "unsupported_event" });
+      });
+      return;
+    }
     const context = { client, upstream: null, phase: "awaiting_start", timers: new Set(), released: false, finalized: false };
     client.on("error", () => closeSocket(client, 1011, "client_error"));
 
@@ -108,6 +194,9 @@ export function createRelayServer(options = {}) {
     const clearTimers = () => { for (const timer of context.timers) clearTimeout(timer); context.timers.clear(); };
     const release = () => { if (!context.released) { context.released = true; sessions.delete(context); pending.delete(context); } };
     const terminateUpstream = () => {
+      context.delegation?.dispose();
+      context.gameUnsubscribe?.();
+      if (context.gameLease) config.gameSessions?.detach(context.gameCredentials, context.gameLease);
       if (context.upstream && context.upstream.readyState !== WebSocket.CLOSED) context.upstream.terminate();
       release(); clearTimers();
     };
@@ -121,6 +210,7 @@ export function createRelayServer(options = {}) {
     const beginClose = () => {
       if (context.phase === "closing" || context.phase === "closed") return;
       context.phase = "closing";
+      context.delegation?.dispose();
       if (context.upstream?.readyState === OPEN) sendJson(context.upstream, { type: "session.close" }, config.maxBufferedBytes);
       addTimer(() => {
         if (!context.finalized) {
@@ -146,9 +236,49 @@ export function createRelayServer(options = {}) {
         if (event.type !== "gym.start" || typeof event.character !== "string") { fail("invalid_start"); return; }
         if (!tokenMatches(event.token, config.accessToken)) { fail("unauthorized", 1008); return; }
         if (!config.apiKey) { fail("missing_api_key", 1011); return; }
-        const start = buildSessionStart(event.character);
+        let start = buildSessionStart(event.character);
         if (!start) { fail("unknown_character"); return; }
         if (sessions.size >= config.maxSessions) { fail("capacity", 1013); return; }
+        if (event.gameId !== undefined || event.resumeToken !== undefined) {
+          if (!config.gameSessions) { fail("gameplay_unavailable"); return; }
+          context.gameCredentials = { gameId: event.gameId, resumeToken: event.resumeToken };
+          const world = worlds.get(event.gameId);
+          if (world && !world.world.canConverse(event.character).ok) { fail("character_out_of_range"); return; }
+          const attached = config.gameSessions.attach(context.gameCredentials, event.character);
+          if (!attached.ok) { fail("game_unauthorized"); return; }
+          context.gameLease = attached.lease.leaseId;
+          const projection = config.gameSessions.npcContext(context.gameCredentials, context.gameLease);
+          if (!projection.ok) { fail("game_unauthorized"); return; }
+          start = buildSessionStart(event.character, { context: projection.context, history: projection.history });
+          start.session.delegation = { type: "client" };
+          // A new character conversation invalidates the previous transport as well as its tools.
+          for (const previous of sessions) {
+            if (previous !== context && previous.gameCredentials?.gameId === event.gameId) {
+              previous.invalidate?.();
+            }
+          }
+          context.invalidate = () => fail("conversation_superseded");
+          context.refreshGame = () => {
+            const latest = config.gameSessions.npcContext(context.gameCredentials, context.gameLease);
+            if (!latest.ok) { fail("conversation_superseded"); return; }
+            if (context.phase !== "ready") return;
+            const { revision, mood, action, knownFacts } = latest.context;
+            if (context.lastGameRevision === revision) return;
+            context.lastGameRevision = revision;
+            const update = JSON.stringify({ revision, mood, action, knownFacts });
+            const characters = Array.from(update);
+            for (let offset = 0; offset < characters.length; offset += 80) {
+              const chunk = characters.slice(offset, offset + 80).join("");
+              if (!sendJson(context.upstream, { type: "session.thinking.append",
+                event_id: `game_context_${revision}_${offset}`, delegation_id: null,
+                content: `Current character state, revision ${revision}, part ${1 + offset / 80}: ${chunk}`,
+              }, config.maxBufferedBytes)) { fail("upstream_backpressure", 1011); return; }
+            }
+          };
+          const subscription = config.gameSessions.subscribe(context.gameCredentials, context.refreshGame);
+          if (!subscription.ok) { fail("game_subscription_failed"); return; }
+          context.gameUnsubscribe = subscription.unsubscribe;
+        }
         clearTimeout(startTimer); context.timers.delete(startTimer); pending.delete(context);
         sessions.add(context); context.phase = "connecting";
         status(client, config, "connecting");
@@ -163,9 +293,19 @@ export function createRelayServer(options = {}) {
           const incoming = parseMessage(raw, upstreamBinary, config.maxMessageBytes);
           if (incoming.error) { fail("invalid_upstream_event", 1011, { finalUsageConfirmed: false }); return; }
           const nativeEvent = incoming.value;
+          if (context.gameLease && nativeEvent.type !== "session.closed") {
+            const projection = config.gameSessions.npcContext(context.gameCredentials, context.gameLease);
+            if (!projection.ok) { fail("conversation_superseded"); return; }
+            if (nativeEvent.type === "session.input_transcript.delta" || nativeEvent.type === "session.output_transcript.delta") {
+              config.gameSessions.appendTranscript(context.gameCredentials, context.gameLease, nativeEvent);
+            }
+          }
           if (nativeEvent.type === "session.closed") {
+            context.delegation?.dispose();
+            context.gameUnsubscribe?.();
             if (client.readyState === OPEN) sendJson(client, nativeEvent, config.maxBufferedBytes);
             context.finalized = true; context.phase = "closed"; clearTimers();
+            if (context.gameLease) config.gameSessions.detach(context.gameCredentials, context.gameLease);
             if (client.readyState === OPEN) {
               status(client, config, "closed", { finalUsage: nativeEvent.usage ?? null, finalUsageConfirmed: true });
               closeSocket(client, 1000, "session_closed");
@@ -179,20 +319,46 @@ export function createRelayServer(options = {}) {
           if (nativeEvent.type === "session.started" && context.phase === "connecting") {
             clearTimeout(startupTimer); context.timers.delete(startupTimer);
             context.phase = "ready";
+            if (context.gameLease && config.intentModel) {
+              context.delegation = createGameplayDelegation({
+                registry: config.gameSessions, credentials: context.gameCredentials,
+                leaseId: context.gameLease, model: config.intentModel,
+                interpret: config.intentInterpreter ?? createIntentInterpreter({ apiKey: config.apiKey }),
+                sendLive: event => {
+                  if (context.phase !== "ready" || !sendJson(context.upstream, event, config.maxBufferedBytes)) throw new Error("not_ready");
+                },
+                onResult: result => {
+                  if (context.phase === "ready") sendJson(client, { type: "game.intent_result", ...result }, config.maxBufferedBytes);
+                },
+              });
+            }
             status(client, config, "ready");
+            context.refreshGame?.();
             addTimer(() => beginClose(), config.maxDurationMs);
+          }
+          if (nativeEvent.type === "session.delegation.created" && context.phase === "ready") {
+            if (context.delegation) void context.delegation.onDelegation(nativeEvent);
+            else if (context.gameLease) status(client, config, "error", { code: "intent_backend_unavailable" });
           }
         });
         context.upstream.on("error", () => {
           if (!context.finalized && client.readyState === OPEN) fail("upstream_error", 1011, { finalUsageConfirmed: false });
         });
         context.upstream.on("close", () => {
+          context.delegation?.dispose();
+          context.gameUnsubscribe?.();
+          if (context.gameLease) config.gameSessions.detach(context.gameCredentials, context.gameLease);
           if (!context.finalized && context.phase !== "awaiting_start" && client.readyState === OPEN) {
             status(client, config, "error", { code: "upstream_closed", finalUsageConfirmed: false }); closeSocket(client, 1011, "upstream_closed");
           }
           context.phase = "closed";
           release(); clearTimers();
         });
+        return;
+      }
+      if (event.type === "game.text" && context.gameLease) {
+        if (context.phase !== "ready" || !context.delegation) { status(client, config, "error", { code: "intent_backend_unavailable" }); return; }
+        void context.delegation.onTyped({ requestId: event.requestId, text: event.text });
         return;
       }
       if (!ALLOWED_AFTER_READY.has(event.type)) { status(client, config, "error", { code: "unsupported_event" }); return; }
@@ -221,6 +387,8 @@ export function createRelayServer(options = {}) {
     },
     address() { return httpServer.address(); },
     async close() {
+      if (worldTimer) clearInterval(worldTimer);
+      worlds.clear();
       for (const context of sessions) { context.client.terminate(); context.upstream?.terminate(); }
       sessions.clear();
       for (const client of wsServer.clients) client.terminate();

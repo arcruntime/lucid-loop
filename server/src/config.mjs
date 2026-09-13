@@ -12,6 +12,7 @@ export function loadConfig(env = process.env) {
     host,
     port: positiveInteger(env.PORT, 8080, "PORT"),
     apiKey: env.OPENAI_API_KEY || "",
+    intentModel: env.INTENT_MODEL || "gpt-5.6-luna",
     accessToken: env.ACCESS_TOKEN || "",
     upstreamUrl: "wss://api.openai.com/v1/live/sessions",
     startTimeoutMs: positiveInteger(env.START_TIMEOUT_MS, 10_000, "START_TIMEOUT_MS"),

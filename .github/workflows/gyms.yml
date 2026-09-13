@@ -10,6 +10,11 @@ on:
       - "server/**"
       - ".github/workflows/gyms.yml"
   workflow_dispatch:
+    inputs:
+      run_live:
+        description: "Run project-funded OpenAI transport and gameplay smoke tests"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -32,7 +37,7 @@ jobs:
       - run: docker build -t lucid-loop-live-relay:test .
 
   live-smoke:
-    if: github.event_name == 'workflow_dispatch' && vars.RUN_GPT_LIVE_SMOKE == 'true'
+    if: github.event_name == 'workflow_dispatch' && (inputs.run_live || vars.RUN_GPT_LIVE_SMOKE == 'true')
     needs: server
     runs-on: ubuntu-latest
     defaults:
