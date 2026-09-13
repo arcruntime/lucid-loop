@@ -128,6 +128,11 @@ namespace LucidLoop.Gyms.PlayModeTests
             Assert.That(clueIds, Does.Contain("shove_seen"));
             // Allow the visual fall and the last authoritative interpolation to settle.
             yield return new WaitForSecondsRealtime(presentation.FallSeconds + .15f);
+            var music = UnityEngine.Object.FindFirstObjectByType<EncounterMoodPresentation>();
+            Assert.That(music, Is.Not.Null);
+            var musicSources = music.GetComponents<AudioSource>().Where(source => source.clip == music.AggressiveLoop || source.clip == music.IntimateLoop).ToArray();
+            Assert.That(musicSources.Length, Is.EqualTo(2));
+            foreach (var source in musicSources) Assert.That(source.volume, Is.Zero.Within(.001f), "The actual club mix must be silent at catastrophe.");
             var fallenRotation = actors["luca"].Visual.localRotation;
             var fallenRoot = actors["luca"].transform.position;
             Assert.That(Quaternion.Angle(standingRotation, fallenRotation), Is.GreaterThan(80f));
@@ -148,6 +153,8 @@ namespace LucidLoop.Gyms.PlayModeTests
             Assert.That(VisibleHudText(), Does.Contain("LOOP 2").And.Contain("Aggressive"));
             Assert.That(Quaternion.Angle(standingRotation, actors["luca"].Visual.localRotation), Is.LessThan(.01f), "Loop reset must restore the standing visual.");
             Assert.That(Vector3.Distance(standingPosition, actors["luca"].Visual.localPosition), Is.LessThan(.001f));
+            yield return new WaitForSecondsRealtime(.9f);
+            Assert.That(musicSources.Sum(source => source.volume), Is.EqualTo(music.MusicVolume).Within(.001f), "Rewind restores the club mix at the selected volume.");
             layout.ClueToggle.GetComponent<Button>().onClick.Invoke();
             yield return null;
             Assert.That(layout.CluesExpanded, Is.True);

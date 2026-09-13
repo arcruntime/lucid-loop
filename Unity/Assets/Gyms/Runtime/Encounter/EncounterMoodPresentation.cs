@@ -20,7 +20,7 @@ namespace LucidLoop.Gyms
         Light[] lights;
         Color[] originalColors;
         float[] originalIntensities;
-        float intimacy, targetIntimacy, musicDuck = 1;
+        float intimacy, targetIntimacy, musicDuck = 1, catastropheGain = 1;
         bool paused;
 
         void Awake()
@@ -102,9 +102,14 @@ namespace LucidLoop.Gyms
                 musicDuck = Mathf.MoveTowards(musicDuck, dialogue ? DialogueMusicMultiplier : 1,
                     Time.unscaledDeltaTime / (dialogue ? .2f : .8f));
             }
+            // The authored catastrophe cuts the club mix even if a pause freezes
+            // simulation. Rewind restores the mix, not the user's volume setting.
+            bool catastrophe = bound && bound.State.Phase == "catastrophe";
+            catastropheGain = Mathf.MoveTowards(catastropheGain, catastrophe ? 0 : 1,
+                Time.unscaledDeltaTime / (catastrophe ? .12f : .8f));
             // Linear crossfade avoids the energy rise when both loops share correlated bass.
-            aggressiveMusic.volume = MusicVolume * musicDuck * (1 - intimacy);
-            intimateMusic.volume = MusicVolume * musicDuck * intimacy;
+            aggressiveMusic.volume = MusicVolume * musicDuck * catastropheGain * (1 - intimacy);
+            intimateMusic.volume = MusicVolume * musicDuck * catastropheGain * intimacy;
             if (lights == null) return;
             float scale = Mathf.Lerp(1, .65f, intimacy);
             for (int i = 0; i < lights.Length; i++)

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Failed(Child)" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-13 22:50:17Z" end-time="2026-09-13 22:50:19Z" duration="2.0911416">
+  <test-suite type="TestSuite" id="1044" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="23" result="Failed" site="Child" start-time="2026-09-13 22:50:17Z" end-time="2026-09-13 22:50:19Z" duration="2.091142" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1037" name="LucidLoop.Gyms.PlayModeTests.dll" fullname="B:/lucid-loop/Unity/Library/ScriptAssemblies/LucidLoop.Gyms.PlayModeTests.dll" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-09-13 22:50:17Z" end-time="2026-09-13 22:50:19Z" duration="2.052343" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="110796" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1038" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-09-13 22:50:17Z" end-time="2026-09-13 22:50:19Z" duration="2.048424" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1039" name="Gyms" fullname="LucidLoop.Gyms" runstate="Runnable" testcasecount="11" result="Failed" site="Child" start-time="2026-09-13 22:50:17Z" end-time="2026-09-13 22:50:19Z" duration="2.005055" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1040" name="Tests" fullname="LucidLoop.Gyms.Tests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-09-13 22:50:17Z" end-time="2026-09-13 22:50:19Z" duration="1.971933" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1019" name="EncounterMoodPlayModeTests" fullname="LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests" classname="LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2026-09-13 22:50:17Z" end-time="2026-09-13 22:50:19Z" duration="1.937706" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1021" name="CatastropheSilencesBothTracksWhilePausedAndRewindRestoresPreference" fullname="LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests.CatastropheSilencesBothTracksWhilePausedAndRewindRestoresPreference" methodname="CatastropheSilencesBothTracksWhilePausedAndRewindRestoresPreference" classname="LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests" runstate="Runnable" seed="2047011388" result="Failed" start-time="2026-09-13 22:50:17Z" end-time="2026-09-13 22:50:18Z" duration="0.683483" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Catastrophe must silence each club track even while paused.
+  Expected: 0 +/- 0.00100000005f
+  But was:  0.270000011f
+]]></message>
+                  <stack-trace><![CDATA[at LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests+<CatastropheSilencesBothTracksWhilePausedAndRewindRestoresPreference>d__1.MoveNext () [0x0022e] in B:\lucid-loop\Unity\Assets\Gyms\Tests\PlayMode\EncounterMoodPlayModeTests.cs:92
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@bd7f943e9647\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+]]></stack-trace>
+                </failure>
+                <output><![CDATA[MOOD_PLAY_TESTS_CASE_FAILED: LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests.CatastropheSilencesBothTracksWhilePausedAndRewindRestoresPreference
+  Catastrophe must silence each club track even while paused.
+  Expected: 0 +/- 0.00100000005f
+  But was:  0.270000011f
+
+at LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests+<CatastropheSilencesBothTracksWhilePausedAndRewindRestoresPreference>d__1.MoveNext () [0x0022e] in B:\lucid-loop\Unity\Assets\Gyms\Tests\PlayMode\EncounterMoodPlayModeTests.cs:92
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\Library\PackageCache\com.unity.test-framework@bd7f943e9647\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:44
+
+]]></output>
+              </test-case>
+              <test-case id="1020" name="IntimateLightingPreservesPulseWithoutCompoundingAndRestoresOriginals" fullname="LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests.IntimateLightingPreservesPulseWithoutCompoundingAndRestoresOriginals" methodname="IntimateLightingPreservesPulseWithoutCompoundingAndRestoresOriginals" classname="LucidLoop.Gyms.Tests.EncounterMoodPlayModeTests" runstate="Runnable" seed="2111668051" result="Passed" start-time="2026-09-13 22:50:18Z" end-time="2026-09-13 22:50:19Z" duration="1.210913" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: B:\lucid-loop\.local\validation\mood-playmode-20260913-225009-573.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

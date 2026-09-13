@@ -67,10 +67,53 @@ namespace LucidLoop.Gyms.Tests
             }
         }
 
-        static void ApplyMood(EncounterCoordinator coordinator, string value, long revision)
+        [UnityTest]
+        public IEnumerator CatastropheSilencesBothTracksWhilePausedAndRewindRestoresPreference()
         {
-            var snapshot = new JObject { ["loopId"] = "mood-loop", ["loopIndex"] = 1,
-                ["revision"] = revision, ["mood"] = value, ["actors"] = new JObject(), ["playerDiscoveries"] = new JArray() };
+            var root = new GameObject("catastrophe music test");
+            var coordinator = root.AddComponent<EncounterCoordinator>();
+            root.AddComponent<AudioListener>();
+            var mood = root.AddComponent<EncounterMoodPresentation>();
+            mood.Coordinator = coordinator;
+            mood.MusicVolume = .27f;
+            mood.MoodTransitionSeconds = .1f;
+            mood.AggressiveLoop = AudioClip.Create("catastrophe aggressive", 24000, 1, 24000, false);
+            mood.IntimateLoop = AudioClip.Create("catastrophe intimate", 24000, 1, 24000, false);
+            try
+            {
+                yield return null;
+                ApplyMood(coordinator, "Intimate", 1);
+                yield return new WaitForSecondsRealtime(.2f);
+                var sources = root.GetComponents<AudioSource>();
+                Assert.That(sources.Sum(source => source.volume), Is.EqualTo(.27f).Within(.001f));
+                ApplyMood(coordinator, "Intimate", 2, "catastrophe");
+                root.SendMessage("OnPause", true);
+                yield return new WaitForSecondsRealtime(.3f);
+                foreach (var source in sources) Assert.That(source.volume, Is.Zero.Within(.001f), "Catastrophe must silence each club track even while paused.");
+                Assert.That(mood.MusicVolume, Is.EqualTo(.27f), "Do not overwrite the player's volume preference.");
+                mood.enabled = false;
+                mood.enabled = true;
+                yield return null;
+                foreach (var source in sources) Assert.That(source.volume, Is.Zero.Within(.001f), "Rebinding the same catastrophe must not restore music.");
+                ApplyMood(coordinator, "Aggressive", 3, "exploring", 2);
+                root.SendMessage("OnPause", false);
+                yield return new WaitForSecondsRealtime(1f);
+                Assert.That(sources.Single(source => source.clip == mood.AggressiveLoop).volume, Is.EqualTo(.27f).Within(.001f));
+                Assert.That(sources.Single(source => source.clip == mood.IntimateLoop).volume, Is.Zero.Within(.001f));
+                LogAssert.NoUnexpectedReceived();
+            }
+            finally
+            {
+                Object.DestroyImmediate(mood.AggressiveLoop);
+                Object.DestroyImmediate(mood.IntimateLoop);
+                Object.DestroyImmediate(root);
+            }
+        }
+
+        static void ApplyMood(EncounterCoordinator coordinator, string value, long revision, string phase = "exploring", int loopIndex = 1)
+        {
+            var snapshot = new JObject { ["loopId"] = "mood-loop-" + loopIndex, ["loopIndex"] = loopIndex,
+                ["revision"] = revision, ["mood"] = value, ["phase"] = phase, ["actors"] = new JObject(), ["playerDiscoveries"] = new JArray() };
             var apply = typeof(EncounterCoordinator).GetMethod("ApplySnapshot", BindingFlags.Instance | BindingFlags.NonPublic);
             Assert.That((bool)apply.Invoke(coordinator, new object[] { snapshot, false }), Is.True);
         }

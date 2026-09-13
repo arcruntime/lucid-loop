@@ -23,6 +23,8 @@ The integrated scene is `Unity/Assets/Gyms/Scenes/BeforeTheDrop.unity`. `Encount
 
 Mood strings are exactly `Intimate` and `Aggressive` throughout public snapshots and the coordinator event. The presenter now matches those values; lowercase comparisons previously prevented accepted transitions. Its PlayMode test feeds valid coordinator snapshots and verifies both track volumes and light transitions, as recorded in the validation ledger.
 
+The authoritative `catastrophe` phase fades both club tracks to zero over 0.12 seconds. This presentation fade uses unscaled time and continues while the world is paused. A subsequent non-catastrophe loop restores the mix over 0.8 seconds. The catastrophe gain multiplies existing dialogue ducking and mood crossfade; it never overwrites the persisted music-volume preference or controls NPC voice output. Musical audition and physical iPhone output latency remain separate acceptance work.
+
 ## Authoritative world, approach and loop behavior
 
 [encounter-world.mjs](../server/src/encounter-world.mjs) owns the planar club geometry, obstacle-aware routes, player/NPC positions, recognition observations, conversation eligibility and physical encounter staging. The server advances movement and scenario time at 10 Hz with bounded catch-up; Unity interpolates accepted frames. This is a versioned approximation of the rendered club, not proof that every final mesh collider matches the plan. Keep the world manifest and scene geometry aligned when layout changes.

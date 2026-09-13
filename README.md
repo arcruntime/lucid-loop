@@ -16,6 +16,8 @@ The player has a green overhead beacon. NPC speech bubbles show speaking availab
 
 Accepted mood changes now correctly update music and lighting. A protocol-casing regression was reproduced and fixed; the [validation ledger](docs/IMPLEMENTATION_VALIDATION.md) records the before/after checks.
 
+Catastrophe fades the club music to silence over 0.12 seconds, including while paused. Rewind fades it back over 0.8 seconds without changing the saved music-volume setting.
+
 **Pause** closes the current conversation and opens a menu with Resume, Settings, Controls and Main Menu. Settings saves music volume on this device. Main Menu returns to connection setup while preserving the resumable night. Resume continues the world without reopening voice; reconnecting restores the server's pause state. Starting a new night starts unpaused. Quit is desktop-only.
 
 Encounter guidance follows the current phase: it explains responding to the confrontation, walking away after mediation and letting the set finish after separation. The opening shortcut is available only before first-loop recognition. Guidance does not reveal undiscovered clues or declare victory before the server does.
