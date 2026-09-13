@@ -1,0 +1,39 @@
+name: Capture Japanese NPC voice evidence
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: server/package-lock.json
+      - run: npm ci
+        working-directory: server
+      - name: Verify recorder and bounds
+        run: node --test test/voice-capture.test.mjs
+        working-directory: server
+      - name: Collect four bounded native-voice samples
+        run: node tools/collect-japanese-voices.mjs
+        working-directory: server
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RUN_GPT_LIVE_JAPANESE: '1'
+          LIVE_JAPANESE_OUTPUT: ${{ runner.temp }}/japanese-npc-voices
+      - name: Retain complete or partial evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: japanese-npc-voices-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/japanese-npc-voices
+          if-no-files-found: warn
+          retention-days: 14
