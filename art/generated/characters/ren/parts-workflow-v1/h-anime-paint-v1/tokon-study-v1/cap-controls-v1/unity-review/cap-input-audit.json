@@ -1,0 +1,22 @@
+{
+  "status": "CAP_G_ONLY_VERIFIED",
+  "oldShape": [
+    16,
+    16,
+    4
+  ],
+  "newShape": [
+    1024,
+    1024,
+    4
+  ],
+  "preservedConstantRBA": [
+    0,
+    77,
+    0
+  ],
+  "oldGMin": 31,
+  "maxGUnchanged": 31,
+  "newNonzeroGFraction": 0.05088043212890625,
+  "otherManifestMaterialFieldsIdentical": true
+}

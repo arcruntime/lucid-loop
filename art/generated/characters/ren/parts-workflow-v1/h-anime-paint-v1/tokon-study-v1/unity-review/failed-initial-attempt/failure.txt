@@ -1,0 +1,3 @@
+System.InvalidOperationException: Reference preparation failed.
+  at LucidLoop.CharacterArt.RenTokonReviewController+<Capture>d__26.MoveNext () [0x00a13] in C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Assets\CharacterArt\Runtime\RenTokonReviewController.cs:180 
+  at LucidLoop.CharacterArt.RenTokonReviewController+<Start>d__25.MoveNext () [0x000ba] in C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Assets\CharacterArt\Runtime\RenTokonReviewController.cs:117 

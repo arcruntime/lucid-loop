@@ -1,0 +1,217 @@
+{
+  "status": "PROVISIONAL_REFINED_CONTROL_BASELINE_NOT_FINAL_STYLE",
+  "rootReview": "Root inspected front, quarter, profile, club and head-turn and selected refined controls as next provisional baseline. Eyes remain rejected; no scene/art promotion.",
+  "sourceSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+  "manifestSha256": "bf2cbb3fdc821d714321bd905bbe8375320f2976910158842cffc6ab525505d8",
+  "runtimeSha256": "965de450c3da582f14c619e0645aef9649063500d82b885b881225f021727a91",
+  "builderSha256": "a6f8b7d857d58a4b0c8b2679c834229ab63b5de84525555ee156cb04b2f48b5f",
+  "graphicsApi": "Direct3D11",
+  "unlitEquality": {
+    "modes": [
+      "previous-npr",
+      "tokon-original-controls",
+      "tokon-refined-controls"
+    ],
+    "pixels": [
+      1536,
+      1536
+    ],
+    "identical": true,
+    "maxByteDifference": 0,
+    "meanByteDifference": 0,
+    "method": "Independent NumPy equality of all decoded RGB PNG pixels; source paints/tints match, closedWeight0."
+  },
+  "matchedTriples": [
+    {
+      "label": "rest-front.png",
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "rest-quarter.png",
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "rest-profile.png",
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "unlit.png",
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "partial-blink-gaze.png",
+      "poseSha256": "7641c3d81b7af46b31d510c4d2bf0ad462d17a3d316bf87f6278852095e1e22b",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "full-blink.png",
+      "poseSha256": "87c6627e8258d60e32757c190e28c82d8fc1a0d9ebbb42b5d03cbbf23a20ce1f",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "open-A.png",
+      "poseSha256": "461bc95631419b05462d6e1b560612c230a131486a68057ba150a799e363a631",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "head-turn.png",
+      "poseSha256": "96e21086400fca76cce06e34cd07a9c084ecc3564532c821ecea845005eb93c3",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "club-a.png",
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "samePoseCameraLighting": true
+    },
+    {
+      "label": "club-b.png",
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "samePoseCameraLighting": true
+    }
+  ],
+  "runtimeAssertions": {
+    "sameGeometryAcrossModes": true,
+    "perPixelAdditionalLights": true,
+    "materialModeAndUnlitAsserted": true,
+    "animatedFaceFrameAsserted": true,
+    "controlMapBindingsAsserted": true,
+    "unsupportedClosedPaintGuardPassed": true
+  },
+  "oralMaterialProvenance": [
+    {
+      "sourceMaterial": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-H_StudyCavity.mat",
+      "semanticCategory": "OralPreserved",
+      "presetCategoryUsedByInitialTokonConversion": "Eye",
+      "actualCull": 0,
+      "maskRevisionChangesOralShading": false,
+      "clarification": "Original source oral tint retained; initial Tokon conversion reused Eye fallback preset. Both Tokon mask variants preserve these same settings. This does not imply the older PaintedAnimeNPR shader itself is used for Tokon oral draws."
+    },
+    {
+      "sourceMaterial": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-H_StudyEnamel.mat",
+      "semanticCategory": "OralPreserved",
+      "presetCategoryUsedByInitialTokonConversion": "Eye",
+      "actualCull": 0,
+      "maskRevisionChangesOralShading": false,
+      "clarification": "Original source oral tint retained; initial Tokon conversion reused Eye fallback preset. Both Tokon mask variants preserve these same settings. This does not imply the older PaintedAnimeNPR shader itself is used for Tokon oral draws."
+    },
+    {
+      "sourceMaterial": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-H_StudyTongue.mat",
+      "semanticCategory": "OralPreserved",
+      "presetCategoryUsedByInitialTokonConversion": "Eye",
+      "actualCull": 0,
+      "maskRevisionChangesOralShading": false,
+      "clarification": "Original source oral tint retained; initial Tokon conversion reused Eye fallback preset. Both Tokon mask variants preserve these same settings. This does not imply the older PaintedAnimeNPR shader itself is used for Tokon oral draws."
+    }
+  ],
+  "visualObservations": [
+    "Refined face R coverage and .90 face response remove the jagged lower-lip/chin band in the captured views.",
+    "Neck/ear bands remain; no global face-normal replacement is applied to all skin.",
+    "Rejected orbital geometry/pigment bands and source fragments remain visible.",
+    "Large cap highlight remains unchanged and is not accepted; a separate cap-control study may follow.",
+    "Closed paint is separate from primary shader comparison and produces weights1/.5/0/0 at jaw0/.375/.75/1; non-jaw unsupported-expression guard disables it."
+  ],
+  "shaderCompiler": "Both NPR and Ink compile without ShaderUtil errors; actual Direct3D11 forward/main-shadow/per-pixel-additional paths rendered.",
+  "srpBatcher": "ShaderUtil code1: Not initialized (). Unverified.",
+  "outline": "Shader compiled only; no outline shell is included in this baseline.",
+  "sourceVideo": "Reference audio disabled. First preparation failed; identical-build retry passed. Static pose captures do not claim full reference animation verification.",
+  "mainUnityWrites": false,
+  "mainScenePromoted": false,
+  "phonePerformanceMeasured": false,
+  "localPlayer": ".local/ren-tokon-review-v2/RenTokonReview.exe",
+  "rawCaptureFolder": ".local/ren-tokon-review-v2/live-review-retry",
+  "curation": "22 representative PNGs; full34-frame evidence references additional raw PNGs retained locally. Only one of the three identical unlit images is duplicated here.",
+  "artifacts": [
+    {
+      "path": "tokon-original-controls--rest-front.png",
+      "sha256": "2ee45c7e5e3631bdfeefd1f92df19ca881f5b275512003c6ac816fe8b53434d0"
+    },
+    {
+      "path": "tokon-original-controls--rest-quarter.png",
+      "sha256": "92b0e6907c49e87bec04cc30da71ef577cd6d596b4415de2a349f8890b369d33"
+    },
+    {
+      "path": "tokon-original-controls--rest-profile.png",
+      "sha256": "6e1a4b0c976710f20eace53b2cbaad2fbed9d5853c2581ea9de167b7923c1194"
+    },
+    {
+      "path": "tokon-original-controls--club-a.png",
+      "sha256": "0f24aa3029f2cb651ab52392da012f969db980dbf18b23aea2fdfa2077aad74a"
+    },
+    {
+      "path": "tokon-original-controls--club-b.png",
+      "sha256": "89fe4dafd68ce2cc052ac1b39fcfd2cc862b996963479d9482cf4739ccb46fc0"
+    },
+    {
+      "path": "tokon-original-controls--head-turn.png",
+      "sha256": "d203d2f92af89e57e45bf78fe6da0d4b7180c4b272d15c03d54f93fcf1de7b69"
+    },
+    {
+      "path": "tokon-refined-controls--rest-front.png",
+      "sha256": "28ce7aeff9ac07f3701063fe03055a1cc9a69543bc4472f144958a694f429f36"
+    },
+    {
+      "path": "tokon-refined-controls--rest-quarter.png",
+      "sha256": "af652d90d0b9b05c1f9ff0372bdbf72942da960b6d90e260d8b24d97c1b067f1"
+    },
+    {
+      "path": "tokon-refined-controls--rest-profile.png",
+      "sha256": "bc9775e989e0308c8853aca0019dfe36738fba2e573ae5168e2a2bf1270b6579"
+    },
+    {
+      "path": "tokon-refined-controls--club-a.png",
+      "sha256": "6bff525ff34f8c5435a3b1e00aea9123bc46edca01fe3f982ea6b6da153c6b26"
+    },
+    {
+      "path": "tokon-refined-controls--club-b.png",
+      "sha256": "4b1c9982ab23eb315d00d3233c61840b437c3a0df312ddc8d38b9051005fa2c2"
+    },
+    {
+      "path": "tokon-refined-controls--head-turn.png",
+      "sha256": "98b9d5a495069e1728ba6b8660911aa675f44add96c02efcc8b04a456da3b3cf"
+    },
+    {
+      "path": "previous-npr--rest-front.png",
+      "sha256": "650ae9f6f86bb24dbc49c7b2123b5fd1b56dda60e38058848eb19e5ef6a0b8ee"
+    },
+    {
+      "path": "previous-npr--rest-quarter.png",
+      "sha256": "a3e5047c1e80672a913e691daae191aa1d095a4daf6747ed575d8739500b3040"
+    },
+    {
+      "path": "previous-npr--rest-profile.png",
+      "sha256": "0fc7f31a8f689737deeb0307795517490f9f318d5bb43b4e1ed23d69912a335b"
+    },
+    {
+      "path": "previous-npr--unlit.png",
+      "sha256": "26c0e71fa57e4a6173dce3245750d0916ea790241ec55b292008703573b6fe60"
+    },
+    {
+      "path": "tokon-refined-controls--partial-blink-gaze.png",
+      "sha256": "1bff646e0df9f1a734914957b87174fe8fb5feef31d00ad89e07d1b34b541d9b"
+    },
+    {
+      "path": "tokon-refined-controls--full-blink.png",
+      "sha256": "72a516b5341e6f1ee6cc1decbd353edfdd70b31bba8881be01578ba98abb7b2b"
+    },
+    {
+      "path": "tokon-refined-controls--open-A.png",
+      "sha256": "30af80d6ffe538a20bab7a1c4ccdffb3d8af55fd12d0ed45a402711fb7b671ee"
+    },
+    {
+      "path": "tokon-refined-paint-diagnostic--closed-paint-jaw-0.000.png",
+      "sha256": "2d279a8d09ec6eb18a861bbccfd0097c1a34c96257efedc2a2cad10343bf4652"
+    },
+    {
+      "path": "tokon-refined-paint-diagnostic--closed-paint-jaw-0.375.png",
+      "sha256": "5077331c36fc8a0de22aa3e298519ea1ce1ca06262ddb9ec39fa16a9f5c04838"
+    },
+    {
+      "path": "tokon-refined-paint-diagnostic--closed-paint-jaw-1.000.png",
+      "sha256": "30af80d6ffe538a20bab7a1c4ccdffb3d8af55fd12d0ed45a402711fb7b671ee"
+    }
+  ]
+}

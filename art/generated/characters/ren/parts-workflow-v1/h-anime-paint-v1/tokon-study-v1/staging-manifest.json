@@ -1,0 +1,1008 @@
+{
+  "scope": "Frozen Tokon V2 face-mask and V3 cap-mask source/maps/GPU-evidence checkpoint. Diagnostic only; refined face and placed cap are provisional. Rejected source eyes remain unchanged. No old H production scene promotion.",
+  "stageOnly": [
+    {
+      "path": "Unity/Assets/CharacterArt/NPR.meta",
+      "role": "Unity folder GUID dependency",
+      "gitState": "already-tracked",
+      "bytes": 172,
+      "sha256": "3a75165aa3392b2146f2a7bf95b42510a163d190b0498e948359b3c5ddb9ef20",
+      "gitStoredSha256": "3a75165aa3392b2146f2a7bf95b42510a163d190b0498e948359b3c5ddb9ef20"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/NPR/TokonStudy.meta",
+      "role": "Unity folder GUID dependency",
+      "gitState": "required-untracked",
+      "bytes": 172,
+      "sha256": "11a5372fba1d8de04dfb51955eab22dfec9b6f01bea081fa627ea897b31577b8",
+      "gitStoredSha256": "11a5372fba1d8de04dfb51955eab22dfec9b6f01bea081fa627ea897b31577b8"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/NPR/TokonStudy/RenTokonInk.shader",
+      "role": "Project-owned shader and Unity meta; must match compiled snapshot hashes",
+      "gitState": "required-untracked",
+      "bytes": 2830,
+      "sha256": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+      "gitStoredSha256": "557c3e7c9d16b92c848cc45d3ccdcdd8d0b0125cb7ba231a48fff4e5ca75495f",
+      "gitStorage": "CRLF normalized to LF"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/NPR/TokonStudy/RenTokonInk.shader.meta",
+      "role": "Project-owned shader and Unity meta; must match compiled snapshot hashes",
+      "gitState": "required-untracked",
+      "bytes": 204,
+      "sha256": "939aaf36fcd84040e8bd00c1e508537bd2bc37002d67b330a7fea858692fcda1",
+      "gitStoredSha256": "939aaf36fcd84040e8bd00c1e508537bd2bc37002d67b330a7fea858692fcda1"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl",
+      "role": "Project-owned shader and Unity meta; must match compiled snapshot hashes",
+      "gitState": "required-untracked",
+      "bytes": 9188,
+      "sha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a",
+      "gitStoredSha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl.meta",
+      "role": "Project-owned shader and Unity meta; must match compiled snapshot hashes",
+      "gitState": "required-untracked",
+      "bytes": 161,
+      "sha256": "31665044bad3feb1f8c258505d61ef9b956c028d74951daae333eba4128d4187",
+      "gitStoredSha256": "31665044bad3feb1f8c258505d61ef9b956c028d74951daae333eba4128d4187"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.shader",
+      "role": "Project-owned shader and Unity meta; must match compiled snapshot hashes",
+      "gitState": "required-untracked",
+      "bytes": 5149,
+      "sha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+      "gitStoredSha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.shader.meta",
+      "role": "Project-owned shader and Unity meta; must match compiled snapshot hashes",
+      "gitState": "required-untracked",
+      "bytes": 204,
+      "sha256": "c229dba752c73c47bee90ab42c2c7973bd77cac7290bb44a6520b507aee9038d",
+      "gitStoredSha256": "c229dba752c73c47bee90ab42c2c7973bd77cac7290bb44a6520b507aee9038d"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/README.md",
+      "role": "Shader category contract",
+      "gitState": "required-untracked",
+      "bytes": 6473,
+      "sha256": "78c334fbbb80e514c8ad7e919e1014d4dd340428db1e8f4906287c70c164100d",
+      "gitStoredSha256": "95cd30d185939431acd7c52bd45cfbeb86f2c07adacebc3f877faeb6a46dcc75",
+      "gitStorage": "CRLF normalized to LF"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/ren-tokon-presets.json",
+      "role": "Shader category contract",
+      "gitState": "required-untracked",
+      "bytes": 10954,
+      "sha256": "ad599105bb5d9a1722f503bb2888e1c0017bad002ee5e66f533c918c6647d6dd",
+      "gitStoredSha256": "ad599105bb5d9a1722f503bb2888e1c0017bad002ee5e66f533c918c6647d6dd"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/accessory-map-contract.json",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 2027,
+      "sha256": "7aba8779d0b2e1dd8528b1a8a0683688e1a6b45326d4bc723eda0650902ec679",
+      "gitStoredSha256": "7aba8779d0b2e1dd8528b1a8a0683688e1a6b45326d4bc723eda0650902ec679"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/map-contract.json",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 522301,
+      "sha256": "8a5b75a9abdf45ad65386a773f6d7ae7c0f84dc3bb694fed826ffd292a304beb",
+      "gitStoredSha256": "8a5b75a9abdf45ad65386a773f6d7ae7c0f84dc3bb694fed826ffd292a304beb"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_Cap_V2_Cloth_Controls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 271,
+      "sha256": "ec7df07c27c8371b80ca274de6c77d2a082d84e1bf94d8d83a5cc6a1243a75bf",
+      "gitStoredSha256": "50fc88858650b546eb3d1c14fb132d50e9cc8cba89d08664d6265792544f7f72",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_Cap_V2_Cloth_Shadow.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 1254744,
+      "sha256": "9a61268d644c10a3e439a871b2eb2798447f6e13aeb4a56a91eb302a4e8ebf77",
+      "gitStoredSha256": "2fe3d556ff8bc6ff1cab73c918e2e0d482ea1b4369795c39b34ad59a2d6cf616",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Hair_Painted_PaleBlond_Controls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 271,
+      "sha256": "a350e5bbfe460347244bd57dbecfb11fe1c267497dc3225dd38f17345a72c143",
+      "gitStoredSha256": "412d79f9e526664a02662b2783d2e52ad355b7865519bae66b4809a223dee312",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Hair_Painted_PaleBlond_Shadow.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 3757916,
+      "sha256": "345d61ff51b1edda270c67efc67692845fde7ca84befc4b5978a47c70bc293be",
+      "gitStoredSha256": "6b8d34a347f13003205176f6a692fb343a4fa72bdbce3c046880380f86a8af38",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Skin0_ClosedShadow.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 837685,
+      "sha256": "a5721c1ec947a812690b2cbda2dea2341d031857c066f34506e4127772e8e93c",
+      "gitStoredSha256": "cac4d09a83649fdb71f7b0491da4993887088ec7a1a07657c363da3fdfa861ed",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Skin0_Controls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 179953,
+      "sha256": "4b61abba84fb423128283449eb92eab01ed95c6232ffe1a52a389eb84e42d720",
+      "gitStoredSha256": "20a7f3f538006e7e06b9a8cae2676071741d1dc00fd359404f16fa110f2b06da",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Skin0_OpenShadow.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 783651,
+      "sha256": "586e569150cd041058719cc0eb2c7a0b747752e6ea21db0229c70bb6e5e7e8e7",
+      "gitStoredSha256": "2cc2364d85e688392c382c2a4fb5a1390eccf0c2a47ea610d2f75be08da9f3ea",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Skin1_Controls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 70137,
+      "sha256": "8e61c01fdaae988302399bc3b634ca09010c8484785524190e6539ab17577c63",
+      "gitStoredSha256": "c5f0d459705e8ec8542143530f213491bea4007ca2656f45df444d786a0ef54c",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Skin1_OpenShadow.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 21168,
+      "sha256": "ef56ebea5f765ba8bf7ffdee149d0bf278fd4284fa4215b8987883334c156fe3",
+      "gitStoredSha256": "c934da913df1a0cd737a66ef3eb92684f31a530157dd721b2051058d9f4f658f",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Skin2_Controls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 10404,
+      "sha256": "74fd449c204f1765d41519175b5b77aa839d82d86e96922eafcf774d0388f74a",
+      "gitStoredSha256": "4732635fe3fec0874a372df49d221ff3f541bd2d91e976448ec70e2bf083c386",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps/Ren_H_Skin2_OpenShadow.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 15565,
+      "sha256": "8f68fb18e2848656675fdd795e8c60c95666e0c2591d42ce68833cbb325f1943",
+      "gitStoredSha256": "d300ed8b331292947a724dce269f73254b3071ea98bec969a4517c10525ac2b2",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps-face-v2/map-contract.json",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 829585,
+      "sha256": "1bdc01df23b83eb39df39b7b641c0785aa73263204eeed80869bb5f96bdf79f5",
+      "gitStoredSha256": "1bdc01df23b83eb39df39b7b641c0785aa73263204eeed80869bb5f96bdf79f5"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps-face-v2/Ren_H_Skin0_Controls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 218777,
+      "sha256": "e45237a76c7c39a014b93dd818a5b5aabdc9bcae24f5f59d50ecd364c3ebb4ed",
+      "gitStoredSha256": "ba18f315ceb52c79616adcb18563e59a68cd686fb95e63b48a6144f8846b99db",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps-face-v2/Ren_H_Skin1_Controls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 73989,
+      "sha256": "dec1b97601655a60578ea71fa031b7db9297bc4160fd00f3edfa7f798f72c815",
+      "gitStoredSha256": "5d63a0a2baa2063eea40c4fa2b8c636bbf84c79e51296e66b9109f5ceeeea528",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/maps-face-v2/Ren_H_Skin2_Controls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 10404,
+      "sha256": "74fd449c204f1765d41519175b5b77aa839d82d86e96922eafcf774d0388f74a",
+      "gitStoredSha256": "4732635fe3fec0874a372df49d221ff3f541bd2d91e976448ec70e2bf083c386",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/cap-control-contract.json",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 1188,
+      "sha256": "f19c89eeaa091aa96faabba4b853f852dd849994dff972217e7a49d003d90af2",
+      "gitStoredSha256": "f19c89eeaa091aa96faabba4b853f852dd849994dff972217e7a49d003d90af2"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/README.md",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 1372,
+      "sha256": "8b0141bbe177a55d56f818e3c6c8047df0463eb1a602cfa215158d57e1f46901",
+      "gitStoredSha256": "8b0141bbe177a55d56f818e3c6c8047df0463eb1a602cfa215158d57e1f46901"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/Ren_Cap_SeamHighlightControls.png",
+      "role": "Frozen map bytes and provenance contract",
+      "gitState": "required-untracked",
+      "bytes": 28456,
+      "sha256": "64775ed0ff290029904be007690d75aca1aa762bd957a994481d61368f0174bb",
+      "gitStoredSha256": "258676e46d5699184b52518de2d0fa2e9898610a812e8bf96bccb15887bc27c8",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/FaceControlsV2.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 829585,
+      "sha256": "1bdc01df23b83eb39df39b7b641c0785aa73263204eeed80869bb5f96bdf79f5",
+      "gitStoredSha256": "1bdc01df23b83eb39df39b7b641c0785aa73263204eeed80869bb5f96bdf79f5"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/previous-npr--rest-front.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 635484,
+      "sha256": "650ae9f6f86bb24dbc49c7b2123b5fd1b56dda60e38058848eb19e5ef6a0b8ee",
+      "gitStoredSha256": "f3930dbb47b4733702d46cb3b172c5e927efda347256e4b1d80a00bd8a0d0127",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/previous-npr--rest-profile.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 707968,
+      "sha256": "0fc7f31a8f689737deeb0307795517490f9f318d5bb43b4e1ed23d69912a335b",
+      "gitStoredSha256": "c360d0ad82e08a375ea63a9e38e6cb7c90d889cbde61c1fbe63d1b75cfb3f008",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/previous-npr--rest-quarter.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 691341,
+      "sha256": "a3e5047c1e80672a913e691daae191aa1d095a4daf6747ed575d8739500b3040",
+      "gitStoredSha256": "1e0beb826c4365a2239f01b8814b211d7dd5a73c327c18cbbf22f7b798627356",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/previous-npr--unlit.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 524193,
+      "sha256": "26c0e71fa57e4a6173dce3245750d0916ea790241ec55b292008703573b6fe60",
+      "gitStoredSha256": "7bd67a45ccd956733330b00048d2292859782c6b87485a0722c06a7f9d0ff774",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/README.md",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 3684,
+      "sha256": "d4f634bf356dfeb4161815e6ecbd88c2a7e1e76174ecaf3d35363e18f0ae7c59",
+      "gitStoredSha256": "d4f634bf356dfeb4161815e6ecbd88c2a7e1e76174ecaf3d35363e18f0ae7c59"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/RenTokonLiveEvidence.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 16606,
+      "sha256": "737d7eeb33c093f40c7e95198df786fd80a54697f531e1b3abec47d4109ffd14",
+      "gitStoredSha256": "737d7eeb33c093f40c7e95198df786fd80a54697f531e1b3abec47d4109ffd14"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/RenTokonManifest.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 10224,
+      "sha256": "bf2cbb3fdc821d714321bd905bbe8375320f2976910158842cffc6ab525505d8",
+      "gitStoredSha256": "bf2cbb3fdc821d714321bd905bbe8375320f2976910158842cffc6ab525505d8"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/RenTokonShaderAudit.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 602,
+      "sha256": "7f9a101ec5699e5f3c75c149bcdec5444fb37fafd6127679e6bc823e11a73599",
+      "gitStoredSha256": "7f9a101ec5699e5f3c75c149bcdec5444fb37fafd6127679e6bc823e11a73599"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/review-evidence.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 9627,
+      "sha256": "9c45d17f95850c332545129e8f24b45b5b0485af9adde62c6e91fd9ea50accde",
+      "gitStoredSha256": "9c45d17f95850c332545129e8f24b45b5b0485af9adde62c6e91fd9ea50accde"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-original-controls--club-a.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 607830,
+      "sha256": "0f24aa3029f2cb651ab52392da012f969db980dbf18b23aea2fdfa2077aad74a",
+      "gitStoredSha256": "006fb3d2a7f92eeac7d763574c76994b19daebce2e69ae87ab3df952a68c5445",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-original-controls--club-b.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 611175,
+      "sha256": "89fe4dafd68ce2cc052ac1b39fcfd2cc862b996963479d9482cf4739ccb46fc0",
+      "gitStoredSha256": "c16699e645cbf5cbdd4a57baeaaf5411ccb27efc5e560d7a40a3fd3d3b22cbc6",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-original-controls--head-turn.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 588152,
+      "sha256": "d203d2f92af89e57e45bf78fe6da0d4b7180c4b272d15c03d54f93fcf1de7b69",
+      "gitStoredSha256": "11289839088e012fd5f12af467fc5a482070525be254ecd2e79eaa9fa6107e5b",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-original-controls--rest-front.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 591576,
+      "sha256": "2ee45c7e5e3631bdfeefd1f92df19ca881f5b275512003c6ac816fe8b53434d0",
+      "gitStoredSha256": "3ca08e7448449a79a3b16072ef4531b6946d089d6a774616d5b1fcb6233b8d9b",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-original-controls--rest-profile.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 658839,
+      "sha256": "6e1a4b0c976710f20eace53b2cbaad2fbed9d5853c2581ea9de167b7923c1194",
+      "gitStoredSha256": "416b50476bda8fdca74cf47f8d0270454957d2387e036041efbe85632e73e46a",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-original-controls--rest-quarter.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 621099,
+      "sha256": "92b0e6907c49e87bec04cc30da71ef577cd6d596b4415de2a349f8890b369d33",
+      "gitStoredSha256": "afadf5917106c3a6bd48d50513d155214ad5513e37b10bb95e09110b5e5809f3",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--club-a.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 600136,
+      "sha256": "6bff525ff34f8c5435a3b1e00aea9123bc46edca01fe3f982ea6b6da153c6b26",
+      "gitStoredSha256": "52ca2cdcce2bb6779490f57b983650d71b28a6b1a49b7743d97e7c69f336f1bb",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--club-b.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 601641,
+      "sha256": "4b1c9982ab23eb315d00d3233c61840b437c3a0df312ddc8d38b9051005fa2c2",
+      "gitStoredSha256": "cf8d7b60b3c707145f97f4139ddbe1de3d5df43aced8405510e8f96f9af73412",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--full-blink.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 578207,
+      "sha256": "72a516b5341e6f1ee6cc1decbd353edfdd70b31bba8881be01578ba98abb7b2b",
+      "gitStoredSha256": "cffa98cd43bfd98acd5aff540248248b08c0ef261857de4139bcc9a6c773bcf5",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--head-turn.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 584427,
+      "sha256": "98b9d5a495069e1728ba6b8660911aa675f44add96c02efcc8b04a456da3b3cf",
+      "gitStoredSha256": "99aceaa929f25e7608142a321f80dd6eb6e284ae397e9d4326ef2ec953242d89",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--open-A.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 587218,
+      "sha256": "30af80d6ffe538a20bab7a1c4ccdffb3d8af55fd12d0ed45a402711fb7b671ee",
+      "gitStoredSha256": "0cccb7eba932e93f77b69b7fa985bf1914f0368612b8ad369bd2074c6ac8ce5e",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--partial-blink-gaze.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 582294,
+      "sha256": "1bff646e0df9f1a734914957b87174fe8fb5feef31d00ad89e07d1b34b541d9b",
+      "gitStoredSha256": "51615f4011422d1715ccbde82170c9c525597b9e675a78dac5e66adc59503a79",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--rest-front.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 584799,
+      "sha256": "28ce7aeff9ac07f3701063fe03055a1cc9a69543bc4472f144958a694f429f36",
+      "gitStoredSha256": "abf54ae42812c1c41b161174f88a381681ea46d22da049f8b834618aea3f4ed9",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--rest-profile.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 655849,
+      "sha256": "bc9775e989e0308c8853aca0019dfe36738fba2e573ae5168e2a2bf1270b6579",
+      "gitStoredSha256": "ed2d9db66740b89d44e3445aee8ae86c879fad034cc1be72e929127f2d97a8d4",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-controls--rest-quarter.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 613928,
+      "sha256": "af652d90d0b9b05c1f9ff0372bdbf72942da960b6d90e260d8b24d97c1b067f1",
+      "gitStoredSha256": "ecbc1bff3adbdb2568bcd2e6b816d2364ef02736d75d5ce2ad814d7d78d10b03",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-paint-diagnostic--closed-paint-jaw-0.000.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 600708,
+      "sha256": "2d279a8d09ec6eb18a861bbccfd0097c1a34c96257efedc2a2cad10343bf4652",
+      "gitStoredSha256": "35d96aab872241bda49555441a87473e7674c129fc8465352eeb9846f4806b3c",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-paint-diagnostic--closed-paint-jaw-0.375.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 595353,
+      "sha256": "5077331c36fc8a0de22aa3e298519ea1ce1ca06262ddb9ec39fa16a9f5c04838",
+      "gitStoredSha256": "e68827a739f4845950223c44641f57373e35b922e15993dfd1495b3273a6e9d1",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tokon-refined-paint-diagnostic--closed-paint-jaw-1.000.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 587218,
+      "sha256": "30af80d6ffe538a20bab7a1c4ccdffb3d8af55fd12d0ed45a402711fb7b671ee",
+      "gitStoredSha256": "0cccb7eba932e93f77b69b7fa985bf1914f0368612b8ad369bd2074c6ac8ce5e",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/failed-initial-attempt/attempt.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 794,
+      "sha256": "8591763962ce5091ed4d8ee8374b7db837624ebc59e9ee3ff1739df12fd78abf",
+      "gitStoredSha256": "8591763962ce5091ed4d8ee8374b7db837624ebc59e9ee3ff1739df12fd78abf"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/failed-initial-attempt/failure.txt",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 519,
+      "sha256": "9e2f402ebae85e12713519a8089bb131315d789a01a68a08f478a829522c645a",
+      "gitStoredSha256": "9f2bb04f7b45b056f720ff811bd659c6162d0acbe68fb7ef9c4b486764f36ceb",
+      "gitStorage": "CRLF normalized to LF"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tested-source/RenTokonInk.shader",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 2830,
+      "sha256": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+      "gitStoredSha256": "557c3e7c9d16b92c848cc45d3ccdcdd8d0b0125cb7ba231a48fff4e5ca75495f",
+      "gitStorage": "CRLF normalized to LF"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tested-source/RenTokonNPR.hlsl",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 9188,
+      "sha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a",
+      "gitStoredSha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tested-source/RenTokonNPR.shader",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 5149,
+      "sha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+      "gitStoredSha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tested-source/RenTokonReviewBuilder.cs",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 16782,
+      "sha256": "a6f8b7d857d58a4b0c8b2679c834229ab63b5de84525555ee156cb04b2f48b5f",
+      "gitStoredSha256": "a6f8b7d857d58a4b0c8b2679c834229ab63b5de84525555ee156cb04b2f48b5f"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tested-source/RenTokonReviewBuilder.cs.meta",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 59,
+      "sha256": "101aa3774753c7004b00dcb71242f2b527ff2dc1b7ff91e533464c2211285e03",
+      "gitStoredSha256": "101aa3774753c7004b00dcb71242f2b527ff2dc1b7ff91e533464c2211285e03"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tested-source/RenTokonReviewController.cs",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 15361,
+      "sha256": "965de450c3da582f14c619e0645aef9649063500d82b885b881225f021727a91",
+      "gitStoredSha256": "965de450c3da582f14c619e0645aef9649063500d82b885b881225f021727a91"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/unity-review/tested-source/RenTokonReviewController.cs.meta",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 59,
+      "sha256": "5775dbee4647638b51ec83e96273ab3a2cfdd09685ef4ac7a23a9342f87701f6",
+      "gitStoredSha256": "5775dbee4647638b51ec83e96273ab3a2cfdd09685ef4ac7a23a9342f87701f6"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-input-audit.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 338,
+      "sha256": "fecbde0a1e7409e7132a1728c169efe61596a8d0378a2f22c93ed63f07b87c39",
+      "gitStoredSha256": "fecbde0a1e7409e7132a1728c169efe61596a8d0378a2f22c93ed63f07b87c39"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-original-highlights--club-a.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 600136,
+      "sha256": "6bff525ff34f8c5435a3b1e00aea9123bc46edca01fe3f982ea6b6da153c6b26",
+      "gitStoredSha256": "52ca2cdcce2bb6779490f57b983650d71b28a6b1a49b7743d97e7c69f336f1bb",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-original-highlights--club-b.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 601641,
+      "sha256": "4b1c9982ab23eb315d00d3233c61840b437c3a0df312ddc8d38b9051005fa2c2",
+      "gitStoredSha256": "cf8d7b60b3c707145f97f4139ddbe1de3d5df43aced8405510e8f96f9af73412",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-original-highlights--head-turn.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 584427,
+      "sha256": "98b9d5a495069e1728ba6b8660911aa675f44add96c02efcc8b04a456da3b3cf",
+      "gitStoredSha256": "99aceaa929f25e7608142a321f80dd6eb6e284ae397e9d4326ef2ec953242d89",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-original-highlights--rest-front.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 584799,
+      "sha256": "28ce7aeff9ac07f3701063fe03055a1cc9a69543bc4472f144958a694f429f36",
+      "gitStoredSha256": "abf54ae42812c1c41b161174f88a381681ea46d22da049f8b834618aea3f4ed9",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-original-highlights--rest-profile.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 655849,
+      "sha256": "bc9775e989e0308c8853aca0019dfe36738fba2e573ae5168e2a2bf1270b6579",
+      "gitStoredSha256": "ed2d9db66740b89d44e3445aee8ae86c879fad034cc1be72e929127f2d97a8d4",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-original-highlights--rest-quarter.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 613928,
+      "sha256": "af652d90d0b9b05c1f9ff0372bdbf72942da960b6d90e260d8b24d97c1b067f1",
+      "gitStoredSha256": "ecbc1bff3adbdb2568bcd2e6b816d2364ef02736d75d5ce2ad814d7d78d10b03",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-original-highlights--unlit.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 524193,
+      "sha256": "26c0e71fa57e4a6173dce3245750d0916ea790241ec55b292008703573b6fe60",
+      "gitStoredSha256": "7bd67a45ccd956733330b00048d2292859782c6b87485a0722c06a7f9d0ff774",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-placed-highlights--club-a.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 599706,
+      "sha256": "a71dbb6db2a5658552b3c30bca6aec2c863de77dd6fdf292eb7800c4b28d60c2",
+      "gitStoredSha256": "cfeb35ca40895fccd6af38e2bb3235b6ef1069889f5cfb604c459b1a975c1826",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-placed-highlights--club-b.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 600630,
+      "sha256": "a482a302df09092b017513ed0d61ac4b6bdde533f7321409ce2bac8809c5283e",
+      "gitStoredSha256": "54880f9c95984588647620386efb254c53929a3340ffd096380d43fe4974e1d3",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-placed-highlights--head-turn.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 583311,
+      "sha256": "1206ef41210ad27f4bc31f91f760da657c10005e643fd5de479abf93a9a587dd",
+      "gitStoredSha256": "63b4aedc1f7e8f351330a21b7f6913b9dccd416a34fcf8f3db88252803a1293f",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-placed-highlights--rest-front.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 584187,
+      "sha256": "746cc61259ca9e8d9a69be63f5a04930679a99ed118f6706138208c090212860",
+      "gitStoredSha256": "132f2d507584477de12d4313b820395f42e276defc0e5a1b758b28c426ccbf8d",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-placed-highlights--rest-profile.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 653358,
+      "sha256": "fafc89fa71abd7792894a4a78b5c69c3824da0c1994b84dab61f0d21d4f5c639",
+      "gitStoredSha256": "32b49eb583dab56db75fce5cf2576973312dfe243b6a055bba4c449ac4d20ce9",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-placed-highlights--rest-quarter.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 613345,
+      "sha256": "f3afbe42dd5d61b8273d08c05f185a6d67bf88b1b6dd4a595a8440853b199706",
+      "gitStoredSha256": "46519424cbb8daed3c703b67d1ebb539e42dc4bf95b95506e507aa7ffd24114f",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/cap-placed-highlights--unlit.png",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 524193,
+      "sha256": "26c0e71fa57e4a6173dce3245750d0916ea790241ec55b292008703573b6fe60",
+      "gitStoredSha256": "7bd67a45ccd956733330b00048d2292859782c6b87485a0722c06a7f9d0ff774",
+      "gitStorage": "LFS pointer; fetched asset bytes match sha256"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/CapControlsV1.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 1188,
+      "sha256": "f19c89eeaa091aa96faabba4b853f852dd849994dff972217e7a49d003d90af2",
+      "gitStoredSha256": "f19c89eeaa091aa96faabba4b853f852dd849994dff972217e7a49d003d90af2"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/README.md",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 1528,
+      "sha256": "d8e66ee83f423f443a969c7b3a1d5ebb6d61192b4a47731c576f05606615d53b",
+      "gitStoredSha256": "d8e66ee83f423f443a969c7b3a1d5ebb6d61192b4a47731c576f05606615d53b"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/RenTokonCapLiveEvidence.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 7649,
+      "sha256": "769b17d5fd290c63231357d3c5042e68640ae95ce02c6f1cd0a3d927b87a3eaf",
+      "gitStoredSha256": "769b17d5fd290c63231357d3c5042e68640ae95ce02c6f1cd0a3d927b87a3eaf"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/RenTokonManifest.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 10690,
+      "sha256": "93b3194de05df5df93575d390fbf8071d8d948640c2c28ec2579086884eaa961",
+      "gitStoredSha256": "93b3194de05df5df93575d390fbf8071d8d948640c2c28ec2579086884eaa961"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/RenTokonShaderAudit.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 602,
+      "sha256": "7f9a101ec5699e5f3c75c149bcdec5444fb37fafd6127679e6bc823e11a73599",
+      "gitStoredSha256": "7f9a101ec5699e5f3c75c149bcdec5444fb37fafd6127679e6bc823e11a73599"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/review-evidence.json",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 6137,
+      "sha256": "d52e2481a9c1d55a47a408d6ba29878da97e5b9468065491e813e117a63fc604",
+      "gitStoredSha256": "d52e2481a9c1d55a47a408d6ba29878da97e5b9468065491e813e117a63fc604"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/tested-source/RenTokonInk.shader",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 2830,
+      "sha256": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+      "gitStoredSha256": "557c3e7c9d16b92c848cc45d3ccdcdd8d0b0125cb7ba231a48fff4e5ca75495f",
+      "gitStorage": "CRLF normalized to LF"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/tested-source/RenTokonNPR.hlsl",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 9188,
+      "sha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a",
+      "gitStoredSha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/tested-source/RenTokonNPR.shader",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 5149,
+      "sha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+      "gitStoredSha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/tested-source/RenTokonReviewBuilder.cs",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 17123,
+      "sha256": "57b2d3c220d24497d0386c07e7d8176473bb0bd852feb498a6e2be77120de0cd",
+      "gitStoredSha256": "57b2d3c220d24497d0386c07e7d8176473bb0bd852feb498a6e2be77120de0cd"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/tested-source/RenTokonReviewBuilder.cs.meta",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 59,
+      "sha256": "101aa3774753c7004b00dcb71242f2b527ff2dc1b7ff91e533464c2211285e03",
+      "gitStoredSha256": "101aa3774753c7004b00dcb71242f2b527ff2dc1b7ff91e533464c2211285e03"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/tested-source/RenTokonReviewController.cs",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 19643,
+      "sha256": "6bf07c5100a5e918d52e0b460bccf0f3ff29a6c7f8fba1b73f70c9ba3d208775",
+      "gitStoredSha256": "6bf07c5100a5e918d52e0b460bccf0f3ff29a6c7f8fba1b73f70c9ba3d208775"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/tested-source/RenTokonReviewController.cs.meta",
+      "role": "Actual GPU evidence and exact compiled source snapshot; not a main Unity scene",
+      "gitState": "required-untracked",
+      "bytes": 59,
+      "sha256": "5775dbee4647638b51ec83e96273ab3a2cfdd09685ef4ac7a23a9342f87701f6",
+      "gitStoredSha256": "5775dbee4647638b51ec83e96273ab3a2cfdd09685ef4ac7a23a9342f87701f6"
+    },
+    {
+      "path": "tools/character_art/bake_ren_h_tokon_maps.py",
+      "role": "Map derivation source; upstream Blender inputs remain separately recorded prerequisites",
+      "gitState": "required-untracked",
+      "bytes": 7592,
+      "sha256": "070d3702bea8cbb7a79a7a0b3db796d4677b039878acbeeaae2155f5eab679c2",
+      "gitStoredSha256": "650c582ce39cd4dd221bec50f34cd83181db3c7846586cc2da4daab37cf8a377",
+      "gitStorage": "CRLF normalized to LF"
+    },
+    {
+      "path": "tools/character_art/bake_ren_h_tokon_accessory_maps.py",
+      "role": "Map derivation source; upstream Blender inputs remain separately recorded prerequisites",
+      "gitState": "required-untracked",
+      "bytes": 3367,
+      "sha256": "9562d947bf993706f9d67918ecbb2e0e35781b428d8d3746d5bc63f491743b4b",
+      "gitStoredSha256": "5ad86451a99e4df7b880f3641d20fdfe5e7b77f4d3af63ff6c0714d439082958",
+      "gitStorage": "CRLF normalized to LF"
+    },
+    {
+      "path": "tools/character_art/bake_ren_h_tokon_face_controls_v2.py",
+      "role": "Map derivation source; upstream Blender inputs remain separately recorded prerequisites",
+      "gitState": "required-untracked",
+      "bytes": 6585,
+      "sha256": "b899da47618c6fa3f6a656057010b9119fb789a14790f151e0f45651630efe47",
+      "gitStoredSha256": "b18ab68912d88e2c89249ed6590defcf341c2a5ed56555468dc138b7baf054c9",
+      "gitStorage": "CRLF normalized to LF"
+    },
+    {
+      "path": "tools/character_art/bake_ren_cap_highlight_controls.py",
+      "role": "Map derivation source; upstream Blender inputs remain separately recorded prerequisites",
+      "gitState": "required-untracked",
+      "bytes": 4268,
+      "sha256": "7585acd7b0fa0c6b53f88d6ca905e2e50428e5f490e33e216ad8e3621b5b1551",
+      "gitStoredSha256": "84d1d5fe471158ea7165fa8cf2a1fb7678331bf4aa663edebd0d2742c62c5095",
+      "gitStorage": "CRLF normalized to LF"
+    }
+  ],
+  "stageFileCount": 99,
+  "stageBytes": 31413573,
+  "alreadyTrackedRebuildCodeAndVersionDependencies": [
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceAnimationController.cs",
+      "role": "Historical H/scratch player rebuild code dependency; not automatically staged by this map checkpoint",
+      "gitState": "already-tracked",
+      "bytes": 31440,
+      "sha256": "df8594fbf3c525585bf9039260cd95a0e8af2b9ae65fe779bac3a929703b5542"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceCapAttachment.cs",
+      "role": "Historical H/scratch player rebuild code dependency; not automatically staged by this map checkpoint",
+      "gitState": "already-tracked",
+      "bytes": 9065,
+      "sha256": "6296c3a229e9c1ce7d48b1775b8a6adf56fd411ccd0a9167cb49bca5690f3ea3"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceVideoTransport.cs",
+      "role": "Historical H/scratch player rebuild code dependency; not automatically staged by this map checkpoint",
+      "gitState": "already-tracked",
+      "bytes": 7347,
+      "sha256": "efd996b0591141856b907ea6724d5c9fe0c8b950a348f54819e150a88d578bd1"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceCaptureProbe.cs",
+      "role": "Historical H/scratch player rebuild code dependency; not automatically staged by this map checkpoint",
+      "gitState": "required-untracked",
+      "bytes": 12108,
+      "sha256": "a22f6386c9805172a88526bdb8f53fb33cabeddc7483af778c65326947be0f2a"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenNprReviewController.cs",
+      "role": "Historical H/scratch player rebuild code dependency; not automatically staged by this map checkpoint",
+      "gitState": "already-tracked",
+      "bytes": 18625,
+      "sha256": "b0cd23114dc9ac0acddaa54be84945795e7995a24d87858884ab9463c0a026e2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceAnimationBuilder.cs",
+      "role": "Historical H/scratch player rebuild code dependency; not automatically staged by this map checkpoint",
+      "gitState": "already-tracked",
+      "bytes": 35634,
+      "sha256": "80e8468d9dc789f449537c175993d0b69c064c3c810f76030dab9470170d9a2d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceImportBuilder.cs",
+      "role": "Historical H/scratch player rebuild code dependency; not automatically staged by this map checkpoint",
+      "gitState": "required-untracked",
+      "bytes": 4147,
+      "sha256": "89eee05099efa9e67b7bd51b9f80d5c7d0d8f42586f9f0a6bdb02871e28f9723"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenNprReviewBuilder.cs",
+      "role": "Historical H/scratch player rebuild code dependency; not automatically staged by this map checkpoint",
+      "gitState": "already-tracked",
+      "bytes": 20599,
+      "sha256": "b2e619e481a13ba92c75dccc7a91645458ed9cd60d52f9084321b17f47747427"
+    },
+    {
+      "path": "Unity/Packages/manifest.json",
+      "role": "Unity/URP version dependency",
+      "gitState": "already-tracked",
+      "bytes": 2120,
+      "sha256": "8a6a100822b59469a695dcff961e4c0b3cc194724a0d50123e6571c9f381ab57"
+    },
+    {
+      "path": "Unity/Packages/packages-lock.json",
+      "role": "Unity/URP version dependency",
+      "gitState": "already-tracked",
+      "bytes": 11718,
+      "sha256": "3c3176c9c299f7dee15d3679e17f9a4105b77617270c067f8adb70d42d66775c"
+    },
+    {
+      "path": "Unity/ProjectSettings/ProjectVersion.txt",
+      "role": "Unity/URP version dependency",
+      "gitState": "already-tracked",
+      "bytes": 85,
+      "sha256": "7a43a06dfe51c4e3933c5a7848320925ce96e667f8c7736557d13a02007e9860"
+    }
+  ],
+  "notIncludedRequiredForFreshPlayerRebuild": [
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-complete-head-v1/Ren_H_CompleteHead_Review.fbx",
+      "role": "Frozen actual H build input; separate diagnostic assembly package, not included in minimal shader/map checkpoint",
+      "gitState": "required-untracked",
+      "bytes": 9240988,
+      "sha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-complete-head-v1/material-contract.json",
+      "role": "Frozen actual H build input; separate diagnostic assembly package, not included in minimal shader/map checkpoint",
+      "gitState": "required-untracked",
+      "bytes": 14409,
+      "sha256": "a486cad8efc1ffe13864f37b1a51930c15a4a18a9910f874f99feb18070f381d"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-complete-head-v1/control-contract.json",
+      "role": "Frozen actual H build input; separate diagnostic assembly package, not included in minimal shader/map checkpoint",
+      "gitState": "required-untracked",
+      "bytes": 12076,
+      "sha256": "378e08ecc9fb2db6e0a876f909b3b1cdcea44e3f68f940d1ab99ef954ec8b4d3"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-complete-head-v1/hierarchy-contract.json",
+      "role": "Frozen actual H build input; separate diagnostic assembly package, not included in minimal shader/map checkpoint",
+      "gitState": "required-untracked",
+      "bytes": 25122,
+      "sha256": "70bb21c61f137e6c79290ec482690d48a3b82fafb0114a4c78c4dcc5788baa67"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-complete-head-v1/exports.json",
+      "role": "Frozen actual H build input; separate diagnostic assembly package, not included in minimal shader/map checkpoint",
+      "gitState": "required-untracked",
+      "bytes": 813,
+      "sha256": "b786b30f1db26e3796a3db2dc6e32eb89998dce5d4e15a9a14da5e768346c0f8"
+    }
+  ],
+  "scratchScenePrerequisite": {
+    "asset": "Assets/CharacterArt/Generated/Preview/Scenes/RenHReferenceAnimation.unity",
+    "existsOnlyInAuthorizedScratch": true,
+    "requiredAssets": "The dedicated RenHReferenceAnimation source materials/textures, source manifest, VideoClip/timeline, pipeline and original artist reference. The captured Tokon manifest enumerates material/map references; these H generated assets are not promoted in this checkpoint."
+  },
+  "freshPlayerRebuildCompleteFromCheckpointAlone": false,
+  "reproducibilityScope": "Frozen exact shader/map inputs, tested controller/builder snapshots, runtime assertions and GPU PNGs are preserved. A new player build additionally requires reconstruction of the separately untracked historical H scene and its original inputs; no standalone checkout rebuild is claimed.",
+  "shaderMirrorChecks": {
+    "RenTokonNPR.shader": {
+      "expected": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+      "actual": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+      "matches": true
+    },
+    "RenTokonNPR.hlsl": {
+      "expected": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a",
+      "actual": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a",
+      "matches": true
+    },
+    "RenTokonInk.shader": {
+      "expected": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+      "actual": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+      "matches": true
+    }
+  },
+  "explicitExclusions": [
+    "All outline source/shell code/evidence (ongoing separate proof)",
+    "All .local executables/cache/log dumps",
+    "All generated H/Tokon scenes or prefabs under main Unity",
+    "Unreviewed eye derivatives or new production rig claims",
+    "Unrelated CharacterArt work"
+  ],
+  "stagingManifestSelf": "Include this staging-manifest.json and STAGING.md alongside the exact stageOnly list; no staging or commit has been performed by this agent.",
+  "hashEncoding": "sha256 records frozen working/tested bytes. gitStoredSha256 records Git blobs (LF-normalized text or verified LFS pointers). LFS asset OIDs match sha256 exactly."
+}

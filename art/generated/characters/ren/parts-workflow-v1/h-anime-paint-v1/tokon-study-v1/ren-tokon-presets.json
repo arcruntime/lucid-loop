@@ -1,0 +1,540 @@
+{
+  "shaderName": "LucidLoop/Characters/RenTokonNPR",
+  "status": "Uncompiled provisional material-category presets; no authored shadow/control maps yet",
+  "materials": [
+    {
+      "sourceName": "Skin",
+      "floats": [
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_UseControlMap",
+          "value": 0
+        },
+        {
+          "name": "_UseShadowMap",
+          "value": 0
+        },
+        {
+          "name": "_ClosedWeight",
+          "value": 0
+        },
+        {
+          "name": "_Threshold",
+          "value": 0.12
+        },
+        {
+          "name": "_BoundarySoftness",
+          "value": 0.015
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.18
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.2
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.8
+        },
+        {
+          "name": "_FaceCastShadowStrength",
+          "value": 0.15
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.985
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ControlFallback",
+          "linearRgba": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.72,
+            0.53,
+            0.5,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Lid",
+      "floats": [
+        {
+          "name": "_FaceMode",
+          "value": 0.45
+        },
+        {
+          "name": "_UseControlMap",
+          "value": 0
+        },
+        {
+          "name": "_UseShadowMap",
+          "value": 0
+        },
+        {
+          "name": "_ClosedWeight",
+          "value": 0
+        },
+        {
+          "name": "_Threshold",
+          "value": 0.12
+        },
+        {
+          "name": "_BoundarySoftness",
+          "value": 0.015
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.18
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.2
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.8
+        },
+        {
+          "name": "_FaceCastShadowStrength",
+          "value": 0.15
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.985
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ControlFallback",
+          "linearRgba": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.72,
+            0.53,
+            0.5,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Hair",
+      "floats": [
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_UseControlMap",
+          "value": 0
+        },
+        {
+          "name": "_UseShadowMap",
+          "value": 0
+        },
+        {
+          "name": "_ClosedWeight",
+          "value": 0
+        },
+        {
+          "name": "_Threshold",
+          "value": 0.12
+        },
+        {
+          "name": "_BoundarySoftness",
+          "value": 0.015
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.18
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.2
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.8
+        },
+        {
+          "name": "_FaceCastShadowStrength",
+          "value": 0.15
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.985
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ControlFallback",
+          "linearRgba": [
+            0,
+            0.35,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.56,
+            0.48,
+            0.4,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Cloth",
+      "floats": [
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_UseControlMap",
+          "value": 0
+        },
+        {
+          "name": "_UseShadowMap",
+          "value": 0
+        },
+        {
+          "name": "_ClosedWeight",
+          "value": 0
+        },
+        {
+          "name": "_Threshold",
+          "value": 0.12
+        },
+        {
+          "name": "_BoundarySoftness",
+          "value": 0.015
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.18
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.2
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.8
+        },
+        {
+          "name": "_FaceCastShadowStrength",
+          "value": 0.15
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.985
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ControlFallback",
+          "linearRgba": [
+            0,
+            0.15,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.35,
+            0.36,
+            0.43,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Metal",
+      "floats": [
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_UseControlMap",
+          "value": 0
+        },
+        {
+          "name": "_UseShadowMap",
+          "value": 0
+        },
+        {
+          "name": "_ClosedWeight",
+          "value": 0
+        },
+        {
+          "name": "_Threshold",
+          "value": 0.12
+        },
+        {
+          "name": "_BoundarySoftness",
+          "value": 0.015
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.18
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.2
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.8
+        },
+        {
+          "name": "_FaceCastShadowStrength",
+          "value": 0.15
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.985
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ControlFallback",
+          "linearRgba": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.38,
+            0.44,
+            0.53,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Eye",
+      "floats": [
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_UseControlMap",
+          "value": 0
+        },
+        {
+          "name": "_UseShadowMap",
+          "value": 0
+        },
+        {
+          "name": "_ClosedWeight",
+          "value": 0
+        },
+        {
+          "name": "_Threshold",
+          "value": 0.12
+        },
+        {
+          "name": "_BoundarySoftness",
+          "value": 0.015
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.18
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.2
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.8
+        },
+        {
+          "name": "_FaceCastShadowStrength",
+          "value": 0.15
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.985
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_Cull",
+          "value": 2
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ControlFallback",
+          "linearRgba": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.78,
+            0.8,
+            0.84,
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

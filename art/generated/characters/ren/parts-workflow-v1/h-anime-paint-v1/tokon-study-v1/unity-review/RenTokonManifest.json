@@ -1,0 +1,209 @@
+{
+  "sourceScene": "Assets/CharacterArt/Generated/Preview/Scenes/RenHReferenceAnimation.unity",
+  "sourceFbxAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx",
+  "sourceSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+  "shaderAsset": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.shader",
+  "shaderSha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+  "includeAsset": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl",
+  "includeSha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a",
+  "inkAsset": "Assets/CharacterArt/NPR/TokonStudy/RenTokonInk.shader",
+  "inkSha256": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+  "presetAsset": "Assets/CharacterArt/Generated/RenTokonReview/Contracts/ren-tokon-presets.json",
+  "presetSha256": "ad599105bb5d9a1722f503bb2888e1c0017bad002ee5e66f533c918c6647d6dd",
+  "materials": [
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-H_StudyCavity.mat",
+      "category": "Eye",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-H_StudyEnamel.mat",
+      "category": "Eye",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-H_StudyTongue.mat",
+      "category": "Eye",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat",
+      "category": "Skin",
+      "faceMode": 0.45,
+      "control": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_Controls.4b61abba84.png",
+        "sha256": "4b61abba84fb423128283449eb92eab01ed95c6232ffe1a52a389eb84e42d720",
+        "sRGB": false
+      },
+      "shadow": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_OpenShadow.586e569150.png",
+        "sha256": "586e569150cd041058719cc0eb2c7a0b747752e6ea21db0229c70bb6e5e7e8e7",
+        "sRGB": true
+      },
+      "baseOverride": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/image-0.9750e636f5.jpg",
+        "sha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce",
+        "sRGB": true
+      },
+      "closedBase": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_ClosedLip_BaseColor.25af841b45.png",
+        "sha256": "25af841b4553a84ababa4eb96fec0dd4cb28b32796e7f6a3601c11b90ea5f6ea",
+        "sRGB": true
+      },
+      "closedShadow": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_ClosedShadow.a5721c1ec9.png",
+        "sha256": "a5721c1ec947a812690b2cbda2dea2341d031857c066f34506e4127772e8e93c",
+        "sRGB": true
+      },
+      "revisedControl": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_Controls.e45237a76c.png",
+        "sha256": "e45237a76c7c39a014b93dd818a5b5aabdc9bcae24f5f59d50ecd364c3ebb4ed",
+        "sRGB": false
+      },
+      "revisedFaceMode": 0.9
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat",
+      "category": "Skin",
+      "faceMode": 0.45,
+      "control": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_Controls.8e61c01fda.png",
+        "sha256": "8e61c01fdaae988302399bc3b634ca09010c8484785524190e6539ab17577c63",
+        "sRGB": false
+      },
+      "shadow": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_OpenShadow.ef56ebea5f.png",
+        "sha256": "ef56ebea5f765ba8bf7ffdee149d0bf278fd4284fa4215b8987883334c156fe3",
+        "sRGB": true
+      },
+      "baseOverride": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.0ebe7a875d.png",
+        "sha256": "0ebe7a875d79714807261c5a20b9397e016b48bd836acdd612aebe711ed302fc",
+        "sRGB": true
+      },
+      "revisedControl": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_Controls.dec1b97601.png",
+        "sha256": "dec1b97601655a60578ea71fa031b7db9297bc4160fd00f3edfa7f798f72c815",
+        "sRGB": false
+      },
+      "revisedFaceMode": 0.9
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat",
+      "category": "Skin",
+      "faceMode": 0.45,
+      "control": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_Controls.74fd449c20.png",
+        "sha256": "74fd449c204f1765d41519175b5b77aa839d82d86e96922eafcf774d0388f74a",
+        "sRGB": false
+      },
+      "shadow": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_OpenShadow.8f68fb18e2.png",
+        "sha256": "8f68fb18e2848656675fdd795e8c60c95666e0c2591d42ce68833cbb325f1943",
+        "sRGB": true
+      },
+      "baseOverride": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.4415c3673c.png",
+        "sha256": "4415c3673cf7f6504e18b3c1066f7c90d210489053444c83dc06d3f966039138",
+        "sRGB": true
+      },
+      "revisedControl": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_Controls.74fd449c20.png",
+        "sha256": "74fd449c204f1765d41519175b5b77aa839d82d86e96922eafcf774d0388f74a",
+        "sRGB": false
+      },
+      "revisedFaceMode": 0.9
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_ConcealedSkin.mat",
+      "category": "Skin",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat",
+      "category": "Hair",
+      "faceMode": -1,
+      "control": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Controls.a350e5bbfe.png",
+        "sha256": "a350e5bbfe460347244bd57dbecfb11fe1c267497dc3225dd38f17345a72c143",
+        "sRGB": false
+      },
+      "shadow": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51.png",
+        "sha256": "345d61ff51b1edda270c67efc67692845fde7ca84befc4b5978a47c70bc293be",
+        "sRGB": true
+      }
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat",
+      "category": "Eye",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat",
+      "category": "Lid",
+      "faceMode": -1,
+      "revisedFaceMode": 0.9
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat",
+      "category": "Lid",
+      "faceMode": -1,
+      "revisedFaceMode": 0.9
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_LowerLash.mat",
+      "category": "Eye",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_Sclera.mat",
+      "category": "Eye",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_UpperLash.mat",
+      "category": "Eye",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat",
+      "category": "Skin",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat",
+      "category": "Metal",
+      "faceMode": -1
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat",
+      "category": "Cloth",
+      "faceMode": -1,
+      "control": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_V2_Cloth_Controls.ec7df07c27.png",
+        "sha256": "ec7df07c27c8371b80ca274de6c77d2a082d84e1bf94d8d83a5cc6a1243a75bf",
+        "sRGB": false
+      },
+      "shadow": {
+        "asset": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_V2_Cloth_Shadow.9a61268d64.png",
+        "sha256": "9a61268d644c10a3e439a871b2eb2798447f6e13aeb4a56a91eb302a4e8ebf77",
+        "sRGB": true
+      }
+    },
+    {
+      "sourceMaterialAsset": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Materials/RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat",
+      "category": "Cloth",
+      "faceMode": -1
+    }
+  ],
+  "notes": [
+    "Scratch-only diagnostic. Rejected eye geometry unchanged. No main scene promotion.",
+    "Primary shader pair uses exact same original open base image9750, all geometry/control/camera/light states matched.",
+    "Closed base/shadow blend is separate; unsupported non-jaw poses disable it.",
+    "Head/control atlas ST identity; existing distinct lid ST preserved, fallback shadow and controls only.",
+    "Ink compiles but no smoothed morph-compatible outline shell supplied or runtime-tested.",
+    "Additional lights PerPixel, first-N capped unshadowed contribution. No phone performance or full variant coverage claim.",
+    "Controlled comparison: original R/.45 response versus revised R through chin/.90 mapped-head and lid response. GBA/palette/shader/geometry/cap unchanged. Both renderer material states explicitly synchronized and asserted; v1 previous-unlit capture superseded."
+  ]
+}

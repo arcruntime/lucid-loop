@@ -1,0 +1,26 @@
+{
+  "sourceControlSha256": "ec7df07c27c8371b80ca274de6c77d2a082d84e1bf94d8d83a5cc6a1243a75bf",
+  "outputTexture": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\tokon-study-v1\\cap-controls-v1\\Ren_Cap_SeamHighlightControls.png",
+  "outputSha256": "64775ed0ff290029904be007690d75aca1aa762bd957a994481d61368f0174bb",
+  "colorSpace": "linear / Non-Color",
+  "sourceName": "Ren_Cap_V2_Cloth",
+  "sourceUVLayer": "AccessoryUV",
+  "baseMapScaleOffset": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "changedChannel": "G only; max31/255 unchanged",
+  "preservedChannels": {
+    "R": 0,
+    "B": 0.30196078431372547,
+    "A": 0
+  },
+  "placement": "Six existing crown seam columns: u=k/6, width .0015-.006, v .20-.69 smooth taper; outer brim strip v .937-.958",
+  "artistReference": "art/characters/ren-model-sheet.png",
+  "constructionReference": "tools/character_art/revise_ren_cap_fit.py crown/bill UV construction",
+  "authorship": "Artist-guided procedural control placement; no base or shadow painting; no geometry changes",
+  "otherMaterialPropertiesUnchanged": true,
+  "review": "Pending actual matched Unity front/quarter/head-turn comparison"
+}

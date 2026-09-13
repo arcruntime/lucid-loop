@@ -1,0 +1,11 @@
+{
+  "status": "FAILED_BEFORE_RENDER",
+  "captureCount": 0,
+  "pid": 71188,
+  "reason": "Unchanged RenHReferenceVideoTransport initial preparation/presentation deadline exceeded15s; WMF color-primary diagnostic arrived during shutdown.",
+  "recovery": "Exactly one retry of the same executable and same source hashes, with a fresh output directory, succeeded. No timeout extension or video transport mutation.",
+  "failedLogSha256": "3218e5a7d3916378a1639388fbfa374e53e0e5dcfb3323802f169a4fe59a28ad",
+  "successfulLogSha256": "e8e4ecd70a48a949c880bd02593b91ce4dc1ff87a3eeff987dd5455105f38834",
+  "successfulPid": 111072,
+  "referenceSyncScope": "The successful material run waited for an actual decoded frame but used fixed manual poses. This is not a new full reference playback/scrub test."
+}

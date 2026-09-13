@@ -1,0 +1,50 @@
+[
+  {
+    "sourceName": "Ren_H_Hair_Painted_PaleBlond",
+    "sourceUVLayer": "HairPaintUV_H_v1",
+    "sourceTextureSha256": "bc2a04f4f4c426521fd2050b569f8c0d08eff12ad1065df2512bdd6b40543c6f",
+    "shadowMultiplierLinear": [
+      0.56,
+      0.48,
+      0.4,
+      1
+    ],
+    "files": {
+      "Shadow": {
+        "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\tokon-study-v1\\maps\\Ren_H_Hair_Painted_PaleBlond_Shadow.png",
+        "sha256": "345d61ff51b1edda270c67efc67692845fde7ca84befc4b5978a47c70bc293be",
+        "colorSpace": "sRGB"
+      },
+      "Controls": {
+        "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\tokon-study-v1\\maps\\Ren_H_Hair_Painted_PaleBlond_Controls.png",
+        "sha256": "a350e5bbfe460347244bd57dbecfb11fe1c267497dc3225dd38f17345a72c143",
+        "colorSpace": "Non-Color"
+      }
+    },
+    "authorship": "Provisional material-semantic derived palette and constant controls; not artist-painted masks"
+  },
+  {
+    "sourceName": "Ren_Cap_V2_Cloth",
+    "sourceUVLayer": "AccessoryUV",
+    "sourceTextureSha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0",
+    "shadowMultiplierLinear": [
+      0.35,
+      0.36,
+      0.43,
+      1
+    ],
+    "files": {
+      "Shadow": {
+        "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\tokon-study-v1\\maps\\Ren_Cap_V2_Cloth_Shadow.png",
+        "sha256": "9a61268d644c10a3e439a871b2eb2798447f6e13aeb4a56a91eb302a4e8ebf77",
+        "colorSpace": "sRGB"
+      },
+      "Controls": {
+        "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\tokon-study-v1\\maps\\Ren_Cap_V2_Cloth_Controls.png",
+        "sha256": "ec7df07c27c8371b80ca274de6c77d2a082d84e1bf94d8d83a5cc6a1243a75bf",
+        "colorSpace": "Non-Color"
+      }
+    },
+    "authorship": "Provisional material-semantic derived palette and constant controls; not artist-painted masks"
+  }
+]

@@ -1,0 +1,146 @@
+{
+  "status": "CAP_HIGHLIGHT_PLACEMENT_DIAGNOSTIC_PENDING_ROOT_SELECTION",
+  "sourceSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+  "manifestSha256": "93b3194de05df5df93575d390fbf8071d8d948640c2c28ec2579086884eaa961",
+  "runtimeSha256": "6bf07c5100a5e918d52e0b460bccf0f3ff29a6c7f8fba1b73f70c9ba3d208775",
+  "builderSha256": "57b2d3c220d24497d0386c07e7d8176473bb0bd852feb498a6e2be77120de0cd",
+  "graphicsApi": "Direct3D11",
+  "capControlSha256": "64775ed0ff290029904be007690d75aca1aa762bd957a994481d61368f0174bb",
+  "capOnlyDifference": "Control G placement. Refined V2 face maps/strength, original base/shadow textures, all shader/preset strengths, geometry and lighting remain fixed. Old constant 16x16 control becomes a 1024x1024 placed mask; R0/B77/A0 and maximum G31 remain unchanged.",
+  "pairs": [
+    {
+      "label": "rest-front.png",
+      "samePoseCameraLighting": true,
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "maxByteDifference": 17,
+      "meanByteDifference": 0.062215169270833336,
+      "changedPixels": 11156
+    },
+    {
+      "label": "rest-quarter.png",
+      "samePoseCameraLighting": true,
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "maxByteDifference": 17,
+      "meanByteDifference": 0.05763993439850984,
+      "changedPixels": 10512
+    },
+    {
+      "label": "rest-profile.png",
+      "samePoseCameraLighting": true,
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "maxByteDifference": 17,
+      "meanByteDifference": 0.04231558905707465,
+      "changedPixels": 7447
+    },
+    {
+      "label": "unlit.png",
+      "samePoseCameraLighting": true,
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "maxByteDifference": 0,
+      "meanByteDifference": 0.0,
+      "changedPixels": 0
+    },
+    {
+      "label": "head-turn.png",
+      "samePoseCameraLighting": true,
+      "poseSha256": "96e21086400fca76cce06e34cd07a9c084ecc3564532c821ecea845005eb93c3",
+      "maxByteDifference": 17,
+      "meanByteDifference": 0.04741032918294271,
+      "changedPixels": 8778
+    },
+    {
+      "label": "club-a.png",
+      "samePoseCameraLighting": true,
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "maxByteDifference": 16,
+      "meanByteDifference": 0.057053742585358794,
+      "changedPixels": 11159
+    },
+    {
+      "label": "club-b.png",
+      "samePoseCameraLighting": true,
+      "poseSha256": "7e7c2a6985d2861b4943b3500ca9ce9946e8579e338ff54b8d045ded2accde5c",
+      "maxByteDifference": 16,
+      "meanByteDifference": 0.05624658090096933,
+      "changedPixels": 11153
+    }
+  ],
+  "unlitPixelIdentical": true,
+  "runtimeAssertions": {
+    "sameGeometryAcrossModes": true,
+    "perPixelAdditionalLights": true,
+    "capOnlyComparison": true,
+    "materialModeAndUnlitAsserted": true,
+    "animatedFaceFrameAsserted": true,
+    "controlMapBindingsAsserted": true
+  },
+  "closedPaintScope": "Disabled throughout; unsupported-closed-paint guard was not repeated in this cap-only capture.",
+  "shaderAuditScope": "Same frozen shaders as V2, actual D3D11 player render. SRP Batcher reflection remains unverified (code1, Not initialized ()).",
+  "videoScope": "Waited for an actual decoded reference frame, then applied fixed manual model poses. Audio disabled; this is not full playback/scrubbing verification.",
+  "mainUnityWrites": false,
+  "visiblePlayerLaunched": false,
+  "phonePerformanceMeasured": false,
+  "eyeGeometryStatus": "Unchanged and rejected; this is only a material-placement diagnostic.",
+  "localPlayer": ".local/ren-tokon-review-v3/RenTokonReview.exe",
+  "captureCommand": "-renTokonCapCapture <fresh-output-folder>",
+  "buildLogSha256": "91791bd634b3ba33e6fde745071ed26bb2c027256844184470c6b58a9149aaa8",
+  "captureLogSha256": "d09746304be934d8fdd06a515613489436fa4845b254dd79da59f1b519684523",
+  "artifacts": [
+    {
+      "path": "cap-original-highlights--rest-front.png",
+      "sha256": "28ce7aeff9ac07f3701063fe03055a1cc9a69543bc4472f144958a694f429f36"
+    },
+    {
+      "path": "cap-placed-highlights--rest-front.png",
+      "sha256": "746cc61259ca9e8d9a69be63f5a04930679a99ed118f6706138208c090212860"
+    },
+    {
+      "path": "cap-original-highlights--rest-quarter.png",
+      "sha256": "af652d90d0b9b05c1f9ff0372bdbf72942da960b6d90e260d8b24d97c1b067f1"
+    },
+    {
+      "path": "cap-placed-highlights--rest-quarter.png",
+      "sha256": "f3afbe42dd5d61b8273d08c05f185a6d67bf88b1b6dd4a595a8440853b199706"
+    },
+    {
+      "path": "cap-original-highlights--rest-profile.png",
+      "sha256": "bc9775e989e0308c8853aca0019dfe36738fba2e573ae5168e2a2bf1270b6579"
+    },
+    {
+      "path": "cap-placed-highlights--rest-profile.png",
+      "sha256": "fafc89fa71abd7792894a4a78b5c69c3824da0c1994b84dab61f0d21d4f5c639"
+    },
+    {
+      "path": "cap-original-highlights--unlit.png",
+      "sha256": "26c0e71fa57e4a6173dce3245750d0916ea790241ec55b292008703573b6fe60"
+    },
+    {
+      "path": "cap-placed-highlights--unlit.png",
+      "sha256": "26c0e71fa57e4a6173dce3245750d0916ea790241ec55b292008703573b6fe60"
+    },
+    {
+      "path": "cap-original-highlights--head-turn.png",
+      "sha256": "98b9d5a495069e1728ba6b8660911aa675f44add96c02efcc8b04a456da3b3cf"
+    },
+    {
+      "path": "cap-placed-highlights--head-turn.png",
+      "sha256": "1206ef41210ad27f4bc31f91f760da657c10005e643fd5de479abf93a9a587dd"
+    },
+    {
+      "path": "cap-original-highlights--club-a.png",
+      "sha256": "6bff525ff34f8c5435a3b1e00aea9123bc46edca01fe3f982ea6b6da153c6b26"
+    },
+    {
+      "path": "cap-placed-highlights--club-a.png",
+      "sha256": "a71dbb6db2a5658552b3c30bca6aec2c863de77dd6fdf292eb7800c4b28d60c2"
+    },
+    {
+      "path": "cap-original-highlights--club-b.png",
+      "sha256": "4b1c9982ab23eb315d00d3233c61840b437c3a0df312ddc8d38b9051005fa2c2"
+    },
+    {
+      "path": "cap-placed-highlights--club-b.png",
+      "sha256": "a482a302df09092b017513ed0d61ac4b6bdde533f7321409ce2bac8809c5283e"
+    }
+  ]
+}

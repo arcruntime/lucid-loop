@@ -1,0 +1,22 @@
+{"shaders":[{
+    "shader": "LucidLoop/Characters/RenTokonNPR",
+    "sha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+    "srpReason": "Not initialized ()",
+    "srpCode": 1,
+    "passes": [
+        "TokonForward",
+        "DepthOnly",
+        "DepthNormals",
+        "ShadowCaster"
+    ],
+    "messages": []
+},{
+    "shader": "LucidLoop/Characters/RenTokonInk",
+    "sha256": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+    "srpReason": "Not initialized ()",
+    "srpCode": 1,
+    "passes": [
+        "<Unnamed Pass 0>"
+    ],
+    "messages": []
+}]}
