@@ -1,4 +1,4 @@
-name: Native voice portable checks
+name: Native voice checks
 
 on:
   push:
@@ -30,3 +30,25 @@ jobs:
         run: /tmp/llvoice-ring-tests
       - name: Record scope
         run: echo 'Portable C++ ring checks only. Apple SDK compilation, AVAudioEngine and physical iOS audio acceptance remain separate.' >> "$GITHUB_STEP_SUMMARY"
+
+  ios-sdk:
+    runs-on: macos-15
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record Apple toolchain
+        run: |
+          xcodebuild -version | tee -a "$GITHUB_STEP_SUMMARY"
+          xcrun --sdk iphoneos --show-sdk-version | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Compile and link native plugin for iOS 17 arm64
+        run: |
+          xcrun --sdk iphoneos clang++ \
+            -target arm64-apple-ios17.0 \
+            -isysroot "$(xcrun --sdk iphoneos --show-sdk-path)" \
+            -std=c++17 -fobjc-arc -Wall -Wextra -Werror=unguarded-availability \
+            -dynamiclib Unity/Assets/Gyms/Plugins/iOS/LLVoice.mm \
+            -framework Foundation -framework AVFoundation -framework AudioToolbox \
+            -o /tmp/LLVoice-check.dylib
+          file /tmp/LLVoice-check.dylib
+      - name: Record scope
+        run: echo 'Native plugin compiled and linked against the Apple iOS SDK for arm64/iOS 17. This does not build/sign/install the Unity app or validate physical audio.' >> "$GITHUB_STEP_SUMMARY"

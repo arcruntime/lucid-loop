@@ -4,6 +4,8 @@
 
 Each job runs the EditMode tests, requires a passing XML result, builds a development player with Unity 6000.3.24f1, verifies its expected files, and packages it with `build-info.json` and SHA-256 checksums. Windows gets a ZIP. The retained macOS build script produces a tarball to preserve executable permissions and symlinks when that platform is resumed. Download artifacts from the workflow run. Retention is 14 days. Test results, logs and preflight failures are uploaded separately, including on failed jobs. The Mac app is an unsigned development build, not a notarized distribution or an iOS build.
 
+Native voice has a separate `.github/workflows/native-voice.yml` check: Linux runs the portable concurrent audio-ring tests, and a [GitHub-hosted macOS runner](https://docs.github.com/en/actions/reference/runners/github-hosted-runners) compiles and links only the native plugin against Apple's iOS SDK for arm64/iOS 17. This job needs no Unity installation or signing identity. Its scope is native compilation; the deferred Mac Unity player build and physical iPhone acceptance remain separate.
+
 CI builds the versioned scenes without regenerating the nightclub. `GymBuilder` remains the optional authoring tool; `GymCIBuild` is the build-only entry point. Neither client build job receives `OPENAI_API_KEY`. The independent `Gyms` workflow tests the backend and retains its explicitly opt-in upstream smoke check.
 
 ## Runner contract
