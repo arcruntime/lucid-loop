@@ -1,0 +1,12 @@
+{
+  "replay_guard": "PASS: existing intent rejected before credential loading/API access",
+  "local_glb_reimport": {
+    "triangles": 9026,
+    "uv_layers": 0,
+    "provider_original": false,
+    "blender": "5.2.1"
+  },
+  "source_original_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+  "source_unchanged": true,
+  "notes": "GLB imported in an independent Blender process; matched triangle/UV counts. No second POST issued."
+}

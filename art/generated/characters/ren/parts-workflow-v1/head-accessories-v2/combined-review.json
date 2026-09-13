@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_COMBINED_FIT_WITH_VISUAL_LIMITATION",
+  "hair_source": "art\\generated\\characters\\ren\\parts-workflow-v1\\ren-shag-v1\\selected-v2\\Ren_Shag_CapState.blend",
+  "hair_sha256": "f160e66c8b611796c284c396508ba46f3c052b3ea8a219dceb603d18694565cc",
+  "cap_source": "art\\generated\\characters\\ren\\parts-workflow-v1\\head-accessories-v2\\band-clearance-v1\\Ren_Head_Accessories.blend",
+  "cap_source_sha256": "bff2a53430d58535e6f2aef8d271e8a8774a6c8015185a4cd5f2b74168ab805d",
+  "head_cap_ear_geometry_uv_shapes_and_matrices_unchanged": true,
+  "capOn": 1,
+  "combined_blend_sha256": "f6a99242eeb3ac7db0fbf3ffdca8a7d9382ec51cd38aaa4bec0cf63590724b27",
+  "renders": {
+    "front": "abdd916c1e75bf3fe4150bb5fa898f2c3f328658176e0c1dd723cfc10b6505d7",
+    "quarter": "1e0012ab23c2564a4bb3772c8fc9e2c16c5ea5066563e229ecb2ee40063eef5b",
+    "profile": "c9152bf0f42261424b7b6ea742415398bd9d64ea2269af74f84cb44ab07f07e3"
+  },
+  "visual_review": {
+    "method": "Inspected the actual 1000x1000 front, quarter and profile PNGs listed above.",
+    "observations": [
+      "The lower crown and curved bill preserve the reviewed V2 cap direction.",
+      "Frontal fringe stems remain continuous from beneath the bill to their visible tips.",
+      "No large hair tufts protrude through the crown in these three views.",
+      "The helix cuffs and long metal drop remain visible in quarter/profile."
+    ],
+    "remaining_defects": [
+      "Two tiny pale specks remain on the ear-side black band: quarter approximately (369,400) and (358,415), profile approximately (603,400) and (590,414). Their exact geometric cause is not established by these renders."
+    ],
+    "limitations": [
+      "Sampled cap/head corridor clearance does not prove every hair triangle is free of cloth intersections.",
+      "This is a static Blender context review, not Unity appearance, animation, device performance or final artist-likeness approval."
+    ]
+  }
+}

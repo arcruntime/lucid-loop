@@ -97,6 +97,30 @@ For a future isolated static experiment, the matching CLI form would be `npx tri
 
 `bake=true` cannot invent an accepted missing source atlas or repair likeness. V5 hair currently has overlapping longitudinal working UVs, automatic flyaway UVs and an unwrapped root-base gap; it has no approved painting atlas. Establish its final topology and valid UV packing before painting or baking. The corrected head has validated FaceUV/EyeUV construction, but the first Tripo texture trial is a separate static candidate and not a completed animated texture pipeline. UV repacking or retopology invalidates direct use of old coordinates and demands a new transfer/bake review.
 
+## Actual Tripo hair trial after the local visual review
+
+The local 7,900-triangle hair met its count but still looked too schematic. A single
+authorized smart-retopology job then tested the original native hair with the v3
+`v2.0` model, an 8,000-triangle target, `quad=false` and `bake=false`. It cost
+**30 credits** and returned **9,026 triangles**, 12.825% over target. The service
+returned FBX, despite the current documentation describing GLB output. Exact
+provider bytes and a clearly labeled local GLB derivative are preserved in the
+[trial package and matched comparisons](../art/generated/characters/ren/parts-workflow-v1/tripo-hair-lowpoly-v1/README.md).
+
+The returned layered shag preserves the original lock layout and silhouette
+better than the compact local reconstruction. It also has no UVs, visible inner
+crossbars, damaged crown transitions, 193 position-connected components and 82
+edges shared by more than two triangles. Those are actual inspected limitations,
+not a claim that every open boundary is defective. Use it as a stronger potential
+repair basis, with local cleanup, head/cap fitting and a fresh unwrap before paint.
+It is not installed as the production hair. The count miss confirms that Tripo's
+requested target must be checked after import.
+
+This test supports using Tripo for isolated static parts while retaining the
+authored facial topology. It does not establish preservation of blendshapes,
+skinning or animation. The original source remained byte-identical; there was one
+task and no paid conversion or second submission.
+
 ## LOD and phone validation
 
 Start with complete-character targets of **40k / 24k / 12k / 6k triangles** for LOD0–3. These are proposed production budgets, not measured transition thresholds. Choose transitions from actual face height on screen and hide eye-interior/detail work only when it cannot be resolved. Preserve a higher face LOD independently of body detail during conversation if necessary, while recounting the combined active state. Background partygoers need their own lower budgets; 40k for every visible crowd member is not assumed.
@@ -107,4 +131,6 @@ Triangle count alone does not establish 30 fps. Record imported vertices (UV/nor
 
 Acceptance requires actual Unity captures at the maximum conversation face size in front, quarter and profile; full and partial blink; intermediate gaze; lip seal; open speech; combined gaze/blink/speech; and cap/hair/headphone fit. Compare silhouettes separately from eyelid/lip closure and interior clearance. Test neutral diffuse and moving colored lighting. Run the dressed character, selected NPC load, live audio/lip sync and full nightclub on iPhone 15 Plus long enough to observe sustained thermals, targeting 33.3 ms per frame with frame-time headroom. No desktop viewer or triangle spreadsheet substitutes for that measurement.
 
-**Next implementation decision:** keep the selected face surface, prove the eye repair, resample a local hair copy and eye shells, then extract and retopologize the body/outfit. Use Tripo reduction only for a separate static comparison if local reduction fails a concrete visual requirement. All source assets remain unchanged by this planning task.
+**Current implementation:** the assembled V2 head uses the unchanged 13,790-triangle head surface, a reduced 1,702-triangle eye assembly, 1,568 triangles of teeth/tongue, 7,900 local hair triangles and 1,466 cap/jewelry triangles. Total: **26,426 source triangles / 26,422 imported Unity triangles**. The four-triangle back-hair import difference remains unexplained. Source geometry leaves 13,574 triangles against the full 40k target for the remaining character and reserve. This is a working head review, not a dressed-character count or final likeness approval.
+
+**Next implementation decision:** use the Tripo trial as a possible basis for a locally repaired layered shag, preserving the verified facial surface and controls. Fit, unwrap and review that hair before adopting it. Then extract and retopologize the body/outfit to the remaining budget. Retain all original vendor and frozen review sources.

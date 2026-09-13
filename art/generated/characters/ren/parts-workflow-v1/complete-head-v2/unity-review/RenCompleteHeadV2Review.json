@@ -1,0 +1,154 @@
+{
+  "status": "V2_ACTUAL_UNITY_REVIEW_CANDIDATE_NOT_ARTIST_ACCEPTANCE",
+  "sourceFbxSha256": "74283a65dfb977e2ec0976cd36a019ab54489f5867fbb8702f72c478a6ee9bda",
+  "unityVersion": "6000.3.24f1",
+  "scene": "Assets/CharacterArt/Generated/Preview/Scenes/RenCompleteHead.unity",
+  "player": ".local/ren-complete-head-v2/RenCompleteHead.exe",
+  "sourceTriangles": 26426,
+  "unityTriangles": 26422,
+  "triangleDifference": {
+    "Ren_Hair_Back": {
+      "source": 1820,
+      "unity": 1816,
+      "cause": "not established; same difference as V1"
+    }
+  },
+  "gazeMaximumNativeError": 7.945144857463092e-08,
+  "capChecks": {
+    "captures": 13,
+    "bindingCount": 6,
+    "allRequestedStatesMatch": true,
+    "capOffResetAndRebindPngByteIdentical": true,
+    "capOnRestorePngByteIdentical": true
+  },
+  "shader": {
+    "file": "Unity/Assets/CharacterArt/Generated/RenFaceStudy/Shaders/RenFaceStudyDiffuse.shader",
+    "sha256": "76c82d743d304899e5e1e12b4c1124f5991bcc34cdcd6213681f10237aed6a0e",
+    "materialsChecked": 56,
+    "response": "Diffuse review; source basecolor sampled in UV0 with white map tint; linear iris vertex colors replace fallback; source normals disabled; no specular response.",
+    "limitation": "Does not replicate the saved Blender 65% unlit / 35% diffuse paint mix or final game shader."
+  },
+  "textures": [
+    {
+      "file": "Assets/CharacterArt/Generated/RenCompleteHead/Textures/V2/Ren_AnimePaint_v2_BakedSkin.png",
+      "sha256": "33abe65ff6a7448d4a744d8909dd4844cdf9911e0eb94098a1a8b90522effcc2",
+      "sourceDimensions": [
+        2048,
+        2048
+      ],
+      "desktopImport": "RGBA32 uncompressed, 8192 ceiling, mipmaps, sRGB",
+      "rawSourceBytesPreserved": true
+    },
+    {
+      "file": "Assets/CharacterArt/Generated/RenCompleteHead/Textures/V2/Ren_Cap_V2_Cloth.png",
+      "sha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0",
+      "sourceDimensions": [
+        1024,
+        1024
+      ],
+      "desktopImport": "RGBA32 uncompressed, 8192 ceiling, mipmaps, sRGB",
+      "rawSourceBytesPreserved": true
+    },
+    {
+      "file": "Assets/CharacterArt/Generated/RenCompleteHead/Textures/V2/Ren_PaleBlond_PaintedHair.png",
+      "sha256": "9e3fb05eba8e001e34757a7f0522c04650f791aba2438cc3e75baaaa62873d22",
+      "sourceDimensions": [
+        4096,
+        4096
+      ],
+      "desktopImport": "RGBA32 uncompressed, 8192 ceiling, mipmaps, sRGB",
+      "rawSourceBytesPreserved": true
+    }
+  ],
+  "reference": {
+    "originalArtistVisibleByDefault": true,
+    "referenceIndex": 0,
+    "verification": "Saved scene fields; no visible UI screenshot claimed."
+  },
+  "visuallyInspected": [
+    "RenCompleteHead-live--rest--front.png",
+    "RenCompleteHead-live--rest--quarter.png",
+    "RenCompleteHead-live--rest--profile.png",
+    "RenCompleteHead-live--rest-club--front.png",
+    "RenCompleteHead-live--partial-diagonal-blink--front.png",
+    "RenCompleteHead-live--partial-diagonal-blink--quarter.png",
+    "RenCompleteHead-live--open-A-diagonal--front.png",
+    "RenCompleteHead-live--full-blink--front.png",
+    "RenCompleteHead-live--cap-off--front.png",
+    "RenCompleteHead-live--cap-off--quarter.png"
+  ],
+  "captureHashes": [
+    {
+      "file": "RenCompleteHead-live--rest--front.png",
+      "sha256": "c158050bd2c0aae742695ed4df95c2d3c074723a7e8db3b331097958104d3a94"
+    },
+    {
+      "file": "RenCompleteHead-live--rest--quarter.png",
+      "sha256": "b5b1924bd45772eec18e1ae96869b673ea1917dd12992e4b2fb51c05636ea733"
+    },
+    {
+      "file": "RenCompleteHead-live--rest--profile.png",
+      "sha256": "a27905a69d27ccedda5f6e80d03596359743ade0efc12c5f2f1789c146e30567"
+    },
+    {
+      "file": "RenCompleteHead-live--rest-club--front.png",
+      "sha256": "f0e0d880a18a3cb269cf4be4cdcccccb026067ccc3755cc3a0993ecfff949dd0"
+    },
+    {
+      "file": "RenCompleteHead-live--partial-diagonal-blink--front.png",
+      "sha256": "43b8fa01dce331fa2af6bd01b20a91932e7e5a96cee25a45a76672995400be4b"
+    },
+    {
+      "file": "RenCompleteHead-live--partial-diagonal-blink--quarter.png",
+      "sha256": "36649ed285538b7ea9efc29611def93abccaedb5d6183fa032b06e933f9b65c5"
+    },
+    {
+      "file": "RenCompleteHead-live--open-A-diagonal--front.png",
+      "sha256": "a80271695e039e93bc5a3eea8e652c7dd9c0c071ea6e4c83fed3e2693d818f74"
+    },
+    {
+      "file": "RenCompleteHead-live--full-blink--front.png",
+      "sha256": "092b67caf3db76499a6f10b000ec8fce60ebb502817e9c4bc9d4d217a00e1963"
+    },
+    {
+      "file": "RenCompleteHead-live--cap-off--front.png",
+      "sha256": "8e95ced900aebbcfc7df1343413b0366fb24627026b74f34a0260543d438160b"
+    },
+    {
+      "file": "RenCompleteHead-live--cap-off--quarter.png",
+      "sha256": "267a7c35aca87b1ab86db675b3b0e6b9118d340966898e05dc0a566c13f898de"
+    },
+    {
+      "file": "RenCompleteHead-live--cap-off-reset--front.png",
+      "sha256": "8e95ced900aebbcfc7df1343413b0366fb24627026b74f34a0260543d438160b"
+    },
+    {
+      "file": "RenCompleteHead-live--cap-off-rebind--front.png",
+      "sha256": "8e95ced900aebbcfc7df1343413b0366fb24627026b74f34a0260543d438160b"
+    },
+    {
+      "file": "RenCompleteHead-live--cap-on-restored--front.png",
+      "sha256": "c158050bd2c0aae742695ed4df95c2d3c074723a7e8db3b331097958104d3a94"
+    }
+  ],
+  "findings": [
+    "Full cap/neck framing holds in front, quarter and profile.",
+    "Cap visibility, fitting and restored loose hair are synchronized; cap-off reset/rebinding remain stable.",
+    "Partial diagonal gaze with half blink remains continuous and shows no visible iris/sclera breakthrough in the two new views.",
+    "Full front blink hides iris and sclera; open A visibly moves the live head and oral components.",
+    "Club colors retain readable painted face details in the inspected front render."
+  ],
+  "limitations": [
+    "Cap proportions, fringe/strand edge treatment and likeness remain artist-review questions.",
+    "Eyelid paint stretches at full closure; no final material approval.",
+    "Only mouth seal and open A are implemented; no full English/Japanese speech or emotion coverage.",
+    "No iPhone 15 Plus performance claim.",
+    "V1 cap-state-invalid evidence remains marked superseded; corrected V1 source/evidence/player retained."
+  ],
+  "mainProjectAssetAudit": {
+    "guidReferencesChecked": 183,
+    "missing": [],
+    "duplicates": [],
+    "method": "Read-only saved asset GUID/source hash audit; open main Unity was not launched, closed, or manipulated."
+  }
+}

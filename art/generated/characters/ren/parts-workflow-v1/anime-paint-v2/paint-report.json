@@ -1,0 +1,148 @@
+{
+  "status": "MATERIAL_ONLY_PAINT_STUDY_NOT_LIKENESS_ACCEPTANCE",
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\Ren_P2_Face_EyeUV.blend",
+  "source_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "derived_sha256": "a52cad489e597d5c5a9325d08919089600c6899aac99e1320510c856ddc8261f",
+  "blender_version": "5.1.1",
+  "donor_sha256": "391c592f00b25e2627bce72e403d09614a5af3fd40636a5e31f21f9d5c62d4c8",
+  "images": [
+    {
+      "file": "Ren_AnimePaint_v2_BaseColor.png",
+      "sha256": "33abe65ff6a7448d4a744d8909dd4844cdf9911e0eb94098a1a8b90522effcc2",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "file": "Ren_AnimePaint_v2_ProjectionCoverage.png",
+      "sha256": "b41055da8b6427ec09fd3011e6879e6eb50d40aa1024531577d7c159bbb13fb7",
+      "width": 2048,
+      "height": 2048
+    }
+  ],
+  "checks": {
+    "Ren_Eye_L_Iris": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_Eye_L_LowerLiner": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_Eye_L_OuterLash": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_Eye_L_Sclera": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "344919374e2efe6c8eb365d49b99555c38577d35af9888b1d7e23231c65f0dc5",
+      "materials_changed": false
+    },
+    "Ren_Eye_L_UpperLiner": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_Eye_R_Iris": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_Eye_R_LowerLiner": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_Eye_R_OuterLash": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_Eye_R_Sclera": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "c7acef5433e1a1c86d588c61795e1a33883c34ead95e2c1c339e60d2af62104b",
+      "materials_changed": false
+    },
+    "Ren_Eye_R_UpperLiner": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_Head": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "9e575bed9dcbe1888b5c7341e7f5935e183a77fc176e93e419b3f62698ec70db",
+      "materials_changed": true
+    },
+    "Ren_P2_LowerTeeth": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_P2_Tongue": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    },
+    "Ren_P2_UpperTeeth": {
+      "geometry_shapes_attributes_matrix_normals_exact": true,
+      "uv_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "materials_changed": false
+    }
+  },
+  "captures": [
+    {
+      "file": "neutral-front.png",
+      "pose": {
+        "mouthSeal": 1
+      },
+      "sha256": "1dcaa6d8ab29fdc0f1f3cc5cba96d8d9f552edc62c8107ef53c9f1fa323a63b5"
+    },
+    {
+      "file": "neutral-quarter.png",
+      "pose": {
+        "mouthSeal": 1
+      },
+      "sha256": "5029b13499889459a1360a3b09f89d6a1f5d306337a08c6fb11a89ac183e4abb"
+    },
+    {
+      "file": "neutral-profile.png",
+      "pose": {
+        "mouthSeal": 1
+      },
+      "sha256": "6498772a85701069d9df240a232726c22f794ea6484956fa3388327f60be1115"
+    },
+    {
+      "file": "mouth-open-front.png",
+      "pose": {
+        "jawOpen_A": 1
+      },
+      "sha256": "bff86c7a3f48d96332735881cf99252b4d9d2fe73a28ea8a2aa6ef11b4718245"
+    },
+    {
+      "file": "blink-front.png",
+      "pose": {
+        "mouthSeal": 1,
+        "eyeBlinkL": 1,
+        "eyeBlinkR": 1
+      },
+      "sha256": "31d5ed6a33672a455190c9ca59a6cca20d00e8605e0a251e4885c43cb8621a87"
+    },
+    {
+      "file": "blink-quarter.png",
+      "pose": {
+        "mouthSeal": 1,
+        "eyeBlinkL": 1,
+        "eyeBlinkR": 1
+      },
+      "sha256": "eaff70e77d0893ca4506ef29ed208eb40937697336b868450075e121ea48e3d7"
+    }
+  ],
+  "limitations": [
+    "Single front donor; neutral authored base on rear/sides.",
+    "Donor contains painted form shading; not a measured albedo map.",
+    "All existing eye assemblies preserved; donor skin pixels deform with existing UVs.",
+    "No likeness approval or complete expression repertoire implied."
+  ]
+}

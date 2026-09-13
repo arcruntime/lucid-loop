@@ -1,0 +1,23 @@
+[
+  {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\head-accessories-v2\\band-clearance-v1\\Ren_Head_Accessories.blend",
+    "objects": [
+      "Ren_Cap"
+    ],
+    "bind_bone": "Head",
+    "default_visible": true,
+    "hide_for_face_qa": true,
+    "hide_for_contact_qa": true
+  },
+  {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\head-accessories-v2\\band-clearance-v1\\Ren_Head_Accessories.blend",
+    "objects": [
+      "Ren_RightEar_HelixCuffs",
+      "Ren_RightEar_DropPiercing"
+    ],
+    "bind_bone": "Head",
+    "default_visible": true,
+    "hide_for_face_qa": false,
+    "hide_for_contact_qa": false
+  }
+]

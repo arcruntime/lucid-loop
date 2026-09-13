@@ -1,0 +1,27 @@
+{
+  "type": "highpoly_to_lowpoly",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "bake": false,
+    "quad": false,
+    "face_limit": 8000,
+    "original_model_id": "1a8b7598-cddf-4b6c-a344-9e9ae16dcd5d"
+  },
+  "output": {
+    "model_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/690bc771-33c8-4e75-ab76-4588adb67e38/tripo_poly_690bc771-33c8-4e75-ab76-4588adb67e38.fbx?<redacted>",
+    "rendered_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/690bc771-33c8-4e75-ab76-4588adb67e38/legacy_mesh.webp?<redacted>"
+  },
+  "task_id": "690bc771-33c8-4e75-ab76-4588adb67e38",
+  "created_at": "2026-09-13T13:45:05.570473Z",
+  "completed_at": "2026-09-13T13:47:18.925991Z",
+  "credits_consumed": 30,
+  "output_dir": "B:\\lucid-loop\\.local\\character-art\\tripo-hair-lowpoly-v1\\downloads",
+  "files": [
+    "B:\\lucid-loop\\.local\\character-art\\tripo-hair-lowpoly-v1\\downloads\\model.fbx",
+    "B:\\lucid-loop\\.local\\character-art\\tripo-hair-lowpoly-v1\\downloads\\rendered_image.webp",
+    "B:\\lucid-loop\\.local\\character-art\\tripo-hair-lowpoly-v1\\downloads\\preview.png"
+  ],
+  "model_file": "B:\\lucid-loop\\.local\\character-art\\tripo-hair-lowpoly-v1\\downloads\\model.fbx",
+  "preview": "B:\\lucid-loop\\.local\\character-art\\tripo-hair-lowpoly-v1\\downloads\\preview.png"
+}

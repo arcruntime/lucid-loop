@@ -1,0 +1,109 @@
+{
+  "source_task_id": "1a8b7598-cddf-4b6c-a344-9e9ae16dcd5d",
+  "sources": [
+    {
+      "role": "immutable_native_hair",
+      "path": "art/generated/characters/ren/parts-generation-v1/tripo/hair/originals/model.fbx",
+      "sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+      "bytes": 1663868
+    }
+  ],
+  "requested_settings": {
+    "model": "v2.0",
+    "face_limit": 8000,
+    "quad": false,
+    "bake": false
+  },
+  "schema_version": 1,
+  "fingerprint": "9bd8c3108abf562c000fd8b8670ba1ee0c593922072c995734a7bc9bea400263",
+  "status": "COMPLETE_AWAITING_STATIC_REVIEW",
+  "created_utc": "2026-09-13T13:44:50.094594Z",
+  "task_id": "690bc771-33c8-4e75-ab76-4588adb67e38",
+  "authorization": "<redacted>",
+  "documentation": "https://developers.tripo3d.ai/en/docs/mesh-decimate",
+  "transport": "One non-retrying V3 creation POST after durable exclusive intent; official CLI watches/downloads only.",
+  "scope": "Separate static comparison; original source files unchanged. Count, topology, UV and likeness remain review items.",
+  "updated_utc": "2026-09-13T13:47:52.269426Z",
+  "preflight": {
+    "checked_utc": "2026-09-13T13:45:06.640784Z",
+    "doctor": {
+      "ok": true,
+      "checks": [
+        {
+          "name": "node",
+          "ok": true,
+          "detail": "v24.15.0 (need >= 20)",
+          "critical": true
+        },
+        {
+          "name": "api key",
+          "ok": true,
+          "detail": "from env:TRIPO_API_KEY",
+          "critical": true
+        },
+        {
+          "name": "api reachability",
+          "ok": true,
+          "detail": "https://openapi.tripo3d.ai (region ov) · balance 2370",
+          "critical": true
+        },
+        {
+          "name": "balance",
+          "ok": true,
+          "detail": "2370 credits (0 frozen)",
+          "critical": false
+        },
+        {
+          "name": "llm (tripo ai conversation mode)",
+          "ok": true,
+          "detail": "not configured — wizard mode only (this is fine)",
+          "critical": false
+        },
+        {
+          "name": "terminal",
+          "ok": true,
+          "detail": "non-TTY (headless mode)",
+          "critical": false
+        },
+        {
+          "name": "language",
+          "ok": true,
+          "detail": "auto",
+          "critical": false
+        }
+      ]
+    },
+    "cli_exit_code": 0
+  },
+  "balance_before": {
+    "balance": 2370.0,
+    "frozen": 0.0
+  },
+  "intent_sha256": "6cb895761adebb64c7b7e069640504bf23d0a7e9d6dc12de3b00c62d07edfab8",
+  "cli_exit_code": 0,
+  "downloads": [
+    {
+      "file": "originals/model.fbx",
+      "sha256": "236db190bd05e48750fb68d23f381538a4917fa8c1ac6255dee533a4c0bdf036",
+      "bytes": 191740,
+      "native_provider_bytes": true
+    },
+    {
+      "file": "originals/preview.png",
+      "sha256": "e74c270f2fc9e79bcc7dc217c131f4ac63e52fccff95467f4033a77396eddc5d",
+      "bytes": 91965,
+      "native_provider_bytes": true
+    },
+    {
+      "file": "originals/rendered_image.webp",
+      "sha256": "e74c270f2fc9e79bcc7dc217c131f4ac63e52fccff95467f4033a77396eddc5d",
+      "bytes": 91965,
+      "native_provider_bytes": true
+    }
+  ],
+  "credits_consumed": 30,
+  "balance_after": {
+    "balance": 2340.0,
+    "frozen": 0.0
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "method": "Independent analytic ellipsoid rotation of imported neutral vertices using native Blender centers/radii/angles, compared indexwise with actual Unity transformed samples.",
+  "maximumError": 8.642086315843269e-08,
+  "samples": [
+    {
+      "side": "L",
+      "gaze": [
+        0.5,
+        0.5
+      ],
+      "vertices": 282,
+      "maximumWorldError": 6.948958817765117e-08,
+      "rmsWorldError": 2.9724708502898707e-08
+    },
+    {
+      "side": "L",
+      "gaze": [
+        -0.5,
+        0.5
+      ],
+      "vertices": 282,
+      "maximumWorldError": 6.667681633427715e-08,
+      "rmsWorldError": 3.085279795060659e-08
+    },
+    {
+      "side": "L",
+      "gaze": [
+        0.5,
+        -0.5
+      ],
+      "vertices": 282,
+      "maximumWorldError": 6.261129032892921e-08,
+      "rmsWorldError": 2.894490620289695e-08
+    },
+    {
+      "side": "L",
+      "gaze": [
+        -0.5,
+        -0.5
+      ],
+      "vertices": 282,
+      "maximumWorldError": 7.932080462742822e-08,
+      "rmsWorldError": 3.0211012503359065e-08
+    },
+    {
+      "side": "L",
+      "gaze": [
+        1,
+        1
+      ],
+      "vertices": 282,
+      "maximumWorldError": 6.375646581415638e-08,
+      "rmsWorldError": 3.502598041966866e-08
+    },
+    {
+      "side": "L",
+      "gaze": [
+        -1,
+        -1
+      ],
+      "vertices": 282,
+      "maximumWorldError": 7.154947088522672e-08,
+      "rmsWorldError": 3.5317170713947533e-08
+    },
+    {
+      "side": "R",
+      "gaze": [
+        0.5,
+        0.5
+      ],
+      "vertices": 282,
+      "maximumWorldError": 7.024395137390332e-08,
+      "rmsWorldError": 3.393961166035803e-08
+    },
+    {
+      "side": "R",
+      "gaze": [
+        -0.5,
+        0.5
+      ],
+      "vertices": 282,
+      "maximumWorldError": 7.487571399560057e-08,
+      "rmsWorldError": 3.44974342842762e-08
+    },
+    {
+      "side": "R",
+      "gaze": [
+        0.5,
+        -0.5
+      ],
+      "vertices": 282,
+      "maximumWorldError": 8.642086315843269e-08,
+      "rmsWorldError": 3.3779201714845504e-08
+    },
+    {
+      "side": "R",
+      "gaze": [
+        -0.5,
+        -0.5
+      ],
+      "vertices": 282,
+      "maximumWorldError": 7.300778098527699e-08,
+      "rmsWorldError": 3.3515479588652756e-08
+    },
+    {
+      "side": "R",
+      "gaze": [
+        1,
+        1
+      ],
+      "vertices": 282,
+      "maximumWorldError": 7.564228125626124e-08,
+      "rmsWorldError": 3.5606182796138397e-08
+    },
+    {
+      "side": "R",
+      "gaze": [
+        -1,
+        -1
+      ],
+      "vertices": 282,
+      "maximumWorldError": 7.22470451646252e-08,
+      "rmsWorldError": 3.4436915244236824e-08
+    }
+  ]
+}

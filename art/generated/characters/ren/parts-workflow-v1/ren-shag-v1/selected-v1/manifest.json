@@ -1,0 +1,108 @@
+{
+  "selected_for": "Combined painted Ren review; not final artist approval",
+  "coordinates": "+X front, +Z up, identity with current head",
+  "preferred_hair_glb": "Ren_Shag_CapState.glb",
+  "hair_fbx": "Ren_Shag_CapState.fbx",
+  "combined_review_blend": "Ren_Shag_CapState.blend",
+  "texture": "Ren_Hair_BaseColor_4K.png",
+  "material": "Ren_PaleBlond_PaintedHair",
+  "mesh_objects": [
+    "Ren_Hair_Side_L",
+    "Ren_Hair_Back",
+    "Ren_Hair_Side_R",
+    "Ren_Hair_Fringe_L",
+    "Ren_Hair_Fringe_R",
+    "Ren_Hair_RootShell"
+  ],
+  "triangles": 7900,
+  "controls": {
+    "cap_off": {
+      "cap_visible": false,
+      "all_hair_capOn": 0
+    },
+    "cap_on": {
+      "cap_visible": true,
+      "all_hair_capOn": 1
+    }
+  },
+  "head_source_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "reviewed_hair_source_sha256": "065d9d7d1d6e263f17072b3522946a133ed152a0d3e299fbeeb7b736ac284159",
+  "accessory_source_sha256": "e8f8c88bf8972e0b46f6434371c6fc1a9ddd0b392083ff15433db621fcd8f50c",
+  "files": [
+    {
+      "path": "Ren_Shag_CapState.blend",
+      "sha256": "cb263d659c834f31351f20be4898f60cfe69e91e11639116b3a8a79698ffc80b",
+      "bytes": 5538092
+    },
+    {
+      "path": "Ren_Shag_CapState.fbx",
+      "sha256": "5a64bb1645c28d1c59e19c0993b4139225a4515b00bb52ecfa6e57f496e2f8f3",
+      "bytes": 4288636
+    },
+    {
+      "path": "Ren_Shag_CapState.glb",
+      "sha256": "635eb2e0ae09eb1e3063a401cdc42f47e48a80b33e8b47d34df3a6e01e021844",
+      "bytes": 4317352
+    },
+    {
+      "path": "Ren_Hair_BaseColor_4K.png",
+      "sha256": "9e3fb05eba8e001e34757a7f0522c04650f791aba2438cc3e75baaaa62873d22",
+      "bytes": 4002034
+    },
+    {
+      "path": "report.json",
+      "sha256": "d0c4b69c20214ec235150bb374a893a71ace59698b88e11a218fbc41079e483c",
+      "bytes": 49606
+    },
+    {
+      "path": "verification.json",
+      "sha256": "3ca83cf9443d2098e99c59fd69c3421676d5fbdf1d40eed3a43361b6e544d67d",
+      "bytes": 5329
+    },
+    {
+      "path": "cap-on-front.png",
+      "sha256": "c829d84e1e990948ec456ff9fbc2000f08879d1bf1b7901f1d0c2536d640359d",
+      "bytes": 857449
+    },
+    {
+      "path": "cap-on-three-quarter.png",
+      "sha256": "39ead0b0fb0aacd7d92364938ec1f16053a77d765deb3cd86d176eac800ae0d0",
+      "bytes": 869386
+    },
+    {
+      "path": "cap-on-profile.png",
+      "sha256": "a56b494833965d435f9f9eb0a8b660db2d14204e03a1566d454992df6a82c627",
+      "bytes": 886433
+    },
+    {
+      "path": "cap-on-back.png",
+      "sha256": "d7d56366dd3bf94797631427206ecd9d567404455e4741a76e550d98f72243c9",
+      "bytes": 887920
+    },
+    {
+      "path": "cap-off-front.png",
+      "sha256": "f97d913b41cc50be876a72f54717576c5e070e151894f1be617b1b3a258a34a4",
+      "bytes": 881723
+    },
+    {
+      "path": "cap-off-three-quarter.png",
+      "sha256": "9d37ed78457e80333d0d895804907bd106ba057fda8b3b9f8a496eff7887ad74",
+      "bytes": 903633
+    },
+    {
+      "path": "cap-off-profile.png",
+      "sha256": "8c19ba62603370d1e2a2f5f114a64fa1a054aab73b08d1d6aa8c43443b8a7719",
+      "bytes": 929436
+    },
+    {
+      "path": "cap-off-back.png",
+      "sha256": "3625af73e8983b60bc87cc0ddb498132a4cf70b94004f89c7bffe2e7a51afa8a",
+      "bytes": 925329
+    }
+  ],
+  "remaining_visible_defects": [
+    "Scalloped abrupt root joins are overlapping geometric junctions, not a demonstrated normals-only defect.",
+    "Flattened lock surfaces retain ridge shading; the reviewed silhouette is preserved.",
+    "Procedural hair paint lacks the artist reference's final strand breakup and graphic highlight placement."
+  ]
+}

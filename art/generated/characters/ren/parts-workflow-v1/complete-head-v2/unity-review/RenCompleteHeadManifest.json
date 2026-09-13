@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "sourceFbxAsset": "Assets/CharacterArt/Generated/RenCompleteHead/Sources/RenCompleteHead-v2.fbx",
+  "sourceSha256": "74283a65dfb977e2ec0976cd36a019ab54489f5867fbb8702f72c478a6ee9bda",
+  "gazeContractAsset": "Assets/CharacterArt/Generated/RenCompleteHead/Sources/gaze-controller-contract.json",
+  "gazeContractSha256": "4d0c7a4a948dafbc9e073e6e4b2fc46d0f6b90ff0171967d786b794dad8affec",
+  "reviewNote": "V2 assembled working candidate; reviewed cap band and continuous fringe. Hair capOn stays synchronized with cap visibility. Gaze/paint source inputs are unchanged from V1. Final likeness, paint acceptance, full speech and device performance remain pending.",
+  "displayEulerAngles": {
+    "x": 0,
+    "y": 90,
+    "z": 0
+  },
+  "materials": [
+    {
+      "sourceName": "Ren_AnimePaint_v2_BakedSkin",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "baseColorAsset": "Assets/CharacterArt/Generated/RenCompleteHead/Textures/V2/Ren_AnimePaint_v2_BakedSkin.png",
+      "baseColorSha256": "33abe65ff6a7448d4a744d8909dd4844cdf9911e0eb94098a1a8b90522effcc2"
+    },
+    {
+      "sourceName": "Ren_Anime_Teeth",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.8433891712280845,
+        "g": 0.8094681526358262,
+        "b": 0.7353569830524495,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_Cap_V2_Cloth",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "baseColorAsset": "Assets/CharacterArt/Generated/RenCompleteHead/Textures/V2/Ren_Cap_V2_Cloth.png",
+      "baseColorSha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0"
+    },
+    {
+      "sourceName": "Ren_Cap_V2_InnerCloth",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.03999999888241291,
+        "g": 0.03999999888241291,
+        "b": 0.04600000057745871,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_IrisCatchlight",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.9776915566891456,
+        "g": 0.9866952589813923,
+        "b": 0.9999999999999999,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_IrisGreyBlue",
+      "useVertexColor": true,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.42358287916830234,
+        "g": 0.5168810790145968,
+        "b": 0.5926193754143848,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_LowerLiner",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.43662706283816693,
+        "g": 0.34064343116362994,
+        "b": 0.34919021513783693,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_Oral_Cavity",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.1931150809759302,
+        "g": 0.07016478245502178,
+        "b": 0.09985282129194903,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_PaleBlond_PaintedHair",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "baseColorAsset": "Assets/CharacterArt/Generated/RenCompleteHead/Textures/V2/Ren_PaleBlond_PaintedHair.png",
+      "baseColorSha256": "9e3fb05eba8e001e34757a7f0522c04650f791aba2438cc3e75baaaa62873d22"
+    },
+    {
+      "sourceName": "Ren_Piercing_BrushedSilver",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.7200000033238447,
+        "g": 0.7500000009342138,
+        "b": 0.8199999872960941,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_Pupil",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.11207493995948536,
+        "g": 0.14733287576327567,
+        "b": 0.19641911453503574,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_Sclera",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.896243869286423,
+        "g": 0.9013064520869167,
+        "b": 0.8911433123354617,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_Tongue",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.601243396864941,
+        "g": 0.2933720550220667,
+        "b": 0.3318300279142669,
+        "a": 1.0
+      }
+    },
+    {
+      "sourceName": "Ren_UpperLiner",
+      "useVertexColor": false,
+      "vertexColorEncoding": "linear",
+      "baseColorSrgb": {
+        "r": 0.16801828849098666,
+        "g": 0.13335151928495648,
+        "b": 0.16409832546450354,
+        "a": 1.0
+      }
+    }
+  ],
+  "hairObjectNames": [
+    "Ren_Hair_Side_R",
+    "Ren_Hair_Side_L",
+    "Ren_Hair_RootShell",
+    "Ren_Hair_Fringe_R",
+    "Ren_Hair_Fringe_L",
+    "Ren_Hair_Back"
+  ],
+  "capObjectNames": [
+    "Ren_Cap"
+  ]
+}

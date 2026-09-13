@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "exports": [
+    {
+      "path": "Ren_Shag.fbx",
+      "sha256": "7b783923ed0d43767ca0ebaa57880bd377a17e7f833105f46feee8bc2d8c83fd",
+      "objects": 6,
+      "vertices": 4073,
+      "faces": 3860,
+      "triangles": 7900,
+      "bounds_min": [
+        -0.5492981672286987,
+        -0.416648805141449,
+        -0.1932051181793213
+      ],
+      "bounds_max": [
+        0.3236105144023895,
+        0.44155552983283997,
+        0.509930431842804
+      ],
+      "uv_bounds_min": [
+        0.00244140625,
+        0.003000000026077032
+      ],
+      "uv_bounds_max": [
+        0.99755859375,
+        0.99755859375
+      ],
+      "atlas_dimensions": [
+        [
+          4096,
+          4096
+        ],
+        [
+          4096,
+          4096
+        ]
+      ],
+      "all_meshes_one_uv_layer_and_material": true
+    },
+    {
+      "path": "Ren_Shag.glb",
+      "sha256": "93273582b6f095d02965117d54fd815b29a1c11811f36b7638be05baa2214106",
+      "objects": 6,
+      "vertices": 4748,
+      "faces": 7900,
+      "triangles": 7900,
+      "bounds_min": [
+        -0.5492981672286987,
+        -0.41664883494377136,
+        -0.1932050883769989
+      ],
+      "bounds_max": [
+        0.3236105144023895,
+        0.4415555000305176,
+        0.509930431842804
+      ],
+      "uv_bounds_min": [
+        0.00244140625,
+        0.003000020980834961
+      ],
+      "uv_bounds_max": [
+        0.99755859375,
+        0.99755859375
+      ],
+      "atlas_dimensions": [
+        [
+          4096,
+          4096
+        ]
+      ],
+      "all_meshes_one_uv_layer_and_material": true
+    }
+  ],
+  "head_source_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "head_vertices_world_matrix_and_all_shape_key_coordinates_unchanged": true,
+  "closed_context_mouth_seal": true,
+  "packed_atlas_in_blend": true,
+  "render_hashes_checked": 4,
+  "atlas_layout_checks": "53 unique clump tiles plus root tile63; separated tile rectangles within 0..1. Tiny closed root/tip caps intentionally collapse to UV tile boundary.",
+  "limitations": "Render review required for likeness/intersections. No device performance measured. Atlas is procedural longitudinal paint, not artist-approved final paint."
+}

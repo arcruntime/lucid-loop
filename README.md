@@ -121,6 +121,40 @@ toggle switches between the original design and the painting input. Keep the
 server running while viewing; it listens only on this computer. This viewer
 shows the static provider result and does not drive facial blendshapes.
 
+## Launch the Ren complete-head review
+
+Open **`Assets/CharacterArt/Generated/Preview/Scenes/RenCompleteHead.unity`** in
+Unity and press **Play** with a **16:9** Game view. The original artist sheet is
+shown beside the assembled painted/clay candidates. The earlier Tripo texture
+and face studies remain available for comparison.
+
+This working review adds painted skin, hair, a cap and ear jewelry to the repaired
+face. Controls include independent blink, idle blink, continuous gaze, closed
+rest/open A, and separate cap/hair toggles. The cap toggle also fits the hair under
+the hat. Hair likeness and eyelid painting still need refinement; full expressions,
+English/Japanese speech shapes, body fitting and phone performance remain unfinished.
+
+For the browser review, install the same dependency used by the texture viewer,
+then run this in a second terminal:
+
+```powershell
+npm --prefix tools/character_art/viewers ci --no-audit --no-fund
+python tools/character_art/serve_ren_texture_viewer.py --port 8768 --head
+```
+
+Open **[http://127.0.0.1:8768/](http://127.0.0.1:8768/)**. This viewer drives the
+actual GLB's facial shapes and gaze hierarchy. Keep the server running. See
+[Unity setup, local player paths and evidence](Unity/Assets/CharacterArt/Editor/RenCompleteHead.md).
+
+The current V2 assembly is **26,426 source triangles / 26,422 imported Unity
+triangles**. See its [source package and actual Unity screenshots](art/generated/characters/ren/parts-workflow-v1/complete-head-v2/README.md)
+or the [five-second Unity motion clip](art/generated/characters/ren/parts-workflow-v1/complete-head-v2/unity-review/motion/RenCompleteHead-v2-motion.mp4).
+The clip demonstrates gaze, blink and one mouth gesture; it does not measure phone frame rate.
+
+The [Tripo hair-reduction experiment](art/generated/characters/ren/parts-workflow-v1/tripo-hair-lowpoly-v1/README.md)
+compares the original hair, Tripo's reduced result and the local low-poly version.
+It is a separate source comparison; its returned hair is not yet fitted or painted.
+
 ## Current status
 
 Two gyms are implemented in `Unity/Assets/Gyms/Scenes/`:

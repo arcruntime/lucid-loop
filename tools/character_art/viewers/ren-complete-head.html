@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ren · head assembly</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#1b1e25;color:#f0eee9;font:14px system-ui,sans-serif}
+header{position:absolute;top:0;left:0;right:30%;padding:18px 24px;z-index:2;background:linear-gradient(#1b1e25,transparent)}h1{font-size:24px;margin:0 0 4px}p{margin:6px 0;color:#b5bbc9}#viewport{position:absolute;inset:70px 30% 185px 0}#status{position:absolute;top:100px;left:24px;z-index:3}.ready{display:none}
+aside{position:absolute;right:0;inset-block:0;width:30%;padding:24px;background:#252932;display:flex;flex-direction:column;justify-content:center}aside h2{font-size:17px}aside img{width:100%;max-height:70vh;object-fit:contain}small{color:#afb8c9;line-height:1.5}a{color:#c8d7f5}
+footer{position:absolute;left:0;right:30%;bottom:0;padding:12px 24px 18px;background:#20242c}nav,.toggles{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}button{background:#343b48;color:#edf1f8;border:1px solid #4d596c;border-radius:5px;padding:7px 11px;cursor:pointer;font:inherit}button:hover{background:#485267}button.active{border-color:#cad8f3;background:#414d61}.sliders{display:grid;grid-template-columns:repeat(3,minmax(100px,1fr));gap:8px 16px}label{white-space:nowrap}.sliders label{display:flex;align-items:center;gap:8px}input[type=range]{min-width:45px;width:100%;accent-color:#b6c9ed}input[type=checkbox]{accent-color:#b6c9ed}.value{font-variant-numeric:tabular-nums;min-width:26px}#count{font-variant-numeric:tabular-nums}
+@media(max-width:950px){aside{padding:12px;width:27%}header,footer{right:27%;padding-inline:12px}#viewport{right:27%;bottom:185px}h1{font-size:19px}button{padding:5px 8px}.sliders{gap:6px 8px;font-size:12px}}
+</style>
+<script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
+<header><h1>Ren · head assembly</h1><p>Drag to orbit · scroll to zoom · <span id="count">loading</span></p></header>
+<main id="viewport"></main><div id="status" role="status">Loading Ren…</div>
+<aside><h2>Original artist design</h2><img src="/reference.png" alt="Ren’s original character sheet, including outfit and six expressions"><p><small>Working review: hair, cap and likeness are still being refined. Facial controls currently cover blink, gaze, closed rest and open A. Full expressions and speech shapes follow.</small></p><a href="http://127.0.0.1:8767/" target="_blank" rel="noopener">Open the Tripo texture comparison</a></aside>
+<footer>
+<nav><button data-view="front">Front</button><button data-view="quarter">Quarter</button><button data-view="profile">Profile</button><button data-light="neutral">Neutral</button><button data-light="unlit">Base color</button><button data-light="club">Nightclub</button><button id="reset">Reset</button></nav>
+<div class="toggles"><label><input id="cap" type="checkbox" checked> Cap</label><label><input id="hair" type="checkbox" checked> Hair</label><label><input id="idle" type="checkbox" checked> Idle blink</label><label><input id="gaze-idle" type="checkbox"> Gaze drift</label><label><input id="rotate" type="checkbox"> Turntable</label></div>
+<div class="sliders">
+<label>Open A <input id="mouth" aria-label="Open A" type="range" min="0" max="1" step="0.01" value="0"><span class="value">0%</span></label>
+<label>Blink L <input id="blink-l" aria-label="Blink left" type="range" min="0" max="1" step="0.01" value="0"><span class="value">0%</span></label>
+<label>Blink R <input id="blink-r" aria-label="Blink right" type="range" min="0" max="1" step="0.01" value="0"><span class="value">0%</span></label>
+<label>Gaze X <input id="gaze-x" aria-label="Gaze horizontal" type="range" min="-1" max="1" step="0.01" value="0"><span class="value">0%</span></label>
+<label>Gaze Y <input id="gaze-y" aria-label="Gaze vertical" type="range" min="-1" max="1" step="0.01" value="0"><span class="value">0%</span></label>
+</div></footer>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const $=id=>document.getElementById(id), host=$('viewport'), status=$('status');
+const scene=new THREE.Scene();scene.background=new THREE.Color('#242933');
+const camera=new THREE.PerspectiveCamera(30,1,.001,100);
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.NoToneMapping;host.appendChild(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.autoRotateSpeed=.65;
+const hemi=new THREE.HemisphereLight(0xffffff,0xb6b7be,.95);scene.add(hemi);
+const key=new THREE.DirectionalLight(0xfff8ef,.7);key.position.set(3,4,2);scene.add(key);
+const fill=new THREE.DirectionalLight(0xd7e5ff,.25);fill.position.set(3,1,-4);scene.add(fill);
+const rim=new THREE.DirectionalLight(0xffffff,.25);rim.position.set(-3,2,1);scene.add(rim);
+const materialStates=[],morphMeshes=[],gazeNodes=[],hairNodes=[];
+let model,capNode,target=new THREE.Vector3(),distance=1,mode='neutral',yaw=.16199795457112545,pitch=-.11693296146237843,lastVisibility='';
+const sliders=['mouth','blink-l','blink-r','gaze-x','gaze-y'];
+for(const id of sliders)$(id).oninput=()=>$(id).nextElementSibling.textContent=Math.round(Number($(id).value)*100)+'%';
+function resize(){renderer.setSize(host.clientWidth,host.clientHeight);camera.aspect=host.clientWidth/host.clientHeight;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(host);resize();
+function view(which){const d=which==='quarter'?new THREE.Vector3(1,.02,.7):which==='profile'?new THREE.Vector3(0,0,1):new THREE.Vector3(1,0,0);camera.position.copy(target).addScaledVector(d.normalize(),distance);controls.target.copy(target);controls.update()}
+function lighting(which){mode=which;const club=which==='club';hemi.intensity=club?.42:.95;key.color.set(club?0x74baff:0xfff8ef);key.intensity=club?.6:.7;fill.color.set(club?0xff2a91:0xd7e5ff);fill.intensity=club?1.1:.25;rim.color.set(club?0x39eaff:0xffffff);rim.intensity=club?1.2:.25;for(const state of materialStates)state.mesh.material=which==='unlit'?state.unlit:state.lit;document.querySelectorAll('[data-light]').forEach(b=>b.classList.toggle('active',b.dataset.light===which))}
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>view(b.dataset.view));document.querySelectorAll('[data-light]').forEach(b=>b.onclick=()=>lighting(b.dataset.light));$('rotate').onchange=()=>controls.autoRotate=$('rotate').checked;
+let nextBlink=performance.now()+2000,blinkStart=-Infinity;
+$('reset').onclick=()=>{for(const id of sliders){$(id).value=0;$(id).oninput()}$('idle').checked=true;$('gaze-idle').checked=false;nextBlink=performance.now()+2000;blinkStart=-Infinity;};
+function blinkAt(now){if(!$('idle').checked)return 0;if(now>=nextBlink){blinkStart=now;nextBlink=now+2200+Math.random()*3600}const elapsed=now-blinkStart;let value=elapsed<65?elapsed/65:elapsed<105?1:elapsed<245?1-(elapsed-105)/140:0;value=THREE.MathUtils.clamp(value,0,1);return value*value*(3-2*value)}
+const qYaw=new THREE.Quaternion(),qPitch=new THREE.Quaternion();
+function drive(now){if(!model)return;const blink=blinkAt(now),mouth=Number($('mouth').value),cap=$('cap').checked;
+ const weights={mouthSeal:1-mouth,jawOpen_A:mouth,eyeBlinkL:Math.max(Number($('blink-l').value),blink),eyeBlinkR:Math.max(Number($('blink-r').value),blink),capOn:cap?1:0};
+ for(const mesh of morphMeshes)for(const [name,value]of Object.entries(weights)){const index=mesh.morphTargetDictionary[name];if(index!==undefined)mesh.morphTargetInfluences[index]=value}
+ const gx=THREE.MathUtils.clamp(Number($('gaze-x').value)+($('gaze-idle').checked?.15*Math.sin(now*.00045):0),-1,1),gy=THREE.MathUtils.clamp(Number($('gaze-y').value)+($('gaze-idle').checked?.1*Math.sin(now*.00063):0),-1,1);
+ for(const node of gazeNodes){qYaw.setFromAxisAngle(node.z,gx*yaw*node.handedness);qPitch.setFromAxisAngle(node.y,gy*pitch*node.handedness);node.rotate.quaternion.copy(node.rest).multiply(qYaw).multiply(qPitch)}
+ if(capNode)capNode.visible=cap;for(const hair of hairNodes)hair.visible=$('hair').checked;
+ const visibility=String(cap)+String($('hair').checked);if(visibility!==lastVisibility){let triangles=0;model.traverse(mesh=>{if(!mesh.isMesh)return;for(let node=mesh;node;node=node.parent)if(!node.visible)return;triangles+=(mesh.geometry.index?.count??mesh.geometry.attributes.position.count)/3});$('count').textContent=Math.round(triangles).toLocaleString()+' visible triangles';lastVisibility=visibility}
+ document.body.dataset.gaze=`${gx.toFixed(2)},${gy.toFixed(2)}`;document.body.dataset.blink=`${weights.eyeBlinkL.toFixed(2)},${weights.eyeBlinkR.toFixed(2)}`;
+}
+new GLTFLoader().load('/model.glb',gltf=>{
+ model=gltf.scene;scene.add(model);
+ model.traverse(mesh=>{if(!mesh.isMesh)return;if(mesh.morphTargetDictionary)morphMeshes.push(mesh);const array=Array.isArray(mesh.material),original=array?mesh.material:[mesh.material];
+  const options=m=>({map:m.map,color:m.color,side:m.side,transparent:false,vertexColors:m.vertexColors});
+  const lit=original.map(m=>{const material=new THREE.MeshLambertMaterial(options(m));material.onBeforeCompile=shader=>{shader.fragmentShader=shader.fragmentShader.replace('#include <opaque_fragment>','outgoingLight = mix(diffuseColor.rgb, outgoingLight, 0.35);\n#include <opaque_fragment>')};material.customProgramCacheKey=()=> 'ren-diffuse-paint-floor-v1';return material});
+  const unlit=original.map(m=>new THREE.MeshBasicMaterial(options(m)));materialStates.push({mesh,lit:array?lit:lit[0],unlit:array?unlit:unlit[0]});
+ });
+ for(const side of ['L','R']){const rotate=model.getObjectByName('Ren_GazeRotate_'+side);if(!rotate)throw Error('Missing gaze rotation node '+side);const axes='XYZ'.split('').map(axis=>{const marker=model.getObjectByName(`Ren_GazeAxis_${side}_${axis}`);if(!marker||marker.parent!==rotate)throw Error('Missing gaze basis marker');return marker.position.clone().normalize()});const determinant=new THREE.Vector3().crossVectors(axes[1],axes[2]).dot(axes[0]);if(Math.abs(Math.abs(determinant)-1)>.0001)throw Error('Invalid gaze basis');gazeNodes.push({rotate,rest:rotate.quaternion.clone(),y:axes[1],z:axes[2],handedness:Math.sign(determinant)})}
+ capNode=model.getObjectByName('Ren_Cap');model.traverse(node=>{if(node.name.startsWith('Ren_Hair_')&&!node.parent?.name.startsWith('Ren_Hair_'))hairNodes.push(node)});
+ drive(performance.now());model.updateMatrixWorld(true);const box=new THREE.Box3().setFromObject(model),size=box.getSize(new THREE.Vector3());target=box.getCenter(new THREE.Vector3());distance=Math.max(size.y,size.z/camera.aspect)/2/Math.tan(THREE.MathUtils.degToRad(camera.fov/2))*1.14;controls.minDistance=size.y*.7;controls.maxDistance=size.y*7;view('quarter');lighting('neutral');status.classList.add('ready');document.body.dataset.modelLoaded='true';
+},undefined,error=>{status.textContent='Could not load Ren: '+error.message;console.error(error)});
+renderer.setAnimationLoop(now=>{drive(now);if(mode==='club'){fill.position.set(3,1+Math.sin(now*.0005)*2,-4);rim.position.set(-3,2,Math.sin(now*.0007)*3)}controls.update();renderer.render(scene,camera)});
+</script>
+</html>

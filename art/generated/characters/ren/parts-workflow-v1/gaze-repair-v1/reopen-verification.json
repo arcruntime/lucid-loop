@@ -1,0 +1,242 @@
+[
+  {
+    "file": "Ren_P2_GazeRotation.blend",
+    "sha256": "98597b2bbed0c98e1f2124199f04974eaf83c7fadb11003b98ee1f1e87e9ac1e",
+    "eyes": [
+      {
+        "side": "L",
+        "minimum_iris_triangle_radius": 1.0012334628450448,
+        "maximum_sclera_vertex_radius": 1.0000006546420812,
+        "guaranteed_gap_source_units": 7.396849217781387e-05
+      },
+      {
+        "side": "R",
+        "minimum_iris_triangle_radius": 1.0012334638273124,
+        "maximum_sclera_vertex_radius": 1.0000006332946203,
+        "guaranteed_gap_source_units": 7.396983196152452e-05
+      }
+    ],
+    "gaze_grid_points": 441,
+    "maximum_normalized_radius_error_after_transform": 2.408739361303702e-07,
+    "maximum_normalized_pose_error_against_analytic_rotation": 2.557152170100266e-07,
+    "maximum_actual_iris_travel_source_units": 0.012449547167294272,
+    "full_blink_samples": [
+      {
+        "gaze": [
+          0,
+          0
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          0,
+          0
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -1,
+          -1
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -1,
+          -1
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -1,
+          1
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -1,
+          1
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          1,
+          -1
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          1,
+          -1
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          1,
+          1
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          1,
+          1
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -0.5,
+          0.5
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -0.5,
+          0.5
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      }
+    ]
+  },
+  {
+    "file": "Ren_P2_GazeRotation_LowSclera.blend",
+    "sha256": "a52a8473438e8c48d859eb90023950c8bc1c1283e80b46d0504c27bbe6d5a3ee",
+    "eyes": [
+      {
+        "side": "L",
+        "minimum_iris_triangle_radius": 1.0012334628450448,
+        "maximum_sclera_vertex_radius": 1.000000195110439,
+        "guaranteed_gap_source_units": 7.399606407635151e-05
+      },
+      {
+        "side": "R",
+        "minimum_iris_triangle_radius": 1.0012334638273124,
+        "maximum_sclera_vertex_radius": 1.0000001846512305,
+        "guaranteed_gap_source_units": 7.399675056491084e-05
+      }
+    ],
+    "gaze_grid_points": 441,
+    "maximum_normalized_radius_error_after_transform": 2.408739361303702e-07,
+    "maximum_normalized_pose_error_against_analytic_rotation": 2.557152170100266e-07,
+    "maximum_actual_iris_travel_source_units": 0.012449547167294272,
+    "full_blink_samples": [
+      {
+        "gaze": [
+          0,
+          0
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          0,
+          0
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -1,
+          -1
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -1,
+          -1
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -1,
+          1
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -1,
+          1
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          1,
+          -1
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          1,
+          -1
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          1,
+          1
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          1,
+          1
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -0.5,
+          0.5
+        ],
+        "view": "front",
+        "visible_eye_samples_at_full_blink": 0
+      },
+      {
+        "gaze": [
+          -0.5,
+          0.5
+        ],
+        "view": "quarter",
+        "visible_eye_samples_at_full_blink": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,166 @@
+{
+    "sourceSha256": "e1c56169a9c86fef72f947d6024b4bc6a9b7caa1296b9a3d5c7787fb4b0cfa2f",
+    "meshes": [
+        {
+            "name": "Ren_Cap",
+            "vertices": 612,
+            "triangles": 962,
+            "uv0": 612,
+            "blendShapes": 0
+        },
+        {
+            "name": "Ren_Eye_L_LowerLiner",
+            "vertices": 46,
+            "triangles": 44,
+            "uv0": 0,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Eye_L_OuterLash",
+            "vertices": 9,
+            "triangles": 3,
+            "uv0": 0,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Eye_L_Sclera",
+            "vertices": 185,
+            "triangles": 288,
+            "uv0": 185,
+            "blendShapes": 0
+        },
+        {
+            "name": "Ren_Eye_L_UpperLiner",
+            "vertices": 46,
+            "triangles": 44,
+            "uv0": 0,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Eye_R_LowerLiner",
+            "vertices": 46,
+            "triangles": 44,
+            "uv0": 0,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Eye_R_OuterLash",
+            "vertices": 9,
+            "triangles": 3,
+            "uv0": 0,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Eye_R_Sclera",
+            "vertices": 185,
+            "triangles": 288,
+            "uv0": 185,
+            "blendShapes": 0
+        },
+        {
+            "name": "Ren_Eye_R_UpperLiner",
+            "vertices": 46,
+            "triangles": 44,
+            "uv0": 0,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Eye_L_Iris",
+            "vertices": 282,
+            "triangles": 472,
+            "uv0": 0,
+            "blendShapes": 0
+        },
+        {
+            "name": "Ren_Eye_R_Iris",
+            "vertices": 282,
+            "triangles": 472,
+            "uv0": 0,
+            "blendShapes": 0
+        },
+        {
+            "name": "Ren_Hair_Back",
+            "vertices": 1098,
+            "triangles": 1816,
+            "uv0": 1098,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Hair_Fringe_L",
+            "vertices": 420,
+            "triangles": 700,
+            "uv0": 420,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Hair_Fringe_R",
+            "vertices": 252,
+            "triangles": 420,
+            "uv0": 252,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Hair_RootShell",
+            "vertices": 296,
+            "triangles": 480,
+            "uv0": 296,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Hair_Side_L",
+            "vertices": 1443,
+            "triangles": 2380,
+            "uv0": 1443,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Hair_Side_R",
+            "vertices": 1281,
+            "triangles": 2100,
+            "uv0": 1281,
+            "blendShapes": 1
+        },
+        {
+            "name": "Ren_Head",
+            "vertices": 7505,
+            "triangles": 13790,
+            "uv0": 7505,
+            "blendShapes": 4
+        },
+        {
+            "name": "Ren_P2_LowerTeeth",
+            "vertices": 200,
+            "triangles": 396,
+            "uv0": 0,
+            "blendShapes": 2
+        },
+        {
+            "name": "Ren_P2_Tongue",
+            "vertices": 390,
+            "triangles": 776,
+            "uv0": 0,
+            "blendShapes": 2
+        },
+        {
+            "name": "Ren_P2_UpperTeeth",
+            "vertices": 200,
+            "triangles": 396,
+            "uv0": 0,
+            "blendShapes": 2
+        },
+        {
+            "name": "Ren_RightEar_DropPiercing",
+            "vertices": 144,
+            "triangles": 156,
+            "uv0": 144,
+            "blendShapes": 0
+        },
+        {
+            "name": "Ren_RightEar_HelixCuffs",
+            "vertices": 156,
+            "triangles": 200,
+            "uv0": 156,
+            "blendShapes": 0
+        }
+    ]
+}

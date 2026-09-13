@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-13T13:45:07.250167Z",
+  "fingerprint": "9bd8c3108abf562c000fd8b8670ba1ee0c593922072c995734a7bc9bea400263",
+  "endpoint": "/mesh/decimate",
+  "request": {
+    "input": "1a8b7598-cddf-4b6c-a344-9e9ae16dcd5d",
+    "model": "v2.0",
+    "face_limit": 8000,
+    "quad": false,
+    "bake": false
+  }
+}

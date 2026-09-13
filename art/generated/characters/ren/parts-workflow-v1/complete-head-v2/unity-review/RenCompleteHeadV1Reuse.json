@@ -1,0 +1,31 @@
+{
+  "v1FbxSha256": "e1c56169a9c86fef72f947d6024b4bc6a9b7caa1296b9a3d5c7787fb4b0cfa2f",
+  "v2FbxSha256": "74283a65dfb977e2ec0976cd36a019ab54489f5867fbb8702f72c478a6ee9bda",
+  "sameGazeSource": {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\gaze-repair-v1\\Ren_P2_GazeRotation_LowSclera.blend",
+    "sha256": "a52a8473438e8c48d859eb90023950c8bc1c1283e80b46d0504c27bbe6d5a3ee"
+  },
+  "samePaintSource": {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\anime-paint-v2\\Ren_AnimePaint_v2.blend",
+    "sha256": "a52cad489e597d5c5a9325d08919089600c6899aac99e1320510c856ddc8261f"
+  },
+  "sameFacialObjectRecords": [
+    "Ren_Eye_L_Iris",
+    "Ren_Eye_L_LowerLiner",
+    "Ren_Eye_L_OuterLash",
+    "Ren_Eye_L_Sclera",
+    "Ren_Eye_L_UpperLiner",
+    "Ren_Eye_R_Iris",
+    "Ren_Eye_R_LowerLiner",
+    "Ren_Eye_R_OuterLash",
+    "Ren_Eye_R_Sclera",
+    "Ren_Eye_R_UpperLiner",
+    "Ren_Head",
+    "Ren_P2_LowerTeeth",
+    "Ren_P2_Tongue",
+    "Ren_P2_UpperTeeth"
+  ],
+  "sameGazeContract": true,
+  "sourceSignaturePreservation": true,
+  "reuse": "V1 analytic gaze and full 25-pose live cap-fixed evidence are retained. V2 receives new actual focused views/cap/reset/combined controls plus motion; final visual acceptance is not inferred from hashes."
+}

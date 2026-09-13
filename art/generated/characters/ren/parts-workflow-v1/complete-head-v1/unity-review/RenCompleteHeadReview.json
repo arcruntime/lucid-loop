@@ -1,0 +1,87 @@
+{
+  "status": "SUPERSEDED_INVALID_CAP_STATE",
+  "sourceFbxSha256": "e1c56169a9c86fef72f947d6024b4bc6a9b7caa1296b9a3d5c7787fb4b0cfa2f",
+  "liveImagesInspected": 18,
+  "captureMethod": "Hidden running Windows player using actual live renderers and explicit URP GPU render requests after 12 player frame updates. No baked snapshot meshes.",
+  "minimumPoseFrameUpdates": 12,
+  "analyticGazeMaximumError": 8.642086315843269e-08,
+  "closedRestResetPngIdentical": true,
+  "pixelComparisons": [
+    {
+      "file": "RenCompleteHead-live--rest--front.png",
+      "changedPixelsVsRest": 0,
+      "sha256": "913a083fd11bac3f1218441c457468ce13a83867329696309f728a7bbf76c426"
+    },
+    {
+      "file": "RenCompleteHead-live--partial-diagonal--front.png",
+      "changedPixelsVsRest": 3946,
+      "sha256": "f64fadcc11048d1cafc91c4e3d7d8168a9f2e4389d3e6e5af83ef1ee9d78fa60"
+    },
+    {
+      "file": "RenCompleteHead-live--partial-diagonal-blink--front.png",
+      "changedPixelsVsRest": 20246,
+      "sha256": "bdfcb7b235b805ded4875bdc4c26bbaf698e897b207efe05bd2776a95af8388a"
+    },
+    {
+      "file": "RenCompleteHead-live--opposite-diagonal-blink--front.png",
+      "changedPixelsVsRest": 20294,
+      "sha256": "95742edd173022662f121ec41195f7c3ae265b2a3e67eced32c4d53dff3ae705"
+    },
+    {
+      "file": "RenCompleteHead-live--open-A-diagonal--front.png",
+      "changedPixelsVsRest": 39457,
+      "sha256": "9207c571b370cad44d64e01880a294679d2cd3df25f73ab1ac2e36ef0321a45a"
+    },
+    {
+      "file": "RenCompleteHead-live--full-blink--front.png",
+      "changedPixelsVsRest": 21959,
+      "sha256": "99b0ac50c7b7bcf677bb3edeb76cc1cd75e2b527889d55c500c6455ad84fa644"
+    },
+    {
+      "file": "RenCompleteHead-live--blink-left--front.png",
+      "changedPixelsVsRest": 10295,
+      "sha256": "2e6930079e5bbca7423e064e872b967808fc890a48ed1f3895344b58ea0edee2"
+    },
+    {
+      "file": "RenCompleteHead-live--blink-right--front.png",
+      "changedPixelsVsRest": 11664,
+      "sha256": "8e7ae386af1914950d9046dcc656c5fb3f4e3c3f831848bfcb605b46385d178a"
+    },
+    {
+      "file": "RenCompleteHead-live--reset--front.png",
+      "changedPixelsVsRest": 0,
+      "sha256": "913a083fd11bac3f1218441c457468ce13a83867329696309f728a7bbf76c426"
+    }
+  ],
+  "sourceTriangles": 26278,
+  "importedTriangles": 26274,
+  "triangleDifference": {
+    "mesh": "Ren_Hair_Back",
+    "source": 1820,
+    "unity": 1816,
+    "cause": "Not yet established; all other imported mesh triangle counts match."
+  },
+  "visualFindings": [
+    "Partial diagonal gaze plus half blink has no visible sclera penetration at front and both quarter views.",
+    "Independent L/R blinks and open A visibly move; full blink hides iris/sclera at all captured front/quarter views.",
+    "Eyelid painting stretches during full closure; paint remains unaccepted."
+  ],
+  "limits": [
+    "No final artist likeness or full speech/emotion acceptance.",
+    "No iPhone performance claim.",
+    "No interactive visible player or full UI screenshot captured."
+  ],
+  "player": "B:/lucid-loop/.local/ren-complete-head-v1/RenCompleteHead.exe",
+  "sourceHashChecks": [
+    "Assets/CharacterArt/Generated/RenCompleteHead/Sources/RenCompleteHead-v1.fbx",
+    "Assets/CharacterArt/Generated/RenCompleteHead/Sources/gaze-controller-contract.json",
+    "Assets/CharacterArt/Generated/RenCompleteHead/Textures/Ren_AnimePaint_v2_BakedSkin.png",
+    "Assets/CharacterArt/Generated/RenCompleteHead/Textures/Ren_Cap_BlackCloth.png",
+    "Assets/CharacterArt/Generated/RenCompleteHead/Textures/Ren_PaleBlond_PaintedHair.png"
+  ],
+  "dependencyFilesChecked": 62,
+  "missingGuids": {},
+  "missingMetas": [],
+  "supersededBy": "RenCompleteHeadCapFixReview.json",
+  "correction": "The first Unity Rig.Bind reset every morph to zero and never reapplied capOn. Hair crossing the cap was a Unity runtime bug; attributing that crossing to the source was incorrect. The original source FBX/textures were unchanged by this correction."
+}

@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "head_vertices_matrix_and_all_shape_coordinates_unchanged": true,
+  "reviewed_cap_off_basis_changes": [
+    {
+      "object": "Ren_Hair_Side_L",
+      "changed_vertices": 136,
+      "matches_recorded_ear_edit_only": true
+    },
+    {
+      "object": "Ren_Hair_Back",
+      "changed_vertices": 0,
+      "matches_recorded_ear_edit_only": true
+    },
+    {
+      "object": "Ren_Hair_Side_R",
+      "changed_vertices": 0,
+      "matches_recorded_ear_edit_only": true
+    },
+    {
+      "object": "Ren_Hair_Fringe_L",
+      "changed_vertices": 0,
+      "matches_recorded_ear_edit_only": true
+    },
+    {
+      "object": "Ren_Hair_Fringe_R",
+      "changed_vertices": 0,
+      "matches_recorded_ear_edit_only": true
+    },
+    {
+      "object": "Ren_Hair_RootShell",
+      "changed_vertices": 0,
+      "matches_recorded_ear_edit_only": true
+    }
+  ],
+  "cap_off_and_cap_on_import_bounds_match": true,
+  "triangles": 7900,
+  "source_mesh_counts": [
+    {
+      "object": "Ren_Hair_Side_L",
+      "vertices": 1224,
+      "faces": 1156,
+      "triangles": 2380
+    },
+    {
+      "object": "Ren_Hair_Back",
+      "vertices": 936,
+      "faces": 884,
+      "triangles": 1820
+    },
+    {
+      "object": "Ren_Hair_Side_R",
+      "vertices": 1080,
+      "faces": 1020,
+      "triangles": 2100
+    },
+    {
+      "object": "Ren_Hair_Fringe_L",
+      "vertices": 360,
+      "faces": 340,
+      "triangles": 700
+    },
+    {
+      "object": "Ren_Hair_Fringe_R",
+      "vertices": 216,
+      "faces": 204,
+      "triangles": 420
+    },
+    {
+      "object": "Ren_Hair_RootShell",
+      "vertices": 257,
+      "faces": 256,
+      "triangles": 480
+    }
+  ],
+  "exports": [
+    {
+      "file": "Ren_Shag_CapState.fbx",
+      "sha256": "5a64bb1645c28d1c59e19c0993b4139225a4515b00bb52ecfa6e57f496e2f8f3",
+      "triangles": 7900,
+      "objects": 6,
+      "cap_states_bounds": {
+        "0": [
+          [
+            -0.5492981672286987,
+            -0.4104926884174347,
+            -0.1932051181793213
+          ],
+          [
+            0.33299723267555237,
+            0.44155552983283997,
+            0.509930431842804
+          ]
+        ],
+        "1": [
+          [
+            -0.5211743116378784,
+            -0.3579968214035034,
+            -0.1932051181793213
+          ],
+          [
+            0.324688583612442,
+            0.42819705605506897,
+            0.509930431842804
+          ]
+        ]
+      },
+      "morph_controls": [
+        {
+          "object": "Ren_Hair_Back",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_Fringe_L",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_Fringe_R",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_RootShell",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_Side_L",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_Side_R",
+          "morph": "capOn",
+          "default_value": 0.0
+        }
+      ],
+      "uv_and_material_present_on_all_meshes": true,
+      "texture_dimensions": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "file": "Ren_Shag_CapState.glb",
+      "sha256": "635eb2e0ae09eb1e3063a401cdc42f47e48a80b33e8b47d34df3a6e01e021844",
+      "triangles": 7900,
+      "objects": 6,
+      "cap_states_bounds": {
+        "0": [
+          [
+            -0.5492981672286987,
+            -0.4104927182197571,
+            -0.1932050883769989
+          ],
+          [
+            0.33299723267555237,
+            0.4415555000305176,
+            0.509930431842804
+          ]
+        ],
+        "1": [
+          [
+            -0.5211743116378784,
+            -0.3579968214035034,
+            -0.1932050883769989
+          ],
+          [
+            0.324688583612442,
+            0.4281970262527466,
+            0.5099303722381592
+          ]
+        ]
+      },
+      "morph_controls": [
+        {
+          "object": "Ren_Hair_Side_L",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_Back",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_Side_R",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_Fringe_L",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_Fringe_R",
+          "morph": "capOn",
+          "default_value": 0.0
+        },
+        {
+          "object": "Ren_Hair_RootShell",
+          "morph": "capOn",
+          "default_value": 0.0
+        }
+      ],
+      "uv_and_material_present_on_all_meshes": true,
+      "texture_dimensions": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "render_hashes_checked": 8,
+  "limits": "Checks integrity, local edit scope and export morph/material survival. Artist likeness and device performance remain unapproved."
+}

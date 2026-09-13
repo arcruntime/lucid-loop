@@ -1,0 +1,49 @@
+{
+  "eye_triangles": 1702,
+  "objects": [
+    {
+      "object": "Ren_Eye_R_UpperLiner",
+      "triangles": 44
+    },
+    {
+      "object": "Ren_Eye_R_OuterLash",
+      "triangles": 3
+    },
+    {
+      "object": "Ren_Eye_R_LowerLiner",
+      "triangles": 44
+    },
+    {
+      "object": "Ren_Eye_R_Iris",
+      "triangles": 472
+    },
+    {
+      "object": "Ren_Eye_L_UpperLiner",
+      "triangles": 44
+    },
+    {
+      "object": "Ren_Eye_L_OuterLash",
+      "triangles": 3
+    },
+    {
+      "object": "Ren_Eye_L_LowerLiner",
+      "triangles": 44
+    },
+    {
+      "object": "Ren_Eye_L_Iris",
+      "triangles": 472
+    },
+    {
+      "object": "Ren_Eye_L_Sclera",
+      "triangles": 288
+    },
+    {
+      "object": "Ren_Eye_R_Sclera",
+      "triangles": 288
+    }
+  ],
+  "sclera_segments": 16,
+  "sclera_ring_count": 10,
+  "proof": "Every new sclera vertex lies on the same normalized unit sphere; its triangles are inside by convexity. Same iris triangle clearance bound holds for all gaze rotations.",
+  "blend_sha256": "a52a8473438e8c48d859eb90023950c8bc1c1283e80b46d0504c27bbe6d5a3ee"
+}

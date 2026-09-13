@@ -1,0 +1,79 @@
+{
+  "schema": "lucid-loop/ren-head-accessory-review/v1",
+  "reviewed_utc": "2026-09-13T13:19:21.876417+00:00",
+  "status": "reviewed_accessory_fit_candidate",
+  "reviewer": "Codex /root/ren_original_rig_binding",
+  "source_head_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "reference_sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+  "hair_fit_source": {
+    "source": "art\\generated\\characters\\ren\\parts-workflow-v1\\ren-shag-v1\\cap-on-v1\\Ren_Shag_CapState.blend",
+    "sha256": "2fe30619314159ae2738cee9584b98fcdcc46f2e6a3a05cf45432b0ddf9d99eb",
+    "objects": [
+      "Ren_Hair_Side_R",
+      "Ren_Hair_Side_L",
+      "Ren_Hair_RootShell",
+      "Ren_Hair_Fringe_R",
+      "Ren_Hair_Fringe_L",
+      "Ren_Hair_Back"
+    ]
+  },
+  "cap_on_hair_state": 1,
+  "study_blend_sha256": "8eabe676ca3cfc535cee437c97d58532dab7c598d49bb0e549525f30392c01df",
+  "standalone_blend_sha256": "e8f8c88bf8972e0b46f6434371c6fc1a9ddd0b392083ff15433db621fcd8f50c",
+  "fbx_sha256": "64e98b1f73ddba39d3f4228d716e3055926e2305dbfca89212a6c20483cbc3af",
+  "glb_sha256": "3bd1fa091b86cab5b8a2961cf33dfff27d435b47face518a6c29df7d52c0203d",
+  "texture_sha256": "594c73864180f7919d307d46b51a145180793f4939221f980d80af3e0d6b5320",
+  "images": [
+    {
+      "path": "combined-front.png",
+      "sha256": "909e979e9a93435844fb157869fa5c3c03554183713851cd2159d56a44e2a551"
+    },
+    {
+      "path": "combined-quarter.png",
+      "sha256": "5be434417bd154a32c7338bb8474a402fe713d47ec83d188c1adb40b6ec8af84"
+    },
+    {
+      "path": "combined-profile.png",
+      "sha256": "53d81ef74d21d03c3b08d71648f57bec9ec3262a8a1bfd717f76fdc2a58ae5f9"
+    },
+    {
+      "path": "jewelry-detail.png",
+      "sha256": "7a17cd29be0b473e47baf30f3a4380a07301938d13e3082f1fc45422a90becf1"
+    },
+    {
+      "path": "cap-fit-quarter.png",
+      "sha256": "d182dd1a4ce5c171f564dea0186a199a7064c69c93148961e8bc95cc7435c703"
+    },
+    {
+      "path": "cap-fit-rear.png",
+      "sha256": "9dbfadf85db414b6d4218be7f594129a5ac36fef5f4c35c8647a2edf01ef5b16"
+    },
+    {
+      "path": "jewelry-fit-detail.png",
+      "sha256": "681d66feb9486adfc6913027bf42aaf68b6cb6480a56157db52c5efefce855d6"
+    }
+  ],
+  "observations": [
+    "Black cloth, textured panel seams and small embroidered mark read in the actual renders.",
+    "Cap-on hair state removes the broad side/root tufts previously protruding through the crown.",
+    "Front, quarter and profile preserve visible eyes beneath the bill; fringe is still sparse and under revision by the hair worker.",
+    "Rear opening and strap read in the rear view; a small inner-band poke-through was corrected before these final images.",
+    "Paired helix cuffs and narrow drop are separately visible with hair hidden. The current thick side lock obscures much of the cuffs in the combined detail.",
+    "The native head remains unchanged. Context lip color is neutralized only during renders and original material slots are restored in the saved study."
+  ],
+  "unaccepted": [
+    "Final artist likeness or 100-percent design match",
+    "Current sparse fringe; fuller swept fringe and upper-helix hair opening remain with hair worker",
+    "Continuous animation, rig binding and head motion",
+    "URP shader equivalence or Unity gameplay view",
+    "iPhone sustained performance"
+  ],
+  "counts": {
+    "cap_triangles": 962,
+    "ear_jewelry_triangles": 356,
+    "total_accessory_triangles": 1318,
+    "renderers": 3,
+    "material_primitives": 4
+  },
+  "immutable_sources_rechecked": true
+}

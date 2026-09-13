@@ -1,0 +1,179 @@
+{
+  "status": "CAP_ONLY_DIRECTION_STUDY_NO_RUNTIME_EXPORT",
+  "source": "art\\generated\\characters\\ren\\parts-workflow-v1\\complete-head-v1\\Ren_CompleteHead_Review.blend",
+  "source_sha256": "cf1c249ac8bf51c497af76906a1c1003986ca423bd329fd05f7a4ea2975aef7f",
+  "head_unchanged": true,
+  "scalp_max_z": 0.499755859375,
+  "cap_max_z": 0.5234999656677246,
+  "cap_base_front_z": 0.248,
+  "cap_radii_xy": [
+    0.368,
+    0.31
+  ],
+  "cap_center": [
+    -0.0430000014603138,
+    0.0,
+    0.21799999475479126
+  ],
+  "crown_top": 0.52,
+  "cap_triangles": 1110,
+  "sampled_scalp_vertices": 1076,
+  "minimum_radial_scalp_clearance": [
+    [
+      0.009670412977260068,
+      1441
+    ],
+    [
+      0.010310444252576434,
+      1563
+    ],
+    [
+      0.010404416126192306,
+      1564
+    ],
+    [
+      0.01071904465420298,
+      1562
+    ],
+    [
+      0.0107270821290264,
+      1449
+    ],
+    [
+      0.010742715519119816,
+      1565
+    ],
+    [
+      0.010745411893393897,
+      1560
+    ],
+    [
+      0.010928847032992961,
+      1566
+    ],
+    [
+      0.011022664324897624,
+      1459
+    ],
+    [
+      0.011061773105449757,
+      1539
+    ]
+  ],
+  "missed_cap_rays": [
+    3091,
+    3101,
+    3102,
+    3105,
+    5708,
+    5709,
+    5712,
+    5715,
+    5725,
+    5729
+  ],
+  "hair_state": "Existing selected-v1 capOn=1 unchanged; requires independent V2 refit after direction review.",
+  "missed_cap_ray_review": [
+    {
+      "vertex": 3091,
+      "native_position": [
+        -0.359619140625,
+        -0.0769042894244194,
+        0.220458984375
+      ],
+      "azimuth_degrees": -163.91580139269453,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 3101,
+      "native_position": [
+        -0.363037109375,
+        -0.057861316949129105,
+        0.221435546875
+      ],
+      "azimuth_degrees": -167.88682567415498,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 3102,
+      "native_position": [
+        -0.364990234375,
+        -0.038818348199129105,
+        0.221923828125
+      ],
+      "azimuth_degrees": -171.8555056971374,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 3105,
+      "native_position": [
+        -0.366455078125,
+        -0.019287100061774254,
+        0.222412109375
+      ],
+      "azimuth_degrees": -175.95109167727887,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 5708,
+      "native_position": [
+        -0.367431640625,
+        0.00024415034567937255,
+        0.222412109375
+      ],
+      "azimuth_degrees": 179.94881498926148,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 5709,
+      "native_position": [
+        -0.366455078125,
+        0.019775399938225746,
+        0.222412109375
+      ],
+      "azimuth_degrees": 175.84893764398115,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 5712,
+      "native_position": [
+        -0.364990234375,
+        0.038818370550870895,
+        0.221923828125
+      ],
+      "azimuth_degrees": 171.8555009162032,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 5715,
+      "native_position": [
+        -0.363037109375,
+        0.058349620550870895,
+        0.221435546875
+      ],
+      "azimuth_degrees": 167.7876560583176,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 5725,
+      "native_position": [
+        -0.359619140625,
+        0.0769043043255806,
+        0.220458984375
+      ],
+      "azimuth_degrees": 163.91579772806872,
+      "classification": "intentional rear adjustment opening"
+    },
+    {
+      "vertex": 5729,
+      "native_position": [
+        -0.354736328125,
+        0.0949707105755806,
+        0.218994140625
+      ],
+      "azimuth_degrees": 160.11747940588842,
+      "classification": "intentional rear adjustment opening"
+    }
+  ],
+  "unknown_shell_misses": 0
+}

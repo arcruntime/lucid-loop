@@ -1,6 +1,10 @@
 # Normalize text files and store binary art/production assets in Git LFS.
 * text=auto
 
+# Keep the review runtime's recorded source hashes stable on Windows checkout.
+Unity/Assets/CharacterArt/Runtime/RenCompleteHead*.cs text eol=lf
+Unity/Assets/CharacterArt/Editor/RenCompleteHead*.cs text eol=lf
+
 # Images and layered source artwork.
 *.[pP][nN][gG] filter=lfs diff=lfs merge=lfs -text
 *.[jJ][pP][gG] filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,153 @@
+{
+  "source_head_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "geometry_built_from": "original Ren designer sheet; local Blender mesh construction, no paid model call",
+  "objects": {
+    "Ren_RightEar_HelixCuffs": {
+      "triangles": 200,
+      "min_triangle_area": 1.0055764505523257e-05,
+      "uv_loops": 400
+    },
+    "Ren_RightEar_DropPiercing": {
+      "triangles": 156,
+      "min_triangle_area": 1.0058543921331875e-05,
+      "uv_loops": 312
+    },
+    "Ren_Cap": {
+      "triangles": 1110,
+      "min_triangle_area": 4.2871829464274924e-06,
+      "uv_loops": 2244
+    }
+  },
+  "roundtrips": {
+    "glb": {
+      "sha256": "b188c2cd043f4351a07c4da91b3e1044b595eeca1daf09618d809ce935e1bf49",
+      "objects": {
+        "Ren_Cap": {
+          "triangles": 1110,
+          "render_vertices": 692,
+          "nearest_vertex_error_native_units": 0.0,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Cap_V2_Cloth",
+            "Ren_Cap_V2_InnerCloth"
+          ]
+        },
+        "Ren_RightEar_DropPiercing": {
+          "triangles": 156,
+          "render_vertices": 80,
+          "nearest_vertex_error_native_units": 0.0,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Piercing_BrushedSilver"
+          ]
+        },
+        "Ren_RightEar_HelixCuffs": {
+          "triangles": 200,
+          "render_vertices": 104,
+          "nearest_vertex_error_native_units": 0.0,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Piercing_BrushedSilver"
+          ]
+        }
+      },
+      "no_armatures": true
+    },
+    "fbx": {
+      "sha256": "caa9a2c999fdfb7555ab99c1de5036a9352ccba767d7f98835a032296e60528e",
+      "objects": {
+        "Ren_Cap": {
+          "triangles": 1110,
+          "render_vertices": 657,
+          "nearest_vertex_error_native_units": 8.720680710894158e-08,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Cap_V2_Cloth",
+            "Ren_Cap_V2_InnerCloth"
+          ]
+        },
+        "Ren_RightEar_DropPiercing": {
+          "triangles": 156,
+          "render_vertices": 80,
+          "nearest_vertex_error_native_units": 5.372690026206328e-08,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Piercing_BrushedSilver"
+          ]
+        },
+        "Ren_RightEar_HelixCuffs": {
+          "triangles": 200,
+          "render_vertices": 104,
+          "nearest_vertex_error_native_units": 6.006850128414953e-08,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Piercing_BrushedSilver"
+          ]
+        }
+      },
+      "no_armatures": true
+    }
+  },
+  "blend_sha256": "bff2a53430d58535e6f2aef8d271e8a8774a6c8015185a4cd5f2b74168ab805d",
+  "texture_sha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0",
+  "units": "Unnormalized native head units; error values are not world metres.",
+  "embedded_glb_texture_exact_png": true,
+  "gltf_materials": [
+    {
+      "name": "Ren_Cap_V2_Cloth",
+      "double_sided": true,
+      "pbr": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9399999976158142
+      },
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularFactor": 0.10000000149011612
+        }
+      }
+    },
+    {
+      "name": "Ren_Cap_V2_InnerCloth",
+      "double_sided": true,
+      "pbr": {
+        "baseColorFactor": [
+          0.0030959751456975937,
+          0.0030959751456975937,
+          0.0035856293980032206,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9599999785423279
+      },
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularFactor": 0.07999999821186066
+        }
+      }
+    },
+    {
+      "name": "Ren_Piercing_BrushedSilver",
+      "double_sided": false,
+      "pbr": {
+        "baseColorFactor": [
+          0.47699978947639465,
+          0.5225215554237366,
+          0.6382831931114197,
+          1
+        ],
+        "metallicFactor": 0.8600000143051147,
+        "roughnessFactor": 0.28999999165534973
+      },
+      "extensions": {}
+    }
+  ],
+  "total_accessory_triangles": 1466,
+  "limitations": [
+    "Native head units remain unchanged; a later common character normalization is required.",
+    "Roundtrips verify static placement/topology/material slots/UV presence, not Unity shader appearance.",
+    "No rig or skin weights; all objects provide Head bind metadata."
+  ]
+}

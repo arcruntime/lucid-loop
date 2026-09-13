@@ -34,7 +34,12 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--port', type=int, default=8767)
+    parser.add_argument('--head', action='store_true', help='Show the animated complete-head review instead of the static Tripo trial.')
     args = parser.parse_args()
+    if args.head:
+        ROUTES['/'] = ROOT / 'tools/character_art/viewers/ren-complete-head.html'
+        ROUTES['/model.glb'] = BASE / 'complete-head-v2/Ren_CompleteHead_Review.glb'
+        ROUTES['/assembly.json'] = BASE / 'complete-head-v2/assembly.json'
     for path in [*ROUTES.values(), THREE / 'build/three.module.js']:
         if not path.is_file():
             parser.error(f'Missing viewer dependency: {path}')

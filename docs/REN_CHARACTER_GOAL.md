@@ -8,6 +8,20 @@ Show it beside the original artist sheet in the browser and Unity, with working
 independent blinks, clean gaze, closed rest and the existing open-A mouth prototype.
 This is the immediate milestone within the broader Ren implementation below.
 
+The assembled working review now has a separate `RenCompleteHead.unity` scene
+and a browser viewer at port 8768, with [explicit launch instructions](../README.md#launch-the-ren-complete-head-review).
+It retains the facial surface and adds painted skin, reduced eye shells, cap,
+ear jewelry and local low-poly hair. Continuous iris rotation and independent
+blink/mouth controls have been exercised in actual browser and Unity rendering.
+Hair remains too schematic and full-blink paint stretches; these are open art
+issues, so this checkpoint does not complete the visual milestone.
+
+A [30-credit Tripo hair-reduction trial](../art/generated/characters/ren/parts-workflow-v1/tripo-hair-lowpoly-v1/README.md)
+returned 9,026 triangles for an 8,000 target. It preserves the layered source shag
+better than the local reconstruction, but requires crown/internal-geometry cleanup,
+head/cap fitting and UVs. Use that evidence to guide the next hair pass, while
+preserving the working facial mesh and verified controls.
+
 The user now targets approximately **40,000 rendered triangles for Ren's complete
 LOD0**, including face, eyes, mouth interior, hair, body, all clothing and accessories.
 This uses Unity's triangle count as the working interpretation of "polygons";

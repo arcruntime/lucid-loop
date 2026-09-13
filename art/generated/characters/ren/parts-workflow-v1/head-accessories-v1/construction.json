@@ -1,0 +1,109 @@
+{
+  "source_blend": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\Ren_P2_Face_EyeUV.blend",
+  "source_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "reference": "art\\characters\\ren-model-sheet.png",
+  "reference_sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+  "source_mesh_geometry_uv_shapes_and_matrices_unchanged": true,
+  "coordinates": "+X front, +Z up, original head native units",
+  "cap": {
+    "center": [
+      -0.03500000014901161,
+      0.0,
+      0.1899999976158142
+    ],
+    "rotation_degrees_xyz": [
+      3,
+      3,
+      -7
+    ],
+    "radii_xyz": [
+      0.39,
+      0.33,
+      0.38
+    ]
+  },
+  "objects": [
+    {
+      "name": "Ren_Cap",
+      "vertices": 577,
+      "triangles": 962,
+      "materials": [
+        "Ren_Cap_BlackCloth",
+        "Ren_Cap_Underside"
+      ],
+      "bounds": [
+        [
+          -0.42466720938682556,
+          -0.3531784415245056,
+          0.07153377681970596
+        ],
+        [
+          0.6484439969062805,
+          0.32921624183654785,
+          0.5767937302589417
+        ]
+      ]
+    },
+    {
+      "name": "Ren_RightEar_HelixCuffs",
+      "vertices": 104,
+      "triangles": 200,
+      "materials": [
+        "Ren_Piercing_BrushedSilver"
+      ],
+      "bounds": [
+        [
+          -0.14564380049705505,
+          -0.3386208415031433,
+          0.07499999552965164
+        ],
+        [
+          -0.1012003943324089,
+          -0.2844572067260742,
+          0.11300000548362732
+        ]
+      ]
+    },
+    {
+      "name": "Ren_RightEar_DropPiercing",
+      "vertices": 80,
+      "triangles": 156,
+      "materials": [
+        "Ren_Piercing_BrushedSilver"
+      ],
+      "bounds": [
+        [
+          -0.07481860369443893,
+          -0.31797945499420166,
+          -0.15713374316692352
+        ],
+        [
+          -0.03818139806389809,
+          -0.29030001163482666,
+          -0.0072999997064471245
+        ]
+      ]
+    }
+  ],
+  "export_status": "FBX, GLB and standalone Blender complete; exact counts/placement checked in export-verification.json.",
+  "limitations": [
+    "Cap-on-v1 resolves crown intersections; the current sparse fringe and upper-cuff hair occlusion remain under hair-worker revision.",
+    "Cuff and drop contact remain a fitted accessory study on the current native ear.",
+    "No shared rig, skinning, Unity promotion, final artist likeness acceptance or device claim."
+  ],
+  "context_hair": {
+    "source": "art\\generated\\characters\\ren\\parts-workflow-v1\\ren-shag-v1\\cap-on-v1\\Ren_Shag_CapState.blend",
+    "sha256": "2fe30619314159ae2738cee9584b98fcdcc46f2e6a3a05cf45432b0ddf9d99eb",
+    "objects": [
+      "Ren_Hair_Side_R",
+      "Ren_Hair_Side_L",
+      "Ren_Hair_RootShell",
+      "Ren_Hair_Fringe_R",
+      "Ren_Hair_Fringe_L",
+      "Ren_Hair_Back"
+    ]
+  },
+  "render_only_lip_material_override": "Draft rose lip slot temporarily uses unchanged source skin material; original slots restored before saving.",
+  "accessory_triangles": 1318,
+  "visual_review": "visual-review.json; accessory fit candidate only, fuller swept fringe remains in progress."
+}

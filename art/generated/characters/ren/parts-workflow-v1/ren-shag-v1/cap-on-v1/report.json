@@ -1,0 +1,79 @@
+{
+  "status": "CAP_ON_FIT_REQUIRES_REVIEW",
+  "hair_source": "art\\generated\\characters\\ren\\parts-workflow-v1\\ren-shag-v1\\trial-v6\\Ren_Shag.blend",
+  "hair_source_sha256": "92e791b376d2b08288e816fa87f9b90228a38609d6128666c60dc66a36f7af0a",
+  "cap_source_sha256": "b918df75da2f35d48537f4ebc0d4345685a44a271d31e101988206651a31de54",
+  "head_vertices_unchanged": true,
+  "hair_triangles": 7900,
+  "controls": "All six hair meshes: capOn=0 for cap-off basis, capOn=1 with cap visible; exported default0, review blend default1.",
+  "cap_geometry_unchanged": true,
+  "coordinates": "+X front +Z up, identity placement in current head frame",
+  "changes": [
+    {
+      "object": "Ren_Hair_Side_L",
+      "moved_vertices": 680,
+      "maximum_displacement_native_units": 0.12141467238432245,
+      "policy": "Upper roots compressed inside fixed cap ellipsoid; smooth blend from local z=-0.10 to0; lower ends unchanged."
+    },
+    {
+      "object": "Ren_Hair_Back",
+      "moved_vertices": 431,
+      "maximum_displacement_native_units": 0.14708557402164796,
+      "policy": "Upper roots compressed inside fixed cap ellipsoid; smooth blend from local z=-0.10 to0; lower ends unchanged."
+    },
+    {
+      "object": "Ren_Hair_Side_R",
+      "moved_vertices": 662,
+      "maximum_displacement_native_units": 0.10483689868027862,
+      "policy": "Upper roots compressed inside fixed cap ellipsoid; smooth blend from local z=-0.10 to0; lower ends unchanged."
+    },
+    {
+      "object": "Ren_Hair_Fringe_L",
+      "moved_vertices": 131,
+      "maximum_displacement_native_units": 0.045892590403331955,
+      "policy": "Upper roots compressed inside fixed cap ellipsoid; smooth blend from local z=-0.10 to0; lower ends unchanged."
+    },
+    {
+      "object": "Ren_Hair_Fringe_R",
+      "moved_vertices": 76,
+      "maximum_displacement_native_units": 0.023551019909142015,
+      "policy": "Upper roots compressed inside fixed cap ellipsoid; smooth blend from local z=-0.10 to0; lower ends unchanged."
+    },
+    {
+      "object": "Ren_Hair_RootShell",
+      "moved_vertices": 9,
+      "maximum_displacement_native_units": 0.007369355807614126,
+      "policy": "Upper roots compressed inside fixed cap ellipsoid; smooth blend from local z=-0.10 to0; lower ends unchanged."
+    }
+  ],
+  "renders": [
+    {
+      "path": "combined-front.png",
+      "sha256": "8720ec7a08c6c567ac7c0099e6f9b26f39dee7dea589e191d1bfb5e0014e2d2a"
+    },
+    {
+      "path": "combined-three-quarter.png",
+      "sha256": "5490db2adedcd601c8753fe7221b080aba2ef8711f9bce2c362dd65bbfba7896"
+    },
+    {
+      "path": "combined-profile.png",
+      "sha256": "d4921fc0f02f6a00e2039a5dc05472c1586a9293653ddcf65de86f7d72b61a8d"
+    },
+    {
+      "path": "combined-back.png",
+      "sha256": "24cffc877baa9b5356c7b1b5c97dffbddb4fd8b52d24669ac4897756402af981"
+    }
+  ],
+  "exports": [
+    {
+      "path": "Ren_Shag_CapState.fbx",
+      "sha256": "0e3888ba1f49584c4fd79dc91f9d561fae939631e078a70feda7b025ed76c174",
+      "bytes": 4286396
+    },
+    {
+      "path": "Ren_Shag_CapState.glb",
+      "sha256": "c35fd373dcee1e5d9cf06b22f5da51ec1ceae3ce4a9bceae863d69ed6c22b604",
+      "bytes": 4317552
+    }
+  ]
+}

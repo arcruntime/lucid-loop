@@ -1,0 +1,85 @@
+{
+    "sourceSha256": "e1c56169a9c86fef72f947d6024b4bc6a9b7caa1296b9a3d5c7787fb4b0cfa2f",
+    "gazeContractSha256": "4d0c7a4a948dafbc9e073e6e4b2fc46d0f6b90ff0171967d786b794dad8affec",
+    "reviewNote": "V1 assembled review candidate; source geometry unchanged. Cap is too tall/helmetlike and hides fringe; pending bounded V2 revision. Painting and final likeness are unaccepted.",
+    "unityVersion": "6000.3.24f1",
+    "method": "New source and scene only; ellipsoid gaze axes calibrated from imported EMPTY markers. Stale additive iris keys rejected. Native eye samples are transform audits, not rendered live-control proof.",
+    "triangles": 26274,
+    "normalizationScale": 1.5326744318008423,
+    "normalizationOffset": {
+        "x": 0.02380461059510708,
+        "y": 0.7659629583358765,
+        "z": -0.07597918808460236
+    },
+    "boundsSize": {
+        "x": 0.8520482778549194,
+        "y": 1.0765495300292969,
+        "z": 1.1977423429489136
+    },
+    "gaze": [
+        {
+            "side": "L",
+            "rotationObject": "Ren_GazeRotate_L",
+            "axisX": {
+                "x": -1.0,
+                "y": 7.229457992252719e-7,
+                "z": 1.1842366280309657e-13
+            },
+            "axisY": {
+                "x": -4.967052404936112e-7,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "axisZ": {
+                "x": -4.967055815541244e-7,
+                "y": 7.229469360936491e-7,
+                "z": 1.0
+            },
+            "markerLengths": {
+                "x": 0.010000011883676052,
+                "y": 0.01000000350177288,
+                "z": 0.009999996982514859
+            },
+            "restLocalRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "handedness": -1.0,
+            "maximumAxisDot": 0.0000012196510397188832
+        },
+        {
+            "side": "R",
+            "rotationObject": "Ren_GazeRotate_R",
+            "axisX": {
+                "x": -1.0,
+                "y": -9.632866522224504e-7,
+                "z": -1.1842363569804226e-13
+            },
+            "axisY": {
+                "x": -4.967056952409621e-7,
+                "y": 1.0,
+                "z": 0.0
+            },
+            "axisZ": {
+                "x": -4.967055815541244e-7,
+                "y": -8.431176752310421e-7,
+                "z": 1.0
+            },
+            "markerLengths": {
+                "x": 0.010000013746321202,
+                "y": 0.009999994188547135,
+                "z": 0.009999996982514859
+            },
+            "restLocalRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            },
+            "handedness": -1.0,
+            "maximumAxisDot": 8.431174478573666e-7
+        }
+    ]
+}

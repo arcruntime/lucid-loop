@@ -1,0 +1,123 @@
+{
+  "status": "SELECTED_V2_NEW_CAP_AND_BELOW_BRIM_FRINGE_REQUIRES_ASSEMBLED_REVIEW",
+  "hair_source": "art\\generated\\characters\\ren\\parts-workflow-v1\\ren-shag-v1\\selected-v2\\early-fringe-v2\\Ren_Shag_FringePreview.blend",
+  "hair_source_sha256": "82d8ad5a991bd6ae2199090bbd8a74097d99daa9bbe6ef3ef7ae64d38f90daf2",
+  "cap_source": "art\\generated\\characters\\ren\\parts-workflow-v1\\head-accessories-v2\\band-clearance-v1\\Ren_Head_Accessories.blend",
+  "cap_source_sha256": "bff2a53430d58535e6f2aef8d271e8a8774a6c8015185a4cd5f2b74168ab805d",
+  "head_vertices_unchanged": true,
+  "hair_triangles": 7900,
+  "coordinates": "+X front +Z up identity source frame",
+  "hair_only_export_objects": [
+    "Ren_Hair_Side_R",
+    "Ren_Hair_Side_L",
+    "Ren_Hair_RootShell",
+    "Ren_Hair_Fringe_R",
+    "Ren_Hair_Fringe_L",
+    "Ren_Hair_Back"
+  ],
+  "changes": [
+    {
+      "object": "Ren_Hair_Side_R",
+      "moved_capOn_vertices": 575,
+      "max_displacement": 0.13522432266307524,
+      "upper_root_ray_misses": [],
+      "insufficient_cap_head_corridors": []
+    },
+    {
+      "object": "Ren_Hair_Side_L",
+      "moved_capOn_vertices": 737,
+      "max_displacement": 0.12999441382853477,
+      "upper_root_ray_misses": [],
+      "insufficient_cap_head_corridors": []
+    },
+    {
+      "object": "Ren_Hair_RootShell",
+      "moved_capOn_vertices": 1,
+      "max_displacement": 0.00021286441399415086,
+      "upper_root_ray_misses": [],
+      "insufficient_cap_head_corridors": []
+    },
+    {
+      "object": "Ren_Hair_Fringe_R",
+      "moved_capOn_vertices": 101,
+      "max_displacement": 0.08122719608539208,
+      "upper_root_ray_misses": [],
+      "insufficient_cap_head_corridors": []
+    },
+    {
+      "object": "Ren_Hair_Fringe_L",
+      "moved_capOn_vertices": 179,
+      "max_displacement": 0.08131929714828737,
+      "upper_root_ray_misses": [],
+      "insufficient_cap_head_corridors": []
+    },
+    {
+      "object": "Ren_Hair_Back",
+      "moved_capOn_vertices": 440,
+      "max_displacement": 0.16377244608311894,
+      "upper_root_ray_misses": [],
+      "insufficient_cap_head_corridors": []
+    }
+  ],
+  "exports": [
+    {
+      "path": "Ren_Shag_CapState.fbx",
+      "sha256": "b4de2929ce74f6b2452eb9860f3b4305f831e253f4b5161178cb7147be3f9f97",
+      "bytes": 4288140
+    },
+    {
+      "path": "Ren_Shag_CapState.glb",
+      "sha256": "c179345a3c598c74f3ec330cb254fed84cef79a2146c55cb02f8813a0e5591b8",
+      "bytes": 4308888
+    }
+  ],
+  "renders": [
+    {
+      "path": "cap-on-front.png",
+      "sha256": "855da04bda3daa0153101ad91ea091b93f87c30974cd7c987c3b7e3dc64e3f86"
+    },
+    {
+      "path": "cap-on-quarter.png",
+      "sha256": "e09e4bd69511827a5eea6dac0f53e71740528ed8d4d32063b80e0d5faea7ede3"
+    },
+    {
+      "path": "cap-on-profile.png",
+      "sha256": "3435a0a4e73d6948a7047011af0cc67e08716b0648f2f3370c68514223ad1da8"
+    },
+    {
+      "path": "cap-on-back.png",
+      "sha256": "5750e1a64542d6bb02a7dee076b6e3b2c808a7ca42bd779910f05754e2d9d2c0"
+    },
+    {
+      "path": "cap-off-front.png",
+      "sha256": "0ac4debb849b575e156a372623ec87d1f6b1e5e9b3ba328d61ef7e6472d73974"
+    },
+    {
+      "path": "cap-off-quarter.png",
+      "sha256": "57ba50c4610524f6e66f83262e0cc114d0a62bd878e06a711b759b3cf1d1e275"
+    },
+    {
+      "path": "cap-off-profile.png",
+      "sha256": "b840ed5cd130e3b102391ad6be0b73ca1de0114a8eb4952727151b572a0155ea"
+    },
+    {
+      "path": "cap-off-back.png",
+      "sha256": "941548a5dbfe7ee52ebe2d7166254b9f5b0cc139916d153dbc96eaf1a09acb99"
+    },
+    {
+      "path": "diffuse-front.png",
+      "sha256": "b00a2dcf25dc9f144db6d0096324a4c9faf52e2f7b9b96a63252bd5e53c0f204"
+    },
+    {
+      "path": "diffuse-quarter.png",
+      "sha256": "4a65aeca0235794d3c549fd558c2871c019f973f50833917075b351a4f38a9be"
+    }
+  ],
+  "controls": "Set capOn=1 on all six hair meshes with V2 cap visible; capOn=0 with cap hidden. Export default0, review blend default1.",
+  "fit_method": "Hard radial interval between head+0.003 and actual V2 cap-0.003; temporary0.09 fitting skirt continues crown boundary beneath band to constrain crossing quads. No skirt is added to output geometry. Basis matches extended-fringe preview.",
+  "remaining_visible_defects": [
+    "Broad flattened lock profiles and abrupt root junctions remain.",
+    "Procedural paint lacks final artist strand breakup."
+  ],
+  "diffuse_views": "Emission material pass sourced from the actual base-color inputs; original PBR materials restored in exports and blend."
+}

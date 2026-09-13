@@ -1,0 +1,79 @@
+{
+  "source_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "method": "Rigid rotation in ellipsoid-normalized coordinates; continuous-domain triangle clearance proof",
+  "gaze_domain": {
+    "x": [
+      -1,
+      1
+    ],
+    "y": [
+      -1,
+      1
+    ]
+  },
+  "radians": {
+    "yaw_per_x": 0.16199795457112545,
+    "negative_pitch_per_y": -0.11693296146237843
+  },
+  "local_rotation_order": "Rz(gazeX*yaw) @ Ry(-gazeY*pitch), equivalent Blender XYZ Euler(0,-pitch,yaw)",
+  "eyes": [
+    {
+      "side": "L",
+      "center": [
+        0.185,
+        0.119,
+        0.085
+      ],
+      "radii": [
+        0.06,
+        0.062,
+        0.06
+      ],
+      "iris_object": "Ren_Eye_L_Iris",
+      "frame_object": "Ren_GazeEllipsoid_L",
+      "rotation_object": "Ren_GazeRotate_L",
+      "minimum_iris_triangle_radius": 1.0012334620203538,
+      "maximum_sclera_vertex_radius": 1.0000006546420812,
+      "conservative_euclidean_clearance": 7.396844269635494e-05,
+      "neutral_world_max_error": 7.450580596923828e-09,
+      "triangles": 472
+    },
+    {
+      "side": "R",
+      "center": [
+        0.185,
+        -0.119,
+        0.085
+      ],
+      "radii": [
+        0.06,
+        0.062,
+        0.06
+      ],
+      "iris_object": "Ren_Eye_R_Iris",
+      "frame_object": "Ren_GazeEllipsoid_R",
+      "rotation_object": "Ren_GazeRotate_R",
+      "minimum_iris_triangle_radius": 1.001233463006324,
+      "maximum_sclera_vertex_radius": 1.0000006332946203,
+      "conservative_euclidean_clearance": 7.39697827022212e-05,
+      "neutral_world_max_error": 7.450580596923828e-09,
+      "triangles": 472
+    }
+  ],
+  "preserved_noniris_mesh_uv_shape_signatures": {
+    "Ren_Head": true,
+    "Ren_P2_UpperTeeth": true,
+    "Ren_P2_LowerTeeth": true,
+    "Ren_P2_Tongue": true,
+    "Ren_Eye_R_UpperLiner": true,
+    "Ren_Eye_R_Sclera": true,
+    "Ren_Eye_R_OuterLash": true,
+    "Ren_Eye_R_LowerLiner": true,
+    "Ren_Eye_L_UpperLiner": true,
+    "Ren_Eye_L_Sclera": true,
+    "Ren_Eye_L_OuterLash": true,
+    "Ren_Eye_L_LowerLiner": true
+  },
+  "runtime": "Set localRotation of Ren_GazeRotate_L/R; do not apply removed four additive gaze shapes. Parent frame has center translation and radii scale. Coordinate-convert full basis if FBX import changes axis convention.",
+  "blend_sha256": "98597b2bbed0c98e1f2124199f04974eaf83c7fadb11003b98ee1f1e87e9ac1e"
+}

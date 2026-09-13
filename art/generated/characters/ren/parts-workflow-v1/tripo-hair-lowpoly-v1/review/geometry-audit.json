@@ -1,0 +1,554 @@
+{
+  "schema_version": 1,
+  "status": "STATIC_COMPARISON_NOT_PRODUCTION_APPROVAL",
+  "blender": "5.2.1 LTS",
+  "native": {
+    "path": "art/generated/characters/ren/parts-generation-v1/tripo/hair/originals/model.fbx",
+    "sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+    "objects": [
+      {
+        "object": "tripo_node_1a8b7598",
+        "vertices": 26361,
+        "polygons": 28234,
+        "triangles": 51054,
+        "uv_layers": [
+          {
+            "name": "tripo_1a8b7598_cddf_4b6c_a344_9e9ae16dcd5d_NewUVMap",
+            "min": [
+              0.0015371136832982302,
+              0.0015371241606771946
+            ],
+            "max": [
+              0.9937089681625366,
+              0.9984628558158875
+            ],
+            "zero_area_triangles": 4,
+            "positive_overlap_test": "not performed"
+          }
+        ],
+        "topology": {
+          "position_weld_tolerance_decimal_places": 7,
+          "position_vertices": 26361,
+          "position_components": 79,
+          "boundary_edges": 4293,
+          "edges_more_than_two_faces": 2027,
+          "zero_area_triangles": 4
+        },
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "triangles": 51054,
+    "source_world_bounds": {
+      "min": [
+        -0.481689453125,
+        -0.448486328125,
+        -0.499755859375
+      ],
+      "max": [
+        0.481689453125,
+        0.448486328125,
+        0.499755859375
+      ]
+    },
+    "review_translation": [
+      -0.09000000357627869,
+      0.0,
+      0.2199999988079071
+    ],
+    "topology": {
+      "position_weld_tolerance_decimal_places": 7,
+      "position_vertices": 26361,
+      "position_components": 79,
+      "boundary_edges": 4293,
+      "edges_more_than_two_faces": 2027,
+      "zero_area_triangles": 4
+    }
+  },
+  "returned": {
+    "path": "art/generated/characters/ren/parts-workflow-v1/tripo-hair-lowpoly-v1/originals/model.fbx",
+    "sha256": "236db190bd05e48750fb68d23f381538a4917fa8c1ac6255dee533a4c0bdf036",
+    "objects": [
+      {
+        "object": "tripo_node_1a8b7598",
+        "vertices": 5189,
+        "polygons": 9026,
+        "triangles": 9026,
+        "uv_layers": [],
+        "topology": {
+          "position_weld_tolerance_decimal_places": 7,
+          "position_vertices": 5189,
+          "position_components": 193,
+          "boundary_edges": 745,
+          "edges_more_than_two_faces": 82,
+          "zero_area_triangles": 0
+        },
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            -4.371138828673793e-08,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "triangles": 9026,
+    "source_world_bounds": {
+      "min": [
+        -0.4430321156978607,
+        -0.45085608959198,
+        -0.499755859375
+      ],
+      "max": [
+        0.4762839376926422,
+        0.44890010356903076,
+        0.499755859375
+      ]
+    },
+    "review_translation": [
+      -0.09000000357627869,
+      0.0,
+      0.2199999988079071
+    ],
+    "topology": {
+      "position_weld_tolerance_decimal_places": 7,
+      "position_vertices": 5189,
+      "position_components": 193,
+      "boundary_edges": 745,
+      "edges_more_than_two_faces": 82,
+      "zero_area_triangles": 0
+    }
+  },
+  "local_candidate": {
+    "path": "art/generated/characters/ren/parts-workflow-v1/ren-shag-v1/selected-v1/Ren_Shag_CapState.glb",
+    "sha256": "635eb2e0ae09eb1e3063a401cdc42f47e48a80b33e8b47d34df3a6e01e021844",
+    "objects": [
+      {
+        "object": "Ren_Hair_Back",
+        "vertices": 1092,
+        "polygons": 1820,
+        "triangles": 1820,
+        "uv_layers": [
+          {
+            "name": "UVMap",
+            "min": [
+              0.00244140625,
+              0.12744140625
+            ],
+            "max": [
+              0.87255859375,
+              0.87255859375
+            ],
+            "zero_area_triangles": 104,
+            "positive_overlap_test": "not performed"
+          }
+        ],
+        "topology": {
+          "position_weld_tolerance_decimal_places": 7,
+          "position_vertices": 936,
+          "position_components": 13,
+          "boundary_edges": 0,
+          "edges_more_than_two_faces": 0,
+          "zero_area_triangles": 0
+        },
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Hair_Fringe_L",
+        "vertices": 420,
+        "polygons": 700,
+        "triangles": 700,
+        "uv_layers": [
+          {
+            "name": "UVMap",
+            "min": [
+              0.00244140625,
+              0.25244140625
+            ],
+            "max": [
+              0.62255859375,
+              0.37255859375
+            ],
+            "zero_area_triangles": 40,
+            "positive_overlap_test": "not performed"
+          }
+        ],
+        "topology": {
+          "position_weld_tolerance_decimal_places": 7,
+          "position_vertices": 360,
+          "position_components": 5,
+          "boundary_edges": 0,
+          "edges_more_than_two_faces": 0,
+          "zero_area_triangles": 0
+        },
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Hair_Fringe_R",
+        "vertices": 252,
+        "polygons": 420,
+        "triangles": 420,
+        "uv_layers": [
+          {
+            "name": "UVMap",
+            "min": [
+              0.62744140625,
+              0.25244140625
+            ],
+            "max": [
+              0.99755859375,
+              0.37255859375
+            ],
+            "zero_area_triangles": 24,
+            "positive_overlap_test": "not performed"
+          }
+        ],
+        "topology": {
+          "position_weld_tolerance_decimal_places": 7,
+          "position_vertices": 216,
+          "position_components": 3,
+          "boundary_edges": 0,
+          "edges_more_than_two_faces": 0,
+          "zero_area_triangles": 0
+        },
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Hair_RootShell",
+        "vertices": 296,
+        "polygons": 480,
+        "triangles": 480,
+        "uv_layers": [
+          {
+            "name": "UVMap",
+            "min": [
+              0.878000020980835,
+              0.003000020980834961
+            ],
+            "max": [
+              0.996999979019165,
+              0.12199997901916504
+            ],
+            "zero_area_triangles": 0,
+            "positive_overlap_test": "not performed"
+          }
+        ],
+        "topology": {
+          "position_weld_tolerance_decimal_places": 7,
+          "position_vertices": 257,
+          "position_components": 1,
+          "boundary_edges": 32,
+          "edges_more_than_two_faces": 0,
+          "zero_area_triangles": 0
+        },
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Hair_Side_L",
+        "vertices": 1428,
+        "polygons": 2380,
+        "triangles": 2380,
+        "uv_layers": [
+          {
+            "name": "UVMap",
+            "min": [
+              0.00244140625,
+              0.37744140625
+            ],
+            "max": [
+              0.99755859375,
+              0.99755859375
+            ],
+            "zero_area_triangles": 136,
+            "positive_overlap_test": "not performed"
+          }
+        ],
+        "topology": {
+          "position_weld_tolerance_decimal_places": 7,
+          "position_vertices": 1224,
+          "position_components": 17,
+          "boundary_edges": 0,
+          "edges_more_than_two_faces": 0,
+          "zero_area_triangles": 0
+        },
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Hair_Side_R",
+        "vertices": 1260,
+        "polygons": 2100,
+        "triangles": 2100,
+        "uv_layers": [
+          {
+            "name": "UVMap",
+            "min": [
+              0.00244140625,
+              0.37744140625
+            ],
+            "max": [
+              0.99755859375,
+              0.87255859375
+            ],
+            "zero_area_triangles": 120,
+            "positive_overlap_test": "not performed"
+          }
+        ],
+        "topology": {
+          "position_weld_tolerance_decimal_places": 7,
+          "position_vertices": 1080,
+          "position_components": 15,
+          "boundary_edges": 0,
+          "edges_more_than_two_faces": 0,
+          "zero_area_triangles": 0
+        },
+        "matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "triangles": 7900,
+    "source_world_bounds": {
+      "min": [
+        -0.5492981672286987,
+        -0.4104927182197571,
+        -0.1932050883769989
+      ],
+      "max": [
+        0.33299723267555237,
+        0.4415555000305176,
+        0.509930431842804
+      ]
+    },
+    "review_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "topology": {
+      "position_weld_tolerance_decimal_places": 7,
+      "position_vertices": 4073,
+      "position_components": 54,
+      "boundary_edges": 32,
+      "edges_more_than_two_faces": 0,
+      "zero_area_triangles": 0
+    }
+  },
+  "local_glb_derivative": {
+    "path": "art/generated/characters/ren/parts-workflow-v1/tripo-hair-lowpoly-v1/derived/Ren_NativeHair_8000_Local.glb",
+    "sha256": "803d6150a41eb7feb1b94b5e3ab69d3d5b5a2ed6da4d6ae7f51a7e8c679e3696",
+    "provider_original": false,
+    "materials": "omitted",
+    "frame": "unaltered provider source frame",
+    "note": "Service returned FBX despite quad=false; this GLB is a local geometry convenience export, not provider bytes."
+  },
+  "count_contract": "Rendered triangle count after import; source native quads preserved only in original FBX.",
+  "alignment": "No fit, scale, or axis correction applied. Native and returned get the identical historical rigid review translation(-.09,0,.22) into head frame. Local fitted candidate already uses that frame and receives identity. All cameras/materials shared.",
+  "native_to_returned_source_vertex_samples": {
+    "p50": 0.002404720988124609,
+    "p95": 0.03610413521528244,
+    "p99": 0.0646472781896593,
+    "max": 0.09530752152204514,
+    "units": "native source units",
+    "note": "Surface proximity only, not visual/silhouette approval."
+  },
+  "returned_to_native_source_vertex_samples": {
+    "p50": 0.0020140260457992554,
+    "p95": 0.009672185964882351,
+    "p99": 0.026956742405891413,
+    "max": 0.061398450285196304,
+    "units": "native source units",
+    "note": "Surface proximity only, not visual/silhouette approval."
+  },
+  "sources_unchanged": true
+}

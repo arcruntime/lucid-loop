@@ -1,0 +1,106 @@
+{
+  "status": "REVIEW_CANDIDATE",
+  "sourceWorkingBlendSha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "materialBlend": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\anime-paint-v2\\Ren_AnimePaint_v2.blend",
+  "materialBlendSha256": "a52cad489e597d5c5a9325d08919089600c6899aac99e1320510c856ddc8261f",
+  "sourceObject": "Ren_Head",
+  "sourceMaterial": "Ren_AnimePaint_v2_BakedSkin",
+  "replaceMaterialSlots": [
+    0,
+    2
+  ],
+  "preserveMaterialSlots": [
+    1
+  ],
+  "expectedHeadGeometrySha256": "a123978b09fcfa08b9811db9a0361f9fe8341f9ce13cb68dff2d9c9329380bb6",
+  "expectedHeadAllUvSha256": "9e575bed9dcbe1888b5c7341e7f5935e183a77fc176e93e419b3f62698ec70db",
+  "expectedShapeKeys": {
+    "use_relative": true,
+    "eval_time": 0.0,
+    "keys": [
+      {
+        "name": "Basis",
+        "value": 1.0,
+        "relative_key": "Basis",
+        "slider_min": 0.0,
+        "slider_max": 1.0,
+        "mute": false,
+        "interpolation": "KEY_LINEAR",
+        "coordinates_sha256": "efb0027893f8f3ff7c2c8578ddbb6cb867ae55bf63026ca6974bdce3a5e68b0a"
+      },
+      {
+        "name": "mouthSeal",
+        "value": 1.0,
+        "relative_key": "Basis",
+        "slider_min": 0.0,
+        "slider_max": 1.0,
+        "mute": false,
+        "interpolation": "KEY_LINEAR",
+        "coordinates_sha256": "ab7d3e889cadad7c93bd753df8f2e3820a7575c0478cd8bed4f2f84a6d1f4f4f"
+      },
+      {
+        "name": "jawOpen_A",
+        "value": 0.0,
+        "relative_key": "Basis",
+        "slider_min": 0.0,
+        "slider_max": 1.0,
+        "mute": false,
+        "interpolation": "KEY_LINEAR",
+        "coordinates_sha256": "7ea2f6be08cb228d1e274f07e99b45631b9112eae9a6870566d78f4b476deeb2"
+      },
+      {
+        "name": "eyeBlinkL",
+        "value": 0.0,
+        "relative_key": "Basis",
+        "slider_min": 0.0,
+        "slider_max": 1.0,
+        "mute": false,
+        "interpolation": "KEY_LINEAR",
+        "coordinates_sha256": "11771890607084f2eb0bb7cbd55ea395fed9307e096b1a6e1610fb90f95e74a8"
+      },
+      {
+        "name": "eyeBlinkR",
+        "value": 0.0,
+        "relative_key": "Basis",
+        "slider_min": 0.0,
+        "slider_max": 1.0,
+        "mute": false,
+        "interpolation": "KEY_LINEAR",
+        "coordinates_sha256": "3ee62529be61bbff20a28b283814eae033eed8bf92d6ed00cae4aeeafa7f1cb2"
+      }
+    ]
+  },
+  "uvLayer": "FaceUV_v1",
+  "unityUvChannel": 0,
+  "exportInstruction": "Expose FaceUV_v1 as UV0 in the export COPY; do not substitute old native UVs.",
+  "baseColor": {
+    "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\anime-paint-v2\\Ren_AnimePaint_v2_BaseColor.png",
+    "sha256": "33abe65ff6a7448d4a744d8909dd4844cdf9911e0eb94098a1a8b90522effcc2",
+    "colorSpace": "sRGB",
+    "resolution": 2048,
+    "alphaUsage": "opaque skin; unused atlas texels are transparent",
+    "filter": "bilinear/trilinear with mipmaps",
+    "paddingPixels": 12
+  },
+  "coverage": {
+    "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\anime-paint-v2\\Ren_AnimePaint_v2_ProjectionCoverage.png",
+    "sha256": "b41055da8b6427ec09fd3011e6879e6eb50d40aa1024531577d7c159bbb13fb7",
+    "colorSpace": "linear",
+    "usage": "provenance only; front donor weight, not runtime opacity"
+  },
+  "shader": {
+    "baseColorFactor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "metallic": 0,
+    "roughness": 1,
+    "specular": 0,
+    "normalMap": null,
+    "blenderReview": "0.65 emission/basecolor + 0.35 diffuse, energy blended, not added",
+    "unityExpectation": "Opaque diffuse with controlled ambient floor, dynamic main/additional lights; no glossy PBR/normal detail."
+  },
+  "transferScope": "Materials only. Keep gaze/eyes, all positions, triangles, UV corners, shape coordinates and transforms."
+}

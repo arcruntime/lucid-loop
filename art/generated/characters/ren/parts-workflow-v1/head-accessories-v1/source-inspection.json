@@ -1,0 +1,987 @@
+{
+  "source": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\Ren_P2_Face_EyeUV.blend",
+  "source_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "objects": [
+    {
+      "name": "Ren_Head",
+      "vertices": 6966,
+      "bounds": [
+        [
+          -0.368896484375,
+          -0.329833984375,
+          -0.499755859375
+        ],
+        [
+          0.368896484375,
+          0.329833984375,
+          0.499755859375
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          1.0
+        ],
+        [
+          "mouthSeal",
+          1.0
+        ],
+        [
+          "jawOpen_A",
+          0.0
+        ],
+        [
+          "eyeBlinkL",
+          0.0
+        ],
+        [
+          "eyeBlinkR",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_Draft_Skin",
+        "Ren_Oral_Cavity",
+        "Ren_Draft_RoseLips"
+      ]
+    },
+    {
+      "name": "Ren_P2_UpperTeeth",
+      "vertices": 200,
+      "bounds": [
+        [
+          0.23199999332427979,
+          -0.05900000035762787,
+          -0.14300000667572021
+        ],
+        [
+          0.28139999508857727,
+          0.05900000035762787,
+          -0.12600000202655792
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          1.0
+        ],
+        [
+          "mouthSeal",
+          1.0
+        ],
+        [
+          "jawOpen_A",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_Anime_Teeth"
+      ]
+    },
+    {
+      "name": "Ren_P2_LowerTeeth",
+      "vertices": 200,
+      "bounds": [
+        [
+          0.2240000069141388,
+          -0.05900000035762787,
+          -0.1899999976158142
+        ],
+        [
+          0.2734000086784363,
+          0.05900000035762787,
+          -0.1679999977350235
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          1.0
+        ],
+        [
+          "mouthSeal",
+          1.0
+        ],
+        [
+          "jawOpen_A",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_Anime_Teeth"
+      ]
+    },
+    {
+      "name": "Ren_P2_Tongue",
+      "vertices": 390,
+      "bounds": [
+        [
+          0.11699999868869781,
+          -0.04399999976158142,
+          -0.1770000010728836
+        ],
+        [
+          0.25699999928474426,
+          0.04399999976158142,
+          -0.15700000524520874
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          1.0
+        ],
+        [
+          "mouthSeal",
+          1.0
+        ],
+        [
+          "jawOpen_A",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_Tongue"
+      ]
+    },
+    {
+      "name": "Ren_Eye_R_UpperLiner",
+      "vertices": 46,
+      "bounds": [
+        [
+          0.21003496646881104,
+          -0.178264781832695,
+          0.06787499785423279
+        ],
+        [
+          0.2501666843891144,
+          -0.0626968964934349,
+          0.09632258862257004
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          0.0
+        ],
+        [
+          "eyeBlinkR",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_UpperLiner"
+      ]
+    },
+    {
+      "name": "Ren_Eye_R_Sclera",
+      "vertices": 1986,
+      "bounds": [
+        [
+          0.1249999925494194,
+          -0.1809999942779541,
+          0.024999994784593582
+        ],
+        [
+          0.244999960064888,
+          -0.05700000375509262,
+          0.14499999582767487
+        ]
+      ],
+      "hidden": false,
+      "shapes": [],
+      "materials": [
+        "Ren_Sclera"
+      ]
+    },
+    {
+      "name": "Ren_Eye_R_OuterLash",
+      "vertices": 9,
+      "bounds": [
+        [
+          0.20229226350784302,
+          -0.19936557114124298,
+          0.07902786880731583
+        ],
+        [
+          0.23440730571746826,
+          -0.16360890865325928,
+          0.08983110636472702
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          0.0
+        ],
+        [
+          "eyeBlinkR",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_UpperLiner"
+      ]
+    },
+    {
+      "name": "Ren_Eye_R_LowerLiner",
+      "vertices": 46,
+      "bounds": [
+        [
+          0.21003496646881104,
+          -0.1772710233926773,
+          0.061686038970947266
+        ],
+        [
+          0.24588832259178162,
+          -0.06372076272964478,
+          0.07728876173496246
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          0.0
+        ],
+        [
+          "eyeBlinkR",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_LowerLiner"
+      ]
+    },
+    {
+      "name": "Ren_Eye_R_Iris",
+      "vertices": 282,
+      "bounds": [
+        [
+          0.23957401514053345,
+          -0.14300000667572021,
+          0.05900000035762787
+        ],
+        [
+          0.24582694470882416,
+          -0.0949999988079071,
+          0.11100000143051147
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          0.0
+        ],
+        [
+          "gazeLeft",
+          0.0
+        ],
+        [
+          "gazeRight",
+          0.0
+        ],
+        [
+          "gazeUp",
+          0.0
+        ],
+        [
+          "gazeDown",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_Pupil",
+        "Ren_Pupil",
+        "Ren_IrisGreyBlue",
+        "Ren_IrisGreyBlue",
+        "Ren_UpperLiner",
+        "Ren_IrisCatchlight"
+      ]
+    },
+    {
+      "name": "Ren_Eye_L_UpperLiner",
+      "vertices": 46,
+      "bounds": [
+        [
+          0.21003499627113342,
+          0.0626540407538414,
+          0.06787499785423279
+        ],
+        [
+          0.2501451373100281,
+          0.178264781832695,
+          0.09628733992576599
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          0.0
+        ],
+        [
+          "eyeBlinkL",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_UpperLiner"
+      ]
+    },
+    {
+      "name": "Ren_Eye_L_Sclera",
+      "vertices": 1986,
+      "bounds": [
+        [
+          0.1249999925494194,
+          0.057000018656253815,
+          0.024999994784593582
+        ],
+        [
+          0.244999960064888,
+          0.1809999942779541,
+          0.14499999582767487
+        ]
+      ],
+      "hidden": false,
+      "shapes": [],
+      "materials": [
+        "Ren_Sclera"
+      ]
+    },
+    {
+      "name": "Ren_Eye_L_OuterLash",
+      "vertices": 9,
+      "bounds": [
+        [
+          0.20344585180282593,
+          0.16355611383914948,
+          0.07874441146850586
+        ],
+        [
+          0.23461374640464783,
+          0.19936557114124298,
+          0.08956293761730194
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          0.0
+        ],
+        [
+          "eyeBlinkL",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_UpperLiner"
+      ]
+    },
+    {
+      "name": "Ren_Eye_L_LowerLiner",
+      "vertices": 46,
+      "bounds": [
+        [
+          0.21003499627113342,
+          0.06371158361434937,
+          0.061686038970947266
+        ],
+        [
+          0.24588796496391296,
+          0.1772710233926773,
+          0.07728143781423569
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          0.0
+        ],
+        [
+          "eyeBlinkL",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_LowerLiner"
+      ]
+    },
+    {
+      "name": "Ren_Eye_L_Iris",
+      "vertices": 282,
+      "bounds": [
+        [
+          0.23957401514053345,
+          0.0949999988079071,
+          0.05900000035762787
+        ],
+        [
+          0.24582694470882416,
+          0.14300000667572021,
+          0.11100000143051147
+        ]
+      ],
+      "hidden": false,
+      "shapes": [
+        [
+          "Basis",
+          0.0
+        ],
+        [
+          "gazeLeft",
+          0.0
+        ],
+        [
+          "gazeRight",
+          0.0
+        ],
+        [
+          "gazeUp",
+          0.0
+        ],
+        [
+          "gazeDown",
+          0.0
+        ]
+      ],
+      "materials": [
+        "Ren_Pupil",
+        "Ren_Pupil",
+        "Ren_IrisGreyBlue",
+        "Ren_IrisGreyBlue",
+        "Ren_UpperLiner",
+        "Ren_IrisCatchlight"
+      ]
+    }
+  ],
+  "signatures": {
+    "Ren_Head": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "efb0027893f8f3ff7c2c8578ddbb6cb867ae55bf63026ca6974bdce3a5e68b0a",
+      "loops": "7bf444fb6fc4017655c08d567d754cc28902ab01a1a67be8ac23e09153280586",
+      "polygons": "023f8f7c4e3e4e9e758e61f6321ff717b9ab832472cdab54c130a3f18d3c19c3",
+      "uv": {
+        "tripo_91cffa7c_85c1_4bd0_a680_5d60ac518631_NewUVMap": "6e63e2277f3cad00b2144a927adcfff9135acfa5e694b2755cfa8bf1332991df",
+        "FaceUV_v1": "35ebb01a477437b55d6f21207d02bc1a617c1a11928a43fbaf29154a5fa191c9"
+      },
+      "shapes": {
+        "Basis": "efb0027893f8f3ff7c2c8578ddbb6cb867ae55bf63026ca6974bdce3a5e68b0a",
+        "mouthSeal": "ab7d3e889cadad7c93bd753df8f2e3820a7575c0478cd8bed4f2f84a6d1f4f4f",
+        "jawOpen_A": "7ea2f6be08cb228d1e274f07e99b45631b9112eae9a6870566d78f4b476deeb2",
+        "eyeBlinkL": "11771890607084f2eb0bb7cbd55ea395fed9307e096b1a6e1610fb90f95e74a8",
+        "eyeBlinkR": "3ee62529be61bbff20a28b283814eae033eed8bf92d6ed00cae4aeeafa7f1cb2"
+      }
+    },
+    "Ren_P2_UpperTeeth": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "1cf854c5c316215e0964e889f2721acd1a70d9179b7efd74dc1f362ab780c3e0",
+      "loops": "45d11022d84461d29bd5c7c2775fcec34de2a30aff9b7ae37b8b1bbfff693bba",
+      "polygons": "56b0950ef1fcc586ebe3357c25a33a2b642e74ac3a023a2be160b63cfea9bbd3",
+      "uv": {},
+      "shapes": {
+        "Basis": "1cf854c5c316215e0964e889f2721acd1a70d9179b7efd74dc1f362ab780c3e0",
+        "mouthSeal": "1cf854c5c316215e0964e889f2721acd1a70d9179b7efd74dc1f362ab780c3e0",
+        "jawOpen_A": "1cf854c5c316215e0964e889f2721acd1a70d9179b7efd74dc1f362ab780c3e0"
+      }
+    },
+    "Ren_P2_LowerTeeth": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "44c944c6d9f0e32ba9c46997755ad3eb44a490ffb4aabb573ec5787490fdb6c2",
+      "loops": "45d11022d84461d29bd5c7c2775fcec34de2a30aff9b7ae37b8b1bbfff693bba",
+      "polygons": "56b0950ef1fcc586ebe3357c25a33a2b642e74ac3a023a2be160b63cfea9bbd3",
+      "uv": {},
+      "shapes": {
+        "Basis": "44c944c6d9f0e32ba9c46997755ad3eb44a490ffb4aabb573ec5787490fdb6c2",
+        "mouthSeal": "44c944c6d9f0e32ba9c46997755ad3eb44a490ffb4aabb573ec5787490fdb6c2",
+        "jawOpen_A": "bea9603b7280615ba9db57b084741f0efc4492801d2ee251d0ba7753de253f79"
+      }
+    },
+    "Ren_P2_Tongue": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "214e6f496a5487507dffc9f09d4278bee18fc5dcb0b539bf3afa43f1017a3109",
+      "loops": "297e00afef07f5fcd45a2bae4879de83f637c3eb72c27d9ec7921e79da50c04f",
+      "polygons": "b1802e611b90ea67cc62fd5c8f662a1284dc18c7c434f3d4f3c8655a331f926f",
+      "uv": {},
+      "shapes": {
+        "Basis": "214e6f496a5487507dffc9f09d4278bee18fc5dcb0b539bf3afa43f1017a3109",
+        "mouthSeal": "214e6f496a5487507dffc9f09d4278bee18fc5dcb0b539bf3afa43f1017a3109",
+        "jawOpen_A": "56c498aeb734c912a00523fbe4fa134761a8ff6136470f09673727e1d51bc8d1"
+      }
+    },
+    "Ren_Eye_R_UpperLiner": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "8d05cb1477e5d24c44596901c04c79b25a182764fb13bf26a6cc9e0e2f9d4333",
+      "loops": "1a24cce16b52bece2fd5c32564f67d1b78c7f2e9dd16ee7b225012b32f5011bd",
+      "polygons": "4af351c4cba5b96ddcaf3b5de6e081fad7dc3a681fc566e29748d7a45294b3ab",
+      "uv": {},
+      "shapes": {
+        "Basis": "8d05cb1477e5d24c44596901c04c79b25a182764fb13bf26a6cc9e0e2f9d4333",
+        "eyeBlinkR": "60bd3e3fbd4b1c0891bc31e09cbe8f68f8617fcc3c8559a710cb78c26f9ea3d9"
+      }
+    },
+    "Ren_Eye_R_Sclera": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "fa0527b1ef48c00449ef0ff62797a203624c7971ded678c959b0be289a37e8fd",
+      "loops": "0002c12e049f2a556fb0f4ce918950eae09048c02f44d1048f37dce77f867f9c",
+      "polygons": "5f4c849d12ef883786e34bcf2ec83d2a596b264bf2ea5e7a93ada577abe38dd4",
+      "uv": {
+        "UVMap": "fe1821ef2af9bd09cc2fdeaf61b6a0668762fa94088e88b540d9a63e8431f8be"
+      },
+      "shapes": {}
+    },
+    "Ren_Eye_R_OuterLash": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "f2249823a8032d81551c377369ae103c823398c0262bf7094e11773a761bd949",
+      "loops": "921c803abfa6ac88f44f7ab19198e5c137d1c7183e8e6912757a6263e8dee0a5",
+      "polygons": "ef3d695f2536c165ff6ce87a8705ed3734f0589a98a02b96dacf463eea1740d1",
+      "uv": {},
+      "shapes": {
+        "Basis": "f2249823a8032d81551c377369ae103c823398c0262bf7094e11773a761bd949",
+        "eyeBlinkR": "71540d122ef1b12ed88447398c1776df5d319bed7cb93ce25d05a49531e557af"
+      }
+    },
+    "Ren_Eye_R_LowerLiner": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "464f7f76e7a4dc1641cb637d1f5ca21ebae967498f95130be95560af76e846ed",
+      "loops": "1a24cce16b52bece2fd5c32564f67d1b78c7f2e9dd16ee7b225012b32f5011bd",
+      "polygons": "4af351c4cba5b96ddcaf3b5de6e081fad7dc3a681fc566e29748d7a45294b3ab",
+      "uv": {},
+      "shapes": {
+        "Basis": "464f7f76e7a4dc1641cb637d1f5ca21ebae967498f95130be95560af76e846ed",
+        "eyeBlinkR": "d5400604e644c4535d584c255d718a2b6b30e4415dd30f5c3ae4c78c1e1ff7aa"
+      }
+    },
+    "Ren_Eye_R_Iris": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "54d22629fc0da2b9eb920a56e62e895c3220230d7a4c053d1c2bb6d0637c144a",
+      "loops": "aa7a7b4d45045240be76b0f5fa30f1019af3401d81307312540a52657005e15c",
+      "polygons": "eb07a14ccccf59c3c04125bb85e4aeed3ec67b20fbe0d991e15d2143c558027c",
+      "uv": {},
+      "shapes": {
+        "Basis": "54d22629fc0da2b9eb920a56e62e895c3220230d7a4c053d1c2bb6d0637c144a",
+        "gazeLeft": "dbee0bed51ad5422d6e135b04b81cc69d1fdafaae34372d927c08126bfad7b26",
+        "gazeRight": "77558421060a75f3e88402f510957bbd521041d52fc0b43e35e78dcad0177ce0",
+        "gazeUp": "9bbea2541433e6c7c9f27de815f76d688576b8b51a079578d5daef98a99b76d8",
+        "gazeDown": "8efa99d323137eb4dbb85d7de1b9e22806f9c594537164e8ce23085b2637b3da"
+      }
+    },
+    "Ren_Eye_L_UpperLiner": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "cdb044774922d3af8ea35a12f20b414914bc5a60b62ea7a9af370dca29a57ad0",
+      "loops": "1a24cce16b52bece2fd5c32564f67d1b78c7f2e9dd16ee7b225012b32f5011bd",
+      "polygons": "4af351c4cba5b96ddcaf3b5de6e081fad7dc3a681fc566e29748d7a45294b3ab",
+      "uv": {},
+      "shapes": {
+        "Basis": "cdb044774922d3af8ea35a12f20b414914bc5a60b62ea7a9af370dca29a57ad0",
+        "eyeBlinkL": "7f352a03d6e504aabbc6fd8af6e14ad7ca3254e21fc25910db370e569b0f6107"
+      }
+    },
+    "Ren_Eye_L_Sclera": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "fd3eeb02b7948ad87d7e4518f41a99264b55528f328a7d059b9d16c17855ee39",
+      "loops": "ca5b3f377e40e7400d7ddd9fe0a871e12631259633cefa46e3922709a610cd46",
+      "polygons": "a9b76ad55474cd70fbf41344a7150334c96e9b7c2e068c6bcad7b41579a074ec",
+      "uv": {
+        "UVMap": "8b193003475b70b003657cba5e80583b3fde769a8cf4fbd71e292aa1848f5941"
+      },
+      "shapes": {}
+    },
+    "Ren_Eye_L_OuterLash": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "5fe732e4d8e2a99c23322213bafe5cc47899f48ed0d20501fc93d4b9b4e0a28b",
+      "loops": "921c803abfa6ac88f44f7ab19198e5c137d1c7183e8e6912757a6263e8dee0a5",
+      "polygons": "ef3d695f2536c165ff6ce87a8705ed3734f0589a98a02b96dacf463eea1740d1",
+      "uv": {},
+      "shapes": {
+        "Basis": "5fe732e4d8e2a99c23322213bafe5cc47899f48ed0d20501fc93d4b9b4e0a28b",
+        "eyeBlinkL": "5ed4035459161e389dd03d94da62c79fba6b8152a272d86e5fd4545aad3889ff"
+      }
+    },
+    "Ren_Eye_L_LowerLiner": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "ed609fa895869fc21acc7b4ce9ca1b705cf05d13f62907797752da12eed45af3",
+      "loops": "1a24cce16b52bece2fd5c32564f67d1b78c7f2e9dd16ee7b225012b32f5011bd",
+      "polygons": "4af351c4cba5b96ddcaf3b5de6e081fad7dc3a681fc566e29748d7a45294b3ab",
+      "uv": {},
+      "shapes": {
+        "Basis": "ed609fa895869fc21acc7b4ce9ca1b705cf05d13f62907797752da12eed45af3",
+        "eyeBlinkL": "6a749c079062b1b25ea78f6707867ee94a2b00d7d9193529004caf816ae9865f"
+      }
+    },
+    "Ren_Eye_L_Iris": {
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "vertices": "1f05ed6a3045165c52558b1f5efc8718866f0a29db3ca2a6f94d59b163e3efa0",
+      "loops": "aa7a7b4d45045240be76b0f5fa30f1019af3401d81307312540a52657005e15c",
+      "polygons": "eb07a14ccccf59c3c04125bb85e4aeed3ec67b20fbe0d991e15d2143c558027c",
+      "uv": {},
+      "shapes": {
+        "Basis": "1f05ed6a3045165c52558b1f5efc8718866f0a29db3ca2a6f94d59b163e3efa0",
+        "gazeLeft": "4355e82969aaff69d126855445820c6b4b50e33251b1c518080da471d81d04f2",
+        "gazeRight": "ddb12f680836fe87cd5add8accef4d767ed1fccaa76a4e5b7db555ed63bc482d",
+        "gazeUp": "f0fd1d7e03fe88f449d3c6aac75540666852914007d0323682a14762b58d2bb0",
+        "gazeDown": "16df9dea1ff2694016281199f96ddd25dbc9b978a1cf3235734ef745481c0197"
+      }
+    }
+  }
+}

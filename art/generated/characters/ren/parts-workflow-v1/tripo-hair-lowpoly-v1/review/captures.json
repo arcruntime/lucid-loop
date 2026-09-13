@@ -1,0 +1,191 @@
+[
+  {
+    "file": "native-front.png",
+    "sha256": "ca67defc9a29777843860e536f00d88453edddd7020b265683aecc0f4a09211e",
+    "subject": "native",
+    "view": "front",
+    "camera_position": [
+      2.9549999237060547,
+      0.0,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  },
+  {
+    "file": "native-quarter.png",
+    "sha256": "dc34565f84e490cb9945b51860de8d77c0d201ea903260ca487df857b8ad9ce2",
+    "subject": "native",
+    "view": "quarter",
+    "camera_position": [
+      2.4124560356140137,
+      -1.7207293510437012,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  },
+  {
+    "file": "native-profile.png",
+    "sha256": "9596ffe54801626fb03b2ec62d0a83a98cab2cde90a2759cf9e3f0a5419221c6",
+    "subject": "native",
+    "view": "profile",
+    "camera_position": [
+      -0.04500000178813934,
+      -3.0,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  },
+  {
+    "file": "tripo8000-front.png",
+    "sha256": "645b3ee756cb427af57642149f607053efac332b24a3993da8beae43aba9cd4c",
+    "subject": "tripo8000",
+    "view": "front",
+    "camera_position": [
+      2.9549999237060547,
+      0.0,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  },
+  {
+    "file": "tripo8000-quarter.png",
+    "sha256": "ebdccda77e07be0d7a00cb1e0e71dab5461dfd255ac3736b2c86557db5c48f7e",
+    "subject": "tripo8000",
+    "view": "quarter",
+    "camera_position": [
+      2.4124560356140137,
+      -1.7207293510437012,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  },
+  {
+    "file": "tripo8000-profile.png",
+    "sha256": "dc4dcc41351558466b817dfb0aa4075e3ffc48c98a6b4933e88ef4fef3d3c55b",
+    "subject": "tripo8000",
+    "view": "profile",
+    "camera_position": [
+      -0.04500000178813934,
+      -3.0,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  },
+  {
+    "file": "local7900-front.png",
+    "sha256": "eaecb3d3c16aaf768402e583fed1973c34bb2da47e64adfb793cc714fc1476e4",
+    "subject": "local7900",
+    "view": "front",
+    "camera_position": [
+      2.9549999237060547,
+      0.0,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  },
+  {
+    "file": "local7900-quarter.png",
+    "sha256": "f46a866391f1d21e60a75ad5c9a035c51284ad340533691e3946273537834bcf",
+    "subject": "local7900",
+    "view": "quarter",
+    "camera_position": [
+      2.4124560356140137,
+      -1.7207293510437012,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  },
+  {
+    "file": "local7900-profile.png",
+    "sha256": "e4265b22d1eedae685240b7f767ac98491610ef6238493cd5ba00f8c1b6f4945",
+    "subject": "local7900",
+    "view": "profile",
+    "camera_position": [
+      -0.04500000178813934,
+      -3.0,
+      0.15000000596046448
+    ],
+    "target": [
+      -0.04500000178813934,
+      0.0,
+      0.15000000596046448
+    ],
+    "ortho_scale": 1.4,
+    "resolution": [
+      900,
+      900
+    ]
+  }
+]

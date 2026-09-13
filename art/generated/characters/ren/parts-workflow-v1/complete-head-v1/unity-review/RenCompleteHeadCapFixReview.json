@@ -1,0 +1,24 @@
+{
+  "status": "V1_CAP_BINDING_FIXED_AND_LIVE_CAP_STATES_VERIFIED",
+  "sourceFbxSha256": "e1c56169a9c86fef72f947d6024b4bc6a9b7caa1296b9a3d5c7787fb4b0cfa2f",
+  "correction": "The first Unity Rig.Bind reset every morph to zero and never reapplied capOn. Hair crossing the cap was a Unity runtime bug; attributing that crossing to the source was incorrect. The original source FBX/textures were unchanged by this correction.",
+  "runtimeChange": "Cached capOn on all six hair renderers; synchronize 100/0 fitting with Ren_Cap visibility. Preserve unrelated morphs. Hair and cap toggles independent, cap default on. Rebinding and facial reset preserve requested cap-off state.",
+  "liveCaptureCount": 25,
+  "allSixCapWeightsVerifiedEveryCapture": true,
+  "allCapVisibilitiesVerifiedEveryCapture": true,
+  "byteIdenticalChecks": {
+    "capOffReset": true,
+    "capOffRebind": true,
+    "capRestored": true,
+    "faceReset": true
+  },
+  "visuallyInspected": [
+    "rest--front",
+    "cap-off--front",
+    "cap-off--quarter",
+    "cap-off-hair-hidden--front"
+  ],
+  "finding": "Corrected cap-on render tucks crown hair beneath cap; cap-off restores loose hair. Earlier crossing was not a source defect.",
+  "artAcceptance": "Not granted. Cap proportions/fringe and eyelid painting remain source review questions.",
+  "player": "B:/lucid-loop/.local/ren-complete-head-v1-cap-fix/RenCompleteHead.exe"
+}

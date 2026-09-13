@@ -1,0 +1,153 @@
+{
+  "source_head_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "geometry_built_from": "original Ren designer sheet; local Blender mesh construction, no paid model call",
+  "objects": {
+    "Ren_Cap": {
+      "triangles": 962,
+      "min_triangle_area": 9.646151738706976e-06,
+      "uv_loops": 1944
+    },
+    "Ren_RightEar_HelixCuffs": {
+      "triangles": 200,
+      "min_triangle_area": 1.0055764505523257e-05,
+      "uv_loops": 400
+    },
+    "Ren_RightEar_DropPiercing": {
+      "triangles": 156,
+      "min_triangle_area": 1.0058543921331875e-05,
+      "uv_loops": 312
+    }
+  },
+  "roundtrips": {
+    "glb": {
+      "sha256": "3bd1fa091b86cab5b8a2961cf33dfff27d435b47face518a6c29df7d52c0203d",
+      "objects": {
+        "Ren_Cap": {
+          "triangles": 962,
+          "render_vertices": 612,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Cap_BlackCloth",
+            "Ren_Cap_Underside"
+          ],
+          "nearest_vertex_error_native_units": 0.0
+        },
+        "Ren_RightEar_DropPiercing": {
+          "triangles": 156,
+          "render_vertices": 80,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Piercing_BrushedSilver"
+          ],
+          "nearest_vertex_error_native_units": 0.0
+        },
+        "Ren_RightEar_HelixCuffs": {
+          "triangles": 200,
+          "render_vertices": 104,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Piercing_BrushedSilver"
+          ],
+          "nearest_vertex_error_native_units": 0.0
+        }
+      },
+      "no_armatures": true
+    },
+    "fbx": {
+      "sha256": "64e98b1f73ddba39d3f4228d716e3055926e2305dbfca89212a6c20483cbc3af",
+      "objects": {
+        "Ren_Cap": {
+          "triangles": 962,
+          "render_vertices": 577,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Cap_BlackCloth",
+            "Ren_Cap_Underside"
+          ],
+          "nearest_vertex_error_native_units": 9.406358003616333e-08
+        },
+        "Ren_RightEar_DropPiercing": {
+          "triangles": 156,
+          "render_vertices": 80,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Piercing_BrushedSilver"
+          ],
+          "nearest_vertex_error_native_units": 5.372690026206328e-08
+        },
+        "Ren_RightEar_HelixCuffs": {
+          "triangles": 200,
+          "render_vertices": 104,
+          "uv_layer_count": 1,
+          "materials": [
+            "Ren_Piercing_BrushedSilver"
+          ],
+          "nearest_vertex_error_native_units": 6.006850128414953e-08
+        }
+      },
+      "no_armatures": true
+    }
+  },
+  "blend_sha256": "e8f8c88bf8972e0b46f6434371c6fc1a9ddd0b392083ff15433db621fcd8f50c",
+  "texture_sha256": "594c73864180f7919d307d46b51a145180793f4939221f980d80af3e0d6b5320",
+  "total_accessory_triangles": 1318,
+  "limitations": [
+    "Native head units remain unchanged; a later common character normalization is required.",
+    "Roundtrips verify static placement/topology/material slots/UV presence, not Unity shader appearance.",
+    "No rig or skin weights; all objects provide Head bind metadata."
+  ],
+  "embedded_glb_texture_exact_png": true,
+  "gltf_materials": [
+    {
+      "name": "Ren_Cap_BlackCloth",
+      "double_sided": true,
+      "pbr": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9100000262260437
+      },
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularFactor": 0.1599999964237213
+        }
+      }
+    },
+    {
+      "name": "Ren_Cap_Underside",
+      "double_sided": false,
+      "pbr": {
+        "baseColorFactor": [
+          0.0035010159481316805,
+          0.0035010159481316805,
+          0.003935939632356167,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.9399999976158142
+      },
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularFactor": 0.1599999964237213
+        }
+      }
+    },
+    {
+      "name": "Ren_Piercing_BrushedSilver",
+      "double_sided": false,
+      "pbr": {
+        "baseColorFactor": [
+          0.47699978947639465,
+          0.5225215554237366,
+          0.6382831931114197,
+          1
+        ],
+        "metallicFactor": 0.8600000143051147,
+        "roughnessFactor": 0.28999999165534973
+      },
+      "extensions": {}
+    }
+  ],
+  "units": "Unnormalized native head units; error values are not world metres."
+}
