@@ -27,7 +27,7 @@ Optional repository variables `UNITY_EDITOR_WINDOWS` and `UNITY_EDITOR_MACOS` ov
 
 - stadia-testbed is Linux and hosts the running `win-soccer` dockurr Windows VM. Its existing `sg-win-microprose` runner is scoped to `jethac/tokyoretro-microprose-soccer`, not Lucid Loop. The VM has roughly 22 GiB free; Unity was absent from the standard installation path.
 - The Mac mini is reachable and its Tokyo Retro / MicroProse runner services are active. No Unity editor was found under `/Applications/Unity`; the prior MacMiniOffload volume is not mounted. Internal data storage has about 2.4 GiB free. The earlier hackathon runner points to that unavailable volume.
-- After transfer to `jethac/lucid-loop`, repository admin access is confirmed. The dedicated `lucid-loop-windows` runner is registered and online with the required labels, installed as an automatic Windows service under `NT AUTHORITY\NETWORK SERVICE`. Existing runners remain intact. Unity installation and activation are still pending; the runner account must have access to the activated license.
+- After transfer to `jethac/lucid-loop`, repository admin access is confirmed. The dedicated `lucid-loop-windows` runner is registered and online with the required labels, running as an interactive logon task under the VM's `docker` account for Unity Personal licensing. Existing runners remain intact. Unity editor installation is in progress. Unity Hub installation and Personal activation are pending; automatic approval review rejected the attempted Hub download/install without a detailed reason.
 
 Once Windows Unity installation and licensing are ready, dispatch **Unity builds** using the registered runner. Confirm the Windows job runs and produces an archive before removing its pending notice from the README. Resume Mac provisioning only when requested, then restore its matrix entry with `platform: macos`, labels `["self-hosted", "macOS", "ARM64", "mac-mini", "lucid-loop"]`, `python: python3`, and `editor_variable: UNITY_EDITOR_MACOS`.
 
@@ -36,3 +36,11 @@ References: [GitHub self-hosted runner setup](https://docs.github.com/en/actions
 ## Local validation
 
 Actionlint accepts the workflow and all three Python validation tests pass. A clean Windows checkout passed all eight Unity EditMode tests, built both committed scenes and produced a 66 MB Windows ZIP with a SHA-256 checksum. A subsequent `-batchmode -nographics` run also passed all eight tests and the Windows player build, validating the headless command used by the VM job. This is local workstation evidence, not evidence of execution on the remote VM or Mac mini; the Mac build remains unverified until its host is provisioned.
+
+## Unity Personal activation on Windows
+
+The user selected Unity Personal. On the Windows VM console at `http://stadia-testbed:8006`, use the existing `docker` Windows session, install Unity Hub from Unity's official site, and sign in with the chosen Unity account. Under Hub Settings > Licenses, confirm Personal is active; if needed select Add license > Get a free personal license. Locate Unity 6000.3.24f1 in Hub after editor installation finishes. Do not put account credentials or license files in this repository.
+
+The `LucidLoopRunner` Task Scheduler task starts at `docker` logon and runs without a stored password. Its former NETWORK SERVICE runner service is disabled to prevent two listeners. Keep the Windows user session logged in; disconnecting remote access is fine, but signing out stops this runner. After reboot, the runner requires that user to log in. Other projects' runner services are unchanged. Verify license access with an actual workflow build after activation.
+
+[Unity Hub license activation instructions](https://docs.unity.com/en-us/hub/manage-license).

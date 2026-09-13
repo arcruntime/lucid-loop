@@ -129,3 +129,7 @@ At the user's request, removed macOS from the active Unity build matrix and defe
 ## 2026-09-13 — Repository transfer and Windows runner registration
 
 The repository transferred from arcruntime/lucid-loop to jethac/lucid-loop. Updated origin and current documentation links, verified admin access, and registered the dedicated lucid-loop-windows runner on the stadia-testbed dockurr VM. GitHub reports it online with Windows, X64, stadia-testbed and lucid-loop labels. It runs as an automatic service under NETWORK SERVICE; other projects' runners are unchanged. Unity editor provisioning and license activation remain outstanding. Mac builds remain deferred.
+
+## 2026-09-13 — Unity Personal runner account
+
+The user selected Unity Personal. Switched the dedicated Windows runner from NETWORK SERVICE to the existing docker interactive session via the LucidLoopRunner logon task; disabled only its former service. Verified GitHub reports the runner online and its listener runs as Docker. This avoids storing a Windows password, but requires the user session to stay logged in. Editor installation is underway. Automatic approval review rejected Hub download/install, so manual Hub installation and account sign-in are required; see docs/CI.md. Account email and credentials are not committed.
