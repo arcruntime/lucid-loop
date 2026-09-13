@@ -24,10 +24,10 @@ export function createGameSessions({ definitionFactory, encounterFactory = creat
     for (const [id, game] of games) if (game.expiresAt <= time) { games.delete(id); for (const listener of game.listeners) { try { listener({ type: 'expired', gameId: id }); } catch {} } game.listeners.clear(); removed++; }
     return removed;
   }
-  function auth(credentials) {
+  function auth(credentials, touch = true) {
     cleanup(); const game = games.get(credentials?.gameId);
     if (!game || !equal(credentials?.resumeToken, game.resumeToken)) return null;
-    game.expiresAt = now() + idleTtlMs;
+    if (touch) game.expiresAt = now() + idleTtlMs;
     return game;
   }
   function leased(credentials, leaseId) {
@@ -38,7 +38,9 @@ export function createGameSessions({ definitionFactory, encounterFactory = creat
     const s = game.encounter.snapshot();
     // Explicit allowlist. Never return NPC memory/secrets, private events or canonical definition.
     return { gameId: game.id, loopId: s.loopId, loopIndex: s.loopIndex, revision: s.revision,
-      mood: s.mood, actors: s.actors, playerDiscoveries: s.playerDiscoveries,
+      mood: s.mood, actors: s.actors, playerDiscoveries: s.playerDiscoveries.map(discovery => ({
+        ...discovery, text: game.factTexts[discovery.factId] ?? "A clue was discovered.",
+      })),
       ...(s.scenario ? { elapsedSeconds: s.scenario.elapsedSeconds, durationSeconds: s.scenario.durationSeconds } : {}),
       recording: s.recording, catastrophe: s.catastrophe, victory: s.victory, phase: s.phase };
   }
@@ -51,12 +53,13 @@ export function createGameSessions({ definitionFactory, encounterFactory = creat
   }
   return Object.freeze({
     cleanup,
+    isAlive: credentials => Boolean(auth(credentials, false)),
     create() {
       cleanup(); if (games.size >= maxGames) return { ok: false, reason: 'capacity' };
       const id = token();
       const definition = definitionFactory(id);
       const encounter = encounterFactory({ ...definition, id });
-      const game = { id, resumeToken: token(), encounter, transcripts: createTranscriptStore(transcriptOptions),
+      const game = { id, resumeToken: token(), encounter, factTexts: Object.fromEntries(Object.entries(definition.facts ?? {}).map(([factId, fact]) => [factId, fact.text])), transcripts: createTranscriptStore(transcriptOptions),
         active: null, listeners: new Set(), generations: Object.fromEntries(NPC_IDS.map(id => [id, 0])), expiresAt: now() + idleTtlMs };
       games.set(id, game);
       return { ok: true, credentials: { gameId: id, resumeToken: game.resumeToken }, snapshot: publicSnapshot(game) };

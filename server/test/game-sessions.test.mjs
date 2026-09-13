@@ -5,6 +5,17 @@ const definitionFactory = () => ({ facts: { hidden: { text: 'Secret author fact'
 const fence = snapshot => ({ loopId: snapshot.loopId, revision: snapshot.revision });
 const delta = { type: 'session.input_transcript.delta', delta: 'Private conversation', event_id: 'e1', start_ms: 0, end_ms: 100 };
 
+test('world liveness checks do not renew idle games or leak undiscovered clue text', () => {
+  let time = 0;
+  const registry = createGameSessions({ definitionFactory, idleTtlMs: 100, now: () => time });
+  const { credentials, snapshot } = registry.create();
+  const revealed = registry.trustedWorld(credentials, 'confirmFact', { ...fence(snapshot), factId: 'clue', recipients: ['player'], source: 'inspection' });
+  assert.equal(revealed.snapshot.playerDiscoveries[0].text, 'Player fact');
+  assert.doesNotMatch(JSON.stringify(revealed.snapshot), /Secret author fact/);
+  time = 80; assert.equal(registry.isAlive(credentials), true);
+  time = 101; assert.equal(registry.isAlive(credentials), false);
+});
+
 test('unpredictable credentials isolate games; public projection hides secrets and private event log', () => {
   const registry = createGameSessions({ definitionFactory }); const a = registry.create(); const b = registry.create();
   assert.notEqual(a.credentials.resumeToken, b.credentials.resumeToken);

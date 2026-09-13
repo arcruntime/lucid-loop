@@ -79,7 +79,7 @@ export function createRelayServer(options = {}) {
     config.gameSessions.cleanup();
     for (const [id, record] of worlds) {
       if (!record.clients.size) {
-        if (Date.now() - record.lastSeen > 30 * 60_000) worlds.delete(id);
+        if (!config.gameSessions.isAlive(record.credentials)) worlds.delete(id);
         continue;
       }
       record.lastSeen = Date.now();
