@@ -1,0 +1,104 @@
+{
+  "schema": "lucid-loop/ren-face-paint-trial/v1",
+  "date": "2026-09-13",
+  "status": "PRELIMINARY_FRONT_PAINT_TRIAL_UNPROJECTED",
+  "geometrySnapshot": "Ren_P2_PaintNeutral_Snapshot.blend",
+  "privateSourceSnapshot": "Ren_P2_Source_Integrated_Snapshot.blend",
+  "captureReport": "prepare-report.json",
+  "geometryCapture": "geometry-capture/capture.json",
+  "alignmentReview": "alignment-review.json",
+  "anchors": "front-anchors.json",
+  "tool": "built-in image_gen.imagegen",
+  "modelId": "Not exposed by tool; not inferred.",
+  "generatedImages": [
+    {
+      "file": "painted-views/front-paint-v1.png",
+      "promptFile": "painted-views/prompts/front-paint-v1.txt",
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-fc2c0c6b-a15e-4862-bbce-4823eb025f2a.png",
+      "inputs": [
+        "B:/lucid-loop/art/generated/characters/ren/parts-workflow-v1/face-paint-v1/guides/front-neutral-skin-with-eyes.png",
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/parts-reference-v1/head-closed-rest-three-view-v2.png"
+      ],
+      "status": "STYLE_REFERENCE_ONLY_NOT_APPROVED_FOR_DIRECT_PROJECTION",
+      "review": "Promising mature-anime brow/liner/rose-vermilion appearance and closely matched outer silhouette. Eye apertures, iris centers and mouth seam drift relative to frozen guide.",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1159662,
+      "sha256": "391c592f00b25e2627bce72e403d09614a5af3fd40636a5e31f21f9d5c62d4c8",
+      "promptSha256": "42eef89fb4f262e85e7263411c7fc7770d63feabbcf2029ce6ede44294ff9217",
+      "inputHashes": [
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/parts-workflow-v1/face-paint-v1/guides/front-neutral-skin-with-eyes.png",
+          "sha256": "5377d72436cbbcc57fa00ab21068565c57fbefc24c5f238c41e04f05c0bfbdf0"
+        },
+        {
+          "path": "B:/lucid-loop/art/characters/ren-model-sheet.png",
+          "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+        },
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/parts-reference-v1/head-closed-rest-three-view-v2.png",
+          "sha256": "add1b8c92dc3ac499159523450dea39d06f955609d4594b22d90fbedebac7f56"
+        }
+      ],
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "file": "painted-views/front-paint-v2.png",
+      "promptFile": "painted-views/prompts/front-paint-v2.txt",
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-99dff607-bfb9-4234-8ff0-7155ad564814.png",
+      "inputs": [
+        "B:/lucid-loop/art/generated/characters/ren/parts-workflow-v1/face-paint-v1/guides/front-neutral-skin-with-eyes.png",
+        "B:/lucid-loop/art/generated/characters/ren/parts-workflow-v1/face-paint-v1/painted-views/front-paint-v1.png"
+      ],
+      "status": "REJECTED_ALIGNMENT_CORRECTION",
+      "review": "One targeted correction attempt. It moves nose, eyes and mouth further upward and changes the silhouette. No further retry performed.",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1115099,
+      "sha256": "8923c7d05fab5e55b1f65cd8e04f59472be2b616b01a015c5f917c82c3745b85",
+      "promptSha256": "2ebfb681088fa7e39e452a0fc2d768ccbd0c953be897468728f5dba54b77331e",
+      "inputHashes": [
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/parts-workflow-v1/face-paint-v1/guides/front-neutral-skin-with-eyes.png",
+          "sha256": "5377d72436cbbcc57fa00ab21068565c57fbefc24c5f238c41e04f05c0bfbdf0"
+        },
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/parts-workflow-v1/face-paint-v1/painted-views/front-paint-v1.png",
+          "sha256": "391c592f00b25e2627bce72e403d09614a5af3fd40636a5e31f21f9d5c62d4c8"
+        }
+      ],
+      "byteIdenticalToToolOutput": true
+    }
+  ],
+  "constraints": [
+    "Original PNG bytes preserved without resizing, cropping, warping or pixel retouching.",
+    "No projection or texture baking performed; original mesh, UVs and shape keys unchanged.",
+    "Frozen capture is face-integration-v1, not later stitched face-integration-v2/EyeUV geometry.",
+    "Exact guide camera is orthographic scale1.12, position(3,0,0), target(0,0,0), upZ, 1024square.",
+    "Returned paintings are native1254square. Matching normalized framing at another capture resolution requires explicit recapture; native output bytes remain immutable.",
+    "Two exactly-zero-area sealed contact triangles remain in the static snapshot and are omitted only from diagnostic rasterization. Their UV coordinates/source IDs/materials are recorded; no full coverage claim.",
+    "All visible eye-assembly pixels have a separately captured exclusion mask. Eye-color pixels must not project onto head-skin apertures.",
+    "Projector-coordinate fitting is a separate parent experiment; this trial provides anchors with uncertainty, not approved registration."
+  ],
+  "captureArtifactHashes": {
+    "alignment-review.json": "7686456764d88ff299866a0e3879fbb8cb7bb7f42b84b5a3f55fbbd465541c88",
+    "front-anchors.json": "dec7368ea08709c0634a18070466806bff3c323777b037a320ece41f7afcb246",
+    "geometry-capture\\capture.json": "4032d3511b5c970594f6a125be5aa9a3bac0d7a7512aad6dd92ddb5ea76fc392",
+    "geometry-capture\\degenerate-contact-triangles.json": "6ff6b7fd916c63772263b806a95fd44484773f376074bd9fa24764a07fc53137",
+    "geometry-capture\\front-clay.png": "722f72f43c14855f3bc617a886181f2b121b2568bd1ab82ce0380320491dd0b7",
+    "geometry-capture\\front-depth-preview.png": "4a898a90616572f1f857d966063b9eb7f2006a35a82cbef0d84d2067c7182756",
+    "geometry-capture\\front-eye-exclusion.png": "59babf3fb65426c4219476dadb5939c5e71b2632efac64ab4c10d4bcc25cd268",
+    "geometry-capture\\front-eye-occlusion.npz": "7c3470da50a5ee9d5d6ec11f5cfa93c85da3cd51909f254bd663dfa70ff1327b",
+    "geometry-capture\\front-geometry.npz": "6fe1b5a246c9841168d93910885001862072f4fbf983ab90eeb793ca33a72b30",
+    "geometry-capture\\front-normal.png": "d64a899947061df0a4bf9e567aafae47ee3b955a0927b40ce22dcdd349afa615",
+    "geometry-capture\\front-skin-projection-eligible.png": "58fcbdc32625e3d352b7f6d7cab08eb3e77eeea4e13e9d48b6ce0f3fd3b60885",
+    "geometry-capture\\front-visibility.png": "9e0bd430319d34b57af9780c2e6e5a47688c20c4342b7641b1cc7c75d8a5a2bb",
+    "guides\\front-neutral-skin-with-eyes.png": "5377d72436cbbcc57fa00ab21068565c57fbefc24c5f238c41e04f05c0bfbdf0",
+    "painted-views\\front-paint-v1.png": "391c592f00b25e2627bce72e403d09614a5af3fd40636a5e31f21f9d5c62d4c8",
+    "painted-views\\front-paint-v2.png": "8923c7d05fab5e55b1f65cd8e04f59472be2b616b01a015c5f917c82c3745b85",
+    "prepare-report.json": "aeac3ab6f32f8dfd360589aca3b06866f3f67fb1b1ad598414075d1d2bbc73ef",
+    "Ren_P2_PaintNeutral_Snapshot.blend": "e673a90cfef36a0c33241a01cb45059162e157f71f4f3728cdeccd8132bfa6bf",
+    "Ren_P2_Source_Integrated_Snapshot.blend": "6c2288676b45df767c161528b2a85c8488e45098b4ed9d15225c90cfffffb62c"
+  }
+}

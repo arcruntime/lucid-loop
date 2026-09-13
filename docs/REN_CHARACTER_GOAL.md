@@ -1,6 +1,65 @@
 # Ren character implementation goal
 
-## Current milestone: complete Ren through the separate-parts workflow
+## Next goal: a recognizable, complete Ren head for visual review
+
+Produce one head-and-neck Ren asset with her pale-blond asymmetric shag, main-look
+black cap, designer-faithful anime eyes and rose lips, and coherent painted skin.
+Show it beside the original artist sheet in the browser and Unity, with working
+independent blinks, clean gaze, closed rest and the existing open-A mouth prototype.
+This is the immediate milestone within the broader Ren implementation below.
+
+The user now targets approximately **40,000 rendered triangles for Ren's complete
+LOD0**, including face, eyes, mouth interior, hair, body, all clothing and accessories.
+This uses Unity's triangle count as the working interpretation of "polygons";
+quad authoring faces are counted as two triangles after triangulation. Preserve
+face detail first because close conversation views concentrate attention there.
+The per-part allocation and Tripo reduction strategy are being investigated.
+
+The Tripo texture trial completed for 30 credits and is visible in the browser.
+The Unity comparison is also built: clay on the left, static Tripo on the right.
+It supplies real 8K head maps, but the makeup/lips read too realistically and the
+eyes remain unsuitable. Small returned geometry drift and missing UVs on several
+parts mean the output is a static comparison/possible texture donor. It must not
+replace the working deformable head. See the
+[actual result review](../art/generated/characters/ren/parts-workflow-v1/tripo-texture-v1/review/README.md).
+
+### Work in order
+
+1. Preserve and commit the current source, paid result, viewers and review evidence
+   with explicit launch instructions. Keep unrelated work out of the checkpoint.
+2. Assemble the whole visible identity before judging a finished face: refine the
+   fitted hair's broad bangs and regular clumps into Ren's asymmetric shag, add
+   her black cap and visible ear jewelry, and provide a cap-off toggle for inspection.
+   Compare front, three-quarter and profile to the original artist sheet. Correct
+   demonstrated shape mismatches locally and record them; preserve vendor originals.
+3. Finish the facial painting on the working head's stable UVs. Use the Tripo result
+   only where its paint is useful and can be transferred without changing geometry.
+   Match the artist's brow shape, half-lidded grey-blue eyes, tapered eyeliner,
+   compact nose and muted rose lip contour. Remove photorealistic makeup detail,
+   misplaced highlights and seams; use graphic painted planes under scene lighting.
+   Keep separate authored eye parts with explicit UVs and readable iris detail.
+4. Fix the known intermediate-gaze iris/sclera intersection. Verify partial and
+   complete independent blinks, gaze through its full travel, and closed/open-A
+   mouth composition on the painted head. Retain stable facial topology and the
+   shared-female-rig compatibility needed by later work.
+5. Deliver matching browser and Unity views with the original design visible,
+   neutral/base-color/nightclub lighting, and close-up plus intended game framing.
+   Save actual front/quarter/profile screenshots and a short blink/gaze/mouth clip.
+   Commit and push the reviewable milestone with source and launch instructions.
+
+### Completion boundary
+
+The deliverable is one complete, recognizable Ren head ready for the user's
+visual review, with coherent paint/hair/cap and clean basic facial movement.
+An 8K map, a successful export or a blendshape count alone does not satisfy it.
+Record remaining likeness differences explicitly; do not claim exact artist
+approval or phone performance from desktop screenshots.
+
+Full six-expression acting, complete English/Japanese speech shapes, body fitting,
+Walt idle integration and iPhone 15 Plus performance qualification follow this
+visual milestone. They remain part of the broader Ren goal, not completed work.
+
+## Separate-parts implementation context
 
 Updated 2026-09-13. The user authorized committing and pushing the entire bust
 comparison, with explicit launch instructions, then starting the new Ren workflow.
@@ -14,11 +73,24 @@ remains an immutable shape comparison. This is not final likeness approval.
 
 The [separate-parts checkpoint](../art/generated/characters/ren/parts-workflow-v1/README.md)
 records the new reference sheets, native source audits, and rigid assembly study.
-The head has four verified outer lip loops and an actual opening. Its raised brow
-masses, filled eye surfaces and unfinished cavity still require local correction;
-the hair has crossbars and inward sheets to resolve. Neither source has passed
-final neutral likeness review. A tested HOS projection helper is available, but
-has not textured Ren or established suitable facial UVs.
+The head's local repairs now include a reduced brow ridge, separate grey-blue
+eyes, and an attached oral cavity with teeth, tongue, seal and open-A prototypes.
+The latest mouth revision removes a folded native commissure web and uses a
+55-edge aperture. A dedicated facial UV layout and cavity mapping pass overlap
+checks. The combined V2 face study includes stitched eyelids, independent blink
+controls and optional fitted hair. Live mouth/blink rendering is verified, but
+intermediate gaze still exposes iris/sclera intersections. Its broad temporary
+lip coloring is not accepted final painting. The first painted view remains
+unaligned for direct projection; the separate Tripo texture candidate is now
+available in browser and Unity comparisons. Neither is final likeness approval.
+
+The [face study launch instructions](../README.md#launch-the-ren-face-study),
+[mouth reconstruction](../art/generated/characters/ren/parts-workflow-v1/mouth-v1/README.md),
+and [facial UV study](../art/generated/characters/ren/parts-workflow-v1/face-uv-v1/README.md)
+record current evidence. Real Walt/Kimodo idle and GUARDED takes have also been
+retargeted onto the unchanged 54-bone shared female skeleton; body fit, hand-to-mouth
+contact and character-level animation acceptance remain required. Walt integration
+is separate staging work and is not claimed by the face/texture checkpoint.
 
 Apply the [reviewed creator workflow](../research/japanese-anime-character-workflows-2026-09.md):
 

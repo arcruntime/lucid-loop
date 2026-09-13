@@ -59,6 +59,36 @@ Blender 5.1.1 and 5.2.1 fixtures for UV mapping, occlusion, and unchanged source
 geometry. It has not painted Ren. Her facial UVs and geometry still need review
 before the reference-image projection step.
 
+## Local repair checkpoint
+
+The [face study](../../../../../Unity/Assets/CharacterArt/Generated/Preview/Scenes/RenFaceStudy.unity)
+is launchable in Unity. V2 combines a [localized brow correction](brows-v1/README.md),
+stitched eyelids, separate grey-blue eyes and an oral reconstruction with live
+seal/open-A controls. [Live player captures](face-integration-v2/unity-review/live/)
+verify actual mouth and blink rendering. Intermediate gaze still exposes an
+iris/sclera intersection and remains unaccepted. Fitted V5 hair is an optional
+construction preview; its 45,536 triangles exceed the new complete-character budget.
+
+The [final local mouth revision](mouth-v1/README.md) uses a 55-edge native aperture,
+removes a folded commissure web, and adds a clean cavity, dental arches and tongue.
+The [new face UV layout](face-uv-v1/README.md) has one continuous front island with
+small peripheral/corner pieces; [mouth UV integration v3](face-uv-v1/oral-integration-v3/README.md)
+maps the new cavity without overlapping the surviving native layout.
+
+The [Tripo texture trial](tripo-texture-v1/README.md) completed for 30 credits.
+The viewer now defaults to clay left/static Tripo right, with the original artist
+visible. The returned head has 8K maps but reads too realistically and has flat
+grey eyes. The [browser viewer](../../../../../README.md#browser-texture-viewer)
+also opens that exact provider GLB. Both preserve the working head separately.
+Its temporary flat rose lip region is too broad to serve as finished painting;
+the first image painting did not pass direct projection alignment.
+
+Next comes a complete visible Ren head with refined hair, cap, jewelry and anime
+painting. The user targets approximately 40,000 rendered triangles for all of Ren's
+LOD0, including clothing/accessories, with detail prioritized on the face. Full
+neutral likeness, English/Japanese speech, emotions, body integration and phone
+performance remain required by the goal.
+
 ## First visible milestone
 
 Produce a recognizable neutral Ren head in Unity with separately fitted hair,

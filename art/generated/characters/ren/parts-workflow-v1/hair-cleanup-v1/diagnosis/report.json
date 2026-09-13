@@ -1,0 +1,156 @@
+{
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-generation-v1\\tripo\\hair\\originals\\model.fbx",
+  "source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+  "head_sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+  "blender_version": "5.1.1",
+  "source_vertex_sha256": "376aa055c6d666d4285920dab2e4973274072053cfb8958dec66c6911390c7bc",
+  "source_has_custom_normals": true,
+  "source_smooth_faces": 28234,
+  "quads": 22820,
+  "quad_diagonal_02_triangle_normal_angle_degrees": {
+    "median": 2.5633112001899683,
+    "p95": 18.46002734306936,
+    "above_30": 548,
+    "above_90": 89,
+    "above_150": 17
+  },
+  "inconsistently_wound_manifold_edges": 296,
+  "nonmanifold_edges": 2013,
+  "variants": [
+    {
+      "name": "source",
+      "vertices": 26361,
+      "faces": 28234,
+      "vertex_positions_unchanged": true,
+      "has_custom_normals": true
+    },
+    {
+      "name": "automatic-normals",
+      "vertices": 26361,
+      "faces": 28234,
+      "vertex_positions_unchanged": true,
+      "has_custom_normals": true
+    },
+    {
+      "name": "consistent-winding",
+      "vertices": 26361,
+      "faces": 28234,
+      "vertex_positions_unchanged": true,
+      "has_custom_normals": true
+    },
+    {
+      "name": "triangulated-beauty",
+      "vertices": 26361,
+      "faces": 51054,
+      "vertex_positions_unchanged": true,
+      "has_custom_normals": true
+    },
+    {
+      "name": "flat-normals",
+      "vertices": 26361,
+      "faces": 28234,
+      "vertex_positions_unchanged": true,
+      "has_custom_normals": true
+    }
+  ],
+  "renders": [
+    {
+      "path": "diagnosis/source-front.png",
+      "sha256": "ab12ca6f4ace26872c0b547334e43879b3620a108ecda068e7e3d52deaa96286"
+    },
+    {
+      "path": "diagnosis/source-three-quarter.png",
+      "sha256": "4c54d369e6ca00291aff815386ca4b3ef65a412d674174246a63220ebcdb416b"
+    },
+    {
+      "path": "diagnosis/source-profile.png",
+      "sha256": "609a69fe7d7c91865b5f91e4da09d38938b79ee772eaa1b70866db6473149fa6"
+    },
+    {
+      "path": "diagnosis/source-underside.png",
+      "sha256": "7bb9b4349ae4fe7901b82ddaf9934fad81c9978299b9c0b30a56d79f5c123937"
+    },
+    {
+      "path": "diagnosis/automatic-normals-front.png",
+      "sha256": "7e92091c8c3e20b2184c1ba65bff98d688e2726cd8dd5e827ed6fd8b68a9d5a1"
+    },
+    {
+      "path": "diagnosis/automatic-normals-three-quarter.png",
+      "sha256": "17f6f680205b2df48973ff7ab3b0b406551e6a88dd371933d90e218c7a6da4fd"
+    },
+    {
+      "path": "diagnosis/automatic-normals-profile.png",
+      "sha256": "428b896f5698d191b23b2647e00979457cb56570ec3483c57a75dacc7de39bd1"
+    },
+    {
+      "path": "diagnosis/automatic-normals-underside.png",
+      "sha256": "edaad97ff5011834b26ed58993026fa87a1fd9d513a0b14f6b353dc01ba848a8"
+    },
+    {
+      "path": "diagnosis/consistent-winding-front.png",
+      "sha256": "2b97469ae0d021e81afd0a3f271f6c8181d97b42508a2b1a9e5b933f42a7d014"
+    },
+    {
+      "path": "diagnosis/consistent-winding-three-quarter.png",
+      "sha256": "c22e52e23cdeb5dddbc5b7e5776c81adf8c0f1de1fc4510bdd2ed34518101847"
+    },
+    {
+      "path": "diagnosis/consistent-winding-profile.png",
+      "sha256": "26fe182e026e7273bdfa2e096850eff0607c1fd20bb185deeb5abad61014fbaa"
+    },
+    {
+      "path": "diagnosis/consistent-winding-underside.png",
+      "sha256": "9f3cf816159452fa3f57cb64bc0bcee861eb98608ee8e03788f2e4e689280b05"
+    },
+    {
+      "path": "diagnosis/triangulated-beauty-front.png",
+      "sha256": "671a9d13fad86f14e2bd6d37ea16a838e49f7705eec175d06481b57b65ff57bf"
+    },
+    {
+      "path": "diagnosis/triangulated-beauty-three-quarter.png",
+      "sha256": "b742182435a486bc7b0ac75fdf4eeb627739590c0baa5b811cd04dc2fae85817"
+    },
+    {
+      "path": "diagnosis/triangulated-beauty-profile.png",
+      "sha256": "dd955bb3e6d84b16464924321cf82aca2764a2371c00fc7909d2c0ca8ae4ff26"
+    },
+    {
+      "path": "diagnosis/triangulated-beauty-underside.png",
+      "sha256": "b0a29515bff39a40a109b9349faa72e189c119eb6bf58c83f5ac98fef2e41287"
+    },
+    {
+      "path": "diagnosis/flat-normals-front.png",
+      "sha256": "6373f2e55110db9a323c63f516f5dc185ee9bd003b660c26b0ed0c6a86119a9b"
+    },
+    {
+      "path": "diagnosis/flat-normals-three-quarter.png",
+      "sha256": "c6035560499f87b46db42e7bdba517443963f71ef840a3d5aa36b0f83cb0ba73"
+    },
+    {
+      "path": "diagnosis/flat-normals-profile.png",
+      "sha256": "676622ce5ea159eed884bcdc37c3313e7a1cd7745fccd61e96c32428d03daed1"
+    },
+    {
+      "path": "diagnosis/flat-normals-underside.png",
+      "sha256": "38123489b41fd301dff55f00706710d9f5053e654d19381847da812b5896d1d9"
+    },
+    {
+      "path": "diagnosis/source-clearance-front.png",
+      "sha256": "da99887c21160f52180275705a0706c0a3578b33bc15357e1c15c1ebe18176db"
+    },
+    {
+      "path": "diagnosis/source-clearance-three-quarter.png",
+      "sha256": "6107e1842c7234a143695382219df1e45e54d1b6cd39ace8d650eaac040ca9cc"
+    },
+    {
+      "path": "diagnosis/source-clearance-profile.png",
+      "sha256": "15d34b145dc66793c9e23ee7036804ac4951843d4dbc3816f35e15bddc852a44"
+    },
+    {
+      "path": "diagnosis/source-clearance-underside.png",
+      "sha256": "7f8539f72193e58a1c5c9350e6e3cae2dee400bcaedaccc34e7448763f351419"
+    }
+  ],
+  "head_vertex_positions_unchanged": true,
+  "native_sources_unchanged": true
+}

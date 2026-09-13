@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "blender_version": "5.1.1",
+  "native_sources_unchanged": true,
+  "render_hashes_checked": 16,
+  "expected_counts": {
+    "vertices": 22921,
+    "faces": 22556,
+    "triangles": 45536
+  },
+  "reimported_exports": [
+    {
+      "file": "ren-fitted-hair-trial.fbx",
+      "sha256": "79d9aae56f4b51453179532b06c873047e5ea670fd19cddb8ad717eb414c29a0",
+      "objects": 37,
+      "vertices": 22921,
+      "faces": 22556,
+      "triangles": 45536,
+      "bounds_min": [
+        -0.5398950576782227,
+        -0.4168698489665985,
+        -0.1755852848291397
+      ],
+      "bounds_max": [
+        0.2856900691986084,
+        0.45326223969459534,
+        0.5562949776649475
+      ],
+      "objects_with_uv": 36,
+      "objects_with_material": 37
+    },
+    {
+      "file": "ren-fitted-hair-trial.glb",
+      "sha256": "073d7959a697c7f51e294dbc4f937911520469df711b1f4e848fff5a752fca8a",
+      "objects": 37,
+      "vertices": 22995,
+      "faces": 45536,
+      "triangles": 45536,
+      "bounds_min": [
+        -0.5398950576782227,
+        -0.4168698787689209,
+        -0.1755852997303009
+      ],
+      "bounds_max": [
+        0.2856900691986084,
+        0.45326220989227295,
+        0.5562949776649475
+      ],
+      "objects_with_uv": 36,
+      "objects_with_material": 37
+    }
+  ],
+  "head_local_vertices_and_world_matrix_unchanged": true,
+  "native_and_review_head_vertex_sha256": "2f3757f5ccb4bd9bef6b58f6edd656bdf1cd6bac8a08d43f056193c2bfb44dff",
+  "native_component_ranking_recomputed_without_cache": true,
+  "references": [
+    {
+      "path": "art/characters/ren-model-sheet.png",
+      "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-front-v2.png",
+      "sha256": "209c89450a27c2b4f3236104e04ada09416c9b3a97d9fd346ebff957d15b2d8d"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-right-v2.png",
+      "sha256": "b16f3297d515779164553b471a9089699e94a0d7ded1cce93c500fa1629687f2"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-back-v2.png",
+      "sha256": "1b257de5f17334d51ce492f098da6a328a1ce5c0d130a41fd4aa1a1d704f8c48"
+    }
+  ],
+  "uv_status": "34 main clumps use overlapping longitudinal working coordinates; two flyaways have automatic curve UVs; root base lacks UVs. No accepted painting atlas.",
+  "scope": "Checks integrity/counts/finite coordinates/export framing; does not establish likeness, UV acceptance, collision-free assembly, or mobile performance."
+}

@@ -1,0 +1,724 @@
+{
+  "status": "SELECTED_FOR_COMBINED_HEAD_MATERIAL_TRIAL_NOT_FINAL_REN_HAIR",
+  "hair_source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+  "head_source_sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+  "coordinates": "Head source world frame; +X front +Z up; exported hair uses identity transform. Old (-.09,0,.22) transform is comparison only.",
+  "native_hair_faces_retained": 0,
+  "fit_changes": [
+    {
+      "object": "Hair_fitted_outer_left_0",
+      "source_object": "Hair_rebuilt_outer_left_0",
+      "maximum_displacement_from_old_rigid_placement": 0.16842624738934495,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_left_0",
+      "source_object": "Hair_rebuilt_upper_left_0",
+      "maximum_displacement_from_old_rigid_placement": 0.14942399939361503,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_left_1",
+      "source_object": "Hair_rebuilt_outer_left_1",
+      "maximum_displacement_from_old_rigid_placement": 0.15932803503625317,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_left_1",
+      "source_object": "Hair_rebuilt_upper_left_1",
+      "maximum_displacement_from_old_rigid_placement": 0.13571736085993363,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_left_2",
+      "source_object": "Hair_rebuilt_outer_left_2",
+      "maximum_displacement_from_old_rigid_placement": 0.14962819651937173,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_left_2",
+      "source_object": "Hair_rebuilt_upper_left_2",
+      "maximum_displacement_from_old_rigid_placement": 0.1280849634083431,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_left_3",
+      "source_object": "Hair_rebuilt_outer_left_3",
+      "maximum_displacement_from_old_rigid_placement": 0.14051053272484645,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_left_3",
+      "source_object": "Hair_rebuilt_upper_left_3",
+      "maximum_displacement_from_old_rigid_placement": 0.13688450313275172,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_left_4",
+      "source_object": "Hair_rebuilt_outer_left_4",
+      "maximum_displacement_from_old_rigid_placement": 0.13134822249290481,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_left_4",
+      "source_object": "Hair_rebuilt_upper_left_4",
+      "maximum_displacement_from_old_rigid_placement": 0.12035826316194465,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_left_5",
+      "source_object": "Hair_rebuilt_outer_left_5",
+      "maximum_displacement_from_old_rigid_placement": 0.12236457485304271,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_left_5",
+      "source_object": "Hair_rebuilt_upper_left_5",
+      "maximum_displacement_from_old_rigid_placement": 0.10844335053152453,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_right_0",
+      "source_object": "Hair_rebuilt_outer_right_0",
+      "maximum_displacement_from_old_rigid_placement": 0.16298182922759616,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_right_0",
+      "source_object": "Hair_rebuilt_upper_right_0",
+      "maximum_displacement_from_old_rigid_placement": 0.1365266606432246,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_right_1",
+      "source_object": "Hair_rebuilt_outer_right_1",
+      "maximum_displacement_from_old_rigid_placement": 0.15170266714251998,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_right_1",
+      "source_object": "Hair_rebuilt_upper_right_1",
+      "maximum_displacement_from_old_rigid_placement": 0.12749857815676052,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_right_2",
+      "source_object": "Hair_rebuilt_outer_right_2",
+      "maximum_displacement_from_old_rigid_placement": 0.14137685693134422,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_right_2",
+      "source_object": "Hair_rebuilt_upper_right_2",
+      "maximum_displacement_from_old_rigid_placement": 0.12447269882471226,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_right_3",
+      "source_object": "Hair_rebuilt_outer_right_3",
+      "maximum_displacement_from_old_rigid_placement": 0.13257193421279098,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_right_3",
+      "source_object": "Hair_rebuilt_upper_right_3",
+      "maximum_displacement_from_old_rigid_placement": 0.11719709531857249,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_right_4",
+      "source_object": "Hair_rebuilt_outer_right_4",
+      "maximum_displacement_from_old_rigid_placement": 0.12593894140625161,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_right_4",
+      "source_object": "Hair_rebuilt_upper_right_4",
+      "maximum_displacement_from_old_rigid_placement": 0.1089624994940225,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_outer_right_5",
+      "source_object": "Hair_rebuilt_outer_right_5",
+      "maximum_displacement_from_old_rigid_placement": 0.12111839925431833,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_upper_right_5",
+      "source_object": "Hair_rebuilt_upper_right_5",
+      "maximum_displacement_from_old_rigid_placement": 0.10683504017199622,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_lower_0",
+      "source_object": "Hair_rebuilt_lower_0",
+      "maximum_displacement_from_old_rigid_placement": 0.05769055588815275,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_lower_1",
+      "source_object": "Hair_rebuilt_lower_1",
+      "maximum_displacement_from_old_rigid_placement": 0.10212821395560594,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_lower_2",
+      "source_object": "Hair_rebuilt_lower_2",
+      "maximum_displacement_from_old_rigid_placement": 0.11456147672035041,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_lower_3",
+      "source_object": "Hair_rebuilt_lower_3",
+      "maximum_displacement_from_old_rigid_placement": 0.08194827309276707,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_lower_4",
+      "source_object": "Hair_rebuilt_lower_4",
+      "maximum_displacement_from_old_rigid_placement": 0.0887588061790159,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_lower_5",
+      "source_object": "Hair_rebuilt_lower_5",
+      "maximum_displacement_from_old_rigid_placement": 0.10476732712281422,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_lower_6",
+      "source_object": "Hair_rebuilt_lower_6",
+      "maximum_displacement_from_old_rigid_placement": 0.06181487102997659,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_lower_7",
+      "source_object": "Hair_rebuilt_lower_7",
+      "maximum_displacement_from_old_rigid_placement": 0.056739285696069376,
+      "fit": "Ring centers projected toward unchanged scalp; root contact, reduced side clearance, varied shorter tips",
+      "front_controls": null
+    },
+    {
+      "object": "Hair_fitted_source_bang_3",
+      "source_object": "Hair_rebuilt_source_bang_3",
+      "maximum_displacement_from_old_rigid_placement": 0.23359906180986198,
+      "fit": "V2 asymmetric front fringe controls fitted to unchanged head",
+      "front_controls": [
+        [
+          0.075,
+          0.018,
+          0.475
+        ],
+        [
+          0.19,
+          -0.075,
+          0.452
+        ],
+        [
+          0.29,
+          -0.15,
+          0.392
+        ],
+        [
+          0.345,
+          -0.19,
+          0.3
+        ],
+        [
+          0.366,
+          -0.204,
+          0.2
+        ],
+        [
+          0.373,
+          -0.17,
+          0.1
+        ],
+        [
+          0.354,
+          -0.108,
+          0.045
+        ]
+      ]
+    },
+    {
+      "object": "Hair_fitted_source_bang_4",
+      "source_object": "Hair_rebuilt_source_bang_4",
+      "maximum_displacement_from_old_rigid_placement": 0.5793007649556676,
+      "fit": "V2 asymmetric front fringe controls fitted to unchanged head",
+      "front_controls": [
+        [
+          0.075,
+          0.035,
+          0.475
+        ],
+        [
+          0.19,
+          0.13,
+          0.438
+        ],
+        [
+          0.267,
+          0.213,
+          0.361
+        ],
+        [
+          0.305,
+          0.264,
+          0.26
+        ],
+        [
+          0.31,
+          0.277,
+          0.14
+        ],
+        [
+          0.285,
+          0.253,
+          0.026
+        ],
+        [
+          0.25,
+          0.217,
+          -0.025
+        ]
+      ]
+    }
+  ],
+  "root_base": "Smooth ray-projected scalp crown; high front border recessed beneath clumps; no head edits.",
+  "renders": [
+    {
+      "path": "fitted-v5/source-front.png",
+      "sha256": "f92b7ded51d5fbcd09ddff454ebd1fcdf398956295aa59461038d85afbc1751b"
+    },
+    {
+      "path": "fitted-v5/source-three-quarter.png",
+      "sha256": "43be1e0b12d5997611b9dd317b83667911179888b270d6135cfb88e16afbc948"
+    },
+    {
+      "path": "fitted-v5/source-profile.png",
+      "sha256": "bfb46a7c050fc47dd44d3c7b6251e0cd19b2dc56a0fcbb56dce77ad9a7a0c378"
+    },
+    {
+      "path": "fitted-v5/source-underside.png",
+      "sha256": "fcc515ce8df2862dc99f8c0efad6a862e72e280d36e52d6488f7200761ea8084"
+    },
+    {
+      "path": "fitted-v5/source-assembled-front.png",
+      "sha256": "59c5a0c757abd79662c3fe91077d03d9e9cdfdf1383b0439306180e366960e2c"
+    },
+    {
+      "path": "fitted-v5/source-assembled-three-quarter.png",
+      "sha256": "5a75ab2a26cbc83b9a47264df1a220365a4c3c798ae0d361e058af7b3c8e8c61"
+    },
+    {
+      "path": "fitted-v5/source-assembled-profile.png",
+      "sha256": "c79d7a753277cf023512c69d0633fa42193a031f982d4bfc87415187b69fefee"
+    },
+    {
+      "path": "fitted-v5/source-assembled-underside.png",
+      "sha256": "f52c084db1f02f8d4efa9347ba7fcdfbf4970185b8efec9b63c404de11c8bc69"
+    },
+    {
+      "path": "fitted-v5/candidate-front.png",
+      "sha256": "ad9f378e2b16f0f8b635e185386508581acb824c5e2ca9221842ef8f215cccd5"
+    },
+    {
+      "path": "fitted-v5/candidate-three-quarter.png",
+      "sha256": "0f2554cf356f342b1e6af0f2abeedf4db9583b134f532e0678aad9c9f4527a88"
+    },
+    {
+      "path": "fitted-v5/candidate-profile.png",
+      "sha256": "4b8a564699d463f6d97dd0b11d0901ac7b2e002ea14baa33bf37afd714ab4c1e"
+    },
+    {
+      "path": "fitted-v5/candidate-underside.png",
+      "sha256": "47692fb7f6d55ab85cf26591a0164ccb05be4d123ba8ba27ccf8d2394831f0f3"
+    },
+    {
+      "path": "fitted-v5/candidate-assembled-front.png",
+      "sha256": "d057b58e65fc691b78dcb48b92724e641d6d9ceda9b0f7a6f8281e0c8b18c093"
+    },
+    {
+      "path": "fitted-v5/candidate-assembled-three-quarter.png",
+      "sha256": "e29b8ccddbd1116e72e30ad05174c799837b8addf0b66108f507cba7c1d456dd"
+    },
+    {
+      "path": "fitted-v5/candidate-assembled-profile.png",
+      "sha256": "604ee47f01a9821f90237ff261ce828a57c27969268ab044c397e0c22a21303f"
+    },
+    {
+      "path": "fitted-v5/candidate-assembled-underside.png",
+      "sha256": "4c9c534dce20b3683555855cb81f47f5ebbb0b13f147b1bba5467167911f6cbc"
+    }
+  ],
+  "objects": [
+    {
+      "name": "Hair_fitted_outer_left_0",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_left_0",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_left_1",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_left_1",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_left_2",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_left_2",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_left_3",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_left_3",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_left_4",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_left_4",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_left_5",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_left_5",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_right_0",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_right_0",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_right_1",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_right_1",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_right_2",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_right_2",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_right_3",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_right_3",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_right_4",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_right_4",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_outer_right_5",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_upper_right_5",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_lower_0",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_lower_1",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_lower_2",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_lower_3",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_lower_4",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_lower_5",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_lower_6",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_lower_7",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_source_bang_3",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_fitted_source_bang_4",
+      "vertices": 588,
+      "faces": 578,
+      "triangles": 1172,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Fitted_root_base",
+      "vertices": 2305,
+      "faces": 2304,
+      "triangles": 4512,
+      "boundary_edges": 96,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_short_flyaway_0",
+      "vertices": 312,
+      "faces": 300,
+      "triangles": 588,
+      "boundary_edges": 32,
+      "nonmanifold_edges": 0
+    },
+    {
+      "name": "Hair_short_flyaway_1",
+      "vertices": 312,
+      "faces": 300,
+      "triangles": 588,
+      "boundary_edges": 32,
+      "nonmanifold_edges": 0
+    }
+  ],
+  "exports": [
+    {
+      "path": "ren-fitted-hair-trial.fbx",
+      "sha256": "79d9aae56f4b51453179532b06c873047e5ea670fd19cddb8ad717eb414c29a0",
+      "bytes": 1087100
+    },
+    {
+      "path": "ren-fitted-hair-trial.glb",
+      "sha256": "073d7959a697c7f51e294dbc4f937911520469df711b1f4e848fff5a752fca8a",
+      "bytes": 785868
+    }
+  ],
+  "head_vertices_and_native_sources_unchanged": true,
+  "head_vertex_sha256": "2f3757f5ccb4bd9bef6b58f6edd656bdf1cd6bac8a08d43f056193c2bfb44dff",
+  "head_world_matrix_unchanged": true,
+  "references": [
+    {
+      "path": "art/characters/ren-model-sheet.png",
+      "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-front-v2.png",
+      "sha256": "209c89450a27c2b4f3236104e04ada09416c9b3a97d9fd346ebff957d15b2d8d"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-right-v2.png",
+      "sha256": "b16f3297d515779164553b471a9089699e94a0d7ded1cce93c500fa1629687f2"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-back-v2.png",
+      "sha256": "1b257de5f17334d51ce492f098da6a328a1ce5c0d130a41fd4aa1a1d704f8c48"
+    }
+  ],
+  "uv_status": "34 main clumps use overlapping longitudinal working coordinates; two flyaways have automatic curve UVs; root base lacks UVs. No accepted painting atlas.",
+  "totals": {
+    "vertices": 22921,
+    "faces": 22556,
+    "triangles": 45536
+  },
+  "tool_script_sha256": "1f5adee3bd9df78c61ccd4a0892b3fbfeaae0b302c4098ea9099ac65086aace3"
+}

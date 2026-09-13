@@ -1,0 +1,42 @@
+{
+  "status": "local oral prototype ready for combined neutral review",
+  "blend": "art\\generated\\characters\\ren\\parts-workflow-v1\\mouth-v1\\corner-clearance-v3\\Ren_P2_Oral_Reconstruction.blend",
+  "blend_sha256": "d163c041427ffff60390f2dcae57ca131f8d97b0946fa2499bb5a26ca48f47d5",
+  "source_sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+  "builder_sha256": "6d0342e85f73d7f0c84f80e347c6abf9e6994f3bd35441ab4dd99d456a29eafd",
+  "render_count": 36,
+  "all_render_hashes_verified": true,
+  "geometry_acceptance": {
+    "oral_parts_clear_in_five_poses": true,
+    "cavity_clear_in_four_nonsealed_poses": true,
+    "sealed_contacts_confined_within_001_source_units_of_wet_line": true,
+    "sealed_front_sampling_exposes_no_cavity": true,
+    "native_shape_delta_readback_within_1e7_tolerance": true
+  },
+  "references": [
+    {
+      "path": "art\\characters\\ren-model-sheet.png",
+      "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-reference-v1\\head-closed-rest-three-view-v2.png",
+      "sha256": "add1b8c92dc3ac499159523450dea39d06f955609d4594b22d90fbedebac7f56"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-reference-v1\\head-front-open-a.png",
+      "sha256": "acbab9627304ebc5557602d5f5c46f358db962f2c57b5fdbb56580cfa1178dff"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-reference-v1\\head-right-open-a.png",
+      "sha256": "84c89defe4d541ccea4cb89b463809db5ff810eb53fd4507c7fee36564bd8768"
+    }
+  ],
+  "source_id_patch": "art\\generated\\characters\\ren\\parts-workflow-v1\\mouth-v1\\corner-clearance-v3\\source-id-patch.json",
+  "verification": "art\\generated\\characters\\ren\\parts-workflow-v1\\mouth-v1\\corner-clearance-v3\\saved-shape-verification.json",
+  "notes": [
+    "Basis preserves native open-rest; mouthSeal is the closed-rest prototype.",
+    "Arbitrary simultaneous shape combinations and full English/Japanese coverage are not certified.",
+    "Sealed wet-line overlap is explicit, bounded to less than 0.001 native source units from the aperture.",
+    "Top-level d79 blend and renders are older snapshots; integrate the corner-clearance-v3 blend."
+  ]
+}

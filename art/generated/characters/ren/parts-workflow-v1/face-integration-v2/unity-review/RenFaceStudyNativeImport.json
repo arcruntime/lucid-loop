@@ -1,0 +1,778 @@
+{
+    "sourceSha256": "69b51acd3edffa00da11779be36467a78572a114db85a36cad593810dd523fda",
+    "rootEulerAngles": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "rootScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+    },
+    "importerScale": 1.0,
+    "meshes": [
+        {
+            "name": "Ren_Eye_L_Iris",
+            "vertices": 282,
+            "colors": 282,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.24582695960998536,
+                "y": 0.058999985456466678,
+                "z": -0.14300000667572022
+            },
+            "boundsMax": {
+                "x": -0.23957401514053346,
+                "y": 0.11099997162818909,
+                "z": -0.0949999988079071
+            },
+            "colorMin": {
+                "r": 0.10980392247438431,
+                "g": 0.16078431904315949,
+                "b": 0.23137255012989045,
+                "a": 1.0
+            },
+            "colorMax": {
+                "r": 0.23137255012989045,
+                "g": 0.33725491166114809,
+                "b": 0.4156862795352936,
+                "a": 1.0
+            },
+            "materials": [
+                "Ren_Pupil",
+                "Ren_IrisGreyBlue",
+                "Ren_UpperLiner",
+                "Ren_IrisCatchlight"
+            ]
+        },
+        {
+            "name": "Ren_Eye_L_LowerLiner",
+            "vertices": 46,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.24588796496391297,
+                "y": 0.06168600916862488,
+                "z": -0.1772710084915161
+            },
+            "boundsMax": {
+                "x": -0.21003499627113343,
+                "y": 0.0772814154624939,
+                "z": -0.06371158361434937
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_LowerLiner"
+            ]
+        },
+        {
+            "name": "Ren_Eye_L_OuterLash",
+            "vertices": 9,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.23461371660232545,
+                "y": 0.07874438911676407,
+                "z": -0.1993655562400818
+            },
+            "boundsMax": {
+                "x": -0.20344585180282594,
+                "y": 0.08956291526556015,
+                "z": -0.16355609893798829
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_UpperLiner"
+            ]
+        },
+        {
+            "name": "Ren_Eye_L_Sclera",
+            "vertices": 2143,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.2449999749660492,
+                "y": 0.02499997615814209,
+                "z": -0.1809999942779541
+            },
+            "boundsMax": {
+                "x": -0.12499997019767761,
+                "y": 0.14499995112419129,
+                "z": -0.05700001120567322
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_Sclera"
+            ]
+        },
+        {
+            "name": "Ren_Eye_L_UpperLiner",
+            "vertices": 46,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.2501451373100281,
+                "y": 0.0678749829530716,
+                "z": -0.1782647967338562
+            },
+            "boundsMax": {
+                "x": -0.21003499627113343,
+                "y": 0.0962873101234436,
+                "z": -0.062654048204422
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_UpperLiner"
+            ]
+        },
+        {
+            "name": "Ren_Eye_R_Iris",
+            "vertices": 282,
+            "colors": 282,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.24582695960998536,
+                "y": 0.05900000035762787,
+                "z": 0.09499998390674591
+            },
+            "boundsMax": {
+                "x": -0.23957401514053346,
+                "y": 0.11099998652935028,
+                "z": 0.14299997687339784
+            },
+            "colorMin": {
+                "r": 0.10980392247438431,
+                "g": 0.16078431904315949,
+                "b": 0.23137255012989045,
+                "a": 1.0
+            },
+            "colorMax": {
+                "r": 0.23137255012989045,
+                "g": 0.33725491166114809,
+                "b": 0.4156862795352936,
+                "a": 1.0
+            },
+            "materials": [
+                "Ren_Pupil",
+                "Ren_IrisGreyBlue",
+                "Ren_UpperLiner",
+                "Ren_IrisCatchlight"
+            ]
+        },
+        {
+            "name": "Ren_Eye_R_LowerLiner",
+            "vertices": 46,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.24588832259178163,
+                "y": 0.06168605387210846,
+                "z": 0.06372073292732239
+            },
+            "boundsMax": {
+                "x": -0.21003496646881104,
+                "y": 0.07728876173496247,
+                "z": 0.1772710084915161
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_LowerLiner"
+            ]
+        },
+        {
+            "name": "Ren_Eye_R_OuterLash",
+            "vertices": 9,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.23440730571746827,
+                "y": 0.07902787625789643,
+                "z": 0.1636088788509369
+            },
+            "boundsMax": {
+                "x": -0.20229226350784303,
+                "y": 0.08983109891414643,
+                "z": 0.1993655562400818
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_UpperLiner"
+            ]
+        },
+        {
+            "name": "Ren_Eye_R_Sclera",
+            "vertices": 2143,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.244999960064888,
+                "y": 0.025000005960464479,
+                "z": 0.05699998140335083
+            },
+            "boundsMax": {
+                "x": -0.12499992549419403,
+                "y": 0.14500001072883607,
+                "z": 0.18099996447563172
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_Sclera"
+            ]
+        },
+        {
+            "name": "Ren_Eye_R_UpperLiner",
+            "vertices": 46,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.2501666843891144,
+                "y": 0.06787501275539398,
+                "z": 0.06269687414169312
+            },
+            "boundsMax": {
+                "x": -0.21003496646881104,
+                "y": 0.09632258117198944,
+                "z": 0.1782647669315338
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_UpperLiner"
+            ]
+        },
+        {
+            "name": "Ren_Head",
+            "vertices": 10489,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.368896484375,
+                "y": -0.4997557997703552,
+                "z": -0.3298339247703552
+            },
+            "boundsMax": {
+                "x": 0.368896484375,
+                "y": 0.4997557997703552,
+                "z": 0.3298339247703552
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_Draft_Skin",
+                "Ren_Draft_RoseLips",
+                "Ren_Oral_Cavity"
+            ]
+        },
+        {
+            "name": "Ren_P2_LowerTeeth",
+            "vertices": 208,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.2734000086784363,
+                "y": -0.1899999976158142,
+                "z": -0.058999985456466678
+            },
+            "boundsMax": {
+                "x": -0.2240000069141388,
+                "y": -0.1679999828338623,
+                "z": 0.059000030159950259
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_Anime_Teeth"
+            ]
+        },
+        {
+            "name": "Ren_P2_Tongue",
+            "vertices": 448,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.25699999928474429,
+                "y": -0.1769999861717224,
+                "z": -0.04399997740983963
+            },
+            "boundsMax": {
+                "x": -0.11699998378753662,
+                "y": -0.15699997544288636,
+                "z": 0.044000014662742618
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_Tongue"
+            ]
+        },
+        {
+            "name": "Ren_P2_UpperTeeth",
+            "vertices": 208,
+            "colors": 0,
+            "localEulerAngles": {
+                "x": 270.019775390625,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 100.0,
+                "y": 100.0,
+                "z": 100.0
+            },
+            "boundsMin": {
+                "x": -0.2813999652862549,
+                "y": -0.14300000667572022,
+                "z": -0.058999985456466678
+            },
+            "boundsMax": {
+                "x": -0.231999933719635,
+                "y": -0.12599998712539674,
+                "z": 0.05900001525878906
+            },
+            "colorMin": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "colorMax": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0
+            },
+            "materials": [
+                "Ren_Anime_Teeth"
+            ]
+        }
+    ],
+    "shapes": [
+        {
+            "renderer": "Ren_Eye_L_Iris",
+            "shape": "gazeLeft",
+            "frameCount": 1,
+            "affectedVertices": 282,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00011247696966165677
+        },
+        {
+            "renderer": "Ren_Eye_L_Iris",
+            "shape": "gazeRight",
+            "frameCount": 1,
+            "affectedVertices": 282,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00011247707880102098
+        },
+        {
+            "renderer": "Ren_Eye_L_Iris",
+            "shape": "gazeUp",
+            "frameCount": 1,
+            "affectedVertices": 282,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.0000804452647571452
+        },
+        {
+            "renderer": "Ren_Eye_L_Iris",
+            "shape": "gazeDown",
+            "frameCount": 1,
+            "affectedVertices": 282,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.0000804452138254419
+        },
+        {
+            "renderer": "Ren_Eye_L_LowerLiner",
+            "shape": "eyeBlinkL",
+            "frameCount": 1,
+            "affectedVertices": 46,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00012754762428812683
+        },
+        {
+            "renderer": "Ren_Eye_L_OuterLash",
+            "shape": "eyeBlinkL",
+            "frameCount": 1,
+            "affectedVertices": 9,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00011084082507295534
+        },
+        {
+            "renderer": "Ren_Eye_L_UpperLiner",
+            "shape": "eyeBlinkL",
+            "frameCount": 1,
+            "affectedVertices": 46,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00021063105668872595
+        },
+        {
+            "renderer": "Ren_Eye_R_Iris",
+            "shape": "gazeLeft",
+            "frameCount": 1,
+            "affectedVertices": 282,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00011247707880102098
+        },
+        {
+            "renderer": "Ren_Eye_R_Iris",
+            "shape": "gazeRight",
+            "frameCount": 1,
+            "affectedVertices": 282,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00011247696966165677
+        },
+        {
+            "renderer": "Ren_Eye_R_Iris",
+            "shape": "gazeUp",
+            "frameCount": 1,
+            "affectedVertices": 282,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.0000804452647571452
+        },
+        {
+            "renderer": "Ren_Eye_R_Iris",
+            "shape": "gazeDown",
+            "frameCount": 1,
+            "affectedVertices": 282,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.0000804452138254419
+        },
+        {
+            "renderer": "Ren_Eye_R_LowerLiner",
+            "shape": "eyeBlinkR",
+            "frameCount": 1,
+            "affectedVertices": 46,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00012754762428812683
+        },
+        {
+            "renderer": "Ren_Eye_R_OuterLash",
+            "shape": "eyeBlinkR",
+            "frameCount": 1,
+            "affectedVertices": 9,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00011404763790778816
+        },
+        {
+            "renderer": "Ren_Eye_R_UpperLiner",
+            "shape": "eyeBlinkR",
+            "frameCount": 1,
+            "affectedVertices": 46,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00021063105668872595
+        },
+        {
+            "renderer": "Ren_Head",
+            "shape": "mouthSeal",
+            "frameCount": 1,
+            "affectedVertices": 929,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00016643383423797786
+        },
+        {
+            "renderer": "Ren_Head",
+            "shape": "jawOpen_A",
+            "frameCount": 1,
+            "affectedVertices": 1086,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00014219098375178874
+        },
+        {
+            "renderer": "Ren_Head",
+            "shape": "eyeBlinkL",
+            "frameCount": 1,
+            "affectedVertices": 211,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00021063105668872595
+        },
+        {
+            "renderer": "Ren_Head",
+            "shape": "eyeBlinkR",
+            "frameCount": 1,
+            "affectedVertices": 211,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00021063105668872595
+        },
+        {
+            "renderer": "Ren_P2_LowerTeeth",
+            "shape": "mouthSeal",
+            "frameCount": 1,
+            "affectedVertices": 0,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.0
+        },
+        {
+            "renderer": "Ren_P2_LowerTeeth",
+            "shape": "jawOpen_A",
+            "frameCount": 1,
+            "affectedVertices": 208,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00013152965402696282
+        },
+        {
+            "renderer": "Ren_P2_Tongue",
+            "shape": "mouthSeal",
+            "frameCount": 1,
+            "affectedVertices": 0,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.0
+        },
+        {
+            "renderer": "Ren_P2_Tongue",
+            "shape": "jawOpen_A",
+            "frameCount": 1,
+            "affectedVertices": 448,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.00004123125836485997
+        },
+        {
+            "renderer": "Ren_P2_UpperTeeth",
+            "shape": "mouthSeal",
+            "frameCount": 1,
+            "affectedVertices": 0,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.0
+        },
+        {
+            "renderer": "Ren_P2_UpperTeeth",
+            "shape": "jawOpen_A",
+            "frameCount": 1,
+            "affectedVertices": 0,
+            "lastFrameWeight": 100.0,
+            "maxLocalDelta": 0.0
+        }
+    ]
+}

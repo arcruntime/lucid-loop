@@ -1,0 +1,86 @@
+{
+  "status": "RUNTIME_CONTROLS_VERIFIED_WITH_INTERMEDIATE_GAZE_VISUAL_DEFECT",
+  "sourceSha256": "69b51acd3edffa00da11779be36467a78572a114db85a36cad593810dd523fda",
+  "hairSha256": "79d9aae56f4b51453179532b06c873047e5ea670fd19cddb8ad717eb414c29a0",
+  "geometryImagesInspected": 32,
+  "liveImagesInspected": 14,
+  "blinkClosure": "Full closure hides sclera/iris from front and both quarter views; L/R independent; live idle reached full closure and reopened while mouth and gaze remained applied.",
+  "gazeIssue": "White scalloped sclera patches penetrate irises at intermediate gaze +/-0.5, reproduced in CPU-weighted geometry renders and actual live player. Endpoints look intact; intermediate gaze is not accepted. Parent notified for source repair.",
+  "framing": "Both head and optional fitted hair share union normalization; zero added source placement, viewer root Y90; toggle does not reframe.",
+  "idlePeakObserved": true,
+  "idleReopened": true,
+  "closedResetPngIdentical": true,
+  "livePixelComparisons": [
+    {
+      "file": "RenFaceStudy-live--blink-full.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 32517
+    },
+    {
+      "file": "RenFaceStudy-live--blink-left.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 24238
+    },
+    {
+      "file": "RenFaceStudy-live--blink-right.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 24177
+    },
+    {
+      "file": "RenFaceStudy-live--closed-rest.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 0
+    },
+    {
+      "file": "RenFaceStudy-live--combined-full.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 33242
+    },
+    {
+      "file": "RenFaceStudy-live--combined-half.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 26168
+    },
+    {
+      "file": "RenFaceStudy-live--gaze-left-up.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 430
+    },
+    {
+      "file": "RenFaceStudy-live--gaze-right-down.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 474
+    },
+    {
+      "file": "RenFaceStudy-live--hair-closed.png",
+      "leftModelChangedPixels": 23654,
+      "rightModelChangedPixels": 23654
+    },
+    {
+      "file": "RenFaceStudy-live--hair-combined.png",
+      "leftModelChangedPixels": 23654,
+      "rightModelChangedPixels": 51385
+    },
+    {
+      "file": "RenFaceStudy-live--idle-peak-combined.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 33242
+    },
+    {
+      "file": "RenFaceStudy-live--idle-reopened-combined.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 4958
+    },
+    {
+      "file": "RenFaceStudy-live--open-A.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 4546
+    },
+    {
+      "file": "RenFaceStudy-live--reset-closed-rest.png",
+      "leftModelChangedPixels": 0,
+      "rightModelChangedPixels": 0
+    }
+  ],
+  "scope": "Construction review: no final likeness, painting, full speech/emotions or device performance acceptance."
+}

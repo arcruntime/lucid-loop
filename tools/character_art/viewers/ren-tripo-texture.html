@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ren · Tripo texture trial</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#16171d;color:#edf0f7;font:15px system-ui,sans-serif}header{position:absolute;z-index:2;top:0;left:0;right:0;padding:20px 24px;background:linear-gradient(#111219,transparent)}h1{font-size:24px;margin:0 0 5px}p{margin:5px 0;color:#b3bdce}#viewport{position:absolute;inset:0 30% 0 0}aside{position:absolute;right:0;top:0;bottom:0;width:30%;background:#20222b;padding:24px;display:flex;flex-direction:column;justify-content:center}aside img{width:100%;height:auto;max-height:65vh;object-fit:contain}aside h2{font-size:17px}nav{display:flex;flex-wrap:wrap;gap:8px;position:absolute;left:24px;right:32%;bottom:24px;z-index:2}button,label{color:#eee;background:#30343e;border:1px solid #505767;border-radius:7px;padding:10px 13px;font:inherit;cursor:pointer}button:hover{background:#474c5c}#status{position:absolute;top:110px;left:24px;z-index:2;color:#d0d8e7}#status.ready{display:none}small{color:#a3aec2}a{color:#c1caff}@media(max-width:800px){aside{width:25%;padding:12px}#viewport{right:25%}nav{right:27%;left:12px;bottom:12px;gap:5px}button,label{font-size:12px;padding:8px}header{padding:16px}h1{font-size:18px}}
+</style>
+<script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
+<header><h1>Ren · Tripo texture trial</h1><p>Drag to rotate · scroll to zoom · right-drag to pan</p></header>
+<div id="viewport"></div><div id="status" role="status">Loading Ren’s textured model…</div>
+<aside><h2 id="reference-title">Original artist design</h2><img id="reference" src="/reference.png" alt="Ren's original character design"><p><button id="reference-toggle">Show painting reference</button></p><small>Static texture trial. Face painting and eyes are under review.</small></aside>
+<nav><button data-view="front">Front</button><button data-view="quarter">Three-quarter</button><button data-view="profile">Profile</button><button data-light="neutral">Neutral</button><button data-light="unlit">Base color</button><button data-light="club">Nightclub</button><label><input id="rotate" type="checkbox"> Rotate</label><label><input id="normals" type="checkbox"> Source normals</label></nav>
+<script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+const host=document.querySelector('#viewport'),status=document.querySelector('#status');
+const scene=new THREE.Scene();scene.background=new THREE.Color('#22242d');
+const camera=new THREE.PerspectiveCamera(32,1,.001,100);
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1;host.appendChild(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.autoRotateSpeed=.7;
+const hemi=new THREE.HemisphereLight(0xe8efff,0x41404b,1.7);scene.add(hemi);
+const key=new THREE.DirectionalLight(0xfff2e7,2.5);key.position.set(3,4,3);scene.add(key);
+const fill=new THREE.DirectionalLight(0xb4c8ff,1.3);fill.position.set(3,1,-4);scene.add(fill);
+const rim=new THREE.DirectionalLight(0xffffff,.7);rim.position.set(-3,2,0);scene.add(rim);
+let target=new THREE.Vector3(),distance=1,mode='neutral',meshes=[];
+function resize(){const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix()}new ResizeObserver(resize).observe(host);resize();
+function view(which){const d=which==='quarter'?new THREE.Vector3(1,.05,.7):which==='profile'?new THREE.Vector3(0,0,1):new THREE.Vector3(1,0,0);camera.position.copy(target).addScaledVector(d.normalize(),distance);controls.target.copy(target);controls.update()}
+function lighting(which){mode=which;const club=which==='club';hemi.intensity=club?.45:1.7;key.color.set(club?0x80bdff:0xfff2e7);key.intensity=club?1.1:2.5;fill.color.set(club?0xff248d:0xb4c8ff);fill.intensity=club?3:1.3;rim.color.set(club?0x23eaff:0xffffff);rim.intensity=club?3:.7;for(const m of meshes)m.mesh.material=which==='unlit'?m.unlit:m.original;renderer.toneMapping=which==='unlit'?THREE.NoToneMapping:THREE.ACESFilmicToneMapping;}
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>view(b.dataset.view));document.querySelectorAll('[data-light]').forEach(b=>b.onclick=()=>lighting(b.dataset.light));document.querySelector('#rotate').onchange=e=>controls.autoRotate=e.target.checked;document.querySelector('#normals').onchange=e=>meshes.forEach(({originalList})=>originalList.forEach(m=>{if(m.normalScale)m.normalScale.setScalar(e.target.checked?1:0)}));
+let showPaint=false;document.querySelector('#reference-toggle').onclick=()=>{showPaint=!showPaint;document.querySelector('#reference').src=showPaint?'/paint.png':'/reference.png';document.querySelector('#reference-title').textContent=showPaint?'Painting reference':'Original artist design';document.querySelector('#reference-toggle').textContent=showPaint?'Show original design':'Show painting reference'};
+new GLTFLoader().load('/model.glb',gltf=>{scene.add(gltf.scene);gltf.scene.traverse(mesh=>{if(!mesh.isMesh)return;const wasArray=Array.isArray(mesh.material),original=wasArray?mesh.material:[mesh.material];original.forEach(m=>{if(m.normalScale)m.normalScale.setScalar(0)});const basic=original.map(m=>new THREE.MeshBasicMaterial({map:m.map,color:m.color,side:m.side,transparent:m.transparent,opacity:m.opacity,alphaTest:m.alphaTest,vertexColors:m.vertexColors}));meshes.push({mesh,originalList:original,original:wasArray?original:original[0],unlit:wasArray?basic:basic[0]});});const box=new THREE.Box3().setFromObject(gltf.scene),size=box.getSize(new THREE.Vector3());target=box.getCenter(new THREE.Vector3());distance=Math.max(size.y,size.z/camera.aspect)/2/Math.tan(THREE.MathUtils.degToRad(camera.fov/2))*1.35;controls.minDistance=size.y*.6;controls.maxDistance=size.y*7;view('quarter');status.textContent='Ren loaded — drag to rotate';status.classList.add('ready');document.body.dataset.modelLoaded='true';},e=>{if(e.total)status.textContent=`Loading Ren… ${Math.round(e.loaded/e.total*100)}%`;},err=>{status.textContent='Model could not load: '+err.message;console.error(err)});
+renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera)});
+</script>
+</html>

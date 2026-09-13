@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "blender_version": "5.1.1",
+  "saved_geometry_sha256": "b172c32bb39b18ed7756df3f5d0d19f4d3c41d56368450f219eceb3950e195bc",
+  "same_source_transfer": {
+    "mapped_polygons": 10147,
+    "unmapped_polygons": [],
+    "geometry_sha256": "b172c32bb39b18ed7756df3f5d0d19f4d3c41d56368450f219eceb3950e195bc"
+  },
+  "reordered_subset_transfer": {
+    "mapped_polygons": 80,
+    "unmapped_polygons": [],
+    "geometry_sha256": "55fe03e32631a87a04dfc5502a29ecf8fd7dd878c15d9551f11f101309903519"
+  },
+  "explicit_new_face_unmapped_count": 1,
+  "saved_original_uv_exact": true,
+  "checks": [
+    "saved_mesh_geometry_exact",
+    "saved_original_uv_exact",
+    "all_10147_polygons_corner_uv_transfer",
+    "reordered_vertex_and_face_subset_exact",
+    "unknown_source_ids_rejected_by_default",
+    "explicit_partial_transfer_reports_unknown_faces"
+  ]
+}

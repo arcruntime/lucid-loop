@@ -1,0 +1,221 @@
+{
+  "source_sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+  "blend_sha256": "75a14bcb63ba1fb61bd23b23c2f8ce861d04b1e73c8317653fa94c54474bf054",
+  "native_geometry": [
+    {
+      "object": "Ren_NativeMain_Inspection",
+      "vertices": 7290,
+      "native_vertices": 7290,
+      "hidden_render": true,
+      "integration_role": "Independent patch/source component; hidden because stitched review head renders.",
+      "max_native_position_error": 1.8525138312943343e-08,
+      "shape_values": {}
+    },
+    {
+      "object": "Ren_NativeOral_Reference",
+      "vertices": 212,
+      "native_vertices": 212,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 5.1765900082460955e-09,
+      "shape_values": {}
+    },
+    {
+      "object": "Ren_Eye_L_Sclera",
+      "vertices": 1986,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {}
+    },
+    {
+      "object": "Ren_Eye_L_SkinAnnulus",
+      "vertices": 249,
+      "native_vertices": 43,
+      "hidden_render": true,
+      "integration_role": "Independent patch/source component; hidden because stitched review head renders.",
+      "max_native_position_error": 5.610676694918561e-09,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkL": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_L_UpperLiner",
+      "vertices": 46,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkL": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_L_LowerLiner",
+      "vertices": 46,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkL": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_L_OuterLash",
+      "vertices": 9,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkL": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_L_Iris",
+      "vertices": 282,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {
+        "Basis": 0.0,
+        "gazeLeft": 0.0,
+        "gazeRight": 0.0,
+        "gazeUp": 0.0,
+        "gazeDown": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_R_Sclera",
+      "vertices": 1986,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {}
+    },
+    {
+      "object": "Ren_Eye_R_SkinAnnulus",
+      "vertices": 248,
+      "native_vertices": 43,
+      "hidden_render": true,
+      "integration_role": "Independent patch/source component; hidden because stitched review head renders.",
+      "max_native_position_error": 5.631261742547442e-09,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkR": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_R_UpperLiner",
+      "vertices": 46,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkR": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_R_LowerLiner",
+      "vertices": 46,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkR": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_R_OuterLash",
+      "vertices": 9,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkR": 0.0
+      }
+    },
+    {
+      "object": "Ren_Eye_R_Iris",
+      "vertices": 282,
+      "native_vertices": 0,
+      "hidden_render": false,
+      "integration_role": "Eye component",
+      "max_native_position_error": 0,
+      "shape_values": {
+        "Basis": 0.0,
+        "gazeLeft": 0.0,
+        "gazeRight": 0.0,
+        "gazeUp": 0.0,
+        "gazeDown": 0.0
+      }
+    },
+    {
+      "object": "Ren_P2_EyeRepair_StitchedHead",
+      "vertices": 7701,
+      "native_vertices": 7290,
+      "hidden_render": false,
+      "integration_role": "Stitched review head; replace whole source head OR use annulus contracts, never both.",
+      "max_native_position_error": 1.8525138312943343e-08,
+      "shape_values": {
+        "Basis": 0.0,
+        "eyeBlinkL": 0.0,
+        "eyeBlinkR": 0.0
+      }
+    }
+  ],
+  "front_occlusion_grid": [
+    {
+      "blink_weight": 0,
+      "visible_eye_samples": 3185,
+      "samples": []
+    },
+    {
+      "blink_weight": 0.25,
+      "visible_eye_samples": 2399,
+      "samples": []
+    },
+    {
+      "blink_weight": 0.5,
+      "visible_eye_samples": 1582,
+      "samples": []
+    },
+    {
+      "blink_weight": 0.75,
+      "visible_eye_samples": 798,
+      "samples": []
+    },
+    {
+      "blink_weight": 1,
+      "visible_eye_samples": 0,
+      "samples": []
+    }
+  ],
+  "closed_quarter_grids": [
+    {
+      "view": "quarter-positive",
+      "closed_visible_eye_samples": 0,
+      "hits": []
+    },
+    {
+      "view": "quarter-negative",
+      "closed_visible_eye_samples": 0,
+      "hits": []
+    }
+  ],
+  "limitations": "Ray grids test sampled visibility, not continuous self-intersection or all-view closure certification."
+}

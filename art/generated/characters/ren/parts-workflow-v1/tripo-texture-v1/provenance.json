@@ -1,0 +1,122 @@
+{
+  "sources": [
+    {
+      "role": "working_source",
+      "path": "art/generated/characters/ren/parts-workflow-v1/face-uv-v1/eye-integration-v2/Ren_P2_Face_EyeUV.blend",
+      "sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+      "bytes": 715551
+    },
+    {
+      "role": "static_upload",
+      "path": "art/generated/characters/ren/parts-workflow-v1/tripo-texture-v1/input/Ren_P2_Texture_ClosedRest.glb",
+      "sha256": "a690b11aa070b846f2aaac3f472dbc4bd5a83132a0efa992fc07f15d7d753e70",
+      "bytes": 594324
+    },
+    {
+      "role": "image_reference",
+      "path": "art/generated/characters/ren/parts-workflow-v1/face-paint-v1/painted-views/front-paint-v1.png",
+      "sha256": "391c592f00b25e2627bce72e403d09614a5af3fd40636a5e31f21f9d5c62d4c8",
+      "bytes": 1159662
+    }
+  ],
+  "requested_settings": {
+    "model": "v3.0-20250812",
+    "texture_quality": "extreme",
+    "pbr": true,
+    "texture_alignment": "geometry",
+    "texture_seed": 20260913,
+    "bake": true
+  },
+  "schema_version": 1,
+  "fingerprint": "e80736e836a06839d21d833b8b84fe4a84737a6904097c8b610ce66a5d4579b1",
+  "status": "COMPLETE_AWAITING_VISUAL_AND_GEOMETRY_REVIEW",
+  "created_utc": "2026-09-13T12:13:37.392011Z",
+  "task_id": "daa7fda6-47ca-4ba9-ab51-6e4c74f2348d",
+  "documentation": "https://developers.tripo3d.ai/en/docs/models-texture",
+  "reference_note": "Root reviewed the painted front v1 beside the original artist sheet. It is a derived painting trial, not artist approval. Geometry alignment is prioritized; image bytes are unchanged.",
+  "scope": "Texture-only static copy; working geometry, UVs and facial shapes remain immutable. Returned asset needs independent audit.",
+  "transport": "One non-retrying V3 POST; official Tripo CLI 0.4.0 watches and downloads.",
+  "updated_utc": "2026-09-13T12:18:34.594293Z",
+  "preflight": {
+    "checked_utc": "2026-09-13T12:13:41.777400Z",
+    "doctor": {
+      "ok": true,
+      "checks": [
+        {
+          "name": "node",
+          "ok": true,
+          "detail": "v24.15.0 (need >= 20)",
+          "critical": true
+        },
+        {
+          "name": "api key",
+          "ok": true,
+          "detail": "from env:TRIPO_API_KEY",
+          "critical": true
+        },
+        {
+          "name": "api reachability",
+          "ok": true,
+          "detail": "https://openapi.tripo3d.ai (region ov) · balance 2400",
+          "critical": true
+        },
+        {
+          "name": "balance",
+          "ok": true,
+          "detail": "2400 credits (0 frozen)",
+          "critical": false
+        },
+        {
+          "name": "llm (tripo ai conversation mode)",
+          "ok": true,
+          "detail": "not configured — wizard mode only (this is fine)",
+          "critical": false
+        },
+        {
+          "name": "terminal",
+          "ok": true,
+          "detail": "non-TTY (headless mode)",
+          "critical": false
+        },
+        {
+          "name": "language",
+          "ok": true,
+          "detail": "auto",
+          "critical": false
+        }
+      ]
+    },
+    "cli_exit_code": 0
+  },
+  "balance_before": {
+    "balance": 2400.0,
+    "frozen": 0.0
+  },
+  "intent_sha256": "1ee9bc0e2581742d4791b359ca5805e2fdbe1a0b94cfa501d2f69922571ee51b",
+  "cli_exit_code": 0,
+  "downloads": [
+    {
+      "file": "originals/model.glb",
+      "sha256": "4f2a5b23de1818949a7611ff9f00e6419897d31166bf35f69c43613b64d6bf6a",
+      "bytes": 26216460,
+      "native_provider_bytes": true
+    },
+    {
+      "file": "originals/preview.png",
+      "sha256": "f13759e322b12dd95a5a6b1d514a638b0c713673a265b05d6efca3a0210715b0",
+      "bytes": 161243,
+      "native_provider_bytes": true
+    },
+    {
+      "file": "originals/rendered_image.webp",
+      "sha256": "f13759e322b12dd95a5a6b1d514a638b0c713673a265b05d6efca3a0210715b0",
+      "bytes": 161243,
+      "native_provider_bytes": true
+    }
+  ],
+  "credits_consumed": 30,
+  "balance_after": {
+    "balance": 2370.0,
+    "frozen": 0.0
+  }
+}

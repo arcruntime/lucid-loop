@@ -1,0 +1,4 @@
+.blender-user/
+*.log
+**/*-workspace.blend
+reconstruction-rejected-*/

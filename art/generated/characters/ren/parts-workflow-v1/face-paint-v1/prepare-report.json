@@ -1,0 +1,379 @@
+{
+  "status": "PRELIMINARY_FRONT_PAINT_GUIDE_CAPTURED_NOT_PROJECTED",
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\face-integration-v1\\Ren_P2_Face_Integrated.blend",
+  "source_sha256_at_capture": "6c2288676b45df767c161528b2a85c8488e45098b4ed9d15225c90cfffffb62c",
+  "source_sha256_after": "6c2288676b45df767c161528b2a85c8488e45098b4ed9d15225c90cfffffb62c",
+  "private_source_snapshot": "Ren_P2_Source_Integrated_Snapshot.blend",
+  "private_source_sha256": "6c2288676b45df767c161528b2a85c8488e45098b4ed9d15225c90cfffffb62c",
+  "derived_static_snapshot": "Ren_P2_PaintNeutral_Snapshot.blend",
+  "derived_static_sha256": "e673a90cfef36a0c33241a01cb45059162e157f71f4f3728cdeccd8132bfa6bf",
+  "blender_version": "5.2.1 LTS",
+  "pose": {
+    "mouthSeal": 1,
+    "other_non_basis_keys": 0
+  },
+  "source_shape_values": {
+    "Ren_Head": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0,
+      "jawOpen_A": 0.0
+    },
+    "Ren_P2_UpperTeeth": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0,
+      "jawOpen_A": 0.0
+    },
+    "Ren_P2_LowerTeeth": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0,
+      "jawOpen_A": 0.0
+    },
+    "Ren_P2_Tongue": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0,
+      "jawOpen_A": 0.0
+    },
+    "Ren_Eye_R_UpperLiner": {
+      "Basis": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_Eye_R_UpperLid": {
+      "Basis": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_Eye_R_OuterLash": {
+      "Basis": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_Eye_R_LowerLiner": {
+      "Basis": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_Eye_R_LowerLid": {
+      "Basis": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_Eye_R_Iris": {
+      "Basis": 0.0,
+      "gazeLeft": 0.0,
+      "gazeRight": 0.0,
+      "gazeUp": 0.0,
+      "gazeDown": 0.0
+    },
+    "Ren_Eye_L_UpperLiner": {
+      "Basis": 0.0,
+      "eyeBlinkL": 0.0
+    },
+    "Ren_Eye_L_UpperLid": {
+      "Basis": 0.0,
+      "eyeBlinkL": 0.0
+    },
+    "Ren_Eye_L_OuterLash": {
+      "Basis": 0.0,
+      "eyeBlinkL": 0.0
+    },
+    "Ren_Eye_L_LowerLiner": {
+      "Basis": 0.0,
+      "eyeBlinkL": 0.0
+    },
+    "Ren_Eye_L_LowerLid": {
+      "Basis": 0.0,
+      "eyeBlinkL": 0.0
+    },
+    "Ren_Eye_L_Iris": {
+      "Basis": 0.0,
+      "gazeLeft": 0.0,
+      "gazeRight": 0.0,
+      "gazeUp": 0.0,
+      "gazeDown": 0.0
+    }
+  },
+  "static_objects": [
+    {
+      "object": "Ren_Head",
+      "vertices": 7051,
+      "faces": 7287,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_P2_UpperTeeth",
+      "vertices": 200,
+      "faces": 194,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_P2_LowerTeeth",
+      "vertices": 200,
+      "faces": 194,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_P2_Tongue",
+      "vertices": 390,
+      "faces": 388,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_R_UpperLiner",
+      "vertices": 78,
+      "faces": 38,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_R_UpperLid",
+      "vertices": 156,
+      "faces": 114,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_R_Sclera",
+      "vertices": 1986,
+      "faces": 2048,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_R_OuterLash",
+      "vertices": 9,
+      "faces": 3,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_R_LowerLiner",
+      "vertices": 78,
+      "faces": 38,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_R_LowerLid",
+      "vertices": 156,
+      "faces": 114,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_R_Iris",
+      "vertices": 282,
+      "faces": 280,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_L_UpperLiner",
+      "vertices": 78,
+      "faces": 38,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_L_UpperLid",
+      "vertices": 156,
+      "faces": 114,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_L_Sclera",
+      "vertices": 1986,
+      "faces": 2048,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_L_OuterLash",
+      "vertices": 9,
+      "faces": 3,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_L_LowerLiner",
+      "vertices": 78,
+      "faces": 38,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_L_LowerLid",
+      "vertices": 156,
+      "faces": 114,
+      "evaluated_max_error": 0.0
+    },
+    {
+      "object": "Ren_Eye_L_Iris",
+      "vertices": 282,
+      "faces": 280,
+      "evaluated_max_error": 0.0
+    }
+  ],
+  "head_object": "Ren_Head_PaintSnapshot",
+  "geometry_signature": {
+    "geometry_sha256": "c01c9d8b8dff9baef4ab99a6aed145eaae2714ce101024e31292cffbc8b387c2",
+    "uv_sha256": "8d9160c57a314518b5bb4b4a48e2b45f070bc29e0ed1d617c0834392d1586386",
+    "world_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        4.371138828673793e-08,
+        0.0
+      ],
+      [
+        0.0,
+        -4.371138828673793e-08,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uv_layer": "FaceUV_v1"
+  },
+  "capture_metadata": "geometry-capture/capture.json",
+  "strict_projection_compatible": false,
+  "strict_capture_error": "Degenerate geometric triangles are unsupported",
+  "raster_only_excluded_degenerate_triangles": 2,
+  "camera": {
+    "name": "front",
+    "position": [
+      3,
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "up": [
+      0,
+      0,
+      1
+    ],
+    "width": 1024,
+    "height": 1024,
+    "ortho_scale": 1.12
+  },
+  "removed_draft_material_assignments": [
+    {
+      "object": "Ren_Head_PaintSnapshot",
+      "slot": 0,
+      "previous": "Ren_Draft_Skin"
+    },
+    {
+      "object": "Ren_Head_PaintSnapshot",
+      "slot": 2,
+      "previous": "Ren_Draft_RoseLips"
+    },
+    {
+      "object": "Ren_Eye_R_UpperLid",
+      "slot": 0,
+      "previous": "Ren_Draft_Skin"
+    },
+    {
+      "object": "Ren_Eye_R_LowerLid",
+      "slot": 0,
+      "previous": "Ren_Draft_Skin"
+    },
+    {
+      "object": "Ren_Eye_L_UpperLid",
+      "slot": 0,
+      "previous": "Ren_Draft_Skin"
+    },
+    {
+      "object": "Ren_Eye_L_LowerLid",
+      "slot": 0,
+      "previous": "Ren_Draft_Skin"
+    }
+  ],
+  "guide": {
+    "file": "guides/front-neutral-skin-with-eyes.png",
+    "sha256": "5377d72436cbbcc57fa00ab21068565c57fbefc24c5f238c41e04f05c0bfbdf0",
+    "width": 1024,
+    "height": 1024
+  },
+  "eye_exclusion": {
+    "objects": [
+      {
+        "object": "Ren_Eye_R_UpperLiner",
+        "raster_triangles": 74,
+        "ignored_degenerate_triangles": 2
+      },
+      {
+        "object": "Ren_Eye_R_UpperLid",
+        "raster_triangles": 228,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_R_Sclera",
+        "raster_triangles": 3968,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_R_OuterLash",
+        "raster_triangles": 3,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_R_LowerLiner",
+        "raster_triangles": 74,
+        "ignored_degenerate_triangles": 2
+      },
+      {
+        "object": "Ren_Eye_R_LowerLid",
+        "raster_triangles": 228,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_R_Iris",
+        "raster_triangles": 472,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_L_UpperLiner",
+        "raster_triangles": 74,
+        "ignored_degenerate_triangles": 2
+      },
+      {
+        "object": "Ren_Eye_L_UpperLid",
+        "raster_triangles": 228,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_L_Sclera",
+        "raster_triangles": 3968,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_L_OuterLash",
+        "raster_triangles": 3,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_L_LowerLiner",
+        "raster_triangles": 74,
+        "ignored_degenerate_triangles": 2
+      },
+      {
+        "object": "Ren_Eye_L_LowerLid",
+        "raster_triangles": 228,
+        "ignored_degenerate_triangles": 0
+      },
+      {
+        "object": "Ren_Eye_L_Iris",
+        "raster_triangles": 472,
+        "ignored_degenerate_triangles": 0
+      }
+    ],
+    "visible_pixels": 4847,
+    "eligible_head_pixels": 367249,
+    "note": "Exclude all visible eye assembly pixels from skin projection; helper's head-only capture does not model other-object occlusion."
+  },
+  "limitations": [
+    "Exact old geometry snapshot while parent repairs blink topology in parallel.",
+    "Any later topology, neutral pose, UV or camera change requires recapture or explicit verified transfer.",
+    "Neutral guide uses the same skin material over draft lip polygons; their broad material boundary is not a lip-paint target.",
+    "No painting, projection, baking, geometry approval or texture completion performed by this script."
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "sourceFbxAsset": "Assets/CharacterArt/Generated/RenFaceStudy/Sources/RenFaceStudy.fbx",
+  "sourceSha256": "69b51acd3edffa00da11779be36467a78572a114db85a36cad593810dd523fda",
+  "reviewNote": "Parent authorized V2 stitched eyelid, mouth and full eye UV derivative for Unity construction review. Independent blink, gaze and mouth channels; optional fitted V5 hair has identity placement in the Blender head frame. Clay default; temporary unpainted colors are diagnostic. No final likeness, painting, full speech or phone acceptance.",
+  "originalArtistAsset": "Assets/CharacterArt/Generated/BustComparison/References/ren-model-sheet.png",
+  "position": {
+    "y": 0,
+    "z": 0,
+    "x": 0
+  },
+  "eulerAngles": {
+    "y": 90,
+    "z": 0,
+    "x": 0
+  },
+  "scale": {
+    "y": 1,
+    "z": 1,
+    "x": 1
+  },
+  "materials": [
+    {
+      "sourceName": "Ren_Anime_Teeth",
+      "baseColorSrgb": {
+        "r": 0.8433891712280845,
+        "g": 0.8094681526358262,
+        "b": 0.7353569830524495,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_Draft_RoseLips",
+      "baseColorSrgb": {
+        "r": 0.6400000083471948,
+        "g": 0.3600000050599685,
+        "b": 0.3800000025127421,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_Draft_Skin",
+      "baseColorSrgb": {
+        "r": 0.8300000085287765,
+        "g": 0.6799999908109459,
+        "b": 0.610000008801144,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_IrisCatchlight",
+      "baseColorSrgb": {
+        "r": 0.9776915566891456,
+        "g": 0.9866952589813923,
+        "b": 0.9999999999999999,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_IrisGreyBlue",
+      "baseColorSrgb": {
+        "r": 0.42358287916830234,
+        "g": 0.5168810790145968,
+        "b": 0.5926193754143848,
+        "a": 1.0
+      },
+      "useVertexColor": true
+    },
+    {
+      "sourceName": "Ren_LowerLiner",
+      "baseColorSrgb": {
+        "r": 0.43662706283816693,
+        "g": 0.34064343116362994,
+        "b": 0.34919021513783693,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_Oral_Cavity",
+      "baseColorSrgb": {
+        "r": 0.1931150809759302,
+        "g": 0.07016478245502178,
+        "b": 0.09985282129194903,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_Pupil",
+      "baseColorSrgb": {
+        "r": 0.11207493995948536,
+        "g": 0.14733287576327567,
+        "b": 0.19641911453503574,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_Sclera",
+      "baseColorSrgb": {
+        "r": 0.896243869286423,
+        "g": 0.9013064520869167,
+        "b": 0.8911433123354617,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_Tongue",
+      "baseColorSrgb": {
+        "r": 0.601243396864941,
+        "g": 0.2933720550220667,
+        "b": 0.3318300279142669,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    },
+    {
+      "sourceName": "Ren_UpperLiner",
+      "baseColorSrgb": {
+        "r": 0.16801828849098666,
+        "g": 0.13335151928495648,
+        "b": 0.16409832546450354,
+        "a": 1.0
+      },
+      "useVertexColor": false
+    }
+  ],
+  "additionalReferences": [
+    {
+      "label": "Generation input / closed front",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/closed-rest-front-v2.png"
+    },
+    {
+      "label": "Generation input / closed profile",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/closed-rest-profile.png"
+    },
+    {
+      "label": "Generation input / A front",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/vowel-a-front.png"
+    },
+    {
+      "label": "Generation input / A profile",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/vowel-a-profile.png"
+    },
+    {
+      "label": "Closed rest",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/00-closed-rest-v2.png"
+    },
+    {
+      "label": "Neutral",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/01-neutral.png"
+    },
+    {
+      "label": "Amused",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/02-amused-v2.png"
+    },
+    {
+      "label": "Skeptical",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/03-skeptical.png"
+    },
+    {
+      "label": "Focused",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/04-focused.png"
+    },
+    {
+      "label": "Alert",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/05-alert.png"
+    },
+    {
+      "label": "Guarded",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/06-guarded.png"
+    },
+    {
+      "label": "Blink",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/07-blink.png"
+    },
+    {
+      "label": "A",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/08-vowel-a.png"
+    },
+    {
+      "label": "I",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/09-vowel-i.png"
+    },
+    {
+      "label": "U",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/10-vowel-u-v2.png"
+    },
+    {
+      "label": "E",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/11-vowel-e.png"
+    },
+    {
+      "label": "O",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/12-vowel-o.png"
+    }
+  ],
+  "hairFbxAsset": "Assets/CharacterArt/Generated/RenFaceStudy/Sources/RenFaceStudyHair.fbx",
+  "hairSha256": "79d9aae56f4b51453179532b06c873047e5ea670fd19cddb8ad717eb414c29a0",
+  "hairPosition": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "hairEulerAngles": {
+    "x": 0,
+    "y": 90,
+    "z": 0
+  },
+  "hairScale": {
+    "x": 1,
+    "y": 1,
+    "z": 1
+  }
+}

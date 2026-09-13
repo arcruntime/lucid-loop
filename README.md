@@ -78,6 +78,48 @@ See [the parts checkpoint and next work](art/generated/characters/ren/parts-work
 [actual Unity captures](art/generated/characters/ren/parts-workflow-v1/unity-review/),
 and [study setup](Unity/Assets/CharacterArt/Editor/RenPartsStudy.md).
 
+## Launch the Ren face study
+
+Open **`Assets/CharacterArt/Generated/Preview/Scenes/RenFaceStudy.unity`** in the
+same Unity project, press **Play**, and select **16:9**. It opens with the corrected
+clay head on the left and the **static Tripo texture trial** on the right. The
+original artist sheet appears in the center. Orbit, zoom, and neutral/nightclub
+lighting work as in the other studies.
+
+Use either panel's arrows to choose clay, temporary colors, or the Tripo trial.
+The working face has mouth-seal/open-A, independent blink, idle blink, gaze and
+optional fitted-hair controls. Controls are hidden for the static texture result.
+Intermediate gaze has a known iris/sclera intersection; final speech, expressions
+and body animation remain unfinished. Tripo's 8K paint is more realistic than the
+intended anime aesthetic, and its eyes are unaccepted. This is a review checkpoint.
+
+On this workspace, launch the verified interactive Windows build with:
+
+```powershell
+& ".\.local\ren-tripo-texture-viewer\RenFaceStudy.exe" -force-d3d11 -screen-fullscreen 0
+```
+
+The executable is a local build output. Fresh checkouts can open the checked-in
+scene after `git lfs pull`; see [face study setup and rebuild instructions](Unity/Assets/CharacterArt/Editor/RenFaceStudy.md).
+Actual live-control evidence is in [the V2 face captures](art/generated/characters/ren/parts-workflow-v1/face-integration-v2/unity-review/).
+See the [Tripo result, cost and limitations](art/generated/characters/ren/parts-workflow-v1/tripo-texture-v1/README.md).
+
+### Browser texture viewer
+
+The browser viewer loads the original Tripo GLB beside Ren's artist sheet. From
+the repository root, install its pinned Three.js dependency once, then run:
+
+```powershell
+npm --prefix tools/character_art/viewers ci --no-audit --no-fund
+python tools/character_art/serve_ren_texture_viewer.py --port 8767
+```
+
+Open **[http://127.0.0.1:8767/](http://127.0.0.1:8767/)**. Drag to rotate, scroll
+to zoom, and use the front/quarter/profile and lighting buttons. The reference
+toggle switches between the original design and the painting input. Keep the
+server running while viewing; it listens only on this computer. This viewer
+shows the static provider result and does not drive facial blendshapes.
+
 ## Current status
 
 Two gyms are implemented in `Unity/Assets/Gyms/Scenes/`:

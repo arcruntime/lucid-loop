@@ -1,0 +1,36 @@
+{
+  "type": "texture_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": true,
+    "bake": true,
+    "texture": true,
+    "texture_seed": 20260913,
+    "model_version": "v3.0-20250812",
+    "texture_prompt": {
+      "image": {
+        "file_token": "<redacted>"
+      }
+    },
+    "texture_quality": "extreme",
+    "original_model_id": "0c3fd4be-c933-4a59-97b7-58e144eafc87",
+    "texture_alignment": "geometry"
+  },
+  "output": {
+    "model_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/daa7fda6-47ca-4ba9-ab51-6e4c74f2348d/tripo_texture_daa7fda6-47ca-4ba9-ab51-6e4c74f2348d.glb?<redacted>",
+    "rendered_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/daa7fda6-47ca-4ba9-ab51-6e4c74f2348d/legacy_mesh.webp?<redacted>"
+  },
+  "task_id": "daa7fda6-47ca-4ba9-ab51-6e4c74f2348d",
+  "created_at": "2026-09-13T12:14:12.658371Z",
+  "completed_at": "2026-09-13T12:18:16.324580Z",
+  "credits_consumed": 30,
+  "output_dir": "B:\\lucid-loop\\.local\\character-art\\tripo-texture-v1\\downloads",
+  "files": [
+    "B:\\lucid-loop\\.local\\character-art\\tripo-texture-v1\\downloads\\model.glb",
+    "B:\\lucid-loop\\.local\\character-art\\tripo-texture-v1\\downloads\\rendered_image.webp",
+    "B:\\lucid-loop\\.local\\character-art\\tripo-texture-v1\\downloads\\preview.png"
+  ],
+  "model_file": "B:\\lucid-loop\\.local\\character-art\\tripo-texture-v1\\downloads\\model.glb",
+  "preview": "B:\\lucid-loop\\.local\\character-art\\tripo-texture-v1\\downloads\\preview.png"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "SELECTED_FOR_INTEGRATED_NEUTRAL_TRIAL",
+  "not_final_likeness_approval": true,
+  "reviewed_views": [
+    "after-front.png",
+    "after-brow-quarter.png",
+    "after-profile.png"
+  ],
+  "finding": "Broad generated brow relief reduced. Slight outer pinches remain for integrated eyelid/brow review. Rest of face and skull coordinates preserved.",
+  "selected_method": "Fixed-boundary biharmonic local fairing",
+  "rejected_trials": {
+    "relief-v1": "Simple smoothing left creases",
+    "relief-v2": "More iterations still left pinches",
+    "relief-v3": "Polynomial fit accentuated lower fold"
+  }
+}

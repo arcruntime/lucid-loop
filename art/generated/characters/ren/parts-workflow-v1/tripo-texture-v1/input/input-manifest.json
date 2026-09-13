@@ -1,0 +1,1912 @@
+{
+  "source_blend": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\Ren_P2_Face_EyeUV.blend",
+  "source_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "glb": "Ren_P2_Texture_ClosedRest.glb",
+  "glb_sha256": "a690b11aa070b846f2aaac3f472dbc4bd5a83132a0efa992fc07f15d7d753e70",
+  "glb_bytes": 594324,
+  "blender_version": "5.1.1",
+  "objects": [
+    {
+      "object": "Ren_Head",
+      "vertices": 6966,
+      "faces": 7535,
+      "triangles": 13790,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [
+        "FaceUV_v1"
+      ],
+      "materials": [
+        "Ren_PaintGuide_UniformSkin",
+        "Ren_Oral_Cavity",
+        "Ren_PaintGuide_UniformSkin"
+      ],
+      "archive": "mesh-00.npz",
+      "archive_sha256": "56cd538515834da99df4d103e3cdc88ab86b27e7afc739797c60566001378c02",
+      "world_positions_sha256": "fb3d91cf055fe24ea24026bd1414b133593d1037a75a08f7529822a77f078fb9",
+      "uv_sha256": {
+        "uv_0": "35ebb01a477437b55d6f21207d02bc1a617c1a11928a43fbaf29154a5fa191c9"
+      },
+      "world_bounds": [
+        [
+          -0.368896484375,
+          -0.329833984375,
+          -0.499755859375
+        ],
+        [
+          0.368896484375,
+          0.329833984375,
+          0.499755859375
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_UpperTeeth",
+      "vertices": 200,
+      "faces": 194,
+      "triangles": 396,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_Anime_Teeth"
+      ],
+      "archive": "mesh-01.npz",
+      "archive_sha256": "8ab8d623d6ecf3932ebd14807640f51462db68f0c9605f58065181d567284952",
+      "world_positions_sha256": "1cf854c5c316215e0964e889f2721acd1a70d9179b7efd74dc1f362ab780c3e0",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.23199999332427979,
+          -0.05900000035762787,
+          -0.14300000667572021
+        ],
+        [
+          0.28139999508857727,
+          0.05900000035762787,
+          -0.12600000202655792
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_LowerTeeth",
+      "vertices": 200,
+      "faces": 194,
+      "triangles": 396,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_Anime_Teeth"
+      ],
+      "archive": "mesh-02.npz",
+      "archive_sha256": "33ae473f23a8d10e804e280b31d0268366bb2ab8bd252ddae9aaf9e9a95a8040",
+      "world_positions_sha256": "44c944c6d9f0e32ba9c46997755ad3eb44a490ffb4aabb573ec5787490fdb6c2",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.2240000069141388,
+          -0.05900000035762787,
+          -0.1899999976158142
+        ],
+        [
+          0.2734000086784363,
+          0.05900000035762787,
+          -0.1679999977350235
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_Tongue",
+      "vertices": 390,
+      "faces": 388,
+      "triangles": 776,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_Tongue"
+      ],
+      "archive": "mesh-03.npz",
+      "archive_sha256": "50ecde004ad6661ba93f90232a25b0105083b5c1be9e2b3ba94a7053331ffb19",
+      "world_positions_sha256": "214e6f496a5487507dffc9f09d4278bee18fc5dcb0b539bf3afa43f1017a3109",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.11699999868869781,
+          -0.04399999976158142,
+          -0.1770000010728836
+        ],
+        [
+          0.25699999928474426,
+          0.04399999976158142,
+          -0.15700000524520874
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_UpperLiner",
+      "vertices": 46,
+      "faces": 22,
+      "triangles": 44,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_UpperLiner"
+      ],
+      "archive": "mesh-04.npz",
+      "archive_sha256": "fae13f718c27c5c7c10d9ae9329db4fd8c8c99022bb0d725f1a8e397a2822caf",
+      "world_positions_sha256": "8d05cb1477e5d24c44596901c04c79b25a182764fb13bf26a6cc9e0e2f9d4333",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.21003496646881104,
+          -0.178264781832695,
+          0.06787499785423279
+        ],
+        [
+          0.2501666843891144,
+          -0.0626968964934349,
+          0.09632258862257004
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_Sclera",
+      "vertices": 1986,
+      "faces": 2048,
+      "triangles": 3968,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Ren_Sclera"
+      ],
+      "archive": "mesh-05.npz",
+      "archive_sha256": "3a7cad30f9120291ea293325a901cfd24c56491b27386634ef47e5d1fe381a8b",
+      "world_positions_sha256": "fa0527b1ef48c00449ef0ff62797a203624c7971ded678c959b0be289a37e8fd",
+      "uv_sha256": {
+        "uv_0": "fe1821ef2af9bd09cc2fdeaf61b6a0668762fa94088e88b540d9a63e8431f8be"
+      },
+      "world_bounds": [
+        [
+          0.1249999925494194,
+          -0.1809999942779541,
+          0.024999994784593582
+        ],
+        [
+          0.244999960064888,
+          -0.05700000375509262,
+          0.14499999582767487
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_OuterLash",
+      "vertices": 9,
+      "faces": 3,
+      "triangles": 3,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_UpperLiner"
+      ],
+      "archive": "mesh-06.npz",
+      "archive_sha256": "edd6162adcfc2aad92b27fbe7623a80ccf3c06f7ec0941085d3a779c41b4a403",
+      "world_positions_sha256": "f2249823a8032d81551c377369ae103c823398c0262bf7094e11773a761bd949",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.20229226350784302,
+          -0.19936557114124298,
+          0.07902786880731583
+        ],
+        [
+          0.23440730571746826,
+          -0.16360890865325928,
+          0.08983110636472702
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_LowerLiner",
+      "vertices": 46,
+      "faces": 22,
+      "triangles": 44,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_LowerLiner"
+      ],
+      "archive": "mesh-07.npz",
+      "archive_sha256": "c9620ffa17a4f7f41e1e7759f110754390745069b12a3408d3d61203da3fa991",
+      "world_positions_sha256": "464f7f76e7a4dc1641cb637d1f5ca21ebae967498f95130be95560af76e846ed",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.21003496646881104,
+          -0.1772710233926773,
+          0.061686038970947266
+        ],
+        [
+          0.24588832259178162,
+          -0.06372076272964478,
+          0.07728876173496246
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_Iris",
+      "vertices": 282,
+      "faces": 280,
+      "triangles": 472,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_Pupil",
+        "Ren_Pupil",
+        "Ren_IrisGreyBlue",
+        "Ren_IrisGreyBlue",
+        "Ren_UpperLiner",
+        "Ren_IrisCatchlight"
+      ],
+      "archive": "mesh-08.npz",
+      "archive_sha256": "a701463108f8210bf43b1609e7fbfd7c8243d41dd7cdec6096ded81c51c0e66e",
+      "world_positions_sha256": "54d22629fc0da2b9eb920a56e62e895c3220230d7a4c053d1c2bb6d0637c144a",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.23957401514053345,
+          -0.14300000667572021,
+          0.05900000035762787
+        ],
+        [
+          0.24582694470882416,
+          -0.0949999988079071,
+          0.11100000143051147
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_UpperLiner",
+      "vertices": 46,
+      "faces": 22,
+      "triangles": 44,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_UpperLiner"
+      ],
+      "archive": "mesh-09.npz",
+      "archive_sha256": "f24902b56c7b51fadbafbdd9aa84ffa6fb7dd68391a96e555fbfeec75703fd5c",
+      "world_positions_sha256": "cdb044774922d3af8ea35a12f20b414914bc5a60b62ea7a9af370dca29a57ad0",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.21003499627113342,
+          0.0626540407538414,
+          0.06787499785423279
+        ],
+        [
+          0.2501451373100281,
+          0.178264781832695,
+          0.09628733992576599
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_Sclera",
+      "vertices": 1986,
+      "faces": 2048,
+      "triangles": 3968,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "materials": [
+        "Ren_Sclera"
+      ],
+      "archive": "mesh-10.npz",
+      "archive_sha256": "af97564a0e16017c5b0f87c43e6ae7b80b0503ca75c0d7241d88ec01805177b1",
+      "world_positions_sha256": "fd3eeb02b7948ad87d7e4518f41a99264b55528f328a7d059b9d16c17855ee39",
+      "uv_sha256": {
+        "uv_0": "8b193003475b70b003657cba5e80583b3fde769a8cf4fbd71e292aa1848f5941"
+      },
+      "world_bounds": [
+        [
+          0.1249999925494194,
+          0.057000018656253815,
+          0.024999994784593582
+        ],
+        [
+          0.244999960064888,
+          0.1809999942779541,
+          0.14499999582767487
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_OuterLash",
+      "vertices": 9,
+      "faces": 3,
+      "triangles": 3,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_UpperLiner"
+      ],
+      "archive": "mesh-11.npz",
+      "archive_sha256": "bbce7dae56cd1cf57be912de59cb570e56d0535905b0d551ae467d960cbf4939",
+      "world_positions_sha256": "5fe732e4d8e2a99c23322213bafe5cc47899f48ed0d20501fc93d4b9b4e0a28b",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.20344585180282593,
+          0.16355611383914948,
+          0.07874441146850586
+        ],
+        [
+          0.23461374640464783,
+          0.19936557114124298,
+          0.08956293761730194
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_LowerLiner",
+      "vertices": 46,
+      "faces": 22,
+      "triangles": 44,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_LowerLiner"
+      ],
+      "archive": "mesh-12.npz",
+      "archive_sha256": "7f9fc72eeb3709fc9cd243f9f441d725f30a45e0a9981632aef5a71ba0e34881",
+      "world_positions_sha256": "ed609fa895869fc21acc7b4ce9ca1b705cf05d13f62907797752da12eed45af3",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.21003499627113342,
+          0.06371158361434937,
+          0.061686038970947266
+        ],
+        [
+          0.24588796496391296,
+          0.1772710233926773,
+          0.07728143781423569
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_Iris",
+      "vertices": 282,
+      "faces": 280,
+      "triangles": 472,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layers": [],
+      "materials": [
+        "Ren_Pupil",
+        "Ren_Pupil",
+        "Ren_IrisGreyBlue",
+        "Ren_IrisGreyBlue",
+        "Ren_UpperLiner",
+        "Ren_IrisCatchlight"
+      ],
+      "archive": "mesh-13.npz",
+      "archive_sha256": "cf4ef12810c3ba23fcbf8df8c6e11cadce8efa5125f46fb3036bbe7791c4c1cd",
+      "world_positions_sha256": "1f05ed6a3045165c52558b1f5efc8718866f0a29db3ca2a6f94d59b163e3efa0",
+      "uv_sha256": {},
+      "world_bounds": [
+        [
+          0.23957401514053345,
+          0.0949999988079071,
+          0.05900000035762787
+        ],
+        [
+          0.24582694470882416,
+          0.14300000667572021,
+          0.11100000143051147
+        ]
+      ]
+    }
+  ],
+  "static_pose": {
+    "Ren_Head": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0,
+      "jawOpen_A": 0.0,
+      "eyeBlinkL": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_P2_UpperTeeth": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0,
+      "jawOpen_A": 0.0
+    },
+    "Ren_P2_LowerTeeth": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0,
+      "jawOpen_A": 0.0
+    },
+    "Ren_P2_Tongue": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0,
+      "jawOpen_A": 0.0
+    },
+    "Ren_Eye_R_UpperLiner": {
+      "Basis": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_Eye_R_OuterLash": {
+      "Basis": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_Eye_R_LowerLiner": {
+      "Basis": 0.0,
+      "eyeBlinkR": 0.0
+    },
+    "Ren_Eye_R_Iris": {
+      "Basis": 0.0,
+      "gazeLeft": 0.0,
+      "gazeRight": 0.0,
+      "gazeUp": 0.0,
+      "gazeDown": 0.0
+    },
+    "Ren_Eye_L_UpperLiner": {
+      "Basis": 0.0,
+      "eyeBlinkL": 0.0
+    },
+    "Ren_Eye_L_OuterLash": {
+      "Basis": 0.0,
+      "eyeBlinkL": 0.0
+    },
+    "Ren_Eye_L_LowerLiner": {
+      "Basis": 0.0,
+      "eyeBlinkL": 0.0
+    },
+    "Ren_Eye_L_Iris": {
+      "Basis": 0.0,
+      "gazeLeft": 0.0,
+      "gazeRight": 0.0,
+      "gazeUp": 0.0,
+      "gazeDown": 0.0
+    }
+  },
+  "material_replacements": [
+    {
+      "object": "Ren_Head",
+      "slot": 0,
+      "previous": "Ren_Draft_Skin",
+      "replacement": "Ren_PaintGuide_UniformSkin"
+    },
+    {
+      "object": "Ren_Head",
+      "slot": 2,
+      "previous": "Ren_Draft_RoseLips",
+      "replacement": "Ren_PaintGuide_UniformSkin"
+    }
+  ],
+  "axis_audit": {
+    "objects": [
+      {
+        "object": "Ren_Head",
+        "exported_split_vertices": 7549,
+        "triangles": 13790,
+        "max_world_position_error": 2.2351741790771484e-08,
+        "max_uv_error": 2.9802322387695312e-08,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_P2_UpperTeeth",
+        "exported_split_vertices": 200,
+        "triangles": 396,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_P2_LowerTeeth",
+        "exported_split_vertices": 200,
+        "triangles": 396,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_P2_Tongue",
+        "exported_split_vertices": 390,
+        "triangles": 776,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_R_UpperLiner",
+        "exported_split_vertices": 46,
+        "triangles": 44,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_R_Sclera",
+        "exported_split_vertices": 2143,
+        "triangles": 3968,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_R_OuterLash",
+        "exported_split_vertices": 9,
+        "triangles": 3,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_R_LowerLiner",
+        "exported_split_vertices": 46,
+        "triangles": 44,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_R_Iris",
+        "exported_split_vertices": 474,
+        "triangles": 472,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_L_UpperLiner",
+        "exported_split_vertices": 46,
+        "triangles": 44,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_L_Sclera",
+        "exported_split_vertices": 2143,
+        "triangles": 3968,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_L_OuterLash",
+        "exported_split_vertices": 9,
+        "triangles": 3,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_L_LowerLiner",
+        "exported_split_vertices": 46,
+        "triangles": 44,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "object": "Ren_Eye_L_Iris",
+        "exported_split_vertices": 474,
+        "triangles": 472,
+        "max_world_position_error": 0,
+        "max_uv_error": 0,
+        "gltf_world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "axis_map_blender_to_gltf": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "front": "Blender +X remains raw glTF +X",
+    "up": "Blender +Z maps raw glTF +Y",
+    "uv_convention": "glTF TEXCOORD_0 is Blender selected UV with V flipped",
+    "coordinate_tolerance": 1e-06,
+    "static": true,
+    "materials": [
+      {
+        "doubleSided": true,
+        "extensions": {
+          "KHR_materials_specular": {
+            "specularFactor": 0
+          }
+        },
+        "name": "Ren_PaintGuide_UniformSkin",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.5704815983772278,
+            0.47699978947639465,
+            0.4064483046531677,
+            1
+          ],
+          "metallicFactor": 0
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_Oral_Cavity",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.03099999949336052,
+            0.006000000052154064,
+            0.009999999776482582,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.8199999928474426
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_Anime_Teeth",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.6800000071525574,
+            0.6200000047683716,
+            0.5,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.550000011920929
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_Tongue",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.3199999928474426,
+            0.07000000029802322,
+            0.09000000357627869,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.6700000166893005
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_UpperLiner",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.024000000208616257,
+            0.01600000075995922,
+            0.023000000044703484,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.75
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_Sclera",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.7799999713897705,
+            0.7900000214576721,
+            0.7699999809265137,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.75
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_LowerLiner",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.1599999964237213,
+            0.0949999988079071,
+            0.10000000149011612,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.75
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_Pupil",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.012000000104308128,
+            0.01899999938905239,
+            0.03200000151991844,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.75
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_IrisGreyBlue",
+        "pbrMetallicRoughness": {
+          "metallicFactor": 0,
+          "roughnessFactor": 0.75
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "Ren_IrisCatchlight",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.949999988079071,
+            0.9700000286102295,
+            1,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.75
+        }
+      }
+    ]
+  },
+  "scope": "Static evaluated texture-service COPY; no remesh; working head untouched",
+  "renders": [
+    {
+      "file": "input-front.png",
+      "sha256": "a13f149da4a1e10040667aab40a24fe3e8224060459fc673f241fbe12ce084e7"
+    },
+    {
+      "file": "input-quarter.png",
+      "sha256": "808f369b393f6ab8858abb207e757ca0656069ddeb01a5ccdbb9fe9069087633"
+    },
+    {
+      "file": "input-profile.png",
+      "sha256": "db0c0dd71742dad078325fe4041a1d0484374535a2e3b8f911a60d805dba7360"
+    }
+  ],
+  "reimport": [
+    {
+      "object": "Ren_Head",
+      "max_world_position_error": 2.2351741790771484e-08,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_UpperTeeth",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_LowerTeeth",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_Tongue",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_UpperLiner",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_Sclera",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_OuterLash",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_LowerLiner",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_Iris",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_UpperLiner",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_Sclera",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_OuterLash",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_LowerLiner",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_Iris",
+      "max_world_position_error": 0.0,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "snapshot_sha256": "43ddcfd5df42fa8d67cb813368975cea19fa220ca03028ef3944d49044ece1a0",
+  "submitted_task_id": "daa7fda6-47ca-4ba9-ab51-6e4c74f2348d",
+  "known_glb_eye_limitation": "White catchlights darken because glTF COLOR_0 multiplies non-vertex-color-driven primitive materials; submitted GLB preserved unchanged.",
+  "glb_reimport_front": {
+    "file": "glb-reimport-front.png",
+    "sha256": "b96e1f1b00e78f237888b2f9f936501b809ec8feb7c533099a772b0afaf994f3",
+    "rgb_mae_255": 0.010459264119466146,
+    "eye_crop_mae_255": 0.3819718309859155
+  }
+}

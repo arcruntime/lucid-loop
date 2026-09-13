@@ -1,0 +1,48 @@
+{
+  "blender_version": "5.1.1",
+  "exit_code": 0,
+  "capture_inspection": "Five actual checker renders inspected: front/quarter/profile neutral and front/quarter closed blink",
+  "source_sha256": "b15a34d87e0442e3dd9b73d789770d6613436276ea26421e5963018cbdc4952b",
+  "files": [
+    {
+      "path": "tools\\character_art\\unwrap_ren_p2_head.py",
+      "sha256": "94eb4d25a375c9f2a0f9b2e1c133f716331bc571a50357fa34605c0aad811c21"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\Ren_P2_Face_EyeUV.blend",
+      "sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\integration-report.json",
+      "sha256": "869ef980008458aec7004e645408d8f05066a264ed94ed91fb3118657a762d7f"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\exact-overlap-report.json",
+      "sha256": "cbc3fcf463ddfd296873a2e122ac1963d8acd53fb95810d3cb226f90ac43b604"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\preservation-signatures.json",
+      "sha256": "f5d3e1fa7e93472efe968849028b59e3ebbd00c0a10416095cf53a8ba572d866"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\checker-blink-front.png",
+      "sha256": "a6c55f709e26d73283c08980a604b12cf8f36f242fb2acc84a03767857fc3c3c"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\checker-blink-quarter.png",
+      "sha256": "63f1c0063e2b558b1d9e98aece032e4053b74396bc9f9db0c1f5d411a8b8092d"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\checker-front.png",
+      "sha256": "f0e56110beadce792b4e352a017540ae915fc59a6a04f1a44529f4b3163bb6dd"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\checker-profile.png",
+      "sha256": "eff29f2a73002425e494748cfb6ffead00efae872dfe562d45b1dcf6048b44a1"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\checker-quarter.png",
+      "sha256": "9228598ca18c4d6eeed04203ef7f064acb0a7597c681f4ac626b78c1291a6f1b"
+    }
+  ]
+}

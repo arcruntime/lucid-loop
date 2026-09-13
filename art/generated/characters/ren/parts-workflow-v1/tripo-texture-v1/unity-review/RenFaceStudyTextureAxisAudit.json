@@ -1,0 +1,17 @@
+{
+  "mapping": "Returned glTF(X,Y,Z) -> native Unity(-X,Y,Z), then shared viewer Y90; no added scale or offset",
+  "returnedHeadPoints": 7505,
+  "unitySplitHeadPoints": 7505,
+  "maxReturnedToUnityError": 1.2013700229374393e-07,
+  "maxUnityToReturnedError": 1.2013700229374393e-07,
+  "nativeUnityBoundsMin": [
+    -0.3690766990184784,
+    -0.5,
+    -0.3299950957298279
+  ],
+  "nativeUnityBoundsMax": [
+    0.3690766990184784,
+    0.4999999701976776,
+    0.3299950361251831
+  ]
+}

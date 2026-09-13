@@ -1,0 +1,778 @@
+{
+  "source_blend": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\Ren_P2_Face_EyeUV.blend",
+  "source_blend_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "fbx_sha256": "69b51acd3edffa00da11779be36467a78572a114db85a36cad593810dd523fda",
+  "status": "CONSTRUCTION_STUDY_EXPORT",
+  "blender_version": "5.1.1",
+  "source_frame": "Blender front +X, up +Z; FBX export forward -Z, up +Y",
+  "vertex_color_encoding": "LINEAR; authored IrisColor directly replaces Base Color, not multiplied by it",
+  "default_viewer_pose": {
+    "mouthSeal": 100,
+    "jawOpen_A": 0
+  },
+  "objects": [
+    {
+      "object": "Ren_Head",
+      "vertices": 6966,
+      "triangles": 13790,
+      "shapes": [
+        {
+          "name": "mouthSeal",
+          "changed_vertices": 571,
+          "max_delta": 0.016643381116649408
+        },
+        {
+          "name": "jawOpen_A",
+          "changed_vertices": 678,
+          "max_delta": 0.014219099098624238
+        },
+        {
+          "name": "eyeBlinkL",
+          "changed_vertices": 206,
+          "max_delta": 0.021063107447033932
+        },
+        {
+          "name": "eyeBlinkR",
+          "changed_vertices": 205,
+          "max_delta": 0.021063107447033932
+        }
+      ],
+      "materials": [
+        "Ren_Draft_Skin",
+        "Ren_Oral_Cavity",
+        "Ren_Draft_RoseLips"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_UpperTeeth",
+      "vertices": 200,
+      "triangles": 396,
+      "shapes": [
+        {
+          "name": "mouthSeal",
+          "changed_vertices": 0,
+          "max_delta": 0.0
+        },
+        {
+          "name": "jawOpen_A",
+          "changed_vertices": 0,
+          "max_delta": 0.0
+        }
+      ],
+      "materials": [
+        "Ren_Anime_Teeth"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_LowerTeeth",
+      "vertices": 200,
+      "triangles": 396,
+      "shapes": [
+        {
+          "name": "mouthSeal",
+          "changed_vertices": 0,
+          "max_delta": 0.0
+        },
+        {
+          "name": "jawOpen_A",
+          "changed_vertices": 200,
+          "max_delta": 0.01315295836528792
+        }
+      ],
+      "materials": [
+        "Ren_Anime_Teeth"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_Tongue",
+      "vertices": 390,
+      "triangles": 776,
+      "shapes": [
+        {
+          "name": "mouthSeal",
+          "changed_vertices": 0,
+          "max_delta": 0.0
+        },
+        {
+          "name": "jawOpen_A",
+          "changed_vertices": 390,
+          "max_delta": 0.0041231139813300306
+        }
+      ],
+      "materials": [
+        "Ren_Tongue"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_UpperLiner",
+      "vertices": 46,
+      "triangles": 44,
+      "shapes": [
+        {
+          "name": "eyeBlinkR",
+          "changed_vertices": 46,
+          "max_delta": 0.021063107014035718
+        }
+      ],
+      "materials": [
+        "Ren_UpperLiner"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_Sclera",
+      "vertices": 1986,
+      "triangles": 3968,
+      "shapes": [],
+      "materials": [
+        "Ren_Sclera"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_OuterLash",
+      "vertices": 9,
+      "triangles": 3,
+      "shapes": [
+        {
+          "name": "eyeBlinkR",
+          "changed_vertices": 9,
+          "max_delta": 0.01140476227981662
+        }
+      ],
+      "materials": [
+        "Ren_UpperLiner"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_LowerLiner",
+      "vertices": 46,
+      "triangles": 44,
+      "shapes": [
+        {
+          "name": "eyeBlinkR",
+          "changed_vertices": 46,
+          "max_delta": 0.012754764806459715
+        }
+      ],
+      "materials": [
+        "Ren_LowerLiner"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_Iris",
+      "vertices": 282,
+      "triangles": 472,
+      "shapes": [
+        {
+          "name": "gazeLeft",
+          "changed_vertices": 282,
+          "max_delta": 0.011247704152340601
+        },
+        {
+          "name": "gazeRight",
+          "changed_vertices": 282,
+          "max_delta": 0.011247697528252377
+        },
+        {
+          "name": "gazeUp",
+          "changed_vertices": 282,
+          "max_delta": 0.008044526334309559
+        },
+        {
+          "name": "gazeDown",
+          "changed_vertices": 282,
+          "max_delta": 0.008044526334309559
+        }
+      ],
+      "materials": [
+        "Ren_Pupil",
+        "Ren_Pupil",
+        "Ren_IrisGreyBlue",
+        "Ren_IrisGreyBlue",
+        "Ren_UpperLiner",
+        "Ren_IrisCatchlight"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_UpperLiner",
+      "vertices": 46,
+      "triangles": 44,
+      "shapes": [
+        {
+          "name": "eyeBlinkL",
+          "changed_vertices": 46,
+          "max_delta": 0.021063107447032617
+        }
+      ],
+      "materials": [
+        "Ren_UpperLiner"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_Sclera",
+      "vertices": 1986,
+      "triangles": 3968,
+      "shapes": [],
+      "materials": [
+        "Ren_Sclera"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_OuterLash",
+      "vertices": 9,
+      "triangles": 3,
+      "shapes": [
+        {
+          "name": "eyeBlinkL",
+          "changed_vertices": 9,
+          "max_delta": 0.01108408194429364
+        }
+      ],
+      "materials": [
+        "Ren_UpperLiner"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_LowerLiner",
+      "vertices": 46,
+      "triangles": 44,
+      "shapes": [
+        {
+          "name": "eyeBlinkL",
+          "changed_vertices": 46,
+          "max_delta": 0.012754764806459715
+        }
+      ],
+      "materials": [
+        "Ren_LowerLiner"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_Iris",
+      "vertices": 282,
+      "triangles": 472,
+      "shapes": [
+        {
+          "name": "gazeLeft",
+          "changed_vertices": 282,
+          "max_delta": 0.011247697528252377
+        },
+        {
+          "name": "gazeRight",
+          "changed_vertices": 282,
+          "max_delta": 0.011247704152340601
+        },
+        {
+          "name": "gazeUp",
+          "changed_vertices": 282,
+          "max_delta": 0.008044526334309559
+        },
+        {
+          "name": "gazeDown",
+          "changed_vertices": 282,
+          "max_delta": 0.008044526334309559
+        }
+      ],
+      "materials": [
+        "Ren_Pupil",
+        "Ren_Pupil",
+        "Ren_IrisGreyBlue",
+        "Ren_IrisGreyBlue",
+        "Ren_UpperLiner",
+        "Ren_IrisCatchlight"
+      ],
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "Ren_Anime_Teeth",
+      "base_color_linear_rgba": [
+        0.6800000071525574,
+        0.6200000047683716,
+        0.5,
+        1.0
+      ],
+      "roughness": 0.550000011920929,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_Draft_RoseLips",
+      "base_color_linear_rgba": [
+        0.36724647879600525,
+        0.10653922706842422,
+        0.11928018927574158,
+        1.0
+      ],
+      "roughness": 0.6299999952316284,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_Draft_Skin",
+      "base_color_linear_rgba": [
+        0.6559306979179382,
+        0.4200332760810852,
+        0.33034372329711914,
+        1.0
+      ],
+      "roughness": 0.8500000238418579,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_IrisCatchlight",
+      "base_color_linear_rgba": [
+        0.949999988079071,
+        0.9700000286102295,
+        1.0,
+        1.0
+      ],
+      "roughness": 0.75,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_IrisGreyBlue",
+      "base_color_linear_rgba": [
+        0.15000000596046448,
+        0.23000000417232513,
+        0.3100000023841858,
+        1.0
+      ],
+      "roughness": 0.75,
+      "uses_vertex_color": true
+    },
+    {
+      "name": "Ren_LowerLiner",
+      "base_color_linear_rgba": [
+        0.1599999964237213,
+        0.0949999988079071,
+        0.10000000149011612,
+        1.0
+      ],
+      "roughness": 0.75,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_Oral_Cavity",
+      "base_color_linear_rgba": [
+        0.03099999949336052,
+        0.006000000052154064,
+        0.009999999776482582,
+        1.0
+      ],
+      "roughness": 0.8199999928474426,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_Pupil",
+      "base_color_linear_rgba": [
+        0.012000000104308128,
+        0.01899999938905239,
+        0.03200000151991844,
+        1.0
+      ],
+      "roughness": 0.75,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_Sclera",
+      "base_color_linear_rgba": [
+        0.7799999713897705,
+        0.7900000214576721,
+        0.7699999809265137,
+        1.0
+      ],
+      "roughness": 0.75,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_Tongue",
+      "base_color_linear_rgba": [
+        0.3199999928474426,
+        0.07000000029802322,
+        0.09000000357627869,
+        1.0
+      ],
+      "roughness": 0.6700000166893005,
+      "uses_vertex_color": false
+    },
+    {
+      "name": "Ren_UpperLiner",
+      "base_color_linear_rgba": [
+        0.024000000208616257,
+        0.01600000075995922,
+        0.023000000044703484,
+        1.0
+      ],
+      "roughness": 0.75,
+      "uses_vertex_color": false
+    }
+  ],
+  "blink_ready_for_unity_trial": true,
+  "limitations": [
+    "Temporary unpainted materials",
+    "Stitched blink verified in Blender; Unity import and composition review still required",
+    "No bilingual speech, expressions, idle or device performance acceptance"
+  ]
+}

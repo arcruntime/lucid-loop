@@ -1,0 +1,266 @@
+[
+  {
+    "path": "renders\\source\\face-front.png",
+    "sha256": "6f9b7d7e1d309a8bfefcc03f0f4b1ca66d493092667de8c0753812e5a369fd33",
+    "pose": {},
+    "source": true
+  },
+  {
+    "path": "renders\\source\\face-three-quarter.png",
+    "sha256": "dd2265e4a57a7e7ab5c88be7869780ce9a597797096965d206a7e7aa0c179e45",
+    "pose": {},
+    "source": true
+  },
+  {
+    "path": "renders\\source\\face-profile.png",
+    "sha256": "0b7e4e04141673b23dcfc2dcc78b3f53fa057d1f1138324d004edf25f7587468",
+    "pose": {},
+    "source": true
+  },
+  {
+    "path": "renders\\source\\mouth-front.png",
+    "sha256": "21726a132a967150280e5699c410978a16742efe293105c3b9f6ea680fb295cd",
+    "pose": {},
+    "source": true
+  },
+  {
+    "path": "renders\\source\\mouth-three-quarter.png",
+    "sha256": "68b12016a1d3f474ff1ce6677688d97338f2ef3a47ef496ba8906cf1f8b4fb95",
+    "pose": {},
+    "source": true
+  },
+  {
+    "path": "renders\\source\\mouth-profile.png",
+    "sha256": "fc1916957d860e5dea227cdec06bc4a4ce6ea10eb489d6f7f83e312097fa4bdf",
+    "pose": {},
+    "source": true
+  },
+  {
+    "path": "renders\\native-rest\\face-front.png",
+    "sha256": "3243f0d4c81e0f28fda16d3541d6a647a9ed97e328f29d530711a4e807f9dd09",
+    "pose": {},
+    "source": false
+  },
+  {
+    "path": "renders\\native-rest\\face-three-quarter.png",
+    "sha256": "5f0403c8c26c9e4d6df2a3e2ecadc98e8aaeeec401267193e074df09a1c9ce0e",
+    "pose": {},
+    "source": false
+  },
+  {
+    "path": "renders\\native-rest\\face-profile.png",
+    "sha256": "f1df2ee140440858a13df75c5fa9aef74dcced0ef0f40eb6fc6f008b75d77b96",
+    "pose": {},
+    "source": false
+  },
+  {
+    "path": "renders\\native-rest\\mouth-front.png",
+    "sha256": "94181a6248282167d223c1d8ca95abb736557a7807a154a988edb5941926f7ee",
+    "pose": {},
+    "source": false
+  },
+  {
+    "path": "renders\\native-rest\\mouth-three-quarter.png",
+    "sha256": "c69d0d5b467ae79a41e4335148924006b89ed2c38fbeb580c1841b61fe849cf4",
+    "pose": {},
+    "source": false
+  },
+  {
+    "path": "renders\\native-rest\\mouth-profile.png",
+    "sha256": "7039d03064662780022573d904577250609a492082700c2bc3c3dfcefb18fc15",
+    "pose": {},
+    "source": false
+  },
+  {
+    "path": "renders\\seal-half\\face-front.png",
+    "sha256": "6fe69c5e76010a6eb02f9969cee518a53520f2a3a33b5dc2c67b4a02be648a6a",
+    "pose": {
+      "mouthSeal": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\seal-half\\face-three-quarter.png",
+    "sha256": "334ee185523b2d00a11aca372479cc4779d19e3bef8c5a1d903549896fa47b9e",
+    "pose": {
+      "mouthSeal": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\seal-half\\face-profile.png",
+    "sha256": "bce2db49ba609cf7082f1fc5ce4ffeeecc3a6fa70a357362fe079436a89a1562",
+    "pose": {
+      "mouthSeal": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\seal-half\\mouth-front.png",
+    "sha256": "5e74f6f40a3accee9d4440113ceaec7a5b4354fd337746b89889a4e3ffd90b61",
+    "pose": {
+      "mouthSeal": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\seal-half\\mouth-three-quarter.png",
+    "sha256": "c0d89b40f57a5e03388977a2fbfbe7e213b0b27d9efee78f543cc66ee5b13a7a",
+    "pose": {
+      "mouthSeal": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\seal-half\\mouth-profile.png",
+    "sha256": "49ba84aaf50d730f4042f8af668cabfdcac74bc533f0d68e15aebec490cce299",
+    "pose": {
+      "mouthSeal": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\sealed\\face-front.png",
+    "sha256": "370967f47b7c8ad6de7c70f953be25a0a2137f4eded23ecdb8e70cbc6c276688",
+    "pose": {
+      "mouthSeal": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\sealed\\face-three-quarter.png",
+    "sha256": "b52abc98986f361bac7dff0ca4b0b4f7caf08c2cae840be245e26ae8445f9428",
+    "pose": {
+      "mouthSeal": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\sealed\\face-profile.png",
+    "sha256": "a03f6ab224ad534ee472a60e9f6ccf67c896876db5329f9d275a0a476b95d630",
+    "pose": {
+      "mouthSeal": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\sealed\\mouth-front.png",
+    "sha256": "dae83f5093cbf8436c51f6022d76841d7a6393100162555e8cf50e096bc3ba66",
+    "pose": {
+      "mouthSeal": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\sealed\\mouth-three-quarter.png",
+    "sha256": "0e1fcb92900c06d211db079c632fbfaad196183faa8607336720f6d96076a343",
+    "pose": {
+      "mouthSeal": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\sealed\\mouth-profile.png",
+    "sha256": "57dadb27206987aec0718908d234b7a89f08bc4d619b4f8c7e2824ca6541ca72",
+    "pose": {
+      "mouthSeal": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-half\\face-front.png",
+    "sha256": "0129b8ee47b75d145c7066c4b4c5bc9be07d5da1ffaa9a2c1df0dd9357646d94",
+    "pose": {
+      "jawOpen_A": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-half\\face-three-quarter.png",
+    "sha256": "3aaa0c0013c547a0f521cd241354b4243b7a7aa5921b472d6507f78b9533eacb",
+    "pose": {
+      "jawOpen_A": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-half\\face-profile.png",
+    "sha256": "1fb0ef00add352c991c4317b8eb2face7f33b1e19da39038a2e95386361523d0",
+    "pose": {
+      "jawOpen_A": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-half\\mouth-front.png",
+    "sha256": "2e7a902a7730b43f62bc0382a36e85d4127a89e6c2ed99a642427044236552f0",
+    "pose": {
+      "jawOpen_A": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-half\\mouth-three-quarter.png",
+    "sha256": "5986db717836c25dd078a0570532db216e65b6016cc7413537f6aebf359ec2ab",
+    "pose": {
+      "jawOpen_A": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-half\\mouth-profile.png",
+    "sha256": "0b49a22f269e4a9211b63cb6c493410e792686d80f706a56bfed53ad19b597b1",
+    "pose": {
+      "jawOpen_A": 0.5
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-A\\face-front.png",
+    "sha256": "791ff4273c83ca381f623207c70c3549f1e3048e7d27f5b7c8c59a73b5ff2e71",
+    "pose": {
+      "jawOpen_A": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-A\\face-three-quarter.png",
+    "sha256": "658fc252530ec8b00015c64124ae38ceda12817a0d48b00da5e724bcbc50d948",
+    "pose": {
+      "jawOpen_A": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-A\\face-profile.png",
+    "sha256": "ab61447dcd71d6a0162c72e6f7dad7571d4fb4028546f017351448c998d444ca",
+    "pose": {
+      "jawOpen_A": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-A\\mouth-front.png",
+    "sha256": "9a52fa3bea4fb2a9812df9010b4fa9b9dfd0d4d7cecb30d96c3e48afb6497bbf",
+    "pose": {
+      "jawOpen_A": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-A\\mouth-three-quarter.png",
+    "sha256": "e59f79981bde3d4be10b8208209d513832b90447175906256cecab90d321f63f",
+    "pose": {
+      "jawOpen_A": 1
+    },
+    "source": false
+  },
+  {
+    "path": "renders\\open-A\\mouth-profile.png",
+    "sha256": "bbc7edcc2083edad3848aa35bfda7a0733c42776750867363f5dd81617e0ee8d",
+    "pose": {
+      "jawOpen_A": 1
+    },
+    "source": false
+  }
+]

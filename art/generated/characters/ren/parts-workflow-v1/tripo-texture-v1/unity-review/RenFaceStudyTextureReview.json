@@ -1,0 +1,277 @@
+{
+  "status": "STATIC_TEXTURE_PLAYER_BUILT_AND_FRONT_GEOMETRY_INSPECTED",
+  "sourceFbxSha256": "bf34ba498d39edca1a772a3141a5908369cb73ddb7406d6d627e39d327dd18b0",
+  "workingFaceSha256": "69b51acd3edffa00da11779be36467a78572a114db85a36cad593810dd523fda",
+  "sourceNormalsDefault": false,
+  "materials": 14,
+  "texturesVerified": [
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/01_Ren_Eye_L_Iris_base_color.jpg",
+      "sha256": "dbda3df65f1d77e84d242068f6ca0d00234e8ee4b2a4d627e7f8c70435420f63",
+      "resolution": [
+        256,
+        256
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/00_Ren_Eye_L_Iris_normal.jpg",
+      "sha256": "336b4d6e4e80bfffec12b0d3a77b7f90baf201a624042b494f625bec8fd72ecf",
+      "resolution": [
+        256,
+        256
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/04_Ren_Eye_L_Sclera_base_color.jpg",
+      "sha256": "5d57048c418ba32350753635bc106e7994596ee0f9ba2244b156c23ae7e965e7",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/03_Ren_Eye_L_Sclera_normal.jpg",
+      "sha256": "9516f5c40709cc3b5cea44cb4137fff4744481eb849b3ae3a6723f927277f84d",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/07_Ren_Eye_L_UpperLiner_base_color.jpg",
+      "sha256": "307b605d9fbc84bc4436ba0b46788e1c8e8502202f9168bb86bbde596bb4b14c",
+      "resolution": [
+        128,
+        128
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/06_Ren_Eye_L_UpperLiner_normal.jpg",
+      "sha256": "ca091a999c0c55ef233ee6be73cb3c2c3df3d8ca8c2c333c69885fb70b456631",
+      "resolution": [
+        128,
+        128
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/10_Ren_Eye_L_OuterLash_base_color.jpg",
+      "sha256": "db0635e2dc04e0f39bfed110efeb92afc4691c78e9ea24582f3ff70f97027bd4",
+      "resolution": [
+        64,
+        64
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/09_Ren_Eye_L_OuterLash_normal.jpg",
+      "sha256": "ef84583962ce4d5b0c70ce005abe02812865694f8b3f77804b91dbc7d82f944c",
+      "resolution": [
+        64,
+        64
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/13_Ren_Eye_L_LowerLiner_base_color.jpg",
+      "sha256": "9645f374a4c4395ee9c2c758db7dc270e78cae615daf53dc2b54704a523c325e",
+      "resolution": [
+        32,
+        32
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/12_Ren_Eye_L_LowerLiner_normal.jpg",
+      "sha256": "e6af20601580d425b00249e5a288bafb7a2601436c8345f4a3b42d801aa700a9",
+      "resolution": [
+        32,
+        32
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/16_Ren_Eye_R_Iris_base_color.jpg",
+      "sha256": "3207e3762d02b0a97313419d6b5e22fd019dcd70b631ecb99267cbf8e3cc2a08",
+      "resolution": [
+        256,
+        256
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/15_Ren_Eye_R_Iris_normal.jpg",
+      "sha256": "c41f128e041deb2085548f364bb0c8daf2054f6defab15706da12948befd8a4a",
+      "resolution": [
+        256,
+        256
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/19_Ren_Eye_R_LowerLiner_base_color.jpg",
+      "sha256": "225d91d856dd83fd454cd114850057f2d896cc011a5d13c9aca5fe8449f00ce9",
+      "resolution": [
+        32,
+        32
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/18_Ren_Eye_R_LowerLiner_normal.jpg",
+      "sha256": "441e52c7bdee3817784abb5bfdaa6fdcde6a894f96ed2470fdacc5bcf4907c8e",
+      "resolution": [
+        32,
+        32
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/22_Ren_Eye_R_OuterLash_base_color.jpg",
+      "sha256": "0c96aef5a3d058bdd2ab5013f9928b9d81f440cc07fcbbdb791578699e4d093b",
+      "resolution": [
+        64,
+        64
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/21_Ren_Eye_R_OuterLash_normal.jpg",
+      "sha256": "96d8ed79883ec7bcd71d437e1f647c6eb0685c41557a2507c2dd1c88ec8fed33",
+      "resolution": [
+        64,
+        64
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/25_Ren_Eye_R_Sclera_base_color.jpg",
+      "sha256": "354cddba716020e5e8c7b7b296ee70c79e8469fa2f8f54a68b642840aba629f0",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/24_Ren_Eye_R_Sclera_normal.jpg",
+      "sha256": "1d3f098895da329210f486a3f609be46b8f345c796e417e210c921e30a33c3e5",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/28_Ren_Eye_R_UpperLiner_base_color.jpg",
+      "sha256": "160eb3f571ddd5f51263cc433125d596ddedfe69d9552b01d82037459adef010",
+      "resolution": [
+        128,
+        128
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/27_Ren_Eye_R_UpperLiner_normal.jpg",
+      "sha256": "754bbc68d9a6f38ba937a36c283214f1ff00d53f6f0193b175caa3f7dede8cab",
+      "resolution": [
+        128,
+        128
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/31_Ren_P2_LowerTeeth_base_color.jpg",
+      "sha256": "7475b71a848b44d0590fc2d46b52f4793e96a53e7691379719ea1c89675a7a78",
+      "resolution": [
+        512,
+        512
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/30_Ren_P2_LowerTeeth_normal.jpg",
+      "sha256": "67e5dfec31f2e3485dee7d33807efc734945d846ded230688858e45ead33715e",
+      "resolution": [
+        512,
+        512
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/34_Ren_P2_UpperTeeth_base_color.jpg",
+      "sha256": "3673b645ee2388af6fcdc5713d63987fafeabc86c48fc166baa3f24cbb9e12db",
+      "resolution": [
+        512,
+        512
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/33_Ren_P2_UpperTeeth_normal.jpg",
+      "sha256": "7eeaf2b235bb950d1150514987d45fe32e990afc09a88a23e9e23ab06efe0417",
+      "resolution": [
+        512,
+        512
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/37_Ren_P2_Tongue_base_color.jpg",
+      "sha256": "9c5e19ddc4116f5497f719296f6499aa642903c5bcf8fd1ccf080d014bdad3b5",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/36_Ren_P2_Tongue_normal.jpg",
+      "sha256": "49c8a6b124629d7edebe26f3a0629e47115222d836334284cc2ace17a42b010f",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "normalMap": true
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/40_Ren_Head_base_color.jpg",
+      "sha256": "f1fd8a84af551f6ff9a4357d9c711c5994fe6a028f3d6d5919f57989f81af254",
+      "resolution": [
+        8192,
+        8192
+      ],
+      "normalMap": false
+    },
+    {
+      "asset": "Assets/CharacterArt/Generated/RenFaceStudy/TextureTrial/Textures/39_Ren_Head_normal.jpg",
+      "sha256": "b7fd545e5930b116f59a7085491cc2837c68e2bd7f714d19d2f7356d27f333aa",
+      "resolution": [
+        8192,
+        8192
+      ],
+      "normalMap": true
+    }
+  ],
+  "assetGuidFilesChecked": 94,
+  "missingGuids": {},
+  "missingMetas": [],
+  "actualGeometryCapture": "RenFaceStudy-tripo-static-first-front.png",
+  "nativeAxisAudit": "RenFaceStudyTextureAxisAudit.json",
+  "staticPlayer": "B:/lucid-loop/.local/ren-tripo-texture-viewer/RenFaceStudy.exe",
+  "playerBuildResult": "Unity exited 0; shader and C# compilation succeeded",
+  "visiblePlayerLaunched": false,
+  "uiCapture": "Attempted hidden batch player; end-of-frame coroutine did not advance. Owned hidden process stopped. No UI screenshot acceptance claimed. Browser viewer is parent-owned.",
+  "limitations": [
+    "Returned provider irises lack UV0 and appear flat grey. No UVs or replacement eyes invented.",
+    "Skin/lips/makeup read more realistically than artist anime design. Painting and likeness unaccepted.",
+    "Static source has no animation transfer. Existing V2 controls remain separate; intermediate live-source gaze has sclera overlap.",
+    "Full texture capture permutations were deferred; only the actual neutral front geometry image was inspected.",
+    "No iPhone performance acceptance."
+  ]
+}

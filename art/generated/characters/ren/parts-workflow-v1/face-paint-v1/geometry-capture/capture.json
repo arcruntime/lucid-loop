@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "object": "Ren_Head_PaintSnapshot",
+  "signature": {
+    "geometry_sha256": "c01c9d8b8dff9baef4ab99a6aed145eaae2714ce101024e31292cffbc8b387c2",
+    "uv_sha256": "8d9160c57a314518b5bb4b4a48e2b45f070bc29e0ed1d617c0834392d1586386",
+    "world_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        4.371138828673793e-08,
+        0.0
+      ],
+      [
+        0.0,
+        -4.371138828673793e-08,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uv_layer": "FaceUV_v1"
+  },
+  "cameras": [
+    {
+      "name": "front",
+      "position": [
+        3,
+        0,
+        0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "width": 1024,
+      "height": 1024,
+      "ortho_scale": 1.12,
+      "projection": "orthographic",
+      "pixel_origin": "bottom-left",
+      "sample_location": "pixel center",
+      "depth_units": "world units along camera forward; +infinity is background",
+      "normal_space": "world; geometric triangle normal",
+      "world_to_blender_camera": [
+        [
+          0.0,
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          -0.0,
+          -0.0,
+          -3.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "geometry_file": "front-geometry.npz",
+      "geometry_file_sha256": "6fe1b5a246c9841168d93910885001862072f4fbf983ab90eeb793ca33a72b30"
+    }
+  ],
+  "renderer": "existing projection helper rasterizer; zero-area triangles omitted from raster only",
+  "source_scope": "selected static head only; other objects are not occluders",
+  "strict_projection_compatible": false,
+  "strict_capture_error": "Degenerate geometric triangles are unsupported",
+  "raster_only_excluded_degenerate_triangles": 2,
+  "triangle_id_scope": "Index into raster_triangle_vertices stored in NPZ; not raw loop-triangle indices",
+  "geometry_modified": false
+}

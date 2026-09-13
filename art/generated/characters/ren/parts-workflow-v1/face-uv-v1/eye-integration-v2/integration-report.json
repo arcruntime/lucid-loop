@@ -1,0 +1,63 @@
+{
+  "status": "UV_ONLY_EYE_INTEGRATION_VERIFIED",
+  "source_blend": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\face-integration-v2\\Ren_P2_Face_Integrated.blend",
+  "source_sha256": "b15a34d87e0442e3dd9b73d789770d6613436276ea26421e5963018cbdc4952b",
+  "derived_sha256": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959",
+  "eyes": [
+    {
+      "face_part": 2,
+      "faces": 411,
+      "vertices": 249,
+      "outer_anchors": 43,
+      "method": "thin-plate UV extension in native YZ from exact surviving boundary corners",
+      "uv_bounds": [
+        [
+          0.44070881605148315,
+          0.42216554284095764
+        ],
+        [
+          0.5732311606407166,
+          0.5268405675888062
+        ]
+      ],
+      "outer_boundary_uv_max_error": 0,
+      "estimated_texels_at_1024": 7397.467056702486,
+      "anisotropy_p50_p95_max": [
+        1.6029148338468777,
+        2.288895738053614,
+        4.231696951213968
+      ],
+      "minimum_uv_triangle_double_area": 4.947397906097599e-06
+    },
+    {
+      "face_part": 3,
+      "faces": 409,
+      "vertices": 248,
+      "outer_anchors": 43,
+      "method": "thin-plate UV extension in native YZ from exact surviving boundary corners",
+      "uv_bounds": [
+        [
+          0.19515281915664673,
+          0.4121200144290924
+        ],
+        [
+          0.32462334632873535,
+          0.5177329778671265
+        ]
+      ],
+      "outer_boundary_uv_max_error": 0,
+      "estimated_texels_at_1024": 7184.769807044251,
+      "anisotropy_p50_p95_max": [
+        1.6593972838000983,
+        2.239610979499047,
+        4.232727396248417
+      ],
+      "minimum_uv_triangle_double_area": 4.87541220549145e-06
+    }
+  ],
+  "exact_uv_conflicts": 0,
+  "geometry_shapes_attributes_materials_matrices_exact": true,
+  "protected_face_uv_exact": true,
+  "saved_uv_exact": true,
+  "blender_version": "5.1.1"
+}

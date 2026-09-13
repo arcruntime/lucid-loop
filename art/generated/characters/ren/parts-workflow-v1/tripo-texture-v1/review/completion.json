@@ -1,0 +1,36 @@
+{
+  "status": "AUDIT_AND_EXPORT_COMPLETE",
+  "blender_version": "5.1.1",
+  "frozen_input_hashes": {
+    "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\input\\Ren_P2_Texture_ClosedRest.glb": "a690b11aa070b846f2aaac3f472dbc4bd5a83132a0efa992fc07f15d7d753e70",
+    "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\originals\\model.glb": "4f2a5b23de1818949a7611ff9f00e6419897d31166bf35f69c43613b64d6bf6a",
+    "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\eye-integration-v2\\Ren_P2_Face_EyeUV.blend": "6f388b7c0ec135c77288a39d329e9e459c51f4121adb5629270ab42f90fa6959"
+  },
+  "fbx_sha256": "bf34ba498d39edca1a772a3141a5908369cb73ddb7406d6d627e39d327dd18b0",
+  "captures": [
+    {
+      "file": "neutral-front.png",
+      "sha256": "3503ec11c10f5bb2ce80eb4c9ae7be1ce1f02447390f854550af93cfadae0719"
+    },
+    {
+      "file": "neutral-quarter.png",
+      "sha256": "3d5dff4339d7b5b0fea3117563e5c878a5ae49c0754f333891b4dfcea1d3745d"
+    },
+    {
+      "file": "neutral-profile.png",
+      "sha256": "b8736db2c13f1aba89e55f33612d2e435123f1dbe580061a98ae487b29c950bc"
+    },
+    {
+      "file": "unlit-front.png",
+      "sha256": "8c1db69d3229d5f5fb0eba0d2a0f3a04053da44642324d5c4f31d465762b0472"
+    },
+    {
+      "file": "unlit-quarter.png",
+      "sha256": "b44c3d8c9a22df58235a9ebab64ed2e3c08c3351b0f2daad3df839d8a311a5f7"
+    },
+    {
+      "file": "unlit-profile.png",
+      "sha256": "87253f2f83915aad9a27121501223c25fb71b3902863ce4712b4cee3b6d13e66"
+    }
+  ]
+}

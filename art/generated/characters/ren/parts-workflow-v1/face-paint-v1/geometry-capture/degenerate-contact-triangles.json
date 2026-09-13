@@ -1,0 +1,130 @@
+{
+  "geometry_signature": {
+    "geometry_sha256": "c01c9d8b8dff9baef4ab99a6aed145eaae2714ce101024e31292cffbc8b387c2",
+    "uv_sha256": "8d9160c57a314518b5bb4b4a48e2b45f070bc29e0ed1d617c0834392d1586386",
+    "world_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        4.371138828673793e-08,
+        0.0
+      ],
+      [
+        0.0,
+        -4.371138828673793e-08,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "uv_layer": "FaceUV_v1"
+  },
+  "near_zero_triangles": [
+    {
+      "loop_triangle_index": 742,
+      "polygon_index": 619,
+      "source_face_id": 1265,
+      "source_vertex_ids": [
+        96,
+        86,
+        84
+      ],
+      "source_scope": "native",
+      "material": "Ren_PaintGuide_UniformSkin",
+      "twice_area": 0.0,
+      "exactly_zero_area": true,
+      "local_vertices": [
+        [
+          0.27218523621559143,
+          -0.070556640625,
+          -0.15293684601783752
+        ],
+        [
+          0.27218523621559143,
+          -0.070556640625,
+          -0.15293684601783752
+        ],
+        [
+          0.2760366201400757,
+          -0.070556640625,
+          -0.15218229591846466
+        ]
+      ],
+      "uv": [
+        [
+          0.3520215153694153,
+          0.2879802882671356
+        ],
+        [
+          0.35186198353767395,
+          0.28796738386154175
+        ],
+        [
+          0.35040268301963806,
+          0.28739628195762634
+        ]
+      ],
+      "source_original_material": "Ren_Draft_RoseLips"
+    },
+    {
+      "loop_triangle_index": 13746,
+      "polygon_index": 7121,
+      "source_face_id": -1,
+      "source_vertex_ids": [
+        86,
+        96,
+        -1
+      ],
+      "source_scope": "generated",
+      "material": "Ren_Oral_Cavity",
+      "twice_area": 0.0,
+      "exactly_zero_area": true,
+      "local_vertices": [
+        [
+          0.27218523621559143,
+          -0.070556640625,
+          -0.15293684601783752
+        ],
+        [
+          0.27218523621559143,
+          -0.070556640625,
+          -0.15293684601783752
+        ],
+        [
+          0.2549864649772644,
+          -0.07608737796545029,
+          -0.16099311411380768
+        ]
+      ],
+      "uv": [
+        [
+          0.9781261682510376,
+          0.38176003098487854
+        ],
+        [
+          0.9780290126800537,
+          0.3812856674194336
+        ],
+        [
+          0.970180869102478,
+          0.38296204805374146
+        ]
+      ],
+      "source_original_material": "Ren_Oral_Cavity"
+    }
+  ],
+  "exactly_zero_count": 2,
+  "raster_skip_policy": "Only exactly zero-area triangles omitted; raw mesh and UV remain unchanged.",
+  "hidden_region_policy": "Zero-area contact strips have no visible coverage in this closed capture; no UV fill or extrapolation performed."
+}

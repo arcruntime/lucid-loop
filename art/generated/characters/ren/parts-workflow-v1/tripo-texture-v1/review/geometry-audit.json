@@ -1,0 +1,137 @@
+{
+  "source_sha256": "a690b11aa070b846f2aaac3f472dbc4bd5a83132a0efa992fc07f15d7d753e70",
+  "returned_sha256": "4f2a5b23de1818949a7611ff9f00e6419897d31166bf35f69c43613b64d6bf6a",
+  "source_objects": 14,
+  "returned_objects": 14,
+  "source_triangles": 24420,
+  "returned_triangles": 24420,
+  "alignment_rotation": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "alignment_translation": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "alignment": "Only a proper signed-axis permutation plus bbox centering; no scaling or deformation applied",
+  "returned_to_source_error_p50_p95_max": [
+    0.00013953325105831027,
+    0.00022446316579589619,
+    0.00024797808146104217
+  ],
+  "source_to_returned_error_p50_p95_max": [
+    0.00013954346650280058,
+    0.00022391281672753393,
+    0.00024797808146104217
+  ],
+  "geometry_equal_within_1e6": false,
+  "geometric_triangle_multiset_equal": false,
+  "source_only_triangle_instances": 11,
+  "returned_only_triangle_instances": 11,
+  "uv_corner_triangles_matching": 21715,
+  "uv_corner_triangles_changed": 0,
+  "uv_added_to_previously_unmapped_triangles": 2694,
+  "unmatched_geometry_triangles": 11,
+  "geometric_identity_resolution": 1e-06,
+  "topology_limit": "Geometric triangle multiplicities checked; coincident vertex welding/partition changes are not inferred as identical editable topology",
+  "returned_objects_detail": [
+    {
+      "name": "Ren_Eye_L_Iris",
+      "vertices": 282,
+      "triangles": 472,
+      "max_nearest_source_error": 0.00014410773292183876
+    },
+    {
+      "name": "Ren_Eye_L_Sclera",
+      "vertices": 2143,
+      "triangles": 3968,
+      "max_nearest_source_error": 0.00014476143405772746
+    },
+    {
+      "name": "Ren_Eye_L_UpperLiner",
+      "vertices": 46,
+      "triangles": 44,
+      "max_nearest_source_error": 0.00014661716704722494
+    },
+    {
+      "name": "Ren_Eye_L_OuterLash",
+      "vertices": 9,
+      "triangles": 3,
+      "max_nearest_source_error": 0.00015019984857644886
+    },
+    {
+      "name": "Ren_Eye_L_LowerLiner",
+      "vertices": 46,
+      "triangles": 44,
+      "max_nearest_source_error": 0.0001409270043950528
+    },
+    {
+      "name": "Ren_Eye_R_Iris",
+      "vertices": 282,
+      "triangles": 472,
+      "max_nearest_source_error": 0.00014410773292183876
+    },
+    {
+      "name": "Ren_Eye_R_LowerLiner",
+      "vertices": 46,
+      "triangles": 44,
+      "max_nearest_source_error": 0.00014092867786530405
+    },
+    {
+      "name": "Ren_Eye_R_OuterLash",
+      "vertices": 9,
+      "triangles": 3,
+      "max_nearest_source_error": 0.00015015940880402923
+    },
+    {
+      "name": "Ren_Eye_R_Sclera",
+      "vertices": 2143,
+      "triangles": 3968,
+      "max_nearest_source_error": 0.00014476143405772746
+    },
+    {
+      "name": "Ren_Eye_R_UpperLiner",
+      "vertices": 46,
+      "triangles": 44,
+      "max_nearest_source_error": 0.0001466316170990467
+    },
+    {
+      "name": "Ren_P2_LowerTeeth",
+      "vertices": 200,
+      "triangles": 396,
+      "max_nearest_source_error": 0.00016226727166213095
+    },
+    {
+      "name": "Ren_P2_UpperTeeth",
+      "vertices": 200,
+      "triangles": 396,
+      "max_nearest_source_error": 0.0001538989454274997
+    },
+    {
+      "name": "Ren_P2_Tongue",
+      "vertices": 390,
+      "triangles": 776,
+      "max_nearest_source_error": 0.00015245299437083304
+    },
+    {
+      "name": "Ren_Head",
+      "vertices": 7505,
+      "triangles": 13790,
+      "max_nearest_source_error": 0.00024797808146104217
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "lucid-loop-character-review-viewers",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local browser review of generated character sources",
+  "dependencies": { "three": "0.186.0" }
+}

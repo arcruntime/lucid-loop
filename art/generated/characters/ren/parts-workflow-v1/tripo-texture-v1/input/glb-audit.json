@@ -1,0 +1,628 @@
+{
+  "objects": [
+    {
+      "object": "Ren_Head",
+      "exported_split_vertices": 7549,
+      "triangles": 13790,
+      "max_world_position_error": 2.2351741790771484e-08,
+      "max_uv_error": 2.9802322387695312e-08,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_UpperTeeth",
+      "exported_split_vertices": 200,
+      "triangles": 396,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_LowerTeeth",
+      "exported_split_vertices": 200,
+      "triangles": 396,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_P2_Tongue",
+      "exported_split_vertices": 390,
+      "triangles": 776,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_UpperLiner",
+      "exported_split_vertices": 46,
+      "triangles": 44,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_Sclera",
+      "exported_split_vertices": 2143,
+      "triangles": 3968,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_OuterLash",
+      "exported_split_vertices": 9,
+      "triangles": 3,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_LowerLiner",
+      "exported_split_vertices": 46,
+      "triangles": 44,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_R_Iris",
+      "exported_split_vertices": 474,
+      "triangles": 472,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_UpperLiner",
+      "exported_split_vertices": 46,
+      "triangles": 44,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_Sclera",
+      "exported_split_vertices": 2143,
+      "triangles": 3968,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_OuterLash",
+      "exported_split_vertices": 9,
+      "triangles": 3,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_LowerLiner",
+      "exported_split_vertices": 46,
+      "triangles": 44,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Eye_L_Iris",
+      "exported_split_vertices": 474,
+      "triangles": 472,
+      "max_world_position_error": 0,
+      "max_uv_error": 0,
+      "gltf_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "axis_map_blender_to_gltf": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "front": "Blender +X remains raw glTF +X",
+  "up": "Blender +Z maps raw glTF +Y",
+  "uv_convention": "glTF TEXCOORD_0 is Blender selected UV with V flipped",
+  "coordinate_tolerance": 1e-06,
+  "static": true,
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_specular": {
+          "specularFactor": 0
+        }
+      },
+      "name": "Ren_PaintGuide_UniformSkin",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5704815983772278,
+          0.47699978947639465,
+          0.4064483046531677,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_Oral_Cavity",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.03099999949336052,
+          0.006000000052154064,
+          0.009999999776482582,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8199999928474426
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_Anime_Teeth",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6800000071525574,
+          0.6200000047683716,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.550000011920929
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_Tongue",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.3199999928474426,
+          0.07000000029802322,
+          0.09000000357627869,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6700000166893005
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_UpperLiner",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.024000000208616257,
+          0.01600000075995922,
+          0.023000000044703484,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.75
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_Sclera",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7799999713897705,
+          0.7900000214576721,
+          0.7699999809265137,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.75
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_LowerLiner",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1599999964237213,
+          0.0949999988079071,
+          0.10000000149011612,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.75
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_Pupil",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.012000000104308128,
+          0.01899999938905239,
+          0.03200000151991844,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.75
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_IrisGreyBlue",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.75
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Ren_IrisCatchlight",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.949999988079071,
+          0.9700000286102295,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.75
+      }
+    }
+  ]
+}

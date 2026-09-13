@@ -1,0 +1,35 @@
+{
+  "source_native_fbx_sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+  "blender_version": "5.1.1",
+  "files": [
+    {
+      "path": "tools\\character_art\\unwrap_ren_p2_head.py",
+      "sha256": "204429b9d3d2e86e0822b02d16e8f60eb4bb507649c9491c07699e71c875bb84"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\Ren_P2_FaceUV_Study.blend",
+      "sha256": "f467228ceabecda6fbd4c3ab88997117f35983ef8f0cd0afe995f903d2c14306"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\source-corner-uv-map.json",
+      "sha256": "87c303943045654a7624b2ba05e795a6d899cf47f8561131709ff04595cf0895"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\checker-front.png",
+      "sha256": "ec667465cab6c6d892220e1cde29d4fc9b5d907fc582f73b3bc99a6c755ffe85"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\checker-quarter.png",
+      "sha256": "4084b235029730ab0281e11a0f2c060006ea2d49f094de380c61d117dbf59611"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\checker-profile.png",
+      "sha256": "d37ba1815387708346ac5d3e5883d112d7cc1a7b6496342f58ac539be889d260"
+    },
+    {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\face-uv-v1\\atlas-checker.png",
+      "sha256": "afcc1de24328a81081e335117b769e31c7cc20ec22cdce89eb8f921472bc0034"
+    }
+  ],
+  "scope": "UV-only derived study; no accepted Ren paint or geometry change"
+}

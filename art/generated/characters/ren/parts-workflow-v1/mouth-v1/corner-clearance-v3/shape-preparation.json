@@ -1,0 +1,43 @@
+{
+  "method": "biharmonic local native-skin extension with exact traced aperture Dirichlet targets",
+  "support_geodesic_radius_source_units": 0.08,
+  "shape_names": [
+    "mouthSeal",
+    "jawOpen_A"
+  ],
+  "native_shape_summary": {
+    "mouthSeal": {
+      "moving_native_vertices": 516,
+      "max_delta_source_units": 0.016643376932826668,
+      "moved_native_bounds": [
+        [
+          0.228271484375,
+          -0.1257324276484036,
+          -0.21264648769390668
+        ],
+        [
+          0.333740234375,
+          0.12963866599487917,
+          -0.07446288963252952
+        ]
+      ]
+    },
+    "jawOpen_A": {
+      "moving_native_vertices": 515,
+      "max_delta_source_units": 0.014219103677036802,
+      "moved_native_bounds": [
+        [
+          0.228271484375,
+          -0.1257324276484036,
+          -0.21264648769390668
+        ],
+        [
+          0.333740234375,
+          0.12963866599487917,
+          -0.07446288963252952
+        ]
+      ]
+    }
+  },
+  "declared_wet_line_seal_overlap_source_units": 0.0006
+}

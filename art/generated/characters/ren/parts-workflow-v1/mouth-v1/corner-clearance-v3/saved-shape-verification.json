@@ -1,0 +1,2456 @@
+{
+  "source_sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+  "derived_blend_sha256": "d163c041427ffff60390f2dcae57ca131f8d97b0946fa2499bb5a26ca48f47d5",
+  "reopened_native_world_max_error": 1.4737653153407138e-08,
+  "unique_retained_native_source_ids": 9129,
+  "shape_native_delta_error": {
+    "mouthSeal": 1.5027997530420167e-08,
+    "jawOpen_A": 1.4800087807106618e-08
+  },
+  "poses": [
+    {
+      "name": "native-rest",
+      "values": {},
+      "mesh_topology": {
+        "tripo_node_91cffa7c": {
+          "boundary_edges": 1140,
+          "nonmanifold_edges": 1
+        },
+        "Ren_P2_UpperTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_LowerTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_Tongue": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        }
+      },
+      "collisions": {
+        "Ren_P2_UpperTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_Tongue / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_LowerTeeth": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        }
+      },
+      "intersection_limit": "Nonparallel segment/triangle narrow phase; coplanar overlap is not certified by this test.",
+      "new_cavity_vs_nonadjacent_head_triangle_intersections": []
+    },
+    {
+      "name": "seal-half",
+      "values": {
+        "mouthSeal": 0.5
+      },
+      "mesh_topology": {
+        "tripo_node_91cffa7c": {
+          "boundary_edges": 1140,
+          "nonmanifold_edges": 1
+        },
+        "Ren_P2_UpperTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_LowerTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_Tongue": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        }
+      },
+      "collisions": {
+        "Ren_P2_UpperTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_Tongue / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_LowerTeeth": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        }
+      },
+      "intersection_limit": "Nonparallel segment/triangle narrow phase; coplanar overlap is not certified by this test.",
+      "new_cavity_vs_nonadjacent_head_triangle_intersections": []
+    },
+    {
+      "name": "sealed",
+      "values": {
+        "mouthSeal": 1
+      },
+      "mesh_topology": {
+        "tripo_node_91cffa7c": {
+          "boundary_edges": 1140,
+          "nonmanifold_edges": 1
+        },
+        "Ren_P2_UpperTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_LowerTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_Tongue": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        }
+      },
+      "collisions": {
+        "Ren_P2_UpperTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_Tongue / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_LowerTeeth": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        }
+      },
+      "intersection_limit": "Nonparallel segment/triangle narrow phase; coplanar overlap is not certified by this test.",
+      "new_cavity_vs_nonadjacent_head_triangle_intersections": [
+        {
+          "first_triangle": 16984,
+          "second_triangle": 17026,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.297145813703537,
+              0.02125539630651474,
+              -0.14680582284927368
+            ],
+            [
+              0.29669103026390076,
+              0.022715764120221138,
+              -0.1471007615327835
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16984,
+          "second_triangle": 17024,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2947143614292145,
+              0.028485983610153198,
+              -0.14752033352851868
+            ],
+            [
+              0.29666194319725037,
+              0.022792568430304527,
+              -0.1470947414636612
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16984,
+          "second_triangle": 17025,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29666194319725037,
+              0.022792568430304527,
+              -0.1470947414636612
+            ],
+            [
+              0.29669103026390076,
+              0.022715764120221138,
+              -0.1471007615327835
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16980,
+          "second_triangle": 17028,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2998411953449249,
+              0.010010781697928905,
+              -0.14580100774765015
+            ],
+            [
+              0.2991756796836853,
+              0.013430199585855007,
+              -0.1462247520685196
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16980,
+          "second_triangle": 17027,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2991599142551422,
+              0.013495317660272121,
+              -0.1462198942899704
+            ],
+            [
+              0.2991756796836853,
+              0.013430199585855007,
+              -0.1462247669696808
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16980,
+          "second_triangle": 17026,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29885753989219666,
+              0.014834163710474968,
+              -0.14621102809906006
+            ],
+            [
+              0.2991599142551422,
+              0.013495315797626972,
+              -0.1462198793888092
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16982,
+          "second_triangle": 17026,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29884466528892517,
+              0.014899631962180138,
+              -0.14620593190193176
+            ],
+            [
+              0.29717156291007996,
+              0.021171394735574722,
+              -0.14678987860679626
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16981,
+          "second_triangle": 17026,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29885753989219666,
+              0.014834164641797543,
+              -0.14621102809906006
+            ],
+            [
+              0.29884466528892517,
+              0.014899631962180138,
+              -0.14620593190193176
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16983,
+          "second_triangle": 17026,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29717156291007996,
+              0.021171394735574722,
+              -0.14678987860679626
+            ],
+            [
+              0.297145813703537,
+              0.02125539630651474,
+              -0.14680582284927368
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16979,
+          "second_triangle": 17028,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29984766244888306,
+              0.009946282021701336,
+              -0.14580827951431274
+            ],
+            [
+              0.2998411953449249,
+              0.010010781697928905,
+              -0.14580100774765015
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16977,
+          "second_triangle": 17030,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.3005144000053406,
+              0.005559269338846207,
+              -0.1456335037946701
+            ],
+            [
+              0.30051323771476746,
+              0.005610969383269548,
+              -0.14562733471393585
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16978,
+          "second_triangle": 17030,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.30051323771476746,
+              0.005610969383269548,
+              -0.14562733471393585
+            ],
+            [
+              0.3004513084888458,
+              0.00610016006976366,
+              -0.1457001268863678
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16978,
+          "second_triangle": 17028,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29984766244888306,
+              0.00994628295302391,
+              -0.14580827951431274
+            ],
+            [
+              0.30044296383857727,
+              0.006147138308733702,
+              -0.14569757878780365
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16978,
+          "second_triangle": 17029,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.30044296383857727,
+              0.006147137843072414,
+              -0.14569757878780365
+            ],
+            [
+              0.3004513084888458,
+              0.00610016006976366,
+              -0.1457001268863678
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16976,
+          "second_triangle": 17031,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.3008745610713959,
+              0.0012429634807631373,
+              -0.14546974003314972
+            ],
+            [
+              0.3008766174316406,
+              0.0012142953928560019,
+              -0.14546740055084229
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16976,
+          "second_triangle": 17030,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.3005144000053406,
+              0.005559269804507494,
+              -0.1456335037946701
+            ],
+            [
+              0.3008745610713959,
+              0.0012429635971784592,
+              -0.1454697549343109
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16976,
+          "second_triangle": 17032,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.3008767068386078,
+              0.0012122724438086152,
+              -0.14546704292297363
+            ],
+            [
+              0.3008766174316406,
+              0.0012142956256866455,
+              -0.14546740055084229
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16971,
+          "second_triangle": 17034,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.300222247838974,
+              -0.007663487922400236,
+              -0.14553400874137878
+            ],
+            [
+              0.3002324402332306,
+              -0.007591855246573687,
+              -0.1455291509628296
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16969,
+          "second_triangle": 17036,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2993549704551697,
+              -0.01256440207362175,
+              -0.1458250731229782
+            ],
+            [
+              0.2993745505809784,
+              -0.012480287812650204,
+              -0.1458190232515335
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16974,
+          "second_triangle": 17032,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.30078789591789246,
+              -0.0026988908648490906,
+              -0.1454501450061798
+            ],
+            [
+              0.30087676644325256,
+              0.0011688482481986284,
+              -0.14546418190002441
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16975,
+          "second_triangle": 17032,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.30087676644325256,
+              0.0011688488302752376,
+              -0.1454641968011856
+            ],
+            [
+              0.3008767068386078,
+              0.001212272560223937,
+              -0.14546704292297363
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16970,
+          "second_triangle": 17034,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.300222247838974,
+              -0.007663487456738949,
+              -0.14553400874137878
+            ],
+            [
+              0.29976680874824524,
+              -0.010465461760759354,
+              -0.14586631953716278
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16970,
+          "second_triangle": 17036,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2993745505809784,
+              -0.012480287812650204,
+              -0.1458190232515335
+            ],
+            [
+              0.29975640773773193,
+              -0.010515398345887661,
+              -0.14586223661899567
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16970,
+          "second_triangle": 17035,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29976680874824524,
+              -0.010465462692081928,
+              -0.14586631953716278
+            ],
+            [
+              0.29975640773773193,
+              -0.010515398345887661,
+              -0.14586222171783447
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16972,
+          "second_triangle": 17032,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.3007878065109253,
+              -0.0027571534737944603,
+              -0.14544670283794403
+            ],
+            [
+              0.3007544279098511,
+              -0.0031570561695843935,
+              -0.14550721645355225
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16972,
+          "second_triangle": 17033,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.3007544279098511,
+              -0.0031570561695843935,
+              -0.14550721645355225
+            ],
+            [
+              0.30075159668922424,
+              -0.0031840484589338303,
+              -0.1455087661743164
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16972,
+          "second_triangle": 17034,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.3002324402332306,
+              -0.007591855246573687,
+              -0.1455291509628296
+            ],
+            [
+              0.30075159668922424,
+              -0.0031840484589338303,
+              -0.1455087661743164
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16973,
+          "second_triangle": 17032,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.3007878065109253,
+              -0.0027571539394557476,
+              -0.14544670283794403
+            ],
+            [
+              0.30078789591789246,
+              -0.0026988908648490906,
+              -0.1454501450061798
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16968,
+          "second_triangle": 17036,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.297987699508667,
+              -0.018342960625886917,
+              -0.14629346132278442
+            ],
+            [
+              0.2993549704551697,
+              -0.01256440207362175,
+              -0.1458250731229782
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16967,
+          "second_triangle": 17036,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2979525923728943,
+              -0.018440978601574898,
+              -0.14633046090602875
+            ],
+            [
+              0.297987699508667,
+              -0.018342960625886917,
+              -0.14629346132278442
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16966,
+          "second_triangle": 17036,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2979525923728943,
+              -0.018440980464220047,
+              -0.14633046090602875
+            ],
+            [
+              0.2977232336997986,
+              -0.019251732155680656,
+              -0.14648768305778503
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16966,
+          "second_triangle": 17037,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2977232336997986,
+              -0.019251732155680656,
+              -0.14648768305778503
+            ],
+            [
+              0.29770398139953613,
+              -0.0193121787160635,
+              -0.14649061858654022
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16966,
+          "second_triangle": 17038,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29555216431617737,
+              -0.02617011032998562,
+              -0.14694887399673462
+            ],
+            [
+              0.29770398139953613,
+              -0.0193121787160635,
+              -0.14649061858654022
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16998,
+          "second_triangle": 17010,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2706568241119385,
+              0.07255987823009491,
+              -0.15430717170238495
+            ],
+            [
+              0.2706277370452881,
+              0.07260210812091827,
+              -0.15431472659111023
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16998,
+          "second_triangle": 17009,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27050814032554626,
+              0.07268127053976059,
+              -0.15429653227329254
+            ],
+            [
+              0.2706277370452881,
+              0.07260210812091827,
+              -0.15431472659111023
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16998,
+          "second_triangle": 17008,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2699291706085205,
+              0.07353713363409042,
+              -0.1544547975063324
+            ],
+            [
+              0.27050814032554626,
+              0.07268126308917999,
+              -0.15429653227329254
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16996,
+          "second_triangle": 17014,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2746422290802002,
+              0.06673392653465271,
+              -0.15322983264923096
+            ],
+            [
+              0.27203604578971863,
+              0.07060104608535767,
+              -0.153934508562088
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16996,
+          "second_triangle": 17013,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2720155715942383,
+              0.07063138484954834,
+              -0.15394000709056854
+            ],
+            [
+              0.27203604578971863,
+              0.07060104608535767,
+              -0.153934508562088
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16996,
+          "second_triangle": 17012,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2713664174079895,
+              0.0715872272849083,
+              -0.15410833060741425
+            ],
+            [
+              0.2720155715942383,
+              0.07063138484954834,
+              -0.15394002199172974
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16996,
+          "second_triangle": 17010,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27074068784713745,
+              0.07250804454088211,
+              -0.15427009761333466
+            ],
+            [
+              0.2713451087474823,
+              0.07161971926689148,
+              -0.1541149616241455
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16996,
+          "second_triangle": 17011,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2713451087474823,
+              0.07161971926689148,
+              -0.1541149616241455
+            ],
+            [
+              0.2713664174079895,
+              0.0715872272849083,
+              -0.15410833060741425
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16995,
+          "second_triangle": 17014,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.274640291929245,
+              0.06670060753822327,
+              -0.15323729813098907
+            ],
+            [
+              0.2746422290802002,
+              0.06673392653465271,
+              -0.15322983264923096
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17001,
+          "second_triangle": 17008,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.26895809173583984,
+              0.07499475032091141,
+              -0.15472133457660675
+            ],
+            [
+              0.26895958185195923,
+              0.0749974325299263,
+              -0.15472115576267242
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17001,
+          "second_triangle": 17006,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.26897066831588745,
+              0.07503063231706619,
+              -0.1547166407108307
+            ],
+            [
+              0.26895320415496826,
+              0.075011245906353,
+              -0.1547156274318695
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17001,
+          "second_triangle": 17007,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.26895320415496826,
+              0.075011245906353,
+              -0.1547156274318695
+            ],
+            [
+              0.26895958185195923,
+              0.0749974325299263,
+              -0.15472115576267242
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16997,
+          "second_triangle": 17010,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27074068784713745,
+              0.07250804454088211,
+              -0.15427009761333466
+            ],
+            [
+              0.2706568241119385,
+              0.07255987823009491,
+              -0.15430717170238495
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16999,
+          "second_triangle": 17008,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2699291706085205,
+              0.07353713363409042,
+              -0.1544547975063324
+            ],
+            [
+              0.2699333131313324,
+              0.07358060777187347,
+              -0.15445609390735626
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17000,
+          "second_triangle": 17008,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2699333131313324,
+              0.07358060777187347,
+              -0.15445609390735626
+            ],
+            [
+              0.26895809173583984,
+              0.07499475032091141,
+              -0.15472133457660675
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17002,
+          "second_triangle": 17006,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.26897066831588745,
+              0.07503063231706619,
+              -0.1547166407108307
+            ],
+            [
+              0.26832979917526245,
+              0.0759405568242073,
+              -0.15489734709262848
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17002,
+          "second_triangle": 17005,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.26832103729248047,
+              0.07594842463731766,
+              -0.1548936516046524
+            ],
+            [
+              0.26832979917526245,
+              0.0759405568242073,
+              -0.15489734709262848
+            ]
+          ]
+        },
+        {
+          "first_triangle": 9320,
+          "second_triangle": 17013,
+          "source_faces": [
+            5998,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2721605598926544,
+              0.07056750357151031,
+              -0.15387177467346191
+            ],
+            [
+              0.2721635103225708,
+              0.07056310027837753,
+              -0.15387098491191864
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16985,
+          "second_triangle": 17024,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2947143614292145,
+              0.02848598174750805,
+              -0.14752031862735748
+            ],
+            [
+              0.294664591550827,
+              0.028595086187124252,
+              -0.14755702018737793
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16987,
+          "second_triangle": 17022,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2911336421966553,
+              0.03726941719651222,
+              -0.14860491454601288
+            ],
+            [
+              0.291060209274292,
+              0.03740086033940315,
+              -0.14865103363990784
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16986,
+          "second_triangle": 17024,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.294664591550827,
+              0.028595086187124252,
+              -0.14755702018737793
+            ],
+            [
+              0.29314523935317993,
+              0.032495081424713135,
+              -0.14827360212802887
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16986,
+          "second_triangle": 17022,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2911336421966553,
+              0.03726941719651222,
+              -0.14860491454601288
+            ],
+            [
+              0.293091356754303,
+              0.03260244056582451,
+              -0.14824989438056946
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16986,
+          "second_triangle": 17023,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.293091356754303,
+              0.03260243684053421,
+              -0.14824987947940826
+            ],
+            [
+              0.29314523935317993,
+              0.032495081424713135,
+              -0.14827361702919006
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16988,
+          "second_triangle": 17022,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.291060209274292,
+              0.03740086033940315,
+              -0.14865103363990784
+            ],
+            [
+              0.28830063343048096,
+              0.04325173422694206,
+              -0.14969953894615173
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16988,
+          "second_triangle": 17021,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2882281243801117,
+              0.04336227849125862,
+              -0.14965851604938507
+            ],
+            [
+              0.28830063343048096,
+              0.04325173422694206,
+              -0.14969953894615173
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16988,
+          "second_triangle": 17020,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2861521244049072,
+              0.04752707853913307,
+              -0.150071382522583
+            ],
+            [
+              0.2882281243801117,
+              0.04336227849125862,
+              -0.14965851604938507
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16990,
+          "second_triangle": 17020,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2860547602176666,
+              0.04766635596752167,
+              -0.1501275599002838
+            ],
+            [
+              0.28282734751701355,
+              0.053512804210186005,
+              -0.1511819064617157
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16990,
+          "second_triangle": 17019,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2827475666999817,
+              0.053606633096933365,
+              -0.15113598108291626
+            ],
+            [
+              0.28282734751701355,
+              0.053512804210186005,
+              -0.1511819064617157
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16990,
+          "second_triangle": 17018,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.28034332394599915,
+              0.0578003004193306,
+              -0.15169188380241394
+            ],
+            [
+              0.2827475666999817,
+              0.053606633096933365,
+              -0.15113598108291626
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16989,
+          "second_triangle": 17020,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2861521244049072,
+              0.04752707853913307,
+              -0.150071382522583
+            ],
+            [
+              0.2860547602176666,
+              0.04766635596752167,
+              -0.1501275599002838
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16991,
+          "second_triangle": 17018,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.28034332394599915,
+              0.0578002966940403,
+              -0.15169188380241394
+            ],
+            [
+              0.2802375257015228,
+              0.057923026382923126,
+              -0.15174433588981628
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16992,
+          "second_triangle": 17015,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27680954337120056,
+              0.06338278949260712,
+              -0.1526697874069214
+            ],
+            [
+              0.2769066095352173,
+              0.0633036345243454,
+              -0.152730792760849
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16992,
+          "second_triangle": 17014,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27506762742996216,
+              0.06613067537546158,
+              -0.15310943126678467
+            ],
+            [
+              0.27680954337120056,
+              0.06338278949260712,
+              -0.15266980230808258
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16992,
+          "second_triangle": 17018,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2802375257015228,
+              0.057923026382923126,
+              -0.15174433588981628
+            ],
+            [
+              0.27722039818763733,
+              0.06278441846370697,
+              -0.15262362360954285
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16992,
+          "second_triangle": 17016,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2769066095352173,
+              0.0633036345243454,
+              -0.1527308076620102
+            ],
+            [
+              0.2772104740142822,
+              0.0628233253955841,
+              -0.1526530385017395
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16992,
+          "second_triangle": 17017,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2772104740142822,
+              0.0628233253955841,
+              -0.1526530385017395
+            ],
+            [
+              0.27722039818763733,
+              0.06278441846370697,
+              -0.15262362360954285
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16993,
+          "second_triangle": 17014,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27506762742996216,
+              0.06613067537546158,
+              -0.15310943126678467
+            ],
+            [
+              0.2749561667442322,
+              0.0662192553281784,
+              -0.15315432846546173
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16994,
+          "second_triangle": 17014,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2749561667442322,
+              0.0662192553281784,
+              -0.15315432846546173
+            ],
+            [
+              0.274640291929245,
+              0.06670060753822327,
+              -0.15323729813098907
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16965,
+          "second_triangle": 17038,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29548540711402893,
+              -0.02629535272717476,
+              -0.14702197909355164
+            ],
+            [
+              0.29555216431617737,
+              -0.02617011032998562,
+              -0.14694887399673462
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16963,
+          "second_triangle": 17040,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2920345366001129,
+              -0.03511298447847366,
+              -0.14798212051391602
+            ],
+            [
+              0.2921261489391327,
+              -0.03497772291302681,
+              -0.14788581430912018
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16964,
+          "second_triangle": 17038,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.29548540711402893,
+              -0.02629535272717476,
+              -0.14702197909355164
+            ],
+            [
+              0.2946803569793701,
+              -0.028521718457341194,
+              -0.14742179214954376
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16964,
+          "second_triangle": 17039,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2946803569793701,
+              -0.028521716594696045,
+              -0.14742179214954376
+            ],
+            [
+              0.29464587569236755,
+              -0.028606822714209557,
+              -0.14742538332939148
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16964,
+          "second_triangle": 17040,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2921261489391327,
+              -0.03497772291302681,
+              -0.14788581430912018
+            ],
+            [
+              0.29464587569236755,
+              -0.028606822714209557,
+              -0.14742538332939148
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16962,
+          "second_triangle": 17040,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2920345366001129,
+              -0.03511298447847366,
+              -0.14798212051391602
+            ],
+            [
+              0.2904309928417206,
+              -0.038768354803323746,
+              -0.1486045867204666
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16962,
+          "second_triangle": 17041,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2904309928417206,
+              -0.038768354803323746,
+              -0.1486045867204666
+            ],
+            [
+              0.2903665006160736,
+              -0.03887830674648285,
+              -0.14858770370483398
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16962,
+          "second_triangle": 17042,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2878071069717407,
+              -0.04426436871290207,
+              -0.14907385408878326
+            ],
+            [
+              0.2903665006160736,
+              -0.03887830302119255,
+              -0.1485876888036728
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16961,
+          "second_triangle": 17042,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2877044975757599,
+              -0.04439125582575798,
+              -0.1491658091545105
+            ],
+            [
+              0.2878071069717407,
+              -0.04426436871290207,
+              -0.14907385408878326
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16960,
+          "second_triangle": 17042,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2877044975757599,
+              -0.04439125582575798,
+              -0.1491658091545105
+            ],
+            [
+              0.28557026386260986,
+              -0.04854685813188553,
+              -0.14984449744224548
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16960,
+          "second_triangle": 17044,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.28280994296073914,
+              -0.05354338884353638,
+              -0.15038275718688965
+            ],
+            [
+              0.2854846715927124,
+              -0.048655588179826736,
+              -0.1498197466135025
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16960,
+          "second_triangle": 17043,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.28557026386260986,
+              -0.04854685813188553,
+              -0.14984451234340668
+            ],
+            [
+              0.2854847013950348,
+              -0.048655588179826736,
+              -0.1498197317123413
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16958,
+          "second_triangle": 17044,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2822659909725189,
+              -0.05454925447702408,
+              -0.15048933029174805
+            ],
+            [
+              0.28281208872795105,
+              -0.05359151214361191,
+              -0.15034739673137665
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16959,
+          "second_triangle": 17044,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.28281208872795105,
+              -0.05359151214361191,
+              -0.15034739673137665
+            ],
+            [
+              0.28280994296073914,
+              -0.05354338884353638,
+              -0.15038275718688965
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16957,
+          "second_triangle": 17044,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.282143771648407,
+              -0.054659511893987656,
+              -0.15059097111225128
+            ],
+            [
+              0.2822659909725189,
+              -0.05454925447702408,
+              -0.15048933029174805
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16956,
+          "second_triangle": 17044,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.282143771648407,
+              -0.054659511893987656,
+              -0.15059097111225128
+            ],
+            [
+              0.28057363629341125,
+              -0.057354457676410675,
+              -0.1510384976863861
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16956,
+          "second_triangle": 17045,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.28057363629341125,
+              -0.057354457676410675,
+              -0.1510385125875473
+            ],
+            [
+              0.28047940135002136,
+              -0.057442281395196915,
+              -0.15100908279418945
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16956,
+          "second_triangle": 17046,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.28047940135002136,
+              -0.057442281395196915,
+              -0.15100908279418945
+            ],
+            [
+              0.28018999099731445,
+              -0.057925209403038025,
+              -0.15108105540275574
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16956,
+          "second_triangle": 17048,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2777949869632721,
+              -0.06186391040682793,
+              -0.15163268148899078
+            ],
+            [
+              0.28017961978912354,
+              -0.05796954408288002,
+              -0.15110422670841217
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16956,
+          "second_triangle": 17047,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.28018999099731445,
+              -0.057925209403038025,
+              -0.15108105540275574
+            ],
+            [
+              0.28017961978912354,
+              -0.05796954408288002,
+              -0.15110422670841217
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16954,
+          "second_triangle": 17048,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2776797413825989,
+              -0.06194765493273735,
+              -0.15171587467193604
+            ],
+            [
+              0.27532336115837097,
+              -0.06567636877298355,
+              -0.1523040235042572
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16954,
+          "second_triangle": 17050,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2751442790031433,
+              -0.06579087674617767,
+              -0.1522747129201889
+            ],
+            [
+              0.2742269039154053,
+              -0.06721977889537811,
+              -0.15249374508857727
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16954,
+          "second_triangle": 17049,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27532336115837097,
+              -0.06567636877298355,
+              -0.1523040384054184
+            ],
+            [
+              0.2751442790031433,
+              -0.06579087674617767,
+              -0.1522747129201889
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16954,
+          "second_triangle": 17051,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27420634031295776,
+              -0.0672464370727539,
+              -0.15249629318714142
+            ],
+            [
+              0.27422693371772766,
+              -0.06721977889537811,
+              -0.15249374508857727
+            ]
+          ]
+        },
+        {
+          "first_triangle": 16955,
+          "second_triangle": 17048,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2776797413825989,
+              -0.06194765493273735,
+              -0.15171587467193604
+            ],
+            [
+              0.2777949869632721,
+              -0.06186390668153763,
+              -0.15163268148899078
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17052,
+          "second_triangle": 17063,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2741751968860626,
+              -0.06730815768241882,
+              -0.15249288082122803
+            ],
+            [
+              0.27416807413101196,
+              -0.06732998043298721,
+              -0.152492955327034
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17052,
+          "second_triangle": 17062,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2735462188720703,
+              -0.06827206909656525,
+              -0.15264339745044708
+            ],
+            [
+              0.27416807413101196,
+              -0.06732997298240662,
+              -0.152492955327034
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17052,
+          "second_triangle": 17061,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.27355197072029114,
+              -0.06835457682609558,
+              -0.15262837707996368
+            ],
+            [
+              0.2735462188720703,
+              -0.06827206909656525,
+              -0.15264339745044708
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17052,
+          "second_triangle": 17060,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2726879119873047,
+              -0.06964294612407684,
+              -0.1528405100107193
+            ],
+            [
+              0.27355197072029114,
+              -0.06835457682609558,
+              -0.15262837707996368
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17051,
+          "second_triangle": 17063,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2741751968860626,
+              -0.06730815768241882,
+              -0.15249288082122803
+            ],
+            [
+              0.27420634031295776,
+              -0.0672464370727539,
+              -0.15249629318714142
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17054,
+          "second_triangle": 17060,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2726218104362488,
+              -0.06968545913696289,
+              -0.1528100222349167
+            ],
+            [
+              0.272544264793396,
+              -0.06980171799659729,
+              -0.1528295874595642
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17054,
+          "second_triangle": 17059,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2717532217502594,
+              -0.07023828476667404,
+              -0.15297138690948486
+            ],
+            [
+              0.272544264793396,
+              -0.06980171799659729,
+              -0.1528295874595642
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17054,
+          "second_triangle": 17058,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2713465690612793,
+              -0.0708865225315094,
+              -0.1530769318342209
+            ],
+            [
+              0.2717532217502594,
+              -0.07023828476667404,
+              -0.15297138690948486
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17053,
+          "second_triangle": 17060,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2726879119873047,
+              -0.06964294612407684,
+              -0.1528405100107193
+            ],
+            [
+              0.2726218104362488,
+              -0.06968545913696289,
+              -0.1528100222349167
+            ]
+          ]
+        },
+        {
+          "first_triangle": 17055,
+          "second_triangle": 17058,
+          "source_faces": [
+            -1,
+            -1
+          ],
+          "contact_positions_world": [
+            [
+              0.2713465690612793,
+              -0.0708865225315094,
+              -0.1530769318342209
+            ],
+            [
+              0.27090832591056824,
+              -0.07115595787763596,
+              -0.15308377146720886
+            ]
+          ]
+        }
+      ],
+      "sealed_contact_max_distance_to_aperture_source_units": 0.0009490752958704039,
+      "sealed_front_visible_cavity_samples": [],
+      "sealed_front_ray_grid": {
+        "y_samples": 317,
+        "z_samples": 81,
+        "spacing": 0.0005
+      }
+    },
+    {
+      "name": "open-half",
+      "values": {
+        "jawOpen_A": 0.5
+      },
+      "mesh_topology": {
+        "tripo_node_91cffa7c": {
+          "boundary_edges": 1140,
+          "nonmanifold_edges": 1
+        },
+        "Ren_P2_UpperTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_LowerTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_Tongue": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        }
+      },
+      "collisions": {
+        "Ren_P2_UpperTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_Tongue / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_LowerTeeth": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        }
+      },
+      "intersection_limit": "Nonparallel segment/triangle narrow phase; coplanar overlap is not certified by this test.",
+      "new_cavity_vs_nonadjacent_head_triangle_intersections": []
+    },
+    {
+      "name": "open-A",
+      "values": {
+        "jawOpen_A": 1
+      },
+      "mesh_topology": {
+        "tripo_node_91cffa7c": {
+          "boundary_edges": 1140,
+          "nonmanifold_edges": 1
+        },
+        "Ren_P2_UpperTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_LowerTeeth": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        },
+        "Ren_P2_Tongue": {
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0
+        }
+      },
+      "collisions": {
+        "Ren_P2_UpperTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_Tongue / tripo_node_91cffa7c": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_LowerTeeth": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_UpperTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        },
+        "Ren_P2_LowerTeeth / Ren_P2_Tongue": {
+          "bvh_candidates": 0,
+          "segment_triangle_intersections": []
+        }
+      },
+      "intersection_limit": "Nonparallel segment/triangle narrow phase; coplanar overlap is not certified by this test.",
+      "new_cavity_vs_nonadjacent_head_triangle_intersections": []
+    }
+  ],
+  "saved_native_face_mismatches": [],
+  "saved_native_loop_uv_max_error": 0.0,
+  "saved_removed_source_vertex_ids_exact": true,
+  "aperture_edges_with_exactly_one_native_and_one_new_face": 55,
+  "aperture_edge_count": 55,
+  "source_attribute_contract": {
+    "tripo_node_91cffa7c": {
+      "vertex": {
+        "type": "INT",
+        "domain": "POINT"
+      },
+      "face": {
+        "type": "INT",
+        "domain": "FACE"
+      },
+      "all_new_ids_minus_one": null
+    },
+    "Ren_P2_UpperTeeth": {
+      "vertex": {
+        "type": "INT",
+        "domain": "POINT"
+      },
+      "face": {
+        "type": "INT",
+        "domain": "FACE"
+      },
+      "all_new_ids_minus_one": true
+    },
+    "Ren_P2_LowerTeeth": {
+      "vertex": {
+        "type": "INT",
+        "domain": "POINT"
+      },
+      "face": {
+        "type": "INT",
+        "domain": "FACE"
+      },
+      "all_new_ids_minus_one": true
+    },
+    "Ren_P2_Tongue": {
+      "vertex": {
+        "type": "INT",
+        "domain": "POINT"
+      },
+      "face": {
+        "type": "INT",
+        "domain": "FACE"
+      },
+      "all_new_ids_minus_one": true
+    }
+  },
+  "acceptance": {
+    "oral_parts_clear_in_five_poses": true,
+    "cavity_clear_in_four_nonsealed_poses": true,
+    "sealed_contacts_confined_within_001_source_units_of_wet_line": true,
+    "sealed_front_sampling_exposes_no_cavity": true,
+    "native_shape_delta_readback_within_1e7_tolerance": true
+  }
+}

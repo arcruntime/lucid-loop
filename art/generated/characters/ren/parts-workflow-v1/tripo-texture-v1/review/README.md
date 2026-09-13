@@ -1,0 +1,11 @@
+# Actual Tripo texture trial review
+
+The static provider result and exact embedded textures are exported in ../unity-export/. unity-manifest.json supplies all 14 material mappings. FBX SHA256: bf34ba498d39edca1a772a3141a5908369cb73ddb7406d6d627e39d327dd18b0. No provider geometry corrections or authored-eye substitutions were made.
+
+Blender 5.1.1 completed audit, export and six 1024px captures with exit 0. Front, quarter and profile unlit views show detailed painted makeup, realistic lips and gray irises. Neutral PBR lighting accentuates the realistic finish. This is an experimental comparison, not accepted anime likeness or a replacement for the working morph head.
+
+The GLB itself has UV0 only on the head and two scleras. Eleven other objects have no texture coordinates; irises retain COLOR_0/COLOR_1. The manifest explicitly declares missing UVs and iris vertex color. Unity must preserve the missing-UV default sampling and COLOR_0 instead of fabricating coordinates. Extracted images are exact original bytes: 42 maps, including three 8192-square head maps. Base color is sRGB; normal and metallic/roughness data are linear. FBX image-path warnings during Blender save retained packed images; Unity uses the explicit extracted-texture mapping.
+
+Geometry audit finds 24,420 triangles in both input and output, identity axis and zero bbox-centering translation. Positions are NOT exact: bidirectional nearest-point error reaches 0.000247978 native units. The initial global nearest correspondence leaves 11 triangle instances unmatched; tightly adjacent mouth points make this correspondence ambiguous, so this is not proof of 11 actual topology edits. Existing matched UV corners agree within 1e-6; 2,694 triangles acquired UVs where upload had none. A follow-up float16 rounding hypothesis does not explain the position drift and must not be treated as preservation proof. No rigid transform eliminates the recorded drift. Treat this as a static texture donor candidate; do not overwrite the working geometry or controls.
+
+completion.json confirms the submitted GLB, returned GLB and working face blend hashes remained unchanged. geometry-audit.json, textures-materials.json and captures.json retain numerical/raw provenance. quantization-audit.json is a diagnostic hypothesis test only.

@@ -1,0 +1,1392 @@
+{
+  "images": [
+    {
+      "index": 0,
+      "name": "Ren_Eye_L_Iris_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\00_Ren_Eye_L_Iris_normal.jpg",
+      "sha256": "336b4d6e4e80bfffec12b0d3a77b7f90baf201a624042b494f625bec8fd72ecf",
+      "bytes": 3927,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        256,
+        256
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Ren_Eye_L_Iris_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\01_Ren_Eye_L_Iris_base_color.jpg",
+      "sha256": "dbda3df65f1d77e84d242068f6ca0d00234e8ee4b2a4d627e7f8c70435420f63",
+      "bytes": 19399,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        256,
+        256
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Ren_Eye_L_Iris_metallic-Ren_Eye_L_Iris_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\02_Ren_Eye_L_Iris_metallic-Ren_Eye_L_Iris_roughness.png",
+      "sha256": "42edcb575f0320e4022319c27d3e64030cd38c540cd31fc955a91c3ff53a276b",
+      "bytes": 63739,
+      "mime_type": "image/png",
+      "resolution": [
+        256,
+        256
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Ren_Eye_L_Sclera_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\03_Ren_Eye_L_Sclera_normal.jpg",
+      "sha256": "9516f5c40709cc3b5cea44cb4137fff4744481eb849b3ae3a6723f927277f84d",
+      "bytes": 24694,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Ren_Eye_L_Sclera_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\04_Ren_Eye_L_Sclera_base_color.jpg",
+      "sha256": "5d57048c418ba32350753635bc106e7994596ee0f9ba2244b156c23ae7e965e7",
+      "bytes": 73804,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Ren_Eye_L_Sclera_metallic-Ren_Eye_L_Sclera_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\05_Ren_Eye_L_Sclera_metallic-Ren_Eye_L_Sclera_roughness.png",
+      "sha256": "c65b1a581f4c959342659175dc4c0d8e13699c524cd7379543e6fad543d7cfff",
+      "bytes": 624668,
+      "mime_type": "image/png",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Ren_Eye_L_UpperLiner_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\06_Ren_Eye_L_UpperLiner_normal.jpg",
+      "sha256": "ca091a999c0c55ef233ee6be73cb3c2c3df3d8ca8c2c333c69885fb70b456631",
+      "bytes": 4397,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        128,
+        128
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Ren_Eye_L_UpperLiner_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\07_Ren_Eye_L_UpperLiner_base_color.jpg",
+      "sha256": "307b605d9fbc84bc4436ba0b46788e1c8e8502202f9168bb86bbde596bb4b14c",
+      "bytes": 6894,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        128,
+        128
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Ren_Eye_L_UpperLiner_metallic-Ren_Eye_L_UpperLiner_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\08_Ren_Eye_L_UpperLiner_metallic-Ren_Eye_L_UpperLiner_roughness.png",
+      "sha256": "68b548a88dae188cd74237c128c0a33a2fcd56851bac905ed8c8651ebf93550a",
+      "bytes": 15903,
+      "mime_type": "image/png",
+      "resolution": [
+        128,
+        128
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Ren_Eye_L_OuterLash_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\09_Ren_Eye_L_OuterLash_normal.jpg",
+      "sha256": "ef84583962ce4d5b0c70ce005abe02812865694f8b3f77804b91dbc7d82f944c",
+      "bytes": 1174,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        64,
+        64
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Ren_Eye_L_OuterLash_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\10_Ren_Eye_L_OuterLash_base_color.jpg",
+      "sha256": "db0635e2dc04e0f39bfed110efeb92afc4691c78e9ea24582f3ff70f97027bd4",
+      "bytes": 1928,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        64,
+        64
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Ren_Eye_L_OuterLash_metallic-Ren_Eye_L_OuterLash_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\11_Ren_Eye_L_OuterLash_metallic-Ren_Eye_L_OuterLash_roughness.png",
+      "sha256": "ba97ad494c1018516aec3aaf5f96fd842d0f72a69edf7b28f9a275aa2b83a18b",
+      "bytes": 4066,
+      "mime_type": "image/png",
+      "resolution": [
+        64,
+        64
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Ren_Eye_L_LowerLiner_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\12_Ren_Eye_L_LowerLiner_normal.jpg",
+      "sha256": "e6af20601580d425b00249e5a288bafb7a2601436c8345f4a3b42d801aa700a9",
+      "bytes": 829,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        32,
+        32
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Ren_Eye_L_LowerLiner_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\13_Ren_Eye_L_LowerLiner_base_color.jpg",
+      "sha256": "9645f374a4c4395ee9c2c758db7dc270e78cae615daf53dc2b54704a523c325e",
+      "bytes": 1218,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        32,
+        32
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Ren_Eye_L_LowerLiner_metallic-Ren_Eye_L_LowerLiner_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\14_Ren_Eye_L_LowerLiner_metallic-Ren_Eye_L_LowerLiner_roughness.png",
+      "sha256": "3d0292c1673810ca1bd70af1a173fd5a9606c93e4d101bec3bc2141f6f6bd9d8",
+      "bytes": 1426,
+      "mime_type": "image/png",
+      "resolution": [
+        32,
+        32
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Ren_Eye_R_Iris_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\15_Ren_Eye_R_Iris_normal.jpg",
+      "sha256": "c41f128e041deb2085548f364bb0c8daf2054f6defab15706da12948befd8a4a",
+      "bytes": 4242,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        256,
+        256
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Ren_Eye_R_Iris_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\16_Ren_Eye_R_Iris_base_color.jpg",
+      "sha256": "3207e3762d02b0a97313419d6b5e22fd019dcd70b631ecb99267cbf8e3cc2a08",
+      "bytes": 19230,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        256,
+        256
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Ren_Eye_R_Iris_metallic-Ren_Eye_R_Iris_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\17_Ren_Eye_R_Iris_metallic-Ren_Eye_R_Iris_roughness.png",
+      "sha256": "cd933b86357c0dcc4258715ce6cf74a62bdcea9412bc46223c4715b68e64340c",
+      "bytes": 64317,
+      "mime_type": "image/png",
+      "resolution": [
+        256,
+        256
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Ren_Eye_R_LowerLiner_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\18_Ren_Eye_R_LowerLiner_normal.jpg",
+      "sha256": "441e52c7bdee3817784abb5bfdaa6fdcde6a894f96ed2470fdacc5bcf4907c8e",
+      "bytes": 876,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        32,
+        32
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Ren_Eye_R_LowerLiner_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\19_Ren_Eye_R_LowerLiner_base_color.jpg",
+      "sha256": "225d91d856dd83fd454cd114850057f2d896cc011a5d13c9aca5fe8449f00ce9",
+      "bytes": 1252,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        32,
+        32
+      ]
+    },
+    {
+      "index": 20,
+      "name": "Ren_Eye_R_LowerLiner_metallic-Ren_Eye_R_LowerLiner_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\20_Ren_Eye_R_LowerLiner_metallic-Ren_Eye_R_LowerLiner_roughness.png",
+      "sha256": "34e3c07bffb762aca5b1b9dcf02ba3d713346eb0aecd7bbc9a583f12c9f0d8f4",
+      "bytes": 1622,
+      "mime_type": "image/png",
+      "resolution": [
+        32,
+        32
+      ]
+    },
+    {
+      "index": 21,
+      "name": "Ren_Eye_R_OuterLash_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\21_Ren_Eye_R_OuterLash_normal.jpg",
+      "sha256": "96d8ed79883ec7bcd71d437e1f647c6eb0685c41557a2507c2dd1c88ec8fed33",
+      "bytes": 1836,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        64,
+        64
+      ]
+    },
+    {
+      "index": 22,
+      "name": "Ren_Eye_R_OuterLash_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\22_Ren_Eye_R_OuterLash_base_color.jpg",
+      "sha256": "0c96aef5a3d058bdd2ab5013f9928b9d81f440cc07fcbbdb791578699e4d093b",
+      "bytes": 2231,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        64,
+        64
+      ]
+    },
+    {
+      "index": 23,
+      "name": "Ren_Eye_R_OuterLash_metallic-Ren_Eye_R_OuterLash_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\23_Ren_Eye_R_OuterLash_metallic-Ren_Eye_R_OuterLash_roughness.png",
+      "sha256": "5209aeb144d6de4e9a066a628678fbd2f7207a8972bbffde292feaa57dbb8300",
+      "bytes": 3966,
+      "mime_type": "image/png",
+      "resolution": [
+        64,
+        64
+      ]
+    },
+    {
+      "index": 24,
+      "name": "Ren_Eye_R_Sclera_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\24_Ren_Eye_R_Sclera_normal.jpg",
+      "sha256": "1d3f098895da329210f486a3f609be46b8f345c796e417e210c921e30a33c3e5",
+      "bytes": 25284,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 25,
+      "name": "Ren_Eye_R_Sclera_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\25_Ren_Eye_R_Sclera_base_color.jpg",
+      "sha256": "354cddba716020e5e8c7b7b296ee70c79e8469fa2f8f54a68b642840aba629f0",
+      "bytes": 74050,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 26,
+      "name": "Ren_Eye_R_Sclera_metallic-Ren_Eye_R_Sclera_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\26_Ren_Eye_R_Sclera_metallic-Ren_Eye_R_Sclera_roughness.png",
+      "sha256": "f0cb431210c8c7f59c5247d6c052e49c7472f2909b417a66ce41cffba6194759",
+      "bytes": 614514,
+      "mime_type": "image/png",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 27,
+      "name": "Ren_Eye_R_UpperLiner_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\27_Ren_Eye_R_UpperLiner_normal.jpg",
+      "sha256": "754bbc68d9a6f38ba937a36c283214f1ff00d53f6f0193b175caa3f7dede8cab",
+      "bytes": 5908,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        128,
+        128
+      ]
+    },
+    {
+      "index": 28,
+      "name": "Ren_Eye_R_UpperLiner_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\28_Ren_Eye_R_UpperLiner_base_color.jpg",
+      "sha256": "160eb3f571ddd5f51263cc433125d596ddedfe69d9552b01d82037459adef010",
+      "bytes": 6880,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        128,
+        128
+      ]
+    },
+    {
+      "index": 29,
+      "name": "Ren_Eye_R_UpperLiner_metallic-Ren_Eye_R_UpperLiner_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\29_Ren_Eye_R_UpperLiner_metallic-Ren_Eye_R_UpperLiner_roughness.png",
+      "sha256": "3dff5b721b91c83a572d829f3ec99ac144428329f4b87fb82e2fd042d10d27b6",
+      "bytes": 16041,
+      "mime_type": "image/png",
+      "resolution": [
+        128,
+        128
+      ]
+    },
+    {
+      "index": 30,
+      "name": "Ren_P2_LowerTeeth_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\30_Ren_P2_LowerTeeth_normal.jpg",
+      "sha256": "67e5dfec31f2e3485dee7d33807efc734945d846ded230688858e45ead33715e",
+      "bytes": 5045,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        512,
+        512
+      ]
+    },
+    {
+      "index": 31,
+      "name": "Ren_P2_LowerTeeth_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\31_Ren_P2_LowerTeeth_base_color.jpg",
+      "sha256": "7475b71a848b44d0590fc2d46b52f4793e96a53e7691379719ea1c89675a7a78",
+      "bytes": 58171,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        512,
+        512
+      ]
+    },
+    {
+      "index": 32,
+      "name": "Ren_P2_LowerTeeth_metallic-Ren_P2_LowerTeeth_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\32_Ren_P2_LowerTeeth_metallic-Ren_P2_LowerTeeth_roughness.png",
+      "sha256": "f34ea3da8f3ea67a2fc48ba8a2af944d8edec9010b2c4c603f8535912cde33f0",
+      "bytes": 223727,
+      "mime_type": "image/png",
+      "resolution": [
+        512,
+        512
+      ]
+    },
+    {
+      "index": 33,
+      "name": "Ren_P2_UpperTeeth_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\33_Ren_P2_UpperTeeth_normal.jpg",
+      "sha256": "7eeaf2b235bb950d1150514987d45fe32e990afc09a88a23e9e23ab06efe0417",
+      "bytes": 4768,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        512,
+        512
+      ]
+    },
+    {
+      "index": 34,
+      "name": "Ren_P2_UpperTeeth_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\34_Ren_P2_UpperTeeth_base_color.jpg",
+      "sha256": "3673b645ee2388af6fcdc5713d63987fafeabc86c48fc166baa3f24cbb9e12db",
+      "bytes": 52202,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        512,
+        512
+      ]
+    },
+    {
+      "index": 35,
+      "name": "Ren_P2_UpperTeeth_metallic-Ren_P2_UpperTeeth_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\35_Ren_P2_UpperTeeth_metallic-Ren_P2_UpperTeeth_roughness.png",
+      "sha256": "79943bd584af21a917f8b8bf66646e3187f3c025629f8a197fbcd4058b7d2aa9",
+      "bytes": 200054,
+      "mime_type": "image/png",
+      "resolution": [
+        512,
+        512
+      ]
+    },
+    {
+      "index": 36,
+      "name": "Ren_P2_Tongue_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\36_Ren_P2_Tongue_normal.jpg",
+      "sha256": "49c8a6b124629d7edebe26f3a0629e47115222d836334284cc2ace17a42b010f",
+      "bytes": 17471,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 37,
+      "name": "Ren_P2_Tongue_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\37_Ren_P2_Tongue_base_color.jpg",
+      "sha256": "9c5e19ddc4116f5497f719296f6499aa642903c5bcf8fd1ccf080d014bdad3b5",
+      "bytes": 92193,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 38,
+      "name": "Ren_P2_Tongue_metallic-Ren_P2_Tongue_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\38_Ren_P2_Tongue_metallic-Ren_P2_Tongue_roughness.png",
+      "sha256": "6d18ab6fb0ad3b78475d2a65551e55c0c0560cb6da86a4efc1055535a1e610fb",
+      "bytes": 525325,
+      "mime_type": "image/png",
+      "resolution": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "index": 39,
+      "name": "Ren_Head_normal",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\39_Ren_Head_normal.jpg",
+      "sha256": "b7fd545e5930b116f59a7085491cc2837c68e2bd7f714d19d2f7356d27f333aa",
+      "bytes": 2500746,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        8192,
+        8192
+      ]
+    },
+    {
+      "index": 40,
+      "name": "Ren_Head_base_color",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\40_Ren_Head_base_color.jpg",
+      "sha256": "f1fd8a84af551f6ff9a4357d9c711c5994fe6a028f3d6d5919f57989f81af254",
+      "bytes": 6583457,
+      "mime_type": "image/jpeg",
+      "resolution": [
+        8192,
+        8192
+      ]
+    },
+    {
+      "index": 41,
+      "name": "Ren_Head_metallic-Ren_Head_roughness",
+      "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\41_Ren_Head_metallic-Ren_Head_roughness.png",
+      "sha256": "e701c0a70050af90bca2578eb06a6b9585f6a1a8fbbebaae47af715a2cc1e6e9",
+      "bytes": 13677652,
+      "mime_type": "image/png",
+      "resolution": [
+        8192,
+        8192
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "sourceName": "Ren_Eye_L_Iris_material",
+      "baseColor": {
+        "index": 1,
+        "name": "Ren_Eye_L_Iris_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\01_Ren_Eye_L_Iris_base_color.jpg",
+        "sha256": "dbda3df65f1d77e84d242068f6ca0d00234e8ee4b2a4d627e7f8c70435420f63",
+        "bytes": 19399,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          256,
+          256
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 0,
+        "name": "Ren_Eye_L_Iris_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\00_Ren_Eye_L_Iris_normal.jpg",
+        "sha256": "336b4d6e4e80bfffec12b0d3a77b7f90baf201a624042b494f625bec8fd72ecf",
+        "bytes": 3927,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          256,
+          256
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 2,
+        "name": "Ren_Eye_L_Iris_metallic-Ren_Eye_L_Iris_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\02_Ren_Eye_L_Iris_metallic-Ren_Eye_L_Iris_roughness.png",
+        "sha256": "42edcb575f0320e4022319c27d3e64030cd38c540cd31fc955a91c3ff53a276b",
+        "bytes": 63739,
+        "mime_type": "image/png",
+        "resolution": [
+          256,
+          256
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 1,
+      "sourceName": "Ren_Eye_L_Sclera_material",
+      "baseColor": {
+        "index": 4,
+        "name": "Ren_Eye_L_Sclera_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\04_Ren_Eye_L_Sclera_base_color.jpg",
+        "sha256": "5d57048c418ba32350753635bc106e7994596ee0f9ba2244b156c23ae7e965e7",
+        "bytes": 73804,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 3,
+        "name": "Ren_Eye_L_Sclera_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\03_Ren_Eye_L_Sclera_normal.jpg",
+        "sha256": "9516f5c40709cc3b5cea44cb4137fff4744481eb849b3ae3a6723f927277f84d",
+        "bytes": 24694,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 5,
+        "name": "Ren_Eye_L_Sclera_metallic-Ren_Eye_L_Sclera_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\05_Ren_Eye_L_Sclera_metallic-Ren_Eye_L_Sclera_roughness.png",
+        "sha256": "c65b1a581f4c959342659175dc4c0d8e13699c524cd7379543e6fad543d7cfff",
+        "bytes": 624668,
+        "mime_type": "image/png",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 2,
+      "sourceName": "Ren_Eye_L_UpperLiner_material",
+      "baseColor": {
+        "index": 7,
+        "name": "Ren_Eye_L_UpperLiner_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\07_Ren_Eye_L_UpperLiner_base_color.jpg",
+        "sha256": "307b605d9fbc84bc4436ba0b46788e1c8e8502202f9168bb86bbde596bb4b14c",
+        "bytes": 6894,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          128,
+          128
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 6,
+        "name": "Ren_Eye_L_UpperLiner_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\06_Ren_Eye_L_UpperLiner_normal.jpg",
+        "sha256": "ca091a999c0c55ef233ee6be73cb3c2c3df3d8ca8c2c333c69885fb70b456631",
+        "bytes": 4397,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          128,
+          128
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 8,
+        "name": "Ren_Eye_L_UpperLiner_metallic-Ren_Eye_L_UpperLiner_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\08_Ren_Eye_L_UpperLiner_metallic-Ren_Eye_L_UpperLiner_roughness.png",
+        "sha256": "68b548a88dae188cd74237c128c0a33a2fcd56851bac905ed8c8651ebf93550a",
+        "bytes": 15903,
+        "mime_type": "image/png",
+        "resolution": [
+          128,
+          128
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 3,
+      "sourceName": "Ren_Eye_L_OuterLash_material",
+      "baseColor": {
+        "index": 10,
+        "name": "Ren_Eye_L_OuterLash_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\10_Ren_Eye_L_OuterLash_base_color.jpg",
+        "sha256": "db0635e2dc04e0f39bfed110efeb92afc4691c78e9ea24582f3ff70f97027bd4",
+        "bytes": 1928,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          64,
+          64
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 9,
+        "name": "Ren_Eye_L_OuterLash_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\09_Ren_Eye_L_OuterLash_normal.jpg",
+        "sha256": "ef84583962ce4d5b0c70ce005abe02812865694f8b3f77804b91dbc7d82f944c",
+        "bytes": 1174,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          64,
+          64
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 11,
+        "name": "Ren_Eye_L_OuterLash_metallic-Ren_Eye_L_OuterLash_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\11_Ren_Eye_L_OuterLash_metallic-Ren_Eye_L_OuterLash_roughness.png",
+        "sha256": "ba97ad494c1018516aec3aaf5f96fd842d0f72a69edf7b28f9a275aa2b83a18b",
+        "bytes": 4066,
+        "mime_type": "image/png",
+        "resolution": [
+          64,
+          64
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 4,
+      "sourceName": "Ren_Eye_L_LowerLiner_material",
+      "baseColor": {
+        "index": 13,
+        "name": "Ren_Eye_L_LowerLiner_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\13_Ren_Eye_L_LowerLiner_base_color.jpg",
+        "sha256": "9645f374a4c4395ee9c2c758db7dc270e78cae615daf53dc2b54704a523c325e",
+        "bytes": 1218,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          32,
+          32
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 12,
+        "name": "Ren_Eye_L_LowerLiner_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\12_Ren_Eye_L_LowerLiner_normal.jpg",
+        "sha256": "e6af20601580d425b00249e5a288bafb7a2601436c8345f4a3b42d801aa700a9",
+        "bytes": 829,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          32,
+          32
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 14,
+        "name": "Ren_Eye_L_LowerLiner_metallic-Ren_Eye_L_LowerLiner_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\14_Ren_Eye_L_LowerLiner_metallic-Ren_Eye_L_LowerLiner_roughness.png",
+        "sha256": "3d0292c1673810ca1bd70af1a173fd5a9606c93e4d101bec3bc2141f6f6bd9d8",
+        "bytes": 1426,
+        "mime_type": "image/png",
+        "resolution": [
+          32,
+          32
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 5,
+      "sourceName": "Ren_Eye_R_Iris_material",
+      "baseColor": {
+        "index": 16,
+        "name": "Ren_Eye_R_Iris_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\16_Ren_Eye_R_Iris_base_color.jpg",
+        "sha256": "3207e3762d02b0a97313419d6b5e22fd019dcd70b631ecb99267cbf8e3cc2a08",
+        "bytes": 19230,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          256,
+          256
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 15,
+        "name": "Ren_Eye_R_Iris_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\15_Ren_Eye_R_Iris_normal.jpg",
+        "sha256": "c41f128e041deb2085548f364bb0c8daf2054f6defab15706da12948befd8a4a",
+        "bytes": 4242,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          256,
+          256
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 17,
+        "name": "Ren_Eye_R_Iris_metallic-Ren_Eye_R_Iris_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\17_Ren_Eye_R_Iris_metallic-Ren_Eye_R_Iris_roughness.png",
+        "sha256": "cd933b86357c0dcc4258715ce6cf74a62bdcea9412bc46223c4715b68e64340c",
+        "bytes": 64317,
+        "mime_type": "image/png",
+        "resolution": [
+          256,
+          256
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 6,
+      "sourceName": "Ren_Eye_R_LowerLiner_material",
+      "baseColor": {
+        "index": 19,
+        "name": "Ren_Eye_R_LowerLiner_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\19_Ren_Eye_R_LowerLiner_base_color.jpg",
+        "sha256": "225d91d856dd83fd454cd114850057f2d896cc011a5d13c9aca5fe8449f00ce9",
+        "bytes": 1252,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          32,
+          32
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 18,
+        "name": "Ren_Eye_R_LowerLiner_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\18_Ren_Eye_R_LowerLiner_normal.jpg",
+        "sha256": "441e52c7bdee3817784abb5bfdaa6fdcde6a894f96ed2470fdacc5bcf4907c8e",
+        "bytes": 876,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          32,
+          32
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 20,
+        "name": "Ren_Eye_R_LowerLiner_metallic-Ren_Eye_R_LowerLiner_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\20_Ren_Eye_R_LowerLiner_metallic-Ren_Eye_R_LowerLiner_roughness.png",
+        "sha256": "34e3c07bffb762aca5b1b9dcf02ba3d713346eb0aecd7bbc9a583f12c9f0d8f4",
+        "bytes": 1622,
+        "mime_type": "image/png",
+        "resolution": [
+          32,
+          32
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 7,
+      "sourceName": "Ren_Eye_R_OuterLash_material",
+      "baseColor": {
+        "index": 22,
+        "name": "Ren_Eye_R_OuterLash_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\22_Ren_Eye_R_OuterLash_base_color.jpg",
+        "sha256": "0c96aef5a3d058bdd2ab5013f9928b9d81f440cc07fcbbdb791578699e4d093b",
+        "bytes": 2231,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          64,
+          64
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 21,
+        "name": "Ren_Eye_R_OuterLash_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\21_Ren_Eye_R_OuterLash_normal.jpg",
+        "sha256": "96d8ed79883ec7bcd71d437e1f647c6eb0685c41557a2507c2dd1c88ec8fed33",
+        "bytes": 1836,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          64,
+          64
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 23,
+        "name": "Ren_Eye_R_OuterLash_metallic-Ren_Eye_R_OuterLash_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\23_Ren_Eye_R_OuterLash_metallic-Ren_Eye_R_OuterLash_roughness.png",
+        "sha256": "5209aeb144d6de4e9a066a628678fbd2f7207a8972bbffde292feaa57dbb8300",
+        "bytes": 3966,
+        "mime_type": "image/png",
+        "resolution": [
+          64,
+          64
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 8,
+      "sourceName": "Ren_Eye_R_Sclera_material",
+      "baseColor": {
+        "index": 25,
+        "name": "Ren_Eye_R_Sclera_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\25_Ren_Eye_R_Sclera_base_color.jpg",
+        "sha256": "354cddba716020e5e8c7b7b296ee70c79e8469fa2f8f54a68b642840aba629f0",
+        "bytes": 74050,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 24,
+        "name": "Ren_Eye_R_Sclera_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\24_Ren_Eye_R_Sclera_normal.jpg",
+        "sha256": "1d3f098895da329210f486a3f609be46b8f345c796e417e210c921e30a33c3e5",
+        "bytes": 25284,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 26,
+        "name": "Ren_Eye_R_Sclera_metallic-Ren_Eye_R_Sclera_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\26_Ren_Eye_R_Sclera_metallic-Ren_Eye_R_Sclera_roughness.png",
+        "sha256": "f0cb431210c8c7f59c5247d6c052e49c7472f2909b417a66ce41cffba6194759",
+        "bytes": 614514,
+        "mime_type": "image/png",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 9,
+      "sourceName": "Ren_Eye_R_UpperLiner_material",
+      "baseColor": {
+        "index": 28,
+        "name": "Ren_Eye_R_UpperLiner_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\28_Ren_Eye_R_UpperLiner_base_color.jpg",
+        "sha256": "160eb3f571ddd5f51263cc433125d596ddedfe69d9552b01d82037459adef010",
+        "bytes": 6880,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          128,
+          128
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 27,
+        "name": "Ren_Eye_R_UpperLiner_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\27_Ren_Eye_R_UpperLiner_normal.jpg",
+        "sha256": "754bbc68d9a6f38ba937a36c283214f1ff00d53f6f0193b175caa3f7dede8cab",
+        "bytes": 5908,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          128,
+          128
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 29,
+        "name": "Ren_Eye_R_UpperLiner_metallic-Ren_Eye_R_UpperLiner_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\29_Ren_Eye_R_UpperLiner_metallic-Ren_Eye_R_UpperLiner_roughness.png",
+        "sha256": "3dff5b721b91c83a572d829f3ec99ac144428329f4b87fb82e2fd042d10d27b6",
+        "bytes": 16041,
+        "mime_type": "image/png",
+        "resolution": [
+          128,
+          128
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 10,
+      "sourceName": "Ren_P2_LowerTeeth_material",
+      "baseColor": {
+        "index": 31,
+        "name": "Ren_P2_LowerTeeth_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\31_Ren_P2_LowerTeeth_base_color.jpg",
+        "sha256": "7475b71a848b44d0590fc2d46b52f4793e96a53e7691379719ea1c89675a7a78",
+        "bytes": 58171,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          512,
+          512
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 30,
+        "name": "Ren_P2_LowerTeeth_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\30_Ren_P2_LowerTeeth_normal.jpg",
+        "sha256": "67e5dfec31f2e3485dee7d33807efc734945d846ded230688858e45ead33715e",
+        "bytes": 5045,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          512,
+          512
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 32,
+        "name": "Ren_P2_LowerTeeth_metallic-Ren_P2_LowerTeeth_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\32_Ren_P2_LowerTeeth_metallic-Ren_P2_LowerTeeth_roughness.png",
+        "sha256": "f34ea3da8f3ea67a2fc48ba8a2af944d8edec9010b2c4c603f8535912cde33f0",
+        "bytes": 223727,
+        "mime_type": "image/png",
+        "resolution": [
+          512,
+          512
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 11,
+      "sourceName": "Ren_P2_UpperTeeth_material",
+      "baseColor": {
+        "index": 34,
+        "name": "Ren_P2_UpperTeeth_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\34_Ren_P2_UpperTeeth_base_color.jpg",
+        "sha256": "3673b645ee2388af6fcdc5713d63987fafeabc86c48fc166baa3f24cbb9e12db",
+        "bytes": 52202,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          512,
+          512
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 33,
+        "name": "Ren_P2_UpperTeeth_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\33_Ren_P2_UpperTeeth_normal.jpg",
+        "sha256": "7eeaf2b235bb950d1150514987d45fe32e990afc09a88a23e9e23ab06efe0417",
+        "bytes": 4768,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          512,
+          512
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 35,
+        "name": "Ren_P2_UpperTeeth_metallic-Ren_P2_UpperTeeth_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\35_Ren_P2_UpperTeeth_metallic-Ren_P2_UpperTeeth_roughness.png",
+        "sha256": "79943bd584af21a917f8b8bf66646e3187f3c025629f8a197fbcd4058b7d2aa9",
+        "bytes": 200054,
+        "mime_type": "image/png",
+        "resolution": [
+          512,
+          512
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 12,
+      "sourceName": "Ren_P2_Tongue_material",
+      "baseColor": {
+        "index": 37,
+        "name": "Ren_P2_Tongue_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\37_Ren_P2_Tongue_base_color.jpg",
+        "sha256": "9c5e19ddc4116f5497f719296f6499aa642903c5bcf8fd1ccf080d014bdad3b5",
+        "bytes": 92193,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 36,
+        "name": "Ren_P2_Tongue_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\36_Ren_P2_Tongue_normal.jpg",
+        "sha256": "49c8a6b124629d7edebe26f3a0629e47115222d836334284cc2ace17a42b010f",
+        "bytes": 17471,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 38,
+        "name": "Ren_P2_Tongue_metallic-Ren_P2_Tongue_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\38_Ren_P2_Tongue_metallic-Ren_P2_Tongue_roughness.png",
+        "sha256": "6d18ab6fb0ad3b78475d2a65551e55c0c0560cb6da86a4efc1055535a1e610fb",
+        "bytes": 525325,
+        "mime_type": "image/png",
+        "resolution": [
+          1024,
+          1024
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "index": 13,
+      "sourceName": "Ren_Head_material",
+      "baseColor": {
+        "index": 40,
+        "name": "Ren_Head_base_color",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\40_Ren_Head_base_color.jpg",
+        "sha256": "f1fd8a84af551f6ff9a4357d9c711c5994fe6a028f3d6d5919f57989f81af254",
+        "bytes": 6583457,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          8192,
+          8192
+        ],
+        "color_space": "sRGB",
+        "channels": "RGBA",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "normal": {
+        "index": 39,
+        "name": "Ren_Head_normal",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\39_Ren_Head_normal.jpg",
+        "sha256": "b7fd545e5930b116f59a7085491cc2837c68e2bd7f714d19d2f7356d27f333aa",
+        "bytes": 2500746,
+        "mime_type": "image/jpeg",
+        "resolution": [
+          8192,
+          8192
+        ],
+        "color_space": "linear",
+        "channels": "OpenGL tangent normal RGB",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "metallicRoughness": {
+        "index": 41,
+        "name": "Ren_Head_metallic-Ren_Head_roughness",
+        "file": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\tripo-texture-v1\\unity-export\\Textures\\41_Ren_Head_metallic-Ren_Head_roughness.png",
+        "sha256": "e701c0a70050af90bca2578eb06a6b9585f6a1a8fbbebaae47af715a2cc1e6e9",
+        "bytes": 13677652,
+        "mime_type": "image/png",
+        "resolution": [
+          8192,
+          8192
+        ],
+        "color_space": "linear",
+        "channels": "roughness G; metallic B",
+        "texcoord": 0,
+        "texture_transform": null
+      },
+      "baseColorFactor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallicFactor": 1,
+      "roughnessFactor": 1,
+      "normalScale": 1,
+      "doubleSided": true,
+      "alphaMode": "OPAQUE"
+    }
+  ]
+}

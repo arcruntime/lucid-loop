@@ -1,0 +1,172 @@
+{
+  "status": "DIAGNOSTIC_ESTIMATES_NOT_GEOMETRIC_REGISTRATION",
+  "coordinate_system": "top-left origin, normalized to guide's 1024-square camera framing",
+  "method": {
+    "iris": "centroid of blue-biased pixels inside manually fixed eye ROIs",
+    "nostril": "centroid of darkest 7 percent of pixels inside fixed nostril ROIs",
+    "mouth": "median darkest row across central mouth columns",
+    "silhouette": "largest warm-color component, filled internal holes; nearest coordinate sampling for comparison only"
+  },
+  "limitations": [
+    "Changes to pigment, liner, light and highlights bias appearance centroids; these are estimates, not exact mesh landmarks.",
+    "No image pixels or original PNG bytes are modified by this analysis.",
+    "Similar silhouette overlap does not establish facial feature alignment or projection approval."
+  ],
+  "images": [
+    {
+      "file": "guides\\front-neutral-skin-with-eyes.png",
+      "width": 1024,
+      "height": 1024,
+      "sha256": "5377d72436cbbcc57fa00ab21068565c57fbefc24c5f238c41e04f05c0bfbdf0",
+      "appearance_landmarks_normalized_1024": {
+        "left_iris": {
+          "x": 402.58350515463917,
+          "y": 439.1711340206185,
+          "supporting_pixels": 970
+        },
+        "right_iris": {
+          "x": 620.6989690721649,
+          "y": 439.1690721649485,
+          "supporting_pixels": 970
+        },
+        "left_nostril": {
+          "x": 487.64166666666665,
+          "y": 556.3166666666667,
+          "supporting_pixels": 120
+        },
+        "right_nostril": {
+          "x": 533.8811881188119,
+          "y": 556.4356435643564,
+          "supporting_pixels": 101
+        },
+        "mouth_seam": {
+          "y": 645.0
+        }
+      },
+      "estimated_silhouette_bbox_normalized_1024": [
+        210,
+        55,
+        813,
+        968
+      ]
+    },
+    {
+      "file": "painted-views\\front-paint-v1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "391c592f00b25e2627bce72e403d09614a5af3fd40636a5e31f21f9d5c62d4c8",
+      "appearance_landmarks_normalized_1024": {
+        "left_iris": {
+          "x": 399.5427481764483,
+          "y": 427.6844863857989,
+          "supporting_pixels": 1191
+        },
+        "right_iris": {
+          "x": 624.5284342424916,
+          "y": 427.5304571363199,
+          "supporting_pixels": 1185
+        },
+        "left_nostril": {
+          "x": 489.8152403327316,
+          "y": 553.8610816644224,
+          "supporting_pixels": 167
+        },
+        "right_nostril": {
+          "x": 533.3231935950653,
+          "y": 553.878471011967,
+          "supporting_pixels": 151
+        },
+        "mouth_seam": {
+          "y": 637.7543859649123
+        }
+      },
+      "estimated_silhouette_bbox_normalized_1024": [
+        210,
+        54,
+        812,
+        968
+      ],
+      "estimated_silhouette_iou_to_guide": 0.9932510155652978,
+      "appearance_landmark_delta_to_guide": {
+        "left_iris": {
+          "x": -3.0407569781908705,
+          "y": -11.486647634819633
+        },
+        "right_iris": {
+          "x": 3.829465170326671,
+          "y": -11.638615028628578
+        },
+        "left_nostril": {
+          "x": 2.1735736660649536,
+          "y": -2.4555850022443337
+        },
+        "right_nostril": {
+          "x": -0.5579945237466291,
+          "y": -2.5571725523893747
+        },
+        "mouth_seam": {
+          "y": -7.245614035087669
+        }
+      }
+    },
+    {
+      "file": "painted-views\\front-paint-v2.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8923c7d05fab5e55b1f65cd8e04f59472be2b616b01a015c5f917c82c3745b85",
+      "appearance_landmarks_normalized_1024": {
+        "left_iris": {
+          "x": 398.35971082317604,
+          "y": 414.0661940185567,
+          "supporting_pixels": 1370
+        },
+        "right_iris": {
+          "x": 619.148554874036,
+          "y": 414.36869974964105,
+          "supporting_pixels": 1362
+        },
+        "left_nostril": {
+          "x": 490.94646777371236,
+          "y": 533.985402007693,
+          "supporting_pixels": 170
+        },
+        "right_nostril": {
+          "x": 531.0643691820162,
+          "y": 533.9571150097466,
+          "supporting_pixels": 153
+        },
+        "mouth_seam": {
+          "y": 614.0733652312599
+        }
+      },
+      "estimated_silhouette_bbox_normalized_1024": [
+        208,
+        47,
+        807,
+        953
+      ],
+      "estimated_silhouette_iou_to_guide": 0.9358529910758838,
+      "appearance_landmark_delta_to_guide": {
+        "left_iris": {
+          "x": -4.223794331463125,
+          "y": -25.104940002061824
+        },
+        "right_iris": {
+          "x": -1.5504141981289195,
+          "y": -24.800372415307436
+        },
+        "left_nostril": {
+          "x": 3.304801107045705,
+          "y": -22.331264658973737
+        },
+        "right_nostril": {
+          "x": -2.8168189367956984,
+          "y": -22.47852855460974
+        },
+        "mouth_seam": {
+          "y": -30.926634768740087
+        }
+      }
+    }
+  ]
+}

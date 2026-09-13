@@ -1,0 +1,527 @@
+{
+  "status": "UV_ONLY_ORAL_INTEGRATION_VERIFIED",
+  "source_blend": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\mouth-v1\\corner-clearance-v3\\Ren_P2_Oral_Reconstruction.blend",
+  "source_blend_sha256": "d163c041427ffff60390f2dcae57ca131f8d97b0946fa2499bb5a26ca48f47d5",
+  "derived_blend_sha256": "6996fa0f21c81a3dc3d5629e5840a0b3d9dd362030c1837c2515e0f0b4cf50f2",
+  "blender_version": "5.1.1",
+  "native_mapping": {
+    "mapped_polygons": 8829,
+    "unmapped_polygons": [
+      8829,
+      8830,
+      8831,
+      8832,
+      8833,
+      8834,
+      8835,
+      8836,
+      8837,
+      8838,
+      8839,
+      8840,
+      8841,
+      8842,
+      8843,
+      8844,
+      8845,
+      8846,
+      8847,
+      8848,
+      8849,
+      8850,
+      8851,
+      8852,
+      8853,
+      8854,
+      8855,
+      8856,
+      8857,
+      8858,
+      8859,
+      8860,
+      8861,
+      8862,
+      8863,
+      8864,
+      8865,
+      8866,
+      8867,
+      8868,
+      8869,
+      8870,
+      8871,
+      8872,
+      8873,
+      8874,
+      8875,
+      8876,
+      8877,
+      8878,
+      8879,
+      8880,
+      8881,
+      8882,
+      8883,
+      8884,
+      8885,
+      8886,
+      8887,
+      8888,
+      8889,
+      8890,
+      8891,
+      8892,
+      8893,
+      8894,
+      8895,
+      8896,
+      8897,
+      8898,
+      8899,
+      8900,
+      8901,
+      8902,
+      8903,
+      8904,
+      8905,
+      8906,
+      8907,
+      8908,
+      8909,
+      8910,
+      8911,
+      8912,
+      8913,
+      8914,
+      8915,
+      8916,
+      8917,
+      8918,
+      8919,
+      8920,
+      8921,
+      8922,
+      8923,
+      8924,
+      8925,
+      8926,
+      8927,
+      8928,
+      8929,
+      8930,
+      8931,
+      8932,
+      8933,
+      8934,
+      8935,
+      8936,
+      8937,
+      8938,
+      8939,
+      8940,
+      8941,
+      8942,
+      8943,
+      8944,
+      8945,
+      8946,
+      8947,
+      8948,
+      8949,
+      8950,
+      8951,
+      8952,
+      8953,
+      8954,
+      8955,
+      8956,
+      8957,
+      8958,
+      8959,
+      8960,
+      8961,
+      8962,
+      8963,
+      8964,
+      8965,
+      8966,
+      8967,
+      8968,
+      8969,
+      8970,
+      8971,
+      8972,
+      8973,
+      8974,
+      8975,
+      8976,
+      8977,
+      8978,
+      8979,
+      8980,
+      8981,
+      8982,
+      8983,
+      8984,
+      8985,
+      8986,
+      8987,
+      8988,
+      8989,
+      8990,
+      8991,
+      8992,
+      8993,
+      8994,
+      8995,
+      8996,
+      8997,
+      8998,
+      8999,
+      9000,
+      9001,
+      9002,
+      9003,
+      9004,
+      9005,
+      9006,
+      9007,
+      9008,
+      9009,
+      9010,
+      9011,
+      9012,
+      9013,
+      9014,
+      9015,
+      9016,
+      9017,
+      9018,
+      9019,
+      9020,
+      9021,
+      9022,
+      9023,
+      9024,
+      9025,
+      9026,
+      9027,
+      9028,
+      9029,
+      9030,
+      9031,
+      9032,
+      9033,
+      9034,
+      9035,
+      9036,
+      9037,
+      9038,
+      9039,
+      9040,
+      9041,
+      9042,
+      9043,
+      9044,
+      9045,
+      9046,
+      9047,
+      9048
+    ],
+    "geometry_sha256": "db5896ea4fca49d4af72356a3bb05b0a1603b7642d28dc319a60c47f9377be9e"
+  },
+  "cavity": {
+    "faces": 220,
+    "vertices": 221,
+    "rings": [
+      55,
+      55,
+      55,
+      55
+    ],
+    "radial_fractions": [
+      1,
+      0.72,
+      0.42,
+      0.16
+    ],
+    "reserved_bounds": [
+      [
+        0.9188464137415275,
+        0.3538181818181818
+      ],
+      [
+        0.9811535862584724,
+        0.4207272727272727
+      ]
+    ],
+    "radius": 0.02866129935779463,
+    "method": "arc-length phases; topology-matched concentric cup rings"
+  },
+  "exact_uv_conflicts": 0,
+  "all_mesh_and_shape_signatures": {
+    "Ren_P2_LowerTeeth": {
+      "geometry": "7255601cdb3e3abade2ab9834e5167d84583c96d40b553031572691f142228d4",
+      "shapes": {
+        "use_relative": true,
+        "eval_time": 0.0,
+        "keys": [
+          {
+            "name": "Basis",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "44c944c6d9f0e32ba9c46997755ad3eb44a490ffb4aabb573ec5787490fdb6c2"
+          },
+          {
+            "name": "mouthSeal",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "44c944c6d9f0e32ba9c46997755ad3eb44a490ffb4aabb573ec5787490fdb6c2"
+          },
+          {
+            "name": "jawOpen_A",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "bea9603b7280615ba9db57b084741f0efc4492801d2ee251d0ba7753de253f79"
+          }
+        ]
+      },
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Ren_P2_Tongue": {
+      "geometry": "64e7529f51e85ac6eeea88af4fe62845c0e870db7181c718c4fcbeccfca756fb",
+      "shapes": {
+        "use_relative": true,
+        "eval_time": 0.0,
+        "keys": [
+          {
+            "name": "Basis",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "214e6f496a5487507dffc9f09d4278bee18fc5dcb0b539bf3afa43f1017a3109"
+          },
+          {
+            "name": "mouthSeal",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "214e6f496a5487507dffc9f09d4278bee18fc5dcb0b539bf3afa43f1017a3109"
+          },
+          {
+            "name": "jawOpen_A",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "56c498aeb734c912a00523fbe4fa134761a8ff6136470f09673727e1d51bc8d1"
+          }
+        ]
+      },
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Ren_P2_UpperTeeth": {
+      "geometry": "4ba529d59a3e2a0db2fad6d3e40d26e74e4075a7daff05f619b25f72991d0ea5",
+      "shapes": {
+        "use_relative": true,
+        "eval_time": 0.0,
+        "keys": [
+          {
+            "name": "Basis",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "1cf854c5c316215e0964e889f2721acd1a70d9179b7efd74dc1f362ab780c3e0"
+          },
+          {
+            "name": "mouthSeal",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "1cf854c5c316215e0964e889f2721acd1a70d9179b7efd74dc1f362ab780c3e0"
+          },
+          {
+            "name": "jawOpen_A",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "1cf854c5c316215e0964e889f2721acd1a70d9179b7efd74dc1f362ab780c3e0"
+          }
+        ]
+      },
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "tripo_node_91cffa7c": {
+      "geometry": "db5896ea4fca49d4af72356a3bb05b0a1603b7642d28dc319a60c47f9377be9e",
+      "shapes": {
+        "use_relative": true,
+        "eval_time": 0.0,
+        "keys": [
+          {
+            "name": "Basis",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "03e26c02fa8e992a490aef6f97c3e3b8f57d12918618b6200e1c0b07e75e430e"
+          },
+          {
+            "name": "mouthSeal",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "cc999d3ff3fd602e7e7c8afabe7f099e81da9dac4493dd9ae3f947cfb2f250c9"
+          },
+          {
+            "name": "jawOpen_A",
+            "value": 1.0,
+            "relative_key": "Basis",
+            "slider_min": 0.0,
+            "slider_max": 1.0,
+            "mute": false,
+            "interpolation": "KEY_LINEAR",
+            "coordinates_sha256": "377f2e9d92a52c24369759f7521bfa6707e7f8d593876efe553bb0f7cf4ab258"
+          }
+        ]
+      },
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  },
+  "original_uv_layers_exact": true,
+  "saved_uv_exact": true,
+  "source_file_unchanged": true
+}

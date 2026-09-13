@@ -1,0 +1,49 @@
+# Ren front painting trial v1
+
+This preliminary trial paints appearance over a fixed capture of the **face-integration-v1** mesh. It produces a style reference and alignment evidence. **No painted view has been projected or baked.** The later stitched face/EyeUV geometry needs its own capture before fitting or transfer.
+
+## Review files
+
+- [Actual neutral guide](guides/front-neutral-skin-with-eyes.png): 1024 × 1024.
+- [Painting v1](painted-views/front-paint-v1.png): original 1254 × 1254 tool output. Promising paint style, unaligned facial features.
+- [Painting v2](painted-views/front-paint-v2.png): original 1254 × 1254 tool output. Rejected correction attempt; greater alignment drift.
+- [Full anchor set](front-anchors.json): 27 named anchors per image, native pixels, normalized coordinates, methods and uncertainty.
+- [Measurement report](alignment-review.json): reproducible appearance estimates and estimated silhouette overlap.
+
+V1 gives Ren thinner brows, graphic liner and a more precise muted-rose vermilion contour with a cupid bow and localized highlights. It does not preserve all facial landmarks. The single authorized correction attempt used the actual guide as edit target and V1 only as painting-style reference; it still changed feature placement and framing. No further image-generation retry was performed.
+
+| Diagnostic, normalized to the guide's 1024 frame | V1 | V2 |
+| --- | --- | --- |
+| Left/right iris Y displacement | −11.5 / −11.6 px | −25.1 / −24.8 px |
+| Left/right nostril dark-center Y displacement | −2.5 / −2.6 px | −22.3 / −22.5 px |
+| Central mouth-seam Y displacement | −7.2 px | −30.9 px |
+| Estimated outer silhouette overlap (IoU) | 0.993 | 0.936 |
+
+These are appearance-based estimates, not exact geometric registration. Pigment, shadows and liner bias the measurements. Negative Y means upward. V1's outer silhouette is close while its eye apertures change shape and position; one uniform image shift would not fix all landmarks.
+
+The guide is uniformly shaded clay and has **no painted vermilion boundary**. Its cupid-bow/color-edge anchors are therefore null in the anchor file. The lower-lip form estimate is separate and must not be mistaken for a designed vermilion edge. The rejected broad draft lip-material boundary is not used as the painting target.
+
+## Frozen geometry and capture
+
+[Ren_P2_Source_Integrated_Snapshot.blend](Ren_P2_Source_Integrated_Snapshot.blend) preserves the source file exactly. [Ren_P2_PaintNeutral_Snapshot.blend](Ren_P2_PaintNeutral_Snapshot.blend) freezes the evaluated mouthSeal=1 pose and zeroes other non-Basis poses in a derived static capture. Every evaluated mesh position was checked against its static copy; the head's UVs remain on **FaceUV_v1**. Original shape keys remain in the private source snapshot and the original source file.
+
+The front camera is orthographic, position (3,0,0), target (0,0,0), up Z, scale 1.12, 1024 square. The guide replaces the draft skin and broad rose-lip materials with one uniform skin material and keeps the actual separate eye assemblies visible. The [preparation report](prepare-report.json) records object counts, source hashes, frozen geometry/UV signature, camera and material replacements.
+
+[Geometry capture](geometry-capture/capture.json) includes depth, triangle IDs, geometric normals, visibility, diagnostic clay and a static geometry signature. The separate [eye-exclusion mask](geometry-capture/front-eye-exclusion.png) and [eligible head-skin mask](geometry-capture/front-skin-projection-eligible.png) account for the visible eye assemblies that the helper's head-only raster does not treat as occluders. These masks belong to this exact snapshot.
+
+The strict projection helper rejects degenerate triangles. The contact audit found exactly two zero-area triangles when the mouth is sealed:
+
+| Original source face | Origin | Original material |
+| --- | --- | --- |
+| 1265 | Native lip surface | Ren_Draft_RoseLips |
+| −1 | Generated oral surface | Ren_Oral_Cavity |
+
+Both use coincident source vertices 86/96. They remain in the snapshot; only their zero-area raster work is omitted. [The contact audit](geometry-capture/degenerate-contact-triangles.json) records triangle indices, source IDs, materials, positions and UV coordinates. Their contact strips have no visible coverage in this closed view. No UV fill, hidden-surface extrapolation or full texture-coverage claim is made. This local contact issue does not invalidate painting the visible face.
+
+## Reproduction and provenance
+
+[prepare_ren_paint_views.py](../../../../../../tools/character_art/prepare_ren_paint_views.py) prepares the isolated snapshot and matched guide inside Blender. It uses the existing projection helper's rasterization routines without changing that helper. The optional `--audit-snapshot` mode reads the existing snapshots and reports contact triangles without rendering or modifying the blends.
+
+[paint-manifest.json](paint-manifest.json) records exact generated bytes, prompts, input hashes, output dimensions, source tool paths and capture artifact hashes. Both painting PNGs are byte-identical to their built-in tool originals. No image pixels were resized, warped, cropped, retouched or projected. [measure_alignment.py](measure_alignment.py) and [measure_anchors.py](measure_anchors.py) read images and write JSON measurements only.
+
+Projector-coordinate fitting against V1 is a separate parent experiment. Any accepted mapping must be checked against a capture of the final stitched mesh and its current UVs, with eye/cavity exclusions and uncovered regions kept explicit.

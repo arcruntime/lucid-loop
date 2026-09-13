@@ -1,0 +1,194 @@
+{
+  "method": "Per object, compare returned positions to source positions rounded to float16; no transforms or output mutations.",
+  "objects": [
+    {
+      "name": "Ren_Eye_L_Iris",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL",
+          "COLOR_0",
+          "COLOR_1"
+        ]
+      ],
+      "float16PositionMaxError": 0.00021700748410268526,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_L_Sclera",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL",
+          "TEXCOORD_0"
+        ]
+      ],
+      "float16PositionMaxError": 0.00022728649337075096,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_L_UpperLiner",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.00021132835053182193,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_L_OuterLash",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.00021165719316366158,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_L_LowerLiner",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.00020846958424624828,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_R_Iris",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL",
+          "COLOR_0",
+          "COLOR_1"
+        ]
+      ],
+      "float16PositionMaxError": 0.00021700748410268526,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_R_LowerLiner",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.0002053804134103684,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_R_OuterLash",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.00021154649187997993,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_R_Sclera",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL",
+          "TEXCOORD_0"
+        ]
+      ],
+      "float16PositionMaxError": 0.00022728649337075096,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Eye_R_UpperLiner",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.00024554688946979434,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_P2_LowerTeeth",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.0002878293924972438,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_P2_UpperTeeth",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.0002510920086275493,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_P2_Tongue",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL"
+        ]
+      ],
+      "float16PositionMaxError": 0.0002243522493224237,
+      "float16GeometricTriangleMultisetEqual": true,
+      "sourceOnly": 0,
+      "returnedOnly": 0
+    },
+    {
+      "name": "Ren_Head",
+      "attributes": [
+        [
+          "POSITION",
+          "NORMAL",
+          "TEXCOORD_0"
+        ]
+      ],
+      "float16PositionMaxError": 0.0003043179968802372,
+      "float16GeometricTriangleMultisetEqual": false,
+      "sourceOnly": 17,
+      "returnedOnly": 17
+    }
+  ]
+}
