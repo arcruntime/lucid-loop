@@ -6,7 +6,8 @@ The FigJam board labels character sheets as Arcane-inspired. That means **Riot G
 
 | Doc | What it is |
 | --- | --- |
+| [japanese-anime-character-workflows-2026-09.md](japanese-anime-character-workflows-2026-09.md) | Japanese creator and studio workflows, current AI-assisted character experiments, facial controls, and implications for Ren; researched with Grok Build and primary-source checks |
 | [arcane-fortiche-art-style.md](arcane-fortiche-art-style.md) | **Current.** Cited report: Fortiche *Arcane* look, official pipeline, Blender/Unreal/Unity recreations, what transfers to real-time |
 | [sources/](sources/README.md) | Local snapshots: article HTML, CSVs, YouTube captions |
 
-No Unity implementation lives here. Project setup is still on hold; see the repo [README](../README.md).
+Unity implementation lives in [Unity/](../Unity/). These documents record research and proposed or tested approaches.
