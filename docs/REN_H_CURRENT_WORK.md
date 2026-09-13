@@ -37,6 +37,38 @@ broken hair strokes, so its style is rejected. A separate head-stencil correctio
 remains pending. The combined new-eye material review is now inspecting separate
 received-shadow and support/bridge corrections; these are not shipping assets.
 
+The [corrected support comparison](../art/generated/characters/ren/parts-workflow-v1/h-neutral-context-defect-audit-v1/unity-support-review-v2/README.md)
+now has eighteen actual Unity captures. The scalp stays beneath the cap and the
+profile jaw gap improves. The earlier standalone support export carried an
+incorrect world offset; its passing import checks reproduced that error faithfully.
+The corrected placement is the next review baseline, not a finished skin interface.
+It exposes a 280-pixel background slit beneath the image-right iris, present under
+neutral, club and unlit rendering. This needs geometry closure, not darker paint
+or a shadow adjustment. The bridge is static; its A/seal targets do not deform.
+
+A [donor replay](../art/generated/characters/ren/parts-workflow-v1/h-neutral-context-defect-audit-v1/support-pigment-audit-v1/README.md)
+reproduces every stored support and bridge color at the corrected placement within
+2.98e-8 linear RGB. The misplaced saved matrix was introduced after sampling;
+there is no evidence for a compensating repaint. Visible shading boundaries remain.
+The next assembled player will compare receiver classification, restrained facial
+shadow strength, clean paired hair maps and a local eye-interface patch separately
+before showing their combination. The resulting six-variant Unity player has now
+produced 42 captures in `.local/ren-designer-refinement-v1/live-review/`.
+Root inspected combined front, quarter, club and artist-portrait views, plus the
+baseline and receiver-only front pair. Corrected receiver classification with
+facial strength 0.05 reduces the hard eye band and is the provisional next lighting
+baseline. Residual interface differences remain. Clean hair maps remove marbling
+but read too flat and brown against the designer's pale-blond strands; they need
+another painted-detail pass. The combined head is not visually accepted.
+
+The local player is `.local/ren-designer-refinement-v1/RenDesignerRefinementReview.exe`.
+The eye-interface patch also passes the focused actual quarter-view comparison:
+594 background pixels become covered, with seven previously covered pixels also
+changing. Root inspected the matched close-ups and selected this repair for the
+upper temporal notch. It does not address the separate lower-iris slit or remaining
+pale gaps between lash strokes. No blink/gaze or speech completion is implied by
+these neutral captures.
+
 ## What can be opened in Unity now
 
 The newest neutral designer-eye player is
@@ -86,6 +118,13 @@ welding does not fix these inputs. See the
 Canonical restoration is being prepared separately; existing source imports and
 the neutral-eye comparison have not been modified by this test. A successful
 Blender roundtrip alone therefore does not establish Unity speech-shape fidelity.
+
+Actual `AddBlendShapeFrame` readback also drops small submitted position deltas.
+A private bone-free experiment scaling Basis and deltas together by 100, with an
+inverse instance scale, reduced but did not eliminate the error: 292 returned
+endpoints still exceed the 2e-6 native-unit tolerance, with a maximum error of
+1.045e-5. No restored assets were saved. This is measured API behavior under these
+inputs, not proof of a universal threshold or a production rig solution.
 
 ### Source inventory
 

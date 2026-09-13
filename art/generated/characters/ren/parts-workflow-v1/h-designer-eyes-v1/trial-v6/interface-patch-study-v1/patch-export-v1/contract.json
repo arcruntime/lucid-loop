@@ -1,0 +1,128 @@
+{
+  "status": "PATCH_ONLY_FOR_SEPARATE_SCRATCH_UNITY_REVIEW_NOT_PRODUCTION_OR_LIKENESS_APPROVAL",
+  "source_candidate_sha256": "7f5c3ef659ddcfd6ea9f9b657e1211aea4834c85da4879e279a7a39c2d9f5489",
+  "frozen_v6_sha256": "715617c4842029775dfdef0cd289648ea87883624fe693c61a5d374812a2b13d",
+  "object": "Ren_H_EyeInterface_L_Patch",
+  "vertices": 64,
+  "triangles": 62,
+  "root": "Ren_H_EyeInterfacePatch_Root",
+  "root_transform": "identity",
+  "native_frame": "H: X horizontal, front -Y, Z up",
+  "native_to_registered_world": [
+    [
+      -1.7049841005700728e-07,
+      -1.0465117692947388,
+      0.0,
+      -0.08941860496997833
+    ],
+    [
+      1.0465117692947388,
+      -1.7049841005700728e-07,
+      0.0,
+      0.0073255812749266624
+    ],
+    [
+      0.0,
+      0.0,
+      1.0465116500854492,
+      -0.4884883761405945
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "markers": [
+    {
+      "name": "Ren_H_NativeAxis_Origin",
+      "native_position": [
+        0,
+        0,
+        0
+      ],
+      "registered_position": [
+        -0.08941860496997833,
+        0.0073255812749266624,
+        -0.4884883761405945
+      ]
+    },
+    {
+      "name": "Ren_H_NativeAxis_X",
+      "native_position": [
+        0.01,
+        0,
+        0
+      ],
+      "registered_position": [
+        -0.08941860496997833,
+        0.017790697515010834,
+        -0.4884883761405945
+      ]
+    },
+    {
+      "name": "Ren_H_NativeAxis_Y",
+      "native_position": [
+        0,
+        0.01,
+        0
+      ],
+      "registered_position": [
+        -0.09988372027873993,
+        0.007325579412281513,
+        -0.4884883761405945
+      ]
+    },
+    {
+      "name": "Ren_H_NativeAxis_Z",
+      "native_position": [
+        0,
+        0,
+        0.01
+      ],
+      "registered_position": [
+        -0.08941860496997833,
+        0.0073255812749266624,
+        -0.4780232608318329
+      ]
+    }
+  ],
+  "color_attribute": "Ren_DesignerColor",
+  "color_domain": "POINT",
+  "color_storage": "FLOAT_COLOR",
+  "color_encoding": "LINEAR RGB, alpha1; FBX colors_type LINEAR. Use once with white tint. No raster map or old eye atlas is required.",
+  "color_min": [
+    0.6172065734863281,
+    0.44520121812820435,
+    0.37123769521713257,
+    1.0
+  ],
+  "color_max": [
+    0.7529422044754028,
+    0.5551706552505493,
+    0.4649253189563751,
+    1.0
+  ],
+  "uv": "HNativeUV retained for provenance; sampled pigment is baked into linear vertex color.",
+  "material": "Ren_H_EyeInterface_L_LinearSkin_Portable",
+  "unity_material_guidance": "Use the same selected Tokon skin response as the face/shutter. Existing viewer uses FaceMode .90 and skin control fallback(1,0,0,1); vertex-color sRGB conversion OFF; no extra pigment multiplication. Portable Blender material is unlit reference.",
+  "shape_endpoints": {
+    "Basis": "exact source head boundary positions",
+    "jawOpen_A": "identical to Basis: all64 displacements exactly0",
+    "mouthSeal": "identical to Basis: all64 displacements exactly0",
+    "driver_export": "No animation drivers or armature exported. If importer removes zero-delta keys, canonical A/seal endpoint positions remain identical; do not invent motion."
+  },
+  "attachment_contract": "../patch-inputs.json and patch-inputs.npz retain exact head vertex/source IDs,63 existing edges and all endpoint arrays.",
+  "scope": "One new64-vertex62-triangle patch only. No existing face, eye, hair, rig, camera or light mesh. Do not replace accepted face or eye objects.",
+  "remaining_limitations": [
+    "Other extraction remnants below the fan remain unresolved.",
+    "Boundary pigment review remains separate from designer likeness.",
+    "Not a watertight head claim.",
+    "594 former background pixel centers filled at reviewed quarter; seven deeper native-strip pixels undergo ordinary projected occlusion. Patch and strip X-bounds are disjoint, not intersecting or coplanar."
+  ],
+  "exports": {
+    "Ren_H_EyeInterfacePatch.blend": "12af6c7819efc0acbdd746380f3aafa9ac1c5cc4c211c1efa2384165968107c0",
+    "Ren_H_EyeInterfacePatch.fbx": "45edb235b532efe14941c7782e131a526e1971d1db22e24a5a1c97acd8186106"
+  }
+}

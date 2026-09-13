@@ -1,0 +1,170 @@
+{
+  "source_sha256": "7a1e3fe11778aa033969aaaf53988e547e5bc416e0f1d6c8f14628761a852883",
+  "face_sha256": "a0e1260bdbfbd85fa7797be0bd0745d1f963f4e8772a7dcdd0d713987ba1a405",
+  "script_sha256": "9523411ab57dc3edd52cbf7535a31c77b688d1ae4a8ea91e711a80219ea1ab4a",
+  "objects": [
+    {
+      "object": "Ren_H_ConcealedScalpBack",
+      "saved_world_replay_max_color_error": 0.22118860428512577,
+      "corrected_colors_changed_vertices": 0,
+      "max_linear_rgb_change": 2.970255741363559e-08,
+      "saved_fallback_count": 859,
+      "corrected_fallback_count": 362,
+      "changed_indices": [],
+      "assembly_world_replay_max_color_error": 2.970255741363559e-08,
+      "assembly_valid_donors": 502,
+      "assembly_valid_distance_max": 0.049567535519599915,
+      "specific_donors": [
+        {
+          "vertex": 225,
+          "distance": 0.049567535519599915,
+          "donor_face": 169293,
+          "donor_source_h_face_id": 1153523,
+          "fallback": false,
+          "uv": [
+            0.25390625,
+            0.50927734375
+          ],
+          "barycentric": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "material_slot": 0,
+          "color_linear_rgb": [
+            0.7567279495895711,
+            0.5332765208205553,
+            0.44520122005386
+          ]
+        },
+        {
+          "vertex": 284,
+          "distance": 0.045739248394966125,
+          "donor_face": 4974,
+          "donor_source_h_face_id": 452486,
+          "fallback": false,
+          "uv": [
+            0.07446289247734515,
+            0.48402443196429057
+          ],
+          "barycentric": [
+            0.08719658851623535,
+            0.9128032326698303,
+            2.0708485237719287e-07
+          ],
+          "material_slot": 0,
+          "color_linear_rgb": [
+            0.752942345202549,
+            0.5520115195707215,
+            0.45641104841817887
+          ]
+        },
+        {
+          "vertex": 286,
+          "distance": 0.04564458131790161,
+          "donor_face": 29207,
+          "donor_source_h_face_id": 618898,
+          "fallback": false,
+          "uv": [
+            0.4939419433067839,
+            0.7182465589591182
+          ],
+          "barycentric": [
+            0.9379282593727112,
+            -4.8718018064164426e-08,
+            0.0620717816054821
+          ],
+          "material_slot": 0,
+          "color_linear_rgb": [
+            0.7605246334013417,
+            0.5394796062418635,
+            0.4507858082281588
+          ]
+        }
+      ]
+    },
+    {
+      "object": "Ren_H_JawSideBridge_R",
+      "saved_world_replay_max_color_error": 2.970255741363559e-08,
+      "corrected_colors_changed_vertices": 0,
+      "max_linear_rgb_change": 2.970255741363559e-08,
+      "saved_fallback_count": 0,
+      "corrected_fallback_count": 0,
+      "changed_indices": [],
+      "assembly_world_replay_max_color_error": 2.970255741363559e-08,
+      "assembly_valid_donors": 72,
+      "assembly_valid_distance_max": 0.036146119236946106,
+      "specific_donors": [
+        {
+          "vertex": 0,
+          "distance": 0.036146119236946106,
+          "donor_face": 48727,
+          "donor_source_h_face_id": 674847,
+          "fallback": false,
+          "uv": [
+            0.5761718749999997,
+            0.6774902343749997
+          ],
+          "barycentric": [
+            0.0,
+            1.0,
+            -5.594463622388298e-16
+          ],
+          "material_slot": 0,
+          "color_linear_rgb": [
+            0.7605246334013417,
+            0.5394796062418635,
+            0.4507858082281588
+          ]
+        },
+        {
+          "vertex": 1,
+          "distance": 0.0,
+          "donor_face": 9033,
+          "donor_source_h_face_id": 491211,
+          "fallback": false,
+          "uv": [
+            0.532958984375,
+            0.09423828124999999
+          ],
+          "barycentric": [
+            0.0,
+            1.0,
+            -8.341449439151321e-17
+          ],
+          "material_slot": 0,
+          "color_linear_rgb": [
+            0.7758223476305046,
+            0.5457245790161732,
+            0.43415366199444616
+          ]
+        },
+        {
+          "vertex": 2,
+          "distance": 0.03426862135529518,
+          "donor_face": 48727,
+          "donor_source_h_face_id": 674847,
+          "fallback": false,
+          "uv": [
+            0.5761718749999997,
+            0.6774902343749997
+          ],
+          "barycentric": [
+            0.0,
+            1.0,
+            -5.594463622388298e-16
+          ],
+          "material_slot": 0,
+          "color_linear_rgb": [
+            0.7605246334013417,
+            0.5394796062418635,
+            0.4507858082281588
+          ]
+        }
+      ]
+    }
+  ],
+  "source_unchanged": true,
+  "status": "PASS_EXISTING_PIGMENT_MATCHES_CORRECT_ASSEMBLY_PLACEMENT",
+  "conclusion": "All existing support and bridge colors match assembly-world donor sampling within float32 precision. Saved misplaced support transform does not reproduce pigments. No new pigment derivative is warranted."
+}

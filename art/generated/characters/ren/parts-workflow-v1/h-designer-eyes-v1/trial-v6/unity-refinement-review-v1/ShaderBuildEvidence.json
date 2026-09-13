@@ -1,0 +1,6 @@
+{
+    "candidateHlslSha256": "1c4a197d5724e638b78205ec05794f97fb5b176ec57623b9707453a0c1f5787b",
+    "candidateShaderSha256": "5d78c781490de5f00b7545a36a7372b06ff32a861f58da9bbbc5c0de112152fb",
+    "messages": [],
+    "scope": "Three head and two shutter materials only; corrected support v2 fixed; no source geometry, pigmentation or diffuse-response changes. Not appearance acceptance."
+}

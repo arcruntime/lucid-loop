@@ -1,0 +1,30 @@
+{
+  "status": "FRESH_BLENDER_FBX_IMPORT_PASS_ACTUAL_UNITY_IMPORT_STILL_REQUIRED",
+  "source_export_blend_sha256": "12af6c7819efc0acbdd746380f3aafa9ac1c5cc4c211c1efa2384165968107c0",
+  "fbx_sha256": "45edb235b532efe14941c7782e131a526e1971d1db22e24a5a1c97acd8186106",
+  "mesh_count": 1,
+  "vertices": 64,
+  "triangles": 62,
+  "world_position_error": 4.214684778958144e-08,
+  "linear_color_error": 0.0,
+  "uv_error": 0.0,
+  "color_attribute": "Ren_DesignerColor",
+  "color_domain": "CORNER",
+  "color_storage": "FLOAT_COLOR",
+  "imported_shape_endpoints": {
+    "Basis": {
+      "maximum_registered_position_error": 4.214684778958144e-08,
+      "identical_endpoint_expected": true
+    },
+    "jawOpen_A": {
+      "maximum_registered_position_error": 4.214684778958144e-08,
+      "identical_endpoint_expected": true
+    },
+    "mouthSeal": {
+      "maximum_registered_position_error": 4.214684778958144e-08,
+      "identical_endpoint_expected": true
+    }
+  },
+  "source_files_unchanged": true,
+  "zero_delta_key_note": "All canonical endpoint positions are identical; absence of zero-delta FBX shapes is explicitly allowed, no pose reconstruction required."
+}

@@ -1,0 +1,216 @@
+{
+  "status": "PASS_FRESH_BLENDER_IMPORT_PLACEMENT_CORRECTED_UNITY_PENDING",
+  "source": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\support-boundary-pigment\\Ren_H_Support_BoundaryPigment.blend",
+  "source_sha256": "7a1e3fe11778aa033969aaaf53988e547e5bc416e0f1d6c8f14628761a852883",
+  "source_unchanged": true,
+  "fbx": {
+    "file": "Ren_H_Support_JawBridge_Linear.fbx",
+    "sha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d"
+  },
+  "objects": [
+    {
+      "name": "Ren_H_ConcealedScalpBack",
+      "vertices": 864,
+      "triangles": 1478,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": null,
+      "basis_world": {
+        "file": "Ren_H_ConcealedScalpBack-Basis-world.f32",
+        "sha256": "89a9d6ef252cd7bd18d07d791102ea2db4df7ecad27a4abd4e3aa36494271371",
+        "shape": [
+          864,
+          3
+        ],
+        "dtype": "float32"
+      },
+      "color_linear_rgba": {
+        "file": "Ren_H_ConcealedScalpBack-linear-rgba.f32",
+        "sha256": "7902bd63ab1d058edbb2371767715a1a9186a44ce3d54bf28acc73da54250d0e",
+        "shape": [
+          864,
+          4
+        ],
+        "dtype": "float32"
+      },
+      "morphs": {},
+      "source_defaults": {},
+      "uv_layers": [
+        "HSupportUV"
+      ],
+      "uv_corners": {
+        "file": "Ren_H_ConcealedScalpBack-uv.f32",
+        "sha256": "490594d4a3b9aae0ad00ec6b7de3e75637464d5315e53feb39684a844b1e5e8d",
+        "shape": [
+          3024,
+          2
+        ],
+        "dtype": "float32"
+      },
+      "support_source_vertex_id": {
+        "file": "Ren_H_ConcealedScalpBack-support_source_vertex_id.i32",
+        "sha256": "2689cc1ead868b09b112629b9ecc375bade229662ff4a047084d5aa6db27051b",
+        "shape": [
+          864
+        ],
+        "dtype": "int32"
+      }
+    },
+    {
+      "name": "Ren_H_JawSideBridge_R",
+      "vertices": 72,
+      "triangles": 70,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": null,
+      "basis_world": {
+        "file": "Ren_H_JawSideBridge_R-Basis-world.f32",
+        "sha256": "f28266881e26f74d609c0092de4baf721ad6f2c85b8d4db5fb3f1b37c77227f7",
+        "shape": [
+          72,
+          3
+        ],
+        "dtype": "float32"
+      },
+      "color_linear_rgba": {
+        "file": "Ren_H_JawSideBridge_R-linear-rgba.f32",
+        "sha256": "ee5fd02d60defe04e38f1575409c335cc982e535db535168dc75e1274143a7a6",
+        "shape": [
+          72,
+          4
+        ],
+        "dtype": "float32"
+      },
+      "morphs": {
+        "jawOpen_A": {
+          "file": "Ren_H_JawSideBridge_R-jawOpen_A-world.f32",
+          "sha256": "f28266881e26f74d609c0092de4baf721ad6f2c85b8d4db5fb3f1b37c77227f7",
+          "shape": [
+            72,
+            3
+          ],
+          "dtype": "float32"
+        },
+        "mouthSeal": {
+          "file": "Ren_H_JawSideBridge_R-mouthSeal-world.f32",
+          "sha256": "f28266881e26f74d609c0092de4baf721ad6f2c85b8d4db5fb3f1b37c77227f7",
+          "shape": [
+            72,
+            3
+          ],
+          "dtype": "float32"
+        }
+      },
+      "source_defaults": {
+        "jawOpen_A": 0.0,
+        "mouthSeal": 1.0
+      },
+      "uv_layers": [
+        "SupportLocalUV"
+      ],
+      "uv_corners": {
+        "file": "Ren_H_JawSideBridge_R-uv.f32",
+        "sha256": "80d4a09ac49cc05f4ee02d699a2203506818d12b7ce20ab17e9dd08295bdb8fe",
+        "shape": [
+          210,
+          2
+        ],
+        "dtype": "float32"
+      },
+      "source_h_vertex_id": {
+        "file": "Ren_H_JawSideBridge_R-source_h_vertex_id.i32",
+        "sha256": "19affcc70a37b49c1f3646a81806d9e739501e567a42f950b3750aa906f5a588",
+        "shape": [
+          72
+        ],
+        "dtype": "int32"
+      },
+      "head_boundary_vertex_index": {
+        "file": "Ren_H_JawSideBridge_R-head_boundary_vertex_index.i32",
+        "sha256": "5a2f3db998278cc0ca0f1e1168e986b37f95aa10a83ea46f97401f258521f65b",
+        "shape": [
+          72
+        ],
+        "dtype": "int32"
+      }
+    }
+  ],
+  "triangles": 1548,
+  "frame": "+X front, +Y character left, +Z up; markers at origin and +0.1 along each axis",
+  "fbx_axes": {
+    "forward": "-Z",
+    "up": "Y"
+  },
+  "canonical_arrays": "Little-endian float32 absolute shared-world positions and linear RGBA. Source vertex row order; use joint Basis/morph/color correspondence, not arbitrary coincident vertex selection.",
+  "color_contract": "Exported LINEAR once. Runtime mesh.colors must match canonical linear RGBA; _UseVertexColor=1, _VertexColorSrgb=0, _UseBaseMap=0, white base tint. Do not decode linear colors a second time. Restore on owned import-copy if importer converts or quantizes unexpectedly.",
+  "binding": "Replace only old support and append bridge. Both now have identity world placement in the shared frame, matching full bridge review. Keep original marker-to-head calibration unchanged. Neutral jaw0/seal1; canonical bridge targets currently static.",
+  "limitations": [
+    "No new geometry or pigment; previous support/skin join shading and forehead extraction limits remain.",
+    "No eyes/hair/cap/head source replacement.",
+    "Fresh Blender FBX import is not Unity importer proof; Unity sparse morph deltas and color fidelity need exact canonical checks."
+  ],
+  "placement_correction": {
+    "object": "Ren_H_ConcealedScalpBack",
+    "shared_world_delta": [
+      -0.05999999865889549,
+      0,
+      -0.20000000298023224
+    ],
+    "basis_authority": "Original full bridge review a784a9a5 and original library477d7214 both have identity support world transform; pigment7a1e incorrectly retained parent-relative offset after detach.",
+    "bridge_delta": [
+      0,
+      0,
+      0
+    ],
+    "geometry_and_colors": "Local vertices, all shape coordinates, UVs and canonical linear colors unchanged; transform-only correction.",
+    "pigment_limit": "Retained pigment values are unchanged, but their original nearest-donor spatial correspondence must be reviewed after correcting placement."
+  }
+}

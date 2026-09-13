@@ -1,0 +1,35 @@
+{
+    "status": "FAIL: Access to the path 'C:\\Users\\jetha\\AppData\\Local\\LucidLoopScratch\\ren-eye-import-verification\\Assets\\CharacterArt\\Generated\\RenDesignerSupportReview\\' is denied.",
+    "fbxSha256": "",
+    "contractSha256": "468d67f484739d673e5373811ee16009ab7732f9269ffb78b1d6544e889cd6b4",
+    "sourcePigmentSha256": "7a1e3fe11778aa033969aaaf53988e547e5bc416e0f1d6c8f14628761a852883",
+    "unityVersion": "6000.3.24f1",
+    "markerError": 3.84961715838017e-8,
+    "sourceScale": 1.6076706647872925,
+    "colorTolerance": 0.001980784349143505,
+    "positionTolerance": 0.0000019999999949504856,
+    "sourceUnchanged": false,
+    "oldSupportStillVisible": true,
+    "meshes": [
+        {
+            "name": "Ren_H_ConcealedScalpBack",
+            "rendererType": "MeshRenderer",
+            "drawnVertices": 864,
+            "triangles": 1478,
+            "boundaryPoints": 0,
+            "basisMax": 0.0,
+            "colorMax": 0.0,
+            "endpointMax": 0.0,
+            "neutralMax": 0.0,
+            "boundaryMax": 0.0,
+            "boundaryDistances": [],
+            "canonicalMorphsStatic": true,
+            "importedShapes": [],
+            "missingStaticShapes": [],
+            "colorMin": [],
+            "colorMaxValues": []
+        }
+    ],
+    "failures": [],
+    "limitation": "Neutral context only: canonical bridge A/seal targets are identical to Basis, so this does not prove functional bridge deformation. Linear colors are consumed once; explicit Unity UNorm8 allowance is recorded, never silently repaired. Boundary distances are nearest neutral historical-head vertex distances, not native-ID equality."
+}

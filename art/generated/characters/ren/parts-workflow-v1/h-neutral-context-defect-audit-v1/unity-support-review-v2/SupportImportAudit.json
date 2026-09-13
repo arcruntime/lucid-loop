@@ -1,0 +1,113 @@
+{
+    "status": "PASS_IMPORTED_NEUTRAL_SUPPORT_CANONICAL_CHECKS_BOUNDARY_DISTANCE_REPORTED",
+    "fbxSha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d",
+    "contractSha256": "59d25f35f449049b6f5b9a648b51e6dd3c0902aa004a4edfa7ed21c42e59e9c7",
+    "sourcePigmentSha256": "7a1e3fe11778aa033969aaaf53988e547e5bc416e0f1d6c8f14628761a852883",
+    "unityVersion": "6000.3.24f1",
+    "markerError": 3.84961715838017e-8,
+    "sourceScale": 1.6076706647872925,
+    "colorTolerance": 0.001980784349143505,
+    "positionTolerance": 0.0000019999999949504856,
+    "sourceUnchanged": true,
+    "oldSupportStillVisible": true,
+    "meshes": [
+        {
+            "name": "Ren_H_ConcealedScalpBack",
+            "rendererType": "MeshRenderer",
+            "drawnVertices": 864,
+            "triangles": 1478,
+            "boundaryPoints": 0,
+            "basisMax": 1.4102158729656367e-7,
+            "colorMax": 0.001953423023223877,
+            "endpointMax": 0.0,
+            "neutralMax": 0.0,
+            "boundaryMax": 0.0,
+            "boundaryDistances": [],
+            "canonicalMorphsStatic": true,
+            "importedShapes": [],
+            "missingStaticShapes": [],
+            "colorMin": [
+                0.5411764979362488,
+                0.3607843220233917,
+                0.29019609093666079,
+                1.0
+            ],
+            "colorMaxValues": [
+                0.800000011920929,
+                0.5843137502670288,
+                0.48235294222831728,
+                1.0
+            ]
+        },
+        {
+            "name": "Ren_H_JawSideBridge_R",
+            "rendererType": "SkinnedMeshRenderer",
+            "drawnVertices": 72,
+            "triangles": 70,
+            "boundaryPoints": 36,
+            "basisMax": 5.3928321364082879e-8,
+            "colorMax": 0.0018576085567474366,
+            "endpointMax": 5.3928321364082879e-8,
+            "neutralMax": 5.3928321364082879e-8,
+            "boundaryMax": 8.330002287948446e-8,
+            "boundaryDistances": [
+                4.7852221740640746e-8,
+                7.53393365471311e-8,
+                4.6079296822654217e-8,
+                6.188916756855179e-8,
+                7.450580596923828e-9,
+                3.514431767825954e-8,
+                4.998001301714794e-8,
+                4.360340355447079e-8,
+                4.485843518864385e-8,
+                5.57550414725938e-8,
+                2.686345013103164e-8,
+                4.470348358154297e-8,
+                2.5809567816281743e-8,
+                4.214684778958144e-8,
+                6.705522537231445e-8,
+                1.666000493116826e-8,
+                5.385589574302685e-8,
+                4.7706993910878739e-8,
+                1.862645149230957e-8,
+                5.487695275974147e-8,
+                6.332993507385254e-8,
+                4.2311164349939648e-8,
+                4.470348358154297e-8,
+                8.330002287948446e-8,
+                6.537857899502342e-8,
+                6.989264278445262e-8,
+                4.470348358154297e-8,
+                3.0719530030864919e-8,
+                6.495265836292674e-8,
+                5.625064858350015e-8,
+                4.470348358154297e-8,
+                5.819089565761715e-8,
+                5.57550414725938e-8,
+                6.143906006172983e-8,
+                4.7706993910878739e-8,
+                6.537857899502342e-8
+            ],
+            "canonicalMorphsStatic": true,
+            "importedShapes": [
+                "jawOpen_A",
+                "mouthSeal"
+            ],
+            "missingStaticShapes": [],
+            "colorMin": [
+                0.7607843279838562,
+                0.5411764979362488,
+                0.43529412150382998,
+                1.0
+            ],
+            "colorMaxValues": [
+                0.7921568751335144,
+                0.5647059082984924,
+                0.46666666865348818,
+                1.0
+            ]
+        }
+    ],
+    "failures": [],
+    "limitation": "Neutral context only: canonical bridge A/seal targets are identical to Basis, so this does not prove functional bridge deformation. Linear colors are consumed once; explicit Unity UNorm8 allowance is recorded, never silently repaired. Boundary distances are nearest neutral historical-head vertex distances, not native-ID equality."
+}

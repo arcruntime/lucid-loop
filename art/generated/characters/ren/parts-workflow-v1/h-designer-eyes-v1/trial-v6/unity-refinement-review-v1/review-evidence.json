@@ -1,0 +1,79 @@
+{
+  "status": "ACTUAL_GPU_INDEPENDENT_REFINEMENT_REVIEW_NOT_LIKENESS_ACCEPTANCE",
+  "captures": 42,
+  "actualScreenshotCrops": 2,
+  "baselineFrontExactSupportV2": true,
+  "receiverOnlyUnlitParity": true,
+  "verifiedRuntimeStateReadbacks": 42,
+  "knownLowerIrisBackgroundPixels": {
+    "baseline": 273,
+    "receiver-classification": 273,
+    "receiver-005": 273,
+    "clean-hair": 273,
+    "interface-patch": 273,
+    "combined": 273
+  },
+  "pixelDifferences": {
+    "neutral-front": {
+      "receiver-classification": 84847,
+      "receiver-005": 85188,
+      "clean-hair": 127772,
+      "interface-patch": 123,
+      "combined": 213000
+    },
+    "neutral-quarter": {
+      "receiver-classification": 46518,
+      "receiver-005": 46874,
+      "clean-hair": 178698,
+      "interface-patch": 601,
+      "combined": 226173
+    },
+    "neutral-profile": {
+      "receiver-classification": 9742,
+      "receiver-005": 9972,
+      "clean-hair": 267219,
+      "interface-patch": 0,
+      "combined": 277191
+    },
+    "club-front": {
+      "receiver-classification": 84805,
+      "receiver-005": 85154,
+      "clean-hair": 127772,
+      "interface-patch": 123,
+      "combined": 212966
+    },
+    "unlit-front": {
+      "receiver-classification": 0,
+      "receiver-005": 0,
+      "clean-hair": 127772,
+      "interface-patch": 123,
+      "combined": 127814
+    },
+    "source-camera": {
+      "receiver-classification": 7540,
+      "receiver-005": 7612,
+      "clean-hair": 25513,
+      "interface-patch": 79,
+      "combined": 33125
+    },
+    "source-portrait-paired": {
+      "receiver-classification": 33385,
+      "receiver-005": 34121,
+      "clean-hair": 109611,
+      "interface-patch": 496,
+      "combined": 139580
+    }
+  },
+  "sourceEyeFbxSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+  "sourceHeadFbxSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+  "supportFbxSha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d",
+  "patchFbxSha256": "45edb235b532efe14941c7782e131a526e1971d1db22e24a5a1c97acd8186106",
+  "receiverIncludeSha256": "1c4a197d5724e638b78205ec05794f97fb5b176ec57623b9707453a0c1f5787b",
+  "hairBaseSha256": "c6b2949a8038ded557c38a8b529674229b2e454e4f830aec0c0679acbc57627d",
+  "hairShadowSha256": "e18bc57739e0942b81387b079947b9ccd473a898f4443aea97a722d4115b179a",
+  "buildLogSha256": "0b28dab374fcd09c50491fe1437487c04cf2e825eefd8e10ca7a95f77d706884",
+  "captureLogSha256": "8f6b1fedea7a4e977ffdca7c6990bd27368060d2a40df3e13592fd08e36dc5cf",
+  "selection": "Root selected R-based receiver classification plus .05 facial shadow attenuation and local temporal patch as provisional next review baselines. Clean hair pair removes marbling but remains too quiet/warm versus artist pale strands; not final hair selection.",
+  "visualLimits": "Residual eye-mask/forehead/support shading seams, original-likeness gaps, lower iris280pixel background slit and fragmented lower fan gaps persist. Patch closes only targeted upper temporal notch. Neutral eyes have no blink/gaze/expression controls. No production rig or iPhone performance claim.",
+  "lowerIrisCountMeaning": "280 changed pixels versus old support;273 exact clear-background pixels and7 boundary pixels. All6 current variants retain the same273 exact background pixels."
+}

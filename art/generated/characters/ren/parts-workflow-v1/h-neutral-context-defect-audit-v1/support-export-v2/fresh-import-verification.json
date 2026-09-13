@@ -1,0 +1,105 @@
+{
+  "status": "PASS_FRESH_BLENDER_IMPORT",
+  "fbx_sha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d",
+  "source_unchanged": true,
+  "objects": [
+    {
+      "object": "Ren_H_ConcealedScalpBack",
+      "vertices": 864,
+      "triangles": 1478,
+      "max_basis_world_error": 8.720680710894158e-08,
+      "max_linear_color_error": 0.0,
+      "import_color_domain": "CORNER",
+      "max_uv_error": 0.0,
+      "morph_endpoint_errors": {},
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          1.6292067073209182e-07,
+          0.0
+        ],
+        [
+          0.0,
+          -1.6292067073209182e-07,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_H_JawSideBridge_R",
+      "vertices": 72,
+      "triangles": 70,
+      "max_basis_world_error": 4.214684778958144e-08,
+      "max_linear_color_error": 0.0,
+      "import_color_domain": "CORNER",
+      "max_uv_error": 0.0,
+      "morph_endpoint_errors": {
+        "jawOpen_A": 4.214684778958144e-08,
+        "mouthSeal": 4.214684778958144e-08
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          1.6292067073209182e-07,
+          0.0
+        ],
+        [
+          0.0,
+          -1.6292067073209182e-07,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "markers": {
+    "RenSupport_FrameOrigin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "RenSupport_FrameX": [
+      0.09999999403953552,
+      0.0,
+      0.0
+    ],
+    "RenSupport_FrameY": [
+      0.0,
+      0.09999999403953552,
+      0.0
+    ],
+    "RenSupport_FrameZ": [
+      0.0,
+      0.0,
+      0.09999999403953552
+    ]
+  },
+  "note": "Imported linear colors with colors_type=LINEAR; this explicit FBX reader choice is not evidence of Unity default conversion."
+}

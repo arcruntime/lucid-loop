@@ -1,0 +1,25 @@
+{
+  "changedPixels": 601,
+  "bbox": [
+    1042,
+    614,
+    1065,
+    673
+  ],
+  "crop": [
+    1000,
+    610,
+    120,
+    155
+  ],
+  "scale": 4,
+  "resample": "nearest; actual screenshot pixels only",
+  "limitation": "Patch adds geometry and baseline shadow caster; lit difference can include changed occlusion and shadow, not geometry-only visibility classification.",
+  "backgroundRgb": [
+    27,
+    29,
+    36
+  ],
+  "changedFromBackgroundToSurface": 594,
+  "changedPreviouslyCoveredPixels": 7
+}

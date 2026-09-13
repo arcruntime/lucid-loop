@@ -1,0 +1,26 @@
+[
+  {
+    "object": "Ren_H_ConcealedScalpBack",
+    "applied_translation": [
+      -0.05999999865889549,
+      0.0,
+      -0.20000000298023224
+    ],
+    "max_float32_translation_residual": 1.4901161193847656e-08,
+    "linear_colors_exact": true,
+    "uvs_exact": true,
+    "morph_arrays_exact": true
+  },
+  {
+    "object": "Ren_H_JawSideBridge_R",
+    "applied_translation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_float32_translation_residual": 0.0,
+    "linear_colors_exact": true,
+    "uvs_exact": true,
+    "morph_arrays_exact": true
+  }
+]

@@ -1,0 +1,2380 @@
+{
+    "status": "INDEPENDENT_REFINEMENT_CANDIDATES_NOT_SHADING_ACCEPTANCE",
+    "eyeSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+    "headSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+    "runtimeSha256": "1359408f214970284540087ee03269991949dcf4a614dec593ccde48b790d665",
+    "builderSha256": "983019c5cf85d14e8c93abdb91697a7eac6f56d0c14a36411d557f8a865148a7",
+    "referenceSha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+    "unityVersion": "6000.3.24f1",
+    "graphicsApi": "Direct3D11",
+    "unchangedEyeGeometry": true,
+    "unchangedHistoricalHead": true,
+    "outlineOff": true,
+    "referenceNpotNone": true,
+    "candidateHlslSha256": "1c4a197d5724e638b78205ec05794f97fb5b176ec57623b9707453a0c1f5787b",
+    "patchAuditSha256": "05f26e5208ea49e3b19e61634ca24eaf17f26b3f21c3a00d713a6784b2e4a8f5",
+    "hairBaseSha256": "c6b2949a8038ded557c38a8b529674229b2e454e4f830aec0c0679acbc57627d",
+    "hairShadowSha256": "e18bc57739e0942b81387b079947b9ccd473a898f4443aea97a722d4115b179a",
+    "sourcePixelCrop": [
+        275.0,
+        25.0,
+        430.0,
+        400.0
+    ],
+    "cropDisplayScale": 2,
+    "captures": [
+        {
+            "file": "baseline--neutral-front.png",
+            "sha256": "32e92466eb9da23141e3a4d110fb7891929e2cc757821970912b239a53444d5e",
+            "pose": "neutral-front",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-classification--neutral-front.png",
+            "sha256": "614a2fdc7452fb327cb3decb80ec92372273987ff83ffc52e9c715383d49391d",
+            "pose": "neutral-front",
+            "mode": 1,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-005--neutral-front.png",
+            "sha256": "0e6723c54cf1a70b1d3cb01d4c86662026c5c3fdec92846c056724f149c7070a",
+            "pose": "neutral-front",
+            "mode": 2,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "clean-hair--neutral-front.png",
+            "sha256": "4e4f943b435cd2bb24fc74c1f15f20aaae58b68e229501bb376383d72701ad94",
+            "pose": "neutral-front",
+            "mode": 0,
+            "cleanHair": true,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "interface-patch--neutral-front.png",
+            "sha256": "ee42909dce2d6204f808648792f74e296ae2c0941fc7a09435b626f0833f2cba",
+            "pose": "neutral-front",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "combined--neutral-front.png",
+            "sha256": "7292a6f2fb546da2fb0060358bdcf7b31c5ede52917fc820656b3b91f17c11b1",
+            "pose": "neutral-front",
+            "mode": 2,
+            "cleanHair": true,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "baseline--neutral-quarter.png",
+            "sha256": "297a23a0529a72e9e1c198f5efec94ab280af554d09b41caf7d227596c5fcf68",
+            "pose": "neutral-quarter",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-classification--neutral-quarter.png",
+            "sha256": "b18dc5737a41594f079cb108c00b8fef38fc01fb39bf7c489d8f12616004f814",
+            "pose": "neutral-quarter",
+            "mode": 1,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-005--neutral-quarter.png",
+            "sha256": "0c2dc01809e80ec0cf5b3f2f69b964b3ddcd6f19944d3415c4ce2ff2e095f2d7",
+            "pose": "neutral-quarter",
+            "mode": 2,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "clean-hair--neutral-quarter.png",
+            "sha256": "13ca56871e1300b1bf187c8d000100a1d4efccf2a27b3e7694e2820ee11f934f",
+            "pose": "neutral-quarter",
+            "mode": 0,
+            "cleanHair": true,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "interface-patch--neutral-quarter.png",
+            "sha256": "86c2b74ba5d96f4abdc93466aa2e6b048c3d2961ae0258ef96c6cf4d447ca567",
+            "pose": "neutral-quarter",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "combined--neutral-quarter.png",
+            "sha256": "b413bdb87c62dcdf9485f1e67886a094c3e6bea45a360218eecce71a0edf5136",
+            "pose": "neutral-quarter",
+            "mode": 2,
+            "cleanHair": true,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "baseline--neutral-profile.png",
+            "sha256": "0bd2e0e8e4c07a1bbf0e9babf4287cab4356ded8987465004db64168db782845",
+            "pose": "neutral-profile",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-classification--neutral-profile.png",
+            "sha256": "43d57a27003fa0be685a08e26e91d3638ea1562259be3d58be06dcca1637730b",
+            "pose": "neutral-profile",
+            "mode": 1,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-005--neutral-profile.png",
+            "sha256": "c6a284b031864fe7772d3ba07d3afbeb4cdb982999c603674e7836f00d81e200",
+            "pose": "neutral-profile",
+            "mode": 2,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "clean-hair--neutral-profile.png",
+            "sha256": "17c34acb5c25a0f5740f783846f2bb1c3b641799975422c68ddf50a11a1b58c3",
+            "pose": "neutral-profile",
+            "mode": 0,
+            "cleanHair": true,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "interface-patch--neutral-profile.png",
+            "sha256": "0bd2e0e8e4c07a1bbf0e9babf4287cab4356ded8987465004db64168db782845",
+            "pose": "neutral-profile",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "combined--neutral-profile.png",
+            "sha256": "1357174c4b05fcb47a2c60ea0b1e22c989b980611c2a5cd74a636dd510cb2697",
+            "pose": "neutral-profile",
+            "mode": 2,
+            "cleanHair": true,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "baseline--club-front.png",
+            "sha256": "0dabf01b7211b08073ef2e0b6697d8bfbf81e85399c2ad2555ec7238dca0e4bb",
+            "pose": "club-front",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-classification--club-front.png",
+            "sha256": "45fa4ec60a2972ed116ad49287d1070ec53637604fc112b3e663c34a4ac6c923",
+            "pose": "club-front",
+            "mode": 1,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-005--club-front.png",
+            "sha256": "fcebf584e7aa7e4a1b5c647b81bf9b6fcf6c7a470093752acdb3bc9ec848ddb1",
+            "pose": "club-front",
+            "mode": 2,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "clean-hair--club-front.png",
+            "sha256": "eb32830a5a8f0ef0efb5296941407ff7a461ec63f6758ba9535ec13cf5811588",
+            "pose": "club-front",
+            "mode": 0,
+            "cleanHair": true,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "interface-patch--club-front.png",
+            "sha256": "961ea1012e7b3b4a75da961885162ebdff308ed7aaf99ec925a39c69d6659c66",
+            "pose": "club-front",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "combined--club-front.png",
+            "sha256": "a691ac366cb19d7a93b8a66ad3d84b46a9a9385af0ff8c46e08eeaac3f419e85",
+            "pose": "club-front",
+            "mode": 2,
+            "cleanHair": true,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "baseline--unlit-front.png",
+            "sha256": "6790f5a7139b69c7c5b501e98f1eb715b2ed6cb0a6a90cdbdeb440ed3e3aac20",
+            "pose": "unlit-front",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-classification--unlit-front.png",
+            "sha256": "6790f5a7139b69c7c5b501e98f1eb715b2ed6cb0a6a90cdbdeb440ed3e3aac20",
+            "pose": "unlit-front",
+            "mode": 1,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-005--unlit-front.png",
+            "sha256": "6790f5a7139b69c7c5b501e98f1eb715b2ed6cb0a6a90cdbdeb440ed3e3aac20",
+            "pose": "unlit-front",
+            "mode": 2,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "clean-hair--unlit-front.png",
+            "sha256": "53c0cf48c82c06d9f6fff7e5c8b6b806a57754b483d514aa13ed0836eba04127",
+            "pose": "unlit-front",
+            "mode": 0,
+            "cleanHair": true,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "interface-patch--unlit-front.png",
+            "sha256": "96a41f7ced791485347a019233aabd6429ccf5fd97c5c729343ebda9e3e87f71",
+            "pose": "unlit-front",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "combined--unlit-front.png",
+            "sha256": "c8756c2e9f38eeae6d3473c171ffe8f240f91de52a093d35a6033afcf6aa626d",
+            "pose": "unlit-front",
+            "mode": 2,
+            "cleanHair": true,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "baseline--source-camera.png",
+            "sha256": "f4b30fcffc90632064b329e8924c30b052dc0c05edba52ab0029230868127f0f",
+            "pose": "source-camera",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "baseline--source-portrait-paired.png",
+            "sha256": "40fb142e5f60b0c19975acb052a37e36b81769ece973a9f14f426f66d95657ad",
+            "pose": "source-portrait-paired",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-classification--source-camera.png",
+            "sha256": "3d4f73eeb760181aafb8fd7c2d548eba5d37bedf473977e0d70bd18f3553fda3",
+            "pose": "source-camera",
+            "mode": 1,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-classification--source-portrait-paired.png",
+            "sha256": "b114b8d11d8401c3c797ebd41ce0b274cdc27a2f552a1e123d526f94c897d60e",
+            "pose": "source-portrait-paired",
+            "mode": 1,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-005--source-camera.png",
+            "sha256": "4ede10946314ee2005576f66c6b3837abdd80e7b92704fbd87490eb17265b419",
+            "pose": "source-camera",
+            "mode": 2,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "receiver-005--source-portrait-paired.png",
+            "sha256": "857df9e8edafd148fbdebb141121ca3e72c78abb35ba0f5efeb8ffae95646ec0",
+            "pose": "source-portrait-paired",
+            "mode": 2,
+            "cleanHair": false,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "clean-hair--source-camera.png",
+            "sha256": "1905a68ce6f6899d0ee6bc31549e7e8cdafa5f470d5bb59ebb933232a4e398de",
+            "pose": "source-camera",
+            "mode": 0,
+            "cleanHair": true,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "clean-hair--source-portrait-paired.png",
+            "sha256": "0624019033296b0c011b8c9f741a1ad6a8e19097435a337dcc5a530320010dfb",
+            "pose": "source-portrait-paired",
+            "mode": 0,
+            "cleanHair": true,
+            "patchVisible": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "interface-patch--source-camera.png",
+            "sha256": "b3311c83c63ce32f176d894b2197c415932cd34f817ac47d00178788c61b3162",
+            "pose": "source-camera",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "interface-patch--source-portrait-paired.png",
+            "sha256": "220bf738b2afb937280b2b292d90e241da143d69c98215271f1a7997f1ac6dfe",
+            "pose": "source-portrait-paired",
+            "mode": 0,
+            "cleanHair": false,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonNPR",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_Painted_PaleBlond"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51"
+            ]
+        },
+        {
+            "file": "combined--source-camera.png",
+            "sha256": "9e4aae7c0d6cada792c6e5648b312c9a8cc861d606494cfb54c831d4ae4db210",
+            "pose": "source-camera",
+            "mode": 2,
+            "cleanHair": true,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        },
+        {
+            "file": "combined--source-portrait-paired.png",
+            "sha256": "c8e9ba16e4ffd17c3afcc26214b2101f5d9466ad49d6848df063a54a9877fc99",
+            "pose": "source-portrait-paired",
+            "mode": 2,
+            "cleanHair": true,
+            "patchVisible": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_H_Head",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_L_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_SkinShutter",
+                    "shader": "LucidLoop/Characters/RenTokonReceiverStudy",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0
+                }
+            ],
+            "hairBaseMaps": [
+                "Ren_H_Hair_ClumpPigment_4K"
+            ],
+            "hairShadowMaps": [
+                "Ren_H_Hair_ClumpPigment_Shadow_2K"
+            ]
+        }
+    ],
+    "limits": "Three modes isolate original shadow classification, R-only classification with original .15 face strength, and R-only classification with selected .05 face strength on head3slots and shutters2. Diffuse response and shader values otherwise unchanged. Hair-only swaps matched clean pigment and derived shadow; patch-only adds verified static outer-eye notch patch; combined turns on all three candidates. Existing meshes, camera, lights, material shader parameters and other maps are fixed. Corrected support v2 remains constant, including its exposed lower-iris slit. Reference-only NPOT=None import fixes aspect; portrait pair samples identical source canvas crop and uniform2x scale, no XY warp. Source camera's existing mouth/chin residual ~18pixels remains. No final style, motion or phone result."
+}

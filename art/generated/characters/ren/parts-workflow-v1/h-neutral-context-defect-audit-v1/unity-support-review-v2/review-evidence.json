@@ -1,0 +1,12 @@
+{
+  "status": "ACTUAL_NEUTRAL_SUPPORT_V2_REVIEW_PROVISIONAL_WITH_REMAINING_GAPS",
+  "captures": 18,
+  "baselineFrontPixelIdenticalToFrozenV6": true,
+  "newSourceFbxSha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d",
+  "exactOldHeadFbxSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+  "buildLogSha256": "e30970dfcb0f006d13b248dc55ea3afb47f6b58231bf175cfc157de09a0e6e3d",
+  "importAuditSha256": "479b97bcb72cd43e17d9a364c507938d910671b85f107eabc8d4512822db84f0",
+  "contextResult": "V2 restores reviewed identity world placement of support; scalp is under cap, jaw opening coverage improves. Strong support/face shading boundary and extraction edges remain. New280pixel clear-background slit below image-right iris is visible in lit/unlit/club; old support concealed it. Not aesthetic acceptance.",
+  "scope": "Imported two-mesh corrected support/pigment plus static bridge versus original support only; no head, eye, hair, cap or canonical morph changes. New support R fallback0/FaceMode0 matches old support; shaders/receivers/casters baseline. Bridge Basis/A/seal canonical arrays identical.",
+  "failureHistory": "V1 source detached support local offset became world(+.06,0,+.2); global markers and bridge checks passed but combined visual failed. Corrected source v2 applies only support inverse offset. First helper failure was empty optional JsonUtility FileSpec, fixed by explicit file presence guard; no tolerance widening."
+}
