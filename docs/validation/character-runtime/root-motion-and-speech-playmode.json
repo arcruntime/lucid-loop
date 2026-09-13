@@ -12,5 +12,7 @@
   },
   "sourceHashEncoding": "UTF-8 source bytes normalized to LF to match Git text storage",
   "resultXml": "root-motion-and-speech-playmode.xml",
-  "resultSha256": "8b137e6c4f79b30cf864a7875514a15047198df1e601ab14a887f2f4c76f107f"
+  "resultSha256": "f3bbacbbef51f712bb2390469847df21ef3e65842e803e9db15e087ed243da94",
+  "originalRunnerXmlSha256": "8b137e6c4f79b30cf864a7875514a15047198df1e601ab14a887f2f4c76f107f",
+  "resultEncoding": "Git-stored XML; runner CRLF normalized to LF on check-in. Original runner byte hash recorded separately."
 }
