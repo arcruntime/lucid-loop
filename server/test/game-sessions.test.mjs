@@ -105,3 +105,36 @@ test('authenticated subscriptions emit safe state and unsubscribe/expiry cleanly
   assert.equal(events[1].type, 'expired');
   assert.equal(registry.publicState(a.credentials).ok, false);
 });
+
+test('typed and spoken history use non-authorizing correlation IDs distinct from active leases', () => {
+  const registry = createGameSessions({ definitionFactory });
+  const { credentials } = registry.create();
+  const first = registry.attach(credentials, 'maya');
+  const firstLease = first.lease.leaseId;
+  assert.equal(registry.appendTranscript(credentials, firstLease, delta).appended, true);
+  assert.equal(registry.appendTyped(credentials, firstLease, { requestId: 'typed1', text: 'Please wait.' }).appended, true);
+  const firstHistory = registry.history(credentials).history.fragments;
+  assert.equal(firstHistory.length, 2);
+  const firstCorrelation = firstHistory[0].sessionId;
+  assert.match(firstCorrelation, /^conversation_[0-9a-f-]{36}$/);
+  assert.equal(firstHistory[1].sessionId, firstCorrelation);
+  assert.notEqual(firstCorrelation, firstLease);
+  assert.equal(JSON.stringify(firstHistory).includes(firstLease), false);
+  assert.equal(registry.npcContext(credentials, firstCorrelation).ok, false);
+  assert.equal(registry.appendTyped(credentials, firstCorrelation, { requestId: 'forged', text: 'No authority.' }).ok, false);
+  assert.equal(registry.npcContext(credentials, firstLease).ok, true);
+  assert.equal(registry.detach(credentials, firstLease).ok, true);
+  const second = registry.attach(credentials, 'maya');
+  const secondLease = second.lease.leaseId;
+  // Provider IDs/request IDs can repeat in a new conversation without deduplicating across sessions.
+  assert.equal(registry.appendTranscript(credentials, secondLease, delta).appended, true);
+  assert.equal(registry.appendTyped(credentials, secondLease, { requestId: 'typed1', text: 'New conversation.' }).appended, true);
+  const history = registry.history(credentials).history.fragments;
+  assert.equal(history.length, 4);
+  assert.notEqual(history[2].sessionId, firstCorrelation);
+  assert.equal(history[2].sessionId, history[3].sessionId);
+  for (const lease of [firstLease, secondLease]) assert.equal(JSON.stringify(history).includes(lease), false);
+  assert.equal(registry.npcContext(credentials, history[2].sessionId).ok, false);
+  assert.equal(registry.npcContext(credentials, secondLease).ok, true);
+  assert.equal(registry.appendTranscript(credentials, firstLease, { ...delta, event_id: 'old' }).ok, false);
+});

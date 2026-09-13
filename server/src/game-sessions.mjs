@@ -1,4 +1,4 @@
-import { randomBytes, timingSafeEqual } from 'node:crypto';
+import { randomBytes, randomUUID, timingSafeEqual } from 'node:crypto';
 import { createEncounter, NPC_IDS } from './encounter.mjs';
 import { createTranscriptStore } from './transcripts.mjs';
 
@@ -82,8 +82,10 @@ export function createGameSessions({ definitionFactory, encounterFactory = creat
       const game = auth(credentials); if (!game) return unauthorized();
       if (!NPC_IDS.includes(npcId)) return { ok: false, reason: 'unknown_npc' };
       // One active voice conversation per game. A new attach fences every prior connection.
-      game.active = { leaseId: token(), npcId, generation: ++game.generations[npcId] };
-      return { ok: true, lease: { ...game.active }, snapshot: publicSnapshot(game) };
+      // Correlation IDs may enter transcript history/model context. They grant no authority.
+      game.active = { leaseId: token(), correlationId: `conversation_${randomUUID()}`, npcId, generation: ++game.generations[npcId] };
+      const { leaseId, generation } = game.active;
+      return { ok: true, lease: { leaseId, npcId, generation }, snapshot: publicSnapshot(game) };
     },
     detach(credentials, leaseId) {
       const game = leased(credentials, leaseId); if (!game) return unauthorized();
@@ -107,12 +109,12 @@ export function createGameSessions({ definitionFactory, encounterFactory = creat
     appendTranscript(credentials, leaseId, event) {
       const game = leased(credentials, leaseId); if (!game) return unauthorized();
       const s = game.encounter.snapshot();
-      return { ok: true, appended: game.transcripts.append(game.active.leaseId, game.active.npcId, s.loopId, event) };
+      return { ok: true, appended: game.transcripts.append(game.active.correlationId, game.active.npcId, s.loopId, event) };
     },
     appendTyped(credentials, leaseId, message) {
       const game = leased(credentials, leaseId); if (!game) return unauthorized();
       const s = game.encounter.snapshot();
-      return { ok: true, appended: game.transcripts.appendTyped(game.active.leaseId, game.active.npcId, s.loopId, message) };
+      return { ok: true, appended: game.transcripts.appendTyped(game.active.correlationId, game.active.npcId, s.loopId, message) };
     },
     submitAction(credentials, leaseId, command) {
       const game = leased(credentials, leaseId); if (!game) return unauthorized();

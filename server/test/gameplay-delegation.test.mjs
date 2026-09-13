@@ -212,3 +212,162 @@ test('demo disclosure speaks only the committed authored fact and route acknowle
   assert.match(mediation.sent.at(-1).content, /accepted the private mediation/);
   assert.equal(registry.publicState(credentials).snapshot.victory, false);
 });
+
+function appendUser(env, text, eventId, startMs = 600, endMs = 900) {
+  assert.equal(env.registry.appendTranscript(env.credentials, env.leaseId, {
+    type: 'session.input_transcript.delta', delta: text, event_id: eventId, start_ms: startMs, end_ms: endMs,
+  }).appended, true);
+}
+
+test('late overlapping completion is semantically reinterpreted rather than treated as cancellation', async () => {
+  const first = deferred(), entered = deferred(); let calls = 0;
+  const env = setup({ interpret: async body => {
+    calls++;
+    if (calls === 1) { entered.resolve(); return first.promise; }
+    const payload = JSON.parse(body.input[1].content);
+    assert.equal(payload.request.delegationId, delegation.delegation.id);
+    assert.deepEqual(payload.history.map(part => part.text), ['Could you ', 'wait here?']);
+    assert.equal(env.registry.publicState(env.credentials).snapshot.revision, 0);
+    return response(proposal);
+  } });
+  appendUser(env, 'Could you ', 'part_1', 100, 650);
+  const pending = env.bridge.onDelegation(delegation);
+  await entered.promise;
+  appendUser(env, 'wait here?', 'part_2', 400, 850);
+  first.resolve(response({ kind: 'clarification', action: null, targetId: null, mood: null, clarification: 'What would you like?' }));
+  const result = await pending;
+  assert.equal(calls, 2);
+  assert.equal(result.reinterpretations, 1);
+  assert.equal(result.committed, true);
+  assert.equal(env.registry.publicState(env.credentials).snapshot.actors.maya.action.type, 'wait');
+});
+
+test('new user correction prevents the old proposal from committing before semantic replacement', async () => {
+  const first = deferred(), second = deferred(), entered = deferred(), reentered = deferred(); let calls = 0;
+  const env = setup({ interpret: async body => {
+    calls++;
+    if (calls === 1) { entered.resolve(); return first.promise; }
+    assert.equal(JSON.parse(body.input[1].content).history.at(-1).text, 'Come with me instead.');
+    reentered.resolve(); return second.promise;
+  } });
+  appendUser(env, 'Wait here.', 'wait_1');
+  const pending = env.bridge.onDelegation(delegation);
+  await entered.promise;
+  appendUser(env, 'Come with me instead.', 'correction_1', 900, 1300);
+  first.resolve(response(proposal));
+  await reentered.promise;
+  assert.equal(env.registry.publicState(env.credentials).snapshot.revision, 0);
+  assert.equal(env.sent.length, 0);
+  second.resolve(response({ ...proposal, action: 'follow', targetId: 'player' }));
+  const result = await pending;
+  assert.equal(result.committed, true);
+  assert.equal(env.registry.publicState(env.credentials).snapshot.actors.maya.action.type, 'follow');
+  assert.equal(env.registry.publicState(env.credentials).snapshot.revision, 1);
+});
+
+test('semantic cancellation and ambiguous corrections do not commit the superseded proposal', async () => {
+  for (const interpretation of [
+    { kind: 'no_action', action: null, targetId: null, mood: null, clarification: null },
+    { kind: 'clarification', action: null, targetId: null, mood: null, clarification: 'Should I stay or come with you?' },
+  ]) {
+    const first = deferred(), entered = deferred(); let calls = 0;
+    const env = setup({ interpret: async () => {
+      calls++; if (calls === 1) { entered.resolve(); return first.promise; }
+      return response(interpretation);
+    } });
+    appendUser(env, 'Wait here.', 'original_1');
+    const pending = env.bridge.onDelegation(delegation);
+    await entered.promise;
+    appendUser(env, 'I need to change that request.', 'new_1', 1200, 1600);
+    first.resolve(response(proposal));
+    const result = await pending;
+    assert.equal(result.kind, interpretation.kind);
+    assert.equal(result.committed, false);
+    assert.equal(env.registry.publicState(env.credentials).snapshot.revision, 0);
+  }
+});
+
+test('repeated user evidence churn stops after three reinterpretations and asks before any mutation', async () => {
+  let calls = 0;
+  const env = setup({ interpret: async () => {
+    calls++;
+    appendUser(env, `More request context ${calls}.`, `churn_${calls}`, calls * 1000, calls * 1000 + 500);
+    return response(proposal);
+  } });
+  const result = await env.bridge.onDelegation(delegation);
+  assert.equal(calls, 4);
+  assert.equal(result.reinterpretations, 3);
+  assert.equal(result.kind, 'clarification');
+  assert.equal(result.reason, 'user_evidence_unsettled');
+  assert.equal(result.committed, false);
+  assert.equal(env.registry.publicState(env.credentials).snapshot.revision, 0);
+  assert.equal(env.sent.at(-1).type, 'session.commentary.append');
+  assert.match(env.sent.at(-1).content, /Before I act/);
+});
+
+test('assistant-only fragments cannot trigger reinterpretation or become new user evidence', async () => {
+  const first = deferred(), entered = deferred(); let calls = 0;
+  const env = setup({ interpret: () => { calls++; entered.resolve(); return first.promise; } });
+  appendUser(env, 'Wait here.', 'original_1');
+  const pending = env.bridge.onDelegation(delegation);
+  await entered.promise;
+  env.registry.appendTranscript(env.credentials, env.leaseId, { type: 'session.output_transcript.delta',
+    delta: 'Let me check.', event_id: 'assistant_1', start_ms: 1000, end_ms: 1300 });
+  first.resolve(response(proposal));
+  assert.equal((await pending).committed, true);
+  assert.equal(calls, 1);
+});
+
+test('typed original is persisted before the initial watermark and retained through semantic review', async () => {
+  const first = deferred(), entered = deferred(); let calls = 0;
+  const env = setup({ interpret: async body => {
+    calls++;
+    const payload = JSON.parse(body.input[1].content);
+    assert.equal(payload.request.text, 'Please wait here.');
+    assert.equal(payload.history.filter(part => part.source === 'typed').length, 1);
+    assert.equal(payload.history.find(part => part.source === 'typed').text, 'Please wait here.');
+    if (calls === 1) { entered.resolve(); return first.promise; }
+    assert.equal(payload.history.at(-1).text, 'Just until I return.');
+    return response(proposal);
+  } });
+  const pending = env.bridge.onTyped({ requestId: 'original_typed', text: 'Please wait here.' });
+  await entered.promise;
+  appendUser(env, 'Just until I return.', 'voice_continuation');
+  first.resolve(response(proposal));
+  assert.equal((await pending).committed, true);
+  assert.equal(calls, 2);
+});
+
+test('dispose and lease replacement still fence a pending semantic reinterpretation', async () => {
+  for (const invalidate of [env => env.bridge.dispose(), env => env.registry.attach(env.credentials, 'theo')]) {
+    const second = deferred(), reentered = deferred(); let calls = 0;
+    const env = setup({ interpret: async () => {
+      calls++;
+      if (calls === 1) { appendUser(env, 'More context.', 'next_1'); return response(proposal); }
+      reentered.resolve(); return second.promise;
+    } });
+    const pending = env.bridge.onDelegation(delegation);
+    await reentered.promise;
+    invalidate(env);
+    second.resolve(response(proposal));
+    const result = await pending;
+    assert.equal(result.ok, false);
+    assert.ok(['disposed', 'stale_context'].includes(result.reason));
+    assert.equal(env.registry.publicState(env.credentials).snapshot.revision, 0);
+    assert.equal(env.sent.length, 0);
+  }
+});
+
+test('real registry typed and voice history reach the interpreter without bearer lease credentials', async () => {
+  let body;
+  const env = setup({ interpret: async request => { body = request; return response(proposal); } });
+  appendUser(env, 'Could you ', 'voice_1');
+  assert.equal((await env.bridge.onTyped({ requestId: 'typed_1', text: 'wait here?' })).committed, true);
+  const serialized = JSON.stringify(body);
+  assert.equal(serialized.includes(env.leaseId), false);
+  assert.equal(serialized.includes(env.credentials.resumeToken), false);
+  const history = JSON.parse(body.input[1].content).history;
+  assert.equal(history.length, 2);
+  assert.ok(history.some(part => part.source === 'typed'));
+  assert.ok(history.some(part => part.text === 'Could you '));
+});

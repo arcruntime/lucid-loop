@@ -4,8 +4,9 @@ Recorded 2026-09-14. These results distinguish executable checks from device and
 
 | Check | Evidence | Result |
 | --- | --- | --- |
-| Server suite | Linux Node 24 container, current approach implementation | 91 passed, 3 opt-in live tests skipped; 94 total. Includes approach routing, sightlines, cancellation and public WebSocket sequencing. Local Windows socket allocation previously returned intermittent EADDRINUSE; container checks passed. |
+| Server suite | Linux Node 24 container, current request-freshness implementation | 100 passed, 4 opt-in live tests skipped; 104 total. Includes approach routing, late user-evidence reinterpretation, bounded clarification, lease correlation isolation and public WebSocket sequencing. Local Windows socket allocation previously returned intermittent EADDRINUSE; container checks passed. |
 | Complete real-provider prevention | [Run 34777703855](https://github.com/jethac/lucid-loop/actions/runs/34777703855), commit `a9327fc` | All 3 Live tests passed, including witnessed catastrophe, rewind, nearby conversations, Responses action commits, mediation, separation and the full 180 active-second loop. |
+| Spoken request through real provider | [Run 34779053805](https://github.com/jethac/lucid-loop/actions/runs/34779053805), commit `40e3a73` | Synthetic spoken PCM, no typed command: 1 native client delegation, 9 input fragments, confirmed Maya wait action, 132,480 output samples and final usage. All 3 enabled live tests passed; full prevention was skipped for this run. This does not validate a physical microphone or interruption behavior. |
 | Pushed checkpoint CI | [Run 34776400688](https://github.com/jethac/lucid-loop/actions/runs/34776400688), commit `e425a79` | Gyms workflow passed; physical iOS checks remain separate |
 | Real provider CI | [Run 34774108170](https://github.com/jethac/lucid-loop/actions/runs/34774108170), commit `72cc6d3` | Server/Docker job and both real Live smoke tests passed, including a typed Maya wait action committed through Responses |
 | English speech stream | `dotnet test tools/live_speech/Tests.csproj` | 6 passed; upstream nullable-context compiler warnings |

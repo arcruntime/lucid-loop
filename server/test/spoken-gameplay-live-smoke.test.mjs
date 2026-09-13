@@ -54,7 +54,7 @@ test('opt-in spoken PCM delegates and commits Maya wait through the real product
       clearInterval(timer);
       player.send(voice, { type: 'session.close' });
       assert.ok((await player.receive(voice, 'session.closed', () => true, 20)).usage);
-      t.diagnostic(JSON.stringify({ delegations, inputFragments, outputSamples, committed: true }));
+      t.diagnostic(JSON.stringify({ delegations, inputFragments, outputSamples, reinterpretations: result.reinterpretations ?? 0, committed: true }));
     } finally {
       clearInterval(timer); player.close(); await relay.close();
     }

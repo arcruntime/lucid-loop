@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto';
 import { buildIntentRequest, parseIntentResponse, toEncounterCommand } from './gameplay-intent.mjs';
 
 const validId = value => typeof value === 'string' && /^[a-zA-Z0-9_.:-]{1,128}$/.test(value);
+const MAX_REINTERPRETATIONS = 3;
 // A conservative byte budget stays below 500 tokens without assuming characters equal tokens.
 function shortText(text) {
   let result = '';
@@ -49,20 +50,36 @@ export function createGameplayDelegation({ registry, credentials, leaseId, model
     return latest.ok === true && latest.context.npcId === context.npcId &&
       latest.context.loopId === context.loopId && latest.context.revision === revision;
   }
+  function userEvidence(context) {
+    const stored = registry.history(auth, { npcId: context.npcId });
+    if (!stored.ok || !Array.isArray(stored.history?.fragments) || stored.history.dropped > 0)
+      throw new Error('history_unavailable');
+    let watermark = 0;
+    for (const fragment of stored.history.fragments) {
+      if (fragment.npcId !== context.npcId || fragment.loopId !== context.loopId || fragment.role !== 'user') continue;
+      if (!Number.isSafeInteger(fragment.sequence) || fragment.sequence < 1) throw new Error('invalid_history_sequence');
+      watermark = Math.max(watermark, fragment.sequence);
+    }
+    return { fragments: stored.history.fragments, watermark };
+  }
   async function run(trigger, key, delegationId, sourceRequestId) {
     const base = { requestId: sourceRequestId, delegationId };
     if (disposed) return report({ ...base, ok: false, reason: 'disposed' });
     if (seen.has(key)) return report({ ...base, ok: false, reason: 'duplicate_request' });
+    // This bridge still does not queue additional delegation/typed triggers. Voice
+    // fragments already persisted by the relay are reconciled below; a second typed
+    // submission rejected here is not persisted and must be retried by the caller.
     if (pending) return report({ ...base, ok: false, reason: 'busy' });
     if (seen.size >= maxRequests) return report({ ...base, ok: false, reason: 'request_capacity' });
     const projection = registry.npcContext(auth, leaseId);
     if (!projection.ok) return report({ ...base, ok: false, reason: 'stale_lease' });
     const context = structuredClone(projection.context);
-    const stored = registry.history(auth, { npcId: context.npcId });
-    if (!stored.ok) return report({ ...base, ok: false, reason: 'history_unavailable' });
+    let evidence;
+    try { evidence = userEvidence(context); }
+    catch { return report({ ...base, ok: false, reason: 'history_unavailable' }); }
     let body;
     try {
-      body = buildIntentRequest({ model, context, trigger, fragments: stored.history.fragments });
+      body = buildIntentRequest({ model, context, trigger, fragments: evidence.fragments });
     } catch {
       return report({ ...base, ok: false, reason: 'invalid_request' });
     }
@@ -70,6 +87,10 @@ export function createGameplayDelegation({ registry, credentials, leaseId, model
     if (trigger.type === 'typed') {
       const storedTyped = registry.appendTyped(auth, leaseId, { requestId: trigger.requestId, text: trigger.text });
       if (!storedTyped.ok || storedTyped.appended !== true) return report({ ...base, ok: false, reason: 'typed_history_rejected' });
+      try {
+        evidence = userEvidence(context);
+        body = buildIntentRequest({ model, context, trigger, fragments: evidence.fragments });
+      } catch { return report({ ...base, ok: false, reason: 'history_unavailable' }); }
     }
     const controller = new AbortController();
     pending = controller;
@@ -95,23 +116,48 @@ export function createGameplayDelegation({ registry, credentials, leaseId, model
         }
       }
       if (!current(context)) return report({ ...base, ok: false, reason: disposed ? 'disposed' : 'stale_context' });
-      const raw = await Promise.race([Promise.resolve().then(() => {
-        if (controller.signal.aborted) throw new Error('disposed');
-        return interpret(body, { signal: controller.signal });
-      }), canceled]);
-      if (!current(context)) return report({ ...base, ok: false, reason: disposed ? 'disposed' : 'stale_context' });
-      let intent;
-      try { intent = parseIntentResponse(raw, context); }
-      catch { return report({ ...base, ok: false, reason: 'invalid_interpretation' }); }
-      const command = toEncounterCommand(intent, { ...context, requestId: actionId });
+      let intent, command, executionResult, decisionReason;
+      let reinterpretations = 0;
+      for (;;) {
+        const raw = await Promise.race([Promise.resolve().then(() => {
+          if (controller.signal.aborted) throw new Error('disposed');
+          return interpret(body, { signal: controller.signal });
+        }), canceled]);
+        if (!current(context)) return report({ ...base, ok: false, reason: disposed ? 'disposed' : 'stale_context' });
+        try { intent = parseIntentResponse(raw, context); }
+        catch { return report({ ...base, ok: false, reason: 'invalid_interpretation' }); }
+        let latest;
+        try { latest = userEvidence(context); }
+        catch { return report({ ...base, ok: false, reason: 'history_unavailable' }); }
+        if (latest.watermark !== evidence.watermark) {
+          if (reinterpretations >= MAX_REINTERPRETATIONS) {
+            // New fragments are not themselves a cancellation or a new completed turn.
+            // Hold all mutations when bounded semantic review cannot catch up.
+            intent = { kind: 'clarification', action: null, targetId: null, mood: null,
+              clarification: 'Before I act, what would you like me to do now?' };
+            command = null; decisionReason = 'user_evidence_unsettled';
+            break;
+          }
+          evidence = latest;
+          try { body = buildIntentRequest({ model, context, trigger, fragments: latest.fragments }); }
+          catch { return report({ ...base, ok: false, reason: 'history_unavailable' }); }
+          reinterpretations++;
+          continue;
+        }
+        command = toEncounterCommand(intent, { ...context, requestId: actionId });
+        // No await from the latest user watermark check through the synchronous
+        // authority call. World/lease checks remain independent of transcript freshness.
+        if (!current(context)) return report({ ...base, ok: false, reason: disposed ? 'disposed' : 'stale_context' });
+        if (command) executionResult = registry.submitAction(auth, leaseId, command);
+        break;
+      }
       let committed = false;
       let outcome;
       let revision = context.revision;
       let content;
       let type = 'session.thinking.append';
       if (command) {
-        // No await between the fresh-state check and the authority's own atomic fence.
-        const result = registry.submitAction(auth, leaseId, command);
+        const result = executionResult;
         outcome = result.outcome;
         committed = result.ok === true && outcome?.accepted === true;
         if (!committed) {
@@ -145,7 +191,8 @@ export function createGameplayDelegation({ registry, credentials, leaseId, model
           content = 'Respond in character to the latest typed player message provided as user data. No supported game action was identified and no world state changed. Use only your permitted knowledge; do not claim an action succeeded.';
         } else content = 'No supported game action was identified in that request. No world state changed. Continue the conversation using your permitted knowledge.';
       }
-      const result = { ...base, ok: true, kind: intent.kind, committed, ...(outcome ? { outcome } : {}) };
+      const result = { ...base, ok: true, kind: intent.kind, committed, reinterpretations,
+        ...(decisionReason ? { reason: decisionReason } : {}), ...(outcome ? { outcome } : {}) };
       // Subscriber callbacks may have changed state or detached the lease during commit.
       if (!current(context, revision)) return report({ ...result, delivered: false, reason: 'stale_context' });
       try {
