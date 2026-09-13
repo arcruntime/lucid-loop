@@ -87,3 +87,22 @@ lights, closed/open mouth, intermediate blink and cap on/off. A successful
 Windows capture cannot prove Metal compilation, mobile memory use or sustained
 iPhone performance. Dense H construction geometry remains over the final
 approximately 40k rendered-triangle budget for the complete dressed character.
+
+## Reference and vertex-color import checks
+
+Artist comparison textures must retain the source aspect and pixel geometry.
+Set `TextureImporter.npotScale = TextureImporterNPOTScale.None` for the Ren
+1536×1024 sheet and verify the runtime texture dimensions. The first designer-eye
+viewer inherited `ToNearest`, which resized its width to 2048 and invalidated the
+displayed comparison despite the source PNG hash being correct. Compare equal
+source-pixel portrait crops while retaining the untouched full sheet for context;
+do not warp either axis independently to manufacture a match.
+
+For authored linear eye vertex colors, verify imported triangle-referenced
+positions, UVs and colors against source polygon corners. Unity imported this
+FBX's drawn colors as UNorm8; measured maximum linear error was 0.001960663.
+Four unused imported vertices received default white. Record those separately
+from drawn vertices instead of weakening the rendered-color tolerance or changing
+valid source pigment. Matching color ranges alone cannot prove correct assignment
+to individual corners. Consume the verified linear pigment once and avoid a
+second sRGB decode.

@@ -1,0 +1,38 @@
+{
+  "status": "ACTUAL_NEUTRAL_V6_UNITY_CAPTURE_NOT_VISUAL_ACCEPTANCE",
+  "captureCount": 18,
+  "sourceEyeSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+  "sourceHeadSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+  "sourceEyesImmutable": true,
+  "outlineOff": true,
+  "noCanonicalMorphRestoration": true,
+  "closedLipPaintCandidate": true,
+  "newEyeControls": "NONE",
+  "actualRenderedCornerColorAudit": "Every triangle-referenced imported vertex matched raw FBX native XYZ/UV then final layer0 linearRGBA; maximum linear color error <= halfUNorm8 step +2e-5.",
+  "maximumLinearColorError": 0.0019606631249189377,
+  "unusedImportedVertices": 4,
+  "markerRegistrationError": 4.889893645554366e-08,
+  "sourceReferenceSha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+  "referencePresentationLimitation": "Full-sheet source-camera pairs are diagnostic only and too small for likeness judgment. Inherited reference importer scales non-power-of-two source; a new reference-only import/crop presentation is queued, preserving original image bytes and source-pixel scale.",
+  "observedLimitations": [
+    "Pale/taupe patches around both eyes remain visible; shutter fallback shadow response differs from mapped head pigment.",
+    "Far outer eyelash is fragmented/jagged in quarter view.",
+    "Forehead and jaw/support patches, existing profile jaw gap, extraction boundaries and striped hair persist.",
+    "Eyes are shallow/elongated but not artist 1:1 accepted.",
+    "New separate support/bridge derivative has not been integrated.",
+    "No phone performance, canonical female rig, motion, blink, gaze or speech claim."
+  ],
+  "failedAttempts": [
+    {
+      "file": "failed-attempts/build-duplicate-source-root.log",
+      "cause": "Ambiguous Head name from historical outline; fixed lookup to explicit original Source subtree."
+    },
+    {
+      "file": "failed-attempts/build-color-mismatch-v2.log",
+      "cause": "Whole-vertex color range included unused white vertices. Actual read-only dump isolated them; no rendered color or tolerance changed. Gate now checks referenced corners."
+    }
+  ],
+  "playerLocal": ".local/ren-designer-eye-v6/RenDesignerEyeReview.exe",
+  "sceneScratch": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerEyeReview.unity",
+  "visiblePlayerLaunched": false
+}

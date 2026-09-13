@@ -107,6 +107,47 @@ designer's sketch before expanding the new eye controls.
 
 ## Parallel shading finding
 
+### Actual v6 Unity comparison
+
+The isolated `RenDesignerEyeReview` player built successfully and produced 18
+captures in `.local/ren-designer-eye-v6/live-review/`. Root inspected the actual
+Tokon front, quarter, profile, club-front and source-camera pair, plus the unlit
+front control. All 22 imported eye meshes passed rendered-corner position, UV
+and linear color correspondence. Four unused imported vertices were recorded
+separately; their default-white colors do not appear in rendered triangles.
+
+This is not likeness or final material acceptance. The narrow, shallow graphic
+eyes are visible, but the lit front introduces conspicuous mask-shaped shading
+below the eyes that is largely absent in the unlit control. The quarter view
+also has a fragmented far outer-lash edge. Exposed forehead/support patches,
+strong side-head color boundaries, the profile jaw gap and striped hair remain.
+Keep the accepted facial positions fixed while diagnosing these defects.
+
+The first source-camera pair places a small head at the upper left beside the
+entire artist sheet. It is unsuitable for direct likeness comparison; the source
+texture aspect is also being checked. Preserve this capture as diagnostic
+history and provide an additional equal-scale portrait crop pair without
+independent axis warping. A full-sheet panel alone does not demonstrate matching.
+
+Next separate comparisons are the existing support/bridge with matched pigment,
+and the eye-shutter versus head lighting response. Neither correction is already
+proved by the successful import. Neutral eye controls remain frozen.
+
+The received-shadow diagnostic subsequently produced 14 actual captures in
+`.local/ren-designer-shadow-v1/live-review/`. With only head/shutter received-shadow
+strengths set to zero, the strongest under-eye band is reduced, but a residual
+material boundary remains. This is useful causal evidence, not a solved seam or
+an accepted final shadow policy. The shader retains its authored diffuse bands
+in this mode. Investigate which eye layers cast the unwanted shadow separately
+from head/shutter receiving so that cap and environment shadows are not discarded
+without checking a more targeted correction.
+
+The corrected source portrait pair uses the original 1536×1024 sheet with
+NPOT=None and the same source-pixel crop on both images, uniformly enlarged.
+Root inspected the actual pair; it now provides a useful comparison and exposes
+remaining paint, hair, silhouette and pose differences. It does not upgrade the
+eye-region camera fit into a full-face match or establish 1:1 acceptance.
+
 The actual first Tokon player captures in
 `.local/ren-tokon-review-v1/live-review/` show a clearer pale-blond palette, but
 `tokon--rest-front.png` and `tokon--club-a.png` still show dark socket rings and

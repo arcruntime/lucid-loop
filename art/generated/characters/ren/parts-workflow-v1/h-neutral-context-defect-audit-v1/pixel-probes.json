@@ -1,0 +1,497 @@
+{
+  "source_sha256": "715617c4842029775dfdef0cd289648ea87883624fe693c61a5d374812a2b13d",
+  "source_unchanged": true,
+  "probes": [
+    {
+      "view": "front",
+      "label": "forehead-left",
+      "pixel": [
+        307,
+        192
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_Head",
+          "face": 39746,
+          "source_h_face_id": 680928,
+          "distance": 2.9466755390167236,
+          "world": [
+            0.20809245109558105,
+            -0.10883753001689911,
+            0.1906978338956833
+          ]
+        },
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 332,
+          "source_h_face_id": null,
+          "distance": 3.0131993293762207,
+          "world": [
+            0.14156866073608398,
+            -0.1088375449180603,
+            0.1906978338956833
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_RootBase",
+          "face": 242,
+          "source_h_face_id": null,
+          "distance": 3.5171751976013184,
+          "world": [
+            -0.36240720748901367,
+            -0.10883768647909164,
+            0.19069784879684448
+          ]
+        },
+        {
+          "object": "Ren_Cap",
+          "face": 553,
+          "source_h_face_id": null,
+          "distance": 3.541964054107666,
+          "world": [
+            -0.38719606399536133,
+            -0.10883769392967224,
+            0.19069784879684448
+          ]
+        }
+      ]
+    },
+    {
+      "view": "front",
+      "label": "forehead-right",
+      "pixel": [
+        519,
+        204
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 505,
+          "source_h_face_id": null,
+          "distance": 2.95611310005188,
+          "world": [
+            0.1986548900604248,
+            0.15739506483078003,
+            0.17562808096408844
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_RootBase",
+          "face": 236,
+          "source_h_face_id": null,
+          "distance": 3.485496997833252,
+          "world": [
+            -0.33072900772094727,
+            0.1573949158191681,
+            0.17562809586524963
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 2685,
+          "source_h_face_id": null,
+          "distance": 3.5071988105773926,
+          "world": [
+            -0.3524308204650879,
+            0.1573949158191681,
+            0.17562809586524963
+          ]
+        }
+      ]
+    },
+    {
+      "view": "front",
+      "label": "forehead-mid",
+      "pixel": [
+        424,
+        226
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 410,
+          "source_h_face_id": null,
+          "distance": 2.9115967750549316,
+          "world": [
+            0.24317121505737305,
+            0.038092732429504395,
+            0.14800016582012177
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 2640,
+          "source_h_face_id": null,
+          "distance": 3.4827914237976074,
+          "world": [
+            -0.32802343368530273,
+            0.03809257224202156,
+            0.14800018072128296
+          ]
+        }
+      ]
+    },
+    {
+      "view": "front",
+      "label": "temple-right",
+      "pixel": [
+        576,
+        286
+      ],
+      "hits": [
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 1843,
+          "source_h_face_id": null,
+          "distance": 3.2232160568237305,
+          "world": [
+            -0.06844806671142578,
+            0.22897639870643616,
+            0.07265133410692215
+          ]
+        },
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 257,
+          "source_h_face_id": null,
+          "distance": 3.2464234828948975,
+          "world": [
+            -0.09165549278259277,
+            0.22897639870643616,
+            0.07265133410692215
+          ]
+        }
+      ]
+    },
+    {
+      "view": "front",
+      "label": "jaw-left",
+      "pixel": [
+        311,
+        510
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 376,
+          "source_h_face_id": null,
+          "distance": 3.1739559173583984,
+          "world": [
+            -0.01918792724609375,
+            -0.10381433367729187,
+            -0.20865102112293243
+          ]
+        },
+        {
+          "object": "Ren_H_Head",
+          "face": 43994,
+          "source_h_face_id": 706631,
+          "distance": 3.183420181274414,
+          "world": [
+            -0.028652191162109375,
+            -0.10381434112787247,
+            -0.20865102112293243
+          ]
+        }
+      ]
+    },
+    {
+      "view": "front",
+      "label": "jaw-right",
+      "pixel": [
+        516,
+        478
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 372,
+          "source_h_face_id": null,
+          "distance": 3.1892828941345215,
+          "world": [
+            -0.0345149040222168,
+            0.15362755954265594,
+            -0.16846497356891632
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 56,
+          "source_h_face_id": null,
+          "distance": 3.357828378677368,
+          "world": [
+            -0.20306038856506348,
+            0.15362749993801117,
+            -0.16846495866775513
+          ]
+        }
+      ]
+    },
+    {
+      "view": "quarter",
+      "label": "forehead-mid",
+      "pixel": [
+        484,
+        227
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 450,
+          "source_h_face_id": null,
+          "distance": 2.935617685317993,
+          "world": [
+            0.2418522834777832,
+            0.015987515449523926,
+            0.14674505591392517
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 2339,
+          "source_h_face_id": null,
+          "distance": 3.431837320327759,
+          "world": [
+            -0.20524239540100098,
+            0.2312551736831665,
+            0.14674519002437592
+          ]
+        }
+      ]
+    },
+    {
+      "view": "quarter",
+      "label": "forehead-right",
+      "pixel": [
+        574,
+        205
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_Head",
+          "face": 176875,
+          "source_h_face_id": 1413240,
+          "distance": 3.0441226959228516,
+          "world": [
+            0.19312047958374023,
+            0.1648927927017212,
+            0.17437301576137543
+          ]
+        },
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 506,
+          "source_h_face_id": null,
+          "distance": 3.044248342514038,
+          "world": [
+            0.193007230758667,
+            0.1649472713470459,
+            0.17437301576137543
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 2950,
+          "source_h_face_id": null,
+          "distance": 3.349637508392334,
+          "world": [
+            -0.08214902877807617,
+            0.29742980003356934,
+            0.1743730902671814
+          ]
+        }
+      ]
+    },
+    {
+      "view": "quarter",
+      "label": "temple-far",
+      "pixel": [
+        593,
+        304
+      ],
+      "hits": [
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 1728,
+          "source_h_face_id": null,
+          "distance": 3.27724289894104,
+          "world": [
+            -0.006570100784301758,
+            0.28752219676971436,
+            0.05004747584462166
+          ]
+        },
+        {
+          "object": "Ren_H_Ear_L",
+          "face": 39519,
+          "source_h_face_id": 1888324,
+          "distance": 3.404158592224121,
+          "world": [
+            -0.12092137336730957,
+            0.3425801992416382,
+            0.05004751309752464
+          ]
+        }
+      ]
+    },
+    {
+      "view": "quarter",
+      "label": "posterior-jaw-dark",
+      "pixel": [
+        276,
+        507
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 374,
+          "source_h_face_id": null,
+          "distance": 3.1543891429901123,
+          "world": [
+            -0.06857776641845703,
+            -0.12445628643035889,
+            -0.20488281548023224
+          ]
+        },
+        {
+          "object": "Ren_H_Head",
+          "face": 47982,
+          "source_h_face_id": 715370,
+          "distance": 3.16070294380188,
+          "world": [
+            -0.07426643371582031,
+            -0.12171721458435059,
+            -0.20488281548023224
+          ]
+        }
+      ]
+    },
+    {
+      "view": "profile",
+      "label": "rear-support",
+      "pixel": [
+        344,
+        467
+      ],
+      "hits": [
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 132,
+          "source_h_face_id": null,
+          "distance": 2.9850003719329834,
+          "world": [
+            -0.05265507474541664,
+            -0.1482253074645996,
+            -0.15465065836906433
+          ]
+        },
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 374,
+          "source_h_face_id": null,
+          "distance": 2.9868032932281494,
+          "world": [
+            -0.05267610773444176,
+            -0.1464223861694336,
+            -0.15465065836906433
+          ]
+        }
+      ]
+    },
+    {
+      "view": "profile",
+      "label": "jaw-background",
+      "pixel": [
+        424,
+        471
+      ],
+      "hits": []
+    },
+    {
+      "view": "profile",
+      "label": "ear-support",
+      "pixel": [
+        353,
+        338
+      ],
+      "hits": [
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 362,
+          "source_h_face_id": null,
+          "distance": 2.9310216903686523,
+          "world": [
+            -0.04072380065917969,
+            -0.20206832885742188,
+            0.0073493351228535175
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 1294,
+          "source_h_face_id": null,
+          "distance": 3.3303778171539307,
+          "world": [
+            -0.045382704585790634,
+            0.19726061820983887,
+            0.007349400315433741
+          ]
+        },
+        {
+          "object": "Ren_H_Ear_L",
+          "face": 7461,
+          "source_h_face_id": 1619260,
+          "distance": 3.38771915435791,
+          "world": [
+            -0.04605165123939514,
+            0.25459814071655273,
+            0.007349409628659487
+          ]
+        }
+      ]
+    },
+    {
+      "view": "profile",
+      "label": "cap-hair-shelf",
+      "pixel": [
+        177,
+        200
+      ],
+      "hits": [
+        {
+          "object": "Ren_Hair_H_DetailedLayers",
+          "face": 2674,
+          "source_h_face_id": null,
+          "distance": 2.8917832374572754,
+          "world": [
+            -0.2612743079662323,
+            -0.2438826560974121,
+            0.18065166473388672
+          ]
+        },
+        {
+          "object": "Ren_Hair_H_RootBase",
+          "face": 245,
+          "source_h_face_id": null,
+          "distance": 2.9164347648620605,
+          "world": [
+            -0.26156187057495117,
+            -0.21923279762268066,
+            0.18065166473388672
+          ]
+        },
+        {
+          "object": "Ren_H_ConcealedScalpBack",
+          "face": 244,
+          "source_h_face_id": null,
+          "distance": 2.9250452518463135,
+          "world": [
+            -0.2616623342037201,
+            -0.21062302589416504,
+            0.18065166473388672
+          ]
+        }
+      ]
+    }
+  ]
+}

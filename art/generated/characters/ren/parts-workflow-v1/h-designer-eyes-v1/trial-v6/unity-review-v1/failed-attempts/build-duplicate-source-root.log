@@ -1,0 +1,517 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.24f1 (4e7b9b5b6244) revision 5143451'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Enterprise' Language: 'en' Physical Memory: 196181 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jetha" at "2026-09-13T20:48:42.2181881Z"
+Date: 2026-09-13T20:48:42Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.24f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification
+-executeMethod
+LucidLoop.CharacterArt.Editor.RenDesignerEyeReviewBuilder.BuildWindowsViewer
+-renDesignerPlayerOutput
+B:/lucid-loop/.local/ren-designer-eye-v6/RenDesignerEyeReview.exe
+-logFile
+B:/lucid-loop/.local/ren-designer-eye-v6/build.log
+Successfully changed project path to: C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification
+C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [38108]  Target information:
+
+Player connection [38108]  * "[IP] 192.168.1.87 [Port] 55505 [Flags] 2 [Guid] 2375579764 [EditorId] 2375579764 [Version] 1048832 [Id] WindowsEditor(7,Jetha-WS3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [38108]  * "[IP] 192.168.16.1 [Port] 55505 [Flags] 2 [Guid] 2375579764 [EditorId] 2375579764 [Version] 1048832 [Id] WindowsEditor(7,Jetha-WS3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [38108]  * "[IP] 172.29.32.1 [Port] 55505 [Flags] 2 [Guid] 2375579764 [EditorId] 2375579764 [Version] 1048832 [Id] WindowsEditor(7,Jetha-WS3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [38108]  * "[IP] 100.76.27.39 [Port] 55505 [Flags] 2 [Guid] 2375579764 [EditorId] 2375579764 [Version] 1048832 [Id] WindowsEditor(7,Jetha-WS3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [38108] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [38108] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-106276" after 1.7 seconds.
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.3'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-jetha"
+[Licensing::IpcConnector] LicenseClient-jetha channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jetha-6000.3.24" at "2026-09-13T20:48:46.54774Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 50576, path: "C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              a8c5abfb679e458dbd810112517d9faf
+  Correlation Id:          78190198bf1abecef73e839793bafbc2
+  External correlation Id: 8824382744038189271
+  Machine Id:              eBiPGtMZoMFCNN+XRqACXxKrTJ0=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-jetha-6000.3.24" (connect: 0.00s, validation: 0.05s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-jetha-6000.3.24-notifications" at "2026-09-13T20:48:46.6045537Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 1515533-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.02
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 4.48s
+[Licensing::Module] Licensing is initialized (took 1.45s).
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.24f1 (4e7b9b5b6244)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 5060 Ti (ID=0x2d04)
+    Vendor:          NVIDIA
+    VRAM:            16052 MB
+    App VRAM Budget: 15284 MB
+    Driver:          32.0.15.9579
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.047470 seconds.
+- Loaded All Assemblies, in  1.373 seconds
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.353 seconds
+Domain Reload Profiling: 2704ms
+	BeginReloadAssembly (425ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (142ms)
+	RebuildNativeTypeToScriptingClass (59ms)
+	initialDomainReloadingComplete (231ms)
+	LoadAllAssembliesAndSetupDomain (493ms)
+		LoadAssemblies (382ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (483ms)
+			TypeCache.Refresh (479ms)
+				TypeCache.ScanAssembly (443ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1354ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1229ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (193ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (218ms)
+			ProcessInitializeOnLoadAttributes (456ms)
+			ProcessInitializeOnLoadMethodAttributes (352ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 49 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.searcher@4.9.5 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.searcher@a463122f2c00)
+    com.unity.burst@1.8.30 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.burst@2f3d916873ea)
+    com.unity.mathematics@1.3.3 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.mathematics@19a9377c4ffa)
+    com.unity.collections@2.6.8 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.collections@84e8eb3fc12e)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.test-framework.performance@3.5.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.render-pipelines.universal@17.3.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.render-pipelines.universal@a8b4b2fc3560)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.video@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.director@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.render-pipelines.core@17.3.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.render-pipelines.core@0bb36005e9ba)
+    com.unity.shadergraph@17.3.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.shadergraph@30c2e3926b79)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d)
+    com.unity.ugui@2.0.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.ugui@b996e7548785)
+    com.unity.test-framework@1.6.0 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.test-framework@bd7f943e9647)
+    com.unity.ext.nunit@2.0.5 (location: C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Library\PackageCache\com.unity.ext.nunit@d8c07649098d)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.05 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.24f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification
+DisplayProgressbar: Compiling Scripts
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.24f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.3.24f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification
+ExitCode: 4 Duration: 0s965ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
+[465/574    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+*** Tundra requires additional run (0.72 seconds), 1 items updated, 464 evaluated
+ExitCode: 0 Duration: 1s328ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.3.24f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification
+ExitCode: 0 Duration: 6s419ms
+Finished compiling graph: 577 nodes, 9235 flattened edges (7875 ToBuild, 80 ToUse), maximum node priority 586
+[346/574    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/LucidLoop.CharacterArt.rsp
+[347/574    0s] WriteText Library/Bee/artifacts/1900b0aE.dag/LucidLoop.CharacterArt.Editor.rsp
+[463/574    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[566/574    0s] Csc Library/Bee/artifacts/1900b0aE.dag/LucidLoop.CharacterArt.dll (+2 others)
+[567/574    0s] Csc Library/Bee/artifacts/1900b0aE.dag/LucidLoop.CharacterArt.Editor.dll (+2 others)
+[568/574    1s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/LucidLoop.CharacterArt.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/LucidLoop.CharacterArt.dll, with 139 defines and 272 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[569/574    0s] CopyFiles Library/ScriptAssemblies/LucidLoop.CharacterArt.pdb
+[570/574    0s] CopyFiles Library/ScriptAssemblies/LucidLoop.CharacterArt.dll
+[571/574    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/LucidLoop.CharacterArt.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/LucidLoop.CharacterArt.Editor.dll, with 137 defines and 282 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[572/574    0s] CopyFiles Library/ScriptAssemblies/LucidLoop.CharacterArt.Editor.pdb
+[573/574    0s] CopyFiles Library/ScriptAssemblies/LucidLoop.CharacterArt.Editor.dll
+*** Tundra build success (6.34 seconds), 11 items updated, 574 evaluated
+AssetDatabase: script compilation time: 15.182946s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  3.374 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview using Guid(be226143c3292804480fc24eae59a6aa) (DefaultImporter) -> (artifact id: '5cafcfedfde66bb2746562fbd45b74b2') in 0.0595392 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.039 seconds
+Domain Reload Profiling: 8402ms
+	BeginReloadAssembly (625ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (63ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (195ms)
+	RebuildCommonClasses (127ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (2501ms)
+		LoadAssemblies (2405ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (348ms)
+			TypeCache.Refresh (235ms)
+				TypeCache.ScanAssembly (214ms)
+			BuildScriptInfoCaches (87ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (5040ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4659ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (85ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (295ms)
+			ProcessInitializeOnLoadAttributes (4009ms)
+			ProcessInitializeOnLoadMethodAttributes (254ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (38ms)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx using Guid(9c3b9fd8937c4b44e99dafeeb1dada9e) (FBXImporter)Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+ -> (artifact id: '7c2a088a650f9459949523e3e97cea68') in 0.3090584 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/SourceContract.json using Guid(a36d8d12e71bbf546986fe2e50fd0092) (TextScriptImporter) -> (artifact id: '0b2c4666bc039cfec623f0212a4b30dd') in 0.023917 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Manifest.json using Guid(39b665b13ed147640a1cc83995a15b32) (TextScriptImporter) -> (artifact id: 'a0a1b82455ced4d006cf89e611f116f3') in 0.0128767 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=194929e9298e2d145a0e71a3732140e3): Total: 25.311 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=4 (actual=4, local cache=0, cache server=0)
+		Asset DB Process Time: managed=106 ms, native=6183 ms
+		Asset DB Callback time: managed=313 ms, native=57 ms
+		Scripting: domain reloads=1, domain reload time=3375 ms, compile time=15187 ms, other=87 ms
+		Project Asset Count: scripts=802, non-scripts=1948
+		Asset File Changes: new=6, changed=6, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 54.456ms
+	ApplyChangesToAssetFolders: 1.380ms
+	Scan: 313.105ms
+	OnSourceAssetsModified: 1.582ms
+	CategorizeAssetsWithTransientArtifact: 46.098ms
+	ProcessAssetsWithTransientArtifactChanges: 103.538ms
+	CategorizeAssets: 85.807ms
+	ImportOutOfDateAssets: 5478.964ms (-10140.594ms without children)
+		ImportManagerImport: 416.032ms (8.449ms without children)
+			ImportInProcess: 407.476ms
+			UpdateCategorizedAssets: 0.108ms
+		CompileScripts: 15187.448ms
+		ReloadNativeAssets: 0.037ms
+		UnloadImportedAssets: 2.591ms
+		ReloadImportedAssets: 0.002ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.135ms
+		InitializingProgressBar: 0.010ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 12.301ms
+	PostProcessAllAssets: 313.533ms
+	Hotreload: 4.667ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.003ms
+	UnloadStreamsBegin: 5.008ms
+	PersistCurrentRevisions: 0.350ms
+	UnloadStreamsEnd: 0.002ms
+	GenerateScriptTypeHashes: 11.714ms
+	Untracked: 18902.740ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 14.835ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Lucid Loop · Gyms
+Unloading 20 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3186 unused Assets / (2.6 MB). Loaded Objects now: 4051.
+Memory consumption went from 187.9 MB to 185.3 MB.
+Total: 18.703200 ms (FindLiveObjects: 0.863500 ms CreateObjectMapping: 0.741500 ms MarkObjects: 14.151700 ms  DeleteObjects: 2.944500 ms)
+
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx using Guid(9c3b9fd8937c4b44e99dafeeb1dada9e) (FBXImporter) -> (artifact id: '7c2a088a650f9459949523e3e97cea68') in 0.0986502 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b3c0b8d5f863998438a6b7af965d50ec): Total: 0.209 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx using Guid(9c3b9fd8937c4b44e99dafeeb1dada9e) (FBXImporter)ImportFBX Warnings:
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_Backing' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_Crease' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_Highlight_0' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_Highlight_1' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_Iris' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_LowerInk' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_Pupil' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_SkinShutter' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_UpperInk' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_VisibleFan_0' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_VisibleFan_LowerFine' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_VisibleFan_LowerSpan' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_VisibleFan_UpperSpan' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_Backing' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_Crease' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_Highlight_0' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_Highlight_1' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_Iris' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_LowerInk' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_Pupil' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_SkinShutter' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_UpperInk' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+LucidLoop.CharacterArt.Editor.RenDesignerEyeReviewBuilder:BuildWindowsViewer () (at Assets/CharacterArt/Editor/RenDesignerEyeReviewBuilder.cs:31)
+
+[Assets/CharacterArt/Editor/RenDesignerEyeReviewBuilder.cs line 31]
+
+ -> (artifact id: 'cd1541afa85e73b237a3107e2197aaa7') in 0.0589329 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8419b612e470ff84b82f3b17c9ad55c1): Total: 0.147 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Opening scene 'Assets/CharacterArt/Generated/Preview/Scenes/RenTokonReview.unity'
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/CharacterArt/Generated/Preview/Scenes/RenTokonReview.unity'
+	Deserialize:            37.800 ms
+	Integration:            456.530 ms
+	Integration of assets:  21.840 ms
+	Thread Wait Time:       28.635 ms
+	Total Operation Time:   544.805 ms
+Unloading 5 unused Assets / (43.9 KB). Loaded Objects now: 4300.
+Memory consumption went from 219.0 MB to 219.0 MB.
+Total: 27.498600 ms (FindLiveObjects: 0.489200 ms CreateObjectMapping: 0.647400 ms MarkObjects: 26.227700 ms  DeleteObjects: 0.132100 ms)
+
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials using Guid(609ed1ece6bc4c84e97fd63daeb84177) (DefaultImporter) -> (artifact id: '6f01fedd1b9681353e8fb64493de26c3') in 0.0148426 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat using Guid(95bbc5db091f43e46be63b230e4bac0a) (NativeFormatImporter) -> (artifact id: '1f8a637bc4a68492050083e92a439ee1') in 0.00377 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=84c802ad0fc51b046a97a631a274c64f): Total: 0.145 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat using Guid(3985bc6a3377f16419ba2ab96c5f0ba1) (NativeFormatImporter) -> (artifact id: 'ba678d1f196db68b9e05746d8560538a') in 0.0032595 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bffde76c90188424b9df041f05a54040): Total: 0.067 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat using Guid(46eca3bfa879d17449982cf0b62df8dd) (NativeFormatImporter) -> (artifact id: '1772ea12552d01a53e02f871f53f9ea5') in 0.0028579 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=aabcbde6f5ad800439c24eaca417ef75): Total: 0.065 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+d3d12: upload buffer was too small for the requested resource! Size: 16777216. Requested: 268435456.
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat using Guid(7d98088697aa8284e882c9dd497ec3fe) (NativeFormatImporter) -> (artifact id: 'b348722663fab43f2693101517614553') in 0.0048349 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e8f7f3e906222b14c8e686c17ddc8234): Total: 0.082 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat using Guid(42cc4af5b016225439bc569ed2de3777) (NativeFormatImporter) -> (artifact id: '35df4e664b03a4fdb75ab293cc6dd227') in 0.0037588 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f97a7fe4b9566a74492600b93c766cc0): Total: 0.150 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat using Guid(c9c1bf0f65ae249439301003f4f55275) (NativeFormatImporter) -> (artifact id: '926c0f1f976576c97eb592842a6e09d6') in 0.0030686 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b71a7185f65d6724887e12d5466e3d05): Total: 0.141 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat using Guid(c3ecba22efb87254c9607610ca90a287) (NativeFormatImporter) -> (artifact id: '91ab998162cb9a8224cd923c14eab2e7') in 0.0032252 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3ada22313d7640244998edec5a0ae851): Total: 0.103 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat using Guid(707860c0d73be944287dcc3ad9b6e3a6) (NativeFormatImporter) -> (artifact id: '3a3fd820625333402952b58acb9e0081') in 0.0062532 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e3a27f13274b2404bb9ed8dd8a69b693): Total: 0.113 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat using Guid(f0a17916f1a21ae458310602b2dfbb53) (NativeFormatImporter) -> (artifact id: '850035a0f9606a5724ec7a39f4d5866c') in 0.0029704 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e242901f3ea9eb7498c7772ce2febd9c): Total: 0.101 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat using Guid(36124cfadbb626d4d936858a2722faca) (NativeFormatImporter) -> (artifact id: '8ec8ee846bf626e93a649a4b48f06428') in 0.0028826 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c1d2973556d437449b6a5cc7cdf0920c): Total: 0.077 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat using Guid(1268c4eeca0188944a0e2798b085f398) (NativeFormatImporter) -> (artifact id: 'fe02f4c58b0460dfb3338e4fdfa1529a') in 0.0041489 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=59f752a194c3bf84fa46b52550b25a11): Total: 0.090 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat using Guid(f1afda5543674c34da8e6f2c0333e1ba) (NativeFormatImporter) -> (artifact id: 'd44e12bc5637e4851565d8a40557ab3c') in 0.0042824 seconds
+Refreshing native plugins compatible for Editor in 0.01 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ad3bd040c8589184db413529a1801fee): Total: 0.093 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat using Guid(895337e4321039d40a634ed2097d0715) (NativeFormatImporter) -> (artifact id: 'a71c118e1d5df33aa1f4181ab850185a') in 0.0033539 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=09a6e99de0496a34e87e12c285975f6b): Total: 0.068 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat using Guid(ad056ac5663d25947a6a1a5982701960) (NativeFormatImporter) -> (artifact id: 'c1b30e4f57a7c6337e736abdfa462c58') in 0.0031783 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c0e7cbbc1029bfc4ba3df63ea261096c): Total: 0.064 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat using Guid(c4addb0346e2ead4281f22462689b5d8) (NativeFormatImporter) -> (artifact id: 'd67bebbaddcd59a5179723ed5c84cf39') in 0.0034088 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b8c87a79d4f8e4244b2cacf90748cbaf): Total: 0.066 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat using Guid(688e8b7371cc2f34ebf3ee55f399d26e) (NativeFormatImporter) -> (artifact id: 'd659098491d5f8f08d222cf44b08b734') in 0.003149 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=44ce5bd46c7a4d44ba20c2a9125346df): Total: 0.063 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat using Guid(e51d4a8d4d072614ea8013935e0a2d03) (NativeFormatImporter) -> (artifact id: '83dc312489ea9ef817d50f43a58bece1') in 0.0038883 seconds
+Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9aa58fe14a6748549b63c250adfae683): Total: 0.072 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat using Guid(85d2548cff906634f9783e3b38644a51) (NativeFormatImporter) -> (artifact id: 'd3727943a0499749d44bc31e8fdd482e') in 0.0035273 seconds
+Refreshing native plugins compatible for Editor in 0.01 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=12cf5b1a982f2ed4280aa1a98fa05942): Total: 0.084 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+InvalidOperationException: Sequence contains more than one matching element
+  at System.Linq.Enumerable.Single[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] predicate) [0x0004a] in <e1f614c5eede4689988594bcb9796955>:0 
+  at LucidLoop.CharacterArt.Editor.RenDesignerEyeReviewBuilder.Find (UnityEngine.Transform root, System.String name) [0x0000d] in C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Assets\CharacterArt\Editor\RenDesignerEyeReviewBuilder.cs:111 
+  at LucidLoop.CharacterArt.Editor.RenDesignerEyeReviewBuilder.BuildWindowsViewer () [0x003bb] in C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Assets\CharacterArt\Editor\RenDesignerEyeReviewBuilder.cs:51 
+
+(Filename: Assets/CharacterArt/Editor/RenDesignerEyeReviewBuilder.cs Line: 51)
+
+executeMethod method LucidLoop.CharacterArt.Editor.RenDesignerEyeReviewBuilder.BuildWindowsViewer threw exception.
+Exiting without the bug reporter. Application will terminate with return code 1

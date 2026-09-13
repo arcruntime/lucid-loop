@@ -1,0 +1,31 @@
+{
+  "status": "ACTUAL_RECEIVED_SHADOW_DIAGNOSTIC_REVIEWED_NOT_STYLE_ACCEPTANCE",
+  "captured": 14,
+  "maximumChangedShaderFields": "_ShadowStrength + _FaceCastShadowStrength only, head3slots andshutter2slots",
+  "baselineMatchesFrozenV6FrontQuarterExactly": true,
+  "unlitPairPixelIdentical": true,
+  "referenceCorrectionOnly": {
+    "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+    "sourcePixels": [
+      1536,
+      1024
+    ],
+    "npotScale": "None",
+    "cropTopLeftPixels": [
+      275,
+      25,
+      430,
+      400
+    ],
+    "uniformDisplayScale": 2,
+    "sameModelSourceCamera": true
+  },
+  "observations": [
+    "Broad mask band is reduced when received shadow attenuation is disabled.",
+    "A residual eye boundary remains; no complete fix or final acceptance.",
+    "Shutter caster exclusion is queued as a separate causal diagnostic with receiving restored.",
+    "All20 graphic eye renderers already cast no shadows; only two shutters cast in this baseline.",
+    "No support bridge or eye/source geometry changes were included."
+  ],
+  "dependencies": "Frozen unity-review-v1 source/material/import package and unchanged Tokon shader/maps; no production/main-scene promotion."
+}

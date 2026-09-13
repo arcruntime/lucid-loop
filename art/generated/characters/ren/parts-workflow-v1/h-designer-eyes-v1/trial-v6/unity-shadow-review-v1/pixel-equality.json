@@ -1,0 +1,17 @@
+[
+  {
+    "a": ".local\\ren-designer-shadow-v1\\live-review\\shadow-baseline--neutral-front.png",
+    "b": ".local\\ren-designer-eye-v6\\live-review\\tokon--front.png",
+    "equal": true
+  },
+  {
+    "a": ".local\\ren-designer-shadow-v1\\live-review\\shadow-baseline--neutral-quarter.png",
+    "b": ".local\\ren-designer-eye-v6\\live-review\\tokon--quarter.png",
+    "equal": true
+  },
+  {
+    "a": ".local\\ren-designer-shadow-v1\\live-review\\shadow-baseline--unlit-front.png",
+    "b": ".local\\ren-designer-shadow-v1\\live-review\\received-shadow-off--unlit-front.png",
+    "equal": true
+  }
+]

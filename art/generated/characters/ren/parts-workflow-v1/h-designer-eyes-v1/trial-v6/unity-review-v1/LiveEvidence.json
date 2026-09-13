@@ -1,0 +1,196 @@
+{
+    "status": "NEUTRAL_DESIGNER_EYE_V6_MATERIAL_REVIEW_NOT_LIKENESS_APPROVAL",
+    "unityVersion": "6000.3.24f1",
+    "graphicsApi": "Direct3D11",
+    "sourceSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+    "importAuditSha256": "3fcdc46f6d20074eed095ee45fbdba77fe14785bf48fddfafde3d449254df361",
+    "runtimeSha256": "857aefb4abbee090089034cc5d1215f0aa07b7a637f45ff93a835b78ca586ec2",
+    "neutralOnly": true,
+    "oldEyesDisabled": true,
+    "outlineOff": true,
+    "closedLipPaintCandidate": true,
+    "vertexColorConsumedOnce": true,
+    "captures": [
+        {
+            "file": "unlit--front.png",
+            "sha256": "18fc0ff84058e77e3bc71dfa6687763091cfa47dc2b22de1bf078dc5f9b60e3a",
+            "pose": "front",
+            "lit": false,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 11
+        },
+        {
+            "file": "tokon--front.png",
+            "sha256": "50a6ac11209c1f2d99e8fb9306731bfcf46e1eca6a87ced00c460352ef9ae179",
+            "pose": "front",
+            "lit": true,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 21
+        },
+        {
+            "file": "unlit--quarter.png",
+            "sha256": "4da23248dcdfb33444aa306a70a7b0865af4b6ee94bfbfba2e3cd7382ff695b9",
+            "pose": "quarter",
+            "lit": false,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 31
+        },
+        {
+            "file": "tokon--quarter.png",
+            "sha256": "5bc5ecd136d44a700b4ca3b1449a08faa4f60487bd8fc16e28f26cfe68c5e9d3",
+            "pose": "quarter",
+            "lit": true,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 41
+        },
+        {
+            "file": "unlit--profile.png",
+            "sha256": "111136c0f285451e35ed437caf09bd6e8975f96a15f3cba12092f36d9c338940",
+            "pose": "profile",
+            "lit": false,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 51
+        },
+        {
+            "file": "tokon--profile.png",
+            "sha256": "dddb87b76cddda3244bd6a7193ccf4af8e169b6d5add1c76e7a41dca1473c3ad",
+            "pose": "profile",
+            "lit": true,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 61
+        },
+        {
+            "file": "unlit--profile-opposite.png",
+            "sha256": "05c6fca90a2e1f87ff89a1d48f8aad50b96fa4b66b966910d242d83a56ce61a6",
+            "pose": "profile-opposite",
+            "lit": false,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 71
+        },
+        {
+            "file": "tokon--profile-opposite.png",
+            "sha256": "3afcdf191ae974d59842026fe1f0d60d2d0c95c469481013f1c8f8a131dc987c",
+            "pose": "profile-opposite",
+            "lit": true,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 81
+        },
+        {
+            "file": "unlit--source-camera.png",
+            "sha256": "40367f32529299f28d7254d849425363926fb81a13f9e26520c4253e7a9ec2d4",
+            "pose": "source-camera",
+            "lit": false,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 91
+        },
+        {
+            "file": "unlit--source-camera-paired.png",
+            "sha256": "3da2029c4ac4ab6ca4b657855b7775dfcaf8666460c9b824889f064daf3e6120",
+            "pose": "source-camera-paired",
+            "lit": false,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 91
+        },
+        {
+            "file": "tokon--source-camera.png",
+            "sha256": "880988fd1f2d6bf402f59398ce251f3c4aa604d9abba5128e091b81d85bc8fda",
+            "pose": "source-camera",
+            "lit": true,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 101
+        },
+        {
+            "file": "tokon--source-camera-paired.png",
+            "sha256": "66394428bb67e73efbf599d67fa17aac8b362a3e9c9294729c730e8697fe0527",
+            "pose": "source-camera-paired",
+            "lit": true,
+            "cap": true,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 101
+        },
+        {
+            "file": "unlit--cap-off-quarter.png",
+            "sha256": "357536582c06205a6be6915220a0abb3cc1f095c15c254f33fbc20aac5429aa3",
+            "pose": "cap-off-quarter",
+            "lit": false,
+            "cap": false,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 111
+        },
+        {
+            "file": "tokon--cap-off-quarter.png",
+            "sha256": "8e655b0219a71dec895a98bf9e411ae729050c2e41753fe4039a261606ce54c6",
+            "pose": "cap-off-quarter",
+            "lit": true,
+            "cap": false,
+            "hair": true,
+            "lightMode": 1,
+            "frame": 121
+        },
+        {
+            "file": "unlit--hair-hidden-profile.png",
+            "sha256": "c5da6f4438ffb4698a0f0e0615f72efbc2737f4130408ca8633b60cd2e9d9bca",
+            "pose": "hair-hidden-profile",
+            "lit": false,
+            "cap": false,
+            "hair": false,
+            "lightMode": 1,
+            "frame": 131
+        },
+        {
+            "file": "tokon--hair-hidden-profile.png",
+            "sha256": "129aaf759d69ac992adc61a483b91fd4570ce599ac79f4bf3943ba6cd339b73b",
+            "pose": "hair-hidden-profile",
+            "lit": true,
+            "cap": false,
+            "hair": false,
+            "lightMode": 1,
+            "frame": 141
+        },
+        {
+            "file": "unlit--club-front.png",
+            "sha256": "18fc0ff84058e77e3bc71dfa6687763091cfa47dc2b22de1bf078dc5f9b60e3a",
+            "pose": "club-front",
+            "lit": false,
+            "cap": true,
+            "hair": true,
+            "lightMode": 2,
+            "frame": 151
+        },
+        {
+            "file": "tokon--club-front.png",
+            "sha256": "561c3791bbbc45fdc575608558185cd75faf577e624b0a3a4eb2d40e79e9d208",
+            "pose": "club-front",
+            "lit": true,
+            "cap": true,
+            "hair": true,
+            "lightMode": 2,
+            "frame": 161
+        }
+    ],
+    "limits": "New eyes contain no controls. No blink/gaze/lipsync, canonical morph repair, production rig or phone performance result. Original H geometry and historical import remain unchanged. Graphic eye layers retain unlit pigment in lit mode; skin shutters use Tokon skin response with explicit fallback R1/G0/B0/A1, no old eye atlas."
+}

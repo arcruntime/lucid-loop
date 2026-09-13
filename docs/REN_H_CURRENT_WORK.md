@@ -19,7 +19,9 @@ orientation and exact shutter attachment, incorporates original-H boundary
 pigment, and refines the visible lash fans. Its neutral eye-only export is in
 `h-designer-eyes-v1/trial-v6/neutral-export-v2/`: 22 meshes, 5,145 authoring
 triangles. Fresh Blender FBX/GLB imports verify geometry, UVs and color within
-their documented storage precision. Unity material review is next; the export
+their documented storage precision. The first actual Unity player produced 18
+captures and passed rendered-corner import checks, but eye-region shading,
+fragmented far lashes and exposed support still fail visual review. The export
 has no blink or gaze controls. None has passed likeness review. See the
 [construction review](REN_DESIGNER_EYE_FIRST_CAMERA_REVIEW.md) for inspected
 evidence and the distinction between camera alignment and actual visible shape.
@@ -32,10 +34,29 @@ is under `h-anime-paint-v1/tokon-study-v1/unity-review/` and
 use the rejected historical eyes. The first outline-shell Unity comparison
 preserved pose synchronization but introduced unwanted internal nose lines and
 broken hair strokes, so its style is rejected. A separate head-stencil correction
-and the combined new-eye material review remain pending; these are not shipping
-character assets.
+remains pending. The combined new-eye material review is now inspecting separate
+received-shadow and support/bridge corrections; these are not shipping assets.
 
 ## What can be opened in Unity now
+
+The newest neutral designer-eye player is
+`.local/ren-designer-eye-v6/RenDesignerEyeReview.exe`. It shows the v6 eyes,
+selected Tokon materials and experimental closed-lip paint. Its 18 actual captures
+are in `h-designer-eyes-v1/trial-v6/unity-review-v1/`, relative to the construction
+root below. This version is explicitly diagnostic: shading seams and hair defects
+remain, and its full-sheet reference panel has an inherited NPOT resize error.
+Do not judge a 1:1 match from that panel. A separate corrected comparison is in work.
+
+To inspect this scene in Unity, open the existing isolated project
+`C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification`
+with Unity 6000.3.24f1, then open
+`Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerEyeReview.unity`.
+The scene exists in that project, not the main `B:\lucid-loop\Unity` project.
+The viewer worker uses this scratch project for batch builds; wait for its active
+Editor process to exit before opening the same project interactively. The local
+player can be inspected independently after its capture process exits.
+
+### Historical H animation prototype
 
 The actual H Windows player is `.local/ren-h-reference-v1/RenHReference.exe`;
 see [historical launch instructions](../README.md#inspect-the-rejected-h-eye-prototype).

@@ -1,0 +1,394 @@
+{
+  "files": [
+    {
+      "file": "ImportAudit.json",
+      "sha256": "3fcdc46f6d20074eed095ee45fbdba77fe14785bf48fddfafde3d449254df361",
+      "bytes": 21014
+    },
+    {
+      "file": "importer.meta.txt",
+      "sha256": "1ad563a222a261c9ae222bb479b733d239a67092acef59e5c8d5f1ae21c5e856",
+      "bytes": 2891
+    },
+    {
+      "file": "inherited-reference-importer.meta.txt",
+      "sha256": "f935119c1f91d342fbdd1f48b1a35d24b3e909dcd020816768fc8585e02db11c",
+      "bytes": 3717
+    },
+    {
+      "file": "LiveEvidence.json",
+      "sha256": "7031442ef2149a99777f35958f85c0d8b0ea0eba4d5733f0d3cef04f96a1295d",
+      "bytes": 6773
+    },
+    {
+      "file": "Manifest.json",
+      "sha256": "a95755cb4d03857f4932567b5e2b5ff7f725f4b1178d34b7f72131e7c59f7ddd",
+      "bytes": 14432
+    },
+    {
+      "file": "README.md",
+      "sha256": "25a094148b99ab9b37b97d0ec9f845ae0a54a829d76c0449acccb60fdbd1c019",
+      "bytes": 2435
+    },
+    {
+      "file": "review-evidence.json",
+      "sha256": "4f4a407bb65c90496fd3070aeaf5d5030459608fe189aea5b8799568fb469bb2",
+      "bytes": 2387
+    },
+    {
+      "file": "SourceContract.json",
+      "sha256": "2408b6573519c144954ff96faca3594bd5632e4ac63240aaa4d3b766351c9f97",
+      "bytes": 33116
+    },
+    {
+      "file": "tokon--cap-off-quarter.png",
+      "sha256": "8e655b0219a71dec895a98bf9e411ae729050c2e41753fe4039a261606ce54c6",
+      "bytes": 795862
+    },
+    {
+      "file": "tokon--club-front.png",
+      "sha256": "561c3791bbbc45fdc575608558185cd75faf577e624b0a3a4eb2d40e79e9d208",
+      "bytes": 629564
+    },
+    {
+      "file": "tokon--front.png",
+      "sha256": "50a6ac11209c1f2d99e8fb9306731bfcf46e1eca6a87ced00c460352ef9ae179",
+      "bytes": 615377
+    },
+    {
+      "file": "tokon--hair-hidden-profile.png",
+      "sha256": "129aaf759d69ac992adc61a483b91fd4570ce599ac79f4bf3943ba6cd339b73b",
+      "bytes": 340499
+    },
+    {
+      "file": "tokon--profile-opposite.png",
+      "sha256": "3afcdf191ae974d59842026fe1f0d60d2d0c95c469481013f1c8f8a131dc987c",
+      "bytes": 675652
+    },
+    {
+      "file": "tokon--profile.png",
+      "sha256": "dddb87b76cddda3244bd6a7193ccf4af8e169b6d5add1c76e7a41dca1473c3ad",
+      "bytes": 657853
+    },
+    {
+      "file": "tokon--quarter.png",
+      "sha256": "5bc5ecd136d44a700b4ca3b1449a08faa4f60487bd8fc16e28f26cfe68c5e9d3",
+      "bytes": 632547
+    },
+    {
+      "file": "tokon--source-camera-paired.png",
+      "sha256": "66394428bb67e73efbf599d67fa17aac8b362a3e9c9294729c730e8697fe0527",
+      "bytes": 1738575
+    },
+    {
+      "file": "tokon--source-camera.png",
+      "sha256": "880988fd1f2d6bf402f59398ce251f3c4aa604d9abba5128e091b81d85bc8fda",
+      "bytes": 153834
+    },
+    {
+      "file": "unlit--cap-off-quarter.png",
+      "sha256": "357536582c06205a6be6915220a0abb3cc1f095c15c254f33fbc20aac5429aa3",
+      "bytes": 717835
+    },
+    {
+      "file": "unlit--club-front.png",
+      "sha256": "18fc0ff84058e77e3bc71dfa6687763091cfa47dc2b22de1bf078dc5f9b60e3a",
+      "bytes": 557261
+    },
+    {
+      "file": "unlit--front.png",
+      "sha256": "18fc0ff84058e77e3bc71dfa6687763091cfa47dc2b22de1bf078dc5f9b60e3a",
+      "bytes": 557261
+    },
+    {
+      "file": "unlit--hair-hidden-profile.png",
+      "sha256": "c5da6f4438ffb4698a0f0e0615f72efbc2737f4130408ca8633b60cd2e9d9bca",
+      "bytes": 243204
+    },
+    {
+      "file": "unlit--profile-opposite.png",
+      "sha256": "05c6fca90a2e1f87ff89a1d48f8aad50b96fa4b66b966910d242d83a56ce61a6",
+      "bytes": 610226
+    },
+    {
+      "file": "unlit--profile.png",
+      "sha256": "111136c0f285451e35ed437caf09bd6e8975f96a15f3cba12092f36d9c338940",
+      "bytes": 595218
+    },
+    {
+      "file": "unlit--quarter.png",
+      "sha256": "4da23248dcdfb33444aa306a70a7b0865af4b6ee94bfbfba2e3cd7382ff695b9",
+      "bytes": 569827
+    },
+    {
+      "file": "unlit--source-camera-paired.png",
+      "sha256": "3da2029c4ac4ab6ca4b657855b7775dfcaf8666460c9b824889f064daf3e6120",
+      "bytes": 1720898
+    },
+    {
+      "file": "unlit--source-camera.png",
+      "sha256": "40367f32529299f28d7254d849425363926fb81a13f9e26520c4253e7a9ec2d4",
+      "bytes": 134316
+    },
+    {
+      "file": "failed-attempts/build-color-mismatch-v2.log",
+      "sha256": "cecc788859781c7f7ebca6c14c52d33e0998ad078190448303bb980db0bfcf7b",
+      "bytes": 41745
+    },
+    {
+      "file": "failed-attempts/build-duplicate-source-root.log",
+      "sha256": "29c456db3acd483c0c4d776c2364436aeb08a0ce94c0eda0bb19ea0a8d294d24",
+      "bytes": 44499
+    },
+    {
+      "file": "failed-attempts/raw-fbx-color-layers-v2.json",
+      "sha256": "cff36a4bf9e75025e3be78416f42721927e0560511c5fde28413ecbdb3cb5097",
+      "bytes": 16319
+    },
+    {
+      "file": "failed-attempts/Ren_DesignerEye_L_UpperInk.json",
+      "sha256": "d17b92f607d412d5cf9d6a477bb8eeb8ede6b8a59582a8c92fe1b53b89762a18",
+      "bytes": 151366
+    },
+    {
+      "file": "failed-attempts/Ren_DesignerEye_L_VisibleFan_0.json",
+      "sha256": "ecd99e87b5b2eb571e54d580dc52c467cd8c21b461612478fef3a2266ba6d7e8",
+      "bytes": 2330
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_Backing.mat",
+      "sha256": "5c11c7829082b3ac93a0ee904303328da818c7b32d9d7dc456bbf9d9efe6097f",
+      "bytes": 2330
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_Crease.mat",
+      "sha256": "69bb6599aca3ed3ff3239c47af8836b69e2316f1ae53016a1be3ad47336b3bc8",
+      "bytes": 2329
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_Highlight_0.mat",
+      "sha256": "150781dcceee1c0a02b699e894fb69a0af077f76bf9d2016d97477ac63e53514",
+      "bytes": 2334
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_Highlight_1.mat",
+      "sha256": "8b4e1fe52e18b21fd70ff7a0556876a4eb49bdbcc756cee44f649ad31b1fc14e",
+      "bytes": 2334
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_Iris.mat",
+      "sha256": "e5776ae97871055e6a545a161095912579ed3bc77b8fa875a36fdaa8102d88a7",
+      "bytes": 2327
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_LowerInk.mat",
+      "sha256": "e3ef47f4023881452159bbb020526a8f7250e5f916b8ab9f430e6e100c685bf4",
+      "bytes": 2331
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_Pupil.mat",
+      "sha256": "7b51ca841d754c5af8b6bd4e197a988dc05f78912c55ae1ddefcf1f67acadf09",
+      "bytes": 2328
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_SkinShutter.mat",
+      "sha256": "c4db3c3d1a7bfc93b77cdbe1c38ceb3a83aef70b79158c33877f249b46ce00b0",
+      "bytes": 2336
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_UpperInk.mat",
+      "sha256": "2bc6cb788c542120196fb5809aa2dd13ed09e4494bfff3f39dede3cdc9713bf5",
+      "bytes": 2331
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_VisibleFan_0.mat",
+      "sha256": "90ec1743893557c9e6c06fb30495ca86f9ad3f9973c208b874f753c2488602c5",
+      "bytes": 2335
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_VisibleFan_LowerFine.mat",
+      "sha256": "d28dad74f5e2b5177d47a80dae5fd6dbf8e922d709450c04353d445e7cdc00dd",
+      "bytes": 2343
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat",
+      "sha256": "f179a274c133e36c75f7ec116c8d6074e867ab8438ca85e190ccb103cc468b04",
+      "bytes": 2343
+    },
+    {
+      "file": "materials/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat",
+      "sha256": "d08a4292365936087d404cec15da7ae2fb94d4310e388698175d3d6db88d1a09",
+      "bytes": 2343
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_Backing.mat",
+      "sha256": "d0276797e70052a93c9471b7f63f93297ecf2744e60b24700913a7b584731359",
+      "bytes": 2330
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_Crease.mat",
+      "sha256": "d8afa11d45cb8d5a121c2e9b4d37b7220e9209293fa24662509bcdeeb55ff98d",
+      "bytes": 2329
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_Highlight_0.mat",
+      "sha256": "84a74b611a3f6c0a364f78e4dfd16c216deac103e83f81d76911b04fa22b7211",
+      "bytes": 2334
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_Highlight_1.mat",
+      "sha256": "f9843ced1f0b1ef1524c288db33f101a89e7a61d4dc337b98f648cfef8dffa93",
+      "bytes": 2334
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_Iris.mat",
+      "sha256": "5ff426a5b0679eee277975e820466c77e9cda32c59eb1c903bd73d9aece94349",
+      "bytes": 2327
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_LowerInk.mat",
+      "sha256": "bee12cb3f5eaba00451a7983e5e3a8b36473dbe0894cbdcdd401cd3e055af849",
+      "bytes": 2331
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_Pupil.mat",
+      "sha256": "21933a9daa33b781706583cad5767879566112f2d87f1349a04c33c9eaff12ac",
+      "bytes": 2328
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_SkinShutter.mat",
+      "sha256": "fc9f6b201ee941643baa4f419971eba9f1900aeda5559485e01b68fa88e86c89",
+      "bytes": 2336
+    },
+    {
+      "file": "materials/Ren_DesignerEye_R_UpperInk.mat",
+      "sha256": "acb96fa302c926ac7e2b3b380abbb1590ffe79b618f64a88f99cc7c925382ec6",
+      "bytes": 2331
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat",
+      "sha256": "46eca4f4bcbb3ac9b2fbe49951bc8745cfd47f08efd2399a90db1e0f5795cca9",
+      "bytes": 2574
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat",
+      "sha256": "0ab707b2f46a710092fdf3287c707caff2bb3c75cb8c09d996265c3e870fbf04",
+      "bytes": 2447
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat",
+      "sha256": "56e9771c7cd69def66b80c2a238a928b93ed42fa745fd7b61c78a3f87c33b74f",
+      "bytes": 2409
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat",
+      "sha256": "f80d9ddf80489e3d380ce40dcd627121beea1949f4305885b794f49408e66b77",
+      "bytes": 2407
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat",
+      "sha256": "7519ed05b91b41e6b6b27d2fd0649dde32df042aaaea75c7a6cbbf8892e7cef0",
+      "bytes": 2407
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat",
+      "sha256": "b68c12708496113707b237612f7f213cba25867fc2018bf46df6a0f881540e2c",
+      "bytes": 2681
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat",
+      "sha256": "6033ffc807bfa311743c3d151a89b7a812ce128ec15462b9a2c316a64e77c173",
+      "bytes": 2571
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat",
+      "sha256": "d2b1f3c7c06a1035d241ab78421b3e951bcefa76f8ccd4a665d899ec38eb9e89",
+      "bytes": 2574
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat",
+      "sha256": "e454d2e084b4b342efde6e7a80469ed70bd263c86a989b5704b2263914ea28f0",
+      "bytes": 2424
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat",
+      "sha256": "7df8b0c39c27af5eb05728755441a730a39f6565801b05d2047e5648ad77c44c",
+      "bytes": 2581
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat",
+      "sha256": "a95f6a464c1503e6e85701193fcde005309f02dcfec417cfd11da35553ccccfa",
+      "bytes": 2458
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat",
+      "sha256": "73c2a6b436ab94c51b899d80583f2b276b3f5ea030fbfda188fc925ba1f1677e",
+      "bytes": 2493
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat",
+      "sha256": "cfb0d629f151fe0d0d770facb42d6973289f193e290baacfc12e5fbb1ec8a7f0",
+      "bytes": 2493
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat",
+      "sha256": "8fcdca393d83d2d57c4de2f45a2cba443b78533d9c2c93b9e4e175e7eb28f673",
+      "bytes": 2410
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat",
+      "sha256": "3f8122e00e489f87b2a0b418bc47ae5fd9d1177761b8b1e52f2a1194d7e8483f",
+      "bytes": 2420
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat",
+      "sha256": "2e021a9950719e152d0ae882d4d40fa9417231e95f37fd79dbaaa16b65cce541",
+      "bytes": 2406
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat",
+      "sha256": "5da9d99e857b1edd921ca7d3f9ad3be858f5f2c688107c42ee96ab3b132f6c0e",
+      "bytes": 2412
+    },
+    {
+      "file": "materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat",
+      "sha256": "63644577ce5c57a34dc772e00686b251f0cd502d58088e584a3043aa35872bf4",
+      "bytes": 2486
+    },
+    {
+      "file": "tested-source/audit_designer_fbx_colors.py",
+      "sha256": "df22f4c124ff6b89c7e001705e70cea845321da5f6758ecac87256ed74c8ba42",
+      "bytes": 1421
+    },
+    {
+      "file": "tested-source/curate_designer_eye_v6.py",
+      "sha256": "4e81013f440c01959c9fcc41bb003d579186b16f9bec31ffef4001ab07a83a84",
+      "bytes": 7123
+    },
+    {
+      "file": "tested-source/prepare_designer_eye_review.py",
+      "sha256": "b9805cd3adbcf976ba823f506120ccfd8bc47ae5a41692144bd44b4e6eda96f1",
+      "bytes": 3515
+    },
+    {
+      "file": "tested-source/RenDesignerEyeReview.cs",
+      "sha256": "857aefb4abbee090089034cc5d1215f0aa07b7a637f45ff93a835b78ca586ec2",
+      "bytes": 11991
+    },
+    {
+      "file": "tested-source/RenDesignerEyeReview.cs.meta",
+      "sha256": "45ed1da9d567ed96a7abb7b8938d7ef0cc21e5f82aada3f2fd6cf999113325a8",
+      "bytes": 60
+    },
+    {
+      "file": "tested-source/RenDesignerEyeReviewBuilder.cs",
+      "sha256": "5da349a94609bb6fd29673e33353ad4cd25a3150b69b84efd8eb4fc45fb171fb",
+      "bytes": 19637
+    },
+    {
+      "file": "tested-source/RenDesignerEyeReviewBuilder.cs.meta",
+      "sha256": "6c4a7536430d7ad0215598ad749594d928f03863cac01f009abb7717be026eb1",
+      "bytes": 60
+    }
+  ]
+}

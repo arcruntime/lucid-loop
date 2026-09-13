@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "file": "OriginalArtist-importer.meta.txt",
+      "sha256": "708112226e68e7b6c37727784a64c50f90a28622461f31275a45f77d684cc19d",
+      "bytes": 3717
+    },
+    {
+      "file": "pixel-equality.json",
+      "sha256": "867e3825c1184149913bc04d5356963a0a14375ca81b2270eebd0cf700f0d5ac",
+      "bytes": 615
+    },
+    {
+      "file": "README.md",
+      "sha256": "4d03365d0f4c8706db1c27b27619e67a41bc238827be86aa15150b2593bc72b9",
+      "bytes": 2007
+    },
+    {
+      "file": "received-shadow-off--club-front.png",
+      "sha256": "953d83c4fe98b06e574e8313dac00b5d23e6958bee7b903390e39db52685c19c",
+      "bytes": 626083
+    },
+    {
+      "file": "received-shadow-off--club-quarter.png",
+      "sha256": "6c0ef1710871fd619c8e34d0d9eb573470eb60308229e8a59af8e03689236938",
+      "bytes": 611327
+    },
+    {
+      "file": "received-shadow-off--neutral-front.png",
+      "sha256": "56e78d8f98dc0797c5045a65f49a4ed92915c9798cd1488ca9d514ac579ccd11",
+      "bytes": 612974
+    },
+    {
+      "file": "received-shadow-off--neutral-quarter.png",
+      "sha256": "cae85e64c16a2904bc57baa84db3784f9a91273c55e49212a1806472e6c78c9f",
+      "bytes": 631417
+    },
+    {
+      "file": "received-shadow-off--source-camera.png",
+      "sha256": "d9930ed0764c64022d5524beccf018af9d968e1f977d9a322d94fa50994dd2bc",
+      "bytes": 153784
+    },
+    {
+      "file": "received-shadow-off--source-portrait-paired.png",
+      "sha256": "e5a5e68163fc69bc2943f998d27f298541b6ce56532bb1242358998790b8e5ce",
+      "bytes": 1200783
+    },
+    {
+      "file": "received-shadow-off--unlit-front.png",
+      "sha256": "18fc0ff84058e77e3bc71dfa6687763091cfa47dc2b22de1bf078dc5f9b60e3a",
+      "bytes": 557261
+    },
+    {
+      "file": "review-evidence.json",
+      "sha256": "5eaca20f73b6bb8b668f14ccb357b1842a09f01e5c4315bae2aa8d34e5a21d20",
+      "bytes": 1231
+    },
+    {
+      "file": "shadow-baseline--club-front.png",
+      "sha256": "561c3791bbbc45fdc575608558185cd75faf577e624b0a3a4eb2d40e79e9d208",
+      "bytes": 629564
+    },
+    {
+      "file": "shadow-baseline--club-quarter.png",
+      "sha256": "a70eec212aff988f7749e60a9ba9ff730a8c9a3100b929eb9b7ba75c88345923",
+      "bytes": 612273
+    },
+    {
+      "file": "shadow-baseline--neutral-front.png",
+      "sha256": "50a6ac11209c1f2d99e8fb9306731bfcf46e1eca6a87ced00c460352ef9ae179",
+      "bytes": 615377
+    },
+    {
+      "file": "shadow-baseline--neutral-quarter.png",
+      "sha256": "5bc5ecd136d44a700b4ca3b1449a08faa4f60487bd8fc16e28f26cfe68c5e9d3",
+      "bytes": 632547
+    },
+    {
+      "file": "shadow-baseline--source-camera.png",
+      "sha256": "880988fd1f2d6bf402f59398ce251f3c4aa604d9abba5128e091b81d85bc8fda",
+      "bytes": 153834
+    },
+    {
+      "file": "shadow-baseline--source-portrait-paired.png",
+      "sha256": "35377ef9ab4da88b8b1aa770052f5c0f1160168779a88257ebce1ab79f6aaccd",
+      "bytes": 1200637
+    },
+    {
+      "file": "shadow-baseline--unlit-front.png",
+      "sha256": "18fc0ff84058e77e3bc71dfa6687763091cfa47dc2b22de1bf078dc5f9b60e3a",
+      "bytes": 557261
+    },
+    {
+      "file": "ShadowLiveEvidence.json",
+      "sha256": "2eedb05ebebc182c969758b6bb232812c18c976ace328daeee9bcb17bedd6458",
+      "bytes": 25228
+    },
+    {
+      "file": "tested-source/RenDesignerEyeReview.cs",
+      "sha256": "857aefb4abbee090089034cc5d1215f0aa07b7a637f45ff93a835b78ca586ec2",
+      "bytes": 11991
+    },
+    {
+      "file": "tested-source/RenDesignerShadowReview.cs",
+      "sha256": "85aedd9594c13d4c678a6db223837e15f79cf6598f4a4f1ad0e872c08d654ef8",
+      "bytes": 7429
+    },
+    {
+      "file": "tested-source/RenDesignerShadowReview.cs.meta",
+      "sha256": "bbe5d2f437f839b41f85115b7a1e89428fd86f855b3fa085ef207482bee8da19",
+      "bytes": 59
+    },
+    {
+      "file": "tested-source/RenDesignerShadowReviewBuilder.cs",
+      "sha256": "dda05ec0202fa0ab2e07c8eaf9f34fcc8d273e08ae8e652768117581ad84434b",
+      "bytes": 3571
+    },
+    {
+      "file": "tested-source/RenDesignerShadowReviewBuilder.cs.meta",
+      "sha256": "6ee511f1a0e40c26b2e06e9605f6eb8b86bd0111973bef2ed149ff7fac186c7a",
+      "bytes": 59
+    }
+  ]
+}

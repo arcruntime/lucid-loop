@@ -1,0 +1,101 @@
+{
+  "Ren_H_Head": [
+    {
+      "name": "Ren_H_ArtistRose_NPRBase",
+      "nodes": [
+        {
+          "type": "UVMAP",
+          "name": "UV Map"
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture"
+        },
+        {
+          "type": "EMISSION",
+          "name": "Emission"
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output"
+        }
+      ]
+    },
+    {
+      "name": "Ren_H_CheekPatch_NPRBase",
+      "nodes": [
+        {
+          "type": "UVMAP",
+          "name": "UV Map"
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture"
+        },
+        {
+          "type": "EMISSION",
+          "name": "Emission"
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output"
+        }
+      ]
+    },
+    {
+      "name": "Ren_H_CheekPatch_R2_NPRBase",
+      "nodes": [
+        {
+          "type": "UVMAP",
+          "name": "UV Map"
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture"
+        },
+        {
+          "type": "EMISSION",
+          "name": "Emission"
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output"
+        }
+      ]
+    }
+  ],
+  "Ren_H_ConcealedScalpBack": [
+    {
+      "name": "Ren_H_ConcealedSkin",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF"
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output"
+        }
+      ]
+    }
+  ],
+  "Ren_Hair_H_DetailedLayers": [
+    {
+      "name": "Ren_H_Hair_Painted_PaleBlond",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF"
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output"
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "fbxSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+  "meshes": [
+    {
+      "mesh": "Ren_DesignerEye_L_Backing",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.5461945533752441,
+            0.4696473181247711,
+            0.514766275882721,
+            1.0
+          ],
+          "color_max": [
+            0.5461945533752441,
+            0.4696473181247711,
+            0.514766275882721,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_Crease.001",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.13286831974983215,
+            0.05708921328186989,
+            0.06838485598564148,
+            1.0
+          ],
+          "color_max": [
+            0.13286831974983215,
+            0.05708921328186989,
+            0.06838485598564148,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_Highlight_0",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.5870163440704346,
+            0.6038273572921753,
+            0.6920710802078247,
+            1.0
+          ],
+          "color_max": [
+            0.5870163440704346,
+            0.6038273572921753,
+            0.6920710802078247,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_Highlight_1",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.5870163440704346,
+            0.6038273572921753,
+            0.6920710802078247,
+            1.0
+          ],
+          "color_max": [
+            0.5870163440704346,
+            0.6038273572921753,
+            0.6920710802078247,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_Iris",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.01454195100814104,
+            0.017282284796237946,
+            0.029780341312289238,
+            1.0
+          ],
+          "color_max": [
+            0.21220868825912476,
+            0.2326623499393463,
+            0.34390905499458313,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerIrisColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.01454195100814104,
+            0.017282284796237946,
+            0.029780341312289238,
+            1.0
+          ],
+          "color_max": [
+            0.21220868825912476,
+            0.2326623499393463,
+            0.34390905499458313,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_LowerInk",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.03797231987118721,
+            0.02451501414179802,
+            0.036306485533714294,
+            1.0
+          ],
+          "color_max": [
+            0.03797231987118721,
+            0.02451501414179802,
+            0.036306485533714294,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_Pupil",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.006331374868750572,
+            0.005422868765890598,
+            0.012510408647358418,
+            1.0
+          ],
+          "color_max": [
+            0.006331374868750572,
+            0.005422868765890598,
+            0.012510408647358418,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_SkinShutter",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.26517027616500854,
+            0.1590084433555603,
+            0.15190501511096954,
+            1.0
+          ],
+          "color_max": [
+            0.7991027235984802,
+            0.5583403706550598,
+            0.46492528915405273,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerSkinBase",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.6795424818992615,
+            0.4677838087081909,
+            0.37123769521713257,
+            1.0
+          ],
+          "color_max": [
+            0.7991027235984802,
+            0.5583403706550598,
+            0.46492528915405273,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_UpperInk.001",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.0065714046359062195,
+            0.004118273966014385,
+            0.00719441007822752,
+            1.0
+          ],
+          "color_max": [
+            0.03310476243495941,
+            0.018478471785783768,
+            0.027211777865886688,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerInkPigment",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.0065714046359062195,
+            0.004118273966014385,
+            0.00719441007822752,
+            1.0
+          ],
+          "color_max": [
+            0.03310476243495941,
+            0.018478471785783768,
+            0.027211777865886688,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_VisibleFan_0.001",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.01436567585915327,
+            0.008336634375154972,
+            0.013074585236608982,
+            1.0
+          ],
+          "color_max": [
+            0.017934484407305717,
+            0.010268120095133781,
+            0.01576697640120983,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerInkPigment",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.01436567585915327,
+            0.008336634375154972,
+            0.013074585236608982,
+            1.0
+          ],
+          "color_max": [
+            0.017934484407305717,
+            0.010268120095133781,
+            0.01576697640120983,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_VisibleFan_LowerFine",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.010688035748898983,
+            0.006346248090267181,
+            0.010300089605152607,
+            1.0
+          ],
+          "color_max": [
+            0.015410780906677246,
+            0.008902258239686489,
+            0.013863036409020424,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerInkPigment",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.010688035748898983,
+            0.006346248090267181,
+            0.010300089605152607,
+            1.0
+          ],
+          "color_max": [
+            0.015410780906677246,
+            0.008902258239686489,
+            0.013863036409020424,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_VisibleFan_LowerSpan",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.011826605536043644,
+            0.006962456740438938,
+            0.011159053072333336,
+            1.0
+          ],
+          "color_max": [
+            0.016576683148741722,
+            0.009533260017633438,
+            0.01474261935800314,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerInkPigment",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.011826605536043644,
+            0.006962456740438938,
+            0.011159053072333336,
+            1.0
+          ],
+          "color_max": [
+            0.016576683148741722,
+            0.009533260017633438,
+            0.01474261935800314,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_L_VisibleFan_UpperSpan",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.01679575815796852,
+            0.00965182576328516,
+            0.014907893724739552,
+            1.0
+          ],
+          "color_max": [
+            0.022422989830374718,
+            0.012697357684373856,
+            0.019153205677866936,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerInkPigment",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.01679575815796852,
+            0.00965182576328516,
+            0.014907893724739552,
+            1.0
+          ],
+          "color_max": [
+            0.022422989830374718,
+            0.012697357684373856,
+            0.019153205677866936,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_Backing",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.5461945533752441,
+            0.4696473181247711,
+            0.514766275882721,
+            1.0
+          ],
+          "color_max": [
+            0.5461945533752441,
+            0.4696473181247711,
+            0.514766275882721,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_Crease.001",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.13286831974983215,
+            0.05708921328186989,
+            0.06838485598564148,
+            1.0
+          ],
+          "color_max": [
+            0.13286831974983215,
+            0.05708921328186989,
+            0.06838485598564148,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_Highlight_0",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.5870163440704346,
+            0.6038273572921753,
+            0.6920710802078247,
+            1.0
+          ],
+          "color_max": [
+            0.5870163440704346,
+            0.6038273572921753,
+            0.6920710802078247,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_Highlight_1",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.5870163440704346,
+            0.6038273572921753,
+            0.6920710802078247,
+            1.0
+          ],
+          "color_max": [
+            0.5870163440704346,
+            0.6038273572921753,
+            0.6920710802078247,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_Iris",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.01454195100814104,
+            0.017282284796237946,
+            0.029780341312289238,
+            1.0
+          ],
+          "color_max": [
+            0.21215438842773438,
+            0.23260726034641266,
+            0.34384265542030334,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerIrisColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.01454195100814104,
+            0.017282284796237946,
+            0.029780341312289238,
+            1.0
+          ],
+          "color_max": [
+            0.21215438842773438,
+            0.23260726034641266,
+            0.34384265542030334,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_LowerInk",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.03797231987118721,
+            0.02451501414179802,
+            0.036306485533714294,
+            1.0
+          ],
+          "color_max": [
+            0.03797231987118721,
+            0.02451501414179802,
+            0.036306485533714294,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_Pupil",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.006331374868750572,
+            0.005422868765890598,
+            0.012510408647358418,
+            1.0
+          ],
+          "color_max": [
+            0.006331374868750572,
+            0.005422868765890598,
+            0.012510408647358418,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_SkinShutter",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.25717565417289734,
+            0.15389204025268555,
+            0.14779219031333923,
+            1.0
+          ],
+          "color_max": [
+            0.7991027235984802,
+            0.5583403706550598,
+            0.4677838087081909,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerSkinBase",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.5488626956939697,
+            0.37752440571784973,
+            0.31285518407821655,
+            1.0
+          ],
+          "color_max": [
+            0.7991027235984802,
+            0.5583403706550598,
+            0.4677838087081909,
+            1.0
+          ]
+        }
+      ]
+    },
+    {
+      "mesh": "Ren_DesignerEye_R_UpperInk.001",
+      "layers": [
+        {
+          "index": 0,
+          "name": "Ren_DesignerColor",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.006571403704583645,
+            0.004118273500353098,
+            0.007194409146904945,
+            1.0
+          ],
+          "color_max": [
+            0.03310476616024971,
+            0.018478473648428917,
+            0.027211781591176987,
+            1.0
+          ]
+        },
+        {
+          "index": 1,
+          "name": "DesignerInkPigment",
+          "mapping": "ByPolygonVertex",
+          "color_min": [
+            0.006571403704583645,
+            0.004118273500353098,
+            0.007194409146904945,
+            1.0
+          ],
+          "color_max": [
+            0.03310476616024971,
+            0.018478473648428917,
+            0.027211781591176987,
+            1.0
+          ]
+        }
+      ]
+    }
+  ]
+}
