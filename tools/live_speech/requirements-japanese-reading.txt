@@ -1,0 +1,5 @@
+# Isolated experimental frontend. Do not add this to the production relay image.
+pyopenjtalk==0.4.1
+numpy==2.4.6
+tqdm==4.70.1
+colorama==0.4.6; sys_platform == "win32"

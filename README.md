@@ -38,6 +38,8 @@ The HUD now bundles licensed Noto Sans JP. Actual Editor phone-preview checks co
 
 The [Japanese NPC voice capture workflow](docs/JAPANESE_NPC_VOICE_EVIDENCE.md) collects bounded evaluation recordings from the four configured voices, with raw transcript and packet timing evidence. It is manually triggered and does not enable the unaccepted Japanese lip-sync model.
 
+The [checked Japanese reading prototype](docs/JAPANESE_READING_FRONTEND.md) now rejects unknown spoken text, supplies explicit cast-name readings and preserves pronunciation metadata before the upstream mora parser. It remains experimental and has no audio timing or production language switch.
+
 The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored demo scenario](docs/DEMO_SCENARIO.md), and [source audit](docs/DESIGN_SOURCE_AUDIT.md) describe what is being built. Figma takes precedence over the Google document. The [animation handoff](art/animation-handoff/README.md) contains 17 downloaded source FBX files and their unresolved mapping/retargeting notes.
 
 **Try the original gyms:** load `Assets/Gyms/Scenes/CharacterGym.unity` and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.

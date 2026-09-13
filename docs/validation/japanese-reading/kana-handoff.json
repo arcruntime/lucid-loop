@@ -1,0 +1,1409 @@
+{
+  "reading": "フーットイキヲハイテ、アオイウミヲミル。パパモママモ、プカプカウカブフネヲマッタ。ユックリキップヲカッテ、ミンナデトーキョーエイコー。",
+  "normalized": "フーットイキヲハイテ、アオイウミヲミル。パパモママモ、プカプカウカブフネヲマッタ。ユックリキップヲカッテ、ミンナデトーキョーエイコー。",
+  "phrases": [
+    [
+      {
+        "kana": "フ",
+        "type": "CV",
+        "onset": "f",
+        "vowel": "u",
+        "flags": [],
+        "phrase": 0,
+        "resolvedVowel": "u",
+        "onsetViseme": "ja_FU",
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "ー",
+        "type": "LONG",
+        "onset": null,
+        "vowel": "u",
+        "flags": [
+          "longVowel"
+        ],
+        "phrase": 0,
+        "resolvedVowel": "u",
+        "onsetViseme": null,
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "ッ",
+        "type": "Q",
+        "onset": "Q",
+        "vowel": null,
+        "flags": [
+          "geminate"
+        ],
+        "phrase": 0,
+        "resolvedVowel": null,
+        "vowelViseme": null,
+        "onsetViseme": "DD"
+      },
+      {
+        "kana": "ト",
+        "type": "CV",
+        "onset": "t",
+        "vowel": "o",
+        "flags": [],
+        "phrase": 0,
+        "resolvedVowel": "o",
+        "onsetViseme": "DD",
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "イ",
+        "type": "V",
+        "onset": null,
+        "vowel": "i",
+        "flags": [
+          "devoiced"
+        ],
+        "phrase": 0,
+        "resolvedVowel": "i",
+        "onsetViseme": null,
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "キ",
+        "type": "CV",
+        "onset": "k",
+        "vowel": "i",
+        "flags": [],
+        "phrase": 0,
+        "resolvedVowel": "i",
+        "onsetViseme": "kk",
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "ヲ",
+        "type": "V",
+        "onset": null,
+        "vowel": "o",
+        "flags": [],
+        "phrase": 0,
+        "resolvedVowel": "o",
+        "onsetViseme": null,
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "ハ",
+        "type": "CV",
+        "onset": "h",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 0,
+        "resolvedVowel": "a",
+        "onsetViseme": "SS",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "イ",
+        "type": "V",
+        "onset": null,
+        "vowel": "i",
+        "flags": [
+          "devoiced"
+        ],
+        "phrase": 0,
+        "resolvedVowel": "i",
+        "onsetViseme": null,
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "テ",
+        "type": "CV",
+        "onset": "t",
+        "vowel": "e",
+        "flags": [],
+        "phrase": 0,
+        "resolvedVowel": "e",
+        "onsetViseme": "DD",
+        "vowelViseme": "E"
+      }
+    ],
+    [
+      {
+        "kana": "ア",
+        "type": "V",
+        "onset": null,
+        "vowel": "a",
+        "flags": [],
+        "phrase": 1,
+        "resolvedVowel": "a",
+        "onsetViseme": null,
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "オ",
+        "type": "V",
+        "onset": null,
+        "vowel": "o",
+        "flags": [],
+        "phrase": 1,
+        "resolvedVowel": "o",
+        "onsetViseme": null,
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "イ",
+        "type": "V",
+        "onset": null,
+        "vowel": "i",
+        "flags": [],
+        "phrase": 1,
+        "resolvedVowel": "i",
+        "onsetViseme": null,
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "ウ",
+        "type": "V",
+        "onset": null,
+        "vowel": "u",
+        "flags": [],
+        "phrase": 1,
+        "resolvedVowel": "u",
+        "onsetViseme": null,
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "ミ",
+        "type": "CV",
+        "onset": "m",
+        "vowel": "i",
+        "flags": [],
+        "phrase": 1,
+        "resolvedVowel": "i",
+        "onsetViseme": "PP",
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "ヲ",
+        "type": "V",
+        "onset": null,
+        "vowel": "o",
+        "flags": [],
+        "phrase": 1,
+        "resolvedVowel": "o",
+        "onsetViseme": null,
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "ミ",
+        "type": "CV",
+        "onset": "m",
+        "vowel": "i",
+        "flags": [],
+        "phrase": 1,
+        "resolvedVowel": "i",
+        "onsetViseme": "PP",
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "ル",
+        "type": "CV",
+        "onset": "r",
+        "vowel": "u",
+        "flags": [],
+        "phrase": 1,
+        "resolvedVowel": "u",
+        "onsetViseme": "ja_R",
+        "vowelViseme": "ja_U"
+      }
+    ],
+    [
+      {
+        "kana": "パ",
+        "type": "CV",
+        "onset": "p",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 2,
+        "resolvedVowel": "a",
+        "onsetViseme": "PP",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "パ",
+        "type": "CV",
+        "onset": "p",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 2,
+        "resolvedVowel": "a",
+        "onsetViseme": "PP",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "モ",
+        "type": "CV",
+        "onset": "m",
+        "vowel": "o",
+        "flags": [],
+        "phrase": 2,
+        "resolvedVowel": "o",
+        "onsetViseme": "PP",
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "マ",
+        "type": "CV",
+        "onset": "m",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 2,
+        "resolvedVowel": "a",
+        "onsetViseme": "PP",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "マ",
+        "type": "CV",
+        "onset": "m",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 2,
+        "resolvedVowel": "a",
+        "onsetViseme": "PP",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "モ",
+        "type": "CV",
+        "onset": "m",
+        "vowel": "o",
+        "flags": [],
+        "phrase": 2,
+        "resolvedVowel": "o",
+        "onsetViseme": "PP",
+        "vowelViseme": "O"
+      }
+    ],
+    [
+      {
+        "kana": "プ",
+        "type": "CV",
+        "onset": "p",
+        "vowel": "u",
+        "flags": [
+          "devoiced"
+        ],
+        "phrase": 3,
+        "resolvedVowel": "u",
+        "onsetViseme": "PP",
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "カ",
+        "type": "CV",
+        "onset": "k",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "a",
+        "onsetViseme": "kk",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "プ",
+        "type": "CV",
+        "onset": "p",
+        "vowel": "u",
+        "flags": [
+          "devoiced"
+        ],
+        "phrase": 3,
+        "resolvedVowel": "u",
+        "onsetViseme": "PP",
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "カ",
+        "type": "CV",
+        "onset": "k",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "a",
+        "onsetViseme": "kk",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "ウ",
+        "type": "V",
+        "onset": null,
+        "vowel": "u",
+        "flags": [
+          "devoiced"
+        ],
+        "phrase": 3,
+        "resolvedVowel": "u",
+        "onsetViseme": null,
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "カ",
+        "type": "CV",
+        "onset": "k",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "a",
+        "onsetViseme": "kk",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "ブ",
+        "type": "CV",
+        "onset": "b",
+        "vowel": "u",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "u",
+        "onsetViseme": "PP",
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "フ",
+        "type": "CV",
+        "onset": "f",
+        "vowel": "u",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "u",
+        "onsetViseme": "ja_FU",
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "ネ",
+        "type": "CV",
+        "onset": "n",
+        "vowel": "e",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "e",
+        "onsetViseme": "nn",
+        "vowelViseme": "E"
+      },
+      {
+        "kana": "ヲ",
+        "type": "V",
+        "onset": null,
+        "vowel": "o",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "o",
+        "onsetViseme": null,
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "マ",
+        "type": "CV",
+        "onset": "m",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "a",
+        "onsetViseme": "PP",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "ッ",
+        "type": "Q",
+        "onset": "Q",
+        "vowel": null,
+        "flags": [
+          "geminate"
+        ],
+        "phrase": 3,
+        "resolvedVowel": null,
+        "vowelViseme": null,
+        "onsetViseme": "DD"
+      },
+      {
+        "kana": "タ",
+        "type": "CV",
+        "onset": "t",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 3,
+        "resolvedVowel": "a",
+        "onsetViseme": "DD",
+        "vowelViseme": "aa"
+      }
+    ],
+    [
+      {
+        "kana": "ユ",
+        "type": "CV",
+        "onset": "y",
+        "vowel": "u",
+        "flags": [],
+        "phrase": 4,
+        "resolvedVowel": "u",
+        "onsetViseme": "I",
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "ッ",
+        "type": "Q",
+        "onset": "Q",
+        "vowel": null,
+        "flags": [
+          "geminate"
+        ],
+        "phrase": 4,
+        "resolvedVowel": null,
+        "vowelViseme": null,
+        "onsetViseme": "kk"
+      },
+      {
+        "kana": "ク",
+        "type": "CV",
+        "onset": "k",
+        "vowel": "u",
+        "flags": [],
+        "phrase": 4,
+        "resolvedVowel": "u",
+        "onsetViseme": "kk",
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "リ",
+        "type": "CV",
+        "onset": "r",
+        "vowel": "i",
+        "flags": [],
+        "phrase": 4,
+        "resolvedVowel": "i",
+        "onsetViseme": "ja_R",
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "キ",
+        "type": "CV",
+        "onset": "k",
+        "vowel": "i",
+        "flags": [
+          "devoiced"
+        ],
+        "phrase": 4,
+        "resolvedVowel": "i",
+        "onsetViseme": "kk",
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "ッ",
+        "type": "Q",
+        "onset": "Q",
+        "vowel": null,
+        "flags": [
+          "geminate"
+        ],
+        "phrase": 4,
+        "resolvedVowel": null,
+        "vowelViseme": null,
+        "onsetViseme": "PP"
+      },
+      {
+        "kana": "プ",
+        "type": "CV",
+        "onset": "p",
+        "vowel": "u",
+        "flags": [],
+        "phrase": 4,
+        "resolvedVowel": "u",
+        "onsetViseme": "PP",
+        "vowelViseme": "ja_U"
+      },
+      {
+        "kana": "ヲ",
+        "type": "V",
+        "onset": null,
+        "vowel": "o",
+        "flags": [],
+        "phrase": 4,
+        "resolvedVowel": "o",
+        "onsetViseme": null,
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "カ",
+        "type": "CV",
+        "onset": "k",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 4,
+        "resolvedVowel": "a",
+        "onsetViseme": "kk",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "ッ",
+        "type": "Q",
+        "onset": "Q",
+        "vowel": null,
+        "flags": [
+          "geminate"
+        ],
+        "phrase": 4,
+        "resolvedVowel": null,
+        "vowelViseme": null,
+        "onsetViseme": "DD"
+      },
+      {
+        "kana": "テ",
+        "type": "CV",
+        "onset": "t",
+        "vowel": "e",
+        "flags": [],
+        "phrase": 4,
+        "resolvedVowel": "e",
+        "onsetViseme": "DD",
+        "vowelViseme": "E"
+      }
+    ],
+    [
+      {
+        "kana": "ミ",
+        "type": "CV",
+        "onset": "m",
+        "vowel": "i",
+        "flags": [],
+        "phrase": 5,
+        "resolvedVowel": "i",
+        "onsetViseme": "PP",
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "ン",
+        "type": "N",
+        "onset": "N",
+        "vowel": null,
+        "flags": [
+          "default"
+        ],
+        "phrase": 5,
+        "resolvedVowel": null,
+        "vowelViseme": null,
+        "onsetViseme": "nn"
+      },
+      {
+        "kana": "ナ",
+        "type": "CV",
+        "onset": "n",
+        "vowel": "a",
+        "flags": [],
+        "phrase": 5,
+        "resolvedVowel": "a",
+        "onsetViseme": "nn",
+        "vowelViseme": "aa"
+      },
+      {
+        "kana": "デ",
+        "type": "CV",
+        "onset": "d",
+        "vowel": "e",
+        "flags": [],
+        "phrase": 5,
+        "resolvedVowel": "e",
+        "onsetViseme": "DD",
+        "vowelViseme": "E"
+      },
+      {
+        "kana": "ト",
+        "type": "CV",
+        "onset": "t",
+        "vowel": "o",
+        "flags": [],
+        "phrase": 5,
+        "resolvedVowel": "o",
+        "onsetViseme": "DD",
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "ー",
+        "type": "LONG",
+        "onset": null,
+        "vowel": "o",
+        "flags": [
+          "longVowel"
+        ],
+        "phrase": 5,
+        "resolvedVowel": "o",
+        "onsetViseme": null,
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "キョ",
+        "type": "CV",
+        "flags": [
+          "palatalized"
+        ],
+        "onset": "k",
+        "vowel": "o",
+        "phrase": 5,
+        "resolvedVowel": "o",
+        "onsetViseme": "kk",
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "ー",
+        "type": "LONG",
+        "onset": null,
+        "vowel": "o",
+        "flags": [
+          "longVowel"
+        ],
+        "phrase": 5,
+        "resolvedVowel": "o",
+        "onsetViseme": null,
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "エ",
+        "type": "V",
+        "onset": null,
+        "vowel": "e",
+        "flags": [],
+        "phrase": 5,
+        "resolvedVowel": "e",
+        "onsetViseme": null,
+        "vowelViseme": "E"
+      },
+      {
+        "kana": "イ",
+        "type": "V",
+        "onset": null,
+        "vowel": "i",
+        "flags": [],
+        "phrase": 5,
+        "resolvedVowel": "i",
+        "onsetViseme": null,
+        "vowelViseme": "I"
+      },
+      {
+        "kana": "コ",
+        "type": "CV",
+        "onset": "k",
+        "vowel": "o",
+        "flags": [],
+        "phrase": 5,
+        "resolvedVowel": "o",
+        "onsetViseme": "kk",
+        "vowelViseme": "O"
+      },
+      {
+        "kana": "ー",
+        "type": "LONG",
+        "onset": null,
+        "vowel": "o",
+        "flags": [
+          "longVowel"
+        ],
+        "phrase": 5,
+        "resolvedVowel": "o",
+        "onsetViseme": null,
+        "vowelViseme": "O"
+      }
+    ]
+  ],
+  "morae": [
+    {
+      "kana": "フ",
+      "type": "CV",
+      "onset": "f",
+      "vowel": "u",
+      "flags": [],
+      "phrase": 0,
+      "resolvedVowel": "u",
+      "onsetViseme": "ja_FU",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "ー",
+      "type": "LONG",
+      "onset": null,
+      "vowel": "u",
+      "flags": [
+        "longVowel"
+      ],
+      "phrase": 0,
+      "resolvedVowel": "u",
+      "onsetViseme": null,
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "ッ",
+      "type": "Q",
+      "onset": "Q",
+      "vowel": null,
+      "flags": [
+        "geminate"
+      ],
+      "phrase": 0,
+      "resolvedVowel": null,
+      "vowelViseme": null,
+      "onsetViseme": "DD"
+    },
+    {
+      "kana": "ト",
+      "type": "CV",
+      "onset": "t",
+      "vowel": "o",
+      "flags": [],
+      "phrase": 0,
+      "resolvedVowel": "o",
+      "onsetViseme": "DD",
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "イ",
+      "type": "V",
+      "onset": null,
+      "vowel": "i",
+      "flags": [
+        "devoiced"
+      ],
+      "phrase": 0,
+      "resolvedVowel": "i",
+      "onsetViseme": null,
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "キ",
+      "type": "CV",
+      "onset": "k",
+      "vowel": "i",
+      "flags": [],
+      "phrase": 0,
+      "resolvedVowel": "i",
+      "onsetViseme": "kk",
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "ヲ",
+      "type": "V",
+      "onset": null,
+      "vowel": "o",
+      "flags": [],
+      "phrase": 0,
+      "resolvedVowel": "o",
+      "onsetViseme": null,
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "ハ",
+      "type": "CV",
+      "onset": "h",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 0,
+      "resolvedVowel": "a",
+      "onsetViseme": "SS",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "イ",
+      "type": "V",
+      "onset": null,
+      "vowel": "i",
+      "flags": [
+        "devoiced"
+      ],
+      "phrase": 0,
+      "resolvedVowel": "i",
+      "onsetViseme": null,
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "テ",
+      "type": "CV",
+      "onset": "t",
+      "vowel": "e",
+      "flags": [],
+      "phrase": 0,
+      "resolvedVowel": "e",
+      "onsetViseme": "DD",
+      "vowelViseme": "E"
+    },
+    {
+      "kana": "ア",
+      "type": "V",
+      "onset": null,
+      "vowel": "a",
+      "flags": [],
+      "phrase": 1,
+      "resolvedVowel": "a",
+      "onsetViseme": null,
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "オ",
+      "type": "V",
+      "onset": null,
+      "vowel": "o",
+      "flags": [],
+      "phrase": 1,
+      "resolvedVowel": "o",
+      "onsetViseme": null,
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "イ",
+      "type": "V",
+      "onset": null,
+      "vowel": "i",
+      "flags": [],
+      "phrase": 1,
+      "resolvedVowel": "i",
+      "onsetViseme": null,
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "ウ",
+      "type": "V",
+      "onset": null,
+      "vowel": "u",
+      "flags": [],
+      "phrase": 1,
+      "resolvedVowel": "u",
+      "onsetViseme": null,
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "ミ",
+      "type": "CV",
+      "onset": "m",
+      "vowel": "i",
+      "flags": [],
+      "phrase": 1,
+      "resolvedVowel": "i",
+      "onsetViseme": "PP",
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "ヲ",
+      "type": "V",
+      "onset": null,
+      "vowel": "o",
+      "flags": [],
+      "phrase": 1,
+      "resolvedVowel": "o",
+      "onsetViseme": null,
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "ミ",
+      "type": "CV",
+      "onset": "m",
+      "vowel": "i",
+      "flags": [],
+      "phrase": 1,
+      "resolvedVowel": "i",
+      "onsetViseme": "PP",
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "ル",
+      "type": "CV",
+      "onset": "r",
+      "vowel": "u",
+      "flags": [],
+      "phrase": 1,
+      "resolvedVowel": "u",
+      "onsetViseme": "ja_R",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "パ",
+      "type": "CV",
+      "onset": "p",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 2,
+      "resolvedVowel": "a",
+      "onsetViseme": "PP",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "パ",
+      "type": "CV",
+      "onset": "p",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 2,
+      "resolvedVowel": "a",
+      "onsetViseme": "PP",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "モ",
+      "type": "CV",
+      "onset": "m",
+      "vowel": "o",
+      "flags": [],
+      "phrase": 2,
+      "resolvedVowel": "o",
+      "onsetViseme": "PP",
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "マ",
+      "type": "CV",
+      "onset": "m",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 2,
+      "resolvedVowel": "a",
+      "onsetViseme": "PP",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "マ",
+      "type": "CV",
+      "onset": "m",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 2,
+      "resolvedVowel": "a",
+      "onsetViseme": "PP",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "モ",
+      "type": "CV",
+      "onset": "m",
+      "vowel": "o",
+      "flags": [],
+      "phrase": 2,
+      "resolvedVowel": "o",
+      "onsetViseme": "PP",
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "プ",
+      "type": "CV",
+      "onset": "p",
+      "vowel": "u",
+      "flags": [
+        "devoiced"
+      ],
+      "phrase": 3,
+      "resolvedVowel": "u",
+      "onsetViseme": "PP",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "カ",
+      "type": "CV",
+      "onset": "k",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "a",
+      "onsetViseme": "kk",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "プ",
+      "type": "CV",
+      "onset": "p",
+      "vowel": "u",
+      "flags": [
+        "devoiced"
+      ],
+      "phrase": 3,
+      "resolvedVowel": "u",
+      "onsetViseme": "PP",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "カ",
+      "type": "CV",
+      "onset": "k",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "a",
+      "onsetViseme": "kk",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "ウ",
+      "type": "V",
+      "onset": null,
+      "vowel": "u",
+      "flags": [
+        "devoiced"
+      ],
+      "phrase": 3,
+      "resolvedVowel": "u",
+      "onsetViseme": null,
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "カ",
+      "type": "CV",
+      "onset": "k",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "a",
+      "onsetViseme": "kk",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "ブ",
+      "type": "CV",
+      "onset": "b",
+      "vowel": "u",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "u",
+      "onsetViseme": "PP",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "フ",
+      "type": "CV",
+      "onset": "f",
+      "vowel": "u",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "u",
+      "onsetViseme": "ja_FU",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "ネ",
+      "type": "CV",
+      "onset": "n",
+      "vowel": "e",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "e",
+      "onsetViseme": "nn",
+      "vowelViseme": "E"
+    },
+    {
+      "kana": "ヲ",
+      "type": "V",
+      "onset": null,
+      "vowel": "o",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "o",
+      "onsetViseme": null,
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "マ",
+      "type": "CV",
+      "onset": "m",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "a",
+      "onsetViseme": "PP",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "ッ",
+      "type": "Q",
+      "onset": "Q",
+      "vowel": null,
+      "flags": [
+        "geminate"
+      ],
+      "phrase": 3,
+      "resolvedVowel": null,
+      "vowelViseme": null,
+      "onsetViseme": "DD"
+    },
+    {
+      "kana": "タ",
+      "type": "CV",
+      "onset": "t",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 3,
+      "resolvedVowel": "a",
+      "onsetViseme": "DD",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "ユ",
+      "type": "CV",
+      "onset": "y",
+      "vowel": "u",
+      "flags": [],
+      "phrase": 4,
+      "resolvedVowel": "u",
+      "onsetViseme": "I",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "ッ",
+      "type": "Q",
+      "onset": "Q",
+      "vowel": null,
+      "flags": [
+        "geminate"
+      ],
+      "phrase": 4,
+      "resolvedVowel": null,
+      "vowelViseme": null,
+      "onsetViseme": "kk"
+    },
+    {
+      "kana": "ク",
+      "type": "CV",
+      "onset": "k",
+      "vowel": "u",
+      "flags": [],
+      "phrase": 4,
+      "resolvedVowel": "u",
+      "onsetViseme": "kk",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "リ",
+      "type": "CV",
+      "onset": "r",
+      "vowel": "i",
+      "flags": [],
+      "phrase": 4,
+      "resolvedVowel": "i",
+      "onsetViseme": "ja_R",
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "キ",
+      "type": "CV",
+      "onset": "k",
+      "vowel": "i",
+      "flags": [
+        "devoiced"
+      ],
+      "phrase": 4,
+      "resolvedVowel": "i",
+      "onsetViseme": "kk",
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "ッ",
+      "type": "Q",
+      "onset": "Q",
+      "vowel": null,
+      "flags": [
+        "geminate"
+      ],
+      "phrase": 4,
+      "resolvedVowel": null,
+      "vowelViseme": null,
+      "onsetViseme": "PP"
+    },
+    {
+      "kana": "プ",
+      "type": "CV",
+      "onset": "p",
+      "vowel": "u",
+      "flags": [],
+      "phrase": 4,
+      "resolvedVowel": "u",
+      "onsetViseme": "PP",
+      "vowelViseme": "ja_U"
+    },
+    {
+      "kana": "ヲ",
+      "type": "V",
+      "onset": null,
+      "vowel": "o",
+      "flags": [],
+      "phrase": 4,
+      "resolvedVowel": "o",
+      "onsetViseme": null,
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "カ",
+      "type": "CV",
+      "onset": "k",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 4,
+      "resolvedVowel": "a",
+      "onsetViseme": "kk",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "ッ",
+      "type": "Q",
+      "onset": "Q",
+      "vowel": null,
+      "flags": [
+        "geminate"
+      ],
+      "phrase": 4,
+      "resolvedVowel": null,
+      "vowelViseme": null,
+      "onsetViseme": "DD"
+    },
+    {
+      "kana": "テ",
+      "type": "CV",
+      "onset": "t",
+      "vowel": "e",
+      "flags": [],
+      "phrase": 4,
+      "resolvedVowel": "e",
+      "onsetViseme": "DD",
+      "vowelViseme": "E"
+    },
+    {
+      "kana": "ミ",
+      "type": "CV",
+      "onset": "m",
+      "vowel": "i",
+      "flags": [],
+      "phrase": 5,
+      "resolvedVowel": "i",
+      "onsetViseme": "PP",
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "ン",
+      "type": "N",
+      "onset": "N",
+      "vowel": null,
+      "flags": [
+        "default"
+      ],
+      "phrase": 5,
+      "resolvedVowel": null,
+      "vowelViseme": null,
+      "onsetViseme": "nn"
+    },
+    {
+      "kana": "ナ",
+      "type": "CV",
+      "onset": "n",
+      "vowel": "a",
+      "flags": [],
+      "phrase": 5,
+      "resolvedVowel": "a",
+      "onsetViseme": "nn",
+      "vowelViseme": "aa"
+    },
+    {
+      "kana": "デ",
+      "type": "CV",
+      "onset": "d",
+      "vowel": "e",
+      "flags": [],
+      "phrase": 5,
+      "resolvedVowel": "e",
+      "onsetViseme": "DD",
+      "vowelViseme": "E"
+    },
+    {
+      "kana": "ト",
+      "type": "CV",
+      "onset": "t",
+      "vowel": "o",
+      "flags": [],
+      "phrase": 5,
+      "resolvedVowel": "o",
+      "onsetViseme": "DD",
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "ー",
+      "type": "LONG",
+      "onset": null,
+      "vowel": "o",
+      "flags": [
+        "longVowel"
+      ],
+      "phrase": 5,
+      "resolvedVowel": "o",
+      "onsetViseme": null,
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "キョ",
+      "type": "CV",
+      "flags": [
+        "palatalized"
+      ],
+      "onset": "k",
+      "vowel": "o",
+      "phrase": 5,
+      "resolvedVowel": "o",
+      "onsetViseme": "kk",
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "ー",
+      "type": "LONG",
+      "onset": null,
+      "vowel": "o",
+      "flags": [
+        "longVowel"
+      ],
+      "phrase": 5,
+      "resolvedVowel": "o",
+      "onsetViseme": null,
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "エ",
+      "type": "V",
+      "onset": null,
+      "vowel": "e",
+      "flags": [],
+      "phrase": 5,
+      "resolvedVowel": "e",
+      "onsetViseme": null,
+      "vowelViseme": "E"
+    },
+    {
+      "kana": "イ",
+      "type": "V",
+      "onset": null,
+      "vowel": "i",
+      "flags": [],
+      "phrase": 5,
+      "resolvedVowel": "i",
+      "onsetViseme": null,
+      "vowelViseme": "I"
+    },
+    {
+      "kana": "コ",
+      "type": "CV",
+      "onset": "k",
+      "vowel": "o",
+      "flags": [],
+      "phrase": 5,
+      "resolvedVowel": "o",
+      "onsetViseme": "kk",
+      "vowelViseme": "O"
+    },
+    {
+      "kana": "ー",
+      "type": "LONG",
+      "onset": null,
+      "vowel": "o",
+      "flags": [
+        "longVowel"
+      ],
+      "phrase": 5,
+      "resolvedVowel": "o",
+      "onsetViseme": null,
+      "vowelViseme": "O"
+    }
+  ],
+  "timingEstablished": false
+}

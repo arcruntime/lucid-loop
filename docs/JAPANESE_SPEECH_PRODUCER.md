@@ -69,6 +69,8 @@ The default result remains in `.local/japanese-producer-followup/results.json`; 
 
 [NPC voice evidence collection](JAPANESE_NPC_VOICE_EVIDENCE.md) provides a separate manual workflow for independent recordings from the actual configured voices. It preserves receipt, transcript and PCM clocks without claiming they are aligned, and reserves the recordings for evaluation rather than training.
 
+The [checked reading frontend](JAPANESE_READING_FRONTEND.md) implements a provisional text-to-pronunciation handoff using pinned pyopenjtalk and a verified dictionary, followed by loss-rejecting validation of the pinned kana parser. The captured passage passes into 60 mora records; unknown rare names/symbols and unconfigured Latin words are rejected. This supplies a reading stage, not the bounded alignment or timing evidence still required below.
+
 Keep the current English route unchanged. Introduce a producer registry whose entry binds `(language, model hash, label-map version, status)`, with Japanese initially marked **experimental**, rather than weakening the English-only guard globally. The scratch prototype shows that this entry can use the current C# analyzer and tiny Japanese model; no ONNX/CoreML/native plugin is required for that path. An experimental scene can preserve the bounded target queue and consumed-sample clock already implemented.
 
 Before enabling it as the normal Japanese experience, complete these gates:
