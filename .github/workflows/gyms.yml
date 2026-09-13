@@ -19,6 +19,10 @@ on:
         description: "Run full 180-second prevention route with real Live and Responses"
         type: boolean
         default: false
+      run_spoken:
+        description: "Verify a spoken PCM request through real Live client delegation"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -41,7 +45,7 @@ jobs:
       - run: docker build -t lucid-loop-live-relay:test .
 
   live-smoke:
-    if: github.event_name == 'workflow_dispatch' && (inputs.run_live || inputs.run_prevention || vars.RUN_GPT_LIVE_SMOKE == 'true')
+    if: github.event_name == 'workflow_dispatch' && (inputs.run_live || inputs.run_prevention || inputs.run_spoken || vars.RUN_GPT_LIVE_SMOKE == 'true')
     timeout-minutes: 12
     needs: server
     runs-on: ubuntu-latest
@@ -51,6 +55,8 @@ jobs:
     env:
       RUN_GPT_LIVE_SMOKE: "1"
       RUN_GPT_LIVE_PREVENTION: ${{ inputs.run_prevention && '1' || '0' }}
+      RUN_GPT_LIVE_SPOKEN: ${{ inputs.run_spoken && '1' || '0' }}
+      LIVE_SPOKEN_PCM: /tmp/lucid-loop-spoken-request.pcm
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     steps:
       - uses: actions/checkout@v4
@@ -60,4 +66,11 @@ jobs:
           cache: npm
           cache-dependency-path: server/package-lock.json
       - run: npm ci
+      - name: Generate authored speech fixture
+        if: inputs.run_spoken
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq espeak-ng ffmpeg
+          espeak-ng -v en-us -s 145 -w /tmp/lucid-loop-spoken-request.wav "Maya, please wait right here. Stay where you are while I go talk to Luca."
+          ffmpeg -v error -y -i /tmp/lucid-loop-spoken-request.wav -ar 24000 -ac 1 -f s16le "$LIVE_SPOKEN_PCM"
       - run: npm run test:live
