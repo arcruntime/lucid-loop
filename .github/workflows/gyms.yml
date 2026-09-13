@@ -15,6 +15,10 @@ on:
         description: "Run project-funded OpenAI transport and gameplay smoke tests"
         type: boolean
         default: false
+      run_prevention:
+        description: "Run full 180-second prevention route with real Live and Responses"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -37,7 +41,8 @@ jobs:
       - run: docker build -t lucid-loop-live-relay:test .
 
   live-smoke:
-    if: github.event_name == 'workflow_dispatch' && (inputs.run_live || vars.RUN_GPT_LIVE_SMOKE == 'true')
+    if: github.event_name == 'workflow_dispatch' && (inputs.run_live || inputs.run_prevention || vars.RUN_GPT_LIVE_SMOKE == 'true')
+    timeout-minutes: 12
     needs: server
     runs-on: ubuntu-latest
     defaults:
@@ -45,6 +50,7 @@ jobs:
         working-directory: server
     env:
       RUN_GPT_LIVE_SMOKE: "1"
+      RUN_GPT_LIVE_PREVENTION: ${{ inputs.run_prevention && '1' || '0' }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
     steps:
       - uses: actions/checkout@v4

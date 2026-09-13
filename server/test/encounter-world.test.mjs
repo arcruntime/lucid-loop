@@ -123,3 +123,65 @@ test('conversation gate covers all four NPCs, and reset restores poses and fence
   assert.equal(f.world.snapshot().sequence, -1);
   assert.equal(f.world.snapshot().elapsedSeconds, 0);
 });
+
+test('second-loop prevention is reachable with every action spoken nearby and voice time paused', t => {
+  const f = fixture();
+  const trace = [];
+  function travel(x, z) {
+    assert.equal(f.move(x, z).accepted, true);
+    for (let i = 0; i < 300; i++) {
+      const p = f.world.snapshot().actors.player.position;
+      if (Math.hypot(p.x - x, p.z - z) < 0.02) return;
+      f.world.tick(0.1);
+    }
+    assert.fail(`Destination unreachable: ${x}, ${z}`);
+  }
+  function speak(id, type, extra = {}) {
+    assert.equal(f.world.canConverse(id).ok, true, `${id} cannot hear ${type}: ${JSON.stringify(f.world.snapshot())}`);
+    const before = f.world.snapshot();
+    assert.equal(f.world.tick(60, { voiceActive: true }).steps, 0);
+    f.action(id, type, extra);
+    assert.equal(f.world.tick(60, { voiceActive: true }).steps, 0);
+    const after = f.world.snapshot();
+    assert.equal(after.elapsedSeconds, before.elapsedSeconds);
+    for (const actor of Object.keys(before.actors)) assert.deepEqual(after.actors[actor].position, before.actors[actor].position);
+    trace.push({ at: Number(after.elapsedSeconds.toFixed(1)), id, type, player: after.actors.player.position });
+  }
+  // A genuine first-loop observation supplies the retained clue; no trusted facts
+  // or staging values are injected by this test.
+  f.move(10, -1.7); f.run(40);
+  assert.equal(f.state().catastrophe?.victimId, 'luca');
+  const ended = f.state();
+  assert.equal(f.world.reset({ loopId: ended.loopId, revision: ended.revision }).outcome.accepted, true);
+  assert.ok(f.state().playerDiscoveries.some(d => d.factId === 'shove_seen'));
+  travel(-2, -4); speak('maya', 'wait');
+  travel(2.5, 6.2); speak('ren', 'request_music', { mood: 'Intimate' });
+  travel(-6, 2); speak('luca', 'ask_about_exposure');
+  travel(-2, -4); speak('maya', 'agree_private_approach'); speak('maya', 'follow', { targetId: 'player' });
+  travel(9.7, -1.7);
+  for (let i = 0; i < 100 && !f.state().recognized; i++) f.world.tick(0.1);
+  travel(9, -1.7);
+  speak('theo', 'agree_distance'); speak('maya', 'stop_recording'); speak('maya', 'wait');
+  const publicMediationReady = () => {
+    const { actors } = f.world.snapshot();
+    const s = f.registry.publicState(f.credentials).snapshot;
+    const separation = (a, b) => Math.hypot(a.position.x - b.position.x, a.position.z - b.position.z);
+    return actors.luca.motion === 'idle' && actors.maya.motion === 'idle' && actors.theo.motion === 'idle' &&
+      actors.luca.action.type === 'approach' && actors.maya.action.type === 'wait' && actors.theo.action.type === 'keep_distance' &&
+      separation(actors.luca, actors.maya) <= 1.3 && separation(actors.theo, actors.maya) >= 2 && separation(actors.theo, actors.maya) <= 3.5 &&
+      s.recording === false && s.mood === 'Intimate';
+  };
+  for (let i = 0; i < 150 && !publicMediationReady(); i++) f.world.tick(0.1);
+  assert.equal(publicMediationReady(), true);
+  assert.equal(f.state().scenario.stage.allInMediation, true);
+  t.diagnostic(JSON.stringify({ mediationReadyAt: Number(f.world.snapshot().elapsedSeconds.toFixed(1)), actors: f.world.snapshot().actors }));
+  travel(8, -1.7);
+  speak('luca', 'mediate');
+  travel(0, -8); f.run(10);
+  assert.equal(f.state().scenario.separated, true, JSON.stringify(trace));
+  assert.ok(f.state().scenario.elapsedSeconds < 180, JSON.stringify(trace));
+  t.diagnostic(JSON.stringify({ actions: trace, safelySeparatedBy: Number(f.state().scenario.elapsedSeconds.toFixed(1)) }));
+  f.run(180);
+  assert.equal(f.state().victory, true, JSON.stringify(trace));
+  assert.equal(f.state().catastrophe, null);
+});

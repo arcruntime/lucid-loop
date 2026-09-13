@@ -81,3 +81,28 @@ Only changed stage booleans create stage observations. Each active step advances
 Run `node --test server/test/encounter-world.test.mjs`. Tests cover invalid and spoofed inputs, speed and obstacle bounds, dropped catch-up time, pause coherence, complete default opening, blocked recognition, full prevention and physical separation, all four conversation gates, and reset fencing. Tests execute original geometry rather than supplying arbitrary stage observations.
 
 These checks establish deterministic server causality. They do not establish that the final animation falls against the table, that character bodies never overlap during staged intervention, or that the club sightlines match final character eye heights. Verify those in the Unity scene. The host must also size registry revision capacity for multiple 180-second loops: clock commits alone consume about 1,800 revisions per completed set.
+
+## Reachable prevention route with conversation proximity
+
+The test `second-loop prevention is reachable with every action spoken nearby and voice time paused` verifies the complete route with production configuration and scenario rules. It first walks to `(10, -1.7)`, observes the actual catastrophe, resets through the registry fence, and checks the retained `shove_seen` discovery. It never injects facts, positions, visibility, or stage flags. Before **every** NPC action it requires `canConverse(npcId).ok`; each conversation simulates 60 seconds of provider/voice time before the action and another 60 afterward, checking that neither actor positions nor the active timer advance.
+
+The measured second-loop route is:
+
+| Active time | Player destination, XZ | Nearby conversation / movement |
+| --- | --- | --- |
+| 1.3 s | `(-2, -4)` | Ask following Maya to wait. |
+| 4.4 s | `(2.5, 6.2)` | Ask Ren for Intimate music. |
+| 7.0 s | `(-6, 2)` | Ask Luca about Theo's fear of exposure; receive the authored clue. |
+| 9.0 s | `(-2, -4)` | Agree on a private approach with Maya, then ask her to follow. |
+| 12.5 s | First `(9.7, -1.7)`, then `(9, -1.7)` after Maya recognizes the affair | Ask Theo to keep his distance. Ask Maya to stop recording and wait while Luca joins. |
+| 17.5 s | `(8, -1.7)`, after the public actor frame confirms the group has stopped in mediation range | Ask Luca to mediate. |
+| By 30.3 s | `(0, -8)` | Leave with Maya; Theo independently reaches his VIP safe destination. Separation is confirmed. |
+| 180.0 s | Remain safely separated | The set ends and the complete victory predicate succeeds. |
+
+The times measure active simulation, not real conversation duration. The safe arrangement is complete with about 150 seconds remaining; the scenario intentionally declares victory only at the set's end. No relaxed speed, timer, obstacle, or interaction radius was needed.
+
+There is a practical interaction detail to preserve in the UI: staying at `(9.7, -1.7)` can leave the player about 2.3 m from Theo after he approaches Maya, just outside the 2.2 m talk radius. Moving 0.7 m left to `(9, -1.7)` makes Theo reachable while Maya remains nearby. The talk prompt should follow the authoritative proximity gate, and a destination marker must not imply that a distant NPC is already available. Asking Maya to wait after lowering the phone also keeps the mediation group stable while the player steps toward Luca. These are ordinary movement and accepted dialogue actions, not hidden test permissions.
+
+The public-only wait used by the route test requires Luca, Maya, and Theo to have `motion: idle`; their actions must be `approach`, `wait`, and `keep_distance`, respectively. Luca must be within 1.3 m of Maya, Theo between 2 and 3.5 m from Maya, recording must be off, and the mood must be Intimate. This becomes true at 17.2 s on this route: Luca is at `(6.19281, -1.73900)`, Maya at `(7.39545, -2.07984)`, and Theo at `(6.53576, 0.26770)`. The player then walks to `(8, -1.7)` and checks Luca's normal conversation gate. Waiting for Luca to be within 1.5 m of that player waypoint would never finish: his actual stopping distance from it is about 1.808 m. Require `idle` rather than merely “not moving,” because `blocked` also means not moving. This positional predicate is validated for this fixed route; it does not replace the server's authoritative obstruction and social-policy checks in arbitrary arrangements.
+
+This demonstrates that the server-side route is reachable through the intended movement/conversation controls. Final Unity touch targeting, visual prompt clarity, provider interpretation, and voiced performance still need device playtesting; the test does not substitute for those checks.

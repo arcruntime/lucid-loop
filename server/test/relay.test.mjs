@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { once } from "node:events";
-import test from "node:test";
+import nodeTest from "node:test";
+const test = (name, run) => nodeTest(name, { timeout: 30_000 }, run);
 import WebSocket, { WebSocketServer } from "ws";
 import { createRelayServer } from "../src/server.mjs";
 import { createGameSessions } from "../src/game-sessions.mjs";
@@ -14,7 +15,7 @@ test("world channel advances server positions and rejects forged destinations an
   const { relay, url } = await makeRelay({ apiKey: "", gameSessions: games, worldFactory: createEncounterWorld });
   try {
     const client = await openClient(url.replace('/live', '/game'));
-    const until = async type => { let event; do { event = await nextJson(client); } while (event.type !== type); return event; };
+    const until = type => untilJson(client, type);
     client.send(JSON.stringify({ type: "game.create" }));
     const ready = await until("game.ready");
     const first = await until("game.world");
@@ -30,7 +31,7 @@ test("world channel advances server positions and rejects forged destinations an
     assert.equal((await until("game.error")).code, "reset_unavailable");
     client.send(JSON.stringify({ type: "game.pause", paused: true }));
     assert.equal((await until("game.pause")).paused, true);
-  } finally { await relay.close(); }
+  } finally { await bounded(relay.close(), "relay close"); }
 });
 
 test("typed gameplay request reaches validated interpreter and commits through the active NPC lease", async () => {
@@ -79,7 +80,7 @@ test("game channel creates/resumes safe state and cannot inject private world mu
     const bad = await openClient(url.replace('/live', '/game'));
     bad.send(JSON.stringify({ type: "game.resume", gameId: ready.credentials.gameId, resumeToken: "wrong" }));
     assert.equal((await nextJson(bad)).code, "unauthorized");
-  } finally { await relay.close(); }
+  } finally { await bounded(relay.close(), "relay close"); }
 });
 
 test("game conversations restore private NPC context and persist transcripts across connections", async () => {
@@ -105,7 +106,7 @@ test("game conversations restore private NPC context and persist transcripts acr
       client.send(JSON.stringify({ type: "gym.start", character: "maya", ...created.credentials }));
       let received;
       do { received = await nextJson(client); } while (received.type !== "session.input_transcript.delta");
-      const closed = once(client, "close");
+      const closed = waitClosed(client);
       client.send(JSON.stringify({ type: "session.close" }));
       await closed;
     }
@@ -116,30 +117,78 @@ test("game conversations restore private NPC context and persist transcripts acr
   } finally { await closeRelay(relay, upstream); }
 });
 
+const IO_TIMEOUT_MS = 10_000;
+
+function bounded(promise, label, timeoutMs = IO_TIMEOUT_MS) {
+  let timer;
+  return Promise.race([promise, new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(`Test harness timed out: ${label}`)), timeoutMs);
+  })]).finally(() => clearTimeout(timer));
+}
+
 async function openClient(url) {
   const socket = new WebSocket(url);
   const messages = [];
   const waiters = [];
-  socket.on("message", data => {
-    const value = JSON.parse(data.toString());
-    const waiter = waiters.shift();
-    if (waiter) waiter(value); else messages.push(value);
+  let terminal;
+  let resolveClosed;
+  const closed = new Promise(resolve => { resolveClosed = resolve; });
+  const fail = error => {
+    terminal ??= error;
+    for (const waiter of waiters.splice(0)) { clearTimeout(waiter.timer); waiter.reject(terminal); }
+  };
+  socket.on("error", error => fail(new Error(`Test WebSocket error: ${error.message}`)));
+  socket.on("close", (code, reason) => {
+    fail(new Error(`Test WebSocket closed before expected message: ${code} ${reason.toString()}`));
+    resolveClosed([code, reason]);
   });
-  socket.nextJson = () => messages.length ? Promise.resolve(messages.shift()) : new Promise(resolve => waiters.push(resolve));
-  await once(socket, "open");
+  socket.on("message", data => {
+    let value;
+    try { value = JSON.parse(data.toString()); }
+    catch (error) { fail(new Error(`Invalid JSON from test socket: ${error.message}`)); socket.terminate(); return; }
+    const waiter = waiters.shift();
+    if (waiter) { clearTimeout(waiter.timer); waiter.resolve(value); }
+    else if (messages.length < 1024) messages.push(value);
+    else { fail(new Error("Test mailbox exceeded 1024 messages")); socket.terminate(); }
+  });
+  socket.nextJson = (timeoutMs = IO_TIMEOUT_MS) => {
+    // Final error/status messages remain readable even if close already arrived.
+    if (messages.length) return Promise.resolve(messages.shift());
+    if (terminal) return Promise.reject(terminal);
+    return new Promise((resolve, reject) => {
+      const waiter = { resolve, reject, timer: null };
+      waiter.timer = setTimeout(() => {
+        const index = waiters.indexOf(waiter);
+        if (index >= 0) waiters.splice(index, 1);
+        reject(new Error("Test harness timed out waiting for WebSocket JSON"));
+      }, timeoutMs);
+      waiters.push(waiter);
+    });
+  };
+  socket.waitClosed = () => bounded(closed, "WebSocket close");
+  try { await bounded(once(socket, "open"), "WebSocket open"); }
+  catch (error) { socket.terminate(); throw error; }
   return socket;
 }
 
-function nextJson(socket) {
-  return socket.nextJson();
+function nextJson(socket, timeoutMs) { return socket.nextJson(timeoutMs); }
+function waitClosed(socket) { return socket.waitClosed(); }
+
+async function untilJson(socket, type) {
+  const deadline = Date.now() + IO_TIMEOUT_MS;
+  while (Date.now() < deadline) {
+    const event = await nextJson(socket, Math.max(1, deadline - Date.now()));
+    if (event.type === type) return event;
+  }
+  throw new Error(`Test harness timed out waiting for ${type}`);
 }
 
 async function makeUpstream({ onConnection } = {}) {
   const server = new WebSocketServer({ port: 0, host: "127.0.0.1" });
-  await once(server, "listening");
+  await bounded(once(server, "listening"), "upstream listening");
   server.on("connection", (socket, request) => onConnection?.(socket, request));
   const { port } = server.address();
-  return { url: `ws://127.0.0.1:${port}`, close: () => new Promise(resolve => server.close(resolve)) };
+  return { url: `ws://127.0.0.1:${port}`, close: () => { for (const client of server.clients) client.terminate(); return bounded(new Promise(resolve => server.close(resolve)), "upstream close"); } };
 }
 
 async function makeRelay(overrides = {}) {
@@ -147,10 +196,10 @@ async function makeRelay(overrides = {}) {
     host: "127.0.0.1",
     port: 0,
     apiKey: "test-key",
-    startupTimeoutMs: 200,
-    startTimeoutMs: 200,
-    closeTimeoutMs: 200,
-    maxDurationMs: 2_000,
+    startupTimeoutMs: 5_000,
+    startTimeoutMs: 5_000,
+    closeTimeoutMs: 5_000,
+    maxDurationMs: 30_000,
     maxSessions: 2,
     maxPendingConnections: 4,
     maxMessageBytes: 8_192,
@@ -163,17 +212,17 @@ async function makeRelay(overrides = {}) {
 }
 
 async function closeRelay(relay, upstream) {
-  await relay.close();
-  await upstream?.close();
+  try { await bounded(relay.close(), "relay close"); }
+  finally { await upstream?.close(); }
 }
 
 test("health is not ready when the OpenAI key is missing", async () => {
   const { relay } = await makeRelay({ apiKey: "" });
   try {
-    const response = await fetch(`http://127.0.0.1:${relay.address().port}/health`);
+    const response = await fetch(`http://127.0.0.1:${relay.address().port}/health`, { signal: AbortSignal.timeout(IO_TIMEOUT_MS) });
     assert.equal(response.status, 503);
     assert.deepEqual(await response.json(), { ready: false });
-  } finally { await relay.close(); }
+  } finally { await bounded(relay.close(), "relay close"); }
 });
 
 test("a missing OpenAI key cannot start a billable session", async () => {
@@ -182,8 +231,8 @@ test("a missing OpenAI key cannot start a billable session", async () => {
     const client = await openClient(url);
     client.send(START);
     assert.deepEqual(await nextJson(client), { type: "gym.status", status: "error", code: "missing_api_key" });
-    await once(client, "close");
-  } finally { await relay.close(); }
+    await waitClosed(client);
+  } finally { await bounded(relay.close(), "relay close"); }
 });
 
 test("non-loopback serving requires an access token", () => {
@@ -199,7 +248,7 @@ test("rejects missing or wrong access tokens before opening upstream", async () 
       const client = await openClient(url);
       client.send(JSON.stringify({ type: "gym.start", character: "maya", ...(token ? { token } : {}) }));
       assert.deepEqual(await nextJson(client), { type: "gym.status", status: "error", code: "unauthorized" });
-      await once(client, "close");
+      await waitClosed(client);
     }
     assert.equal(upstreamConnections, 0);
   } finally { await closeRelay(relay, upstream); }
@@ -241,7 +290,7 @@ test("rejects inherited object names as characters without opening upstream", as
       const client = await openClient(url);
       client.send(JSON.stringify({ type: "gym.start", character }));
       assert.equal((await nextJson(client)).code, "unknown_character");
-      await once(client, "close");
+      await waitClosed(client);
     }
     assert.equal(upstreamConnections, 0);
   } finally { await closeRelay(relay, upstream); }
@@ -252,13 +301,13 @@ test("pre-start connections have a timeout and a separate capacity bound", async
   try {
     const waiting = await openClient(url);
     const excess = new WebSocket(url);
-    const [, response] = await once(excess, "unexpected-response");
+    const [, response] = await bounded(once(excess, "unexpected-response"), "rejected upgrade");
     assert.equal(response.statusCode, 503); response.resume();
     assert.equal((await nextJson(waiting)).code, "start_timeout");
-    await once(waiting, "close");
+    await waitClosed(waiting);
     const replacement = await openClient(url);
-    replacement.close(); await once(replacement, "close");
-  } finally { await relay.close(); }
+    replacement.close(); await waitClosed(replacement);
+  } finally { await bounded(relay.close(), "relay close"); }
 });
 
 test("rejects WebSocket upgrades beyond the total active plus pending cap with HTTP 503", async () => {
@@ -275,7 +324,7 @@ test("rejects WebSocket upgrades beyond the total active plus pending cap with H
     await nextJson(active); await nextJson(active); await nextJson(active);
     const pending = await openClient(url);
     const excess = new WebSocket(url);
-    const [, response] = await once(excess, "unexpected-response");
+    const [, response] = await bounded(once(excess, "unexpected-response"), "rejected upgrade");
     assert.equal(response.statusCode, 503);
     response.resume();
     pending.terminate(); active.terminate();
@@ -343,7 +392,7 @@ test("graceful close forwards final usage before closing the client", async () =
     client.send(JSON.stringify({ type: "session.close" }));
     assert.deepEqual(await nextJson(client), { type: "session.closed", reason: "close_requested", usage: { seconds: 3 } });
     assert.deepEqual(await nextJson(client), { type: "gym.status", status: "closed", finalUsage: { seconds: 3 }, finalUsageConfirmed: true });
-    await once(client, "close");
+    await waitClosed(client);
     assert.equal(closeCommands, 1);
   } finally { await closeRelay(relay, upstream); }
 });
@@ -370,7 +419,7 @@ test("audio and mute commands already in flight are ignored while closing", asyn
     upstreamSocket.send(JSON.stringify({ type: "session.closed", reason: "close_requested", usage: { seconds: 1 } }));
     assert.equal((await nextJson(client)).type, "session.closed");
     assert.equal((await nextJson(client)).status, "closed");
-    await once(client, "close");
+    await waitClosed(client);
   } finally { await closeRelay(relay, upstream); }
 });
 
@@ -381,7 +430,7 @@ test("startup timeout releases capacity and reports unconfirmed usage", async ()
     const first = await openClient(url); first.send(START); await nextJson(first);
     const status = await nextJson(first);
     assert.deepEqual(status, { type: "gym.status", status: "error", code: "startup_timeout", finalUsageConfirmed: false });
-    await once(first, "close");
+    await waitClosed(first);
     const second = await openClient(url); second.send(START);
     assert.deepEqual(await nextJson(second), { type: "gym.status", status: "connecting" });
     second.close();
@@ -394,11 +443,11 @@ test("invalid, oversized, and excess-session messages are bounded", async () => 
   try {
     const active = await openClient(url); active.send(START); await nextJson(active);
     const excess = await openClient(url); excess.send(START);
-    assert.equal((await nextJson(excess)).code, "capacity"); await once(excess, "close");
+    assert.equal((await nextJson(excess)).code, "capacity"); await waitClosed(excess);
     const malformed = await openClient(url); malformed.send("{");
-    assert.equal((await nextJson(malformed)).code, "invalid_message"); await once(malformed, "close");
+    assert.equal((await nextJson(malformed)).code, "invalid_message"); await waitClosed(malformed);
     const oversized = await openClient(url); oversized.send(JSON.stringify({ type: "gym.start", character: "maya", padding: "x".repeat(100) }));
-    assert.equal((await nextJson(oversized)).code, "message_too_large"); await once(oversized, "close");
+    assert.equal((await nextJson(oversized)).code, "message_too_large"); await waitClosed(oversized);
     active.close();
   } finally { await closeRelay(relay, upstream); }
 });
@@ -418,7 +467,7 @@ test("client disconnect requests upstream close and waits only to the close time
   try {
     const client = await openClient(url); client.send(START);
     await nextJson(client); await nextJson(client); await nextJson(client);
-    client.close(); await once(client, "close");
+    client.close(); await waitClosed(client);
     await new Promise(resolve => setTimeout(resolve, 60));
     assert.equal(closeReceived, true);
     assert.equal(upstreamClosed, true);
@@ -452,7 +501,7 @@ for (const clientClosesAfterCommand of [false, true]) {
       const client = await openClient(url); client.send(START);
       await nextJson(client); await nextJson(client); await nextJson(client);
       if (clientClosesAfterCommand) client.send(JSON.stringify({ type: "session.close" }));
-      client.close(); await once(client, "close");
+      client.close(); await waitClosed(client);
       await new Promise(resolve => setTimeout(resolve, 10));
       assert.equal(closeReceived, true);
       assert.equal(upstreamClosed, false);
@@ -480,7 +529,37 @@ test("maximum duration requests a graceful upstream close", async () => {
     const client = await openClient(url); client.send(START);
     await nextJson(client); await nextJson(client); await nextJson(client);
     assert.equal((await nextJson(client)).type, "session.closed");
-    await nextJson(client); await once(client, "close");
+    await nextJson(client); await waitClosed(client);
     assert.equal(closeReceived, true);
   } finally { await closeRelay(relay, upstream); }
+});
+
+test("test mailbox bounds silence, drains final messages, and remembers an already closed socket", async () => {
+  let peer;
+  const upstream = await makeUpstream({ onConnection(socket) { peer = socket; } });
+  let client;
+  try {
+    client = await openClient(upstream.url);
+    await assert.rejects(nextJson(client, 20), /timed out waiting for WebSocket JSON/);
+    // The expired waiter must be removed so a later event is not swallowed.
+    peer.send(JSON.stringify({ type: "final" }));
+    peer.close(1000, "fixture_done");
+    await waitClosed(client);
+    assert.deepEqual(await nextJson(client), { type: "final" });
+    await assert.rejects(nextJson(client), /closed before expected message/);
+    assert.equal((await waitClosed(client))[0], 1000);
+  } finally { client?.terminate(); await upstream.close(); }
+});
+
+test("test mailbox rejects pending readers when the peer closes", async () => {
+  let peer;
+  const upstream = await makeUpstream({ onConnection(socket) { peer = socket; } });
+  let client;
+  try {
+    client = await openClient(upstream.url);
+    const rejected = assert.rejects(nextJson(client), /closed before expected message/);
+    peer.close(1000, "no_message");
+    await rejected;
+    await waitClosed(client);
+  } finally { client?.terminate(); await upstream.close(); }
 });

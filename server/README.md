@@ -94,6 +94,8 @@ Use TLS at the hosting edge and send Unity to `wss://.../live`. The service has 
 
 ## Tests
 
-`npm test` runs the local behavioral suite. The real GPT-Live smoke test is skipped unless both `RUN_GPT_LIVE_SMOKE=1` and `OPENAI_API_KEY` are present. GitHub Actions runs it only when the repository variable `RUN_GPT_LIVE_SMOKE` equals `true`; only that opt-in job receives `secrets.OPENAI_API_KEY`.
+`npm test` runs the local behavioral suite. Real GPT-Live transport tests require `RUN_GPT_LIVE_SMOKE=1` and `OPENAI_API_KEY`. The manually dispatched Gyms workflow enables them with `run_live`, or the repository variable `RUN_GPT_LIVE_SMOKE=true`; only its opt-in job receives `secrets.OPENAI_API_KEY`.
+
+The separate `run_prevention` workflow input enables the full real-provider route test (`RUN_GPT_LIVE_PREVENTION=1`). It drives only public `/game` and `/live` messages: witness a catastrophe, rewind, walk near each NPC, negotiate through Live/Responses, physically separate the group, and survive the actual 180-second second-loop clock. No facts, stage observations, positions, or accepted actions are injected. This test takes several minutes and requires project API usage; it remains off in ordinary CI. `npm run test:live` includes it only when explicitly enabled. Passing this headless route does not validate audio quality, animation, or the phone UI.
 
 Protocol details follow the official [GPT-Live WebSocket guide](https://developers.openai.com/api/docs/guides/voice-websockets?api=live) and [session lifecycle guide](https://developers.openai.com/api/docs/guides/live-conversations).
