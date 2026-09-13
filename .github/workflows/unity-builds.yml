@@ -1,0 +1,64 @@
+name: Unity builds
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: '17 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: unity-builds-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  desktop:
+    # Never run fork code on the private build machines.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: windows
+            labels: '["self-hosted", "Windows", "X64", "stadia-testbed", "lucid-loop"]'
+            python: python
+          - platform: macos
+            labels: '["self-hosted", "macOS", "ARM64", "mac-mini", "lucid-loop"]'
+            python: python3
+    runs-on: ${{ fromJSON(matrix.labels) }}
+    timeout-minutes: 90
+    defaults:
+      run:
+        shell: bash
+    env:
+      UNITY_EDITOR: ${{ matrix.platform == 'windows' && vars.UNITY_EDITOR_WINDOWS || vars.UNITY_EDITOR_MACOS }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          persist-credentials: false
+          clean: true
+      - name: Validate CI script checks
+        run: ${{ matrix.python }} -m unittest discover -s tools/ci -v
+      - name: Test and build both gyms
+        run: ${{ matrix.python }} tools/ci/build_gyms.py --platform ${{ matrix.platform }}
+      - name: Upload playable build
+        uses: actions/upload-artifact@v4
+        with:
+          name: lucid-loop-${{ matrix.platform }}-${{ github.sha }}
+          path: artifacts/packages/*
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
+      - name: Upload tests and diagnostic logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unity-diagnostics-${{ matrix.platform }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: artifacts/diagnostics/*
+          if-no-files-found: warn
+          retention-days: 14
