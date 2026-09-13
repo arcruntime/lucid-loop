@@ -1,0 +1,2 @@
+/Users/runner/work/_temp/ios-derived/Build/Products/ReleaseForRunning-iphoneos/LucidLoopGyms.app/LucidLoopGyms: Mach-O 64-bit executable arm64
+/Users/runner/work/_temp/ios-derived/Build/Products/ReleaseForRunning-iphoneos/LucidLoopGyms.app/Frameworks/UnityFramework.framework/UnityFramework: Mach-O 64-bit dynamically linked shared library arm64

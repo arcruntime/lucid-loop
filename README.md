@@ -6,7 +6,7 @@ The primary game prototype is **Before the Drop**: a server-authoritative nightc
 
 **iOS is the primary target.** Use the [iOS build instructions](docs/IOS_BUILD.md) and [local development relay setup](docs/IOS_LOCAL_RELAY.md). Nightclub lighting uses a shared Forward pipeline with bounded local lights and shader feature stripping; see the [rendering policy](docs/IOS_RENDERING.md). [Validation evidence](docs/IMPLEMENTATION_VALIDATION.md) separates passing tests from pending device and presentation checks.
 
-The [hosted Xcode workflow](docs/IOS_EXPORTED_APP_CI.md) can compile a checksummed Unity export as a complete unsigned iOS app. Compilation results are recorded separately from signing and physical iPhone acceptance.
+The complete unsigned iOS app [compiled successfully in hosted Xcode CI](https://github.com/jethac/lucid-loop/actions/runs/34786581140), including UnityFramework and GameAssembly. The [build workflow](docs/IOS_EXPORTED_APP_CI.md) retains the unsigned app and checksum. Signing, installation and physical iPhone acceptance remain pending.
 
 The complete prevention route has passed [real-provider CI](https://github.com/jethac/lucid-loop/actions/runs/34777703855), including nearby conversations, committed actions and survival through the full loop. Phone exploration now uses a compact HUD with expandable conversation and clue panels. Physical iPhone testing remains pending. The [Japanese speech investigation](docs/JAPANESE_SPEECH_PRODUCER.md) records why the available Japanese model still needs quality work before integration.
 
@@ -24,7 +24,9 @@ The [spoken correction test](https://github.com/jethac/lucid-loop/actions/runs/3
 
 An audio-device change now stops conversation playback and closes the session; tap **Talk** to restart. The controller lifecycle passed an Editor PlayMode check against the local protocol fixture. Physical headset routing and iOS echo cancellation remain unverified; see [validation evidence](docs/IMPLEMENTATION_VALIDATION.md).
 
-The [native iOS voice backend](docs/IOS_NATIVE_VOICE.md) now routes microphone capture and NPC playback through one voice-processing engine after explicit Mic enable and permission. Mic off sends silence while playback continues. The plugin [compiled and linked against Apple's iOS SDK in CI](https://github.com/jethac/lucid-loop/actions/runs/34781433954). Full Unity app compilation/signing and physical iPhone audio acceptance remain pending.
+The [native iOS voice backend](docs/IOS_NATIVE_VOICE.md) now routes microphone capture and NPC playback through one voice-processing engine after explicit Mic enable and permission. Mic off sends silence while playback continues. The plugin and complete Unity app compile against Apple's iOS SDK. Signing and physical iPhone audio acceptance remain pending.
+
+The HUD now bundles licensed Noto Sans JP. Actual Editor phone-preview checks cover Japanese transcripts, wrapping, Latin text and uncommon BMP kanji; [captures and limitations](docs/IMPLEMENTATION_VALIDATION.md) include a supplementary character that the current text renderer omits. Japanese lip-sync quality and device keyboard behavior remain separate work.
 
 The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored demo scenario](docs/DEMO_SCENARIO.md), and [source audit](docs/DESIGN_SOURCE_AUDIT.md) describe what is being built. Figma takes precedence over the Google document. The [animation handoff](art/animation-handoff/README.md) contains 17 downloaded source FBX files and their unresolved mapping/retargeting notes.
 

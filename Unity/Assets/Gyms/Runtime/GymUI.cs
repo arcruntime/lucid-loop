@@ -9,7 +9,26 @@ namespace LucidLoop.Gyms
         public static readonly Color Ink = new Color(.035f,.04f,.075f,.96f);
         public static readonly Color Muted = new Color(.64f,.68f,.78f);
         public static readonly Color Cyan = new Color(.22f,.92f,.93f);
-        public static Font Font => Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        static Font hudFont;
+        static bool missingFontReported;
+        public static Font Font
+        {
+            get
+            {
+                if (hudFont) return hudFont;
+                hudFont = Resources.Load<Font>("Fonts/NotoSansJP-Regular");
+                if (hudFont) return hudFont;
+                if (!missingFontReported)
+                {
+                    missingFontReported = true;
+                    Debug.LogWarning("Bundled HUD font Fonts/NotoSansJP-Regular is missing. Falling back to LegacyRuntime; Japanese glyph coverage is not guaranteed.");
+                }
+                hudFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+                return hudFont;
+            }
+        }
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void ResetFontCache() { hudFont = null; missingFontReported = false; }
         public static RectTransform Canvas(string name)
         {
             var go=new GameObject(name,typeof(Canvas),typeof(CanvasScaler),typeof(GraphicRaycaster));

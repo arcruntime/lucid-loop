@@ -84,6 +84,12 @@ namespace LucidLoop.Gyms.Editor
             "LucidLoop.Gyms.PlayModeTests.EncounterPausePlayModeTests.PauseMenuBlocksGameplayAndPreservesResumableNight"
         });
 
+        [MenuItem("Lucid Loop/Validate Japanese HUD PlayMode smoke")]
+        public static void RunTypographyPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "typography-playmode", "TYPOGRAPHY_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterTypographyPlayModeTests.BundledJapaneseFontRendersPhoneConversation"
+        });
+
         static void Run(TestMode mode, string assembly, string filename, string marker, string[] groups = null, string[] testNames = null)
         {
             if (runner != null || EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode)

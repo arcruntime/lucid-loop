@@ -1,0 +1,38 @@
+{
+  "upstream_commit": "165c01b46ea533872e002e0785ff17e44f6d97d8",
+  "format": "OTTO",
+  "variable": false,
+  "glyphs": 17936,
+  "mapped_codepoints": 16732,
+  "version": "Version 2.004;hotconv 1.0.118;makeotfexe 2.5.65603",
+  "family": "Noto Sans JP",
+  "sample_missing": [],
+  "files": [
+    {
+      "name": "NotoSansJP-Regular.otf",
+      "size": 4533028,
+      "sha256": "dff723ba59d57d136764a04b9b2d03205544f7cd785a711442d6d2d085ac5073",
+      "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/165c01b46ea533872e002e0785ff17e44f6d97d8/Sans/SubsetOTF/JP/NotoSansJP-Regular.otf"
+    },
+    {
+      "name": "OFL-NotoSansJP.txt",
+      "size": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/165c01b46ea533872e002e0785ff17e44f6d97d8/LICENSE"
+    }
+  ],
+  "coverage": {
+    "printable_ascii_complete": true,
+    "hiragana_3041_3096_count": 86,
+    "katakana_30a1_30fa_count": 90,
+    "bmp_ideographs_4e00_9fff_count": 12747,
+    "supplementary_mapping_count": 655,
+    "individual_checks": {
+      "0x9ad9": true,
+      "0xfa11": true,
+      "0x20bb7": true,
+      "0x1f600": false
+    }
+  },
+  "copyright": "© 2014-2021 Adobe (http://www.adobe.com/)."
+}
