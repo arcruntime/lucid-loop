@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "blender_version": "5.1.1",
+  "blender_binary": "C:\\Program Files\\Blender Foundation\\Blender 5.1\\blender.exe",
+  "tool_sha256": "4bb818ff0b4fc4d499ee44dc16056216e766fd504c070087eafcd03fa6f8a3f2",
+  "source_file_sha256": "993fb753ebe53374f2555e028a98de3c476228b63a0dce3a4e9e860c903a4145",
+  "checks": [
+    "front_depth_world_units",
+    "world_geometric_normal",
+    "uv_left_red_right_green",
+    "hidden_same_normal_rear_unpainted",
+    "saved_geometry_uv_hash_equal",
+    "source_file_hash_equal",
+    "unapproved",
+    "capture_hash",
+    "geometry_mismatch",
+    "uv_mismatch",
+    "image_hash",
+    "transform_mismatch",
+    "overlapping_uv",
+    "linear_color_roundtrip",
+    "bvh_independent_hidden_rejection"
+  ],
+  "projection": {
+    "signature_before": {
+      "geometry_sha256": "166c00019ffc65eb1f5e18b9065f6e76a9ebba55e830a2445083b72d188d3544",
+      "uv_sha256": "1440e1c59df7ddf50d2345a201cfca9e547ce2795df952043ca544ca513ad038",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layer": "AcceptedUV"
+    },
+    "signature_after": {
+      "geometry_sha256": "166c00019ffc65eb1f5e18b9065f6e76a9ebba55e830a2445083b72d188d3544",
+      "uv_sha256": "1440e1c59df7ddf50d2345a201cfca9e547ce2795df952043ca544ca513ad038",
+      "world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uv_layer": "AcceptedUV"
+    },
+    "uv_texels": 3016,
+    "covered_texels": 1508,
+    "coverage_fraction": 0.5,
+    "views": [
+      {
+        "camera": "front",
+        "accepted_texels": 1508,
+        "image": "B:\\lucid-loop\\.local\\ren-texture-projection\\regression-y3aozftw\\front-reviewed.png",
+        "sha256": "dea2f68dce625d7b719b0765f897f77b7add84ac8e5a6c1e7ae108c09b0ffbd3"
+      }
+    ],
+    "unknown_texels": "transparent black; no extrapolation",
+    "preview_material": "opaque: uncovered areas appear black; consult coverage.png",
+    "sampling": "nearest painted pixel; weighted linear color; no seam dilation"
+  }
+}

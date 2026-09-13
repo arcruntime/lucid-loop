@@ -1,0 +1,176 @@
+{
+  "reviewedUtc": "2026-09-13T09:12:58.3698797Z",
+  "reviewer": "ren_bust_comparison_viewer agent",
+  "scope": "Unity presentation and source-coordinate verification for raw construction study only",
+  "unityVersion": "6000.3.24f1",
+  "buildResult": "BuildAndCapture succeeded in isolated scratch project, return code 0",
+  "scene": "Unity/Assets/CharacterArt/Generated/Preview/Scenes/RenPartsStudy.unity",
+  "sceneSha256": "e00fcaf013ae3391fc27cd5862c0ef04ab6a46830e07106ad051a1adfbe30b3a",
+  "visualReview": "All 18 images inspected. Correct front/profile orientation, full crown and neck framed, matched head size and position between head-only and assembly. Corrected front key reveals geometry relief. Club retains face/hair detail without channel clipping. Unlit is deliberately a uniform silhouette diagnostic.",
+  "limitations": [
+    "Filled eyes, raised brow relief, native mouth irregularities, hair crossbars/wisps/intersections remain visible.",
+    "No likeness acceptance, neutral face, working facial controls, or mobile performance validation.",
+    "Main Unity was not opened or controlled. No new standalone player was built."
+  ],
+  "sourceHashes": [
+    {
+      "role": "Head",
+      "sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+      "nativeBytesEqual": true
+    },
+    {
+      "role": "Hair",
+      "sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+      "nativeBytesEqual": true
+    }
+  ],
+  "copiedAssetsByteIdenticalToScratch": true,
+  "missingMetas": [],
+  "unresolvedGuids": [],
+  "images": [
+    {
+      "file": "parts-assembled-open-source--clay-club--front.png",
+      "sha256": "c731bed38cea2fa7c7d5ac12ee3baaf5dbd830977334c201a0413f5bd6a1ebeb",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 198,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-assembled-open-source--clay-club--profile.png",
+      "sha256": "80710099bfc45fbbe73cac1ead3e31a5dac44a7883f7bd9391158adf3db04eff",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 224,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-assembled-open-source--clay-club--three-quarter.png",
+      "sha256": "f027c4d2b67906f1f800a0630c39d27590320e6ef4214d5b7bec8d9904c3cac3",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 212,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-assembled-open-source--clay-neutral--front.png",
+      "sha256": "9d9a547c9b9ffa8433f81ec371729ac712da696fd44bd0d77b33e4d7233cab34",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 189,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-assembled-open-source--clay-neutral--profile.png",
+      "sha256": "f13f7ff22a4fb8d7de98cd11c80c35f508f54cb0659ec0194f4bc1a1809a66ad",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 174,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-assembled-open-source--clay-neutral--three-quarter.png",
+      "sha256": "791db79c6c227b68dd200601de2fa5f35cb6c3a57ba94346c48bb0727b675e90",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 189,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-assembled-open-source--clay-unlit--front.png",
+      "sha256": "186bced116bba8bb880bdc1fbcf03fe046a87d9e4f57abde91fa4c1e80017c36",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 153,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-assembled-open-source--clay-unlit--profile.png",
+      "sha256": "d1eb6b98ab54c17d0f65729c4e03621db0f78f2e6a556bcedd3707379e653bc8",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 153,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-assembled-open-source--clay-unlit--three-quarter.png",
+      "sha256": "4c89f2959ab47a90c117ece52a82fa73bd684e12b813bbdc49c0619b76cdda28",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 153,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-club--front.png",
+      "sha256": "9cb9f916450c365cf4eec2937148abcfda6757a9b11e8805039674a9307b04c5",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 220,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-club--profile.png",
+      "sha256": "429d4cfe65df21fa7bb188d37867cedd4e29288632b1d3a6e689eb92c31b1b54",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 225,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-club--three-quarter.png",
+      "sha256": "4987e6246ef3f924b48619342d8a76dda9e3db5cbcbbe28055641cb56a3d81e0",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 225,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-neutral--front.png",
+      "sha256": "68d548408298faf954a8aedd5af815c1c394f1b43cc9fd632e3ebfa3e29b6de9",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 189,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-neutral--profile.png",
+      "sha256": "c27aaab35001b6cd69df0ae199ab9bef01eee5319b2ab9dc3894dce38963021d",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 175,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-neutral--three-quarter.png",
+      "sha256": "6851d65de216068dfa5853cc18092b7ded2568b553515a646c52eeb16568f630",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 189,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-unlit--front.png",
+      "sha256": "3ef2fc95d4f88b8bfd6d13562fb71a2a0021434aff19fd826f6fb1c2129b7a5d",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 153,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-unlit--profile.png",
+      "sha256": "5c40a15a2932e9cdf323e7e4cb4feeac5316c4e0aa48df6acadef307772ab0b9",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 153,
+      "channelsAt255": 0
+    },
+    {
+      "file": "parts-head-open-source--clay-unlit--three-quarter.png",
+      "sha256": "31bc4e801ebaf7937580347781072311a5ccb6c202f5b3a24fcae6425128d9b6",
+      "width": 1536,
+      "height": 1536,
+      "maxChannel": 153,
+      "channelsAt255": 0
+    }
+  ]
+}

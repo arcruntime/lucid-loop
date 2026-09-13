@@ -1,0 +1,30 @@
+[
+  {
+    "file": "mouth-clay-front.png",
+    "sha256": "b5fff26e24e8665fdb8738c61a934055d58905f4992d96977e601aba8e939698"
+  },
+  {
+    "file": "mouth-clay-three-quarter.png",
+    "sha256": "a58afd9098325ff6b93bca9cb9c3898af54dec328bd25e9d445e63ccd1dd29c7"
+  },
+  {
+    "file": "mouth-clay-profile.png",
+    "sha256": "e403b82a0de09ef89b012158b6706c86859448e9b9ae19e345d85ed29a6541ee"
+  },
+  {
+    "file": "mouth-wire-front.png",
+    "sha256": "1f2c22281ebc4bf6c18cd81705dd596446ddafc317167c41e943a9768d0f5b4f"
+  },
+  {
+    "file": "mouth-insert-isolated-front.png",
+    "sha256": "e8b2c501f5ccfd5dc1de155b0624644e30554f6b53c8a51a021431523f5da895"
+  },
+  {
+    "file": "mouth-insert-isolated-profile.png",
+    "sha256": "224fff0e4f612a85f9fc87aba060bdce674ee8f126c7f49512f98d271c31fb53"
+  },
+  {
+    "file": "mouth-interior-cutaway.png",
+    "sha256": "923fe49c2e54f8366d805a369e9a7de65a8a9395152396f5443754eb64dd1aac"
+  }
+]

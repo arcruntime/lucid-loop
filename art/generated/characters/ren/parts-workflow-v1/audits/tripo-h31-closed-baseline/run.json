@@ -1,0 +1,9 @@
+{
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\tripo\\studio-h3.1-closed-rest\\ren-tripo-studio-h3.1-closed-rest-original-8k.glb",
+  "source_sha256": "4743a85883df56b2adcca72ed9f429eb537d92b93eff28eb2495966e95a39f0a",
+  "id": "tripo-h31-closed-baseline",
+  "position_epsilon": 1e-06,
+  "uv_epsilon": 1e-06,
+  "resolution": 1024,
+  "front_yaw": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "art/generated/characters/ren/parts-reference-v1/head-front-open-a.png",
+    "asset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Head-Front-OpenA.png",
+    "sha256": "acbab9627304ebc5557602d5f5c46f358db962f2c57b5fdbb56580cfa1178dff"
+  },
+  {
+    "source": "art/generated/characters/ren/parts-reference-v1/head-right-open-a.png",
+    "asset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Head-Right-OpenA.png",
+    "sha256": "84c89defe4d541ccea4cb89b463809db5ff810eb53fd4507c7fee36564bd8768"
+  },
+  {
+    "source": "art/generated/characters/ren/parts-reference-v1/hair/hair-three-view-v2.png",
+    "asset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Hair-ThreeViews.png",
+    "sha256": "69c7d36ef6f43e988795368b7c3545e83ee65ed18101cdf5ddd49f9780bc796d"
+  },
+  {
+    "source": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-front-v2.png",
+    "asset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Hair-Front.png",
+    "sha256": "209c89450a27c2b4f3236104e04ada09416c9b3a97d9fd346ebff957d15b2d8d"
+  },
+  {
+    "source": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-right-v2.png",
+    "asset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Hair-Right.png",
+    "sha256": "b16f3297d515779164553b471a9089699e94a0d7ded1cce93c500fa1629687f2"
+  },
+  {
+    "source": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-back-v2.png",
+    "asset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Hair-Back.png",
+    "sha256": "1b257de5f17334d51ce492f098da6a328a1ce5c0d130a41fd4aa1a1d704f8c48"
+  }
+]

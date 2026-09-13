@@ -1,0 +1,174 @@
+{
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\audits\\_verification\\triangle-fixture.glb",
+  "source_sha256": "e5f4a8cd1fc1bfc51d500e9b01de9b89d43f651554dc01640256319c3debdac5",
+  "source_bytes": 2572,
+  "blender_version": "5.1.1",
+  "format": ".glb",
+  "objects": [
+    {
+      "index": 0,
+      "object": "SeamedQuads",
+      "mesh_datablock": "SeamedQuads",
+      "array_file": "analysis-data/mesh-000.npz",
+      "vertices": 8,
+      "edges": 10,
+      "faces": 4,
+      "triangles": 4,
+      "face_types": {
+        "3": 4
+      },
+      "bounds_world": {
+        "min": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          0.0,
+          1.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.5
+        ]
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "SeamedQuadsMaterial"
+      ],
+      "uv_layers": [
+        {
+          "name": "UVMap",
+          "array": "uv_0"
+        }
+      ],
+      "shape_keys": [],
+      "modifiers": []
+    },
+    {
+      "index": 1,
+      "object": "NgonAndTriangle",
+      "mesh_datablock": "NgonAndTriangle",
+      "array_file": "analysis-data/mesh-001.npz",
+      "vertices": 8,
+      "edges": 10,
+      "faces": 4,
+      "triangles": 4,
+      "face_types": {
+        "3": 4
+      },
+      "bounds_world": {
+        "min": [
+          -1.399999976158142,
+          0.0,
+          2.0
+        ],
+        "max": [
+          2.0,
+          0.0,
+          3.0
+        ],
+        "center": [
+          0.30000001192092896,
+          0.0,
+          2.5
+        ]
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "NgonAndTriangleMaterial"
+      ],
+      "uv_layers": [
+        {
+          "name": "UVMap",
+          "array": "uv_0"
+        }
+      ],
+      "shape_keys": [],
+      "modifiers": []
+    }
+  ],
+  "materials": [
+    {
+      "name": "NgonAndTriangleMaterial",
+      "uses_nodes": true,
+      "images": []
+    },
+    {
+      "name": "SeamedQuadsMaterial",
+      "uses_nodes": true,
+      "images": []
+    }
+  ],
+  "bounds_world": {
+    "min": [
+      -1.399999976158142,
+      0.0,
+      0.0
+    ],
+    "max": [
+      2.0,
+      0.0,
+      3.0
+    ],
+    "center": [
+      0.30000001192092896,
+      0.0,
+      1.5
+    ]
+  },
+  "vertex_policy": "Unmodified imported base mesh; modifiers not applied",
+  "glb_note": "GLB triangle primitives and seam-duplicated vertices do not prove the provider's native FBX topology."
+}

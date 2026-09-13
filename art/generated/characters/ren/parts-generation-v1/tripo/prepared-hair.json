@@ -1,0 +1,38 @@
+{
+  "status": "HISTORICAL_PRE_SUBMISSION_TEMPLATE",
+  "prepared_date": "2026-09-13",
+  "asset": "ren-separate-hair",
+  "model_requested": "P2-20260801",
+  "model_returned": null,
+  "task_id": null,
+  "inputs": null,
+  "source_hashes": null,
+  "request_parameters": {
+    "quad": true,
+    "face_limit": 25000,
+    "texture": false,
+    "pbr": false,
+    "export_uv": true,
+    "model_seed": 20260914
+  },
+  "command_template": [
+    "python",
+    "tools/character_art/tripo_parts_jobs.py",
+    "--part",
+    "hair",
+    "--front",
+    "REVIEWED_FRONT.png",
+    "--right",
+    "REVIEWED_RIGHT.png",
+    "--review-note",
+    "Root reviewed these exact standalone inputs.",
+    "--submit"
+  ],
+  "estimated_credits": {
+    "p2_untextured_list": 100,
+    "quad_surcharge_verified": false
+  },
+  "credits_consumed": null,
+  "note": "Historical recipe captured before reviewed source binding and submission. Exact current inputs, task identity, native outputs and receipts are in current_provenance. Do not use this template to resubmit an occupied part slot.",
+  "current_provenance": "hair/provenance.json"
+}

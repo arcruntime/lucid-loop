@@ -1,0 +1,9 @@
+{
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\audits\\_verification\\triangle-fixture.glb",
+  "source_sha256": "e5f4a8cd1fc1bfc51d500e9b01de9b89d43f651554dc01640256319c3debdac5",
+  "id": "verification-triangle-glb",
+  "position_epsilon": 1e-06,
+  "uv_epsilon": 1e-06,
+  "resolution": 256,
+  "front_yaw": 0
+}

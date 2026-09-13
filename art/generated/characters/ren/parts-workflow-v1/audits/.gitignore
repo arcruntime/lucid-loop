@@ -1,0 +1,10 @@
+# Preserve reproducible reports, JSON/CSV evidence and inspected PNGs in Git.
+# These bulky resumable intermediates remain available locally.
+**/.blender-user/
+**/analysis-data/
+**/previous-renders/
+**/audit-scene.blend
+**/audit-scene.blend[0-9]*
+**/extract-blender.log
+**/render-blender.log
+**/*.json.tmp

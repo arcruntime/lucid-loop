@@ -1,0 +1,2 @@
+rank,graph_id,vertices,faces,triangles,min_x,min_y,min_z,max_x,max_y,max_z,material_face_counts
+0,0,8,4,4,-1.0,0.0,0.0,1.0,0.0,1.0,"{""0"": 4}"

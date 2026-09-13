@@ -1,0 +1,31 @@
+{
+  "reviewed_utc": "2026-09-13T08:56:51.817595+00:00",
+  "reviewer": "root agent",
+  "scope": "Raw construction study placement only",
+  "decision": "Use V2 for separate Unity parts study; not final likeness, hair clearance, neutral face or animation approval",
+  "evidence": [
+    {
+      "file": "placement.json",
+      "sha256": "90f72255d46c50de1ab92711269f0d32f6ed10910ee82c6a0796b5e3644a3ee1"
+    },
+    {
+      "file": "assembled-front.png",
+      "sha256": "3e7453dd0182f36902d1b34c45dcf144439e2fcc28497790defaee184c0d02dc"
+    },
+    {
+      "file": "assembled-three-quarter.png",
+      "sha256": "9dffcfbb1b1aa50197fe2b07bd62ee2ddbead64fbb96b6921ec87ef02f87b1f1"
+    },
+    {
+      "file": "assembled-profile.png",
+      "sha256": "b393d7c1258b0407f3b2c32db8cc1763bffee161a061aeb2eeba492b1cad87a4"
+    }
+  ],
+  "observations": [
+    "V1 exposed a broad rear scalp intersection and was rejected.",
+    "V2 clears that broad intersection with rigid hair placement; native surface defects remain visible.",
+    "Full crown and neck are visible in the reframed front, three-quarter and profile renders.",
+    "Native head and hair vertices, polygon ordering and UVs remain unchanged.",
+    "Raised brows, filled eye surfaces, unfinished oral interior, hair crossbars and inward sheets require further work."
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "schema": "lucid-loop/ren-head-parts-reference/v1",
+  "date": "2026-09-13",
+  "scope": "Hair-free head construction references only; separate hair task is owned by another agent.",
+  "generation": {
+    "tool": "built-in image_gen.imagegen",
+    "calls": 4,
+    "model": "Not exposed by tool; not inferred.",
+    "handling": "Exact original tool-output PNG bytes copied into workspace; no programmatic image editing/cropping/upscaling."
+  },
+  "authoritativeSource": "B:/lucid-loop/art/characters/ren-model-sheet.png",
+  "selectedRestReference": "head-closed-rest-three-view-v2.png",
+  "selectedGeometryInputs": {
+    "front": "head-front-open-a.png",
+    "right": "head-right-open-a.png"
+  },
+  "rightConvention": "Nose points to screen right in the supplied profile, explicitly named right for Tripo input slot selection.",
+  "reviewScope": "Parent approval is for a first geometry experiment and fitting reference only; original-artist final likeness approval is not established.",
+  "assets": [
+    {
+      "id": "head-closed-rest-three-view",
+      "file": "head-closed-rest-three-view.png",
+      "promptFile": "prompts/head-closed-rest-three-view.txt",
+      "references": [
+        "B:/lucid-loop/art/characters/ren-model-sheet.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png",
+        "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-33a3a179-2219-4495-ae4f-75b7468284bc.png",
+      "selected": false,
+      "status": "superseded-by-v2",
+      "observations": [
+        "Head proportions and scalp scale accepted by parent for construction study.",
+        "Faint translucent hair-shaped lines remained at brows, bridge and temples; removed in v2."
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 1434797,
+      "sha256": "2d6f0500ff5cb015e872fef6b546e8117b04ba59b5005cbb488dfca93c5dc3ce",
+      "promptSha256": "44059d2c39747a2718f0aeaecf8b72ff8ede3cbb71399567befe3d5bfc52aefb",
+      "inputHashes": [
+        {
+          "path": "B:/lucid-loop/art/characters/ren-model-sheet.png",
+          "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+        },
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png",
+          "sha256": "68cd0e3a8bf706814d47e54a340061efe5161716ae526d49777a216d93577c42"
+        },
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/head-reference-sheets-v1/generation-inputs/closed-rest-front-v2.png",
+          "sha256": "673adcb36c7090536340fcb588d7642a76d2b86636ce3242cc06963202bbf585"
+        }
+      ],
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "head-closed-rest-three-view-v2",
+      "file": "head-closed-rest-three-view-v2.png",
+      "promptFile": "prompts/head-closed-rest-three-view-v2.txt",
+      "references": [
+        "B:/lucid-loop/art/generated/characters/ren/parts-reference-v1/head-closed-rest-three-view.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-1a9deb89-8c22-4e4d-8f15-b71dbbf401ea.png",
+      "selected": true,
+      "status": "parent-approved-fitting-reference",
+      "observations": [
+        "Targeted cleanup removes residual fringe-shaped lines while retaining brows, lashes, eyelid creases and face shading.",
+        "Parent reviewed the cleaned file directly and accepted it for geometry/fitting reference, not final likeness approval.",
+        "Bare scalp and clean ears, head/short neck only, front/three-quarter/strict right profile."
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 1378165,
+      "sha256": "add1b8c92dc3ac499159523450dea39d06f955609d4594b22d90fbedebac7f56",
+      "promptSha256": "11e05ac7f494684508d4dae6c3135378e4aab85adf418694f7058404da88e025",
+      "inputHashes": [
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/parts-reference-v1/head-closed-rest-three-view.png",
+          "sha256": "2d6f0500ff5cb015e872fef6b546e8117b04ba59b5005cbb488dfca93c5dc3ce"
+        }
+      ],
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "head-front-open-a",
+      "file": "head-front-open-a.png",
+      "promptFile": "prompts/head-front-open-a.txt",
+      "references": [
+        "B:/lucid-loop/art/generated/characters/ren/parts-reference-v1/head-closed-rest-three-view-v2.png",
+        "B:/lucid-loop/art/characters/ren-model-sheet.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-efac5ddb-b9ac-49cf-8793-eb302763e5d9.png",
+      "selected": true,
+      "status": "parent-approved-first-geometry-experiment",
+      "observations": [
+        "Single unlabeled front view; full hair-free skull, ears and short neck visible.",
+        "Restrained open-A aperture with dark interior, thin upper tooth strip and low interior tongue; relaxed brows and half-lidded eyes.",
+        "Parent viewed both standalone images and released one head P2 geometry job to separate Tripo agent.",
+        "Cross-view fit and reconstructed mouth cavity remain inspection items; no completed viseme or final likeness claim."
+      ],
+      "width": 1122,
+      "height": 1402,
+      "bytes": 1337856,
+      "sha256": "acbab9627304ebc5557602d5f5c46f358db962f2c57b5fdbb56580cfa1178dff",
+      "promptSha256": "d3d0f63fdfeca440d0b5218ed480c6778525009dfb7c56c55e0058e016def604",
+      "inputHashes": [
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/parts-reference-v1/head-closed-rest-three-view-v2.png",
+          "sha256": "add1b8c92dc3ac499159523450dea39d06f955609d4594b22d90fbedebac7f56"
+        },
+        {
+          "path": "B:/lucid-loop/art/characters/ren-model-sheet.png",
+          "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+        }
+      ],
+      "byteIdenticalToToolOutput": true
+    },
+    {
+      "id": "head-right-open-a",
+      "file": "head-right-open-a.png",
+      "promptFile": "prompts/head-right-open-a.txt",
+      "references": [
+        "B:/lucid-loop/art/generated/characters/ren/parts-reference-v1/head-closed-rest-three-view-v2.png",
+        "B:/lucid-loop/art/characters/ren-model-sheet.png"
+      ],
+      "originalToolOutput": "C:\\Users\\jetha\\.codex\\generated_images\\01a0991c-52a4-7a72-9734-3637447e35af\\exec-3b47e0c2-ad71-47b1-abc8-e4dc722aff45.png",
+      "selected": true,
+      "status": "parent-approved-first-geometry-experiment",
+      "observations": [
+        "Single unlabeled screen-right-facing true profile view; full hair-free skull, ears and short neck visible.",
+        "Restrained open-A aperture with dark interior, thin upper tooth strip and low interior tongue; relaxed brows and half-lidded eyes.",
+        "Parent viewed both standalone images and released one head P2 geometry job to separate Tripo agent.",
+        "Cross-view fit and reconstructed mouth cavity remain inspection items; no completed viseme or final likeness claim."
+      ],
+      "width": 1122,
+      "height": 1402,
+      "bytes": 1155137,
+      "sha256": "84c89defe4d541ccea4cb89b463809db5ff810eb53fd4507c7fee36564bd8768",
+      "promptSha256": "abd0b6da89a3df2e1928c591c6dd8ad129567535e7a530be9d31e9142863d294",
+      "inputHashes": [
+        {
+          "path": "B:/lucid-loop/art/generated/characters/ren/parts-reference-v1/head-closed-rest-three-view-v2.png",
+          "sha256": "add1b8c92dc3ac499159523450dea39d06f955609d4594b22d90fbedebac7f56"
+        },
+        {
+          "path": "B:/lucid-loop/art/characters/ren-model-sheet.png",
+          "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+        }
+      ],
+      "byteIdenticalToToolOutput": true
+    }
+  ]
+}

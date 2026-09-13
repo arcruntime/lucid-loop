@@ -1,0 +1,88 @@
+{
+  "status": "UNREVIEWED_PLACEMENT",
+  "blender_version": "5.1.1",
+  "coordinates": "Blender Z up, source front +X; head source frame unchanged",
+  "parts": {
+    "head": {
+      "source": "art/generated/characters/ren/parts-generation-v1/tripo/head/originals/model.fbx",
+      "sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+      "imported_mesh_geometry_uv_sha256": "e1e4e989402986ab2b0d8079a2a8178acade8e71f35597344c53e433d9fd8095",
+      "placement": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "hair": {
+      "source": "art/generated/characters/ren/parts-generation-v1/tripo/hair/originals/model.fbx",
+      "sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+      "imported_mesh_geometry_uv_sha256": "1d2794b5b39eacc3d2ace72dd2023394923dc44e472765fa688ca73664e9a379",
+      "placement": {
+        "position": [
+          -0.09000000357627869,
+          0.0,
+          0.2199999988079071
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "renders": [
+    {
+      "file": "head-front.png",
+      "sha256": "663d49b83b075fc0580b3f095196d5f89c8d9b0c3dfab4f090c33504e98e5eb9"
+    },
+    {
+      "file": "head-three-quarter.png",
+      "sha256": "4542b7e8335c48c42ac6e4bd36f973ab02c4fcede34b1be1db0ea0039fca8587"
+    },
+    {
+      "file": "head-profile.png",
+      "sha256": "f8ca62b3b5757d7559fe61622cfb58a327a6db98be86365f8ea963fe3389afba"
+    },
+    {
+      "file": "assembled-front.png",
+      "sha256": "3e7453dd0182f36902d1b34c45dcf144439e2fcc28497790defaee184c0d02dc"
+    },
+    {
+      "file": "assembled-three-quarter.png",
+      "sha256": "9dffcfbb1b1aa50197fe2b07bd62ee2ddbead64fbb96b6921ec87ef02f87b1f1"
+    },
+    {
+      "file": "assembled-profile.png",
+      "sha256": "b393d7c1258b0407f3b2c32db8cc1763bffee161a061aeb2eeba492b1cad87a4"
+    }
+  ],
+  "camera": {
+    "projection": "orthographic",
+    "scale": 1.55,
+    "target": [
+      0.0,
+      0.0,
+      0.10000000149011612
+    ],
+    "distance": 3
+  },
+  "method": "Only separate part object-parent transforms and clay material bindings. Mesh coordinates, polygons and UVs preserved exactly."
+}

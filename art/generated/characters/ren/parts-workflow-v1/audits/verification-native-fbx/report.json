@@ -1,0 +1,471 @@
+{
+  "schema": "lucid-loop/ren-parts-audit/v1",
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\audits\\_verification\\native-fixture.fbx",
+  "source_sha256": "3aab32a3a50ad25c44078b0be4859a2c23e7c8aebc4c4ea293166fb1cf6a8c88",
+  "source_bytes": 18540,
+  "blender_version": "5.1.1",
+  "source_format": ".fbx",
+  "objects": [
+    {
+      "index": 0,
+      "object": "NgonAndTriangle",
+      "mesh_datablock": "NgonAndTriangle",
+      "array_file": "analysis-data/mesh-000.npz",
+      "vertices": 8,
+      "edges": 8,
+      "faces": 2,
+      "triangles": 4,
+      "face_types": {
+        "3": 1,
+        "5": 1
+      },
+      "bounds_world": {
+        "min": [
+          -1.399999976158142,
+          3.2584134146418364e-07,
+          2.0
+        ],
+        "max": [
+          2.0,
+          4.887620121962755e-07,
+          3.0
+        ],
+        "center": [
+          0.30000001192092896,
+          4.0730167683022955e-07,
+          2.5
+        ]
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          1.6292067073209182e-07,
+          0.0
+        ],
+        [
+          0.0,
+          -1.6292067073209182e-07,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "NgonAndTriangleMaterial"
+      ],
+      "uv_layers": [
+        {
+          "name": "FixtureUV",
+          "array": "uv_0"
+        }
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "imported_components": 2,
+      "coincident_position_components": 2,
+      "coincident_unique_positions": 8,
+      "position_grid_world_units": 3.399999976158142e-06,
+      "imported_top_components": [
+        {
+          "rank": 0,
+          "graph_id": 0,
+          "vertices": 5,
+          "faces": 1,
+          "triangles": 3,
+          "min": [
+            -1.399999976158142,
+            3.2584134146418364e-07,
+            2.0
+          ],
+          "max": [
+            0.4000000059604645,
+            4.887620121962755e-07,
+            3.0
+          ],
+          "material_face_counts": {
+            "0": 1
+          }
+        },
+        {
+          "rank": 1,
+          "graph_id": 1,
+          "vertices": 3,
+          "faces": 1,
+          "triangles": 1,
+          "min": [
+            1.0,
+            3.2584134146418364e-07,
+            2.0
+          ],
+          "max": [
+            2.0,
+            4.887620121962755e-07,
+            3.0
+          ],
+          "material_face_counts": {
+            "0": 1
+          }
+        }
+      ],
+      "coincident_top_components": [
+        {
+          "rank": 0,
+          "graph_id": 0,
+          "vertices": 5,
+          "faces": 1,
+          "triangles": 3,
+          "min": [
+            -1.399999976158142,
+            3.2584134146418364e-07,
+            2.0
+          ],
+          "max": [
+            0.4000000059604645,
+            4.887620121962755e-07,
+            3.0
+          ],
+          "material_face_counts": {
+            "0": 1
+          }
+        },
+        {
+          "rank": 1,
+          "graph_id": 1,
+          "vertices": 3,
+          "faces": 1,
+          "triangles": 1,
+          "min": [
+            1.0,
+            3.2584134146418364e-07,
+            2.0
+          ],
+          "max": [
+            2.0,
+            4.887620121962755e-07,
+            3.0
+          ],
+          "material_face_counts": {
+            "0": 1
+          }
+        }
+      ],
+      "imported_components_table": "mesh-000-imported-components.csv",
+      "coincident_components_table": "mesh-000-coincident-components.csv",
+      "imported_edges": {
+        "boundary": 8,
+        "nonmanifold": 0,
+        "loose": 0
+      },
+      "coincident_surface_edges": {
+        "boundary": 8,
+        "nonmanifold": 0,
+        "collapsed_corners": 0
+      },
+      "uv_analysis": [
+        {
+          "name": "FixtureUV",
+          "islands": 2,
+          "island_table": "mesh-000-uv-uv_0-islands.csv",
+          "single_face_islands": 2,
+          "largest_island_faces": 1,
+          "largest_island_face_fraction": 0.5,
+          "boundary_uv_edges": 8,
+          "nonmanifold_uv_edges": 0,
+          "degenerate_uv_faces": 0,
+          "corners_outside_unit_square": 0,
+          "summed_absolute_face_uv_area": 0.1687499936670068,
+          "note": "Edge-connected islands; area is not overlap-free coverage; no overlap/distortion acceptance implied"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "object": "SeamedQuads",
+      "mesh_datablock": "SeamedQuads",
+      "array_file": "analysis-data/mesh-001.npz",
+      "vertices": 8,
+      "edges": 8,
+      "faces": 2,
+      "triangles": 4,
+      "face_types": {
+        "4": 2
+      },
+      "bounds_world": {
+        "min": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "max": [
+          1.0,
+          1.6292067073209182e-07,
+          1.0
+        ],
+        "center": [
+          0.0,
+          8.146033536604591e-08,
+          0.5
+        ]
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          1.6292067073209182e-07,
+          0.0
+        ],
+        [
+          0.0,
+          -1.6292067073209182e-07,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "SeamedQuadsMaterial"
+      ],
+      "uv_layers": [
+        {
+          "name": "FixtureUV",
+          "array": "uv_0"
+        }
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "imported_components": 2,
+      "coincident_position_components": 1,
+      "coincident_unique_positions": 6,
+      "position_grid_world_units": 3.399999976158142e-06,
+      "imported_top_components": [
+        {
+          "rank": 0,
+          "graph_id": 0,
+          "vertices": 4,
+          "faces": 1,
+          "triangles": 2,
+          "min": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            0.0,
+            1.6292067073209182e-07,
+            1.0
+          ],
+          "material_face_counts": {
+            "0": 1
+          }
+        },
+        {
+          "rank": 1,
+          "graph_id": 1,
+          "vertices": 4,
+          "faces": 1,
+          "triangles": 2,
+          "min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.6292067073209182e-07,
+            1.0
+          ],
+          "material_face_counts": {
+            "0": 1
+          }
+        }
+      ],
+      "coincident_top_components": [
+        {
+          "rank": 0,
+          "graph_id": 0,
+          "vertices": 8,
+          "faces": 2,
+          "triangles": 4,
+          "min": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.6292067073209182e-07,
+            1.0
+          ],
+          "material_face_counts": {
+            "0": 2
+          }
+        }
+      ],
+      "imported_components_table": "mesh-001-imported-components.csv",
+      "coincident_components_table": "mesh-001-coincident-components.csv",
+      "imported_edges": {
+        "boundary": 8,
+        "nonmanifold": 0,
+        "loose": 0
+      },
+      "coincident_surface_edges": {
+        "boundary": 6,
+        "nonmanifold": 0,
+        "collapsed_corners": 0
+      },
+      "uv_analysis": [
+        {
+          "name": "FixtureUV",
+          "islands": 2,
+          "island_table": "mesh-001-uv-uv_0-islands.csv",
+          "single_face_islands": 2,
+          "largest_island_faces": 1,
+          "largest_island_face_fraction": 0.5,
+          "boundary_uv_edges": 8,
+          "nonmanifold_uv_edges": 0,
+          "degenerate_uv_faces": 0,
+          "corners_outside_unit_square": 0,
+          "summed_absolute_face_uv_area": 0.31999998569488586,
+          "note": "Edge-connected islands; area is not overlap-free coverage; no overlap/distortion acceptance implied"
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "NgonAndTriangleMaterial",
+      "uses_nodes": true,
+      "images": []
+    },
+    {
+      "name": "SeamedQuadsMaterial",
+      "uses_nodes": true,
+      "images": []
+    }
+  ],
+  "bounds_world": {
+    "min": [
+      -1.399999976158142,
+      0.0,
+      0.0
+    ],
+    "max": [
+      2.0,
+      4.887620121962755e-07,
+      3.0
+    ],
+    "center": [
+      0.30000001192092896,
+      2.4438100609813773e-07,
+      1.5
+    ]
+  },
+  "totals": {
+    "vertices": 16,
+    "edges": 16,
+    "faces": 4,
+    "triangles": 8,
+    "imported_components": 4,
+    "coincident_position_components": 3
+  },
+  "camera": {
+    "up": "+Z",
+    "front_at_zero": "-Y",
+    "front_yaw_degrees": 0,
+    "views": {
+      "front": 0.0,
+      "three-quarter": -35.0,
+      "profile": -90.0
+    },
+    "resolution": 256
+  },
+  "limitations": [
+    "Counts are imported base topology per object instance; modifiers and rigs are not applied.",
+    "Position coincidence is a quantized analysis graph, not a geometry edit or proof of semantic parts.",
+    "Objects are analyzed independently; touching parts may coincide and separate surfaces may intersect.",
+    "Component colors show coincidence connectivity, not automatically identified head/hair/eyes.",
+    "Quad percentage alone does not establish eyelid/mouth loops, deformation quality, or mobile readiness.",
+    "GLB triangle topology cannot certify native FBX quads; compare the actual FBX import.",
+    "UV counts do not prove absence of overlap or acceptable distortion/texel density."
+  ],
+  "source_hash_verified_unchanged": true,
+  "renders": [
+    {
+      "path": "neutral-front.png",
+      "sha256": "75270efac69feb1ab26315d701b3d386be08bb7e0565759ba5d670d64dc48179",
+      "mode": "neutral",
+      "view": "front"
+    },
+    {
+      "path": "neutral-three-quarter.png",
+      "sha256": "900649fb9389ed1741b8f528837a782aecbcb2bd91ef2e52a59018c9324aa6d7",
+      "mode": "neutral",
+      "view": "three-quarter"
+    },
+    {
+      "path": "neutral-profile.png",
+      "sha256": "025897c4bcd871185b2ee3aafa39e5a1664caf09d11f870bd241547c54e5f708",
+      "mode": "neutral",
+      "view": "profile"
+    },
+    {
+      "path": "clay-front.png",
+      "sha256": "a25c3cb120d88873c723e9e19b501486b502db91e38159839b14d275298e78af",
+      "mode": "clay",
+      "view": "front"
+    },
+    {
+      "path": "clay-three-quarter.png",
+      "sha256": "53a2b6d65de3b0f19ba278a091da886cb130d1e07634dc45bf388a6c43762516",
+      "mode": "clay",
+      "view": "three-quarter"
+    },
+    {
+      "path": "clay-profile.png",
+      "sha256": "ae3ae8f8d62135dc01dcddb8f9c7e0f86edda6fbe62105f288ff91d007162917",
+      "mode": "clay",
+      "view": "profile"
+    },
+    {
+      "path": "components-front.png",
+      "sha256": "cca6cc2d7228b1b05552da2e4d548147d242eb2252c797a1264d74a321b07e7e",
+      "mode": "components",
+      "view": "front"
+    },
+    {
+      "path": "components-three-quarter.png",
+      "sha256": "75315ee131d325b890c5be4e1a4d8f1d7a6200367d8c2e8c17117952ad348802",
+      "mode": "components",
+      "view": "three-quarter"
+    },
+    {
+      "path": "components-profile.png",
+      "sha256": "d199facea31f7f9abf51fdb27e0cab0964351575b480ac09b8ed07b0994432a3",
+      "mode": "components",
+      "view": "profile"
+    }
+  ]
+}

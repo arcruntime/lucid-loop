@@ -1,0 +1,104 @@
+{
+  "schema": "ren-parts-coordinate-audit-v1",
+  "sources": [
+    {
+      "role": "head",
+      "blenderVertices": 10242,
+      "unityVerticesIncludingSplits": 15425,
+      "blenderToUnityNativeMatrix": [
+        [
+          -1.000000079760566,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.000000079760566
+        ],
+        [
+          0.0,
+          -1.000000079760566,
+          0.0
+        ]
+      ],
+      "maxUnityToBlenderDistance": 7.530993044683356e-08,
+      "meanDistance": 2.2425732877223285e-08,
+      "runnerUpMaxDistance": 0.018289379375303467
+    },
+    {
+      "role": "hair",
+      "blenderVertices": 26361,
+      "unityVerticesIncludingSplits": 55682,
+      "blenderToUnityNativeMatrix": [
+        [
+          -1.0000000964284788,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0000000964284788
+        ],
+        [
+          0.0,
+          -1.0000000964284788,
+          0.0
+        ]
+      ],
+      "maxUnityToBlenderDistance": 7.08120716209491e-08,
+      "meanDistance": 2.739501041184185e-08,
+      "runnerUpMaxDistance": 0.16729195172654943
+    }
+  ],
+  "exact_blender_to_unity_native": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "exact_blender_to_viewer_frame": [
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ]
+  ],
+  "hair_blender_translation": [
+    -0.09,
+    0,
+    0.22
+  ],
+  "hair_viewer_translation": [
+    0,
+    0.22,
+    -0.09
+  ],
+  "source_sha256": {
+    "head": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+    "hair": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9"
+  },
+  "method": "Read-only native Unity FBX import world vertex arrays compared to Blender audit positions transformed by recorded matrix_world. Brute-force signed axis permutations with uniform scale; nearest-neighbor residuals include Unity normal/UV vertex splits. Final placement uses exact unit scale, without fitting geometry."
+}

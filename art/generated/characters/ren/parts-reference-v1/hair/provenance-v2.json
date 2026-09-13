@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-13T08:04:01.100534+00:00",
+  "status": "REFERENCE_ACCEPTED_FOR_STANDALONE_PLATES",
+  "generator": "built-in image_gen.imagegen",
+  "fallback_cli_used": false,
+  "use_case": "precise-object-edit",
+  "prompt": {
+    "path": "art/generated/characters/ren/parts-reference-v1/hair/prompts/hair-three-view-v2.txt",
+    "sha256": "3ec1a6647a7f28d032c50ec9aa67b1e22c42dda67d53fcf7cedd55c217d6ce71"
+  },
+  "inputs": [
+    {
+      "path": "art/characters/ren-model-sheet.png",
+      "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 2426678,
+      "role": "authoritative artist design; cap-off silhouette/crown volume"
+    },
+    {
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/hair-three-view-v1.png",
+      "sha256": "3f1f87917a390a34fe9d0790a4bb12e374f6c4b9e6088daa70ab971ea1cf888e",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGB",
+      "bytes": 2056414,
+      "role": "edit target; preserve major lock arrangement and layout"
+    }
+  ],
+  "output": {
+    "path": "art/generated/characters/ren/parts-reference-v1/hair/hair-three-view-v2.png",
+    "sha256": "69c7d36ef6f43e988795368b7c3545e83ee65ed18101cdf5ddd49f9780bc796d",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGB",
+    "bytes": 1711515
+  },
+  "original_generated_path": "C:\\Users\\jetha\\.codex\\generated_images\\01a099c1-4a3c-7e73-97ca-a768a671fd15\\exec-cf3155ec-f9ab-4817-a19c-7e63fc43412d.png",
+  "source_sha256": "69c7d36ef6f43e988795368b7c3545e83ee65ed18101cdf5ddd49f9780bc796d",
+  "copied_without_pixel_changes": true,
+  "review": {
+    "passes": [
+      "Dense nested wire-like flyaways across locks substantially removed",
+      "Major lock separations and anime painted planes preserved",
+      "Asymmetric fringe and short shag silhouette remain",
+      "Crown slightly flatter and less puffed than V1",
+      "No head, skin, mannequin or accessories introduced"
+    ],
+    "caveats": [
+      "A few slender outer crown and side wisps remain; they are much fewer but are still possible geometry-generation artifacts",
+      "Back view remains inferred and has more small tapered ends than the requested principal-lock count",
+      "Illustrated front/profile/back alignment is not a guarantee of shared 3D geometry"
+    ],
+    "next_action": "Standalone front/right/back plates prepared; root reviews those before 3D submission.",
+    "root_acceptance": "Root reviewed V2 and accepted it as the separate-hair geometry reference, retaining the caveat that the uncapped rear shape is inferred."
+  }
+}

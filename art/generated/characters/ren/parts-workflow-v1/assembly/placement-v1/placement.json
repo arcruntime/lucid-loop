@@ -1,0 +1,78 @@
+{
+  "status": "UNREVIEWED_PLACEMENT",
+  "blender_version": "5.1.1",
+  "coordinates": "Blender Z up, source front +X; head source frame unchanged",
+  "parts": {
+    "head": {
+      "source": "art/generated/characters/ren/parts-generation-v1/tripo/head/originals/model.fbx",
+      "sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+      "imported_mesh_geometry_uv_sha256": "e1e4e989402986ab2b0d8079a2a8178acade8e71f35597344c53e433d9fd8095",
+      "placement": {
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "hair": {
+      "source": "art/generated/characters/ren/parts-generation-v1/tripo/hair/originals/model.fbx",
+      "sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+      "imported_mesh_geometry_uv_sha256": "1d2794b5b39eacc3d2ace72dd2023394923dc44e472765fa688ca73664e9a379",
+      "placement": {
+        "position": [
+          0.0,
+          0.0,
+          0.11500000208616257
+        ],
+        "scale": [
+          0.8500000238418579,
+          0.8500000238418579,
+          0.8500000238418579
+        ],
+        "euler_radians": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "renders": [
+    {
+      "file": "head-front.png",
+      "sha256": "f705cc086b4601bef58e2f219e4546c7589e80f91c33c2bb46cf5f5386b07f8a"
+    },
+    {
+      "file": "head-three-quarter.png",
+      "sha256": "ce439b5489c73c641e4f7c144e50af7b5cd05f705578b4917990012e9f4b5638"
+    },
+    {
+      "file": "head-profile.png",
+      "sha256": "288047f9c2cb8fa7fcc7119087b484eb116fe61e5a6b969a1f6783d80575743d"
+    },
+    {
+      "file": "assembled-front.png",
+      "sha256": "7a67e981b61bd37c3dacedd048b7740c2c160d5c22421076976fe062c5169126"
+    },
+    {
+      "file": "assembled-three-quarter.png",
+      "sha256": "f9ca5064453b440de036477a15815a119304fb1937b93b7a119ed947b4e25405"
+    },
+    {
+      "file": "assembled-profile.png",
+      "sha256": "04bc92c70cff822f4df076d5469c909750eea71eccccd47caea27b1e68bef364"
+    }
+  ],
+  "method": "Only separate part object-parent transforms and clay material bindings. Mesh coordinates, polygons and UVs preserved exactly."
+}

@@ -6,14 +6,25 @@ Updated 2026-09-13. The user authorized committing and pushing the entire bust
 comparison, with explicit launch instructions, then starting the new Ren workflow.
 Thirteen selected head sheets and three imported Tripo/Meshy busts are available
 in the Unity comparison. Tripo H closed rest is the provisional construction
-reference from the inspected results. Additional H/P2 results await export.
+reference from the inspected whole-bust results. Three older Studio H/P2 busts
+still await export. The newly funded API has now produced separate P2 head and
+hair FBXs for 200 credits total; these are distinct from those Studio jobs.
 The artist's original Ren design remains authoritative; the earlier Meshy surface
 remains an immutable shape comparison. This is not final likeness approval.
+
+The [separate-parts checkpoint](../art/generated/characters/ren/parts-workflow-v1/README.md)
+records the new reference sheets, native source audits, and rigid assembly study.
+The head has four verified outer lip loops and an actual opening. Its raised brow
+masses, filled eye surfaces and unfinished cavity still require local correction;
+the hair has crossbars and inward sheets to resolve. Neither source has passed
+final neutral likeness review. A tested HOS projection helper is available, but
+has not textured Ren or established suitable facial UVs.
 
 Apply the [reviewed creator workflow](../research/japanese-anime-character-workflows-2026-09.md):
 
 1. Separate the hair-free head, hair, and later body; review each against the
-   artist's shape and graphic features. Inspect P2 geometry when exports arrive.
+   artist's shape and graphic features. Use the inspected P2 sources as construction
+   candidates; preserve their originals and document local repairs in matched views.
 2. Fit independent eye/lid/lash assemblies. Use full eye mesh swaps for distinct
    anime poses, smooth blink shapes within compatible assemblies, and independent
    iris gaze. Preserve left/right control and seams against the fixed head.

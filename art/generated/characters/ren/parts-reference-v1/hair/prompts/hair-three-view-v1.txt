@@ -1,0 +1,16 @@
+Use case: stylized-concept.
+Asset type: Ren hair-only three-view production model sheet for a separate anime game-character hair mesh.
+
+Input images:
+1. The original Ren character design sheet is the authoritative identity and hairstyle reference. Use the upper-right CAP OFF casual look for the uncovered crown and the large portrait/expression drawings for the layered blond locks, fringe character, and nape length.
+2. The closed-rest head turnaround is supporting reference for the already-established cap-off hair volume and side length. Do not copy its visible skin, face, ears, jewelry, or its many individual thin flyaways. If references differ, follow the original artist's design.
+
+Create ONE wide landscape sheet with exactly THREE equal-scale orthographic views of the SAME isolated HAIR OBJECT: FRONT, true PROFILE facing screen-right, and BACK. The result should read as a wig-like separate sculpted hair asset, floating with no visible support, not a human bust. In the profile view, the fringe and forehead-facing edge are on the right, the nape is on the left. The back view looks directly at the rear of that same hairstyle. Keep the crown height and lowermost lock baseline aligned across views. Show the entire silhouette with comfortable margins and no clipping or overlapping panels.
+
+Hair design: Ren's short, tousled, pale ash-blond layered shag/bob from the original cap-off alternate. A slightly off-center relaxed part, lifted irregular crown, longer sweeping loose fringe framing the absent face, deliberate tapered layered locks at the temples and around the ears, shorter broken-up layers through the back, and a short tapered nape reaching just below the jaw region on an implied head. Preserve her original tousled asymmetry and airy silhouette. Describe the bulk with larger coherent sculptable ribbons and clumps; painted fine strand lines may sit within those larger masses. Do not make smooth generic helmet hair, a neat salon bob, long shoulder-length hair, a slick haircut, or explosive spikes. Keep fine flyaways very sparse: no floating disconnected individual hairs or spaghetti-wire silhouette.
+
+The invisible head/scalp attachment opening is implicit beneath the hair. Render background through the open face area and other genuine gaps. There is NO head inside, NO skin-colored scalp, NO face, NO eyes, NO ears, NO neck, NO shoulders, NO mannequin, NO stand, NO cap, NO headphones, NO jewelry and NO other object. Do not cap the absent face opening with a smooth flesh-colored or gray surface.
+
+Style: match the original designer's polished anime illustration, precise purposeful linework and softly painted angular light/shadow planes. Cream and pale ash-blond highlights with muted taupe shadowed roots and undersides. No photoreal hair fibers, realistic hair grooming simulation, plastic shine or volumetric fur. Flat soft neutral illumination, no dramatic lighting, no glow. Uniform very light cool-neutral background.
+
+Only three small unobtrusive labels below their respective views, exactly: "FRONT", "PROFILE", "BACK". No header, numbers, notes, arrows, border or watermark. Output the highest-quality large landscape sheet available.

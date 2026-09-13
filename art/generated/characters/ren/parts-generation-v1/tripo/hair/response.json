@@ -1,0 +1,51 @@
+{
+  "type": "multiview_to_model",
+  "status": "success",
+  "progress": 100,
+  "input": {
+    "pbr": false,
+    "quad": true,
+    "files": [
+      {
+        "object": {
+          "key": "tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/49ce203b-981e-49b3-99cb-b7ef94f9934f/file.png",
+          "bucket": "tripo-data"
+        }
+      },
+      null,
+      {
+        "object": {
+          "key": "tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/bdb855cf-9404-45f2-80c0-0ce26d59e9f9/file.png",
+          "bucket": "tripo-data"
+        }
+      },
+      {
+        "object": {
+          "key": "tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/5049c8d5-1c6e-46fd-8539-d4bc50c7333d/file.png",
+          "bucket": "tripo-data"
+        }
+      }
+    ],
+    "texture": false,
+    "export_uv": true,
+    "face_limit": 25000,
+    "model_seed": 20260914,
+    "model_version": "P2-20260801"
+  },
+  "output": {
+    "model_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/1a8b7598-cddf-4b6c-a344-9e9ae16dcd5d/tripo_base_model_1a8b7598-cddf-4b6c-a344-9e9ae16dcd5d.fbx?<redacted>",
+    "rendered_image_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260913/1a8b7598-cddf-4b6c-a344-9e9ae16dcd5d/legacy_mesh.webp?<redacted>"
+  },
+  "task_id": "1a8b7598-cddf-4b6c-a344-9e9ae16dcd5d",
+  "created_at": "2026-09-13T08:13:10.373196Z",
+  "completed_at": "2026-09-13T08:14:35.458503Z",
+  "credits_consumed": 100,
+  "output_dir": "B:\\lucid-loop\\.local\\character-art\\tripo-parts-v1\\hair\\downloads",
+  "files": [
+    "B:\\lucid-loop\\.local\\character-art\\tripo-parts-v1\\hair\\downloads\\model.fbx",
+    "B:\\lucid-loop\\.local\\character-art\\tripo-parts-v1\\hair\\downloads\\rendered_image.webp",
+    "B:\\lucid-loop\\.local\\character-art\\tripo-parts-v1\\hair\\downloads\\preview.png"
+  ],
+  "model_file": "B:\\lucid-loop\\.local\\character-art\\tripo-parts-v1\\hair\\downloads\\model.fbx",
+  "preview": "B:\\lucid-loop\\.local\\character-art\\tripo-parts-v1\\hair\\downloads\\preview.png"
+}

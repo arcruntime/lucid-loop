@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "part": "hair",
+  "created_utc": "2026-09-13T08:11:30.082716Z",
+  "updated_utc": "2026-09-13T08:15:05.246610Z",
+  "status": "COMPLETE",
+  "task_id": "1a8b7598-cddf-4b6c-a344-9e9ae16dcd5d",
+  "source_review_note": "Root visually reviewed all three V2 hair plates on 2026-09-13: isolated asymmetric pale-blond shag, broader coherent locks, front/screen-right profile/back, no skin or labels. Remaining outer wisps accepted for this construction experiment; uncapped rear is inferred from artist references. This is geometry reference approval, not final likeness approval.",
+  "sources": [
+    {
+      "view": "front",
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-front-v2.png",
+      "sha256": "209c89450a27c2b4f3236104e04ada09416c9b3a97d9fd346ebff957d15b2d8d",
+      "bytes": 1634164,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "view": "right",
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-right-v2.png",
+      "sha256": "b16f3297d515779164553b471a9089699e94a0d7ded1cce93c500fa1629687f2",
+      "bytes": 1645700,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "view": "back",
+      "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-back-v2.png",
+      "sha256": "1b257de5f17334d51ce492f098da6a328a1ce5c0d130a41fd4aa1a1d704f8c48",
+      "bytes": 1584640,
+      "width": 1122,
+      "height": 1402
+    }
+  ],
+  "requested_settings": {
+    "model": "P2-20260801",
+    "quad": true,
+    "face_limit": 25000,
+    "texture": false,
+    "pbr": false,
+    "export_uv": true,
+    "model_seed": 20260914
+  },
+  "fingerprint": "c0f31cfcfedc22431cb414d0e7f8151924d3246d3e4726c81ea0dbb19713fb49",
+  "intent_sha256": "cd72eeaad8660d7e3a8e01f468749758c7836ea4f8cc1452588f6775b477f2c4",
+  "credits_consumed": 100,
+  "returned_model_identity": {},
+  "downloads": [
+    {
+      "file": "originals/model.fbx",
+      "sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+      "bytes": 1663868,
+      "native_provider_bytes": true
+    },
+    {
+      "file": "originals/preview.png",
+      "sha256": "aef52c7e31bc07363cb79dd9f69ba9489796133631b27e9d630f4ccabd88f6c4",
+      "bytes": 136647,
+      "native_provider_bytes": true
+    },
+    {
+      "file": "originals/rendered_image.webp",
+      "sha256": "aef52c7e31bc07363cb79dd9f69ba9489796133631b27e9d630f4ccabd88f6c4",
+      "bytes": 136647,
+      "native_provider_bytes": true
+    }
+  ],
+  "cli_exit_code": 0,
+  "preflight": {
+    "checked_utc": "2026-09-13T08:11:51.644803Z",
+    "cli_version": "0.4.0",
+    "doctor_exit_code": 0,
+    "doctor": {
+      "ok": true,
+      "checks": [
+        {
+          "name": "node",
+          "ok": true,
+          "detail": "v24.15.0 (need >= 20)",
+          "critical": true
+        },
+        {
+          "name": "api key",
+          "ok": true,
+          "detail": "from env:TRIPO_API_KEY",
+          "critical": true
+        },
+        {
+          "name": "api reachability",
+          "ok": true,
+          "detail": "https://openapi.tripo3d.ai (region ov) · balance 2600",
+          "critical": true
+        },
+        {
+          "name": "balance",
+          "ok": true,
+          "detail": "2600 credits (0 frozen)",
+          "critical": false
+        },
+        {
+          "name": "llm (tripo ai conversation mode)",
+          "ok": true,
+          "detail": "not configured — wizard mode only (this is fine)",
+          "critical": false
+        },
+        {
+          "name": "terminal",
+          "ok": true,
+          "detail": "non-TTY (headless mode)",
+          "critical": false
+        },
+        {
+          "name": "language",
+          "ok": true,
+          "detail": "auto",
+          "critical": false
+        }
+      ]
+    },
+    "api_balance": {
+      "balance": 2600.0,
+      "frozen": 0.0
+    }
+  },
+  "native_quad_container": "FBX",
+  "provider_status": "success",
+  "model_identity_note": "Requested P2 version and any returned top-level model fields are distinct; absent returned fields do not verify a served model.",
+  "transport_note": "One non-retrying urllib generation POST per immutable intent. Official CLI performs checks and task watch/download only.",
+  "inspection_pending": "Inspect native polygon sizes, UV layers, eyelids, lips and mouth interior in Blender. No animation-readiness claim."
+}

@@ -1,0 +1,1197 @@
+{
+  "schema": "lucid-loop/ren-parts-audit/v1",
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-generation-v1\\tripo\\hair\\originals\\model.fbx",
+  "source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+  "source_bytes": 1663868,
+  "blender_version": "5.1.1",
+  "source_format": ".fbx",
+  "objects": [
+    {
+      "index": 0,
+      "object": "tripo_node_1a8b7598",
+      "mesh_datablock": "tripo_mesh_1a8b7598",
+      "array_file": "analysis-data/mesh-000.npz",
+      "vertices": 26361,
+      "edges": 54448,
+      "faces": 28234,
+      "triangles": 51054,
+      "face_types": {
+        "3": 5414,
+        "4": 22820
+      },
+      "bounds_world": {
+        "min": [
+          -0.481689453125,
+          -0.4484863305901686,
+          -0.4997558686060427
+        ],
+        "max": [
+          0.481689453125,
+          0.44848632642819564,
+          0.499755860580905
+        ],
+        "center": [
+          0.0,
+          -2.0809864942350487e-09,
+          -4.012568860511934e-09
+        ]
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "tripo_mat_1a8b7598"
+      ],
+      "uv_layers": [
+        {
+          "name": "tripo_1a8b7598_cddf_4b6c_a344_9e9ae16dcd5d_NewUVMap",
+          "array": "uv_0"
+        }
+      ],
+      "shape_keys": [],
+      "modifiers": [],
+      "imported_components": 79,
+      "coincident_position_components": 79,
+      "coincident_unique_positions": 26361,
+      "position_grid_world_units": 9.995117291869478e-07,
+      "imported_top_components": [
+        {
+          "rank": 0,
+          "graph_id": 10,
+          "vertices": 8969,
+          "faces": 10815,
+          "triangles": 18920,
+          "min": [
+            -0.434814453125,
+            -0.4484863305901686,
+            -0.4997558686060427
+          ],
+          "max": [
+            0.278076171875,
+            0.40698242056237777,
+            0.4299316432395728
+          ],
+          "material_face_counts": {
+            "0": 10815
+          }
+        },
+        {
+          "rank": 1,
+          "graph_id": 1,
+          "vertices": 4192,
+          "faces": 4413,
+          "triangles": 7985,
+          "min": [
+            -0.107177734375,
+            -0.43774414740154577,
+            -0.49829101085473865
+          ],
+          "max": [
+            0.370849609375,
+            0.4118652322513266,
+            0.3474121114132996
+          ],
+          "material_face_counts": {
+            "0": 4413
+          }
+        },
+        {
+          "rank": 2,
+          "graph_id": 63,
+          "vertices": 890,
+          "faces": 914,
+          "triangles": 1678,
+          "min": [
+            -0.221923828125,
+            0.07836915111530632,
+            -0.21899415664326022
+          ],
+          "max": [
+            0.301025390625,
+            0.41137695053177065,
+            0.4284667889245644
+          ],
+          "material_face_counts": {
+            "0": 914
+          }
+        },
+        {
+          "rank": 3,
+          "graph_id": 19,
+          "vertices": 696,
+          "faces": 769,
+          "triangles": 1411,
+          "min": [
+            0.282958984375,
+            -0.2316894567000281,
+            -0.19750976064130413
+          ],
+          "max": [
+            0.463623046875,
+            0.08374024130094995,
+            0.2580566427913603
+          ],
+          "material_face_counts": {
+            "0": 769
+          }
+        },
+        {
+          "rank": 4,
+          "graph_id": 4,
+          "vertices": 702,
+          "faces": 717,
+          "triangles": 1307,
+          "min": [
+            0.254638671875,
+            -0.26879882777283304,
+            -0.24975585372965714
+          ],
+          "max": [
+            0.440673828125,
+            0.08374024334992128,
+            0.42749023560224847
+          ],
+          "material_face_counts": {
+            "0": 717
+          }
+        },
+        {
+          "rank": 5,
+          "graph_id": 44,
+          "vertices": 487,
+          "faces": 505,
+          "triangles": 964,
+          "min": [
+            -0.481689453125,
+            -0.10961914859677907,
+            -0.1823730420833952
+          ],
+          "max": [
+            0.022216796875,
+            0.19165039838334455,
+            0.35766601194325465
+          ],
+          "material_face_counts": {
+            "0": 505
+          }
+        },
+        {
+          "rank": 6,
+          "graph_id": 34,
+          "vertices": 374,
+          "faces": 390,
+          "triangles": 741,
+          "min": [
+            -0.235595703125,
+            -0.3557129040393591,
+            -0.3420410059030579
+          ],
+          "max": [
+            -0.052978515625,
+            -0.005615221942439611,
+            0.29174804912673413
+          ],
+          "material_face_counts": {
+            "0": 390
+          }
+        },
+        {
+          "rank": 7,
+          "graph_id": 17,
+          "vertices": 318,
+          "faces": 329,
+          "triangles": 623,
+          "min": [
+            0.346923828125,
+            -0.24829101601985384,
+            -0.13842772625381677
+          ],
+          "max": [
+            0.464599609375,
+            0.03295899738383357,
+            0.2980957020471557
+          ],
+          "material_face_counts": {
+            "0": 329
+          }
+        },
+        {
+          "rank": 8,
+          "graph_id": 68,
+          "vertices": 260,
+          "faces": 270,
+          "triangles": 516,
+          "min": [
+            -0.339599609375,
+            0.08081056056682402,
+            -0.1540527436914165
+          ],
+          "max": [
+            0.121337890625,
+            0.3010253957367566,
+            0.4064941351290613
+          ],
+          "material_face_counts": {
+            "0": 270
+          }
+        },
+        {
+          "rank": 9,
+          "graph_id": 29,
+          "vertices": 234,
+          "faces": 253,
+          "triangles": 463,
+          "min": [
+            -0.373291015625,
+            -0.2683105396715852,
+            0.12231446350858906
+          ],
+          "max": [
+            0.156005859375,
+            0.12280275086281614,
+            0.43823242075446883
+          ],
+          "material_face_counts": {
+            "0": 253
+          }
+        },
+        {
+          "rank": 10,
+          "graph_id": 21,
+          "vertices": 239,
+          "faces": 244,
+          "triangles": 472,
+          "min": [
+            0.310302734375,
+            -0.10424805382229341,
+            -0.15893554231817314
+          ],
+          "max": [
+            0.478271484375,
+            0.08666993187440694,
+            0.3254394512147611
+          ],
+          "material_face_counts": {
+            "0": 244
+          }
+        },
+        {
+          "rank": 11,
+          "graph_id": 52,
+          "vertices": 228,
+          "faces": 238,
+          "triangles": 454,
+          "min": [
+            -0.049072265625,
+            0.08032227814293419,
+            -0.3063964902337774
+          ],
+          "max": [
+            0.186767578125,
+            0.30297851680956156,
+            0.31225585368697023
+          ],
+          "material_face_counts": {
+            "0": 238
+          }
+        },
+        {
+          "rank": 12,
+          "graph_id": 40,
+          "vertices": 227,
+          "faces": 231,
+          "triangles": 448,
+          "min": [
+            -0.292724609375,
+            -0.04272460910820686,
+            -0.3864746082117819
+          ],
+          "max": [
+            -0.112548828125,
+            0.07739257982180438,
+            0.25317382668431704
+          ],
+          "material_face_counts": {
+            "0": 231
+          }
+        },
+        {
+          "rank": 13,
+          "graph_id": 41,
+          "vertices": 225,
+          "faces": 230,
+          "triangles": 444,
+          "min": [
+            -0.280517578125,
+            -0.05395507962971332,
+            -0.3376464859224002
+          ],
+          "max": [
+            -0.050048828125,
+            0.08764648698957278,
+            0.2712402323793873
+          ],
+          "material_face_counts": {
+            "0": 230
+          }
+        },
+        {
+          "rank": 14,
+          "graph_id": 43,
+          "vertices": 214,
+          "faces": 226,
+          "triangles": 423,
+          "min": [
+            -0.346923828125,
+            -0.1770019495926588,
+            -0.09692382405907253
+          ],
+          "max": [
+            -0.005126953125,
+            0.052490248173541275,
+            0.3439941408704497
+          ],
+          "material_face_counts": {
+            "0": 226
+          }
+        },
+        {
+          "rank": 15,
+          "graph_id": 5,
+          "vertices": 204,
+          "faces": 222,
+          "triangles": 400,
+          "min": [
+            0.130126953125,
+            -0.3137207092398988,
+            -0.33764647354319843
+          ],
+          "max": [
+            0.248779296875,
+            -0.21459960573594156,
+            0.08471680634082066
+          ],
+          "material_face_counts": {
+            "0": 222
+          }
+        },
+        {
+          "rank": 16,
+          "graph_id": 39,
+          "vertices": 210,
+          "faces": 214,
+          "triangles": 415,
+          "min": [
+            -0.254150390625,
+            -0.23315430068480605,
+            -0.3322753865590725
+          ],
+          "max": [
+            -0.110107421875,
+            -0.002197258827110757,
+            0.16186523679748172
+          ],
+          "material_face_counts": {
+            "0": 214
+          }
+        },
+        {
+          "rank": 17,
+          "graph_id": 31,
+          "vertices": 209,
+          "faces": 213,
+          "triangles": 414,
+          "min": [
+            -0.136962890625,
+            -0.2106933428231535,
+            0.3156738240377291
+          ],
+          "max": [
+            0.183837890625,
+            0.11157228245431136,
+            0.499755860580905
+          ],
+          "material_face_counts": {
+            "0": 213
+          }
+        },
+        {
+          "rank": 18,
+          "graph_id": 50,
+          "vertices": 204,
+          "faces": 207,
+          "triangles": 402,
+          "min": [
+            0.243408203125,
+            0.08032227259363685,
+            -0.18286133571259694
+          ],
+          "max": [
+            0.373779296875,
+            0.2155761721204497,
+            0.2165527292632434
+          ],
+          "material_face_counts": {
+            "0": 207
+          }
+        },
+        {
+          "rank": 19,
+          "graph_id": 46,
+          "vertices": 192,
+          "faces": 202,
+          "triangles": 380,
+          "min": [
+            -0.451904296875,
+            -0.12866209873528953,
+            0.09008789268464305
+          ],
+          "max": [
+            0.084716796875,
+            0.08227540491444066,
+            0.4382324212453682
+          ],
+          "material_face_counts": {
+            "0": 202
+          }
+        },
+        {
+          "rank": 20,
+          "graph_id": 42,
+          "vertices": 197,
+          "faces": 200,
+          "triangles": 390,
+          "min": [
+            -0.347900390625,
+            -0.2092285191146543,
+            -0.3229980413577178
+          ],
+          "max": [
+            -0.176513671875,
+            -0.0114746024703935,
+            0.16284179893464304
+          ],
+          "material_face_counts": {
+            "0": 200
+          }
+        },
+        {
+          "rank": 21,
+          "graph_id": 73,
+          "vertices": 197,
+          "faces": 200,
+          "triangles": 388,
+          "min": [
+            -0.291259765625,
+            0.05981446005094995,
+            -0.3229980554870826
+          ],
+          "max": [
+            -0.175048828125,
+            0.2565917917632434,
+            0.16284179319325465
+          ],
+          "material_face_counts": {
+            "0": 200
+          }
+        },
+        {
+          "rank": 22,
+          "graph_id": 22,
+          "vertices": 193,
+          "faces": 195,
+          "triangles": 378,
+          "min": [
+            -0.054443359375,
+            -0.30737304857180436,
+            -0.3947753862175773
+          ],
+          "max": [
+            0.083251953125,
+            -0.10083009538118039,
+            -0.03735350259482297
+          ],
+          "material_face_counts": {
+            "0": 195
+          }
+        },
+        {
+          "rank": 23,
+          "graph_id": 53,
+          "vertices": 189,
+          "faces": 194,
+          "triangles": 374,
+          "min": [
+            0.137939453125,
+            0.21020508806037658,
+            -0.2951660264354581
+          ],
+          "max": [
+            0.215087890625,
+            0.27709960603474987,
+            0.2282714750585835
+          ],
+          "material_face_counts": {
+            "0": 194
+          }
+        }
+      ],
+      "coincident_top_components": [
+        {
+          "rank": 0,
+          "graph_id": 3,
+          "vertices": 8969,
+          "faces": 10815,
+          "triangles": 18920,
+          "min": [
+            -0.434814453125,
+            -0.4484863305901686,
+            -0.4997558686060427
+          ],
+          "max": [
+            0.278076171875,
+            0.40698242056237777,
+            0.4299316432395728
+          ],
+          "material_face_counts": {
+            "0": 10815
+          }
+        },
+        {
+          "rank": 1,
+          "graph_id": 30,
+          "vertices": 4192,
+          "faces": 4413,
+          "triangles": 7985,
+          "min": [
+            -0.107177734375,
+            -0.43774414740154577,
+            -0.49829101085473865
+          ],
+          "max": [
+            0.370849609375,
+            0.4118652322513266,
+            0.3474121114132996
+          ],
+          "material_face_counts": {
+            "0": 4413
+          }
+        },
+        {
+          "rank": 2,
+          "graph_id": 18,
+          "vertices": 890,
+          "faces": 914,
+          "triangles": 1678,
+          "min": [
+            -0.221923828125,
+            0.07836915111530632,
+            -0.21899415664326022
+          ],
+          "max": [
+            0.301025390625,
+            0.41137695053177065,
+            0.4284667889245644
+          ],
+          "material_face_counts": {
+            "0": 914
+          }
+        },
+        {
+          "rank": 3,
+          "graph_id": 68,
+          "vertices": 696,
+          "faces": 769,
+          "triangles": 1411,
+          "min": [
+            0.282958984375,
+            -0.2316894567000281,
+            -0.19750976064130413
+          ],
+          "max": [
+            0.463623046875,
+            0.08374024130094995,
+            0.2580566427913603
+          ],
+          "material_face_counts": {
+            "0": 769
+          }
+        },
+        {
+          "rank": 4,
+          "graph_id": 65,
+          "vertices": 702,
+          "faces": 717,
+          "triangles": 1307,
+          "min": [
+            0.254638671875,
+            -0.26879882777283304,
+            -0.24975585372965714
+          ],
+          "max": [
+            0.440673828125,
+            0.08374024334992128,
+            0.42749023560224847
+          ],
+          "material_face_counts": {
+            "0": 717
+          }
+        },
+        {
+          "rank": 5,
+          "graph_id": 0,
+          "vertices": 487,
+          "faces": 505,
+          "triangles": 964,
+          "min": [
+            -0.481689453125,
+            -0.10961914859677907,
+            -0.1823730420833952
+          ],
+          "max": [
+            0.022216796875,
+            0.19165039838334455,
+            0.35766601194325465
+          ],
+          "material_face_counts": {
+            "0": 505
+          }
+        },
+        {
+          "rank": 6,
+          "graph_id": 17,
+          "vertices": 374,
+          "faces": 390,
+          "triangles": 741,
+          "min": [
+            -0.235595703125,
+            -0.3557129040393591,
+            -0.3420410059030579
+          ],
+          "max": [
+            -0.052978515625,
+            -0.005615221942439611,
+            0.29174804912673413
+          ],
+          "material_face_counts": {
+            "0": 390
+          }
+        },
+        {
+          "rank": 7,
+          "graph_id": 74,
+          "vertices": 318,
+          "faces": 329,
+          "triangles": 623,
+          "min": [
+            0.346923828125,
+            -0.24829101601985384,
+            -0.13842772625381677
+          ],
+          "max": [
+            0.464599609375,
+            0.03295899738383357,
+            0.2980957020471557
+          ],
+          "material_face_counts": {
+            "0": 329
+          }
+        },
+        {
+          "rank": 8,
+          "graph_id": 9,
+          "vertices": 260,
+          "faces": 270,
+          "triangles": 516,
+          "min": [
+            -0.339599609375,
+            0.08081056056682402,
+            -0.1540527436914165
+          ],
+          "max": [
+            0.121337890625,
+            0.3010253957367566,
+            0.4064941351290613
+          ],
+          "material_face_counts": {
+            "0": 270
+          }
+        },
+        {
+          "rank": 9,
+          "graph_id": 4,
+          "vertices": 234,
+          "faces": 253,
+          "triangles": 463,
+          "min": [
+            -0.373291015625,
+            -0.2683105396715852,
+            0.12231446350858906
+          ],
+          "max": [
+            0.156005859375,
+            0.12280275086281614,
+            0.43823242075446883
+          ],
+          "material_face_counts": {
+            "0": 253
+          }
+        },
+        {
+          "rank": 10,
+          "graph_id": 71,
+          "vertices": 239,
+          "faces": 244,
+          "triangles": 472,
+          "min": [
+            0.310302734375,
+            -0.10424805382229341,
+            -0.15893554231817314
+          ],
+          "max": [
+            0.478271484375,
+            0.08666993187440694,
+            0.3254394512147611
+          ],
+          "material_face_counts": {
+            "0": 244
+          }
+        },
+        {
+          "rank": 11,
+          "graph_id": 36,
+          "vertices": 228,
+          "faces": 238,
+          "triangles": 454,
+          "min": [
+            -0.049072265625,
+            0.08032227814293419,
+            -0.3063964902337774
+          ],
+          "max": [
+            0.186767578125,
+            0.30297851680956156,
+            0.31225585368697023
+          ],
+          "material_face_counts": {
+            "0": 238
+          }
+        },
+        {
+          "rank": 12,
+          "graph_id": 12,
+          "vertices": 227,
+          "faces": 231,
+          "triangles": 448,
+          "min": [
+            -0.292724609375,
+            -0.04272460910820686,
+            -0.3864746082117819
+          ],
+          "max": [
+            -0.112548828125,
+            0.07739257982180438,
+            0.25317382668431704
+          ],
+          "material_face_counts": {
+            "0": 231
+          }
+        },
+        {
+          "rank": 13,
+          "graph_id": 14,
+          "vertices": 225,
+          "faces": 230,
+          "triangles": 444,
+          "min": [
+            -0.280517578125,
+            -0.05395507962971332,
+            -0.3376464859224002
+          ],
+          "max": [
+            -0.050048828125,
+            0.08764648698957278,
+            0.2712402323793873
+          ],
+          "material_face_counts": {
+            "0": 230
+          }
+        },
+        {
+          "rank": 14,
+          "graph_id": 7,
+          "vertices": 214,
+          "faces": 226,
+          "triangles": 423,
+          "min": [
+            -0.346923828125,
+            -0.1770019495926588,
+            -0.09692382405907253
+          ],
+          "max": [
+            -0.005126953125,
+            0.052490248173541275,
+            0.3439941408704497
+          ],
+          "material_face_counts": {
+            "0": 226
+          }
+        },
+        {
+          "rank": 15,
+          "graph_id": 54,
+          "vertices": 204,
+          "faces": 222,
+          "triangles": 400,
+          "min": [
+            0.130126953125,
+            -0.3137207092398988,
+            -0.33764647354319843
+          ],
+          "max": [
+            0.248779296875,
+            -0.21459960573594156,
+            0.08471680634082066
+          ],
+          "material_face_counts": {
+            "0": 222
+          }
+        },
+        {
+          "rank": 16,
+          "graph_id": 16,
+          "vertices": 210,
+          "faces": 214,
+          "triangles": 415,
+          "min": [
+            -0.254150390625,
+            -0.23315430068480605,
+            -0.3322753865590725
+          ],
+          "max": [
+            -0.110107421875,
+            -0.002197258827110757,
+            0.16186523679748172
+          ],
+          "material_face_counts": {
+            "0": 214
+          }
+        },
+        {
+          "rank": 17,
+          "graph_id": 27,
+          "vertices": 209,
+          "faces": 213,
+          "triangles": 414,
+          "min": [
+            -0.136962890625,
+            -0.2106933428231535,
+            0.3156738240377291
+          ],
+          "max": [
+            0.183837890625,
+            0.11157228245431136,
+            0.499755860580905
+          ],
+          "material_face_counts": {
+            "0": 213
+          }
+        },
+        {
+          "rank": 18,
+          "graph_id": 62,
+          "vertices": 204,
+          "faces": 207,
+          "triangles": 402,
+          "min": [
+            0.243408203125,
+            0.08032227259363685,
+            -0.18286133571259694
+          ],
+          "max": [
+            0.373779296875,
+            0.2155761721204497,
+            0.2165527292632434
+          ],
+          "material_face_counts": {
+            "0": 207
+          }
+        },
+        {
+          "rank": 19,
+          "graph_id": 1,
+          "vertices": 192,
+          "faces": 202,
+          "triangles": 380,
+          "min": [
+            -0.451904296875,
+            -0.12866209873528953,
+            0.09008789268464305
+          ],
+          "max": [
+            0.084716796875,
+            0.08227540491444066,
+            0.4382324212453682
+          ],
+          "material_face_counts": {
+            "0": 202
+          }
+        },
+        {
+          "rank": 20,
+          "graph_id": 6,
+          "vertices": 197,
+          "faces": 200,
+          "triangles": 390,
+          "min": [
+            -0.347900390625,
+            -0.2092285191146543,
+            -0.3229980413577178
+          ],
+          "max": [
+            -0.176513671875,
+            -0.0114746024703935,
+            0.16284179893464304
+          ],
+          "material_face_counts": {
+            "0": 200
+          }
+        },
+        {
+          "rank": 21,
+          "graph_id": 13,
+          "vertices": 197,
+          "faces": 200,
+          "triangles": 388,
+          "min": [
+            -0.291259765625,
+            0.05981446005094995,
+            -0.3229980554870826
+          ],
+          "max": [
+            -0.175048828125,
+            0.2565917917632434,
+            0.16284179319325465
+          ],
+          "material_face_counts": {
+            "0": 200
+          }
+        },
+        {
+          "rank": 22,
+          "graph_id": 35,
+          "vertices": 193,
+          "faces": 195,
+          "triangles": 378,
+          "min": [
+            -0.054443359375,
+            -0.30737304857180436,
+            -0.3947753862175773
+          ],
+          "max": [
+            0.083251953125,
+            -0.10083009538118039,
+            -0.03735350259482297
+          ],
+          "material_face_counts": {
+            "0": 195
+          }
+        },
+        {
+          "rank": 23,
+          "graph_id": 55,
+          "vertices": 189,
+          "faces": 194,
+          "triangles": 374,
+          "min": [
+            0.137939453125,
+            0.21020508806037658,
+            -0.2951660264354581
+          ],
+          "max": [
+            0.215087890625,
+            0.27709960603474987,
+            0.2282714750585835
+          ],
+          "material_face_counts": {
+            "0": 194
+          }
+        }
+      ],
+      "imported_components_table": "mesh-000-imported-components.csv",
+      "coincident_components_table": "mesh-000-coincident-components.csv",
+      "imported_edges": {
+        "boundary": 4298,
+        "nonmanifold": 2013,
+        "loose": 0
+      },
+      "coincident_surface_edges": {
+        "boundary": 4298,
+        "nonmanifold": 2013,
+        "collapsed_corners": 0
+      },
+      "uv_analysis": [
+        {
+          "name": "tripo_1a8b7598_cddf_4b6c_a344_9e9ae16dcd5d_NewUVMap",
+          "islands": 3345,
+          "island_table": "mesh-000-uv-uv_0-islands.csv",
+          "single_face_islands": 1191,
+          "largest_island_faces": 310,
+          "largest_island_face_fraction": 0.010979669901537153,
+          "boundary_uv_edges": 52112,
+          "nonmanifold_uv_edges": 587,
+          "degenerate_uv_faces": 2,
+          "degenerate_uv_area_threshold": 1e-12,
+          "corners_outside_unit_square": 0,
+          "summed_absolute_face_uv_area": 0.3617048046712642,
+          "note": "Edge-connected islands; area is not overlap-free coverage; no overlap/distortion acceptance implied"
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_mat_1a8b7598",
+      "uses_nodes": true,
+      "images": []
+    }
+  ],
+  "bounds_world": {
+    "min": [
+      -0.481689453125,
+      -0.4484863305901686,
+      -0.4997558686060427
+    ],
+    "max": [
+      0.481689453125,
+      0.44848632642819564,
+      0.499755860580905
+    ],
+    "center": [
+      0.0,
+      -2.0809864942350487e-09,
+      -4.012568860511934e-09
+    ]
+  },
+  "totals": {
+    "vertices": 26361,
+    "edges": 54448,
+    "faces": 28234,
+    "triangles": 51054,
+    "imported_components": 79,
+    "coincident_position_components": 79
+  },
+  "camera": {
+    "up": "+Z",
+    "front_at_zero": "-Y",
+    "front_yaw_degrees": 90.0,
+    "views": {
+      "front": 0.0,
+      "three-quarter": -35.0,
+      "profile": -90.0
+    },
+    "resolution": 1024
+  },
+  "limitations": [
+    "Counts are imported base topology per object instance; modifiers and rigs are not applied.",
+    "Position coincidence is a quantized analysis graph, not a geometry edit or proof of semantic parts.",
+    "Objects are analyzed independently; touching parts may coincide and separate surfaces may intersect.",
+    "Component colors show coincidence connectivity, not automatically identified head/hair/eyes.",
+    "Quad percentage alone does not establish eyelid/mouth loops, deformation quality, or mobile readiness.",
+    "GLB triangle topology cannot certify native FBX quads; compare the actual FBX import.",
+    "UV counts do not prove absence of overlap or acceptable distortion/texel density."
+  ],
+  "source_hash_verified_unchanged": true,
+  "renders": [
+    {
+      "path": "neutral-front.png",
+      "sha256": "60ed0e8f2f9788c848803aa9bf07d625b419be12a356cd0f1e5bd4f4f4f3e5dc",
+      "mode": "neutral",
+      "view": "front"
+    },
+    {
+      "path": "neutral-three-quarter.png",
+      "sha256": "619fbef67dadf6fc7803b8fcb326e3685bc6d811e5074cdac92f5d15831071d8",
+      "mode": "neutral",
+      "view": "three-quarter"
+    },
+    {
+      "path": "neutral-profile.png",
+      "sha256": "1bdbe121cc4d258bbbb885b42a6492e57ae29c710f3971bf823b95d9e160a05c",
+      "mode": "neutral",
+      "view": "profile"
+    },
+    {
+      "path": "clay-front.png",
+      "sha256": "cc5fc8caa425346fc65dcc42cd4a11a815af7d29a4afcbb942348bb4d42d30e9",
+      "mode": "clay",
+      "view": "front"
+    },
+    {
+      "path": "clay-three-quarter.png",
+      "sha256": "1dfdf28f0c15ed9bc38ece7cf857b1041d6afe04b4c18f5ee21c448b647ea434",
+      "mode": "clay",
+      "view": "three-quarter"
+    },
+    {
+      "path": "clay-profile.png",
+      "sha256": "337f12e23339e484a72c87101bd68745c6bde89449841f28646eabfeafd86031",
+      "mode": "clay",
+      "view": "profile"
+    },
+    {
+      "path": "components-front.png",
+      "sha256": "1d6941b15fc5f9e51758c8ce96e73d23019b68ec9c851a5a07ad33dbc03cc485",
+      "mode": "components",
+      "view": "front"
+    },
+    {
+      "path": "components-three-quarter.png",
+      "sha256": "1b34b9034fd6bfda0b1af90dad994058ad98055370c47f4061b20cdb6f6b0ddd",
+      "mode": "components",
+      "view": "three-quarter"
+    },
+    {
+      "path": "components-profile.png",
+      "sha256": "b17e1d4d70e515797c039b0efd87cd579ac495c58adff4aa593874997c412564",
+      "mode": "components",
+      "view": "profile"
+    }
+  ],
+  "previous_camera_settings": [
+    {
+      "up": "+Z",
+      "front_at_zero": "-Y",
+      "front_yaw_degrees": 0,
+      "views": {
+        "front": 0.0,
+        "three-quarter": -35.0,
+        "profile": -90.0
+      },
+      "resolution": 1024
+    }
+  ]
+}

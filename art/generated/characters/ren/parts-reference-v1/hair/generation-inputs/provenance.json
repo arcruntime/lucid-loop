@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-13T08:09:17.936426+00:00",
+  "status": "STANDALONE_PLATES_PENDING_ROOT_REVIEW",
+  "generator": "built-in image_gen.imagegen",
+  "fallback_cli_used": false,
+  "use_case": "precise-object-edit",
+  "input": {
+    "path": "art/generated/characters/ren/parts-reference-v1/hair/hair-three-view-v2.png",
+    "sha256": "69c7d36ef6f43e988795368b7c3545e83ee65ed18101cdf5ddd49f9780bc796d",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGB",
+    "bytes": 1711515,
+    "role": "exact accepted three-view edit target; one view selected per call"
+  },
+  "operations": "Three independent built-in imagegen edits; original output bytes copied without cropping, scaling or post-processing.",
+  "outputs": [
+    {
+      "view": "front",
+      "output": {
+        "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-front-v2.png",
+        "sha256": "209c89450a27c2b4f3236104e04ada09416c9b3a97d9fd346ebff957d15b2d8d",
+        "width": 1122,
+        "height": 1402,
+        "mode": "RGB",
+        "bytes": 1634164
+      },
+      "prompt": {
+        "path": "art/generated/characters/ren/parts-reference-v1/hair/prompts/hair-front-v2.txt",
+        "sha256": "ee8fdd1a3b530e15261a6219148bb724fb07f3660e242e7c172d4f107d134b6f"
+      },
+      "original_generated_path": "C:\\Users\\jetha\\.codex\\generated_images\\01a099c1-4a3c-7e73-97ca-a768a671fd15\\exec-d2fb944c-cc4a-4d61-a5cf-000aa2d9eb05.png",
+      "source_sha256": "209c89450a27c2b4f3236104e04ada09416c9b3a97d9fd346ebff957d15b2d8d",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "view": "right",
+      "output": {
+        "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-right-v2.png",
+        "sha256": "b16f3297d515779164553b471a9089699e94a0d7ded1cce93c500fa1629687f2",
+        "width": 1122,
+        "height": 1402,
+        "mode": "RGB",
+        "bytes": 1645700
+      },
+      "prompt": {
+        "path": "art/generated/characters/ren/parts-reference-v1/hair/prompts/hair-right-v2.txt",
+        "sha256": "7fbb629c585aebe9c98d589bb02106e777df8a1bd63fd43b0059b8b5ca284cc3"
+      },
+      "original_generated_path": "C:\\Users\\jetha\\.codex\\generated_images\\01a099c1-4a3c-7e73-97ca-a768a671fd15\\exec-ef1bbba9-bb7b-4cc1-b791-01aba16f3af7.png",
+      "source_sha256": "b16f3297d515779164553b471a9089699e94a0d7ded1cce93c500fa1629687f2",
+      "copied_without_pixel_changes": true
+    },
+    {
+      "view": "back",
+      "output": {
+        "path": "art/generated/characters/ren/parts-reference-v1/hair/generation-inputs/hair-back-v2.png",
+        "sha256": "1b257de5f17334d51ce492f098da6a328a1ce5c0d130a41fd4aa1a1d704f8c48",
+        "width": 1122,
+        "height": 1402,
+        "mode": "RGB",
+        "bytes": 1584640
+      },
+      "prompt": {
+        "path": "art/generated/characters/ren/parts-reference-v1/hair/prompts/hair-back-v2.txt",
+        "sha256": "18a4102cbdc14a2c70751555c741f9d96e9edf40348659bd59af28a1cdbe7a4b"
+      },
+      "original_generated_path": "C:\\Users\\jetha\\.codex\\generated_images\\01a099c1-4a3c-7e73-97ca-a768a671fd15\\exec-32fca200-0b92-4ab2-bfa4-69b5b4362dc8.png",
+      "source_sha256": "1b257de5f17334d51ce492f098da6a328a1ce5c0d130a41fd4aa1a1d704f8c48",
+      "copied_without_pixel_changes": true
+    }
+  ],
+  "review": {
+    "passes": [
+      "Front, screen-right profile and back orientations match corresponding V2 panels",
+      "Large and medium locks and pale blond anime painted surfaces retained",
+      "No text, borders, extra views, skin, mannequin or accessories",
+      "Complete hair silhouettes are visible with margins"
+    ],
+    "caveats": [
+      "Generative isolation retains the design visually but is not a pixel crop or a mathematically registered projection",
+      "The few accepted V2 outer wisps remain; no further cleanup was requested for these plates",
+      "Uncapped rear view remains inferred from the original capped rear drawing and cap-off front design"
+    ],
+    "next_action": "Root reviews all three plates before 3D submission. No paid 3D jobs performed by this task."
+  }
+}

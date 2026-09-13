@@ -1,0 +1,23 @@
+[
+  "C:\\Program Files\\Blender Foundation\\Blender 5.1\\blender.exe",
+  "--background",
+  "--factory-startup",
+  "--offline-mode",
+  "--threads",
+  "8",
+  "--python-exit-code",
+  "1",
+  "--python",
+  "B:\\lucid-loop\\tools\\character_art\\audit_ren_parts.py",
+  "--",
+  "--source",
+  "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\tripo\\studio-h3.1-closed-rest\\ren-tripo-studio-h3.1-closed-rest-original-8k.glb",
+  "--id",
+  "tripo-h31-closed-baseline",
+  "--phase",
+  "render",
+  "--resolution",
+  "1024",
+  "--front-yaw",
+  "0"
+]

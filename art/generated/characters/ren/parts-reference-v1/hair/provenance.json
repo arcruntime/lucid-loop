@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-13T07:56:19.845204+00:00",
+  "status": "FIRST_SHEET_PENDING_ROOT_REVIEW",
+  "generator": "built-in image_gen.imagegen",
+  "fallback_cli_used": false,
+  "use_case": "stylized-concept",
+  "prompt": {
+    "path": "art/generated/characters/ren/parts-reference-v1/hair/prompts/hair-three-view-v1.txt",
+    "sha256": "dd72d451a028560915a11e41356a5220f2abbbf6dd2a01d7f9349080444ac406"
+  },
+  "inputs": [
+    {
+      "path": "art/characters/ren-model-sheet.png",
+      "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "bytes": 2426678,
+      "role": "authoritative original artist design; cap-off casual view for crown"
+    },
+    {
+      "path": "art/generated/characters/ren/head-reference-sheets-v1/00-closed-rest-v2.png",
+      "sha256": "68cd0e3a8bf706814d47e54a340061efe5161716ae526d49777a216d93577c42",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "bytes": 2037272,
+      "role": "supporting cap-off hair volume; no skin, face or accessories transferred"
+    }
+  ],
+  "output": {
+    "path": "art/generated/characters/ren/parts-reference-v1/hair/hair-three-view-v1.png",
+    "sha256": "3f1f87917a390a34fe9d0790a4bb12e374f6c4b9e6088daa70ab971ea1cf888e",
+    "width": 1774,
+    "height": 887,
+    "mode": "RGB",
+    "bytes": 2056414
+  },
+  "original_generated_path": "C:\\Users\\jetha\\.codex\\generated_images\\01a099c1-4a3c-7e73-97ca-a768a671fd15\\exec-cc2d14a6-b477-4975-a9a6-a38a2ef6430e.png",
+  "source_sha256": "3f1f87917a390a34fe9d0790a4bb12e374f6c4b9e6088daa70ab971ea1cf888e",
+  "copied_without_pixel_changes": true,
+  "review": {
+    "views": [
+      "front",
+      "profile facing screen-right",
+      "back"
+    ],
+    "passes": [
+      "Exactly three labeled views; full hair silhouette visible",
+      "No skin, mannequin, face, ears, neck, shoulders, cap, jewelry or support",
+      "Pale blond layered shag/bob identity and cap-off part retained",
+      "Larger coherent layered locks dominate the major volumes",
+      "Anime illustration shading retained rather than photoreal hair"
+    ],
+    "caveats": [
+      "Several thin flyaway strands remain despite the request to keep them sparse; geometry plates should simplify those before generation",
+      "Uncapped back view is inferred; original design only gives a small capped rear view",
+      "Profile is visually side-facing but drawn views are not a registered 3D reconstruction and cross-view correspondence is not guaranteed",
+      "The supporting generated head sheet contributes a somewhat fuller, more polished hair silhouette than the small original cap-off view; root must approve likeness before geometry use"
+    ],
+    "next_action": "Root reviews this first sheet before standalone image generation plates. No paid 3D generation submitted."
+  }
+}

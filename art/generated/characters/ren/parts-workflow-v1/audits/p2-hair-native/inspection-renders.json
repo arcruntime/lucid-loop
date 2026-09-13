@@ -1,0 +1,42 @@
+[
+  {
+    "path": "inspection-yaw-90.png",
+    "yaw_degrees": -90,
+    "elevation_degrees": 0,
+    "sha256": "5e08e63767c11e976ef744c260544963585bf55a7cfd56eca72cccd40db1622a",
+    "pass": "clay",
+    "source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9"
+  },
+  {
+    "path": "inspection-yaw90.png",
+    "yaw_degrees": 90,
+    "elevation_degrees": 0,
+    "sha256": "3cc059906f49e6a0cca043e88d390db485391349b8c278ed6b6342f8887648fe",
+    "pass": "clay",
+    "source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9"
+  },
+  {
+    "path": "inspection-yaw180.png",
+    "yaw_degrees": 180,
+    "elevation_degrees": 0,
+    "sha256": "59e17b63a70334d2d1a8bc8cf1e6f5cc2b76007b286e38bc597f64287354de41",
+    "pass": "clay",
+    "source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9"
+  },
+  {
+    "path": "inspection-underside.png",
+    "yaw_degrees": -90,
+    "elevation_degrees": -72,
+    "sha256": "123f2a1afeeed6b07a6b52249ff512926c8f18524b3466a86af353520cdad4c6",
+    "pass": "clay",
+    "source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9"
+  },
+  {
+    "path": "inspection-front-underside.png",
+    "yaw_degrees": 90,
+    "elevation_degrees": -55,
+    "sha256": "5b984fd1ac41bd5c1d7ff9f49bfa5b7cbcfcbdf5ae2f7b63d42c10a3d4495b88",
+    "pass": "clay",
+    "source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9"
+  }
+]

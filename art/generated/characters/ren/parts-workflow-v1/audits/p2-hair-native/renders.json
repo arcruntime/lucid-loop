@@ -1,0 +1,56 @@
+[
+  {
+    "path": "neutral-front.png",
+    "sha256": "60ed0e8f2f9788c848803aa9bf07d625b419be12a356cd0f1e5bd4f4f4f3e5dc",
+    "mode": "neutral",
+    "view": "front"
+  },
+  {
+    "path": "neutral-three-quarter.png",
+    "sha256": "619fbef67dadf6fc7803b8fcb326e3685bc6d811e5074cdac92f5d15831071d8",
+    "mode": "neutral",
+    "view": "three-quarter"
+  },
+  {
+    "path": "neutral-profile.png",
+    "sha256": "1bdbe121cc4d258bbbb885b42a6492e57ae29c710f3971bf823b95d9e160a05c",
+    "mode": "neutral",
+    "view": "profile"
+  },
+  {
+    "path": "clay-front.png",
+    "sha256": "cc5fc8caa425346fc65dcc42cd4a11a815af7d29a4afcbb942348bb4d42d30e9",
+    "mode": "clay",
+    "view": "front"
+  },
+  {
+    "path": "clay-three-quarter.png",
+    "sha256": "1dfdf28f0c15ed9bc38ece7cf857b1041d6afe04b4c18f5ee21c448b647ea434",
+    "mode": "clay",
+    "view": "three-quarter"
+  },
+  {
+    "path": "clay-profile.png",
+    "sha256": "337f12e23339e484a72c87101bd68745c6bde89449841f28646eabfeafd86031",
+    "mode": "clay",
+    "view": "profile"
+  },
+  {
+    "path": "components-front.png",
+    "sha256": "1d6941b15fc5f9e51758c8ce96e73d23019b68ec9c851a5a07ad33dbc03cc485",
+    "mode": "components",
+    "view": "front"
+  },
+  {
+    "path": "components-three-quarter.png",
+    "sha256": "1b34b9034fd6bfda0b1af90dad994058ad98055370c47f4061b20cdb6f6b0ddd",
+    "mode": "components",
+    "view": "three-quarter"
+  },
+  {
+    "path": "components-profile.png",
+    "sha256": "b17e1d4d70e515797c039b0efd87cd579ac495c58adff4aa593874997c412564",
+    "mode": "components",
+    "view": "profile"
+  }
+]

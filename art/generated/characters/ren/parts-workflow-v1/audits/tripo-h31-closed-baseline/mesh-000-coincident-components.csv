@@ -1,0 +1,2 @@
+rank,graph_id,vertices,faces,triangles,min_x,min_y,min_z,max_x,max_y,max_z,material_face_counts
+0,0,988591,1859218,1859218,-0.399688720703125,-0.385284423828125,0.0,0.399688720703125,0.385284423828125,0.98046875,"{""0"": 1859218}"

@@ -1,0 +1,29 @@
+{
+  "source_sha256": "9f8c2cb79c763bb048b4c0b62c058e2357802e86012badf0ce0a15f240a083c9",
+  "source_verified_unchanged": true,
+  "same_vertex_set_duplicate_face_groups": 0,
+  "same_vertex_set_duplicate_extra_faces": 0,
+  "duplicate_extras_with_different_uv_mapping": 0,
+  "faces_with_repeated_vertex_corners": 0,
+  "imported_edge_face_incidence_histogram": {
+    "1": 4298,
+    "2": 48137,
+    "3": 1433,
+    "4": 384,
+    "5": 123,
+    "6": 36,
+    "7": 18,
+    "8": 13,
+    "9": 6
+  },
+  "obj_native_face_sizes_verified": {
+    "3": 5414,
+    "4": 22820
+  },
+  "obj_vertices": 26361,
+  "glb_triangles_verified": 51054,
+  "front_camera_yaw_degrees_verified": 90,
+  "render_hashes_verified": 14,
+  "derivative_hashes_verified": 3,
+  "note": "Duplicate detection compares unordered vertex sets, not an intersection test. No faces were removed or repaired."
+}

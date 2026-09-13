@@ -1,0 +1,12 @@
+Use case: precise-object-edit.
+Asset type: standalone geometry-generation image input for a separate anime game-character hair mesh.
+
+Input image role: the provided Ren hair V2 three-view sheet is the EXACT EDIT TARGET and accepted hairstyle reference. Use ONLY the LEFT view, labeled FRONT. Isolate that exact front-facing hair object; do not rotate it.
+
+Create ONE high-resolution standalone portrait image, aspect ratio 4:5, of this one isolated hair object. Faithfully isolate and redraw this exact selected view at full output resolution; the requested edit is removal of the two other views and all text, with a clean centered layout. Do not redesign the hair. Keep its exact pale ash-blond color, slightly lowered crown, off-center part, asymmetric fringe, short messy shag/bob length, silhouette, and arrangement of broad/medium overlapping locks. Preserve the clean tapered clump construction and matte anime painted light/shadow planes from V2. Preserve the existing limited flyaway locks, but do not add any thin strands, fine nested loops, noisy hair fibers or extra spikes.
+
+Center the full selected hair silhouette alone with even comfortable margins and nothing clipped. It should occupy about 80 percent of the image height. Keep the same very light cool-neutral background, flat neutral illumination, and color values as the source. The empty interior remains background where visible, exactly as in the selected view.
+
+No other view, split layout, border, label, text, number, annotation, watermark or reference thumbnail. No head, skin, scalp, face, eyes, ears, neck, shoulders, mannequin, stand, cap, jewelry, headphones or support. Do not introduce a gray or skin-colored surface into the hair's empty opening.
+
+This is a faithful single-view isolation from the accepted three-view design for later multi-view geometry generation. Preserve correspondence with that source rather than inventing new details. Return the highest quality full-resolution portrait image available.

@@ -1,0 +1,18 @@
+[
+  {
+    "run": "verification-native-fbx",
+    "passed": true,
+    "source_sha256": "3aab32a3a50ad25c44078b0be4859a2c23e7c8aebc4c4ea293166fb1cf6a8c88"
+  },
+  {
+    "run": "verification-triangle-glb",
+    "passed": true,
+    "source_sha256": "e5f4a8cd1fc1bfc51d500e9b01de9b89d43f651554dc01640256319c3debdac5"
+  },
+  {
+    "run": "tripo-h31-closed-baseline",
+    "passed": true,
+    "nine_render_hashes_valid": true,
+    "source_sha256": "4743a85883df56b2adcca72ed9f429eb537d92b93eff28eb2495966e95a39f0a"
+  }
+]

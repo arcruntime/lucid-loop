@@ -1,0 +1,103 @@
+{
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-generation-v1\\tripo\\head\\originals\\model.fbx",
+  "source_sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+  "source_bytes": 562124,
+  "blender_version": "5.1.1",
+  "format": ".fbx",
+  "objects": [
+    {
+      "index": 0,
+      "object": "tripo_node_91cffa7c",
+      "mesh_datablock": "tripo_mesh_91cffa7c",
+      "array_file": "analysis-data/mesh-000.npz",
+      "vertices": 10242,
+      "edges": 20333,
+      "faces": 10147,
+      "triangles": 19152,
+      "face_types": {
+        "3": 1142,
+        "4": 9005
+      },
+      "bounds_world": {
+        "min": [
+          -0.368896484375,
+          -0.329833982507448,
+          -0.49975585942835865
+        ],
+        "max": [
+          0.368896484375,
+          0.3298339867121079,
+          0.49975585934298483
+        ],
+        "center": [
+          0.0,
+          2.1023299490163794e-09,
+          -4.268690956266141e-11
+        ]
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "tripo_mat_91cffa7c"
+      ],
+      "uv_layers": [
+        {
+          "name": "tripo_91cffa7c_85c1_4bd0_a680_5d60ac518631_NewUVMap",
+          "array": "uv_0"
+        }
+      ],
+      "shape_keys": [],
+      "modifiers": []
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_mat_91cffa7c",
+      "uses_nodes": true,
+      "images": []
+    }
+  ],
+  "bounds_world": {
+    "min": [
+      -0.368896484375,
+      -0.329833982507448,
+      -0.49975585942835865
+    ],
+    "max": [
+      0.368896484375,
+      0.3298339867121079,
+      0.49975585934298483
+    ],
+    "center": [
+      0.0,
+      2.1023299490163794e-09,
+      -4.268690956266141e-11
+    ]
+  },
+  "vertex_policy": "Unmodified imported base mesh; modifiers not applied",
+  "glb_note": "GLB triangle primitives and seam-duplicated vertices do not prove the provider's native FBX topology."
+}

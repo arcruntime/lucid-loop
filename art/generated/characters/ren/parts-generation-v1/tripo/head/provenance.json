@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "part": "head",
+  "created_utc": "2026-09-13T08:25:01.726267Z",
+  "updated_utc": "2026-09-13T08:26:49.460126Z",
+  "status": "COMPLETE",
+  "task_id": "91cffa7c-85c1-4bd0-a680-5d60ac518631",
+  "source_review_note": "Root inspected both full-resolution standalone plates on 2026-09-13 against cleaned closed-rest sheet and original artist: hair-free head/short neck, elongated half-lidded eyes, tapered chin and substantial rose lips retained; front and screen-right profile have a restrained open speaking aperture with upper tooth strip. Oral opening/depth and cross-view fit remain geometry review items. Construction-input approval only, not final likeness or animation approval.",
+  "sources": [
+    {
+      "view": "front",
+      "path": "art/generated/characters/ren/parts-reference-v1/head-front-open-a.png",
+      "sha256": "acbab9627304ebc5557602d5f5c46f358db962f2c57b5fdbb56580cfa1178dff",
+      "bytes": 1337856,
+      "width": 1122,
+      "height": 1402
+    },
+    {
+      "view": "right",
+      "path": "art/generated/characters/ren/parts-reference-v1/head-right-open-a.png",
+      "sha256": "84c89defe4d541ccea4cb89b463809db5ff810eb53fd4507c7fee36564bd8768",
+      "bytes": 1155137,
+      "width": 1122,
+      "height": 1402
+    }
+  ],
+  "requested_settings": {
+    "model": "P2-20260801",
+    "quad": true,
+    "face_limit": 10000,
+    "texture": false,
+    "pbr": false,
+    "export_uv": true,
+    "model_seed": 20260913
+  },
+  "fingerprint": "bbaddab1cbbea95ec7738f014c71f970947c1404836c3ace9c69d62b2487e596",
+  "intent_sha256": "2c2f5795009531319123fa126f07b9a6a56c0ecc7d32f9b7f7e4587ddfc03ba1",
+  "credits_consumed": 100,
+  "returned_model_identity": {},
+  "downloads": [
+    {
+      "file": "originals/model.fbx",
+      "sha256": "cbb8f2da55edf79d138eafadf1609a89b15792f74937160244f2bd527fda1819",
+      "bytes": 562124,
+      "native_provider_bytes": true
+    },
+    {
+      "file": "originals/preview.png",
+      "sha256": "2e1c5f82ef2941db92b3929865975c12fa75cc328e310d01e22e33f259d5d861",
+      "bytes": 73164,
+      "native_provider_bytes": true
+    },
+    {
+      "file": "originals/rendered_image.webp",
+      "sha256": "2e1c5f82ef2941db92b3929865975c12fa75cc328e310d01e22e33f259d5d861",
+      "bytes": 73164,
+      "native_provider_bytes": true
+    }
+  ],
+  "cli_exit_code": 0,
+  "preflight": {
+    "checked_utc": "2026-09-13T08:25:20.560903Z",
+    "cli_version": "0.4.0",
+    "doctor_exit_code": 0,
+    "doctor": {
+      "ok": true,
+      "checks": [
+        {
+          "name": "node",
+          "ok": true,
+          "detail": "v24.15.0 (need >= 20)",
+          "critical": true
+        },
+        {
+          "name": "api key",
+          "ok": true,
+          "detail": "from env:TRIPO_API_KEY",
+          "critical": true
+        },
+        {
+          "name": "api reachability",
+          "ok": true,
+          "detail": "https://openapi.tripo3d.ai (region ov) · balance 2500",
+          "critical": true
+        },
+        {
+          "name": "balance",
+          "ok": true,
+          "detail": "2500 credits (0 frozen)",
+          "critical": false
+        },
+        {
+          "name": "llm (tripo ai conversation mode)",
+          "ok": true,
+          "detail": "not configured — wizard mode only (this is fine)",
+          "critical": false
+        },
+        {
+          "name": "terminal",
+          "ok": true,
+          "detail": "non-TTY (headless mode)",
+          "critical": false
+        },
+        {
+          "name": "language",
+          "ok": true,
+          "detail": "auto",
+          "critical": false
+        }
+      ]
+    },
+    "api_balance": {
+      "balance": 2500.0,
+      "frozen": 0.0
+    }
+  },
+  "native_quad_container": "FBX",
+  "provider_status": "success",
+  "model_identity_note": "Requested P2 version and any returned top-level model fields are distinct; absent returned fields do not verify a served model.",
+  "transport_note": "One non-retrying urllib generation POST per immutable intent. Official CLI performs checks and task watch/download only.",
+  "inspection_pending": "Inspect native polygon sizes, UV layers, eyelids, lips and mouth interior in Blender. No animation-readiness claim."
+}

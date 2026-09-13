@@ -1,0 +1,96 @@
+{
+    "unityVersion": "6000.3.24f1",
+    "manifest": "Assets/CharacterArt/Generated/RenPartsStudy/RenPartsStudyManifest.json",
+    "placementReviewNote": "Root reviewed Blender placement-v2 front/profile on 2026-09-13 and authorized this rigid placement for RAW CONSTRUCTION STUDY ONLY. Not final likeness, neutral-face, hair, or animation acceptance. Original head geometry unchanged; hair Blender translation(-0.09,0,0.22), uniform scale1, no rotation. Crossbars/wisps, raised brows and filled eyes remain deliberately visible audit defects.",
+    "coordinateMapping": "Measured native Unity = (-BlenderX, BlenderZ, -BlenderY), unit scale1, vertex error <8e-8. Imported FBX root rotation X=-90deg retained with added Y=+90deg. Viewer-frame Unity = (-BlenderY, BlenderZ, BlenderX); head absolute Euler(-90,90,0), position0; hair absolute Euler(-90,90,0), position(0,0.22,-0.09).",
+    "status": "Untextured construction geometry with a generated open mouth. Neither a neutral face nor working facial controls. Unity imported topology counts do not certify the native FBX author's topology.",
+    "framing": "The placed head-and-hair union determines one normalization transform shared identically by head-only and assembled views. Hair is included in the common frame without changing the relative head scale or position between views. Existing comparison sources retain their original review normalization.",
+    "materials": "New parts use uniform clay materials and imported geometry normals. Base color/unlit is a silhouette diagnostic; Neutral lighting is diffuse clay; Nightclub lighting is the same clay under colored lights. No source textures, normal maps, or generated PBR maps are bound to the new parts.",
+    "lighting": "Neutral front-facing directional key: Euler(25,155,0), intensity0.9; per-stage white point fill1.5 and cool rim0.6. Club front-facing cool key: Euler(20,165,0), intensity0.55; magenta point1 and cyan point1.4. Head clay RGBA(0.52,0.55,0.60,1), hair(0.32,0.35,0.40,1). Diffuse-only, no shadow casting, no HDR or postprocessing.",
+    "normalizationScale": 1.353000521659851,
+    "normalizationOffset": {
+        "x": 0.0,
+        "y": 0.6761699318885803,
+        "z": 0.12177009135484696
+    },
+    "placedHeadBounds": {
+        "x": 0.65966796875,
+        "y": 0.99951171875,
+        "z": 0.73779296875
+    },
+    "placedAssemblyBounds": {
+        "x": 0.89697265625,
+        "y": 1.2195117473602296,
+        "z": 0.96337890625
+    },
+    "parts": [
+        {
+            "role": "head",
+            "asset": "Assets/CharacterArt/Generated/RenPartsStudy/Sources/RenPartsStudy-Head.fbx",
+            "modelLabel": "P2-20260801 / native FBX",
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "localEulerAngles": {
+                "x": -90.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "vertices": 15425,
+            "triangles": 19152,
+            "quads": 0,
+            "blendShapes": 0
+        },
+        {
+            "role": "hair",
+            "asset": "Assets/CharacterArt/Generated/RenPartsStudy/Sources/RenPartsStudy-Hair.fbx",
+            "modelLabel": "P2-20260801 / native FBX",
+            "localPosition": {
+                "x": 0.0,
+                "y": 0.2199999988079071,
+                "z": -0.09000000357627869
+            },
+            "localEulerAngles": {
+                "x": -90.0,
+                "y": 90.0,
+                "z": 0.0
+            },
+            "localScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "vertices": 55682,
+            "triangles": 51054,
+            "quads": 0,
+            "blendShapes": 0
+        }
+    ],
+    "renders": [
+        "parts-head-open-source--clay-unlit--front.png",
+        "parts-head-open-source--clay-unlit--three-quarter.png",
+        "parts-head-open-source--clay-unlit--profile.png",
+        "parts-head-open-source--clay-neutral--front.png",
+        "parts-head-open-source--clay-neutral--three-quarter.png",
+        "parts-head-open-source--clay-neutral--profile.png",
+        "parts-head-open-source--clay-club--front.png",
+        "parts-head-open-source--clay-club--three-quarter.png",
+        "parts-head-open-source--clay-club--profile.png",
+        "parts-assembled-open-source--clay-unlit--front.png",
+        "parts-assembled-open-source--clay-unlit--three-quarter.png",
+        "parts-assembled-open-source--clay-unlit--profile.png",
+        "parts-assembled-open-source--clay-neutral--front.png",
+        "parts-assembled-open-source--clay-neutral--three-quarter.png",
+        "parts-assembled-open-source--clay-neutral--profile.png",
+        "parts-assembled-open-source--clay-club--front.png",
+        "parts-assembled-open-source--clay-club--three-quarter.png",
+        "parts-assembled-open-source--clay-club--profile.png"
+    ]
+}

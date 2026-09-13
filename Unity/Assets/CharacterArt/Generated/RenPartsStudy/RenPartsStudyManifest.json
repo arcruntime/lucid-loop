@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "placementReviewed": true,
+  "placementReviewNote": "Root reviewed Blender placement-v2 front/profile on 2026-09-13 and authorized this rigid placement for RAW CONSTRUCTION STUDY ONLY. Not final likeness, neutral-face, hair, or animation acceptance. Original head geometry unchanged; hair Blender translation(-0.09,0,0.22), uniform scale1, no rotation. Crossbars/wisps, raised brows and filled eyes remain deliberately visible audit defects.",
+  "coordinateMapping": "Measured native Unity = (-BlenderX, BlenderZ, -BlenderY), unit scale1, vertex error <8e-8. Imported FBX root rotation X=-90deg retained with added Y=+90deg. Viewer-frame Unity = (-BlenderY, BlenderZ, BlenderX); head absolute Euler(-90,90,0), position0; hair absolute Euler(-90,90,0), position(0,0.22,-0.09).",
+  "originalArtistAsset": "Assets/CharacterArt/Generated/BustComparison/References/ren-model-sheet.png",
+  "head": {
+    "fbxAsset": "Assets/CharacterArt/Generated/RenPartsStudy/Sources/RenPartsStudy-Head.fbx",
+    "modelLabel": "P2-20260801 / native FBX",
+    "notes": "Raised brows, filled eyes and native oral geometry remain visible defects; not a neutral face.",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "eulerAngles": {
+      "x": -90,
+      "y": 90,
+      "z": 0
+    },
+    "scale": {
+      "x": 1,
+      "y": 1,
+      "z": 1
+    }
+  },
+  "hair": {
+    "fbxAsset": "Assets/CharacterArt/Generated/RenPartsStudy/Sources/RenPartsStudy-Hair.fbx",
+    "modelLabel": "P2-20260801 / native FBX",
+    "notes": "Native crossbars, wisps and overlaps remain visible; rigid placement approved only for construction review.",
+    "position": {
+      "x": 0,
+      "y": 0.22,
+      "z": -0.09
+    },
+    "eulerAngles": {
+      "x": -90,
+      "y": 90,
+      "z": 0
+    },
+    "scale": {
+      "x": 1,
+      "y": 1,
+      "z": 1
+    }
+  },
+  "additionalReferences": [
+    {
+      "label": "Generation input / closed front",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/closed-rest-front-v2.png"
+    },
+    {
+      "label": "Generation input / closed profile",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/closed-rest-profile.png"
+    },
+    {
+      "label": "Generation input / A front",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/vowel-a-front.png"
+    },
+    {
+      "label": "Generation input / A profile",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/vowel-a-profile.png"
+    },
+    {
+      "label": "Closed rest",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/00-closed-rest-v2.png"
+    },
+    {
+      "label": "Neutral",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/01-neutral.png"
+    },
+    {
+      "label": "Amused",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/02-amused-v2.png"
+    },
+    {
+      "label": "Skeptical",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/03-skeptical.png"
+    },
+    {
+      "label": "Focused",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/04-focused.png"
+    },
+    {
+      "label": "Alert",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/05-alert.png"
+    },
+    {
+      "label": "Guarded",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/06-guarded.png"
+    },
+    {
+      "label": "Blink",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/07-blink.png"
+    },
+    {
+      "label": "A",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/08-vowel-a.png"
+    },
+    {
+      "label": "I",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/09-vowel-i.png"
+    },
+    {
+      "label": "U",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/10-vowel-u-v2.png"
+    },
+    {
+      "label": "E",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/11-vowel-e.png"
+    },
+    {
+      "label": "O",
+      "textureAsset": "Assets/CharacterArt/Generated/BustComparison/References/12-vowel-o.png"
+    },
+    {
+      "label": "New head generation / open A front",
+      "textureAsset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Head-Front-OpenA.png"
+    },
+    {
+      "label": "New head generation / open A right",
+      "textureAsset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Head-Right-OpenA.png"
+    },
+    {
+      "label": "Separate hair reference / three views",
+      "textureAsset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Hair-ThreeViews.png"
+    },
+    {
+      "label": "Hair generation / front",
+      "textureAsset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Hair-Front.png"
+    },
+    {
+      "label": "Hair generation / right",
+      "textureAsset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Hair-Right.png"
+    },
+    {
+      "label": "Hair generation / back",
+      "textureAsset": "Assets/CharacterArt/Generated/RenPartsStudy/References/RenPartsStudy-Hair-Back.png"
+    }
+  ],
+  "existingCandidateIds": []
+}

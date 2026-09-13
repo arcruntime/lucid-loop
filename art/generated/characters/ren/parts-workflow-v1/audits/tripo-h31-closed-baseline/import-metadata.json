@@ -1,0 +1,133 @@
+{
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\bust-comparison-v1\\tripo\\studio-h3.1-closed-rest\\ren-tripo-studio-h3.1-closed-rest-original-8k.glb",
+  "source_sha256": "4743a85883df56b2adcca72ed9f429eb537d92b93eff28eb2495966e95a39f0a",
+  "source_bytes": 56769408,
+  "blender_version": "5.1.1",
+  "format": ".glb",
+  "objects": [
+    {
+      "index": 0,
+      "object": "tripo_node_5e31d589-61b1-4f73-8956-7487823ff534",
+      "mesh_datablock": "meshes[0]",
+      "array_file": "analysis-data/mesh-000.npz",
+      "vertices": 988591,
+      "edges": 2846691,
+      "faces": 1859218,
+      "triangles": 1859218,
+      "face_types": {
+        "3": 1859218
+      },
+      "bounds_world": {
+        "min": [
+          -0.399688720703125,
+          -0.385284423828125,
+          0.0
+        ],
+        "max": [
+          0.399688720703125,
+          0.385284423828125,
+          0.98046875
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.490234375
+        ]
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "materials": [
+        "tripo_material_5e31d589-61b1-4f73-8956-7487823ff534"
+      ],
+      "uv_layers": [
+        {
+          "name": "UVMap",
+          "array": "uv_0"
+        }
+      ],
+      "shape_keys": [],
+      "modifiers": []
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_material_5e31d589-61b1-4f73-8956-7487823ff534",
+      "uses_nodes": true,
+      "images": [
+        {
+          "image": "ren-tripo-studio-h3.1-closed-rest-original-8k_basecolor.jpg",
+          "size": [
+            8192,
+            8192
+          ],
+          "packed": true,
+          "filepath": "",
+          "color_space": "sRGB"
+        },
+        {
+          "image": "ren-tripo-studio-h3.1-closed-rest-original-8k_rm.jpg",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true,
+          "filepath": "",
+          "color_space": "Non-Color"
+        },
+        {
+          "image": "ren-tripo-studio-h3.1-closed-rest-original-8k_normal.jpg",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true,
+          "filepath": "",
+          "color_space": "Non-Color"
+        }
+      ]
+    }
+  ],
+  "bounds_world": {
+    "min": [
+      -0.399688720703125,
+      -0.385284423828125,
+      0.0
+    ],
+    "max": [
+      0.399688720703125,
+      0.385284423828125,
+      0.98046875
+    ],
+    "center": [
+      0.0,
+      0.0,
+      0.490234375
+    ]
+  },
+  "vertex_policy": "Unmodified imported base mesh; modifiers not applied",
+  "glb_note": "GLB triangle primitives and seam-duplicated vertices do not prove the provider's native FBX topology."
+}

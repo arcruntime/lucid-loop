@@ -57,9 +57,26 @@ The checked-in Unity scene is ready to open without rebuilding it.
 
 See the [comparison results and provenance](art/generated/characters/ren/bust-comparison-v1/README.md)
 and [visual recommendation](art/generated/characters/ren/bust-comparison-v1/REVIEW.md).
-Tripo H closed rest is the current preferred construction base. Eye assemblies,
-speech blendshapes, and final painted materials are the next Ren milestone;
-additional Tripo H/P2 results await export.
+Tripo H closed rest is the preferred construction reference among these whole
+busts. Three older Studio H/P2 busts still await export. The separate-parts
+experiment below uses newly generated API assets and has its own review.
+
+## Launch the Ren parts study
+
+Open **`Assets/CharacterArt/Generated/Preview/Scenes/RenPartsStudy.unity`** in the
+same Unity project, press **Play**, and use **16:9** in the Game view. Run
+`git lfs pull` first on a fresh checkout. The scene opens with the original artist
+reference, a head-only view, and the same head with separately placed hair.
+Orbit, zoom, reference selection and lighting controls work as in the bust viewer.
+
+These are **untextured P2 construction sources**: the head has an open mouth, and
+the viewer exposes unfinished eyes, raised brows, mouth interior and hair defects.
+It does not yet demonstrate Ren's finished face, blinking or speech. Both source
+FBXs and their paid task receipts are preserved; the two jobs cost **200 credits**.
+
+See [the parts checkpoint and next work](art/generated/characters/ren/parts-workflow-v1/README.md),
+[actual Unity captures](art/generated/characters/ren/parts-workflow-v1/unity-review/),
+and [study setup](Unity/Assets/CharacterArt/Editor/RenPartsStudy.md).
 
 ## Current status
 
