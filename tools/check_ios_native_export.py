@@ -34,7 +34,7 @@ checks["generated_bindings"] = all(f"LLVoice_{name}" in generated for name in
     ("Start", "Stop", "SetCaptureEnabled", "ReadCapture", "WriteOutput",
      "GetConsumedOutput", "GetQueuedOutput", "GetStarved", "GetStatus"))
 report = {"scope": "Unity export packaging only", "checks": checks,
-          "exported_sha256": files, "apple_compiled": False, "device_tested": False}
+          "exported_sha256": files, "checks_apple_compilation": False, "checks_device_behavior": False}
 if args.output:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

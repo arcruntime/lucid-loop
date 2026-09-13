@@ -17,6 +17,6 @@
     "LLVoiceRing.h": "5b8bb357393dbd1d4a679844fb53853aba75dde49fad02dbb40dcc204297790a",
     "LLVoice.mm": "555f18e6739ab19166103848950311af8738e694430cac70eabc8db673f49fa0"
   },
-  "apple_compiled": false,
-  "device_tested": false
+  "checks_apple_compilation": false,
+  "checks_device_behavior": false
 }
