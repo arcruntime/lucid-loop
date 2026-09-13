@@ -1,5 +1,7 @@
 # Japanese NPC alignment baseline
 
+**Deferred as of 2026-09-14:** the user paused Japanese voice work and excluded it from shipping scope. Findings and proposed next steps below are archived, not active release requirements.
+
 The pinned full-clip Japanese aligner was run against all four [captured NPC voices](JAPANESE_NPC_VOICE_EVIDENCE.md), using the [checked pronunciation reading](JAPANESE_READING_FRONTEND.md). This is an offline baseline with complete audio and text available. It does not establish causal production, contact accuracy or believable lip-sync.
 
 The [summary](validation/japanese-npc-alignment/summary.json) records the upstream commit, recording hashes, checked-reading hash, measured desktop computation and per-voice failures. The adjacent alignment files preserve the actual mora and phone spans. No evaluation audio was used for training. The probe verifies the capture files and unchanged pinned upstream sources before importing them.

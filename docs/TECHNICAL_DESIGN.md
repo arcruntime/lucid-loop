@@ -1,5 +1,7 @@
 # Before the Drop — Technical Design and Build Scope
 
+**Shipping scope override, 2026-09-14:** the user paused Japanese voice work and excluded Japanese voice/lip-sync support from this release. Ship English conversations. Earlier bilingual requirements below remain source/history records; Japanese implementation and acceptance are deferred and must not block this release. Existing Japanese text/font work is unaffected by this voice-specific decision.
+
 **Project:** Lucid Loop  
 **Source audit date:** 2026-09-14  
 **Status:** Source requirements plus reconciled implementation status, 2026-09-14. Recorded tests establish their stated scope; final game/device acceptance remains incomplete.
@@ -305,7 +307,7 @@ The following are settled demo decisions, not unresolved source questions:
 | Final action animation and staging | Artist-reviewed canonical-rig imports, recording/phone and intervention/shove/fall contacts, held death/reset behavior and clear silhouettes. Primitive tests are not final animation acceptance |
 | Physical iPhone acceptance | Sign/install/launch the compiled app; test LAN connection, landscape safe area/keyboard/touch, route changes, microphone privacy/muting, double talk/AEC and full prevention input flow |
 | Performance and sound quality | Measure sustained 30 fps, thermal behavior, latency/buffering and intelligibility with club music; native same-engine NPC output does not guarantee cancellation of Unity's separate background music |
-| Bilingual facial performance | Accepted Japanese speech producer and combined English/Japanese face/body expressive review; current English/runtime tests do not settle bilingual quality |
+| English facial performance | Final combined English speech, expression and body review on the accepted art, using actual audible output. Japanese voice support is deferred by user decision |
 | UI/reference fidelity | Validate physical-device marker/beacon readability, pause Settings/Controls/navigation and final conversation framing; finish people/object distinctions when authored objects are available |
 | Durable persistence | Decide whether relay restart/device restart saves are needed; implement storage and transcript retention/deletion if required. Current process-memory resume is a deliberate limited baseline |
 | Narrative/content polish | Review player comprehension, character voice/age consistency, hints and route discoverability against the authored solution; do not reopen fixed victim/time rules without an explicit new authoring decision |

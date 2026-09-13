@@ -1,5 +1,7 @@
 # Japanese live speech producer: evidence and implementation path
 
+**Paused — outside shipping scope (user decision, 2026-09-14).** Japanese voice/lip-sync support will not ship in this release. The investigation and implementation paths below are retained as deferred evidence, not active tasks or release requirements. Continue shipping work on English conversations.
+
 The requested repository already contains a **real Japanese acoustic model**. It is not the English model with renamed outputs. A scratch C# experiment confirms that the existing core can produce Japanese-specific targets quickly on this Windows workstation. However, its label quality remains weak even after reducing vote smoothing. Installing this model alone would not satisfy believable Japanese speech. This investigation changes no Unity or CharacterArt files and does not enable Japanese in the shipping adapter.
 
 ## What is available now
