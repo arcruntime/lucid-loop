@@ -2,6 +2,20 @@
 
 Updated 2026-09-14. iOS is the target platform. The initial acceptance device is the project's iPhone 15 Plus target, landscape, sustained 30 fps. These are engineering budgets pending device measurements.
 
+## User-specified geometry targets
+
+The user set these approximate triangle budgets on 2026-09-14:
+
+| Scope | Triangle target |
+| --- | ---: |
+| Ren overall | 50–80k |
+| Head/face | 20–25k |
+| Hair | 15–30k |
+| Visible body/clothing | 15–25k |
+| Whole frame | Under roughly 250–300k |
+
+Component ranges guide allocation within Ren's overall budget. Report actual component totals and the worst visible club-frame total alongside art review. Also measure rendering passes, overdraw, skinning cost and device GPU time; triangle counts alone do not establish sustained 30 fps.
+
 The club should look full of lights while using a small, stable set of lighting features. Adding another light of the same kind increases lighting work; it does not inherently add another independent shader keyword combination. Shadow modes, rendering paths, cookies, material features, and inconsistent pipeline assets cause the combination growth. Intimate and aggressive moods must share shaders and pipeline features; animate colors, intensities, emission values and music without enabling mood keywords.
 
 ## What is actually in the project
