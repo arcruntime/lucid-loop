@@ -14,6 +14,7 @@ namespace LucidLoop.Gyms
         public GymCamera Rig;
         public string DefaultGameAddress = "ws://127.0.0.1:8080/game";
         public string SelectedNpcId { get; private set; } = "maya";
+        public EncounterInteractionMarkers InteractionMarkers { get; private set; }
         public event Action<string> TypedReplyRequested;
         public event Action<bool> MicrophoneRequested;
         public event Action LeaveRequested;
@@ -119,6 +120,10 @@ namespace LucidLoop.Gyms
             layout.StateText = stateLabel.rectTransform; layout.ConnectionButton = (RectTransform)connectionButton.transform;
             layout.Guidance = guide; layout.GuidanceText = guidance.rectTransform; layout.OpeningRoute = (RectTransform)openingRoute.transform;
             layout.Pause = (RectTransform)pause.transform; layout.Reset = (RectTransform)reset.transform; layout.Connection = connectionPanel;
+            var markers = GymUI.Rect(canvas, "Interaction markers", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            markers.SetAsFirstSibling();
+            InteractionMarkers = markers.gameObject.AddComponent<EncounterInteractionMarkers>();
+            InteractionMarkers.Initialize(this, canvas, responsiveLayout);
         }
 
         void Wire()

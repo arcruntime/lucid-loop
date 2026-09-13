@@ -71,6 +71,12 @@ namespace LucidLoop.Gyms.Editor
             "LucidLoop.Gyms.PlayModeTests.EncounterAudioDevicePlayModeTests.DeviceChangeStopsPlaybackAndClosesWithoutAutomaticReconnect"
         });
 
+        [MenuItem("Lucid Loop/Validate interaction markers PlayMode smoke")]
+        public static void RunMarkersPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "markers-playmode", "MARKERS_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterMarkersPlayModeTests.MarkersFollowAuthoritySelectionAndCameraVisibility"
+        });
+
         static void Run(TestMode mode, string assembly, string filename, string marker, string[] groups = null, string[] testNames = null)
         {
             if (runner != null || EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode)

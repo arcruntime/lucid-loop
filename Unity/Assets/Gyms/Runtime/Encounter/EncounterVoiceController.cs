@@ -187,10 +187,19 @@ namespace LucidLoop.Gyms
 
         void CloseNativeFailure(IosNativeVoiceStatus status)
         {
-            closeNotice = "iOS voice audio stopped (" + status + "). Check microphone permission and audio device, then tap Talk to try again.";
+            closeNotice = DescribeAudioFailure(status);
             Leave();
             SetStatus(closeNotice);
         }
+
+        static string DescribeAudioFailure(IosNativeVoiceStatus status) => status switch
+        {
+            IosNativeVoiceStatus.PermissionRequired => "Microphone access is unavailable. Check microphone permission, then tap Talk to try again.",
+            IosNativeVoiceStatus.RouteChanged or IosNativeVoiceStatus.ConfigurationChanged => "Audio device changed. Tap Talk to start again.",
+            IosNativeVoiceStatus.Interrupted => "Audio was interrupted. Tap Talk to start again when you're ready.",
+            IosNativeVoiceStatus.UnsupportedOS or IosNativeVoiceStatus.UnsupportedPlatform => "Voice audio is unavailable on this device. Tap Talk to use typed replies.",
+            _ => "Voice audio stopped. Check your audio device, then tap Talk to try again."
+        };
 
         void Update()
         {
@@ -405,7 +414,7 @@ namespace LucidLoop.Gyms
                 {
                     // Leave/StopStream also uses StopMic; defer invalidation handling
                     // to Update to avoid recursive teardown here.
-                    if (closeNotice == null) closeNotice = "iOS voice audio stopped (" + status + "). Tap Talk to start again.";
+                    if (closeNotice == null) closeNotice = DescribeAudioFailure(status);
                 }
             }
             if (device != null) Microphone.End(device);

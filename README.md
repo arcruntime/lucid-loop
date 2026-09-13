@@ -8,7 +8,9 @@ The primary game prototype is **Before the Drop**: a server-authoritative nightc
 
 The complete prevention route has passed [real-provider CI](https://github.com/jethac/lucid-loop/actions/runs/34777703855), including nearby conversations, committed actions and survival through the full loop. Phone exploration now uses a compact HUD with expandable conversation and clue panels. Physical iPhone testing remains pending. The [Japanese speech investigation](docs/JAPANESE_SPEECH_PRODUCER.md) records why the available Japanese model still needs quality work before integration.
 
-Select a character and tap **Approach** to walk to a server-chosen speaking position and begin talking once in range. You can cancel or tap elsewhere to walk. Conversation feedback reports whether a requested action was accepted; **Leave** resumes the night and any agreed character movement.
+Select a character and tap **Walk & talk** to walk to a server-chosen speaking position and begin talking once in range; nearby characters show **Talk**. You can cancel or tap elsewhere to walk. Conversation feedback reports whether a requested action was accepted; **Leave** resumes the night and any agreed character movement.
+
+The player has a green overhead beacon. NPC speech bubbles show speaking availability: dim when out of range, outlined when available, and filled for an available selected character. See the [phone-layout capture](docs/images/encounter/interaction-markers.png).
 
 A [real spoken-input test](https://github.com/jethac/lucid-loop/actions/runs/34779053805) also passed: streamed synthetic speech triggered native Live delegation and a confirmed game action without a typed command. Physical microphone, interruption and conversational-quality acceptance remain separate checks.
 
