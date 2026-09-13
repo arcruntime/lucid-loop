@@ -45,3 +45,5 @@ Send the step, expected versus actual result, and screenshot/Console error if so
 Menu: Lucid Loop → MVP → Create or rebuild first loop. Rebuilding replaces the generated BeforeTheDrop scene; make durable changes in the builder/runtime.
 
 Automated verification: 12/12 EditMode tests passed (8 existing + 4 new). A Unity play-mode smoke run exercised navigation, recognition, catastrophe, rewind, waiting, rejection of music-only success, and safe resolution. Tests and logs are in the ignored `.local` folder. No live API or device claim is made.
+
+Editor note: this local Unity installation also emits an `ArgumentOutOfRangeException` from `UnityEditor.Search.SearchDatabase` during startup indexing. It did not prevent the verified playthrough; it is separate from the MVP scripts. Report any gameplay exception separately. This editor indexing issue remains unresolved at handoff.
