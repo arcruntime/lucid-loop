@@ -36,9 +36,10 @@ test('Maya and Luca prompts cannot read future plot or other NPC state',()=>{
    assert.doesNotMatch(prompt,/Theo|kissing|married|catastrophe|shove|collapse/i);
  }
 });
-test('Theo has an explicit stationary conversation constraint',()=>{
+test('Theo can invite to the existing VIP area but cannot move Maya directly',()=>{
  const prompt=characterInstructions(validateInput({...input(),character:'theo'}));
- assert.match(prompt,/stay at your current spot/);
- assert.match(prompt,/offer to lower your voice right here/);
+ assert.match(prompt,/invite_vip/);
+ assert.match(prompt,/player must accept/i);
+ assert.deepEqual(validateDecision('theo',{reply:'We can talk in VIP.',actions:['invite_vip']}).actions,['invite_vip']);
  assert.throws(()=>validateDecision('theo',{reply:'Follow me',actions:['follow']}));
 });

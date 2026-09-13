@@ -31,6 +31,14 @@ namespace LucidLoop.Gyms.Tests
    Assert.IsTrue(s.ApplyDecision("luca",new[]{"prepare_intervention"}));
    s.Recognize();Assert.IsFalse(s.ApplyDecision("ren",new[]{"music_intimate"}));Assert.IsTrue(s.Resolve());
   }
+  [Test] public void VipInvitationRequiresAcceptanceAndDoesNotResolveTheIncident()
+  {
+   var s=new LoopState();Assert.IsFalse(s.ApplyDecision("theo",new[]{"invite_vip"}));s.Rewind();
+   Assert.IsFalse(s.ApplyDecision("maya",new[]{"invite_vip"}));
+   Assert.IsTrue(s.ApplyDecision("theo",new[]{"invite_vip"}));Assert.IsFalse(s.InVip);Assert.IsFalse(s.Resolved);
+   Assert.IsTrue(s.ArriveVip());Assert.IsTrue(s.InVip);Assert.IsFalse(s.CanPrevent);
+   Assert.IsFalse(s.ApplyDecision("theo",new[]{"invite_vip"}));s.Rewind();Assert.IsFalse(s.InVip);Assert.IsFalse(s.VipInvited);
+  }
   [Test] public void EntranceAndBarAreOutsideRecognitionArea()
   {
    Assert.IsFalse(FirstLoop.InRecognitionArea(new Vector3(0,0,-9)));

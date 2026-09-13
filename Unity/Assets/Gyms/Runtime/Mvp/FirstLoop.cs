@@ -47,13 +47,16 @@ namespace LucidLoop.Gyms.Mvp
             }
             foreach (var t in new[] {Player.transform, Maya.transform, Theo.transform, Luca.transform, Ren.transform})
             { starts[t] = t.position; rotations[t] = t.rotation; }
+            gameObject.AddComponent<ClubArt>().Dress(this);
             MakeUI();
+            MakePortrait();
             music=gameObject.AddComponent<MoodMusic>();
             phone = GameObject.CreatePrimitive(PrimitiveType.Cube); phone.name = "Maya recording phone";
             Destroy(phone.GetComponent<Collider>()); phone.transform.SetParent(Maya.Visual, false);
             phone.transform.localPosition = new Vector3(.42f, 1.5f, .3f); phone.transform.localScale = new Vector3(.13f,.23f,.035f);
             phone.SetActive(false);
             Refresh();
+            if(Array.IndexOf(Environment.GetCommandLineArgs(),"-btd-art-reference")>=0){StartCoroutine(ArtReference());return;}
             if (Array.IndexOf(Environment.GetCommandLineArgs(), "-btd-smoke") >= 0)
             { AutoAdvance = true; StartCoroutine(Smoke()); }
             else StartCoroutine(Arrival());
@@ -101,7 +104,7 @@ namespace LucidLoop.Gyms.Mvp
                     if (Vector3.Distance(Maya.transform.position,Player.transform.position) > 1.4f)
                         Move(agents[Maya],Player.transform.position + Vector3.left*.85f);
                 }
-                if (InRecognitionArea(Maya.transform.position)) BeginEncounter();
+                if (CanRecognizeAffair()) BeginEncounter();
                 if (!Busy && approaching && !Player.pathPending && Player.remainingDistance < .35f)
                 { var actor=approaching; approaching=null; OpenConversation(actor); }
             }
@@ -110,6 +113,7 @@ namespace LucidLoop.Gyms.Mvp
             UpdateMusicMenu();
             if(music) { music.Intimate=State.Intimate; music.Duck=Busy || (modal && chatActor!=Ren); }
         }
+        bool CanRecognizeAffair()=>InRecognitionArea(Maya.transform.position) && Vector3.Distance(Theo.transform.position,Partner.position)<1.8f;
         public static bool InRecognitionArea(Vector3 position) => position.x > TriggerX && position.x < 6.5f && position.z > TriggerZ && position.z < .8f;
         public bool Walk(Vector3 point)
         {
@@ -158,7 +162,7 @@ namespace LucidLoop.Gyms.Mvp
         public void OpenConversation(CharacterActor actor)
         {
             if (Busy || State.Resolved) return;
-            Stop(Player); Stop(agents[Maya]); modal=true;
+            Stop(Player); Stop(agents[Maya]); modal=true;ShowPortrait(actor.Id);
             foreach(Transform child in choices) { child.gameObject.SetActive(false); Destroy(child.gameObject); }
             choices.gameObject.SetActive(true);
             GymUI.Label(choices,actor.DisplayName.ToUpperInvariant(),20,15,460,35,26,GymUI.Cyan);
@@ -174,14 +178,16 @@ namespace LucidLoop.Gyms.Mvp
         { GymUI.Button(GymUI.Box(choices,"Choice "+row,18,112+row*83,469,73),label,action); row++; }
         public void SetWaiting(bool wait)
         { if(State.Wait(wait)) { Stop(agents[Maya]); Refresh(); } }
-        void CloseConversation() { CancelChat(); modal=false; choices.gameObject.SetActive(false); Refresh(); }
+        void CloseConversation() { if(State.InVip && chatActor==Theo){State.LeaveVip();Move(agents[Theo],starts[Theo.transform]);} ShowPortrait(null); CancelChat(); modal=false; choices.gameObject.SetActive(false); Refresh(); }
         IEnumerator Reply(string name,string text) { Busy=true; yield return Say(name,text); Busy=false; Refresh(); }
         IEnumerator Say(string name,string text)
         {
+            ShowPortrait(name.ToLowerInvariant()=="you"?"player":name.ToLowerInvariant());
+            SetActing(name,true);
             speaker.text=name; line.text=text; dialogue.gameObject.SetActive(true); advance=false;
             if(AutoAdvance) yield return null;
             else { yield return null; while(!advance) yield return null; }
-            dialogue.gameObject.SetActive(false);
+            dialogue.gameObject.SetActive(false);SetActing(name,false);ShowPortrait(null);
         }
         public void BeginEncounter()
         {
@@ -256,7 +262,7 @@ namespace LucidLoop.Gyms.Mvp
         void Refresh()
         {
             if(!status) return;
-            status.text="LOOP "+State.Loop+"  ·  "+(State.Intimate?"INTIMATE":"AGGRESSIVE")+"  ·  CHECKPOINT 2 / TYPED AI";
+            status.text="LOOP "+State.Loop+"  ·  "+(State.Intimate?"INTIMATE":"AGGRESSIVE");
             memories.text=State.RemembersRecording?"Maya's recording. Theo reaching for her phone. Luca stepping between them.":"Nothing yet. This is your first time here.";
             objective.text=State.Resolved?"THE NIGHT CONTINUES · You changed the encounter. Luca is safe. Restart to try another approach.":
                 State.Loop==1?"Click the floor to walk toward the right side of the dancefloor. Click a character to talk. Space / Continue advances dialogue.":
@@ -300,13 +306,13 @@ namespace LucidLoop.Gyms.Mvp
             System.IO.Directory.CreateDirectory(folder);
             var canvas=hud.GetComponentInParent<Canvas>();
             var target=new RenderTexture(1600,900,24);
-            var previous=Rig.Camera.targetTexture; var active=RenderTexture.active;
+            var previous=Rig.Camera.targetTexture; var active=RenderTexture.active;var previousRect=Rig.Camera.rect;Rig.Camera.rect=new Rect(0,0,1,1);
             canvas.renderMode=RenderMode.ScreenSpaceCamera; canvas.worldCamera=Rig.Camera; canvas.planeDistance=1;
             Rig.Camera.targetTexture=target; Canvas.ForceUpdateCanvases(); Rig.Camera.Render(); RenderTexture.active=target;
             var texture=new Texture2D(1600,900,TextureFormat.RGB24,false);
             texture.ReadPixels(new Rect(0,0,1600,900),0,0);texture.Apply();
             System.IO.File.WriteAllBytes(System.IO.Path.Combine(folder,name+".png"),texture.EncodeToPNG());
-            Rig.Camera.targetTexture=previous; RenderTexture.active=active; canvas.renderMode=RenderMode.ScreenSpaceOverlay;
+            Rig.Camera.targetTexture=previous;Rig.Camera.rect=previousRect; RenderTexture.active=active; canvas.renderMode=RenderMode.ScreenSpaceOverlay;
             Destroy(texture); target.Release(); Destroy(target);
         }
     }

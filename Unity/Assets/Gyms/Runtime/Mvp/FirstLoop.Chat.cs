@@ -11,7 +11,7 @@ namespace LucidLoop.Gyms.Mvp
     public partial class FirstLoop
     {
         [Serializable] public class ChatTurn { public string role,content; public int loop; public ChatTurn(string r,string c,int l){role=r;content=c;loop=l;} }
-        [Serializable] public class ChatState { public int loop;public bool intimate,waiting,privateApproach,lucaPrepared,recognized,resolved; }
+        [Serializable] public class ChatState { public int loop;public bool intimate,waiting,privateApproach,lucaPrepared,recognized,resolved,inVip; }
         [Serializable] public class ChatRequest { public string character,message; public ChatState state; public ChatTurn[] history; }
         [Serializable] public class ChatDecision { public string reply,source,model,error; public string[] actions; }
         readonly Dictionary<string,List<ChatTurn>> conversations=new Dictionary<string,List<ChatTurn>>();
@@ -20,7 +20,7 @@ namespace LucidLoop.Gyms.Mvp
         bool sending;
         InputField chatInput;
         Text chatTranscript, chatNotice;
-        Button sendButton,leaveButton;
+        Button sendButton,leaveButton,vipButton;
         CharacterActor chatActor;
         RectTransform transcriptContent;
         ScrollRect transcriptScroll;
@@ -46,7 +46,12 @@ namespace LucidLoop.Gyms.Mvp
             var hint=GymUI.Text(GymUI.Rect(r,"Placeholder",Vector2.zero,Vector2.one,new Vector2(12,8),new Vector2(-12,-8)),"Ask a question or propose what to do…",21,GymUI.Muted);chatInput.placeholder=hint;
             sendButton=GymUI.Button(GymUI.Box(choices,"Send",20,451,270,55),"Say it",SendChat);
             leaveButton=GymUI.Button(GymUI.Box(choices,"Leave",305,451,290,55),"End conversation",CloseConversation);
-            chatNotice=GymUI.Label(choices,"Live AI · local dialogue server required",20,518,575,43,18,GymUI.Muted);
+            chatNotice=GymUI.Label(choices,"Ask a question or suggest what to do next.",20,518,575,43,18,GymUI.Muted);
+            if(actor==Theo){
+                choices.sizeDelta=new Vector2(620,630);
+                vipButton=GymUI.Button(GymUI.Box(choices,"VIP invitation",20,565,575,50),"Follow Theo into VIP",BeginVipEscort);
+                vipButton.gameObject.SetActive(State.VipInvited&&!State.InVip);
+            }
             chatInput.ActivateInputField();
         }
         void ShowHistory(string id)
@@ -102,7 +107,7 @@ namespace LucidLoop.Gyms.Mvp
             chatNotice.text=actor.DisplayName+" is considering what you said…";
             int epoch=conversationEpoch;int loop=State.Loop;
             var payload=new ChatRequest{character=actor.Id,message=message,history=ModelHistory(actor.Id),state=new ChatState{
-                loop=State.Loop,intimate=State.Intimate,waiting=State.MayaWaiting,privateApproach=State.PrivateApproach,lucaPrepared=State.LucaPrepared,recognized=State.Recognized,resolved=State.Resolved}};
+                loop=State.Loop,intimate=State.Intimate,waiting=State.MayaWaiting,privateApproach=State.PrivateApproach,lucaPrepared=State.LucaPrepared,recognized=State.Recognized,resolved=State.Resolved,inVip=State.InVip}};
             string url=Array.IndexOf(Environment.GetCommandLineArgs(),"-btd-fixture")>=0?"http://127.0.0.1:8083/dialogue":"http://127.0.0.1:8082/dialogue";
             using(var request=new UnityWebRequest(url,"POST"))
             {
@@ -124,6 +129,7 @@ namespace LucidLoop.Gyms.Mvp
                     ShowHistory(actor.Id);chatInput.text="";
                     lastDecision=DescribeActions(decision.actions);
                     chatNotice.text="AI response · "+lastDecision;
+                    if(actor==Theo && vipButton)vipButton.gameObject.SetActive(State.VipInvited&&!State.InVip);
                     Refresh();
                 }
             }
@@ -143,6 +149,7 @@ namespace LucidLoop.Gyms.Mvp
         static string DescribeActions(string[] actions)
         {
             var words=new List<string>();foreach(var a in actions) switch(a){
+                case "invite_vip":words.Add("Theo invites you into VIP — accept below");break;
                 case "wait":words.Add("Maya will wait here");break;case "follow":words.Add("Maya will follow");break;
                 case "private_approach":words.Add("Maya agreed to keep her phone away");break;
                 case "prepare_intervention":words.Add("Luca will intervene early");break;
@@ -186,7 +193,25 @@ namespace LucidLoop.Gyms.Mvp
             OpenConversation(Luca);
             yield return RequestDecision(Luca,"Theo may get upset with Maya. Please help us step aside early and calmly before anyone gets physical.");
             if(!State.LucaPrepared)throw new Exception("Luca AI decision failed: "+chatNotice.text);
-            CloseConversation();OpenConversation(Ren);
+            CloseConversation();
+            if(Array.IndexOf(Environment.GetCommandLineArgs(),"-btd-fixture")>=0)
+            {
+                var mayaPosition=Maya.transform.position;
+                OpenConversation(Theo);yield return RequestDecision(Theo,"VIP_TEST Can we speak privately?");
+                if(!State.VipInvited)throw new Exception("VIP invitation missing");
+                CloseConversation();yield return EscortVip();
+                if(!State.InVip || Vector3.Distance(mayaPosition,Maya.transform.position)>.2f)throw new Exception("VIP escort failed or moved waiting Maya");
+                Capture("08-vip-arrival");CloseConversation();
+                Stop(Player);Stop(agents[Theo]);Stop(agents[Maya]);
+                Player.Warp(new Vector3(7.3f,0,3.5f));agents[Maya].Warp(new Vector3(7.1f,0,3.4f));
+                State.Wait(false);State.ApplyDecision("theo",new[]{"invite_vip"});
+                yield return EscortVip();
+                if(!State.InVip || Vector3.Distance(Player.transform.position,Maya.transform.position)>2.6f)
+                    throw new Exception("Following companion failed VIP escort");
+                CloseConversation();ResetActors();State.Wait(true);
+                Debug.Log("BTD_VIP_SMOKE_OK: invitation, acceptance, waiting and following companion, return to floor");
+            }
+            OpenConversation(Ren);
             SelectMusic(true);
             yield return new WaitForSeconds(1.5f);
             if(music.IsTransitioning || !music.IntimateAudible)throw new Exception("DJ transition did not reach audible Intimate track");

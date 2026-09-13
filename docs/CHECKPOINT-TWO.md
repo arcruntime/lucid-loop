@@ -1,5 +1,7 @@
 # Checkpoint two — typed character decisions and music
 
+The current art/VIP pass is documented in CHECKPOINT-THREE.md. Its supported VIP escort supersedes the stationary-Theo restriction below.
+
 Local only. Builds on the user-approved checkpoint-one sequence. The existing voice gym and voice relay are unchanged; this stage uses typed conversation and a separate local HTTP service.
 
 ## Start

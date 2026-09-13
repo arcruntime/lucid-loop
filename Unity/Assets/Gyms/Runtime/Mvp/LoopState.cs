@@ -9,6 +9,10 @@ namespace LucidLoop.Gyms.Mvp
         public bool PrivateApproach { get; private set; }
         public bool LucaPrepared { get; private set; }
         public bool Intimate { get; private set; }
+        public bool VipInvited { get; private set; }
+        public bool InVip { get; private set; }
+        public bool ArriveVip(){if(!VipInvited || Recognized || Resolved)return false;InVip=true;VipInvited=false;return true;}
+        public void LeaveVip(){InVip=false;VipInvited=false;}
         public bool Resolved { get; private set; }
         public bool RemembersRecording { get; private set; }
         public bool CanPrevent => Loop > 1 && PrivateApproach && LucaPrepared;
@@ -26,13 +30,14 @@ namespace LucidLoop.Gyms.Mvp
             {
                 if(!seen.Add(a))return false;
                 bool valid=a=="none" || character=="maya"&&(a=="wait"||a=="follow"||a=="private_approach")
-                    || character=="luca"&&a=="prepare_intervention" || character=="ren"&&(a=="music_intimate"||a=="music_aggressive");
+                    || character=="theo"&&a=="invite_vip"&&!InVip || character=="luca"&&a=="prepare_intervention" || character=="ren"&&(a=="music_intimate"||a=="music_aggressive");
                 if(!valid)return false;
             }
             if((seen.Contains("none")&&actions.Length>1)||(seen.Contains("wait")&&seen.Contains("follow"))
                 ||(seen.Contains("music_intimate")&&seen.Contains("music_aggressive")))return false;
             foreach(var a in actions)switch(a)
             {
+                case "invite_vip":VipInvited=true;break;
                 case "wait":Wait(true);break;case "follow":Wait(false);break;
                 case "private_approach":PrepareMaya();break;case "prepare_intervention":PrepareLuca();break;
                 case "music_intimate":SetMusic(true);break;case "music_aggressive":SetMusic(false);break;
@@ -44,7 +49,7 @@ namespace LucidLoop.Gyms.Mvp
         {
             RemembersRecording |= Recognized;
             Loop++; Recognized = false; MayaWaiting = false; PrivateApproach = false;
-            LucaPrepared = false; Intimate = false; Resolved = false;
+            LucaPrepared = false; Intimate = false; Resolved = false; VipInvited=false;InVip=false;
         }
     }
 }
