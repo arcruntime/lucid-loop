@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace LucidLoop.CharacterArt.PlayModeTests
 {
@@ -15,6 +18,87 @@ namespace LucidLoop.CharacterArt.PlayModeTests
         {
             foreach (var item in owned) if (item) Object.DestroyImmediate(item);
             owned.Clear();
+        }
+
+        [UnityTest]
+        public IEnumerator HoldLastPoseSamplesTheEndOfALoopingImportAndStopReturnsToIdle()
+        {
+            var driver = BodyFixture(out var leg, out _);
+            var body = Own(RotationClip("Armature/Hips/LeftLeg", "localEulerAnglesRaw.z", 0f, .2f));
+            body.SetCurve("Armature/Hips/LeftLeg", typeof(Transform), "localEulerAnglesRaw.z",
+                AnimationCurve.Linear(0f, 0f, .2f, 70f));
+#if UNITY_EDITOR
+            var settings = AnimationUtility.GetAnimationClipSettings(body);
+            settings.loopTime = true;
+            AnimationUtility.SetAnimationClipSettings(body, settings);
+            Assert.That(body.isLooping, Is.True, "Exercise the actual import loop flag, not only wrapMode.");
+#endif
+            Assert.That(driver.PlayBodyMotion(body, false, BodyMotionCompletionPolicy.HoldLastPose), Is.True);
+            Assert.That(driver.BodyMotionState, Is.EqualTo(BodyMotionPlaybackState.Playing));
+            yield return new WaitForSeconds(.35f);
+            yield return null;
+            Assert.That(driver.IsBodyMotionPlaying, Is.False);
+            Assert.That(driver.IsBodyMotionHolding, Is.True);
+            Assert.That(driver.IsBodyMotionComplete, Is.True);
+            Assert.That(driver.BodyMotionState, Is.EqualTo(BodyMotionPlaybackState.Holding));
+            Assert.That(driver.ActiveBodyMotionClip, Is.SameAs(body));
+            Assert.That(driver.BodyMotionTime, Is.LessThan(body.length));
+            Assert.That(driver.BodyMotionTime, Is.GreaterThan(body.length - .001f));
+            Assert.That(Quaternion.Angle(leg.localRotation, Quaternion.Euler(0f, 0f, 70f)), Is.LessThan(1f));
+            var heldTime = driver.BodyMotionTime;
+            yield return new WaitForSeconds(.25f);
+            Assert.That(driver.BodyMotionTime, Is.EqualTo(heldTime));
+            Assert.That(Quaternion.Angle(leg.localRotation, Quaternion.Euler(0f, 0f, 70f)), Is.LessThan(1f));
+            driver.StopBodyMotion();
+            yield return null;
+            yield return null;
+            Assert.That(driver.BodyMotionState, Is.EqualTo(BodyMotionPlaybackState.Stopped));
+            Assert.That(driver.IsBodyMotionComplete, Is.False);
+            Assert.That(driver.ActiveBodyMotionClip, Is.Null);
+            Assert.That(Quaternion.Angle(leg.localRotation, Quaternion.identity), Is.LessThan(1f));
+        }
+
+        [UnityTest]
+        public IEnumerator HoldPolicyRejectsLoopAndInvalidEnumWithoutInterruptingCurrentMotion()
+        {
+            var driver = BodyFixture(out _, out _);
+            var body = Own(RotationClip("Armature/Hips/LeftLeg", "localEulerAnglesRaw.z", 30f, .1f));
+            Assert.That(driver.PlayBodyMotion(body, true), Is.True);
+            Assert.That(driver.PlayBodyMotion(body, true, BodyMotionCompletionPolicy.HoldLastPose), Is.False);
+            Assert.That(driver.PlayBodyMotion(body, false, (BodyMotionCompletionPolicy)999), Is.False);
+            yield return new WaitForSeconds(.25f);
+            Assert.That(driver.BodyMotionLooping, Is.True);
+            Assert.That(driver.IsBodyMotionPlaying, Is.True);
+            Assert.That(driver.IsBodyMotionComplete, Is.False);
+        }
+
+        [UnityTest]
+        public IEnumerator HeldPoseCanBeReplacedAndBindOrDisableClearsCompletion()
+        {
+            var driver = BodyFixture(out _, out _);
+            var body = Own(RotationClip("Armature/Hips/LeftLeg", "localEulerAnglesRaw.z", 30f, .1f));
+            Assert.That(driver.PlayBodyMotion(body, false, BodyMotionCompletionPolicy.HoldLastPose), Is.True);
+            yield return new WaitForSeconds(.2f);
+            Assert.That(driver.IsBodyMotionHolding, Is.True);
+            Assert.That(driver.PlayBodyMotion(body), Is.True);
+            Assert.That(driver.IsBodyMotionHolding, Is.False);
+            Assert.That(driver.IsBodyMotionComplete, Is.False);
+            yield return new WaitForSeconds(.2f);
+            Assert.That(driver.BodyMotionState, Is.EqualTo(BodyMotionPlaybackState.Completed));
+            Assert.That(driver.IsBodyMotionComplete, Is.True);
+            Assert.That(driver.ActiveBodyMotionClip, Is.Null);
+            Assert.That(driver.PlayBodyMotion(body, false, BodyMotionCompletionPolicy.HoldLastPose), Is.True);
+            yield return new WaitForSeconds(.2f);
+            driver.Bind();
+            Assert.That(driver.BodyMotionState, Is.EqualTo(BodyMotionPlaybackState.Stopped));
+            Assert.That(driver.IsBodyMotionComplete, Is.False);
+            Assert.That(driver.PlayBodyMotion(body, false, BodyMotionCompletionPolicy.HoldLastPose), Is.True);
+            yield return new WaitForSeconds(.2f);
+            driver.enabled = false;
+            Assert.That(driver.BodyMotionState, Is.EqualTo(BodyMotionPlaybackState.Stopped));
+            Assert.That(driver.IsBodyMotionHolding, Is.False);
+            driver.enabled = true;
+            Assert.That(driver.ActiveBodyMotionClip, Is.Null);
         }
 
         [UnityTest]

@@ -7,6 +7,9 @@ using UnityEngine.Playables;
 
 namespace LucidLoop.CharacterArt
 {
+    public enum BodyMotionCompletionPolicy { ReturnToIdle, HoldLastPose }
+    public enum BodyMotionPlaybackState { Stopped, Playing, Completed, Holding }
+
     [DisallowMultipleComponent]
     public sealed class CharacterFaceDriver : MonoBehaviour
     {
@@ -61,6 +64,8 @@ namespace LucidLoop.CharacterArt
         Animator motionAnimator;
         bool savedApplyRootMotion;
         bool bodyMotionLooping;
+        BodyMotionCompletionPolicy bodyMotionCompletionPolicy;
+        BodyMotionPlaybackState bodyMotionState;
         float gestureWeight;
         float gestureTargetWeight;
         const float GestureFadeSeconds = .18f;
@@ -81,7 +86,10 @@ namespace LucidLoop.CharacterArt
         public ExpressionPreset ActiveExpression => activeExpression;
         public float ExpressionIntensity => expressionIntensity;
         public string LastSpeechDiagnostic => lastSpeechDiagnostic;
-        public bool IsBodyMotionPlaying => bodyPlayable.IsValid();
+        public bool IsBodyMotionPlaying => bodyPlayable.IsValid() && bodyMotionState == BodyMotionPlaybackState.Playing;
+        public bool IsBodyMotionHolding => bodyPlayable.IsValid() && bodyMotionState == BodyMotionPlaybackState.Holding;
+        public bool IsBodyMotionComplete => bodyMotionState == BodyMotionPlaybackState.Completed || IsBodyMotionHolding;
+        public BodyMotionPlaybackState BodyMotionState => bodyMotionState;
         public AnimationClip ActiveBodyMotionClip => bodyPlayable.IsValid() ? bodyPlayable.GetAnimationClip() : null;
         public bool BodyMotionLooping => bodyPlayable.IsValid() && bodyMotionLooping;
         public double BodyMotionTime => bodyPlayable.IsValid() ? bodyPlayable.GetTime() : 0d;
@@ -95,10 +103,21 @@ namespace LucidLoop.CharacterArt
         /// Invalid input leaves the current motion unchanged. Bind/disable cancels motion.
         /// </summary>
         public bool PlayBodyMotion(AnimationClip clip, bool loop = false)
+            => PlayBodyMotion(clip, loop, BodyMotionCompletionPolicy.ReturnToIdle);
+
+        /// <summary>
+        /// HoldLastPose retains the body layer after a one-shot completes. Facial expressions,
+        /// gestures and navigation stay independent. Stop, replacement, Bind or disable releases
+        /// the held pose. Loop + HoldLastPose is rejected because a loop never completes.
+        /// </summary>
+        public bool PlayBodyMotion(AnimationClip clip, bool loop, BodyMotionCompletionPolicy completionPolicy)
         {
             if (!clip || clip.legacy || clip.length <= 0f || !isActiveAndEnabled ||
                 !Application.isPlaying || !motionGraph.IsValid() || !idlePlayable.IsValid() ||
-                (clip.isHumanMotion && !motionAnimator.isHuman)) return false;
+                (clip.isHumanMotion && !motionAnimator.isHuman) ||
+                (completionPolicy != BodyMotionCompletionPolicy.ReturnToIdle &&
+                 completionPolicy != BodyMotionCompletionPolicy.HoldLastPose) ||
+                (loop && completionPolicy == BodyMotionCompletionPolicy.HoldLastPose)) return false;
             StopBodyMotion();
             bodyPlayable = AnimationClipPlayable.Create(motionGraph, clip);
             bodyPlayable.SetApplyFootIK(false);
@@ -107,6 +126,8 @@ namespace LucidLoop.CharacterArt
             bodyPlayable.SetTime(0d);
             bodyPlayable.SetSpeed(0d);
             bodyMotionLooping = loop;
+            bodyMotionCompletionPolicy = completionPolicy;
+            bodyMotionState = BodyMotionPlaybackState.Playing;
             motionGraph.Connect(bodyPlayable, 0, motionMixer, 1);
             motionMixer.SetInputWeight(1, 1f);
             return true;
@@ -122,6 +143,7 @@ namespace LucidLoop.CharacterArt
             }
             bodyPlayable = default;
             bodyMotionLooping = false;
+            bodyMotionState = BodyMotionPlaybackState.Stopped;
             if (motionMixer.IsValid()) motionMixer.SetInputWeight(1, 0f);
         }
 
@@ -174,13 +196,29 @@ namespace LucidLoop.CharacterArt
                 idlePlayable.GetTime() >= profile.IdleClip.length)
                 idlePlayable.SetTime(IdlePlaybackMath.WrapTime(idlePlayable.GetTime(), profile.IdleClip.length));
             UpdateGesture(Time.deltaTime);
-            if (bodyPlayable.IsValid())
+            if (IsBodyMotionPlaying)
             {
                 // Sample a bounded time before animation evaluation so imported looping flags
                 // cannot replay the first frame of a one-shot during its final update.
                 var nextTime = bodyPlayable.GetTime() + Time.deltaTime;
                 var length = bodyPlayable.GetAnimationClip().length;
-                if (!bodyMotionLooping && nextTime >= length) StopBodyMotion();
+                if (!bodyMotionLooping && nextTime >= length)
+                {
+                    if (bodyMotionCompletionPolicy == BodyMotionCompletionPolicy.HoldLastPose)
+                    {
+                        // Unity samples clip time as a float. The immediately preceding FLOAT
+                        // avoids an imported looping clip wrapping to frame zero at its duration;
+                        // subtracting a double epsilon would round straight back to the endpoint.
+                        var finalSample = BitConverter.Int32BitsToSingle(BitConverter.SingleToInt32Bits(length) - 1);
+                        bodyPlayable.SetTime(finalSample);
+                        bodyMotionState = BodyMotionPlaybackState.Holding;
+                    }
+                    else
+                    {
+                        StopBodyMotion();
+                        bodyMotionState = BodyMotionPlaybackState.Completed;
+                    }
+                }
                 else bodyPlayable.SetTime(IdlePlaybackMath.WrapTime(nextTime, length));
             }
             blinkFrame = blink.Advance(Time.deltaTime);

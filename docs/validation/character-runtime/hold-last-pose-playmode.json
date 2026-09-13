@@ -1,0 +1,106 @@
+{
+  "scope": "Actual Unity Editor PlayMode body-motion/speech runtime behavior with synthetic clips; not reviewed death-clip quality, H art/rig/phoneme acceptance, or iPhone performance",
+  "unityVersion": "6000.3.24f1",
+  "editorBuildTarget": "iOS",
+  "environmentProvenance": "Unity version/build target reported by coordinating lead for the main-project run; XML records PlayMode and main-project assembly path.",
+  "tests": 12,
+  "passed": 12,
+  "failed": 0,
+  "skipped": 0,
+  "startTimeUtc": "2026-09-13 19:09:44Z",
+  "endTimeUtc": "2026-09-13 19:09:49Z",
+  "durationSeconds": 5.1865148,
+  "sourceHashes": {
+    "Unity/Assets/CharacterArt/Runtime/CharacterFaceDriver.cs": "d266bbb8216db3b343a31b3969e50217b3dc907a2aa0e23eeadd48bb5d1f2d7b",
+    "Unity/Assets/CharacterArt/Tests/PlayMode/CharacterFaceDriverPlayModeTests.cs": "3538d3cacd40acd83abad398f68cbd6821293d948e5d7884e1e3ff067ee613a3",
+    "Unity/Assets/CharacterArt/Tests/PlayMode/CharacterSpeechFramePlayModeTests.cs": "9879a2d954a8e7e2d45d65784f82bcabb128e4c2cc3da7cb9ea5aa1ec27c0d4d",
+    "Unity/Assets/CharacterArt/Runtime/SpeechFrameResolver.cs": "ef4591d9d2e50b8880b46786e52a6422f99a601cc6dc376a2bf213f7fe2fc3d9"
+  },
+  "sourceHashEncoding": "UTF-8 source bytes normalized from CRLF to LF to match Git text storage",
+  "sourceVerification": "Current driver and driver-test LF-normalized bytes match the guarded integrated scratch copies. All 10 driver and 2 speech test method names match actual XML cases. The runner XML itself does not embed source hashes.",
+  "resultXml": "hold-last-pose-playmode.xml",
+  "resultSha256": "41c1f928625e5e7bf4b34d31e5f55f27c82937666667c2623a820b476698e5cb",
+  "originalRunnerXml": ".local/validation/character-playmode-20260913-190936-360.xml",
+  "originalRunnerXmlSha256": "bf5dcf157f31d2d0ecf585cc49ee8404d5a5ff16f26d48fb7a17357d0714d598",
+  "resultEncoding": "Original runner XML with CRLF normalized to LF; all other bytes preserved for Git storage.",
+  "previousValidationPreserved": "root-motion-and-speech-playmode.json",
+  "newCases": [
+    "HoldLastPoseSamplesTheEndOfALoopingImportAndStopReturnsToIdle",
+    "HoldPolicyRejectsLoopAndInvalidEnumWithoutInterruptingCurrentMotion",
+    "HeldPoseCanBeReplacedAndBindOrDisableClearsCompletion"
+  ],
+  "cases": [
+    {
+      "name": "BodyMotionLoopsUntilStoppedAndPreservesExpressionGesture",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.BodyMotionLoopsUntilStoppedAndPreservesExpressionGesture",
+      "result": "Passed",
+      "durationSeconds": 0.532554
+    },
+    {
+      "name": "BodyMotionRejectsInvalidInputAndReleasesOnDisable",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.BodyMotionRejectsInvalidInputAndReleasesOnDisable",
+      "result": "Passed",
+      "durationSeconds": 0.102211
+    },
+    {
+      "name": "ExpressionGestureClipPlaysThroughUpperBodyMask",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.ExpressionGestureClipPlaysThroughUpperBodyMask",
+      "result": "Passed",
+      "durationSeconds": 0.397994
+    },
+    {
+      "name": "HeadExpressionComposesAfterAnimationAndNeutralRestoresAnimatedPose",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.HeadExpressionComposesAfterAnimationAndNeutralRestoresAnimatedPose",
+      "result": "Passed",
+      "durationSeconds": 0.201142
+    },
+    {
+      "name": "HeldPoseCanBeReplacedAndBindOrDisableClearsCompletion",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.HeldPoseCanBeReplacedAndBindOrDisableClearsCompletion",
+      "result": "Passed",
+      "durationSeconds": 0.965678
+    },
+    {
+      "name": "HoldLastPoseSamplesTheEndOfALoopingImportAndStopReturnsToIdle",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.HoldLastPoseSamplesTheEndOfALoopingImportAndStopReturnsToIdle",
+      "result": "Passed",
+      "durationSeconds": 0.834192
+    },
+    {
+      "name": "HoldPolicyRejectsLoopAndInvalidEnumWithoutInterruptingCurrentMotion",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.HoldPolicyRejectsLoopAndInvalidEnumWithoutInterruptingCurrentMotion",
+      "result": "Passed",
+      "durationSeconds": 0.366883
+    },
+    {
+      "name": "NavigationCanKeepMovingInUpdateAndLateUpdateDuringBodyMotion",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.NavigationCanKeepMovingInUpdateAndLateUpdateDuringBodyMotion",
+      "result": "Passed",
+      "durationSeconds": 0.59756
+    },
+    {
+      "name": "NavigationOwnsRootAndPriorRootMotionSettingIsRestored",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.NavigationOwnsRootAndPriorRootMotionSettingIsRestored",
+      "result": "Passed",
+      "durationSeconds": 0.13528
+    },
+    {
+      "name": "OneShotReplacesLoopAndReturnsToIdleEvenWhenIdleClockIsPaused",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.OneShotReplacesLoopAndReturnsToIdleEvenWhenIdleClockIsPaused",
+      "result": "Passed",
+      "durationSeconds": 0.564477
+    },
+    {
+      "name": "InvalidAndMissingBindingFramesClearSpeechButPreserveBlinkGazeAndExpression",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterSpeechFramePlayModeTests.InvalidAndMissingBindingFramesClearSpeechButPreserveBlinkGazeAndExpression",
+      "result": "Passed",
+      "durationSeconds": 0.135564
+    },
+    {
+      "name": "MixedSnapshotsClearAbsentTargetsAndResetReleasesExpression",
+      "fullName": "LucidLoop.CharacterArt.PlayModeTests.CharacterSpeechFramePlayModeTests.MixedSnapshotsClearAbsentTargetsAndResetReleasesExpression",
+      "result": "Passed",
+      "durationSeconds": 0.129859
+    }
+  ]
+}

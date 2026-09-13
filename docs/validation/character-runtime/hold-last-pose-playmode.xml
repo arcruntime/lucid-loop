@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="12" result="Passed" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-13 19:09:44Z" end-time="2026-09-13 19:09:49Z" duration="5.1865148">
+  <test-suite type="TestSuite" id="1030" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-09-13 19:09:44Z" end-time="2026-09-13 19:09:49Z" duration="5.186515" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1015" name="LucidLoop.CharacterArt.PlayModeTests.dll" fullname="B:/lucid-loop/Unity/Library/ScriptAssemblies/LucidLoop.CharacterArt.PlayModeTests.dll" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-13 19:09:44Z" end-time="2026-09-13 19:09:49Z" duration="5.163797" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="110796" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1016" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-13 19:09:44Z" end-time="2026-09-13 19:09:49Z" duration="5.142058" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1017" name="CharacterArt" fullname="LucidLoop.CharacterArt" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-13 19:09:44Z" end-time="2026-09-13 19:09:49Z" duration="5.108203" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1018" name="PlayModeTests" fullname="LucidLoop.CharacterArt.PlayModeTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-09-13 19:09:44Z" end-time="2026-09-13 19:09:49Z" duration="5.075332" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="CharacterFaceDriverPlayModeTests" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-09-13 19:09:44Z" end-time="2026-09-13 19:09:49Z" duration="4.742909" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1005" name="BodyMotionLoopsUntilStoppedAndPreservesExpressionGesture" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.BodyMotionLoopsUntilStoppedAndPreservesExpressionGesture" methodname="BodyMotionLoopsUntilStoppedAndPreservesExpressionGesture" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="372205381" result="Passed" start-time="2026-09-13 19:09:44Z" end-time="2026-09-13 19:09:45Z" duration="0.532554" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="BodyMotionRejectsInvalidInputAndReleasesOnDisable" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.BodyMotionRejectsInvalidInputAndReleasesOnDisable" methodname="BodyMotionRejectsInvalidInputAndReleasesOnDisable" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="317946994" result="Passed" start-time="2026-09-13 19:09:45Z" end-time="2026-09-13 19:09:45Z" duration="0.102211" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="ExpressionGestureClipPlaysThroughUpperBodyMask" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.ExpressionGestureClipPlaysThroughUpperBodyMask" methodname="ExpressionGestureClipPlaysThroughUpperBodyMask" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="1896469942" result="Passed" start-time="2026-09-13 19:09:45Z" end-time="2026-09-13 19:09:45Z" duration="0.397994" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="HeadExpressionComposesAfterAnimationAndNeutralRestoresAnimatedPose" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.HeadExpressionComposesAfterAnimationAndNeutralRestoresAnimatedPose" methodname="HeadExpressionComposesAfterAnimationAndNeutralRestoresAnimatedPose" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="66153119" result="Passed" start-time="2026-09-13 19:09:45Z" end-time="2026-09-13 19:09:45Z" duration="0.201142" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="HeldPoseCanBeReplacedAndBindOrDisableClearsCompletion" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.HeldPoseCanBeReplacedAndBindOrDisableClearsCompletion" methodname="HeldPoseCanBeReplacedAndBindOrDisableClearsCompletion" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="581837311" result="Passed" start-time="2026-09-13 19:09:45Z" end-time="2026-09-13 19:09:46Z" duration="0.965678" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1002" name="HoldLastPoseSamplesTheEndOfALoopingImportAndStopReturnsToIdle" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.HoldLastPoseSamplesTheEndOfALoopingImportAndStopReturnsToIdle" methodname="HoldLastPoseSamplesTheEndOfALoopingImportAndStopReturnsToIdle" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="306556239" result="Passed" start-time="2026-09-13 19:09:46Z" end-time="2026-09-13 19:09:47Z" duration="0.834192" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="HoldPolicyRejectsLoopAndInvalidEnumWithoutInterruptingCurrentMotion" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.HoldPolicyRejectsLoopAndInvalidEnumWithoutInterruptingCurrentMotion" methodname="HoldPolicyRejectsLoopAndInvalidEnumWithoutInterruptingCurrentMotion" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="2031168671" result="Passed" start-time="2026-09-13 19:09:47Z" end-time="2026-09-13 19:09:47Z" duration="0.366883" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="NavigationCanKeepMovingInUpdateAndLateUpdateDuringBodyMotion" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.NavigationCanKeepMovingInUpdateAndLateUpdateDuringBodyMotion" methodname="NavigationCanKeepMovingInUpdateAndLateUpdateDuringBodyMotion" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="600241964" result="Passed" start-time="2026-09-13 19:09:47Z" end-time="2026-09-13 19:09:48Z" duration="0.597560" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="NavigationOwnsRootAndPriorRootMotionSettingIsRestored" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.NavigationOwnsRootAndPriorRootMotionSettingIsRestored" methodname="NavigationOwnsRootAndPriorRootMotionSettingIsRestored" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="2096441913" result="Passed" start-time="2026-09-13 19:09:48Z" end-time="2026-09-13 19:09:48Z" duration="0.135280" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="OneShotReplacesLoopAndReturnsToIdleEvenWhenIdleClockIsPaused" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests.OneShotReplacesLoopAndReturnsToIdleEvenWhenIdleClockIsPaused" methodname="OneShotReplacesLoopAndReturnsToIdleEvenWhenIdleClockIsPaused" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterFaceDriverPlayModeTests" runstate="Runnable" seed="1481703331" result="Passed" start-time="2026-09-13 19:09:48Z" end-time="2026-09-13 19:09:49Z" duration="0.564477" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1012" name="CharacterSpeechFramePlayModeTests" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterSpeechFramePlayModeTests" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterSpeechFramePlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-13 19:09:49Z" end-time="2026-09-13 19:09:49Z" duration="0.296805" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1014" name="InvalidAndMissingBindingFramesClearSpeechButPreserveBlinkGazeAndExpression" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterSpeechFramePlayModeTests.InvalidAndMissingBindingFramesClearSpeechButPreserveBlinkGazeAndExpression" methodname="InvalidAndMissingBindingFramesClearSpeechButPreserveBlinkGazeAndExpression" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterSpeechFramePlayModeTests" runstate="Runnable" seed="1292117409" result="Passed" start-time="2026-09-13 19:09:49Z" end-time="2026-09-13 19:09:49Z" duration="0.135564" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[INVALID_SPEECH_WEIGHT: entry 1 must be finite and within [0,1].
+UNKNOWN_SPEECH_POSE: English/missing
+SPEECH_TARGET_MISSING: viseme_ja_FU; complete snapshot rejected, no fallback applied.
+]]></output>
+              </test-case>
+              <test-case id="1013" name="MixedSnapshotsClearAbsentTargetsAndResetReleasesExpression" fullname="LucidLoop.CharacterArt.PlayModeTests.CharacterSpeechFramePlayModeTests.MixedSnapshotsClearAbsentTargetsAndResetReleasesExpression" methodname="MixedSnapshotsClearAbsentTargetsAndResetReleasesExpression" classname="LucidLoop.CharacterArt.PlayModeTests.CharacterSpeechFramePlayModeTests" runstate="Runnable" seed="291258796" result="Passed" start-time="2026-09-13 19:09:49Z" end-time="2026-09-13 19:09:49Z" duration="0.129859" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: B:\lucid-loop\.local\validation\character-playmode-20260913-190936-360.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
