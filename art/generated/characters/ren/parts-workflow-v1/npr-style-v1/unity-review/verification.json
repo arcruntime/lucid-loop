@@ -1,0 +1,62 @@
+{
+  "status": "Technical shader-isolation proof only; root rejected P2 likeness and baked lip paint, no aesthetic acceptance.",
+  "capturePlayer": ".local/ren-npr-review-v1-soft/RenNprReview.exe",
+  "finalPlayer": ".local/ren-npr-review-v1-final/RenNprReview.exe",
+  "finalPlayerVerification": "Final build fixes editor pipeline restoration only. Four live neutral/unlit captures match corresponding full-suite PNGs byte-for-byte.",
+  "captureCount": 28,
+  "allCaptureHashesValid": true,
+  "minimumPoseUpdates": 12,
+  "sourceColorPngByteIdentical": true,
+  "allSixCapWeightsCorrect": true,
+  "sourceFbxSha256": "74283a65dfb977e2ec0976cd36a019ab54489f5867fbb8702f72c478a6ee9bda",
+  "runtimeSha256": "b0cd23114dc9ac0acddaa54be84945795e7995a24d87858884ab9463c0a026e2",
+  "builderSha256": "b2e619e481a13ba92c75dccc7a91645458ed9cd60d52f9084321b17f47747427",
+  "finalBuildLogSha256": "8d48c0c132e0bab3a92e318070470c698817e4dfcaefbbada21e45756c0ac9b3",
+  "finalBuildMarkers": [
+    "REN_NPR_REVIEW_BUILD_OK",
+    "REN_NPR_REVIEW_PLAYER_OK"
+  ],
+  "shaderErrorCount": 0,
+  "pipelineRestoration": [
+    {
+      "path": "B:/lucid-loop/Unity/Assets/Gyms/Generated/GymPipeline.asset",
+      "beforeSha256": "29181bfc413dcf6565e50b6f4f90eb1a5f329d9e48871869efd601fd32b9fa99",
+      "afterSha256": "29181bfc413dcf6565e50b6f4f90eb1a5f329d9e48871869efd601fd32b9fa99"
+    },
+    {
+      "path": "C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/Assets/Gyms/Generated/GymPipeline.asset",
+      "beforeSha256": "29181bfc413dcf6565e50b6f4f90eb1a5f329d9e48871869efd601fd32b9fa99",
+      "afterSha256": "29181bfc413dcf6565e50b6f4f90eb1a5f329d9e48871869efd601fd32b9fa99"
+    },
+    {
+      "path": "C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/ProjectSettings/GraphicsSettings.asset",
+      "beforeSha256": "ba39150afb9a3c538bd8a583e9a2a37301dc50a2f2801d75be65a442121b533f",
+      "afterSha256": "ba39150afb9a3c538bd8a583e9a2a37301dc50a2f2801d75be65a442121b533f"
+    },
+    {
+      "path": "C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/ProjectSettings/QualitySettings.asset",
+      "beforeSha256": "5db43256ed0dd3b36040c37aa16ea940d7310d457f111059ace57dec0f501719",
+      "afterSha256": "5db43256ed0dd3b36040c37aa16ea940d7310d457f111059ace57dec0f501719"
+    }
+  ],
+  "recursiveUnityDependencyCount": 89,
+  "resolvedPackageDependencies": {
+    "474bcb49853aa07438625e644c072ee6": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Runtime\\UniversalAdditionalLightData.cs",
+    "a79441f348de89743a2939f4d699eac1": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Runtime\\UniversalAdditionalCameraData.cs",
+    "bf2edee5c58d82540a51f03df9d42094": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Runtime\\Data\\UniversalRenderPipelineAsset.cs",
+    "e3d24661c1e055f45a7560c033dbb837": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Textures\\BlueNoise64\\L\\LDR_LLL1_0.png",
+    "f9ee4ed84c1d10c49aabb9b210b0fc44": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Textures\\BayerMatrix.png",
+    "573620ae32aec764abd4d728906d2587": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Shaders\\Debug\\HDRDebugView.shader",
+    "cf852408f2e174538bcd9b7fda1c5ae7": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Shaders\\Debug\\DebugReplacement.shader",
+    "53626a513ea68ce47b59dc1299fe3959": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Shaders\\Debug\\ProbeVolumeSamplingDebugPositionNormal.compute",
+    "de640fe3d0db1804a85f9fc8f5cadab6": "com.unity.render-pipelines.universal@a8b4b2fc3560\\Runtime\\UniversalRendererData.cs"
+  },
+  "unresolvedGuids": [],
+  "untrackedDependenciesOutsideNewNprPaths": [],
+  "limitations": [
+    "SRP batching probe: Not initialized; compatibility not certified.",
+    "Only exercised D3D11 variants are proven; additional shadows, Forward+, Metal and phone performance untested.",
+    "Earlier flat-preset and hard-shadow diagnostics under .local are superseded by these soft-shadow captures.",
+    "Hidden-window backbuffer UI capture was black and excluded; these are explicit actual URP GPU camera captures from the running player. Original artist reference is serialized visible by default in the scene."
+  ]
+}

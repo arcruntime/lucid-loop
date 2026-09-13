@@ -1,0 +1,138 @@
+[
+  {
+    "file": "candidate-cap-off-front.png",
+    "sha256": "a5ec967f58b4cf39f7e749c61350dbd9bfc55ae43e4a05fd310a13e1718327fd",
+    "camera_position": [
+      2.9749999046325684,
+      0.0,
+      0.09000000357627869
+    ],
+    "target": [
+      -0.02500000037252903,
+      0.0,
+      0.09000000357627869
+    ],
+    "orthographic_scale": 1.4500000476837158,
+    "hair_material": "Uniform neutral clay; no strand textures or normal maps",
+    "cap_fit_weight": 0.0
+  },
+  {
+    "file": "candidate-cap-off-quarter.png",
+    "sha256": "edf8df249ef8e9450a89d6b9746b36fadbfde471579da0eae37e59e9ba606a25",
+    "camera_position": [
+      2.4324560165405273,
+      -1.7207293510437012,
+      0.09000000357627869
+    ],
+    "target": [
+      -0.02500000037252903,
+      0.0,
+      0.09000000357627869
+    ],
+    "orthographic_scale": 1.4500000476837158,
+    "hair_material": "Uniform neutral clay; no strand textures or normal maps",
+    "cap_fit_weight": 0.0
+  },
+  {
+    "file": "candidate-cap-off-profile.png",
+    "sha256": "416370762d8c38fd81e528f80a875f09dd91e626a06054137dfddc1909ab629c",
+    "camera_position": [
+      -0.02500000037252903,
+      -3.0,
+      0.09000000357627869
+    ],
+    "target": [
+      -0.02500000037252903,
+      0.0,
+      0.09000000357627869
+    ],
+    "orthographic_scale": 1.4500000476837158,
+    "hair_material": "Uniform neutral clay; no strand textures or normal maps",
+    "cap_fit_weight": 0.0
+  },
+  {
+    "file": "candidate-cap-on-front.png",
+    "sha256": "3eaf373f64a41d169d3cd2b81307c57c6b0ec3f0c8d711593dd21824408c59ce",
+    "camera_position": [
+      2.9749999046325684,
+      0.0,
+      0.09000000357627869
+    ],
+    "target": [
+      -0.02500000037252903,
+      0.0,
+      0.09000000357627869
+    ],
+    "orthographic_scale": 1.4500000476837158,
+    "hair_material": "Uniform neutral clay; no strand textures or normal maps",
+    "cap_fit_weight": 1.0
+  },
+  {
+    "file": "candidate-cap-on-quarter.png",
+    "sha256": "9856b22d270b629f805ec7480d513241e806ce5ee5780433fb773b279feeb205",
+    "camera_position": [
+      2.4324560165405273,
+      -1.7207293510437012,
+      0.09000000357627869
+    ],
+    "target": [
+      -0.02500000037252903,
+      0.0,
+      0.09000000357627869
+    ],
+    "orthographic_scale": 1.4500000476837158,
+    "hair_material": "Uniform neutral clay; no strand textures or normal maps",
+    "cap_fit_weight": 1.0
+  },
+  {
+    "file": "candidate-cap-on-profile.png",
+    "sha256": "353153834eabc2e0b1b6e96fae4e6c74bedc109ddef30557b4559d786f095c03",
+    "camera_position": [
+      -0.02500000037252903,
+      -3.0,
+      0.09000000357627869
+    ],
+    "target": [
+      -0.02500000037252903,
+      0.0,
+      0.09000000357627869
+    ],
+    "orthographic_scale": 1.4500000476837158,
+    "hair_material": "Uniform neutral clay; no strand textures or normal maps",
+    "cap_fit_weight": 1.0
+  },
+  {
+    "file": "source-cap-off-front.png",
+    "sha256": "be53eb277572f5d9747def23de70d7b323c1710caae43f6ade5757ae1d07a602",
+    "camera_position": [
+      2.9749999046325684,
+      0.0,
+      0.09000000357627869
+    ],
+    "target": [
+      -0.02500000037252903,
+      0.0,
+      0.09000000357627869
+    ],
+    "orthographic_scale": 1.4500000476837158,
+    "hair_material": "Uniform neutral clay; no strand textures or normal maps",
+    "cap_fit_weight": 0.0
+  },
+  {
+    "file": "source-cap-off-quarter.png",
+    "sha256": "b8843e1d48a76067b87b8bbc6d9456d289ebb72386ab84cbb1c7a316acd25dc9",
+    "camera_position": [
+      2.4324560165405273,
+      -1.7207293510437012,
+      0.09000000357627869
+    ],
+    "target": [
+      -0.02500000037252903,
+      0.0,
+      0.09000000357627869
+    ],
+    "orthographic_scale": 1.4500000476837158,
+    "hair_material": "Uniform neutral clay; no strand textures or normal maps",
+    "cap_fit_weight": 0.0
+  }
+]

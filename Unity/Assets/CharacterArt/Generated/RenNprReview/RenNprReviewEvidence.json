@@ -1,0 +1,11 @@
+{
+    "sourceSha256": "74283a65dfb977e2ec0976cd36a019ab54489f5867fbb8702f72c478a6ee9bda",
+    "shaderSha256": "aab21844a20daa85f98be0ab538399ee4dc70960046811b58dad28c0952bf612",
+    "shaderIncludeSha256": "4ae21f987438856aab4dafb10d394e942881e5c4f8bfb6a2fb8819e6784ff04a",
+    "presetSha256": "945c37e66b4e586b4a51495478ce547ed41488fdc5352d7d0c7da43a7c98df7c",
+    "unityVersion": "6000.3.24f1",
+    "method": "Two new prefabs reference the same frozen V2 shared mesh and texture assets. Existing V2 materials, scene and geometry are not overwritten. Per-instance runtime material clones supply the face lighting frame without MaterialPropertyBlocks.",
+    "triangles": 26422,
+    "sharedMeshes": 23,
+    "mappedMaterials": 14
+}

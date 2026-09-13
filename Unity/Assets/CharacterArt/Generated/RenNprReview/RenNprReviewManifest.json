@@ -1,0 +1,10 @@
+{
+  "sourceFbxSha256": "74283a65dfb977e2ec0976cd36a019ab54489f5867fbb8702f72c478a6ee9bda",
+  "shaderAsset": "Assets/CharacterArt/NPR/PaintedAnimeNPR.shader",
+  "shaderSha256": "aab21844a20daa85f98be0ab538399ee4dc70960046811b58dad28c0952bf612",
+  "shaderIncludeAsset": "Assets/CharacterArt/NPR/PaintedAnimeNPR.hlsl",
+  "shaderIncludeSha256": "4ae21f987438856aab4dafb10d394e942881e5c4f8bfb6a2fb8819e6784ff04a",
+  "presetAsset": "Assets/CharacterArt/Generated/RenNprReview/RenNprReviewPresets.json",
+  "presetSha256": "945c37e66b4e586b4a51495478ce547ed41488fdc5352d7d0c7da43a7c98df7c",
+  "reviewNote": "Current prototype shader-isolation study only: exact frozen V2 meshes and source paint. Selected Studio H cheeks/jaw and future hair derivatives are not integrated. First preset was too flat; revised skin FaceMode0.45 plus retained geometric normals. New-scene NPR receives/casts main shadows; old diffuse baseline does not."
+}

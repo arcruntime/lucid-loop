@@ -1,0 +1,1895 @@
+{
+  "shaderName": "LucidLoop/Characters/PaintedAnimeNPR",
+  "materials": [
+    {
+      "sourceName": "Ren_AnimePaint_v2_BakedSkin",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.2
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.46
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.16
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.23
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.22
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.68
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.14
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.25
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.15
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.018
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0.45
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.7105664902244221,
+            0.5870163508936885,
+            0.692071056865372,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.38005633644979925,
+            0.3303437128042374,
+            0.5225215539683921,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_PaleBlond_PaintedHair",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.22
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.25
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.32
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0.16
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.09
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.43387952044860834,
+            0.5870163508936885,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.15487248594976835,
+            0.17064493581555268,
+            0.34239163959260344,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8480882574948619,
+            0.7293470915734015,
+            0.5382355236010181,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_Cap_V2_Cloth",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.22
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.25
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.28
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0.025
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.045
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.38005633644979925,
+            0.4200332886842154,
+            0.6038273388553378,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.13286832155381798,
+            0.17064493581555268,
+            0.3303437128042374,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.09462962659456918,
+            0.11280478678675158,
+            0.17064493581555268,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_Cap_V2_InnerCloth",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.22
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.25
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.28
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0.025
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.045
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.38005633644979925,
+            0.4200332886842154,
+            0.6038273388553378,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.13286832155381798,
+            0.17064493581555268,
+            0.3303437128042374,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.09462962659456918,
+            0.11280478678675158,
+            0.17064493581555268,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_Piercing_BrushedSilver",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.22
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.25
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.28
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0.3
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.79
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0.18
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.5382355236010181,
+            0.6038273388553378,
+            0.7677687605549981,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.17064493581555268,
+            0.22341399352485986,
+            0.3931231302267222,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8688993866725532,
+            0.9331068418238677,
+            1.0,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_IrisGreyBlue",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.5
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.24
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.16
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.14
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.22
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.7874122893956174,
+            0.8480882574948619,
+            1.0,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.49190504085677866,
+            0.5870163508936885,
+            0.8073459089125289,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_Sclera",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.42
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.34
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.16
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.16
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.3
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.7105664902244221,
+            0.7874122893956174,
+            0.9114075004063535,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.40644830114675407,
+            0.49190504085677866,
+            0.6559306827469925,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_IrisCatchlight",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.65
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.8275708303626798,
+            0.8480882574948619,
+            0.9551045992337789,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.5704815954749093,
+            0.6382832153523972,
+            0.8073459089125289,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_Pupil",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.65
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.8275708303626798,
+            0.8480882574948619,
+            0.9551045992337789,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.5704815954749093,
+            0.6382832153523972,
+            0.8073459089125289,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_UpperLiner",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.65
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.8275708303626798,
+            0.8480882574948619,
+            0.9551045992337789,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.5704815954749093,
+            0.6382832153523972,
+            0.8073459089125289,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_LowerLiner",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.65
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.8275708303626798,
+            0.8480882574948619,
+            0.9551045992337789,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.5704815954749093,
+            0.6382832153523972,
+            0.8073459089125289,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_Oral_Cavity",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.65
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.05
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.1
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.8275708303626798,
+            0.8480882574948619,
+            0.9551045992337789,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.5704815954749093,
+            0.6382832153523972,
+            0.8073459089125289,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_Anime_Teeth",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.36
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.3
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.15
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.15
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.7105664902244221,
+            0.6559306827469925,
+            0.7105664902244221,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.34239163959260344,
+            0.31854677812509186,
+            0.44798841244188325,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sourceName": "Ren_Tongue",
+      "floats": [
+        {
+          "name": "_UsePaintRegions",
+          "value": 0
+        },
+        {
+          "name": "_PaintRegionStrength",
+          "value": 0
+        },
+        {
+          "name": "_AmbientFloor",
+          "value": 0.32
+        },
+        {
+          "name": "_ProbeStrength",
+          "value": 0.08
+        },
+        {
+          "name": "_MainLightStrength",
+          "value": 0.28
+        },
+        {
+          "name": "_AdditionalLightStrength",
+          "value": 0.12
+        },
+        {
+          "name": "_SceneColorStrength",
+          "value": 0.12
+        },
+        {
+          "name": "_ShadowStrength",
+          "value": 0.65
+        },
+        {
+          "name": "_MaxAdditionalLights",
+          "value": 4
+        },
+        {
+          "name": "_ShadeThreshold",
+          "value": 0.55
+        },
+        {
+          "name": "_ShadeSoftness",
+          "value": 0.16
+        },
+        {
+          "name": "_DeepThreshold",
+          "value": 0.22
+        },
+        {
+          "name": "_DeepSoftness",
+          "value": 0.12
+        },
+        {
+          "name": "_HighlightStrength",
+          "value": 0
+        },
+        {
+          "name": "_HighlightThreshold",
+          "value": 0.82
+        },
+        {
+          "name": "_HighlightSoftness",
+          "value": 0.13
+        },
+        {
+          "name": "_RimStrength",
+          "value": 0
+        },
+        {
+          "name": "_RimPower",
+          "value": 3
+        },
+        {
+          "name": "_FaceMode",
+          "value": 0
+        },
+        {
+          "name": "_FaceCurvature",
+          "value": 0.85
+        },
+        {
+          "name": "_Cull",
+          "value": 0
+        },
+        {
+          "name": "_AlphaClip",
+          "value": 0
+        },
+        {
+          "name": "_Unlit",
+          "value": 0
+        }
+      ],
+      "colors": [
+        {
+          "name": "_ShadeColor",
+          "linearRgba": [
+            0.6382832153523972,
+            0.47699978456654196,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_DeepShadeColor",
+          "linearRgba": [
+            0.28464669032765505,
+            0.17064493581555268,
+            0.29569980462568246,
+            1
+          ]
+        },
+        {
+          "name": "_HighlightColor",
+          "linearRgba": [
+            0.8073459089125289,
+            0.7105664902244221,
+            0.5704815954749093,
+            1
+          ]
+        },
+        {
+          "name": "_RimColor",
+          "linearRgba": [
+            0.44798841244188325,
+            0.5382355236010181,
+            0.7677687605549981,
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1222 @@
+{
+    "unityVersion": "6000.3.24f1",
+    "sourceSha256": "74283a65dfb977e2ec0976cd36a019ab54489f5867fbb8702f72c478a6ee9bda",
+    "shaderSha256": "aab21844a20daa85f98be0ab538399ee4dc70960046811b58dad28c0952bf612",
+    "shaderIncludeSha256": "4ae21f987438856aab4dafb10d394e942881e5c4f8bfb6a2fb8819e6784ff04a",
+    "contractSha256": "945c37e66b4e586b4a51495478ce547ed41488fdc5352d7d0c7da43a7c98df7c",
+    "controllerSha256": "b0cd23114dc9ac0acddaa54be84945795e7995a24d87858884ab9463c0a026e2",
+    "shadows": "NPR renderers cast and receive; old diffuse baseline retains no casting/receiving. Both directional keys request Soft shadows, bias0.025, normalBias0.025, nearPlane0.05. Matched camera far planes6. Study-owned pipeline; actual supported features and resolution recorded below. Additional-shadow and Forward+ paths are not tested.",
+    "activePipeline": "RenNprReviewPipeline",
+    "mainShadowsSupported": true,
+    "softShadowsSupported": true,
+    "additionalShadowsSupported": false,
+    "mainShadowResolution": 2048,
+    "shadowDistance": 6.0,
+    "method": "Running Unity player, identical frozen shared meshes and poses, at least 12 player updates before explicit URP GPU capture. Source geometry and textures unchanged. Moving colored lights sampled at deterministic phases; this is not device-performance evidence.",
+    "captures": [
+        {
+            "file": "RenNprReview--old-diffuse--rest--front.png",
+            "sha256": "407d3065caf7e7f6081b51c71a93f04bc245285cfd1106c1462aa343e0c5495a",
+            "shader": "old-diffuse",
+            "pose": "rest",
+            "lighting": "Neutral",
+            "firstFrame": 1,
+            "captureFrame": 13,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--rest--front.png",
+            "sha256": "b441a2bfee1a2bf56fa668041da91910c800f04ce047659f485c9891d278d3e6",
+            "shader": "npr",
+            "pose": "rest",
+            "lighting": "Neutral",
+            "firstFrame": 1,
+            "captureFrame": 13,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--rest--quarter.png",
+            "sha256": "24681e2cf1b3dd4c0d0bc82c88b311c401d56039a46edcc36c176ba7f0468f20",
+            "shader": "old-diffuse",
+            "pose": "rest",
+            "lighting": "Neutral",
+            "firstFrame": 13,
+            "captureFrame": 25,
+            "yaw": 45.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--rest--quarter.png",
+            "sha256": "4e7bb1459317d1843c705dfbc2f19f991c858fc69d5268904c26f6e14a4ea6bf",
+            "shader": "npr",
+            "pose": "rest",
+            "lighting": "Neutral",
+            "firstFrame": 13,
+            "captureFrame": 25,
+            "yaw": 45.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--rest--profile.png",
+            "sha256": "3f2152e84e98537171955e654d6a9d262a8a329e7aea90d59fa74f7ad2983727",
+            "shader": "old-diffuse",
+            "pose": "rest",
+            "lighting": "Neutral",
+            "firstFrame": 25,
+            "captureFrame": 37,
+            "yaw": 90.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--rest--profile.png",
+            "sha256": "faed30f479e21bde5b4d5ba0e63eb43307e1ec2211f179600ed9ee7bd66ed559",
+            "shader": "npr",
+            "pose": "rest",
+            "lighting": "Neutral",
+            "firstFrame": 25,
+            "captureFrame": 37,
+            "yaw": 90.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--unlit--front.png",
+            "sha256": "084caf8e1ffb89e06760ead22af0af149dc73ab8bc9323ccbccc76acd4005aea",
+            "shader": "old-diffuse",
+            "pose": "unlit",
+            "lighting": "Source color / unlit",
+            "firstFrame": 37,
+            "captureFrame": 49,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--unlit--front.png",
+            "sha256": "084caf8e1ffb89e06760ead22af0af149dc73ab8bc9323ccbccc76acd4005aea",
+            "shader": "npr",
+            "pose": "unlit",
+            "lighting": "Source color / unlit",
+            "firstFrame": 37,
+            "captureFrame": 49,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--club-a--front.png",
+            "sha256": "9b4dd07989dbffa919f56d6f04de6ba2a86fc2b1f64eaba93c6774de81cebf10",
+            "shader": "old-diffuse",
+            "pose": "club-a",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 49,
+            "captureFrame": 61,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--club-a--front.png",
+            "sha256": "60ed0c6901bd9a0ca59ce59d4cc9795929f725c4d4fe8a7ba6c0ccf8d5aca743",
+            "shader": "npr",
+            "pose": "club-a",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 49,
+            "captureFrame": 61,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--club-a--quarter.png",
+            "sha256": "e56855a95ad6cff8f81245f5cac612cb07f0d0c3dfed8b572877977cdb6d05e2",
+            "shader": "old-diffuse",
+            "pose": "club-a",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 61,
+            "captureFrame": 73,
+            "yaw": 45.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--club-a--quarter.png",
+            "sha256": "bebd1ba220a6b5d4941c64e441617d0528175e2d467fe5e8a217807a7936a081",
+            "shader": "npr",
+            "pose": "club-a",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 61,
+            "captureFrame": 73,
+            "yaw": 45.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--club-a--profile.png",
+            "sha256": "61db89b9499f369b276e14e080fa23f0f6b256d43f10d14c056addfe80027c60",
+            "shader": "old-diffuse",
+            "pose": "club-a",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 73,
+            "captureFrame": 85,
+            "yaw": 90.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--club-a--profile.png",
+            "sha256": "8005e7353a7cd000ce99dbc760b20bf96eaa5a3148db000618fe55d7c087bac4",
+            "shader": "npr",
+            "pose": "club-a",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 73,
+            "captureFrame": 85,
+            "yaw": 90.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--club-b--front.png",
+            "sha256": "e0dd41f041482634d76424f864bf04837d4c921ae958b582b09f9e29693e0314",
+            "shader": "old-diffuse",
+            "pose": "club-b",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 85,
+            "captureFrame": 97,
+            "yaw": 0.0,
+            "lightPhase": 3.1415927410125734,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--club-b--front.png",
+            "sha256": "5fd54bc5804dc29114ba3adc7a8af100e3a97c3ab38de07b64e5fad04cbd63b9",
+            "shader": "npr",
+            "pose": "club-b",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 85,
+            "captureFrame": 97,
+            "yaw": 0.0,
+            "lightPhase": 3.1415927410125734,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--club-b--quarter.png",
+            "sha256": "b6224a05e5edf8649caf59e89e349af8ad4fef89a85ea00150bf62ccdbaea70f",
+            "shader": "old-diffuse",
+            "pose": "club-b",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 97,
+            "captureFrame": 109,
+            "yaw": 45.0,
+            "lightPhase": 3.1415927410125734,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--club-b--quarter.png",
+            "sha256": "65c481c4ce2132321c3b645a591431245669bad8364965ea1827d4218e0aa453",
+            "shader": "npr",
+            "pose": "club-b",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 97,
+            "captureFrame": 109,
+            "yaw": 45.0,
+            "lightPhase": 3.1415927410125734,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--club-b--profile.png",
+            "sha256": "234e3a65f28c8d0c05bc921ff5e11db1813d08518bbe77b4775e999dbb49bf57",
+            "shader": "old-diffuse",
+            "pose": "club-b",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 109,
+            "captureFrame": 121,
+            "yaw": 90.0,
+            "lightPhase": 3.1415927410125734,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--club-b--profile.png",
+            "sha256": "2895170be7ee8df70469251f47fa03f2c73ebc8eecc81830c966a820de329178",
+            "shader": "npr",
+            "pose": "club-b",
+            "lighting": "Moving colored light sample",
+            "firstFrame": 109,
+            "captureFrame": 121,
+            "yaw": 90.0,
+            "lightPhase": 3.1415927410125734,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--partial--front.png",
+            "sha256": "fc75eda2ca2c6c0092e91fef5df55c2ac565c3604bd3612c1db26b89d2f0d3cd",
+            "shader": "old-diffuse",
+            "pose": "partial",
+            "lighting": "Neutral",
+            "firstFrame": 121,
+            "captureFrame": 133,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.5,
+            "blinkR": 0.5,
+            "gazeX": 0.5,
+            "gazeY": 0.5,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--partial--front.png",
+            "sha256": "117a51985f13e44f824dab6bdc590c182a1e6b16567789c2bc590148a31c3c45",
+            "shader": "npr",
+            "pose": "partial",
+            "lighting": "Neutral",
+            "firstFrame": 121,
+            "captureFrame": 133,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.5,
+            "blinkR": 0.5,
+            "gazeX": 0.5,
+            "gazeY": 0.5,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--partial--quarter.png",
+            "sha256": "1d1e64626661b7fe5f87e20dcce0937c7b55f5fff7b65ecc3e6ecdb6efd9ec1f",
+            "shader": "old-diffuse",
+            "pose": "partial",
+            "lighting": "Neutral",
+            "firstFrame": 133,
+            "captureFrame": 145,
+            "yaw": 45.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.5,
+            "blinkR": 0.5,
+            "gazeX": 0.5,
+            "gazeY": 0.5,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--partial--quarter.png",
+            "sha256": "7201ce89450945f6b9afb10b9b3d025a1e2302ade6bc02dcdac778ee69d9fa8d",
+            "shader": "npr",
+            "pose": "partial",
+            "lighting": "Neutral",
+            "firstFrame": 133,
+            "captureFrame": 145,
+            "yaw": 45.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 0.5,
+            "blinkR": 0.5,
+            "gazeX": 0.5,
+            "gazeY": 0.5,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--full-blink--front.png",
+            "sha256": "b85067eaaeae07fc603cb489fd3e8ce775cef132c473ff8d29f9ba302118e043",
+            "shader": "old-diffuse",
+            "pose": "full-blink",
+            "lighting": "Neutral",
+            "firstFrame": 145,
+            "captureFrame": 157,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 1.0,
+            "blinkR": 1.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--full-blink--front.png",
+            "sha256": "2c391a86d465ff8e68493566e7b65add8754dcfd3fe849d5c3dc8c43379de872",
+            "shader": "npr",
+            "pose": "full-blink",
+            "lighting": "Neutral",
+            "firstFrame": 145,
+            "captureFrame": 157,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 1.0,
+            "openA": 0.0,
+            "blinkL": 1.0,
+            "blinkR": 1.0,
+            "gazeX": 0.0,
+            "gazeY": 0.0,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--old-diffuse--open-A--front.png",
+            "sha256": "3c3a9b3549c51248d3f0127e39ebc4d9ef9032dd4106dd92fe190261329278a5",
+            "shader": "old-diffuse",
+            "pose": "open-A",
+            "lighting": "Neutral",
+            "firstFrame": 157,
+            "captureFrame": 169,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 0.0,
+            "openA": 1.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.5,
+            "gazeY": 0.5,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        },
+        {
+            "file": "RenNprReview--npr--open-A--front.png",
+            "sha256": "550a179df007c235d4d8c10282a168fdebefae431b1f2df9e268c4e7e68c4e47",
+            "shader": "npr",
+            "pose": "open-A",
+            "lighting": "Neutral",
+            "firstFrame": 157,
+            "captureFrame": 169,
+            "yaw": 0.0,
+            "lightPhase": 0.0,
+            "seal": 0.0,
+            "openA": 1.0,
+            "blinkL": 0.0,
+            "blinkR": 0.0,
+            "gazeX": 0.5,
+            "gazeY": 0.5,
+            "capWeights": [
+                {
+                    "renderer": "Ren_Hair_Back",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Fringe_R",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_RootShell",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_L",
+                    "weight": 100.0
+                },
+                {
+                    "renderer": "Ren_Hair_Side_R",
+                    "weight": 100.0
+                }
+            ]
+        }
+    ]
+}

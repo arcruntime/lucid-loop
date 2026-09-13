@@ -1,0 +1,9 @@
+{
+  "preset_rows": 14,
+  "exact_source_material_name_coverage": true,
+  "all_preset_properties_declared": true,
+  "shader_sha256": "aab21844a20daa85f98be0ab538399ee4dc70960046811b58dad28c0952bf612",
+  "include_sha256": "4ae21f987438856aab4dafb10d394e942881e5c4f8bfb6a2fb8819e6784ff04a",
+  "preset_sha256": "945c37e66b4e586b4a51495478ce547ed41488fdc5352d7d0c7da43a7c98df7c",
+  "runtime_evidence_owner": "RenNprReviewBuilder/Controller isolated Unity viewer"
+}

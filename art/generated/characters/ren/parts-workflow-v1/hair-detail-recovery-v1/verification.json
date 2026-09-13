@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "blender": "5.1.1",
+  "export_reimports": [
+    {
+      "file": "Ren_TripoHair_Detail_Comparison.fbx",
+      "sha256": "364066f14fd445b4f2cc6e5e5eb2cd7f9da8d05ec57ac4114d353341091fdef1",
+      "rendered_triangles": 9004,
+      "vertices_after_import": 5189,
+      "uv_layers": 0,
+      "morph_names": [
+        "Basis",
+        "capOn_TEMPORARY_P2_FIT"
+      ],
+      "maximum_state_vertex_distance_native_units": {
+        "Basis": 8.56006536764653e-08,
+        "capOn_TEMPORARY_P2_FIT": 7.598131190889035e-08
+      }
+    },
+    {
+      "file": "Ren_TripoHair_Detail_Comparison.glb",
+      "sha256": "e2e4d44035f6d71f98ab4c8ff1804628d8abd6f82707c15c73058e0ca59a253d",
+      "rendered_triangles": 9004,
+      "vertices_after_import": 5426,
+      "uv_layers": 0,
+      "morph_names": [
+        "Basis",
+        "capOn_TEMPORARY_P2_FIT"
+      ],
+      "maximum_state_vertex_distance_native_units": {
+        "Basis": 6.365778659755961e-08,
+        "capOn_TEMPORARY_P2_FIT": 3.332000986233652e-08
+      }
+    }
+  ],
+  "frozen_outputs_unchanged": true,
+  "all_source_files_unchanged": true,
+  "scope": "Counts and both position states checked; this does not certify cap fit, UV readiness or production likeness."
+}

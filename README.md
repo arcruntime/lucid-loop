@@ -58,12 +58,44 @@ The checked-in Unity scene is ready to open without rebuilding it.
 
 See the [comparison results and provenance](art/generated/characters/ren/bust-comparison-v1/README.md)
 and [visual recommendation](art/generated/characters/ren/bust-comparison-v1/REVIEW.md).
-Tripo H closed rest is the preferred construction reference among these whole
-busts. The [Studio H A-open original](art/generated/characters/ren/bust-comparison-v1/tripo/studio-h3.1-a-open/README.md)
-has now been recovered and was selected by the user for Ren's **cheek and jaw
-shape**; it is not yet integrated into the current comparison scene. Two older
+The earlier comparison preferred Tripo H closed rest among those whole busts.
+The user subsequently selected the exact
+[Studio H A-open original](art/generated/characters/ren/bust-comparison-v1/tripo/studio-h3.1-a-open/README.md)
+as Ren's **full face-shape master**, including cheeks, jaw and chin. It has been
+recovered but is not yet integrated into this older comparison scene. Two older
 Studio P2 busts still await export. The separate-parts experiment below uses
 newly generated API assets and has its own review.
+
+## Review the selected H face shape
+
+The matched [H/P2 shape comparison](art/generated/characters/ren/parts-workflow-v1/face-source-h-audit-v1/comparison.html)
+shows front, three-quarter and profile clay renders of the exact H source, P2
+open A, and P2's current closed rest. Open the HTML file directly, or serve it:
+
+```powershell
+python -m http.server 8769 --bind 127.0.0.1 --directory art/generated/characters/ren/parts-workflow-v1/face-source-h-audit-v1
+```
+
+Then open **http://127.0.0.1:8769/comparison.html**. The comparison uses an
+approximate uniform registration; H's open mouth is not a closed-rest target.
+The [audit](art/generated/characters/ren/parts-workflow-v1/face-source-h-audit-v1/README.md)
+records the alignment limits. The H surface is approved; fitting controls and
+rebuilding its final paint remain in progress.
+
+## Launch the Ren NPR shading study
+
+Open **`Assets/CharacterArt/Generated/Preview/Scenes/RenNprReview.unity`**
+in Unity, press **Play**, and select **16:9**. Both panels use the same older
+V2 geometry and paint so the old diffuse and painterly NPR materials can be
+compared directly. This is a shader study; it does not contain the corrected H
+face or recovered detailed hair.
+
+Use the facial controls and moving nightclub lights to compare shape readability.
+The scene selects its own preview pipeline with soft main-light shadows.
+[Build and capture instructions](Unity/Assets/CharacterArt/Editor/RenNprReview.md)
+and [actual rendered evidence](art/generated/characters/ren/parts-workflow-v1/npr-style-v1/STYLE_CONTRACT.md)
+describe the verified paths and limitations. Baked lip highlights still require
+paint correction, and iPhone performance has not been measured.
 
 ## Launch the Ren parts study
 

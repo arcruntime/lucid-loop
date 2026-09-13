@@ -1,0 +1,15 @@
+{
+    "shader": "LucidLoop/Characters/PaintedAnimeNPR",
+    "unityVersion": "6000.3.24f1",
+    "srpBatcherApi": "ShaderUtil.GetSRPBatcherCompatibilityCode(shader,0)",
+    "srpBatcherIssue": "Not initialized ()",
+    "srpBatcherCompatibilityCode": 1,
+    "messages": [],
+    "passes": [
+        "PaintedForward",
+        "DepthOnly",
+        "DepthNormals",
+        "ShadowCaster"
+    ],
+    "scope": "D3D11 player build and live review pipeline only. Additional-shadow, Forward+, Metal/iPhone, and all theoretical variants are not verified."
+}

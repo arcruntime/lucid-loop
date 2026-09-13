@@ -1,0 +1,44 @@
+{
+  "uniform_scale": 1.0465116279069768,
+  "H_to_P2_matrix": [
+    [
+      -1.4060810826777015e-07,
+      -1.0465117692947388,
+      0.0,
+      -0.08941860496997833
+    ],
+    [
+      1.0465117692947388,
+      -1.4060810826777015e-07,
+      0.0,
+      0.0073255812749266624
+    ],
+    [
+      0.0,
+      0.0,
+      1.0465116500854492,
+      -0.4884883761405945
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "landmarks": "Approximate visible outer canthi H X -0.179/+0.165, Z0.548 -> P2 Y +/-0.180, Z0.085. Hair obscures H corners; not a final registration fit. Depth H Y -0.31 -> P2 X0.235, approximate eyelid plane.",
+  "shape_states": {
+    "H-selected-open": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0
+    },
+    "P2-current-rest": {
+      "Basis": 1.0,
+      "mouthSeal": 1.0
+    },
+    "P2-open-A": {
+      "Basis": 1.0,
+      "jawOpen_A": 1.0
+    }
+  }
+}

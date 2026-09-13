@@ -8,6 +8,29 @@ Show it beside the original artist sheet in the browser and Unity, with working
 independent blinks, clean gaze, closed rest and the existing open-A mouth prototype.
 This is the immediate milestone within the broader Ren implementation below.
 
+### Reference animation requested on 2026-09-14
+
+The user approved the exact H source's overall face shape after the matched
+comparison. Build the corrected head from that surface, restore detailed hair,
+and apply the painterly NPR treatment before judging the animated result.
+P2 remains a historical construction scaffold, not the neutral shape authority.
+
+Use `B:\lucid-loop\DanielDuguay87_2093375826557296673.mp4` as the
+performance reference for a control-driven test animation. Preserve the supplied
+15.093-second clip unchanged (SHA-256
+`d479c1eeb5eab7a15fa0c489766ef1e22983289d33a5ef51ab32398dc73ea2f1`).
+Record observed head motion, gaze, blinks and mouth/expression changes against
+actual source timestamps. Distinguish manually interpreted acting from measured
+motion and audio analysis. Do not describe audio energy as phoneme recognition.
+
+Deliver an actual Unity scene with replay, pause and scrubbing, showing the
+reference alongside Ren in a landscape 16:9 layout, plus a captured test clip.
+Revalidate H's neutral shape, mouth closure, blinks and gaze after fitting;
+transferred P2 controls do not inherit their earlier validation. Clearly report
+reference hand/body gestures that the bust cannot reproduce, missing facial
+targets, and any remaining visual artifacts. This reference test does not by
+itself establish complete English/Japanese speech coverage or phone performance.
+
 ### Latest visual correction: hair detail, jaw and NPR shading
 
 The user rejected the V2 hair's loss of detail, found the jaw too pointed, and

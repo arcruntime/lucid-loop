@@ -4,6 +4,10 @@
 # Keep the review runtime's recorded source hashes stable on Windows checkout.
 Unity/Assets/CharacterArt/Runtime/RenCompleteHead*.cs text eol=lf
 Unity/Assets/CharacterArt/Editor/RenCompleteHead*.cs text eol=lf
+Unity/Assets/CharacterArt/Runtime/RenNprReview*.cs text eol=lf
+Unity/Assets/CharacterArt/Editor/RenNprReview*.cs text eol=lf
+Unity/Assets/CharacterArt/NPR/*.shader text eol=lf
+Unity/Assets/CharacterArt/NPR/*.hlsl text eol=lf
 
 # Images and layered source artwork.
 *.[pP][nN][gG] filter=lfs diff=lfs merge=lfs -text
