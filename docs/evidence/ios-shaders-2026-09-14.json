@@ -1,0 +1,469 @@
+{
+  "schema_version": 1,
+  "target": "iOS",
+  "graphics_api": "Metal",
+  "build_result": "successful Xcode export",
+  "source": {
+    "log": "Editor.log",
+    "segment_start_line": 32562,
+    "segment_end_line": 43931,
+    "segment_sha256": "51eeef64f2bd945aec7c41fc05643cdfbcbed992d1eafe2f156cce9cc9239106",
+    "build_finished_utc": "2026-09-13T19:02:41.635000+00:00",
+    "stripping_json_sha256": "ed8ae87fc3f0e2bfc1efbb2f6b702c8beb404f6e8034ae5e732a40f9c2feadfd"
+  },
+  "unit": "Shader pass/stage variants, not unique shaders or draw calls",
+  "interpretation": [
+    "Full variant space is a theoretical keyword Cartesian product; it was not all compiled.",
+    "JSON inputs are variants entering scriptable stripping AFTER settings and built-in filtering.",
+    "This is one current-build measurement, not a before/after optimization or device-performance comparison.",
+    "Compile inclusion does not prove that a required runtime keyword combination or visual effect is correct."
+  ],
+  "scriptable_stripping": {
+    "input_variants": 694,
+    "retained_variants": 582,
+    "shader_entries": 71
+  },
+  "selected_shader_details": {
+    "Universal Render Pipeline/Lit": {
+      "totals_across_passes_and_stages": {
+        "full_variant_space": 72855982180,
+        "after_settings": 2928,
+        "after_builtin": 49,
+        "after_scriptable": 14
+      },
+      "passes": [
+        {
+          "pass": "ForwardLit",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 884736,
+          "after_settings": 768,
+          "after_builtin": 6,
+          "after_scriptable": 2
+        },
+        {
+          "pass": "ForwardLit",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 72477573120,
+          "after_settings": 1536,
+          "after_builtin": 12,
+          "after_scriptable": 4
+        },
+        {
+          "pass": "ShadowCaster",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 16,
+          "after_settings": 8,
+          "after_builtin": 2,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "ShadowCaster",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "GBuffer",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 36864,
+          "after_settings": 192,
+          "after_builtin": 6,
+          "after_scriptable": 0
+        },
+        {
+          "pass": "GBuffer",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 377487360,
+          "after_settings": 384,
+          "after_builtin": 12,
+          "after_scriptable": 0
+        },
+        {
+          "pass": "DepthOnly",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "DepthOnly",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "DepthNormals",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "DepthNormals",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 16,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "Universal2D",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 2,
+          "after_settings": 2,
+          "after_builtin": 1,
+          "after_scriptable": 0
+        },
+        {
+          "pass": "Universal2D",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 2,
+          "after_settings": 2,
+          "after_builtin": 1,
+          "after_scriptable": 0
+        },
+        {
+          "pass": "MotionVectors",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "MotionVectors",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "XRMotionVectors",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 0
+        },
+        {
+          "pass": "XRMotionVectors",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 0
+        }
+      ]
+    }
+  },
+  "all_shader_scriptable_counts": {
+    "Hidden/Universal Render Pipeline/Sampling": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/CoreSRP/CoreCopy": {
+      "before_scriptable": 6,
+      "after_scriptable": 6
+    },
+    "Hidden/Universal Render Pipeline/ClusterDeferred": {
+      "before_scriptable": 8,
+      "after_scriptable": 0
+    },
+    "Hidden/TerrainEngine/Details/UniversalPipeline/BillboardWavingDoublePass": {
+      "before_scriptable": 12,
+      "after_scriptable": 8
+    },
+    "Hidden/Core/FallbackError": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Universal Render Pipeline/XR/XROcclusionMesh": {
+      "before_scriptable": 2,
+      "after_scriptable": 0
+    },
+    "Hidden/Universal/HDRDebugView": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/Core/VrsVisualization": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Universal Render Pipeline/StencilDitherMaskSeed": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Universal/CoreBlit": {
+      "before_scriptable": 56,
+      "after_scriptable": 56
+    },
+    "Hidden/Universal/BlitHDROverlay": {
+      "before_scriptable": 4,
+      "after_scriptable": 0
+    },
+    "Hidden/Universal Render Pipeline/CameraMotionVectors": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Universal Render Pipeline/Debug/DebugReplacement": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Universal/CoreBlitColorAndDepth": {
+      "before_scriptable": 24,
+      "after_scriptable": 24
+    },
+    "Hidden/Universal Render Pipeline/XR/XRMirrorView": {
+      "before_scriptable": 3,
+      "after_scriptable": 0
+    },
+    "Hidden/Universal Render Pipeline/CopyDepth": {
+      "before_scriptable": 16,
+      "after_scriptable": 16
+    },
+    "Hidden/TerrainEngine/Details/UniversalPipeline/WavingDoublePass": {
+      "before_scriptable": 28,
+      "after_scriptable": 8
+    },
+    "Hidden/Universal Render Pipeline/FallbackError": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Universal Render Pipeline/StencilDeferred": {
+      "before_scriptable": 21,
+      "after_scriptable": 0
+    },
+    "Hidden/Universal Render Pipeline/DBufferClear": {
+      "before_scriptable": 2,
+      "after_scriptable": 1
+    },
+    "Hidden/TerrainEngine/Details/UniversalPipeline/Vertexlit": {
+      "before_scriptable": 24,
+      "after_scriptable": 12
+    },
+    "Hidden/Universal Render Pipeline/XR/XRMotionVector": {
+      "before_scriptable": 2,
+      "after_scriptable": 0
+    },
+    "Skybox/Procedural": {
+      "before_scriptable": 6,
+      "after_scriptable": 6
+    },
+    "Universal Render Pipeline/Lit": {
+      "before_scriptable": 49,
+      "after_scriptable": 14
+    },
+    "Legacy Shaders/VertexLit": {
+      "before_scriptable": 12,
+      "after_scriptable": 12
+    },
+    "Legacy Shaders/Diffuse": {
+      "before_scriptable": 30,
+      "after_scriptable": 30
+    },
+    "Hidden/Internal-StencilWrite": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Internal-DepthNormalsTexture": {
+      "before_scriptable": 20,
+      "after_scriptable": 20
+    },
+    "Hidden/Internal-ScreenSpaceShadows": {
+      "before_scriptable": 32,
+      "after_scriptable": 32
+    },
+    "Hidden/Internal-CombineDepthNormals": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/BlitCopy": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/BlitCopyDepth": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/ConvertTexture": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Internal-DeferredShading": {
+      "before_scriptable": 54,
+      "after_scriptable": 54
+    },
+    "Hidden/Internal-DeferredReflections": {
+      "before_scriptable": 6,
+      "after_scriptable": 6
+    },
+    "Hidden/Internal-MotionVectors": {
+      "before_scriptable": 6,
+      "after_scriptable": 6
+    },
+    "Hidden/Internal-Flare": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Internal-Halo": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/BlitCopyWithDepth": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/BlitToDepth": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/BlitToDepth_MSAA": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/BlitCopyHDRTonemap": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Internal-DebugPattern": {
+      "before_scriptable": 6,
+      "after_scriptable": 6
+    },
+    "Hidden/Internal-GUITextureClip": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/Internal-GUITextureClipText": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/Internal-GUITexture": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/Internal-GUITextureBlit": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/Internal-GUIRoundedRect": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/Internal-GUIRoundedRectWithColorPerBorder": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/Internal-UIRDefault": {
+      "before_scriptable": 80,
+      "after_scriptable": 80
+    },
+    "Hidden/Internal-UIRAtlasBlitCopy": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Sprites/Default": {
+      "before_scriptable": 8,
+      "after_scriptable": 8
+    },
+    "Sprites/Mask": {
+      "before_scriptable": 8,
+      "after_scriptable": 8
+    },
+    "UI/Default": {
+      "before_scriptable": 8,
+      "after_scriptable": 8
+    },
+    "UI/DefaultETC1": {
+      "before_scriptable": 8,
+      "after_scriptable": 8
+    },
+    "Hidden/CubeBlur": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/CubeCopy": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/CubeBlend": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "Hidden/VR/BlitTexArraySlice": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Internal-ODSWorldTexture": {
+      "before_scriptable": 20,
+      "after_scriptable": 20
+    },
+    "Hidden/Internal-CubemapToEquirect": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/VR/BlitFromTex2DToTexArraySlice": {
+      "before_scriptable": 5,
+      "after_scriptable": 5
+    },
+    "Hidden/VideoComposite": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/VideoDecode": {
+      "before_scriptable": 30,
+      "after_scriptable": 30
+    },
+    "Hidden/Compositing": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/TextCore/Distance Field SSD": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Physics2D/SDF_CircleGeometry": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Physics2D/SDF_CapsuleGeometry": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Physics2D/SDF_PolygonGeometry": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Physics2D/SDF_Line": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "Hidden/Physics2D/SDF_Point": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    }
+  },
+  "json_export_timing": "URP ShaderStrippingReportScope.OnPostprocessBuild -> ReportEnd -> DumpReport writes Temp/shader-stripping.json; absence during compilation is expected."
+}

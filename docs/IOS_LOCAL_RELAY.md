@@ -61,6 +61,14 @@ ATS protects Apple's URL Loading System; it does not cover every lower-level net
 
 ## Verification status
 
+Validate an exported plist with automatic format detection and a value roundtrip:
+
+```powershell
+python tools/check_ios_plist.py Unity/Builds/iOS/Xcode/Info.plist --development
+```
+
+Omit `--development` when checking a release export. The [checker](../tools/check_ios_plist.py) catches a missing XML declaration, verifies the scoped ATS settings, and does not load the external plist DTD. The serializer now emits a UTF-8 XML declaration and standard plist DOCTYPE. The existing development export was repaired with this serializer; every parsed plist value was verified unchanged.
+
 Direct compilation against the installed Unity 6000.3.24f1 assemblies passed for the transports and iOS postprocessor. Independent development/release checks passed for allowed LAN addresses, rejected public cleartext URLs, TLS/loopback behavior, plist export cleanup, and preservation of unrelated bundle metadata. Versioned [address-policy tests](../Unity/Assets/Gyms/Tests/Editor/RelayAddressPolicyTests.cs) are available to the Unity test suite.
 
 This change did not launch a relay, retrieve a secret, change firewall rules, export/sign an Xcode project, or establish physical iPhone connectivity. Those device checks remain necessary; plist and compile checks alone do not establish working iOS networking.

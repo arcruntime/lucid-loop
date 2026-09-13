@@ -61,7 +61,7 @@ SRP Batcher is enabled, but shared shaders do not mean one draw call. Keep mater
 
 ## Verification and next measurements
 
-The static audit and direct C# compilation of the policy against the installed Unity 6000.3/URP assemblies have passed without opening the shared Editor. No iOS shader build, device capture, or visual acceptance has been completed for this policy. Reducing flags is an actual configuration change; a percentage reduction in compiled variants or milliseconds saved is not yet established.
+The static audit and direct C# compilation of the policy against the installed Unity 6000.3/URP assemblies passed. A development iOS/Metal Xcode export subsequently completed successfully on 2026-09-14 JST; its measured shader counts are below. Device capture and visual acceptance remain pending. A before/after improvement in compiled variants or milliseconds saved is not established.
 
 1. Export a development iOS build with strict shader variant matching enabled for diagnosis. Preserve `Editor.log`, `Temp/shader-stripping.json`, and `Temp/compute-shader-stripping.json`; compare the same scenes, materials, platform, Unity version and build options before/after. Read the retained/total variants per shader and pass, especially Lit and the character shaders. [Unity documents these counters and exports](https://docs.unity3d.com/6000.3/Documentation/Manual/urp/shader-stripping-check.html).
 2. Exercise both moods, every character/material, close and wide cameras, microphone UI, death and rewind effects. Check missing-variant logs and pink/error rendering; warm the actual transitions before judging first-use stutter. Add only observed missing runtime combinations to a focused variant collection when needed.
@@ -77,3 +77,27 @@ Post-processing variant stripping stays off until the volume inventory and runti
 Two original procedural eight-bar music loops are included with their [generator](../tools/generate_club_loops.py) and [provenance](../Unity/Assets/Gyms/Audio/music-provenance.json). The component crossfades and ducks them during Live connection/conversation, and pauses them with the encounter. The scoped importer uses streaming compressed audio to bound memory; that trades some decoding work for lower clip residency. See [Unity audio import settings](https://docs.unity3d.com/6000.3/Documentation/Manual/class-AudioClip.html). Originals pass numeric clipping and boundary checks but have not been auditioned here; listen to compressed iOS playback before accepting musical quality or seamlessness.
 
 New scenes receive the binding automatically. For an existing saved `BeforeTheDrop` scene, use **Lucid Loop > Encounter > Apply mood presentation to current encounter**; this preserves the rest of the scene. A focused PlayMode test checks that the intensity multiplier does not accumulate across frames and that disabling the component restores the original light state.
+
+## Measured iOS export: 2026-09-14 JST
+
+The [compact build evidence](evidence/ios-shaders-2026-09-14.json) combines the completed iOS section of `Editor.log` with the matching Unity shader JSON, checking that their retained counts agree. It contains all 71 shader-entry totals and detailed URP Lit pass/stage counts, without publishing the complete Editor log.
+
+| URP Lit pass/stage | Theoretical full keyword space | After settings | After built-in stripping | After scriptable stripping |
+|---|---:|---:|---:|---:|
+| ForwardLit vertex | 884,736 | 768 | 6 | 2 |
+| ForwardLit fragment | 72,477,573,120 | 1,536 | 12 | 4 |
+| GBuffer vertex | 36,864 | 192 | 6 | 0 |
+| GBuffer fragment | 377,487,360 | 384 | 12 | 0 |
+| All Lit passes/stages | 72,855,982,180 | 2,928 | 49 | 14 |
+
+Across all reported shaders, 694 variants entered scriptable stripping and 582 remained. These inputs are already filtered by settings and Unity's built-in stripping. They are not the theoretical full keyword space. The current Forward configuration eliminated Lit's GBuffer stages and retained its used forward/shadow/depth stages. The full-space figures describe possible combinations; Unity did not compile tens of billions of programs. These are current-build counts, not a measured comparison with an earlier build.
+
+`Temp/shader-stripping.json` initially appeared absent while compilation was running. The installed Core RP implementation writes it during `ShaderStrippingReportScope.OnPostprocessBuild`, which calls `ReportEnd` and `DumpReport`. Both shader and compute JSON reports appeared after the export completed and were copied to `Unity/Builds/iOS/` by the existing exporter. No reporting fix was needed.
+
+Reproduce the compact report from a completed export:
+
+```powershell
+python tools/report_ios_shader_variants.py --editor-log "$env:LOCALAPPDATA/Unity/Editor/Editor.log" --stripping-json Unity/Builds/iOS/shader-stripping.json --output docs/evidence/ios-shaders-2026-09-14.json
+```
+
+The parser selects only the latest iOS export segment and requires it to have completed, handles Unity's localized integer separators, and rejects mismatched log/JSON counts. Build inclusion alone does not prove visual correctness, emission visibility, or the presence of every runtime combination. Final character material integration and device transition checks still need their own export validation.

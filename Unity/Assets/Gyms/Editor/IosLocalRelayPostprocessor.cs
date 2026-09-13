@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 #if UNITY_EDITOR
@@ -37,7 +38,17 @@ namespace LucidLoop.Gyms.Editor
             // appropriate in release as well and does not itself permit insecure traffic.
             Set(root, "NSLocalNetworkUsageDescription", new XElement("string",
                 "Connect to the Lucid Loop game relay on your local network during development and testing."));
-            return document.ToString();
+            // XDocument.ToString omits the declaration, which breaks plist format
+            // autodetection. Emit the standard header without resolving the external DTD.
+            document.Declaration = new XDeclaration("1.0", "utf-8", null);
+            document.DocumentType?.Remove();
+            document.AddFirst(new XDocumentType("plist", "-//Apple//DTD PLIST 1.0//EN",
+                "http://www.apple.com/DTDs/PropertyList-1.0.dtd", null));
+            using var output = new MemoryStream();
+            using (var writer = XmlWriter.Create(output, new XmlWriterSettings {
+                Encoding = new UTF8Encoding(false), Indent = true, NewLineChars = "\n", OmitXmlDeclaration = false }))
+                document.Save(writer);
+            return Encoding.UTF8.GetString(output.ToArray());
         }
 
         static XElement Dictionary(XElement parent, string key)

@@ -29,4 +29,4 @@ Device acceptance must measure sustained frame rate, memory, safe-area layout, t
 
 ## Verification status
 
-The existing shared Unity 6000.3.24f1 Editor has successfully activated iOS: `IOS_TARGET_ACTIVE: iOS` was logged and the window reports iOS. The helper serialized iPhone-only, IL2CPP and microphone settings. Xcode export, shader variant reports and physical-device acceptance remain pending. The local development relay is the selected connection setup; no hosted relay is required for this phase.
+The existing shared Unity 6000.3.24f1 Editor successfully activated iOS and exported the development Xcode project on 2026-09-14: `IOS_XCODE_EXPORT_OK: Builds/iOS/Xcode`. The export contains IL2CPP output and the enabled `BeforeTheDrop` scene. Shader and compute-stripping JSON reports are preserved beside the Xcode directory; Unity writes them when the build finishes. Compile/sign/install through Xcode and physical-device acceptance remain pending. The local development relay is the selected connection setup; no hosted relay is required for this phase.
