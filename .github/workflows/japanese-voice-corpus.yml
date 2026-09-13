@@ -1,13 +1,30 @@
 name: Capture Japanese NPC voice evidence
 
 on:
+  push:
+    paths:
+      - '.github/workflows/japanese-voice-corpus.yml'
+      - 'server/test-support/voice-capture.mjs'
+      - 'server/test/voice-capture.test.mjs'
+      - 'server/tools/collect-japanese-voices.mjs'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node --test server/test/voice-capture.test.mjs
   capture:
+    if: github.event_name == 'workflow_dispatch'
+    needs: verify
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
@@ -18,9 +35,6 @@ jobs:
           cache: npm
           cache-dependency-path: server/package-lock.json
       - run: npm ci
-        working-directory: server
-      - name: Verify recorder and bounds
-        run: node --test test/voice-capture.test.mjs
         working-directory: server
       - name: Collect four bounded native-voice samples
         run: node tools/collect-japanese-voices.mjs
