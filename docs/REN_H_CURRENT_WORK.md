@@ -30,15 +30,30 @@ All paths below are relative to
   `a49688a84c3654900ce80576f2b9a020c4be852656159afb9656d07cb65c9b9c`.
   9,496 triangles; geometry and UV reimport checks pass. Head support and cap
   attachment are not established by the hair-only export.
-- Mouth `h-expression-controls-v1/guarded-study-v4/` preserves the exact open-A
-  endpoint and passes tested intersection checks. Its closed-lip creases were
-  visually rejected. A new closed-surface corrective is required before acting
-  shapes or an animated character can be accepted.
-- `h-eye-controls-v1/` remains provisional. H-specific ellipsoid/blink fitting
-  and the seam/corner appearance must pass together in the complete face.
+- Basic mouth now uses `h-expression-controls-v1/closure-assembly-contract-v2/`
+  and the frozen `welded-oral-study-v9/` source. Its closed surface retains the
+  visually reviewed v6 corrective, with exact H open-A return. Full projected
+  aperture coverage passes at eight sampled views/poses, and tested oral boundary
+  attachments have zero gap. The apparent gray triangle in profile is outside
+  the actual lip opening. Basic assembly is accepted; painted whole-face,
+  performance shapes and Unity playback remain unverified.
+- `h-eye-controls-v1/` supplies verified 3,460-triangle eye-only exports with
+  H-specific blink/gaze calibration and a separate skin-pigment library. Neutral
+  and full-blink views pass construction review. The original overlay cut is
+  still a provisional attachment; an exact native-cycle transition is in work.
 - `h-anime-paint-v1/` holds exact H texture/UV provenance, cheek-patch UV work,
   and a muted rose-lip study. The rose direction is suitable for assembled NPR
   review; it is not final artist approval.
+
+`h-complete-head-v1/` is the initial assembly workspace. Combine the current
+contracts there; do not replace the material-ready face with an older study
+head that would discard cheek repairs, UVs or winding corrections.
+
+The first complete front render has now been inspected against the artist sheet.
+It has not passed likeness review: pale facial definition, blurred lips and dark
+extraction fragments require correction. See the [assembled visual review](REN_H_ASSEMBLED_VISUAL_REVIEW.md)
+for the exact capture hash and assigned corrections. Unity integration is proceeding
+with the prototype status explicit.
 
 ## Rig and accessory contract
 
