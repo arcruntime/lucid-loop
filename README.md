@@ -12,6 +12,8 @@ Select a character and tap **Approach** to walk to a server-chosen speaking posi
 
 A [real spoken-input test](https://github.com/jethac/lucid-loop/actions/runs/34779053805) also passed: streamed synthetic speech triggered native Live delegation and a confirmed game action without a typed command. Physical microphone, interruption and conversational-quality acceptance remain separate checks.
 
+The [spoken correction test](https://github.com/jethac/lucid-loop/actions/runs/34779808422) also passed: a pending wait request was reinterpreted as follow, with no stale wait action committed. This test deliberately controls response timing; it does not measure natural interruption latency.
+
 The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored demo scenario](docs/DEMO_SCENARIO.md), and [source audit](docs/DESIGN_SOURCE_AUDIT.md) describe what is being built. Figma takes precedence over the Google document. The [animation handoff](art/animation-handoff/README.md) contains 17 downloaded source FBX files and their unresolved mapping/retargeting notes.
 
 **Try the original gyms:** load `Assets/Gyms/Scenes/CharacterGym.unity` and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.
