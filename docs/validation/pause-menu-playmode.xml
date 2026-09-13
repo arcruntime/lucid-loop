@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-13 21:34:51Z" end-time="2026-09-13 21:34:55Z" duration="3.5896836">
+  <test-suite type="TestSuite" id="1039" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-09-13 21:34:51Z" end-time="2026-09-13 21:34:55Z" duration="3.589684" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1032" name="LucidLoop.Gyms.PlayModeTests.dll" fullname="B:/lucid-loop/Unity/Library/ScriptAssemblies/LucidLoop.Gyms.PlayModeTests.dll" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-13 21:34:51Z" end-time="2026-09-13 21:34:55Z" duration="3.548803" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="110796" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1033" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-13 21:34:51Z" end-time="2026-09-13 21:34:55Z" duration="3.545086" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1034" name="Gyms" fullname="LucidLoop.Gyms" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-13 21:34:51Z" end-time="2026-09-13 21:34:55Z" duration="3.503967" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1036" name="PlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-09-13 21:34:51Z" end-time="2026-09-13 21:34:55Z" duration="3.473587" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1025" name="EncounterPausePlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests.EncounterPausePlayModeTests" classname="LucidLoop.Gyms.PlayModeTests.EncounterPausePlayModeTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-13 21:34:51Z" end-time="2026-09-13 21:34:55Z" duration="3.434581" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1027" name="PauseClosesVoiceAndResynchronizesAcrossReconnect" fullname="LucidLoop.Gyms.PlayModeTests.EncounterPausePlayModeTests.PauseClosesVoiceAndResynchronizesAcrossReconnect" methodname="PauseClosesVoiceAndResynchronizesAcrossReconnect" classname="LucidLoop.Gyms.PlayModeTests.EncounterPausePlayModeTests" runstate="Explicit" seed="1175222650" result="Passed" start-time="2026-09-13 21:34:51Z" end-time="2026-09-13 21:34:53Z" duration="2.196499" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="_SKIPREASON" value="Requires the authoritative relay on 8789 and audio fixture on 8790; no provider." />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="PauseMenuBlocksGameplayAndPreservesResumableNight" fullname="LucidLoop.Gyms.PlayModeTests.EncounterPausePlayModeTests.PauseMenuBlocksGameplayAndPreservesResumableNight" methodname="PauseMenuBlocksGameplayAndPreservesResumableNight" classname="LucidLoop.Gyms.PlayModeTests.EncounterPausePlayModeTests" runstate="Explicit" seed="1401586985" result="Passed" start-time="2026-09-13 21:34:53Z" end-time="2026-09-13 21:34:55Z" duration="1.189491" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="_SKIPREASON" value="Requires the authoritative relay on 8789; no provider." />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: B:\lucid-loop\.local\validation\pause-playmode-20260913-213442-406.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -16,7 +16,7 @@ Press Play in Unity. Enter `ws://127.0.0.1:8789/game` in Connection, then start 
 
 Conversations pause the night and character movement. Choose **Leave** when you want an agreed movement or mediation approach to happen. Action feedback distinguishes confirmed requests, refusals, clarification and conversation without an action; spoken promises alone do not change the encounter.
 
-**Pause** stops conversation audio and requests its final close while the world remains paused. **Resume** continues the night; tap Talk explicitly to start another conversation. Reconnecting restores the world's pause state. A new night starts unpaused.
+**Pause** stops conversation audio and requests its final close while the world remains paused. Its menu includes **Resume**, **Settings** (device-persisted music volume), **Controls**, and **Main Menu**. Main Menu returns to connection setup while retaining the current night's resume credentials; reconnecting restores its paused state. Resume continues the night; tap Talk explicitly to start another conversation. A new night starts unpaused. Desktop Escape opens the pause menu, returns from a submenu, or resumes; Quit is omitted on iOS.
 
 The game-state relay works without a local OpenAI key. NPC conversations require `OPENAI_API_KEY` in the relay process environment; the GitHub repository secret used by CI is not automatically available locally. The client receives no OpenAI key. Typed messages and microphone input both use the relay; typed replies do not create a separate offline dialogue engine.
 

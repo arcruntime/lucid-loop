@@ -15,6 +15,7 @@ namespace LucidLoop.Gyms
         public string DefaultGameAddress = "ws://127.0.0.1:8080/game";
         public string SelectedNpcId { get; private set; } = "maya";
         public EncounterInteractionMarkers InteractionMarkers { get; private set; }
+        public EncounterPauseMenu PauseMenu { get; private set; }
         public event Action<string> TypedReplyRequested;
         public event Action<bool> MicrophoneRequested;
         public event Action LeaveRequested;
@@ -124,6 +125,9 @@ namespace LucidLoop.Gyms
             markers.SetAsFirstSibling();
             InteractionMarkers = markers.gameObject.AddComponent<EncounterInteractionMarkers>();
             InteractionMarkers.Initialize(this, canvas, responsiveLayout);
+            var pauseRoot = GymUI.Rect(canvas, "Pause menu controller", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
+            PauseMenu = pauseRoot.gameObject.AddComponent<EncounterPauseMenu>();
+            PauseMenu.Initialize(this, canvas);
         }
 
         void Wire()
@@ -238,6 +242,13 @@ namespace LucidLoop.Gyms
             mic.GetComponentInChildren<Text>().text = microphoneEnabled ? "Mic on" : "Mic off";
         }
         void Leave() { Coordinator.CancelPendingConversation(); if (reply) reply.DeactivateInputField(); if (Voice) Voice.Leave(); LeaveRequested?.Invoke(); OnInvalidated(); ShowConversationStatus("Choose a character and tap Talk."); }
+        public void ShowConnectionSetup()
+        {
+            Leave();
+            if (connectionPanel) connectionPanel.gameObject.SetActive(true);
+            if (responsiveLayout) responsiveLayout.ConversationExpanded = false;
+            CancelPointerGesture();
+        }
 
         void ShowApproachStatus(string value)
         {

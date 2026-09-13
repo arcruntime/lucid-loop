@@ -14,7 +14,7 @@ The player has a green overhead beacon. NPC speech bubbles show speaking availab
 
 Accepted mood changes now correctly update music and lighting. A protocol-casing regression was reproduced and fixed; the [validation ledger](docs/IMPLEMENTATION_VALIDATION.md) records the before/after checks.
 
-**Pause** closes the current conversation and freezes the night. **Resume** continues the world without reopening voice. Reconnecting restores the server's pause state; starting a new night starts unpaused.
+**Pause** closes the current conversation and opens a menu with Resume, Settings, Controls and Main Menu. Settings saves music volume on this device. Main Menu returns to connection setup while preserving the resumable night. Resume continues the world without reopening voice; reconnecting restores the server's pause state. Starting a new night starts unpaused. Quit is desktop-only.
 
 A [real spoken-input test](https://github.com/jethac/lucid-loop/actions/runs/34779053805) also passed: streamed synthetic speech triggered native Live delegation and a confirmed game action without a typed command. Physical microphone, interruption and conversational-quality acceptance remain separate checks.
 
