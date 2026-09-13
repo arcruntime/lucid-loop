@@ -82,6 +82,33 @@ The [audit](art/generated/characters/ren/parts-workflow-v1/face-source-h-audit-v
 records the alignment limits. The H surface is approved; fitting controls and
 rebuilding its final paint remain in progress.
 
+## Inspect the rejected H eye prototype
+
+**The user rejected this eye construction and shading.** Keep this viewer as
+diagnostic history. The next eye design must match the artist's American-anime
+silhouettes, with Tokon-esque NPRS; it is not a refinement approved by this viewer.
+
+On this workspace, the actual Unity Windows review player is available at:
+
+```powershell
+Set-Location B:\lucid-loop
+& ".\.local\ren-h-reference-v1\RenHReference.exe" -force-d3d11 -screen-fullscreen 0 -screen-width 1600 -screen-height 900
+```
+
+This is an H-derived construction head with separate cap, blink/gaze and basic
+closed/open-A mouth controls. Actual running-player renders are in
+`.local/ren-h-reference-v1/live-review/`. It remains a construction prototype:
+lip paint, eye styling, hair shading and support seams need correction, and
+17 reference-performance channels are still unsupported. It does not establish
+full bilingual speech or iPhone performance; the dense head alone has 334,768
+triangles. The current shipping target remains iOS.
+
+The new `RenHReferenceAnimation.unity` scene has built in the isolated scratch
+project. Copying its generated assets into the main project is pending the
+engineering test window; the older scenes below do not contain this H assembly.
+See the [visual review](docs/REN_H_ASSEMBLED_VISUAL_REVIEW.md) for outstanding
+corrections. UI replay/scrub verification is still in progress.
+
 ## Launch the Ren NPR shading study
 
 Open **`Assets/CharacterArt/Generated/Preview/Scenes/RenNprReview.unity`**

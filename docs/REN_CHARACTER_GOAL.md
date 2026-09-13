@@ -213,6 +213,32 @@ Build and visually verify an expressive, animated Ren for Lucid Loop in Blender 
 
 ## Shape and aesthetic constraints
 
+### Latest user correction: designer eye silhouettes and NPRS
+
+The user rejected the current H v1/v2 eyes as quasi-realistic and structurally
+wrong for the designer's **American-anime** aesthetic. They are rejected style
+history, not a baseline to promote through thicker eyeliner or palette changes.
+Ren's smoky, aloof, sensual eye design must match the designer's drawn
+silhouettes directly. Compare matched reference views of upper/lower lid contours,
+corner angles, iris exposure, lash masses and smoky shading before accepting
+another eye construction. Technical blink/gaze success does not establish this
+match. Use actual Unity-chan construction as an implementation guide, without
+copying its character proportions. Do not claim a 1:1 match from subjective
+impression or a numerical test that does not measure the artist reference.
+
+The user accepts the current mouth, cheeks, jawline and nose; preserve those
+forms during the eye redesign. Speech articulation work may continue without
+silently changing their accepted neutral identity.
+
+**NPRS is required.** The primary shading reference is the Marvel Tokon-esque
+implementation in `B:\openai-hackathon-game`, especially `ART_PIPELINE.md`,
+`docs/ART_DIRECTION.md`, `Unity/Assets/Shaders/CharacterToon.shader` and
+`Unity/Assets/Shaders/InkOutline.shader`. Slight Arcane influence is allowed,
+but must remain subordinate to the designer's anime forms and this graphic
+NPRS direction. Earlier Arcane-oriented material studies are historical evidence,
+not aesthetic acceptance. Inspect the actual reference implementation before
+adapting palettes, bands, highlights, linework and outlines for Ren and iOS.
+
 - Standardize on exactly one shared male skeleton and one shared female skeleton;
   Ren uses the shared female rig. Character-specific facial controls and accessories
   must not create a different body skeleton for each character.

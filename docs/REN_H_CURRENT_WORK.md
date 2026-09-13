@@ -4,12 +4,28 @@ Updated 2026-09-14 JST. Character art owner: `astra-character-artist`.
 Shared bus topic: `lucid-loop` (`b6db061cab`); character topic:
 `lucid-loop/character-art` (`085285922e`). The other Astra owns non-character work.
 
+**Latest user review rejects the current H v1/v2 eye construction.** Its
+quasi-realistic eye structure does not match the designer's American-anime
+silhouettes. Existing captures and players are diagnostic history. Eye work is
+now reference-first structural redesign; the accepted mouth, cheeks, jaw and
+nose must stay intact. Tokon-esque NPRS from `B:\openai-hackathon-game` is the
+primary shading reference, with restrained Arcane influence allowed. See the
+[updated goal](REN_CHARACTER_GOAL.md#latest-user-correction-designer-eye-silhouettes-and-nprs).
+
 ## What can be opened in Unity now
 
-`Unity/Assets/CharacterArt/Generated/Preview/Scenes/RenNprReview.unity`
-is the implemented shading comparison, using the older P2/V2 head. It is not
-the corrected H character. `RenHReferenceAnimation.unity` has not been built.
-Its runtime and actual-video transport are prepared; geometry remains in Blender.
+The actual H Windows player is `.local/ren-h-reference-v1/RenHReference.exe`;
+see [historical launch instructions](../README.md#inspect-the-rejected-h-eye-prototype).
+Its scene, `Assets/CharacterArt/Generated/Preview/Scenes/RenHReferenceAnimation.unity`,
+has built in the isolated scratch Unity project. Main-project asset copying is
+temporarily sequenced after engineering's test window. The older main-project
+`RenNprReview.unity` remains a P2/V2 shading study, not this H assembly.
+
+Actual player renders verify basic mouth, blink/gaze and cap pose preservation.
+Visible UI inspection confirms the source video and artist panels, playback and
+paused seeking; a discovered timestamp/slider background-clearing bug is being
+fixed in a separate build. Seventeen performance channels remain unsupported.
+The H face is still a dense construction prototype with unresolved visual issues.
 
 ## Current construction sources
 

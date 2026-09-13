@@ -37,6 +37,33 @@ Unity integration may proceed with these defects labeled, while corrections
 continue. Neither the provisional eye seam nor the dense construction mesh
 satisfies final topology, likeness or the approximately 40k whole-character budget.
 
+## Follow-up: consistent three-tone material preview
+
+The material node audit identified an inconsistent preview: face/lids used
+emission while hair and accessories used lit materials. The separate
+`h-anime-paint-v1/whole-head-tone-study/` derivative keeps geometry, UVs and
+shape keys unchanged while giving the parts a consistent three-tone response.
+Root inspected both actual front captures:
+
+- `H-tones-closed-front.png`, SHA-256
+  `aed95bd9435e40d519ec5999bc37440b08f6e0f6bf143c8ec1166782362781f5`.
+- `H-tones-open-A-front.png`, SHA-256
+  `83aa3b2d847bf0407075f68ad369ba4f52f3e8515c76b351bda664674792fc34`.
+
+Pale-blond hair and cheek/nose/neck definition now read substantially better.
+The vertically tall closed lip stain persists, separating that paint/deformation
+problem from lighting. Ear jewelry now reads too matte and pink; preserve its
+silver identity in the next material pass. Eye construction still lacks the
+artist's layered tapered lashes and angled half-lidded character; a separate
+visual refinement is in progress. This is a useful shading direction, not final
+likeness acceptance or a Unity NPR capture.
+
+Pixel-ray investigation of the original dark areas found exposed concealed
+support and genuine hair rather than just disposable native-face fragments.
+Do not blanket-delete original skin to remove these marks. Support pigment and
+local support/neck overlap are being corrected independently, with combined
+front/quarter/profile review required before promotion.
+
 ## Integration requirements retained
 
 Ren uses the single shared female skeleton; the cast also has one shared male
