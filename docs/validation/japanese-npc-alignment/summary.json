@@ -1,0 +1,132 @@
+{
+  "upstreamCommit": "acea62e125aa2200648a489900de750c3e3587fa",
+  "sourceSha": "c3416912995097cec0f5c0a32d5a94c36ce2eb0f",
+  "captureRunId": "34788497022",
+  "checkedReadingSha256": "5f86e5fb9f3f819588717675ae429e99020469427f7e53013b18c6bb1d22f175",
+  "mode": "offline_full_audio_full_reading",
+  "causal": false,
+  "contactAccuracyMeasured": false,
+  "timingNote": "Single desktop run; computation excludes file IO, reading conversion and delivery. Not an iOS latency measurement.",
+  "samples": [
+    {
+      "npcId": "maya",
+      "voice": "gleam",
+      "audioSha256": "43f9668988fd13c9236aa3cd066fb6f9ac489bbd85d7bb7ea27f22b7ab844105",
+      "pcmDurationMs": 34100,
+      "featureFrames": 17034,
+      "featureMs": 995.8543,
+      "alignmentMs": 5622.4321,
+      "expectedMorae": 60,
+      "actualMorae": 60,
+      "expectedPhrases": 6,
+      "detectedSegments": 2,
+      "grouping": "all_morae_over_segment_union",
+      "segments": [
+        [
+          80,
+          4612
+        ],
+        [
+          4686,
+          10432
+        ]
+      ],
+      "invalidSpans": [],
+      "gapSpans": [
+        {
+          "index": 25,
+          "kana": "カ",
+          "outsideDetectedSpeechMs": 74
+        }
+      ],
+      "minimumMoraMs": 120,
+      "maximumMoraMs": 214,
+      "structurallyValid": true
+    },
+    {
+      "npcId": "ren",
+      "voice": "quartz",
+      "audioSha256": "eb99a80358f3fbeccf5c1ef9a1a6c1f1f3a255c0db2325a3da356294b01006d4",
+      "pcmDurationMs": 34100,
+      "featureFrames": 17034,
+      "featureMs": 1236.8705,
+      "alignmentMs": 18172.1193,
+      "expectedMorae": 60,
+      "actualMorae": 60,
+      "expectedPhrases": 6,
+      "detectedSegments": 1,
+      "grouping": "all_morae_over_segment_union",
+      "segments": [
+        [
+          6,
+          11666
+        ]
+      ],
+      "invalidSpans": [],
+      "gapSpans": [],
+      "minimumMoraMs": 126,
+      "maximumMoraMs": 232,
+      "structurallyValid": true
+    },
+    {
+      "npcId": "luca",
+      "voice": "meridian",
+      "audioSha256": "1d1476d1e05b741418b4ad71df9f3fba5ebb63f2944aac27ffd33726def76ae4",
+      "pcmDurationMs": 34000,
+      "featureFrames": 16984,
+      "featureMs": 1059.6185000000005,
+      "alignmentMs": 12561.917399999998,
+      "expectedMorae": 60,
+      "actualMorae": 60,
+      "expectedPhrases": 6,
+      "detectedSegments": 1,
+      "grouping": "all_morae_over_segment_union",
+      "segments": [
+        [
+          58,
+          10812
+        ]
+      ],
+      "invalidSpans": [],
+      "gapSpans": [],
+      "minimumMoraMs": 120,
+      "maximumMoraMs": 234,
+      "structurallyValid": true
+    },
+    {
+      "npcId": "theo",
+      "voice": "vesper",
+      "audioSha256": "1e5ca44408fa2a49bd4ba4cc40d3528f329ad09b6a2ef3b65a10682ac9e0f250",
+      "pcmDurationMs": 34100,
+      "featureFrames": 17034,
+      "featureMs": 1038.8337000000029,
+      "alignmentMs": 10846.486400000002,
+      "expectedMorae": 60,
+      "actualMorae": 60,
+      "expectedPhrases": 6,
+      "detectedSegments": 2,
+      "grouping": "all_morae_over_segment_union",
+      "segments": [
+        [
+          6,
+          6438
+        ],
+        [
+          7108,
+          10868
+        ]
+      ],
+      "invalidSpans": [],
+      "gapSpans": [
+        {
+          "index": 36,
+          "kana": "タ",
+          "outsideDetectedSpeechMs": 670
+        }
+      ],
+      "minimumMoraMs": 102,
+      "maximumMoraMs": 840,
+      "structurallyValid": true
+    }
+  ]
+}

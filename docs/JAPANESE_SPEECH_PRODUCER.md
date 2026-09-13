@@ -67,6 +67,8 @@ The default result remains in `.local/japanese-producer-followup/results.json`; 
 
 ## Concrete next implementation
 
+The [actual NPC alignment baseline](JAPANESE_NPC_ALIGNMENT.md) now exercises the checked reading against all four recorded voices. It identifies costly full-domain DP and targets spanning detected silence gaps, despite valid mora ordering. These defects must be addressed before adapting the aligner to live playback.
+
 [NPC voice evidence collection](JAPANESE_NPC_VOICE_EVIDENCE.md) provides a separate manual workflow for independent recordings from the actual configured voices. It preserves receipt, transcript and PCM clocks without claiming they are aligned, and reserves the recordings for evaluation rather than training.
 
 The [checked reading frontend](JAPANESE_READING_FRONTEND.md) implements a provisional text-to-pronunciation handoff using pinned pyopenjtalk and a verified dictionary, followed by loss-rejecting validation of the pinned kana parser. The captured passage passes into 60 mora records; unknown rare names/symbols and unconfigured Latin words are rejected. This supplies a reading stage, not the bounded alignment or timing evidence still required below.
