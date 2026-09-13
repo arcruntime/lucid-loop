@@ -24,6 +24,7 @@ namespace LucidLoop.Gyms
         public EncounterClientState State { get; private set; } = new EncounterClientState();
         public bool IsReady { get; private set; }
         public bool IsConnecting { get; private set; }
+        public bool IsPaused { get; private set; }
         public string Status { get; private set; } = "disconnected";
         public bool CanResume => !string.IsNullOrEmpty(gameId) && !string.IsNullOrEmpty(resumeToken);
         public event Action<EncounterClientState> StateChanged;
@@ -138,7 +139,7 @@ namespace LucidLoop.Gyms
             else if (type == "game.approach_result")
             { if (IsReady && approach.AcceptResult(message) && !approach.Pending) ApproachStatusChanged?.Invoke(approach.Outcome); }
             else if (type == "game.pause" && message["paused"]?.Type == JTokenType.Boolean)
-            { if ((bool)message["paused"]) CancelPendingConversation(); PauseChanged?.Invoke((bool)message["paused"]); }
+            { if (IsReady) ApplyPause((bool)message["paused"]); }
             else if (type == "game.move_result" && message["accepted"]?.Type == JTokenType.Boolean && !(bool)message["accepted"]) SetStatus("destination_unavailable");
             else if (type == "game.reset_result" && message["accepted"]?.Type == JTokenType.Boolean && !(bool)message["accepted"]) SetStatus("reset_unavailable");
             else if (type == "game.error")
@@ -190,12 +191,25 @@ namespace LucidLoop.Gyms
             // Stop the old approach first: a rejected replacement walk preserves
             // the server's prior destination, so cancellation alone is insufficient.
             CancelPendingConversation();
-            if (!IsReady || worldLoop != State.LoopId || !Finite(destination.x) || !Finite(destination.z) ||
+            if (!IsReady || IsPaused || worldLoop != State.LoopId || !Finite(destination.x) || !Finite(destination.z) ||
                 destination.x < -13 || destination.x > 13 || destination.z < -11 || destination.z > 11) return false;
             return Send(new JObject { ["type"] = "game.walk", ["loopId"] = State.LoopId, ["sequence"] = ++moveSequence,
                 ["destination"] = new JObject { ["x"] = destination.x, ["z"] = destination.z } });
         }
-        public bool Pause(bool paused) { if (paused) CancelPendingConversation(); return Send(new JObject { ["type"] = "game.pause", ["paused"] = paused }); }
+        public bool Pause(bool paused)
+        {
+            if (!IsReady) return false;
+            // Capture/playback stop immediately; the server acknowledgement owns
+            // the displayed pause state. Resume never reopens a paid conversation.
+            if (paused) { CancelPendingConversation(); ConversationInvalidated?.Invoke(); }
+            return Send(new JObject { ["type"] = "game.pause", ["paused"] = paused });
+        }
+        void ApplyPause(bool paused)
+        {
+            IsPaused = paused;
+            if (paused) { CancelPendingConversation(); ConversationInvalidated?.Invoke(); }
+            PauseChanged?.Invoke(paused);
+        }
         public bool Reset() { CancelPendingConversation(); return Send(new JObject { ["type"] = "game.reset", ["loopId"] = State.LoopId, ["revision"] = State.Revision }); }
 
         void ApplyWorld(JObject world)
@@ -274,7 +288,7 @@ namespace LucidLoop.Gyms
         public bool RequestConversation(string npcId)
         {
             CancelPendingConversation();
-            if (!IsReady || !CanResume || !IsTalkable(npcId) || !actors.ContainsKey(npcId) || worldLoop != State.LoopId) return false;
+            if (!IsReady || IsPaused || !CanResume || !IsTalkable(npcId) || !actors.ContainsKey(npcId) || worldLoop != State.LoopId) return false;
             ConversationEligibility(npcId, out _, out var reason);
             if (reason == "encounter_ended") { ApproachStatusChanged?.Invoke(reason); return false; }
             ConversationInvalidated?.Invoke();
@@ -288,7 +302,7 @@ namespace LucidLoop.Gyms
 
         bool OpenConversation(string npcId)
         {
-            if (!IsReady || !CanResume || !IsTalkable(npcId) || !actors.ContainsKey(npcId)) return false;
+            if (!IsReady || IsPaused || !CanResume || !IsTalkable(npcId) || !actors.ContainsKey(npcId)) return false;
             var live = new UriBuilder(address) { Path = "/live" }.Uri.AbsoluteUri;
             var payload = new JObject { ["type"] = "gym.start", ["character"] = npcId, ["token"] = accessToken,
                 ["gameId"] = gameId, ["resumeToken"] = resumeToken };
@@ -313,6 +327,7 @@ namespace LucidLoop.Gyms
             var prior = connection; connection = null; prior?.Dispose();
             ClearWorld();
             IsReady = IsConnecting = false; StopExecutors(); ConversationInvalidated?.Invoke(); SetStatus("disconnected");
+            ApplyPause(false);
         }
         void OnApplicationPause(bool paused) { if (paused) Disconnect(); }
         void OnDisable() { Disconnect(); UnbindActors(); }

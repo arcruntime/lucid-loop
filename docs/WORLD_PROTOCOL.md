@@ -23,6 +23,14 @@ Create one world per authenticated game, using the same registry credentials and
 
 ## Approach-to-talk wire protocol
 
+### Pause synchronization
+
+For a world-backed create/resume, bootstrap messages are ordered `game.ready` → `game.pause` → `game.world`. The pause event contains the authoritative boolean `paused`, including when it is false. An explicit `game.pause` request broadcasts the resulting state to all clients attached to that game; a world-update failure also publishes paused=true before its error. A different newly created game begins unpaused.
+
+Unity stops its foreground capture/playback immediately when requesting Pause and closes the Live session through the existing final-usage handshake. It also closes voice on an authoritative paused event, blocks new movement/conversation requests while paused, and clears disconnected local pause UI before applying the next bootstrap. Resume does not automatically create a provider session. The relay rejects a new game-bound Live attach with `game_paused` before opening upstream when the world is explicitly paused. This check is separate from conversation-range eligibility.
+
+### Movement approach
+
 On the authenticated `/game` connection, send `{ type: 'game.approach', loopId, sequence, npcId }`. It shares the sequence stream with `game.walk` and `game.stop`. The server responds:
 
 ```json

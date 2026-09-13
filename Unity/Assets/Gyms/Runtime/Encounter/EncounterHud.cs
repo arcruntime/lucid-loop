@@ -143,12 +143,12 @@ namespace LucidLoop.Gyms
             if (reply && reply.isFocused) { responsiveLayout.ConversationExpanded = true; if (Input.GetKeyDown(KeyCode.Return)) SendReply(); }
             if (reset) reset.interactable = Coordinator.IsReady && (Coordinator.State.Phase == "catastrophe" || Coordinator.State.Phase == "unresolved" || Coordinator.State.Phase == "victory");
             if (pause) pause.interactable = Coordinator.IsReady;
-            if (openingRoute) openingRoute.interactable = Coordinator.IsReady && Coordinator.State.LoopIndex == 1 &&
+            if (openingRoute) openingRoute.interactable = Coordinator.IsReady && !Coordinator.IsPaused && Coordinator.State.LoopIndex == 1 &&
                 Coordinator.State.Phase != "catastrophe" && Coordinator.State.Phase != "unresolved" && Coordinator.State.Phase != "victory";
             if (talk)
             {
                 Coordinator.ConversationEligibility(SelectedNpcId, out var eligible, out var reason);
-                talk.interactable = !paused;
+                talk.interactable = Coordinator.IsReady && !Coordinator.IsPaused;
                 talk.GetComponentInChildren<Text>().text = Coordinator.PendingConversationNpc != null ? "Cancel" : eligible ? "Talk" : "Walk & talk";
             }
             if (Coordinator.PendingConversationNpc != null && guidance) guidance.text = "Walking to " + Coordinator.PendingConversationNpc + ". Talk opens when you arrive. Tap the floor or Cancel to change your mind.";

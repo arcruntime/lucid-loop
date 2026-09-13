@@ -346,6 +346,7 @@ namespace LucidLoop.Gyms
                 {
                     string code = (string)message["code"];
                     if (IsReady && (code == "unsupported_event" || code == "invalid_message" || code == "not_ready")) SetStatus("command_rejected");
+                    else if (code == "game_paused") Fail("Resume the night before starting a conversation.");
                     else if ((code == "out_of_range" || code == "character_out_of_range")) Fail("They moved out of range. Leave, then tap Talk to approach again.");
                     else Fail(IsConnecting ? "startup_rejected" : "relay_error");
                 }

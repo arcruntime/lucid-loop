@@ -10,6 +10,87 @@ import { createEncounterWorld } from "../src/encounter-world.mjs";
 
 const START = JSON.stringify({ type: "gym.start", character: "maya" });
 
+test("paused game rejects new voice before proximity checks or upstream dial; unpause permits attach", async () => {
+  let dials = 0, proximityChecks = 0;
+  const games = createGameSessions({ definitionFactory: createDemoDefinition, encounterFactory: createDemoScenario });
+  const upstream = await makeUpstream({ onConnection(socket) {
+    dials++;
+    socket.on("message", raw => {
+      const event = JSON.parse(raw);
+      if (event.type === "session.start") socket.send(JSON.stringify({ type: "session.started", session: { id: "pause_regression" } }));
+      if (event.type === "session.close") socket.send(JSON.stringify({ type: "session.closed", usage: {} }));
+    });
+  } });
+  const { relay, url } = await makeRelay({ upstreamUrl: upstream.url, gameSessions: games,
+    worldFactory: options => ({ ...createEncounterWorld(options), canConverse() { proximityChecks++; return { ok: true }; } }) });
+  try {
+    const game = await openClient(url.replace('/live', '/game'));
+    game.send(JSON.stringify({ type: "game.create" }));
+    const ready = await untilJson(game, "game.ready");
+    assert.equal((await untilJson(game, "game.pause")).paused, false);
+    game.send(JSON.stringify({ type: "game.pause", paused: true }));
+    assert.equal((await untilJson(game, "game.pause")).paused, true);
+    const rejected = await openClient(url);
+    rejected.send(JSON.stringify({ type: "gym.start", character: "maya", ...ready.credentials }));
+    let rejection;
+    do { rejection = await nextJson(rejected); } while (rejection.type !== "gym.status" || rejection.status !== "error");
+    assert.equal(rejection.code, "game_paused");
+    await waitClosed(rejected);
+    assert.equal(dials, 0, "Paused request must not dial the provider");
+    assert.equal(proximityChecks, 0, "Pause rejection precedes proximity evaluation");
+    game.send(JSON.stringify({ type: "game.pause", paused: false }));
+    assert.equal((await untilJson(game, "game.pause")).paused, false);
+    const voice = await openClient(url);
+    voice.send(JSON.stringify({ type: "gym.start", character: "maya", ...ready.credentials }));
+    let status;
+    do { status = await nextJson(voice); } while (status.type !== "gym.status" || status.status !== "ready");
+    assert.equal(dials, 1);
+    assert.ok(proximityChecks > 0);
+    voice.send(JSON.stringify({ type: "session.close" }));
+    assert.ok((await untilJson(voice, "session.closed")).usage);
+    await waitClosed(voice);
+  } finally { await closeRelay(relay, upstream); }
+});
+
+test("world pause is authoritative across peers, reconnects and independent new games", async () => {
+  const games = createGameSessions({ definitionFactory: createDemoDefinition, encounterFactory: createDemoScenario });
+  const { relay, url } = await makeRelay({ apiKey: "", gameSessions: games, worldFactory: createEncounterWorld });
+  const address = url.replace('/live', '/game');
+  const send = (client, event) => client.send(JSON.stringify(event));
+  const join = async (event, expectedPaused) => {
+    const client = await openClient(address);
+    send(client, event);
+    const ready = await nextJson(client);
+    assert.equal(ready.type, "game.ready");
+    assert.equal(ready.ok, true);
+    assert.deepEqual(await nextJson(client), { type: "game.pause", paused: expectedPaused });
+    assert.equal((await nextJson(client)).type, "game.world", "pause precedes initial world snapshot");
+    return { client, ready };
+  };
+  try {
+    const first = await join({ type: "game.create" }, false);
+    const second = await join({ type: "game.resume", ...first.ready.credentials }, false);
+    send(first.client, { type: "game.pause", paused: true });
+    for (const client of [first.client, second.client])
+      assert.deepEqual(await untilJson(client, "game.pause"), { type: "game.pause", paused: true });
+    // A reconnect inherits the existing record's pause even after its old socket closes.
+    const disconnected = waitClosed(second.client);
+    second.client.close(); await disconnected;
+    const reconnected = await join({ type: "game.resume", ...first.ready.credentials }, true);
+    send(reconnected.client, { type: "game.walk", loopId: first.ready.snapshot.loopId, sequence: 1, destination: { x: 0, z: -6 } });
+    assert.equal((await untilJson(reconnected.client, "game.move_result")).reason, "paused");
+    const independent = await join({ type: "game.create" }, false);
+    assert.notEqual(independent.ready.credentials.gameId, first.ready.credentials.gameId);
+    send(reconnected.client, { type: "game.pause", paused: false });
+    for (const client of [first.client, reconnected.client])
+      assert.deepEqual(await untilJson(client, "game.pause"), { type: "game.pause", paused: false });
+    send(first.client, { type: "game.walk", loopId: first.ready.snapshot.loopId, sequence: 1, destination: { x: 0, z: -6 } });
+    assert.equal((await untilJson(first.client, "game.move_result")).accepted, true);
+    // A later resume also sees the unpaused state, not a sticky reconnect default.
+    await join({ type: "game.resume", ...first.ready.credentials }, false);
+  } finally { await bounded(relay.close(), "relay close"); }
+});
+
 test("world channel advances server positions and rejects forged destinations and premature reset", async () => {
   const games = createGameSessions({ definitionFactory: createDemoDefinition, encounterFactory: createDemoScenario });
   const { relay, url } = await makeRelay({ apiKey: "", gameSessions: games, worldFactory: createEncounterWorld });

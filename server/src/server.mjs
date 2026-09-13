@@ -90,7 +90,10 @@ export function createRelayServer(options = {}) {
         if (result.ok) for (const client of record.clients) sendJson(client, { type: "game.world", world: record.world.snapshot() }, config.maxBufferedBytes);
       } catch {
         record.paused = true;
-        for (const client of record.clients) sendJson(client, { type: "game.error", code: "world_update_failed" }, config.maxBufferedBytes);
+        for (const client of record.clients) {
+          sendJson(client, { type: "game.pause", paused: true }, config.maxBufferedBytes);
+          sendJson(client, { type: "game.error", code: "world_update_failed" }, config.maxBufferedBytes);
+        }
       }
     }
   }, 100) : null;
@@ -161,7 +164,12 @@ export function createRelayServer(options = {}) {
           unsubscribe = subscription.unsubscribe;
           clearTimeout(timer);
           respond({ type: "game.ready", ...result, credentials });
-          if (worldRecord) respond({ type: "game.world", world: worldRecord.world.snapshot() });
+          if (worldRecord) {
+            // Ordered bootstrap: identity/state, authoritative pause, world. A
+            // resumed client must not infer pause from its previous local UI state.
+            respond({ type: "game.pause", paused: worldRecord.paused });
+            respond({ type: "game.world", world: worldRecord.world.snapshot() });
+          }
           return;
         }
         // World facts and action commits are intentionally absent from player RPCs.
@@ -177,7 +185,10 @@ export function createRelayServer(options = {}) {
           respond({ type: "game.move_result", ...worldRecord.world.input({ type: "stop", loopId: event.loopId, sequence: event.sequence }) });
         } else if (event.type === "game.pause" && worldRecord && typeof event.paused === "boolean") {
           worldRecord.paused = event.paused;
-          respond({ type: "game.pause", paused: worldRecord.paused });
+          for (const peer of worldRecord.clients) {
+            if (!sendJson(peer, { type: "game.pause", paused: worldRecord.paused }, config.maxBufferedBytes))
+              closeSocket(peer, 1011, "client_backpressure");
+          }
         } else if (event.type === "game.reset" && worldRecord) {
           const current = config.gameSessions.publicState(credentials);
           if (!current.ok || !["catastrophe", "unresolved", "victory"].includes(current.snapshot.phase)) respond({ type: "game.error", code: "reset_unavailable" });
@@ -251,6 +262,7 @@ export function createRelayServer(options = {}) {
           if (!config.gameSessions) { fail("gameplay_unavailable"); return; }
           context.gameCredentials = { gameId: event.gameId, resumeToken: event.resumeToken };
           const world = worlds.get(event.gameId);
+          if (world?.paused) { fail("game_paused"); return; }
           if (world && !world.world.canConverse(event.character).ok) { fail("character_out_of_range"); return; }
           const attached = config.gameSessions.attach(context.gameCredentials, event.character);
           if (!attached.ok) { fail("game_unauthorized"); return; }
