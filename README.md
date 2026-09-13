@@ -59,8 +59,11 @@ The checked-in Unity scene is ready to open without rebuilding it.
 See the [comparison results and provenance](art/generated/characters/ren/bust-comparison-v1/README.md)
 and [visual recommendation](art/generated/characters/ren/bust-comparison-v1/REVIEW.md).
 Tripo H closed rest is the preferred construction reference among these whole
-busts. Three older Studio H/P2 busts still await export. The separate-parts
-experiment below uses newly generated API assets and has its own review.
+busts. The [Studio H A-open original](art/generated/characters/ren/bust-comparison-v1/tripo/studio-h3.1-a-open/README.md)
+has now been recovered and was selected by the user for Ren's **cheek and jaw
+shape**; it is not yet integrated into the current comparison scene. Two older
+Studio P2 busts still await export. The separate-parts experiment below uses
+newly generated API assets and has its own review.
 
 ## Launch the Ren parts study
 

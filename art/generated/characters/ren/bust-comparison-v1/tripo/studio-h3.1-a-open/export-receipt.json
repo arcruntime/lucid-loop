@@ -1,0 +1,59 @@
+{
+  "asset_id": "4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be",
+  "asset_url": "https://studio.tripo3d.ai/workspace/generate/4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be",
+  "exported_utc": "2026-09-13T15:01:55.621115+00:00",
+  "method": "Visible signed-in Studio Export dialog; GLB; 8k Current; original download copied byte-for-byte. No new generation.",
+  "file": "ren-tripo-studio-h3.1-a-open-original-8k.glb",
+  "sha256": "9158e7e90ee22bce64154e2c2fe6d8880e9ab66de6f1a6c437c816f077049406",
+  "bytes": 58961168,
+  "triangles": 1934041,
+  "accessor_vertices": 1031818,
+  "studio_displayed_faces": 1934041,
+  "studio_displayed_vertices": 1031819,
+  "meshes": 1,
+  "primitives": 1,
+  "images": [
+    {
+      "file": "embedded-original-textures/image-0.jpg",
+      "mimeType": "image/jpeg",
+      "dimensions": [
+        8192,
+        8192
+      ],
+      "sha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce",
+      "bytes": 1768797,
+      "material_role": "baseColor"
+    },
+    {
+      "file": "embedded-original-textures/image-1.jpg",
+      "mimeType": "image/jpeg",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "sha256": "7d2e5c74cd5b4551b9ea853188a62cb51a11a923668e5696d2c1d638f557f771",
+      "bytes": 659667,
+      "material_role": "metallicRoughness"
+    },
+    {
+      "file": "embedded-original-textures/image-2.jpg",
+      "mimeType": "image/jpeg",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "sha256": "8d4e8ad355ba215804091d896df74b9c0395936622773516f15e8bc918aa8124",
+      "bytes": 303973,
+      "material_role": "normal"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_volume",
+    "FB_ngon_encoding"
+  ],
+  "asset": {
+    "version": "2.0",
+    "generator": "Tripo"
+  },
+  "selection": "User explicitly chose this asset for cheek and jaw shape; distinct from the P2 construction source and H closed-rest bust."
+}

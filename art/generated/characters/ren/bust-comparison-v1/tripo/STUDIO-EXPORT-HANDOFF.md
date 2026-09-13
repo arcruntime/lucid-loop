@@ -1,11 +1,11 @@
 # Tripo Studio comparison export handoff
 
-Status checked 2026-09-13. All four requested geometry assets were generated in the same user's signed-in Tripo Studio account. Only H closed-rest has been downloaded so far. **Do not repeat generation to recover the other three assets.**
+Updated 2026-09-14 JST. All four requested geometry assets were generated in the same user's signed-in Tripo Studio account. H closed-rest and H A-open are now downloaded. **Do not repeat generation to recover the remaining two assets.**
 
 | Variant | Studio asset | Local state |
 | --- | --- | --- |
 | H closed-rest | [67b0819b-9627-444c-aa7d-5785b46ef026](https://studio.tripo3d.ai/workspace/generate/67b0819b-9627-444c-aa7d-5785b46ef026) | Complete original GLB, embedded textures, metadata, screenshots and provenance in `studio-h3.1-closed-rest/` |
-| H A-open | [4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be](https://studio.tripo3d.ai/workspace/generate/4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be) | Completed thumbnail verified; original export pending. `studio-h3.1-a-open/provenance.json` |
+| H A-open | [4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be](https://studio.tripo3d.ai/workspace/generate/4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be) | Original 8K GLB recovered; **user-selected cheek/jaw shape reference**. [Source and export receipt](studio-h3.1-a-open/README.md) |
 | P2 closed-rest | [ece79f26-5f86-46ee-87b1-25647bf685ed](https://studio.tripo3d.ai/workspace/generate/ece79f26-5f86-46ee-87b1-25647bf685ed) | Completed thumbnail verified; original export and actual texture resolution pending. `studio-p2-closed-rest/provenance.json` |
 | P2 A-open | [da64bb0e-6e34-4f1e-a0bf-aafeaa660870](https://studio.tripo3d.ai/workspace/generate/da64bb0e-6e34-4f1e-a0bf-aafeaa660870) | Completed thumbnail verified; original export and actual texture resolution pending. `studio-p2-a-open/provenance.json` |
 
@@ -20,6 +20,15 @@ P2 had two available trials, each showing 100 struck through and 0. Both were us
 Navigating back to a blank generation form and selecting P2 restored its 5,000 default despite the dialog's general save-settings wording. Set or verify the maximum for every new preparation. P2 A-open's 25,000 maximum was verified and captured **after** both references were loaded and immediately before submission (`ready-topology-ui.png`). P2 closed-rest was set to 25,000 before switching input mode and loading references; verify its returned polygon count and Property settings rather than silently assuming the maximum persisted. Preserve any original result if a correction is needed.
 
 ## Export recovery
+
+H A-open was recovered on 2026-09-14 JST through a fresh supported browser tab
+and the normal visible Export dialog, retaining GLB and `8k Current`. No new job
+was generated. Its original 58,961,168-byte GLB is preserved with SHA-256
+`9158e7e90ee22bce64154e2c2fe6d8880e9ab66de6f1a6c437c816f077049406`.
+It contains 1,934,041 triangles, matching the Studio display, and 1,031,818
+accessor vertices versus 1,031,819 displayed. The base-color image is 8192-square;
+the other two maps are 4096-square. The previous stalled-export history below
+explains the earlier missing source; it is no longer a blocker for H A-open.
 
 The owned Studio tab was `1432647605`. No parent Stripe or existing user Studio tab was touched. The first H closed-rest export succeeded through the normal visible Studio **Export** dialog: name the file, choose **GLB**, retain **8k Current**, then Export. Chrome downloaded into `C:/Users/jetha/Downloads/`; the artifact was copied byte-for-byte into the project and SHA-256 verified.
 

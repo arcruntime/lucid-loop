@@ -2,7 +2,15 @@
 
 2026-09-13. Planning checkpoint for Unity 6.3 LTS, landscape 16:9, sustained 30 fps on iPhone 15 Plus. The user suggested about 40k polygons for Ren including clothing and accessories. **This plan interprets that as a maximum of 40,000 rendered triangles for one complete LOD0 Ren, not 40,000 Blender quad faces.** It is an allocation proposal, not a measured phone-performance guarantee or a completed low-poly export.
 
-Keep the current facial surface at LOD0. Reduce the oversampled hair and sclera first, then fit and retopologize the body/clothing around the shared female rig. Ren's eyes, lips, face silhouette, and moving mouth matter more than hidden scalp, densely tessellated eye backs, or small clothing folds. The existing face surface already fits a 14k allowance; a uniform whole-character decimation would spend facial quality to solve excess elsewhere.
+Protect the selected facial shape at LOD0. Reduce oversampled hair and sclera first, then fit and retopologize the body/clothing around the shared female rig. Ren's eyes, lips, face silhouette, and moving mouth matter more than hidden scalp, densely tessellated eye backs, or small clothing folds. The existing P2 construction face fits a 14k allowance, but the user has since selected a different H cheek/jaw surface; count compliance does not establish the correct shape. A uniform whole-character decimation would spend facial quality to solve excess elsewhere.
+
+**2026-09-14 visual correction:** the user rejected the local hair's loss of detail.
+The 8k hair line below is provisional, not a reason to flatten layers and tapered
+tips. Review a roughly 9–10k candidate, then rebalance the complete-character
+allocation rather than silently increasing the total. The user-selected
+[H A-open source](../art/generated/characters/ren/bust-comparison-v1/tripo/studio-h3.1-a-open/README.md)
+now governs cheek and jaw shape. Its dense original is a construction reference;
+the P2 count below is not evidence that the selected H shape is already fitted.
 
 ## Exact LOD0 allocation
 

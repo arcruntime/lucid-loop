@@ -1,8 +1,8 @@
 {
   "route": "Tripo Studio",
-  "status": "COMPLETED_AWAITING_EXPORT",
+  "status": "DOWNLOADED_ORIGINAL_EXPORTED",
   "recorded_utc": "2026-09-13T06:05:45.3520331Z",
-  "displayed_model_label": "v3.1 – Best Quality",
+  "displayed_model_label": "v3.1 \u2013 Best Quality",
   "exact_served_model_identity": null,
   "settings": {
     "ultra_mesh_quality": true,
@@ -41,5 +41,8 @@
   "accepted_utc": "2026-09-13T06:06:58.6678326Z",
   "balance_after_submission": 24915,
   "completion_evidence": "Asset card replaced Generating status with a named rendered thumbnail in the Studio Assets panel; original export still pending.",
-  "export_blocker": "H A-open preview stalled. Screenshot/locator calls timed out after 60 seconds; navigation away timed out after 120 seconds; final fresh recovery could not complete session naming/tab listing. No paid job repeated. See STUDIO-EXPORT-HANDOFF.md."
+  "historical_export_blocker": "H A-open preview stalled. Screenshot/locator calls timed out after 60 seconds; navigation away timed out after 120 seconds; final fresh recovery could not complete session naming/tab listing. No paid job repeated. See STUDIO-EXPORT-HANDOFF.md.",
+  "export_receipt": "export-receipt.json",
+  "original_file": "ren-tripo-studio-h3.1-a-open-original-8k.glb",
+  "original_sha256": "9158e7e90ee22bce64154e2c2fe6d8880e9ab66de6f1a6c437c816f077049406"
 }

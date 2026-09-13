@@ -8,6 +8,42 @@ Show it beside the original artist sheet in the browser and Unity, with working
 independent blinks, clean gaze, closed rest and the existing open-A mouth prototype.
 This is the immediate milestone within the broader Ren implementation below.
 
+### Latest visual correction: hair detail, jaw and NPR shading
+
+The user rejected the V2 hair's loss of detail, found the jaw too pointed, and
+identified that the intended NPR shading is still missing. These are the next
+acceptance requirements; the technical control checks do not resolve them.
+
+1. Recover the native layered shag, narrow tapered locks and irregular gaps.
+   Compare a locally repaired Tripo result to the dense source. Do not force the
+   provisional 8k hair allocation by flattening or replacing those features with
+   broad ribbons. A roughly 9–10k hair candidate can be reviewed while the full
+   dressed-character budget remains approximately 40k triangles.
+2. Preserve the full facial shape of the user's selected
+   [Tripo Studio H A-open result](https://studio.tripo3d.ai/workspace/generate/4dd5c828-eed8-4ded-9aa2-b2c3ef66c6be),
+   including cheek volume, cheekbone placement, jaw taper and chin. The user
+   explicitly identified both cheeks and jaw, not merely a pointed chin. This
+   asset is distinct from the current P2 head and the downloaded H closed-rest
+   bust. Its local provenance is `bust-comparison-v1/tripo/studio-h3.1-a-open/`;
+   original export was recovered on 2026-09-14 JST, SHA-256
+   `9158e7e90ee22bce64154e2c2fe6d8880e9ab66de6f1a6c437c816f077049406`.
+   Preserve that exact source, inspect matched front/quarter/profile views, and fit facial
+   topology to its selected surface. Do not substitute speculative chin rounding
+   or assume an existing head is the same source. Current lower-jaw vertices
+   match the P2 original within floating-point precision; the mismatch was
+   inherited from that source, which does not make it the correct Ren shape.
+3. Implement an explicit painterly NPR material study in Unity: artist-controlled
+   light/shadow colors and transitions, stable facial lighting, restrained broad
+   highlights, and readable response to moving nightclub lights. The existing
+   diffuse shader and browser Lambert mix are diagnostic previews, not the
+   intended style. Compare old/new shading on identical geometry and textures
+   first; identify baked paint that also needs correction. Preserve the anime
+   designer's identity rather than equating NPR with generic thick-outline cel
+   shading or photorealistic skin.
+
+Show the separated shape and shading comparisons before combining the selected
+corrections into another complete-head revision. Keep V2 and its review evidence.
+
 The assembled working review now has a separate `RenCompleteHead.unity` scene
 and a browser viewer at port 8768, with [explicit launch instructions](../README.md#launch-the-ren-complete-head-review).
 It retains the facial surface and adds painted skin, reduced eye shells, cap,
@@ -19,8 +55,9 @@ issues, so this checkpoint does not complete the visual milestone.
 A [30-credit Tripo hair-reduction trial](../art/generated/characters/ren/parts-workflow-v1/tripo-hair-lowpoly-v1/README.md)
 returned 9,026 triangles for an 8,000 target. It preserves the layered source shag
 better than the local reconstruction, but requires crown/internal-geometry cleanup,
-head/cap fitting and UVs. Use that evidence to guide the next hair pass, while
-preserving the working facial mesh and verified controls.
+head/cap fitting and UVs. Use that evidence to guide the next hair pass. Preserve
+the old working mesh as control evidence while adapting the facial construction
+to the user's selected H cheek/jaw surface.
 
 The user now targets approximately **40,000 rendered triangles for Ren's complete
 LOD0**, including face, eyes, mouth interior, hair, body, all clothing and accessories.
@@ -30,9 +67,11 @@ face detail first because close conversation views concentrate attention there.
 The [polygon budget and reduction study](REN_POLYGON_BUDGET.md) allocates 16,800
 triangles to the head and facial assemblies, 8,000 to hair, and the remainder to
 the dressed body and accessories, with a 1,400-triangle integration reserve.
-Keep the current 13,790-triangle head surface; reduce oversampled eye shells and
-hair first. Tripo retopology is an option for isolated static parts, subject to
-visual review, rather than a verified way to preserve the facial blendshapes.
+The current 13,790-triangle head is a topology/budget reference, not authority for
+neutral shape after the user's H selection. Preserve detail around eyes and lips
+while fitting construction to the selected surface. Tripo retopology is an option
+for isolated static parts, subject to visual review, rather than a verified way
+to preserve facial blendshapes.
 
 The Tripo texture trial completed for 30 credits and is visible in the browser.
 The Unity comparison is also built: clay on the left, static Tripo on the right.
