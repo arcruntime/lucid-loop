@@ -1,0 +1,37 @@
+{
+  "source_sha256": "715617c4842029775dfdef0cd289648ea87883624fe693c61a5d374812a2b13d",
+  "source_unchanged": true,
+  "palette": {
+    "other": [
+      0,
+      0,
+      0
+    ],
+    "backing": [
+      0,
+      1,
+      0
+    ],
+    "iris": [
+      0,
+      0,
+      1
+    ],
+    "upperInk": [
+      1,
+      0,
+      0
+    ],
+    "lowerInk": [
+      1,
+      1,
+      0
+    ],
+    "crease": [
+      1,
+      1,
+      1
+    ]
+  },
+  "note": "White crease avoids confusion with antialiased red upper ink adjacent to blue iris. Same geometry, source camera, and visibility as the previous mask."
+}

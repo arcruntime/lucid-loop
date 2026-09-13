@@ -1,0 +1,163 @@
+{
+  "status": "FIRST_ORTHOGRAPHIC_PORTRAIT_CAMERA_FIT_REQUIRES_ACTUAL_RENDER_REVIEW",
+  "source_context_sha256": "317b8f7379dcf8d2fe34501385e1da7cd91b3d057008d488db0c65ed3727b8f5",
+  "source_art_sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+  "trace_sha256": "a256e58f3b2e027460547cb2e653509df2ca2bae39d6e22f291cbb7c13a703b1",
+  "parameters": {
+    "yaw_degrees": -38.77336491597493,
+    "elevation_degrees": -9.809012317105985,
+    "image_roll_degrees": 24.197094653594252,
+    "pixels_per_native_unit": 486.7648081117451,
+    "translation_x_pixels": 319.8898345291441,
+    "translation_y_pixels": 414.51769407124954
+  },
+  "parameter_vector": [
+    -38.77336491597493,
+    -9.809012317105985,
+    24.197094653594252,
+    486.7648081117451,
+    319.8898345291441,
+    414.51769407124954
+  ],
+  "native_right": [
+    0.6674021828740699,
+    -0.6256607409719237,
+    0.4038848394052317
+  ],
+  "native_up": [
+    -0.41686757823111076,
+    0.1355302451755471,
+    0.898806416789725
+  ],
+  "native_toward_camera": [
+    -0.6170865000262565,
+    -0.7682318594338037,
+    -0.1703644964076301
+  ],
+  "native_camera_target": [
+    0.6978871720698159,
+    -0.6031182495036757,
+    0.19181168927765715
+  ],
+  "native_camera_location": [
+    -1.1533723280089538,
+    -2.9078138278050867,
+    -0.3192817999452332
+  ],
+  "source_canvas_pixels": [
+    1536,
+    1024
+  ],
+  "native_ortho_width": 3.155528038188384,
+  "landmarks": [
+    {
+      "label": "H right orbital location / main portrait image-left",
+      "accepted_head_vertex_index": 17351,
+      "native_position": [
+        -0.11078640818595886,
+        -0.2523040771484375,
+        0.553619384765625
+      ],
+      "target_source_pixel": [
+        469.1683083538765,
+        164.63947502050405
+      ],
+      "weight": 3.0,
+      "note": "Position anchor in the native H orbital surface; the rejected eyelid geometry is not used.",
+      "projected_source_pixel": [
+        469.5778701427813,
+        166.46960857124625
+      ],
+      "residual_pixels": 1.8754012030718024
+    },
+    {
+      "label": "H left orbital location / main portrait image-right",
+      "accepted_head_vertex_index": 101887,
+      "native_position": [
+        0.10648348927497864,
+        -0.2760162353515625,
+        0.5520133972167969
+      ],
+      "target_source_pixel": [
+        546.9891646731867,
+        213.36113819312789
+      ],
+      "weight": 3.0,
+      "note": "Position anchor; source-colored-opening centroid does not assert a full hidden eyeball center.",
+      "projected_source_pixel": [
+        547.0676812858709,
+        212.8242029970385
+      ],
+      "residual_pixels": 0.542645614804867
+    },
+    {
+      "label": "nose tip",
+      "accepted_head_vertex_index": 59304,
+      "native_position": [
+        -0.022319743409752846,
+        -0.3798065185546875,
+        0.48179152607917786
+      ],
+      "target_source_pixel": [
+        524,
+        228
+      ],
+      "weight": 1.0,
+      "note": "Manually located drawn tip; painterly nose shadow makes this approximate.",
+      "projected_source_pixel": [
+        523.0275345255003,
+        224.25767517013932
+      ],
+      "residual_pixels": 3.866611466295221
+    },
+    {
+      "label": "mouth center",
+      "accepted_head_vertex_index": 15011,
+      "native_position": [
+        -0.0016435105353593826,
+        -0.3358476161956787,
+        0.3870013356208801
+      ],
+      "target_source_pixel": [
+        480,
+        269
+      ],
+      "weight": 0.6,
+      "note": "Low weight: source lips are parted while accepted neutral is sealed.",
+      "projected_source_pixel": [
+        497.7214512218069,
+        267.02459841243524
+      ],
+      "residual_pixels": 17.831209853485383
+    },
+    {
+      "label": "chin tip",
+      "accepted_head_vertex_index": 68184,
+      "native_position": [
+        -0.006131602916866541,
+        -0.2599639892578125,
+        0.217071533203125
+      ],
+      "target_source_pixel": [
+        458,
+        334
+      ],
+      "weight": 0.8,
+      "note": "Source silhouette tip; no jaw proportion change is permitted.",
+      "projected_source_pixel": [
+        439.74540669750166,
+        335.453279617455
+      ],
+      "residual_pixels": 18.31235097648926
+    }
+  ],
+  "maximum_landmark_residual_pixels": 18.31235097648926,
+  "rms_landmark_residual_pixels": 8.197905350101312,
+  "constraints": [
+    "Camera changes only. Accepted H mesh coordinates, proportions, materials and morphs are not fitted to the drawing.",
+    "A single orthographic camera/similarity is used; no independent horizontal/vertical scaling.",
+    "Pose calibration is approximate because the illustrated face is not a calibrated photograph and source mouth pose differs.",
+    "Portrait roll exists only in camera axes; it is not added to neutral canthus geometry.",
+    "Eye depth and later contour construction require a separate actual view review."
+  ]
+}

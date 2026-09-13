@@ -1,0 +1,36 @@
+{
+  "matrix_world": [
+    [
+      0.6256607174873352,
+      -0.13553008437156677,
+      0.7682319283485413,
+      2.9536428451538086
+    ],
+    [
+      0.6674022078514099,
+      -0.41686761379241943,
+      -0.6170864105224609,
+      -1.1996915340423584
+    ],
+    [
+      0.40388479828834534,
+      0.8988063335418701,
+      -0.1703646034002304,
+      -0.8226205110549927
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "ortho_scale": 3.3022971153259277,
+  "actual_blender_projection_max_error_pixels": 0.00020350792145753594,
+  "source_sha256": "317b8f7379dcf8d2fe34501385e1da7cd91b3d057008d488db0c65ed3727b8f5",
+  "source_unchanged": true,
+  "old_eye_meshes_hidden_for_camera_diagnostic": true,
+  "new_eye_geometry_created": false,
+  "render": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-designer-eyes-v1\\portrait-camera-context-v1.png",
+  "status": "CAMERA_REVIEW_ONLY_ORBITAL_HOLES_EXPECTED"
+}

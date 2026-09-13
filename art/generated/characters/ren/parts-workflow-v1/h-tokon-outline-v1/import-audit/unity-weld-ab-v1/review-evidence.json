@@ -1,0 +1,352 @@
+{
+  "status": "WELDING_OFF_DOES_NOT_CHANGE_OBSERVED_IMPORT_LOSS",
+  "unityVersion": "6000.3.24f1",
+  "comparisonScope": "Numeric import only; no rendering, repair, main-project changes or production acceptance.",
+  "onlyModelImporterSettingChanged": "weldVertices; copied assets also require distinct GUIDs",
+  "originalInputAndSceneHashesUnchanged": true,
+  "cases": [
+    {
+      "id": "source-weld-true",
+      "kind": "source",
+      "weldVertices": true,
+      "meshCount": 14,
+      "frameCount": 70,
+      "totalEndpointErrors": 1876,
+      "totalZeroedMovedEndpoints": 1873,
+      "totalNonzeroErrors": 0
+    },
+    {
+      "id": "source-weld-false",
+      "kind": "source",
+      "weldVertices": false,
+      "meshCount": 14,
+      "frameCount": 70,
+      "totalEndpointErrors": 1876,
+      "totalZeroedMovedEndpoints": 1873,
+      "totalNonzeroErrors": 0
+    },
+    {
+      "id": "outline-weld-true",
+      "kind": "outline",
+      "weldVertices": true,
+      "meshCount": 3,
+      "frameCount": 7,
+      "totalEndpointErrors": 57,
+      "totalZeroedMovedEndpoints": 57,
+      "totalNonzeroErrors": 0
+    },
+    {
+      "id": "outline-weld-false",
+      "kind": "outline",
+      "weldVertices": false,
+      "meshCount": 3,
+      "frameCount": 7,
+      "totalEndpointErrors": 57,
+      "totalZeroedMovedEndpoints": 57,
+      "totalNonzeroErrors": 0
+    }
+  ],
+  "pairEquality": [
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Eye_L_LidAnnulus",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Eye_L_LowerLash",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Eye_L_OuterFlicks",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Eye_L_UpperLash",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Eye_R_LidAnnulus",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Eye_R_LowerLash",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Eye_R_OuterFlicks",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Eye_R_UpperLash",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Head",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_InnerLipWall",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_OralCavity",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_H_Tongue",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_Hair_H_DetailedLayers",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "source",
+      "mesh": "Ren_Hair_H_RootBase",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "outline",
+      "mesh": "RenInk_HairLayers",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "outline",
+      "mesh": "RenInk_HairRoot",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    },
+    {
+      "kind": "outline",
+      "mesh": "RenInk_Head",
+      "allPerRowErrorArraysByteIdentical": true,
+      "allFailureEndpointsAndErrorsIdentical": true
+    }
+  ],
+  "nearThresholdResiduals": [
+    {
+      "case": "source-weld-true",
+      "mesh": "Ren_H_Eye_L_LidAnnulus",
+      "shape": "eyeBlinkL_C25",
+      "sourceOrdinal": 446,
+      "importedVertex": 446,
+      "basis": [
+        0.16687537729740143,
+        0.18813173472881317,
+        0.09336024522781372
+      ],
+      "authoredEndpoint": [
+        0.1668773740530014,
+        0.18813173472881317,
+        0.09336024522781372
+      ],
+      "importedBasis": [
+        0.16687534749507904,
+        0.18813170492649078,
+        0.09336020052433014
+      ],
+      "importedEndpoint": [
+        0.16687534749507904,
+        0.18813170492649078,
+        0.09336020052433014
+      ],
+      "error": 2.027269985117277e-06,
+      "authoredDeltaMagnitude": 1.996755599975586e-06,
+      "importedDeltaMagnitude": 0.0,
+      "zeroed": false,
+      "candidateCount": 1
+    },
+    {
+      "case": "source-weld-true",
+      "mesh": "Ren_H_Eye_L_LidAnnulus",
+      "shape": "eyeBlinkL_C75",
+      "sourceOrdinal": 446,
+      "importedVertex": 446,
+      "basis": [
+        0.16687537729740143,
+        0.18813173472881317,
+        0.09336024522781372
+      ],
+      "authoredEndpoint": [
+        0.1668773740530014,
+        0.18813173472881317,
+        0.09336024522781372
+      ],
+      "importedBasis": [
+        0.16687534749507904,
+        0.18813170492649078,
+        0.09336020052433014
+      ],
+      "importedEndpoint": [
+        0.16687534749507904,
+        0.18813170492649078,
+        0.09336020052433014
+      ],
+      "error": 2.027269985117277e-06,
+      "authoredDeltaMagnitude": 1.996755599975586e-06,
+      "importedDeltaMagnitude": 0.0,
+      "zeroed": false,
+      "candidateCount": 1
+    },
+    {
+      "case": "source-weld-true",
+      "mesh": "Ren_H_Eye_R_LidAnnulus",
+      "shape": "eyeBlinkR_C25",
+      "sourceOrdinal": 116,
+      "importedVertex": 116,
+      "basis": [
+        0.15211254358291626,
+        -0.1572151929140091,
+        0.038666196167469025
+      ],
+      "authoredEndpoint": [
+        0.15211451053619385,
+        -0.1572151929140091,
+        0.038666196167469025
+      ],
+      "importedBasis": [
+        0.15211249887943268,
+        -0.1572151929140091,
+        0.03866618126630783
+      ],
+      "importedEndpoint": [
+        0.15211249887943268,
+        -0.1572151929140091,
+        0.03866618126630783
+      ],
+      "error": 2.0117119498983002e-06,
+      "authoredDeltaMagnitude": 1.9669532775878906e-06,
+      "importedDeltaMagnitude": 0.0,
+      "zeroed": false,
+      "candidateCount": 1
+    },
+    {
+      "case": "source-weld-false",
+      "mesh": "Ren_H_Eye_L_LidAnnulus",
+      "shape": "eyeBlinkL_C25",
+      "sourceOrdinal": 446,
+      "importedVertex": 446,
+      "basis": [
+        0.16687537729740143,
+        0.18813173472881317,
+        0.09336024522781372
+      ],
+      "authoredEndpoint": [
+        0.1668773740530014,
+        0.18813173472881317,
+        0.09336024522781372
+      ],
+      "importedBasis": [
+        0.16687534749507904,
+        0.18813170492649078,
+        0.09336020052433014
+      ],
+      "importedEndpoint": [
+        0.16687534749507904,
+        0.18813170492649078,
+        0.09336020052433014
+      ],
+      "error": 2.027269985117277e-06,
+      "authoredDeltaMagnitude": 1.996755599975586e-06,
+      "importedDeltaMagnitude": 0.0,
+      "zeroed": false,
+      "candidateCount": 1
+    },
+    {
+      "case": "source-weld-false",
+      "mesh": "Ren_H_Eye_L_LidAnnulus",
+      "shape": "eyeBlinkL_C75",
+      "sourceOrdinal": 446,
+      "importedVertex": 446,
+      "basis": [
+        0.16687537729740143,
+        0.18813173472881317,
+        0.09336024522781372
+      ],
+      "authoredEndpoint": [
+        0.1668773740530014,
+        0.18813173472881317,
+        0.09336024522781372
+      ],
+      "importedBasis": [
+        0.16687534749507904,
+        0.18813170492649078,
+        0.09336020052433014
+      ],
+      "importedEndpoint": [
+        0.16687534749507904,
+        0.18813170492649078,
+        0.09336020052433014
+      ],
+      "error": 2.027269985117277e-06,
+      "authoredDeltaMagnitude": 1.996755599975586e-06,
+      "importedDeltaMagnitude": 0.0,
+      "zeroed": false,
+      "candidateCount": 1
+    },
+    {
+      "case": "source-weld-false",
+      "mesh": "Ren_H_Eye_R_LidAnnulus",
+      "shape": "eyeBlinkR_C25",
+      "sourceOrdinal": 116,
+      "importedVertex": 116,
+      "basis": [
+        0.15211254358291626,
+        -0.1572151929140091,
+        0.038666196167469025
+      ],
+      "authoredEndpoint": [
+        0.15211451053619385,
+        -0.1572151929140091,
+        0.038666196167469025
+      ],
+      "importedBasis": [
+        0.15211249887943268,
+        -0.1572151929140091,
+        0.03866618126630783
+      ],
+      "importedEndpoint": [
+        0.15211249887943268,
+        -0.1572151929140091,
+        0.03866618126630783
+      ],
+      "error": 2.0117119498983002e-06,
+      "authoredDeltaMagnitude": 1.9669532775878906e-06,
+      "importedDeltaMagnitude": 0.0,
+      "zeroed": false,
+      "candidateCount": 1
+    }
+  ],
+  "residualExplanation": "Three rows per source case have exactly zero imported deltas and authored movement <=2e-6; their endpoint error is slightly above 2e-6 after Basis precision. These are included in 1876 total errors but excluded from 1873 zeroed moved-above-tolerance rows.",
+  "conclusion": "Welding on/off produces byte-identical full per-row error arrays and identical failed authored endpoints in these inputs. The actual importer root cause remains unresolved.",
+  "scopeExpansion": "The earlier 56 differences covered the outline-visible head subset. This audit covers all 14 morph-bearing source meshes/70 frames, plus 3 outline meshes/7 frames.",
+  "protectedHistoricalPatch": "Existing eight-endpoint shell compatibility patch and source imports remain untouched.",
+  "localRawEvidence": ".local/ren-fbx-weld-ab-v1/imported and comparison contain full raw positions, all per-row errors and correspondence NPZ; not duplicated in the portable checkpoint."
+}

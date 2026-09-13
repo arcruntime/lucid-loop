@@ -1,0 +1,249 @@
+{
+  "files": [
+    {
+      "file": "audit-input.json",
+      "sha256": "4c3e2dacde48ba64f7c54b372854e367ad45b4e550fd21c912ef83d556255c07",
+      "bytes": 1129
+    },
+    {
+      "file": "compare_fbx_weld_audit.py",
+      "sha256": "7eb9bb2a568ff4e2e0d07995bac8560dd36098fbd47d94cd56852843afe2ffad",
+      "bytes": 7681
+    },
+    {
+      "file": "comparison-summary.json",
+      "sha256": "7023e3f99cada06d18010da4b67173552e348787276c97d1948573e83c033b29",
+      "bytes": 86672
+    },
+    {
+      "file": "curate_fbx_weld_audit.py",
+      "sha256": "7629bde87e5c004d2585d2d039e292c3c5220cface7cba9396733bfc9307bb49",
+      "bytes": 7422
+    },
+    {
+      "file": "input-protection.json",
+      "sha256": "01bbf11901b8a4aef965482c8a8a4a4496d20af5b79ce2bb3e65c163926cd148",
+      "bytes": 1635
+    },
+    {
+      "file": "prepare_fbx_weld_audit.py",
+      "sha256": "631dfbc186b206187c4defb5c4291e9cd17139ff5f4d4addde01e98cdd46e7e7",
+      "bytes": 2396
+    },
+    {
+      "file": "README.md",
+      "sha256": "27f0738e83f0fe455d0257c332c6d82a98d76884662a8d0aa78c9663308f3b95",
+      "bytes": 3035
+    },
+    {
+      "file": "RenFbxWeldAudit.cs",
+      "sha256": "b289c83467279deb92b8d2f3ec1c019a3598a8f9d71b1a1d09f154a6c58f170e",
+      "bytes": 9042
+    },
+    {
+      "file": "RenFbxWeldAudit.cs.meta",
+      "sha256": "cebbfb4a8a73a5c1a557d047c95d21a6d864b143ef261a69aef6ef042395d0cf",
+      "bytes": 60
+    },
+    {
+      "file": "review-evidence.json",
+      "sha256": "aec541c2cff9b80748ca6b60774dbd425c36b8b740a4df8dd795ab9217d9b965",
+      "bytes": 10378
+    },
+    {
+      "file": "comparison/outline-weld-false/RenInk_HairLayers-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/outline-weld-false/RenInk_HairRoot-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/outline-weld-false/RenInk_Head-all-endpoint-failures.json",
+      "sha256": "ec684a5b822431194de5c836f30ef45b4b7d8570dfcdf788f38fb783585a65bf",
+      "bytes": 40077
+    },
+    {
+      "file": "comparison/outline-weld-true/RenInk_HairLayers-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/outline-weld-true/RenInk_HairRoot-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/outline-weld-true/RenInk_Head-all-endpoint-failures.json",
+      "sha256": "7032ec7747f9d6b1dc22df5cc9780d9b9509dc62d77d56020b35397f476a8932",
+      "bytes": 40077
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_Hair_H_DetailedLayers-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_Hair_H_RootBase-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json",
+      "sha256": "1141375499858fb1ceea0d5759dc990c69e472151c91a71919f8b51f11fbc162",
+      "bytes": 160861
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Eye_L_LowerLash-all-endpoint-failures.json",
+      "sha256": "284cc2534727fede53f1cd20cf4baa61c9a4d98aff8be98cbbb62e3a3e182c87",
+      "bytes": 12509
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json",
+      "sha256": "83b808cb0246e1ca237891eca8830de3cf88b0180312ce9a4abb15f879cf61d1",
+      "bytes": 11704
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Eye_L_UpperLash-all-endpoint-failures.json",
+      "sha256": "764da708f8a37028e616efb5a7e3435e770bdcf9d889e1e91857e98425d17d25",
+      "bytes": 2774
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json",
+      "sha256": "515aa1ff3b5c82c986532c368e1540f3aa8902047ae8b8cc9c0d895f5a1f6e5f",
+      "bytes": 158283
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Eye_R_LowerLash-all-endpoint-failures.json",
+      "sha256": "89b41fef15eab95b23ec2f8b20813064b49dadba8599662964c3625a576a905d",
+      "bytes": 13283
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json",
+      "sha256": "9244675edb0e699c16408f54eb45526f70d70a0cbd73bfe4973a6586feb4a3b5",
+      "bytes": 11828
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Eye_R_UpperLash-all-endpoint-failures.json",
+      "sha256": "a74122c7368e5dc7270746b0e47c5e12886c22fb644e9e10408ea23adefa77d6",
+      "bytes": 2795
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Head-all-endpoint-failures.json",
+      "sha256": "35a23ce0ccc341f75d1226de2158215b54217d4a683851f6c6619653fcf70669",
+      "bytes": 42226
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_InnerLipWall-all-endpoint-failures.json",
+      "sha256": "6a4d08297b6d74d05d58c38d63e61d7ee3203411cc9f87ee14b6c4e141e00a7d",
+      "bytes": 896523
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_OralCavity-all-endpoint-failures.json",
+      "sha256": "8482af6d23b4c3c009edd43b8bd1e5f1e9ba8870fe42917ae1bee31b4a7163e7",
+      "bytes": 707
+    },
+    {
+      "file": "comparison/source-weld-false/Ren_H_Tongue-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_Hair_H_DetailedLayers-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_Hair_H_RootBase-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json",
+      "sha256": "1141375499858fb1ceea0d5759dc990c69e472151c91a71919f8b51f11fbc162",
+      "bytes": 160861
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Eye_L_LowerLash-all-endpoint-failures.json",
+      "sha256": "0027f56de6b912e14d20dfdf55b4b2db6c4f482e859b702118cfcc716b564faa",
+      "bytes": 12509
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json",
+      "sha256": "83b808cb0246e1ca237891eca8830de3cf88b0180312ce9a4abb15f879cf61d1",
+      "bytes": 11704
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Eye_L_UpperLash-all-endpoint-failures.json",
+      "sha256": "561afe80215ff4c253d4313e2767cd5b25caa7ae0eeb8c7e023a817a32d3c17d",
+      "bytes": 2774
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json",
+      "sha256": "515aa1ff3b5c82c986532c368e1540f3aa8902047ae8b8cc9c0d895f5a1f6e5f",
+      "bytes": 158283
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Eye_R_LowerLash-all-endpoint-failures.json",
+      "sha256": "dd9f126ee2661a742648ee8bae473702905273ef3b54363f5ca8e018fec104ba",
+      "bytes": 13283
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json",
+      "sha256": "9244675edb0e699c16408f54eb45526f70d70a0cbd73bfe4973a6586feb4a3b5",
+      "bytes": 11828
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Eye_R_UpperLash-all-endpoint-failures.json",
+      "sha256": "1d555f02c771448812122c390eb5daed98302299f8e975bd56b99c1dd8c1839f",
+      "bytes": 2795
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Head-all-endpoint-failures.json",
+      "sha256": "f3363e2dc071a0114d5466201cf49ed658077e3f3f8ab00afd428dba4605046e",
+      "bytes": 42223
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_InnerLipWall-all-endpoint-failures.json",
+      "sha256": "6a4d08297b6d74d05d58c38d63e61d7ee3203411cc9f87ee14b6c4e141e00a7d",
+      "bytes": 896523
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_OralCavity-all-endpoint-failures.json",
+      "sha256": "8482af6d23b4c3c009edd43b8bd1e5f1e9ba8870fe42917ae1bee31b4a7163e7",
+      "bytes": 707
+    },
+    {
+      "file": "comparison/source-weld-true/Ren_H_Tongue-all-endpoint-failures.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "file": "imported/imported-manifest.json",
+      "sha256": "fb35957ea7f0dc003e2380343231b8e707915deb14a7ed5aeeac5b37f11813dd",
+      "bytes": 112862
+    },
+    {
+      "file": "importer-metas/outline-weld-false.fbx.meta",
+      "sha256": "137d6efcf667b932645b646e6144e19fa30ca88b79cab0ca990ba8997bb060e5",
+      "bytes": 2891
+    },
+    {
+      "file": "importer-metas/outline-weld-true.fbx.meta",
+      "sha256": "b2a55c791601f6762e35c59d3834ae86f9123e30f116c2e4c54e356f4755291c",
+      "bytes": 2891
+    },
+    {
+      "file": "importer-metas/source-weld-false.fbx.meta",
+      "sha256": "7773bc8ca05f729b83faac752c31115a8f4fa57a0c115b0e5cab8f7115634279",
+      "bytes": 2891
+    },
+    {
+      "file": "importer-metas/source-weld-true.fbx.meta",
+      "sha256": "88b5fdf98379a66ca8d6232bc502069103b12c89d14d9839bdcd75e726167648",
+      "bytes": 2891
+    }
+  ]
+}

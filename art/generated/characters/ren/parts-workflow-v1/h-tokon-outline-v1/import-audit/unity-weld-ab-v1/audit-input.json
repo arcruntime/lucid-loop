@@ -1,0 +1,33 @@
+{
+  "inputs": [
+    {
+      "id": "source-weld-true",
+      "kind": "source",
+      "asset": "Assets/CharacterArt/Generated/RenFbxWeldAudit/source-weld-true.fbx",
+      "sha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+      "weld": true
+    },
+    {
+      "id": "source-weld-false",
+      "kind": "source",
+      "asset": "Assets/CharacterArt/Generated/RenFbxWeldAudit/source-weld-false.fbx",
+      "sha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+      "weld": false
+    },
+    {
+      "id": "outline-weld-true",
+      "kind": "outline",
+      "asset": "Assets/CharacterArt/Generated/RenFbxWeldAudit/outline-weld-true.fbx",
+      "sha256": "3812d52df7bcb82b187b80294b6e0bf76377b5a5069ee3facf018d01fd995b6c",
+      "weld": true
+    },
+    {
+      "id": "outline-weld-false",
+      "kind": "outline",
+      "asset": "Assets/CharacterArt/Generated/RenFbxWeldAudit/outline-weld-false.fbx",
+      "sha256": "3812d52df7bcb82b187b80294b6e0bf76377b5a5069ee3facf018d01fd995b6c",
+      "weld": false
+    }
+  ],
+  "output": "B:\\lucid-loop\\.local\\ren-fbx-weld-ab-v1\\imported"
+}

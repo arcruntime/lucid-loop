@@ -1,0 +1,113 @@
+{
+  "source_sha256": "715617c4842029775dfdef0cd289648ea87883624fe693c61a5d374812a2b13d",
+  "source_unchanged": true,
+  "captures": [
+    {
+      "file": "portrait-complete-head.png",
+      "sha256": "927b653c73f5beaa8e932acc97b65a627fc25f12bb575c6afc66ac1269485f17"
+    },
+    {
+      "file": "portrait-unobscured-eyes.png",
+      "sha256": "7889db7a346eb59f6e91349b79a75a102da45529c4ae9499f264f7b628525263"
+    },
+    {
+      "file": "whole-head-front.png",
+      "sha256": "afcca646e044aa0f3d622b9cf3a44ecd44475e9ea45f0d800068b0e7e24824fb"
+    },
+    {
+      "file": "whole-head-quarter.png",
+      "sha256": "da9ddf0664f516e2b45a2adb7ab7d03de2de1678e72d1061c117323e2d74b556"
+    },
+    {
+      "file": "whole-head-profile.png",
+      "sha256": "d5f9c2eae06b6f02e247f94759d73473911b5f7e43300232c92a4dfe87749db7"
+    },
+    {
+      "file": "portrait-layer-visibility.png",
+      "sha256": "4f317bef94259bb50a9c13d0a2a7798a8a13d07240ee9229216390a58f2df582"
+    }
+  ],
+  "flat_layer_palette": {
+    "other": [
+      0,
+      0,
+      0
+    ],
+    "backing": [
+      0,
+      1,
+      0
+    ],
+    "iris": [
+      0,
+      0,
+      1
+    ],
+    "upperInk": [
+      1,
+      0,
+      0
+    ],
+    "lowerInk": [
+      1,
+      1,
+      0
+    ],
+    "crease": [
+      1,
+      0,
+      1
+    ]
+  },
+  "flat_layer_assignments": {
+    "Ren_H_Head": "other",
+    "Ren_H_UpperTeeth": "other",
+    "Ren_H_Tongue": "other",
+    "Ren_H_OralCavity": "other",
+    "Ren_H_InnerLipWall": "other",
+    "Ren_H_Eye_R_UpperLash": "other",
+    "Ren_H_Eye_R_Sclera": "other",
+    "Ren_H_Eye_R_OuterFlicks": "other",
+    "Ren_H_Eye_R_LowerLash": "other",
+    "Ren_H_Eye_R_LidAnnulus": "other",
+    "Ren_H_Eye_R_Iris": "other",
+    "Ren_H_Eye_L_UpperLash": "other",
+    "Ren_H_Eye_L_Sclera": "other",
+    "Ren_H_Eye_L_OuterFlicks": "other",
+    "Ren_H_Eye_L_LowerLash": "other",
+    "Ren_H_Eye_L_LidAnnulus": "other",
+    "Ren_H_Eye_L_Iris": "other",
+    "Ren_Hair_H_RootBase": "other",
+    "Ren_Hair_H_DetailedLayers": "other",
+    "Ren_H_ConcealedScalpBack": "other",
+    "Ren_Cap": "other",
+    "Ren_H_EarJewelry_R": "other",
+    "Ren_H_EarJewelry_L": "other",
+    "Ren_H_Ear_R": "other",
+    "Ren_H_Ear_L": "other",
+    "Ren_DesignerEye_R_SkinShutter": "other",
+    "Ren_DesignerEye_R_Backing": "backing",
+    "Ren_DesignerEye_R_LowerInk": "lowerInk",
+    "Ren_DesignerEye_R_Iris": "iris",
+    "Ren_DesignerEye_R_Pupil": "iris",
+    "Ren_DesignerEye_R_Highlight_0": "iris",
+    "Ren_DesignerEye_R_Highlight_1": "iris",
+    "Ren_DesignerEye_L_SkinShutter": "other",
+    "Ren_DesignerEye_L_Backing": "backing",
+    "Ren_DesignerEye_L_LowerInk": "lowerInk",
+    "Ren_DesignerEye_L_Iris": "iris",
+    "Ren_DesignerEye_L_Pupil": "iris",
+    "Ren_DesignerEye_L_Highlight_0": "iris",
+    "Ren_DesignerEye_L_Highlight_1": "iris",
+    "Ren_DesignerEye_R_UpperInk": "upperInk",
+    "Ren_DesignerEye_R_Crease": "crease",
+    "Ren_DesignerEye_L_UpperInk": "upperInk",
+    "Ren_DesignerEye_L_VisibleFan_0": "upperInk",
+    "Ren_DesignerEye_L_VisibleFan_UpperSpan": "upperInk",
+    "Ren_DesignerEye_L_VisibleFan_LowerSpan": "upperInk",
+    "Ren_DesignerEye_L_VisibleFan_LowerFine": "upperInk",
+    "Ren_DesignerEye_L_Crease": "crease"
+  },
+  "flat_mask_hair_cap_hidden": true,
+  "status": "ACTUAL_RENDERED_VIEWS_REQUIRE_VISUAL_REVIEW_NO_LIKENESS_APPROVAL"
+}

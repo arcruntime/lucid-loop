@@ -1,0 +1,1417 @@
+{
+  "status": "FIRST_SHALLOW_DESIGNER_CONTOUR_PROTOTYPE_REQUIRES_RENDER_REVIEW",
+  "accepted_source_sha256": "317b8f7379dcf8d2fe34501385e1da7cd91b3d057008d488db0c65ed3727b8f5",
+  "accepted_non_eye_geometry_uv_morph_hierarchy_changed": false,
+  "non_eye_fingerprints_equal": true,
+  "source_unchanged": true,
+  "camera": {
+    "matrix_world": [
+      [
+        0.6256607174873352,
+        -0.13553008437156677,
+        0.7682319283485413,
+        2.9536428451538086
+      ],
+      [
+        0.6674022078514099,
+        -0.41686761379241943,
+        -0.6170864105224609,
+        -1.1996915340423584
+      ],
+      [
+        0.40388479828834534,
+        0.8988063335418701,
+        -0.1703646034002304,
+        -0.8226205110549927
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "ortho_scale": 3.3022971153259277,
+    "actual_blender_projection_max_error_pixels": 0.00020350792145753594
+  },
+  "source_curve_sha256": "a256e58f3b2e027460547cb2e653509df2ca2bae39d6e22f291cbb7c13a703b1",
+  "source_boundary_provenance_sha256": "16301040e4a42f9e615a63720d0bec8e6c6c54d6cf2944778597dda2d2276992",
+  "rejected_eye_meshes_used_as_geometry_templates": false,
+  "rejected_eye_meshes_retained_hidden_in_context": true,
+  "eyes": [
+    {
+      "side": "R",
+      "source_trace_name": "Main portrait / image-left",
+      "original_H_boundary_points": 299,
+      "maximum_boundary_coordinate_error": 0.0,
+      "native_depth_field": "Common shallow affine interior, with exact retained H positions at the outer skin boundary",
+      "quadratic_coefficients": [
+        -0.24698364172804702,
+        -0.018,
+        -0.005847598014572006,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "depth_fit_rms_native": 0.016355623671731514,
+      "depth_fit_maximum_native": 0.03871742185132912,
+      "aperture_points_inside_original_projected_cut_fraction": 1.0,
+      "ray_surface_fallbacks": [],
+      "opening_native_bounds": [
+        [
+          -0.16450202682387954,
+          -0.25975069390900857,
+          0.5466628306271399
+        ],
+        [
+          -0.05945409395954053,
+          -0.2388013201704971,
+          0.5683056348172183
+        ]
+      ],
+      "objects": [
+        {
+          "name": "Ren_DesignerEye_R_SkinShutter",
+          "vertices": 613,
+          "triangles": 783,
+          "positions_sha256": "c68f4908111d1e8aa577222f0e710053816c50355acf1e16998cd244e2a4a06e",
+          "triangle_indices_sha256": "fe85d641bb6c17b79569ff72e48bc579ea9903bb0a0a65b1ef153253e0e7c6a3",
+          "uv_sha256": {
+            "DesignerEyeUV": "25000673f9cfd2925454a2460c3240a502efe163cfa603603ffc59f4fff858d4"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_SkinStudy"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_R_Backing",
+          "vertices": 145,
+          "triangles": 144,
+          "positions_sha256": "db20d20e57fccf9309e47fc003b0a0509999ba253a06aa18a97ea3f896479e84",
+          "triangle_indices_sha256": "63d4325c895a8d6d54c5c1ee2471bc237cffe7e3446b4b28d858ad129e7b430b",
+          "uv_sha256": {
+            "DesignerEyeUV": "625d19dac38daadfc91deb1ba2a977c9f5a049a983c345faa5db5c121d5f88b7"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Sclera"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_R_UpperInk",
+          "vertices": 160,
+          "triangles": 158,
+          "positions_sha256": "f202afc66b6289ca01d7b779bfd07698bd202504d162346c203f46f3070bea59",
+          "triangle_indices_sha256": "faa11a0078a6035931a2b2ff320fdf4760f03935bd09e821b5991a04f6c37617",
+          "uv_sha256": {
+            "DesignerEyeUV": "0137a651dbed7e9c85042fa971448f0b39dcbd4a55d990dd8d7fe58c907809cc"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_UpperInk"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_R_LowerInk",
+          "vertices": 218,
+          "triangles": 214,
+          "positions_sha256": "dd2203a165fd459aef7121627163e4e559bddaade573d6f314ce9abf8ed618b5",
+          "triangle_indices_sha256": "ea953f12eb934169bd036628237b1deb4771325956a3b8e0396292d5296d3970",
+          "uv_sha256": {
+            "DesignerEyeUV": "52d378aa98e25f33a4050116868cb8f6db5160d858360df73b2c34259bf50e0c"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_LowerInk"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_R_Crease",
+          "vertices": 200,
+          "triangles": 196,
+          "positions_sha256": "5ae475cad1ffd32fbdf06f6118987220dd131feced4742ef49d2aa96858fc522",
+          "triangle_indices_sha256": "4830081e33386c713b4962e558579ca411e74dc522378ec158f67bf9b417bf41",
+          "uv_sha256": {
+            "DesignerEyeUV": "06137f858ef13eff6967a8daf5e1f878726a98c9988fffc89aff12d6c7c0be06"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Crease"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_R_Iris",
+          "vertices": 257,
+          "triangles": 448,
+          "positions_sha256": "00f5a14ead4d216470e9ed31764ad7490d2fc86a3774ae70aa3a7c036c770cca",
+          "triangle_indices_sha256": "07cc7e26eeb907a2575a5975f3b73392d1bb77c4ffd150c581f69c376ecea644",
+          "uv_sha256": {
+            "DesignerEyeUV": "9958c6f07840fc8d91d19399e38b4ef9fbccb6aa40cf0a27d3f6a44372050164"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_IrisGraphic"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_R_Pupil",
+          "vertices": 32,
+          "triangles": 30,
+          "positions_sha256": "a36f19741f891280ab24d249d89e58c8dbb9a46d051505343c0f7a740dbfc517",
+          "triangle_indices_sha256": "b8b4e742e464ae7a18325be6c8c94e8a288f43c1e5175ba475618f27e575949f",
+          "uv_sha256": {
+            "DesignerEyeUV": "0f0a5136c3307f56862cd9729afc3bd2a88f64bf8edce48cd0bf6d74ffb98b3a"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Pupil"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_R_Highlight_0",
+          "vertices": 20,
+          "triangles": 18,
+          "positions_sha256": "3b005a1efaab4ea196a388ec4ed8b0d91bdd2375c7f196b20dbe3d01ee529e1a",
+          "triangle_indices_sha256": "7fbf2676fb467b1b80aaf25805209a62113162625abe95a67f3979a471385b34",
+          "uv_sha256": {
+            "DesignerEyeUV": "f7d171b3298fc1bec4e639006686cb837fbefcc8d14b9b3b88b9010f033145f0"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Highlight"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_R_Highlight_1",
+          "vertices": 20,
+          "triangles": 18,
+          "positions_sha256": "1fb3cbfce1bcb544faf7b64a65870549a0d26b7014e09f79e4c1f25fafaa928e",
+          "triangle_indices_sha256": "8953b9f1397b5fa1ac58892fcb38bfe9711b947378c608b0607dd383d6c4322c",
+          "uv_sha256": {
+            "DesignerEyeUV": "9f5131ddd556bdb4e17ef57fe4cd90d94bfc805d65552b3de483fd1c37922f20"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Highlight"
+          ]
+        }
+      ],
+      "triangles": 2009,
+      "provisional_items": [
+        "Uniform shutter pigment requires boundary material integration.",
+        "Exact source coordinates retained at outer edge; normal/material continuity not yet final.",
+        "Hidden upper iris continuation is authored, not traced.",
+        "Uncertain hair-adjacent fan tips omitted.",
+        "No blink/gaze shape keys yet; silhouette prototype first."
+      ],
+      "actual_shutter_attachment": {
+        "parameter_domain": "native H XZ, not portrait projection",
+        "source_boundary_vertices": 299,
+        "actual_generated_boundary_vertices": 299,
+        "maximum_actual_position_error": 0.0,
+        "actual_retained_boundary_edges": 299,
+        "missing_boundary_edges": [],
+        "mapping": "CDT original input vertex identities, with original source H ID attribute distinct from geometric vertex index"
+      }
+    },
+    {
+      "side": "L",
+      "source_trace_name": "Main portrait / image-right",
+      "original_H_boundary_points": 274,
+      "maximum_boundary_coordinate_error": 0.0,
+      "native_depth_field": "Common shallow affine interior, with exact retained H positions at the outer skin boundary",
+      "quadratic_coefficients": [
+        -0.27283402013205305,
+        0.018,
+        -0.00559016735333383,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "depth_fit_rms_native": 0.013937859108239156,
+      "depth_fit_maximum_native": 0.0298504331444934,
+      "aperture_points_inside_original_projected_cut_fraction": 0.8680555555555556,
+      "ray_surface_fallbacks": [],
+      "opening_native_bounds": [
+        [
+          0.05020761863931335,
+          -0.2835261388713472,
+          0.5419671102273758
+        ],
+        [
+          0.1591723432972755,
+          -0.26270640949712526,
+          0.5642253883904803
+        ]
+      ],
+      "objects": [
+        {
+          "name": "Ren_DesignerEye_L_SkinShutter",
+          "vertices": 588,
+          "triangles": 758,
+          "positions_sha256": "b3cad889b499e4b662dad5402d67df377896bdf686280da420014ff8153237f1",
+          "triangle_indices_sha256": "59fe7d7be540f9a6252414ecf62da00521de332aea7674fa4071f32002824d0a",
+          "uv_sha256": {
+            "DesignerEyeUV": "56a1be4e5ef1bf2a7dc487c85c4a36358ca8e371c17839f6ff59fb3f0b79eadb"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_SkinStudy"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_Backing",
+          "vertices": 145,
+          "triangles": 144,
+          "positions_sha256": "bcd51f14b83f0c146c63a7450e50a39473b1b3e696021cad080f0c7ac29dd12b",
+          "triangle_indices_sha256": "3df7312930315707b1851365478c427d65f10a1c9cbc4d0111a55a5462dacf3e",
+          "uv_sha256": {
+            "DesignerEyeUV": "1d5f0b9ef4ed59d94c88f8a7840618aaa9c12fe2b1cb685ba3ed68b7d6c2aa20"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Sclera"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_UpperInk",
+          "vertices": 160,
+          "triangles": 157,
+          "positions_sha256": "7f80e12254a019d445dfc3e06977ec6c8b5dd03d97afd48f94b0ab3451365a9c",
+          "triangle_indices_sha256": "3214fba98ce36b74b205294742c14f98a0b5fb152d5a3e250429c8675aed1e37",
+          "uv_sha256": {
+            "DesignerEyeUV": "e0bc15aced0b339f566c11a49fbbad04757717042db4946becc19720a2fd66cb"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_UpperInk"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_VisibleFan_0",
+          "vertices": 12,
+          "triangles": 8,
+          "positions_sha256": "b0f78922dbb275c3eb49d3b0a881659c9f761bf7c427e5066dd82360e59a97de",
+          "triangle_indices_sha256": "47cdb475b768e88f416fc0df397009c0d6d59b5a0af4618eee8f73cd7beb18b1",
+          "uv_sha256": {
+            "DesignerEyeUV": "56ca1dbed4b1cdbf189d7598217e22f9210632149bfc6cadbef9a7c42704e240"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_UpperInk"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_LowerInk",
+          "vertices": 276,
+          "triangles": 272,
+          "positions_sha256": "a269c6261acdf1d95c47049b6d64a7beacde1f115fa7f25ff0a017ad7dc3e35c",
+          "triangle_indices_sha256": "45a92a34f5d7d16ca4608398eeee8d90b9114d1be739eb36e67f16eac0c55ebc",
+          "uv_sha256": {
+            "DesignerEyeUV": "74e97d07992befb7b80e50900ba7b32e8844479bb0a65e225b3d2e4bf5754f1b"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_LowerInk"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_Crease",
+          "vertices": 350,
+          "triangles": 346,
+          "positions_sha256": "49e78846168300d92ff346cf40720a20674351628ffbf5f8431f0ca8780b4839",
+          "triangle_indices_sha256": "111d0f66344ca083adebdfe8a455d31b6a6af95d2b74bc5d0ad254e520508c08",
+          "uv_sha256": {
+            "DesignerEyeUV": "f550eca33651f69991c141cdd51b8e1e46cdaae3bcfc1cd6160cc526b86b076a"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Crease"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_Iris",
+          "vertices": 257,
+          "triangles": 448,
+          "positions_sha256": "438e26add845d11e2f29e98a7ea828f06028e176e975c135c5e560601d874948",
+          "triangle_indices_sha256": "07cc7e26eeb907a2575a5975f3b73392d1bb77c4ffd150c581f69c376ecea644",
+          "uv_sha256": {
+            "DesignerEyeUV": "59ba8474becaf7cff341ca052f629b132a089751d091d63d4bbece6573c67269"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_IrisGraphic"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_Pupil",
+          "vertices": 32,
+          "triangles": 30,
+          "positions_sha256": "69f6496fbf33ba43e74094e2a7f93f545b16efd1f8b152ddeaaf18375dfc3c5d",
+          "triangle_indices_sha256": "b8b4e742e464ae7a18325be6c8c94e8a288f43c1e5175ba475618f27e575949f",
+          "uv_sha256": {
+            "DesignerEyeUV": "a30d296cd3123657a325dc14bfac96f88b79c36c62cfbff55c0fba0e3c9193a5"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Pupil"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_Highlight_0",
+          "vertices": 20,
+          "triangles": 18,
+          "positions_sha256": "9c977e286b026fbe12cc760e056f8dc795e2e90015d22e81e66374929435f4b0",
+          "triangle_indices_sha256": "7fbf2676fb467b1b80aaf25805209a62113162625abe95a67f3979a471385b34",
+          "uv_sha256": {
+            "DesignerEyeUV": "d4d58578f5189e97cdf08536b9fb028677f8470470141cd32b7fae2e5984ce27"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Highlight"
+          ]
+        },
+        {
+          "name": "Ren_DesignerEye_L_Highlight_1",
+          "vertices": 20,
+          "triangles": 18,
+          "positions_sha256": "f50bf564ea63dcf921f2be75bb580b7e37313ca8e75bc0db78c512d85e25cd36",
+          "triangle_indices_sha256": "9dbf58c98b733c18f0bbf3394a4d101373d9818f49c3db99b2352a4239054690",
+          "uv_sha256": {
+            "DesignerEyeUV": "95303e576d4eeb122986925db8ca59750013019d9e53dfcf93d6ae5a704ee422"
+          },
+          "parent": "Head",
+          "matrix_parent_inverse": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "shape_keys": {},
+          "matrix_world": [
+            [
+              -1.7049841005700728e-07,
+              -1.0465117692947388,
+              0.0,
+              -0.08941860496997833
+            ],
+            [
+              1.0465117692947388,
+              -1.7049841005700728e-07,
+              0.0,
+              0.0073255812749266624
+            ],
+            [
+              0.0,
+              0.0,
+              1.0465116500854492,
+              -0.4884883761405945
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "materials": [
+            "Ren_DesignerEyes_Highlight"
+          ]
+        }
+      ],
+      "triangles": 2199,
+      "provisional_items": [
+        "Uniform shutter pigment requires boundary material integration.",
+        "Exact source coordinates retained at outer edge; normal/material continuity not yet final.",
+        "Hidden upper iris continuation is authored, not traced.",
+        "Uncertain hair-adjacent fan tips omitted.",
+        "No blink/gaze shape keys yet; silhouette prototype first."
+      ],
+      "actual_shutter_attachment": {
+        "parameter_domain": "native H XZ, not portrait projection",
+        "source_boundary_vertices": 274,
+        "actual_generated_boundary_vertices": 274,
+        "maximum_actual_position_error": 0.0,
+        "actual_retained_boundary_edges": 274,
+        "missing_boundary_edges": [],
+        "mapping": "CDT original input vertex identities, with original source H ID attribute distinct from geometric vertex index"
+      }
+    }
+  ],
+  "triangles": 4208
+}

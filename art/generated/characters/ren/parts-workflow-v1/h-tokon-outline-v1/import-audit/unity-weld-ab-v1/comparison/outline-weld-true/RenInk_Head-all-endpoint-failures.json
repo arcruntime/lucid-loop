@@ -1,0 +1,1712 @@
+[
+  {
+    "shape": "jawOpen_A",
+    "sourceOrdinal": 15921,
+    "importedVertex": 15421,
+    "basis": [
+      0.16453023254871368,
+      -0.10147079825401306,
+      -0.1288711130619049
+    ],
+    "authoredEndpoint": [
+      0.16448061168193817,
+      -0.10148371011018753,
+      -0.12889370322227478
+    ],
+    "importedBasis": [
+      0.1645301878452301,
+      -0.10147080570459366,
+      -0.1288711130619049
+    ],
+    "importedEndpoint": [
+      0.1645301878452301,
+      -0.10147080570459366,
+      -0.1288711130619049
+    ],
+    "error": 5.598781113792503e-05,
+    "authoredDeltaMagnitude": 5.6029115600372775e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "jawOpen_A",
+    "sourceOrdinal": 41966,
+    "importedVertex": 40839,
+    "basis": [
+      0.18482427299022675,
+      0.08888889849185944,
+      -0.15788528323173523
+    ],
+    "authoredEndpoint": [
+      0.18480847775936127,
+      0.08889278024435043,
+      -0.15789249539375305
+    ],
+    "importedBasis": [
+      0.18482424318790436,
+      0.08888887614011765,
+      -0.15788529813289642
+    ],
+    "importedEndpoint": [
+      0.18482424318790436,
+      0.08888887614011765,
+      -0.15788529813289642
+    ],
+    "error": 1.7764890397808037e-05,
+    "authoredDeltaMagnitude": 1.7792487219791593e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "jawOpen_A",
+    "sourceOrdinal": 75194,
+    "importedVertex": 73508,
+    "basis": [
+      0.22529254853725433,
+      0.08481644093990326,
+      -0.058442920446395874
+    ],
+    "authoredEndpoint": [
+      0.22508104145526886,
+      0.08499647676944733,
+      -0.05816122889518738
+    ],
+    "importedBasis": [
+      0.22529250383377075,
+      0.08481641858816147,
+      -0.05844294652342796
+    ],
+    "importedEndpoint": [
+      0.22529250383377075,
+      0.08481641858816147,
+      -0.05844294652342796
+    ],
+    "error": 0.0003956034734821587,
+    "authoredDeltaMagnitude": 0.0003955986295121346,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2526,
+    "importedVertex": 2442,
+    "basis": [
+      0.1901022344827652,
+      -0.1045171469449997,
+      -0.0679410994052887
+    ],
+    "authoredEndpoint": [
+      0.1901022344827652,
+      -0.1045171469449997,
+      -0.06794366240501404
+    ],
+    "importedBasis": [
+      0.19010217487812042,
+      -0.1045171469449997,
+      -0.0679411068558693
+    ],
+    "importedEndpoint": [
+      0.19010217487812042,
+      -0.1045171469449997,
+      -0.0679411068558693
+    ],
+    "error": 2.5562441481370773e-06,
+    "authoredDeltaMagnitude": 2.562999725341797e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2545,
+    "importedVertex": 2461,
+    "basis": [
+      0.18238715827465057,
+      -0.10752435773611069,
+      -0.08130151033401489
+    ],
+    "authoredEndpoint": [
+      0.18238715827465057,
+      -0.10752435773611069,
+      -0.08130362629890442
+    ],
+    "importedBasis": [
+      0.18238712847232819,
+      -0.10752436518669128,
+      -0.08130151778459549
+    ],
+    "importedEndpoint": [
+      0.18238712847232819,
+      -0.10752436518669128,
+      -0.08130151778459549
+    ],
+    "error": 2.1087380777448725e-06,
+    "authoredDeltaMagnitude": 2.115964889526367e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2556,
+    "importedVertex": 2472,
+    "basis": [
+      0.17968808114528656,
+      -0.1077037900686264,
+      -0.08704224228858948
+    ],
+    "authoredEndpoint": [
+      0.17968808114528656,
+      -0.1077037900686264,
+      -0.08704438805580139
+    ],
+    "importedBasis": [
+      0.17968803644180298,
+      -0.107703797519207,
+      -0.08704227209091187
+    ],
+    "importedEndpoint": [
+      0.17968803644180298,
+      -0.107703797519207,
+      -0.08704227209091187
+    ],
+    "error": 2.116450170994793e-06,
+    "authoredDeltaMagnitude": 2.1457672119140625e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2564,
+    "importedVertex": 2480,
+    "basis": [
+      0.1825425773859024,
+      -0.10621935874223709,
+      -0.08382731676101685
+    ],
+    "authoredEndpoint": [
+      0.1825425773859024,
+      -0.10621935874223709,
+      -0.08383098244667053
+    ],
+    "importedBasis": [
+      0.18254253268241882,
+      -0.10621935874223709,
+      -0.08382734656333923
+    ],
+    "importedEndpoint": [
+      0.18254253268241882,
+      -0.10621935874223709,
+      -0.08382734656333923
+    ],
+    "error": 3.636158137411104e-06,
+    "authoredDeltaMagnitude": 3.6656856536865234e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2566,
+    "importedVertex": 2482,
+    "basis": [
+      0.18320779502391815,
+      -0.10683222115039825,
+      -0.08093243837356567
+    ],
+    "authoredEndpoint": [
+      0.18320779502391815,
+      -0.10683222115039825,
+      -0.080935537815094
+    ],
+    "importedBasis": [
+      0.18320775032043457,
+      -0.10683222115039825,
+      -0.08093247562646866
+    ],
+    "importedEndpoint": [
+      0.18320775032043457,
+      -0.10683222115039825,
+      -0.08093247562646866
+    ],
+    "error": 3.062514910752212e-06,
+    "authoredDeltaMagnitude": 3.0994415283203125e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2572,
+    "importedVertex": 2488,
+    "basis": [
+      0.18538804352283478,
+      -0.10145961493253708,
+      -0.0878596305847168
+    ],
+    "authoredEndpoint": [
+      0.18538804352283478,
+      -0.10145961493253708,
+      -0.08786886930465698
+    ],
+    "importedBasis": [
+      0.1853879988193512,
+      -0.10145961493253708,
+      -0.08785965293645859
+    ],
+    "importedEndpoint": [
+      0.1853879988193512,
+      -0.10145961493253708,
+      -0.08785965293645859
+    ],
+    "error": 9.21647661364292e-06,
+    "authoredDeltaMagnitude": 9.238719940185547e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2573,
+    "importedVertex": 2489,
+    "basis": [
+      0.18674398958683014,
+      -0.09815257787704468,
+      -0.09191027283668518
+    ],
+    "authoredEndpoint": [
+      0.18674398958683014,
+      -0.09815257787704468,
+      -0.09192284941673279
+    ],
+    "importedBasis": [
+      0.18674392998218536,
+      -0.09815257787704468,
+      -0.09191028028726578
+    ],
+    "importedEndpoint": [
+      0.18674392998218536,
+      -0.09815257787704468,
+      -0.09191028028726578
+    ],
+    "error": 1.2569270793174535e-05,
+    "authoredDeltaMagnitude": 1.2576580047607422e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2576,
+    "importedVertex": 2492,
+    "basis": [
+      0.18918956816196442,
+      -0.09482909739017487,
+      -0.0936112105846405
+    ],
+    "authoredEndpoint": [
+      0.18918956816196442,
+      -0.09482909739017487,
+      -0.09362795948982239
+    ],
+    "importedBasis": [
+      0.18918952345848083,
+      -0.09482910484075546,
+      -0.09361124783754349
+    ],
+    "importedEndpoint": [
+      0.18918952345848083,
+      -0.09482910484075546,
+      -0.09361124783754349
+    ],
+    "error": 1.6711713730298997e-05,
+    "authoredDeltaMagnitude": 1.6748905181884766e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 2587,
+    "importedVertex": 2503,
+    "basis": [
+      0.19041357934474945,
+      -0.09575068950653076,
+      -0.08851534128189087
+    ],
+    "authoredEndpoint": [
+      0.19041357934474945,
+      -0.09575068950653076,
+      -0.08853086829185486
+    ],
+    "importedBasis": [
+      0.19041354954242706,
+      -0.09575068950653076,
+      -0.08851536363363266
+    ],
+    "importedEndpoint": [
+      0.19041354954242706,
+      -0.09575068950653076,
+      -0.08851536363363266
+    ],
+    "error": 1.5504686864480907e-05,
+    "authoredDeltaMagnitude": 1.5527009963989258e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 9132,
+    "importedVertex": 8888,
+    "basis": [
+      0.24772079288959503,
+      0.03903460130095482,
+      -0.05573451519012451
+    ],
+    "authoredEndpoint": [
+      0.24772079288959503,
+      0.03903460130095482,
+      -0.05575591325759888
+    ],
+    "importedBasis": [
+      0.24772076308727264,
+      0.039034582674503326,
+      -0.05573457106947899
+    ],
+    "importedEndpoint": [
+      0.24772076308727264,
+      0.039034582674503326,
+      -0.05573457106947899
+    ],
+    "error": 2.1342217056056207e-05,
+    "authoredDeltaMagnitude": 2.1398067474365234e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 9136,
+    "importedVertex": 8892,
+    "basis": [
+      0.24958200752735138,
+      0.036030303686857224,
+      -0.04771503806114197
+    ],
+    "authoredEndpoint": [
+      0.24958200752735138,
+      0.036030303686857224,
+      -0.04771783947944641
+    ],
+    "importedBasis": [
+      0.2495819479227066,
+      0.03603028506040573,
+      -0.04771503806114197
+    ],
+    "importedEndpoint": [
+      0.2495819479227066,
+      0.03603028506040573,
+      -0.04771503806114197
+    ],
+    "error": 2.8021142330112635e-06,
+    "authoredDeltaMagnitude": 2.8014183044433594e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 9469,
+    "importedVertex": 9225,
+    "basis": [
+      0.23012082278728485,
+      0.06736496090888977,
+      -0.07661551237106323
+    ],
+    "authoredEndpoint": [
+      0.23012082278728485,
+      0.06736496090888977,
+      -0.07665234804153442
+    ],
+    "importedBasis": [
+      0.23012077808380127,
+      0.06736493855714798,
+      -0.07661554962396622
+    ],
+    "importedEndpoint": [
+      0.23012077808380127,
+      0.06736493855714798,
+      -0.07661554962396622
+    ],
+    "error": 3.679845150989258e-05,
+    "authoredDeltaMagnitude": 3.6835670471191406e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 9475,
+    "importedVertex": 9231,
+    "basis": [
+      0.2330668419599533,
+      0.06295494735240936,
+      -0.07338586449623108
+    ],
+    "authoredEndpoint": [
+      0.2330668419599533,
+      0.06295494735240936,
+      -0.07342365384101868
+    ],
+    "importedBasis": [
+      0.23306679725646973,
+      0.06295493245124817,
+      -0.07338588684797287
+    ],
+    "importedEndpoint": [
+      0.23306679725646973,
+      0.06295493245124817,
+      -0.07338588684797287
+    ],
+    "error": 3.776702244244408e-05,
+    "authoredDeltaMagnitude": 3.7789344787597656e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 9478,
+    "importedVertex": 9234,
+    "basis": [
+      0.2326061874628067,
+      0.06338755786418915,
+      -0.07570642232894897
+    ],
+    "authoredEndpoint": [
+      0.2326061874628067,
+      0.06338755786418915,
+      -0.07575029134750366
+    ],
+    "importedBasis": [
+      0.23260612785816193,
+      0.06338753551244736,
+      -0.07570645213127136
+    ],
+    "importedEndpoint": [
+      0.23260612785816193,
+      0.06338753551244736,
+      -0.07570645213127136
+    ],
+    "error": 4.383926245018703e-05,
+    "authoredDeltaMagnitude": 4.38690185546875e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 9533,
+    "importedVertex": 9289,
+    "basis": [
+      0.231117382645607,
+      0.05979156866669655,
+      -0.10082918405532837
+    ],
+    "authoredEndpoint": [
+      0.231117382645607,
+      0.05979156866669655,
+      -0.10092896223068237
+    ],
+    "importedBasis": [
+      0.2311173528432846,
+      0.059791550040245056,
+      -0.10082921385765076
+    ],
+    "importedEndpoint": [
+      0.2311173528432846,
+      0.059791550040245056,
+      -0.10082921385765076
+    ],
+    "error": 9.974837922281031e-05,
+    "authoredDeltaMagnitude": 9.97781753540039e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 9553,
+    "importedVertex": 9309,
+    "basis": [
+      0.23062516748905182,
+      0.05706203728914261,
+      -0.10925665497779846
+    ],
+    "authoredEndpoint": [
+      0.23062516748905182,
+      0.05706203728914261,
+      -0.10936704277992249
+    ],
+    "importedBasis": [
+      0.23062513768672943,
+      0.057062018662691116,
+      -0.10925670713186264
+    ],
+    "importedEndpoint": [
+      0.23062513768672943,
+      0.057062018662691116,
+      -0.10925670713186264
+    ],
+    "error": 0.00011033565365696206,
+    "authoredDeltaMagnitude": 0.00011038780212402344,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 9554,
+    "importedVertex": 9310,
+    "basis": [
+      0.23352660238742828,
+      0.05354873463511467,
+      -0.10887742042541504
+    ],
+    "authoredEndpoint": [
+      0.23352660238742828,
+      0.05354873463511467,
+      -0.1090095043182373
+    ],
+    "importedBasis": [
+      0.2335265576839447,
+      0.05354871600866318,
+      -0.10887745022773743
+    ],
+    "importedEndpoint": [
+      0.2335265576839447,
+      0.05354871600866318,
+      -0.10887745022773743
+    ],
+    "error": 0.0001320540993801256,
+    "authoredDeltaMagnitude": 0.00013208389282226562,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 15873,
+    "importedVertex": 15373,
+    "basis": [
+      0.16874010860919952,
+      -0.08434269577264786,
+      -0.15377643704414368
+    ],
+    "authoredEndpoint": [
+      0.16874010860919952,
+      -0.08434269577264786,
+      -0.15377432107925415
+    ],
+    "importedBasis": [
+      0.16874006390571594,
+      -0.08434270322322845,
+      -0.15377648174762726
+    ],
+    "importedEndpoint": [
+      0.16874006390571594,
+      -0.08434270322322845,
+      -0.15377648174762726
+    ],
+    "error": 2.161143616501305e-06,
+    "authoredDeltaMagnitude": 2.115964889526367e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 15881,
+    "importedVertex": 15381,
+    "basis": [
+      0.16917575895786285,
+      -0.08880096673965454,
+      -0.14500215649604797
+    ],
+    "authoredEndpoint": [
+      0.16917575895786285,
+      -0.08880096673965454,
+      -0.14499825239181519
+    ],
+    "importedBasis": [
+      0.16917572915554047,
+      -0.08880097419023514,
+      -0.14500218629837036
+    ],
+    "importedEndpoint": [
+      0.16917572915554047,
+      -0.08880097419023514,
+      -0.14500218629837036
+    ],
+    "error": 3.934026496406184e-06,
+    "authoredDeltaMagnitude": 3.904104232788086e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 15892,
+    "importedVertex": 15392,
+    "basis": [
+      0.17107485234737396,
+      -0.09001269191503525,
+      -0.13947036862373352
+    ],
+    "authoredEndpoint": [
+      0.17107485234737396,
+      -0.09001269191503525,
+      -0.13946470618247986
+    ],
+    "importedBasis": [
+      0.1710747927427292,
+      -0.09001269936561584,
+      -0.1394703984260559
+    ],
+    "importedEndpoint": [
+      0.1710747927427292,
+      -0.09001269936561584,
+      -0.1394703984260559
+    ],
+    "error": 5.6925605094641115e-06,
+    "authoredDeltaMagnitude": 5.662441253662109e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 15981,
+    "importedVertex": 15481,
+    "basis": [
+      0.17628104984760284,
+      -0.10183394700288773,
+      -0.10573139786720276
+    ],
+    "authoredEndpoint": [
+      0.17628104984760284,
+      -0.10183394700288773,
+      -0.10573375225067139
+    ],
+    "importedBasis": [
+      0.17628100514411926,
+      -0.10183395445346832,
+      -0.10573143512010574
+    ],
+    "importedEndpoint": [
+      0.17628100514411926,
+      -0.10183395445346832,
+      -0.10573143512010574
+    ],
+    "error": 2.3175737250051063e-06,
+    "authoredDeltaMagnitude": 2.3543834686279297e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 16074,
+    "importedVertex": 15569,
+    "basis": [
+      0.1794578582048416,
+      -0.07782673090696335,
+      -0.1478813886642456
+    ],
+    "authoredEndpoint": [
+      0.1794578582048416,
+      -0.07782673090696335,
+      -0.14786013960838318
+    ],
+    "importedBasis": [
+      0.17945784330368042,
+      -0.07782673835754395,
+      -0.147881418466568
+    ],
+    "importedEndpoint": [
+      0.17945784330368042,
+      -0.07782673835754395,
+      -0.147881418466568
+    ],
+    "error": 2.1278864706680224e-05,
+    "authoredDeltaMagnitude": 2.1249055862426758e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 26855,
+    "importedVertex": 26085,
+    "basis": [
+      0.2514079213142395,
+      -0.02648087963461876,
+      -0.09369909763336182
+    ],
+    "authoredEndpoint": [
+      0.2514079213142395,
+      -0.02648087963461876,
+      -0.09396681189537048
+    ],
+    "importedBasis": [
+      0.2514078915119171,
+      -0.026480892673134804,
+      -0.0936991348862648
+    ],
+    "importedEndpoint": [
+      0.2514078915119171,
+      -0.026480892673134804,
+      -0.0936991348862648
+    ],
+    "error": 0.00026767701108228344,
+    "authoredDeltaMagnitude": 0.000267714262008667,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 29499,
+    "importedVertex": 28674,
+    "basis": [
+      0.1860695332288742,
+      -0.10680615901947021,
+      -0.07357063889503479
+    ],
+    "authoredEndpoint": [
+      0.1860695332288742,
+      -0.10680615901947021,
+      -0.07357266545295715
+    ],
+    "importedBasis": [
+      0.18606948852539062,
+      -0.10680616647005081,
+      -0.0735706239938736
+    ],
+    "importedEndpoint": [
+      0.18606948852539062,
+      -0.10680616647005081,
+      -0.0735706239938736
+    ],
+    "error": 2.0419620717421443e-06,
+    "authoredDeltaMagnitude": 2.0265579223632812e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 29503,
+    "importedVertex": 28678,
+    "basis": [
+      0.1865675002336502,
+      -0.10453041642904282,
+      -0.07782763242721558
+    ],
+    "authoredEndpoint": [
+      0.1865675002336502,
+      -0.10453041642904282,
+      -0.07783234119415283
+    ],
+    "importedBasis": [
+      0.18656747043132782,
+      -0.10453041642904282,
+      -0.07782766222953796
+    ],
+    "importedEndpoint": [
+      0.18656747043132782,
+      -0.10453041642904282,
+      -0.07782766222953796
+    ],
+    "error": 4.679059525760288e-06,
+    "authoredDeltaMagnitude": 4.708766937255859e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 29506,
+    "importedVertex": 28681,
+    "basis": [
+      0.19232673943042755,
+      -0.09934966266155243,
+      -0.07454398274421692
+    ],
+    "authoredEndpoint": [
+      0.19232673943042755,
+      -0.09934966266155243,
+      -0.07455149292945862
+    ],
+    "importedBasis": [
+      0.19232669472694397,
+      -0.09934967011213303,
+      -0.07454399764537811
+    ],
+    "importedEndpoint": [
+      0.19232669472694397,
+      -0.09934967011213303,
+      -0.07454399764537811
+    ],
+    "error": 7.495421092912179e-06,
+    "authoredDeltaMagnitude": 7.510185241699219e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 29546,
+    "importedVertex": 28721,
+    "basis": [
+      0.18613632023334503,
+      -0.10424795001745224,
+      -0.07968705892562866
+    ],
+    "authoredEndpoint": [
+      0.18613632023334503,
+      -0.10424795001745224,
+      -0.07969290018081665
+    ],
+    "importedBasis": [
+      0.18613629043102264,
+      -0.10424795001745224,
+      -0.07968708127737045
+    ],
+    "importedEndpoint": [
+      0.18613629043102264,
+      -0.10424795001745224,
+      -0.07968708127737045
+    ],
+    "error": 5.818979764064226e-06,
+    "authoredDeltaMagnitude": 5.841255187988281e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 29664,
+    "importedVertex": 28839,
+    "basis": [
+      0.20518772304058075,
+      -0.08731462061405182,
+      -0.06635776162147522
+    ],
+    "authoredEndpoint": [
+      0.20518772304058075,
+      -0.08731462061405182,
+      -0.06637147068977356
+    ],
+    "importedBasis": [
+      0.20518767833709717,
+      -0.08731462061405182,
+      -0.0663578063249588
+    ],
+    "importedEndpoint": [
+      0.20518767833709717,
+      -0.08731462061405182,
+      -0.0663578063249588
+    ],
+    "error": 1.366443793912684e-05,
+    "authoredDeltaMagnitude": 1.3709068298339844e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 30773,
+    "importedVertex": 29860,
+    "basis": [
+      0.18548183143138885,
+      -0.09395089000463486,
+      -0.10404303669929504
+    ],
+    "authoredEndpoint": [
+      0.18548183143138885,
+      -0.09395089000463486,
+      -0.10405918955802917
+    ],
+    "importedBasis": [
+      0.18548180162906647,
+      -0.09395089000463486,
+      -0.10404305905103683
+    ],
+    "importedEndpoint": [
+      0.18548180162906647,
+      -0.09395089000463486,
+      -0.10404305905103683
+    ],
+    "error": 1.6130534523330345e-05,
+    "authoredDeltaMagnitude": 1.615285873413086e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 40037,
+    "importedVertex": 38967,
+    "basis": [
+      0.23953692615032196,
+      -0.015391488559544086,
+      -0.14040309190750122
+    ],
+    "authoredEndpoint": [
+      0.23953692615032196,
+      -0.015391488559544086,
+      -0.14010834693908691
+    ],
+    "importedBasis": [
+      0.23953691124916077,
+      -0.015391500666737556,
+      -0.1404031217098236
+    ],
+    "importedEndpoint": [
+      0.23953691124916077,
+      -0.015391500666737556,
+      -0.1404031217098236
+    ],
+    "error": 0.0002947747713619662,
+    "authoredDeltaMagnitude": 0.00029474496841430664,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 40579,
+    "importedVertex": 39496,
+    "basis": [
+      0.19099687039852142,
+      -0.036627147346735,
+      -0.18797507882118225
+    ],
+    "authoredEndpoint": [
+      0.19099687039852142,
+      -0.036627147346735,
+      -0.1879722774028778
+    ],
+    "importedBasis": [
+      0.19099684059619904,
+      -0.0366271547973156,
+      -0.18797510862350464
+    ],
+    "importedEndpoint": [
+      0.19099684059619904,
+      -0.0366271547973156,
+      -0.18797510862350464
+    ],
+    "error": 2.83138727965013e-06,
+    "authoredDeltaMagnitude": 2.8014183044433594e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 40633,
+    "importedVertex": 39538,
+    "basis": [
+      0.20261316001415253,
+      -0.018284957855939865,
+      -0.1856454312801361
+    ],
+    "authoredEndpoint": [
+      0.20261316001415253,
+      -0.018284957855939865,
+      -0.185624897480011
+    ],
+    "importedBasis": [
+      0.20261311531066895,
+      -0.01828496716916561,
+      -0.1856454461812973
+    ],
+    "importedEndpoint": [
+      0.20261311531066895,
+      -0.01828496716916561,
+      -0.1856454461812973
+    ],
+    "error": 2.0548752022735094e-05,
+    "authoredDeltaMagnitude": 2.053380012512207e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 43606,
+    "importedVertex": 42479,
+    "basis": [
+      0.19864435493946075,
+      -0.038803908973932266,
+      -0.17338672280311584
+    ],
+    "authoredEndpoint": [
+      0.19864435493946075,
+      -0.038803908973932266,
+      -0.17334261536598206
+    ],
+    "importedBasis": [
+      0.19864432513713837,
+      -0.03880392014980316,
+      -0.17338675260543823
+    ],
+    "importedEndpoint": [
+      0.19864432513713837,
+      -0.03880392014980316,
+      -0.17338675260543823
+    ],
+    "error": 4.4137250932635085e-05,
+    "authoredDeltaMagnitude": 4.410743713378906e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 45061,
+    "importedVertex": 43917,
+    "basis": [
+      0.25991010665893555,
+      -0.022168923169374466,
+      -0.05182793736457825
+    ],
+    "authoredEndpoint": [
+      0.25991010665893555,
+      -0.022168923169374466,
+      -0.051839619874954224
+    ],
+    "importedBasis": [
+      0.25991010665893555,
+      -0.02216893807053566,
+      -0.05182797089219093
+    ],
+    "importedEndpoint": [
+      0.25991010665893555,
+      -0.02216893807053566,
+      -0.05182797089219093
+    ],
+    "error": 1.1648992293930058e-05,
+    "authoredDeltaMagnitude": 1.1682510375976562e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 45092,
+    "importedVertex": 43948,
+    "basis": [
+      0.26515430212020874,
+      -0.01968035101890564,
+      -0.0698784589767456
+    ],
+    "authoredEndpoint": [
+      0.26515430212020874,
+      -0.01968035101890564,
+      -0.06997290253639221
+    ],
+    "importedBasis": [
+      0.26515424251556396,
+      -0.019680362194776535,
+      -0.06987849622964859
+    ],
+    "importedEndpoint": [
+      0.26515424251556396,
+      -0.019680362194776535,
+      -0.06987849622964859
+    ],
+    "error": 9.440632622120503e-05,
+    "authoredDeltaMagnitude": 9.444355964660645e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 45181,
+    "importedVertex": 44037,
+    "basis": [
+      0.26206326484680176,
+      0.006179015152156353,
+      -0.052932560443878174
+    ],
+    "authoredEndpoint": [
+      0.26206326484680176,
+      0.006179015152156353,
+      -0.05294176936149597
+    ],
+    "importedBasis": [
+      0.26206323504447937,
+      0.006179000250995159,
+      -0.052932579070329666
+    ],
+    "importedEndpoint": [
+      0.26206323504447937,
+      0.006179000250995159,
+      -0.052932579070329666
+    ],
+    "error": 9.190351568057574e-06,
+    "authoredDeltaMagnitude": 9.208917617797852e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 45941,
+    "importedVertex": 44797,
+    "basis": [
+      0.26026034355163574,
+      -0.016966503113508224,
+      -0.051185041666030884
+    ],
+    "authoredEndpoint": [
+      0.26026034355163574,
+      -0.016966503113508224,
+      -0.05118998885154724
+    ],
+    "importedBasis": [
+      0.26026031374931335,
+      -0.01696651428937912,
+      -0.05118504911661148
+    ],
+    "importedEndpoint": [
+      0.26026031374931335,
+      -0.01696651428937912,
+      -0.05118504911661148
+    ],
+    "error": 4.9398374785090595e-06,
+    "authoredDeltaMagnitude": 4.947185516357422e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 45991,
+    "importedVertex": 44847,
+    "basis": [
+      0.26023197174072266,
+      0.00989134144037962,
+      -0.050484538078308105
+    ],
+    "authoredEndpoint": [
+      0.26023197174072266,
+      0.00989134144037962,
+      -0.050489723682403564
+    ],
+    "importedBasis": [
+      0.2602319121360779,
+      0.009891325607895851,
+      -0.05048457533121109
+    ],
+    "importedEndpoint": [
+      0.2602319121360779,
+      0.009891325607895851,
+      -0.05048457533121109
+    ],
+    "error": 5.148720557796208e-06,
+    "authoredDeltaMagnitude": 5.185604095458984e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 52331,
+    "importedVertex": 51065,
+    "basis": [
+      0.2498307079076767,
+      0.029215551912784576,
+      -0.1043405532836914
+    ],
+    "authoredEndpoint": [
+      0.2498307079076767,
+      0.029215551912784576,
+      -0.10461786389350891
+    ],
+    "importedBasis": [
+      0.24983066320419312,
+      0.029215535148978233,
+      -0.1043405681848526
+    ],
+    "importedEndpoint": [
+      0.24983066320419312,
+      0.029215535148978233,
+      -0.1043405681848526
+    ],
+    "error": 0.00027729571276641186,
+    "authoredDeltaMagnitude": 0.0002773106098175049,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 52456,
+    "importedVertex": 51190,
+    "basis": [
+      0.23666726052761078,
+      0.05385095253586769,
+      -0.0891122817993164
+    ],
+    "authoredEndpoint": [
+      0.23666726052761078,
+      0.05385095253586769,
+      -0.08920970559120178
+    ],
+    "importedBasis": [
+      0.2366672158241272,
+      0.0538509376347065,
+      -0.0891123116016388
+    ],
+    "importedEndpoint": [
+      0.2366672158241272,
+      0.0538509376347065,
+      -0.0891123116016388
+    ],
+    "error": 9.739400096228473e-05,
+    "authoredDeltaMagnitude": 9.742379188537598e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 52473,
+    "importedVertex": 51207,
+    "basis": [
+      0.2389773279428482,
+      0.051565833389759064,
+      -0.07752221822738647
+    ],
+    "authoredEndpoint": [
+      0.2389773279428482,
+      0.051565833389759064,
+      -0.07759073376655579
+    ],
+    "importedBasis": [
+      0.23897728323936462,
+      0.05156581476330757,
+      -0.07752221077680588
+    ],
+    "importedEndpoint": [
+      0.23897728323936462,
+      0.05156581476330757,
+      -0.07752221077680588
+    ],
+    "error": 6.85230068634776e-05,
+    "authoredDeltaMagnitude": 6.851553916931152e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 52475,
+    "importedVertex": 51209,
+    "basis": [
+      0.24131812155246735,
+      0.048007652163505554,
+      -0.07777604460716248
+    ],
+    "authoredEndpoint": [
+      0.24131812155246735,
+      0.048007652163505554,
+      -0.07785618305206299
+    ],
+    "importedBasis": [
+      0.24131807684898376,
+      0.04800763353705406,
+      -0.07777605205774307
+    ],
+    "importedEndpoint": [
+      0.24131807684898376,
+      0.04800763353705406,
+      -0.07777605205774307
+    ],
+    "error": 8.013100895436493e-05,
+    "authoredDeltaMagnitude": 8.01384449005127e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 64194,
+    "importedVertex": 62785,
+    "basis": [
+      0.25043588876724243,
+      0.03420117124915123,
+      -0.04773375391960144
+    ],
+    "authoredEndpoint": [
+      0.25043588876724243,
+      0.03420117124915123,
+      -0.047736406326293945
+    ],
+    "importedBasis": [
+      0.25043588876724243,
+      0.03420115262269974,
+      -0.04773375019431114
+    ],
+    "importedEndpoint": [
+      0.25043588876724243,
+      0.03420115262269974,
+      -0.04773375019431114
+    ],
+    "error": 2.6561972921388994e-06,
+    "authoredDeltaMagnitude": 2.652406692504883e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 70573,
+    "importedVertex": 68977,
+    "basis": [
+      0.22303007543087006,
+      0.06357616186141968,
+      -0.11906629800796509
+    ],
+    "authoredEndpoint": [
+      0.22303007543087006,
+      0.06357616186141968,
+      -0.11901688575744629
+    ],
+    "importedBasis": [
+      0.22303003072738647,
+      0.06357613950967789,
+      -0.11906630545854568
+    ],
+    "importedEndpoint": [
+      0.22303003072738647,
+      0.06357613950967789,
+      -0.11906630545854568
+    ],
+    "error": 4.941972637272917e-05,
+    "authoredDeltaMagnitude": 4.941225051879883e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 75194,
+    "importedVertex": 73508,
+    "basis": [
+      0.22529254853725433,
+      0.08481644093990326,
+      -0.058442920446395874
+    ],
+    "authoredEndpoint": [
+      0.22529254853725433,
+      0.08481644093990326,
+      -0.058446019887924194
+    ],
+    "importedBasis": [
+      0.22529250383377075,
+      0.08481641858816147,
+      -0.05844294652342796
+    ],
+    "importedEndpoint": [
+      0.22529250383377075,
+      0.08481641858816147,
+      -0.05844294652342796
+    ],
+    "error": 3.073770864670807e-06,
+    "authoredDeltaMagnitude": 3.0994415283203125e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 75196,
+    "importedVertex": 73510,
+    "basis": [
+      0.22652678191661835,
+      0.08281537145376205,
+      -0.05709800124168396
+    ],
+    "authoredEndpoint": [
+      0.22652678191661835,
+      0.08281537145376205,
+      -0.05710095167160034
+    ],
+    "importedBasis": [
+      0.22652673721313477,
+      0.08281534910202026,
+      -0.05709799379110336
+    ],
+    "importedEndpoint": [
+      0.22652673721313477,
+      0.08281534910202026,
+      -0.05709799379110336
+    ],
+    "error": 2.9583027289668515e-06,
+    "authoredDeltaMagnitude": 2.950429916381836e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 75198,
+    "importedVertex": 73512,
+    "basis": [
+      0.22777093946933746,
+      0.08023722469806671,
+      -0.05711743235588074
+    ],
+    "authoredEndpoint": [
+      0.22777093946933746,
+      0.08023722469806671,
+      -0.0571213960647583
+    ],
+    "importedBasis": [
+      0.22777089476585388,
+      0.08023719489574432,
+      -0.057117439806461334
+    ],
+    "importedEndpoint": [
+      0.22777089476585388,
+      0.08023719489574432,
+      -0.057117439806461334
+    ],
+    "error": 3.956623092004179e-06,
+    "authoredDeltaMagnitude": 3.9637088775634766e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 77029,
+    "importedVertex": 75275,
+    "basis": [
+      0.21101658046245575,
+      0.10154704004526138,
+      -0.07716041803359985
+    ],
+    "authoredEndpoint": [
+      0.21101658046245575,
+      0.10154704004526138,
+      -0.07716432213783264
+    ],
+    "importedBasis": [
+      0.21101656556129456,
+      0.10154701769351959,
+      -0.07716041803359985
+    ],
+    "importedEndpoint": [
+      0.21101656556129456,
+      0.10154701769351959,
+      -0.07716041803359985
+    ],
+    "error": 3.904196653018372e-06,
+    "authoredDeltaMagnitude": 3.904104232788086e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 77032,
+    "importedVertex": 75277,
+    "basis": [
+      0.2117435783147812,
+      0.09794691950082779,
+      -0.08160251379013062
+    ],
+    "authoredEndpoint": [
+      0.2117435783147812,
+      0.09794691950082779,
+      -0.08160904049873352
+    ],
+    "importedBasis": [
+      0.2117435187101364,
+      0.0979468896985054,
+      -0.08160251379013062
+    ],
+    "importedEndpoint": [
+      0.2117435187101364,
+      0.0979468896985054,
+      -0.08160251379013062
+    ],
+    "error": 6.527048803198595e-06,
+    "authoredDeltaMagnitude": 6.5267086029052734e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 77034,
+    "importedVertex": 75278,
+    "basis": [
+      0.21079207956790924,
+      0.10041406005620956,
+      -0.07995802164077759
+    ],
+    "authoredEndpoint": [
+      0.21079207956790924,
+      0.10041406005620956,
+      -0.0799628496170044
+    ],
+    "importedBasis": [
+      0.21079204976558685,
+      0.10041403025388718,
+      -0.07995805144309998
+    ],
+    "importedEndpoint": [
+      0.21079204976558685,
+      0.10041403025388718,
+      -0.07995805144309998
+    ],
+    "error": 4.7983590084409425e-06,
+    "authoredDeltaMagnitude": 4.827976226806641e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 80268,
+    "importedVertex": 78426,
+    "basis": [
+      0.2042124718427658,
+      0.10518423467874527,
+      -0.08985111117362976
+    ],
+    "authoredEndpoint": [
+      0.2042124718427658,
+      0.10518423467874527,
+      -0.08985313773155212
+    ],
+    "importedBasis": [
+      0.20421245694160461,
+      0.10518421232700348,
+      -0.08985113352537155
+    ],
+    "importedEndpoint": [
+      0.20421245694160461,
+      0.10518421232700348,
+      -0.08985113352537155
+    ],
+    "error": 2.00438620510396e-06,
+    "authoredDeltaMagnitude": 2.0265579223632812e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 80336,
+    "importedVertex": 78494,
+    "basis": [
+      0.20877890288829803,
+      0.1051306501030922,
+      -0.07732915878295898
+    ],
+    "authoredEndpoint": [
+      0.20877890288829803,
+      0.1051306501030922,
+      -0.07733133435249329
+    ],
+    "importedBasis": [
+      0.20877888798713684,
+      0.1051306277513504,
+      -0.07732918113470078
+    ],
+    "importedEndpoint": [
+      0.20877888798713684,
+      0.1051306277513504,
+      -0.07732918113470078
+    ],
+    "error": 2.153385359602849e-06,
+    "authoredDeltaMagnitude": 2.175569534301758e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 80337,
+    "importedVertex": 78495,
+    "basis": [
+      0.20900534093379974,
+      0.10330984741449356,
+      -0.07996401190757751
+    ],
+    "authoredEndpoint": [
+      0.20900534093379974,
+      0.10330984741449356,
+      -0.07996731996536255
+    ],
+    "importedBasis": [
+      0.20900534093379974,
+      0.10330981761217117,
+      -0.0799640491604805
+    ],
+    "importedEndpoint": [
+      0.20900534093379974,
+      0.10330981761217117,
+      -0.0799640491604805
+    ],
+    "error": 3.2709406529099454e-06,
+    "authoredDeltaMagnitude": 3.3080577850341797e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "mouthSeal",
+    "sourceOrdinal": 80338,
+    "importedVertex": 78496,
+    "basis": [
+      0.20964480936527252,
+      0.10475628823041916,
+      -0.07553353905677795
+    ],
+    "authoredEndpoint": [
+      0.20964480936527252,
+      0.10475628823041916,
+      -0.0755358636379242
+    ],
+    "importedBasis": [
+      0.20964480936527252,
+      0.10475625842809677,
+      -0.07553355395793915
+    ],
+    "importedEndpoint": [
+      0.20964480936527252,
+      0.10475625842809677,
+      -0.07553355395793915
+    ],
+    "error": 2.309872250091675e-06,
+    "authoredDeltaMagnitude": 2.3245811462402344e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  }
+]

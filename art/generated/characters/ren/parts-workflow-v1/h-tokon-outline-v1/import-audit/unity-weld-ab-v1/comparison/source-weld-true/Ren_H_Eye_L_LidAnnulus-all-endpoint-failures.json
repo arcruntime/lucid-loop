@@ -1,0 +1,6932 @@
+[
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 70,
+    "importedVertex": 70,
+    "basis": [
+      0.16981898248195648,
+      0.18407022953033447,
+      0.12936484813690186
+    ],
+    "authoredEndpoint": [
+      0.16982144117355347,
+      0.18407022953033447,
+      0.12936484813690186
+    ],
+    "importedBasis": [
+      0.1698189675807953,
+      0.18407019972801208,
+      0.12936481833457947
+    ],
+    "importedEndpoint": [
+      0.1698189675807953,
+      0.18407019972801208,
+      0.12936481833457947
+    ],
+    "error": 2.4739517962469605e-06,
+    "authoredDeltaMagnitude": 2.4586915969848633e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 79,
+    "importedVertex": 79,
+    "basis": [
+      0.22032584249973297,
+      0.11833519488573074,
+      0.14823025465011597
+    ],
+    "authoredEndpoint": [
+      0.2203376740217209,
+      0.11833519488573074,
+      0.14823025465011597
+    ],
+    "importedBasis": [
+      0.22032581269741058,
+      0.11833517253398895,
+      0.14823023974895477
+    ],
+    "importedEndpoint": [
+      0.22032581269741058,
+      0.11833517253398895,
+      0.14823023974895477
+    ],
+    "error": 1.1861354730347822e-05,
+    "authoredDeltaMagnitude": 1.1831521987915039e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 108,
+    "importedVertex": 108,
+    "basis": [
+      0.22380942106246948,
+      0.08759664744138718,
+      0.034142494201660156
+    ],
+    "authoredEndpoint": [
+      0.22381159663200378,
+      0.08759664744138718,
+      0.034142494201660156
+    ],
+    "importedBasis": [
+      0.2238093912601471,
+      0.08759663254022598,
+      0.03414248675107956
+    ],
+    "importedEndpoint": [
+      0.2238093912601471,
+      0.08759663254022598,
+      0.03414248675107956
+    ],
+    "error": 2.2054347829926966e-06,
+    "authoredDeltaMagnitude": 2.175569534301758e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 109,
+    "importedVertex": 109,
+    "basis": [
+      0.220638707280159,
+      0.09673266112804413,
+      0.03240067884325981
+    ],
+    "authoredEndpoint": [
+      0.22064104676246643,
+      0.09673266112804413,
+      0.03240067884325981
+    ],
+    "importedBasis": [
+      0.2206386774778366,
+      0.09673263877630234,
+      0.03240066021680832
+    ],
+    "importedEndpoint": [
+      0.2206386774778366,
+      0.09673263877630234,
+      0.03240066021680832
+    ],
+    "error": 2.369463273014797e-06,
+    "authoredDeltaMagnitude": 2.339482307434082e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 110,
+    "importedVertex": 110,
+    "basis": [
+      0.21708598732948303,
+      0.10612409561872482,
+      0.031306929886341095
+    ],
+    "authoredEndpoint": [
+      0.21708841621875763,
+      0.10612409561872482,
+      0.031306929886341095
+    ],
+    "importedBasis": [
+      0.21708595752716064,
+      0.10612407326698303,
+      0.0313069187104702
+    ],
+    "importedEndpoint": [
+      0.21708595752716064,
+      0.10612407326698303,
+      0.0313069187104702
+    ],
+    "error": 2.458818592238014e-06,
+    "authoredDeltaMagnitude": 2.428889274597168e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 111,
+    "importedVertex": 111,
+    "basis": [
+      0.21305756270885468,
+      0.11565948277711868,
+      0.0308793056756258
+    ],
+    "authoredEndpoint": [
+      0.21306002140045166,
+      0.11565948277711868,
+      0.0308793056756258
+    ],
+    "importedBasis": [
+      0.2130575329065323,
+      0.1156594529747963,
+      0.030879294499754906
+    ],
+    "importedEndpoint": [
+      0.2130575329065323,
+      0.1156594529747963,
+      0.030879294499754906
+    ],
+    "error": 2.48869746358696e-06,
+    "authoredDeltaMagnitude": 2.4586915969848633e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 112,
+    "importedVertex": 112,
+    "basis": [
+      0.2085224688053131,
+      0.12522442638874054,
+      0.031125975772738457
+    ],
+    "authoredEndpoint": [
+      0.20852497220039368,
+      0.12522442638874054,
+      0.031125975772738457
+    ],
+    "importedBasis": [
+      0.20852245390415192,
+      0.12522439658641815,
+      0.031125975772738457
+    ],
+    "importedEndpoint": [
+      0.20852245390415192,
+      0.12522439658641815,
+      0.031125975772738457
+    ],
+    "error": 2.5184725806892398e-06,
+    "authoredDeltaMagnitude": 2.5033950805664062e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 113,
+    "importedVertex": 113,
+    "basis": [
+      0.20363816618919373,
+      0.13470366597175598,
+      0.03204500675201416
+    ],
+    "authoredEndpoint": [
+      0.20364059507846832,
+      0.13470366597175598,
+      0.03204500675201416
+    ],
+    "importedBasis": [
+      0.20363815128803253,
+      0.1347036361694336,
+      0.03204496577382088
+    ],
+    "importedEndpoint": [
+      0.20363815128803253,
+      0.1347036361694336,
+      0.03204496577382088
+    ],
+    "error": 2.444315667995459e-06,
+    "authoredDeltaMagnitude": 2.428889274597168e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 114,
+    "importedVertex": 114,
+    "basis": [
+      0.19833903014659882,
+      0.14398324489593506,
+      0.03362423554062843
+    ],
+    "authoredEndpoint": [
+      0.19834133982658386,
+      0.14398324489593506,
+      0.03362423554062843
+    ],
+    "importedBasis": [
+      0.19833900034427643,
+      0.14398321509361267,
+      0.03362422436475754
+    ],
+    "importedEndpoint": [
+      0.19833900034427643,
+      0.14398321509361267,
+      0.03362422436475754
+    ],
+    "error": 2.3396988150843406e-06,
+    "authoredDeltaMagnitude": 2.3096799850463867e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 115,
+    "importedVertex": 115,
+    "basis": [
+      0.19275496900081635,
+      0.15295247733592987,
+      0.035841766744852066
+    ],
+    "authoredEndpoint": [
+      0.19275712966918945,
+      0.15295247733592987,
+      0.035841766744852066
+    ],
+    "importedBasis": [
+      0.19275495409965515,
+      0.15295244753360748,
+      0.035841722041368484
+    ],
+    "importedEndpoint": [
+      0.19275495409965515,
+      0.15295244753360748,
+      0.035841722041368484
+    ],
+    "error": 2.176232841045735e-06,
+    "authoredDeltaMagnitude": 2.16066837310791e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 131,
+    "importedVertex": 131,
+    "basis": [
+      0.14991889894008636,
+      0.19645057618618011,
+      0.11259954422712326
+    ],
+    "authoredEndpoint": [
+      0.14992102980613708,
+      0.19645057618618011,
+      0.11259954422712326
+    ],
+    "importedBasis": [
+      0.14991888403892517,
+      0.19645054638385773,
+      0.11259954422712326
+    ],
+    "importedEndpoint": [
+      0.14991888403892517,
+      0.19645054638385773,
+      0.11259954422712326
+    ],
+    "error": 2.1459741625064244e-06,
+    "authoredDeltaMagnitude": 2.130866050720215e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 132,
+    "importedVertex": 132,
+    "basis": [
+      0.1563076227903366,
+      0.19262254238128662,
+      0.11684822291135788
+    ],
+    "authoredEndpoint": [
+      0.15631256997585297,
+      0.19262254238128662,
+      0.11684822291135788
+    ],
+    "importedBasis": [
+      0.15630759298801422,
+      0.19262251257896423,
+      0.11684819310903549
+    ],
+    "importedEndpoint": [
+      0.15630759298801422,
+      0.19262251257896423,
+      0.11684819310903549
+    ],
+    "error": 4.9771662925661014e-06,
+    "authoredDeltaMagnitude": 4.947185516357422e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 133,
+    "importedVertex": 133,
+    "basis": [
+      0.16338500380516052,
+      0.1881486475467682,
+      0.12087103724479675
+    ],
+    "authoredEndpoint": [
+      0.16339413821697235,
+      0.1881486475467682,
+      0.12087103724479675
+    ],
+    "importedBasis": [
+      0.16338500380516052,
+      0.188148632645607,
+      0.12087102234363556
+    ],
+    "importedEndpoint": [
+      0.16338500380516052,
+      0.188148632645607,
+      0.12087102234363556
+    ],
+    "error": 9.134436120378966e-06,
+    "authoredDeltaMagnitude": 9.134411811828613e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 134,
+    "importedVertex": 134,
+    "basis": [
+      0.1704842895269394,
+      0.18308037519454956,
+      0.12462794035673141
+    ],
+    "authoredEndpoint": [
+      0.1704988330602646,
+      0.18308037519454956,
+      0.12462794035673141
+    ],
+    "importedBasis": [
+      0.1704842746257782,
+      0.18308034539222717,
+      0.12462791800498962
+    ],
+    "importedEndpoint": [
+      0.1704842746257782,
+      0.18308034539222717,
+      0.12462791800498962
+    ],
+    "error": 1.4558482148674222e-05,
+    "authoredDeltaMagnitude": 1.4543533325195312e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 135,
+    "importedVertex": 135,
+    "basis": [
+      0.17667169868946075,
+      0.17747189104557037,
+      0.12808312475681305
+    ],
+    "authoredEndpoint": [
+      0.17669278383255005,
+      0.17747189104557037,
+      0.12808312475681305
+    ],
+    "importedBasis": [
+      0.17667168378829956,
+      0.17747186124324799,
+      0.12808310985565186
+    ],
+    "importedEndpoint": [
+      0.17667168378829956,
+      0.17747186124324799,
+      0.12808310985565186
+    ],
+    "error": 2.1100070559019186e-05,
+    "authoredDeltaMagnitude": 2.1085143089294434e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 143,
+    "importedVertex": 143,
+    "basis": [
+      0.21654920279979706,
+      0.1201137974858284,
+      0.14182564616203308
+    ],
+    "authoredEndpoint": [
+      0.21661978960037231,
+      0.1201137974858284,
+      0.14182564616203308
+    ],
+    "importedBasis": [
+      0.21654917299747467,
+      0.12011376768350601,
+      0.1418256312608719
+    ],
+    "importedEndpoint": [
+      0.21654917299747467,
+      0.12011376768350601,
+      0.1418256312608719
+    ],
+    "error": 7.061661075856426e-05,
+    "authoredDeltaMagnitude": 7.058680057525635e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 172,
+    "importedVertex": 172,
+    "basis": [
+      0.22226384282112122,
+      0.08913237601518631,
+      0.0412016324698925
+    ],
+    "authoredEndpoint": [
+      0.2222767472267151,
+      0.08913237601518631,
+      0.0412016324698925
+    ],
+    "importedBasis": [
+      0.22226381301879883,
+      0.08913236111402512,
+      0.04120161011815071
+    ],
+    "importedEndpoint": [
+      0.22226381301879883,
+      0.08913236111402512,
+      0.04120161011815071
+    ],
+    "error": 1.293423581298883e-05,
+    "authoredDeltaMagnitude": 1.290440559387207e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 173,
+    "importedVertex": 173,
+    "basis": [
+      0.2195322960615158,
+      0.09777715057134628,
+      0.039678510278463364
+    ],
+    "authoredEndpoint": [
+      0.2195461392402649,
+      0.09777715057134628,
+      0.039678510278463364
+    ],
+    "importedBasis": [
+      0.21953226625919342,
+      0.0977771207690239,
+      0.03967849165201187
+    ],
+    "importedEndpoint": [
+      0.21953226625919342,
+      0.0977771207690239,
+      0.03967849165201187
+    ],
+    "error": 1.387302558681919e-05,
+    "authoredDeltaMagnitude": 1.3843178749084473e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 174,
+    "importedVertex": 174,
+    "basis": [
+      0.2164808064699173,
+      0.10666598379611969,
+      0.03873106837272644
+    ],
+    "authoredEndpoint": [
+      0.21649524569511414,
+      0.10666598379611969,
+      0.03873106837272644
+    ],
+    "importedBasis": [
+      0.2164807915687561,
+      0.1066659614443779,
+      0.03873104229569435
+    ],
+    "importedEndpoint": [
+      0.2164807915687561,
+      0.1066659614443779,
+      0.03873104229569435
+    ],
+    "error": 1.4454167163345165e-05,
+    "authoredDeltaMagnitude": 1.4439225196838379e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 175,
+    "importedVertex": 175,
+    "basis": [
+      0.21291078627109528,
+      0.11569573730230331,
+      0.03837639093399048
+    ],
+    "authoredEndpoint": [
+      0.21292556822299957,
+      0.11569573730230331,
+      0.03837639093399048
+    ],
+    "importedBasis": [
+      0.2129107564687729,
+      0.11569571495056152,
+      0.038376372307538986
+    ],
+    "importedEndpoint": [
+      0.2129107564687729,
+      0.11569571495056152,
+      0.038376372307538986
+    ],
+    "error": 1.4811782803456324e-05,
+    "authoredDeltaMagnitude": 1.4781951904296875e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 176,
+    "importedVertex": 176,
+    "basis": [
+      0.20885278284549713,
+      0.12476067245006561,
+      0.038622405380010605
+    ],
+    "authoredEndpoint": [
+      0.20886757969856262,
+      0.12476067245006561,
+      0.038622405380010605
+    ],
+    "importedBasis": [
+      0.20885276794433594,
+      0.12476064264774323,
+      0.03862237185239792
+    ],
+    "importedEndpoint": [
+      0.20885276794433594,
+      0.12476064264774323,
+      0.03862237185239792
+    ],
+    "error": 1.481182215498621e-05,
+    "authoredDeltaMagnitude": 1.4796853065490723e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 177,
+    "importedVertex": 177,
+    "basis": [
+      0.20445869863033295,
+      0.1337541937828064,
+      0.03946749120950699
+    ],
+    "authoredEndpoint": [
+      0.20447315275669098,
+      0.1337541937828064,
+      0.03946749120950699
+    ],
+    "importedBasis": [
+      0.20445866882801056,
+      0.133754163980484,
+      0.03946748003363609
+    ],
+    "importedEndpoint": [
+      0.20445866882801056,
+      0.133754163980484,
+      0.03946748003363609
+    ],
+    "error": 1.4483963652881789e-05,
+    "authoredDeltaMagnitude": 1.4454126358032227e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 178,
+    "importedVertex": 178,
+    "basis": [
+      0.19955216348171234,
+      0.14257077872753143,
+      0.040900349617004395
+    ],
+    "authoredEndpoint": [
+      0.19956597685813904,
+      0.14257077872753143,
+      0.040900349617004395
+    ],
+    "importedBasis": [
+      0.19955213367938995,
+      0.14257074892520905,
+      0.040900349617004395
+    ],
+    "importedEndpoint": [
+      0.19955213367938995,
+      0.14257074892520905,
+      0.040900349617004395
+    ],
+    "error": 1.3843210829049873e-05,
+    "authoredDeltaMagnitude": 1.3813376426696777e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 179,
+    "importedVertex": 179,
+    "basis": [
+      0.19447754323482513,
+      0.1511077731847763,
+      0.04290046915411949
+    ],
+    "authoredEndpoint": [
+      0.1944904625415802,
+      0.1511077731847763,
+      0.04290046915411949
+    ],
+    "importedBasis": [
+      0.19447752833366394,
+      0.15110774338245392,
+      0.0429004542529583
+    ],
+    "importedEndpoint": [
+      0.19447752833366394,
+      0.15110774338245392,
+      0.0429004542529583
+    ],
+    "error": 1.2934250834279557e-05,
+    "authoredDeltaMagnitude": 1.2919306755065918e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 180,
+    "importedVertex": 180,
+    "basis": [
+      0.1887657791376114,
+      0.1592671126127243,
+      0.04543858766555786
+    ],
+    "authoredEndpoint": [
+      0.18877756595611572,
+      0.1592671126127243,
+      0.04543858766555786
+    ],
+    "importedBasis": [
+      0.1887657642364502,
+      0.15926708281040192,
+      0.04543856531381607
+    ],
+    "importedEndpoint": [
+      0.1887657642364502,
+      0.15926708281040192,
+      0.04543856531381607
+    ],
+    "error": 1.180177846099797e-05,
+    "authoredDeltaMagnitude": 1.1786818504333496e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 181,
+    "importedVertex": 181,
+    "basis": [
+      0.18229469656944275,
+      0.16695696115493774,
+      0.04847703129053116
+    ],
+    "authoredEndpoint": [
+      0.18230517208576202,
+      0.16695696115493774,
+      0.04847703129053116
+    ],
+    "importedBasis": [
+      0.18229466676712036,
+      0.16695693135261536,
+      0.04847700521349907
+    ],
+    "importedEndpoint": [
+      0.18229466676712036,
+      0.16695693135261536,
+      0.04847700521349907
+    ],
+    "error": 1.050539327930592e-05,
+    "authoredDeltaMagnitude": 1.0475516319274902e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 182,
+    "importedVertex": 182,
+    "basis": [
+      0.175187349319458,
+      0.1740931272506714,
+      0.0519709512591362
+    ],
+    "authoredEndpoint": [
+      0.17519639432430267,
+      0.1740931272506714,
+      0.0519709512591362
+    ],
+    "importedBasis": [
+      0.17518733441829681,
+      0.174093097448349,
+      0.0519709438085556
+    ],
+    "importedEndpoint": [
+      0.17518733441829681,
+      0.174093097448349,
+      0.0519709438085556
+    ],
+    "error": 9.059958086248396e-06,
+    "authoredDeltaMagnitude": 9.045004844665527e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 183,
+    "importedVertex": 183,
+    "basis": [
+      0.16786664724349976,
+      0.18060022592544556,
+      0.055869199335575104
+    ],
+    "authoredEndpoint": [
+      0.16787420213222504,
+      0.18060022592544556,
+      0.055869199335575104
+    ],
+    "importedBasis": [
+      0.16786661744117737,
+      0.18060019612312317,
+      0.05586916208267212
+    ],
+    "importedEndpoint": [
+      0.16786661744117737,
+      0.18060019612312317,
+      0.05586916208267212
+    ],
+    "error": 7.58484108243426e-06,
+    "authoredDeltaMagnitude": 7.554888725280762e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 184,
+    "importedVertex": 184,
+    "basis": [
+      0.16083796322345734,
+      0.1864127516746521,
+      0.060115136206150055
+    ],
+    "authoredEndpoint": [
+      0.16084404289722443,
+      0.1864127516746521,
+      0.060115136206150055
+    ],
+    "importedBasis": [
+      0.16083794832229614,
+      0.1864127218723297,
+      0.060115132480859756
+    ],
+    "importedEndpoint": [
+      0.16083794832229614,
+      0.1864127218723297,
+      0.060115132480859756
+    ],
+    "error": 6.094648932684447e-06,
+    "authoredDeltaMagnitude": 6.079673767089844e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 186,
+    "importedVertex": 186,
+    "basis": [
+      0.14732486009597778,
+      0.19574497640132904,
+      0.06940580904483795
+    ],
+    "authoredEndpoint": [
+      0.1473282128572464,
+      0.19574497640132904,
+      0.06940580904483795
+    ],
+    "importedBasis": [
+      0.14732486009597778,
+      0.19574496150016785,
+      0.06940578669309616
+    ],
+    "importedEndpoint": [
+      0.14732486009597778,
+      0.19574496150016785,
+      0.06940578669309616
+    ],
+    "error": 3.352868886386063e-06,
+    "authoredDeltaMagnitude": 3.3527612686157227e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 187,
+    "importedVertex": 187,
+    "basis": [
+      0.14200660586357117,
+      0.19918766617774963,
+      0.07432211190462112
+    ],
+    "authoredEndpoint": [
+      0.14200881123542786,
+      0.19918766617774963,
+      0.07432211190462112
+    ],
+    "importedBasis": [
+      0.14200659096240997,
+      0.19918763637542725,
+      0.07432206720113754
+    ],
+    "importedEndpoint": [
+      0.14200659096240997,
+      0.19918763637542725,
+      0.07432206720113754
+    ],
+    "error": 2.220922973406472e-06,
+    "authoredDeltaMagnitude": 2.205371856689453e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 195,
+    "importedVertex": 195,
+    "basis": [
+      0.15405750274658203,
+      0.1940707564353943,
+      0.10878562927246094
+    ],
+    "authoredEndpoint": [
+      0.15406326949596405,
+      0.1940707564353943,
+      0.10878562927246094
+    ],
+    "importedBasis": [
+      0.15405750274658203,
+      0.1940707266330719,
+      0.10878562927246094
+    ],
+    "importedEndpoint": [
+      0.15405750274658203,
+      0.1940707266330719,
+      0.10878562927246094
+    ],
+    "error": 5.766826390089849e-06,
+    "authoredDeltaMagnitude": 5.766749382019043e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 196,
+    "importedVertex": 196,
+    "basis": [
+      0.1595764458179474,
+      0.1906300187110901,
+      0.11232483386993408
+    ],
+    "authoredEndpoint": [
+      0.15958991646766663,
+      0.1906300187110901,
+      0.11232483386993408
+    ],
+    "importedBasis": [
+      0.159576416015625,
+      0.1906300038099289,
+      0.1123247891664505
+    ],
+    "importedEndpoint": [
+      0.159576416015625,
+      0.1906300038099289,
+      0.1123247891664505
+    ],
+    "error": 1.3500534277364442e-05,
+    "authoredDeltaMagnitude": 1.3470649719238281e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 197,
+    "importedVertex": 197,
+    "basis": [
+      0.1656297743320465,
+      0.1865554004907608,
+      0.1157258152961731
+    ],
+    "authoredEndpoint": [
+      0.1656547486782074,
+      0.1865554004907608,
+      0.1157258152961731
+    ],
+    "importedBasis": [
+      0.16562975943088531,
+      0.1865553855895996,
+      0.1157258003950119
+    ],
+    "importedEndpoint": [
+      0.16562975943088531,
+      0.1865553855895996,
+      0.1157258003950119
+    ],
+    "error": 2.49892562076869e-05,
+    "authoredDeltaMagnitude": 2.4974346160888672e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 198,
+    "importedVertex": 198,
+    "basis": [
+      0.17187057435512543,
+      0.1818925440311432,
+      0.1189437136054039
+    ],
+    "authoredEndpoint": [
+      0.17191065847873688,
+      0.1818925440311432,
+      0.1189437136054039
+    ],
+    "importedBasis": [
+      0.17187055945396423,
+      0.1818925142288208,
+      0.1189437136054039
+    ],
+    "importedEndpoint": [
+      0.17187055945396423,
+      0.1818925142288208,
+      0.1189437136054039
+    ],
+    "error": 4.009903584745574e-05,
+    "authoredDeltaMagnitude": 4.0084123611450195e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 199,
+    "importedVertex": 199,
+    "basis": [
+      0.17742155492305756,
+      0.17669038474559784,
+      0.12193774431943893
+    ],
+    "authoredEndpoint": [
+      0.1774797886610031,
+      0.17669038474559784,
+      0.12193774431943893
+    ],
+    "importedBasis": [
+      0.17742154002189636,
+      0.17669035494327545,
+      0.12193771451711655
+    ],
+    "importedEndpoint": [
+      0.17742154002189636,
+      0.17669035494327545,
+      0.12193771451711655
+    ],
+    "error": 5.824865435480292e-05,
+    "authoredDeltaMagnitude": 5.823373794555664e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 200,
+    "importedVertex": 200,
+    "basis": [
+      0.18281909823417664,
+      0.17100071907043457,
+      0.12467048317193985
+    ],
+    "authoredEndpoint": [
+      0.18289782106876373,
+      0.17100071907043457,
+      0.12467048317193985
+    ],
+    "importedBasis": [
+      0.18281908333301544,
+      0.17100068926811218,
+      0.12467046082019806
+    ],
+    "importedEndpoint": [
+      0.18281908333301544,
+      0.17100068926811218,
+      0.12467046082019806
+    ],
+    "error": 7.873774456095682e-05,
+    "authoredDeltaMagnitude": 7.872283458709717e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 201,
+    "importedVertex": 201,
+    "basis": [
+      0.18797187507152557,
+      0.16487759351730347,
+      0.12710817158222198
+    ],
+    "authoredEndpoint": [
+      0.18807236850261688,
+      0.16487759351730347,
+      0.12710817158222198
+    ],
+    "importedBasis": [
+      0.18797184526920319,
+      0.16487756371498108,
+      0.1271081268787384
+    ],
+    "importedEndpoint": [
+      0.18797184526920319,
+      0.16487756371498108,
+      0.1271081268787384
+    ],
+    "error": 0.00010052324777146991,
+    "authoredDeltaMagnitude": 0.0001004934310913086,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 202,
+    "importedVertex": 202,
+    "basis": [
+      0.1934480518102646,
+      0.15837688744068146,
+      0.12922075390815735
+    ],
+    "authoredEndpoint": [
+      0.19357052445411682,
+      0.15837688744068146,
+      0.12922075390815735
+    ],
+    "importedBasis": [
+      0.193448007106781,
+      0.15837685763835907,
+      0.12922070920467377
+    ],
+    "importedEndpoint": [
+      0.193448007106781,
+      0.15837685763835907,
+      0.12922070920467377
+    ],
+    "error": 0.00012251735911610528,
+    "authoredDeltaMagnitude": 0.0001224726438522339,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 203,
+    "importedVertex": 203,
+    "basis": [
+      0.19861553609371185,
+      0.1515558958053589,
+      0.13098202645778656
+    ],
+    "authoredEndpoint": [
+      0.198759064078331,
+      0.1515558958053589,
+      0.13098202645778656
+    ],
+    "importedBasis": [
+      0.19861550629138947,
+      0.1515558660030365,
+      0.13098202645778656
+    ],
+    "importedEndpoint": [
+      0.19861550629138947,
+      0.1515558660030365,
+      0.13098202645778656
+    ],
+    "error": 0.0001435577900349809,
+    "authoredDeltaMagnitude": 0.00014352798461914062,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 207,
+    "importedVertex": 207,
+    "basis": [
+      0.21383732557296753,
+      0.12224812060594559,
+      0.13414011895656586
+    ],
+    "authoredEndpoint": [
+      0.21403434872627258,
+      0.12224812060594559,
+      0.13414011895656586
+    ],
+    "importedBasis": [
+      0.21383731067180634,
+      0.1222480982542038,
+      0.13414010405540466
+    ],
+    "importedEndpoint": [
+      0.21383731067180634,
+      0.1222480982542038,
+      0.13414010405540466
+    ],
+    "error": 0.00019703805629748002,
+    "authoredDeltaMagnitude": 0.0001970231533050537,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 235,
+    "importedVertex": 235,
+    "basis": [
+      0.22307096421718597,
+      0.08323977887630463,
+      0.051397643983364105
+    ],
+    "authoredEndpoint": [
+      0.2231033742427826,
+      0.08323977887630463,
+      0.051397643983364105
+    ],
+    "importedBasis": [
+      0.2230709344148636,
+      0.08323974907398224,
+      0.05139761045575142
+    ],
+    "importedEndpoint": [
+      0.2230709344148636,
+      0.08323974907398224,
+      0.05139761045575142
+    ],
+    "error": 3.243985893455728e-05,
+    "authoredDeltaMagnitude": 3.241002559661865e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 236,
+    "importedVertex": 236,
+    "basis": [
+      0.22154401242733002,
+      0.09097525477409363,
+      0.04967254772782326
+    ],
+    "authoredEndpoint": [
+      0.22157971560955048,
+      0.09097525477409363,
+      0.04967254772782326
+    ],
+    "importedBasis": [
+      0.22154399752616882,
+      0.09097523242235184,
+      0.04967254772782326
+    ],
+    "importedEndpoint": [
+      0.22154399752616882,
+      0.09097523242235184,
+      0.04967254772782326
+    ],
+    "error": 3.5718090375313535e-05,
+    "authoredDeltaMagnitude": 3.5703182220458984e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 237,
+    "importedVertex": 237,
+    "basis": [
+      0.21940486133098602,
+      0.09903053194284439,
+      0.048411909490823746
+    ],
+    "authoredEndpoint": [
+      0.2194431871175766,
+      0.09903053194284439,
+      0.048411909490823746
+    ],
+    "importedBasis": [
+      0.21940483152866364,
+      0.0990305095911026,
+      0.04841189831495285
+    ],
+    "importedEndpoint": [
+      0.21940483152866364,
+      0.0990305095911026,
+      0.04841189831495285
+    ],
+    "error": 3.83555970538946e-05,
+    "authoredDeltaMagnitude": 3.832578659057617e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 238,
+    "importedVertex": 238,
+    "basis": [
+      0.2169358730316162,
+      0.10731624811887741,
+      0.04763999581336975
+    ],
+    "authoredEndpoint": [
+      0.21697601675987244,
+      0.10731624811887741,
+      0.04763999581336975
+    ],
+    "importedBasis": [
+      0.21693584322929382,
+      0.10731621831655502,
+      0.047639984637498856
+    ],
+    "importedEndpoint": [
+      0.21693584322929382,
+      0.10731621831655502,
+      0.047639984637498856
+    ],
+    "error": 4.017354318739245e-05,
+    "authoredDeltaMagnitude": 4.0143728256225586e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 239,
+    "importedVertex": 239,
+    "basis": [
+      0.21393267810344696,
+      0.11573925614356995,
+      0.04737289622426033
+    ],
+    "authoredEndpoint": [
+      0.2139737904071808,
+      0.11573925614356995,
+      0.04737289622426033
+    ],
+    "importedBasis": [
+      0.21393266320228577,
+      0.11573923379182816,
+      0.047372885048389435
+    ],
+    "importedEndpoint": [
+      0.21393266320228577,
+      0.11573923379182816,
+      0.047372885048389435
+    ],
+    "error": 4.112721248732243e-05,
+    "authoredDeltaMagnitude": 4.1112303733825684e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 240,
+    "importedVertex": 240,
+    "basis": [
+      0.21045303344726562,
+      0.12420416623353958,
+      0.047618161886930466
+    ],
+    "authoredEndpoint": [
+      0.21049417555332184,
+      0.12420416623353958,
+      0.047618161886930466
+    ],
+    "importedBasis": [
+      0.21045301854610443,
+      0.1242041364312172,
+      0.04761815071105957
+    ],
+    "importedEndpoint": [
+      0.21045301854610443,
+      0.1242041364312172,
+      0.04761815071105957
+    ],
+    "error": 4.115701952489053e-05,
+    "authoredDeltaMagnitude": 4.114210605621338e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 249,
+    "importedVertex": 249,
+    "basis": [
+      0.16192784905433655,
+      0.18733327090740204,
+      0.06993426382541656
+    ],
+    "authoredEndpoint": [
+      0.1617439240217209,
+      0.18733327090740204,
+      0.06993426382541656
+    ],
+    "importedBasis": [
+      0.16192783415317535,
+      0.18733325600624084,
+      0.06993424147367477
+    ],
+    "importedEndpoint": [
+      0.16192783415317535,
+      0.18733325600624084,
+      0.06993424147367477
+    ],
+    "error": 0.00018391013341641777,
+    "authoredDeltaMagnitude": 0.00018392503261566162,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 252,
+    "importedVertex": 252,
+    "basis": [
+      0.14689530432224274,
+      0.1975911557674408,
+      0.08216501772403717
+    ],
+    "authoredEndpoint": [
+      0.14689885079860687,
+      0.1975911557674408,
+      0.08216501772403717
+    ],
+    "importedBasis": [
+      0.14689527451992035,
+      0.1975911259651184,
+      0.08216499537229538
+    ],
+    "importedEndpoint": [
+      0.14689527451992035,
+      0.1975911259651184,
+      0.08216499537229538
+    ],
+    "error": 3.5764727067968215e-06,
+    "authoredDeltaMagnitude": 3.546476364135742e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 258,
+    "importedVertex": 258,
+    "basis": [
+      0.15505430102348328,
+      0.1939345896244049,
+      0.10197792947292328
+    ],
+    "authoredEndpoint": [
+      0.15505734086036682,
+      0.1939345896244049,
+      0.10197792947292328
+    ],
+    "importedBasis": [
+      0.15505428612232208,
+      0.19393454492092133,
+      0.10197791457176208
+    ],
+    "importedEndpoint": [
+      0.15505428612232208,
+      0.19393454492092133,
+      0.10197791457176208
+    ],
+    "error": 3.055101466076649e-06,
+    "authoredDeltaMagnitude": 3.039836883544922e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 259,
+    "importedVertex": 259,
+    "basis": [
+      0.15896156430244446,
+      0.19155871868133545,
+      0.1047598198056221
+    ],
+    "authoredEndpoint": [
+      0.1589723825454712,
+      0.19155871868133545,
+      0.1047598198056221
+    ],
+    "importedBasis": [
+      0.15896154940128326,
+      0.19155868887901306,
+      0.10475978255271912
+    ],
+    "importedEndpoint": [
+      0.15896154940128326,
+      0.19155868887901306,
+      0.10475978255271912
+    ],
+    "error": 1.0833249233430492e-05,
+    "authoredDeltaMagnitude": 1.0818243026733398e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 271,
+    "importedVertex": 271,
+    "basis": [
+      0.21276971697807312,
+      0.12450101226568222,
+      0.12602761387825012
+    ],
+    "authoredEndpoint": [
+      0.21315361559391022,
+      0.12450101226568222,
+      0.12602761387825012
+    ],
+    "importedBasis": [
+      0.21276968717575073,
+      0.12450098991394043,
+      0.12602759897708893
+    ],
+    "importedEndpoint": [
+      0.21276968717575073,
+      0.12450098991394043,
+      0.12602759897708893
+    ],
+    "error": 0.00038392841909930194,
+    "authoredDeltaMagnitude": 0.00038389861583709717,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 272,
+    "importedVertex": 272,
+    "basis": [
+      0.21784190833568573,
+      0.11729035526514053,
+      0.12580031156539917
+    ],
+    "authoredEndpoint": [
+      0.21822954714298248,
+      0.11729035526514053,
+      0.12580031156539917
+    ],
+    "importedBasis": [
+      0.21784186363220215,
+      0.11729033291339874,
+      0.12580031156539917
+    ],
+    "importedEndpoint": [
+      0.21784186363220215,
+      0.11729033291339874,
+      0.12580031156539917
+    ],
+    "error": 0.00038768351142467496,
+    "authoredDeltaMagnitude": 0.00038763880729675293,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 298,
+    "importedVertex": 298,
+    "basis": [
+      0.2232438176870346,
+      0.07901613414287567,
+      0.061675556004047394
+    ],
+    "authoredEndpoint": [
+      0.22329837083816528,
+      0.07901613414287567,
+      0.061675556004047394
+    ],
+    "importedBasis": [
+      0.22324378788471222,
+      0.07901611924171448,
+      0.061675529927015305
+    ],
+    "importedEndpoint": [
+      0.22324378788471222,
+      0.07901611924171448,
+      0.061675529927015305
+    ],
+    "error": 5.458296171623115e-05,
+    "authoredDeltaMagnitude": 5.455315113067627e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 299,
+    "importedVertex": 299,
+    "basis": [
+      0.22286948561668396,
+      0.08578295260667801,
+      0.05997223034501076
+    ],
+    "authoredEndpoint": [
+      0.2229316234588623,
+      0.08578295260667801,
+      0.05997223034501076
+    ],
+    "importedBasis": [
+      0.22286945581436157,
+      0.08578293770551682,
+      0.05997220054268837
+    ],
+    "importedEndpoint": [
+      0.22286945581436157,
+      0.08578293770551682,
+      0.05997220054268837
+    ],
+    "error": 6.216765342999904e-05,
+    "authoredDeltaMagnitude": 6.213784217834473e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 303,
+    "importedVertex": 303,
+    "basis": [
+      0.2159774899482727,
+      0.11578518897294998,
+      0.056869227439165115
+    ],
+    "authoredEndpoint": [
+      0.2160572111606598,
+      0.11578518897294998,
+      0.056869227439165115
+    ],
+    "importedBasis": [
+      0.21597746014595032,
+      0.1157851591706276,
+      0.05686919018626213
+    ],
+    "importedEndpoint": [
+      0.21597746014595032,
+      0.1157851591706276,
+      0.05686919018626213
+    ],
+    "error": 7.975102897861397e-05,
+    "authoredDeltaMagnitude": 7.972121238708496e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 316,
+    "importedVertex": 316,
+    "basis": [
+      0.15737751126289368,
+      0.1931675672531128,
+      0.08515561372041702
+    ],
+    "authoredEndpoint": [
+      0.15738581120967865,
+      0.1931675672531128,
+      0.08515561372041702
+    ],
+    "importedBasis": [
+      0.15737751126289368,
+      0.1931675374507904,
+      0.08515558391809464
+    ],
+    "importedEndpoint": [
+      0.15737751126289368,
+      0.1931675374507904,
+      0.08515558391809464
+    ],
+    "error": 8.300053794417566e-06,
+    "authoredDeltaMagnitude": 8.299946784973145e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 317,
+    "importedVertex": 317,
+    "basis": [
+      0.1534441113471985,
+      0.1951388418674469,
+      0.08831039071083069
+    ],
+    "authoredEndpoint": [
+      0.15344800055027008,
+      0.1951388418674469,
+      0.08831039071083069
+    ],
+    "importedBasis": [
+      0.1534441113471985,
+      0.1951388120651245,
+      0.08831039071083069
+    ],
+    "importedEndpoint": [
+      0.1534441113471985,
+      0.1951388120651245,
+      0.08831039071083069
+    ],
+    "error": 3.889317255061325e-06,
+    "authoredDeltaMagnitude": 3.889203071594238e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 322,
+    "importedVertex": 322,
+    "basis": [
+      0.16129423677921295,
+      0.1908804476261139,
+      0.09863091260194778
+    ],
+    "authoredEndpoint": [
+      0.16129888594150543,
+      0.1908804476261139,
+      0.09863091260194778
+    ],
+    "importedBasis": [
+      0.16129422187805176,
+      0.1908804178237915,
+      0.09863090515136719
+    ],
+    "importedEndpoint": [
+      0.16129422187805176,
+      0.1908804178237915,
+      0.09863090515136719
+    ],
+    "error": 4.664164618607637e-06,
+    "authoredDeltaMagnitude": 4.649162292480469e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 339,
+    "importedVertex": 339,
+    "basis": [
+      0.22278431057929993,
+      0.09970960766077042,
+      0.11463826894760132
+    ],
+    "authoredEndpoint": [
+      0.2233373522758484,
+      0.09970960766077042,
+      0.11463826894760132
+    ],
+    "importedBasis": [
+      0.22278429567813873,
+      0.09970958530902863,
+      0.11463824659585953
+    ],
+    "importedEndpoint": [
+      0.22278429567813873,
+      0.09970958530902863,
+      0.11463824659585953
+    ],
+    "error": 0.0005530565986129998,
+    "authoredDeltaMagnitude": 0.0005530416965484619,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 340,
+    "importedVertex": 340,
+    "basis": [
+      0.22401969134807587,
+      0.0932576134800911,
+      0.11314933001995087
+    ],
+    "authoredEndpoint": [
+      0.2245200127363205,
+      0.0932576134800911,
+      0.11314933001995087
+    ],
+    "importedBasis": [
+      0.22401967644691467,
+      0.0932575985789299,
+      0.11314928531646729
+    ],
+    "importedEndpoint": [
+      0.22401967644691467,
+      0.0932575985789299,
+      0.11314928531646729
+    ],
+    "error": 0.0005003362916247764,
+    "authoredDeltaMagnitude": 0.0005003213882446289,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 360,
+    "importedVertex": 360,
+    "basis": [
+      0.22261013090610504,
+      0.07119176536798477,
+      0.07329969108104706
+    ],
+    "authoredEndpoint": [
+      0.22266894578933716,
+      0.07119176536798477,
+      0.07329969108104706
+    ],
+    "importedBasis": [
+      0.22261010110378265,
+      0.07119174301624298,
+      0.07329966872930527
+    ],
+    "importedEndpoint": [
+      0.22261010110378265,
+      0.07119174301624298,
+      0.07329966872930527
+    ],
+    "error": 5.8844694044656396e-05,
+    "authoredDeltaMagnitude": 5.88148832321167e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 361,
+    "importedVertex": 361,
+    "basis": [
+      0.22345879673957825,
+      0.07651235163211823,
+      0.07166934013366699
+    ],
+    "authoredEndpoint": [
+      0.22353161871433258,
+      0.07651235163211823,
+      0.07166934013366699
+    ],
+    "importedBasis": [
+      0.22345876693725586,
+      0.07651232928037643,
+      0.07166934013366699
+    ],
+    "importedEndpoint": [
+      0.22345876693725586,
+      0.07651232928037643,
+      0.07166934013366699
+    ],
+    "error": 7.285178050560357e-05,
+    "authoredDeltaMagnitude": 7.28219747543335e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 379,
+    "importedVertex": 379,
+    "basis": [
+      0.17046213150024414,
+      0.1857527494430542,
+      0.08604735881090164
+    ],
+    "authoredEndpoint": [
+      0.1704818606376648,
+      0.1857527494430542,
+      0.08604735881090164
+    ],
+    "importedBasis": [
+      0.17046210169792175,
+      0.185752734541893,
+      0.08604732900857925
+    ],
+    "importedEndpoint": [
+      0.17046210169792175,
+      0.185752734541893,
+      0.08604732900857925
+    ],
+    "error": 1.975896783721733e-05,
+    "authoredDeltaMagnitude": 1.9729137420654297e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 380,
+    "importedVertex": 380,
+    "basis": [
+      0.16634878516197205,
+      0.18851114809513092,
+      0.0883035957813263
+    ],
+    "authoredEndpoint": [
+      0.16635999083518982,
+      0.18851114809513092,
+      0.0883035957813263
+    ],
+    "importedBasis": [
+      0.16634878516197205,
+      0.18851111829280853,
+      0.0883035734295845
+    ],
+    "importedEndpoint": [
+      0.16634878516197205,
+      0.18851111829280853,
+      0.0883035734295845
+    ],
+    "error": 1.120573514064587e-05,
+    "authoredDeltaMagnitude": 1.1205673217773438e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 381,
+    "importedVertex": 381,
+    "basis": [
+      0.162798672914505,
+      0.19061033427715302,
+      0.09044043719768524
+    ],
+    "authoredEndpoint": [
+      0.1628037989139557,
+      0.19061033427715302,
+      0.09044043719768524
+    ],
+    "importedBasis": [
+      0.1627986580133438,
+      0.19061030447483063,
+      0.09044042229652405
+    ],
+    "importedEndpoint": [
+      0.1627986580133438,
+      0.19061030447483063,
+      0.09044042229652405
+    ],
+    "error": 5.141008590172406e-06,
+    "authoredDeltaMagnitude": 5.125999450683594e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 400,
+    "importedVertex": 400,
+    "basis": [
+      0.21733877062797546,
+      0.12244192510843277,
+      0.10959303379058838
+    ],
+    "authoredEndpoint": [
+      0.21821251511573792,
+      0.12244192510843277,
+      0.10959303379058838
+    ],
+    "importedBasis": [
+      0.21733874082565308,
+      0.12244190275669098,
+      0.10959301888942719
+    ],
+    "importedEndpoint": [
+      0.21733874082565308,
+      0.12244190275669098,
+      0.10959301888942719
+    ],
+    "error": 0.0008737742904977859,
+    "authoredDeltaMagnitude": 0.0008737444877624512,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 409,
+    "importedVertex": 409,
+    "basis": [
+      0.2236301749944687,
+      0.07066819816827774,
+      0.09681455790996552
+    ],
+    "authoredEndpoint": [
+      0.22386537492275238,
+      0.07066819816827774,
+      0.09681455790996552
+    ],
+    "importedBasis": [
+      0.2236301600933075,
+      0.07066817581653595,
+      0.09681452065706253
+    ],
+    "importedEndpoint": [
+      0.2236301600933075,
+      0.07066817581653595,
+      0.09681452065706253
+    ],
+    "error": 0.00023521483345691785,
+    "authoredDeltaMagnitude": 0.0002351999282836914,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 420,
+    "importedVertex": 420,
+    "basis": [
+      0.2187267541885376,
+      0.060563474893569946,
+      0.08436885476112366
+    ],
+    "authoredEndpoint": [
+      0.21874170005321503,
+      0.060563474893569946,
+      0.08436885476112366
+    ],
+    "importedBasis": [
+      0.2187267243862152,
+      0.060563456267118454,
+      0.08436885476112366
+    ],
+    "importedEndpoint": [
+      0.2187267243862152,
+      0.060563456267118454,
+      0.08436885476112366
+    ],
+    "error": 1.4975678583426527e-05,
+    "authoredDeltaMagnitude": 1.49458646774292e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 421,
+    "importedVertex": 421,
+    "basis": [
+      0.22029148042201996,
+      0.06337369978427887,
+      0.0832894816994667
+    ],
+    "authoredEndpoint": [
+      0.22031830251216888,
+      0.06337369978427887,
+      0.0832894816994667
+    ],
+    "importedBasis": [
+      0.22029146552085876,
+      0.06337368488311768,
+      0.08328943699598312
+    ],
+    "importedEndpoint": [
+      0.22029146552085876,
+      0.06337368488311768,
+      0.08328943699598312
+    ],
+    "error": 2.683703267921932e-05,
+    "authoredDeltaMagnitude": 2.682209014892578e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 422,
+    "importedVertex": 422,
+    "basis": [
+      0.22180752456188202,
+      0.06675279140472412,
+      0.08215522021055222
+    ],
+    "authoredEndpoint": [
+      0.22184935212135315,
+      0.06675279140472412,
+      0.08215522021055222
+    ],
+    "importedBasis": [
+      0.22180749475955963,
+      0.06675277650356293,
+      0.08215519785881042
+    ],
+    "importedEndpoint": [
+      0.22180749475955963,
+      0.06675277650356293,
+      0.08215519785881042
+    ],
+    "error": 4.185737041380445e-05,
+    "authoredDeltaMagnitude": 4.182755947113037e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 442,
+    "importedVertex": 442,
+    "basis": [
+      0.1807757318019867,
+      0.17813105881214142,
+      0.08824620395898819
+    ],
+    "authoredEndpoint": [
+      0.18081620335578918,
+      0.17813105881214142,
+      0.08824620395898819
+    ],
+    "importedBasis": [
+      0.1807756870985031,
+      0.17813102900981903,
+      0.0882461667060852
+    ],
+    "importedEndpoint": [
+      0.1807756870985031,
+      0.17813102900981903,
+      0.0882461667060852
+    ],
+    "error": 4.051628537302457e-05,
+    "authoredDeltaMagnitude": 4.0471553802490234e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 443,
+    "importedVertex": 443,
+    "basis": [
+      0.176604762673378,
+      0.18151013553142548,
+      0.08975005149841309
+    ],
+    "authoredEndpoint": [
+      0.1766308695077896,
+      0.18151013553142548,
+      0.08975005149841309
+    ],
+    "importedBasis": [
+      0.1766047477722168,
+      0.1815101057291031,
+      0.08975003659725189
+    ],
+    "importedEndpoint": [
+      0.1766047477722168,
+      0.1815101057291031,
+      0.08975003659725189
+    ],
+    "error": 2.6121756823749242e-05,
+    "authoredDeltaMagnitude": 2.6106834411621094e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 444,
+    "importedVertex": 444,
+    "basis": [
+      0.17277753353118896,
+      0.1843203604221344,
+      0.09113675355911255
+    ],
+    "authoredEndpoint": [
+      0.1727921962738037,
+      0.1843203604221344,
+      0.09113675355911255
+    ],
+    "importedBasis": [
+      0.17277750372886658,
+      0.1843203455209732,
+      0.09113675355911255
+    ],
+    "importedEndpoint": [
+      0.17277750372886658,
+      0.1843203455209732,
+      0.09113675355911255
+    ],
+    "error": 1.469255249350162e-05,
+    "authoredDeltaMagnitude": 1.4662742614746094e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 445,
+    "importedVertex": 445,
+    "basis": [
+      0.1694686859846115,
+      0.18653467297554016,
+      0.09235747158527374
+    ],
+    "authoredEndpoint": [
+      0.1694752722978592,
+      0.18653467297554016,
+      0.09235747158527374
+    ],
+    "importedBasis": [
+      0.16946867108345032,
+      0.18653462827205658,
+      0.09235744178295135
+    ],
+    "importedEndpoint": [
+      0.16946867108345032,
+      0.18653462827205658,
+      0.09235744178295135
+    ],
+    "error": 6.601433045316486e-06,
+    "authoredDeltaMagnitude": 6.586313247680664e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C25",
+    "sourceOrdinal": 446,
+    "importedVertex": 446,
+    "basis": [
+      0.16687537729740143,
+      0.18813173472881317,
+      0.09336024522781372
+    ],
+    "authoredEndpoint": [
+      0.1668773740530014,
+      0.18813173472881317,
+      0.09336024522781372
+    ],
+    "importedBasis": [
+      0.16687534749507904,
+      0.18813170492649078,
+      0.09336020052433014
+    ],
+    "importedEndpoint": [
+      0.16687534749507904,
+      0.18813170492649078,
+      0.09336020052433014
+    ],
+    "error": 2.027269985117277e-06,
+    "authoredDeltaMagnitude": 1.996755599975586e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": false,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 69,
+    "importedVertex": 69,
+    "basis": [
+      0.1620885729789734,
+      0.1894763708114624,
+      0.12515877187252045
+    ],
+    "authoredEndpoint": [
+      0.16209058463573456,
+      0.1894763708114624,
+      0.12515877187252045
+    ],
+    "importedBasis": [
+      0.1620885580778122,
+      0.18947632610797882,
+      0.12515875697135925
+    ],
+    "importedEndpoint": [
+      0.1620885580778122,
+      0.18947632610797882,
+      0.12515875697135925
+    ],
+    "error": 2.0271056851438777e-06,
+    "authoredDeltaMagnitude": 2.0116567611694336e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 70,
+    "importedVertex": 70,
+    "basis": [
+      0.16981898248195648,
+      0.18407022953033447,
+      0.12936484813690186
+    ],
+    "authoredEndpoint": [
+      0.16982217133045197,
+      0.18407022953033447,
+      0.12936484813690186
+    ],
+    "importedBasis": [
+      0.1698189675807953,
+      0.18407019972801208,
+      0.12936481833457947
+    ],
+    "importedEndpoint": [
+      0.1698189675807953,
+      0.18407019972801208,
+      0.12936481833457947
+    ],
+    "error": 3.204026875589369e-06,
+    "authoredDeltaMagnitude": 3.1888484954833984e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 79,
+    "importedVertex": 79,
+    "basis": [
+      0.22032584249973297,
+      0.11833519488573074,
+      0.14823025465011597
+    ],
+    "authoredEndpoint": [
+      0.22034062445163727,
+      0.11833519488573074,
+      0.14823025465011597
+    ],
+    "importedBasis": [
+      0.22032581269741058,
+      0.11833517253398895,
+      0.14823023974895477
+    ],
+    "importedEndpoint": [
+      0.22032581269741058,
+      0.11833517253398895,
+      0.14823023974895477
+    ],
+    "error": 1.4811778587214778e-05,
+    "authoredDeltaMagnitude": 1.4781951904296875e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 108,
+    "importedVertex": 108,
+    "basis": [
+      0.22380942106246948,
+      0.08759664744138718,
+      0.034142494201660156
+    ],
+    "authoredEndpoint": [
+      0.2238122522830963,
+      0.08759664744138718,
+      0.034142494201660156
+    ],
+    "importedBasis": [
+      0.2238093912601471,
+      0.08759663254022598,
+      0.03414248675107956
+    ],
+    "importedEndpoint": [
+      0.2238093912601471,
+      0.08759663254022598,
+      0.03414248675107956
+    ],
+    "error": 2.8610714551916576e-06,
+    "authoredDeltaMagnitude": 2.8312206268310547e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 109,
+    "importedVertex": 109,
+    "basis": [
+      0.220638707280159,
+      0.09673266112804413,
+      0.03240067884325981
+    ],
+    "authoredEndpoint": [
+      0.22064173221588135,
+      0.09673266112804413,
+      0.03240067884325981
+    ],
+    "importedBasis": [
+      0.2206386774778366,
+      0.09673263877630234,
+      0.03240066021680832
+    ],
+    "importedEndpoint": [
+      0.2206386774778366,
+      0.09673263877630234,
+      0.03240066021680832
+    ],
+    "error": 3.0548766042232732e-06,
+    "authoredDeltaMagnitude": 3.0249357223510742e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 110,
+    "importedVertex": 110,
+    "basis": [
+      0.21708598732948303,
+      0.10612409561872482,
+      0.031306929886341095
+    ],
+    "authoredEndpoint": [
+      0.21708914637565613,
+      0.10612409561872482,
+      0.031306929886341095
+    ],
+    "importedBasis": [
+      0.21708595752716064,
+      0.10612407326698303,
+      0.0313069187104702
+    ],
+    "importedEndpoint": [
+      0.21708595752716064,
+      0.10612407326698303,
+      0.0313069187104702
+    ],
+    "error": 3.188946413409621e-06,
+    "authoredDeltaMagnitude": 3.159046173095703e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 111,
+    "importedVertex": 111,
+    "basis": [
+      0.21305756270885468,
+      0.11565948277711868,
+      0.0308793056756258
+    ],
+    "authoredEndpoint": [
+      0.21306076645851135,
+      0.11565948277711868,
+      0.0308793056756258
+    ],
+    "importedBasis": [
+      0.2130575329065323,
+      0.1156594529747963,
+      0.030879294499754906
+    ],
+    "importedEndpoint": [
+      0.2130575329065323,
+      0.1156594529747963,
+      0.030879294499754906
+    ],
+    "error": 3.2337086263027425e-06,
+    "authoredDeltaMagnitude": 3.203749656677246e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 112,
+    "importedVertex": 112,
+    "basis": [
+      0.2085224688053131,
+      0.12522442638874054,
+      0.031125975772738457
+    ],
+    "authoredEndpoint": [
+      0.20852568745613098,
+      0.12522442638874054,
+      0.031125975772738457
+    ],
+    "importedBasis": [
+      0.20852245390415192,
+      0.12522439658641815,
+      0.031125975772738457
+    ],
+    "importedEndpoint": [
+      0.20852245390415192,
+      0.12522439658641815,
+      0.031125975772738457
+    ],
+    "error": 3.233689314039693e-06,
+    "authoredDeltaMagnitude": 3.2186508178710938e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 113,
+    "importedVertex": 113,
+    "basis": [
+      0.20363816618919373,
+      0.13470366597175598,
+      0.03204500675201416
+    ],
+    "authoredEndpoint": [
+      0.20364128053188324,
+      0.13470366597175598,
+      0.03204500675201416
+    ],
+    "importedBasis": [
+      0.20363815128803253,
+      0.1347036361694336,
+      0.03204496577382088
+    ],
+    "importedEndpoint": [
+      0.20363815128803253,
+      0.1347036361694336,
+      0.03204496577382088
+    ],
+    "error": 3.1296540492422365e-06,
+    "authoredDeltaMagnitude": 3.11434268951416e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 114,
+    "importedVertex": 114,
+    "basis": [
+      0.19833903014659882,
+      0.14398324489593506,
+      0.03362423554062843
+    ],
+    "authoredEndpoint": [
+      0.19834202527999878,
+      0.14398324489593506,
+      0.03362423554062843
+    ],
+    "importedBasis": [
+      0.19833900034427643,
+      0.14398321509361267,
+      0.03362422436475754
+    ],
+    "importedEndpoint": [
+      0.19833900034427643,
+      0.14398321509361267,
+      0.03362422436475754
+    ],
+    "error": 3.0251031722679454e-06,
+    "authoredDeltaMagnitude": 2.995133399963379e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 115,
+    "importedVertex": 115,
+    "basis": [
+      0.19275496900081635,
+      0.15295247733592987,
+      0.035841766744852066
+    ],
+    "authoredEndpoint": [
+      0.19275778532028198,
+      0.15295247733592987,
+      0.035841766744852066
+    ],
+    "importedBasis": [
+      0.19275495409965515,
+      0.15295244753360748,
+      0.035841722041368484
+    ],
+    "importedEndpoint": [
+      0.19275495409965515,
+      0.15295244753360748,
+      0.035841722041368484
+    ],
+    "error": 2.831730357512462e-06,
+    "authoredDeltaMagnitude": 2.816319465637207e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 116,
+    "importedVertex": 116,
+    "basis": [
+      0.1864442676305771,
+      0.16150598227977753,
+      0.038666196167469025
+    ],
+    "authoredEndpoint": [
+      0.18644681572914124,
+      0.16150598227977753,
+      0.038666196167469025
+    ],
+    "importedBasis": [
+      0.1864442527294159,
+      0.16150593757629395,
+      0.03866618126630783
+    ],
+    "importedEndpoint": [
+      0.1864442527294159,
+      0.16150593757629395,
+      0.03866618126630783
+    ],
+    "error": 2.5634328620331324e-06,
+    "authoredDeltaMagnitude": 2.5480985641479492e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 117,
+    "importedVertex": 117,
+    "basis": [
+      0.17928650975227356,
+      0.16954544186592102,
+      0.04205750674009323
+    ],
+    "authoredEndpoint": [
+      0.17928878962993622,
+      0.16954544186592102,
+      0.04205750674009323
+    ],
+    "importedBasis": [
+      0.17928649485111237,
+      0.16954541206359863,
+      0.04205748811364174
+    ],
+    "importedEndpoint": [
+      0.17928649485111237,
+      0.16954541206359863,
+      0.04205748811364174
+    ],
+    "error": 2.2950479240131212e-06,
+    "authoredDeltaMagnitude": 2.2798776626586914e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 131,
+    "importedVertex": 131,
+    "basis": [
+      0.14991889894008636,
+      0.19645057618618011,
+      0.11259954422712326
+    ],
+    "authoredEndpoint": [
+      0.149921715259552,
+      0.19645057618618011,
+      0.11259954422712326
+    ],
+    "importedBasis": [
+      0.14991888403892517,
+      0.19645054638385773,
+      0.11259954422712326
+    ],
+    "importedEndpoint": [
+      0.14991888403892517,
+      0.19645054638385773,
+      0.11259954422712326
+    ],
+    "error": 2.8313774768146565e-06,
+    "authoredDeltaMagnitude": 2.816319465637207e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 132,
+    "importedVertex": 132,
+    "basis": [
+      0.1563076227903366,
+      0.19262254238128662,
+      0.11684822291135788
+    ],
+    "authoredEndpoint": [
+      0.15631411969661713,
+      0.19262254238128662,
+      0.11684822291135788
+    ],
+    "importedBasis": [
+      0.15630759298801422,
+      0.19262251257896423,
+      0.11684819310903549
+    ],
+    "importedEndpoint": [
+      0.15630759298801422,
+      0.19262251257896423,
+      0.11684819310903549
+    ],
+    "error": 6.526844685150483e-06,
+    "authoredDeltaMagnitude": 6.496906280517578e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 133,
+    "importedVertex": 133,
+    "basis": [
+      0.16338500380516052,
+      0.1881486475467682,
+      0.12087103724479675
+    ],
+    "authoredEndpoint": [
+      0.1633969098329544,
+      0.1881486475467682,
+      0.12087103724479675
+    ],
+    "importedBasis": [
+      0.16338500380516052,
+      0.188148632645607,
+      0.12087102234363556
+    ],
+    "importedEndpoint": [
+      0.16338500380516052,
+      0.188148632645607,
+      0.12087102234363556
+    ],
+    "error": 1.1906046443633367e-05,
+    "authoredDeltaMagnitude": 1.1906027793884277e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 134,
+    "importedVertex": 134,
+    "basis": [
+      0.1704842895269394,
+      0.18308037519454956,
+      0.12462794035673141
+    ],
+    "authoredEndpoint": [
+      0.1705031543970108,
+      0.18308037519454956,
+      0.12462794035673141
+    ],
+    "importedBasis": [
+      0.1704842746257782,
+      0.18308034539222717,
+      0.12462791800498962
+    ],
+    "importedEndpoint": [
+      0.1704842746257782,
+      0.18308034539222717,
+      0.12462791800498962
+    ],
+    "error": 1.8879807985630557e-05,
+    "authoredDeltaMagnitude": 1.8864870071411133e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 135,
+    "importedVertex": 135,
+    "basis": [
+      0.17667169868946075,
+      0.17747189104557037,
+      0.12808312475681305
+    ],
+    "authoredEndpoint": [
+      0.17669886350631714,
+      0.17747189104557037,
+      0.12808312475681305
+    ],
+    "importedBasis": [
+      0.17667168378829956,
+      0.17747186124324799,
+      0.12808310985565186
+    ],
+    "importedEndpoint": [
+      0.17667168378829956,
+      0.17747186124324799,
+      0.12808310985565186
+    ],
+    "error": 2.7179738441311122e-05,
+    "authoredDeltaMagnitude": 2.7164816856384277e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 143,
+    "importedVertex": 143,
+    "basis": [
+      0.21654920279979706,
+      0.1201137974858284,
+      0.14182564616203308
+    ],
+    "authoredEndpoint": [
+      0.21663805842399597,
+      0.1201137974858284,
+      0.14182564616203308
+    ],
+    "importedBasis": [
+      0.21654917299747467,
+      0.12011376768350601,
+      0.1418256312608719
+    ],
+    "importedEndpoint": [
+      0.21654917299747467,
+      0.12011376768350601,
+      0.1418256312608719
+    ],
+    "error": 8.888543276654882e-05,
+    "authoredDeltaMagnitude": 8.885562419891357e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 172,
+    "importedVertex": 172,
+    "basis": [
+      0.22226384282112122,
+      0.08913237601518631,
+      0.0412016324698925
+    ],
+    "authoredEndpoint": [
+      0.22228065133094788,
+      0.08913237601518631,
+      0.0412016324698925
+    ],
+    "importedBasis": [
+      0.22226381301879883,
+      0.08913236111402512,
+      0.04120161011815071
+    ],
+    "importedEndpoint": [
+      0.22226381301879883,
+      0.08913236111402512,
+      0.04120161011815071
+    ],
+    "error": 1.6838333577695225e-05,
+    "authoredDeltaMagnitude": 1.6808509826660156e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 173,
+    "importedVertex": 173,
+    "basis": [
+      0.2195322960615158,
+      0.09777715057134628,
+      0.039678510278463364
+    ],
+    "authoredEndpoint": [
+      0.21955028176307678,
+      0.09777715057134628,
+      0.039678510278463364
+    ],
+    "importedBasis": [
+      0.21953226625919342,
+      0.0977771207690239,
+      0.03967849165201187
+    ],
+    "importedEndpoint": [
+      0.21953226625919342,
+      0.0977771207690239,
+      0.03967849165201187
+    ],
+    "error": 1.8015538162778805e-05,
+    "authoredDeltaMagnitude": 1.798570156097412e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 174,
+    "importedVertex": 174,
+    "basis": [
+      0.2164808064699173,
+      0.10666598379611969,
+      0.03873106837272644
+    ],
+    "authoredEndpoint": [
+      0.21649958193302155,
+      0.10666598379611969,
+      0.03873106837272644
+    ],
+    "importedBasis": [
+      0.2164807915687561,
+      0.1066659614443779,
+      0.03873104229569435
+    ],
+    "importedEndpoint": [
+      0.2164807915687561,
+      0.1066659614443779,
+      0.03873104229569435
+    ],
+    "error": 1.8790395654162246e-05,
+    "authoredDeltaMagnitude": 1.8775463104248047e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 175,
+    "importedVertex": 175,
+    "basis": [
+      0.21291078627109528,
+      0.11569573730230331,
+      0.03837639093399048
+    ],
+    "authoredEndpoint": [
+      0.21292996406555176,
+      0.11569573730230331,
+      0.03837639093399048
+    ],
+    "importedBasis": [
+      0.2129107564687729,
+      0.11569571495056152,
+      0.038376372307538986
+    ],
+    "importedEndpoint": [
+      0.2129107564687729,
+      0.11569571495056152,
+      0.038376372307538986
+    ],
+    "error": 1.920761881558199e-05,
+    "authoredDeltaMagnitude": 1.9177794456481934e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 176,
+    "importedVertex": 176,
+    "basis": [
+      0.20885278284549713,
+      0.12476067245006561,
+      0.038622405380010605
+    ],
+    "authoredEndpoint": [
+      0.2088719755411148,
+      0.12476067245006561,
+      0.038622405380010605
+    ],
+    "importedBasis": [
+      0.20885276794433594,
+      0.12476064264774323,
+      0.03862237185239792
+    ],
+    "importedEndpoint": [
+      0.20885276794433594,
+      0.12476064264774323,
+      0.03862237185239792
+    ],
+    "error": 1.92076491611773e-05,
+    "authoredDeltaMagnitude": 1.919269561767578e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 177,
+    "importedVertex": 177,
+    "basis": [
+      0.20445869863033295,
+      0.1337541937828064,
+      0.03946749120950699
+    ],
+    "authoredEndpoint": [
+      0.2044774442911148,
+      0.1337541937828064,
+      0.03946749120950699
+    ],
+    "importedBasis": [
+      0.20445866882801056,
+      0.133754163980484,
+      0.03946748003363609
+    ],
+    "importedEndpoint": [
+      0.20445866882801056,
+      0.133754163980484,
+      0.03946748003363609
+    ],
+    "error": 1.8775490083017533e-05,
+    "authoredDeltaMagnitude": 1.874566078186035e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 178,
+    "importedVertex": 178,
+    "basis": [
+      0.19955216348171234,
+      0.14257077872753143,
+      0.040900349617004395
+    ],
+    "authoredEndpoint": [
+      0.19957013428211212,
+      0.14257077872753143,
+      0.040900349617004395
+    ],
+    "importedBasis": [
+      0.19955213367938995,
+      0.14257074892520905,
+      0.040900349617004395
+    ],
+    "importedEndpoint": [
+      0.19955213367938995,
+      0.14257074892520905,
+      0.040900349617004395
+    ],
+    "error": 1.800062739294774e-05,
+    "authoredDeltaMagnitude": 1.7970800399780273e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 179,
+    "importedVertex": 179,
+    "basis": [
+      0.19447754323482513,
+      0.1511077731847763,
+      0.04290046915411949
+    ],
+    "authoredEndpoint": [
+      0.1944943517446518,
+      0.1511077731847763,
+      0.04290046915411949
+    ],
+    "importedBasis": [
+      0.19447752833366394,
+      0.15110774338245392,
+      0.0429004542529583
+    ],
+    "importedEndpoint": [
+      0.19447752833366394,
+      0.15110774338245392,
+      0.0429004542529583
+    ],
+    "error": 1.6823443984192755e-05,
+    "authoredDeltaMagnitude": 1.6808509826660156e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 180,
+    "importedVertex": 180,
+    "basis": [
+      0.1887657791376114,
+      0.1592671126127243,
+      0.04543858766555786
+    ],
+    "authoredEndpoint": [
+      0.18878112733364105,
+      0.1592671126127243,
+      0.04543858766555786
+    ],
+    "importedBasis": [
+      0.1887657642364502,
+      0.15926708281040192,
+      0.04543856531381607
+    ],
+    "importedEndpoint": [
+      0.1887657642364502,
+      0.15926708281040192,
+      0.04543856531381607
+    ],
+    "error": 1.536314235677379e-05,
+    "authoredDeltaMagnitude": 1.5348196029663086e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 181,
+    "importedVertex": 181,
+    "basis": [
+      0.18229469656944275,
+      0.16695696115493774,
+      0.04847703129053116
+    ],
+    "authoredEndpoint": [
+      0.1823083609342575,
+      0.16695696115493774,
+      0.04847703129053116
+    ],
+    "importedBasis": [
+      0.18229466676712036,
+      0.16695693135261536,
+      0.04847700521349907
+    ],
+    "importedEndpoint": [
+      0.18229466676712036,
+      0.16695693135261536,
+      0.04847700521349907
+    ],
+    "error": 1.3694224394616573e-05,
+    "authoredDeltaMagnitude": 1.36643648147583e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 182,
+    "importedVertex": 182,
+    "basis": [
+      0.175187349319458,
+      0.1740931272506714,
+      0.0519709512591362
+    ],
+    "authoredEndpoint": [
+      0.17519916594028473,
+      0.1740931272506714,
+      0.0519709512591362
+    ],
+    "importedBasis": [
+      0.17518733441829681,
+      0.174093097448349,
+      0.0519709438085556
+    ],
+    "importedEndpoint": [
+      0.17518733441829681,
+      0.174093097448349,
+      0.0519709438085556
+    ],
+    "error": 1.1831561868159587e-05,
+    "authoredDeltaMagnitude": 1.1816620826721191e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 183,
+    "importedVertex": 183,
+    "basis": [
+      0.16786664724349976,
+      0.18060022592544556,
+      0.055869199335575104
+    ],
+    "authoredEndpoint": [
+      0.16787654161453247,
+      0.18060022592544556,
+      0.055869199335575104
+    ],
+    "importedBasis": [
+      0.16786661744117737,
+      0.18060019612312317,
+      0.05586916208267212
+    ],
+    "importedEndpoint": [
+      0.16786661744117737,
+      0.18060019612312317,
+      0.05586916208267212
+    ],
+    "error": 9.924288021784115e-06,
+    "authoredDeltaMagnitude": 9.894371032714844e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 186,
+    "importedVertex": 186,
+    "basis": [
+      0.14732486009597778,
+      0.19574497640132904,
+      0.06940580904483795
+    ],
+    "authoredEndpoint": [
+      0.14732930064201355,
+      0.19574497640132904,
+      0.06940580904483795
+    ],
+    "importedBasis": [
+      0.14732486009597778,
+      0.19574496150016785,
+      0.06940578669309616
+    ],
+    "importedEndpoint": [
+      0.14732486009597778,
+      0.19574496150016785,
+      0.06940578669309616
+    ],
+    "error": 4.440627291355185e-06,
+    "authoredDeltaMagnitude": 4.4405460357666016e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 187,
+    "importedVertex": 187,
+    "basis": [
+      0.14200660586357117,
+      0.19918766617774963,
+      0.07432211190462112
+    ],
+    "authoredEndpoint": [
+      0.14200954139232635,
+      0.19918766617774963,
+      0.07432211190462112
+    ],
+    "importedBasis": [
+      0.14200659096240997,
+      0.19918763637542725,
+      0.07432206720113754
+    ],
+    "importedEndpoint": [
+      0.14200659096240997,
+      0.19918763637542725,
+      0.07432206720113754
+    ],
+    "error": 2.950919055369861e-06,
+    "authoredDeltaMagnitude": 2.9355287551879883e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 194,
+    "importedVertex": 194,
+    "basis": [
+      0.14921614527702332,
+      0.19683599472045898,
+      0.10515765845775604
+    ],
+    "authoredEndpoint": [
+      0.14921829104423523,
+      0.19683599472045898,
+      0.10515765845775604
+    ],
+    "importedBasis": [
+      0.14921611547470093,
+      0.1968359649181366,
+      0.10515762865543365
+    ],
+    "importedEndpoint": [
+      0.14921611547470093,
+      0.1968359649181366,
+      0.10515762865543365
+    ],
+    "error": 2.175977746995903e-06,
+    "authoredDeltaMagnitude": 2.1457672119140625e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 195,
+    "importedVertex": 195,
+    "basis": [
+      0.15405750274658203,
+      0.1940707564353943,
+      0.10878562927246094
+    ],
+    "authoredEndpoint": [
+      0.15406514704227448,
+      0.1940707564353943,
+      0.10878562927246094
+    ],
+    "importedBasis": [
+      0.15405750274658203,
+      0.1940707266330719,
+      0.10878562927246094
+    ],
+    "importedEndpoint": [
+      0.15405750274658203,
+      0.1940707266330719,
+      0.10878562927246094
+    ],
+    "error": 7.644353786418787e-06,
+    "authoredDeltaMagnitude": 7.644295692443848e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 196,
+    "importedVertex": 196,
+    "basis": [
+      0.1595764458179474,
+      0.1906300187110901,
+      0.11232483386993408
+    ],
+    "authoredEndpoint": [
+      0.15959417819976807,
+      0.1906300187110901,
+      0.11232483386993408
+    ],
+    "importedBasis": [
+      0.159576416015625,
+      0.1906300038099289,
+      0.1123247891664505
+    ],
+    "importedEndpoint": [
+      0.159576416015625,
+      0.1906300038099289,
+      0.1123247891664505
+    ],
+    "error": 1.776224664782721e-05,
+    "authoredDeltaMagnitude": 1.773238182067871e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 197,
+    "importedVertex": 197,
+    "basis": [
+      0.1656297743320465,
+      0.1865554004907608,
+      0.1157258152961731
+    ],
+    "authoredEndpoint": [
+      0.16566245257854462,
+      0.1865554004907608,
+      0.1157258152961731
+    ],
+    "importedBasis": [
+      0.16562975943088531,
+      0.1865553855895996,
+      0.1157258003950119
+    ],
+    "importedEndpoint": [
+      0.16562975943088531,
+      0.1865553855895996,
+      0.1157258003950119
+    ],
+    "error": 3.269315445107917e-05,
+    "authoredDeltaMagnitude": 3.267824649810791e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 198,
+    "importedVertex": 198,
+    "basis": [
+      0.17187057435512543,
+      0.1818925440311432,
+      0.1189437136054039
+    ],
+    "authoredEndpoint": [
+      0.1719227433204651,
+      0.1818925440311432,
+      0.1189437136054039
+    ],
+    "importedBasis": [
+      0.17187055945396423,
+      0.1818925142288208,
+      0.1189437136054039
+    ],
+    "importedEndpoint": [
+      0.17187055945396423,
+      0.1818925142288208,
+      0.1189437136054039
+    ],
+    "error": 5.218387501094015e-05,
+    "authoredDeltaMagnitude": 5.2168965339660645e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 199,
+    "importedVertex": 199,
+    "basis": [
+      0.17742155492305756,
+      0.17669038474559784,
+      0.12193774431943893
+    ],
+    "authoredEndpoint": [
+      0.17749696969985962,
+      0.17669038474559784,
+      0.12193774431943893
+    ],
+    "importedBasis": [
+      0.17742154002189636,
+      0.17669035494327545,
+      0.12193771451711655
+    ],
+    "importedEndpoint": [
+      0.17742154002189636,
+      0.17669035494327545,
+      0.12193771451711655
+    ],
+    "error": 7.542968973817586e-05,
+    "authoredDeltaMagnitude": 7.541477680206299e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 200,
+    "importedVertex": 200,
+    "basis": [
+      0.18281909823417664,
+      0.17100071907043457,
+      0.12467048317193985
+    ],
+    "authoredEndpoint": [
+      0.18292056024074554,
+      0.17100071907043457,
+      0.12467048317193985
+    ],
+    "importedBasis": [
+      0.18281908333301544,
+      0.17100068926811218,
+      0.12467046082019806
+    ],
+    "importedEndpoint": [
+      0.18281908333301544,
+      0.17100068926811218,
+      0.12467046082019806
+    ],
+    "error": 0.00010147691456800667,
+    "authoredDeltaMagnitude": 0.00010146200656890869,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 201,
+    "importedVertex": 201,
+    "basis": [
+      0.18797187507152557,
+      0.16487759351730347,
+      0.12710817158222198
+    ],
+    "authoredEndpoint": [
+      0.1881008744239807,
+      0.16487759351730347,
+      0.12710817158222198
+    ],
+    "importedBasis": [
+      0.18797184526920319,
+      0.16487756371498108,
+      0.1271081268787384
+    ],
+    "importedEndpoint": [
+      0.18797184526920319,
+      0.16487756371498108,
+      0.1271081268787384
+    ],
+    "error": 0.00012902916596329236,
+    "authoredDeltaMagnitude": 0.00012899935245513916,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 202,
+    "importedVertex": 202,
+    "basis": [
+      0.1934480518102646,
+      0.15837688744068146,
+      0.12922075390815735
+    ],
+    "authoredEndpoint": [
+      0.19360476732254028,
+      0.15837688744068146,
+      0.12922075390815735
+    ],
+    "importedBasis": [
+      0.193448007106781,
+      0.15837685763835907,
+      0.12922070920467377
+    ],
+    "importedEndpoint": [
+      0.193448007106781,
+      0.15837685763835907,
+      0.12922070920467377
+    ],
+    "error": 0.0001567602249662683,
+    "authoredDeltaMagnitude": 0.0001567155122756958,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 203,
+    "importedVertex": 203,
+    "basis": [
+      0.19861553609371185,
+      0.1515558958053589,
+      0.13098202645778656
+    ],
+    "authoredEndpoint": [
+      0.19879871606826782,
+      0.1515558958053589,
+      0.13098202645778656
+    ],
+    "importedBasis": [
+      0.19861550629138947,
+      0.1515558660030365,
+      0.13098202645778656
+    ],
+    "importedEndpoint": [
+      0.19861550629138947,
+      0.1515558660030365,
+      0.13098202645778656
+    ],
+    "error": 0.0001832097793022953,
+    "authoredDeltaMagnitude": 0.00018317997455596924,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 207,
+    "importedVertex": 207,
+    "basis": [
+      0.21383732557296753,
+      0.12224812060594559,
+      0.13414011895656586
+    ],
+    "authoredEndpoint": [
+      0.21408750116825104,
+      0.12224812060594559,
+      0.13414011895656586
+    ],
+    "importedBasis": [
+      0.21383731067180634,
+      0.1222480982542038,
+      0.13414010405540466
+    ],
+    "importedEndpoint": [
+      0.21383731067180634,
+      0.1222480982542038,
+      0.13414010405540466
+    ],
+    "error": 0.00025019049788689313,
+    "authoredDeltaMagnitude": 0.0002501755952835083,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 235,
+    "importedVertex": 235,
+    "basis": [
+      0.22307096421718597,
+      0.08323977887630463,
+      0.051397643983364105
+    ],
+    "authoredEndpoint": [
+      0.22311332821846008,
+      0.08323977887630463,
+      0.051397643983364105
+    ],
+    "importedBasis": [
+      0.2230709344148636,
+      0.08323974907398224,
+      0.05139761045575142
+    ],
+    "importedEndpoint": [
+      0.2230709344148636,
+      0.08323974907398224,
+      0.05139761045575142
+    ],
+    "error": 4.239382732966627e-05,
+    "authoredDeltaMagnitude": 4.236400127410889e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 236,
+    "importedVertex": 236,
+    "basis": [
+      0.22154401242733002,
+      0.09097525477409363,
+      0.04967254772782326
+    ],
+    "authoredEndpoint": [
+      0.22159060835838318,
+      0.09097525477409363,
+      0.04967254772782326
+    ],
+    "importedBasis": [
+      0.22154399752616882,
+      0.09097523242235184,
+      0.04967254772782326
+    ],
+    "importedEndpoint": [
+      0.22154399752616882,
+      0.09097523242235184,
+      0.04967254772782326
+    ],
+    "error": 4.661083757362829e-05,
+    "authoredDeltaMagnitude": 4.659593105316162e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 237,
+    "importedVertex": 237,
+    "basis": [
+      0.21940486133098602,
+      0.09903053194284439,
+      0.048411909490823746
+    ],
+    "authoredEndpoint": [
+      0.21945485472679138,
+      0.09903053194284439,
+      0.048411909490823746
+    ],
+    "importedBasis": [
+      0.21940483152866364,
+      0.0990305095911026,
+      0.04841189831495285
+    ],
+    "importedEndpoint": [
+      0.21940483152866364,
+      0.0990305095911026,
+      0.04841189831495285
+    ],
+    "error": 5.00232043698546e-05,
+    "authoredDeltaMagnitude": 4.999339580535889e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 238,
+    "importedVertex": 238,
+    "basis": [
+      0.2169358730316162,
+      0.10731624811887741,
+      0.04763999581336975
+    ],
+    "authoredEndpoint": [
+      0.2169882208108902,
+      0.10731624811887741,
+      0.04763999581336975
+    ],
+    "importedBasis": [
+      0.21693584322929382,
+      0.10731621831655502,
+      0.047639984637498856
+    ],
+    "importedEndpoint": [
+      0.21693584322929382,
+      0.10731621831655502,
+      0.047639984637498856
+    ],
+    "error": 5.237759126729082e-05,
+    "authoredDeltaMagnitude": 5.2347779273986816e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 239,
+    "importedVertex": 239,
+    "basis": [
+      0.21393267810344696,
+      0.11573925614356995,
+      0.04737289622426033
+    ],
+    "authoredEndpoint": [
+      0.21398626267910004,
+      0.11573925614356995,
+      0.04737289622426033
+    ],
+    "importedBasis": [
+      0.21393266320228577,
+      0.11573923379182816,
+      0.047372885048389435
+    ],
+    "importedEndpoint": [
+      0.21393266320228577,
+      0.11573923379182816,
+      0.047372885048389435
+    ],
+    "error": 5.3599482639890476e-05,
+    "authoredDeltaMagnitude": 5.358457565307617e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 240,
+    "importedVertex": 240,
+    "basis": [
+      0.21045303344726562,
+      0.12420416623353958,
+      0.047618161886930466
+    ],
+    "authoredEndpoint": [
+      0.21050667762756348,
+      0.12420416623353958,
+      0.047618161886930466
+    ],
+    "importedBasis": [
+      0.21045301854610443,
+      0.1242041364312172,
+      0.04761815071105957
+    ],
+    "importedEndpoint": [
+      0.21045301854610443,
+      0.1242041364312172,
+      0.04761815071105957
+    ],
+    "error": 5.3659090898998475e-05,
+    "authoredDeltaMagnitude": 5.364418029785156e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 251,
+    "importedVertex": 251,
+    "basis": [
+      0.1512545943260193,
+      0.1949450820684433,
+      0.07802480459213257
+    ],
+    "authoredEndpoint": [
+      0.1512627750635147,
+      0.1949450820684433,
+      0.07802480459213257
+    ],
+    "importedBasis": [
+      0.1512545794248581,
+      0.1949450522661209,
+      0.07802477478981018
+    ],
+    "importedEndpoint": [
+      0.1512545794248581,
+      0.1949450522661209,
+      0.07802477478981018
+    ],
+    "error": 8.19574702798112e-06,
+    "authoredDeltaMagnitude": 8.180737495422363e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 252,
+    "importedVertex": 252,
+    "basis": [
+      0.14689530432224274,
+      0.1975911557674408,
+      0.08216501772403717
+    ],
+    "authoredEndpoint": [
+      0.14690004289150238,
+      0.1975911557674408,
+      0.08216501772403717
+    ],
+    "importedBasis": [
+      0.14689527451992035,
+      0.1975911259651184,
+      0.08216499537229538
+    ],
+    "importedEndpoint": [
+      0.14689527451992035,
+      0.1975911259651184,
+      0.08216499537229538
+    ],
+    "error": 4.768517098963155e-06,
+    "authoredDeltaMagnitude": 4.738569259643555e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 253,
+    "importedVertex": 253,
+    "basis": [
+      0.14375567436218262,
+      0.19944094121456146,
+      0.08628682047128677
+    ],
+    "authoredEndpoint": [
+      0.1437579095363617,
+      0.19944094121456146,
+      0.08628682047128677
+    ],
+    "importedBasis": [
+      0.14375567436218262,
+      0.19944091141223907,
+      0.08628679811954498
+    ],
+    "importedEndpoint": [
+      0.14375567436218262,
+      0.19944091141223907,
+      0.08628679811954498
+    ],
+    "error": 2.2354845983799543e-06,
+    "authoredDeltaMagnitude": 2.2351741790771484e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 258,
+    "importedVertex": 258,
+    "basis": [
+      0.15505430102348328,
+      0.1939345896244049,
+      0.10197792947292328
+    ],
+    "authoredEndpoint": [
+      0.1550583392381668,
+      0.1939345896244049,
+      0.10197792947292328
+    ],
+    "importedBasis": [
+      0.15505428612232208,
+      0.19393454492092133,
+      0.10197791457176208
+    ],
+    "importedEndpoint": [
+      0.15505428612232208,
+      0.19393454492092133,
+      0.10197791457176208
+    ],
+    "error": 4.053389753875485e-06,
+    "authoredDeltaMagnitude": 4.038214683532715e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 259,
+    "importedVertex": 259,
+    "basis": [
+      0.15896156430244446,
+      0.19155871868133545,
+      0.1047598198056221
+    ],
+    "authoredEndpoint": [
+      0.15897589921951294,
+      0.19155871868133545,
+      0.1047598198056221
+    ],
+    "importedBasis": [
+      0.15896154940128326,
+      0.19155868887901306,
+      0.10475978255271912
+    ],
+    "importedEndpoint": [
+      0.15896154940128326,
+      0.19155868887901306,
+      0.10475978255271912
+    ],
+    "error": 1.4349897532105303e-05,
+    "authoredDeltaMagnitude": 1.4334917068481445e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 272,
+    "importedVertex": 272,
+    "basis": [
+      0.21784190833568573,
+      0.11729035526514053,
+      0.12580031156539917
+    ],
+    "authoredEndpoint": [
+      0.21833908557891846,
+      0.11729035526514053,
+      0.12580031156539917
+    ],
+    "importedBasis": [
+      0.21784186363220215,
+      0.11729033291339874,
+      0.12580031156539917
+    ],
+    "importedEndpoint": [
+      0.21784186363220215,
+      0.11729033291339874,
+      0.12580031156539917
+    ],
+    "error": 0.0004972219472187003,
+    "authoredDeltaMagnitude": 0.000497177243232727,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 298,
+    "importedVertex": 298,
+    "basis": [
+      0.2232438176870346,
+      0.07901613414287567,
+      0.061675556004047394
+    ],
+    "authoredEndpoint": [
+      0.22331543266773224,
+      0.07901613414287567,
+      0.061675556004047394
+    ],
+    "importedBasis": [
+      0.22324378788471222,
+      0.07901611924171448,
+      0.061675529927015305
+    ],
+    "importedEndpoint": [
+      0.22324378788471222,
+      0.07901611924171448,
+      0.061675529927015305
+    ],
+    "error": 7.164478931535695e-05,
+    "authoredDeltaMagnitude": 7.161498069763184e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 299,
+    "importedVertex": 299,
+    "basis": [
+      0.22286948561668396,
+      0.08578295260667801,
+      0.05997223034501076
+    ],
+    "authoredEndpoint": [
+      0.2229509800672531,
+      0.08578295260667801,
+      0.05997223034501076
+    ],
+    "importedBasis": [
+      0.22286945581436157,
+      0.08578293770551682,
+      0.05997220054268837
+    ],
+    "importedEndpoint": [
+      0.22286945581436157,
+      0.08578293770551682,
+      0.05997220054268837
+    ],
+    "error": 8.152425970069816e-05,
+    "authoredDeltaMagnitude": 8.149445056915283e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 303,
+    "importedVertex": 303,
+    "basis": [
+      0.2159774899482727,
+      0.11578518897294998,
+      0.056869227439165115
+    ],
+    "authoredEndpoint": [
+      0.2160818725824356,
+      0.11578518897294998,
+      0.056869227439165115
+    ],
+    "importedBasis": [
+      0.21597746014595032,
+      0.1157851591706276,
+      0.05686919018626213
+    ],
+    "importedEndpoint": [
+      0.21597746014595032,
+      0.1157851591706276,
+      0.05686919018626213
+    ],
+    "error": 0.0001044124473841698,
+    "authoredDeltaMagnitude": 0.00010438263416290283,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 310,
+    "importedVertex": 310,
+    "basis": [
+      0.1871711164712906,
+      0.1669689416885376,
+      0.06677836924791336
+    ],
+    "authoredEndpoint": [
+      0.18700000643730164,
+      0.1669689416885376,
+      0.06677836924791336
+    ],
+    "importedBasis": [
+      0.1871710866689682,
+      0.1669689118862152,
+      0.06677835434675217
+    ],
+    "importedEndpoint": [
+      0.1871710866689682,
+      0.1669689118862152,
+      0.06677835434675217
+    ],
+    "error": 0.00017108023491130866,
+    "authoredDeltaMagnitude": 0.00017111003398895264,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 316,
+    "importedVertex": 316,
+    "basis": [
+      0.15737751126289368,
+      0.1931675672531128,
+      0.08515561372041702
+    ],
+    "authoredEndpoint": [
+      0.15738855302333832,
+      0.1931675672531128,
+      0.08515561372041702
+    ],
+    "importedBasis": [
+      0.15737751126289368,
+      0.1931675374507904,
+      0.08515558391809464
+    ],
+    "importedEndpoint": [
+      0.15737751126289368,
+      0.1931675374507904,
+      0.08515558391809464
+    ],
+    "error": 1.104184088246523e-05,
+    "authoredDeltaMagnitude": 1.1041760444641113e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 317,
+    "importedVertex": 317,
+    "basis": [
+      0.1534441113471985,
+      0.1951388418674469,
+      0.08831039071083069
+    ],
+    "authoredEndpoint": [
+      0.15344928205013275,
+      0.1951388418674469,
+      0.08831039071083069
+    ],
+    "importedBasis": [
+      0.1534441113471985,
+      0.1951388120651245,
+      0.08831039071083069
+    ],
+    "importedEndpoint": [
+      0.1534441113471985,
+      0.1951388120651245,
+      0.08831039071083069
+    ],
+    "error": 5.170788819207162e-06,
+    "authoredDeltaMagnitude": 5.170702934265137e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 322,
+    "importedVertex": 322,
+    "basis": [
+      0.16129423677921295,
+      0.1908804476261139,
+      0.09863091260194778
+    ],
+    "authoredEndpoint": [
+      0.1613004356622696,
+      0.1908804476261139,
+      0.09863091260194778
+    ],
+    "importedBasis": [
+      0.16129422187805176,
+      0.1908804178237915,
+      0.09863090515136719
+    ],
+    "importedEndpoint": [
+      0.16129422187805176,
+      0.1908804178237915,
+      0.09863090515136719
+    ],
+    "error": 6.213860152544448e-06,
+    "authoredDeltaMagnitude": 6.198883056640625e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 339,
+    "importedVertex": 339,
+    "basis": [
+      0.22278431057929993,
+      0.09970960766077042,
+      0.11463826894760132
+    ],
+    "authoredEndpoint": [
+      0.22350439429283142,
+      0.09970960766077042,
+      0.11463826894760132
+    ],
+    "importedBasis": [
+      0.22278429567813873,
+      0.09970958530902863,
+      0.11463824659585953
+    ],
+    "importedEndpoint": [
+      0.22278429567813873,
+      0.09970958530902863,
+      0.11463824659585953
+    ],
+    "error": 0.0007200986153864824,
+    "authoredDeltaMagnitude": 0.0007200837135314941,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 340,
+    "importedVertex": 340,
+    "basis": [
+      0.22401969134807587,
+      0.0932576134800911,
+      0.11314933001995087
+    ],
+    "authoredEndpoint": [
+      0.22467227280139923,
+      0.0932576134800911,
+      0.11314933001995087
+    ],
+    "importedBasis": [
+      0.22401967644691467,
+      0.0932575985789299,
+      0.11314928531646729
+    ],
+    "importedEndpoint": [
+      0.22401967644691467,
+      0.0932575985789299,
+      0.11314928531646729
+    ],
+    "error": 0.0006525963561857981,
+    "authoredDeltaMagnitude": 0.0006525814533233643,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 360,
+    "importedVertex": 360,
+    "basis": [
+      0.22261013090610504,
+      0.07119176536798477,
+      0.07329969108104706
+    ],
+    "authoredEndpoint": [
+      0.22268788516521454,
+      0.07119176536798477,
+      0.07329969108104706
+    ],
+    "importedBasis": [
+      0.22261010110378265,
+      0.07119174301624298,
+      0.07329966872930527
+    ],
+    "importedEndpoint": [
+      0.22261010110378265,
+      0.07119174301624298,
+      0.07329966872930527
+    ],
+    "error": 7.77840678547988e-05,
+    "authoredDeltaMagnitude": 7.775425910949707e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 373,
+    "importedVertex": 373,
+    "basis": [
+      0.1981799304485321,
+      0.1571207195520401,
+      0.07287122309207916
+    ],
+    "authoredEndpoint": [
+      0.19826887547969818,
+      0.1571207195520401,
+      0.07287122309207916
+    ],
+    "importedBasis": [
+      0.1981799155473709,
+      0.1571207046508789,
+      0.07287122309207916
+    ],
+    "importedEndpoint": [
+      0.1981799155473709,
+      0.1571207046508789,
+      0.07287122309207916
+    ],
+    "error": 8.895993357527394e-05,
+    "authoredDeltaMagnitude": 8.894503116607666e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 379,
+    "importedVertex": 379,
+    "basis": [
+      0.17046213150024414,
+      0.1857527494430542,
+      0.08604735881090164
+    ],
+    "authoredEndpoint": [
+      0.1704884022474289,
+      0.1857527494430542,
+      0.08604735881090164
+    ],
+    "importedBasis": [
+      0.17046210169792175,
+      0.185752734541893,
+      0.08604732900857925
+    ],
+    "importedEndpoint": [
+      0.17046210169792175,
+      0.185752734541893,
+      0.08604732900857925
+    ],
+    "error": 2.6300570613593257e-05,
+    "authoredDeltaMagnitude": 2.6270747184753418e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 380,
+    "importedVertex": 380,
+    "basis": [
+      0.16634878516197205,
+      0.18851114809513092,
+      0.0883035957813263
+    ],
+    "authoredEndpoint": [
+      0.1663637012243271,
+      0.18851114809513092,
+      0.0883035957813263
+    ],
+    "importedBasis": [
+      0.16634878516197205,
+      0.18851111829280853,
+      0.0883035734295845
+    ],
+    "importedEndpoint": [
+      0.16634878516197205,
+      0.18851111829280853,
+      0.0883035734295845
+    ],
+    "error": 1.4916108874578084e-05,
+    "authoredDeltaMagnitude": 1.4916062355041504e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 381,
+    "importedVertex": 381,
+    "basis": [
+      0.162798672914505,
+      0.19061033427715302,
+      0.09044043719768524
+    ],
+    "authoredEndpoint": [
+      0.16280551254749298,
+      0.19061033427715302,
+      0.09044043719768524
+    ],
+    "importedBasis": [
+      0.1627986580133438,
+      0.19061030447483063,
+      0.09044042229652405
+    ],
+    "importedEndpoint": [
+      0.1627986580133438,
+      0.19061030447483063,
+      0.09044042229652405
+    ],
+    "error": 6.8546151332632275e-06,
+    "authoredDeltaMagnitude": 6.839632987976074e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 382,
+    "importedVertex": 382,
+    "basis": [
+      0.16005906462669373,
+      0.19203391671180725,
+      0.092402882874012
+    ],
+    "authoredEndpoint": [
+      0.16006118059158325,
+      0.19203391671180725,
+      0.092402882874012
+    ],
+    "importedBasis": [
+      0.16005906462669373,
+      0.19203388690948486,
+      0.0924028605222702
+    ],
+    "importedEndpoint": [
+      0.16005906462669373,
+      0.19203388690948486,
+      0.0924028605222702
+    ],
+    "error": 2.1162927946031267e-06,
+    "authoredDeltaMagnitude": 2.115964889526367e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 409,
+    "importedVertex": 409,
+    "basis": [
+      0.2236301749944687,
+      0.07066819816827774,
+      0.09681455790996552
+    ],
+    "authoredEndpoint": [
+      0.22394299507141113,
+      0.07066819816827774,
+      0.09681455790996552
+    ],
+    "importedBasis": [
+      0.2236301600933075,
+      0.07066817581653595,
+      0.09681452065706253
+    ],
+    "importedEndpoint": [
+      0.2236301600933075,
+      0.07066817581653595,
+      0.09681452065706253
+    ],
+    "error": 0.00031283498112021074,
+    "authoredDeltaMagnitude": 0.00031282007694244385,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 421,
+    "importedVertex": 421,
+    "basis": [
+      0.22029148042201996,
+      0.06337369978427887,
+      0.0832894816994667
+    ],
+    "authoredEndpoint": [
+      0.22032713890075684,
+      0.06337369978427887,
+      0.0832894816994667
+    ],
+    "importedBasis": [
+      0.22029146552085876,
+      0.06337368488311768,
+      0.08328943699598312
+    ],
+    "importedEndpoint": [
+      0.22029146552085876,
+      0.06337368488311768,
+      0.08328943699598312
+    ],
+    "error": 3.567341101994826e-05,
+    "authoredDeltaMagnitude": 3.565847873687744e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 422,
+    "importedVertex": 422,
+    "basis": [
+      0.22180752456188202,
+      0.06675279140472412,
+      0.08215522021055222
+    ],
+    "authoredEndpoint": [
+      0.22186307609081268,
+      0.06675279140472412,
+      0.08215522021055222
+    ],
+    "importedBasis": [
+      0.22180749475955963,
+      0.06675277650356293,
+      0.08215519785881042
+    ],
+    "importedEndpoint": [
+      0.22180749475955963,
+      0.06675277650356293,
+      0.08215519785881042
+    ],
+    "error": 5.5581337744844125e-05,
+    "authoredDeltaMagnitude": 5.555152893066406e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 443,
+    "importedVertex": 443,
+    "basis": [
+      0.176604762673378,
+      0.18151013553142548,
+      0.08975005149841309
+    ],
+    "authoredEndpoint": [
+      0.17663957178592682,
+      0.18151013553142548,
+      0.08975005149841309
+    ],
+    "importedBasis": [
+      0.1766047477722168,
+      0.1815101057291031,
+      0.08975003659725189
+    ],
+    "importedEndpoint": [
+      0.1766047477722168,
+      0.1815101057291031,
+      0.08975003659725189
+    ],
+    "error": 3.482402965049885e-05,
+    "authoredDeltaMagnitude": 3.4809112548828125e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 444,
+    "importedVertex": 444,
+    "basis": [
+      0.17277753353118896,
+      0.1843203604221344,
+      0.09113675355911255
+    ],
+    "authoredEndpoint": [
+      0.1727970540523529,
+      0.1843203604221344,
+      0.09113675355911255
+    ],
+    "importedBasis": [
+      0.17277750372886658,
+      0.1843203455209732,
+      0.09113675355911255
+    ],
+    "importedEndpoint": [
+      0.17277750372886658,
+      0.1843203455209732,
+      0.09113675355911255
+    ],
+    "error": 1.9550329165123487e-05,
+    "authoredDeltaMagnitude": 1.952052116394043e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 445,
+    "importedVertex": 445,
+    "basis": [
+      0.1694686859846115,
+      0.18653467297554016,
+      0.09235747158527374
+    ],
+    "authoredEndpoint": [
+      0.16947749257087708,
+      0.18653467297554016,
+      0.09235747158527374
+    ],
+    "importedBasis": [
+      0.16946867108345032,
+      0.18653462827205658,
+      0.09235744178295135
+    ],
+    "importedEndpoint": [
+      0.16946867108345032,
+      0.18653462827205658,
+      0.09235744178295135
+    ],
+    "error": 8.821651035963177e-06,
+    "authoredDeltaMagnitude": 8.806586265563965e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C50",
+    "sourceOrdinal": 446,
+    "importedVertex": 446,
+    "basis": [
+      0.16687537729740143,
+      0.18813173472881317,
+      0.09336024522781372
+    ],
+    "authoredEndpoint": [
+      0.16687804460525513,
+      0.18813173472881317,
+      0.09336024522781372
+    ],
+    "importedBasis": [
+      0.16687534749507904,
+      0.18813170492649078,
+      0.09336020052433014
+    ],
+    "importedEndpoint": [
+      0.16687534749507904,
+      0.18813170492649078,
+      0.09336020052433014
+    ],
+    "error": 2.6976452475840806e-06,
+    "authoredDeltaMagnitude": 2.6673078536987305e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 70,
+    "importedVertex": 70,
+    "basis": [
+      0.16981898248195648,
+      0.18407022953033447,
+      0.12936484813690186
+    ],
+    "authoredEndpoint": [
+      0.16982130706310272,
+      0.18407022953033447,
+      0.12936484813690186
+    ],
+    "importedBasis": [
+      0.1698189675807953,
+      0.18407019972801208,
+      0.12936481833457947
+    ],
+    "importedEndpoint": [
+      0.1698189675807953,
+      0.18407019972801208,
+      0.12936481833457947
+    ],
+    "error": 2.3398619240537457e-06,
+    "authoredDeltaMagnitude": 2.3245811462402344e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 79,
+    "importedVertex": 79,
+    "basis": [
+      0.22032584249973297,
+      0.11833519488573074,
+      0.14823025465011597
+    ],
+    "authoredEndpoint": [
+      0.22033622860908508,
+      0.11833519488573074,
+      0.14823025465011597
+    ],
+    "importedBasis": [
+      0.22032581269741058,
+      0.11833517253398895,
+      0.14823023974895477
+    ],
+    "importedEndpoint": [
+      0.22032581269741058,
+      0.11833517253398895,
+      0.14823023974895477
+    ],
+    "error": 1.0415946315911062e-05,
+    "authoredDeltaMagnitude": 1.0386109352111816e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 108,
+    "importedVertex": 108,
+    "basis": [
+      0.22380942106246948,
+      0.08759664744138718,
+      0.034142494201660156
+    ],
+    "authoredEndpoint": [
+      0.22381147742271423,
+      0.08759664744138718,
+      0.034142494201660156
+    ],
+    "importedBasis": [
+      0.2238093912601471,
+      0.08759663254022598,
+      0.03414248675107956
+    ],
+    "importedEndpoint": [
+      0.2238093912601471,
+      0.08759663254022598,
+      0.03414248675107956
+    ],
+    "error": 2.0862290891191144e-06,
+    "authoredDeltaMagnitude": 2.0563602447509766e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 109,
+    "importedVertex": 109,
+    "basis": [
+      0.220638707280159,
+      0.09673266112804413,
+      0.03240067884325981
+    ],
+    "authoredEndpoint": [
+      0.22064091265201569,
+      0.09673266112804413,
+      0.03240067884325981
+    ],
+    "importedBasis": [
+      0.2206386774778366,
+      0.09673263877630234,
+      0.03240066021680832
+    ],
+    "importedEndpoint": [
+      0.2206386774778366,
+      0.09673263877630234,
+      0.03240066021680832
+    ],
+    "error": 2.2353635399794553e-06,
+    "authoredDeltaMagnitude": 2.205371856689453e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 110,
+    "importedVertex": 110,
+    "basis": [
+      0.21708598732948303,
+      0.10612409561872482,
+      0.031306929886341095
+    ],
+    "authoredEndpoint": [
+      0.2170882672071457,
+      0.10612409561872482,
+      0.031306929886341095
+    ],
+    "importedBasis": [
+      0.21708595752716064,
+      0.10612407326698303,
+      0.0313069187104702
+    ],
+    "importedEndpoint": [
+      0.21708595752716064,
+      0.10612407326698303,
+      0.0313069187104702
+    ],
+    "error": 2.309815173076675e-06,
+    "authoredDeltaMagnitude": 2.2798776626586914e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 111,
+    "importedVertex": 111,
+    "basis": [
+      0.21305756270885468,
+      0.11565948277711868,
+      0.0308793056756258
+    ],
+    "authoredEndpoint": [
+      0.2130599021911621,
+      0.11565948277711868,
+      0.0308793056756258
+    ],
+    "importedBasis": [
+      0.2130575329065323,
+      0.1156594529747963,
+      0.030879294499754906
+    ],
+    "importedEndpoint": [
+      0.2130575329065323,
+      0.1156594529747963,
+      0.030879294499754906
+    ],
+    "error": 2.3694984143526426e-06,
+    "authoredDeltaMagnitude": 2.339482307434082e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 112,
+    "importedVertex": 112,
+    "basis": [
+      0.2085224688053131,
+      0.12522442638874054,
+      0.031125975772738457
+    ],
+    "authoredEndpoint": [
+      0.20852480828762054,
+      0.12522442638874054,
+      0.031125975772738457
+    ],
+    "importedBasis": [
+      0.20852245390415192,
+      0.12522439658641815,
+      0.031125975772738457
+    ],
+    "importedEndpoint": [
+      0.20852245390415192,
+      0.12522439658641815,
+      0.031125975772738457
+    ],
+    "error": 2.354572083366356e-06,
+    "authoredDeltaMagnitude": 2.339482307434082e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 113,
+    "importedVertex": 113,
+    "basis": [
+      0.20363816618919373,
+      0.13470366597175598,
+      0.03204500675201416
+    ],
+    "authoredEndpoint": [
+      0.20364044606685638,
+      0.13470366597175598,
+      0.03204500675201416
+    ],
+    "importedBasis": [
+      0.20363815128803253,
+      0.1347036361694336,
+      0.03204496577382088
+    ],
+    "importedEndpoint": [
+      0.20363815128803253,
+      0.1347036361694336,
+      0.03204496577382088
+    ],
+    "error": 2.295338153986573e-06,
+    "authoredDeltaMagnitude": 2.2798776626586914e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 114,
+    "importedVertex": 114,
+    "basis": [
+      0.19833903014659882,
+      0.14398324489593506,
+      0.03362423554062843
+    ],
+    "authoredEndpoint": [
+      0.19834120571613312,
+      0.14398324489593506,
+      0.03362423554062843
+    ],
+    "importedBasis": [
+      0.19833900034427643,
+      0.14398321509361267,
+      0.03362422436475754
+    ],
+    "importedEndpoint": [
+      0.19833900034427643,
+      0.14398321509361267,
+      0.03362422436475754
+    ],
+    "error": 2.2056015290137648e-06,
+    "authoredDeltaMagnitude": 2.175569534301758e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 115,
+    "importedVertex": 115,
+    "basis": [
+      0.19275496900081635,
+      0.15295247733592987,
+      0.035841766744852066
+    ],
+    "authoredEndpoint": [
+      0.1927570402622223,
+      0.15295247733592987,
+      0.035841766744852066
+    ],
+    "importedBasis": [
+      0.19275495409965515,
+      0.15295244753360748,
+      0.035841722041368484
+    ],
+    "importedEndpoint": [
+      0.19275495409965515,
+      0.15295244753360748,
+      0.035841722041368484
+    ],
+    "error": 2.0868542920852523e-06,
+    "authoredDeltaMagnitude": 2.0712614059448242e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 131,
+    "importedVertex": 131,
+    "basis": [
+      0.14991889894008636,
+      0.19645057618618011,
+      0.11259954422712326
+    ],
+    "authoredEndpoint": [
+      0.1499210000038147,
+      0.19645057618618011,
+      0.11259954422712326
+    ],
+    "importedBasis": [
+      0.14991888403892517,
+      0.19645054638385773,
+      0.11259954422712326
+    ],
+    "importedEndpoint": [
+      0.14991888403892517,
+      0.19645054638385773,
+      0.11259954422712326
+    ],
+    "error": 2.1161747546287456e-06,
+    "authoredDeltaMagnitude": 2.1010637283325195e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 132,
+    "importedVertex": 132,
+    "basis": [
+      0.1563076227903366,
+      0.19262254238128662,
+      0.11684822291135788
+    ],
+    "authoredEndpoint": [
+      0.15631243586540222,
+      0.19262254238128662,
+      0.11684822291135788
+    ],
+    "importedBasis": [
+      0.15630759298801422,
+      0.19262251257896423,
+      0.11684819310903549
+    ],
+    "importedEndpoint": [
+      0.15630759298801422,
+      0.19262251257896423,
+      0.11684819310903549
+    ],
+    "error": 4.843060783434979e-06,
+    "authoredDeltaMagnitude": 4.813075065612793e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 133,
+    "importedVertex": 133,
+    "basis": [
+      0.16338500380516052,
+      0.1881486475467682,
+      0.12087103724479675
+    ],
+    "authoredEndpoint": [
+      0.1633937507867813,
+      0.1881486475467682,
+      0.12087103724479675
+    ],
+    "importedBasis": [
+      0.16338500380516052,
+      0.188148632645607,
+      0.12087102234363556
+    ],
+    "importedEndpoint": [
+      0.16338500380516052,
+      0.188148632645607,
+      0.12087102234363556
+    ],
+    "error": 8.747007006034863e-06,
+    "authoredDeltaMagnitude": 8.746981620788574e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 134,
+    "importedVertex": 134,
+    "basis": [
+      0.1704842895269394,
+      0.18308037519454956,
+      0.12462794035673141
+    ],
+    "authoredEndpoint": [
+      0.1704980581998825,
+      0.18308037519454956,
+      0.12462794035673141
+    ],
+    "importedBasis": [
+      0.1704842746257782,
+      0.18308034539222717,
+      0.12462791800498962
+    ],
+    "importedEndpoint": [
+      0.1704842746257782,
+      0.18308034539222717,
+      0.12462791800498962
+    ],
+    "error": 1.3783624445977941e-05,
+    "authoredDeltaMagnitude": 1.3768672943115234e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 135,
+    "importedVertex": 135,
+    "basis": [
+      0.17667169868946075,
+      0.17747189104557037,
+      0.12808312475681305
+    ],
+    "authoredEndpoint": [
+      0.17669141292572021,
+      0.17747189104557037,
+      0.12808312475681305
+    ],
+    "importedBasis": [
+      0.17667168378829956,
+      0.17747186124324799,
+      0.12808310985565186
+    ],
+    "importedEndpoint": [
+      0.17667168378829956,
+      0.17747186124324799,
+      0.12808310985565186
+    ],
+    "error": 1.9729165557267907e-05,
+    "authoredDeltaMagnitude": 1.971423625946045e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 143,
+    "importedVertex": 143,
+    "basis": [
+      0.21654920279979706,
+      0.1201137974858284,
+      0.14182564616203308
+    ],
+    "authoredEndpoint": [
+      0.21661211550235748,
+      0.1201137974858284,
+      0.14182564616203308
+    ],
+    "importedBasis": [
+      0.21654917299747467,
+      0.12011376768350601,
+      0.1418256312608719
+    ],
+    "importedEndpoint": [
+      0.21654917299747467,
+      0.12011376768350601,
+      0.1418256312608719
+    ],
+    "error": 6.294251370215444e-05,
+    "authoredDeltaMagnitude": 6.29127025604248e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 172,
+    "importedVertex": 172,
+    "basis": [
+      0.22226384282112122,
+      0.08913237601518631,
+      0.0412016324698925
+    ],
+    "authoredEndpoint": [
+      0.22227616608142853,
+      0.08913237601518631,
+      0.0412016324698925
+    ],
+    "importedBasis": [
+      0.22226381301879883,
+      0.08913236111402512,
+      0.04120161011815071
+    ],
+    "importedEndpoint": [
+      0.22226381301879883,
+      0.08913236111402512,
+      0.04120161011815071
+    ],
+    "error": 1.2353091838817093e-05,
+    "authoredDeltaMagnitude": 1.2323260307312012e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 173,
+    "importedVertex": 173,
+    "basis": [
+      0.2195322960615158,
+      0.09777715057134628,
+      0.039678510278463364
+    ],
+    "authoredEndpoint": [
+      0.21954545378684998,
+      0.09777715057134628,
+      0.039678510278463364
+    ],
+    "importedBasis": [
+      0.21953226625919342,
+      0.0977771207690239,
+      0.03967849165201187
+    ],
+    "importedEndpoint": [
+      0.21953226625919342,
+      0.0977771207690239,
+      0.03967849165201187
+    ],
+    "error": 1.3187574485686233e-05,
+    "authoredDeltaMagnitude": 1.315772533416748e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 174,
+    "importedVertex": 174,
+    "basis": [
+      0.2164808064699173,
+      0.10666598379611969,
+      0.03873106837272644
+    ],
+    "authoredEndpoint": [
+      0.21649453043937683,
+      0.10666598379611969,
+      0.03873106837272644
+    ],
+    "importedBasis": [
+      0.2164807915687561,
+      0.1066659614443779,
+      0.03873104229569435
+    ],
+    "importedEndpoint": [
+      0.2164807915687561,
+      0.1066659614443779,
+      0.03873104229569435
+    ],
+    "error": 1.373891355038869e-05,
+    "authoredDeltaMagnitude": 1.3723969459533691e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 175,
+    "importedVertex": 175,
+    "basis": [
+      0.21291078627109528,
+      0.11569573730230331,
+      0.03837639093399048
+    ],
+    "authoredEndpoint": [
+      0.21292482316493988,
+      0.11569573730230331,
+      0.03837639093399048
+    ],
+    "importedBasis": [
+      0.2129107564687729,
+      0.11569571495056152,
+      0.038376372307538986
+    ],
+    "importedEndpoint": [
+      0.2129107564687729,
+      0.11569571495056152,
+      0.038376372307538986
+    ],
+    "error": 1.4066726257360984e-05,
+    "authoredDeltaMagnitude": 1.4036893844604492e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 176,
+    "importedVertex": 176,
+    "basis": [
+      0.20885278284549713,
+      0.12476067245006561,
+      0.038622405380010605
+    ],
+    "authoredEndpoint": [
+      0.20886678993701935,
+      0.12476067245006561,
+      0.038622405380010605
+    ],
+    "importedBasis": [
+      0.20885276794433594,
+      0.12476064264774323,
+      0.03862237185239792
+    ],
+    "importedEndpoint": [
+      0.20885276794433594,
+      0.12476064264774323,
+      0.03862237185239792
+    ],
+    "error": 1.4022064437623078e-05,
+    "authoredDeltaMagnitude": 1.4007091522216797e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 177,
+    "importedVertex": 177,
+    "basis": [
+      0.20445869863033295,
+      0.1337541937828064,
+      0.03946749120950699
+    ],
+    "authoredEndpoint": [
+      0.2044723927974701,
+      0.1337541937828064,
+      0.03946749120950699
+    ],
+    "importedBasis": [
+      0.20445866882801056,
+      0.133754163980484,
+      0.03946748003363609
+    ],
+    "importedEndpoint": [
+      0.20445866882801056,
+      0.133754163980484,
+      0.03946748003363609
+    ],
+    "error": 1.3724006368576322e-05,
+    "authoredDeltaMagnitude": 1.3694167137145996e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 178,
+    "importedVertex": 178,
+    "basis": [
+      0.19955216348171234,
+      0.14257077872753143,
+      0.040900349617004395
+    ],
+    "authoredEndpoint": [
+      0.19956529140472412,
+      0.14257077872753143,
+      0.040900349617004395
+    ],
+    "importedBasis": [
+      0.19955213367938995,
+      0.14257074892520905,
+      0.040900349617004395
+    ],
+    "importedEndpoint": [
+      0.19955213367938995,
+      0.14257074892520905,
+      0.040900349617004395
+    ],
+    "error": 1.3157759085338675e-05,
+    "authoredDeltaMagnitude": 1.3127923011779785e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 179,
+    "importedVertex": 179,
+    "basis": [
+      0.19447754323482513,
+      0.1511077731847763,
+      0.04290046915411949
+    ],
+    "authoredEndpoint": [
+      0.19448983669281006,
+      0.1511077731847763,
+      0.04290046915411949
+    ],
+    "importedBasis": [
+      0.19447752833366394,
+      0.15110774338245392,
+      0.0429004542529583
+    ],
+    "importedEndpoint": [
+      0.19447752833366394,
+      0.15110774338245392,
+      0.0429004542529583
+    ],
+    "error": 1.2308404246402345e-05,
+    "authoredDeltaMagnitude": 1.2293457984924316e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 180,
+    "importedVertex": 180,
+    "basis": [
+      0.1887657791376114,
+      0.1592671126127243,
+      0.04543858766555786
+    ],
+    "authoredEndpoint": [
+      0.18877704441547394,
+      0.1592671126127243,
+      0.04543858766555786
+    ],
+    "importedBasis": [
+      0.1887657642364502,
+      0.15926708281040192,
+      0.04543856531381607
+    ],
+    "importedEndpoint": [
+      0.1887657642364502,
+      0.15926708281040192,
+      0.04543856531381607
+    ],
+    "error": 1.1280240537615546e-05,
+    "authoredDeltaMagnitude": 1.1265277862548828e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 181,
+    "importedVertex": 181,
+    "basis": [
+      0.18229469656944275,
+      0.16695696115493774,
+      0.04847703129053116
+    ],
+    "authoredEndpoint": [
+      0.1823047399520874,
+      0.16695696115493774,
+      0.04847703129053116
+    ],
+    "importedBasis": [
+      0.18229466676712036,
+      0.16695693135261536,
+      0.04847700521349907
+    ],
+    "importedEndpoint": [
+      0.18229466676712036,
+      0.16695693135261536,
+      0.04847700521349907
+    ],
+    "error": 1.0073262806570837e-05,
+    "authoredDeltaMagnitude": 1.004338264465332e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 182,
+    "importedVertex": 182,
+    "basis": [
+      0.175187349319458,
+      0.1740931272506714,
+      0.0519709512591362
+    ],
+    "authoredEndpoint": [
+      0.17519603669643402,
+      0.1740931272506714,
+      0.0519709512591362
+    ],
+    "importedBasis": [
+      0.17518733441829681,
+      0.174093097448349,
+      0.0519709438085556
+    ],
+    "importedEndpoint": [
+      0.17518733441829681,
+      0.174093097448349,
+      0.0519709438085556
+    ],
+    "error": 8.70233235787294e-06,
+    "authoredDeltaMagnitude": 8.687376976013184e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 183,
+    "importedVertex": 183,
+    "basis": [
+      0.16786664724349976,
+      0.18060022592544556,
+      0.055869199335575104
+    ],
+    "authoredEndpoint": [
+      0.16787393391132355,
+      0.18060022592544556,
+      0.055869199335575104
+    ],
+    "importedBasis": [
+      0.16786661744117737,
+      0.18060019612312317,
+      0.05586916208267212
+    ],
+    "importedEndpoint": [
+      0.16786661744117737,
+      0.18060019612312317,
+      0.05586916208267212
+    ],
+    "error": 7.316625681086327e-06,
+    "authoredDeltaMagnitude": 7.286667823791504e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 185,
+    "importedVertex": 185,
+    "basis": [
+      0.15378570556640625,
+      0.19147568941116333,
+      0.06464844197034836
+    ],
+    "authoredEndpoint": [
+      0.15379026532173157,
+      0.19147568941116333,
+      0.06464844197034836
+    ],
+    "importedBasis": [
+      0.15378569066524506,
+      0.19147565960884094,
+      0.06464842706918716
+    ],
+    "importedEndpoint": [
+      0.15378569066524506,
+      0.19147565960884094,
+      0.06464842706918716
+    ],
+    "error": 4.574777829862768e-06,
+    "authoredDeltaMagnitude": 4.559755325317383e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 186,
+    "importedVertex": 186,
+    "basis": [
+      0.14732486009597778,
+      0.19574497640132904,
+      0.06940580904483795
+    ],
+    "authoredEndpoint": [
+      0.14732816815376282,
+      0.19574497640132904,
+      0.06940580904483795
+    ],
+    "importedBasis": [
+      0.14732486009597778,
+      0.19574496150016785,
+      0.06940578669309616
+    ],
+    "importedEndpoint": [
+      0.14732486009597778,
+      0.19574496150016785,
+      0.06940578669309616
+    ],
+    "error": 3.3081668570510844e-06,
+    "authoredDeltaMagnitude": 3.3080577850341797e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 187,
+    "importedVertex": 187,
+    "basis": [
+      0.14200660586357117,
+      0.19918766617774963,
+      0.07432211190462112
+    ],
+    "authoredEndpoint": [
+      0.14200879633426666,
+      0.19918766617774963,
+      0.07432211190462112
+    ],
+    "importedBasis": [
+      0.14200659096240997,
+      0.19918763637542725,
+      0.07432206720113754
+    ],
+    "importedEndpoint": [
+      0.14200659096240997,
+      0.19918763637542725,
+      0.07432206720113754
+    ],
+    "error": 2.2060262025057436e-06,
+    "authoredDeltaMagnitude": 2.1904706954956055e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 195,
+    "importedVertex": 195,
+    "basis": [
+      0.15405750274658203,
+      0.1940707564353943,
+      0.10878562927246094
+    ],
+    "authoredEndpoint": [
+      0.1540631800889969,
+      0.1940707564353943,
+      0.10878562927246094
+    ],
+    "importedBasis": [
+      0.15405750274658203,
+      0.1940707266330719,
+      0.10878562927246094
+    ],
+    "importedEndpoint": [
+      0.15405750274658203,
+      0.1940707266330719,
+      0.10878562927246094
+    ],
+    "error": 5.677420635635708e-06,
+    "authoredDeltaMagnitude": 5.677342414855957e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 196,
+    "importedVertex": 196,
+    "basis": [
+      0.1595764458179474,
+      0.1906300187110901,
+      0.11232483386993408
+    ],
+    "authoredEndpoint": [
+      0.15958957374095917,
+      0.1906300187110901,
+      0.11232483386993408
+    ],
+    "importedBasis": [
+      0.159576416015625,
+      0.1906300038099289,
+      0.1123247891664505
+    ],
+    "importedEndpoint": [
+      0.159576416015625,
+      0.1906300038099289,
+      0.1123247891664505
+    ],
+    "error": 1.3157809711933138e-05,
+    "authoredDeltaMagnitude": 1.3127923011779785e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 197,
+    "importedVertex": 197,
+    "basis": [
+      0.1656297743320465,
+      0.1865554004907608,
+      0.1157258152961731
+    ],
+    "authoredEndpoint": [
+      0.16565383970737457,
+      0.1865554004907608,
+      0.1157258152961731
+    ],
+    "importedBasis": [
+      0.16562975943088531,
+      0.1865553855895996,
+      0.1157258003950119
+    ],
+    "importedEndpoint": [
+      0.16562975943088531,
+      0.1865553855895996,
+      0.1157258003950119
+    ],
+    "error": 2.4080285710271637e-05,
+    "authoredDeltaMagnitude": 2.4065375328063965e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 198,
+    "importedVertex": 198,
+    "basis": [
+      0.17187057435512543,
+      0.1818925440311432,
+      0.1189437136054039
+    ],
+    "authoredEndpoint": [
+      0.17190879583358765,
+      0.1818925440311432,
+      0.1189437136054039
+    ],
+    "importedBasis": [
+      0.17187055945396423,
+      0.1818925142288208,
+      0.1189437136054039
+    ],
+    "importedEndpoint": [
+      0.17187055945396423,
+      0.1818925142288208,
+      0.1189437136054039
+    ],
+    "error": 3.823639123772246e-05,
+    "authoredDeltaMagnitude": 3.822147846221924e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 199,
+    "importedVertex": 199,
+    "basis": [
+      0.17742155492305756,
+      0.17669038474559784,
+      0.12193774431943893
+    ],
+    "authoredEndpoint": [
+      0.17747651040554047,
+      0.17669038474559784,
+      0.12193774431943893
+    ],
+    "importedBasis": [
+      0.17742154002189636,
+      0.17669035494327545,
+      0.12193771451711655
+    ],
+    "importedEndpoint": [
+      0.17742154002189636,
+      0.17669035494327545,
+      0.12193771451711655
+    ],
+    "error": 5.497039980150059e-05,
+    "authoredDeltaMagnitude": 5.4955482482910156e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 200,
+    "importedVertex": 200,
+    "basis": [
+      0.18281909823417664,
+      0.17100071907043457,
+      0.12467048317193985
+    ],
+    "authoredEndpoint": [
+      0.18289273977279663,
+      0.17100071907043457,
+      0.12467048317193985
+    ],
+    "importedBasis": [
+      0.18281908333301544,
+      0.17100068926811218,
+      0.12467046082019806
+    ],
+    "importedEndpoint": [
+      0.18281908333301544,
+      0.17100068926811218,
+      0.12467046082019806
+    ],
+    "error": 7.365644920180919e-05,
+    "authoredDeltaMagnitude": 7.364153861999512e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 201,
+    "importedVertex": 201,
+    "basis": [
+      0.18797187507152557,
+      0.16487759351730347,
+      0.12710817158222198
+    ],
+    "authoredEndpoint": [
+      0.18806512653827667,
+      0.16487759351730347,
+      0.12710817158222198
+    ],
+    "importedBasis": [
+      0.18797184526920319,
+      0.16487756371498108,
+      0.1271081268787384
+    ],
+    "importedEndpoint": [
+      0.18797184526920319,
+      0.16487756371498108,
+      0.1271081268787384
+    ],
+    "error": 9.328128454593677e-05,
+    "authoredDeltaMagnitude": 9.325146675109863e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 202,
+    "importedVertex": 202,
+    "basis": [
+      0.1934480518102646,
+      0.15837688744068146,
+      0.12922075390815735
+    ],
+    "authoredEndpoint": [
+      0.19356094300746918,
+      0.15837688744068146,
+      0.12922075390815735
+    ],
+    "importedBasis": [
+      0.193448007106781,
+      0.15837685763835907,
+      0.12922070920467377
+    ],
+    "importedEndpoint": [
+      0.193448007106781,
+      0.15837685763835907,
+      0.12922070920467377
+    ],
+    "error": 0.00011293591346789725,
+    "authoredDeltaMagnitude": 0.00011289119720458984,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 203,
+    "importedVertex": 203,
+    "basis": [
+      0.19861553609371185,
+      0.1515558958053589,
+      0.13098202645778656
+    ],
+    "authoredEndpoint": [
+      0.1987471580505371,
+      0.1515558958053589,
+      0.13098202645778656
+    ],
+    "importedBasis": [
+      0.19861550629138947,
+      0.1515558660030365,
+      0.13098202645778656
+    ],
+    "importedEndpoint": [
+      0.19861550629138947,
+      0.1515558660030365,
+      0.13098202645778656
+    ],
+    "error": 0.00013165176252085537,
+    "authoredDeltaMagnitude": 0.00013162195682525635,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 207,
+    "importedVertex": 207,
+    "basis": [
+      0.21383732557296753,
+      0.12224812060594559,
+      0.13414011895656586
+    ],
+    "authoredEndpoint": [
+      0.2140161395072937,
+      0.12224812060594559,
+      0.13414011895656586
+    ],
+    "importedBasis": [
+      0.21383731067180634,
+      0.1222480982542038,
+      0.13414010405540466
+    ],
+    "importedEndpoint": [
+      0.21383731067180634,
+      0.1222480982542038,
+      0.13414010405540466
+    ],
+    "error": 0.00017882883750506315,
+    "authoredDeltaMagnitude": 0.00017881393432617188,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 235,
+    "importedVertex": 235,
+    "basis": [
+      0.22307096421718597,
+      0.08323977887630463,
+      0.051397643983364105
+    ],
+    "authoredEndpoint": [
+      0.22310209274291992,
+      0.08323977887630463,
+      0.051397643983364105
+    ],
+    "importedBasis": [
+      0.2230709344148636,
+      0.08323974907398224,
+      0.05139761045575142
+    ],
+    "importedEndpoint": [
+      0.2230709344148636,
+      0.08323974907398224,
+      0.05139761045575142
+    ],
+    "error": 3.115836034751272e-05,
+    "authoredDeltaMagnitude": 3.1128525733947754e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 236,
+    "importedVertex": 236,
+    "basis": [
+      0.22154401242733002,
+      0.09097525477409363,
+      0.04967254772782326
+    ],
+    "authoredEndpoint": [
+      0.22157825529575348,
+      0.09097525477409363,
+      0.04967254772782326
+    ],
+    "importedBasis": [
+      0.22154399752616882,
+      0.09097523242235184,
+      0.04967254772782326
+    ],
+    "importedEndpoint": [
+      0.22154399752616882,
+      0.09097523242235184,
+      0.04967254772782326
+    ],
+    "error": 3.425777687643678e-05,
+    "authoredDeltaMagnitude": 3.4242868423461914e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 237,
+    "importedVertex": 237,
+    "basis": [
+      0.21940486133098602,
+      0.09903053194284439,
+      0.048411909490823746
+    ],
+    "authoredEndpoint": [
+      0.21944156289100647,
+      0.09903053194284439,
+      0.048411909490823746
+    ],
+    "importedBasis": [
+      0.21940483152866364,
+      0.0990305095911026,
+      0.04841189831495285
+    ],
+    "importedEndpoint": [
+      0.21940483152866364,
+      0.0990305095911026,
+      0.04841189831495285
+    ],
+    "error": 3.6731370843749485e-05,
+    "authoredDeltaMagnitude": 3.670156002044678e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 238,
+    "importedVertex": 238,
+    "basis": [
+      0.2169358730316162,
+      0.10731624811887741,
+      0.04763999581336975
+    ],
+    "authoredEndpoint": [
+      0.21697430312633514,
+      0.10731624811887741,
+      0.04763999581336975
+    ],
+    "importedBasis": [
+      0.21693584322929382,
+      0.10731621831655502,
+      0.047639984637498856
+    ],
+    "importedEndpoint": [
+      0.21693584322929382,
+      0.10731621831655502,
+      0.047639984637498856
+    ],
+    "error": 3.845991021190126e-05,
+    "authoredDeltaMagnitude": 3.8430094718933105e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 239,
+    "importedVertex": 239,
+    "basis": [
+      0.21393267810344696,
+      0.11573925614356995,
+      0.04737289622426033
+    ],
+    "authoredEndpoint": [
+      0.21397197246551514,
+      0.11573925614356995,
+      0.04737289622426033
+    ],
+    "importedBasis": [
+      0.21393266320228577,
+      0.11573923379182816,
+      0.047372885048389435
+    ],
+    "importedEndpoint": [
+      0.21393266320228577,
+      0.11573923379182816,
+      0.047372885048389435
+    ],
+    "error": 3.9309271172795366e-05,
+    "authoredDeltaMagnitude": 3.929436206817627e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 240,
+    "importedVertex": 240,
+    "basis": [
+      0.21045303344726562,
+      0.12420416623353958,
+      0.047618161886930466
+    ],
+    "authoredEndpoint": [
+      0.21049240231513977,
+      0.12420416623353958,
+      0.047618161886930466
+    ],
+    "importedBasis": [
+      0.21045301854610443,
+      0.1242041364312172,
+      0.04761815071105957
+    ],
+    "importedEndpoint": [
+      0.21045301854610443,
+      0.1242041364312172,
+      0.04761815071105957
+    ],
+    "error": 3.9383781896961916e-05,
+    "authoredDeltaMagnitude": 3.936886787414551e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 251,
+    "importedVertex": 251,
+    "basis": [
+      0.1512545943260193,
+      0.1949450820684433,
+      0.07802480459213257
+    ],
+    "authoredEndpoint": [
+      0.15126070380210876,
+      0.1949450820684433,
+      0.07802480459213257
+    ],
+    "importedBasis": [
+      0.1512545794248581,
+      0.1949450522661209,
+      0.07802477478981018
+    ],
+    "importedEndpoint": [
+      0.1512545794248581,
+      0.1949450522661209,
+      0.07802477478981018
+    ],
+    "error": 6.124522272420978e-06,
+    "authoredDeltaMagnitude": 6.109476089477539e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 252,
+    "importedVertex": 252,
+    "basis": [
+      0.14689530432224274,
+      0.1975911557674408,
+      0.08216501772403717
+    ],
+    "authoredEndpoint": [
+      0.14689883589744568,
+      0.1975911557674408,
+      0.08216501772403717
+    ],
+    "importedBasis": [
+      0.14689527451992035,
+      0.1975911259651184,
+      0.08216499537229538
+    ],
+    "importedEndpoint": [
+      0.14689527451992035,
+      0.1975911259651184,
+      0.08216499537229538
+    ],
+    "error": 3.561572357358965e-06,
+    "authoredDeltaMagnitude": 3.5315752029418945e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 258,
+    "importedVertex": 258,
+    "basis": [
+      0.15505430102348328,
+      0.1939345896244049,
+      0.10197792947292328
+    ],
+    "authoredEndpoint": [
+      0.15505732595920563,
+      0.1939345896244049,
+      0.10197792947292328
+    ],
+    "importedBasis": [
+      0.15505428612232208,
+      0.19393454492092133,
+      0.10197791457176208
+    ],
+    "importedEndpoint": [
+      0.15505428612232208,
+      0.19393454492092133,
+      0.10197791457176208
+    ],
+    "error": 3.040202086146471e-06,
+    "authoredDeltaMagnitude": 3.0249357223510742e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 259,
+    "importedVertex": 259,
+    "basis": [
+      0.15896156430244446,
+      0.19155871868133545,
+      0.1047598198056221
+    ],
+    "authoredEndpoint": [
+      0.15897224843502045,
+      0.19155871868133545,
+      0.1047598198056221
+    ],
+    "importedBasis": [
+      0.15896154940128326,
+      0.19155868887901306,
+      0.10475978255271912
+    ],
+    "importedEndpoint": [
+      0.15896154940128326,
+      0.19155868887901306,
+      0.10475978255271912
+    ],
+    "error": 1.0699140099399218e-05,
+    "authoredDeltaMagnitude": 1.068413257598877e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 270,
+    "importedVertex": 270,
+    "basis": [
+      0.2097557932138443,
+      0.1316756308078766,
+      0.1258779764175415
+    ],
+    "authoredEndpoint": [
+      0.2100990116596222,
+      0.1316756308078766,
+      0.1258779764175415
+    ],
+    "importedBasis": [
+      0.2097557634115219,
+      0.1316756010055542,
+      0.12587794661521912
+    ],
+    "importedEndpoint": [
+      0.2097557634115219,
+      0.1316756010055542,
+      0.12587794661521912
+    ],
+    "error": 0.00034324825068784943,
+    "authoredDeltaMagnitude": 0.00034321844577789307,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 272,
+    "importedVertex": 272,
+    "basis": [
+      0.21784190833568573,
+      0.11729035526514053,
+      0.12580031156539917
+    ],
+    "authoredEndpoint": [
+      0.2182014137506485,
+      0.11729035526514053,
+      0.12580031156539917
+    ],
+    "importedBasis": [
+      0.21784186363220215,
+      0.11729033291339874,
+      0.12580031156539917
+    ],
+    "importedEndpoint": [
+      0.21784186363220215,
+      0.11729033291339874,
+      0.12580031156539917
+    ],
+    "error": 0.0003595501191411077,
+    "authoredDeltaMagnitude": 0.00035950541496276855,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 298,
+    "importedVertex": 298,
+    "basis": [
+      0.2232438176870346,
+      0.07901613414287567,
+      0.061675556004047394
+    ],
+    "authoredEndpoint": [
+      0.22329674661159515,
+      0.07901613414287567,
+      0.061675556004047394
+    ],
+    "importedBasis": [
+      0.22324378788471222,
+      0.07901611924171448,
+      0.061675529927015305
+    ],
+    "importedEndpoint": [
+      0.22324378788471222,
+      0.07901611924171448,
+      0.061675529927015305
+    ],
+    "error": 5.2958735399530304e-05,
+    "authoredDeltaMagnitude": 5.2928924560546875e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 299,
+    "importedVertex": 299,
+    "basis": [
+      0.22286948561668396,
+      0.08578295260667801,
+      0.05997223034501076
+    ],
+    "authoredEndpoint": [
+      0.22292965650558472,
+      0.08578295260667801,
+      0.05997223034501076
+    ],
+    "importedBasis": [
+      0.22286945581436157,
+      0.08578293770551682,
+      0.05997220054268837
+    ],
+    "importedEndpoint": [
+      0.22286945581436157,
+      0.08578293770551682,
+      0.05997220054268837
+    ],
+    "error": 6.020070044415941e-05,
+    "authoredDeltaMagnitude": 6.0170888900756836e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 303,
+    "importedVertex": 303,
+    "basis": [
+      0.2159774899482727,
+      0.11578518897294998,
+      0.056869227439165115
+    ],
+    "authoredEndpoint": [
+      0.21605442464351654,
+      0.11578518897294998,
+      0.056869227439165115
+    ],
+    "importedBasis": [
+      0.21597746014595032,
+      0.1157851591706276,
+      0.05686919018626213
+    ],
+    "importedEndpoint": [
+      0.21597746014595032,
+      0.1157851591706276,
+      0.05686919018626213
+    ],
+    "error": 7.696451235198186e-05,
+    "authoredDeltaMagnitude": 7.693469524383545e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 315,
+    "importedVertex": 315,
+    "basis": [
+      0.16187918186187744,
+      0.1904667466878891,
+      0.08193322271108627
+    ],
+    "authoredEndpoint": [
+      0.1618935465812683,
+      0.1904667466878891,
+      0.08193322271108627
+    ],
+    "importedBasis": [
+      0.16187918186187744,
+      0.1904667168855667,
+      0.08193317800760269
+    ],
+    "importedEndpoint": [
+      0.16187918186187744,
+      0.1904667168855667,
+      0.08193317800760269
+    ],
+    "error": 1.4364819865152361e-05,
+    "authoredDeltaMagnitude": 1.436471939086914e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 316,
+    "importedVertex": 316,
+    "basis": [
+      0.15737751126289368,
+      0.1931675672531128,
+      0.08515561372041702
+    ],
+    "authoredEndpoint": [
+      0.15738578140735626,
+      0.1931675672531128,
+      0.08515561372041702
+    ],
+    "importedBasis": [
+      0.15737751126289368,
+      0.1931675374507904,
+      0.08515558391809464
+    ],
+    "importedEndpoint": [
+      0.15737751126289368,
+      0.1931675374507904,
+      0.08515558391809464
+    ],
+    "error": 8.270251857644492e-06,
+    "authoredDeltaMagnitude": 8.27014446258545e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 317,
+    "importedVertex": 317,
+    "basis": [
+      0.1534441113471985,
+      0.1951388418674469,
+      0.08831039071083069
+    ],
+    "authoredEndpoint": [
+      0.1534479856491089,
+      0.1951388418674469,
+      0.08831039071083069
+    ],
+    "importedBasis": [
+      0.1534441113471985,
+      0.1951388120651245,
+      0.08831039071083069
+    ],
+    "importedEndpoint": [
+      0.1534441113471985,
+      0.1951388120651245,
+      0.08831039071083069
+    ],
+    "error": 3.87441653302169e-06,
+    "authoredDeltaMagnitude": 3.874301910400391e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 322,
+    "importedVertex": 322,
+    "basis": [
+      0.16129423677921295,
+      0.1908804476261139,
+      0.09863091260194778
+    ],
+    "authoredEndpoint": [
+      0.16129887104034424,
+      0.1908804476261139,
+      0.09863091260194778
+    ],
+    "importedBasis": [
+      0.16129422187805176,
+      0.1908804178237915,
+      0.09863090515136719
+    ],
+    "importedEndpoint": [
+      0.16129422187805176,
+      0.1908804178237915,
+      0.09863090515136719
+    ],
+    "error": 4.649263781653304e-06,
+    "authoredDeltaMagnitude": 4.634261131286621e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 339,
+    "importedVertex": 339,
+    "basis": [
+      0.22278431057929993,
+      0.09970960766077042,
+      0.11463826894760132
+    ],
+    "authoredEndpoint": [
+      0.22331342101097107,
+      0.09970960766077042,
+      0.11463826894760132
+    ],
+    "importedBasis": [
+      0.22278429567813873,
+      0.09970958530902863,
+      0.11463824659585953
+    ],
+    "importedEndpoint": [
+      0.22278429567813873,
+      0.09970958530902863,
+      0.11463824659585953
+    ],
+    "error": 0.0005291253337765369,
+    "authoredDeltaMagnitude": 0.0005291104316711426,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 340,
+    "importedVertex": 340,
+    "basis": [
+      0.22401969134807587,
+      0.0932576134800911,
+      0.11314933001995087
+    ],
+    "authoredEndpoint": [
+      0.2244998961687088,
+      0.0932576134800911,
+      0.11314933001995087
+    ],
+    "importedBasis": [
+      0.22401967644691467,
+      0.0932575985789299,
+      0.11314928531646729
+    ],
+    "importedEndpoint": [
+      0.22401967644691467,
+      0.0932575985789299,
+      0.11314928531646729
+    ],
+    "error": 0.0004802197241060348,
+    "authoredDeltaMagnitude": 0.00048020482063293457,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 360,
+    "importedVertex": 360,
+    "basis": [
+      0.22261013090610504,
+      0.07119176536798477,
+      0.07329969108104706
+    ],
+    "authoredEndpoint": [
+      0.22266794741153717,
+      0.07119176536798477,
+      0.07329969108104706
+    ],
+    "importedBasis": [
+      0.22261010110378265,
+      0.07119174301624298,
+      0.07329966872930527
+    ],
+    "importedEndpoint": [
+      0.22261010110378265,
+      0.07119174301624298,
+      0.07329966872930527
+    ],
+    "error": 5.7846316391201346e-05,
+    "authoredDeltaMagnitude": 5.7816505432128906e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 361,
+    "importedVertex": 361,
+    "basis": [
+      0.22345879673957825,
+      0.07651235163211823,
+      0.07166934013366699
+    ],
+    "authoredEndpoint": [
+      0.22353021800518036,
+      0.07651235163211823,
+      0.07166934013366699
+    ],
+    "importedBasis": [
+      0.22345876693725586,
+      0.07651232928037643,
+      0.07166934013366699
+    ],
+    "importedEndpoint": [
+      0.22345876693725586,
+      0.07651232928037643,
+      0.07166934013366699
+    ],
+    "error": 7.145107142060086e-05,
+    "authoredDeltaMagnitude": 7.142126560211182e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 372,
+    "importedVertex": 372,
+    "basis": [
+      0.20248515903949738,
+      0.15075944364070892,
+      0.07117369771003723
+    ],
+    "authoredEndpoint": [
+      0.20254288613796234,
+      0.15075944364070892,
+      0.07117369771003723
+    ],
+    "importedBasis": [
+      0.20248514413833618,
+      0.15075941383838654,
+      0.07117369025945663
+    ],
+    "importedEndpoint": [
+      0.20248514413833618,
+      0.15075941383838654,
+      0.07117369025945663
+    ],
+    "error": 5.774200779776362e-05,
+    "authoredDeltaMagnitude": 5.772709846496582e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 379,
+    "importedVertex": 379,
+    "basis": [
+      0.17046213150024414,
+      0.1857527494430542,
+      0.08604735881090164
+    ],
+    "authoredEndpoint": [
+      0.1704818159341812,
+      0.1857527494430542,
+      0.08604735881090164
+    ],
+    "importedBasis": [
+      0.17046210169792175,
+      0.185752734541893,
+      0.08604732900857925
+    ],
+    "importedEndpoint": [
+      0.17046210169792175,
+      0.185752734541893,
+      0.08604732900857925
+    ],
+    "error": 1.9714264417341312e-05,
+    "authoredDeltaMagnitude": 1.9684433937072754e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 380,
+    "importedVertex": 380,
+    "basis": [
+      0.16634878516197205,
+      0.18851114809513092,
+      0.0883035957813263
+    ],
+    "authoredEndpoint": [
+      0.16635997593402863,
+      0.18851114809513092,
+      0.0883035957813263
+    ],
+    "importedBasis": [
+      0.16634878516197205,
+      0.18851111829280853,
+      0.0883035734295845
+    ],
+    "importedEndpoint": [
+      0.16634878516197205,
+      0.18851111829280853,
+      0.0883035734295845
+    ],
+    "error": 1.1190834061905456e-05,
+    "authoredDeltaMagnitude": 1.119077205657959e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 381,
+    "importedVertex": 381,
+    "basis": [
+      0.162798672914505,
+      0.19061033427715302,
+      0.09044043719768524
+    ],
+    "authoredEndpoint": [
+      0.1628037989139557,
+      0.19061033427715302,
+      0.09044043719768524
+    ],
+    "importedBasis": [
+      0.1627986580133438,
+      0.19061030447483063,
+      0.09044042229652405
+    ],
+    "importedEndpoint": [
+      0.1627986580133438,
+      0.19061030447483063,
+      0.09044042229652405
+    ],
+    "error": 5.141008590172406e-06,
+    "authoredDeltaMagnitude": 5.125999450683594e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 409,
+    "importedVertex": 409,
+    "basis": [
+      0.2236301749944687,
+      0.07066819816827774,
+      0.09681455790996552
+    ],
+    "authoredEndpoint": [
+      0.2238646000623703,
+      0.07066819816827774,
+      0.09681455790996552
+    ],
+    "importedBasis": [
+      0.2236301600933075,
+      0.07066817581653595,
+      0.09681452065706253
+    ],
+    "importedEndpoint": [
+      0.2236301600933075,
+      0.07066817581653595,
+      0.09681452065706253
+    ],
+    "error": 0.00023443997308809816,
+    "authoredDeltaMagnitude": 0.00023442506790161133,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 420,
+    "importedVertex": 420,
+    "basis": [
+      0.2187267541885376,
+      0.060563474893569946,
+      0.08436885476112366
+    ],
+    "authoredEndpoint": [
+      0.21874167025089264,
+      0.060563474893569946,
+      0.08436885476112366
+    ],
+    "importedBasis": [
+      0.2187267243862152,
+      0.060563456267118454,
+      0.08436885476112366
+    ],
+    "importedEndpoint": [
+      0.2187267243862152,
+      0.060563456267118454,
+      0.08436885476112366
+    ],
+    "error": 1.494587628413674e-05,
+    "authoredDeltaMagnitude": 1.4916062355041504e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 421,
+    "importedVertex": 421,
+    "basis": [
+      0.22029148042201996,
+      0.06337369978427887,
+      0.0832894816994667
+    ],
+    "authoredEndpoint": [
+      0.22031815350055695,
+      0.06337369978427887,
+      0.0832894816994667
+    ],
+    "importedBasis": [
+      0.22029146552085876,
+      0.06337368488311768,
+      0.08328943699598312
+    ],
+    "importedEndpoint": [
+      0.22029146552085876,
+      0.06337368488311768,
+      0.08328943699598312
+    ],
+    "error": 2.6688021298263733e-05,
+    "authoredDeltaMagnitude": 2.6673078536987305e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 422,
+    "importedVertex": 422,
+    "basis": [
+      0.22180752456188202,
+      0.06675279140472412,
+      0.08215522021055222
+    ],
+    "authoredEndpoint": [
+      0.22184906899929047,
+      0.06675279140472412,
+      0.08215522021055222
+    ],
+    "importedBasis": [
+      0.22180749475955963,
+      0.06675277650356293,
+      0.08215519785881042
+    ],
+    "importedEndpoint": [
+      0.22180749475955963,
+      0.06675277650356293,
+      0.08215519785881042
+    ],
+    "error": 4.157424840982579e-05,
+    "authoredDeltaMagnitude": 4.1544437408447266e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 442,
+    "importedVertex": 442,
+    "basis": [
+      0.1807757318019867,
+      0.17813105881214142,
+      0.08824620395898819
+    ],
+    "authoredEndpoint": [
+      0.18081623315811157,
+      0.17813105881214142,
+      0.08824620395898819
+    ],
+    "importedBasis": [
+      0.1807756870985031,
+      0.17813102900981903,
+      0.0882461667060852
+    ],
+    "importedEndpoint": [
+      0.1807756870985031,
+      0.17813102900981903,
+      0.0882461667060852
+    ],
+    "error": 4.05460876747677e-05,
+    "authoredDeltaMagnitude": 4.050135612487793e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 443,
+    "importedVertex": 443,
+    "basis": [
+      0.176604762673378,
+      0.18151013553142548,
+      0.08975005149841309
+    ],
+    "authoredEndpoint": [
+      0.176630899310112,
+      0.18151013553142548,
+      0.08975005149841309
+    ],
+    "importedBasis": [
+      0.1766047477722168,
+      0.1815101057291031,
+      0.08975003659725189
+    ],
+    "importedEndpoint": [
+      0.1766047477722168,
+      0.1815101057291031,
+      0.08975003659725189
+    ],
+    "error": 2.6151559121919368e-05,
+    "authoredDeltaMagnitude": 2.613663673400879e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 444,
+    "importedVertex": 444,
+    "basis": [
+      0.17277753353118896,
+      0.1843203604221344,
+      0.09113675355911255
+    ],
+    "authoredEndpoint": [
+      0.1727921962738037,
+      0.1843203604221344,
+      0.09113675355911255
+    ],
+    "importedBasis": [
+      0.17277750372886658,
+      0.1843203455209732,
+      0.09113675355911255
+    ],
+    "importedEndpoint": [
+      0.17277750372886658,
+      0.1843203455209732,
+      0.09113675355911255
+    ],
+    "error": 1.469255249350162e-05,
+    "authoredDeltaMagnitude": 1.4662742614746094e-05,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 445,
+    "importedVertex": 445,
+    "basis": [
+      0.1694686859846115,
+      0.18653467297554016,
+      0.09235747158527374
+    ],
+    "authoredEndpoint": [
+      0.16947530210018158,
+      0.18653467297554016,
+      0.09235747158527374
+    ],
+    "importedBasis": [
+      0.16946867108345032,
+      0.18653462827205658,
+      0.09235744178295135
+    ],
+    "importedEndpoint": [
+      0.16946867108345032,
+      0.18653462827205658,
+      0.09235744178295135
+    ],
+    "error": 6.631234385100813e-06,
+    "authoredDeltaMagnitude": 6.616115570068359e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": true,
+    "candidateCount": 1
+  },
+  {
+    "shape": "eyeBlinkL_C75",
+    "sourceOrdinal": 446,
+    "importedVertex": 446,
+    "basis": [
+      0.16687537729740143,
+      0.18813173472881317,
+      0.09336024522781372
+    ],
+    "authoredEndpoint": [
+      0.1668773740530014,
+      0.18813173472881317,
+      0.09336024522781372
+    ],
+    "importedBasis": [
+      0.16687534749507904,
+      0.18813170492649078,
+      0.09336020052433014
+    ],
+    "importedEndpoint": [
+      0.16687534749507904,
+      0.18813170492649078,
+      0.09336020052433014
+    ],
+    "error": 2.027269985117277e-06,
+    "authoredDeltaMagnitude": 1.996755599975586e-06,
+    "importedDeltaMagnitude": 0.0,
+    "zeroed": false,
+    "candidateCount": 1
+  }
+]

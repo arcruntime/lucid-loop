@@ -1,0 +1,1184 @@
+{
+  "status": "NEUTRAL_ONLY_SCRATCH_UNITY_VISUAL_REVIEW_NOT_PRODUCTION_OR_LIKENESS_APPROVAL",
+  "source_geometry_blend": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-designer-eyes-v1\\trial-v6\\Ren_DesignerEyes_Pigment.blend",
+  "source_geometry_sha256": "715617c4842029775dfdef0cd289648ea87883624fe693c61a5d374812a2b13d",
+  "accepted_context": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-complete-head-v1\\Ren_H_CompleteHead_Portable.blend",
+  "accepted_context_sha256": "317b8f7379dcf8d2fe34501385e1da7cd91b3d057008d488db0c65ed3727b8f5",
+  "accepted_context_required": "Use its already cut H head geometry unchanged. Hide/remove rejected Ren_H_Eye_* meshes. Do not append a second face from this package; it contains eyes only. Material-only Tokon face/cap/closed-lip derivatives may be applied by their owners.",
+  "native_H_frame": "X horizontal, front -Y, Z up",
+  "native_to_review_world": [
+    [
+      -1.7049841005700728e-07,
+      -1.0465117692947388,
+      0.0,
+      -0.08941860496997833
+    ],
+    [
+      1.0465117692947388,
+      -1.7049841005700728e-07,
+      0.0,
+      0.0073255812749266624
+    ],
+    [
+      0.0,
+      0.0,
+      1.0465116500854492,
+      -0.4884883761405945
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "neutral_root_world_transform": "identity; child mesh transforms retain exact reviewed registered coordinates",
+  "source_neutral_mesh_positions_unchanged": true,
+  "eye_controls": "NONE: no blink, gaze, wide, squint, expression or lipsync claims. Preserve neutral geometry during this integration review.",
+  "vertex_color_export": "All final reviewed pigments are explicit active Ren_DesignerColor / COLOR_0 in linear RGB. FBX colors_type LINEAR. Runtime shader must use mesh vertex color once; white material tint. Do not multiply the same pigment a second time. Verify imported values against ranges/hash in this contract.",
+  "surface_material_guidance": "Skin shutters may use matching Tokon skin response; ink/iris/pupil/backing/crease retain graphic color and no broad corneal specular. Blender reference captures use unlit eye pigment; changed Unity lighting is a separate review variable.",
+  "uv": "Existing DesignerEyeUV retained; no raster textures required for this neutral color export. Original DesignerSkinBase and smoky attributes retained in Blender, final result encoded for portability.",
+  "native_axis_markers": [
+    {
+      "name": "Ren_H_NativeAxis_Origin",
+      "world_position": [
+        -0.08941860496997833,
+        0.0073255812749266624,
+        -0.4884883761405945
+      ],
+      "native_position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Ren_H_NativeAxis_X",
+      "world_position": [
+        -0.08941860496997833,
+        0.017790697515010834,
+        -0.4884883761405945
+      ],
+      "native_position": [
+        0.01,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Ren_H_NativeAxis_Y",
+      "world_position": [
+        -0.09988372027873993,
+        0.007325579412281513,
+        -0.4884883761405945
+      ],
+      "native_position": [
+        0,
+        0.01,
+        0
+      ]
+    },
+    {
+      "name": "Ren_H_NativeAxis_Z",
+      "world_position": [
+        -0.08941860496997833,
+        0.0073255812749266624,
+        -0.4780232608318329
+      ],
+      "native_position": [
+        0,
+        0,
+        0.01
+      ]
+    }
+  ],
+  "eyes": [
+    {
+      "object": "Ren_DesignerEye_R_SkinShutter",
+      "semantic": "skin: original H boundary pigment plus separately authored moving smoky pigment",
+      "material": "Ren_DesignerEye_R_SkinShutter_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 613,
+      "triangles": 783,
+      "color_min": [
+        0.25717565417289734,
+        0.15389204025268555,
+        0.14779219031333923,
+        1.0
+      ],
+      "color_max": [
+        0.7991027235984802,
+        0.5583403706550598,
+        0.4677838087081909,
+        1.0
+      ],
+      "color_sha256": "b131d3bfd04f418b48d20a810a48f7ccce15b3a3d9ec420a248d46e2ac76cbdb",
+      "position_sha256": "c68f4908111d1e8aa577222f0e710053816c50355acf1e16998cd244e2a4a06e",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_Backing",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_R_Backing_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 145,
+      "triangles": 144,
+      "color_min": [
+        0.5461945533752441,
+        0.4696473181247711,
+        0.514766275882721,
+        1.0
+      ],
+      "color_max": [
+        0.5461945533752441,
+        0.4696473181247711,
+        0.514766275882721,
+        1.0
+      ],
+      "color_sha256": "d4be98dcb0117604cb6c426b2b9d1ea501bf78d221572bcf04845ffd75b280ad",
+      "position_sha256": "db20d20e57fccf9309e47fc003b0a0509999ba253a06aa18a97ea3f896479e84",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_LowerInk",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_R_LowerInk_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 218,
+      "triangles": 214,
+      "color_min": [
+        0.03797231987118721,
+        0.02451501414179802,
+        0.036306485533714294,
+        1.0
+      ],
+      "color_max": [
+        0.03797231987118721,
+        0.02451501414179802,
+        0.036306485533714294,
+        1.0
+      ],
+      "color_sha256": "0ff11824e3415cb42e8b7d9937217bccff75d33a50d59e2af2dfdeaaf01518b6",
+      "position_sha256": "dd2203a165fd459aef7121627163e4e559bddaade573d6f314ce9abf8ed618b5",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_Iris",
+      "semantic": "iris: grey-blue graphic pigment, with separate pupil/highlight meshes",
+      "material": "Ren_DesignerEye_R_Iris_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 257,
+      "triangles": 448,
+      "color_min": [
+        0.01454195100814104,
+        0.017282284796237946,
+        0.029780341312289238,
+        1.0
+      ],
+      "color_max": [
+        0.21215438842773438,
+        0.23260726034641266,
+        0.34384265542030334,
+        1.0
+      ],
+      "color_sha256": "5e6a9f9decfb633e5ef1b806d4c28e182f9b8dd27b7670ff4c3f1083f2d240ed",
+      "position_sha256": "00f5a14ead4d216470e9ed31764ad7490d2fc86a3774ae70aa3a7c036c770cca",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_Pupil",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_R_Pupil_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 32,
+      "triangles": 30,
+      "color_min": [
+        0.006331374868750572,
+        0.005422868765890598,
+        0.012510408647358418,
+        1.0
+      ],
+      "color_max": [
+        0.006331374868750572,
+        0.005422868765890598,
+        0.012510408647358418,
+        1.0
+      ],
+      "color_sha256": "0b81618eb29fb0b560b346e51fe18264b024a94828606a88145c37f058886944",
+      "position_sha256": "a36f19741f891280ab24d249d89e58c8dbb9a46d051505343c0f7a740dbfc517",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_Highlight_0",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_R_Highlight_0_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 20,
+      "triangles": 18,
+      "color_min": [
+        0.5870163440704346,
+        0.6038273572921753,
+        0.6920710802078247,
+        1.0
+      ],
+      "color_max": [
+        0.5870163440704346,
+        0.6038273572921753,
+        0.6920710802078247,
+        1.0
+      ],
+      "color_sha256": "61b950cd97a073bab65bdfe8ab0e9daacafc64b100612a539c64d9a304f34d72",
+      "position_sha256": "3b005a1efaab4ea196a388ec4ed8b0d91bdd2375c7f196b20dbe3d01ee529e1a",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_Highlight_1",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_R_Highlight_1_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 20,
+      "triangles": 18,
+      "color_min": [
+        0.5870163440704346,
+        0.6038273572921753,
+        0.6920710802078247,
+        1.0
+      ],
+      "color_max": [
+        0.5870163440704346,
+        0.6038273572921753,
+        0.6920710802078247,
+        1.0
+      ],
+      "color_sha256": "61b950cd97a073bab65bdfe8ab0e9daacafc64b100612a539c64d9a304f34d72",
+      "position_sha256": "1fb3cbfce1bcb544faf7b64a65870549a0d26b7014e09f79e4c1f25fafaa928e",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_SkinShutter",
+      "semantic": "skin: original H boundary pigment plus separately authored moving smoky pigment",
+      "material": "Ren_DesignerEye_L_SkinShutter_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 588,
+      "triangles": 758,
+      "color_min": [
+        0.26517027616500854,
+        0.1590084433555603,
+        0.15190501511096954,
+        1.0
+      ],
+      "color_max": [
+        0.7991027235984802,
+        0.5583403706550598,
+        0.46492528915405273,
+        1.0
+      ],
+      "color_sha256": "e84dcdce571ea1dd5bfcbaa32611afe02c8efab1a1142f3e00f38d28eb88fb4c",
+      "position_sha256": "b3cad889b499e4b662dad5402d67df377896bdf686280da420014ff8153237f1",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_Backing",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_L_Backing_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 145,
+      "triangles": 144,
+      "color_min": [
+        0.5461945533752441,
+        0.4696473181247711,
+        0.514766275882721,
+        1.0
+      ],
+      "color_max": [
+        0.5461945533752441,
+        0.4696473181247711,
+        0.514766275882721,
+        1.0
+      ],
+      "color_sha256": "d4be98dcb0117604cb6c426b2b9d1ea501bf78d221572bcf04845ffd75b280ad",
+      "position_sha256": "bcd51f14b83f0c146c63a7450e50a39473b1b3e696021cad080f0c7ac29dd12b",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_LowerInk",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_L_LowerInk_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 276,
+      "triangles": 272,
+      "color_min": [
+        0.03797231987118721,
+        0.02451501414179802,
+        0.036306485533714294,
+        1.0
+      ],
+      "color_max": [
+        0.03797231987118721,
+        0.02451501414179802,
+        0.036306485533714294,
+        1.0
+      ],
+      "color_sha256": "7c55e48d032006b7b4a0c5b6bfab0b4bf538d9b8ce97472384105f6fa5419f7f",
+      "position_sha256": "a269c6261acdf1d95c47049b6d64a7beacde1f115fa7f25ff0a017ad7dc3e35c",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_Iris",
+      "semantic": "iris: grey-blue graphic pigment, with separate pupil/highlight meshes",
+      "material": "Ren_DesignerEye_L_Iris_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 257,
+      "triangles": 448,
+      "color_min": [
+        0.01454195100814104,
+        0.017282284796237946,
+        0.029780341312289238,
+        1.0
+      ],
+      "color_max": [
+        0.21220868825912476,
+        0.2326623499393463,
+        0.34390905499458313,
+        1.0
+      ],
+      "color_sha256": "bfb6ad053cb99dffffda2a481538f9915b91505c74f6a18a88899b6dd5d74e5c",
+      "position_sha256": "438e26add845d11e2f29e98a7ea828f06028e176e975c135c5e560601d874948",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_Pupil",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_L_Pupil_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 32,
+      "triangles": 30,
+      "color_min": [
+        0.006331374868750572,
+        0.005422868765890598,
+        0.012510408647358418,
+        1.0
+      ],
+      "color_max": [
+        0.006331374868750572,
+        0.005422868765890598,
+        0.012510408647358418,
+        1.0
+      ],
+      "color_sha256": "0b81618eb29fb0b560b346e51fe18264b024a94828606a88145c37f058886944",
+      "position_sha256": "69f6496fbf33ba43e74094e2a7f93f545b16efd1f8b152ddeaaf18375dfc3c5d",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_Highlight_0",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_L_Highlight_0_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 20,
+      "triangles": 18,
+      "color_min": [
+        0.5870163440704346,
+        0.6038273572921753,
+        0.6920710802078247,
+        1.0
+      ],
+      "color_max": [
+        0.5870163440704346,
+        0.6038273572921753,
+        0.6920710802078247,
+        1.0
+      ],
+      "color_sha256": "61b950cd97a073bab65bdfe8ab0e9daacafc64b100612a539c64d9a304f34d72",
+      "position_sha256": "9c977e286b026fbe12cc760e056f8dc795e2e90015d22e81e66374929435f4b0",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_Highlight_1",
+      "semantic": "uniform graphic eye layer",
+      "material": "Ren_DesignerEye_L_Highlight_1_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 20,
+      "triangles": 18,
+      "color_min": [
+        0.5870163440704346,
+        0.6038273572921753,
+        0.6920710802078247,
+        1.0
+      ],
+      "color_max": [
+        0.5870163440704346,
+        0.6038273572921753,
+        0.6920710802078247,
+        1.0
+      ],
+      "color_sha256": "61b950cd97a073bab65bdfe8ab0e9daacafc64b100612a539c64d9a304f34d72",
+      "position_sha256": "f50bf564ea63dcf921f2be75bb580b7e37313ca8e75bc0db78c512d85e25cd36",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_UpperInk",
+      "semantic": "upper ink/lash: dark plum graphic pigment",
+      "material": "Ren_DesignerEye_R_UpperInk_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 848,
+      "triangles": 846,
+      "color_min": [
+        0.006571403704583645,
+        0.004118273500353098,
+        0.007194409146904945,
+        1.0
+      ],
+      "color_max": [
+        0.03310476616024971,
+        0.018478473648428917,
+        0.027211781591176987,
+        1.0
+      ],
+      "color_sha256": "dcad39f2a6e15d8b15fcef97c910d3157ce89c559e154b8ba3d2a7f7cb2bdaae",
+      "position_sha256": "3c2cfc4e2da51bf9d35a2884b65accc53dbcf3a49932d5397248c919ae0bb541",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_Crease",
+      "semantic": "crease: soft taupe",
+      "material": "Ren_DesignerEye_R_Crease_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 198,
+      "triangles": 196,
+      "color_min": [
+        0.13286831974983215,
+        0.05708921328186989,
+        0.06838485598564148,
+        1.0
+      ],
+      "color_max": [
+        0.13286831974983215,
+        0.05708921328186989,
+        0.06838485598564148,
+        1.0
+      ],
+      "color_sha256": "e9de74615a3e14e9c783b9c7fc43d0832d4402c8b749c5a63ce36ccff5232a67",
+      "position_sha256": "96b4981e0fb0ad1cf7e2753a7d4c922c3d6d39bb9c1262fbce916053a5708d51",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_UpperInk",
+      "semantic": "upper ink/lash: dark plum graphic pigment",
+      "material": "Ren_DesignerEye_L_UpperInk_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 565,
+      "triangles": 561,
+      "color_min": [
+        0.0065714046359062195,
+        0.004118273966014385,
+        0.00719441007822752,
+        1.0
+      ],
+      "color_max": [
+        0.03310476243495941,
+        0.018478471785783768,
+        0.027211777865886688,
+        1.0
+      ],
+      "color_sha256": "713446e1b64d20481b775184b25e9744088ce850c2bb12c129406af3832a7934",
+      "position_sha256": "753fa628a65131e6f3360fe0a320c23374fce5cb6411fbc2434846386adf679c",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_VisibleFan_0",
+      "semantic": "upper ink/lash: dark plum graphic pigment",
+      "material": "Ren_DesignerEye_L_VisibleFan_0_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 9,
+      "triangles": 9,
+      "color_min": [
+        0.01436567585915327,
+        0.008336634375154972,
+        0.013074585236608982,
+        1.0
+      ],
+      "color_max": [
+        0.017934484407305717,
+        0.010268120095133781,
+        0.01576697640120983,
+        1.0
+      ],
+      "color_sha256": "f0380eac8588adc71ed3557e934d0df6307e7b9f328c46277217be2ff289b11f",
+      "position_sha256": "1a93edf21c2c4c8575096be5ba459a5906e5d851bd41cd90f447c25f15fe4ada",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_VisibleFan_UpperSpan",
+      "semantic": "upper ink/lash: dark plum graphic pigment",
+      "material": "Ren_DesignerEye_L_VisibleFan_UpperSpan_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 14,
+      "triangles": 10,
+      "color_min": [
+        0.01679575815796852,
+        0.00965182576328516,
+        0.014907893724739552,
+        1.0
+      ],
+      "color_max": [
+        0.022422989830374718,
+        0.012697357684373856,
+        0.019153205677866936,
+        1.0
+      ],
+      "color_sha256": "dbdf3778ca930123cbe79e376ccca684f9adb8219fc881d5f766d877c334eef6",
+      "position_sha256": "c4681b5b24be439e2ab10e4acba6a5d31057cac99af6e99b170c0a1a166951cb",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_VisibleFan_LowerSpan",
+      "semantic": "upper ink/lash: dark plum graphic pigment",
+      "material": "Ren_DesignerEye_L_VisibleFan_LowerSpan_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 6,
+      "triangles": 4,
+      "color_min": [
+        0.011826605536043644,
+        0.006962456740438938,
+        0.011159053072333336,
+        1.0
+      ],
+      "color_max": [
+        0.016576683148741722,
+        0.009533260017633438,
+        0.01474261935800314,
+        1.0
+      ],
+      "color_sha256": "7be2a2304d546ec92df5afb55c4e056f51734d6566353a72c818d04b72d6f66e",
+      "position_sha256": "95208767c252aeb0bb551a5a8211068feb2ee5a20b8fa69a9af1d01ff1d92ac3",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_VisibleFan_LowerFine",
+      "semantic": "upper ink/lash: dark plum graphic pigment",
+      "material": "Ren_DesignerEye_L_VisibleFan_LowerFine_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 6,
+      "triangles": 4,
+      "color_min": [
+        0.010688035748898983,
+        0.006346248090267181,
+        0.010300089605152607,
+        1.0
+      ],
+      "color_max": [
+        0.015410780906677246,
+        0.008902258239686489,
+        0.013863036409020424,
+        1.0
+      ],
+      "color_sha256": "11dc358be65850d07e3110c9707ea98ec165b0c4d54dd7fe8ad91d6130648c7c",
+      "position_sha256": "15ea45583a8d4a08cce30234205e4961f942b9432f83d8592392e69566cdfee4",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_L_Crease",
+      "semantic": "crease: soft taupe",
+      "material": "Ren_DesignerEye_L_Crease_Portable",
+      "vertex_color_attribute": "Ren_DesignerColor",
+      "vertex_color_space": "linear RGB; alpha 1",
+      "vertices": 174,
+      "triangles": 172,
+      "color_min": [
+        0.13286831974983215,
+        0.05708921328186989,
+        0.06838485598564148,
+        1.0
+      ],
+      "color_max": [
+        0.13286831974983215,
+        0.05708921328186989,
+        0.06838485598564148,
+        1.0
+      ],
+      "color_sha256": "f960e94c3a3da9aec7fe5cdb783c67894817877ef0a07e6ffcdb5bf8c1ba2fc0",
+      "position_sha256": "f8858e34a26f786055774dd784b13ce6a51d028bdd711a64006206837468853c",
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "total_eye_triangles": 5145,
+  "runtime_budget_status": "Unoptimized authoring candidate; does not establish 40k complete Ren or iPhone 15 Plus 30fps performance.",
+  "exports": {
+    "Ren_DesignerEyes_Neutral.blend": "d58734be395ce5a5d5edf16d6a88eeca7beb1732a654f09389c712d170c010be",
+    "Ren_DesignerEyes_Neutral.glb": "bba7f0844a022b4400b18f9854974e4fc69582b4df6cd5b3b13cae0f514b5af7",
+    "Ren_DesignerEyes_Neutral.fbx": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc"
+  },
+  "export_geometry_and_color_verification": "Source positions/matrices asserted equal before export. Fresh importer verification is required and recorded separately.",
+  "previous_export": "Sibling neutral-export is superseded: glTF exporter did not recognize the first emission-node vertex-color binding."
+}

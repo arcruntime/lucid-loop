@@ -1,0 +1,48 @@
+{
+  "source": "art\\characters\\ren-model-sheet.png",
+  "source_sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+  "source_size_pixels": [
+    1536,
+    1024
+  ],
+  "crops": [
+    {
+      "label": "Main portrait: visible eye drawing",
+      "bounds_source_pixels": [
+        400,
+        615,
+        128,
+        244
+      ]
+    },
+    {
+      "label": "NEUTRAL expression",
+      "bounds_source_pixels": [
+        24,
+        160,
+        675,
+        782
+      ]
+    },
+    {
+      "label": "FOCUSED expression",
+      "bounds_source_pixels": [
+        490,
+        625,
+        680,
+        795
+      ]
+    },
+    {
+      "label": "Casual cap-off drawing",
+      "bounds_source_pixels": [
+        1220,
+        1330,
+        55,
+        160
+      ]
+    }
+  ],
+  "operation": "Read-only matplotlib viewing windows. Original image pixels are not edited.",
+  "acceptance_authority": "Designer drawings, not Unity-chan identity or previous generated eye silhouettes."
+}

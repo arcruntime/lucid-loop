@@ -1,0 +1,328 @@
+{
+  "source": "third_party/unity-chan/original-unity-chan.zip -> Assets/UnityChan/Models/unitychan.fbx",
+  "local_inspected_source": ".local\\unity-chan-reference\\unitychan.fbx",
+  "source_sha256": "2a69b65b898aac6e3aa568fb4766f5453c6f3d2c0e86ce3a0266645f76dee79e",
+  "source_unchanged": true,
+  "no_Ren_mesh_created_or_edited": true,
+  "meshes": [
+    {
+      "name": "eye_L_old",
+      "vertices": 24,
+      "triangles": 22,
+      "material_names": [
+        "eye_L1"
+      ],
+      "world_bounds": [
+        [
+          0.021926065906882286,
+          -0.06756444275379181,
+          1.332160234451294
+        ],
+        [
+          0.06447109580039978,
+          -0.05245443433523178,
+          1.367356300354004
+        ]
+      ],
+      "world_extent": [
+        0.042545028030872345,
+        0.015110008418560028,
+        0.03519606590270996
+      ],
+      "pca_axis_spread": [
+        0.07496297359466553,
+        0.06340325623750687,
+        0.003497652243822813
+      ],
+      "pca_smallest_axis_rms": 0.0007139552035368979,
+      "pca_smallest_axis_maximum": 0.0013298166450113058,
+      "boundary_edge_count": 24,
+      "nonmanifold_edge_count": 0,
+      "shapes": [],
+      "skin_weight_totals": {}
+    },
+    {
+      "name": "eye_R_old",
+      "vertices": 24,
+      "triangles": 22,
+      "material_names": [
+        "eye_R1"
+      ],
+      "world_bounds": [
+        [
+          -0.06447097659111023,
+          -0.067564457654953,
+          1.332160234451294
+        ],
+        [
+          -0.02192595787346363,
+          -0.05245445296168327,
+          1.367356300354004
+        ]
+      ],
+      "world_extent": [
+        0.04254502058029175,
+        0.01511000469326973,
+        0.03519606590270996
+      ],
+      "pca_axis_spread": [
+        0.07496293634176254,
+        0.06340327858924866,
+        0.0034976510796695948
+      ],
+      "pca_smallest_axis_rms": 0.000713955145329237,
+      "pca_smallest_axis_maximum": 0.0013298167614266276,
+      "boundary_edge_count": 24,
+      "nonmanifold_edge_count": 0,
+      "shapes": [],
+      "skin_weight_totals": {}
+    },
+    {
+      "name": "eye_base_old",
+      "vertices": 74,
+      "triangles": 96,
+      "material_names": [
+        "eyebase"
+      ],
+      "world_bounds": [
+        [
+          -0.06455297023057938,
+          -0.06756045669317245,
+          1.331848382949829
+        ],
+        [
+          0.06455308943986893,
+          -0.0523444339632988,
+          1.367356300354004
+        ]
+      ],
+      "world_extent": [
+        0.1291060596704483,
+        0.015216022729873657,
+        0.035507917404174805
+      ],
+      "pca_axis_spread": [
+        0.39475634694099426,
+        0.10946325957775116,
+        0.03773851692676544
+      ],
+      "pca_smallest_axis_rms": 0.004387013614177704,
+      "pca_smallest_axis_maximum": 0.007748762145638466,
+      "boundary_edge_count": 48,
+      "nonmanifold_edge_count": 0,
+      "shapes": [],
+      "skin_weight_totals": {}
+    },
+    {
+      "name": "EYE_DEF",
+      "vertices": 363,
+      "triangles": 626,
+      "material_names": [
+        "face"
+      ],
+      "world_bounds": [
+        [
+          -0.07681106775999069,
+          -0.08179882168769836,
+          1.3141019344329834
+        ],
+        [
+          0.07681102305650711,
+          -0.039879877120256424,
+          1.3971710205078125
+        ]
+      ],
+      "world_extent": [
+        0.1536220908164978,
+        0.04191894456744194,
+        0.0830690860748291
+      ],
+      "pca_axis_spread": [
+        0.872433602809906,
+        0.40403422713279724,
+        0.15977026522159576
+      ],
+      "pca_smallest_axis_rms": 0.008385763503611088,
+      "pca_smallest_axis_maximum": 0.02655738592147827,
+      "boundary_edge_count": 102,
+      "nonmanifold_edge_count": 0,
+      "shapes": [
+        {
+          "name": "EYE_SMILE1",
+          "moved_vertices": 222,
+          "maximum_world_delta": 0.023252487182617188
+        },
+        {
+          "name": "EYE_SMILE2",
+          "moved_vertices": 158,
+          "maximum_world_delta": 0.0033333220053464174
+        },
+        {
+          "name": "EYE_SAP",
+          "moved_vertices": 174,
+          "maximum_world_delta": 0.004720525350421667
+        },
+        {
+          "name": "EYE_CONF",
+          "moved_vertices": 169,
+          "maximum_world_delta": 0.00634036585688591
+        },
+        {
+          "name": "EYE_ANG1",
+          "moved_vertices": 126,
+          "maximum_world_delta": 0.005799817852675915
+        },
+        {
+          "name": "EYE_ANG2",
+          "moved_vertices": 118,
+          "maximum_world_delta": 0.0035512587055563927
+        },
+        {
+          "name": "EYE_DEF_C",
+          "moved_vertices": 198,
+          "maximum_world_delta": 0.0325634628534317
+        }
+      ],
+      "skin_weight_totals": {}
+    },
+    {
+      "name": "EL_DEF",
+      "vertices": 316,
+      "triangles": 372,
+      "material_names": [
+        "eyeline"
+      ],
+      "world_bounds": [
+        [
+          -0.07134906947612762,
+          -0.07422783970832825,
+          1.3360159397125244
+        ],
+        [
+          0.07134902477264404,
+          -0.05228584259748459,
+          1.3722840547561646
+        ]
+      ],
+      "world_extent": [
+        0.14269809424877167,
+        0.02194199711084366,
+        0.03626811504364014
+      ],
+      "pca_axis_spread": [
+        0.866912841796875,
+        0.15823568403720856,
+        0.0866168737411499
+      ],
+      "pca_smallest_axis_rms": 0.0048725800588727,
+      "pca_smallest_axis_maximum": 0.009680444374680519,
+      "boundary_edge_count": 240,
+      "nonmanifold_edge_count": 0,
+      "shapes": [
+        {
+          "name": "EYE_SMILE1",
+          "moved_vertices": 316,
+          "maximum_world_delta": 0.01134698186069727
+        },
+        {
+          "name": "EYE_SMILE2",
+          "moved_vertices": 312,
+          "maximum_world_delta": 0.0034191403537988663
+        },
+        {
+          "name": "EYE_SAP",
+          "moved_vertices": 316,
+          "maximum_world_delta": 0.0048991478979587555
+        },
+        {
+          "name": "EYE_CONF",
+          "moved_vertices": 308,
+          "maximum_world_delta": 0.0047600045800209045
+        },
+        {
+          "name": "EYE_ANG1",
+          "moved_vertices": 238,
+          "maximum_world_delta": 0.00221969373524189
+        },
+        {
+          "name": "EYE_ANG2",
+          "moved_vertices": 238,
+          "maximum_world_delta": 0.0014559999108314514
+        },
+        {
+          "name": "EYE_DEF_C",
+          "moved_vertices": 316,
+          "maximum_world_delta": 0.0459151528775692
+        }
+      ],
+      "skin_weight_totals": {}
+    },
+    {
+      "name": "BLW_DEF",
+      "vertices": 40,
+      "triangles": 36,
+      "material_names": [
+        "eyeline"
+      ],
+      "world_bounds": [
+        [
+          -0.04749694839119911,
+          -0.07989853620529175,
+          1.3709619045257568
+        ],
+        [
+          0.047497089952230453,
+          -0.0721525251865387,
+          1.3887650966644287
+        ]
+      ],
+      "world_extent": [
+        0.09499403834342957,
+        0.007746011018753052,
+        0.017803192138671875
+      ],
+      "pca_axis_spread": [
+        0.19842936098575592,
+        0.03339499235153198,
+        0.009015764109790325
+      ],
+      "pca_smallest_axis_rms": 0.0014255173737183213,
+      "pca_smallest_axis_maximum": 0.0029124123975634575,
+      "boundary_edge_count": 40,
+      "nonmanifold_edge_count": 0,
+      "shapes": [
+        {
+          "name": "BLW_SMILE1",
+          "moved_vertices": 40,
+          "maximum_world_delta": 0.006496668327599764
+        },
+        {
+          "name": "BLW_SMILE2",
+          "moved_vertices": 40,
+          "maximum_world_delta": 0.009810059331357479
+        },
+        {
+          "name": "BLW_SAP",
+          "moved_vertices": 40,
+          "maximum_world_delta": 0.008757886476814747
+        },
+        {
+          "name": "BLW_CONF",
+          "moved_vertices": 40,
+          "maximum_world_delta": 0.008147048763930798
+        },
+        {
+          "name": "BLW_ANG1",
+          "moved_vertices": 40,
+          "maximum_world_delta": 0.007347967941313982
+        },
+        {
+          "name": "BLW_ANG2",
+          "moved_vertices": 40,
+          "maximum_world_delta": 0.0044800941832363605
+        }
+      ],
+      "skin_weight_totals": {}
+    }
+  ]
+}

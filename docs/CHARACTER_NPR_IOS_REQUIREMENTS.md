@@ -63,6 +63,10 @@ and the light loop still visits candidate lights.
 - Import control maps as linear data, with R for face response, G for highlights,
   B for outline suppression and A for skin. Preserve individual atlas transforms;
   iris/support vertex pigmentation is not a substitute for those controls.
+  The tested candidate currently samples all maps through `_BaseMap_ST`; its
+  supplied maps share each material's atlas coordinates. Independently packed
+  control/shadow atlases require separate transforms before use. Do not assign
+  an unrelated control atlas to an existing pigment transform.
 - Keep skin specular/rim disabled in this study. Hair and cap highlights require
   authored placement; a broad normal-derived cap highlight is not visually accepted.
 - Additional lights currently provide unshadowed accents with a capped combined

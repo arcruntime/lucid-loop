@@ -1,0 +1,2386 @@
+{
+  "status": "NUMERIC_WELD_AB_COMPLETE_REQUIRES_REVIEW",
+  "unityVersion": "6000.3.24f1",
+  "editorSourceSha256": "b289c83467279deb92b8d2f3ec1c019a3598a8f9d71b1a1d09f154a6c58f170e",
+  "comparisonSourceSha256": "7eb9bb2a568ff4e2e0d07995bac8560dd36098fbd47d94cd56852843afe2ffad",
+  "sourceCanonicalManifestSha256": "8603c2b377e1dce8962a8f4606951d5fae8e20452b65f564ebd06d98edfb582c",
+  "outlineSupplementSha256": "f54ef358859af5b276eacb1753c1a789cbab974e01e6c0be982e6393def1a7b3",
+  "toleranceSourceUnits": 2e-06,
+  "units": "Blender shared world; physical units not independently established.",
+  "matching": "For each authored ordinal, search all imported Basis vertices within2e-6, then minimize maximum error jointly over Basis and every shape endpoint. Different coincident branches are not assumed identical; ambiguous best branches and unmatched rows are explicit. This is a diagnostic comparison, not a repair or automatic source-index remap.",
+  "allAuthoredEndpointsRecorded": "Each compared mesh/frame has raw imported positions, local per-row error arrays and correspondence NPZ. Every above-tolerance endpoint is retained in a JSON failure file.",
+  "metadataOnlyWeldAndGuidDiff": [
+    {
+      "kind": "source",
+      "onlyWeldAndGuidDiffer": true,
+      "metas": [
+        {
+          "path": "Assets\\CharacterArt\\Generated\\RenFbxWeldAudit\\source-weld-true.fbx.meta",
+          "sha256": "88b5fdf98379a66ca8d6232bc502069103b12c89d14d9839bdcd75e726167648"
+        },
+        {
+          "path": "Assets\\CharacterArt\\Generated\\RenFbxWeldAudit\\source-weld-false.fbx.meta",
+          "sha256": "7773bc8ca05f729b83faac752c31115a8f4fa57a0c115b0e5cab8f7115634279"
+        }
+      ]
+    },
+    {
+      "kind": "outline",
+      "onlyWeldAndGuidDiffer": true,
+      "metas": [
+        {
+          "path": "Assets\\CharacterArt\\Generated\\RenFbxWeldAudit\\outline-weld-true.fbx.meta",
+          "sha256": "b2a55c791601f6762e35c59d3834ae86f9123e30f116c2e4c54e356f4755291c"
+        },
+        {
+          "path": "Assets\\CharacterArt\\Generated\\RenFbxWeldAudit\\outline-weld-false.fbx.meta",
+          "sha256": "137d6efcf667b932645b646e6144e19fa30ca88b79cab0ca990ba8997bb060e5"
+        }
+      ]
+    }
+  ],
+  "originalInputAndSceneHashesUnchanged": true,
+  "cases": [
+    {
+      "id": "source-weld-true",
+      "kind": "source",
+      "weldVertices": true,
+      "meshCount": 14,
+      "frameCount": 70,
+      "meshes": [
+        {
+          "mesh": "Ren_H_Eye_L_LidAnnulus",
+          "authoredVertices": 448,
+          "importedVertices": 448,
+          "triangles": 768,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 359,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.989264130329236e-08,
+              "rmsError": 4.401704510114831e-08
+            },
+            {
+              "shape": "eyeBlinkL",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 9.99516977699202e-07,
+              "rmsError": 6.921859077612861e-08
+            },
+            {
+              "shape": "eyeBlinkL_C25",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 300,
+              "errorRows": 76,
+              "zeroedMovedRows": 75,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008737742904977859,
+              "rmsError": 6.422572200817315e-05
+            },
+            {
+              "shape": "eyeBlinkL_C50",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 313,
+              "errorRows": 78,
+              "zeroedMovedRows": 78,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0007200986153864824,
+              "rmsError": 5.878875278207711e-05
+            },
+            {
+              "shape": "eyeBlinkL_C75",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 300,
+              "errorRows": 77,
+              "zeroedMovedRows": 76,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0005291253337765369,
+              "rmsError": 4.5787853941333336e-05
+            },
+            {
+              "shape": "eyeSquintL",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 5.984629877812625e-07,
+              "rmsError": 6.010742373431014e-08
+            },
+            {
+              "shape": "eyeWideL",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 9.392756392659083e-07,
+              "rmsError": 8.119940383360973e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json",
+          "failureSha256": "1141375499858fb1ceea0d5759dc990c69e472151c91a71919f8b51f11fbc162"
+        },
+        {
+          "mesh": "Ren_H_Eye_L_LowerLash",
+          "authoredVertices": 66,
+          "importedVertices": 64,
+          "triangles": 62,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 60,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.289013853719135e-08,
+              "rmsError": 4.82155548274741e-08
+            },
+            {
+              "shape": "eyeBlinkL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.989264130329236e-08,
+              "rmsError": 4.679922263764441e-08
+            },
+            {
+              "shape": "eyeBlinkL_C25",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 56,
+              "errorRows": 6,
+              "zeroedMovedRows": 6,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00017900765639905226,
+              "rmsError": 5.3119661509436344e-05
+            },
+            {
+              "shape": "eyeBlinkL_C50",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 6,
+              "zeroedMovedRows": 6,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0002370476775407146,
+              "rmsError": 7.033299260642055e-05
+            },
+            {
+              "shape": "eyeBlinkL_C75",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 56,
+              "errorRows": 6,
+              "zeroedMovedRows": 6,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00017677248230819933,
+              "rmsError": 5.243984531954431e-05
+            },
+            {
+              "shape": "eyeSquintL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 2.5777286130199124e-07,
+              "rmsError": 6.405293687895449e-08
+            },
+            {
+              "shape": "eyeWideL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.495265578539184e-08,
+              "rmsError": 4.357928676043453e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Eye_L_LowerLash-all-endpoint-failures.json",
+          "failureSha256": "0027f56de6b912e14d20dfdf55b4b2db6c4f482e859b702118cfcc716b564faa"
+        },
+        {
+          "mesh": "Ren_H_Eye_L_OuterFlicks",
+          "authoredVertices": 6,
+          "importedVertices": 6,
+          "triangles": 2,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 2,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 5.6250649953415616e-08,
+              "rmsError": 4.312335291054184e-08
+            },
+            {
+              "shape": "eyeBlinkL",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0009213713736219881,
+              "rmsError": 0.00037614829000824087
+            },
+            {
+              "shape": "eyeBlinkL_C25",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0001474768000518333,
+              "rmsError": 6.6233519953914e-05
+            },
+            {
+              "shape": "eyeBlinkL_C50",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00019378960719822636,
+              "rmsError": 8.734075365186601e-05
+            },
+            {
+              "shape": "eyeBlinkL_C75",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00016385317543266063,
+              "rmsError": 7.296509256989877e-05
+            },
+            {
+              "shape": "eyeSquintL",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 3,
+              "zeroedMovedRows": 3,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0009736140096409837,
+              "rmsError": 0.0005190667675941381
+            },
+            {
+              "shape": "eyeWideL",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00046117504041242447,
+              "rmsError": 0.00018827392583334874
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json",
+          "failureSha256": "83b808cb0246e1ca237891eca8830de3cf88b0180312ce9a4abb15f879cf61d1"
+        },
+        {
+          "mesh": "Ren_H_Eye_L_UpperLash",
+          "authoredVertices": 66,
+          "importedVertices": 64,
+          "triangles": 62,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 64,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.590711330232818e-08,
+              "rmsError": 4.8058301285416956e-08
+            },
+            {
+              "shape": "eyeBlinkL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.989264130329236e-08,
+              "rmsError": 4.88395060053454e-08
+            },
+            {
+              "shape": "eyeBlinkL_C25",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 2,
+              "zeroedMovedRows": 2,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008646845823985733,
+              "rmsError": 0.0001505223488821215
+            },
+            {
+              "shape": "eyeBlinkL_C50",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.503867619368281e-07,
+              "rmsError": 2.1235640012242712e-07
+            },
+            {
+              "shape": "eyeBlinkL_C75",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 2,
+              "zeroedMovedRows": 2,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008428245789438496,
+              "rmsError": 0.00014671701307424664
+            },
+            {
+              "shape": "eyeSquintL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.989264130329236e-08,
+              "rmsError": 4.7768658624921426e-08
+            },
+            {
+              "shape": "eyeWideL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.143906154658885e-08,
+              "rmsError": 4.266254678223148e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Eye_L_UpperLash-all-endpoint-failures.json",
+          "failureSha256": "561afe80215ff4c253d4313e2767cd5b25caa7ae0eeb8c7e023a817a32d3c17d"
+        },
+        {
+          "mesh": "Ren_H_Eye_R_LidAnnulus",
+          "authoredVertices": 448,
+          "importedVertices": 448,
+          "triangles": 768,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 366,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.495265578539184e-08,
+              "rmsError": 4.308301724570775e-08
+            },
+            {
+              "shape": "eyeBlinkR",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.05524578608358e-07,
+              "rmsError": 5.795478974549106e-08
+            },
+            {
+              "shape": "eyeBlinkR_C25",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 302,
+              "errorRows": 76,
+              "zeroedMovedRows": 75,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0006932914257449905,
+              "rmsError": 6.039100125294184e-05
+            },
+            {
+              "shape": "eyeBlinkR_C50",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 314,
+              "errorRows": 74,
+              "zeroedMovedRows": 74,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.000802427531153434,
+              "rmsError": 6.583121524165043e-05
+            },
+            {
+              "shape": "eyeBlinkR_C75",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 301,
+              "errorRows": 76,
+              "zeroedMovedRows": 76,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0006816089153697002,
+              "rmsError": 5.880571042836244e-05
+            },
+            {
+              "shape": "eyeSquintR",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 9.837306030690098e-07,
+              "rmsError": 8.160501724489269e-08
+            },
+            {
+              "shape": "eyeWideR",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.347726392220742e-07,
+              "rmsError": 6.230514961442372e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json",
+          "failureSha256": "515aa1ff3b5c82c986532c368e1540f3aa8902047ae8b8cc9c0d895f5a1f6e5f"
+        },
+        {
+          "mesh": "Ren_H_Eye_R_LowerLash",
+          "authoredVertices": 66,
+          "importedVertices": 64,
+          "triangles": 62,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 59,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.365778852490731e-08,
+              "rmsError": 4.367567990355467e-08
+            },
+            {
+              "shape": "eyeBlinkR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.322027276634104e-08,
+              "rmsError": 4.433033793455022e-08
+            },
+            {
+              "shape": "eyeBlinkR_C25",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 56,
+              "errorRows": 7,
+              "zeroedMovedRows": 7,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00017903745748006539,
+              "rmsError": 5.3981773819189224e-05
+            },
+            {
+              "shape": "eyeBlinkR_C50",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 5,
+              "zeroedMovedRows": 5,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0002371072812476923,
+              "rmsError": 5.949750305312149e-05
+            },
+            {
+              "shape": "eyeBlinkR_C75",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 56,
+              "errorRows": 7,
+              "zeroedMovedRows": 7,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0001768171845342082,
+              "rmsError": 5.3300879997188286e-05
+            },
+            {
+              "shape": "eyeSquintR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 2.5647751209227006e-07,
+              "rmsError": 6.090627828829515e-08
+            },
+            {
+              "shape": "eyeWideR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.322027276634104e-08,
+              "rmsError": 4.453383028040626e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Eye_R_LowerLash-all-endpoint-failures.json",
+          "failureSha256": "dd9f126ee2661a742648ee8bae473702905273ef3b54363f5ca8e018fec104ba"
+        },
+        {
+          "mesh": "Ren_H_Eye_R_OuterFlicks",
+          "authoredVertices": 6,
+          "importedVertices": 6,
+          "triangles": 2,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 2,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.006850114687196e-08,
+              "rmsError": 4.818938153965338e-08
+            },
+            {
+              "shape": "eyeBlinkR",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0009215720659359603,
+              "rmsError": 0.00037623022262160986
+            },
+            {
+              "shape": "eyeBlinkR_C25",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00020702183635417767,
+              "rmsError": 8.968365648926822e-05
+            },
+            {
+              "shape": "eyeBlinkR_C50",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0002733469038845941,
+              "rmsError": 0.00011804594119330999
+            },
+            {
+              "shape": "eyeBlinkR_C75",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00020341575541419252,
+              "rmsError": 8.781265433261873e-05
+            },
+            {
+              "shape": "eyeSquintR",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 3,
+              "zeroedMovedRows": 3,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0009736170809505051,
+              "rmsError": 0.0005190696702105116
+            },
+            {
+              "shape": "eyeWideR",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00046123559814321416,
+              "rmsError": 0.00018829864847202938
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json",
+          "failureSha256": "9244675edb0e699c16408f54eb45526f70d70a0cbd73bfe4973a6586feb4a3b5"
+        },
+        {
+          "mesh": "Ren_H_Eye_R_UpperLash",
+          "authoredVertices": 66,
+          "importedVertices": 64,
+          "triangles": 62,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 64,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.365778852490731e-08,
+              "rmsError": 4.260829694644951e-08
+            },
+            {
+              "shape": "eyeBlinkR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.909384202581423e-08,
+              "rmsError": 4.647912401013797e-08
+            },
+            {
+              "shape": "eyeBlinkR_C25",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 2,
+              "zeroedMovedRows": 2,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008646994830782782,
+              "rmsError": 0.00015052495282638563
+            },
+            {
+              "shape": "eyeBlinkR_C50",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.646847378864806e-07,
+              "rmsError": 2.154284686954209e-07
+            },
+            {
+              "shape": "eyeBlinkR_C75",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 2,
+              "zeroedMovedRows": 2,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008428692819334482,
+              "rmsError": 0.0001467248044128594
+            },
+            {
+              "shape": "eyeSquintR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.365778852490731e-08,
+              "rmsError": 4.577713358195315e-08
+            },
+            {
+              "shape": "eyeWideR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 5.8310016402969244e-08,
+              "rmsError": 4.0064915530139404e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Eye_R_UpperLash-all-endpoint-failures.json",
+          "failureSha256": "1d555f02c771448812122c390eb5daed98302299f8e975bd56b99c1dd8c1839f"
+        },
+        {
+          "mesh": "Ren_H_Head",
+          "authoredVertices": 120379,
+          "importedVertices": 119741,
+          "triangles": 195660,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 120320,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 120379,
+              "matchedBasisRows": 120379,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.095545251705024e-08,
+              "rmsError": 3.938750743908612e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 120379,
+              "matchedBasisRows": 120379,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 7034,
+              "errorRows": 3,
+              "zeroedMovedRows": 3,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0003955955149851485,
+              "rmsError": 1.153462958417526e-06
+            },
+            {
+              "shape": "mouthSeal",
+              "authoredRows": 120379,
+              "matchedBasisRows": 120379,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 6382,
+              "errorRows": 57,
+              "zeroedMovedRows": 57,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0003995820881914243,
+              "rmsError": 2.534023429641705e-06
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Head-all-endpoint-failures.json",
+          "failureSha256": "f3363e2dc071a0114d5466201cf49ed658077e3f3f8ab00afd428dba4605046e"
+        },
+        {
+          "mesh": "Ren_H_InnerLipWall",
+          "authoredVertices": 1440,
+          "importedVertices": 1440,
+          "triangles": 2560,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 162,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 1440,
+              "matchedBasisRows": 1440,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 7.204970507823468e-08,
+              "rmsError": 4.4074815679960125e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 1440,
+              "matchedBasisRows": 1440,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 1439,
+              "errorRows": 28,
+              "zeroedMovedRows": 28,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0010432153942611956,
+              "rmsError": 5.587080455755244e-05
+            },
+            {
+              "shape": "mouthSeal",
+              "authoredRows": 1440,
+              "matchedBasisRows": 1440,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 1251,
+              "errorRows": 1251,
+              "zeroedMovedRows": 1251,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00039992481937080364,
+              "rmsError": 0.00017312231203745629
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_InnerLipWall-all-endpoint-failures.json",
+          "failureSha256": "6a4d08297b6d74d05d58c38d63e61d7ee3203411cc9f87ee14b6c4e141e00a7d"
+        },
+        {
+          "mesh": "Ren_H_OralCavity",
+          "authoredVertices": 5264,
+          "importedVertices": 5304,
+          "triangles": 9575,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 5263,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 5264,
+              "matchedBasisRows": 5264,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.959416602652298e-08,
+              "rmsError": 3.994335708783259e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 5264,
+              "matchedBasisRows": 5264,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4972,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 3.2186788436598893e-06,
+              "rmsError": 6.153007377765723e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_OralCavity-all-endpoint-failures.json",
+          "failureSha256": "8482af6d23b4c3c009edd43b8bd1e5f1e9ba8870fe42917ae1bee31b4a7163e7"
+        },
+        {
+          "mesh": "Ren_H_Tongue",
+          "authoredVertices": 4154,
+          "importedVertices": 4201,
+          "triangles": 7701,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 4154,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 4154,
+              "matchedBasisRows": 4154,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.590711330232818e-08,
+              "rmsError": 4.014347523951388e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 4154,
+              "matchedBasisRows": 4154,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4154,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.495265578539184e-08,
+              "rmsError": 4.0837149596683725e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_H_Tongue-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "mesh": "Ren_Hair_H_DetailedLayers",
+          "authoredVertices": 5189,
+          "importedVertices": 11346,
+          "triangles": 8954,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 5189,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 5189,
+              "matchedBasisRows": 5189,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.143906154658885e-08,
+              "rmsError": 2.3664685157105086e-08
+            },
+            {
+              "shape": "capOn",
+              "authoredRows": 5189,
+              "matchedBasisRows": 5189,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 1853,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 4.5821070671081543e-07,
+              "rmsError": 2.4348434877491243e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_Hair_H_DetailedLayers-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "mesh": "Ren_Hair_H_RootBase",
+          "authoredVertices": 288,
+          "importedVertices": 349,
+          "triangles": 542,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 288,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 288,
+              "matchedBasisRows": 288,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.155189738369847e-08,
+              "rmsError": 2.548969084949264e-08
+            },
+            {
+              "shape": "capOn",
+              "authoredRows": 288,
+              "matchedBasisRows": 288,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 24,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.155189738369847e-08,
+              "rmsError": 2.5929790748878836e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-true\\Ren_Hair_H_RootBase-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        }
+      ],
+      "totalEndpointErrors": 1876,
+      "totalZeroedMovedEndpoints": 1873,
+      "totalNonzeroErrors": 0
+    },
+    {
+      "id": "source-weld-false",
+      "kind": "source",
+      "weldVertices": false,
+      "meshCount": 14,
+      "frameCount": 70,
+      "meshes": [
+        {
+          "mesh": "Ren_H_Eye_L_LidAnnulus",
+          "authoredVertices": 448,
+          "importedVertices": 448,
+          "triangles": 768,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 359,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.989264130329236e-08,
+              "rmsError": 4.401704510114831e-08
+            },
+            {
+              "shape": "eyeBlinkL",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 9.99516977699202e-07,
+              "rmsError": 6.921859077612861e-08
+            },
+            {
+              "shape": "eyeBlinkL_C25",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 300,
+              "errorRows": 76,
+              "zeroedMovedRows": 75,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008737742904977859,
+              "rmsError": 6.422572200817315e-05
+            },
+            {
+              "shape": "eyeBlinkL_C50",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 313,
+              "errorRows": 78,
+              "zeroedMovedRows": 78,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0007200986153864824,
+              "rmsError": 5.878875278207711e-05
+            },
+            {
+              "shape": "eyeBlinkL_C75",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 300,
+              "errorRows": 77,
+              "zeroedMovedRows": 76,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0005291253337765369,
+              "rmsError": 4.5787853941333336e-05
+            },
+            {
+              "shape": "eyeSquintL",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 5.984629877812625e-07,
+              "rmsError": 6.010742373431014e-08
+            },
+            {
+              "shape": "eyeWideL",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 9.392756392659083e-07,
+              "rmsError": 8.119940383360973e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json",
+          "failureSha256": "1141375499858fb1ceea0d5759dc990c69e472151c91a71919f8b51f11fbc162"
+        },
+        {
+          "mesh": "Ren_H_Eye_L_LowerLash",
+          "authoredVertices": 66,
+          "importedVertices": 66,
+          "triangles": 64,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 60,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.289013853719135e-08,
+              "rmsError": 4.82155548274741e-08
+            },
+            {
+              "shape": "eyeBlinkL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.989264130329236e-08,
+              "rmsError": 4.679922263764441e-08
+            },
+            {
+              "shape": "eyeBlinkL_C25",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 56,
+              "errorRows": 6,
+              "zeroedMovedRows": 6,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00017900765639905226,
+              "rmsError": 5.3119661509436344e-05
+            },
+            {
+              "shape": "eyeBlinkL_C50",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 6,
+              "zeroedMovedRows": 6,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0002370476775407146,
+              "rmsError": 7.033299260642055e-05
+            },
+            {
+              "shape": "eyeBlinkL_C75",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 56,
+              "errorRows": 6,
+              "zeroedMovedRows": 6,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00017677248230819933,
+              "rmsError": 5.243984531954431e-05
+            },
+            {
+              "shape": "eyeSquintL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 2.5777286130199124e-07,
+              "rmsError": 6.405293687895449e-08
+            },
+            {
+              "shape": "eyeWideL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.495265578539184e-08,
+              "rmsError": 4.357928676043453e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Eye_L_LowerLash-all-endpoint-failures.json",
+          "failureSha256": "284cc2534727fede53f1cd20cf4baa61c9a4d98aff8be98cbbb62e3a3e182c87"
+        },
+        {
+          "mesh": "Ren_H_Eye_L_OuterFlicks",
+          "authoredVertices": 6,
+          "importedVertices": 6,
+          "triangles": 2,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 2,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 5.6250649953415616e-08,
+              "rmsError": 4.312335291054184e-08
+            },
+            {
+              "shape": "eyeBlinkL",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0009213713736219881,
+              "rmsError": 0.00037614829000824087
+            },
+            {
+              "shape": "eyeBlinkL_C25",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0001474768000518333,
+              "rmsError": 6.6233519953914e-05
+            },
+            {
+              "shape": "eyeBlinkL_C50",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00019378960719822636,
+              "rmsError": 8.734075365186601e-05
+            },
+            {
+              "shape": "eyeBlinkL_C75",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00016385317543266063,
+              "rmsError": 7.296509256989877e-05
+            },
+            {
+              "shape": "eyeSquintL",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 3,
+              "zeroedMovedRows": 3,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0009736140096409837,
+              "rmsError": 0.0005190667675941381
+            },
+            {
+              "shape": "eyeWideL",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00046117504041242447,
+              "rmsError": 0.00018827392583334874
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json",
+          "failureSha256": "83b808cb0246e1ca237891eca8830de3cf88b0180312ce9a4abb15f879cf61d1"
+        },
+        {
+          "mesh": "Ren_H_Eye_L_UpperLash",
+          "authoredVertices": 66,
+          "importedVertices": 66,
+          "triangles": 64,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 64,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.590711330232818e-08,
+              "rmsError": 4.8058301285416956e-08
+            },
+            {
+              "shape": "eyeBlinkL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.989264130329236e-08,
+              "rmsError": 4.88395060053454e-08
+            },
+            {
+              "shape": "eyeBlinkL_C25",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 2,
+              "zeroedMovedRows": 2,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008646845823985733,
+              "rmsError": 0.0001505223488821215
+            },
+            {
+              "shape": "eyeBlinkL_C50",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.503867619368281e-07,
+              "rmsError": 2.1235640012242712e-07
+            },
+            {
+              "shape": "eyeBlinkL_C75",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 2,
+              "zeroedMovedRows": 2,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008428245789438496,
+              "rmsError": 0.00014671701307424664
+            },
+            {
+              "shape": "eyeSquintL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.989264130329236e-08,
+              "rmsError": 4.7768658624921426e-08
+            },
+            {
+              "shape": "eyeWideL",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.143906154658885e-08,
+              "rmsError": 4.266254678223148e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Eye_L_UpperLash-all-endpoint-failures.json",
+          "failureSha256": "764da708f8a37028e616efb5a7e3435e770bdcf9d889e1e91857e98425d17d25"
+        },
+        {
+          "mesh": "Ren_H_Eye_R_LidAnnulus",
+          "authoredVertices": 448,
+          "importedVertices": 448,
+          "triangles": 768,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 366,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.495265578539184e-08,
+              "rmsError": 4.308301724570775e-08
+            },
+            {
+              "shape": "eyeBlinkR",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.05524578608358e-07,
+              "rmsError": 5.795478974549106e-08
+            },
+            {
+              "shape": "eyeBlinkR_C25",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 302,
+              "errorRows": 76,
+              "zeroedMovedRows": 75,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0006932914257449905,
+              "rmsError": 6.039100125294184e-05
+            },
+            {
+              "shape": "eyeBlinkR_C50",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 314,
+              "errorRows": 74,
+              "zeroedMovedRows": 74,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.000802427531153434,
+              "rmsError": 6.583121524165043e-05
+            },
+            {
+              "shape": "eyeBlinkR_C75",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 301,
+              "errorRows": 76,
+              "zeroedMovedRows": 76,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0006816089153697002,
+              "rmsError": 5.880571042836244e-05
+            },
+            {
+              "shape": "eyeSquintR",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 9.837306030690098e-07,
+              "rmsError": 8.160501724489269e-08
+            },
+            {
+              "shape": "eyeWideR",
+              "authoredRows": 448,
+              "matchedBasisRows": 448,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 372,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.347726392220742e-07,
+              "rmsError": 6.230514961442372e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json",
+          "failureSha256": "515aa1ff3b5c82c986532c368e1540f3aa8902047ae8b8cc9c0d895f5a1f6e5f"
+        },
+        {
+          "mesh": "Ren_H_Eye_R_LowerLash",
+          "authoredVertices": 66,
+          "importedVertices": 66,
+          "triangles": 64,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 59,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.365778852490731e-08,
+              "rmsError": 4.367567990355467e-08
+            },
+            {
+              "shape": "eyeBlinkR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.322027276634104e-08,
+              "rmsError": 4.433033793455022e-08
+            },
+            {
+              "shape": "eyeBlinkR_C25",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 56,
+              "errorRows": 7,
+              "zeroedMovedRows": 7,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00017903745748006539,
+              "rmsError": 5.3981773819189224e-05
+            },
+            {
+              "shape": "eyeBlinkR_C50",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 5,
+              "zeroedMovedRows": 5,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0002371072812476923,
+              "rmsError": 5.949750305312149e-05
+            },
+            {
+              "shape": "eyeBlinkR_C75",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 56,
+              "errorRows": 7,
+              "zeroedMovedRows": 7,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0001768171845342082,
+              "rmsError": 5.3300879997188286e-05
+            },
+            {
+              "shape": "eyeSquintR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 2.5647751209227006e-07,
+              "rmsError": 6.090627828829515e-08
+            },
+            {
+              "shape": "eyeWideR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.322027276634104e-08,
+              "rmsError": 4.453383028040626e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Eye_R_LowerLash-all-endpoint-failures.json",
+          "failureSha256": "89b41fef15eab95b23ec2f8b20813064b49dadba8599662964c3625a576a905d"
+        },
+        {
+          "mesh": "Ren_H_Eye_R_OuterFlicks",
+          "authoredVertices": 6,
+          "importedVertices": 6,
+          "triangles": 2,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 2,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.006850114687196e-08,
+              "rmsError": 4.818938153965338e-08
+            },
+            {
+              "shape": "eyeBlinkR",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0009215720659359603,
+              "rmsError": 0.00037623022262160986
+            },
+            {
+              "shape": "eyeBlinkR_C25",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00020702183635417767,
+              "rmsError": 8.968365648926822e-05
+            },
+            {
+              "shape": "eyeBlinkR_C50",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0002733469038845941,
+              "rmsError": 0.00011804594119330999
+            },
+            {
+              "shape": "eyeBlinkR_C75",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 4,
+              "zeroedMovedRows": 4,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00020341575541419252,
+              "rmsError": 8.781265433261873e-05
+            },
+            {
+              "shape": "eyeSquintR",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 3,
+              "zeroedMovedRows": 3,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0009736170809505051,
+              "rmsError": 0.0005190696702105116
+            },
+            {
+              "shape": "eyeWideR",
+              "authoredRows": 6,
+              "matchedBasisRows": 6,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00046123559814321416,
+              "rmsError": 0.00018829864847202938
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json",
+          "failureSha256": "9244675edb0e699c16408f54eb45526f70d70a0cbd73bfe4973a6586feb4a3b5"
+        },
+        {
+          "mesh": "Ren_H_Eye_R_UpperLash",
+          "authoredVertices": 66,
+          "importedVertices": 66,
+          "triangles": 64,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 64,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.365778852490731e-08,
+              "rmsError": 4.260829694644951e-08
+            },
+            {
+              "shape": "eyeBlinkR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.909384202581423e-08,
+              "rmsError": 4.647912401013797e-08
+            },
+            {
+              "shape": "eyeBlinkR_C25",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 2,
+              "zeroedMovedRows": 2,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008646994830782782,
+              "rmsError": 0.00015052495282638563
+            },
+            {
+              "shape": "eyeBlinkR_C50",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.646847378864806e-07,
+              "rmsError": 2.154284686954209e-07
+            },
+            {
+              "shape": "eyeBlinkR_C75",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 58,
+              "errorRows": 2,
+              "zeroedMovedRows": 2,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0008428692819334482,
+              "rmsError": 0.0001467248044128594
+            },
+            {
+              "shape": "eyeSquintR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.365778852490731e-08,
+              "rmsError": 4.577713358195315e-08
+            },
+            {
+              "shape": "eyeWideR",
+              "authoredRows": 66,
+              "matchedBasisRows": 66,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 62,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 5.8310016402969244e-08,
+              "rmsError": 4.0064915530139404e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Eye_R_UpperLash-all-endpoint-failures.json",
+          "failureSha256": "a74122c7368e5dc7270746b0e47c5e12886c22fb644e9e10408ea23adefa77d6"
+        },
+        {
+          "mesh": "Ren_H_Head",
+          "authoredVertices": 120379,
+          "importedVertices": 121050,
+          "triangles": 195660,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 120320,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 120379,
+              "matchedBasisRows": 120379,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 8.095545251705024e-08,
+              "rmsError": 3.938750743908612e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 120379,
+              "matchedBasisRows": 120379,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 7034,
+              "errorRows": 3,
+              "zeroedMovedRows": 3,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0003955955149851485,
+              "rmsError": 1.153462958417526e-06
+            },
+            {
+              "shape": "mouthSeal",
+              "authoredRows": 120379,
+              "matchedBasisRows": 120379,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 6382,
+              "errorRows": 57,
+              "zeroedMovedRows": 57,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0003995820881914243,
+              "rmsError": 2.534023429641705e-06
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Head-all-endpoint-failures.json",
+          "failureSha256": "35a23ce0ccc341f75d1226de2158215b54217d4a683851f6c6619653fcf70669"
+        },
+        {
+          "mesh": "Ren_H_InnerLipWall",
+          "authoredVertices": 1440,
+          "importedVertices": 1440,
+          "triangles": 2560,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 162,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 1440,
+              "matchedBasisRows": 1440,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 7.204970507823468e-08,
+              "rmsError": 4.4074815679960125e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 1440,
+              "matchedBasisRows": 1440,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 1439,
+              "errorRows": 28,
+              "zeroedMovedRows": 28,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0010432153942611956,
+              "rmsError": 5.587080455755244e-05
+            },
+            {
+              "shape": "mouthSeal",
+              "authoredRows": 1440,
+              "matchedBasisRows": 1440,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 1251,
+              "errorRows": 1251,
+              "zeroedMovedRows": 1251,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.00039992481937080364,
+              "rmsError": 0.00017312231203745629
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_InnerLipWall-all-endpoint-failures.json",
+          "failureSha256": "6a4d08297b6d74d05d58c38d63e61d7ee3203411cc9f87ee14b6c4e141e00a7d"
+        },
+        {
+          "mesh": "Ren_H_OralCavity",
+          "authoredVertices": 5264,
+          "importedVertices": 5304,
+          "triangles": 9575,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 5263,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 5264,
+              "matchedBasisRows": 5264,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.959416602652298e-08,
+              "rmsError": 3.994335708783259e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 5264,
+              "matchedBasisRows": 5264,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4972,
+              "errorRows": 1,
+              "zeroedMovedRows": 1,
+              "nonzeroErrorRows": 0,
+              "maxError": 3.2186788436598893e-06,
+              "rmsError": 6.153007377765723e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_OralCavity-all-endpoint-failures.json",
+          "failureSha256": "8482af6d23b4c3c009edd43b8bd1e5f1e9ba8870fe42917ae1bee31b4a7163e7"
+        },
+        {
+          "mesh": "Ren_H_Tongue",
+          "authoredVertices": 4154,
+          "importedVertices": 4201,
+          "triangles": 7701,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 4154,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 4154,
+              "matchedBasisRows": 4154,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.590711330232818e-08,
+              "rmsError": 4.014347523951388e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 4154,
+              "matchedBasisRows": 4154,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 4154,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.495265578539184e-08,
+              "rmsError": 4.0837149596683725e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_H_Tongue-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "mesh": "Ren_Hair_H_DetailedLayers",
+          "authoredVertices": 5189,
+          "importedVertices": 11346,
+          "triangles": 8954,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 5189,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 5189,
+              "matchedBasisRows": 5189,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.143906154658885e-08,
+              "rmsError": 2.3664685157105086e-08
+            },
+            {
+              "shape": "capOn",
+              "authoredRows": 5189,
+              "matchedBasisRows": 5189,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 1853,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 4.5821070671081543e-07,
+              "rmsError": 2.4348434877491243e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_Hair_H_DetailedLayers-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "mesh": "Ren_Hair_H_RootBase",
+          "authoredVertices": 288,
+          "importedVertices": 349,
+          "triangles": 542,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 288,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 288,
+              "matchedBasisRows": 288,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.155189738369847e-08,
+              "rmsError": 2.548969084949264e-08
+            },
+            {
+              "shape": "capOn",
+              "authoredRows": 288,
+              "matchedBasisRows": 288,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 24,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.155189738369847e-08,
+              "rmsError": 2.5929790748878836e-08
+            }
+          ],
+          "failureFile": "comparison\\source-weld-false\\Ren_Hair_H_RootBase-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        }
+      ],
+      "totalEndpointErrors": 1876,
+      "totalZeroedMovedEndpoints": 1873,
+      "totalNonzeroErrors": 0
+    },
+    {
+      "id": "outline-weld-true",
+      "kind": "outline",
+      "weldVertices": true,
+      "meshCount": 3,
+      "frameCount": 7,
+      "meshes": [
+        {
+          "mesh": "RenInk_HairLayers",
+          "authoredVertices": 5137,
+          "importedVertices": 11321,
+          "triangles": 8954,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 5137,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 5137,
+              "matchedBasisRows": 5137,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.143906154658885e-08,
+              "rmsError": 2.3733285661040632e-08
+            },
+            {
+              "shape": "capOn",
+              "authoredRows": 5137,
+              "matchedBasisRows": 5137,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 1847,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 4.5821070671081543e-07,
+              "rmsError": 2.442457359048757e-08
+            }
+          ],
+          "failureFile": "comparison\\outline-weld-true\\RenInk_HairLayers-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "mesh": "RenInk_HairRoot",
+          "authoredVertices": 288,
+          "importedVertices": 349,
+          "triangles": 542,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 288,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 288,
+              "matchedBasisRows": 288,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.155189738369847e-08,
+              "rmsError": 2.548969084949264e-08
+            },
+            {
+              "shape": "capOn",
+              "authoredRows": 288,
+              "matchedBasisRows": 288,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 24,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.155189738369847e-08,
+              "rmsError": 2.5929790748878836e-08
+            }
+          ],
+          "failureFile": "comparison\\outline-weld-true\\RenInk_HairRoot-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "mesh": "RenInk_Head",
+          "authoredVertices": 90561,
+          "importedVertices": 91031,
+          "triangles": 173526,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 90505,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 90561,
+              "matchedBasisRows": 90561,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 1.0551518975398352e-07,
+              "rmsError": 3.9788313716454887e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 90561,
+              "matchedBasisRows": 90561,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 6289,
+              "errorRows": 3,
+              "zeroedMovedRows": 3,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0003956034734821587,
+              "rmsError": 1.3297035878641565e-06
+            },
+            {
+              "shape": "mouthSeal",
+              "authoredRows": 90561,
+              "matchedBasisRows": 90561,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 5643,
+              "errorRows": 54,
+              "zeroedMovedRows": 54,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0002947747713619662,
+              "rmsError": 1.8711561878109355e-06
+            }
+          ],
+          "failureFile": "comparison\\outline-weld-true\\RenInk_Head-all-endpoint-failures.json",
+          "failureSha256": "7032ec7747f9d6b1dc22df5cc9780d9b9509dc62d77d56020b35397f476a8932"
+        }
+      ],
+      "totalEndpointErrors": 57,
+      "totalZeroedMovedEndpoints": 57,
+      "totalNonzeroErrors": 0
+    },
+    {
+      "id": "outline-weld-false",
+      "kind": "outline",
+      "weldVertices": false,
+      "meshCount": 3,
+      "frameCount": 7,
+      "meshes": [
+        {
+          "mesh": "RenInk_HairLayers",
+          "authoredVertices": 5137,
+          "importedVertices": 11321,
+          "triangles": 8954,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 5137,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 5137,
+              "matchedBasisRows": 5137,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.143906154658885e-08,
+              "rmsError": 2.3733285661040632e-08
+            },
+            {
+              "shape": "capOn",
+              "authoredRows": 5137,
+              "matchedBasisRows": 5137,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 1847,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 4.5821070671081543e-07,
+              "rmsError": 2.442457359048757e-08
+            }
+          ],
+          "failureFile": "comparison\\outline-weld-false\\RenInk_HairLayers-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "mesh": "RenInk_HairRoot",
+          "authoredVertices": 288,
+          "importedVertices": 349,
+          "triangles": 542,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 288,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 288,
+              "matchedBasisRows": 288,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.155189738369847e-08,
+              "rmsError": 2.548969084949264e-08
+            },
+            {
+              "shape": "capOn",
+              "authoredRows": 288,
+              "matchedBasisRows": 288,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 24,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 6.155189738369847e-08,
+              "rmsError": 2.5929790748878836e-08
+            }
+          ],
+          "failureFile": "comparison\\outline-weld-false\\RenInk_HairRoot-all-endpoint-failures.json",
+          "failureSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        {
+          "mesh": "RenInk_Head",
+          "authoredVertices": 90561,
+          "importedVertices": 91031,
+          "triangles": 173526,
+          "unmatchedBasisRows": 0,
+          "jointFullyMatchingRows": 90505,
+          "ambiguousBestBranches": 0,
+          "frames": [
+            {
+              "shape": "Basis",
+              "authoredRows": 90561,
+              "matchedBasisRows": 90561,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 0,
+              "errorRows": 0,
+              "zeroedMovedRows": 0,
+              "nonzeroErrorRows": 0,
+              "maxError": 1.0551518975398352e-07,
+              "rmsError": 3.9788313716454887e-08
+            },
+            {
+              "shape": "jawOpen_A",
+              "authoredRows": 90561,
+              "matchedBasisRows": 90561,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 6289,
+              "errorRows": 3,
+              "zeroedMovedRows": 3,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0003956034734821587,
+              "rmsError": 1.3297035878641565e-06
+            },
+            {
+              "shape": "mouthSeal",
+              "authoredRows": 90561,
+              "matchedBasisRows": 90561,
+              "unmatchedBasisRows": 0,
+              "authoredMovedAboveTolerance": 5643,
+              "errorRows": 54,
+              "zeroedMovedRows": 54,
+              "nonzeroErrorRows": 0,
+              "maxError": 0.0002947747713619662,
+              "rmsError": 1.8711561878109355e-06
+            }
+          ],
+          "failureFile": "comparison\\outline-weld-false\\RenInk_Head-all-endpoint-failures.json",
+          "failureSha256": "ec684a5b822431194de5c836f30ef45b4b7d8570dfcdf788f38fb783585a65bf"
+        }
+      ],
+      "totalEndpointErrors": 57,
+      "totalZeroedMovedEndpoints": 57,
+      "totalNonzeroErrors": 0
+    }
+  ],
+  "renderingPerformed": false,
+  "mainUnityTouched": false,
+  "futureImportPolicy": "Do not alter the existing eight-point historical shell patch or production imports based solely on this diagnostic. Root reviews numeric findings first."
+}

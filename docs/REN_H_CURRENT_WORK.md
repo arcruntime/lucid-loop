@@ -12,22 +12,61 @@ nose must stay intact. Tokon-esque NPRS from `B:\openai-hackathon-game` is the
 primary shading reference, with restrained Arcane influence allowed. See the
 [updated goal](REN_CHARACTER_GOAL.md#latest-user-correction-designer-eye-silhouettes-and-nprs).
 
+The replacement work is in `h-designer-eyes-v1/`. A source-camera comparison and
+layered eye prototype now exist. The first trial had intersecting eye layers;
+the second exposed excessive front-view asymmetry. Trial v6 corrects plane
+orientation and exact shutter attachment, incorporates original-H boundary
+pigment, and refines the visible lash fans. Its neutral eye-only export is in
+`h-designer-eyes-v1/trial-v6/neutral-export-v2/`: 22 meshes, 5,145 authoring
+triangles. Fresh Blender FBX/GLB imports verify geometry, UVs and color within
+their documented storage precision. Unity material review is next; the export
+has no blink or gaze controls. None has passed likeness review. See the
+[construction review](REN_DESIGNER_EYE_FIRST_CAMERA_REVIEW.md) for inspected
+evidence and the distinction between camera alignment and actual visible shape.
+
+The Tōkon scratch GPU studies have established two provisional material choices:
+extended face-mask coverage removes jagged lip/chin shadows, and the cap's
+authored highlight mask removes the broad panel highlight. Their paired evidence
+is under `h-anime-paint-v1/tokon-study-v1/unity-review/` and
+`h-anime-paint-v1/tokon-study-v1/cap-controls-v1/unity-review/`. These studies still
+use the rejected historical eyes. The first outline-shell Unity comparison
+preserved pose synchronization but introduced unwanted internal nose lines and
+broken hair strokes, so its style is rejected. A separate head-stencil correction
+and the combined new-eye material review remain pending; these are not shipping
+character assets.
+
 ## What can be opened in Unity now
 
 The actual H Windows player is `.local/ren-h-reference-v1/RenHReference.exe`;
 see [historical launch instructions](../README.md#inspect-the-rejected-h-eye-prototype).
 Its scene, `Assets/CharacterArt/Generated/Preview/Scenes/RenHReferenceAnimation.unity`,
 has built in the isolated scratch Unity project. Main-project asset copying is
-temporarily sequenced after engineering's test window. The older main-project
+withheld because the eye appearance was rejected. The older main-project
 `RenNprReview.unity` remains a P2/V2 shading study, not this H assembly.
 
 Actual player renders verify basic mouth, blink/gaze and cap pose preservation.
 Visible UI inspection confirms the source video and artist panels, playback and
-paused seeking; a discovered timestamp/slider background-clearing bug is being
-fixed in a separate build. Seventeen performance channels remain unsupported.
+paused seeking in the historical transport review. A separate material-review
+build fixes the timestamp/slider background; later click-based pause/replay/seek
+checks were inconclusive because of focus, so they are not another UI pass.
+Seventeen performance channels remain unsupported in that historical player.
 The H face is still a dense construction prototype with unresolved visual issues.
 
 ## Current construction sources
+
+### Facial morph import limitation
+
+The isolated Unity FBX welding A/B found the same missing authored movements with
+welding enabled and disabled: 1,873 zeroed moved endpoints across the complete
+source's 14 morph meshes and 70 frames, plus three precision-threshold residuals.
+The earlier 56-row report covered only an outline-visible head subset. Disabling
+welding does not fix these inputs. See the
+[full A/B evidence](../art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/README.md).
+Canonical restoration is being prepared separately; existing source imports and
+the neutral-eye comparison have not been modified by this test. A successful
+Blender roundtrip alone therefore does not establish Unity speech-shape fidelity.
+
+### Source inventory
 
 All paths below are relative to
 `art/generated/characters/ren/parts-workflow-v1/`.
@@ -53,23 +92,24 @@ All paths below are relative to
   attachments have zero gap. The apparent gray triangle in profile is outside
   the actual lip opening. Basic assembly is accepted; painted whole-face,
   performance shapes and Unity playback remain unverified.
-- `h-eye-controls-v1/` supplies verified 3,460-triangle eye-only exports with
-  H-specific blink/gaze calibration and a separate skin-pigment library. Neutral
-  and full-blink views pass construction review. The original overlay cut is
-  still a provisional attachment; an exact native-cycle transition is in work.
+- `h-eye-controls-v1/` is rejected eye-style history. Its 3,460-triangle exports
+  and blink/gaze checks do not approve the new eye design. The original H cut
+  coordinates remain useful attachment provenance, but must not dictate the
+  designer's visible aperture. Replacement layers live in `h-designer-eyes-v1/`.
 - `h-anime-paint-v1/` holds exact H texture/UV provenance, cheek-patch UV work,
   and a muted rose-lip study. The rose direction is suitable for assembled NPR
   review; it is not final artist approval.
 
-`h-complete-head-v1/` is the initial assembly workspace. Combine the current
-contracts there; do not replace the material-ready face with an older study
-head that would discard cheek repairs, UVs or winding corrections.
+`h-complete-head-v1/` preserves the initial assembly. Its portable source is the
+fixed non-eye context for comparison, not a request to overwrite it with ongoing
+trials. Build a separate derivative once the new eye construction is reviewed;
+retain cheek repairs, UVs and winding corrections.
 
 The first complete front render has now been inspected against the artist sheet.
 It has not passed likeness review: pale facial definition, blurred lips and dark
 extraction fragments require correction. See the [assembled visual review](REN_H_ASSEMBLED_VISUAL_REVIEW.md)
-for the exact capture hash and assigned corrections. Unity integration is proceeding
-with the prototype status explicit.
+for the exact capture hash and assigned corrections. Current Unity material
+comparisons stay isolated from main-project character asset promotion.
 
 ## Rig and accessory contract
 

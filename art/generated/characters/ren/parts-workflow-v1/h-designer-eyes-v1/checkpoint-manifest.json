@@ -1,0 +1,989 @@
+{
+  "status": "NEUTRAL_EYE_REVIEW_CHECKPOINT_NOT_LIKENESS_APPROVAL",
+  "scope": "Frozen v6 eyes, v4 rebuild input, artist contours, pigment samples and visual evidence. No Unity scene or animated eye controls.",
+  "hashEncoding": "workingSha256 hashes original working bytes. Git text normalization can change script/docs bytes; Git LFS stores pointers for art. JSON under parts-workflow-v1 is -text.",
+  "rebuildLimitations": "See README.md for preserved intermediate inputs and full-source dependencies. Do not infer a standalone Unity project from this checkpoint.",
+  "files": [
+    {
+      "path": "art/characters/ren-model-sheet.png",
+      "bytes": 2426678,
+      "workingSha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+      "gitAttributes": [
+        "art/characters/ren-model-sheet.png: filter: lfs",
+        "art/characters/ren-model-sheet.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment-review.png",
+      "bytes": 145552,
+      "workingSha256": "06570b8acf7fbb7974efa0adcc74f82330eeb412bc26f6c752037cc7616536d7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment-review.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment-review.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment.json",
+      "bytes": 609183,
+      "workingSha256": "6d5f96fff488952b302ebbb2b1907c06f2ca1253d9dddf16ef78064e5944e60f",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment.npz",
+      "bytes": 6738,
+      "workingSha256": "fdb64737177597c7a31a4bdaf1ee01bc028b7a04c41526e1b6c1ed0c9a059913",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment.npz: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-pigment.npz: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-uv.json",
+      "bytes": 313409,
+      "workingSha256": "97942bbeeb16a15b8cecb62682a9e57be71197efeac452ed7af61dd4e7355dec",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-uv.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/boundary-uv.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/README.md",
+      "bytes": 2130,
+      "workingSha256": "79fe03eb1049322c6990e358b57739efb7868a88ae1f67863ab241dda452bf42",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/README.md: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/boundary-pigment-v1/README.md: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-comparison-v1.png",
+      "bytes": 815524,
+      "workingSha256": "4d32958c0c28a90d285acfe7f78fb23beb25d464158987b7852d384d00c8b775",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-comparison-v1.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-comparison-v1.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-fit-v1.json",
+      "bytes": 5065,
+      "workingSha256": "b6736cb4d21855b21d19e837008e662e63d42601bc4a3ca33066fd462a3b5ab0",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-fit-v1.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-fit-v1.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-landmarks-v1.png",
+      "bytes": 255275,
+      "workingSha256": "c34883068be980d12dbc6f8dcc5d9e4c2b6f6eadfb400e32077b96f53b36beb9",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-landmarks-v1.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-landmarks-v1.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-render-v1.json",
+      "bytes": 983,
+      "workingSha256": "6d3cb38ac17ef5945a91dd0276f6321042f243eb1f3c92b9bf025b201ac2a1e7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-render-v1.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/portrait-camera-render-v1.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/README.md",
+      "bytes": 6587,
+      "workingSha256": "98e1a5f59409558f47ed481f18affa72aeb8a8763665da3a00df2def95a5def6",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/README.md: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/README.md: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/construction.json",
+      "bytes": 37803,
+      "workingSha256": "6c26bbbba6cc18fe615d2e4a51924cea6436a2533cee4253f39547ef904d85da",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/construction.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/construction.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/pigment-integration.json",
+      "bytes": 2145,
+      "workingSha256": "9733eac99b4b7d3a1f8907c9590ff1d685f7541ef5dc0730681fe55526a312e4",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/pigment-integration.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/pigment-integration.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/Ren_DesignerEyes_Pigment.blend",
+      "bytes": 38202556,
+      "workingSha256": "23b32084c563a751134f5f93df7325627996ebbcda7dbb80e5e364f3c0f708f7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/Ren_DesignerEyes_Pigment.blend: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v4/Ren_DesignerEyes_Pigment.blend: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/captures.json",
+      "bytes": 3437,
+      "workingSha256": "f452210b6be488525693b50ccb1b0cb481bd54bed0dd3ad97d98146985d60f8e",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/captures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/captures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/distinct-layer-mask.json",
+      "bytes": 634,
+      "workingSha256": "25cc06a42d28c90aed3cadd8fe34a0cf297bad7a0e7197930b93b66ee69bbb7e",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/distinct-layer-mask.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/distinct-layer-mask.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/layer-attachment.json",
+      "bytes": 1443013,
+      "workingSha256": "a0c241256ec748bdd8a4294db1151979abab38505b4f042df8ca31b67d651bec",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/layer-attachment.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/layer-attachment.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/layer-contour-comparison.png",
+      "bytes": 233354,
+      "workingSha256": "e8df3caaef4c339e9a900280dea59b450fcf5c89b0211e3f6f6707bd6ec574d0",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/layer-contour-comparison.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/layer-contour-comparison.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/contract.json",
+      "bytes": 33116,
+      "workingSha256": "2408b6573519c144954ff96faca3594bd5632e4ac63240aaa4d3b766351c9f97",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/contract.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/contract.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.blend",
+      "bytes": 24422521,
+      "workingSha256": "d58734be395ce5a5d5edf16d6a88eeca7beb1732a654f09389c712d170c010be",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.blend: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.blend: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.fbx",
+      "bytes": 377484,
+      "workingSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.fbx: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.fbx: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.glb",
+      "bytes": 349996,
+      "workingSha256": "bba7f0844a022b4400b18f9854974e4fc69582b4df6cd5b3b13cae0f514b5af7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.glb: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/Ren_DesignerEyes_Neutral.glb: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/roundtrip-verification.json",
+      "bytes": 35740,
+      "workingSha256": "dad62ced9966669ddcc1bf9b2682b9cc3ab1d88cb87a571920bfb84745f353b0",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/roundtrip-verification.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/neutral-export-v2/roundtrip-verification.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/NEUTRAL_REVIEW_HANDOFF.md",
+      "bytes": 4871,
+      "workingSha256": "8d80c5f586cea801e3feaab772d5fbad6d012120caf2298a101968dc7ec446e5",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/NEUTRAL_REVIEW_HANDOFF.md: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/NEUTRAL_REVIEW_HANDOFF.md: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-complete-head.png",
+      "bytes": 570251,
+      "workingSha256": "927b653c73f5beaa8e932acc97b65a627fc25f12bb575c6afc66ac1269485f17",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-complete-head.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-complete-head.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-crease-visibility.png",
+      "bytes": 353869,
+      "workingSha256": "a9cbcf96a6d626496f22c5bd86bc0128ea8e5e777cb71961fe8a74b529c98463",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-crease-visibility.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-crease-visibility.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-layer-visibility-distinct.png",
+      "bytes": 355679,
+      "workingSha256": "269de4b0277785d61da9b0584af76704393a071ecfe6ced9ca2896b0cdd9fe3b",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-layer-visibility-distinct.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-layer-visibility-distinct.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-layer-visibility.png",
+      "bytes": 355846,
+      "workingSha256": "4f317bef94259bb50a9c13d0a2a7798a8a13d07240ee9229216390a58f2df582",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-layer-visibility.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-layer-visibility.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-unobscured-eyes.png",
+      "bytes": 514948,
+      "workingSha256": "7889db7a346eb59f6e91349b79a75a102da45529c4ae9499f264f7b628525263",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-unobscured-eyes.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/portrait-unobscured-eyes.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/profile-L-hair-hidden.png",
+      "bytes": 518002,
+      "workingSha256": "52f491dbc2b7485a43ccd957cd1c0461b2db947b720c9d6f6da21ca5c815b161",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/profile-L-hair-hidden.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/profile-L-hair-hidden.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/profile-R-hair-hidden.png",
+      "bytes": 512575,
+      "workingSha256": "ae3b51d1376321a9b77686b1415d6cafb08cb30827d7531cc2d07786b42ff42c",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/profile-R-hair-hidden.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/profile-R-hair-hidden.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/refinement.json",
+      "bytes": 153182,
+      "workingSha256": "2b3eddd17c720456b3db3c1f89b73bf103adcd5ec02dd79d8db1dd0739b384e1",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/refinement.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/refinement.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/Ren_DesignerEyes_Pigment.blend",
+      "bytes": 38242719,
+      "workingSha256": "715617c4842029775dfdef0cd289648ea87883624fe693c61a5d374812a2b13d",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/Ren_DesignerEyes_Pigment.blend: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/Ren_DesignerEyes_Pigment.blend: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/rendered-layer-review.json",
+      "bytes": 4697,
+      "workingSha256": "1a872426393b9c196a51c3b0fd937b932edd02b8e8ad58f2898214bb6aa75079",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/rendered-layer-review.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/rendered-layer-review.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/source-eye-comparison.png",
+      "bytes": 223801,
+      "workingSha256": "d35e107fd54bf92c8b48fdd5fd8be5aec5595340127213c9c18d6f9056782514",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/source-eye-comparison.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/source-eye-comparison.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/unobscured-profile-captures.json",
+      "bytes": 556,
+      "workingSha256": "4a864bca6108068d98a05a95345636b1705caaaee9407596c68767febe92a3b3",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/unobscured-profile-captures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/unobscured-profile-captures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-front.png",
+      "bytes": 555040,
+      "workingSha256": "afcca646e044aa0f3d622b9cf3a44ecd44475e9ea45f0d800068b0e7e24824fb",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-front.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-front.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-profile.png",
+      "bytes": 562061,
+      "workingSha256": "d5f9c2eae06b6f02e247f94759d73473911b5f7e43300232c92a4dfe87749db7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-profile.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-profile.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-quarter.png",
+      "bytes": 552608,
+      "workingSha256": "da9ddf0664f516e2b45a2adb7ab7d03de2de1678e72d1061c117323e2d74b556",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-quarter.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-quarter.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-view-plate.png",
+      "bytes": 1032501,
+      "workingSha256": "839aa526a31a39a1d138efa5e7996712343cf1cf15fa2ec4d289a8d82afb35ce",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-view-plate.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-designer-eyes-v1/trial-v6/whole-head-view-plate.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-controls-v1/seam-contract-v1/native-study-cut-boundaries.json",
+      "bytes": 1532778,
+      "workingSha256": "16301040e4a42f9e615a63720d0bec8e6c6c54d6cf2944778597dda2d2276992",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-controls-v1/seam-contract-v1/native-study-cut-boundaries.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-controls-v1/seam-contract-v1/native-study-cut-boundaries.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-eye-reference-plate.png",
+      "bytes": 381838,
+      "workingSha256": "6aa25a876f20447a1e193d68ba7a041ea3ecfb09e8eacb6bf9fc4edefe540fde",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-eye-reference-plate.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-eye-reference-plate.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-layered-contours-refined-v1.json",
+      "bytes": 574725,
+      "workingSha256": "a256e58f3b2e027460547cb2e653509df2ca2bae39d6e22f291cbb7c13a703b1",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-layered-contours-refined-v1.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-layered-contours-refined-v1.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-layered-contours-refined-v1.png",
+      "bytes": 452278,
+      "workingSha256": "ac552c2f1a589fea214a862b2a8765da1e3976c3be72ff734f91ee6fc1103ab8",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-layered-contours-refined-v1.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-layered-contours-refined-v1.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-reference-provenance.json",
+      "bytes": 1046,
+      "workingSha256": "ff99d654fc1a24a1100f4a6ec08ba63190eda41e4d4c66779561227d000e8ec7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-reference-provenance.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-reference-provenance.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-visible-contour-draft.json",
+      "bytes": 22220,
+      "workingSha256": "d8d889a15a076b0dd8be393aaaa0ad0c3348cf5ab8dc45ee624e75eaab4f84c2",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-visible-contour-draft.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-visible-contour-draft.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-visible-contour-draft.png",
+      "bytes": 312684,
+      "workingSha256": "6d8b309feca530d245f824c4737b1ffe93a0d99a5595a1cab624c8d98dd76102",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-visible-contour-draft.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/artist-visible-contour-draft.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/pixel-detail-main-left.png",
+      "bytes": 112239,
+      "workingSha256": "e38dd75d915fa9029816b9efaa3175693e26bdcbda1bf01cbff2fddc05ea1730",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/pixel-detail-main-left.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/pixel-detail-main-left.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/pixel-detail-main-right.png",
+      "bytes": 96125,
+      "workingSha256": "29f24fd7fb4f7cf60b512ce6ce836b2fd46bb2349790ccf7fe6d4073c4892a0a",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/pixel-detail-main-right.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/pixel-detail-main-right.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-eye-geometry.json",
+      "bytes": 8662,
+      "workingSha256": "244155592703de2ad6520504fb828f8f9f6301621311c014ed59fb1d95f95ad4",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-eye-geometry.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-eye-geometry.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-eye-reference-arrays.npz",
+      "bytes": 75272,
+      "workingSha256": "76dd3afb49c666fbca77f0dc9effcf46e306fce4245c87f919587508d27abf6d",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-eye-reference-arrays.npz: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-eye-reference-arrays.npz: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-layer-geometry-plate.png",
+      "bytes": 736185,
+      "workingSha256": "dab9c71ce0000024154e63fdafff150865ffc2c1f84deec783cf5f3eed10509b",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-layer-geometry-plate.png: filter: lfs",
+        "art/generated/characters/ren/parts-workflow-v1/h-eye-design-audit-v1/unitychan-layer-geometry-plate.png: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/audit-input.json",
+      "bytes": 1129,
+      "workingSha256": "4c3e2dacde48ba64f7c54b372854e367ad45b4e550fd21c912ef83d556255c07",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/audit-input.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/audit-input.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/compare_fbx_weld_audit.py",
+      "bytes": 7681,
+      "workingSha256": "7eb9bb2a568ff4e2e0d07995bac8560dd36098fbd47d94cd56852843afe2ffad",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/compare_fbx_weld_audit.py: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/compare_fbx_weld_audit.py: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_HairLayers-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_HairLayers-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_HairLayers-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_HairRoot-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_HairRoot-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_HairRoot-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_Head-all-endpoint-failures.json",
+      "bytes": 40077,
+      "workingSha256": "ec684a5b822431194de5c836f30ef45b4b7d8570dfcdf788f38fb783585a65bf",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_Head-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-false/RenInk_Head-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_HairLayers-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_HairLayers-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_HairLayers-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_HairRoot-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_HairRoot-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_HairRoot-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_Head-all-endpoint-failures.json",
+      "bytes": 40077,
+      "workingSha256": "7032ec7747f9d6b1dc22df5cc9780d9b9509dc62d77d56020b35397f476a8932",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_Head-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/outline-weld-true/RenInk_Head-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json",
+      "bytes": 160861,
+      "workingSha256": "1141375499858fb1ceea0d5759dc990c69e472151c91a71919f8b51f11fbc162",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_LowerLash-all-endpoint-failures.json",
+      "bytes": 12509,
+      "workingSha256": "284cc2534727fede53f1cd20cf4baa61c9a4d98aff8be98cbbb62e3a3e182c87",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_LowerLash-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_LowerLash-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json",
+      "bytes": 11704,
+      "workingSha256": "83b808cb0246e1ca237891eca8830de3cf88b0180312ce9a4abb15f879cf61d1",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_UpperLash-all-endpoint-failures.json",
+      "bytes": 2774,
+      "workingSha256": "764da708f8a37028e616efb5a7e3435e770bdcf9d889e1e91857e98425d17d25",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_UpperLash-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_L_UpperLash-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json",
+      "bytes": 158283,
+      "workingSha256": "515aa1ff3b5c82c986532c368e1540f3aa8902047ae8b8cc9c0d895f5a1f6e5f",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_LowerLash-all-endpoint-failures.json",
+      "bytes": 13283,
+      "workingSha256": "89b41fef15eab95b23ec2f8b20813064b49dadba8599662964c3625a576a905d",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_LowerLash-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_LowerLash-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json",
+      "bytes": 11828,
+      "workingSha256": "9244675edb0e699c16408f54eb45526f70d70a0cbd73bfe4973a6586feb4a3b5",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_UpperLash-all-endpoint-failures.json",
+      "bytes": 2795,
+      "workingSha256": "a74122c7368e5dc7270746b0e47c5e12886c22fb644e9e10408ea23adefa77d6",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_UpperLash-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Eye_R_UpperLash-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Head-all-endpoint-failures.json",
+      "bytes": 42226,
+      "workingSha256": "35a23ce0ccc341f75d1226de2158215b54217d4a683851f6c6619653fcf70669",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Head-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Head-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_InnerLipWall-all-endpoint-failures.json",
+      "bytes": 896523,
+      "workingSha256": "6a4d08297b6d74d05d58c38d63e61d7ee3203411cc9f87ee14b6c4e141e00a7d",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_InnerLipWall-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_InnerLipWall-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_OralCavity-all-endpoint-failures.json",
+      "bytes": 707,
+      "workingSha256": "8482af6d23b4c3c009edd43b8bd1e5f1e9ba8870fe42917ae1bee31b4a7163e7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_OralCavity-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_OralCavity-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Tongue-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Tongue-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_H_Tongue-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_Hair_H_DetailedLayers-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_Hair_H_DetailedLayers-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_Hair_H_DetailedLayers-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_Hair_H_RootBase-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_Hair_H_RootBase-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-false/Ren_Hair_H_RootBase-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json",
+      "bytes": 160861,
+      "workingSha256": "1141375499858fb1ceea0d5759dc990c69e472151c91a71919f8b51f11fbc162",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_LidAnnulus-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_LowerLash-all-endpoint-failures.json",
+      "bytes": 12509,
+      "workingSha256": "0027f56de6b912e14d20dfdf55b4b2db6c4f482e859b702118cfcc716b564faa",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_LowerLash-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_LowerLash-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json",
+      "bytes": 11704,
+      "workingSha256": "83b808cb0246e1ca237891eca8830de3cf88b0180312ce9a4abb15f879cf61d1",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_OuterFlicks-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_UpperLash-all-endpoint-failures.json",
+      "bytes": 2774,
+      "workingSha256": "561afe80215ff4c253d4313e2767cd5b25caa7ae0eeb8c7e023a817a32d3c17d",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_UpperLash-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_L_UpperLash-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json",
+      "bytes": 158283,
+      "workingSha256": "515aa1ff3b5c82c986532c368e1540f3aa8902047ae8b8cc9c0d895f5a1f6e5f",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_LidAnnulus-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_LowerLash-all-endpoint-failures.json",
+      "bytes": 13283,
+      "workingSha256": "dd9f126ee2661a742648ee8bae473702905273ef3b54363f5ca8e018fec104ba",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_LowerLash-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_LowerLash-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json",
+      "bytes": 11828,
+      "workingSha256": "9244675edb0e699c16408f54eb45526f70d70a0cbd73bfe4973a6586feb4a3b5",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_OuterFlicks-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_UpperLash-all-endpoint-failures.json",
+      "bytes": 2795,
+      "workingSha256": "1d555f02c771448812122c390eb5daed98302299f8e975bd56b99c1dd8c1839f",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_UpperLash-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Eye_R_UpperLash-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Head-all-endpoint-failures.json",
+      "bytes": 42223,
+      "workingSha256": "f3363e2dc071a0114d5466201cf49ed658077e3f3f8ab00afd428dba4605046e",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Head-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Head-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_InnerLipWall-all-endpoint-failures.json",
+      "bytes": 896523,
+      "workingSha256": "6a4d08297b6d74d05d58c38d63e61d7ee3203411cc9f87ee14b6c4e141e00a7d",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_InnerLipWall-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_InnerLipWall-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_OralCavity-all-endpoint-failures.json",
+      "bytes": 707,
+      "workingSha256": "8482af6d23b4c3c009edd43b8bd1e5f1e9ba8870fe42917ae1bee31b4a7163e7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_OralCavity-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_OralCavity-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Tongue-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Tongue-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_H_Tongue-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_Hair_H_DetailedLayers-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_Hair_H_DetailedLayers-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_Hair_H_DetailedLayers-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_Hair_H_RootBase-all-endpoint-failures.json",
+      "bytes": 3,
+      "workingSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_Hair_H_RootBase-all-endpoint-failures.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison/source-weld-true/Ren_Hair_H_RootBase-all-endpoint-failures.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison-summary.json",
+      "bytes": 86672,
+      "workingSha256": "7023e3f99cada06d18010da4b67173552e348787276c97d1948573e83c033b29",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison-summary.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/comparison-summary.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/curate_fbx_weld_audit.py",
+      "bytes": 7422,
+      "workingSha256": "7629bde87e5c004d2585d2d039e292c3c5220cface7cba9396733bfc9307bb49",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/curate_fbx_weld_audit.py: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/curate_fbx_weld_audit.py: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/files.json",
+      "bytes": 9555,
+      "workingSha256": "88767ab195cb1cbd56b90aa184dafb7a8392b9e259b865783707864ff7d333d7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/files.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/files.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/imported/imported-manifest.json",
+      "bytes": 112862,
+      "workingSha256": "fb35957ea7f0dc003e2380343231b8e707915deb14a7ed5aeeac5b37f11813dd",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/imported/imported-manifest.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/imported/imported-manifest.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/outline-weld-false.fbx.meta",
+      "bytes": 2891,
+      "workingSha256": "137d6efcf667b932645b646e6144e19fa30ca88b79cab0ca990ba8997bb060e5",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/outline-weld-false.fbx.meta: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/outline-weld-false.fbx.meta: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/outline-weld-true.fbx.meta",
+      "bytes": 2891,
+      "workingSha256": "b2a55c791601f6762e35c59d3834ae86f9123e30f116c2e4c54e356f4755291c",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/outline-weld-true.fbx.meta: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/outline-weld-true.fbx.meta: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/source-weld-false.fbx.meta",
+      "bytes": 2891,
+      "workingSha256": "7773bc8ca05f729b83faac752c31115a8f4fa57a0c115b0e5cab8f7115634279",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/source-weld-false.fbx.meta: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/source-weld-false.fbx.meta: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/source-weld-true.fbx.meta",
+      "bytes": 2891,
+      "workingSha256": "88b5fdf98379a66ca8d6232bc502069103b12c89d14d9839bdcd75e726167648",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/source-weld-true.fbx.meta: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/importer-metas/source-weld-true.fbx.meta: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/input-protection.json",
+      "bytes": 1635,
+      "workingSha256": "01bbf11901b8a4aef965482c8a8a4a4496d20af5b79ce2bb3e65c163926cd148",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/input-protection.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/input-protection.json: text: unset"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/prepare_fbx_weld_audit.py",
+      "bytes": 2396,
+      "workingSha256": "631dfbc186b206187c4defb5c4291e9cd17139ff5f4d4addde01e98cdd46e7e7",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/prepare_fbx_weld_audit.py: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/prepare_fbx_weld_audit.py: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/README.md",
+      "bytes": 3035,
+      "workingSha256": "27f0738e83f0fe455d0257c332c6d82a98d76884662a8d0aa78c9663308f3b95",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/README.md: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/README.md: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/RenFbxWeldAudit.cs",
+      "bytes": 9042,
+      "workingSha256": "b289c83467279deb92b8d2f3ec1c019a3598a8f9d71b1a1d09f154a6c58f170e",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/RenFbxWeldAudit.cs: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/RenFbxWeldAudit.cs: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/RenFbxWeldAudit.cs.meta",
+      "bytes": 60,
+      "workingSha256": "cebbfb4a8a73a5c1a557d047c95d21a6d864b143ef261a69aef6ef042395d0cf",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/RenFbxWeldAudit.cs.meta: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/RenFbxWeldAudit.cs.meta: text: auto"
+      ]
+    },
+    {
+      "path": "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/review-evidence.json",
+      "bytes": 10378,
+      "workingSha256": "aec541c2cff9b80748ca6b60774dbd425c36b8b740a4df8dd795ab9217d9b965",
+      "gitAttributes": [
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/review-evidence.json: filter: unspecified",
+        "art/generated/characters/ren/parts-workflow-v1/h-tokon-outline-v1/import-audit/unity-weld-ab-v1/review-evidence.json: text: unset"
+      ]
+    },
+    {
+      "path": "docs/CHARACTER_NPR_IOS_REQUIREMENTS.md",
+      "bytes": 5828,
+      "workingSha256": "fe545a915562bbf0ff37991cdc56c8d5e48f50df13dec56b26c1249f24ba66d5",
+      "gitAttributes": [
+        "docs/CHARACTER_NPR_IOS_REQUIREMENTS.md: filter: unspecified",
+        "docs/CHARACTER_NPR_IOS_REQUIREMENTS.md: text: auto"
+      ]
+    },
+    {
+      "path": "docs/REN_DESIGNER_EYE_FIRST_CAMERA_REVIEW.md",
+      "bytes": 8045,
+      "workingSha256": "6704de2740098746984b4081a9493151ec0c001b36a0ed5e9a48355b5d288d30",
+      "gitAttributes": [
+        "docs/REN_DESIGNER_EYE_FIRST_CAMERA_REVIEW.md: filter: unspecified",
+        "docs/REN_DESIGNER_EYE_FIRST_CAMERA_REVIEW.md: text: auto"
+      ]
+    },
+    {
+      "path": "docs/REN_DESIGNER_EYE_REBUILD_PROPOSAL.md",
+      "bytes": 16970,
+      "workingSha256": "fd5ca5c25ef64efaeac5a95b674b778cb151b7a6f9215d7f0ac00d2c070060dc",
+      "gitAttributes": [
+        "docs/REN_DESIGNER_EYE_REBUILD_PROPOSAL.md: filter: unspecified",
+        "docs/REN_DESIGNER_EYE_REBUILD_PROPOSAL.md: text: auto"
+      ]
+    },
+    {
+      "path": "docs/REN_H_CURRENT_WORK.md",
+      "bytes": 8332,
+      "workingSha256": "64f8cb3461918d36dc6c9304585b0e3f46bfc1d5cde5853540cc612d35f1f98a",
+      "gitAttributes": [
+        "docs/REN_H_CURRENT_WORK.md: filter: unspecified",
+        "docs/REN_H_CURRENT_WORK.md: text: auto"
+      ]
+    },
+    {
+      "path": "tools/character_art/audit_ren_anime_eye_reference.py",
+      "bytes": 23402,
+      "workingSha256": "0d5eb860974528ac9e14cf2e9759fda60bccb564b23106728363a5eccc871f65",
+      "gitAttributes": [
+        "tools/character_art/audit_ren_anime_eye_reference.py: filter: unspecified",
+        "tools/character_art/audit_ren_anime_eye_reference.py: text: auto"
+      ]
+    },
+    {
+      "path": "tools/character_art/build_ren_designer_eyes.py",
+      "bytes": 90942,
+      "workingSha256": "6bf5cdfb1a2969a323a37e2ab920d2a6e1fc59d47ee37c85ce67e9367f7a5003",
+      "gitAttributes": [
+        "tools/character_art/build_ren_designer_eyes.py: filter: unspecified",
+        "tools/character_art/build_ren_designer_eyes.py: text: auto"
+      ]
+    },
+    {
+      "path": "tools/character_art/sample_ren_designer_eye_boundary.py",
+      "bytes": 8327,
+      "workingSha256": "3af8a570c657d89fdb806a9e339fab578c233bfd70c061aef57c23ff7f28c105",
+      "gitAttributes": [
+        "tools/character_art/sample_ren_designer_eye_boundary.py: filter: unspecified",
+        "tools/character_art/sample_ren_designer_eye_boundary.py: text: auto"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2364 @@
+{
+    "unityVersion": "6000.3.24f1",
+    "editorSourceSha256": "b289c83467279deb92b8d2f3ec1c019a3598a8f9d71b1a1d09f154a6c58f170e",
+    "status": "FOUR_COPIED_IMPORTS_EXPORTED_FOR_AUTHORED_ENDPOINT_COMPARISON",
+    "sourceWorldToUnityWorld": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.1920928955078126e-7,
+        0.9999999403953552,
+        2.9802320611338475e-9,
+        0.0,
+        -0.9999999403953552,
+        -1.1920928955078126e-7,
+        -2.3841858265427619e-8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+    ],
+    "cases": [
+        {
+            "id": "source-weld-true",
+            "kind": "source",
+            "fbxSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+            "metaSha256": "88b5fdf98379a66ca8d6232bc502069103b12c89d14d9839bdcd75e726167648",
+            "weldVertices": true,
+            "isReadable": true,
+            "importBlendShapes": true,
+            "importAnimation": false,
+            "optimizeMeshVertices": false,
+            "optimizeMeshPolygons": false,
+            "meshCompression": "Off",
+            "importNormals": "Import",
+            "importBlendShapeNormals": "Import",
+            "meshes": [
+                {
+                    "name": "Ren_H_Eye_L_LidAnnulus",
+                    "path": "Root/Head/Ren_H_Eye_L_LidAnnulus",
+                    "vertices": 448,
+                    "triangles": 768,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_L_LidAnnulus--Basis.f32",
+                            "sha256": "9634313ba70c53bc487bbaeb55fc1bb9522d30ad0647b810bfcf2ffe0c53be54",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 448,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkL",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeBlinkL.f32",
+                            "sha256": "0a05dc97c1972bf5019f3e44c02220697493340b53c2838b9086f150cd5713a2",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C25",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeBlinkL_C25.f32",
+                            "sha256": "85dcfd4513a849bd9c84f8cfe5acc975a36fa0faab232aae28a1425372efce1c",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 235,
+                            "rawZeroDeltaVertices": 213,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C50",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeBlinkL_C50.f32",
+                            "sha256": "e95da70b1fb0e3c343a9596053a7d9cdbdc8c71ce65d20d4b2451de4bdc749e3",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 241,
+                            "rawZeroDeltaVertices": 207,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C75",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeBlinkL_C75.f32",
+                            "sha256": "5ab3758ce898ae116b31a68e50b4be63b984594b3a10091adc8058d13e9807ff",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 234,
+                            "rawZeroDeltaVertices": 214,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideL",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeWideL.f32",
+                            "sha256": "bc9e2a288834596428d2fff29b84b4454df80ffea3b95200f34020799b9b5d20",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintL",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeSquintL.f32",
+                            "sha256": "67c8ec7f924716e6bb482b5c6b8a86779a203185076d5f316bb12387f9e08244",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_L_LowerLash",
+                    "path": "Root/Head/Ren_H_Eye_L_LowerLash",
+                    "vertices": 64,
+                    "triangles": 62,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_L_LowerLash--Basis.f32",
+                            "sha256": "cafee43d09f7ef15133c31a47896a124a922e8279deed462143c638281f233a5",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 64,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkL",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeBlinkL.f32",
+                            "sha256": "16e874ff127ab49361d3ff231bb6ebd920d3f0abb6b1cd312667c3fccb4fded5",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C25",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeBlinkL_C25.f32",
+                            "sha256": "c4fa757ce1d6e1a45809b8a1476e50072a53ab8ed5fb47be03709bb861aaab11",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 52,
+                            "rawZeroDeltaVertices": 12,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C50",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeBlinkL_C50.f32",
+                            "sha256": "601f3e8ef216c2e4ef713db125239b2e107d2dcdf6fa0e241cb42196a31b690c",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 52,
+                            "rawZeroDeltaVertices": 12,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C75",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeBlinkL_C75.f32",
+                            "sha256": "3c866648723805a7729a6bcb5d0ccca5856d35a3646e5be0a47575cfaff9d681",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 52,
+                            "rawZeroDeltaVertices": 12,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideL",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeWideL.f32",
+                            "sha256": "5aba0f36f3fd9aa9c088e6dd1cf805b0cc3bc50e9a67c0483668713797a49056",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintL",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeSquintL.f32",
+                            "sha256": "a7b28145d26a9ecf5493070538cf66eccb5d00fa7bc82eefb2816d921431dbfe",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_L_OuterFlicks",
+                    "path": "Root/Head/Ren_H_Eye_L_OuterFlicks",
+                    "vertices": 6,
+                    "triangles": 2,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_L_OuterFlicks--Basis.f32",
+                            "sha256": "709a1680465074ac89d69db5fa234e030f96e4caaae71b6c7e17c4d1d2e602e6",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkL",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeBlinkL.f32",
+                            "sha256": "db8ecf7365905b42616900e05d7f3675da4f8b1227fbe2c6f042cbe71d372fef",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 3,
+                            "rawZeroDeltaVertices": 3,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C25",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeBlinkL_C25.f32",
+                            "sha256": "709a1680465074ac89d69db5fa234e030f96e4caaae71b6c7e17c4d1d2e602e6",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C50",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeBlinkL_C50.f32",
+                            "sha256": "709a1680465074ac89d69db5fa234e030f96e4caaae71b6c7e17c4d1d2e602e6",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C75",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeBlinkL_C75.f32",
+                            "sha256": "709a1680465074ac89d69db5fa234e030f96e4caaae71b6c7e17c4d1d2e602e6",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideL",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeWideL.f32",
+                            "sha256": "3b0052712d7cac69a87765280b507706a09856fc1ebe7e4a94e94160c44837c5",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 3,
+                            "rawZeroDeltaVertices": 3,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintL",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeSquintL.f32",
+                            "sha256": "4a13c6897ce5738992803185ebf00f2cc36ad6b4fabb6c0abf08ce902d693bfa",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 1,
+                            "rawZeroDeltaVertices": 5,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_L_UpperLash",
+                    "path": "Root/Head/Ren_H_Eye_L_UpperLash",
+                    "vertices": 64,
+                    "triangles": 62,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_L_UpperLash--Basis.f32",
+                            "sha256": "c2f77a39d764863778b26d41f284333290d9050ea4a448fc35bccc6a78d04e3a",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 64,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkL",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeBlinkL.f32",
+                            "sha256": "25897064e141e69b8b5d95f4f68b8955dca8745e60ed918a9b47556562ec23b7",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C25",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeBlinkL_C25.f32",
+                            "sha256": "84c1e0c2da6c58cbb9d106e85b67a26e70fdb5ad44a2ccd55d32d5d64b01daf9",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 56,
+                            "rawZeroDeltaVertices": 8,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C50",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeBlinkL_C50.f32",
+                            "sha256": "642fe3df849004b53f28c42eaf10273548bb9e9e90a74afe7a6f4def67c4dad2",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 58,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C75",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeBlinkL_C75.f32",
+                            "sha256": "d5f50feb6a9a5b0feb022a13bb26c5273a015a35e7b2dbbe93a8b167f7e4dca5",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 56,
+                            "rawZeroDeltaVertices": 8,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideL",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeWideL.f32",
+                            "sha256": "cba71b33b335fd7ab4d2bbd129f7b779963f88c72a9ca5d0ee4516a3a923b75f",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintL",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeSquintL.f32",
+                            "sha256": "986bae05715d8f53f3f6bbfd1743f536a3c7990e4c987bfc2ecbaae5258a78ab",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_R_LidAnnulus",
+                    "path": "Root/Head/Ren_H_Eye_R_LidAnnulus",
+                    "vertices": 448,
+                    "triangles": 768,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_R_LidAnnulus--Basis.f32",
+                            "sha256": "f7f5b5272ade4f5cfe763dc34d0ca89ec9469b58c8e0d1700a877951819073c7",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 448,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkR",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeBlinkR.f32",
+                            "sha256": "594a7545e3cb7a182bde9294b2027495a8e3dc2c1ddc6f529a1e13f2ef7da025",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 373,
+                            "rawZeroDeltaVertices": 75,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C25",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeBlinkR_C25.f32",
+                            "sha256": "b79260df59249ef922e73d4ada722828ff478291f13708e715dd8497f934086b",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 238,
+                            "rawZeroDeltaVertices": 210,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C50",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeBlinkR_C50.f32",
+                            "sha256": "239e869fe8d00d142cb42927a6db0b68a40641b119aca4ddd45e27d9ece3fffd",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 246,
+                            "rawZeroDeltaVertices": 202,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C75",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeBlinkR_C75.f32",
+                            "sha256": "c2381d81b9c6714dd121e8a520c47e36e96f23f48822ad76a6130ae3f4be7cfc",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 236,
+                            "rawZeroDeltaVertices": 212,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideR",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeWideR.f32",
+                            "sha256": "96f200f6476851ccfa3b00276a4da3589eb1be1972dac1db1c75e916e3c2d331",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintR",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeSquintR.f32",
+                            "sha256": "0347e8f7c093a47b8c8ba9eb17767eb23f19b481cfc3dcde027209fd2589d082",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_R_LowerLash",
+                    "path": "Root/Head/Ren_H_Eye_R_LowerLash",
+                    "vertices": 64,
+                    "triangles": 62,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_R_LowerLash--Basis.f32",
+                            "sha256": "8722cce0578335bee741126cf9f8657e911e7d7c1d1f6ef5287f7878f995f8ba",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 64,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkR",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeBlinkR.f32",
+                            "sha256": "2d739e4bbbc8c095cd985caf09a0f1589b01529fd19b179c25083df63530d70f",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C25",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeBlinkR_C25.f32",
+                            "sha256": "623ae692986d11b5525a4c5ba7da4925f6f787ff6cfb907abe8186433866204c",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 51,
+                            "rawZeroDeltaVertices": 13,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C50",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeBlinkR_C50.f32",
+                            "sha256": "0ccd1ad85b34c5f23d9999b37f029688f78232bdc711c7e8070d7263b1179339",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 53,
+                            "rawZeroDeltaVertices": 11,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C75",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeBlinkR_C75.f32",
+                            "sha256": "325832ecfd16b93ff414293096300b6e4a7ab94a2076b8fd29a0ee7fe85261bc",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 51,
+                            "rawZeroDeltaVertices": 13,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideR",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeWideR.f32",
+                            "sha256": "198c43bc60b2d0632856e44000d4af84eb82b7d575fb90b0530a24ba9bef1ae5",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintR",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeSquintR.f32",
+                            "sha256": "69a8ae3e17e87ecde16b6c392c638b2c1033199148c0bbae2c06358a82dcf6c2",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_R_OuterFlicks",
+                    "path": "Root/Head/Ren_H_Eye_R_OuterFlicks",
+                    "vertices": 6,
+                    "triangles": 2,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_R_OuterFlicks--Basis.f32",
+                            "sha256": "0fb171561dc71e3560ac45880e664ef1fe8499dadf0b7c69bc8bcb6fa9b3f425",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkR",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeBlinkR.f32",
+                            "sha256": "a1816804b0cd3fdfccd842b86193f8cfeeaac6d9f37125e8548cdc750549d0fd",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 3,
+                            "rawZeroDeltaVertices": 3,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C25",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeBlinkR_C25.f32",
+                            "sha256": "0fb171561dc71e3560ac45880e664ef1fe8499dadf0b7c69bc8bcb6fa9b3f425",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C50",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeBlinkR_C50.f32",
+                            "sha256": "0fb171561dc71e3560ac45880e664ef1fe8499dadf0b7c69bc8bcb6fa9b3f425",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C75",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeBlinkR_C75.f32",
+                            "sha256": "0fb171561dc71e3560ac45880e664ef1fe8499dadf0b7c69bc8bcb6fa9b3f425",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideR",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeWideR.f32",
+                            "sha256": "ed7266864f32afbaf77c8105c5c8bd1f440fcc5e7849f6041ca9416cc9fd978e",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 3,
+                            "rawZeroDeltaVertices": 3,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintR",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeSquintR.f32",
+                            "sha256": "d9279ed0a21d101d7e58b8f6acdb7f23f6f23a03372191a98285d609a5f375ca",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 1,
+                            "rawZeroDeltaVertices": 5,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_R_UpperLash",
+                    "path": "Root/Head/Ren_H_Eye_R_UpperLash",
+                    "vertices": 64,
+                    "triangles": 62,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_R_UpperLash--Basis.f32",
+                            "sha256": "04da4e5d3f24573812c932c466aa3fd13313dc1dddde1821f8943b6b15af8b95",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 64,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkR",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeBlinkR.f32",
+                            "sha256": "4cc175c51af77c39438bff5150356df5610e4f46228543cf719ac612ea5b74ff",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C25",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeBlinkR_C25.f32",
+                            "sha256": "5d19934d607d3fbdcbd364f0dcfa6bca65f247cf62c0ee874c764bd9e2f7bb2a",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 56,
+                            "rawZeroDeltaVertices": 8,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C50",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeBlinkR_C50.f32",
+                            "sha256": "f8edac9473bf542a7c20e536a337e4afcc95d24645ca960494cd0526c18a69ee",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 58,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C75",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeBlinkR_C75.f32",
+                            "sha256": "af1bd1da9a375ced56ae33174bc6156fe4e205cbe44b4ce079e88d234581eddc",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 56,
+                            "rawZeroDeltaVertices": 8,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideR",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeWideR.f32",
+                            "sha256": "48f838245dc889d33031b4ae1d3b5b273567243748b6e976b79fcb4dc629b639",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintR",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeSquintR.f32",
+                            "sha256": "43e6651602311ef7629ad4a8bf4572da08fca3d6c74be53c4cc841487fb16376",
+                            "vertices": 64,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 2,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Head",
+                    "path": "Root/Head/Ren_H_Head",
+                    "vertices": 119741,
+                    "triangles": 195660,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Head--Basis.f32",
+                            "sha256": "c41604d37fc79773f57dc5ceea1c1ac82483a3656dc49b493ea293731715af94",
+                            "vertices": 119741,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 119741,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "Ren_H_Head--jawOpen_A.f32",
+                            "sha256": "977ac7c1082520bd81f80f31b0ad41514fe3b11b148d85a4ef02e125a7d1a3b9",
+                            "vertices": 119741,
+                            "rawNonzeroDeltaVertices": 7055,
+                            "rawZeroDeltaVertices": 112686,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "mouthSeal",
+                            "file": "Ren_H_Head--mouthSeal.f32",
+                            "sha256": "a6a714a023a64638fb255615a03927deea122714cef4570385c3b533fb64b43e",
+                            "vertices": 119741,
+                            "rawNonzeroDeltaVertices": 6484,
+                            "rawZeroDeltaVertices": 113257,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_InnerLipWall",
+                    "path": "Root/Head/Ren_H_InnerLipWall",
+                    "vertices": 1440,
+                    "triangles": 2560,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_InnerLipWall--Basis.f32",
+                            "sha256": "18820143cecb7520b9064ae3150254230503dcb2895c9ff4ee26014c5688e22b",
+                            "vertices": 1440,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 1440,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "Ren_H_InnerLipWall--jawOpen_A.f32",
+                            "sha256": "2dca4f7465374e3117ae4a9168e456969a2e4fce17722e2547f637a0a0b25ef6",
+                            "vertices": 1440,
+                            "rawNonzeroDeltaVertices": 1411,
+                            "rawZeroDeltaVertices": 29,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "mouthSeal",
+                            "file": "Ren_H_InnerLipWall--mouthSeal.f32",
+                            "sha256": "18820143cecb7520b9064ae3150254230503dcb2895c9ff4ee26014c5688e22b",
+                            "vertices": 1440,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 1440,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_OralCavity",
+                    "path": "Root/Head/Ren_H_OralCavity",
+                    "vertices": 5304,
+                    "triangles": 9575,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_OralCavity--Basis.f32",
+                            "sha256": "d64545270b817586ecdeb33683088b9f9af99de73e58b6880ace7b39f6e50752",
+                            "vertices": 5304,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 5304,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "Ren_H_OralCavity--jawOpen_A.f32",
+                            "sha256": "554cbaee98985b24b8ea667a3e318c1edafb806d9c6e672c4d4bd5a404e30420",
+                            "vertices": 5304,
+                            "rawNonzeroDeltaVertices": 5012,
+                            "rawZeroDeltaVertices": 292,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Tongue",
+                    "path": "Root/Head/Ren_H_Tongue",
+                    "vertices": 4201,
+                    "triangles": 7701,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Tongue--Basis.f32",
+                            "sha256": "1b75864061a65ce226281721fa4a923c11b101cf3a7aa60ef3e412d589bdd3ed",
+                            "vertices": 4201,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 4201,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "Ren_H_Tongue--jawOpen_A.f32",
+                            "sha256": "b3d16a94520f97436eb032dfbdd0933140a371c74a3e031434e90fc8ab36623f",
+                            "vertices": 4201,
+                            "rawNonzeroDeltaVertices": 4201,
+                            "rawZeroDeltaVertices": 0,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_Hair_H_DetailedLayers",
+                    "path": "Root/Head/Ren_Hair_H_DetailedLayers",
+                    "vertices": 11346,
+                    "triangles": 8954,
+                    "meshLocalToSourceWorld": [
+                        -100.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        100.00000762939453,
+                        -5.115905529068376e-13,
+                        -7.105426934084528e-16,
+                        0.0,
+                        5.115905529068376e-13,
+                        100.00000762939453,
+                        -2.980232505223057e-9,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_Hair_H_DetailedLayers--Basis.f32",
+                            "sha256": "111ddfa8ee59604a3339719089ffc53bbe4683c4a4c7a1d521bb15e3d1bd956f",
+                            "vertices": 11346,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 11346,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "capOn",
+                            "file": "Ren_Hair_H_DetailedLayers--capOn.f32",
+                            "sha256": "77b20eb40da644ba4edd181ddd825a02acf1c8f85c6980489d31f079b611e883",
+                            "vertices": 11346,
+                            "rawNonzeroDeltaVertices": 4195,
+                            "rawZeroDeltaVertices": 7151,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_Hair_H_RootBase",
+                    "path": "Root/Head/Ren_Hair_H_RootBase",
+                    "vertices": 349,
+                    "triangles": 542,
+                    "meshLocalToSourceWorld": [
+                        -100.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        100.00000762939453,
+                        -5.115905529068376e-13,
+                        -7.105426934084528e-16,
+                        0.0,
+                        5.115905529068376e-13,
+                        100.00000762939453,
+                        -2.980232505223057e-9,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_Hair_H_RootBase--Basis.f32",
+                            "sha256": "0b44541acd754ab721c05d06a12a6511bb18c8403c6d9faf06320098693bc730",
+                            "vertices": 349,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 349,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "capOn",
+                            "file": "Ren_Hair_H_RootBase--capOn.f32",
+                            "sha256": "5ec356da5043ec9303e23561afdab81f38c4214a19678b012986c8c961b19c7b",
+                            "vertices": 349,
+                            "rawNonzeroDeltaVertices": 35,
+                            "rawZeroDeltaVertices": 314,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "source-weld-false",
+            "kind": "source",
+            "fbxSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+            "metaSha256": "7773bc8ca05f729b83faac752c31115a8f4fa57a0c115b0e5cab8f7115634279",
+            "weldVertices": false,
+            "isReadable": true,
+            "importBlendShapes": true,
+            "importAnimation": false,
+            "optimizeMeshVertices": false,
+            "optimizeMeshPolygons": false,
+            "meshCompression": "Off",
+            "importNormals": "Import",
+            "importBlendShapeNormals": "Import",
+            "meshes": [
+                {
+                    "name": "Ren_H_Eye_L_LidAnnulus",
+                    "path": "Root/Head/Ren_H_Eye_L_LidAnnulus",
+                    "vertices": 448,
+                    "triangles": 768,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_L_LidAnnulus--Basis.f32",
+                            "sha256": "9634313ba70c53bc487bbaeb55fc1bb9522d30ad0647b810bfcf2ffe0c53be54",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 448,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkL",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeBlinkL.f32",
+                            "sha256": "0a05dc97c1972bf5019f3e44c02220697493340b53c2838b9086f150cd5713a2",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C25",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeBlinkL_C25.f32",
+                            "sha256": "85dcfd4513a849bd9c84f8cfe5acc975a36fa0faab232aae28a1425372efce1c",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 235,
+                            "rawZeroDeltaVertices": 213,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C50",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeBlinkL_C50.f32",
+                            "sha256": "e95da70b1fb0e3c343a9596053a7d9cdbdc8c71ce65d20d4b2451de4bdc749e3",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 241,
+                            "rawZeroDeltaVertices": 207,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C75",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeBlinkL_C75.f32",
+                            "sha256": "5ab3758ce898ae116b31a68e50b4be63b984594b3a10091adc8058d13e9807ff",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 234,
+                            "rawZeroDeltaVertices": 214,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideL",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeWideL.f32",
+                            "sha256": "bc9e2a288834596428d2fff29b84b4454df80ffea3b95200f34020799b9b5d20",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintL",
+                            "file": "Ren_H_Eye_L_LidAnnulus--eyeSquintL.f32",
+                            "sha256": "67c8ec7f924716e6bb482b5c6b8a86779a203185076d5f316bb12387f9e08244",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_L_LowerLash",
+                    "path": "Root/Head/Ren_H_Eye_L_LowerLash",
+                    "vertices": 66,
+                    "triangles": 64,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_L_LowerLash--Basis.f32",
+                            "sha256": "9d12b6824136639d178d0217de0954a128dc62cde157798719f81361dbd8cbc2",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 66,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkL",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeBlinkL.f32",
+                            "sha256": "755081e31ff8fa01258d9c331dc914cb7ae529599693d4026b08daf7f340a9db",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C25",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeBlinkL_C25.f32",
+                            "sha256": "58ee27284a8e9d08bed998c14b831918fef33da5c7a520ee8aab6d5e677a829c",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 52,
+                            "rawZeroDeltaVertices": 14,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C50",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeBlinkL_C50.f32",
+                            "sha256": "3435fe3c63ca0e94cd2327ce7e777b9c4aaa4d55729dec0e0f064852540358f2",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 52,
+                            "rawZeroDeltaVertices": 14,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C75",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeBlinkL_C75.f32",
+                            "sha256": "f348bf232c3b4a55704f3cca09de18d112aa237f1698fa9633dc8ce5fb7a9fb3",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 52,
+                            "rawZeroDeltaVertices": 14,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideL",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeWideL.f32",
+                            "sha256": "49e759f13ad7b40906f621a3a04c95a191c0aef69ae8e8a2c9e8383a3eb224a4",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintL",
+                            "file": "Ren_H_Eye_L_LowerLash--eyeSquintL.f32",
+                            "sha256": "e9e9876b7746f7068f495a037d53ea8360a87bc465ad2c8c4b63b936b79f7cfa",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_L_OuterFlicks",
+                    "path": "Root/Head/Ren_H_Eye_L_OuterFlicks",
+                    "vertices": 6,
+                    "triangles": 2,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_L_OuterFlicks--Basis.f32",
+                            "sha256": "709a1680465074ac89d69db5fa234e030f96e4caaae71b6c7e17c4d1d2e602e6",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkL",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeBlinkL.f32",
+                            "sha256": "db8ecf7365905b42616900e05d7f3675da4f8b1227fbe2c6f042cbe71d372fef",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 3,
+                            "rawZeroDeltaVertices": 3,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C25",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeBlinkL_C25.f32",
+                            "sha256": "709a1680465074ac89d69db5fa234e030f96e4caaae71b6c7e17c4d1d2e602e6",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C50",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeBlinkL_C50.f32",
+                            "sha256": "709a1680465074ac89d69db5fa234e030f96e4caaae71b6c7e17c4d1d2e602e6",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C75",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeBlinkL_C75.f32",
+                            "sha256": "709a1680465074ac89d69db5fa234e030f96e4caaae71b6c7e17c4d1d2e602e6",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideL",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeWideL.f32",
+                            "sha256": "3b0052712d7cac69a87765280b507706a09856fc1ebe7e4a94e94160c44837c5",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 3,
+                            "rawZeroDeltaVertices": 3,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintL",
+                            "file": "Ren_H_Eye_L_OuterFlicks--eyeSquintL.f32",
+                            "sha256": "4a13c6897ce5738992803185ebf00f2cc36ad6b4fabb6c0abf08ce902d693bfa",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 1,
+                            "rawZeroDeltaVertices": 5,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_L_UpperLash",
+                    "path": "Root/Head/Ren_H_Eye_L_UpperLash",
+                    "vertices": 66,
+                    "triangles": 64,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_L_UpperLash--Basis.f32",
+                            "sha256": "ff0ca5caa96ec83a05621364fea9b615acd274bd0b4864dfa246b996770a6c62",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 66,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkL",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeBlinkL.f32",
+                            "sha256": "7371f48480227561f4b10e591ff588bedaa7d16836f62d62e40e2cd2843f6fcc",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C25",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeBlinkL_C25.f32",
+                            "sha256": "5baac9956eab395911f21877699b557291fc1d6c588db54f54b9d7ab1607dc4d",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 56,
+                            "rawZeroDeltaVertices": 10,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C50",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeBlinkL_C50.f32",
+                            "sha256": "0330428ebb55f9d0dd18cf5bff5627549fabbd3a4a35fb17aa310b5ec98bb9ee",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 58,
+                            "rawZeroDeltaVertices": 8,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkL_C75",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeBlinkL_C75.f32",
+                            "sha256": "cf5532cf7e5634afcb4db6a16d45cfe23db49d590ca4ad20323d9b6e1bfc3d27",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 56,
+                            "rawZeroDeltaVertices": 10,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideL",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeWideL.f32",
+                            "sha256": "7939760ce2b183fed8eef69df7b27ba5a3233e8bb338760140210c08dc5b768c",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintL",
+                            "file": "Ren_H_Eye_L_UpperLash--eyeSquintL.f32",
+                            "sha256": "5f066967b6a465afcc1eb15be4c892fec2dcdeb53cabd60f72306c77e54830b0",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_R_LidAnnulus",
+                    "path": "Root/Head/Ren_H_Eye_R_LidAnnulus",
+                    "vertices": 448,
+                    "triangles": 768,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_R_LidAnnulus--Basis.f32",
+                            "sha256": "f7f5b5272ade4f5cfe763dc34d0ca89ec9469b58c8e0d1700a877951819073c7",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 448,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkR",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeBlinkR.f32",
+                            "sha256": "594a7545e3cb7a182bde9294b2027495a8e3dc2c1ddc6f529a1e13f2ef7da025",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 373,
+                            "rawZeroDeltaVertices": 75,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C25",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeBlinkR_C25.f32",
+                            "sha256": "b79260df59249ef922e73d4ada722828ff478291f13708e715dd8497f934086b",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 238,
+                            "rawZeroDeltaVertices": 210,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C50",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeBlinkR_C50.f32",
+                            "sha256": "239e869fe8d00d142cb42927a6db0b68a40641b119aca4ddd45e27d9ece3fffd",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 246,
+                            "rawZeroDeltaVertices": 202,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C75",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeBlinkR_C75.f32",
+                            "sha256": "c2381d81b9c6714dd121e8a520c47e36e96f23f48822ad76a6130ae3f4be7cfc",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 236,
+                            "rawZeroDeltaVertices": 212,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideR",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeWideR.f32",
+                            "sha256": "96f200f6476851ccfa3b00276a4da3589eb1be1972dac1db1c75e916e3c2d331",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintR",
+                            "file": "Ren_H_Eye_R_LidAnnulus--eyeSquintR.f32",
+                            "sha256": "0347e8f7c093a47b8c8ba9eb17767eb23f19b481cfc3dcde027209fd2589d082",
+                            "vertices": 448,
+                            "rawNonzeroDeltaVertices": 372,
+                            "rawZeroDeltaVertices": 76,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_R_LowerLash",
+                    "path": "Root/Head/Ren_H_Eye_R_LowerLash",
+                    "vertices": 66,
+                    "triangles": 64,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_R_LowerLash--Basis.f32",
+                            "sha256": "37b2b094ce115bc5682cb10de9bedced37a0ffb95036496248285ffa5bd462fd",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 66,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkR",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeBlinkR.f32",
+                            "sha256": "37fe03f6e3c86e83c87c734faf8c400c3d405b2b10d36d7c1a5e697f763f486d",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C25",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeBlinkR_C25.f32",
+                            "sha256": "a11d4eb51051f231f46c662d0bed85100196aed7638917b24420a6c30d1bf277",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 51,
+                            "rawZeroDeltaVertices": 15,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C50",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeBlinkR_C50.f32",
+                            "sha256": "081ea2f1425a68919f02c19873ec70ecf3daa92d5f91112b2c6605f6a2d281f3",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 53,
+                            "rawZeroDeltaVertices": 13,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C75",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeBlinkR_C75.f32",
+                            "sha256": "6ce21a143328e43eea0db5cd018f576bf410a8699c229095fd2cdc0fd878801c",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 51,
+                            "rawZeroDeltaVertices": 15,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideR",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeWideR.f32",
+                            "sha256": "8c8a5c43cee73975278adf89500be0790038a4233d0b72b3a45279b6ec2e214b",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintR",
+                            "file": "Ren_H_Eye_R_LowerLash--eyeSquintR.f32",
+                            "sha256": "d926afb8074e31f2cab9ec6d77d3955a1343b8b71d3d9cf4e48f696c155671ba",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_R_OuterFlicks",
+                    "path": "Root/Head/Ren_H_Eye_R_OuterFlicks",
+                    "vertices": 6,
+                    "triangles": 2,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_R_OuterFlicks--Basis.f32",
+                            "sha256": "0fb171561dc71e3560ac45880e664ef1fe8499dadf0b7c69bc8bcb6fa9b3f425",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkR",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeBlinkR.f32",
+                            "sha256": "a1816804b0cd3fdfccd842b86193f8cfeeaac6d9f37125e8548cdc750549d0fd",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 3,
+                            "rawZeroDeltaVertices": 3,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C25",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeBlinkR_C25.f32",
+                            "sha256": "0fb171561dc71e3560ac45880e664ef1fe8499dadf0b7c69bc8bcb6fa9b3f425",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C50",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeBlinkR_C50.f32",
+                            "sha256": "0fb171561dc71e3560ac45880e664ef1fe8499dadf0b7c69bc8bcb6fa9b3f425",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C75",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeBlinkR_C75.f32",
+                            "sha256": "0fb171561dc71e3560ac45880e664ef1fe8499dadf0b7c69bc8bcb6fa9b3f425",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 6,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideR",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeWideR.f32",
+                            "sha256": "ed7266864f32afbaf77c8105c5c8bd1f440fcc5e7849f6041ca9416cc9fd978e",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 3,
+                            "rawZeroDeltaVertices": 3,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintR",
+                            "file": "Ren_H_Eye_R_OuterFlicks--eyeSquintR.f32",
+                            "sha256": "d9279ed0a21d101d7e58b8f6acdb7f23f6f23a03372191a98285d609a5f375ca",
+                            "vertices": 6,
+                            "rawNonzeroDeltaVertices": 1,
+                            "rawZeroDeltaVertices": 5,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Eye_R_UpperLash",
+                    "path": "Root/Head/Ren_H_Eye_R_UpperLash",
+                    "vertices": 66,
+                    "triangles": 64,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Eye_R_UpperLash--Basis.f32",
+                            "sha256": "637bd6cb1583c6df64f6c5640dc6878745abc4903fe7205874b1e89b161510e7",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 66,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "eyeBlinkR",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeBlinkR.f32",
+                            "sha256": "6207e8cb1b0149b879002e46993983c86fcf575abe2111bd3fcef9b402ea7663",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C25",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeBlinkR_C25.f32",
+                            "sha256": "254a575ba94b6808f2197374e26dce82a91a0b65ef543d525742e4f548d87f6f",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 56,
+                            "rawZeroDeltaVertices": 10,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C50",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeBlinkR_C50.f32",
+                            "sha256": "2f5502cc5caa39f3b2ba2e120d683407957484f7206db9d7d0b48651552cfda3",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 58,
+                            "rawZeroDeltaVertices": 8,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeBlinkR_C75",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeBlinkR_C75.f32",
+                            "sha256": "93407948f5ed749578cbd0dafdd8fb6030cba1c8b118f241eeaf5dd3a8645de7",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 56,
+                            "rawZeroDeltaVertices": 10,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeWideR",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeWideR.f32",
+                            "sha256": "1ed07dd81d512dd2a1c5f949347e3588b01c097c2c4b5b8ebb6b09b91a6be36d",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "eyeSquintR",
+                            "file": "Ren_H_Eye_R_UpperLash--eyeSquintR.f32",
+                            "sha256": "ed3b5e3c6983d4e5bb5f79ba66fa690e8914edc85d0b78c943305a0d563f05b6",
+                            "vertices": 66,
+                            "rawNonzeroDeltaVertices": 62,
+                            "rawZeroDeltaVertices": 4,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Head",
+                    "path": "Root/Head/Ren_H_Head",
+                    "vertices": 121050,
+                    "triangles": 195660,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Head--Basis.f32",
+                            "sha256": "78b26736c516b9f7d57a900e7be34f3035169bf15c6b8b1b37823ae88029018c",
+                            "vertices": 121050,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 121050,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "Ren_H_Head--jawOpen_A.f32",
+                            "sha256": "b827e76101f2b1a8ca15ec304f7d31901b09ab161680cb124eb95087b324318b",
+                            "vertices": 121050,
+                            "rawNonzeroDeltaVertices": 7055,
+                            "rawZeroDeltaVertices": 113995,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "mouthSeal",
+                            "file": "Ren_H_Head--mouthSeal.f32",
+                            "sha256": "6b0e21df3f457cd7e01c905b989e6c88447f940a409b3e8cf82171fd1dfeda7e",
+                            "vertices": 121050,
+                            "rawNonzeroDeltaVertices": 6484,
+                            "rawZeroDeltaVertices": 114566,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_InnerLipWall",
+                    "path": "Root/Head/Ren_H_InnerLipWall",
+                    "vertices": 1440,
+                    "triangles": 2560,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_InnerLipWall--Basis.f32",
+                            "sha256": "18820143cecb7520b9064ae3150254230503dcb2895c9ff4ee26014c5688e22b",
+                            "vertices": 1440,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 1440,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "Ren_H_InnerLipWall--jawOpen_A.f32",
+                            "sha256": "2dca4f7465374e3117ae4a9168e456969a2e4fce17722e2547f637a0a0b25ef6",
+                            "vertices": 1440,
+                            "rawNonzeroDeltaVertices": 1411,
+                            "rawZeroDeltaVertices": 29,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "mouthSeal",
+                            "file": "Ren_H_InnerLipWall--mouthSeal.f32",
+                            "sha256": "18820143cecb7520b9064ae3150254230503dcb2895c9ff4ee26014c5688e22b",
+                            "vertices": 1440,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 1440,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_OralCavity",
+                    "path": "Root/Head/Ren_H_OralCavity",
+                    "vertices": 5304,
+                    "triangles": 9575,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_OralCavity--Basis.f32",
+                            "sha256": "afda25979d71d2fd9711db7797e220581974349f217df024ef87cea7fd79771d",
+                            "vertices": 5304,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 5304,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "Ren_H_OralCavity--jawOpen_A.f32",
+                            "sha256": "10228c7e4927ece9f95b05df912ded9201f972944b46977d15c8e97dee005b20",
+                            "vertices": 5304,
+                            "rawNonzeroDeltaVertices": 5012,
+                            "rawZeroDeltaVertices": 292,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_H_Tongue",
+                    "path": "Root/Head/Ren_H_Tongue",
+                    "vertices": 4201,
+                    "triangles": 7701,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_H_Tongue--Basis.f32",
+                            "sha256": "5ec5cbfafe8d55b895d22e02d1d9ffa12dbbbef45cb2b490137e8c8f95b9c285",
+                            "vertices": 4201,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 4201,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "Ren_H_Tongue--jawOpen_A.f32",
+                            "sha256": "fdf202cfb548e5f8d12e26bfc9510e09d1daac0e2596829051a36f8b7079652e",
+                            "vertices": 4201,
+                            "rawNonzeroDeltaVertices": 4201,
+                            "rawZeroDeltaVertices": 0,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_Hair_H_DetailedLayers",
+                    "path": "Root/Head/Ren_Hair_H_DetailedLayers",
+                    "vertices": 11346,
+                    "triangles": 8954,
+                    "meshLocalToSourceWorld": [
+                        -100.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        100.00000762939453,
+                        -5.115905529068376e-13,
+                        -7.105426934084528e-16,
+                        0.0,
+                        5.115905529068376e-13,
+                        100.00000762939453,
+                        -2.980232505223057e-9,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_Hair_H_DetailedLayers--Basis.f32",
+                            "sha256": "111ddfa8ee59604a3339719089ffc53bbe4683c4a4c7a1d521bb15e3d1bd956f",
+                            "vertices": 11346,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 11346,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "capOn",
+                            "file": "Ren_Hair_H_DetailedLayers--capOn.f32",
+                            "sha256": "77b20eb40da644ba4edd181ddd825a02acf1c8f85c6980489d31f079b611e883",
+                            "vertices": 11346,
+                            "rawNonzeroDeltaVertices": 4195,
+                            "rawZeroDeltaVertices": 7151,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "Ren_Hair_H_RootBase",
+                    "path": "Root/Head/Ren_Hair_H_RootBase",
+                    "vertices": 349,
+                    "triangles": 542,
+                    "meshLocalToSourceWorld": [
+                        -100.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        100.00000762939453,
+                        -5.115905529068376e-13,
+                        -7.105426934084528e-16,
+                        0.0,
+                        5.115905529068376e-13,
+                        100.00000762939453,
+                        -2.980232505223057e-9,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "Ren_Hair_H_RootBase--Basis.f32",
+                            "sha256": "0b44541acd754ab721c05d06a12a6511bb18c8403c6d9faf06320098693bc730",
+                            "vertices": 349,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 349,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "capOn",
+                            "file": "Ren_Hair_H_RootBase--capOn.f32",
+                            "sha256": "5ec356da5043ec9303e23561afdab81f38c4214a19678b012986c8c961b19c7b",
+                            "vertices": 349,
+                            "rawNonzeroDeltaVertices": 35,
+                            "rawZeroDeltaVertices": 314,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "outline-weld-true",
+            "kind": "outline",
+            "fbxSha256": "3812d52df7bcb82b187b80294b6e0bf76377b5a5069ee3facf018d01fd995b6c",
+            "metaSha256": "b2a55c791601f6762e35c59d3834ae86f9123e30f116c2e4c54e356f4755291c",
+            "weldVertices": true,
+            "isReadable": true,
+            "importBlendShapes": true,
+            "importAnimation": false,
+            "optimizeMeshVertices": false,
+            "optimizeMeshPolygons": false,
+            "meshCompression": "Off",
+            "importNormals": "Import",
+            "importBlendShapeNormals": "Import",
+            "meshes": [
+                {
+                    "name": "RenInk_HairLayers",
+                    "path": "Root/RenInk_HairLayers",
+                    "vertices": 11321,
+                    "triangles": 8954,
+                    "meshLocalToSourceWorld": [
+                        -100.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        100.00000762939453,
+                        -5.115905529068376e-13,
+                        -7.105426934084528e-16,
+                        0.0,
+                        5.115905529068376e-13,
+                        100.00000762939453,
+                        -2.980232505223057e-9,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "RenInk_HairLayers--Basis.f32",
+                            "sha256": "2bb199f4208f56e8ff8b9459b43aa957b8ffd4e20b0b6e2c18e7eaca8b199e6e",
+                            "vertices": 11321,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 11321,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "capOn",
+                            "file": "RenInk_HairLayers--capOn.f32",
+                            "sha256": "311884825b132caab80ee12b3cf0e04919691dc2f728b8f8e3a99266620c8347",
+                            "vertices": 11321,
+                            "rawNonzeroDeltaVertices": 4197,
+                            "rawZeroDeltaVertices": 7124,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "RenInk_HairRoot",
+                    "path": "Root/RenInk_HairRoot",
+                    "vertices": 349,
+                    "triangles": 542,
+                    "meshLocalToSourceWorld": [
+                        -100.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        100.00000762939453,
+                        -5.115905529068376e-13,
+                        -7.105426934084528e-16,
+                        0.0,
+                        5.115905529068376e-13,
+                        100.00000762939453,
+                        -2.980232505223057e-9,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "RenInk_HairRoot--Basis.f32",
+                            "sha256": "98f451f375fd8098d75099cb6cbe7fd9444f561cec19e3e5971c77092559b1bb",
+                            "vertices": 349,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 349,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "capOn",
+                            "file": "RenInk_HairRoot--capOn.f32",
+                            "sha256": "1f981022e84ef21bf0794f0cf55cc8c2176ea9235af5af5dcf6a3ba16155e548",
+                            "vertices": 349,
+                            "rawNonzeroDeltaVertices": 35,
+                            "rawZeroDeltaVertices": 314,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "RenInk_Head",
+                    "path": "Root/RenInk_Head",
+                    "vertices": 91031,
+                    "triangles": 173526,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "RenInk_Head--Basis.f32",
+                            "sha256": "78f31183d2d85444582e64bd106f994e6433cfad4d6e805234739f35f8316fb5",
+                            "vertices": 91031,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 91031,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "RenInk_Head--jawOpen_A.f32",
+                            "sha256": "f60857ad8ca35255b11aad1fa8f18484e27feeda67a40d4e93c60efc0524e701",
+                            "vertices": 91031,
+                            "rawNonzeroDeltaVertices": 6304,
+                            "rawZeroDeltaVertices": 84727,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "mouthSeal",
+                            "file": "RenInk_Head--mouthSeal.f32",
+                            "sha256": "998afee96ef9a3c879e00634f885b0a8779016c6c077d477696d511b6a9b0966",
+                            "vertices": 91031,
+                            "rawNonzeroDeltaVertices": 5749,
+                            "rawZeroDeltaVertices": 85282,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "outline-weld-false",
+            "kind": "outline",
+            "fbxSha256": "3812d52df7bcb82b187b80294b6e0bf76377b5a5069ee3facf018d01fd995b6c",
+            "metaSha256": "137d6efcf667b932645b646e6144e19fa30ca88b79cab0ca990ba8997bb060e5",
+            "weldVertices": false,
+            "isReadable": true,
+            "importBlendShapes": true,
+            "importAnimation": false,
+            "optimizeMeshVertices": false,
+            "optimizeMeshPolygons": false,
+            "meshCompression": "Off",
+            "importNormals": "Import",
+            "importBlendShapeNormals": "Import",
+            "meshes": [
+                {
+                    "name": "RenInk_HairLayers",
+                    "path": "Root/RenInk_HairLayers",
+                    "vertices": 11321,
+                    "triangles": 8954,
+                    "meshLocalToSourceWorld": [
+                        -100.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        100.00000762939453,
+                        -5.115905529068376e-13,
+                        -7.105426934084528e-16,
+                        0.0,
+                        5.115905529068376e-13,
+                        100.00000762939453,
+                        -2.980232505223057e-9,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "RenInk_HairLayers--Basis.f32",
+                            "sha256": "2bb199f4208f56e8ff8b9459b43aa957b8ffd4e20b0b6e2c18e7eaca8b199e6e",
+                            "vertices": 11321,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 11321,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "capOn",
+                            "file": "RenInk_HairLayers--capOn.f32",
+                            "sha256": "311884825b132caab80ee12b3cf0e04919691dc2f728b8f8e3a99266620c8347",
+                            "vertices": 11321,
+                            "rawNonzeroDeltaVertices": 4197,
+                            "rawZeroDeltaVertices": 7124,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "RenInk_HairRoot",
+                    "path": "Root/RenInk_HairRoot",
+                    "vertices": 349,
+                    "triangles": 542,
+                    "meshLocalToSourceWorld": [
+                        -100.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        100.00000762939453,
+                        -5.115905529068376e-13,
+                        -7.105426934084528e-16,
+                        0.0,
+                        5.115905529068376e-13,
+                        100.00000762939453,
+                        -2.980232505223057e-9,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "RenInk_HairRoot--Basis.f32",
+                            "sha256": "98f451f375fd8098d75099cb6cbe7fd9444f561cec19e3e5971c77092559b1bb",
+                            "vertices": 349,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 349,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "capOn",
+                            "file": "RenInk_HairRoot--capOn.f32",
+                            "sha256": "1f981022e84ef21bf0794f0cf55cc8c2176ea9235af5af5dcf6a3ba16155e548",
+                            "vertices": 349,
+                            "rawNonzeroDeltaVertices": 35,
+                            "rawZeroDeltaVertices": 314,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                },
+                {
+                    "name": "RenInk_Head",
+                    "path": "Root/RenInk_Head",
+                    "vertices": 91031,
+                    "triangles": 173526,
+                    "meshLocalToSourceWorld": [
+                        0.000012475392395572271,
+                        -104.65116882324219,
+                        0.0,
+                        -0.08941860496997833,
+                        -104.65116882324219,
+                        -0.000012475393305066973,
+                        3.318072813035533e-13,
+                        0.0073255812749266628,
+                        3.318072813035533e-13,
+                        -6.886574575066885e-20,
+                        104.65116882324219,
+                        -0.48848840594291689,
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "frames": [
+                        {
+                            "shape": "Basis",
+                            "file": "RenInk_Head--Basis.f32",
+                            "sha256": "55c160163dc1617be4cf103273a1cd0e35019c67f37aed0ee27d6ee921690e8c",
+                            "vertices": 91031,
+                            "rawNonzeroDeltaVertices": 0,
+                            "rawZeroDeltaVertices": 91031,
+                            "frameWeight": 0.0
+                        },
+                        {
+                            "shape": "jawOpen_A",
+                            "file": "RenInk_Head--jawOpen_A.f32",
+                            "sha256": "4cdedfb82d87b08f6dc38224fd45882efd0279b3d6e3f5f656a048fbac4ca6f1",
+                            "vertices": 91031,
+                            "rawNonzeroDeltaVertices": 6304,
+                            "rawZeroDeltaVertices": 84727,
+                            "frameWeight": 100.0
+                        },
+                        {
+                            "shape": "mouthSeal",
+                            "file": "RenInk_Head--mouthSeal.f32",
+                            "sha256": "0dc8b2acc39c7424e1599ac87abd990cde54c2d6503b8177771a67402968dad6",
+                            "vertices": 91031,
+                            "rawNonzeroDeltaVertices": 5749,
+                            "rawZeroDeltaVertices": 85282,
+                            "frameWeight": 100.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "limits": "Numeric import experiment only. Four new FBX copies use identical paired importer settings apart from weldVertices and fresh GUIDs. Original imports and all scenes/materials remain untouched. No rendering or player build."
+}

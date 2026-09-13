@@ -1,0 +1,61 @@
+{
+  "source_prototype_sha256": "8cdd5c7c45d843511531f15bc79286c9bb4c49a717dddba7ca2c8cce8c95438d",
+  "boundary_pigment_json_sha256": "6d5f96fff488952b302ebbb2b1907c06f2ca1253d9dddf16ef78064e5944e60f",
+  "output_sha256": "23b32084c563a751134f5f93df7325627996ebbcda7dbb80e5e364f3c0f708f7",
+  "geometry_uv_morph_hierarchy_unchanged": true,
+  "accepted_non_eye_geometry_uv_morph_material_hierarchy_equal": true,
+  "source_unchanged": true,
+  "eyes": [
+    {
+      "side": "L",
+      "boundary_samples": 274,
+      "exact_boundary_vertices": 274,
+      "free_vertices": 314,
+      "base_linear_range": [
+        [
+          0.6795424696330938,
+          0.467783796112159,
+          0.3712376804741491
+        ],
+        [
+          0.799102738014409,
+          0.5583403896342679,
+          0.4649252901546552
+        ]
+      ],
+      "maximum_boundary_color_error": 0.0,
+      "source_ids_attribute": "source_h_boundary_vertex_id",
+      "base_pigment_attribute": "DesignerSkinBase",
+      "smoky_pigment_attribute": "DesignerSmokyLidWeight",
+      "maximum_smoky_weight": 0.3393440328628859,
+      "boundary_smoky_weight": 0.0,
+      "status": "Source skin pigment plus distinct authored moving smoky field; no stationary open-eye paint."
+    },
+    {
+      "side": "R",
+      "boundary_samples": 299,
+      "exact_boundary_vertices": 299,
+      "free_vertices": 314,
+      "base_linear_range": [
+        [
+          0.5488626804504491,
+          0.37752439360379575,
+          0.31285518113363986
+        ],
+        [
+          0.799102738014409,
+          0.5583403896342679,
+          0.467783796112159
+        ]
+      ],
+      "maximum_boundary_color_error": 0.0,
+      "source_ids_attribute": "source_h_boundary_vertex_id",
+      "base_pigment_attribute": "DesignerSkinBase",
+      "smoky_pigment_attribute": "DesignerSmokyLidWeight",
+      "maximum_smoky_weight": 0.3399233865849218,
+      "boundary_smoky_weight": 0.0,
+      "status": "Source skin pigment plus distinct authored moving smoky field; no stationary open-eye paint."
+    }
+  ],
+  "artist_likeness_approval": false
+}

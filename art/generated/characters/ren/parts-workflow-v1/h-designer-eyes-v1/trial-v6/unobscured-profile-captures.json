@@ -1,0 +1,15 @@
+{
+  "source_sha256": "715617c4842029775dfdef0cd289648ea87883624fe693c61a5d374812a2b13d",
+  "source_unchanged": true,
+  "hidden": "Both actual H hair objects and cap; accepted skin and scalp/back remain present. No eye/face geometry change.",
+  "captures": [
+    {
+      "file": "profile-R-hair-hidden.png",
+      "sha256": "ae3b51d1376321a9b77686b1415d6cafb08cb30827d7531cc2d07786b42ff42c"
+    },
+    {
+      "file": "profile-L-hair-hidden.png",
+      "sha256": "52f491dbc2b7485a43ccd957cd1c0461b2db947b720c9d6f6da21ca5c815b161"
+    }
+  ]
+}

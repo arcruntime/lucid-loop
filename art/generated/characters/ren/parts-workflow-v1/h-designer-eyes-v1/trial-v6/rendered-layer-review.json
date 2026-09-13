@@ -1,0 +1,123 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NOT_A_ONE_TO_ONE_LIKENESS_PASS",
+  "rendered_mask": "portrait-layer-visibility-distinct.png",
+  "rendered_mask_sha256": "269de4b0277785d61da9b0584af76704393a071ecfe6ced9ca2896b0cdd9fe3b",
+  "distinct_crease_mask": true,
+  "source_trace_sha256": "a256e58f3b2e027460547cb2e653509df2ca2bae39d6e22f291cbb7c13a703b1",
+  "camera_fit_sha256": "b6736cb4d21855b21d19e837008e662e63d42601bc4a3ca33066fd462a3b5ab0",
+  "independent_xy_warp": false,
+  "measurement": "One-way distance from reviewed manually digitized visible curves to actual rendered categorical mask boundaries; original source-pixel units. Rasterization and manual tracing uncertainty remain. No acceptance threshold is invented.",
+  "excluded": "Hair-occluded and uncertain source segments; hidden iris continuation; whole-face alignment and pigment appearance are not certified by these distances.",
+  "eyes": [
+    {
+      "side": "R",
+      "source_trace": "Main portrait / image-left",
+      "visible_curve_to_render_mask_boundary": [
+        {
+          "layer": "upper aperture",
+          "points": 200,
+          "median_source_pixels": 0.26966487880043766,
+          "p95_source_pixels": 0.6614485981649482,
+          "maximum_source_pixels": 0.8045548380036007
+        },
+        {
+          "layer": "upper aperture",
+          "points": 200,
+          "median_source_pixels": 0.690231247555885,
+          "p95_source_pixels": 1.1604636307851293,
+          "maximum_source_pixels": 1.749285568453593
+        },
+        {
+          "layer": "lower aperture",
+          "points": 325,
+          "median_source_pixels": 0.8099447006350299,
+          "p95_source_pixels": 1.1752864504825902,
+          "maximum_source_pixels": 1.749285568453593
+        },
+        {
+          "layer": "visible iris arc",
+          "points": 175,
+          "median_source_pixels": 0.9171567058393021,
+          "p95_source_pixels": 1.4080587516193495,
+          "maximum_source_pixels": 1.5469477463650538
+        },
+        {
+          "layer": "upper ink exterior",
+          "points": 200,
+          "median_source_pixels": 0.6899991041839268,
+          "p95_source_pixels": 1.1391168227888886,
+          "maximum_source_pixels": 1.414213562373055
+        },
+        {
+          "layer": "upper ink exterior",
+          "points": 250,
+          "median_source_pixels": 0.29407954991905194,
+          "p95_source_pixels": 0.8280036517201431,
+          "maximum_source_pixels": 1.4142135623730951
+        },
+        {
+          "layer": "crease",
+          "points": 200,
+          "median_source_pixels": 0.5246733662759493,
+          "p95_source_pixels": 0.9538885333017428,
+          "maximum_source_pixels": 2.973213749463731
+        }
+      ]
+    },
+    {
+      "side": "L",
+      "source_trace": "Main portrait / image-right",
+      "visible_curve_to_render_mask_boundary": [
+        {
+          "layer": "upper aperture",
+          "points": 175,
+          "median_source_pixels": 0.33955757727456304,
+          "p95_source_pixels": 0.8171133014717229,
+          "maximum_source_pixels": 1.166190378969057
+        },
+        {
+          "layer": "upper aperture",
+          "points": 175,
+          "median_source_pixels": 0.7439969610256162,
+          "p95_source_pixels": 1.3129899227241855,
+          "maximum_source_pixels": 1.9800020614296487
+        },
+        {
+          "layer": "lower aperture",
+          "points": 275,
+          "median_source_pixels": 0.7809577974007151,
+          "p95_source_pixels": 1.3591939241658624,
+          "maximum_source_pixels": 1.9800020614294667
+        },
+        {
+          "layer": "visible iris arc",
+          "points": 175,
+          "median_source_pixels": 0.8939935139967532,
+          "p95_source_pixels": 1.8368396911760685,
+          "maximum_source_pixels": 1.9060183839143048
+        },
+        {
+          "layer": "upper ink exterior",
+          "points": 200,
+          "median_source_pixels": 0.5953229791377814,
+          "p95_source_pixels": 0.9277376358755782,
+          "maximum_source_pixels": 1.0214870183903055
+        },
+        {
+          "layer": "lash fan exterior",
+          "points": 5,
+          "median_source_pixels": 0.49590157022022896,
+          "p95_source_pixels": 2.1807813108417666,
+          "maximum_source_pixels": 2.4758836806279487
+        },
+        {
+          "layer": "crease",
+          "points": 175,
+          "median_source_pixels": 0.4889861151978396,
+          "p95_source_pixels": 0.9327203595891875,
+          "maximum_source_pixels": 1.8027756377319946
+        }
+      ]
+    }
+  ]
+}
