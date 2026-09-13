@@ -1,0 +1,32 @@
+name: Native voice portable checks
+
+on:
+  push:
+    paths:
+      - "Unity/Assets/Gyms/Plugins/iOS/**"
+      - ".github/workflows/native-voice.yml"
+  pull_request:
+    paths:
+      - "Unity/Assets/Gyms/Plugins/iOS/**"
+      - ".github/workflows/native-voice.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audio-ring:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build portable ring tests
+        run: >-
+          g++ -std=c++17 -O2 -Wall -Wextra -Werror -pthread
+          -DLLVOICE_RING_TEST_MAIN
+          Unity/Assets/Gyms/Plugins/iOS/LLVoiceRingTests.cpp
+          -o /tmp/llvoice-ring-tests
+      - name: Check bounded audio storage and concurrent ordering
+        run: /tmp/llvoice-ring-tests
+      - name: Record scope
+        run: echo 'Portable C++ ring checks only. Apple SDK compilation, AVAudioEngine and physical iOS audio acceptance remain separate.' >> "$GITHUB_STEP_SUMMARY"

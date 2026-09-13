@@ -27,6 +27,8 @@ The local Windows Unity 6000.3.24f1 installation contains `Editor/Data/PlaybackE
 
 Device acceptance must measure sustained frame rate, memory, safe-area layout, touch navigation, microphone permission, networking, audio/lip-sync and interruption/background cleanup on iPhone 15 Plus. The 16:9 layout reference must adapt to the phone's actual aspect ratio and safe area; do not force a 16:9 device framebuffer.
 
+The encounter uses a [native duplex voice plugin](IOS_NATIVE_VOICE.md) after explicit microphone permission. Check its exported source, headers, ARC flag and generated bindings with `python tools/check_ios_native_export.py Unity/Builds/iOS/Xcode` from the repository root. This packaging check does not compile Objective-C++ or validate echo cancellation. Initial typed-only conversations retain Unity playback and do not start native microphone audio.
+
 ## Verification status
 
 The existing shared Unity 6000.3.24f1 Editor successfully activated iOS and exported the development Xcode project on 2026-09-14: `IOS_XCODE_EXPORT_OK: Builds/iOS/Xcode`. The export contains IL2CPP output and the enabled `BeforeTheDrop` scene. Shader and compute-stripping JSON reports are preserved beside the Xcode directory; Unity writes them when the build finishes. Compile/sign/install through Xcode and physical-device acceptance remain pending. The local development relay is the selected connection setup; no hosted relay is required for this phase.

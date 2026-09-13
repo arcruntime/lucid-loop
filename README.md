@@ -16,6 +16,8 @@ The [spoken correction test](https://github.com/jethac/lucid-loop/actions/runs/3
 
 An audio-device change now stops conversation playback and closes the session; tap **Talk** to restart. The controller lifecycle passed an Editor PlayMode check against the local protocol fixture. Physical headset routing and iOS echo cancellation remain unverified; see [validation evidence](docs/IMPLEMENTATION_VALIDATION.md).
 
+The [native iOS voice backend](docs/IOS_NATIVE_VOICE.md) now routes microphone capture and NPC playback through one voice-processing engine after explicit Mic enable and permission. Mic off sends silence while playback continues. Apple compilation and physical iPhone audio acceptance remain pending.
+
 The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored demo scenario](docs/DEMO_SCENARIO.md), and [source audit](docs/DESIGN_SOURCE_AUDIT.md) describe what is being built. Figma takes precedence over the Google document. The [animation handoff](art/animation-handoff/README.md) contains 17 downloaded source FBX files and their unresolved mapping/retargeting notes.
 
 **Try the original gyms:** load `Assets/Gyms/Scenes/CharacterGym.unity` and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.

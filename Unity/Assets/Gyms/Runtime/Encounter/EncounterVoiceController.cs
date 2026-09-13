@@ -18,7 +18,7 @@ namespace LucidLoop.Gyms
         public bool IsReady { get; private set; }
         public bool IsConnecting { get; private set; }
         public bool IsClosing { get; private set; }
-        public bool MicrophoneEnabled => microphone != null;
+        public bool MicrophoneEnabled => nativeOwned ? nativeCaptureEnabled : microphone != null;
         public string CharacterId { get; private set; }
         public string Status { get; private set; } = "disconnected";
         public int StreamGeneration => generation;
@@ -30,7 +30,7 @@ namespace LucidLoop.Gyms
         public event Action<byte[], int> Pcm16Output;
         public event Action<int> StreamStarted;
         public event Action<int> StreamStopped;
-        // Samples consumed by Unity's PCM reader, not a guarantee of sound heard at the device.
+        // Samples dequeued by the active renderer, not a guarantee of sound heard at the device.
         public event Action<int, long, int, bool, bool> PlaybackProgress;
 
         sealed class Retired
@@ -53,6 +53,8 @@ namespace LucidLoop.Gyms
         bool streamOpen;
         int audioDeviceChanged;
         string closeNotice;
+        static EncounterVoiceController nativeOwner;
+        bool nativeOwned, nativeCaptureEnabled;
 
         void OnEnable() { BindCoordinator(); AudioSettings.OnAudioConfigurationChanged += OnAudioConfigurationChanged; }
         void OnAudioConfigurationChanged(bool deviceWasChanged)
@@ -116,7 +118,7 @@ namespace LucidLoop.Gyms
         {
             micAttempt++;
             if (!enabled) { StopMic(); if (IsReady) SetStatus("ready_typed"); return; }
-            if ((!IsReady && !IsConnecting) || IsClosing || microphone) return;
+            if ((!IsReady && !IsConnecting) || IsClosing || MicrophoneEnabled) return;
             StartCoroutine(StartMic(generation, micAttempt));
         }
 
@@ -128,6 +130,19 @@ namespace LucidLoop.Gyms
             if (attemptGeneration != generation || attemptMic != micAttempt || IsClosing || (!IsReady && !IsConnecting)) yield break;
             if (!Application.HasUserAuthorization(UserAuthorization.Microphone))
             { SetStatus("microphone_permission_denied"); yield break; }
+#if UNITY_IOS && !UNITY_EDITOR
+            // Do not accumulate native capture while the relay is still starting.
+            while (IsConnecting && !IsClosing && attemptGeneration == generation && attemptMic == micAttempt)
+                yield return null;
+            if (attemptGeneration != generation || attemptMic != micAttempt || !IsReady || IsClosing) yield break;
+            if (!nativeOwned && !StartNativeAudio()) yield break;
+            var captureStatus = IosNativeVoiceAudio.SetCaptureEnabled(true);
+            if (captureStatus != IosNativeVoiceStatus.Running)
+            { CloseNativeFailure(captureStatus); yield break; }
+            nativeCaptureEnabled = true;
+            SetStatus("ready_voice");
+            yield break;
+#else
             if (Microphone.devices.Length == 0) { SetStatus("microphone_unavailable"); yield break; }
             device = Microphone.devices[0];
             try { microphone = Microphone.Start(device, true, 1, Rate); }
@@ -136,16 +151,62 @@ namespace LucidLoop.Gyms
             { StopMic(); SetStatus("microphone_format_unavailable"); yield break; }
             micCursor = Math.Max(0, Microphone.GetPosition(device));
             SetStatus(IsReady ? "ready_voice" : "connecting");
+#endif
+        }
+
+        bool StartNativeAudio()
+        {
+            var switchingConnection = connection;
+            int switchingGeneration = generation;
+            if (nativeOwner != null && nativeOwner != this)
+            { closeNotice = "Audio is in use by another conversation. Tap Talk to try again."; Leave(); SetStatus(closeNotice); return false; }
+            // Claim ownership even on failed Start so cleanup only stops our backend.
+            nativeOwner = this; nativeOwned = true;
+            var status = IosNativeVoiceAudio.Start();
+            if (status != IosNativeVoiceStatus.Running) { CloseNativeFailure(status); return false; }
+            nativeCaptureEnabled = false;
+            // Switch once per session. Explicitly discard the old renderer's queued
+            // speech and reset the analyzer's clock before accepting native output.
+            var oldPlayback = playback;
+            if (oldPlayback != null) oldPlayback.Active = false;
+            if (Output) { Output.Stop(); if (Output.clip == outputClip) Output.clip = null; }
+            if (outputClip) Destroy(outputClip); outputClip = null;
+            if (streamOpen)
+            {
+                PlaybackProgress?.Invoke(generation, oldPlayback == null ? 0 : Interlocked.Read(ref oldPlayback.Consumed), Rate, true, true);
+                StreamStopped?.Invoke(generation);
+            }
+            if (!nativeOwned || nativeOwner != this || !streamOpen || !IsReady || IsClosing ||
+                connection != switchingConnection || generation != switchingGeneration) return false;
+            playback = null;
+            generation++;
+            StreamStarted?.Invoke(generation);
+            return nativeOwned && nativeOwner == this && streamOpen && IsReady && !IsClosing &&
+                connection == switchingConnection && generation == switchingGeneration + 1;
+        }
+
+        void CloseNativeFailure(IosNativeVoiceStatus status)
+        {
+            closeNotice = "iOS voice audio stopped (" + status + "). Check microphone permission and audio device, then tap Talk to try again.";
+            Leave();
+            SetStatus(closeNotice);
         }
 
         void Update()
         {
             BindCoordinator();
-            if (Interlocked.Exchange(ref audioDeviceChanged, 0) != 0 && streamOpen && !IsClosing)
+            // Native route/configuration notifications are authoritative after the
+            // switch; Unity may also report its own setup changes during that switch.
+            if (Interlocked.Exchange(ref audioDeviceChanged, 0) != 0 && !nativeOwned && streamOpen && !IsClosing)
             {
                 closeNotice = "Audio device changed. Tap Talk to start again.";
                 Leave();
                 SetStatus(IsClosing ? "Audio device changed. Closing conversation..." : closeNotice);
+            }
+            if (nativeOwned && !IsClosing)
+            {
+                var status = IosNativeVoiceAudio.Status;
+                if (status != IosNativeVoiceStatus.Running) CloseNativeFailure(status);
             }
             DrainRetired();
             var active = connection;
@@ -157,7 +218,9 @@ namespace LucidLoop.Gyms
                 else Fail(IsClosing ? "closed_final_usage_unconfirmed" : "startup_timeout");
             }
             if (IsReady && !IsClosing) PumpInput();
-            if (streamOpen && playback != null)
+            if (streamOpen && nativeOwned)
+                PlaybackProgress?.Invoke(generation, (long)IosNativeVoiceAudio.ConsumedOutputSamples, Rate, IosNativeVoiceAudio.IsStarved, false);
+            else if (streamOpen && playback != null)
                 PlaybackProgress?.Invoke(generation, Interlocked.Read(ref playback.Consumed), Rate, playback.Starved, false);
         }
 
@@ -174,7 +237,14 @@ namespace LucidLoop.Gyms
             if (packets < 1) return;
             int frames = packets * Packet;
             var mono = new float[frames];
-            if (microphone)
+            if (nativeOwned && nativeCaptureEnabled)
+            {
+                int captured = IosNativeVoiceAudio.ReadCapture(mono, frames);
+                if (captured < 0) { CloseNativeFailure((IosNativeVoiceStatus)captured); return; }
+                if (captured > frames) { Fail("native_capture_invalid_count"); return; }
+                // Any unread tail remains zero; mic OFF takes the all-silence path.
+            }
+            else if (microphone)
             {
                 int position = Microphone.GetPosition(device);
                 if (position < 0 || !Microphone.IsRecording(device))
@@ -211,18 +281,34 @@ namespace LucidLoop.Gyms
                 try
                 {
                     var bytes = Convert.FromBase64String((string)message["delta"] ?? "");
-                    if (bytes.Length == 0 || bytes.Length % 2 != 0 || playback == null ||
-                        bytes.Length / 2 > PlaybackCapacity - playback.Ring.Count)
+                    int queued = nativeOwned ? IosNativeVoiceAudio.QueuedOutputSamples : playback == null ? PlaybackCapacity : playback.Ring.Count;
+                    if (bytes.Length == 0 || bytes.Length % 2 != 0 || queued < 0 ||
+                        bytes.Length / 2 > PlaybackCapacity - queued)
                     { Fail("audio_output_overflow_or_invalid"); return; }
-                    // Only the audio thread removes samples, so this preflight cannot become less safe.
-                    playback.Ring.WritePcm16(bytes);
+                    float[] samples = null;
+                    if (nativeOwned || PcmOutput != null)
+                    {
+                        samples = new float[bytes.Length / 2];
+                        for (int i = 0; i < samples.Length; i++) samples[i] = (short)(bytes[i * 2] | bytes[i * 2 + 1] << 8) / 32768f;
+                    }
+                    if (nativeOwned)
+                    {
+                        int written = IosNativeVoiceAudio.WriteOutput(samples, samples.Length);
+                        if (written < 0) { CloseNativeFailure((IosNativeVoiceStatus)written); return; }
+                        // Never analyze or silently discard an unqueued suffix.
+                        if (written != samples.Length) { Fail("native_audio_output_partial_write"); return; }
+                    }
+                    else playback.Ring.WritePcm16(bytes);
                     int packetGeneration = generation;
                     Pcm16Output?.Invoke(bytes, packetGeneration);
                     if (!streamOpen || generation != packetGeneration) return;
                     if (PcmOutput != null)
                     {
-                        var samples = new float[bytes.Length / 2];
-                        for (int i = 0; i < samples.Length; i++) samples[i] = (short)(bytes[i * 2] | bytes[i * 2 + 1] << 8) / 32768f;
+                        if (samples == null)
+                        {
+                            samples = new float[bytes.Length / 2];
+                            for (int i = 0; i < samples.Length; i++) samples[i] = (short)(bytes[i * 2] | bytes[i * 2 + 1] << 8) / 32768f;
+                        }
                         PcmOutput.Invoke(samples);
                     }
                 }
@@ -244,7 +330,7 @@ namespace LucidLoop.Gyms
                 {
                     IsConnecting = false; IsReady = true; audioDebt = 0;
                     if (microphone) micCursor = Math.Max(0, Microphone.GetPosition(device));
-                    SetStatus(microphone ? "ready_voice" : "ready_typed"); Ready?.Invoke();
+                    SetStatus(MicrophoneEnabled ? "ready_voice" : "ready_typed"); Ready?.Invoke();
                 }
                 else if (state == "closed" && FinalUsageConfirmed) CompleteClose();
                 else if (state == "error")
@@ -311,19 +397,34 @@ namespace LucidLoop.Gyms
         void StopMic()
         {
             micAttempt++;
+            if (nativeOwned && nativeOwner == this)
+            {
+                nativeCaptureEnabled = false;
+                var status = IosNativeVoiceAudio.SetCaptureEnabled(false);
+                if (status != IosNativeVoiceStatus.Running && streamOpen && !IsClosing)
+                {
+                    // Leave/StopStream also uses StopMic; defer invalidation handling
+                    // to Update to avoid recursive teardown here.
+                    if (closeNotice == null) closeNotice = "iOS voice audio stopped (" + status + "). Tap Talk to start again.";
+                }
+            }
             if (device != null) Microphone.End(device);
             if (microphone) Destroy(microphone);
             microphone = null; device = null; micCursor = 0;
         }
         void StopStream()
         {
+            long consumed = nativeOwned && nativeOwner == this ? (long)IosNativeVoiceAudio.ConsumedOutputSamples :
+                playback == null ? 0 : Interlocked.Read(ref playback.Consumed);
             StopMic();
+            if (nativeOwned && nativeOwner == this) { IosNativeVoiceAudio.Stop(); nativeOwner = null; }
+            nativeOwned = nativeCaptureEnabled = false;
             if (playback != null) playback.Active = false;
             if (Output) { Output.Stop(); if (Output.clip == outputClip) Output.clip = null; }
             if (outputClip) Destroy(outputClip); outputClip = null;
             if (streamOpen)
             {
-                PlaybackProgress?.Invoke(generation, playback == null ? 0 : Interlocked.Read(ref playback.Consumed), Rate, true, true);
+                PlaybackProgress?.Invoke(generation, consumed, Rate, true, true);
                 StreamStopped?.Invoke(generation);
             }
             streamOpen = false; playback = null;
