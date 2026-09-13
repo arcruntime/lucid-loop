@@ -1,0 +1,29 @@
+{
+  "scope": "Unity export packaging only",
+  "checks": {
+    "arc_source_entry": true,
+    "exception_source_entry": true,
+    "headers_in_project": true,
+    "framework_entries": true,
+    "cpp17": true,
+    "ios17": true,
+    "standalone_test_excluded": true,
+    "current_source_LLVoice.h": true,
+    "current_source_LLVoiceRing.h": true,
+    "current_source_LLVoice.mm": true,
+    "generated_bindings": true
+  },
+  "source_comparison": "Textual source with CRLF normalized to LF only",
+  "source_byte_identity": {
+    "LLVoice.h": true,
+    "LLVoiceRing.h": true,
+    "LLVoice.mm": true
+  },
+  "exported_sha256": {
+    "LLVoice.h": "7de1d53fd7c185dfff5302075908a7aa68825b4931b39cda20706dc121769539",
+    "LLVoiceRing.h": "5b8bb357393dbd1d4a679844fb53853aba75dde49fad02dbb40dcc204297790a",
+    "LLVoice.mm": "555f18e6739ab19166103848950311af8738e694430cac70eabc8db673f49fa0"
+  },
+  "checks_apple_compilation": false,
+  "checks_device_behavior": false
+}

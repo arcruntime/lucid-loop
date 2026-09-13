@@ -152,6 +152,24 @@ jobs:
             file "$products/LucidLoopGyms.app/LucidLoopGyms"
             file "$products/LucidLoopGyms.app/Frameworks/UnityFramework.framework/UnityFramework"
           } | tee "$RUNNER_TEMP/ios-evidence/built-products.txt"
+      - name: Package verified unsigned application
+        run: |
+          set -euo pipefail
+          products="$RUNNER_TEMP/ios-derived/Build/Products/ReleaseForRunning-iphoneos"
+          mkdir -p "$RUNNER_TEMP/ios-package"
+          tar -czf "$RUNNER_TEMP/ios-package/LucidLoopGyms-unsigned-iphoneos.tar.gz" \
+            -C "$products" LucidLoopGyms.app
+          cd "$RUNNER_TEMP/ios-package"
+          shasum -a 256 LucidLoopGyms-unsigned-iphoneos.tar.gz \
+            > LucidLoopGyms-unsigned-iphoneos.tar.gz.sha256.txt
+      - name: Upload successfully built unsigned application
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-unsigned-app-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/ios-package/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
       - name: Retain diagnostics even when verification or compilation fails
         if: always()
         uses: actions/upload-artifact@v4

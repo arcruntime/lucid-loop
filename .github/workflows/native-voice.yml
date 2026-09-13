@@ -45,7 +45,8 @@ jobs:
           xcrun --sdk iphoneos clang++ \
             -target arm64-apple-ios17.0 \
             -isysroot "$(xcrun --sdk iphoneos --show-sdk-path)" \
-            -std=c++17 -fobjc-arc -Wall -Wextra -Werror=unguarded-availability \
+            -std=c++17 -fno-exceptions -fno-objc-exceptions \
+            -fobjc-arc -fexceptions -fobjc-exceptions -Wall -Wextra -Werror=unguarded-availability \
             -dynamiclib Unity/Assets/Gyms/Plugins/iOS/LLVoice.mm \
             -framework Foundation -framework AVFoundation -framework AudioToolbox \
             -o /tmp/LLVoice-check.dylib

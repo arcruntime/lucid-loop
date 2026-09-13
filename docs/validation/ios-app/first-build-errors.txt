@@ -1,0 +1,6 @@
+CompileC /Users/runner/work/_temp/ios-derived/Build/Intermediates.noindex/Unity-iPhone.build/ReleaseForRunning-iphoneos/UnityFramework.build/Objects-normal/arm64/LLVoice.o /Users/runner/work/_temp/ios-export/Xcode/Libraries/Gyms/Plugins/iOS/LLVoice.mm normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'UnityFramework' from project 'Unity-iPhone')
+/Users/runner/work/_temp/ios-export/Xcode/Libraries/Gyms/Plugins/iOS/LLVoice.mm:94:5: error: cannot use '@try' with Objective-C exceptions disabled
+/Users/runner/work/_temp/ios-export/Xcode/Libraries/Gyms/Plugins/iOS/LLVoice.mm:116:5: error: cannot use '@try' with Objective-C exceptions disabled
+/Users/runner/work/_temp/ios-export/Xcode/Libraries/Gyms/Plugins/iOS/LLVoice.mm:233:5: error: cannot use '@try' with Objective-C exceptions disabled
+** BUILD FAILED **
+	CompileC /Users/runner/work/_temp/ios-derived/Build/Intermediates.noindex/Unity-iPhone.build/ReleaseForRunning-iphoneos/UnityFramework.build/Objects-normal/arm64/LLVoice.o /Users/runner/work/_temp/ios-export/Xcode/Libraries/Gyms/Plugins/iOS/LLVoice.mm normal arm64 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'UnityFramework' from project 'Unity-iPhone')

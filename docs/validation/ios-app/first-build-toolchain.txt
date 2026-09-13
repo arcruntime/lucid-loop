@@ -1,0 +1,7 @@
+2780ff50a095a4269fa94e769008ca38b9535d2b
+arm64
+Xcode 16.4
+Build version 16F6
+18.5
+Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk2s5   320Gi   258Gi    43Gi    86%    2.2M  447M    0%   /System/Volumes/Data

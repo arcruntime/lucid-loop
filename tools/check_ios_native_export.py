@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -10,10 +11,12 @@ parser.add_argument("--output", type=Path)
 args = parser.parse_args()
 root = Path(__file__).resolve().parents[1]
 project = (args.export / "Unity-iPhone.xcodeproj/project.pbxproj").read_text(encoding="utf-8-sig")
+voice_flags = [set(match.group(1).split()) for line in project.splitlines()
+               if "LLVoice.mm in Sources" in line
+               for match in [re.search(r'COMPILER_FLAGS = "([^"]+)"', line)] if match]
 checks = {
-    "arc_source_entry": any("LLVoice.mm in Sources" in line and
-                            'COMPILER_FLAGS = "-fobjc-arc"' in line
-                            for line in project.splitlines()),
+    "arc_source_entry": any("-fobjc-arc" in flags for flags in voice_flags),
+    "exception_source_entry": any({"-fexceptions", "-fobjc-exceptions"} <= flags for flags in voice_flags),
     "headers_in_project": all(f"{name} in Headers" in project for name in
                               ("LLVoice.h", "LLVoiceRing.h")),
     "framework_entries": all(f"{name}.framework in Frameworks" in project for name in
