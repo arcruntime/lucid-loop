@@ -18,6 +18,23 @@ Keep three concepts separate:
 
 This headless run has no actual playback device or audible cursor. It cannot measure physical latency, underruns at an iPhone speaker, or how much text is available before a sound is heard. Preserve raw evidence for a subsequent instrumented playback experiment rather than inventing that relationship.
 
+## First actual capture
+
+[Run 34788497022](https://github.com/jethac/lucid-loop/actions/runs/34788497022) passed at `c341691`. All four sessions returned nonzero PCM, Japanese output transcript fragments and final usage. [Raw corpus ZIP](validation/japanese-npc-voices-34788497022.zip) preserves the original WAVs and JSON bytes beyond Actions retention; [inspection summary](validation/japanese-npc-voices-summary.json) records verified file hashes and sample spans.
+
+| NPC / voice | Captured PCM duration, including silence | Transcript fragments |
+| --- | --- | --- |
+| Maya / gleam | 34.1 seconds | 41 |
+| Ren / quartz | 34.1 seconds | 40 |
+| Luca / meridian | 34.0 seconds | 42 |
+| Theo / vesper | 34.1 seconds | 37 |
+
+Each receipt-order transcript concatenation matches the requested passage. No PCM sample reached either full-scale endpoint. These are data checks, not listening-based pronunciation, distortion or clipping acceptance. One or two packets per voice arrived outside the fixed capture window; their metadata remains recorded, but their audio is intentionally excluded from the WAV. The files include silence, so these durations are not speech-duration measurements.
+
+The observed audio packets contain **only `type` and `delta`**, with no provider timestamp or event ID. Output transcript fragments do contain `start_ms`, `end_ms` and an event ID. That asymmetry leaves the transcript-to-PCM mapping unverified. Do not treat these samples as aligned phoneme labels or use first-packet receipt as a validated audible-time anchor.
+
+After extracting the ZIP into a fresh directory, reproduce inspection with `python tools/live_speech/inspect_voice_capture.py <directory> --output <report.json>`. The tool verifies WAV/event-file hashes, format, sample counts and contiguous packet sample spans before reporting observations.
+
 ## Evaluation and implementation boundary
 
 Reserve these recordings for evaluation; do not train on them. First review what was actually spoken, pronunciation, transcript fidelity and clipping. Human contact labels and rendered-face comparison remain required for believable Japanese articulation. Retain negative examples and capture failures.

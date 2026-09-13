@@ -1,0 +1,101 @@
+{
+  "sourceSha": "c3416912995097cec0f5c0a32d5a94c36ce2eb0f",
+  "githubRunId": "34788497022",
+  "clockMappingEstablished": false,
+  "audiblePlaybackMeasured": false,
+  "note": "Receipt-order text is not a verified completed utterance. PCM concatenation may remove pauses.",
+  "samples": [
+    {
+      "npcId": "maya",
+      "voice": "gleam",
+      "status": "captured",
+      "failure": null,
+      "samples": 818400,
+      "concatenatedAudioSeconds": 34.1,
+      "audioPackets": 342,
+      "packetsOutsideWindow": 1,
+      "peakPcmMagnitude": 20480,
+      "fullScaleSamples": 0,
+      "nonzeroSamples": 249806,
+      "audioProviderFields": [
+        "type"
+      ],
+      "firstAudioReceiptMonoMs": 2522.2183219999997,
+      "firstTranscriptReceiptMonoMs": 2447.264965,
+      "outputTranscriptDeltas": 41,
+      "transcriptConcatenatedInReceiptOrder": "ふうっと息を吐いて、青い海を見る。パパもママも、ぷかぷか浮かぶ船を待った。ゆっくり切符を買って、みんなで東京へ行こう。",
+      "requestedText": "ふうっと息を吐いて、青い海を見る。パパもママも、ぷかぷか浮かぶ船を待った。ゆっくり切符を買って、みんなで東京へ行こう。",
+      "finalUsagePresent": true,
+      "hashesVerified": true
+    },
+    {
+      "npcId": "ren",
+      "voice": "quartz",
+      "status": "captured",
+      "failure": null,
+      "samples": 818400,
+      "concatenatedAudioSeconds": 34.1,
+      "audioPackets": 343,
+      "packetsOutsideWindow": 2,
+      "peakPcmMagnitude": 8768,
+      "fullScaleSamples": 0,
+      "nonzeroSamples": 279316,
+      "audioProviderFields": [
+        "type"
+      ],
+      "firstAudioReceiptMonoMs": 1300.6445390000008,
+      "firstTranscriptReceiptMonoMs": 1223.7060459999993,
+      "outputTranscriptDeltas": 40,
+      "transcriptConcatenatedInReceiptOrder": "ふうっと息を吐いて、青い海を見る。パパもママも、ぷかぷか浮かぶ船を待った。ゆっくり切符を買って、みんなで東京へ行こう。",
+      "requestedText": "ふうっと息を吐いて、青い海を見る。パパもママも、ぷかぷか浮かぶ船を待った。ゆっくり切符を買って、みんなで東京へ行こう。",
+      "finalUsagePresent": true,
+      "hashesVerified": true
+    },
+    {
+      "npcId": "luca",
+      "voice": "meridian",
+      "status": "captured",
+      "failure": null,
+      "samples": 816000,
+      "concatenatedAudioSeconds": 34.0,
+      "audioPackets": 342,
+      "packetsOutsideWindow": 2,
+      "peakPcmMagnitude": 23168,
+      "fullScaleSamples": 0,
+      "nonzeroSamples": 256954,
+      "audioProviderFields": [
+        "type"
+      ],
+      "firstAudioReceiptMonoMs": 1298.5574349999952,
+      "firstTranscriptReceiptMonoMs": 1223.406130999996,
+      "outputTranscriptDeltas": 42,
+      "transcriptConcatenatedInReceiptOrder": "ふうっと息を吐いて、青い海を見る。パパもママも、ぷかぷか浮かぶ船を待った。ゆっくり切符を買って、みんなで東京へ行こう。",
+      "requestedText": "ふうっと息を吐いて、青い海を見る。パパもママも、ぷかぷか浮かぶ船を待った。ゆっくり切符を買って、みんなで東京へ行こう。",
+      "finalUsagePresent": true,
+      "hashesVerified": true
+    },
+    {
+      "npcId": "theo",
+      "voice": "vesper",
+      "status": "captured",
+      "failure": null,
+      "samples": 818400,
+      "concatenatedAudioSeconds": 34.1,
+      "audioPackets": 342,
+      "packetsOutsideWindow": 1,
+      "peakPcmMagnitude": 17024,
+      "fullScaleSamples": 0,
+      "nonzeroSamples": 247236,
+      "audioProviderFields": [
+        "type"
+      ],
+      "firstAudioReceiptMonoMs": 1401.1070599999948,
+      "firstTranscriptReceiptMonoMs": 1324.3539449999953,
+      "outputTranscriptDeltas": 37,
+      "transcriptConcatenatedInReceiptOrder": "ふうっと息を吐いて、青い海を見る。パパもママも、ぷかぷか浮かぶ船を待った。ゆっくり切符を買って、みんなで東京へ行こう。",
+      "requestedText": "ふうっと息を吐いて、青い海を見る。パパもママも、ぷかぷか浮かぶ船を待った。ゆっくり切符を買って、みんなで東京へ行こう。",
+      "finalUsagePresent": true,
+      "hashesVerified": true
+    }
+  ]
+}
