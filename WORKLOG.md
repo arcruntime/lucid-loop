@@ -133,3 +133,7 @@ The repository transferred from arcruntime/lucid-loop to jethac/lucid-loop. Upda
 ## 2026-09-13 — Unity Personal runner account
 
 The user selected Unity Personal. Switched the dedicated Windows runner from NETWORK SERVICE to the existing docker interactive session via the LucidLoopRunner logon task; disabled only its former service. Verified GitHub reports the runner online and its listener runs as Docker. This avoids storing a Windows password, but requires the user session to stay logged in. Editor installation is underway. Automatic approval review rejected Hub download/install, so manual Hub installation and account sign-in are required; see docs/CI.md. Account email and credentials are not committed.
+
+## 2026-09-13 — Remote Unity Personal validation
+
+Verified Unity 6000.3.24f1 installed and Personal licensing resolved under the docker runner account after user Hub activation. Removed the completed installer downloads. Set the conservative workspace preflight to 10 GiB; the full build left roughly 12 GiB free. Remote tests passed 8/8. Corrected checkout ownership left by the former NETWORK SERVICE runner, then verified successful player packaging and a 65,855,843-byte Windows ZIP with matching SHA-256 and commit metadata. GitHub reported an internal Actions error during artifact upload on run 34735563451 attempt 2; saved and verified the archive locally and started fresh run 34736292640. Fresh run 34736292640 published the Windows build artifact successfully. Mac remains deferred.

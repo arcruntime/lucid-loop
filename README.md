@@ -6,7 +6,7 @@ Two playable Unity gyms are implemented: an offline nightclub for movement and c
 
 **Builds:** [Unity builds on GitHub Actions](https://github.com/jethac/lucid-loop/actions/workflows/unity-builds.yml) is configured for every push to `main`, same-repository pull requests, daily at 03:17 JST, and manual runs. Successful runs publish a Windows ZIP with a commit ID and SHA-256 checksum. Mac builds are deferred. Download them from the run's **Artifacts** section; diagnostics are uploaded on failures too.
 
-**CI provisioning is pending:** the dedicated Windows runner on stadia-testbed is registered and online. Unity 6000.3.24f1 installation and license activation remain prerequisites for successful builds. Mac provisioning and builds are deferred. No successful remote Unity builds are claimed yet. See [CI setup and host status](docs/CI.md).
+**Windows CI is provisioned:** the dedicated runner on stadia-testbed has Unity 6000.3.24f1 with Personal activated. Remote tests and player packaging have passed. The runner requires its Windows user session to remain logged in. Mac provisioning and builds are deferred. See [CI setup and host status](docs/CI.md).
 
 ## Project direction
 
