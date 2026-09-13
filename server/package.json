@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=24" },
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "start": "node src/main.mjs",
     "fixture": "node src/fixture-cli.mjs",
     "test": "node --test",
-    "test:live": "node --test test/live-smoke.test.mjs"
+    "test:live": "node --test test/live-smoke.test.mjs",
+    "dialogue": "node src/dialogue.mjs"
   },
   "dependencies": {
     "ws": "8.21.0"

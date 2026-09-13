@@ -22,6 +22,15 @@ namespace LucidLoop.Gyms.Tests
   {
    var s=new LoopState();s.Recognize();s.Rewind();s.PrepareMaya();s.Recognize();Assert.IsFalse(s.Resolve());
   }
+  [Test] public void AiActionsAreAtomicAndRestrictedToTheSpeaker()
+  {
+   var s=new LoopState();s.Recognize();s.Rewind();
+   Assert.IsFalse(s.ApplyDecision("maya",new[]{"wait","prepare_intervention"}));Assert.IsFalse(s.MayaWaiting);
+   Assert.IsFalse(s.ApplyDecision("maya",new[]{"wait","follow"}));
+   Assert.IsTrue(s.ApplyDecision("maya",new[]{"wait","private_approach"}));Assert.IsTrue(s.MayaWaiting);Assert.IsTrue(s.PrivateApproach);
+   Assert.IsTrue(s.ApplyDecision("luca",new[]{"prepare_intervention"}));
+   s.Recognize();Assert.IsFalse(s.ApplyDecision("ren",new[]{"music_intimate"}));Assert.IsTrue(s.Resolve());
+  }
   [Test] public void EntranceAndBarAreOutsideRecognitionArea()
   {
    Assert.IsFalse(FirstLoop.InRecognitionArea(new Vector3(0,0,-9)));

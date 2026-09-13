@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 namespace LucidLoop.Gyms.Mvp
 {
-    public class FirstLoop : MonoBehaviour
+    public partial class FirstLoop : MonoBehaviour
     {
         public NavMeshAgent Player;
         public GymCamera Rig;
@@ -28,6 +28,7 @@ namespace LucidLoop.Gyms.Mvp
         float followAt;
         GameObject phone;
         CharacterActor approaching;
+        MoodMusic music;
         const float TriggerX = 2.1f, TriggerZ = -4.1f;
         public string LastMoveError { get; private set; }
 
@@ -46,6 +47,7 @@ namespace LucidLoop.Gyms.Mvp
             foreach (var t in new[] {Player.transform, Maya.transform, Theo.transform, Luca.transform, Ren.transform})
             { starts[t] = t.position; rotations[t] = t.rotation; }
             MakeUI();
+            music=gameObject.AddComponent<MoodMusic>();
             phone = GameObject.CreatePrimitive(PrimitiveType.Cube); phone.name = "Maya recording phone";
             Destroy(phone.GetComponent<Collider>()); phone.transform.SetParent(Maya.Visual, false);
             phone.transform.localPosition = new Vector3(.42f, 1.5f, .3f); phone.transform.localScale = new Vector3(.13f,.23f,.035f);
@@ -74,6 +76,8 @@ namespace LucidLoop.Gyms.Mvp
             dialogue.gameObject.SetActive(false);
             var restart = GymUI.Rect(hud,"Restart",new Vector2(1,0),new Vector2(1,0),new Vector2(-240,122),new Vector2(-25,172));
             GymUI.Button(restart,"Restart demo",Restart);
+            var mute=GymUI.Rect(hud,"Music toggle",new Vector2(1,0),new Vector2(1,0),new Vector2(-465,122),new Vector2(-250,172));
+            GymUI.Button(mute,"Music on / off",()=>{if(music)music.Muted=!music.Muted;});
             var shade = GymUI.Rect(hud,"Rewind curtain",Vector2.zero,Vector2.one,Vector2.zero,Vector2.zero);
             curtain = GymUI.Panel(shade,new Color(.1f,.8f,.85f,0)); curtain.raycastTarget=false;
         }
@@ -102,6 +106,7 @@ namespace LucidLoop.Gyms.Mvp
             }
             if (Input.GetKeyDown(KeyCode.Escape) && modal && !Busy) CloseConversation();
             if (Input.GetKeyDown(KeyCode.Space) && Busy) advance = true;
+            if(music) { music.Intimate=State.Intimate; music.Duck=Busy || modal; }
         }
         public static bool InRecognitionArea(Vector3 position) => position.x > TriggerX && position.x < 6.5f && position.z > TriggerZ && position.z < .8f;
         public bool Walk(Vector3 point)
@@ -152,34 +157,22 @@ namespace LucidLoop.Gyms.Mvp
         {
             if (Busy || State.Resolved) return;
             Stop(Player); Stop(agents[Maya]); modal=true;
-            foreach(Transform child in choices) Destroy(child.gameObject);
+            foreach(Transform child in choices) { child.gameObject.SetActive(false); Destroy(child.gameObject); }
             choices.gameObject.SetActive(true);
             GymUI.Label(choices,actor.DisplayName.ToUpperInvariant(),20,15,460,35,26,GymUI.Cyan);
-            GymUI.Label(choices,"Authored choices · AI in next checkpoint",20,57,460,45,18,GymUI.Muted);
+            if(State.Loop>1) { ShowTypedConversation(actor); return; }
+            choices.pivot=new Vector2(0,1);choices.anchoredPosition=new Vector2(25,-155);
+            choices.sizeDelta=new Vector2(505,420);
+            GymUI.Label(choices,"Opening scene",20,57,460,45,18,GymUI.Muted);
             int row=0;
-            if (State.Loop==1)
-                Choice("Let's find a spot on the floor.",()=> { CloseConversation(); Walk(new Vector3(4.7f,0,-2.6f)); },ref row);
-            else if (actor==Maya)
-            {
-                Choice(State.MayaWaiting?"Come with me.":"Wait here while I speak to Luca.",()=> { SetWaiting(!State.MayaWaiting); CloseConversation(); },ref row);
-                Choice("Please don't film. Let's speak privately.",()=> { State.PrepareMaya(); CloseConversation(); StartCoroutine(Reply("MAYA",State.Intimate?"Okay. We can ask him without putting him on display.":"I'm still going to ask him. But okay—phone away.")); },ref row);
-            }
-            else if(actor==Luca)
-                Choice("If Theo gets upset, help us step aside early.",()=> { State.PrepareLuca(); CloseConversation(); StartCoroutine(Reply("LUCA","I'll stay close. Talk to him here on the floor; I'll step in before it becomes a scene.")); },ref row);
-            else if(actor==Ren)
-            {
-                Choice("Something intimate. Give us room to talk.",()=> { State.SetMusic(true); CloseConversation(); StartCoroutine(Reply("REN","I can bring it down. What you do with the quiet is up to you.")); },ref row);
-                Choice("Keep the aggressive track.",()=> { State.SetMusic(false); CloseConversation(); Refresh(); },ref row);
-            }
-            else
-                Choice("Give us a minute. We'll come speak to you.",()=> { CloseConversation(); StartCoroutine(Reply("THEO","Sure. Enjoy the night.")); },ref row);
+            Choice("Let's find a spot on the floor.",()=> { CloseConversation(); Walk(new Vector3(4.7f,0,-2.6f)); },ref row);
             Choice("Back to the floor",CloseConversation,ref row);
         }
         void Choice(string label,UnityEngine.Events.UnityAction action,ref int row)
         { GymUI.Button(GymUI.Box(choices,"Choice "+row,18,112+row*83,469,73),label,action); row++; }
         public void SetWaiting(bool wait)
         { if(State.Wait(wait)) { Stop(agents[Maya]); Refresh(); } }
-        void CloseConversation() { modal=false; choices.gameObject.SetActive(false); Refresh(); }
+        void CloseConversation() { CancelChat(); modal=false; choices.gameObject.SetActive(false); Refresh(); }
         IEnumerator Reply(string name,string text) { Busy=true; yield return Say(name,text); Busy=false; Refresh(); }
         IEnumerator Say(string name,string text)
         {
@@ -236,14 +229,16 @@ namespace LucidLoop.Gyms.Mvp
         }
         IEnumerator Rewind()
         {
+            music.Interrupt();
             for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,t/.6f); yield return null; }
-            State.Rewind(); ResetActors();
+            State.Rewind(); conversations.Clear(); ResetActors();
             for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,1-t/.6f); yield return null; }
             curtain.color=Color.clear;
         }
         void ResetActors()
         {
             approaching=null;
+            if(music)music.RestartTracks();
             Stop(Player); foreach(var a in agents.Values) Stop(a);
             Player.Warp(starts[Player.transform]);
             foreach(var a in agents) a.Value.Warp(starts[a.Key.transform]);
@@ -252,14 +247,14 @@ namespace LucidLoop.Gyms.Mvp
         }
         public void Restart()
         {
-            StopAllCoroutines(); Busy=false; modal=false; State=new LoopState(); ResetActors();
+            CancelChat(); conversations.Clear(); StopAllCoroutines(); Busy=false; modal=false; State=new LoopState(); ResetActors();
             choices.gameObject.SetActive(false); dialogue.gameObject.SetActive(false); curtain.color=Color.clear;
             Refresh(); StartCoroutine(Arrival());
         }
         void Refresh()
         {
             if(!status) return;
-            status.text="LOOP "+State.Loop+"  ·  "+(State.Intimate?"INTIMATE":"AGGRESSIVE")+"  ·  CHECKPOINT 1 / NO API";
+            status.text="LOOP "+State.Loop+"  ·  "+(State.Intimate?"INTIMATE":"AGGRESSIVE")+"  ·  CHECKPOINT 2 / TYPED AI";
             memories.text=State.RemembersRecording?"Maya's recording. Theo reaching for her phone. Luca stepping between them.":"Nothing yet. This is your first time here.";
             objective.text=State.Resolved?"THE NIGHT CONTINUES · You changed the encounter. Luca is safe. Restart to try another approach.":
                 State.Loop==1?"Click the floor to walk toward the right side of the dancefloor. Click a character to talk. Space / Continue advances dialogue.":
@@ -279,7 +274,12 @@ namespace LucidLoop.Gyms.Mvp
             if(Vector3.Distance(old,Maya.transform.position)>.2f) throw new Exception("Waiting Maya moved");
             State.SetMusic(true);
             if(State.Resolved || State.CanPrevent) throw new Exception("Music/avoidance incorrectly wins");
-            State.PrepareMaya(); State.PrepareLuca(); SetWaiting(false);
+            if(Array.IndexOf(Environment.GetCommandLineArgs(),"-btd-dialogue-smoke")>=0)
+            {
+                SetWaiting(false); State.SetMusic(false);
+                yield return DialogueSmoke();
+            }
+            else { State.PrepareMaya(); State.PrepareLuca(); SetWaiting(false); }
             if(!Walk(new Vector3(4.7f,0,-2.6f))) throw new Exception("Second path failed");
             timeout=Time.realtimeSinceStartup+45;
             while(!State.Resolved && Time.realtimeSinceStartup<timeout) yield return null;
