@@ -1,0 +1,160 @@
+{
+  "upstreamCommit": "acea62e125aa2200648a489900de750c3e3587fa",
+  "sourceSha": "c3416912995097cec0f5c0a32d5a94c36ce2eb0f",
+  "captureRunId": "34788497022",
+  "checkedReadingSha256": "5f86e5fb9f3f819588717675ae429e99020469427f7e53013b18c6bb1d22f175",
+  "mode": "offline_duration_window_comparison",
+  "causal": false,
+  "contactAccuracyMeasured": false,
+  "timingNote": "Single desktop run; computation excludes file IO, reading conversion and delivery. Not an iOS latency measurement.",
+  "samples": [
+    {
+      "npcId": "maya",
+      "voice": "gleam",
+      "audioSha256": "43f9668988fd13c9236aa3cd066fb6f9ac489bbd85d7bb7ea27f22b7ab844105",
+      "pcmDurationMs": 34100,
+      "featureFrames": 17034,
+      "featureMs": 849.2198999999999,
+      "alignmentMs": 450.1526000000001,
+      "expectedMorae": 60,
+      "actualMorae": 60,
+      "expectedPhrases": 6,
+      "detectedSegments": 2,
+      "grouping": "all_morae_over_segment_union",
+      "segments": [
+        [
+          80,
+          4612
+        ],
+        [
+          4686,
+          10432
+        ]
+      ],
+      "invalidSpans": [],
+      "gapSpans": [
+        {
+          "index": 25,
+          "kana": "カ",
+          "outsideDetectedSpeechMs": 74
+        }
+      ],
+      "comparison": {
+        "boundariesIdentical": true,
+        "changedFrames": 5,
+        "maskedGapFrames": 5,
+        "baselineAlignmentMs": 5622.4321,
+        "desktopSpeedup": 12.49005803809641
+      },
+      "minimumMoraMs": 120,
+      "maximumMoraMs": 214,
+      "structurallyValid": true
+    },
+    {
+      "npcId": "ren",
+      "voice": "quartz",
+      "audioSha256": "eb99a80358f3fbeccf5c1ef9a1a6c1f1f3a255c0db2325a3da356294b01006d4",
+      "pcmDurationMs": 34100,
+      "featureFrames": 17034,
+      "featureMs": 903.8600999999999,
+      "alignmentMs": 1221.2802000000001,
+      "expectedMorae": 60,
+      "actualMorae": 60,
+      "expectedPhrases": 6,
+      "detectedSegments": 1,
+      "grouping": "all_morae_over_segment_union",
+      "segments": [
+        [
+          6,
+          11666
+        ]
+      ],
+      "invalidSpans": [],
+      "gapSpans": [],
+      "comparison": {
+        "boundariesIdentical": true,
+        "changedFrames": 0,
+        "maskedGapFrames": 0,
+        "baselineAlignmentMs": 18172.1193,
+        "desktopSpeedup": 14.879565966925522
+      },
+      "minimumMoraMs": 126,
+      "maximumMoraMs": 232,
+      "structurallyValid": true
+    },
+    {
+      "npcId": "luca",
+      "voice": "meridian",
+      "audioSha256": "1d1476d1e05b741418b4ad71df9f3fba5ebb63f2944aac27ffd33726def76ae4",
+      "pcmDurationMs": 34000,
+      "featureFrames": 16984,
+      "featureMs": 955.7386999999999,
+      "alignmentMs": 825.8026,
+      "expectedMorae": 60,
+      "actualMorae": 60,
+      "expectedPhrases": 6,
+      "detectedSegments": 1,
+      "grouping": "all_morae_over_segment_union",
+      "segments": [
+        [
+          58,
+          10812
+        ]
+      ],
+      "invalidSpans": [],
+      "gapSpans": [],
+      "comparison": {
+        "boundariesIdentical": true,
+        "changedFrames": 0,
+        "maskedGapFrames": 0,
+        "baselineAlignmentMs": 12561.917399999998,
+        "desktopSpeedup": 15.211767800198254
+      },
+      "minimumMoraMs": 120,
+      "maximumMoraMs": 234,
+      "structurallyValid": true
+    },
+    {
+      "npcId": "theo",
+      "voice": "vesper",
+      "audioSha256": "1e5ca44408fa2a49bd4ba4cc40d3528f329ad09b6a2ef3b65a10682ac9e0f250",
+      "pcmDurationMs": 34100,
+      "featureFrames": 17034,
+      "featureMs": 790.2651000000005,
+      "alignmentMs": 1015.2672999999995,
+      "expectedMorae": 60,
+      "actualMorae": 60,
+      "expectedPhrases": 6,
+      "detectedSegments": 2,
+      "grouping": "all_morae_over_segment_union",
+      "segments": [
+        [
+          6,
+          6438
+        ],
+        [
+          7108,
+          10868
+        ]
+      ],
+      "invalidSpans": [],
+      "gapSpans": [
+        {
+          "index": 36,
+          "kana": "タ",
+          "outsideDetectedSpeechMs": 670
+        }
+      ],
+      "comparison": {
+        "boundariesIdentical": true,
+        "changedFrames": 42,
+        "maskedGapFrames": 42,
+        "baselineAlignmentMs": 10846.486400000002,
+        "desktopSpeedup": 10.68338003203689
+      },
+      "minimumMoraMs": 102,
+      "maximumMoraMs": 840,
+      "structurallyValid": true
+    }
+  ]
+}

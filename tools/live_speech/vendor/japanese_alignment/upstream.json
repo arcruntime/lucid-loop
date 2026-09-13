@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/splatterfacegames/unity-realtime-lipsync",
+  "commit": "acea62e125aa2200648a489900de750c3e3587fa",
+  "originalLfSha256": {
+    "segment.mjs": "eeef8eeed56d544f16cebfc19ed5294d13e26d8df00e8557789b6dd45f6a87d9",
+    "kana.mjs": "8c53099fc28c430880ff582f6305800d1d5f4111b1bb8f3719de7f43c56cf6a8",
+    "kana-map.json": "d761dd35e5f5fe39ce1b8b84ec14b0a736420327c973377730de4735dfb4a404"
+  }
+}

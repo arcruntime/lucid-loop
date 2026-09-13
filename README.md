@@ -14,7 +14,7 @@ Select a character and tap **Walk & talk** to walk to a server-chosen speaking p
 
 Successful mediation now confirms Theo's admission and Maya's choice to leave with the player, keeping her evidence. Luca receives that authored outcome for his response; the participants remember it until rewind. Separation and surviving the set are still required for victory. See the [demo scenario](docs/DEMO_SCENARIO.md).
 
-The [Japanese NPC alignment baseline](docs/JAPANESE_NPC_ALIGNMENT.md) tests the four captured voices and records remaining computation and silence-gap defects. Japanese lip-sync is still experimental.
+The [Japanese NPC alignment follow-up](docs/JAPANESE_NPC_ALIGNMENT.md) preserves all four voices' original boundaries with a faster duration-window search and masks detected silence gaps. Japanese lip-sync remains experimental; bounded live alignment and playback timing are still pending.
 
 The player has a green overhead beacon. NPC speech bubbles show speaking availability: dim when out of range, outlined when available, and filled for an available selected character. See the [phone-layout capture](docs/images/encounter/interaction-markers.png).
 

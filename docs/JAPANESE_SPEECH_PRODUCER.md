@@ -67,7 +67,7 @@ The default result remains in `.local/japanese-producer-followup/results.json`; 
 
 ## Concrete next implementation
 
-The [actual NPC alignment baseline](JAPANESE_NPC_ALIGNMENT.md) now exercises the checked reading against all four recorded voices. It identifies costly full-domain DP and targets spanning detected silence gaps, despite valid mora ordering. These defects must be addressed before adapting the aligner to live playback.
+The [actual NPC alignment baseline and follow-up](JAPANESE_NPC_ALIGNMENT.md) exercise the checked reading against all four recorded voices. The experimental duration-window search preserves every original boundary while reducing desktop DP cost to 0.45–1.22 seconds, and silence-masked lookup removes targets across detected gaps. Global statistics and complete-reading dependencies remain; this is not yet a live producer.
 
 [NPC voice evidence collection](JAPANESE_NPC_VOICE_EVIDENCE.md) provides a separate manual workflow for independent recordings from the actual configured voices. It preserves receipt, transcript and PCM clocks without claiming they are aligned, and reserves the recordings for evaluation rather than training.
 

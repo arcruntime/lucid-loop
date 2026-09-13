@@ -1,0 +1,55 @@
+{
+  "comment": "Kana -> viseme mapping for the Japanese analysis route. Slot semantics: the HeadAudio record format only carries viseme ids 0..14 (upstream order aa,E,I,O,U,PP,SS,TH,DD,FF,kk,nn,RR,CH,sil) and both classifiers index votes by that id, so a Japanese model stores extended articulations in slots whose English meaning does not exist in Japanese. slotToLabel documents what each slot MEANS in a ja model.",
+  "upstreamOrder": ["aa","E","I","O","U","PP","SS","TH","DD","FF","kk","nn","RR","CH","sil"],
+  "slotToLabel": {
+    "aa": "aa", "E": "E", "I": "I", "O": "O",
+    "U": "ja_U", "PP": "PP", "SS": "SS", "TH": "TH", "DD": "DD",
+    "FF": "ja_FU", "kk": "kk", "nn": "nn", "RR": "ja_R", "CH": "CH",
+    "sil": "sil"
+  },
+  "vowels": {
+    "a": { "viseme": "aa", "slot": 0 },
+    "i": { "viseme": "I",  "slot": 2 },
+    "u": { "viseme": "ja_U", "slot": 4 },
+    "e": { "viseme": "E",  "slot": 1 },
+    "o": { "viseme": "O",  "slot": 3 }
+  },
+  "onsets": {
+    "k":  { "viseme": "kk", "slot": 10, "kana": "かきくけこカキクケコ", "vowelSeq": "aiueo" },
+    "g":  { "viseme": "kk", "slot": 10, "kana": "がぎぐげごガギグゲゴ", "vowelSeq": "aiueo" },
+    "s":  { "viseme": "SS", "slot": 6,  "kana": "さすせそサスセソ", "vowelSeq": "aueo" },
+    "sh": { "viseme": "SS", "slot": 6,  "kana": "しシ", "vowelSeq": "i" },
+    "z":  { "viseme": "SS", "slot": 6,  "kana": "ざずぜぞザズゼゾ", "vowelSeq": "aueo" },
+    "j":  { "viseme": "SS", "slot": 6,  "kana": "じジ", "vowelSeq": "i" },
+    "t":  { "viseme": "DD", "slot": 8,  "kana": "たてとタテト", "vowelSeq": "aeo" },
+    "d":  { "viseme": "DD", "slot": 8,  "kana": "だでどダデド", "vowelSeq": "aeo" },
+    "ch": { "viseme": "CH", "slot": 13, "kana": "ちチ", "vowelSeq": "i" },
+    "ts": { "viseme": "CH", "slot": 13, "kana": "つツ", "vowelSeq": "u" },
+    "dj": { "viseme": "CH", "slot": 13, "kana": "ぢヂ", "vowelSeq": "i" },
+    "dz": { "viseme": "CH", "slot": 13, "kana": "づヅ", "vowelSeq": "u" },
+    "n":  { "viseme": "nn", "slot": 11, "kana": "なにぬねのナニヌネノ", "vowelSeq": "aiueo" },
+    "h":  { "viseme": "SS", "slot": 6,  "kana": "はへほハヘホ", "vowelSeq": "aeo" },
+    "hy": { "viseme": "SS", "slot": 6,  "kana": "ひヒ", "vowelSeq": "i" },
+    "f":  { "viseme": "ja_FU", "slot": 9, "kana": "ふフ", "vowelSeq": "u" },
+    "b":  { "viseme": "PP", "slot": 5,  "kana": "ばびぶべぼバビブベボ", "vowelSeq": "aiueo" },
+    "p":  { "viseme": "PP", "slot": 5,  "kana": "ぱぴぷぺぽパピプペポ", "vowelSeq": "aiueo" },
+    "m":  { "viseme": "PP", "slot": 5,  "kana": "まみむめもマミムメモ", "vowelSeq": "aiueo" },
+    "y":  { "viseme": "I",  "slot": 2,  "kana": "やゆよヤユヨ", "vowelSeq": "auo" },
+    "r":  { "viseme": "ja_R", "slot": 12, "kana": "らりるれろラリルレロ", "vowelSeq": "aiueo" },
+    "w":  { "viseme": "ja_U", "slot": 4, "kana": "わワ", "vowelSeq": "a" },
+    "v":  { "viseme": "ja_FU", "slot": 9,  "kana": "ゔヴ", "vowelSeq": "u" }
+  },
+  "vowelKana": "あいうえおアイウエオ",
+  "specialVowelKana": { "を": "o", "ヲ": "o", "ゐ": "i", "ゑ": "e", "ん": null, "ン": null, "っ": null, "ッ": null, "ー": null, "‐": null, "−": null },
+  "smallKana": {
+    "ゃ": "ya", "ゅ": "yu", "ょ": "yo", "ャ": "ya", "ュ": "yu", "ョ": "yo",
+    "ぁ": "a", "ぃ": "i", "ぅ": "u", "ぇ": "e", "ぉ": "o", "ゎ": "wa",
+    "ァ": "a", "ィ": "i", "ゥ": "u", "ェ": "e", "ォ": "o", "ヮ": "wa"
+  },
+  "voicelessOnsets": ["k","s","sh","t","ch","ts","h","hy","f","p"],
+  "nAsPP": ["p","b","m"],
+  "nAsKk": ["k","g"],
+  "durationPriorMs": { "CV": 110, "V": 100, "N": 90, "Q": 85, "long": 100 },
+  "consonantSpanMs": { "max": 90, "min": 15, "frac": 0.45 },
+  "silSeedNote": "sil prototype = 5000 uniform-random vectors U(-0.05,0.05), replicating upstream training/compile.mjs"
+}

@@ -8,8 +8,8 @@ import { pathToFileURL } from 'node:url';
 import { performance } from 'node:perf_hooks';
 import { loadCheckedKana } from './checked_kana.mjs';
 
-const [sourceArg, captureArg, readingArg, outputArg] = process.argv.slice(2);
-if (!outputArg) throw new Error('Usage: node probe_npc_alignment.mjs SOURCE CAPTURE CHECKED_READING OUTPUT');
+const [sourceArg, captureArg, readingArg, outputArg, baselineArg] = process.argv.slice(2);
+if (!outputArg) throw new Error('Usage: node probe_npc_alignment.mjs SOURCE CAPTURE CHECKED_READING OUTPUT [ORIGINAL_BASELINE]');
 const source = resolve(sourceArg), capture = resolve(captureArg), output = resolve(outputArg);
 const pin = 'acea62e125aa2200648a489900de750c3e3587fa';
 const git = args => execFileSync('git', ['-C', source, ...args], { encoding: 'utf8' }).trim();
@@ -23,7 +23,9 @@ const checkedKana = await loadCheckedKana(source);
 const parsed = checkedKana(reading.reading);
 const { readWavMono } = await import(pathToFileURL(resolve(source, 'harness/wav.mjs')).href);
 const { extractFeatures } = await import(pathToFileURL(resolve(source, 'ja/features.mjs')).href);
-const { alignClip } = await import(pathToFileURL(resolve(source, 'ja/segment.mjs')).href);
+const { alignClip, labelAt, labelAtMasked } = await import(baselineArg
+  ? new URL('./vendor/japanese_alignment/segment.mjs', import.meta.url).href
+  : pathToFileURL(resolve(source, 'ja/segment.mjs')).href);
 const manifest = await json(resolve(capture, 'manifest.json'));
 await mkdir(output, { recursive: true });
 const samples = [];
@@ -41,6 +43,27 @@ for (const npc of ['maya', 'ren', 'luca', 'theo']) {
   const featured = performance.now();
   const alignment = alignClip(feat, reading.reading);
   const finished = performance.now();
+  let comparison;
+  if (baselineArg) {
+    const baseline = await json(resolve(baselineArg, `${npc}.alignment.json`));
+    const baselineSummary = await json(resolve(baselineArg, 'summary.json'));
+    const prior = baselineSummary.samples.find(s => s.npcId === npc);
+    if (baselineSummary.upstreamCommit !== pin || prior.audioSha256 !== meta.files.find(f => f.path === 'voice.wav').sha256)
+      throw new Error('Baseline provenance mismatch');
+    const boundariesIdentical = JSON.stringify(alignment) === JSON.stringify(baseline);
+    if (!boundariesIdentical) throw new Error(`Alignment changed for ${npc}`);
+    let changedFrames = 0, maskedGapFrames = 0;
+    for (let t = 16; t < wav.samples.length / wav.sampleRate * 1000; t += 16) {
+      const raw = labelAt(alignment, t), masked = labelAtMasked(alignment, t);
+      if (raw.label !== masked.label) changedFrames++;
+      const inside = alignment.segments.some(([start, end]) => t >= start && t < end);
+      if (!inside && masked.label !== 'sil') throw new Error('Silence mask failed');
+      if (!inside && raw.label !== 'sil') maskedGapFrames++;
+      if (inside && raw.label !== masked.label) throw new Error('Speech target changed');
+    }
+    comparison = { boundariesIdentical, changedFrames, maskedGapFrames,
+      baselineAlignmentMs: prior.alignmentMs, desktopSpeedup: prior.alignmentMs / (finished - featured) };
+  }
   const invalid = alignment.morae.flatMap((m, index) => {
     const issues = [];
     if (!Number.isFinite(m.startMs) || !Number.isFinite(m.endMs) || m.endMs <= m.startMs) issues.push('nonpositive_or_nonfinite_span');
@@ -65,7 +88,7 @@ for (const npc of ['maya', 'ren', 'luca', 'theo']) {
     expectedMorae: parsed.morae.length, actualMorae: alignment.morae.length,
     expectedPhrases: parsed.phrases.length, detectedSegments: alignment.segments.length,
     grouping: parsed.phrases.length === alignment.segments.length ? 'phrase_to_segment' : 'all_morae_over_segment_union',
-    segments: alignment.segments, invalidSpans: invalid, gapSpans,
+    segments: alignment.segments, invalidSpans: invalid, gapSpans, ...(comparison ? { comparison } : {}),
     minimumMoraMs: Math.min(...moraDurations), maximumMoraMs: Math.max(...moraDurations),
     structurallyValid: alignment.morae.length === parsed.morae.length && invalid.length === 0 };
   samples.push(record);
@@ -74,6 +97,6 @@ for (const npc of ['maya', 'ren', 'luca', 'theo']) {
 }
 await writeFile(resolve(output, 'summary.json'), JSON.stringify({ upstreamCommit: pin,
   sourceSha: manifest.sourceSha, captureRunId: manifest.githubRunId, checkedReadingSha256: sha(readingBytes),
-  mode: 'offline_full_audio_full_reading', causal: false, contactAccuracyMeasured: false,
+  mode: baselineArg ? 'offline_duration_window_comparison' : 'offline_full_audio_full_reading', causal: false, contactAccuracyMeasured: false,
   timingNote: 'Single desktop run; computation excludes file IO, reading conversion and delivery. Not an iOS latency measurement.',
   samples }, null, 2) + '\n');
