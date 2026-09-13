@@ -1,0 +1,367 @@
+{
+  "pin": "acea62e125aa2200648a489900de750c3e3587fa",
+  "warning": "Exploratory same-corpus machine-alignment comparison; not independent accuracy or iOS timing.",
+  "results": [
+    {
+      "variant": "baseline6",
+      "vote": 6,
+      "clips": 39,
+      "parityN": 10628,
+      "parityMatches": 10628,
+      "audioSeconds": 170.94,
+      "analysisSeconds": 5.504631300000001,
+      "desktopRtf": 0.03220212530712531,
+      "frames": 10628,
+      "agreement": 0.29281144147534816,
+      "nonSilAgreement": 0.17737989323843417,
+      "transitionsPerSecond": 14.777114777114777,
+      "recall": {
+        "sil": {
+          "expectedFrames": 1636,
+          "matchedFrames": 1517,
+          "value": 0.9272616136919315
+        },
+        "I": {
+          "expectedFrames": 1305,
+          "matchedFrames": 170,
+          "value": 0.13026819923371646
+        },
+        "SS": {
+          "expectedFrames": 339,
+          "matchedFrames": 132,
+          "value": 0.3893805309734513
+        },
+        "O": {
+          "expectedFrames": 1547,
+          "matchedFrames": 307,
+          "value": 0.19844861021331608
+        },
+        "kk": {
+          "expectedFrames": 344,
+          "matchedFrames": 54,
+          "value": 0.1569767441860465
+        },
+        "aa": {
+          "expectedFrames": 2071,
+          "matchedFrames": 396,
+          "value": 0.19121197489135683
+        },
+        "ja_U": {
+          "expectedFrames": 1148,
+          "matchedFrames": 136,
+          "value": 0.11846689895470383
+        },
+        "PP": {
+          "expectedFrames": 217,
+          "matchedFrames": 51,
+          "value": 0.2350230414746544
+        },
+        "nn": {
+          "expectedFrames": 426,
+          "matchedFrames": 74,
+          "value": 0.17370892018779344
+        },
+        "DD": {
+          "expectedFrames": 346,
+          "matchedFrames": 82,
+          "value": 0.23699421965317918
+        },
+        "ja_R": {
+          "expectedFrames": 129,
+          "matchedFrames": 18,
+          "value": 0.13953488372093023
+        },
+        "E": {
+          "expectedFrames": 1075,
+          "matchedFrames": 173,
+          "value": 0.16093023255813954
+        },
+        "CH": {
+          "expectedFrames": 31,
+          "matchedFrames": 1,
+          "value": 0.03225806451612903
+        },
+        "ja_FU": {
+          "expectedFrames": 14,
+          "matchedFrames": 1,
+          "value": 0.07142857142857142
+        }
+      }
+    },
+    {
+      "variant": "baseline1",
+      "vote": 1,
+      "clips": 39,
+      "parityN": 0,
+      "parityMatches": 0,
+      "audioSeconds": 170.94,
+      "analysisSeconds": 6.0630264,
+      "desktopRtf": 0.03546873990873991,
+      "frames": 10628,
+      "agreement": 0.32564922845314265,
+      "nonSilAgreement": 0.21752669039145908,
+      "transitionsPerSecond": 33.5965835965836,
+      "recall": {
+        "sil": {
+          "expectedFrames": 1636,
+          "matchedFrames": 1505,
+          "value": 0.9199266503667481
+        },
+        "I": {
+          "expectedFrames": 1305,
+          "matchedFrames": 212,
+          "value": 0.16245210727969348
+        },
+        "SS": {
+          "expectedFrames": 339,
+          "matchedFrames": 146,
+          "value": 0.4306784660766962
+        },
+        "O": {
+          "expectedFrames": 1547,
+          "matchedFrames": 340,
+          "value": 0.21978021978021978
+        },
+        "kk": {
+          "expectedFrames": 344,
+          "matchedFrames": 66,
+          "value": 0.19186046511627908
+        },
+        "aa": {
+          "expectedFrames": 2071,
+          "matchedFrames": 525,
+          "value": 0.2535007242877837
+        },
+        "ja_U": {
+          "expectedFrames": 1148,
+          "matchedFrames": 186,
+          "value": 0.16202090592334495
+        },
+        "PP": {
+          "expectedFrames": 217,
+          "matchedFrames": 68,
+          "value": 0.31336405529953915
+        },
+        "nn": {
+          "expectedFrames": 426,
+          "matchedFrames": 66,
+          "value": 0.15492957746478872
+        },
+        "DD": {
+          "expectedFrames": 346,
+          "matchedFrames": 90,
+          "value": 0.26011560693641617
+        },
+        "ja_R": {
+          "expectedFrames": 129,
+          "matchedFrames": 37,
+          "value": 0.2868217054263566
+        },
+        "E": {
+          "expectedFrames": 1075,
+          "matchedFrames": 207,
+          "value": 0.1925581395348837
+        },
+        "CH": {
+          "expectedFrames": 31,
+          "matchedFrames": 7,
+          "value": 0.22580645161290322
+        },
+        "ja_FU": {
+          "expectedFrames": 14,
+          "matchedFrames": 6,
+          "value": 0.42857142857142855
+        }
+      }
+    },
+    {
+      "variant": "no-vad",
+      "vote": 1,
+      "clips": 39,
+      "parityN": 0,
+      "parityMatches": 0,
+      "audioSeconds": 170.94,
+      "analysisSeconds": 5.121140799999998,
+      "desktopRtf": 0.029958703638703628,
+      "frames": 10628,
+      "agreement": 0.1906285284155062,
+      "nonSilAgreement": 0.22531138790035588,
+      "transitionsPerSecond": 39.32958932958933,
+      "recall": {
+        "sil": {
+          "expectedFrames": 1636,
+          "matchedFrames": 0,
+          "value": 0
+        },
+        "I": {
+          "expectedFrames": 1305,
+          "matchedFrames": 214,
+          "value": 0.16398467432950192
+        },
+        "SS": {
+          "expectedFrames": 339,
+          "matchedFrames": 148,
+          "value": 0.4365781710914454
+        },
+        "O": {
+          "expectedFrames": 1547,
+          "matchedFrames": 343,
+          "value": 0.22171945701357465
+        },
+        "kk": {
+          "expectedFrames": 344,
+          "matchedFrames": 90,
+          "value": 0.2616279069767442
+        },
+        "aa": {
+          "expectedFrames": 2071,
+          "matchedFrames": 529,
+          "value": 0.25543215837759536
+        },
+        "ja_U": {
+          "expectedFrames": 1148,
+          "matchedFrames": 186,
+          "value": 0.16202090592334495
+        },
+        "PP": {
+          "expectedFrames": 217,
+          "matchedFrames": 70,
+          "value": 0.3225806451612903
+        },
+        "nn": {
+          "expectedFrames": 426,
+          "matchedFrames": 66,
+          "value": 0.15492957746478872
+        },
+        "DD": {
+          "expectedFrames": 346,
+          "matchedFrames": 120,
+          "value": 0.3468208092485549
+        },
+        "ja_R": {
+          "expectedFrames": 129,
+          "matchedFrames": 37,
+          "value": 0.2868217054263566
+        },
+        "E": {
+          "expectedFrames": 1075,
+          "matchedFrames": 209,
+          "value": 0.19441860465116279
+        },
+        "CH": {
+          "expectedFrames": 31,
+          "matchedFrames": 8,
+          "value": 0.25806451612903225
+        },
+        "ja_FU": {
+          "expectedFrames": 14,
+          "matchedFrames": 6,
+          "value": 0.42857142857142855
+        }
+      }
+    },
+    {
+      "variant": "gaussian",
+      "vote": 1,
+      "clips": 39,
+      "parityN": 0,
+      "parityMatches": 0,
+      "audioSeconds": 170.94,
+      "analysisSeconds": 4.661439199999999,
+      "desktopRtf": 0.027269446589446585,
+      "frames": 10628,
+      "agreement": 0.2531990967256304,
+      "nonSilAgreement": 0.1318950177935943,
+      "transitionsPerSecond": 32.91213291213291,
+      "recall": {
+        "sil": {
+          "expectedFrames": 1636,
+          "matchedFrames": 1505,
+          "value": 0.9199266503667481
+        },
+        "I": {
+          "expectedFrames": 1305,
+          "matchedFrames": 120,
+          "value": 0.09195402298850575
+        },
+        "SS": {
+          "expectedFrames": 339,
+          "matchedFrames": 183,
+          "value": 0.5398230088495575
+        },
+        "O": {
+          "expectedFrames": 1547,
+          "matchedFrames": 66,
+          "value": 0.04266321913380737
+        },
+        "kk": {
+          "expectedFrames": 344,
+          "matchedFrames": 67,
+          "value": 0.19476744186046513
+        },
+        "aa": {
+          "expectedFrames": 2071,
+          "matchedFrames": 202,
+          "value": 0.0975374215354901
+        },
+        "ja_U": {
+          "expectedFrames": 1148,
+          "matchedFrames": 137,
+          "value": 0.11933797909407666
+        },
+        "PP": {
+          "expectedFrames": 217,
+          "matchedFrames": 120,
+          "value": 0.5529953917050692
+        },
+        "nn": {
+          "expectedFrames": 426,
+          "matchedFrames": 33,
+          "value": 0.07746478873239436
+        },
+        "DD": {
+          "expectedFrames": 346,
+          "matchedFrames": 51,
+          "value": 0.14739884393063585
+        },
+        "ja_R": {
+          "expectedFrames": 129,
+          "matchedFrames": 40,
+          "value": 0.31007751937984496
+        },
+        "E": {
+          "expectedFrames": 1075,
+          "matchedFrames": 146,
+          "value": 0.13581395348837208
+        },
+        "CH": {
+          "expectedFrames": 31,
+          "matchedFrames": 12,
+          "value": 0.3870967741935484
+        },
+        "ja_FU": {
+          "expectedFrames": 14,
+          "matchedFrames": 9,
+          "value": 0.6428571428571429
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "upstreamRepository": "https://github.com/splatterfacegames/unity-realtime-lipsync",
+    "commit": "acea62e125aa2200648a489900de750c3e3587fa",
+    "modelSHA256": "e085a7c11f43c88dee7b139704e63369631ba0f61193b5fb640128bc231634ca",
+    "fixtureManifest": "https://github.com/splatterfacegames/unity-realtime-lipsync/blob/acea62e125aa2200648a489900de750c3e3587fa/fixtures/manifest-ja.json",
+    "fixtureHashVerification": {
+      "checked": 40,
+      "mismatches": []
+    },
+    "evaluatedClips": 39,
+    "excludedClip": "ja-en-codeswitch",
+    "reference": "upstream eval-output/ja/<id>.alignment.json; machine-derived timing, same collection as model training",
+    "parityReference": "upstream eval-output/ja/<id>.acoustic.json at identical timestamps",
+    "reproduction": "python tools/live_speech/probe_japanese_mismatch.py --source <pinned-checkout>",
+    "runtimeChanges": false,
+    "retraining": false
+  }
+}

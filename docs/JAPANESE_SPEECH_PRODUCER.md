@@ -42,6 +42,29 @@ Reproduce from repository root:
 python tools/live_speech/probe_japanese.py --source .local/lipsync-audit
 ```
 
+### Follow-up: feature, label and timing mismatch checks
+
+A second bounded investigation kept the same 39 evaluation clips and tested exactly two corrections, without retraining or changing the installed runtime. The original C# six-frame-vote output matched **10,628 of 10,628** pinned Node acoustic labels at identical timestamps. All **40 fixture WAV hashes** matched the pinned manifest. Training and inference use the same 150 Hz default spectral warp, pre-emphasis, resampler, 32 ms MFCC window, tanh compression, disabled deltas, and centered timestamp origin. Training's 2 ms hop samples features more densely than the 16 ms inference hop; it does not change their definition at common windows. These checks found no C# input, label-order, or timestamp-shift mismatch explaining the weak agreement.
+
+| Follow-up variant | Nonsilence agreement | All-frame agreement | Silence recall | PP recall |
+| --- | ---: | ---: | ---: | ---: |
+| Original six-frame vote | 17.74% | 29.28% | 92.73% | 23.50% |
+| One-frame comparison baseline | 21.75% | 32.56% | 91.99% | 31.34% |
+| Correction 1: disable inference VAD to match ungated training feature extraction | 22.53% | 19.06% | **0%** | 32.26% |
+| Correction 2: add covariance-volume penalty to Gaussian distance; retain VAD | 13.19% | 25.32% | 91.99% | 55.30% |
+
+Correction 2 computes `log(det(covariance))` from each unchanged model precision matrix using Cholesky decomposition, then adds it to the existing distance score after its silence-sensitivity adjustment. It uses equal priors and no evaluation labels. All precision matrices factored successfully. Neither correction is recommended: removing VAD destroys silence discrimination, while covariance-aware scoring improves bilabial recall at the expense of overall classification. This is **machine-alignment proxy evidence, not human lip-sync acceptance**. The reference collection also helped train the existing model, so it is not an independent held-out accuracy benchmark.
+
+Training explicitly discarded **4,471 devoiced frames**. Disabling an inference gate cannot supply the omitted learned examples. Thin contact data, estimated alignment labels, and single-speaker generalization remain substantive model limitations. Port parity does not rule out every upstream training or modeling defect.
+
+[Raw results and provenance](validation/japanese-port/results.json) retain exact metrics and counts, model hash, pinned fixture-manifest reference, hash-verification result, and parity reference. [Standalone reproduction script](../tools/live_speech/probe_japanese_mismatch.py) verifies the pinned inputs, creates an ignored scratch project, and contains only the experiment code; no fixtures or vendor sources are embedded. It needs the existing upstream checkout and .NET 8:
+
+```powershell
+python tools/live_speech/probe_japanese_mismatch.py --source .local/lipsync-audit
+```
+
+The default result remains in `.local/japanese-producer-followup/results.json`; `--output <path>` saves a review artifact. No Unity or art files, acceptance thresholds, model weights, or training data are changed by the experiment.
+
 ## Concrete next implementation
 
 Keep the current English route unchanged. Introduce a producer registry whose entry binds `(language, model hash, label-map version, status)`, with Japanese initially marked **experimental**, rather than weakening the English-only guard globally. The scratch prototype shows that this entry can use the current C# analyzer and tiny Japanese model; no ONNX/CoreML/native plugin is required for that path. An experimental scene can preserve the bounded target queue and consumed-sample clock already implemented.
