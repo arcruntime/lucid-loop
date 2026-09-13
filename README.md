@@ -6,6 +6,8 @@ The primary game prototype is **Before the Drop**: a server-authoritative nightc
 
 **iOS is the primary target.** Use the [iOS build instructions](docs/IOS_BUILD.md) and [local development relay setup](docs/IOS_LOCAL_RELAY.md). Nightclub lighting uses a shared Forward pipeline with bounded local lights and shader feature stripping; see the [rendering policy](docs/IOS_RENDERING.md). [Validation evidence](docs/IMPLEMENTATION_VALIDATION.md) separates passing tests from pending device and presentation checks.
 
+The complete prevention route has passed [real-provider CI](https://github.com/jethac/lucid-loop/actions/runs/34777703855), including nearby conversations, committed actions and survival through the full loop. Phone exploration now uses a compact HUD with expandable conversation and clue panels. Physical iPhone testing remains pending. The [Japanese speech investigation](docs/JAPANESE_SPEECH_PRODUCER.md) records why the available Japanese model still needs quality work before integration.
+
 The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored demo scenario](docs/DEMO_SCENARIO.md), and [source audit](docs/DESIGN_SOURCE_AUDIT.md) describe what is being built. Figma takes precedence over the Google document. The [animation handoff](art/animation-handoff/README.md) contains 17 downloaded source FBX files and their unresolved mapping/retargeting notes.
 
 **Try the original gyms:** load `Assets/Gyms/Scenes/CharacterGym.unity` and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.
@@ -225,8 +227,9 @@ It is a separate source comparison; its returned hair is not yet fitted or paint
 
 ## Current status
 
-Two gyms are implemented in `Unity/Assets/Gyms/Scenes/`:
+The main encounter and two diagnostic gyms are implemented in `Unity/Assets/Gyms/Scenes/`:
 
+- **BeforeTheDrop**: the primary server-authoritative encounter, with catastrophe, rewind, retained evidence and a tested prevention route.
 - **CharacterGym**: offline nightclub blockout, tap/click navigation, hold a character to approach and enter a close-up conversation study.
 - **LiveGym**: separate voice studio with character selection, microphone streaming, captions, mute and explicit session close through the project-key backend. No SSO or API key in the Unity client.
 

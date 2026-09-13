@@ -4,13 +4,15 @@ Recorded 2026-09-14. These results distinguish executable checks from device and
 
 | Check | Evidence | Result |
 | --- | --- | --- |
-| Local server suite | `cd server; npm test`, current working tree | 84 passed, 2 opt-in live tests skipped; 86 total |
+| Server suite | Linux Node 24 container and CI run 34777703855 | 87 passed, 3 opt-in live tests skipped; 90 total. Local Windows socket allocation intermittently returned EADDRINUSE; Linux and CI checks passed. |
+| Complete real-provider prevention | [Run 34777703855](https://github.com/jethac/lucid-loop/actions/runs/34777703855), commit `a9327fc` | All 3 Live tests passed, including witnessed catastrophe, rewind, nearby conversations, Responses action commits, mediation, separation and the full 180 active-second loop. |
 | Pushed checkpoint CI | [Run 34776400688](https://github.com/jethac/lucid-loop/actions/runs/34776400688), commit `e425a79` | Gyms workflow passed; physical iOS checks remain separate |
 | Real provider CI | [Run 34774108170](https://github.com/jethac/lucid-loop/actions/runs/34774108170), commit `72cc6d3` | Server/Docker job and both real Live smoke tests passed, including a typed Maya wait action committed through Responses |
 | English speech stream | `dotnet test tools/live_speech/Tests.csproj` | 6 passed; upstream nullable-context compiler warnings |
 | Character EditMode | Actual shared Unity Editor, `character-editmode-20260913-181620-873.xml` | 95 passed |
-| Character face/speech PlayMode | Actual shared Unity Editor, `character-playmode-20260913-185450-014.xml` | 9 passed after the character owner fixed root-motion ownership; original failing assertion retained |
-| Encounter EditMode | Actual shared Unity Editor, `gym-editmode-20260913-185712-674.xml` | 50 passed, including LAN policy, emission reimport and primitive fall/reset |
+| Character face/speech PlayMode | Actual shared Unity Editor, `character-playmode-20260913-190936-360.xml` | 12 passed, including root ownership and final-pose hold; evidence under `docs/validation/character-runtime/` |
+| Encounter EditMode | Actual shared Unity Editor, `gym-editmode-20260913-192808-511.xml` | 59 passed, including compact phone layout, conversation expansion/collapse, LAN policy, emission reimport and primitive fall/reset |
+| Phone preview PlayMode | Actual scene and local relay, `phone-encounter-playmode-20260913-193446-743.xml` | Passed opening, held catastrophe, rewind and expanded retained-clue checks. Ready and loop-two captures visually inspected; this is an Editor preview, not a physical phone test. |
 | Mood PlayMode | Actual shared Unity Editor, `mood-playmode-20260913-185641-827.xml` | Passed exact post-update pulse scaling across 20 frames, pause, fallback and restoration |
 | iOS activation | Shared Editor log `IOS_TARGET_ACTIVE: iOS` | Active target switched and player settings serialized |
 | Development iOS export | Shared Editor log `IOS_XCODE_EXPORT_OK: Builds/iOS/Xcode` | Xcode project and IL2CPP output exported successfully; shader reports copied to `Unity/Builds/iOS/` |

@@ -20,10 +20,16 @@ namespace LucidLoop.Gyms.PlayModeTests
         readonly HashSet<string> phases = new HashSet<string>();
 
         [UnityTest, Explicit("Requires the built BeforeTheDrop scene and real localhost:8789/game relay.")]
-        public IEnumerator OpeningMovementCatastropheAndRetainedReset()
+        public IEnumerator OpeningMovementCatastropheAndRetainedReset() => RunOpening(false);
+
+        [UnityTest, Explicit("Requires the real local relay; previews phone HUD in the Editor Game view.")]
+        public IEnumerator PhoneOpeningAndExpandableRetainedClues() => RunOpening(true);
+
+        IEnumerator RunOpening(bool phone)
         {
             deadline = Time.realtimeSinceStartup + 90f;
-            evidence = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "..", ".local", "validation", "encounter-smoke-" + DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff")));
+            phases.Clear();
+            evidence = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "..", ".local", "validation", (phone ? "phone-encounter-smoke-" : "encounter-smoke-") + DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff")));
             Directory.CreateDirectory(evidence);
             var loading = SceneManager.LoadSceneAsync("BeforeTheDrop", LoadSceneMode.Single);
             Assert.That(loading, Is.Not.Null, "Build BeforeTheDrop and enable it in the shared build scene list first.");
@@ -33,6 +39,10 @@ namespace LucidLoop.Gyms.PlayModeTests
             var hud = UnityEngine.Object.FindFirstObjectByType<EncounterHud>();
             Assert.That(coordinator, Is.Not.Null);
             Assert.That(hud, Is.Not.Null);
+            var layout = UnityEngine.Object.FindFirstObjectByType<EncounterHudLayout>();
+            Assert.That(layout, Is.Not.Null);
+            layout.PreviewPhoneLayout = phone;
+            yield return null;
             Assert.That(hud.Coordinator, Is.SameAs(coordinator));
             Assert.That(hud.Rig, Is.Not.Null);
             Assert.That(hud.Rig.Camera, Is.Not.Null);
@@ -101,6 +111,10 @@ namespace LucidLoop.Gyms.PlayModeTests
             Assert.That(VisibleHudText(), Does.Contain("LOOP 2").And.Contain("Aggressive"));
             Assert.That(Quaternion.Angle(standingRotation, actors["luca"].Visual.localRotation), Is.LessThan(.01f), "Loop reset must restore the standing visual.");
             Assert.That(Vector3.Distance(standingPosition, actors["luca"].Visual.localPosition), Is.LessThan(.001f));
+            layout.ClueToggle.GetComponent<Button>().onClick.Invoke();
+            yield return null;
+            Assert.That(layout.CluesExpanded, Is.True);
+            Assert.That(VisibleHudText(), Does.Contain("Theo shoved Luca"), "Retained clue must be readable after expansion.");
             yield return Capture("03-loop-two.png");
             LogAssert.NoUnexpectedReceived();
             File.WriteAllText(Path.Combine(evidence, "result.txt"), "PASS: real scene + local authoritative relay; movement, opening phases, catastrophe, HUD, screenshots, retained reset. No voice/model/phoneme/production-art acceptance claimed.\n");

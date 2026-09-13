@@ -53,6 +53,12 @@ namespace LucidLoop.Gyms.Editor
             @"^LucidLoop\.Gyms\.Tests\.EncounterMoodPlayModeTests\."
         });
 
+        [MenuItem("Lucid Loop/Validate phone encounter PlayMode smoke")]
+        public static void RunPhoneEncounterPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "phone-encounter-playmode", "PHONE_ENCOUNTER_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.PhoneOpeningAndExpandableRetainedClues"
+        });
+
         static void Run(TestMode mode, string assembly, string filename, string marker, string[] groups = null, string[] testNames = null)
         {
             if (runner != null || EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode)

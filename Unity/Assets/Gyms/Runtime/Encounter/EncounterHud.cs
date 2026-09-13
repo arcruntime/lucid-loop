@@ -19,6 +19,7 @@ namespace LucidLoop.Gyms
         public event Action LeaveRequested;
 
         RectTransform canvas, connectionPanel;
+        EncounterHudLayout responsiveLayout;
         Text stateLabel, clueLabel, statusLabel, speakerLabel, transcript, guidance;
         InputField address, access, reply;
         Button send, mic, resume, pause, reset, openingRoute;
@@ -47,8 +48,16 @@ namespace LucidLoop.Gyms
             stateLabel = GymUI.Label(top, "Connect to begin", 20, 58, 1160, 36, 23);
             var connectionButton = GymUI.Button(GymUI.Box(top, "Connection settings", 1070, 12, 185, 43), "Connection", () => connectionPanel.gameObject.SetActive(!connectionPanel.gameObject.activeSelf));
             var clueBox = GymUI.Box(canvas, "Retained clues", 24, 156, 430, 158); GymUI.Panel(clueBox, GymUI.Ink);
-            GymUI.Label(clueBox, "RETAINED CLUES", 18, 12, 394, 30, 20, Gold);
-            clueLabel = GymUI.Label(clueBox, "None yet", 18, 50, 394, 98, 22);
+            var clueToggle = GymUI.Button(GymUI.Box(clueBox, "Toggle clues", 12, 8, 406, 54), "Retained clues - expand", () => responsiveLayout.ToggleClues());
+            var clueViewport = GymUI.Rect(clueBox, "Clue scroll", Vector2.zero, Vector2.one, new Vector2(18, 14), new Vector2(-18, -76));
+            GymUI.Panel(clueViewport, GymUI.Ink); clueViewport.gameObject.AddComponent<RectMask2D>();
+            var clueScroll = clueViewport.gameObject.AddComponent<ScrollRect>(); clueScroll.horizontal = false;
+            var clueContent = GymUI.Rect(clueViewport, "Clue content", new Vector2(0, 1), Vector2.one, Vector2.zero, Vector2.zero);
+            clueContent.pivot = new Vector2(.5f, 1);
+            clueLabel = GymUI.Text(clueContent, "None yet", 32, Color.white);
+            clueLabel.verticalOverflow = VerticalWrapMode.Overflow;
+            clueContent.gameObject.AddComponent<ContentSizeFitter>().verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+            clueScroll.content = clueContent; clueScroll.viewport = clueViewport;
             pause = GymUI.Button(GymUI.Box(canvas, "Pause encounter", 24, 830, 200, 58), "Pause", () => Coordinator.Pause(!paused));
             reset = GymUI.Button(GymUI.Box(canvas, "Rewind encounter", 242, 830, 212, 58), "Rewind", () => Coordinator.Reset());
             var guide = GymUI.Box(canvas, "Encounter guidance", 24, 916, 1275, 140); GymUI.Panel(guide, GymUI.Ink);
@@ -62,8 +71,8 @@ namespace LucidLoop.Gyms
             string[] ids = { "maya", "ren", "luca", "theo" }, names = { "Maya", "Ren", "Luca", "Theo" };
             for (int i = 0; i < ids.Length; i++)
             { string id = ids[i]; GymUI.Button(GymUI.Box(panel, "Select " + id, 20 + i * 133, 80, 124, 52), names[i], () => SelectNpc(id)); }
-            GymUI.Button(GymUI.Box(panel, "Talk", 20, 150, 245, 56), "Talk", () => { if (!Coordinator.RequestConversation(SelectedNpcId)) ShowConversationStatus("Connect before talking."); });
-            GymUI.Button(GymUI.Box(panel, "History", 283, 150, 250, 56), "History", () => { if (!Coordinator.RequestHistory(SelectedNpcId)) ShowConversationStatus("Connect to load history."); });
+            GymUI.Button(GymUI.Box(panel, "Talk", 20, 150, 245, 56), "Talk", () => { responsiveLayout.ConversationExpanded = true; if (!Coordinator.RequestConversation(SelectedNpcId)) ShowConversationStatus("Connect before talking."); });
+            GymUI.Button(GymUI.Box(panel, "History", 283, 150, 250, 56), "History", () => { responsiveLayout.ConversationExpanded = true; if (!Coordinator.RequestHistory(SelectedNpcId)) ShowConversationStatus("Connect to load history."); });
             statusLabel = GymUI.Label(panel, "Connect to begin", 20, 223, 513, 62, 21);
             var scrollArea = GymUI.Rect(panel, "History scroll", Vector2.zero, Vector2.one, new Vector2(20, 240), new Vector2(-20, -306));
             GymUI.Panel(scrollArea, new Color(.025f, .03f, .05f));
@@ -90,10 +99,17 @@ namespace LucidLoop.Gyms
             GymUI.Label(connectionPanel, "CONNECT TO THE NIGHT", 26, 18, 498, 38, 26, Gold);
             address = GymUI.Input(connectionPanel, "Game server", 76, DefaultGameAddress);
             access = GymUI.Input(connectionPanel, "Access token (if required)", 185, "", true);
+            foreach (var field in new[] { address, access })
+            {
+                var hint = GymUI.Text(GymUI.Rect(field.transform, "Hint", Vector2.zero, Vector2.one, new Vector2(12, 6), new Vector2(-12, -6)), field == address ? "Game server address" : "Access token (optional)", 30, GymUI.Muted, TextAnchor.MiddleLeft);
+                field.placeholder = hint;
+            }
             GymUI.Button(GymUI.Box(connectionPanel, "New game", 26, 305, 232, 56), "Start new night", () => Coordinator.ConnectNew(address.text.Trim(), access.text));
             resume = GymUI.Button(GymUI.Box(connectionPanel, "Resume game", 282, 305, 242, 56), "Resume", () => Coordinator.Resume(address.text.Trim(), access.text));
             GymUI.Button(GymUI.Box(connectionPanel, "Disconnect", 26, 381, 498, 54), "Disconnect", Coordinator.Disconnect);
             var layout = canvas.gameObject.AddComponent<EncounterHudLayout>();
+            responsiveLayout = layout;
+            layout.Conversation = panel; layout.Clues = clueBox; layout.ClueToggle = (RectTransform)clueToggle.transform; layout.ClueViewport = clueViewport;
             layout.SafeRoot = canvas; layout.Header = top; layout.HeaderTitle = headerTitle.rectTransform;
             layout.StateText = stateLabel.rectTransform; layout.ConnectionButton = (RectTransform)connectionButton.transform;
             layout.Guidance = guide; layout.GuidanceText = guidance.rectTransform; layout.OpeningRoute = (RectTransform)openingRoute.transform;
@@ -113,7 +129,7 @@ namespace LucidLoop.Gyms
         void Update()
         {
             if (resume) resume.interactable = Coordinator && Coordinator.CanResume && !Coordinator.IsConnecting;
-            if (reply && reply.isFocused && Input.GetKeyDown(KeyCode.Return)) SendReply();
+            if (reply && reply.isFocused) { responsiveLayout.ConversationExpanded = true; if (Input.GetKeyDown(KeyCode.Return)) SendReply(); }
             if (reset) reset.interactable = Coordinator.IsReady && (Coordinator.State.Phase == "catastrophe" || Coordinator.State.Phase == "unresolved" || Coordinator.State.Phase == "victory");
             if (pause) pause.interactable = Coordinator.IsReady;
             if (openingRoute) openingRoute.interactable = Coordinator.IsReady && Coordinator.State.LoopIndex == 1 &&
@@ -154,20 +170,23 @@ namespace LucidLoop.Gyms
 
         void OnConversation(EncounterConversationRequest request)
         {
+            responsiveLayout.ConversationExpanded = true;
             SelectedNpcId = request.CharacterId; historyText = ""; previousRole = null; RenderHistory();
             if (Rig) { Rig.Overview(); foreach (var actor in Coordinator.Characters) if (actor && actor.Id == SelectedNpcId) Rig.Target = actor; }
             ShowConversationStatus("Connecting…"); SetConversationInputEnabled(false, false);
         }
-        void OnInvalidated() { microphoneEnabled = false; if (mic) mic.GetComponentInChildren<Text>().text = "Mic off"; SetConversationInputEnabled(false, false); if (Rig) Rig.Overview(); }
+        void OnInvalidated() { if (responsiveLayout) responsiveLayout.ConversationExpanded = false; microphoneEnabled = false; if (mic) mic.GetComponentInChildren<Text>().text = "Mic off"; SetConversationInputEnabled(false, false); if (Rig) Rig.Overview(); }
         void OnVoiceReady() { SetConversationInputEnabled(true, true); ShowConversationStatus("Ready · microphone off"); }
         public void SetConversationInputEnabled(bool typed, bool microphone)
         { if (reply) reply.interactable = typed; if (send) send.interactable = typed; if (mic) mic.interactable = microphone; }
         public void ShowConversationStatus(string value)
         {
-            if (statusLabel) statusLabel.text = value.Replace('_', ' ');
+            if (statusLabel) statusLabel.text = IdleConversationStatus(value, Coordinator && Coordinator.IsReady).Replace('_', ' ');
             if (Voice && !Voice.IsReady) SetConversationInputEnabled(false, false);
             if (Voice && !Voice.IsReady && !Voice.IsConnecting && Rig) Rig.Overview();
         }
+        public static string IdleConversationStatus(string value, bool gameReady)
+            => gameReady && (value == "disconnected" || value == "ready" || value == "closed") ? "Choose someone nearby" : value;
         void SendReply()
         {
             if (!send || !send.interactable || string.IsNullOrWhiteSpace(reply.text)) return;
@@ -180,7 +199,7 @@ namespace LucidLoop.Gyms
             if (Voice) Voice.EnableMicrophone(microphoneEnabled);
             mic.GetComponentInChildren<Text>().text = microphoneEnabled ? "Mic on" : "Mic off";
         }
-        void Leave() { if (Voice) Voice.Leave(); LeaveRequested?.Invoke(); OnInvalidated(); ShowConversationStatus("Choose a character and tap Talk."); }
+        void Leave() { if (reply) reply.DeactivateInputField(); if (Voice) Voice.Leave(); LeaveRequested?.Invoke(); OnInvalidated(); ShowConversationStatus("Choose a character and tap Talk."); }
 
         void ShowStatus(string value)
         {

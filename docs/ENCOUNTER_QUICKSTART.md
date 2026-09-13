@@ -18,6 +18,8 @@ The game-state relay works without a local OpenAI key. NPC conversations require
 
 For physical iPhone use, follow [local LAN setup](IOS_LOCAL_RELAY.md) and [iOS export](IOS_BUILD.md). The phone must connect to the computer's LAN address, with the separate relay access token. The loopback command above serves only this computer.
 
+The phone HUD uses enlarged touch controls and lifts the reply controls above the software keyboard. Tap **Retained clues** to expand the scrollable clue list. Keyboard behavior on a physical device still needs acceptance; Editor geometry checks alone cannot establish it.
+
 The newly authored victim, lethal action and prevention route are in [DEMO_SCENARIO.md](DEMO_SCENARIO.md). [IMPLEMENTATION_VALIDATION.md](IMPLEMENTATION_VALIDATION.md) records what has actually passed. Current character art, animation staging, phone keyboard/touch ergonomics, Japanese speech and physical-device performance are still acceptance work.
 
 To recreate the engineering scene, use **Lucid Loop → Encounter → Create Before the Drop scene** with clean saved scenes. This creates a fresh encounter copy from `CharacterGym`; it replaces encounter-scene edits. Use the narrower apply-to-current-scene commands when only adding a presentation binding.

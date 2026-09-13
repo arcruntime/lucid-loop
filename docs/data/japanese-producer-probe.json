@@ -1,0 +1,338 @@
+{
+  "pin": "acea62e125aa2200648a489900de750c3e3587fa",
+  "warning": "Exploratory same-corpus machine-alignment comparison; not independent accuracy or iOS timing.",
+  "results": [
+    {
+      "vote": 6,
+      "clips": 39,
+      "audioSeconds": 170.94,
+      "analysisSeconds": 4.5100241,
+      "desktopRtf": 0.026383667368667367,
+      "frames": 10628,
+      "agreement": 0.29281144147534816,
+      "nonSilAgreement": 0.17737989323843417,
+      "transitionsPerSecond": 14.777114777114777,
+      "recall": {
+        "sil": {
+          "expectedFrames": 1636,
+          "matchedFrames": 1517,
+          "value": 0.9272616136919315
+        },
+        "I": {
+          "expectedFrames": 1305,
+          "matchedFrames": 170,
+          "value": 0.13026819923371646
+        },
+        "SS": {
+          "expectedFrames": 339,
+          "matchedFrames": 132,
+          "value": 0.3893805309734513
+        },
+        "O": {
+          "expectedFrames": 1547,
+          "matchedFrames": 307,
+          "value": 0.19844861021331608
+        },
+        "kk": {
+          "expectedFrames": 344,
+          "matchedFrames": 54,
+          "value": 0.1569767441860465
+        },
+        "aa": {
+          "expectedFrames": 2071,
+          "matchedFrames": 396,
+          "value": 0.19121197489135683
+        },
+        "ja_U": {
+          "expectedFrames": 1148,
+          "matchedFrames": 136,
+          "value": 0.11846689895470383
+        },
+        "PP": {
+          "expectedFrames": 217,
+          "matchedFrames": 51,
+          "value": 0.2350230414746544
+        },
+        "nn": {
+          "expectedFrames": 426,
+          "matchedFrames": 74,
+          "value": 0.17370892018779344
+        },
+        "DD": {
+          "expectedFrames": 346,
+          "matchedFrames": 82,
+          "value": 0.23699421965317918
+        },
+        "ja_R": {
+          "expectedFrames": 129,
+          "matchedFrames": 18,
+          "value": 0.13953488372093023
+        },
+        "E": {
+          "expectedFrames": 1075,
+          "matchedFrames": 173,
+          "value": 0.16093023255813954
+        },
+        "CH": {
+          "expectedFrames": 31,
+          "matchedFrames": 1,
+          "value": 0.03225806451612903
+        },
+        "ja_FU": {
+          "expectedFrames": 14,
+          "matchedFrames": 1,
+          "value": 0.07142857142857142
+        }
+      }
+    },
+    {
+      "vote": 3,
+      "clips": 39,
+      "audioSeconds": 170.94,
+      "analysisSeconds": 5.568199200000001,
+      "desktopRtf": 0.032573997893997904,
+      "frames": 10628,
+      "agreement": 0.3040082800150546,
+      "nonSilAgreement": 0.19128113879003558,
+      "transitionsPerSecond": 20.375570375570376,
+      "recall": {
+        "sil": {
+          "expectedFrames": 1636,
+          "matchedFrames": 1511,
+          "value": 0.9235941320293398
+        },
+        "I": {
+          "expectedFrames": 1305,
+          "matchedFrames": 165,
+          "value": 0.12643678160919541
+        },
+        "SS": {
+          "expectedFrames": 339,
+          "matchedFrames": 136,
+          "value": 0.40117994100294985
+        },
+        "O": {
+          "expectedFrames": 1547,
+          "matchedFrames": 279,
+          "value": 0.18034906270200388
+        },
+        "kk": {
+          "expectedFrames": 344,
+          "matchedFrames": 79,
+          "value": 0.22965116279069767
+        },
+        "aa": {
+          "expectedFrames": 2071,
+          "matchedFrames": 434,
+          "value": 0.20956059874456784
+        },
+        "ja_U": {
+          "expectedFrames": 1148,
+          "matchedFrames": 123,
+          "value": 0.10714285714285714
+        },
+        "PP": {
+          "expectedFrames": 217,
+          "matchedFrames": 61,
+          "value": 0.28110599078341014
+        },
+        "nn": {
+          "expectedFrames": 426,
+          "matchedFrames": 110,
+          "value": 0.25821596244131456
+        },
+        "DD": {
+          "expectedFrames": 346,
+          "matchedFrames": 101,
+          "value": 0.29190751445086704
+        },
+        "ja_R": {
+          "expectedFrames": 129,
+          "matchedFrames": 46,
+          "value": 0.35658914728682173
+        },
+        "E": {
+          "expectedFrames": 1075,
+          "matchedFrames": 178,
+          "value": 0.1655813953488372
+        },
+        "CH": {
+          "expectedFrames": 31,
+          "matchedFrames": 6,
+          "value": 0.1935483870967742
+        },
+        "ja_FU": {
+          "expectedFrames": 14,
+          "matchedFrames": 2,
+          "value": 0.14285714285714285
+        }
+      }
+    },
+    {
+      "vote": 2,
+      "clips": 39,
+      "audioSeconds": 170.94,
+      "analysisSeconds": 4.748570999999999,
+      "desktopRtf": 0.027779168129168124,
+      "frames": 10628,
+      "agreement": 0.2776627775686865,
+      "nonSilAgreement": 0.1602535587188612,
+      "transitionsPerSecond": 24.096174096174096,
+      "recall": {
+        "sil": {
+          "expectedFrames": 1636,
+          "matchedFrames": 1510,
+          "value": 0.9229828850855746
+        },
+        "I": {
+          "expectedFrames": 1305,
+          "matchedFrames": 136,
+          "value": 0.10421455938697317
+        },
+        "SS": {
+          "expectedFrames": 339,
+          "matchedFrames": 130,
+          "value": 0.3834808259587021
+        },
+        "O": {
+          "expectedFrames": 1547,
+          "matchedFrames": 209,
+          "value": 0.13510019392372333
+        },
+        "kk": {
+          "expectedFrames": 344,
+          "matchedFrames": 88,
+          "value": 0.2558139534883721
+        },
+        "aa": {
+          "expectedFrames": 2071,
+          "matchedFrames": 282,
+          "value": 0.1361661033317238
+        },
+        "ja_U": {
+          "expectedFrames": 1148,
+          "matchedFrames": 152,
+          "value": 0.13240418118466898
+        },
+        "PP": {
+          "expectedFrames": 217,
+          "matchedFrames": 54,
+          "value": 0.2488479262672811
+        },
+        "nn": {
+          "expectedFrames": 426,
+          "matchedFrames": 104,
+          "value": 0.24413145539906103
+        },
+        "DD": {
+          "expectedFrames": 346,
+          "matchedFrames": 105,
+          "value": 0.30346820809248554
+        },
+        "ja_R": {
+          "expectedFrames": 129,
+          "matchedFrames": 50,
+          "value": 0.3875968992248062
+        },
+        "E": {
+          "expectedFrames": 1075,
+          "matchedFrames": 116,
+          "value": 0.10790697674418605
+        },
+        "CH": {
+          "expectedFrames": 31,
+          "matchedFrames": 9,
+          "value": 0.2903225806451613
+        },
+        "ja_FU": {
+          "expectedFrames": 14,
+          "matchedFrames": 6,
+          "value": 0.42857142857142855
+        }
+      }
+    },
+    {
+      "vote": 1,
+      "clips": 39,
+      "audioSeconds": 170.94,
+      "analysisSeconds": 4.962009399999999,
+      "desktopRtf": 0.02902778401778401,
+      "frames": 10628,
+      "agreement": 0.32564922845314265,
+      "nonSilAgreement": 0.21752669039145908,
+      "transitionsPerSecond": 33.5965835965836,
+      "recall": {
+        "sil": {
+          "expectedFrames": 1636,
+          "matchedFrames": 1505,
+          "value": 0.9199266503667481
+        },
+        "I": {
+          "expectedFrames": 1305,
+          "matchedFrames": 212,
+          "value": 0.16245210727969348
+        },
+        "SS": {
+          "expectedFrames": 339,
+          "matchedFrames": 146,
+          "value": 0.4306784660766962
+        },
+        "O": {
+          "expectedFrames": 1547,
+          "matchedFrames": 340,
+          "value": 0.21978021978021978
+        },
+        "kk": {
+          "expectedFrames": 344,
+          "matchedFrames": 66,
+          "value": 0.19186046511627908
+        },
+        "aa": {
+          "expectedFrames": 2071,
+          "matchedFrames": 525,
+          "value": 0.2535007242877837
+        },
+        "ja_U": {
+          "expectedFrames": 1148,
+          "matchedFrames": 186,
+          "value": 0.16202090592334495
+        },
+        "PP": {
+          "expectedFrames": 217,
+          "matchedFrames": 68,
+          "value": 0.31336405529953915
+        },
+        "nn": {
+          "expectedFrames": 426,
+          "matchedFrames": 66,
+          "value": 0.15492957746478872
+        },
+        "DD": {
+          "expectedFrames": 346,
+          "matchedFrames": 90,
+          "value": 0.26011560693641617
+        },
+        "ja_R": {
+          "expectedFrames": 129,
+          "matchedFrames": 37,
+          "value": 0.2868217054263566
+        },
+        "E": {
+          "expectedFrames": 1075,
+          "matchedFrames": 207,
+          "value": 0.1925581395348837
+        },
+        "CH": {
+          "expectedFrames": 31,
+          "matchedFrames": 7,
+          "value": 0.22580645161290322
+        },
+        "ja_FU": {
+          "expectedFrames": 14,
+          "matchedFrames": 6,
+          "value": 0.42857142857142855
+        }
+      }
+    }
+  ]
+}
