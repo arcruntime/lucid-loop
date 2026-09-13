@@ -1,0 +1,107 @@
+{
+  "schema": "ren-unity-video-transport-review/v1",
+  "scope": "Passed model-free decoder transport and binding validation. No H scene, H facial playback, aesthetic, audible output, muxed-performance or phone-performance claim.",
+  "rawEvidenceDirectory": ".local/ren-h-video-smoke-v2",
+  "failedEvidencePreservedAt": ".local/ren-h-video-smoke-v1",
+  "captureAliases": {
+    "replay-start.png": "initial.png",
+    "replay-after-end.png": "initial.png"
+  },
+  "curationNote": "JSON files and four unique decoded PNGs are copied byte-for-byte. Raw replay filenames resolve through captureAliases to initial.png because all three files have identical SHA256. Original ffmpeg comparison PNGs are reproducible intermediates, not duplicated here.",
+  "inputs": [
+    {
+      "path": "DanielDuguay87_2093375826557296673.mp4",
+      "sha256": "d479c1eeb5eab7a15fa0c489766ef1e22983289d33a5ef51ab32398dc73ea2f1"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/control-curves-unity.json",
+      "sha256": "71262584f06bc086552e611f7f46aaceb347cd4645af85054c7765b3d09cc96c"
+    },
+    {
+      "path": "art/generated/characters/ren/video-reference-v1/source-frame-times.json",
+      "sha256": "1ebd58bf5c3b4cbe682aac9cbc5f5b45ac72f89681d9b0bd57735b3d8a404794"
+    }
+  ],
+  "sources": [
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceAnimationBuilder.cs",
+      "sha256": "f8add3f0e03ff8c32096f7f09c2a7dfa0c9d5c914f93d950a8266595ca73f126",
+      "lfOnly": true,
+      "metaPath": "Unity/Assets/CharacterArt/Editor/RenHReferenceAnimationBuilder.cs.meta",
+      "metaSha256": "40f1b18e99dda63e3d0663c80b7ae08036586700963875a7185b21294b8f355b",
+      "guid": "a270baa86fb44ee29e94015befda7ca2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceVideoSmokeBuilder.cs",
+      "sha256": "e033ae1d5a89b8db6e7fce34ad2bcd54d5b72bb219310dc1876c6d0c6142e65b",
+      "lfOnly": true,
+      "metaPath": "Unity/Assets/CharacterArt/Editor/RenHReferenceVideoSmokeBuilder.cs.meta",
+      "metaSha256": "5714aa3df2f11666e0d1c2a9e785d4aa1b3cdc9a4eca3527d4efe64c77e26512",
+      "guid": "08c96d296ad547a2b5beb30f246f672e"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceAnimationController.cs",
+      "sha256": "8af1ecde73bd1b52451b59fad4bd5da5f8bea69b362c7e64d33ed37dcc906ce6",
+      "lfOnly": true,
+      "metaPath": "Unity/Assets/CharacterArt/Runtime/RenHReferenceAnimationController.cs.meta",
+      "metaSha256": "37788216c27bf99b2b7fac71e7004d226abc56aee9b4d2d7de215bf9772521bf",
+      "guid": "ec7b0971d83347a589743fdb9afa8f5b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceVideoSmokeProbe.cs",
+      "sha256": "502f91dc97cbe7d65100677b05684cddf073f09d8030cd44f7c9e7c75747b501",
+      "lfOnly": true,
+      "metaPath": "Unity/Assets/CharacterArt/Runtime/RenHReferenceVideoSmokeProbe.cs.meta",
+      "metaSha256": "a0cf08fb997320ac4d739f1cc72301081867d73afb6b7c39452eea0607e997a4",
+      "guid": "c882428460d04e19ac485bc06e7604ac"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceVideoTransport.cs",
+      "sha256": "efd996b0591141856b907ea6724d5c9fe0c8b950a348f54819e150a88d578bd1",
+      "lfOnly": true,
+      "metaPath": "Unity/Assets/CharacterArt/Runtime/RenHReferenceVideoTransport.cs.meta",
+      "metaSha256": "e5bcf43fa6c303f0eac48252b9f2e39b6b5dc3f9bc84a0745909582aed487085",
+      "guid": "c581f5a3d5eb401c9d1886b9738d1725"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceAnimation.md",
+      "sha256": "8c5e5ab8326deff83f48daa39cad52237b849557df23384f24e06c87045cafee",
+      "lfOnly": true,
+      "metaPath": "Unity/Assets/CharacterArt/Editor/RenHReferenceAnimation.md.meta",
+      "metaSha256": "e8ebdbba9c4f11b0807ac5178f5f82c578cfd788d53bd9dc2c747f68776b3dbe",
+      "guid": "b9245bb6564b4c8e8ca8656549527ba2"
+    }
+  ],
+  "evidenceFiles": [
+    {
+      "path": "transport-smoke.json",
+      "sha256": "720dc31a3f1a86b95a4e800b39d696818d5db22bc66c621675512b20bd6e3c0a",
+      "bytes": 4845
+    },
+    {
+      "path": "source-frame-comparison.json",
+      "sha256": "078f0c859b939def63df9e45fd5a8abbcd6a39c09fb3b9742d19098c85776b03",
+      "bytes": 3326
+    },
+    {
+      "path": "initial.png",
+      "sha256": "afc668897ae9d31e1139ff7f3f417caad18aa21e1ffb46ff78dee0add8a0783d",
+      "bytes": 924345
+    },
+    {
+      "path": "paused-seek-3.2.png",
+      "sha256": "8d805b3354d10d7c8e26dd721b2b40dc063824245f50d1669396af1fcba2da5a",
+      "bytes": 894092
+    },
+    {
+      "path": "rapid-seek-last-wins-2.4.png",
+      "sha256": "401bbfb04052c7e58db5d18f32fd22e0ec23ecdcf57780f9da11dfc18d52248e",
+      "bytes": 858538
+    },
+    {
+      "path": "end-last-real-frame.png",
+      "sha256": "c4cc7b55bb21428e3bb22fcbdcbf6428ef81041d344fdca55e174c157241ee97",
+      "bytes": 847538
+    }
+  ]
+}

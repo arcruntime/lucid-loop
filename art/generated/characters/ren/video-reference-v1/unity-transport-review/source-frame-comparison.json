@@ -1,0 +1,114 @@
+{
+  "method": "Compare actual Unity-decoded video texture PNGs to ffmpeg-decoded original MP4 frames; no image edits. Offset uses the immutable original ffprobe frame table.",
+  "sourceVideoSha256": "d479c1eeb5eab7a15fa0c489766ef1e22983289d33a5ef51ab32398dc73ea2f1",
+  "passed": true,
+  "frameComparisons": [
+    {
+      "unityPng": "initial.png",
+      "originalFrame": 0,
+      "originalPng": "source-001.png",
+      "width": 720,
+      "height": 1280,
+      "meanAbsoluteByteError": 2.67667818069458,
+      "p99AbsoluteByteError": 9.0,
+      "maximumAbsoluteByteError": 50.0
+    },
+    {
+      "unityPng": "rapid-seek-last-wins-2.4.png",
+      "originalFrame": 72,
+      "originalPng": "source-002.png",
+      "width": 720,
+      "height": 1280,
+      "meanAbsoluteByteError": 2.688434600830078,
+      "p99AbsoluteByteError": 9.0,
+      "maximumAbsoluteByteError": 27.0
+    },
+    {
+      "unityPng": "paused-seek-3.2.png",
+      "originalFrame": 96,
+      "originalPng": "source-003.png",
+      "width": 720,
+      "height": 1280,
+      "meanAbsoluteByteError": 2.405393123626709,
+      "p99AbsoluteByteError": 8.0,
+      "maximumAbsoluteByteError": 29.0
+    },
+    {
+      "unityPng": "end-last-real-frame.png",
+      "originalFrame": 451,
+      "originalPng": "source-004.png",
+      "width": 720,
+      "height": 1280,
+      "meanAbsoluteByteError": 2.687462329864502,
+      "p99AbsoluteByteError": 9.0,
+      "maximumAbsoluteByteError": 39.0
+    }
+  ],
+  "clockComparisons": [
+    {
+      "name": "initial",
+      "frame": 0,
+      "originalPts": 0.0,
+      "decoderTime": 0.0,
+      "offsetSeconds": 0.0
+    },
+    {
+      "name": "audio-enabled",
+      "frame": 0,
+      "originalPts": 0.0,
+      "decoderTime": 0.0,
+      "offsetSeconds": 0.0
+    },
+    {
+      "name": "paused-seek-3.2",
+      "frame": 96,
+      "originalPts": 3.2,
+      "decoderTime": 3.2,
+      "offsetSeconds": 0.0
+    },
+    {
+      "name": "rapid-seek-last-wins-2.4",
+      "frame": 72,
+      "originalPts": 2.4,
+      "decoderTime": 2.4,
+      "offsetSeconds": 0.0
+    },
+    {
+      "name": "replay-start",
+      "frame": 0,
+      "originalPts": 0.0,
+      "decoderTime": 0.0,
+      "offsetSeconds": 0.0
+    },
+    {
+      "name": "replay-advanced-pause",
+      "frame": 12,
+      "originalPts": 0.4,
+      "decoderTime": 0.4,
+      "offsetSeconds": 0.0
+    },
+    {
+      "name": "end-last-real-frame",
+      "frame": 451,
+      "originalPts": 15.033333,
+      "decoderTime": 15.033333333333333,
+      "offsetSeconds": 3.3333333249174757e-07
+    },
+    {
+      "name": "tail-seek-hold",
+      "frame": 451,
+      "originalPts": 15.033333,
+      "decoderTime": 15.033333333333333,
+      "offsetSeconds": 3.3333333249174757e-07
+    },
+    {
+      "name": "replay-after-end",
+      "frame": 0,
+      "originalPts": 0.0,
+      "decoderTime": 0.0,
+      "offsetSeconds": 0.0
+    }
+  ],
+  "maxAbsoluteClockOffsetSeconds": 3.3333333249174757e-07,
+  "note": "Sampled decoded frame indices/times agree. WindowsMediaFoundation still emitted timestamp/unknown-primaries warnings; no rescaling of source acting times was applied. Audio test verifies the real decoder track mute state only, not audible output or a muxed performance."
+}
