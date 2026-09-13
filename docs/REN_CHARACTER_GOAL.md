@@ -1,5 +1,8 @@
 # Ren character implementation goal
 
+See [current H construction status](REN_H_CURRENT_WORK.md) for the latest frozen
+source handoffs, unresolved work and the scene that can actually be opened.
+
 ## Next goal: a recognizable, complete Ren head for visual review
 
 Produce one head-and-neck Ren asset with her pale-blond asymmetric shag, main-look
@@ -210,6 +213,14 @@ Build and visually verify an expressive, animated Ren for Lucid Loop in Blender 
 
 ## Shape and aesthetic constraints
 
+- Standardize on exactly one shared male skeleton and one shared female skeleton;
+  Ren uses the shared female rig. Character-specific facial controls and accessories
+  must not create a different body skeleton for each character.
+- Ren's baseball cap is a separate accessory, attached to a socket on the head
+  bone and independently toggleable. Do not merge it into the character mesh.
+  A bust prototype must expose the equivalent explicit head/socket hierarchy for
+  later binding. Cap-on hair accommodation is a separate state; toggling the cap
+  off restores the uncovered hairstyle without resetting facial controls.
 - Keep the historical source `art/generated/characters/ren/meshy/model.glb` and its original textures immutable. A new candidate becomes the construction baseline only after its head proportions, face silhouette, eyes, nose, lips, jaw, and identity have passed the current visual review.
 - Do not reuse the rejected generic fitted head or transplant Unity-chan's facial proportions. Build deformation topology around the selected Ren source. Any necessary local topology changes must preserve its reviewed neutral surface and be demonstrated in matched before/after renders.
 - Preserve the designer's anime aesthetic, including Ren's elongated half-lidded grey-blue eyes, tapered upper lash lines, and distinctive rose lips. Painterly shading and nightclub lighting must support these features.
@@ -239,3 +250,10 @@ The September 13 Unity review rejected the current face for texture quality and 
 ## Scope boundary
 
 The other four major characters and partygoing NPCs remain part of the broader project, but are outside this focused implementation goal. The separate lip-sync analyzer remains in `B:\unity-realtime-lipsync`; this goal supplies its Ren facial targets and integration surface, not a commercial lip-sync dependency.
+
+After Ren's pipeline works and passes visual/runtime review, document its source
+selection, native-surface construction, facial topology, paint, NPR, accessory,
+rig, expression/speech and verification steps. Apply that same validated workflow
+to the other four main cast members through dedicated subagents, preserving each
+artist design and the two shared skeletons. Do not begin that rollout by copying
+Ren's unresolved construction experiments or substituting a generic face.
