@@ -6,6 +6,8 @@ The primary game prototype is **Before the Drop**: a server-authoritative nightc
 
 **iOS is the primary target.** Use the [iOS build instructions](docs/IOS_BUILD.md) and [local development relay setup](docs/IOS_LOCAL_RELAY.md). Nightclub lighting uses a shared Forward pipeline with bounded local lights and shader feature stripping; see the [rendering policy](docs/IOS_RENDERING.md). [Validation evidence](docs/IMPLEMENTATION_VALIDATION.md) separates passing tests from pending device and presentation checks.
 
+The [hosted Xcode workflow](docs/IOS_EXPORTED_APP_CI.md) can compile a checksummed Unity export as a complete unsigned iOS app. Compilation results are recorded separately from signing and physical iPhone acceptance.
+
 The complete prevention route has passed [real-provider CI](https://github.com/jethac/lucid-loop/actions/runs/34777703855), including nearby conversations, committed actions and survival through the full loop. Phone exploration now uses a compact HUD with expandable conversation and clue panels. Physical iPhone testing remains pending. The [Japanese speech investigation](docs/JAPANESE_SPEECH_PRODUCER.md) records why the available Japanese model still needs quality work before integration.
 
 Select a character and tap **Walk & talk** to walk to a server-chosen speaking position and begin talking once in range; nearby characters show **Talk**. You can cancel or tap elsewhere to walk. Conversation feedback reports whether a requested action was accepted; **Leave** resumes the night and any agreed character movement.

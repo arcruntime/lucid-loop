@@ -1,0 +1,166 @@
+name: Compile exported iOS app
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ios-export-build.yml'
+      - 'tools/prepare_ios_export.py'
+      - 'tools/test_prepare_ios_export.py'
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Draft release containing ios-xcode.tar.gz and export-manifest.json"
+        required: true
+        type: string
+      archive_sha256:
+        description: "Expected SHA-256 of ios-xcode.tar.gz"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  verify-tools:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tools -p test_prepare_ios_export.py -v
+
+  transfer:
+    name: Transfer draft export without executing it
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    if: github.event_name == 'workflow_dispatch'
+    needs: verify-tools
+    permissions:
+      contents: write
+    steps:
+      - name: Download exact assets from the named draft
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          EXPORT_SHA256: ${{ inputs.archive_sha256 }}
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$ ]] || { echo 'Invalid release tag'; exit 1; }
+          [[ "$EXPORT_SHA256" =~ ^[[:xdigit:]]{64}$ ]] || { echo 'Expected a 64-digit SHA-256'; exit 1; }
+          [[ "$(gh release view "$RELEASE_TAG" --json isDraft --jq '.isDraft')" == 'true' ]] || { echo 'Export transport must be a draft release'; exit 1; }
+          mkdir -p "$RUNNER_TEMP/ios-transfer"
+          gh release download "$RELEASE_TAG" \
+            --pattern ios-xcode.tar.gz \
+            --pattern export-manifest.json \
+            --dir "$RUNNER_TEMP/ios-transfer"
+          test -s "$RUNNER_TEMP/ios-transfer/ios-xcode.tar.gz"
+          test -s "$RUNNER_TEMP/ios-transfer/export-manifest.json"
+          printf '%s  %s\n' "$EXPORT_SHA256" "$RUNNER_TEMP/ios-transfer/ios-xcode.tar.gz" | sha256sum --check --strict
+      - name: Pass opaque export files to the read-only build job
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-export-input-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/ios-transfer/ios-xcode.tar.gz
+            ${{ runner.temp }}/ios-transfer/export-manifest.json
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+
+  compile:
+    name: Compile full unsigned iphoneos app
+    needs: transfer
+    runs-on: macos-15
+    timeout-minutes: 90
+    permissions:
+      contents: read
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          lfs: false
+          persist-credentials: false
+      - name: Initialize build evidence
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/ios-evidence"
+          {
+            git rev-parse HEAD
+            uname -m
+            xcodebuild -version
+            xcrun --sdk iphoneos --show-sdk-version
+            df -h "$RUNNER_TEMP"
+          } | tee "$RUNNER_TEMP/ios-evidence/toolchain.txt"
+      - uses: actions/download-artifact@v4
+        with:
+          name: ios-export-input-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/ios-transfer
+      - name: Verify and extract export before executing reviewed build scripts
+        env:
+          EXPORT_SHA256: ${{ inputs.archive_sha256 }}
+        run: |
+          set -euo pipefail
+          cp "$RUNNER_TEMP/ios-transfer/export-manifest.json" "$RUNNER_TEMP/ios-evidence/export-manifest.json"
+          python3 tools/prepare_ios_export.py verify \
+            --archive "$RUNNER_TEMP/ios-transfer/ios-xcode.tar.gz" \
+            --manifest "$RUNNER_TEMP/ios-transfer/export-manifest.json" \
+            --sha256 "$EXPORT_SHA256" \
+            --destination "$RUNNER_TEMP/ios-export" \
+            2>&1 | tee "$RUNNER_TEMP/ios-evidence/export-verification.log"
+      - name: Check native packaging and restore known compiler executable bits
+        run: |
+          set -euo pipefail
+          python3 tools/check_ios_native_export.py "$RUNNER_TEMP/ios-export/Xcode" \
+            --output "$RUNNER_TEMP/ios-evidence/native-packaging.json" \
+            2>&1 | tee "$RUNNER_TEMP/ios-evidence/native-packaging.log"
+          case "$(uname -m)" in
+            arm64) host=arm64; bee=arm64 ;;
+            x86_64) host=x86_64; bee=x64 ;;
+            *) echo 'Unsupported hosted Mac architecture'; exit 1 ;;
+          esac
+          deploy="$RUNNER_TEMP/ios-export/Xcode/Il2CppOutputProject/IL2CPP/build/deploy_$host"
+          chmod +x "$deploy/il2cpp" "$deploy/il2cpp-compile" "$deploy/bee_backend/mac-$bee/bee_backend"
+          file "$deploy/il2cpp" "$deploy/il2cpp-compile" "$deploy/bee_backend/mac-$bee/bee_backend" \
+            | tee "$RUNNER_TEMP/ios-evidence/il2cpp-host-tools.txt"
+      - name: Build application, UnityFramework and GameAssembly without signing
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project "$RUNNER_TEMP/ios-export/Xcode/Unity-iPhone.xcodeproj" \
+            -scheme Unity-iPhone \
+            -configuration ReleaseForRunning \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath "$RUNNER_TEMP/ios-derived" \
+            -resultBundlePath "$RUNNER_TEMP/ios-evidence/ios-build.xcresult" \
+            -jobs 2 \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY= \
+            DEVELOPMENT_TEAM= \
+            build 2>&1 | tee "$RUNNER_TEMP/ios-evidence/xcodebuild.log"
+          products="$RUNNER_TEMP/ios-derived/Build/Products/ReleaseForRunning-iphoneos"
+          test -f "$products/LucidLoopGyms.app/LucidLoopGyms"
+          test -f "$products/LucidLoopGyms.app/Frameworks/UnityFramework.framework/UnityFramework"
+          {
+            file "$products/LucidLoopGyms.app/LucidLoopGyms"
+            file "$products/LucidLoopGyms.app/Frameworks/UnityFramework.framework/UnityFramework"
+          } | tee "$RUNNER_TEMP/ios-evidence/built-products.txt"
+      - name: Retain diagnostics even when verification or compilation fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-app-build-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/ios-evidence/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Record acceptance boundary
+        if: always()
+        run: |
+          echo 'This lane validates the supplied Unity export and attempts full unsigned iphoneos compilation. Review its manifest for exported worktree provenance. It does not sign, install, launch, or validate physical iPhone audio, rendering, input or performance. No Unity Editor or private Mac runner was used.' >> "$GITHUB_STEP_SUMMARY"

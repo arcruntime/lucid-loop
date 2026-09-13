@@ -6,6 +6,8 @@ Each job runs the EditMode tests, requires a passing XML result, builds a develo
 
 Native voice has a separate `.github/workflows/native-voice.yml` check: Linux runs the portable concurrent audio-ring tests, and a [GitHub-hosted macOS runner](https://docs.github.com/en/actions/reference/runners/github-hosted-runners) compiles and links only the native plugin against Apple's iOS SDK for arm64/iOS 17. This job needs no Unity installation or signing identity. Its scope is native compilation; the deferred Mac Unity player build and physical iPhone acceptance remain separate.
 
+The manual [exported iOS app workflow](IOS_EXPORTED_APP_CI.md) transfers a checksummed Unity export and compiles its complete unsigned iphoneos app on hosted Xcode. It needs no Mac Unity installation or signing identity. Its archive-validation tests run on relevant pushes; full app compilation remains explicitly dispatched and separate from the deferred private Mac desktop lane.
+
 CI builds the versioned scenes without regenerating the nightclub. `GymBuilder` remains the optional authoring tool; `GymCIBuild` is the build-only entry point. Neither client build job receives `OPENAI_API_KEY`. The independent `Gyms` workflow tests the backend and retains its explicitly opt-in upstream smoke check.
 
 ## Runner contract
