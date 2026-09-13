@@ -31,10 +31,23 @@ namespace LucidLoop.CharacterArt.Editor
         public string translationAmplitudeNote;
         public Vector3 headPivotInNormalizedFrame;
         public RenHReferenceMaterial[] materials = Array.Empty<RenHReferenceMaterial>();
+        public RenHReferenceCapSource capAccessory;
         // Paths are relative to the Motion root. The imported FBX is its child named Source.
         public RenHReferenceMorphBinding[] morphBindings = Array.Empty<RenHReferenceMorphBinding>();
         public RenHReferenceRotationBinding[] rotationBindings = Array.Empty<RenHReferenceRotationBinding>();
         public RenHReferenceTranslationBinding[] translationBindings = Array.Empty<RenHReferenceTranslationBinding>();
+    }
+    [Serializable] public sealed class RenHReferenceCapSource
+    {
+        public string sourceFbxAsset, sourceSha256, contractAsset, contractSha256;
+        public string sharedFemaleAvatarAsset, sharedFemaleAvatarSourceSha256;
+        public string sharedFemaleRigDefinitionAsset, sharedFemaleRigDefinitionSha256;
+        public RenHReferenceCapBinding binding;
+        // Exact reviewed imported root TRS in CapSocket coordinates, not unconverted native Blender coordinates.
+        public Vector3 localPosition, localScale = Vector3.one;
+        public Quaternion localRotation = Quaternion.identity;
+        public bool defaultVisible = true;
+        public RenHReferenceMaterial[] materials = Array.Empty<RenHReferenceMaterial>();
     }
     public static class RenHReferenceAnimationBuilder
     {
@@ -108,8 +121,9 @@ namespace LucidLoop.CharacterArt.Editor
                 var head = motion.Find(config.headRendererPath);
                 controller.HeadRenderer = head ? head.GetComponent<Renderer>() : null;
                 if (!controller.HeadRenderer || !controller.AnimatedHeadFrame) throw new InvalidDataException("Reviewed H head/frame paths are unresolved.");
+                controller.CapAttachment = AttachCap(root, motion, controller.HeadRenderer, config, presets, shader);
                 var faceBounds = RenNprReviewController.CalculateFaceLocalBounds(controller.AnimatedHeadFrame, controller.HeadRenderer);
-                foreach (var material in materialMap.Values)
+                foreach (var material in motion.GetComponentsInChildren<Renderer>(true).SelectMany(item => item.sharedMaterials).Distinct())
                 { RenNprReviewController.SetFaceFrame(material, controller.AnimatedHeadFrame, faceBounds); EditorUtility.SetDirty(material); }
                 ValidateBindings(motion, config, timelineData);
                 controller.TimelineAsset = timeline; controller.MorphBindings = config.morphBindings; controller.RotationBindings = config.rotationBindings;
@@ -164,6 +178,63 @@ namespace LucidLoop.CharacterArt.Editor
                 if (material.baseColorLinearRgba == null || material.baseColorLinearRgba.Length != 4) throw new InvalidDataException("Linear source color required: " + material.sourceName);
                 if (!string.IsNullOrEmpty(material.baseColorAsset)) Verify(material.baseColorAsset, material.baseColorSha256);
             }
+            var cap = config.capAccessory;
+            if (cap == null || cap.materials == null || cap.materials.Length == 0 || string.IsNullOrWhiteSpace(cap.sourceFbxAsset) ||
+                cap.sourceFbxAsset == config.sourceFbxAsset || !cap.sourceFbxAsset.StartsWith(Root + "/Sources/", StringComparison.Ordinal))
+                throw new InvalidDataException("The H study requires a separate reviewed cap export under its own Sources folder.");
+            RenHReferenceCapAttachment.ValidateDefinition(cap.binding);
+            Verify(cap.sourceFbxAsset, cap.sourceSha256); Verify(cap.contractAsset, cap.contractSha256);
+            Verify(cap.sharedFemaleRigDefinitionAsset, cap.sharedFemaleRigDefinitionSha256);
+            var rigDefinition = JsonUtility.FromJson<SharedFemaleRigIdentity>(File.ReadAllText(cap.sharedFemaleRigDefinitionAsset));
+            if (rigDefinition == null || rigDefinition.archetype != "female_base" || rigDefinition.version != 2 || string.IsNullOrWhiteSpace(rigDefinition.rig_identity_sha256))
+                throw new InvalidDataException("Cap target must refer to the existing shared female rig definition.");
+            if (cap.binding.mode == RenHReferenceCapAttachment.SharedFemaleMode)
+                Verify(cap.sharedFemaleAvatarAsset, cap.sharedFemaleAvatarSourceSha256);
+            if (!Finite(cap.localPosition) || !Finite(cap.localScale) || cap.localScale.x <= 0 || cap.localScale.y <= 0 || cap.localScale.z <= 0 ||
+                !Finite(cap.localRotation.x) || !Finite(cap.localRotation.y) || !Finite(cap.localRotation.z) || !Finite(cap.localRotation.w) ||
+                Mathf.Abs(Quaternion.Dot(cap.localRotation, cap.localRotation) - 1) > .001f)
+                throw new InvalidDataException("CapSocket attachment requires a finite reviewed imported TRS and unit quaternion.");
+            foreach (var material in cap.materials)
+            {
+                if (material.baseColorLinearRgba == null || material.baseColorLinearRgba.Length != 4)
+                    throw new InvalidDataException("Linear cap material color is required.");
+                if (!string.IsNullOrEmpty(material.baseColorAsset)) Verify(material.baseColorAsset, material.baseColorSha256);
+            }
+        }
+        [Serializable] sealed class SharedFemaleRigIdentity { public string archetype = null, rig_identity_sha256 = null; public int version = 0; }
+        static bool Finite(float value) => !float.IsNaN(value) && !float.IsInfinity(value);
+        static bool Finite(Vector3 value) => Finite(value.x) && Finite(value.y) && Finite(value.z);
+        static RenHReferenceCapAttachment AttachCap(GameObject controllerRoot, Transform motion, Renderer head, RenHReferenceManifest config, RenNprPresets presets, Shader shader)
+        {
+            var cap = config.capAccessory;
+            var socket = motion.Find(cap.binding.socketPath);
+            if (!socket || socket.name != "CapSocket") throw new InvalidDataException("The real H assembly must contain the reviewed Head/CapSocket hierarchy; no socket or armature will be invented.");
+            var importer = AssetImporter.GetAtPath(cap.sourceFbxAsset) as ModelImporter;
+            if (!importer) throw new InvalidDataException("The separate cap FBX import is unavailable.");
+            if (importer.importAnimation || importer.animationType != ModelImporterAnimationType.None)
+            { importer.importAnimation = false; importer.animationType = ModelImporterAnimationType.None; importer.SaveAndReimport(); }
+            var source = AssetDatabase.LoadAssetAtPath<GameObject>(cap.sourceFbxAsset);
+            if (!source) throw new InvalidDataException("The separate reviewed cap FBX is missing.");
+            var instance = Object.Instantiate(source, socket, false); instance.name = "CapAccessory";
+            instance.transform.localPosition = cap.localPosition; instance.transform.localRotation = cap.localRotation; instance.transform.localScale = cap.localScale;
+            var materials = cap.materials.ToDictionary(item => item.sourceName, item => MakeMaterial(item, presets, shader, "Cap-"), StringComparer.Ordinal);
+            foreach (var renderer in instance.GetComponentsInChildren<Renderer>(true))
+            {
+                renderer.sharedMaterials = renderer.sharedMaterials.Select(material =>
+                {
+                    if (!material || !materials.TryGetValue(material.name, out var mapped)) throw new InvalidDataException("Unmapped separate cap material: " + renderer.name);
+                    return mapped;
+                }).ToArray();
+                renderer.shadowCastingMode = ShadowCastingMode.On; renderer.receiveShadows = true;
+            }
+            var attachment = controllerRoot.AddComponent<RenHReferenceCapAttachment>();
+            attachment.Binding = cap.binding; attachment.CapRoot = instance.transform; attachment.DefaultVisible = cap.defaultVisible;
+            attachment.SourceSha256 = cap.sourceSha256;
+            if (cap.binding.mode == RenHReferenceCapAttachment.SharedFemaleMode)
+                attachment.ExpectedSharedFemaleAvatar = AssetDatabase.LoadAllAssetsAtPath(cap.sharedFemaleAvatarAsset).OfType<Avatar>().SingleOrDefault();
+            RenHReferenceCapAttachment.ValidateHierarchy(motion, head, instance.transform, attachment.ExpectedSharedFemaleAvatar, cap.binding, config.morphBindings);
+            attachment.Bind(motion, head, config.morphBindings);
+            return attachment;
         }
         static void ValidateBindings(Transform modelRoot, RenHReferenceManifest config, RenHReferenceTimeline timeline)
         {
@@ -188,10 +259,10 @@ namespace LucidLoop.CharacterArt.Editor
                 if (channels.Contains(required) && !config.translationBindings.Any(binding => binding.axes.Any(axis => axis.control == required)))
                     throw new InvalidDataException("The reference performance requires an explicit translation binding for " + required);
         }
-        static Material MakeMaterial(RenHReferenceMaterial map, RenNprPresets presets, Shader shader)
+        static Material MakeMaterial(RenHReferenceMaterial map, RenNprPresets presets, Shader shader, string labelPrefix = "")
         {
             var preset = presets.materials.Single(item => item.sourceName == map.presetSourceName);
-            var path = Root + "/Materials/RenHReferenceAnimation-" + map.sourceName + ".mat";
+            var path = Root + "/Materials/RenHReferenceAnimation-" + labelPrefix + map.sourceName + ".mat";
             var material = AssetDatabase.LoadAssetAtPath<Material>(path);
             if (!material) { material = new Material(shader); AssetDatabase.CreateAsset(material, path); }
             material.shader = shader; var color = map.baseColorLinearRgba;

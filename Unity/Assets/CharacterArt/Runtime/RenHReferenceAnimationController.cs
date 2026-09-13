@@ -56,6 +56,7 @@ namespace LucidLoop.CharacterArt
         public Camera ModelCamera;
         public Transform ModelRoot, AnimatedHeadFrame;
         public Renderer HeadRenderer;
+        public RenHReferenceCapAttachment CapAttachment;
         public UniversalRenderPipelineAsset ReviewPipeline;
         public RenHReferenceMorphBinding[] MorphBindings = Array.Empty<RenHReferenceMorphBinding>();
         public RenHReferenceRotationBinding[] RotationBindings = Array.Empty<RenHReferenceRotationBinding>();
@@ -102,6 +103,7 @@ namespace LucidLoop.CharacterArt
             ValidateTimeline(timeline);
             samples = timeline.keyframes.Select(frame => frame.values.ToDictionary(item => item.name, item => item.value, StringComparer.Ordinal)).ToArray();
             BindControls();
+            if (CapAttachment) CapAttachment.Bind(ModelRoot, HeadRenderer, MorphBindings);
             PrepareFaceMaterials();
             BindPipeline();
             transport = new RenHReferenceVideoTransport(ReferenceVideo, timeline.duration, timeline.videoFrameSpan, timeline.lastVideoFrameTime);
@@ -345,6 +347,7 @@ namespace LucidLoop.CharacterArt
                     if (line == 0) GUI.Label(new Rect(0, 0, 420, 28), "Every timeline control has a source binding.", small);
                     GUI.EndScrollView();
                 }
+                GUI.Label(new Rect(1120, 718, 450, 42), CapAttachment ? CapAttachment.Status : "Separate cap source/socket not yet bound", small);
                 if (GUI.Button(new Rect(30, 764, 95, 34), "Front", button)) SetView(0);
                 if (GUI.Button(new Rect(135, 764, 95, 34), "Quarter", button)) SetView(45);
                 if (GUI.Button(new Rect(240, 764, 95, 34), "Profile", button)) SetView(90);
@@ -354,6 +357,10 @@ namespace LucidLoop.CharacterArt
                 var audio = GUI.Toggle(new Rect(610, 764, 220, 34), ReferenceAudio, "Reference audio", button);
                 if (audio != ReferenceAudio) SetAudio(audio);
                 DiagnosticOrthographic = GUI.Toggle(new Rect(870, 764, 300, 34), DiagnosticOrthographic, "Orthographic diagnostic", button);
+                GUI.enabled = CapAttachment && CapAttachment.IsBound;
+                var capVisible = GUI.Toggle(new Rect(1200, 764, 180, 34), CapAttachment && CapAttachment.CapVisible, "Baseball cap", button);
+                if (CapAttachment && CapAttachment.IsBound && capVisible != CapAttachment.CapVisible) CapAttachment.SetCapVisible(capVisible);
+                GUI.enabled = transport != null && transport.HasPresentedFrame && transport.Error == null;
                 var time = transport != null && transport.RequestedTime >= 0 ? (float)transport.RequestedTime : DisplayedTime;
                 var scrub = GUI.HorizontalSlider(new Rect(30, 822, 1270, 28), time, 0, Duration);
                 if (Mathf.Abs(scrub - time) > .0001f) Seek(scrub);
