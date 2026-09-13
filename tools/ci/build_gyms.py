@@ -84,8 +84,8 @@ def main():
     awake = None
     try:
         editor = editor_path(target)
-        if shutil.disk_usage(ROOT).free < 15 * 1024**3:
-            raise RuntimeError("At least 15 GiB free workspace space is required for Unity imports/builds.")
+        if shutil.disk_usage(ROOT).free < 10 * 1024**3:
+            raise RuntimeError("At least 10 GiB free workspace space is required for Unity imports/builds.")
         if target == "macos":
             awake = subprocess.Popen(["caffeinate", "-ims", "-w", str(os.getpid())])
         build_target = "Win64" if target == "windows" else "OSXUniversal"

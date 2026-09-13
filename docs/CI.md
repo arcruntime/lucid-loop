@@ -19,7 +19,7 @@ Register **additional** repository-scoped runners for `https://github.com/jethac
 
 Default OS/architecture labels must match `Windows`, `X64` and `macOS`, `ARM64` respectively. Run each under an account with a valid Unity license and access to its build storage. Install Git, Git LFS, Bash (Git Bash on Windows), Python 3.9+ (`python` on Windows, `python3` on Mac), Unity 6000.3.24f1 and the native desktop build support module. On Windows, use the same licensed user context for the runner and Unity; a SYSTEM service does not inherit an interactive user's license.
 
-The script requires 15 GiB free workspace space before importing/building. Provision more for initial Unity installation and caches. Keep the Mac awake during a job with the included `caffeinate` wrapper. Runner work directories should be on reliable storage, separate from interactive Unity checkouts.
+The script requires 10 GiB free workspace space before importing/building. Provision more for initial Unity installation and caches. Keep the Mac awake during a job with the included `caffeinate` wrapper. Runner work directories should be on reliable storage, separate from interactive Unity checkouts.
 
 Optional repository variables `UNITY_EDITOR_WINDOWS` and `UNITY_EDITOR_MACOS` override the editor executable path. Defaults are the Unity Hub versioned locations; Mac also checks the prior `/Volumes/MacMiniOffload/unity-ci/6000.3.24f1/Unity.app/Contents/MacOS/Unity` location. An explicitly configured missing path fails instead of selecting an arbitrary editor version. Install and activate Unity on the host; CI does not print or transfer license files.
 
