@@ -135,7 +135,8 @@ export function createDemoScenario(definition = createDemoDefinition(), { durati
       const s = base.snapshot();
       const clue = s.playerDiscoveries.some(d => d.factId === 'exposure_fear');
       if (command.type === 'ask_about_exposure') {
-        if (command.actorId !== 'luca' || s.mood !== 'Intimate') return reject('disclosure_conditions_unmet');
+        if (command.actorId !== 'luca') return reject('disclosure_conditions_unmet');
+        if (s.mood !== 'Intimate') return reject('calmer_music_needed');
         const text = base.context('luca').knownFacts.find(fact => fact.factId === 'exposure_fear')?.text;
         if (!text) return reject('unavailable_authored_fact');
         const learned = learn('exposure_fear', ['player'], 'luca_direct_observation');
@@ -146,7 +147,12 @@ export function createDemoScenario(definition = createDemoDefinition(), { durati
       if (command.type === 'agree_private_approach' && command.actorId === 'maya' && s.mood === 'Intimate' && clue && !local.mediated) local.privatePlan = true;
       else if (command.type === 'agree_distance' && command.actorId === 'theo' && s.recognized && local.privatePlan && s.mood === 'Intimate' && !local.mediated) local.distanceAccepted = true;
       else if (command.type === 'stop_recording' && command.actorId === 'maya' && local.distanceAccepted && local.recording) local.recording = false;
-      else if (command.type === 'mediate' && command.actorId === 'luca' && s.recognized && local.privatePlan && local.distanceAccepted && !local.recording && local.stage.allInMediation && s.mood === 'Intimate' && !local.mediated) local.mediated = true;
+      else if (command.type === 'mediate' && command.actorId === 'luca' && s.recognized && local.privatePlan && local.distanceAccepted && !local.recording && !local.mediated) {
+        // Explain observable remaining conditions only after all private social gates pass.
+        if (s.mood !== 'Intimate') return reject('calmer_music_needed');
+        if (!local.stage.allInMediation) return reject('mediation_group_not_ready');
+        local.mediated = true;
+      }
       else return reject('authored_policy_refused');
       requests.add(command.requestId); evaluate(); return commit('scenario_action_committed');
     },

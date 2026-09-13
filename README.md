@@ -22,6 +22,8 @@ Encounter guidance follows the current phase: it explains responding to the conf
 
 Reopening a conversation now supplies that NPC's own accepted commitments: Maya's private approach and recording state, Theo's distance agreement, or Luca's mediation. Rewind clears these commitments; other characters' private agreements stay out of the context.
 
+Luca's refused requests now explain when to ask Ren for calmer music or leave the conversation so the mediation group can assemble. The HUD retains this guidance even if speech delivery fails; no refused request changes game state.
+
 A [real spoken-input test](https://github.com/jethac/lucid-loop/actions/runs/34779053805) also passed: streamed synthetic speech triggered native Live delegation and a confirmed game action without a typed command. Physical microphone, interruption and conversational-quality acceptance remain separate checks.
 
 The [spoken correction test](https://github.com/jethac/lucid-loop/actions/runs/34779808422) also passed: a pending wait request was reinterpreted as follow, with no stale wait action committed. This test deliberately controls response timing; it does not measure natural interruption latency.

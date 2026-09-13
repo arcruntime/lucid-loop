@@ -87,7 +87,7 @@ test('active prevention needs evidence, commitments, completed mediation, separa
 
 test('exposure proposal cannot select arbitrary facts, bypass mood, replay, or impersonate Luca', () => {
   const f = fixture();
-  assert.equal(f.action('luca', 'ask_about_exposure').reason, 'disclosure_conditions_unmet');
+  assert.equal(f.action('luca', 'ask_about_exposure').reason, 'calmer_music_needed');
   f.action('ren', 'request_music', { mood: 'Intimate' });
   assert.equal(f.action('maya', 'ask_about_exposure').accepted, false);
   const accepted = f.action('luca', 'ask_about_exposure', { factId: 'shove_seen', directQuestion: false, requestId: 'exposure' });
@@ -140,4 +140,31 @@ test('own commitments persist in fresh NPC context without crossing character or
   assert.equal(f.invoke('reset', {}).accepted, true);
   for (const [npcId, expected] of Object.entries(initial)) assert.deepEqual(f.game.context(npcId).ownState, expected);
   assert.ok(f.game.snapshot().playerDiscoveries.some(d => d.factId === 'exposure_fear'));
+});
+
+test('actionable refusals preserve state and reveal no missing private prerequisite', () => {
+  const f = fixture();
+  const unchanged = (actor, action, reason) => {
+    const before = f.game.snapshot();
+    assert.equal(f.action(actor, action).reason, reason);
+    assert.deepEqual(f.game.snapshot(), before);
+  };
+  unchanged('luca', 'mediate', 'authored_policy_refused');
+  unchanged('maya', 'ask_about_exposure', 'disclosure_conditions_unmet');
+  unchanged('luca', 'ask_about_exposure', 'calmer_music_needed');
+  f.action('ren', 'request_music', { mood: 'Intimate' });
+  f.action('luca', 'ask_about_exposure');
+  f.action('maya', 'agree_private_approach');
+  f.recognize();
+  unchanged('luca', 'mediate', 'authored_policy_refused');
+  f.action('theo', 'agree_distance');
+  unchanged('luca', 'mediate', 'authored_policy_refused');
+  f.action('maya', 'stop_recording');
+  unchanged('luca', 'mediate', 'mediation_group_not_ready');
+  f.action('ren', 'request_music', { mood: 'Aggressive' });
+  unchanged('luca', 'mediate', 'calmer_music_needed');
+  f.action('ren', 'request_music', { mood: 'Intimate' });
+  f.invoke('observeStage', { stage: { allInMediation: true } });
+  assert.equal(f.action('luca', 'mediate').accepted, true);
+  assert.equal(f.game.snapshot().victory, false);
 });

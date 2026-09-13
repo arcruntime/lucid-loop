@@ -162,6 +162,14 @@ export function createGameplayDelegation({ registry, credentials, leaseId, model
         committed = result.ok === true && outcome?.accepted === true;
         if (!committed) {
           content = 'The requested game action was not performed. Do not describe it as successful. Ask the player what they would like to try next.';
+          const feedback = {
+            calmer_music_needed: 'Luca is not ready to discuss this over the aggressive music. Ask Ren for a calmer, Intimate track, then ask Luca again.',
+            mediation_group_not_ready: 'Luca cannot mediate until he, Maya and Theo are together. Leave the conversation so they can move into place, then ask Luca again.',
+          }[outcome?.reason];
+          if (feedback) {
+            type = 'session.commentary.append';
+            content = 'The requested action was not performed. ' + feedback;
+          }
         } else {
           revision = outcome.revision;
           type = 'session.commentary.append';

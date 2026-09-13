@@ -19,6 +19,15 @@ namespace LucidLoop.Gyms
                 return "Please clarify what you would like them to do.";
             if (result["kind"]?.Value<string>() == "no_action")
                 return "Conversation only; no action was taken.";
+            if (result["committed"]?.Type == JTokenType.Boolean && !result["committed"].Value<bool>() &&
+                result["outcome"]?["accepted"]?.Type == JTokenType.Boolean && !result["outcome"]["accepted"].Value<bool>())
+            {
+                switch (result["outcome"]?["reason"]?.Value<string>())
+                {
+                    case "calmer_music_needed": return "Not yet. Ask Ren for calmer, Intimate music, then ask Luca again.";
+                    case "mediation_group_not_ready": return "Not yet. Leave so Luca, Maya and Theo can move together, then ask Luca to mediate again.";
+                }
+            }
             return "The request was not carried out. Try a different approach.";
         }
     }

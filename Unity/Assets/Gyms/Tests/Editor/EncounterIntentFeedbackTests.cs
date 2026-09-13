@@ -29,6 +29,28 @@ namespace LucidLoop.Gyms.Tests
             var result = JObject.Parse("{ok:true,committed:true,outcome:{accepted:true},delivered:false}");
             StringAssert.StartsWith("Request accepted.", EncounterIntentFeedback.Describe(result));
         }
+        [TestCase("calmer_music_needed", "Ask Ren")]
+        [TestCase("mediation_group_not_ready", "Leave so Luca")]
+        public void ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript(string reason, string expected)
+        {
+            var host = new GameObject("Refusal feedback test");
+            try
+            {
+                var voice = host.AddComponent<EncounterVoiceController>();
+                string status = null; int transcripts = 0;
+                voice.StatusChanged += value => status = value;
+                voice.TranscriptFragment += _ => transcripts++;
+                var result = new JObject { ["type"] = "game.intent_result", ["ok"] = true,
+                    ["kind"] = "action_proposal", ["committed"] = false, ["delivered"] = false,
+                    ["outcome"] = new JObject { ["accepted"] = false, ["reason"] = reason } };
+                typeof(EncounterVoiceController).GetMethod("Handle", BindingFlags.Instance | BindingFlags.NonPublic)
+                    .Invoke(voice, new object[] { result });
+                StringAssert.Contains(expected, status);
+                StringAssert.DoesNotContain("Request accepted", status);
+                Assert.AreEqual(0, transcripts);
+            }
+            finally { Object.DestroyImmediate(host); }
+        }
         [TestCase("{ok:true,committed:false,outcome:{accepted:false}}")]
         [TestCase("{ok:true,committed:true,outcome:{accepted:false}}")]
         [TestCase("{ok:true,committed:'true',outcome:{accepted:true}}")]

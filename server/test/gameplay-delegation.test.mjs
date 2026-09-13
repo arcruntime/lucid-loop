@@ -195,6 +195,9 @@ test('demo disclosure speaks only the committed authored fact and route acknowle
   };
   const refused = await act('luca', 'ask_about_exposure');
   assert.equal(refused.result.committed, false);
+  assert.equal(refused.result.outcome.reason, 'calmer_music_needed');
+  assert.equal(refused.sent.at(-1).type, 'session.commentary.append');
+  assert.match(refused.sent.at(-1).content, /Ask Ren/);
   assert.doesNotMatch(refused.sent.at(-1).content, /Luca personally heard Theo/);
   assert.equal((await act('ren', 'request_music', { mood: 'Intimate' })).result.committed, true);
   const clue = await act('luca', 'ask_about_exposure');
@@ -206,6 +209,12 @@ test('demo disclosure speaks only the committed authored fact and route acknowle
     observerId: 'maya', inRecognitionArea: true, visibleActorIds: ['theo', 'affair_partner'] });
   assert.equal((await act('theo', 'agree_distance')).result.committed, true);
   assert.equal((await act('maya', 'stop_recording')).result.committed, true);
+  const waiting = await act('luca', 'mediate');
+  assert.equal(waiting.result.committed, false);
+  assert.equal(waiting.result.outcome.reason, 'mediation_group_not_ready');
+  assert.equal(waiting.sent.at(-1).type, 'session.commentary.append');
+  assert.match(waiting.sent.at(-1).content, /Leave the conversation/);
+  assert.doesNotMatch(waiting.sent.at(-1).content, /privatePlan|distanceAccepted|accepted the private mediation/);
   registry.trustedWorld(credentials, 'observeStage', { ...registry.publicState(credentials).snapshot, stage: { allInMediation: true } });
   const mediation = await act('luca', 'mediate');
   assert.equal(mediation.result.committed, true);
