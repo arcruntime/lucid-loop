@@ -32,3 +32,15 @@ def make(name,bpm,aggressive):
     print(name,round(length,2),'seconds', 'peak',.65)
 make('Aggressive',128,True)
 make('Intimate',92,False)
+
+# Short original backspin-style cue: descending chirp plus a fading noisy scrape.
+rng=random.Random(29)
+spin=array.array('h')
+for j in range(round(.65*RATE)):
+    t=j/RATE; envelope=math.sin(math.pi*t/.65)**.7
+    phase=2*math.pi*(1050*t-650*t*t)
+    sample=envelope*(.22*math.sin(phase)+.09*rng.uniform(-1,1))
+    spin.append(int(sample*32767))
+with wave.open(str(OUT/'Backspin.wav'),'wb') as w:
+    w.setnchannels(1);w.setsampwidth(2);w.setframerate(RATE);w.writeframes(spin.tobytes())
+print('Backspin',.65,'seconds')

@@ -35,6 +35,7 @@ namespace LucidLoop.Gyms.Mvp
         void Start()
         {
             Application.targetFrameRate = 30;
+            Application.runInBackground = true;
             foreach (var a in new[] { Maya, Theo, Luca })
             {
                 var obstacle = a.GetComponent<NavMeshObstacle>(); if (obstacle) obstacle.enabled = false;
@@ -106,7 +107,8 @@ namespace LucidLoop.Gyms.Mvp
             }
             if (Input.GetKeyDown(KeyCode.Escape) && modal && !Busy) CloseConversation();
             if (Input.GetKeyDown(KeyCode.Space) && Busy) advance = true;
-            if(music) { music.Intimate=State.Intimate; music.Duck=Busy || modal; }
+            UpdateMusicMenu();
+            if(music) { music.Intimate=State.Intimate; music.Duck=Busy || (modal && chatActor!=Ren); }
         }
         public static bool InRecognitionArea(Vector3 position) => position.x > TriggerX && position.x < 6.5f && position.z > TriggerZ && position.z < .8f;
         public bool Walk(Vector3 point)
@@ -160,13 +162,13 @@ namespace LucidLoop.Gyms.Mvp
             foreach(Transform child in choices) { child.gameObject.SetActive(false); Destroy(child.gameObject); }
             choices.gameObject.SetActive(true);
             GymUI.Label(choices,actor.DisplayName.ToUpperInvariant(),20,15,460,35,26,GymUI.Cyan);
-            if(State.Loop>1) { ShowTypedConversation(actor); return; }
+            if(State.Loop>1) { if(actor==Ren) ShowMusicMenu(); else ShowTypedConversation(actor); return; }
             choices.pivot=new Vector2(0,1);choices.anchoredPosition=new Vector2(25,-155);
             choices.sizeDelta=new Vector2(505,420);
             GymUI.Label(choices,"Opening scene",20,57,460,45,18,GymUI.Muted);
             int row=0;
             Choice("Let's find a spot on the floor.",()=> { CloseConversation(); Walk(new Vector3(4.7f,0,-2.6f)); },ref row);
-            Choice("Back to the floor",CloseConversation,ref row);
+            Choice("End conversation",CloseConversation,ref row);
         }
         void Choice(string label,UnityEngine.Events.UnityAction action,ref int row)
         { GymUI.Button(GymUI.Box(choices,"Choice "+row,18,112+row*83,469,73),label,action); row++; }
@@ -231,7 +233,7 @@ namespace LucidLoop.Gyms.Mvp
         {
             music.Interrupt();
             for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,t/.6f); yield return null; }
-            State.Rewind(); conversations.Clear(); ResetActors();
+            State.Rewind(); ResetActors();
             for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,1-t/.6f); yield return null; }
             curtain.color=Color.clear;
         }
