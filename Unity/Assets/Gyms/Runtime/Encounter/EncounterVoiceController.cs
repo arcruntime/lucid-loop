@@ -51,8 +51,16 @@ namespace LucidLoop.Gyms
         Task audioUpload;
         Playback playback;
         bool streamOpen;
+        int audioDeviceChanged;
+        string closeNotice;
 
-        void OnEnable() { BindCoordinator(); }
+        void OnEnable() { BindCoordinator(); AudioSettings.OnAudioConfigurationChanged += OnAudioConfigurationChanged; }
+        void OnAudioConfigurationChanged(bool deviceWasChanged)
+        {
+            // Queue only external device changes. Internal setup/reset notifications
+            // can accompany microphone initialization and must not cancel that setup.
+            if (deviceWasChanged) Interlocked.Exchange(ref audioDeviceChanged, 1);
+        }
         void BindCoordinator()
         {
             if (subscribed == Coordinator) return;
@@ -67,6 +75,8 @@ namespace LucidLoop.Gyms
         {
             if (request == null || !isActiveAndEnabled) return;
             RetireCurrent();
+            closeNotice = null;
+            Interlocked.Exchange(ref audioDeviceChanged, 0);
             generation++;
             CharacterId = request.CharacterId;
             FinalUsageConfirmed = false;
@@ -131,6 +141,12 @@ namespace LucidLoop.Gyms
         void Update()
         {
             BindCoordinator();
+            if (Interlocked.Exchange(ref audioDeviceChanged, 0) != 0 && streamOpen && !IsClosing)
+            {
+                closeNotice = "Audio device changed. Tap Talk to start again.";
+                Leave();
+                SetStatus(IsClosing ? "Audio device changed. Closing conversation..." : closeNotice);
+            }
             DrainRetired();
             var active = connection;
             int budget = 80;
@@ -318,12 +334,14 @@ namespace LucidLoop.Gyms
             IsReady = IsConnecting = IsClosing = false;
             audioUpload = null; audioDebt = 0;
         }
-        void CompleteClose() { DisposeCurrent(); SetStatus("closed"); }
+        void CompleteClose() { DisposeCurrent(); SetStatus(closeNotice ?? "closed"); }
         void Fail(string code) { DisposeCurrent(); SetStatus(code); }
         void SetStatus(string value) { Status = value; StatusChanged?.Invoke(value); }
         void OnApplicationPause(bool paused) { if (paused) Leave(); }
         void OnDisable()
         {
+            AudioSettings.OnAudioConfigurationChanged -= OnAudioConfigurationChanged;
+            Interlocked.Exchange(ref audioDeviceChanged, 0);
             if (subscribed) { subscribed.ConversationRequested -= Begin; subscribed.ConversationInvalidated -= Leave; }
             subscribed = null; DisposeCurrent();
             foreach (var old in retired) old.Connection.Dispose(); retired.Clear();

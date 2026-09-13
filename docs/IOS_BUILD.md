@@ -21,9 +21,9 @@ Alternatively, in the existing Editor use **Lucid Loop → iOS → Activate iOS 
 
 ## Export and device validation
 
-After activation, export through **Lucid Loop → iOS → Export development Xcode project**, or use the same batch command with `-executeMethod LucidLoop.Gyms.Editor.IosBuild.ExportDevelopment` and a separate export log. Review enabled scenes first: this method follows the shared build list, which initially contains the two gyms.
+After activation, export through **Lucid Loop → iOS → Export development Xcode project**, or use the same batch command with `-executeMethod LucidLoop.Gyms.Editor.IosBuild.ExportDevelopment` and a separate export log. Review enabled scenes first: this method follows the shared build list, currently containing only `BeforeTheDrop`.
 
-The local Windows Unity 6000.3.24f1 installation contains `Editor/Data/PlaybackEngines/iOSSupport`, including ARM64, IL2CPP, Xcode-project support libraries and the iOS build program. This confirms module files exist; Unity's `BuildPipeline.IsBuildTargetSupported` and an actual export still need to pass. Compile/sign/install the generated Xcode project on a supported macOS/Xcode environment with the project's Apple development identity and provisioning. See Unity's [iOS environment setup](https://docs.unity3d.com/6000.0/Documentation/Manual/ios-environment-setup.html).
+The local Windows Unity 6000.3.24f1 installation contains `Editor/Data/PlaybackEngines/iOSSupport`, including ARM64, IL2CPP, Xcode-project support libraries and the iOS build program. Target activation and development export passed; see the verification status below. Compile/sign/install the generated Xcode project on a supported macOS/Xcode environment with the project's Apple development identity and provisioning. See Unity's [iOS environment setup](https://docs.unity3d.com/6000.0/Documentation/Manual/ios-environment-setup.html).
 
 Device acceptance must measure sustained frame rate, memory, safe-area layout, touch navigation, microphone permission, networking, audio/lip-sync and interruption/background cleanup on iPhone 15 Plus. The 16:9 layout reference must adapt to the phone's actual aspect ratio and safe area; do not force a 16:9 device framebuffer.
 

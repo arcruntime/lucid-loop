@@ -65,6 +65,12 @@ namespace LucidLoop.Gyms.Editor
             "LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.ApproachStartsConversationOnlyAfterServerEligibility"
         });
 
+        [MenuItem("Lucid Loop/Validate audio device PlayMode smoke")]
+        public static void RunAudioDevicePlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "audio-device-playmode", "AUDIO_DEVICE_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterAudioDevicePlayModeTests.DeviceChangeStopsPlaybackAndClosesWithoutAutomaticReconnect"
+        });
+
         static void Run(TestMode mode, string assembly, string filename, string marker, string[] groups = null, string[] testNames = null)
         {
             if (runner != null || EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode)
