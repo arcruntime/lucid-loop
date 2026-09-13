@@ -4,9 +4,9 @@ Two playable Unity gyms are implemented: an offline nightclub for movement and c
 
 **Try them:** open `Unity/` in Unity 6000.3.24f1, load `Assets/Gyms/Scenes/CharacterGym.unity`, and press Play. Click/tap to walk, hold a character to approach and talk, and use the top-right button to switch gyms.
 
-**Builds:** [Unity builds on GitHub Actions](https://github.com/arcruntime/lucid-loop/actions/workflows/unity-builds.yml) is configured for every push to `main`, same-repository pull requests, daily at 03:17 JST, and manual runs. Successful runs publish a Windows ZIP and a macOS app tarball, with commit IDs and SHA-256 checksums. Download them from the run's **Artifacts** section; diagnostics are uploaded on failures too.
+**Builds:** [Unity builds on GitHub Actions](https://github.com/arcruntime/lucid-loop/actions/workflows/unity-builds.yml) is configured for every push to `main`, same-repository pull requests, daily at 03:17 JST, and manual runs. Successful runs publish a Windows ZIP with a commit ID and SHA-256 checksum. Mac builds are deferred. Download them from the run's **Artifacts** section; diagnostics are uploaded on failures too.
 
-**CI provisioning is pending:** the intended hosts are the Windows VM on stadia-testbed and the Mac mini. Dedicated Lucid Loop runner registration requires repository admin access; both need licensed Unity 6000.3.24f1, and the Mac needs working build storage. No successful remote Unity builds are claimed yet. See [CI setup and host status](docs/CI.md).
+**CI provisioning is pending:** the Windows VM on stadia-testbed needs a dedicated Lucid Loop runner and licensed Unity 6000.3.24f1. Runner registration is waiting on requested repository admin access. Mac provisioning and builds are deferred. No successful remote Unity builds are claimed yet. See [CI setup and host status](docs/CI.md).
 
 ## Project direction
 
@@ -19,7 +19,7 @@ Two playable Unity gyms are implemented: an offline nightclub for movement and c
 ## Context
 
 - Game design source: the Game Design Document, REWIND gameplay concept, and Character Guide sections of the [design document](https://docs.google.com/document/d/1JxbEgu6D5qHtuyGlwKqmO1IJJdrY7MZikN055f87FXA/edit).
-- Exploratory work exists separately at `B:\openai-hackathon-game`.
+- Earlier exploratory work lives in the separate `openai-hackathon-game` repository.
 
 ## Current status
 
@@ -28,7 +28,7 @@ Two gyms are implemented in `Unity/Assets/Gyms/Scenes/`:
 - **CharacterGym**: offline nightclub blockout, tap/click navigation, hold a character to approach and enter a close-up conversation study.
 - **LiveGym**: separate voice studio with character selection, microphone streaming, captions, mute and explicit session close through the project-key backend. No SSO or API key in the Unity client.
 
-Open `Unity/` in Unity Hub, then open `CharacterGym.unity` and press Play. Use the top-right button to switch gyms. The local Windows development build is `Unity/Builds/Windows/LucidLoopGyms.exe`.
+Open `Unity/` in Unity Hub, then open `CharacterGym.unity` and press Play. Use the top-right button to switch gyms. Windows development builds are written to `Unity/Builds/Windows/LucidLoopGyms.exe`.
 
 See [gym setup and validation](docs/gyms.md) and [relay setup](server/README.md). Primitive characters and audio-driven mouth motion are temporary gym fixtures; final expressive character rigs and iPhone performance qualification remain production work.
 

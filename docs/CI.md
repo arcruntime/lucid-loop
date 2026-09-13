@@ -1,12 +1,14 @@
 # Continuous Unity builds
 
-`.github/workflows/unity-builds.yml` builds the two committed gym scenes on every push to `main`, same-repository pull requests, daily at 18:17 UTC (03:17 JST), and manual dispatch. Fork pull requests do not execute on private machines. Windows and Mac jobs run independently; a newer run for the same ref cancels the previous one.
+`.github/workflows/unity-builds.yml` builds the two committed gym scenes on every push to `main`, same-repository pull requests, daily at 18:17 UTC (03:17 JST), and manual dispatch. Fork pull requests do not execute on private machines. Only the Windows job is enabled; Mac builds and provisioning are deferred by user request. A newer run for the same ref cancels the previous one.
 
-Each job runs the EditMode tests, requires a passing XML result, builds a development player with Unity 6000.3.24f1, verifies its expected files, and packages it with `build-info.json` and SHA-256 checksums. Windows gets a ZIP; macOS gets a tarball to preserve executable permissions and symlinks. Download artifacts from the workflow run. Retention is 14 days. Test results, logs and preflight failures are uploaded separately, including on failed jobs. The Mac app is an unsigned development build, not a notarized distribution or an iOS build.
+Each job runs the EditMode tests, requires a passing XML result, builds a development player with Unity 6000.3.24f1, verifies its expected files, and packages it with `build-info.json` and SHA-256 checksums. Windows gets a ZIP. The retained macOS build script produces a tarball to preserve executable permissions and symlinks when that platform is resumed. Download artifacts from the workflow run. Retention is 14 days. Test results, logs and preflight failures are uploaded separately, including on failed jobs. The Mac app is an unsigned development build, not a notarized distribution or an iOS build.
 
 CI builds the versioned scenes without regenerating the nightclub. `GymBuilder` remains the optional authoring tool; `GymCIBuild` is the build-only entry point. Neither client build job receives `OPENAI_API_KEY`. The independent `Gyms` workflow tests the backend and retains its explicitly opt-in upstream smoke check.
 
 ## Runner contract
+
+Provision Windows now. Mac requirements below are retained for future resumption; no Mac job is scheduled.
 
 Register **additional** repository-scoped runners for `https://github.com/arcruntime/lucid-loop`; preserve the runners serving other repositories. Registration requires repository admin access. Use the installation commands generated in Settings → Actions → Runners.
 
@@ -27,7 +29,7 @@ Optional repository variables `UNITY_EDITOR_WINDOWS` and `UNITY_EDITOR_MACOS` ov
 - The Mac mini is reachable and its Tokyo Retro / MicroProse runner services are active. No Unity editor was found under `/Applications/Unity`; the prior MacMiniOffload volume is not mounted. Internal data storage has about 2.4 GiB free. The earlier hackathon runner points to that unavailable volume.
 - The connected `jethac` GitHub account has push but not admin/maintain access to Lucid Loop; the runner API returns 403. Runner registration and remote builds are pending that access and host provisioning. Existing runner registrations, services and disks were left intact.
 
-Once these prerequisites are met, register the two dedicated runners with the labels above and dispatch **Unity builds**. Confirm both jobs actually run and produce archives before removing the pending notice from the README.
+Once Windows prerequisites are met, register its dedicated runner with the labels above and dispatch **Unity builds**. Confirm the Windows job runs and produces an archive before removing its pending notice from the README. Resume Mac provisioning only when requested, then restore its matrix entry with `platform: macos`, labels `["self-hosted", "macOS", "ARM64", "mac-mini", "lucid-loop"]`, `python: python3`, and `editor_variable: UNITY_EDITOR_MACOS`.
 
 References: [GitHub self-hosted runner setup](https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/add-runners), [Unity command-line reference](https://docs.unity3d.com/6000.3/Documentation/Manual/EditorCommandLineArguments.html).
 

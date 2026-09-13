@@ -28,10 +28,7 @@ jobs:
             labels: '["self-hosted", "Windows", "X64", "stadia-testbed", "lucid-loop"]'
             python: python
             editor_variable: UNITY_EDITOR_WINDOWS
-          - platform: macos
-            labels: '["self-hosted", "macOS", "ARM64", "mac-mini", "lucid-loop"]'
-            python: python3
-            editor_variable: UNITY_EDITOR_MACOS
+          # macOS builds are deferred; see docs/CI.md before restoring this lane.
     runs-on: ${{ fromJSON(matrix.labels) }}
     timeout-minutes: 90
     defaults:
