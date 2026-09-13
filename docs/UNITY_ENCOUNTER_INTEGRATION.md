@@ -20,6 +20,8 @@ The integrated scene is `Unity/Assets/Gyms/Scenes/BeforeTheDrop.unity`. `Encount
 
 `GymRoot` retains the project's hierarchy DI foundation and 30-fps request. Gyms has one-way references to `LucidLoop.LiveSpeech` and `LucidLoop.CharacterArt`; the artist runtime does not need a reverse dependency. Keep body and facial ownership in the artist's driver rather than adding competing graphs or direct blendshape writes from HUD/network code.
 
+Mood strings are exactly `Intimate` and `Aggressive` throughout public snapshots and the coordinator event. The presenter now matches those values; lowercase comparisons previously prevented accepted transitions. Its PlayMode test feeds valid coordinator snapshots and verifies both track volumes and light transitions, as recorded in the validation ledger.
+
 ## Authoritative world, approach and loop behavior
 
 [encounter-world.mjs](../server/src/encounter-world.mjs) owns the planar club geometry, obstacle-aware routes, player/NPC positions, recognition observations, conversation eligibility and physical encounter staging. The server advances movement and scenario time at 10 Hz with bounded catch-up; Unity interpolates accepted frames. This is a versioned approximation of the rendered club, not proof that every final mesh collider matches the plan. Keep the world manifest and scene geometry aligned when layout changes.

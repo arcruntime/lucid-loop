@@ -70,8 +70,8 @@ namespace LucidLoop.Gyms
         void OnMood(string mood)
         {
             // Unknown state retains the last valid mood. Initial demo mood is aggressive.
-            if (mood == "intimate") targetIntimacy = 1;
-            else if (mood == "aggressive") targetIntimacy = 0;
+            if (mood == "Intimate") targetIntimacy = 1;
+            else if (mood == "Aggressive") targetIntimacy = 0;
         }
 
         void OnPause(bool value)
