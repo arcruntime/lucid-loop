@@ -23,17 +23,24 @@ checks = {
     "standalone_test_excluded": "LLVoiceRingTests.cpp" not in project,
 }
 files = {}
+source_byte_identity = {}
 for name in ("LLVoice.h", "LLVoiceRing.h", "LLVoice.mm"):
     source = root / "Unity/Assets/Gyms/Plugins/iOS" / name
     exported = args.export / "Libraries/Gyms/Plugins/iOS" / name
     files[name] = hashlib.sha256(exported.read_bytes()).hexdigest()
-    checks[f"current_source_{name}"] = source.read_bytes() == exported.read_bytes()
+    source_bytes, exported_bytes = source.read_bytes(), exported.read_bytes()
+    source_byte_identity[name] = source_bytes == exported_bytes
+    # Git checks out LF on hosted macOS, while the Windows export preserves CRLF.
+    # Compare textual source after that conversion only; retain raw hashes below.
+    checks[f"current_source_{name}"] = source_bytes.replace(b"\r\n", b"\n") == exported_bytes.replace(b"\r\n", b"\n")
 generated = "\n".join(p.read_text(encoding="utf-8-sig") for p in
                       (args.export / "Il2CppOutputProject/Source/il2cppOutput").glob("LucidLoop.Gyms*.cpp"))
 checks["generated_bindings"] = all(f"LLVoice_{name}" in generated for name in
     ("Start", "Stop", "SetCaptureEnabled", "ReadCapture", "WriteOutput",
      "GetConsumedOutput", "GetQueuedOutput", "GetStarved", "GetStatus"))
 report = {"scope": "Unity export packaging only", "checks": checks,
+          "source_comparison": "Textual source with CRLF normalized to LF only",
+          "source_byte_identity": source_byte_identity,
           "exported_sha256": files, "checks_apple_compilation": False, "checks_device_behavior": False}
 if args.output:
     args.output.parent.mkdir(parents=True, exist_ok=True)

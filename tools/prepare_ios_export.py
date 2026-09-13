@@ -79,7 +79,8 @@ def pack(export, output):
         "scope": "Unsigned exported application compilation; no signing or device acceptance",
     }
     (output / "export-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(manifest, indent=2))
+    print(json.dumps({key: value for key, value in manifest.items() if key != "dirty_unity_worktree"}, indent=2))
+    print("Dirty Unity source entries recorded:", len(dirty))
 
 
 def validate_members(members):

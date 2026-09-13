@@ -29,7 +29,7 @@ python3 tools/prepare_ios_export.py verify \
   --destination "$RUNNER_TEMP/ios-export"
 ```
 
-The native packaging checker then compares the exported native files and generated bindings against the matching checked-out sources. Keep the selected workflow ref unchanged while packaging and dispatching; a source-commit mismatch must fail rather than silently build another revision.
+The native packaging checker then compares the exported native files and generated bindings against the matching checked-out sources. Text comparison normalizes CRLF to LF because Windows exports and hosted Mac Git checkouts use different line endings; raw exported hashes and byte-identity results remain in the report. Keep the selected workflow ref unchanged while packaging and dispatching; a source-commit mismatch must fail rather than silently build another revision.
 
 ## Transfer isolation
 
