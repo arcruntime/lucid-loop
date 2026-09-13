@@ -12,6 +12,8 @@ The complete prevention route has passed [real-provider CI](https://github.com/j
 
 Select a character and tap **Walk & talk** to walk to a server-chosen speaking position and begin talking once in range; nearby characters show **Talk**. You can cancel or tap elsewhere to walk. Conversation feedback reports whether a requested action was accepted; **Leave** resumes the night and any agreed character movement.
 
+Successful mediation now confirms Theo's admission and Maya's choice to leave with the player, keeping her evidence. Luca receives that authored outcome for his response; the participants remember it until rewind. Separation and surviving the set are still required for victory. See the [demo scenario](docs/DEMO_SCENARIO.md).
+
 The player has a green overhead beacon. NPC speech bubbles show speaking availability: dim when out of range, outlined when available, and filled for an available selected character. See the [phone-layout capture](docs/images/encounter/interaction-markers.png).
 
 Accepted mood changes now correctly update music and lighting. A protocol-casing regression was reproduced and fixed; the [validation ledger](docs/IMPLEMENTATION_VALIDATION.md) records the before/after checks.

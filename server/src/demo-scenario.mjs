@@ -7,6 +7,7 @@ export function createDemoDefinition(id = 'before-the-drop-demo') {
     facts: {
       affair_seen: { text: 'Theo is having an affair with the person beside him at the VIP seating.' },
       exposure_fear: { text: 'Luca personally heard Theo demand that the affair stay out of public view.' },
+      private_exchange: { text: 'With Luca mediating, Theo admitted the affair. Maya chose to leave with the player, keeping her evidence. Maya and Theo are now separating; safety still requires distance and reaching the end of the set.' },
       shove_seen: { text: 'Theo shoved Luca while reaching for Maya’s phone; Luca fell backward against the low VIP table.' },
       safe_exchange: { text: 'Maya and Theo completed a private exchange, kept their distance, and separated with Luca mediating.' },
     },
@@ -31,6 +32,7 @@ export function createDemoDefinition(id = 'before-the-drop-demo') {
 export function createDemoScenario(definition = createDemoDefinition(), { durationSeconds = 180 } = {}) {
   if (!Number.isFinite(durationSeconds) || durationSeconds < 30 || durationSeconds > 900) throw new TypeError('Invalid demo duration');
   const base = createEncounter(definition);
+  const privateExchangeText = definition.facts?.private_exchange?.text;
   let revision = 0;
   let local;
   function initialize() {
@@ -151,7 +153,13 @@ export function createDemoScenario(definition = createDemoDefinition(), { durati
         // Explain observable remaining conditions only after all private social gates pass.
         if (s.mood !== 'Intimate') return reject('calmer_music_needed');
         if (!local.stage.allInMediation) return reject('mediation_group_not_ready');
+        const text = privateExchangeText;
+        if (typeof text !== 'string' || !text) return reject('unavailable_authored_fact');
+        const learned = learn('private_exchange', ['player', 'maya', 'theo', 'luca'], 'witnessed_private_exchange');
+        if (!learned.accepted) return reject(learned.reason);
         local.mediated = true;
+        requests.add(command.requestId); evaluate();
+        return commit('mediation_completed', { factId: 'private_exchange', text });
       }
       else return reject('authored_policy_refused');
       requests.add(command.requestId); evaluate(); return commit('scenario_action_committed');

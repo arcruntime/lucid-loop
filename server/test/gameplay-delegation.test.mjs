@@ -218,7 +218,10 @@ test('demo disclosure speaks only the committed authored fact and route acknowle
   registry.trustedWorld(credentials, 'observeStage', { ...registry.publicState(credentials).snapshot, stage: { allInMediation: true } });
   const mediation = await act('luca', 'mediate');
   assert.equal(mediation.result.committed, true);
-  assert.match(mediation.sent.at(-1).content, /accepted the private mediation/);
+  assert.equal(mediation.sent.at(-1).type, 'session.commentary.append');
+  assert.match(mediation.sent.at(-1).content, /Theo admitted the affair/);
+  assert.match(mediation.sent.at(-1).content, /Maya chose to leave with the player/);
+  assert.ok(Buffer.byteLength(mediation.sent.at(-1).content) <= 400);
   assert.equal(registry.publicState(credentials).snapshot.victory, false);
 });
 

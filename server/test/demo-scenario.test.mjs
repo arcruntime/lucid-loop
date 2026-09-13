@@ -97,6 +97,33 @@ test('exposure proposal cannot select arbitrary facts, bypass mood, replay, or i
   assert.equal(f.action('luca', 'ask_about_exposure', { requestId: 'exposure' }).reason, 'duplicate_request');
 });
 
+test('private exchange is confirmed only for participants after mediation and resets NPC knowledge', () => {
+  const f = fixture();
+  const knows = npc => f.game.context(npc).knownFacts.some(fact => fact.factId === 'private_exchange');
+  f.action('ren', 'request_music', { mood: 'Intimate' });
+  f.action('luca', 'ask_about_exposure');
+  f.action('maya', 'agree_private_approach'); f.recognize();
+  f.action('theo', 'agree_distance'); f.action('maya', 'stop_recording');
+  assert.equal(f.action('luca', 'mediate').accepted, false);
+  for (const npc of ['maya', 'theo', 'luca', 'ren']) assert.equal(knows(npc), false);
+  f.invoke('observeStage', { stage: { allInMediation: true } });
+  const result = f.action('luca', 'mediate', { factId: 'safe_exchange', text: 'Everyone forgave Theo.' });
+  assert.equal(result.accepted, true);
+  assert.equal(result.event.type, 'mediation_completed');
+  assert.equal(result.event.factId, 'private_exchange');
+  assert.match(result.event.text, /Theo admitted the affair/);
+  assert.match(result.event.text, /Maya chose to leave with the player/);
+  assert.doesNotMatch(result.event.text, /forgave/);
+  for (const npc of ['maya', 'theo', 'luca']) assert.equal(knows(npc), true);
+  assert.equal(knows('ren'), false);
+  assert.equal(f.game.snapshot().phase, 'separating');
+  assert.equal(f.game.snapshot().victory, false);
+  assert.ok(!f.game.snapshot().playerDiscoveries.some(fact => fact.factId === 'safe_exchange'));
+  f.invoke('reset', {});
+  for (const npc of ['maya', 'theo', 'luca', 'ren']) assert.equal(knows(npc), false);
+  assert.ok(f.game.snapshot().playerDiscoveries.some(fact => fact.factId === 'private_exchange'));
+});
+
 test('actor spoofing, stale revisions, invalid clock and incomplete separation are rejected or lose', () => {
   const f = fixture(); const stale = f.command({ seconds: 1, paused: false });
   f.action('maya', 'wait');

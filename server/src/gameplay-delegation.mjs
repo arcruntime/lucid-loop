@@ -180,7 +180,6 @@ export function createGameplayDelegation({ registry, credentials, leaseId, model
             agree_private_approach: 'Maya has agreed to approach Theo privately instead of making a public accusation.',
             agree_distance: 'Theo has agreed to keep his distance and not grab Maya’s phone.',
             stop_recording: 'Maya has stopped recording. She keeps the evidence already captured.',
-            mediate: 'Luca has accepted the private mediation. Maya and Theo are separating.',
           };
           content = summaries[command.type];
           if (command.type === 'ask_about_exposure') {
@@ -188,6 +187,11 @@ export function createGameplayDelegation({ registry, credentials, leaseId, model
             const fact = outcome.event;
             if (fact?.type === 'clue_disclosed' && fact.factId === 'exposure_fear' && typeof fact.text === 'string') content = `Luca’s confirmed personal observation: ${fact.text}`;
             else { type = 'session.thinking.append'; content = 'The server accepted the disclosure request, but its fact text is unavailable. Do not invent the observation.'; }
+          }
+          if (command.type === 'mediate') {
+            const fact = outcome.event;
+            if (fact?.type === 'mediation_completed' && fact.factId === 'private_exchange' && typeof fact.text === 'string') content = `Luca’s confirmed mediation outcome: ${fact.text}`;
+            else { type = 'session.thinking.append'; content = 'The server accepted mediation, but the authored exchange is unavailable. Do not invent admissions, forgiveness or a victory.'; }
           }
         }
       } else if (intent.kind === 'clarification') {
