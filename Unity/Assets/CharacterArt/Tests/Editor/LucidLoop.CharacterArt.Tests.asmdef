@@ -1,0 +1,13 @@
+{
+  "name": "LucidLoop.CharacterArt.Tests",
+  "references": [
+    "LucidLoop.CharacterArt",
+    "LucidLoop.CharacterArt.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "LucidLoop.CharacterArt.PlayModeTests",
+  "references": [
+    "LucidLoop.CharacterArt"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ]
+}
