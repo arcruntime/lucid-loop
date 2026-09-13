@@ -148,7 +148,7 @@ namespace LucidLoop.Gyms
             if (reset) reset.interactable = Coordinator.IsReady && (Coordinator.State.Phase == "catastrophe" || Coordinator.State.Phase == "unresolved" || Coordinator.State.Phase == "victory");
             if (pause) pause.interactable = Coordinator.IsReady;
             if (openingRoute) openingRoute.interactable = Coordinator.IsReady && !Coordinator.IsPaused && Coordinator.State.LoopIndex == 1 &&
-                Coordinator.State.Phase != "catastrophe" && Coordinator.State.Phase != "unresolved" && Coordinator.State.Phase != "victory";
+                Coordinator.State.Phase == "exploring";
             if (talk)
             {
                 Coordinator.ConversationEligibility(SelectedNpcId, out var eligible, out var reason);
@@ -157,6 +157,7 @@ namespace LucidLoop.Gyms
             }
             if (Coordinator.PendingConversationNpc != null && guidance) guidance.text = "Walking to " + Coordinator.PendingConversationNpc + ". Talk opens when you arrive. Tap the floor or Cancel to change your mind.";
             else if (Voice && (Voice.IsReady || Voice.IsConnecting) && guidance) guidance.text = "The night is paused while you talk. Tap Leave to resume movement and let actions take effect.";
+            else if (guidance && Coordinator.State.HasSnapshot) guidance.text = PhaseGuidance(Coordinator.State);
             ReadFloorTap();
             if (Voice && mic && microphoneEnabled != Voice.MicrophoneEnabled && !Voice.IsConnecting)
             { microphoneEnabled = Voice.MicrophoneEnabled; mic.GetComponentInChildren<Text>().text = microphoneEnabled ? "Mic on" : "Mic off"; }
@@ -277,12 +278,7 @@ namespace LucidLoop.Gyms
             if (!stateLabel) return;
             stateLabel.text = state.HasSnapshot ? "LOOP " + state.LoopIndex + "   ·   " + state.Mood : "Connect to begin";
             if (state.HasSnapshot) ShowWorldTime((float)state.ElapsedSeconds);
-            if (guidance && state.HasSnapshot)
-                guidance.text = state.Phase == "catastrophe" ? "The encounter ended in disaster. Rewind to try a different approach; your discovered clues remain." :
-                    state.Phase == "victory" ? "You resolved the confrontation and reached the end of the set." :
-                    state.Phase == "unresolved" ? "The set ended without resolving the danger. Rewind and try another approach." :
-                    state.LoopIndex == 1 ? "Walk with Maya toward Theo in the VIP area on the right. Tap the floor or use Walk toward Theo to begin the approach." :
-                    "Try a different approach. The left route gives you time to talk to Luca, ask Maya to wait, or request music from Ren.";
+            if (guidance && state.HasSnapshot) guidance.text = PhaseGuidance(state);
             var clues = new StringBuilder();
             foreach (var clue in state.PlayerDiscoveries)
             {
@@ -290,6 +286,26 @@ namespace LucidLoop.Gyms
                 if (clues.Length > 0) clues.Append('\n'); clues.Append(text);
             }
             clueLabel.text = clues.Length == 0 ? "None yet" : clues.ToString();
+        }
+        static string PhaseGuidance(EncounterClientState state)
+        {
+            switch (state.Phase)
+            {
+                case "catastrophe": return "Luca has fallen. Rewind to try another approach; your discovered clues remain.";
+                case "victory": return "You resolved the confrontation and reached the end of the set.";
+                case "unresolved": return "The set ended without resolving the danger. Rewind and try another approach.";
+                case "separating": return "Maya is coming with you. Walk away from Theo so they can separate; leave conversation to let them move.";
+                case "resolved": return "They have separated. Let the set finish; talking pauses the clock.";
+                case "recording": return "Maya is recording. Select someone and Talk to respond; conversation pauses the night.";
+                case "theo_approaching":
+                case "phone_dispute":
+                case "luca_intervening":
+                    return state.Recording ? "The confrontation is escalating. Talk to someone nearby; conversation pauses the night." :
+                        "The recording has stopped. Talk to Luca about helping them settle this calmly.";
+                default: return state.LoopIndex == 1 ?
+                    "Walk with Maya toward Theo in the VIP area on the right. Tap the floor or Walk toward Theo." :
+                    "Try the left route: talk to Luca, ask Maya to wait, or request music from Ren. Review your clues.";
+            }
         }
         // Parent's authoritative-world adapter supplies elapsed time; this HUD does not run a game clock.
         public void ShowWorldTime(float elapsedSeconds)

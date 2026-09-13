@@ -42,6 +42,24 @@ test('only explicit typed or client-delegation triggers are accepted, never tran
   assert.equal(JSON.parse(request.input[1].content).request.delegationId, 'item_1');
 });
 
+test('interpreter receives only the selected NPC own-state projection, never the scenario record', () => {
+  const encounter = createDemoScenario(createDemoDefinition());
+  assert.equal(encounter.observeVisibility({ loopId: encounter.snapshot().loopId,
+    revision: encounter.snapshot().revision, observerId: 'maya', inRecognitionArea: true,
+    visibleActorIds: ['theo', 'affair_partner'] }).accepted, true);
+  for (const npcId of ['maya', 'theo', 'luca', 'ren']) {
+    const context = { ...encounter.context(npcId), scenario: encounter.snapshot().scenario };
+    const request = buildIntentRequest({ model: 'configured-backend', context, trigger: typed });
+    const projected = JSON.parse(request.input[1].content).context;
+    assert.deepEqual(projected.ownState, context.ownState);
+    assert.equal(Object.hasOwn(projected, 'scenario'), false);
+    assert.equal(Object.hasOwn(projected.ownState, 'recording'), npcId === 'maya');
+    assert.equal(Object.hasOwn(projected.ownState, 'privateApproachAgreed'), npcId === 'maya');
+    assert.equal(Object.hasOwn(projected.ownState, 'distanceAgreed'), npcId === 'theo');
+    assert.equal(Object.hasOwn(projected.ownState, 'mediationAccepted'), npcId === 'luca');
+  }
+});
+
 test('history is filtered to the NPC and loop and timed fragments stay verbatim', () => {
   const context = createEncounter().context('maya');
   const fragment = { npcId: 'maya', loopId: context.loopId, sessionId: 'live_1', eventId: 'event_1',

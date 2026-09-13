@@ -18,6 +18,10 @@ Accepted mood changes now correctly update music and lighting. A protocol-casing
 
 **Pause** closes the current conversation and opens a menu with Resume, Settings, Controls and Main Menu. Settings saves music volume on this device. Main Menu returns to connection setup while preserving the resumable night. Resume continues the world without reopening voice; reconnecting restores the server's pause state. Starting a new night starts unpaused. Quit is desktop-only.
 
+Encounter guidance follows the current phase: it explains responding to the confrontation, walking away after mediation and letting the set finish after separation. The opening shortcut is available only before first-loop recognition. Guidance does not reveal undiscovered clues or declare victory before the server does.
+
+Reopening a conversation now supplies that NPC's own accepted commitments: Maya's private approach and recording state, Theo's distance agreement, or Luca's mediation. Rewind clears these commitments; other characters' private agreements stay out of the context.
+
 A [real spoken-input test](https://github.com/jethac/lucid-loop/actions/runs/34779053805) also passed: streamed synthetic speech triggered native Live delegation and a confirmed game action without a typed command. Physical microphone, interruption and conversational-quality acceptance remain separate checks.
 
 The [spoken correction test](https://github.com/jethac/lucid-loop/actions/runs/34779808422) also passed: a pending wait request was reinterpreted as follow, with no stale wait action committed. This test deliberately controls response timing; it does not measure natural interruption latency.

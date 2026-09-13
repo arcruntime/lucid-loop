@@ -261,9 +261,11 @@ The original sequence has been substantially implemented; it is not a queue of u
 | Unity integration | Separate club scene, interpolated world frames, explicit approach intent/cancellation, compact phone HUD, scrolling clues/history, mood and primitive recording/fall/reset | Full reference marker/menu fidelity, device keyboard/touch and camera/framing polish |
 | Authored encounter completion | Real-provider test reaches witnessed catastrophe, rewind, legal prevention, mediation, separation and the 180-active-second end predicate | The same full route through physical iPhone input/audio; authored visual acting |
 | Character/animation | Download provenance; shared-rig/body/face contracts and character runtime tests; primitive encounter fallback | Reviewed clip-to-action mapping on both rigs, missing recording/intervention, final contacts and expressive/bilingual acceptance |
-| Device/audio delivery | iOS project export and inspected native packaging; Apple arm64 plugin compile/link and portable CI; controller cleanup checks | Complete Unity app compile/sign/install, physical iPhone AEC/route/latency/network/thermal/performance evidence |
+| Device/audio delivery | iOS project export and inspected native packaging; full unsigned arm64 Unity app compile/link in hosted Xcode CI; controller cleanup checks | Sign/install/launch, physical iPhone AEC/route/latency/network/thermal/performance evidence |
 
 Use [IMPLEMENTATION_VALIDATION.md](IMPLEMENTATION_VALIDATION.md) as the evidence ledger. Coordinate shared-scene and generated-art edits through the `lucid-loop` bus; character import remains artist-owned. Passing tests does not transfer that ownership or establish final visual acceptance.
+
+Conversation reconstruction includes an explicit per-NPC `ownState` projection: Maya receives `recording` and `privateApproachAgreed`, Theo receives `distanceAgreed`, Luca receives `mediationAccepted`, and Ren receives an empty object. These are server-confirmed self-state, not model memory or access to the full scenario. The Live startup and intent interpreter receive the same projection; rewind clears it while retaining player discoveries.
 
 ## 10. Acceptance matrix and current evidence boundary
 
@@ -301,7 +303,7 @@ The following are settled demo decisions, not unresolved source questions:
 | Remaining gap | Concrete required work / boundary |
 | --- | --- |
 | Final action animation and staging | Artist-reviewed canonical-rig imports, recording/phone and intervention/shove/fall contacts, held death/reset behavior and clear silhouettes. Primitive tests are not final animation acceptance |
-| Physical iPhone acceptance | Compile/sign/install the complete app; test LAN connection, landscape safe area/keyboard/touch, route changes, microphone privacy/muting, double talk/AEC and full prevention input flow |
+| Physical iPhone acceptance | Sign/install/launch the compiled app; test LAN connection, landscape safe area/keyboard/touch, route changes, microphone privacy/muting, double talk/AEC and full prevention input flow |
 | Performance and sound quality | Measure sustained 30 fps, thermal behavior, latency/buffering and intelligibility with club music; native same-engine NPC output does not guarantee cancellation of Unity's separate background music |
 | Bilingual facial performance | Accepted Japanese speech producer and combined English/Japanese face/body expressive review; current English/runtime tests do not settle bilingual quality |
 | UI/reference fidelity | Validate physical-device marker/beacon readability, pause Settings/Controls/navigation and final conversation framing; finish people/object distinctions when authored objects are available |

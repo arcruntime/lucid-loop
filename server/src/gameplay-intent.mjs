@@ -35,7 +35,7 @@ function projectContext(context) {
   // Only the approved NPC projection fields cross into the interpreter. No world snapshot.
   const result = {};
   for (const key of ['npcId', 'loopId', 'revision', 'mood', 'role', 'objective', 'personality',
-    'beliefs', 'secrets', 'permittedLies', 'disclosureRules', 'action', 'knownFacts', 'claims']) {
+    'beliefs', 'secrets', 'permittedLies', 'disclosureRules', 'action', 'knownFacts', 'claims', 'ownState']) {
     if (Object.hasOwn(context, key)) result[key] = structuredClone(context[key]);
   }
   if (JSON.stringify(result).length > 24000) fail('context_too_large');

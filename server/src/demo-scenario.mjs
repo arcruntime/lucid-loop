@@ -110,7 +110,12 @@ export function createDemoScenario(definition = createDemoDefinition(), { durati
     snapshot,
     context(npcId) {
       const c = base.context(npcId);
-      return { ...c, revision, action: snapshot().actors[npcId].action };
+      // Only this character's own behavior and accepted commitments survive a
+      // conversation switch. Never attach the private scenario record here.
+      const ownState = npcId === 'maya' ? { recording: local.recording, privateApproachAgreed: local.privatePlan }
+        : npcId === 'theo' ? { distanceAgreed: local.distanceAccepted }
+        : npcId === 'luca' ? { mediationAccepted: local.mediated } : {};
+      return { ...c, revision, action: snapshot().actors[npcId].action, ownState };
     },
     reset(command) { const outcome = runBase('reset', command); if (outcome.accepted) requests.clear(); return outcome; },
     observeVisibility: command => runBase('observeVisibility', command),

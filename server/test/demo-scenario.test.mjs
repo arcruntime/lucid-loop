@@ -107,3 +107,37 @@ test('actor spoofing, stale revisions, invalid clock and incomplete separation a
   assert.equal(f.game.snapshot().scenario.separated, false);
   assert.equal(f.invoke('observeStage', { stage: { invented: true } }).reason, 'invalid_stage');
 });
+
+test('own commitments persist in fresh NPC context without crossing character or loop boundaries', () => {
+  const f = fixture();
+  const initial = {
+    maya: { recording: false, privateApproachAgreed: false },
+    theo: { distanceAgreed: false }, luca: { mediationAccepted: false }, ren: {},
+  };
+  for (const [npcId, expected] of Object.entries(initial)) assert.deepEqual(f.game.context(npcId).ownState, expected);
+  assert.equal(f.action('maya', 'agree_private_approach').accepted, false);
+  assert.deepEqual(f.game.context('maya').ownState, initial.maya);
+  assert.equal(f.action('ren', 'request_music', { mood: 'Intimate' }).accepted, true);
+  assert.equal(f.action('luca', 'ask_about_exposure').accepted, true);
+  assert.equal(f.action('maya', 'agree_private_approach').accepted, true);
+  assert.equal(f.recognize().accepted, true);
+  assert.deepEqual(f.game.context('maya').ownState, { recording: true, privateApproachAgreed: true });
+  assert.equal(f.action('theo', 'agree_distance').accepted, true);
+  assert.equal(f.action('maya', 'stop_recording').accepted, true);
+  assert.equal(f.invoke('observeStage', { stage: { allInMediation: true } }).accepted, true);
+  assert.equal(f.action('luca', 'mediate').accepted, true);
+  const committed = {
+    maya: { recording: false, privateApproachAgreed: true },
+    theo: { distanceAgreed: true }, luca: { mediationAccepted: true }, ren: {},
+  };
+  for (const [npcId, expected] of Object.entries(committed)) {
+    const context = f.game.context(npcId);
+    assert.deepEqual(context.ownState, expected);
+    assert.equal(Object.hasOwn(context, 'scenario'), false);
+    context.ownState.injected = true;
+    assert.deepEqual(f.game.context(npcId).ownState, expected);
+  }
+  assert.equal(f.invoke('reset', {}).accepted, true);
+  for (const [npcId, expected] of Object.entries(initial)) assert.deepEqual(f.game.context(npcId).ownState, expected);
+  assert.ok(f.game.snapshot().playerDiscoveries.some(d => d.factId === 'exposure_fear'));
+});

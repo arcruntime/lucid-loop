@@ -122,7 +122,7 @@ namespace LucidLoop.Gyms.PlayModeTests
             Assert.That(Vector3.Distance(start["theo"], actors["theo"].transform.position), Is.GreaterThan(.25f), "Theo did not visibly approach.");
             Assert.That(Vector3.Distance(start["luca"], actors["luca"].transform.position), Is.GreaterThan(1f), "Luca did not visibly intervene.");
             Assert.That(phases, Does.Contain("recording").And.Contain("theo_approaching").And.Contain("luca_intervening"));
-            Assert.That(VisibleHudText(), Does.Contain("disaster"));
+            Assert.That(VisibleHudText(), Does.Contain("Luca has fallen").And.Contain("Rewind"));
             Assert.That(coordinator.State.PlayerDiscoveries.Count, Is.GreaterThan(0));
             var clueIds = coordinator.State.PlayerDiscoveries.Select(c => (string)c["factId"]).ToArray();
             Assert.That(clueIds, Does.Contain("shove_seen"));

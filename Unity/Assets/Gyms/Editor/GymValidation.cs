@@ -90,6 +90,12 @@ namespace LucidLoop.Gyms.Editor
             "LucidLoop.Gyms.PlayModeTests.EncounterTypographyPlayModeTests.BundledJapaneseFontRendersPhoneConversation"
         });
 
+        [MenuItem("Lucid Loop/Validate encounter guidance PlayMode smoke")]
+        public static void RunGuidancePlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "guidance-playmode", "GUIDANCE_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterGuidancePlayModeTests.GuidanceFollowsPhaseAndDoesNotDeclareEarlyVictory"
+        });
+
         static void Run(TestMode mode, string assembly, string filename, string marker, string[] groups = null, string[] testNames = null)
         {
             if (runner != null || EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode)
