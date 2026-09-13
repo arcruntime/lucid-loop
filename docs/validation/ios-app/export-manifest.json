@@ -1,0 +1,990 @@
+{
+  "schema": 1,
+  "source_commit": "2780ff50a095a4269fa94e769008ca38b9535d2b",
+  "unity_version": "6000.3.24f1",
+  "created_utc": "2026-09-13T21:44:18.813694+00:00",
+  "archive": "ios-xcode.tar.gz",
+  "archive_root": "Xcode",
+  "archive_sha256": "d7325558cfed8ac11d89936c4cc94ddf6882d9fb930bdf2f796047d9e808888b",
+  "file_count": 3137,
+  "uncompressed_bytes": 1354453056,
+  "project_sha256": "8316cd2014183ed18bd13176b9a638dda4602cb8e9dec6d172128d41b7c5b18a",
+  "reviewed_shell_sha256": "4e28832057770f09bb7edd09691a2bf8fc713edebee885b2cda78882292c9344",
+  "dirty_unity_worktree": [
+    {
+      "path": "Unity/Assets/CharacterArt/Animations.meta",
+      "sha256": "7fb94a1ba858ffd2d2a892f54495083ffff490169aa5453ea36abec3effd918c"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/luca.meta",
+      "sha256": "dd6f53614f806f2bde6bbecf7eec1341b7eee536af8a173c3dcca464426e24f0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/luca/luca_idle.fbx",
+      "sha256": "e3e81b0f4f9a3980989b181752e06bde191c1f953a0e7a6fa9a47cd1af6344a6"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/luca/luca_idle.fbx.meta",
+      "sha256": "1ce9ef6e97019088972671a1d5672f1cc9ee08c7fc680df2c4be3d62f641bd71"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/maya.meta",
+      "sha256": "9c5ff045175b48ddfaa18c846ebdd28016916ccaf7507bd0f432c2a8826cbca1"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/maya/maya_idle.fbx",
+      "sha256": "b98b18dac18aef86903edbc77710f6568b941e4c1e3697feca34ca4fb0f18769"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/maya/maya_idle.fbx.meta",
+      "sha256": "fe3689f0d6089e166ea8478f3a48545a604dcb5367aa61f3e9ecc8f4631c3624"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/ren.meta",
+      "sha256": "feec72dd840b9020964fd39dc450ef90024b314dac7c17a016ff427b3e13f852"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/ren/ren_idle.fbx",
+      "sha256": "4d393ce02f85bd755e79ce850e3f37a7b4aa19ee7a751a544f6682174aef1fd9"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/ren/ren_idle.fbx.meta",
+      "sha256": "73a6c3a1c1f4f1783db58a690aa7012d731cf269ab5451b113d6814fd58a0ede"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/theo.meta",
+      "sha256": "a064ec0bd5417083ae98b18e2fef4a9c4156fb37f79c0d05b0efd289ee6ccf3a"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/theo/theo_idle.fbx",
+      "sha256": "a584fdad14991eeb96d634f556700e94103bbf46609af230a426ff1377dfac0f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Animations/theo/theo_idle.fbx.meta",
+      "sha256": "a39cb6206a8918194a1c07219e6c27032a12fc01ed76b1ef0cdb1b00e671d519"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/CharacterArtAssetPostprocessor.cs",
+      "sha256": "9de5a6703fb3a2c99eeebe3d32ab02deab09bed2c11eca6c7df2d986289c9b32"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/CharacterArtAssetPostprocessor.cs.meta",
+      "sha256": "aeaa997d0005123c99e72065a72cd8a5bf9f548f0d485c2e91777a7ce0df24df"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/CharacterViewerBuilder.cs",
+      "sha256": "a576b1534a47f5bcb1922abb974c272f02d5aa6d2c3f95e47c3af8b78cfa7cf0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/CharacterViewerBuilder.cs.meta",
+      "sha256": "a2fd2bab5acb84cbe9267a3fd3e5a7cd27d2eee71c604f48be1cf2efb9a416d2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/FacialBlendshapeNormals.cs",
+      "sha256": "faac0de2a6f4a74e861998590d2cfc48dbed1137eda7b8973ae6e6b1b309e6aa"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/FacialBlendshapeNormals.cs.meta",
+      "sha256": "0de3801ff4450dcd8eb0cfee7d96c7d67a4f809e568c815322e2d72e6496828f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/MayaBakedMaterialPreview.cs",
+      "sha256": "8f6d93deafd082f59b88ca59075f6cd3638b7b16b280804ad2c0f81cfee36d19"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/MayaBakedMaterialPreview.cs.meta",
+      "sha256": "66d0dffe386bbb0cbbadd9dbec0c023e4ac1c34aabf5416f297a4da34da9fb00"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/ProgressiveBlinkFrames.cs",
+      "sha256": "177307530097a0542de53464830f1ca91634c6f0bf85fff047652f309c540e8c"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/ProgressiveBlinkFrames.cs.meta",
+      "sha256": "c724cda3edea4c9313dd9df0ca485f4ef12f93682aa80c1093cd6222ec81f5fa"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenEyeStudyPreview.cs",
+      "sha256": "cece5080cab7142c69e8557138f17a512915a39c914a179f3dff8931f0d15705"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenEyeStudyPreview.cs.meta",
+      "sha256": "cac71214970ff7b24da56518b14ef9b0f7a526179e2480da407a402a2aeceb2d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceAnimation.md",
+      "sha256": "5ef7e8f024b6c28215dede1cd516277aba3053341dcc3ef995a70965e4e2baef"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceAnimationBuilder.cs",
+      "sha256": "80e8468d9dc789f449537c175993d0b69c064c3c810f76030dab9470170d9a2d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceImportBuilder.cs",
+      "sha256": "89eee05099efa9e67b7bd51b9f80d5c7d0d8f42586f9f0a6bdb02871e28f9723"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Editor/RenHReferenceImportBuilder.cs.meta",
+      "sha256": "39862a0b197c4176d2baa6f9f32af8ce0f86206f0254929df241577eb86fb8d0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Animations.meta",
+      "sha256": "8ad60e3abf0bc7b9da2e896d8a0476eb9caf161f166e64d436aa193e1847b13d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials.meta",
+      "sha256": "f0f43eb1a5910c2fe0874bea56c919b51081a15ac5f371c7b6995434a345a15c"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/Viewer_Pedestal.mat",
+      "sha256": "1df3ca574112326c4b7cca7791985660ef2b6be738554cfe85440bc7454e546d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/Viewer_Pedestal.mat.meta",
+      "sha256": "992378ff7bf2d5905e149dda2fe9d9a69c46282bc1ba94d94b9e567f4b03988f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/Viewer_Pedestal_trim.mat",
+      "sha256": "8c9148249a164ac809823957b9655e6166b7560f2bf1e3ced7394026e4d0b5a2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/Viewer_Pedestal_trim.mat.meta",
+      "sha256": "dd1c7cb70e484bf662537bc5101a5ff5d7410306d3f97d67af595af17a672724"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/Viewer_Stage_floor.mat",
+      "sha256": "cd0432ba6fed0a4dc9eeac318f285d187dc525444f409e62773227e6877d9e34"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/Viewer_Stage_floor.mat.meta",
+      "sha256": "046d8456cc4e2dee7f21b86fc432efec90ec37fb8ad718fc54953f7444339400"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Material_1.mat",
+      "sha256": "327c9998768151a1c1e23818418c6018448286168ad8813acac228998039edc0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Material_1.mat.meta",
+      "sha256": "662c626f38f8009fff7e53eb2bf68369c806626dd379bbe5f346abaabba0568d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Maya_BodyHair_Meshy.mat",
+      "sha256": "275d18d58d15dc3c91de02d049d4724500498975dbe6ac1fa3802f3e31e45601"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Maya_BodyHair_Meshy.mat.meta",
+      "sha256": "f8b35d280b75021fe953ec990fcf57d298eaf02a860a05d456dbd2ac49c38bee"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Maya_Lips.mat",
+      "sha256": "d9b01d5a57bb970c679ee1249aa7c769028677a89bb5d6d2b2e6faff7a8f4eb0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Maya_Lips.mat.meta",
+      "sha256": "fb5e37497d43bacefaf3e764b0485b28213132e10ce88f879c937fde59b1cf97"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Maya_OralInterior.mat",
+      "sha256": "ea1f88edb987f0e18c620a883cb71fdf1956ece5fa9e92eebd40009a2f883413"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Maya_OralInterior.mat.meta",
+      "sha256": "74b18064590702b4f34ab3a6e7be5e90408e575e572fbacd63874a001015aecb"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Maya_Skin.mat",
+      "sha256": "daad10bf754ac01dfe49cade4be682a0ec496db3df6bfbe7e2096ab6f9f707e4"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_Maya_Skin.mat.meta",
+      "sha256": "b7091e96272634aea2adbce97c4518917634c47f67f9988837818fbbd62152d2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_eyebrow001.mat",
+      "sha256": "6e700c875439d00cdc04f1ed10fe6423b8e8389a99b23e010a9720099970f1b0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_eyebrow001.mat.meta",
+      "sha256": "3b333e16a923d6aac2a700e2e0e0818456096cc82b4eae8064ce5c3334d461e9"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_eyelashes01.mat",
+      "sha256": "90308e7e40a2acc9c9f5a1cb024bce2d2b0d6129a839b0fbe8dc727f6163f04b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_eyelashes01.mat.meta",
+      "sha256": "fa8d7e5a42d7495df18c399a6057404eb5b53264e84bc87cde843b1aa68d3b54"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_low-poly.mat",
+      "sha256": "54b96127261a8c8b62525303339aecc7ba88cb9c5d2e43c8808ea39d106c6a1b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_low-poly.mat.meta",
+      "sha256": "d4f097f2e0b97ac8714982108620d5ffd3244660561c56dd20d5ee65b88fc2cb"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_teeth_base.mat",
+      "sha256": "ed366eea93af7f31d0613d8060e5885800fe3a6cea8c77c563f125302753859b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_teeth_base.mat.meta",
+      "sha256": "12e65b0cce7d3d19b4f7b1eeb68c709058906b25e76168f85674aad16d49c379"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_tongue01.mat",
+      "sha256": "212fc15fe7ccb5bfdb9ec9011ba09b35158e66e5223c33b1e5470e3e78f0f672"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Materials/preview_maya_v2_TEMPLATE_IndexedSource_tongue01.mat.meta",
+      "sha256": "23a350f1a2215c391740f92656da87c1f586e18058c7857e1c2e4c3960a07ee9"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Prefabs.meta",
+      "sha256": "7a7033120e44cfec1326439751850b64e5dd4e9608783ce70f746861fa90a9f7"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/BAKED_PREVIEW_REVIEW.md",
+      "sha256": "b099afc10154529d230a84bc1736ff452742f9d51d0c5bc0c23a629cbd30051e"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/BAKED_PREVIEW_REVIEW.md.meta",
+      "sha256": "6555a1b700a2796126b214cd8bf419c9acced137ba3fd3164930fc4bced0b232"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials.meta",
+      "sha256": "daa1fccb4eeebd8ad327240196a9b97de520a6d19a2289745c4331da2c639225"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_BodyHair_0_baked.mat",
+      "sha256": "7baef2637cffd0713a2df09fac43aa538c943ec6771fa9a4ce0af080ab7685a9"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_BodyHair_0_baked.mat.meta",
+      "sha256": "b4c4301f9971e9259bdf8aa0ce9e4e5515ff067081b62ef2ebc11859a6932ef2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_Eyes_0_baked.mat",
+      "sha256": "dbb722640a3e9376e67ec3f6be296343831708990eed13dcc7ca9227974acef6"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_Eyes_0_baked.mat.meta",
+      "sha256": "8d7c69f22a4e5b574bbcd977c0acee9d5fb251bddd18aaf904ae8c83d3e311ab"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_HeadNeck_0_baked.mat",
+      "sha256": "a0382f6aa4e7e77d706bc3de3446435e5077ced34dd901dae241782c98dbb9ce"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_HeadNeck_0_baked.mat.meta",
+      "sha256": "d68bf2b122c8dd50a85681b939a1d427804692fd616d00bb8c17ec948b32c48b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_HeadNeck_1_baked.mat",
+      "sha256": "3d8c6e7fe97e9e37b3c21bfa90127a9858db0641c806337b17df5f91e517ef80"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_HeadNeck_1_baked.mat.meta",
+      "sha256": "be186ea154ada1a33912bf502c045ff723b53972d26be044c403fb2fc5aee83d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_HeadNeck_2_baked.mat",
+      "sha256": "579d05c3d644db680f4a22772389cb24254facf8fcdb3e755036f904f9338d0e"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_HeadNeck_2_baked.mat.meta",
+      "sha256": "414f8eee8af6e28ee82e5ceb7b84cbd4957f7af42cd7a299ffcb89e20a959973"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_Left_RepairedHand_donor_0.mat",
+      "sha256": "2cc4e1200f66db04ab45328c5711220b0dbee603419ac5ffe6619c126206316b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_Left_RepairedHand_donor_0.mat.meta",
+      "sha256": "29bc64a930e65d93509e974adbb0eef49a20c0e62f99e6307e97ea6df939b66a"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_Right_RepairedHand_donor_0.mat",
+      "sha256": "5b7257dd27e2fb88337da95fe97609b1c8f1b4cb148570f47eb5dec0d2b06e5d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Materials/Maya_Right_RepairedHand_donor_0.mat.meta",
+      "sha256": "543537f8e68f843a0e0958342ea852ebd36ec391094184f8a1815af9ff0a7a51"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models.meta",
+      "sha256": "6f2d6cca5722584397a7542da3570894a7387c1194f3139e541c2961787cf78a"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya.meta",
+      "sha256": "d60f78df19cf155cdac8c2493543c2d5045f02a3c8335b5758667cd8180b27e5"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures.meta",
+      "sha256": "fc95f43833b7a1d2c058073406e3aaf4d67b2dfd62896f250c7f89877d8fa6bc"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_BodyHair_basecolor.png",
+      "sha256": "4da55492520885d45402d447da0918fb873ce06531b8f29cee8ee832997ae3f6"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_BodyHair_basecolor.png.meta",
+      "sha256": "b3a0ee690240a6a12d92d165d9ed03655eae06252db06c4e1fdd89520afff50f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_BodyHair_metallic_smoothness.png",
+      "sha256": "154c1aadf95d652d96d7e9ac7650c864ac8636a14163d31bdbbdf87d109ecd4c"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_BodyHair_metallic_smoothness.png.meta",
+      "sha256": "7a777e6b1f4f5bd20f1ac39d8cb4bab0cb768744cdf5827a5d3ecc05d0ac4a53"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_Eyes_basecolor.png",
+      "sha256": "1f0ebf820a1d1cbc93b6f5a8eda991e4f24b4bf56d4c89f2310e22670b917e59"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_Eyes_basecolor.png.meta",
+      "sha256": "b149c4da6dc9dd0219759c38b2393362b0ccdc81a3a062f25ed116c68f668b33"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_Eyes_metallic_smoothness.png",
+      "sha256": "d304086e56a6f35190c4d596322f2f7f4f52bf69719ae0b4c57ddf6dc9511594"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_Eyes_metallic_smoothness.png.meta",
+      "sha256": "6b70f8aa37712d8bc35da3237faa2b016c586d73fb4ec72154a78e7f2f74b927"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_HeadNeck_basecolor.png",
+      "sha256": "99025d3750268d265c85d70f22e113ef6a3faf93d790bbf6a7727a8a0c263116"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_HeadNeck_basecolor.png.meta",
+      "sha256": "f520e12171247cd2a6f6de6b90b45141a60453b7ccedbdd7702a6835734b338c"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_HeadNeck_metallic_smoothness.png",
+      "sha256": "17ce5b48d7d9692cc027ae50abf445ed469bff6d45cf4fbcfd827cf996e84e03"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Maya_HeadNeck_metallic_smoothness.png.meta",
+      "sha256": "3ea591a340a58a9a66d3667d43342547b0a0d989b505796103c751fc793343b3"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Player_DonorHands_basecolor.png",
+      "sha256": "80b3fb4fccb1bd37c9a3ef75868a744c353d8b0f2dac182fcb8c6538dbf142cb"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/BakedTextures/Player_DonorHands_basecolor.png.meta",
+      "sha256": "d925eb53ea846c4964b934924544e1b36b05ea45159bf688ebff92258efd25f4"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/Maya_Eyes_BaseColor.png",
+      "sha256": "82a50dd15e341bcbced97eab48eb5dbeb5eabc14589e597c0fd6faaec266ad75"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/Maya_Eyes_BaseColor.png.meta",
+      "sha256": "c4b2c50034f93c8cb8fc360f5a1c7bd652d47a75e44adc73a4f8d086df6c7277"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/Maya_Face_BaseColor.png",
+      "sha256": "c1f64adcb5d213e73d0a0ccaad58e5ef3ef1ae2fafcdd47cc961cb10deb96249"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/Maya_Face_BaseColor.png.meta",
+      "sha256": "bf91c4a0350abe4691ebf54660577bcfb96a296bd0d976fe491ad4825a587366"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/brown_eye.png",
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/brown_eye.png.meta",
+      "sha256": "2d54dc3419f845fd9027b693b8a76c6bbc78f8ca3a4777fc1deeb20837c77402"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/eyebrow001.png",
+      "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/eyebrow001.png.meta",
+      "sha256": "3772cbb2d18be2d732a200227854050c7144d93bdab310c2639d294b9a48eaf1"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/eyelashes01.png",
+      "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/eyelashes01.png.meta",
+      "sha256": "0c5c058c5638680b62c07edc8737b676c4fe7bc1688c2aa9d0e756527c698319"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/maya_canonical_v2_preview.fbx",
+      "sha256": "dccac254d053b463e6c0755c6f7c6a38e951b80c93cfec391645797fb1b323a7"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/maya_canonical_v2_preview.fbx.meta",
+      "sha256": "24a39551fd2ab52f7320d16700fa288884510962045e496602c9f6d5f2321600"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/teeth.png",
+      "sha256": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/teeth.png.meta",
+      "sha256": "b7d8d9b3cc41c79dc261442271dc868788bf8bfe793fa416ba19e994f9b05d6c"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/texture-0-base-color.png",
+      "sha256": "70f18968def210407a4e4e3257c2ae7aaea17cafea6b408d2bfaa86d1474bfe6"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/texture-0-base-color.png.meta",
+      "sha256": "686f499b4fbbd5aa0880b9d00696123848ba725a88c5f4b457cd52b35257f952"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/texture-0-metallic.png",
+      "sha256": "245dc3cd2613981e0a73bd78aa81be5421e97e502f15fe205485bb1b2b66173f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/texture-0-metallic.png.meta",
+      "sha256": "1041004a547f734393fe64fe24d9e236fd857a8f1fc56bd5018db1429d48e537"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/texture-0-roughness.png",
+      "sha256": "a28d012f6ebf7a15897dee8db7d77e4ffe2e95bab0941c0a9851a779e58313b7"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/texture-0-roughness.png.meta",
+      "sha256": "ccb174a2e216d0c525cef0339810bb6d5b74b0eb3f91ab93b374fd4400e8a089"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/tongue01_diffuse.png",
+      "sha256": "3150be398e48e8ba1feac164c3143c16c0b2e959d9ffb6155f0171f59cfb4ea9"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/maya/tongue01_diffuse.png.meta",
+      "sha256": "19596d6b8423dc187d70533b65e63b38726ca8c3e8fecd1a2352d36e46d356c4"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren.meta",
+      "sha256": "c1f9dc161a6eff596c1de2c8eed2608aeefed508169a17b38c6640ea04a18583"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace.meta",
+      "sha256": "4e597fece455c693e98d416701f0677ca3598c55e540eda516fd18fa506271c9"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/LidLeft.png",
+      "sha256": "b19e7ed0d0b474fb3fb02dd653e27bba554e3c3bfe3a48943f7496e300100e23"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/LidLeft.png.meta",
+      "sha256": "9ed196744ddef0f7beb70625de212749fc9af72825477ee4f8585d45353e2967"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/LidRight.png",
+      "sha256": "f1b4d6b4a4a2cc3b6c2e743b9774da4781dc11155ca5b25f366e298b3456b3db"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/LidRight.png.meta",
+      "sha256": "c7aacf2c9de6401c56d4c2567c17677d0660508693e842da727c6cf654fed8a2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/OriginalBaseColor.png",
+      "sha256": "b736ec39351a8f693c51b2c000c27db5d2606b42d930d06b624dd8a23d30a968"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/OriginalBaseColor.png.meta",
+      "sha256": "d57b0a8b63c78214ffe6dfff8b70b32e43b6f5abb18072ec6bc8bd4d083483eb"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/RenEyesCandidate.fbx",
+      "sha256": "f7d466142db9c8293b9d8c59bb60bf6917bbfb2d6aae9d78e06b9dfa9c1804f4"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/RenEyesCandidate.fbx.meta",
+      "sha256": "3e0365f8944f058a3c472ce0322b56a1c50f2a4c5eada60c0ee6eb000fb9c125"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/RenFaceCandidate.fbx",
+      "sha256": "9eb5f4a2f8c9d58420f381b8e1d54fe6c66ab90f086c1facae6b8af691c4052e"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/RenFaceCandidate.fbx.meta",
+      "sha256": "c08b3d450406f45c5733a5b86a840f150a9a72ea88bd12f55584200aa5b4947d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/StudyLidLeft.mat",
+      "sha256": "a042af1a0c226a182a7bfca8296b5f4ff260319c97548e593d4aeb2b21bf7b1e"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/StudyLidLeft.mat.meta",
+      "sha256": "a865106dfe9cd0fbf0c067822f1a27f8b2d94bc157351a6de7c3c1549d46f379"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/StudyLidRight.mat",
+      "sha256": "54c397a67668a96870d9c23d806ea999c3d21cb0cd909e31dd52beae8448321f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/StudyLidRight.mat.meta",
+      "sha256": "ba46d0a752e325d89251106b119cf46ee5681ac4a44d7d4e8f231e6cbf4b70ad"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/StudyLiner.mat",
+      "sha256": "aa660cc98379c68d35d14672e1d0b586ca08914d2e129dd06c33b4814c1215ce"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/StudyLiner.mat.meta",
+      "sha256": "0c00348501b8f5d0c14fe20a1568ef7c8a4db55d19da432a35ba133bf931eb88"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/StudyOriginalBody.mat",
+      "sha256": "6d6e29311d2aeb5cb7f25d632392179fe7f0545b97ea5782c48569538aab1268"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Models/ren/AnimeFace/StudyOriginalBody.mat.meta",
+      "sha256": "7aae657dd2f9b700b4ac467e7a0ac962269560a3982c7b2512733a3f2a33a83b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Prefabs.meta",
+      "sha256": "2b879b88f2b8f5ae0ae3308df0db8d980dad144cca94561c7bcb18b5d7a2626d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Prefabs/maya_v2_preview.prefab",
+      "sha256": "a7aa330c14a20237e2d54d0d701646cd8c82962e3f2a46b6df8134d8a18b0511"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Prefabs/maya_v2_preview.prefab.meta",
+      "sha256": "7fe286a94dba5b0a780ab33c056f78e4a1938a9b124d73240d2b4739c8354d07"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Profiles.meta",
+      "sha256": "2f290cfd48a092cb854ebc3efd6f7223752fa46507a3555066a7c264ce9b6e26"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Profiles/maya_v2_preview.asset",
+      "sha256": "a5e53e1e6c72c2a66c23050dcc6809eb2ae5b10700cc43f302159632128ecd56"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Profiles/maya_v2_preview.asset.meta",
+      "sha256": "64d3e353419bd837fc192e05b4e2eeb8675d1ef6c4797055264c6042d02c97fb"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Scenes/MayaV2Preview.unity",
+      "sha256": "c3a775c7c6c8b30da0cc2f6cc21752e50880e00e83a140a848cd2a9df0b145a5"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Scenes/MayaV2Preview.unity.meta",
+      "sha256": "fdb0b6b96d5def2ae35af88eb12dc993467b12abdb18fa9be959e21c00711656"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Scenes/RenEyeStudy.unity",
+      "sha256": "4b8439e25cda8a67ff3848ba11c67f1bd1d6bd8ecd366f1b804d3ecd0a829098"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/Scenes/RenEyeStudy.unity.meta",
+      "sha256": "6de5b539857080df0c1395c8a52037f06e9f4964ca222fccbd98784a035146f8"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/preview-manifest.json",
+      "sha256": "940ed55d4fe06cf70338dd0399750ba5dabd63835bb98b4c7031366269926d78"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Preview/preview-manifest.json.meta",
+      "sha256": "4906c915ea993212c060f2767418591307a6f860bb37e2a77588f5a59447f613"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles.meta",
+      "sha256": "a0e7bced693b95017fee87de000ac7f9a8fd730ac8646826516727d219352c44"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/luca.asset",
+      "sha256": "c3e6cba487064945dc85abe93c96c09b3127a4343a141ab724a169a42ae313fe"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/luca.asset.meta",
+      "sha256": "5b3b2b722a8ae1a7dec13f137b3f69d8d01f1fb3ca70baffb0ea5314436d8b83"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/maya.asset",
+      "sha256": "6fb965c41cdee6b27c33440f4be8bb082993ffdf99d1e2b7302c22e8325bfccb"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/maya.asset.meta",
+      "sha256": "06d86345478a6a6f8003f54dbe6ab66d445204e99cef297a47d7aa6710e922cf"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/player.asset",
+      "sha256": "99038889ad6a530146e1ec6a91398695fdc1ea21dc80b1510ac39fcb04c65f92"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/player.asset.meta",
+      "sha256": "09bd43380f766fd51d12582403e736711d8cdf83f887a205c8fbbae2a5c3cc2d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/ren.asset",
+      "sha256": "cc4cdfb64d4449baa0efe47278ef8292c0310e7e8c1269103d66a29b241887c7"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/ren.asset.meta",
+      "sha256": "6fbbd7be1916c1fe5e797d18a3e350c33f5025aeb67614a8a9f097ae1f800a16"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/theo.asset",
+      "sha256": "3184fad589dc28668140ef34ad153c92eb52e24abb94de5b1a6095f024103f23"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/Profiles/theo.asset.meta",
+      "sha256": "64b96f1bc87d1098e804a12505cd8454c4767aeb6e99271b2e506935e7cd6026"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/RenPartsStudy/Viewer/RenPartsStudy-Hair-ClayLit.mat",
+      "sha256": "fb2fb8fd8939357e0c16619da261e40cd254b552ba8277b599c257688f3c5cae"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Generated/RenPartsStudy/Viewer/RenPartsStudy-Head-ClayLit.mat",
+      "sha256": "9eec0f2a42e474ebb49bb668cb41b6ea7a21939d4874b92f6df1a1e2e201594d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models.meta",
+      "sha256": "471e6c3ea3e0b8ab33dc9e2c6e7c4302932eff049ee2a1b55a41e5dc03d52116"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya.meta",
+      "sha256": "eaa86b690933b9a32b50496d9fa5cf41fab98dd4b997d1a754b1971ac46d19b0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/Maya_Eyes_BaseColor.png",
+      "sha256": "82a50dd15e341bcbced97eab48eb5dbeb5eabc14589e597c0fd6faaec266ad75"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/Maya_Eyes_BaseColor.png.meta",
+      "sha256": "9be7d2e8e3912b327bc794533b4b9d3af941d96b29a7eb615ef24276ac12c85b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/Maya_Face_BaseColor.png",
+      "sha256": "c1f64adcb5d213e73d0a0ccaad58e5ef3ef1ae2fafcdd47cc961cb10deb96249"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/Maya_Face_BaseColor.png.meta",
+      "sha256": "9af1b8e61e709c2d0149ae92be0514bd3b936d178db5ddf6344687dfae22cc0d"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/brown_eye.png",
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/brown_eye.png.meta",
+      "sha256": "de225b8552fdce129258cff75c337d7f9795dde52041253b6c7d5b788629ae7e"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/eyebrow001.png",
+      "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/eyebrow001.png.meta",
+      "sha256": "00555bf4e061c085421ba977e4b9eda5d31d04f3a6e5c9950e1f6aac6ff62043"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/eyelashes01.png",
+      "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/eyelashes01.png.meta",
+      "sha256": "762c399974a922f24b060ab64d78329409dbe9e7ecaf14a48698e9a969cd6c55"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm.meta",
+      "sha256": "9b54465e0efb3e07811a03861b69d3cf8b18a7c455af79c10267f21ff2be68a1"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/Maya_Eyes_BaseColor.png",
+      "sha256": "82a50dd15e341bcbced97eab48eb5dbeb5eabc14589e597c0fd6faaec266ad75"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/Maya_Eyes_BaseColor.png.meta",
+      "sha256": "7ed7e53689b0ee8a605815a90f8d8b24dcfc92c0a9018513ede9794821c44527"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/Maya_Face_BaseColor.png",
+      "sha256": "c1f64adcb5d213e73d0a0ccaad58e5ef3ef1ae2fafcdd47cc961cb10deb96249"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/Maya_Face_BaseColor.png.meta",
+      "sha256": "5db56aaea2f368d7003731659cbb102e01b8d5a27c6ef0840f7e24a6b0aec0d0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/brown_eye.png",
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/brown_eye.png.meta",
+      "sha256": "dd0cbbad0f8eb5ae543b49399a25697531f8c8ed7c1cf79dbed750c11af6ae89"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/eyebrow001.png",
+      "sha256": "9940f7d0b1b223709a19b05156ba6f6e9e4dbdbced02d7574f4d51d72c58967b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/eyebrow001.png.meta",
+      "sha256": "192dcedf4341bb8896ddce43b7ac2d452b8c410e1d40956014704adc472b3927"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/eyelashes01.png",
+      "sha256": "4b69c0fff2648874460e9caf80c31413c444218a5c50afebc425aeaa65484a35"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/eyelashes01.png.meta",
+      "sha256": "5ccae47a6fc73093c7795942b97c7b96974ffa54510142d1e884b29c55ac237b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/teeth.png",
+      "sha256": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/teeth.png.meta",
+      "sha256": "cc0757032878845dcd052ae8a4ca07cd5e7705e488de72eeb8706463ecc396cd"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/texture-0-base-color.png",
+      "sha256": "70f18968def210407a4e4e3257c2ae7aaea17cafea6b408d2bfaa86d1474bfe6"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/texture-0-base-color.png.meta",
+      "sha256": "e445f0bd1e60f47401737907999a7b63f1f6cfd5fcae236ee0a549e4f14a2bca"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/texture-0-metallic.png",
+      "sha256": "245dc3cd2613981e0a73bd78aa81be5421e97e502f15fe205485bb1b2b66173f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/texture-0-metallic.png.meta",
+      "sha256": "ef2f0621bb4338b08c0b457927c0ac76a7ad02a93a295df8d96ffe6f9ff81ccb"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/texture-0-roughness.png",
+      "sha256": "a28d012f6ebf7a15897dee8db7d77e4ffe2e95bab0941c0a9851a779e58313b7"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/texture-0-roughness.png.meta",
+      "sha256": "ad3c2c8b36ae4cb0984a2be218545951280a327fabacabedc4598519ceb7ad27"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/tongue01_diffuse.png",
+      "sha256": "3150be398e48e8ba1feac164c3143c16c0b2e959d9ffb6155f0171f59cfb4ea9"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbm/tongue01_diffuse.png.meta",
+      "sha256": "5204ec343bf69e4d8e11eb5d8d970bac170da9f9b67f48e5d9d27caa3ba8d73f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbx",
+      "sha256": "13164b3ea68386d351ec6015633a60bb3ea5e7219e9b585302ab4093e68cd9af"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/maya.fbx.meta",
+      "sha256": "1fa3f829fa2a99b99bc25b6a726fae3743168b7d6b3dde4021ea84b36958aa69"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/teeth.png",
+      "sha256": "d0afb57869c6fbb56b98f5efc4aec629ee7593e70d8dd2bfb9de923acfb65f43"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/teeth.png.meta",
+      "sha256": "f992ee8c35ea66082adc999b679a957241da8f31829fdfd274d530c99b37c48e"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/texture-0-base-color.png",
+      "sha256": "70f18968def210407a4e4e3257c2ae7aaea17cafea6b408d2bfaa86d1474bfe6"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/texture-0-base-color.png.meta",
+      "sha256": "45c851b710e6bd18ee439c2462414fd29ac3e9c57e63485161bcf91b240d4a67"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/texture-0-metallic.png",
+      "sha256": "245dc3cd2613981e0a73bd78aa81be5421e97e502f15fe205485bb1b2b66173f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/texture-0-metallic.png.meta",
+      "sha256": "55947bffff07934a40fb7906f3a9beb7bacac52a77e5f0d50616fe43bed02a41"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/texture-0-roughness.png",
+      "sha256": "a28d012f6ebf7a15897dee8db7d77e4ffe2e95bab0941c0a9851a779e58313b7"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/texture-0-roughness.png.meta",
+      "sha256": "5a226f9aefcc691745575a0c47b6c8c6995a302044979a90791b4575f78244ab"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/tongue01_diffuse.png",
+      "sha256": "3150be398e48e8ba1feac164c3143c16c0b2e959d9ffb6155f0171f59cfb4ea9"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Models/maya/tongue01_diffuse.png.meta",
+      "sha256": "c9bb8170eb578ca758d2260d45bcdd7c7958540522cbc742cef70619df9323bc"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerCamera.cs",
+      "sha256": "5199530eb9c4546170e27dcfc8b81b55837ddc6ca4da83008c02b033f19db484"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerCamera.cs.meta",
+      "sha256": "91cf3fc979aef28ffb168c9cce909086423616f356f27365abd5b622493a8f56"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerCapture.cs",
+      "sha256": "cd8692c2f4a3e66c98d459951fdebc3a801415c4b28ae34be259818edf373968"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerCapture.cs.meta",
+      "sha256": "048aa16c43262a68b7f3b7ab5fd3dd1823cef0e03dfa0936b3de7307f5e70c31"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerController.cs",
+      "sha256": "5717446364e06082422e449605dd5086b417f9626eacd3c3c19fd8501171492a"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerController.cs.meta",
+      "sha256": "1a3c204f44965df2105af6b1eea7d229926e9a6d972b0217a75910ab5f525f40"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerLighting.cs",
+      "sha256": "d63e6a0918a21970435b3d5d7bb2e879e94fc61c02576becb19c74a3ddd47971"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerLighting.cs.meta",
+      "sha256": "1052d235753aded851b445100ad89444f0d7a525fe6e6d18c42e85574355be59"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerUI.cs",
+      "sha256": "5578fc71737db1cdbef4fcbf525e55f7349148bcfec63c81be21f8b134ecb22c"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerUI.cs.meta",
+      "sha256": "24efa0f67203219e14b22f3490e5b7105cf0a77001632a0cf39054f2cef6bd4e"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerViewport.cs",
+      "sha256": "2dc20ed6b70882bfc272d40b14965b5ee2cf77aede3cd391c093bafc1cdd3fb0"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/CharacterViewerViewport.cs.meta",
+      "sha256": "76dcaea2b9e81283b8d7f46960cb9a307b0568285fc51061c663cc025184e618"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceAnimationController.cs",
+      "sha256": "df8594fbf3c525585bf9039260cd95a0e8af2b9ae65fe779bac3a929703b5542"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceCaptureProbe.cs",
+      "sha256": "a22f6386c9805172a88526bdb8f53fb33cabeddc7483af778c65326947be0f2a"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Runtime/RenHReferenceCaptureProbe.cs.meta",
+      "sha256": "bb85dc7ca512d8cd64f719e5046a38cc5c54a5951d255b7b03d95615faae6c5b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Scenes.meta",
+      "sha256": "2b78e5abcac5dbdfeaf5c1e76e92d5e95e454e7c0fe6bda4f936b5e37a4e506f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Scenes/CharacterViewer.unity",
+      "sha256": "2dcdb79ced97a7179acdd9bb965e2b061d2fbb78137ff6384615307089485886"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Scenes/CharacterViewer.unity.meta",
+      "sha256": "4abc638514bfde6f3901803243541128bebfe51cae153e8933964846292341d8"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Shaders.meta",
+      "sha256": "17bc6268a5895a8416c17b89e0bfddff3b7d8aae0d11f2bf9e5e9db1001d2b6c"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Shaders/ANIME_FACE.md",
+      "sha256": "cf7ff58255cd64a87a6fc47fd9d896f86983242d4dff97b1bd2e4bc8dc6b4a5b"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Shaders/ANIME_FACE.md.meta",
+      "sha256": "15d2d28ac896aaef316f72999ffe57da997232bea827e0650affdd54c92d9af2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Shaders/AnimeFace.shader",
+      "sha256": "b5f461e2250fa04bb3e5cd2e1152174069fb56bfaeef25f6a6794bbdda44965f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Shaders/AnimeFace.shader.meta",
+      "sha256": "e3900d1045c57ce9c273295abacbd41e18ef072f9eba543baed7b4ef7f6d7936"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/CharacterViewerBuilderTests.cs",
+      "sha256": "4fcdeaa7fff4fe9513269d02463ef8a002a940c141afbf366113effb9063dbc2"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/CharacterViewerBuilderTests.cs.meta",
+      "sha256": "b96962385ed7653b995c640ce3485c47a0c9caa129a1cac8caa2d81e21b69d42"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/CharacterViewerCaptureTests.cs",
+      "sha256": "e15c8a2ef13a92286ce0aced681e065c6072248bc23d9a1fcb21ba4ce1e4fd69"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/CharacterViewerCaptureTests.cs.meta",
+      "sha256": "48eb13c27c1beb4aa77be338c049042f5466d80bd1eb0af3e243f0bcad9507ac"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/CharacterViewerInteractionTests.cs",
+      "sha256": "59b82579cee8fa37c0418c2640ae12059dafe0a1d02744ed3fdee5f3cf5c9d73"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/CharacterViewerInteractionTests.cs.meta",
+      "sha256": "2ae27cdf2f2a82063ac9bd1fdbda1f9962f7497b0983249c50525e6d5a5dbe6f"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/FacialBlendshapeNormalsTests.cs",
+      "sha256": "72b287bbdfd282bd4e8797ea0c1bb45da14d0016b82988d4757d532775a7ce60"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/FacialBlendshapeNormalsTests.cs.meta",
+      "sha256": "753e5db1ec282f3ca51601fe5e2c49ec2bd2507cf3d3d7a1b35dd27c6b74cde6"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/ProgressiveBlinkFramesTests.cs",
+      "sha256": "2f994f465c31679b715a797c56b89d6be99f1aa448fc2eb6f86046fec37f5e11"
+    },
+    {
+      "path": "Unity/Assets/CharacterArt/Tests/Editor/ProgressiveBlinkFramesTests.cs.meta",
+      "sha256": "c9b77089d6b7d8b7144edd792768ae95005d4dadc8edf8e5914c866eb4995fa8"
+    },
+    {
+      "path": "Unity/Assets/InitTestScene166e2f9b-e41e-42af-a0b6-8001f4779e09.unity",
+      "sha256": "08d872c9b95457c57f4b11ed7d7a00525d11301b7cc8670f47ded9709c18a80c"
+    },
+    {
+      "path": "Unity/Assets/InitTestScene166e2f9b-e41e-42af-a0b6-8001f4779e09.unity.meta",
+      "sha256": "eb48963c5bb4d3b77fdd8fc82052f9d41abbf864ce6b1c136acd32a00a4fe550"
+    },
+    {
+      "path": "Unity/Assets/Resources.meta",
+      "sha256": "1666114b3b8da462270b38a442b1e778869efe42b4e6def57d0bdc97493ff36f"
+    },
+    {
+      "path": "Unity/Assets/UniversalRenderPipelineGlobalSettings.asset",
+      "sha256": "34378e9a62cd11328aad46fccf0cbe43223b2b951add1f64f6deafd778a47898"
+    },
+    {
+      "path": "Unity/ProjectSettings/PackageManagerSettings.asset",
+      "sha256": "d5368f5e862d6964716ec46cedfb30ee9b2ee274cd5aef5436f6c74dcf1c4797"
+    },
+    {
+      "path": "Unity/ProjectSettings/URPProjectSettings.asset",
+      "sha256": "68d75e5e1502dd7a4c18b7306430916b5ee8dadfdb0fbb588893fe38eaa2c056"
+    }
+  ],
+  "scope": "Unsigned exported application compilation; no signing or device acceptance",
+  "original_source_commit": "183b39dab7238e8b26d45c7134643b6c058d8d57",
+  "source_commit_note": "CI/checker-only successor; git diff between these commits has no Unity changes. Archive and captured dirty-source hashes unchanged."
+}

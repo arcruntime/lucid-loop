@@ -31,6 +31,14 @@ python3 tools/prepare_ios_export.py verify \
 
 The native packaging checker then compares the exported native files and generated bindings against the matching checked-out sources. Text comparison normalizes CRLF to LF because Windows exports and hosted Mac Git checkouts use different line endings; raw exported hashes and byte-identity results remain in the report. Keep the selected workflow ref unchanged while packaging and dispatching; a source-commit mismatch must fail rather than silently build another revision.
 
+For a stable build ref while collaborators continue work, push a tag at the manifest's source commit and dispatch that tag. Stage the two files in a draft release with `gh release create --draft` and `gh release upload`; keep the release unpublished. Then run:
+
+```powershell
+gh workflow run ios-export-build.yml --ref <pinned-tag> -f release_tag=<draft-tag> -f archive_sha256=<local-archive-sha256>
+```
+
+Inspect the resulting run's actual job status. A passing push-triggered archive-test job does not mean the application compiled. The full run must also pass transfer, verification, native packaging, Xcode compilation and product checks.
+
 ## Transfer isolation
 
 Draft-release access can require write-level repository access. A separate Ubuntu transfer job receives `contents: write` and exposes its token only to the download step. It checks that the named release is a draft, downloads the two exact asset names, verifies the archive checksum, and uploads the opaque files as an Actions artifact. It does not check out or execute exported code, run packaging scripts from the archive, or extract it.
