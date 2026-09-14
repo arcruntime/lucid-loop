@@ -5,11 +5,11 @@
   "build_result": "successful Xcode export",
   "source": {
     "log": "Editor.log",
-    "segment_start_line": 32562,
-    "segment_end_line": 43931,
-    "segment_sha256": "51eeef64f2bd945aec7c41fc05643cdfbcbed992d1eafe2f156cce9cc9239106",
-    "build_finished_utc": "2026-09-13T19:02:41.635000+00:00",
-    "stripping_json_sha256": "ed8ae87fc3f0e2bfc1efbb2f6b702c8beb404f6e8034ae5e732a40f9c2feadfd"
+    "segment_start_line": 139845,
+    "segment_end_line": 150450,
+    "segment_sha256": "c52f1fd6d0637248ba5f771f53709c17953da2f53044103b1d7f564c4924a506",
+    "build_finished_utc": "2026-09-14T12:59:11.308000+00:00",
+    "stripping_json_sha256": "a0b2b7fd918da318ed7551c9ef6f55936b35514d6b4ec17b4c1ce5be3e779763"
   },
   "unit": "Shader pass/stage variants, not unique shaders or draw calls",
   "interpretation": [
@@ -19,17 +19,17 @@
     "Compile inclusion does not prove that a required runtime keyword combination or visual effect is correct."
   ],
   "scriptable_stripping": {
-    "input_variants": 694,
-    "retained_variants": 582,
-    "shader_entries": 71
+    "input_variants": 708,
+    "retained_variants": 591,
+    "shader_entries": 75
   },
   "selected_shader_details": {
     "Universal Render Pipeline/Lit": {
       "totals_across_passes_and_stages": {
-        "full_variant_space": 72855982180,
-        "after_settings": 2928,
-        "after_builtin": 49,
-        "after_scriptable": 14
+        "full_variant_space": 109094768742,
+        "after_settings": 3698,
+        "after_builtin": 56,
+        "after_scriptable": 16
       },
       "passes": [
         {
@@ -45,10 +45,10 @@
           "pass": "ForwardLit",
           "stage": "fp",
           "graphics_api": "metal",
-          "full_variant_space": 72477573120,
-          "after_settings": 1536,
-          "after_builtin": 12,
-          "after_scriptable": 4
+          "full_variant_space": 108716359680,
+          "after_settings": 2304,
+          "after_builtin": 18,
+          "after_scriptable": 6
         },
         {
           "pass": "ShadowCaster",
@@ -135,46 +135,74 @@
           "pass": "Universal2D",
           "stage": "fp",
           "graphics_api": "metal",
-          "full_variant_space": 2,
+          "full_variant_space": 4,
+          "after_settings": 4,
+          "after_builtin": 2,
+          "after_scriptable": 0
+        },
+        {
+          "pass": "MotionVectors",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "MotionVectors",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "XRMotionVectors",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 0
+        },
+        {
+          "pass": "XRMotionVectors",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 8,
+          "after_settings": 4,
+          "after_builtin": 1,
+          "after_scriptable": 0
+        }
+      ]
+    },
+    "LucidLoop/CharacterArt/Ren LOD0 Toon": {
+      "totals_across_passes_and_stages": {
+        "full_variant_space": 20,
+        "after_settings": 3,
+        "after_builtin": 3,
+        "after_scriptable": 3
+      },
+      "passes": [
+        {
+          "pass": "ToonForward",
+          "stage": "vp",
+          "graphics_api": "metal",
+          "full_variant_space": 4,
+          "after_settings": 1,
+          "after_builtin": 1,
+          "after_scriptable": 1
+        },
+        {
+          "pass": "ToonForward",
+          "stage": "fp",
+          "graphics_api": "metal",
+          "full_variant_space": 16,
           "after_settings": 2,
-          "after_builtin": 1,
-          "after_scriptable": 0
-        },
-        {
-          "pass": "MotionVectors",
-          "stage": "vp",
-          "graphics_api": "metal",
-          "full_variant_space": 8,
-          "after_settings": 4,
-          "after_builtin": 1,
-          "after_scriptable": 1
-        },
-        {
-          "pass": "MotionVectors",
-          "stage": "fp",
-          "graphics_api": "metal",
-          "full_variant_space": 8,
-          "after_settings": 4,
-          "after_builtin": 1,
-          "after_scriptable": 1
-        },
-        {
-          "pass": "XRMotionVectors",
-          "stage": "vp",
-          "graphics_api": "metal",
-          "full_variant_space": 8,
-          "after_settings": 4,
-          "after_builtin": 1,
-          "after_scriptable": 0
-        },
-        {
-          "pass": "XRMotionVectors",
-          "stage": "fp",
-          "graphics_api": "metal",
-          "full_variant_space": 8,
-          "after_settings": 4,
-          "after_builtin": 1,
-          "after_scriptable": 0
+          "after_builtin": 2,
+          "after_scriptable": 2
         }
       ]
     }
@@ -268,13 +296,29 @@
       "before_scriptable": 2,
       "after_scriptable": 0
     },
-    "Skybox/Procedural": {
-      "before_scriptable": 6,
-      "after_scriptable": 6
+    "Skybox/Panoramic": {
+      "before_scriptable": 4,
+      "after_scriptable": 4
+    },
+    "LucidLoop/CharacterArt/Ren LOD0 Toon": {
+      "before_scriptable": 3,
+      "after_scriptable": 3
+    },
+    "LucidLoop/Environment/Beam": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
+    },
+    "LucidLoop/Environment/ClubVortex": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
     },
     "Universal Render Pipeline/Lit": {
-      "before_scriptable": 49,
-      "after_scriptable": 14
+      "before_scriptable": 56,
+      "after_scriptable": 16
+    },
+    "LucidLoop/Environment/CityWindow": {
+      "before_scriptable": 2,
+      "after_scriptable": 2
     },
     "Legacy Shaders/VertexLit": {
       "before_scriptable": 12,

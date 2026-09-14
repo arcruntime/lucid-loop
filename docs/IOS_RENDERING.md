@@ -94,26 +94,28 @@ Two original procedural eight-bar music loops are included with their [generator
 
 New scenes receive the binding automatically. For an existing saved `BeforeTheDrop` scene, use **Lucid Loop > Encounter > Apply mood presentation to current encounter**; this preserves the rest of the scene. A focused PlayMode test checks that the intensity multiplier does not accumulate across frames and that disabling the component restores the original light state.
 
-## Measured iOS export: 2026-09-14 JST
+## Measured iOS export: 2026-09-14 21:59 JST
 
-The [compact build evidence](evidence/ios-shaders-2026-09-14.json) combines the completed iOS section of `Editor.log` with the matching Unity shader JSON, checking that their retained counts agree. It contains all 71 shader-entry totals and detailed URP Lit pass/stage counts, without publishing the complete Editor log.
+The [compact build evidence](evidence/ios-shaders-2026-09-14.json) combines the completed iOS section of `Editor.log` with the matching Unity shader JSON, checking that their retained counts agree. It contains all 75 shader-entry totals and detailed URP Lit and Ren LOD0 Toon pass/stage counts, without publishing the complete Editor log. The build finished at `2026-09-14T12:59:11.308Z`; the evidence records hashes for that log segment and the stripping JSON.
+
+This is the assembled Ren export packaged as `testflight-ren-0b9d61d`, source `0b9d61d13e02357d03b8046dbcffe3060b1b463e`, subsequently compiled and distribution-signed in [run 34848429877](https://github.com/jethac/lucid-loop/actions/runs/34848429877). Its manifest records dirty Unity inputs from the shared workspace, so the source commit alone does not reproduce the export. It predates the newer cap, LOD1, gaze, guarded acting, and paused restart changes. These shader counts do not establish current whole-frame geometry, device performance, or visual acceptance of those later changes.
 
 | URP Lit pass/stage | Theoretical full keyword space | After settings | After built-in stripping | After scriptable stripping |
 |---|---:|---:|---:|---:|
 | ForwardLit vertex | 884,736 | 768 | 6 | 2 |
-| ForwardLit fragment | 72,477,573,120 | 1,536 | 12 | 4 |
+| ForwardLit fragment | 108,716,359,680 | 2,304 | 18 | 6 |
 | GBuffer vertex | 36,864 | 192 | 6 | 0 |
 | GBuffer fragment | 377,487,360 | 384 | 12 | 0 |
-| All Lit passes/stages | 72,855,982,180 | 2,928 | 49 | 14 |
+| All Lit passes/stages | 109,094,768,742 | 3,698 | 56 | 16 |
 
-Across all reported shaders, 694 variants entered scriptable stripping and 582 remained. These inputs are already filtered by settings and Unity's built-in stripping. They are not the theoretical full keyword space. The current Forward configuration eliminated Lit's GBuffer stages and retained its used forward/shadow/depth stages. The full-space figures describe possible combinations; Unity did not compile tens of billions of programs. These are current-build counts, not a measured comparison with an earlier build.
+Across all reported shaders, 708 variants entered scriptable stripping and 591 remained. Ren LOD0 Toon retained three pass/stage variants: one vertex and two fragment variants, from a theoretical space of 20. These inputs are already filtered by settings and Unity's built-in stripping. They are not the theoretical full keyword space. This Forward export eliminated Lit's GBuffer stages and retained its used forward/shadow/depth stages. The full-space figures describe possible combinations; Unity did not compile billions of programs. This replaces the earlier 582-variant measurement with a later content snapshot; it is not a controlled before/after optimization comparison.
 
 `Temp/shader-stripping.json` initially appeared absent while compilation was running. The installed Core RP implementation writes it during `ShaderStrippingReportScope.OnPostprocessBuild`, which calls `ReportEnd` and `DumpReport`. Both shader and compute JSON reports appeared after the export completed and were copied to `Unity/Builds/iOS/` by the existing exporter. No reporting fix was needed.
 
 Reproduce the compact report from a completed export:
 
 ```powershell
-python tools/report_ios_shader_variants.py --editor-log "$env:LOCALAPPDATA/Unity/Editor/Editor.log" --stripping-json Unity/Builds/iOS/shader-stripping.json --output docs/evidence/ios-shaders-2026-09-14.json
+python tools/report_ios_shader_variants.py --editor-log "$env:LOCALAPPDATA/Unity/Editor/Editor.log" --stripping-json Unity/Builds/iOS/shader-stripping.json --shader "Universal Render Pipeline/Lit" --shader "LucidLoop/CharacterArt/Ren LOD0 Toon" --output docs/evidence/ios-shaders-2026-09-14.json
 ```
 
 The parser selects only the latest iOS export segment and requires it to have completed, handles Unity's localized integer separators, and rejects mismatched log/JSON counts. Build inclusion alone does not prove visual correctness, emission visibility, or the presence of every runtime combination. Final character material integration and device transition checks still need their own export validation.
