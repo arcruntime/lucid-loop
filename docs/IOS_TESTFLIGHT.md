@@ -45,3 +45,7 @@ actionlint .github/workflows/ios-testflight.yml
 ```
 
 Preflight tests exercise profile restrictions, export options, missing/transparent marketing icons, build-number validation, and preservation of LAN settings. The export-transfer tests exercise malicious archive paths/links, inventory limits, checksums, source mismatch, and the reviewed build phase. Xcode archive/sign/export/upload still requires a hosted execution with valid signing assets; creating this lane alone is not evidence of a completed TestFlight build.
+
+## First signed build
+
+[Run 34844649999](https://github.com/jethac/lucid-loop/actions/runs/34844649999) successfully compiled and exported an App Store signed IPA with Xcode 26.3, version 1.0 (1), from the `testflight-b7e7032` export. This was an `upload=false` run: no build was sent to Apple. The artifact is `ios-testflight-ipa-34844649999-1`. App Store Connect API credentials remain required for upload. This export predates the complete Ren prefab installation in the encounter; a later export/build is required to distribute that integration.
