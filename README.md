@@ -1,5 +1,7 @@
 # Lucid Loop
 
+The [arcruntime checkpoint review](docs/ARCRUNTIME_REVIEW.md) records the selective integration of her conversation portraits and rewind cue, plus preserved paintings and voiced story assets. The authoritative encounter and iOS relay remain the gameplay implementation.
+
 The primary game prototype is **Before the Drop**: a server-authoritative nightclub encounter with an authored catastrophe, rewind, retained clues, and OpenAI Live conversation integration. The original offline nightclub and separate Live voice studio remain available as diagnostic gyms. Final character animation, Japanese speech, and physical iPhone acceptance remain in progress.
 
 **Try the encounter:** open `Unity/` in Unity 6000.3.24f1 and load `Assets/Gyms/Scenes/BeforeTheDrop.unity`. Start the local relay and follow the [encounter quickstart](docs/ENCOUNTER_QUICKSTART.md). Use **Walk toward Theo** to see the opening, then **Rewind** to begin another attempt with the witnessed clue retained. Real NPC conversations require an OpenAI key in the relay process environment; the GitHub CI secret is not automatically available locally.

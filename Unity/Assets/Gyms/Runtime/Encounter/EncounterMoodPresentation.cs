@@ -17,6 +17,8 @@ namespace LucidLoop.Gyms
 
         EncounterCoordinator bound;
         AudioSource aggressiveMusic, intimateMusic;
+        AudioSource rewindSound;
+        string observedLoop;
         Light[] lights;
         Color[] originalColors;
         float[] originalIntensities;
@@ -26,6 +28,8 @@ namespace LucidLoop.Gyms
         void Awake()
         {
             aggressiveMusic = CreateSource(); intimateMusic = CreateSource();
+            rewindSound = CreateSource(); rewindSound.loop = false;
+            rewindSound.clip = Resources.Load<AudioClip>("MvpAudio/Backspin");
         }
 
         AudioSource CreateSource()
@@ -56,6 +60,8 @@ namespace LucidLoop.Gyms
             if (!bound) return;
             bound.MoodChanged += OnMood;
             bound.PauseChanged += OnPause;
+            bound.StateChanged += OnState;
+            observedLoop = bound.State.LoopId;
             OnMood(bound.State.Mood);
         }
 
@@ -77,6 +83,7 @@ namespace LucidLoop.Gyms
         void OnPause(bool value)
         {
             paused = value;
+            if (paused && rewindSound) rewindSound.Stop();
             if (paused) { aggressiveMusic.Pause(); intimateMusic.Pause(); }
             else { aggressiveMusic.UnPause(); intimateMusic.UnPause(); }
         }
@@ -87,6 +94,14 @@ namespace LucidLoop.Gyms
             double start = AudioSettings.dspTime + .15;
             if (AggressiveLoop) aggressiveMusic.PlayScheduled(start);
             if (IntimateLoop) intimateMusic.PlayScheduled(start);
+        }
+
+        void OnState(EncounterClientState state)
+        {
+            bool changed = !string.IsNullOrEmpty(observedLoop) && !string.IsNullOrEmpty(state.LoopId) && observedLoop != state.LoopId;
+            observedLoop = state.LoopId;
+            if (changed && !paused && rewindSound && rewindSound.clip)
+            { rewindSound.volume = MusicVolume * .6f; rewindSound.Play(); }
         }
 
         void LateUpdate()
@@ -127,7 +142,8 @@ namespace LucidLoop.Gyms
 
         void Unbind()
         {
-            if (bound) { bound.MoodChanged -= OnMood; bound.PauseChanged -= OnPause; }
+            if (bound) { bound.MoodChanged -= OnMood; bound.PauseChanged -= OnPause; bound.StateChanged -= OnState; }
+            observedLoop = null;
             bound = null;
         }
 
@@ -136,6 +152,7 @@ namespace LucidLoop.Gyms
             Unbind(); paused = false;
             if (aggressiveMusic) aggressiveMusic.Stop();
             if (intimateMusic) intimateMusic.Stop();
+            if (rewindSound) rewindSound.Stop();
             if (lights == null) return;
             for (int i = 0; i < lights.Length; i++)
                 if (lights[i]) { lights[i].color = originalColors[i]; lights[i].intensity = originalIntensities[i]; }

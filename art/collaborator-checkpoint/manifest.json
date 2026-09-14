@@ -1,0 +1,521 @@
+{
+  "sourceCommit": "95aae5d",
+  "assets": [
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt.meta",
+      "destination": "Unity/Assets/Gyms/Resources/MvpArt.meta",
+      "sha256": "a10c9372183b02e3e5fb7a3c50fa922396a7f64a105ade5862bf4f82e5d33e1b",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/Backdrop.shader",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/Backdrop.shader",
+      "sha256": "577e91d2f147e6635752ac6be0fd5e10584095064e8d28387dd0123fa9d89cbf",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/Backdrop.shader.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/Backdrop.shader.meta",
+      "sha256": "946137521bdf96aee5165afc400fd83f958ede920917a55e1ed751e1e44f79f8",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/ClubBackdrop.png",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/ClubBackdrop.png",
+      "sha256": "78fea956ef28e21b0bfa26143d31786639387ce294f8760bc5202b773e35b3ce",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/ClubBackdrop.png.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/ClubBackdrop.png.meta",
+      "sha256": "02ab028c18df9cb279f795a935aff087a0ed060e1b2dd212132962724b13f4db",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/ClubExpanded.png",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/ClubExpanded.png",
+      "sha256": "8f32f4421bb1b5dd29d526a7ab3dbc551422120b5a0e0a3c655e74e12229611b",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/ClubExpanded.png.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/ClubExpanded.png.meta",
+      "sha256": "31ea3be35b455a91f65ba31cbb3ce971772df48dea48a9077ba2f0733856a26f",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/ExpandedBackdrop.shader",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/ExpandedBackdrop.shader",
+      "sha256": "c1458ef4afaf2f61189d955649ce948a6e4690e5d87c24da20aba1ab2c8538b4",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/ExpandedBackdrop.shader.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/ExpandedBackdrop.shader.meta",
+      "sha256": "667553e48498720f54a3b6dd6909536f77243998306e989037ba37270e5e2ebb",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/Occlusion.shader",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/Occlusion.shader",
+      "sha256": "5599aaee78deda046cb8e5488a95374218fca7c8608d48581c5ea9fafa8d8e26",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/Occlusion.shader.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpArt/Occlusion.shader.meta",
+      "sha256": "3041fe85647c7da313658823034619110d33d65462bd6bba254e43244feed55d",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/Portraits.png",
+      "destination": "Unity/Assets/Gyms/Resources/MvpArt/Portraits.png",
+      "sha256": "6bf77975574fd17260815b459470072538438348ee1afe147c78e95848eaa08b",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpArt/Portraits.png.meta",
+      "destination": "Unity/Assets/Gyms/Resources/MvpArt/Portraits.png.meta",
+      "sha256": "614c77b414c69d201e2db61c27bac28cc3862357119342d0f22fc906e079d0ba",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio.meta",
+      "destination": "Unity/Assets/Gyms/Resources/MvpAudio.meta",
+      "sha256": "2d3666c4dea5b3d17388a070098f8fba2418a8ee8028791604b88f205a3ed88c",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Aggressive.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Aggressive.wav",
+      "sha256": "6b506837ae0771ac5ef7aab278f0185689741fa4a327b4b6a2ed3095ca684f3f",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Aggressive.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Aggressive.wav.meta",
+      "sha256": "853262476ee7d3287392b457abca8394cbc013c97f6ed1c48d2a871d36cb8bd9",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Backspin.wav",
+      "destination": "Unity/Assets/Gyms/Resources/MvpAudio/Backspin.wav",
+      "sha256": "afc682e826fed9786238f28d40a63f789ad673573be20cd2e2ff9eab5a5e9ddd",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Backspin.wav.meta",
+      "destination": "Unity/Assets/Gyms/Resources/MvpAudio/Backspin.wav.meta",
+      "sha256": "f418c4618702fa082fccc9f908b2ccc70f7a95eb9a13f7492799b152c9e10ce7",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Intimate.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Intimate.wav",
+      "sha256": "5aa1ee85f8090daeb4acfa4c6dd86930be3c671404c1602e11273e7b4feec3b2",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Intimate.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Intimate.wav.meta",
+      "sha256": "cded16fb4e80d9aade950ce9c02cddb727a97c438acf6a18978332da83b3da1f",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story.meta",
+      "sha256": "bc533599b9fda09a07e17144a7362fd69e1965475447c6fa0631a7952f44f911",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/aggressive.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/aggressive.sha256",
+      "sha256": "761a87cf21763e9eff055fbff79ede5b8c79a6b6599db0bbdeafe47d81ce1677",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/aggressive.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/aggressive.sha256.meta",
+      "sha256": "8315710b61018cb16aa0864dd94777fcf206926d60315a0ebccd91c3a0912260",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/aggressive.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/aggressive.wav",
+      "sha256": "a2c623247fa2258d2018c27342000ee148d96e373f3881200aba856c0db02fc5",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/aggressive.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/aggressive.wav.meta",
+      "sha256": "6bb5997c0786b5bbacfc9149b1c6b4db97f6179b759adecf89ecc6b3251c4b5c",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/arrival.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/arrival.sha256",
+      "sha256": "2b5111e393a72a4553eee5e80e3dd899153a30383008754d4965bf80410e8eab",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/arrival.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/arrival.sha256.meta",
+      "sha256": "f16d274b181bd3c8a4c60911aebabb63a36a885353ef059a69bf1c5a46177f3f",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/arrival.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/arrival.wav",
+      "sha256": "2589c9891c0c2da0154ccefc6ef167b652efb13e41c961645278c91ee2e68702",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/arrival.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/arrival.wav.meta",
+      "sha256": "789e975265b6ba69348aea09b2db1e18532a67739c071c8459d4c076642b13eb",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/confront.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/confront.sha256",
+      "sha256": "25a82ab9e494611515d3b0fde11bb3a09182a26e16cba95ba6222926893974ad",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/confront.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/confront.sha256.meta",
+      "sha256": "184febd3db59d14ac171df9006109671a0cfc470df8991539eee7e4b26f5da06",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/confront.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/confront.wav",
+      "sha256": "40fbf276c83a90c425160ce3c93c3bc1b6b5ff462a91d77f15c5ae4a728ecb29",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/confront.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/confront.wav.meta",
+      "sha256": "3b0b22380831b30e2a4a660c3f1d4de3359f3df8c49ed26f72a9d51bb385395e",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/fine.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/fine.sha256",
+      "sha256": "972a8d566cd94b366655d876dab278b84e67db6d9d9e034c21d84b0145294378",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/fine.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/fine.sha256.meta",
+      "sha256": "57f89d8412009e0e5c28902310289d8285894fd8156149aab9f8b846dfc8255a",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/fine.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/fine.wav",
+      "sha256": "a15519a35fdac4801f16ebae18da09507801759a80d7d1c8127c3ecbbe789fdd",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/fine.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/fine.wav.meta",
+      "sha256": "7b41e1ef69a977164a56d98229a361bc5c042f3dab393120bce129507ec063b5",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/grab.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/grab.sha256",
+      "sha256": "2d3392045f0675243b67ef9f9252465c11a41c13f2b79055851b363c3b9580ec",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/grab.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/grab.sha256.meta",
+      "sha256": "8c8a16467ac3a17dee05a34b9e98dd65fc4305cfc6c8a9693ebe2618ee92e80d",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/grab.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/grab.wav",
+      "sha256": "d6abe134cb7d64cd5632f1525ccb8bd96db1668a2a8843fcc556abba92ee68d9",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/grab.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/grab.wav.meta",
+      "sha256": "29076de3419f66d1a4f60cac459e6e6be23677dfcd144966450438727acb680d",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/intervene.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/intervene.sha256",
+      "sha256": "aadc912cd6f3999d39ec4ace75df048bd8de49b1d92c5a72bc225ffa3c1c7a3f",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/intervene.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/intervene.sha256.meta",
+      "sha256": "01e80bdad9f772be73ca268fe393713c385d08481cf5a7bc21e183cf6d5923ee",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/intervene.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/intervene.wav",
+      "sha256": "4b34ad11e2b935ad34149108bee765a7da3246e139641115a9528fa26ffdec22",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/intervene.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/intervene.wav.meta",
+      "sha256": "6027d6c1d6028f3b248a829acbff4a8bf169c21f6149b2a8ea3dcac7ed94f8f7",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/intimate.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/intimate.sha256",
+      "sha256": "6d57d6b63cf9e26bfc61267e866c90994118d405136c05006059762304c4876a",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/intimate.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/intimate.sha256.meta",
+      "sha256": "9a259433f51b69107cb9ca800223d1327a4fbf8c0f5c170f9995108b68fd6490",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/intimate.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/intimate.wav",
+      "sha256": "9344ee6c8c997aa81b06bb2738ba17e196ce76b559b30b1b40318148e71caa02",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/intimate.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/intimate.wav.meta",
+      "sha256": "b4523fc4d6efc9bdea5e74e588c9aedbc009fd4e750e8395375a869b8a1a8a9d",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/phone.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/phone.sha256",
+      "sha256": "f5b35d5f38a13f62a7cce6a5671f874983690bf036ac2c7a73875bf50d55230d",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/phone.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/phone.sha256.meta",
+      "sha256": "2001c4d0e98f687ea473602a93fd28d6e6fc12ce7b3dc233dcf62ca8f6114de8",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/phone.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/phone.wav",
+      "sha256": "57fcd04d26def70030907594c41ecc5844e504bc29739587e1d76636314a68f7",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/phone.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/phone.wav.meta",
+      "sha256": "bd397a5f03e43ee6253457c23604e7867cd0781e0f13d32bcd96857177af7665",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/private.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/private.sha256",
+      "sha256": "92a7b4989bb40aa77896620adaf57dbe82b964ddb1675bc1351a902df9fdf38b",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/private.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/private.sha256.meta",
+      "sha256": "6ad3783d3a67682a616f86634eb9d32534d66660be76ab16ca3cf29b2bc28082",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/private.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/private.wav",
+      "sha256": "5a57872b560f35b712c7eb9b2f8375c758b1b9cc5f62dd884b939cf25ad5f4bf",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/private.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/private.wav.meta",
+      "sha256": "9911436a7e53843ea36b6b281fa7469a28734d21dd366b7cafed0046df6ba962",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/quiet.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/quiet.sha256",
+      "sha256": "54724ea274733ec6bdeda631da1d4b0aa820f08d212fa8d6c77e2b8ba400e232",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/quiet.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/quiet.sha256.meta",
+      "sha256": "2451a83d28fc44075042de54183c56da83ca918bfadd06291b09181bba3585c3",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/quiet.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/quiet.wav",
+      "sha256": "b97e55b1dd5a20a2b392a486f31b5ecb369b16cc1ebcfc437975a18bf98fdc8c",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/quiet.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/quiet.wav.meta",
+      "sha256": "61bce5d71b5ddcdd363e3216fea0d83a130d0085164d25f197833f6b49c0f37a",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/recognition.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/recognition.sha256",
+      "sha256": "dcc2e97e32df825c35b7db5a8367a75e70d86c0ba99cbbbcd1cd6774c308cd1c",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/recognition.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/recognition.sha256.meta",
+      "sha256": "6e74544404cfb68b6416cc574f36c39518d459becb02fc895ffdf9deac838c9e",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/recognition.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/recognition.wav",
+      "sha256": "8472cb5550fee76f37163a30688fa599b73fc47989e9a2af2bb2a2460051b1f0",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/recognition.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/recognition.wav.meta",
+      "sha256": "94db7aabb0ee80f5ac1f407f4af582641b860f7f71ff3c2838ce9316e5d48fea",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/recording.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/recording.sha256",
+      "sha256": "e371a09aad181b262fc49520bf0b34775ed9c93b91ce013d91fa59464dbd4ba5",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/recording.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/recording.sha256.meta",
+      "sha256": "daac3ea325e6c98fab114a6b334ab60eee6f8377a4a15ffb39cb4b35f1ba877e",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/recording.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/recording.wav",
+      "sha256": "414551a597b0e6f30dea7330dbeebbcc951887038735c5ab0e554fc9abf53004",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/recording.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/recording.wav.meta",
+      "sha256": "c96c1e0550bf5bd26f283d427cadc7859396cdbebf8b002b5043b44e4d5a2332",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/rewind.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/rewind.sha256",
+      "sha256": "053efa39b1a5e760b9bd36a3583530d9c9d1c7a6ab9ef5c5eba7b47178ec9d47",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/rewind.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/rewind.sha256.meta",
+      "sha256": "533e278febbdea2002bcab2423afb200cd4acf2b26f4d5b3655aea9556a4a796",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/rewind.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/rewind.wav",
+      "sha256": "4fe0050c7ae652b7c2f02a3652e4b4e3627746ede0592eb2491f44c937db10f8",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/rewind.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/rewind.wav.meta",
+      "sha256": "5531c43f2ed5d9cd67f247b0e7d600796a1a43e46187805f408b81111fbdd97a",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/space.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/space.sha256",
+      "sha256": "ac08cf989e06e00a23e4220550ac68b5ded4fd16f809d542b4efcbb45f895803",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/space.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/space.sha256.meta",
+      "sha256": "315a5dc74438a9d318113a7802074dc7f02c44b308833e5ce38226df4c18d330",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/space.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/space.wav",
+      "sha256": "d673c1013fbb224be1b4e5cc830a8aa13a5fa9e184f46aeeccbd94688bbb9324",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/space.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/space.wav.meta",
+      "sha256": "3352fad0020a1fd9d1066ee2607b0ec537508bedf5846c45f2ee94661cba7c9e",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/strike.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/strike.sha256",
+      "sha256": "bcd9edfa79df7d4852e50e80bbe248ef4ae029358709fa78bc811c82294872df",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/strike.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/strike.sha256.meta",
+      "sha256": "0ab9a315179dc109be37197190cabdd13c4a49428f4f891f4dfb0b097f693ebd",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/strike.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/strike.wav",
+      "sha256": "56b078ae18beec317fa5826a8715898cb6b064265bfdb44c13b737559b5c15cf",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/strike.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/strike.wav.meta",
+      "sha256": "fb6460b866d0f3bf4cef6bb5b9b06bbfff3b7fde21d9be52f9924efee3dacdc5",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/touch.sha256",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/touch.sha256",
+      "sha256": "c63b83644b23b84acf8f603b00a61fdf9f23cf27dc68fadf2bed18b249007683",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/touch.sha256.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/touch.sha256.meta",
+      "sha256": "977a86540db43e3a3e620ab4608b23638521ce48a36bd3a1105864b32e023aef",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/touch.wav",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/touch.wav",
+      "sha256": "e6d8b2cfabb66b00a6c191548c38871aad0dbfcffd6d2354f71ddeedcc1f9f07",
+      "hashNormalization": "raw bytes"
+    },
+    {
+      "sourcePath": "Unity/Assets/Gyms/Resources/MvpAudio/Story/touch.wav.meta",
+      "destination": "art/collaborator-checkpoint/Unity/Assets/Gyms/Resources/MvpAudio/Story/touch.wav.meta",
+      "sha256": "abc4e844bcae5485cef82951776df651efda0d9f6d6d5ce718072141f3810a0a",
+      "hashNormalization": "CRLF to LF"
+    },
+    {
+      "sourcePath": "tools/audio/generate_placeholders.py",
+      "destination": "tools/audio/generate_placeholders.py",
+      "sha256": "7d794f586a9053d19d19fb7325b80e2b4278b54d1045ab484e394d3ada49a85a",
+      "hashNormalization": "CRLF to LF"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Art generation prompts — checkpoint three
+
+Tool: built-in image_gen. Source images remain unmodified; generated assets copied into the Unity project's Resources/MvpArt folder.
+
+## Portraits.png
+
+References: art/characters/cast-lineup.png; art/characters/player-avatar.png.
+
+Create ONE game portrait atlas for Before the Drop: a wide landscape image split into FIVE EXACTLY EQUAL-WIDTH vertical panels, all same height, no gaps, no borders, no text. Each portrait must fit wholly within its own fifth, showing head through waist, comfortably uncropped head with space above, facing slightly toward viewer. Reference 1 is cast identity/design reference, reference 2 investigator identity reference. ORDER LEFT TO RIGHT MUST BE: Maya (pink high ponytail, black cropped top, purple jacket loose on shoulders, warm playful expression), Luca (brown swept hair, black shirt, burgundy apron, WHITE TOWEL over shoulder, calm), Theo (silver swept hair, amber sunglasses, emerald green coat, black shirt gold detail, charming guarded), Ren (short ash blonde hair, black cap, black tank, headphones at neck, confident), Investigator PC (black ponytail, black face mask, dark jacket). Preserve recognizable identities and clothing from supplied references. Asset type illustrated dialogue portrait atlas; original painterly angular brushwork and graphic shape lighting, evocative of high quality hand-painted isometric narrative games, restrained cyan edge light and magenta reflected light, warm faces. Every panel has the SAME simple deep dark plum backdrop, no scenery. NOT 3D renders, NOT model sheets, NOT photorealistic. Equal-width framing is critical for five runtime UV crops. 3:2 or wide landscape canvas.
+
+## ClubBackdrop.png
+
+References: .local/captures/09-art-guide.png (regenerable with -btd-art-reference); art/environments/nightclub-isometric-layout.png.
+
+Use case: style-transfer, production game environment backdrop. Image 1 is the EXACT GEOMETRY AND CAMERA guide to paint over. Image 2 is lighting/material/atmosphere reference only. Create a polished hand-painted nightclub environment matching Image 1 pixel positions, perspective and framing, widescreen 16:9. Preserve all furniture footprints, empty walking areas, dancefloor circle location/size, bar placement on left, stage/back wall, right-hand VIP seating, rails with their gaps, plants, entry at bottom. DO NOT change camera or zoom or move the circular dancefloor. This must align with live 3D character navigation placed over it. Repaint the blocky surfaces into rich painterly architectural art with expressive brush strokes and angular planes, luxurious brass trim, lush planter leaves, plush magenta upholstery, glossy dark marble with cyan and magenta light reflections. Similar sophistication to hand-painted isometric RPG environments. Match reference 2 cyan illuminated bar, vivid violet/magenta DJ screen and dancefloor, warm amber pools around tables. Upgrade detail but preserve geometry precisely. Keep open floor free of objects. NO PEOPLE, no silhouettes, no tokens, no numbered markers, no arrows, no writing, no UI, no text. Remove blue destination dot near entrance. Black/dark plum void outside room. Luminous and richly atmospheric but readable, not dim flat geometry. Image1 is layout truth, image2 is color and materials only.
+
+## Expanded club — September 14 polish
+
+Built-in image-generation edit; project asset `Unity/Assets/Gyms/Resources/MvpArt/ClubExpanded.png`. Source: `art/environments/nightclub-isometric-layout.png`. Original generated output: `exec-31a7d410-6447-4483-8bee-a14fcd41e9cb.png`.
+
+Prompt:
+> Use case: precise-object-edit. Asset: painted 2.5D isometric nightclub game environment. Edit the supplied image, preserve its EXACT camera angle, framing, architectural layout and lighting. Remove ALL people, all number badges, red circles, navigation arrows/dotted lines and annotation graphics. Reconstruct the floor/furniture behind them. Preserve the neon circular dancefloor design (without arrows), cyan bar on left, raised DJ platform at rear center, magenta spiral screen, the private purple upholstered VIP enclosure and its plants on right, lounge pockets, and front entrance. Preserve all furniture positions and floor geometry. No new labels, no text overlays, no characters. Painterly high quality detailed game environment, navy shadows, cyan bar, magenta stage, warm amber table lamps, matching the reference. Output landscape 16:9 at high resolution, full room and same margins. This image will be used as actual scenery with live characters placed over it, so remove every human figure including silhouettes and DJ.
+
+The resulting image is installed as world-space scenery with newly authored floor/navigation geometry and a fixed-angle following camera. Previous painted backdrop remains preserved.

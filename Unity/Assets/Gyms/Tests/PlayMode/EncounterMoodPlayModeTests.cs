@@ -110,6 +110,32 @@ namespace LucidLoop.Gyms.Tests
             }
         }
 
+        [UnityTest]
+        public IEnumerator BackspinRequiresANewAuthoritativeLoopAndStopsOnPause()
+        {
+            var root = new GameObject("rewind cue test");
+            var coordinator = root.AddComponent<EncounterCoordinator>();
+            var mood = root.AddComponent<EncounterMoodPresentation>(); mood.Coordinator = coordinator;
+            try
+            {
+                yield return null;
+                var cue = root.GetComponents<AudioSource>().Single(source => !source.loop);
+                Assert.That(cue.clip, Is.Not.Null, "Imported collaborator backspin must be bundled.");
+                ApplyMood(coordinator, "Aggressive", 1);
+                Assert.That(cue.isPlaying, Is.False, "Initial snapshot is not a rewind.");
+                ApplyMood(coordinator, "Aggressive", 2, "exploring", 2);
+                Assert.That(cue.isPlaying, Is.True);
+                Assert.That(cue.volume, Is.EqualTo(mood.MusicVolume * .6f).Within(.001f));
+                cue.Stop();
+                ApplyMood(coordinator, "Aggressive", 3, "exploring", 2);
+                Assert.That(cue.isPlaying, Is.False, "Ordinary snapshots cannot replay the cue.");
+                ApplyMood(coordinator, "Aggressive", 4, "exploring", 3);
+                root.SendMessage("OnPause", true);
+                Assert.That(cue.isPlaying, Is.False);
+            }
+            finally { Object.DestroyImmediate(root); }
+        }
+
         static void ApplyMood(EncounterCoordinator coordinator, string value, long revision, string phase = "exploring", int loopIndex = 1)
         {
             var snapshot = new JObject { ["loopId"] = "mood-loop-" + loopIndex, ["loopIndex"] = loopIndex,

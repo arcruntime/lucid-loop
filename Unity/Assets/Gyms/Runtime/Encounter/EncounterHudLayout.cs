@@ -92,7 +92,7 @@ namespace LucidLoop.Gyms
             Pause.gameObject.SetActive(!typing); Reset.gameObject.SetActive(!typing); Clues.gameObject.SetActive(!typing);
             foreach (var name in new[] { "Select maya", "Select ren", "Select luca", "Select theo", "Talk", "History" })
                 Child(Conversation, name).gameObject.SetActive(!typing);
-            SetTopLeft(Conversation.GetChild(0) as RectTransform, 20, 10, width - 40, 48);
+            SetTopLeft(Conversation.GetChild(0) as RectTransform, 80, 10, width - 100, 48);
             string[] ids = { "maya", "ren", "luca", "theo" };
             for (int i = 0; i < 4; i++) SetTopLeft(Child(Conversation, "Select " + ids[i]), 20 + i * (width - 40) / 4, 66, (width - 40) / 4 - 8, target);
             SetTopLeft(Child(Conversation, "Talk"), 20, 82 + target, (width - 56) / 2, target);
@@ -138,7 +138,7 @@ namespace LucidLoop.Gyms
             float dockWidth = Mathf.Min(1050, size.x * .56f);
             float left = size.x - dockWidth - 72;
             SetBottomLeft(Conversation, size.x - dockWidth - 24, 24, dockWidth, target + 88);
-            SetTopLeft(Conversation.GetChild(0) as RectTransform, 20, 10, dockWidth - 40, 48);
+            SetTopLeft(Conversation.GetChild(0) as RectTransform, 80, 10, dockWidth - 100, 48);
             string[] controls = { "Select maya", "Select ren", "Select luca", "Select theo", "Talk", "History" };
             float cell = (dockWidth - 80) / 6;
             for (int i = 0; i < controls.Length; i++) SetTopLeft(Child(Conversation, controls[i]), 20 + i * (cell + 8), 64, cell, target);

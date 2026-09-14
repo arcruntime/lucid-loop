@@ -23,6 +23,7 @@ namespace LucidLoop.Gyms
         RectTransform canvas, connectionPanel;
         EncounterHudLayout responsiveLayout;
         Text stateLabel, clueLabel, statusLabel, speakerLabel, transcript, guidance;
+        RawImage speakerPortrait;
         InputField address, access, reply;
         Button send, mic, resume, pause, reset, openingRoute, talk;
         ScrollRect historyScroll;
@@ -40,6 +41,7 @@ namespace LucidLoop.Gyms
             if (!Voice) Voice = GetComponent<EncounterVoiceController>();
             if (!Coordinator) { enabled = false; return; }
             Build(); Wire(); ShowState(Coordinator.State); ShowStatus(Coordinator.Status);
+            UpdatePortrait();
         }
 
         void Build()
@@ -69,7 +71,7 @@ namespace LucidLoop.Gyms
 
             var panel = GymUI.Rect(canvas, "Conversation", new Vector2(1, 0), Vector2.one, new Vector2(-585, 24), new Vector2(-24, -24));
             GymUI.Panel(panel, GymUI.Ink);
-            speakerLabel = GymUI.Label(panel, "Maya / Close friend", 20, 18, 515, 48, 30, Gold);
+            speakerLabel = GymUI.Label(panel, "Maya / Close friend", 80, 18, 455, 48, 30, Gold);
             string[] ids = { "maya", "ren", "luca", "theo" }, names = { "Maya", "Ren", "Luca", "Theo" };
             for (int i = 0; i < ids.Length; i++)
             { string id = ids[i]; GymUI.Button(GymUI.Box(panel, "Select " + id, 20 + i * 133, 80, 124, 52), names[i], () => SelectNpc(id)); }
@@ -207,6 +209,7 @@ namespace LucidLoop.Gyms
             if (SelectedNpcId != id) Coordinator.CancelPendingConversation();
             if (SelectedNpcId != id) Leave();
             SelectedNpcId = id; historyText = ""; previousRole = null; RenderHistory();
+            UpdatePortrait();
             foreach (var actor in Coordinator.Characters)
                 if (actor && actor.Id == id) speakerLabel.text = actor.DisplayName + " / " + actor.Role;
         }
@@ -215,10 +218,27 @@ namespace LucidLoop.Gyms
         {
             responsiveLayout.ConversationExpanded = true;
             SelectedNpcId = request.CharacterId; historyText = ""; previousRole = null; RenderHistory();
+            UpdatePortrait();
             ShowConversationStatus("Connecting…"); SetConversationInputEnabled(false, false);
             if (Rig) { Rig.Overview(); foreach (var actor in Coordinator.Characters) if (actor && actor.Id == SelectedNpcId) Rig.Target = actor; }
         }
         void OnInvalidated() { if (responsiveLayout) responsiveLayout.ConversationExpanded = false; microphoneEnabled = false; if (mic) mic.GetComponentInChildren<Text>().text = "Mic off"; SetConversationInputEnabled(false, false); if (Rig) Rig.Overview(); }
+        void UpdatePortrait()
+        {
+            // A title child preserves panel indices used by the phone layout.
+            // Imported atlas order: Maya, Luca, Theo, Ren, player.
+            if (!speakerLabel) return;
+            if (!speakerPortrait)
+            {
+                var rect = GymUI.Box(speakerLabel.transform, "Selected character portrait", -60, 0, 48, 48);
+                speakerPortrait = rect.gameObject.AddComponent<RawImage>();
+                speakerPortrait.texture = Resources.Load<Texture2D>("MvpArt/Portraits");
+                speakerPortrait.raycastTarget = false;
+            }
+            int index = Array.IndexOf(new[] { "maya", "luca", "theo", "ren" }, SelectedNpcId);
+            speakerPortrait.gameObject.SetActive(index >= 0 && speakerPortrait.texture);
+            if (index >= 0) speakerPortrait.uvRect = new Rect(index * .2f, .55f, .2f, .3f);
+        }
         void OnVoiceReady() { SetConversationInputEnabled(true, true); ShowConversationStatus("Ready · microphone off"); }
         public void SetConversationInputEnabled(bool typed, bool microphone)
         { if (reply) reply.interactable = typed; if (send) send.interactable = typed; if (mic) mic.interactable = microphone; }
