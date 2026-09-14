@@ -19,6 +19,7 @@ namespace LucidLoop.CharacterArt
         public Texture2D DesignerReference;
         public Light CyanLight, MagentaLight;
         public bool MovingLights;
+        public bool ShowControls = true;
         public bool IdleBlink = true, IdleActing = true, ShowReference;
         public float HeadTurn, HeadTilt, BlinkL, BlinkR;
         public bool CaptureRequested;
@@ -27,6 +28,7 @@ namespace LucidLoop.CharacterArt
         SkinnedMeshRenderer[] renderers;
         Quaternion headRest, neckRest;
         Quaternion headWorldRest;
+        Vector3 faceForwardRest, faceRightRest;
         Material[] faceMaterials;
         Vector2 scroll;
         float nextBlink = 2.2f, blinkStart = -10;
@@ -43,6 +45,8 @@ namespace LucidLoop.CharacterArt
             foreach (var r in renderers) for (int i = 0; i < r.sharedMesh.blendShapeCount; i++) values[r.sharedMesh.GetBlendShapeName(i)] = 0;
             if (Head) headRest = Head.localRotation;
             if (Head) headWorldRest = Head.rotation;
+            faceForwardRest = LOD0.transform.forward;
+            faceRightRest = LOD0.transform.right;
             if (Neck) neckRest = Neck.localRotation;
             faceMaterials = renderers.SelectMany(r => r.materials).Where(m => m.HasProperty("_UseWorldFace")).Distinct().ToArray();
             rigTransforms = LOD0.GetComponentsInChildren<Transform>(true);
@@ -70,7 +74,7 @@ namespace LucidLoop.CharacterArt
             bool animated = (BodyAnimator && BodyAnimator.enabled) || (IdleActing && BodyIdle && BodyIdleRoot);
             if (Head) Head.localRotation = (animated ? Head.localRotation : headRest) * Quaternion.Euler(HeadTilt + (!animated && IdleActing ? Mathf.Sin(Time.time * .7f) * 1.1f : 0), HeadTurn + (!animated && IdleActing ? Mathf.Sin(Time.time * .43f) * 1.5f : 0), 0);
             if (Neck && !animated) Neck.localRotation = neckRest * Quaternion.Euler(IdleActing ? Mathf.Sin(Time.time * .8f) * .25f : 0, 0, 0);
-            if (Head) foreach (var material in faceMaterials) { material.SetFloat("_UseWorldFace", 1); material.SetVector("_FaceForwardWorld", Head.rotation * Quaternion.Inverse(headWorldRest) * Vector3.back); material.SetVector("_FaceRightWorld", Head.rotation * Quaternion.Inverse(headWorldRest) * Vector3.left); }
+            if (Head) foreach (var material in faceMaterials) { material.SetFloat("_UseWorldFace", 1); material.SetVector("_FaceForwardWorld", Head.rotation * Quaternion.Inverse(headWorldRest) * faceForwardRest); material.SetVector("_FaceRightWorld", Head.rotation * Quaternion.Inverse(headWorldRest) * faceRightRest); }
             if (MovingLights) { if (CyanLight) CyanLight.transform.position = new Vector3(Mathf.Sin(Time.time * .5f), 1.4f, -.7f); if (MagentaLight) MagentaLight.transform.position = new Vector3(Mathf.Cos(Time.time * .37f), 1.6f, .4f); }
             var mixed = RenAssemblyFaceMixer.Mix(values, Mathf.Max(BlinkL, blink), Mathf.Max(BlinkR, blink));
             float closedL=mixed.Where(p=>p.Key.EndsWith("eyeBlinkL",StringComparison.OrdinalIgnoreCase)).Select(p=>p.Value).DefaultIfEmpty(0).Max();
@@ -95,6 +99,7 @@ namespace LucidLoop.CharacterArt
         }
         void OnGUI()
         {
+            if (!ShowControls) return;
             float scale = Mathf.Max(.6f, Screen.height / 900f);
             GUI.matrix = Matrix4x4.Scale(new Vector3(scale, scale, 1));
             float height = Screen.height / scale;

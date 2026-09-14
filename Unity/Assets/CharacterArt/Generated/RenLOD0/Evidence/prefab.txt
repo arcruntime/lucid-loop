@@ -1,0 +1,1 @@
+PASS: saved and independently loaded prefab; all skin bones internal; body idle, face, cap and hair references retained; no viewer camera or UI.
