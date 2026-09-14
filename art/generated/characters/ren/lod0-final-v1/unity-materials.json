@@ -1,0 +1,128 @@
+{
+  "materials": [
+    {
+      "name": "RenBody_LOD0_Baked",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "baseColorTexture": "textures/RenBody_LOD0_Baked.png"
+    },
+    {
+      "name": "RenNeckChest_LOD0_Baked",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "baseColorTexture": "textures/RenNeckChest_LOD0_Baked.png"
+    },
+    {
+      "name": "RenTeethIvory",
+      "baseColor": [
+        0.7799999713897705,
+        0.7300000190734863,
+        0.6399999856948853,
+        1.0
+      ],
+      "baseColorTexture": null
+    },
+    {
+      "name": "RenGums",
+      "baseColor": [
+        0.27000001072883606,
+        0.06499999761581421,
+        0.07999999821186066,
+        1.0
+      ],
+      "baseColorTexture": null
+    },
+    {
+      "name": "RenTongueRose",
+      "baseColor": [
+        0.3799999952316284,
+        0.11999999731779099,
+        0.14000000059604645,
+        1.0
+      ],
+      "baseColorTexture": null
+    },
+    {
+      "name": "tripo_mat_2a21d92d",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "baseColorTexture": "textures/tripo_mat_2a21d92d.png",
+      "closedEye": {
+        "color": "textures/closed-eye-color.png",
+        "mask": "textures/closed-eye-mask.png"
+      }
+    },
+    {
+      "name": "RenOralCavity",
+      "baseColor": [
+        0.07500000298023224,
+        0.013000000268220901,
+        0.017999999225139618,
+        1.0
+      ],
+      "baseColorTexture": null
+    },
+    {
+      "name": "RenLipPatch",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "baseColorTexture": "textures/RenLipPatch.png"
+    },
+    {
+      "name": "tripo_mat_aad239dc",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "baseColorTexture": "textures/tripo_mat_aad239dc.png"
+    },
+    {
+      "name": "RenCapSource",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "baseColorTexture": "textures/RenCapSource.png"
+    },
+    {
+      "name": "tripo_mat_0ddb6f62",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "baseColorTexture": "textures/tripo_mat_0ddb6f62.png"
+    },
+    {
+      "name": "RenNeckJoinBlend",
+      "baseColor": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "baseColorTexture": "textures/RenNeckJoinBlend.png"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "meshes": [
+    {
+      "name": "RenBody_LOD0",
+      "triangles": 10797,
+      "materials": [
+        "RenBody_LOD0_Baked"
+      ],
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenNeckChest_LOD0",
+      "triangles": 1199,
+      "materials": [
+        "RenNeckChest_LOD0_Baked"
+      ],
+      "unweighted_vertices": 0
+    }
+  ],
+  "bones": 54,
+  "triangles": 11996,
+  "actions": 0
+}

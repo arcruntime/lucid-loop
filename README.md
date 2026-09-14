@@ -1,5 +1,7 @@
 # Lucid Loop
 
+**Complete Ren LOD0 viewer:** open `Unity/Assets/CharacterArt/Generated/RenLOD0/Scenes/RenLOD0.unity` in Unity 6.3 LTS and press **Play**. The left panel controls the Walt/Kimodo body idle, automatic blinks, hair motion, cap toggle, face close-up, expressions and speech shapes. The assembled character is approximately 42.2k triangles with separate cap and headphones. Rebuild from the checked-in assembly through **Lucid Loop → Ren LOD0 → Build complete character** while outside Play mode. Source: [Ren LOD0 assembly](art/generated/characters/ren/lod0-final-v1/README.md). Device performance and final artistic acceptance remain pending.
+
 ![Before the Drop](art/beforethedrop.png)
 
 The project logo appears while the game connects or resumes a night, with a Cancel button and no added wait time. The original is preserved in `art/beforethedrop.png`.

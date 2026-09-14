@@ -1,0 +1,22 @@
+{
+  "materials": [
+    {
+      "name": "RenBody_LOD0_Baked",
+      "baseColorTexture": "RenBody_LOD0_Albedo.png",
+      "linearRgbGain": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "RenNeckChest_LOD0_Baked",
+      "baseColorTexture": "RenNeckChest_LOD0_Albedo.png",
+      "linearRgbGain": [
+        1,
+        1,
+        1
+      ]
+    }
+  ]
+}

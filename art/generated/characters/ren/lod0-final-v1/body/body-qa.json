@@ -1,0 +1,31 @@
+{
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\approved-body-v4-no-headphones\\RenBodyV4-review.blend",
+  "source_immutable": true,
+  "removed_old_head_faces": 13463,
+  "reduction": [
+    {
+      "mesh": "RenBody_LOD0",
+      "before": 24944,
+      "after": 10799,
+      "protected_boundary_and_crease_vertices": 7328
+    },
+    {
+      "mesh": "RenNeckChest_LOD0",
+      "before": 5449,
+      "after": 1199,
+      "protected_boundary_and_crease_vertices": 656
+    }
+  ],
+  "total_triangles": 11998,
+  "bones": 54,
+  "unweighted_vertices": {
+    "RenBody_LOD0": 0,
+    "RenNeckChest_LOD0": 0
+  },
+  "neck_ring_vertices": 233,
+  "notes": [
+    "No original torso proportions or rig joint positions edited.",
+    "Original cloth texture preserved; repaired straps remain flat material.",
+    "Head/hair/cap removed at pre-existing V4 disconnected boundary."
+  ]
+}

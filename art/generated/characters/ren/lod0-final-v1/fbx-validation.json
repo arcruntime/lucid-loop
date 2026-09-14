@@ -1,0 +1,101 @@
+{
+  "parts": [
+    {
+      "name": "RenHeadphones_Static",
+      "triangles": 2998,
+      "keys": 0,
+      "unweighted_vertices": null
+    },
+    {
+      "name": "RenCap_Static",
+      "triangles": 1879,
+      "keys": 0,
+      "unweighted_vertices": null
+    },
+    {
+      "name": "RenEyesShallow",
+      "triangles": 1480,
+      "keys": 36,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenHeadSkin",
+      "triangles": 12907,
+      "keys": 36,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenInkBrowsLashes",
+      "triangles": 500,
+      "keys": 36,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenLowerGums",
+      "triangles": 196,
+      "keys": 36,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenLowerTeeth",
+      "triangles": 196,
+      "keys": 36,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenNeckJoin",
+      "triangles": 293,
+      "keys": 0,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenUpperGums",
+      "triangles": 196,
+      "keys": 36,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenEarJewelry",
+      "triangles": 500,
+      "keys": 36,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenBody_LOD0",
+      "triangles": 10797,
+      "keys": 0,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenLiveHair",
+      "triangles": 8471,
+      "keys": 2,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenNeckChest_LOD0",
+      "triangles": 1199,
+      "keys": 0,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenTongue",
+      "triangles": 360,
+      "keys": 36,
+      "unweighted_vertices": 0
+    },
+    {
+      "name": "RenUpperTeeth",
+      "triangles": 196,
+      "keys": 36,
+      "unweighted_vertices": 0
+    }
+  ],
+  "triangles": 42168,
+  "armatures": 1,
+  "bones": 67,
+  "actions": 0,
+  "all_keys_finite_same_vertex_count": true,
+  "blender_triangles": 42170,
+  "export_removed_degenerate_triangles": 2
+}

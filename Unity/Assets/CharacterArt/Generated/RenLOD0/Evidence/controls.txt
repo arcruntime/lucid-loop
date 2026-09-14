@@ -1,0 +1,1 @@
+PASS: metre-scale assembly, A, MBP, bilateral blink, cap-off corrective; idle restored. Actual Unity play-mode captures included.
