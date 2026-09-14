@@ -308,6 +308,19 @@ namespace LucidLoop.Gyms.Mvp
             if(Time.realtimeSinceStartup-renStarted<renDuration+.5f)throw new Exception("Ren landing pause missing");
             Debug.Log("BTD_REN_LANDING_OK: Continue cannot cut line; complete speech plus landing pause");
             Debug.Log("BTD_AUDIO_SMOKE_OK: scratch import, interrupt, reset carry and manual restart cleanup");
+            int theoLegs=0,theoTails=0;
+            foreach(Transform part in Theo.Visual)
+            {
+                if(part.name=="Left stride" || part.name=="Right stride")theoLegs++;
+                if(part.name=="Coat tail")
+                {
+                    theoTails++;
+                    if(part.localPosition.y+part.GetComponent<MeshFilter>().sharedMesh.bounds.min.y<.7f)
+                        throw new Exception("Theo coat still extends down his legs");
+                }
+            }
+            if(theoLegs!=2 || theoTails!=2)throw new Exception("Unexpected Theo leg/coat geometry");
+            Debug.Log("BTD_THEO_SILHOUETTE_OK: two articulated legs, short hip-mounted coat panels");
             var lucaAgent=agents[Luca];float walkingSpeed=lucaAgent.speed;
             var sprint=StartCoroutine(Go(lucaAgent,ExpandedClub.Point(.565f,.635f),true));
             yield return null;

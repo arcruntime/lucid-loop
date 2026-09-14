@@ -6,7 +6,7 @@ namespace LucidLoop.Gyms.Mvp
     // Small articulated figures. All animation is local to the visual; navigation owns the root.
     public sealed class CastVisual : MonoBehaviour
     {
-        Transform leftLeg,rightLeg,leftArm,rightArm,hair;
+        Transform leftLeg,rightLeg,leftArm,rightArm,hair,leftCoat,rightCoat;
         NavMeshAgent agent;
         Vector3 rest;
         float stride;
@@ -57,7 +57,7 @@ namespace LucidLoop.Gyms.Mvp
             var pink=Paint("Magenta hair",C(.92f,.035f,.28f));var brown=Paint("Chestnut hair",C(.17f,.085f,.044f));var silver=Paint("Silver hair",C(.8f,.76f,.64f));
             bool maya=id=="maya",theo=id=="theo",ren=id=="ren",luca=id=="luca",pc=id=="player";
             var cloth=theo?emerald:black;var hairMat=maya?pink:theo||ren?silver:pc?black:brown;
-            var legMat=maya?ivory:cloth;
+            var legMat=maya?ivory:theo?black:cloth;
             Form(visual,"Torso",Vector3.zero,new[]{.95f,1.06f,1.38f,1.55f,1.61f},new[]{.19f,.21f,.29f,.3f,.12f},new[]{.12f,.13f,.16f,.13f,.07f},cloth);
             if(maya)Form(visual,"Midriff",new Vector3(0,0,.01f),new[]{1.0f,1.13f,1.2f},new[]{.2f,.2f,.21f},new[]{.13f,.135f,.14f},skin);
             for(int side=-1;side<=1;side+=2)
@@ -86,7 +86,9 @@ namespace LucidLoop.Gyms.Mvp
             {
                 for(int side=-1;side<=1;side+=2)
                 {
-                    var tail=Form(visual,"Coat tail",new Vector3(side*.17f,0,-.08f),new[]{.28f,.62f,1.08f,1.47f},new[]{.18f,.17f,.14f,.1f},new[]{.13f,.16f,.18f,.16f},emerald);
+                    // Hip-mounted, short coat panels: the previous ankle-length rigid forms read as extra legs.
+                    var tail=Form(visual,"Coat tail",new Vector3(side*.17f,.98f,-.08f),new[]{-.26f,-.12f,.10f,.49f},new[]{.14f,.15f,.14f,.1f},new[]{.08f,.10f,.12f,.12f},emerald);
+                    if(side<0)animation.leftCoat=tail;else animation.rightCoat=tail;
                     Box(visual,"Gold lapel",new Vector3(side*.13f,1.42f,.15f),new Vector3(.035f,.26f,.035f),gold).transform.localRotation=Quaternion.Euler(0,0,side*22);
                     Box(visual,"Amber lens",new Vector3(side*.082f,1.91f,.136f),new Vector3(.13f,.067f,.034f),gold);
                 }
@@ -117,6 +119,8 @@ namespace LucidLoop.Gyms.Mvp
             float swing=speed>.05f?Mathf.Sin(stride)*(running?40:27):0;
             if(leftLeg)leftLeg.localRotation=Quaternion.Euler(swing,0,0);
             if(rightLeg)rightLeg.localRotation=Quaternion.Euler(-swing,0,0);
+            if(leftCoat)leftCoat.localRotation=Quaternion.Euler(swing*.15f,0,0);
+            if(rightCoat)rightCoat.localRotation=Quaternion.Euler(-swing*.15f,0,0);
             if(leftArm)leftArm.localRotation=Quaternion.Euler(-swing*.7f+(Dancing?Mathf.Sin(Time.time*2)*30:0),0,Speaking?-22:8);
             if(rightArm)rightArm.localRotation=Quaternion.Euler(swing*.7f+(Speaking?-30+Mathf.Sin(Time.time*3)*8:0),0,-8);
             if(hair)hair.localRotation=Quaternion.Euler(speed*2+Mathf.Sin(stride)*speed*2,0,Mathf.Sin(stride*.5f)*3);

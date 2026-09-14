@@ -68,9 +68,11 @@ Editorial record (not form text): Arc confirmed build-period provenance, source-
 | 5–13 | Maya recording, Theo confronts, Luca intervenes and falls | Actual dialogue fragments; “First attempt.” |
 | 13–17 | Ren, interruption, rewind, entrance | Preserve “Not on my dancefloor” and rewind audio. |
 | 17–22 | Go left; select Intimate | Hear the music change. “Try a different approach.” |
-| 22–38 | Real Maya request, actual response, then walk away while she stays | “Wait here while I ask the bartender something—and keep your phone away.” Observer shows applied actions. Preserve one continuous request/response/action take if possible. |
+| 22–38 | Real Maya request, actual response, then walk away while she stays | “Wait here while I ask the bartender something, and keep your phone away.” Observer shows applied actions. Preserve one continuous request/response/action take if possible. |
 | 38–45 | Real Luca request and agreement | Establish his preparation; no fabricated dialogue. |
 | 45–54 | Return with Maya, quiet approach, calm intervention, safe outcome | “Same encounter. Different outcome.” |
-| 54–59 | Club, title and Lucid Loop | “What would you say differently?” |
+| 54–59 | Supplied Before the Drop title card and Lucid Loop logo | “What would you say differently?” |
 
 Record one complete successful run first, including game audio and microphone. Edit travel with clear cuts. Do not combine unrelated requests/responses or imply cached opening speech is live generation. If latency is edited, make the cut visible. Use readable captions and duck music beneath speech. Record before attempting optional evening art work; retain this baseline capture. Verify final URL without signing in. Aim to submit a valid entry several hours before the deadline.
+
+Recording assets and current approvals: [recording handoff](RECORDING-READY.md). Original title/team logos: [branding assets](media/branding/README.md).

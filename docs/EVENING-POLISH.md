@@ -1,5 +1,7 @@
 # Optional evening polish — preserve the approved recording baseline
 
+**Status update, September 14:** Audio/music/punctuation/Luca running are implemented and approved. Keep simple avatars and the larger map. The items below retain the earlier planning history; use [RECORDING-READY.md](RECORDING-READY.md) for the current remaining work.
+
 Arc approved the current MVP for branch handoff on September 14. These are follow-ups, not implemented changes or conditions for shipping that checkpoint. Arc plans recording for this evening; preserve the published working checkpoint as fallback and protect a dedicated capture/edit window. Proceed with independent audio preparation while Jetha reviews; wait for his integration direction on avatars/environment and agree ownership of recognition changes. The active gym branch has diverged, so preserve the published checkpoint and keep follow-up work separate.
 
 1. **Recognition coverage (highest priority).** Reproduce walking Maya into VIP beside Theo/AP without recognition. Extend authored visible regions to the exposed VIP seating/approach while respecting the divider and plants. Test Maya following versus waiting, Theo/AP proximity, once-per-loop recognition, and the left preparation route. Do not make all VIP proximity trigger recognition through partitions. Arc can annotate the intended sight regions on the battlemap; the reported case is enough to begin reproducing it. Check the VIP escort itself too.

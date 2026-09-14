@@ -42,3 +42,7 @@ Ren’s timing test passes, but the user still hears an abrupt delivery; this is
 Avatar fallback remains the approved simple cast with illustrated close-ups; no clothing overhaul or map rollback in this pass.
 
 Validation: Unity full two-loop smoke, urgent Luca arrival/speed restoration, Ren playback protection, scratch/reset and voice UI fixture checks passed. Backend: 33 passed, one opt-in test skipped. The first arrival-generation attempt failed validation; the retry passed.
+
+## Recording acceptance
+
+Arc subsequently confirmed Ren is no longer cut off, punctuation is good, Luca runs correctly, and music/transitions sound good. These supersede the earlier perceptual concerns. Current follow-up: Theo’s rigid low coat panels resembled an extra pair of legs; shortened hip-mounted panels, slight sway and dark trousers clarify his stride. Branding assets and final recording tasks are in `RECORDING-READY.md`.
