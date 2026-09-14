@@ -28,6 +28,15 @@ namespace LucidLoop.Gyms.Editor
             runner.RegisterCallbacks(callbacks);
         }
 
+        [MenuItem("Lucid Loop/Time Loop/Validate transition PlayMode tests")]
+        public static void RunTimeLoopPlayMode()=>Run(TestMode.PlayMode,"LucidLoop.Gyms.PlayModeTests","time-loop-playmode","TIME_LOOP_TESTS",new[]{@"^LucidLoop\.Gyms\.PlayModeTests\.TimeLoopTransitionPlayModeTests\.",@"^LucidLoop\.Gyms\.PlayModeTests\.EncounterRewindPlayModeTests\."});
+
+        public static void RunRewindPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "rewind-playmode", "REWIND_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.OpeningMovementCatastropheAndRetainedReset",
+            "LucidLoop.Gyms.PlayModeTests.EncounterRewindPlayModeTests.PreviewUsesUnscaledTimeAndCleansUpOnDisable"
+        });
+
         [MenuItem("Lucid Loop/Validate encounter EditMode tests")]
         public static void RunEditMode() => Run(TestMode.EditMode, "LucidLoop.Gyms.Tests", "gym-editmode", "GYM_TESTS");
 

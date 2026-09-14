@@ -1,0 +1,2 @@
+# Preserve patch context and Unity YAML whitespace.
+*.patch whitespace=-blank-at-eol

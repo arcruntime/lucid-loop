@@ -150,7 +150,7 @@ namespace LucidLoop.Gyms
             else Resume();
         }
         void Quit() { if (!CanQuit || !IsVisible) return; SavePreferences(); coordinator.Disconnect(); Application.Quit(); }
-        void Update() { if (hud && hud.isActiveAndEnabled && Input.GetKeyDown(KeyCode.Escape)) HandleEscape(); }
+        void Update() { if (hud && hud.isActiveAndEnabled && !(hud.RewindTransition && hud.RewindTransition.IsPlaying) && Input.GetKeyDown(KeyCode.Escape)) HandleEscape(); }
         void LateUpdate()
         {
             if (!hud || !hud.isActiveAndEnabled || !coordinator || !coordinator.IsReady) { Hide(); return; }

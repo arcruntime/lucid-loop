@@ -142,6 +142,7 @@ namespace LucidLoop.Gyms.PlayModeTests
         static void Before(float deadline) => Assert.That(Time.realtimeSinceStartup, Is.LessThan(deadline), "Pause lifecycle timeout");
         static IEnumerator Capture(string page, float deadline)
         {
+            if(Application.isBatchMode)yield break; // ScreenCapture requires interactive end-of-frame rendering.
             yield return new WaitForEndOfFrame();
             string capture = Path.GetFullPath(Path.Combine(Application.dataPath, "../../.local/validation/pause-menu-" + page + "-" + DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff") + ".png"));
             ScreenCapture.CaptureScreenshot(capture);

@@ -23,7 +23,17 @@ namespace LucidLoop.Gyms
         Color[] originalColors;
         float[] originalIntensities;
         float intimacy, targetIntimacy, musicDuck = 1, catastropheGain = 1;
-        bool paused;
+        public bool TransitionOwnsAudio;
+        public AudioSource[] LoopSources=>new[]{aggressiveMusic,intimateMusic};
+        public void RestoreLoopMix(){intimacy=targetIntimacy=0;musicDuck=catastropheGain=1;}
+        bool paused, visualRewind;
+        public void SetVisualRewind(bool active)
+        {
+            if(visualRewind==active)return;
+            visualRewind=active;
+            if(active && rewindSound && rewindSound.clip)
+            {rewindSound.volume=MusicVolume*.6f;rewindSound.Play();}
+        }
 
         void Awake()
         {
@@ -83,6 +93,7 @@ namespace LucidLoop.Gyms
         void OnPause(bool value)
         {
             paused = value;
+            if(TransitionOwnsAudio)return;
             if (paused && rewindSound) rewindSound.Stop();
             if (paused) { aggressiveMusic.Pause(); intimateMusic.Pause(); }
             else { aggressiveMusic.UnPause(); intimateMusic.UnPause(); }
@@ -100,13 +111,14 @@ namespace LucidLoop.Gyms
         {
             bool changed = !string.IsNullOrEmpty(observedLoop) && !string.IsNullOrEmpty(state.LoopId) && observedLoop != state.LoopId;
             observedLoop = state.LoopId;
-            if (changed && !paused && rewindSound && rewindSound.clip)
+            if (changed && !TransitionOwnsAudio && !visualRewind && !paused && rewindSound && rewindSound.clip)
             { rewindSound.volume = MusicVolume * .6f; rewindSound.Play(); }
         }
 
         void LateUpdate()
         {
             Bind();
+            if(TransitionOwnsAudio)return;
             // ClubLighting still writes its pulse while paused. Keep applying the mood
             // multiplier, but freeze the transition itself until the encounter resumes.
             if (!paused)
@@ -119,7 +131,7 @@ namespace LucidLoop.Gyms
             }
             // The authored catastrophe cuts the club mix even if a pause freezes
             // simulation. Rewind restores the mix, not the user's volume setting.
-            bool catastrophe = bound && bound.State.Phase == "catastrophe";
+            bool catastrophe = visualRewind || (bound && bound.State.Phase == "catastrophe");
             catastropheGain = Mathf.MoveTowards(catastropheGain, catastrophe ? 0 : 1,
                 Time.unscaledDeltaTime / (catastrophe ? .12f : .8f));
             // Linear crossfade avoids the energy rise when both loops share correlated bass.
