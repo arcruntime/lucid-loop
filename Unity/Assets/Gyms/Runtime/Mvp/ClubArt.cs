@@ -29,6 +29,7 @@ namespace LucidLoop.Gyms.Mvp
             loop.Rig.OverviewSize=12.8f;loop.Rig.Pitch=51;loop.Rig.Yaw=-23;
             foreach(var actor in FindObjectsByType<CharacterActor>(FindObjectsSortMode.None))
             {
+                actor.HighContrastLabel=true;
                 CastVisual.Build(actor.transform,actor.Id);
                 var text=actor.GetComponentInChildren<TextMesh>();if(text){text.transform.localScale=Vector3.one*.55f;text.fontSize=80;text.color=Color.Lerp(actor.Accent,Color.white,.8f);}
             }

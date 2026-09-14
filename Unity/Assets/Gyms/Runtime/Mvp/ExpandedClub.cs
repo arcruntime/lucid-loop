@@ -23,6 +23,7 @@ namespace LucidLoop.Gyms.Mvp
         }
         public static Vector2 UV(Vector3 p)
         {var local=Quaternion.Inverse(Angle)*p;return new Vector2(.5f+local.x/(HalfHeight*2*Aspect),.5f-local.y/(HalfHeight*2));}
+        public static Vector3 DjRequest=>Point(.49f,.39f);
         public static Vector3 Opening=>Point(.575f,.65f);
         public static Vector3 LeftPreparation=>Point(.37f,.68f);
         public static Vector3 VipTheo=>Point(.818f,.595f);
@@ -43,7 +44,7 @@ namespace LucidLoop.Gyms.Mvp
             Furniture();
             Place(loop.Player,Point(.49f,.89f));Place(loop.Maya.GetComponent<NavMeshAgent>(),Point(.465f,.89f));
             Place(loop.Theo.GetComponent<NavMeshAgent>(),Point(.804f,.592f));Place(loop.Luca.GetComponent<NavMeshAgent>(),Point(.285f,.535f));
-            loop.Ren.transform.position=Point(.487f,.265f);loop.Partner.position=Point(.824f,.601f);
+            loop.Ren.transform.position=Point(.487f,.26f);loop.Partner.position=Point(.824f,.601f);
             loop.Theo.transform.LookAt(loop.Partner.position);loop.Partner.LookAt(loop.Theo.transform.position);loop.Ren.transform.LookAt(Point(.48f,.5f));loop.Luca.transform.LookAt(Point(.48f,.5f));
             var club=FindFirstObjectByType<ClubLighting>();
             if(club){var spots=new[]{new Vector2(.412f,.48f),new Vector2(.49f,.49f),new Vector2(.535f,.535f),new Vector2(.42f,.565f),new Vector2(.478f,.592f),new Vector2(.55f,.455f),new Vector2(.44f,.43f),new Vector2(.51f,.62f),new Vector2(.37f,.54f)};int i=0;
@@ -60,6 +61,15 @@ namespace LucidLoop.Gyms.Mvp
         void Furniture()
         {
             var depth=new Material(Shader.Find("BTD/PaintedOcclusion"));
+            // Match the painted deck front in image space; hide the DJ's legs behind it.
+            var deck=new GameObject("Painted DJ decks depth mask");deck.transform.SetParent(transform,false);
+            var deckMesh=new Mesh{name="DJ deck projection"};
+            var deckUV=new[]{new Vector2(.432f,.238f),new Vector2(.572f,.265f),new Vector2(.572f,.312f),new Vector2(.432f,.285f)};
+            var deckPoints=new Vector3[4];
+            for(int i=0;i<4;i++)deckPoints[i]=Point(deckUV[i].x,deckUV[i].y)-Angle*Vector3.forward*8;
+            deckMesh.vertices=deckPoints;deckMesh.triangles=new[]{0,1,2,0,2,3,2,1,0,3,2,0};deckMesh.RecalculateBounds();
+            deck.AddComponent<MeshFilter>().sharedMesh=deckMesh;deck.AddComponent<MeshRenderer>().sharedMaterial=depth;
+
             foreach(var uv in new[]{new Vector2(.326f,.537f),new Vector2(.365f,.422f),new Vector2(.64f,.609f),new Vector2(.646f,.437f)})
             {
                 var table=GameObject.CreatePrimitive(PrimitiveType.Cylinder);table.name="Cocktail table collision / occlusion";table.transform.SetParent(transform,false);table.transform.position=Point(uv.x,uv.y)+Vector3.up*.85f;table.transform.localScale=new Vector3(1.25f,1.7f/2,1.25f);table.GetComponent<Renderer>().sharedMaterial=depth;
@@ -101,7 +111,7 @@ namespace LucidLoop.Gyms.Mvp
             Polygon(.758f,.708f,.804f,.698f,.817f,.612f,.777f,.603f); // stairs into VIP
             Polygon(.777f,.626f,.875f,.615f,.881f,.544f,.804f,.527f,.768f,.565f); // private seating gap
             Polygon(.36f,.40f,.42f,.36f,.427f,.26f,.39f,.267f); // stage left stairs
-            Polygon(.408f,.31f,.61f,.344f,.618f,.25f,.428f,.215f); // DJ platform
+            Polygon(.408f,.29f,.61f,.305f,.618f,.25f,.428f,.215f); // DJ platform
             Polygon(.707f,.415f,.82f,.433f,.91f,.30f,.83f,.245f); // rear passage
             floorMesh=new Mesh{name="Expanded club walkable aisles"};floorMesh.SetVertices(vertices);floorMesh.SetTriangles(triangles,0);floorMesh.RecalculateNormals();floorMesh.RecalculateBounds();
             var floor=new GameObject("Walkable club zones");floor.transform.SetParent(transform,false);floor.AddComponent<MeshCollider>().sharedMesh=floorMesh;
@@ -115,9 +125,9 @@ namespace LucidLoop.Gyms.Mvp
         {
             if(!view||!loop)return;
             bool encounter=loop.Busy&&loop.State.Recognized;
-            var target=encounter?Point(.58f,.61f):loop.Player.transform.position;
+            var target=loop.FocusRen?loop.Ren.transform.position:encounter?Point(.58f,.61f):loop.Player.transform.position;
             // Clamp in image space so the camera never exposes beyond the painting.
-            float desired=encounter?12.1f:11.4f;
+            float desired=loop.FocusRen?7.5f:encounter?12.1f:11.4f;
             var uv=UV(target);float margin=desired/(HalfHeight*2);
             uv.x=Mathf.Clamp(uv.x,margin,1-margin);uv.y=Mathf.Clamp(uv.y,margin,1-margin);
             target=Point(uv.x,uv.y);

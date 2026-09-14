@@ -17,6 +17,7 @@ namespace LucidLoop.Gyms.Mvp
         public LoopState State { get; private set; } = new LoopState();
         public bool Busy { get; private set; }
         public bool AutoAdvance;
+        public bool FocusRen { get; private set; }
         readonly Dictionary<CharacterActor, NavMeshAgent> agents = new Dictionary<CharacterActor, NavMeshAgent>();
         readonly Dictionary<Transform, Vector3> starts = new Dictionary<Transform, Vector3>();
         readonly Dictionary<Transform, Quaternion> rotations = new Dictionary<Transform, Quaternion>();
@@ -142,6 +143,11 @@ namespace LucidLoop.Gyms.Mvp
         void Approach(CharacterActor actor)
         {
             if(State.Loop==1) { OpenConversation(actor); return; }
+            if(actor==Ren)
+            {
+                if(Move(Player,ExpandedClub.DjRequest)){approaching=actor;objective.text="Approaching the DJ booth…";}
+                return;
+            }
             float best=float.MaxValue; Vector3 destination=Vector3.zero; bool found=false;
             for(int i=0;i<16;i++)
             {
@@ -264,6 +270,9 @@ namespace LucidLoop.Gyms.Mvp
             float t=0; var start=Luca.Visual.localRotation;
             while(t<.55f) { t+=Time.deltaTime; Luca.Visual.localRotation=Quaternion.Slerp(start,Quaternion.Euler(0,0,82),t/.55f); yield return null; }
             yield return Say("YOU","Luca hits the floor. He isn't getting up.");
+            FocusRen=true;
+            yield return new WaitForSecondsRealtime(1f);
+            if(AutoAdvance)Capture("14-ren-rewind-focus");
             yield return Say("REN","Not on my dancefloor.",true);
             yield return Rewind();
             Busy=false; Refresh();
@@ -280,6 +289,7 @@ namespace LucidLoop.Gyms.Mvp
         }
         void ResetActors(bool preserveRewind=false)
         {
+            FocusRen=false;
             approaching=null;
             if(music)music.RestartTracks(preserveRewind);
             Stop(Player); foreach(var a in agents.Values) Stop(a);
@@ -372,6 +382,15 @@ namespace LucidLoop.Gyms.Mvp
             while((State.Loop<2 || Busy) && Time.realtimeSinceStartup<timeout) yield return null;
             if(State.Loop!=2 || Busy || !State.RemembersRecording) throw new Exception("Opening did not rewind");
             Capture("02-rewound");
+            Approach(Ren);
+            float djDeadline=Time.realtimeSinceStartup+20;
+            while(!modal && Time.realtimeSinceStartup<djDeadline)yield return null;
+            if(!modal || chatActor!=Ren || Vector3.Distance(Player.transform.position,ExpandedClub.DjRequest)>.5f)
+                throw new Exception("DJ request did not arrive at the dancefloor position");
+            if(ExpandedClub.UV(Maya.transform.position).y<.34f)throw new Exception("Maya stood on the stage facade");
+            yield return new WaitForSecondsRealtime(.5f);Capture("15-dj-request-floor");
+            CloseConversation();Player.Warp(starts[Player.transform]);agents[Maya].Warp(starts[Maya.transform]);
+            Debug.Log("BTD_DJ_REQUEST_OK: player and Maya remain in front of the stage");
             SetObserverVisible(true);
             yield return VoiceSmoke();
             SetWaiting(true); var old=Maya.transform.position;

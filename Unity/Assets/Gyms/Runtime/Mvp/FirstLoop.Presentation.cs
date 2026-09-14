@@ -33,6 +33,8 @@ namespace LucidLoop.Gyms.Mvp
         {
             if(!portrait)return;
             int index=Array.IndexOf(new[]{"maya","luca","theo","ren","player"},id);
+            portrait.offsetMin=modal?new Vector2(680,135):new Vector2(25,135);
+            portrait.offsetMax=modal?new Vector2(885,490):new Vector2(230,490);
             portrait.gameObject.SetActive(index>=0);
             if(index>=0)portraitImage.uvRect=new Rect(index*.2f,.48f,.2f,.52f);
         }

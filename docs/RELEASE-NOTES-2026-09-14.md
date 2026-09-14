@@ -23,3 +23,9 @@ Open `Unity/Assets/Gyms/Scenes/BeforeTheDrop.unity` within the `Unity` project. 
 - Moved Continue clear of the music/restart buttons.
 
 The existing VIP recognition-coverage issue is separate and remains open. Full environment reconstruction is deferred.
+
+## Conversation and DJ-stage follow-up
+
+Conversation portraits move beside the chat panel instead of covering input/voice buttons; authored-story portraits retain the lower-left placement. Name labels have dark backplates. Ren requests use a fixed spot on the dancefloor, with Maya following there; the stage-front shortcut is removed. A depth-only mask aligns Ren with the painted decks. Before her final line the camera pans to Ren, holds through her line, then rewinds and returns to the player.
+
+For prevention in loop two, the implemented condition is Maya agreeing to a discreet/phone-away approach plus Luca agreeing to prepare a calm intervention, before recognition. Music changes and asking Maya to wait are optional preparation tools; if she waits, ask her to follow before approaching the encounter.

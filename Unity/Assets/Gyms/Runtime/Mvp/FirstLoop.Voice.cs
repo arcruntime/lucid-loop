@@ -122,7 +122,13 @@ namespace LucidLoop.Gyms.Mvp
         }
         IEnumerator VoiceSmoke()
         {
-            OpenConversation(Maya);voice=new LiveConnection();voiceReady=true;
+            OpenConversation(Maya);
+            Canvas.ForceUpdateCanvases();
+            var artBounds=RectTransformUtility.CalculateRelativeRectTransformBounds(hud,portrait);
+            var chatBounds=RectTransformUtility.CalculateRelativeRectTransformBounds(hud,choices);
+            if(artBounds.Intersects(chatBounds))throw new System.Exception("Portrait overlaps conversation controls");
+            Debug.Log("BTD_PORTRAIT_LAYOUT_OK: portrait and conversation panel do not overlap");
+            voice=new LiveConnection();voiceReady=true;
             HandleVoice(new JObject{{"type","session.input_transcript.delta"},{"delta","Please wait here."}});
             var eventData=JObject.Parse("{\"type\":\"mvp.decision\",\"id\":\"fixture-turn\",\"loop\":2,\"character\":\"maya\",\"source\":\"openai\",\"actions\":[\"wait\"]}");
             HandleVoice(eventData);if(!observerResult.text.Contains("APPLIED")||!observerRequest.text.Contains("Please wait here."))throw new Exception("Observer missed committed voice action");
