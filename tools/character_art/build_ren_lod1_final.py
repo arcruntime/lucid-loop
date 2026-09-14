@@ -34,6 +34,9 @@ def main():
   elif obj.name in ('RenHeadSkin','RenNeckChest_LOD0','RenBody_LOD0'):
    for edge in bm.edges:
     if edge.is_boundary and all(v.co.z>1.40 for v in edge.verts):protected.update(v.index for v in edge.verts)
+  if globals().get('PROTECT_VISIBLE_HEAD',False) and obj.name=='RenHeadSkin':
+   for v in bm.verts:
+    if v.co.y<.025 or v.co.z<1.565:protected.add(v.index)
   bm.free()
   keys=[]
   if obj.data.shape_keys:
@@ -77,6 +80,8 @@ def main():
  report['protected_boundaries_preserved']=all(p['protected_vertex_max_error']<1e-6 for p in report['parts'])
  if rest!={b.name:[list(r)for r in b.matrix_local]for b in rig.data.bones}:raise ValueError('Rig rest changed')
  report['rig_rest_unchanged']=True;report['native_source_unchanged']=sha(SRC)==source_hash
+ hair=bpy.data.objects.get('RenLiveHair')
+ if hair and hair.data.shape_keys and 'capOn'in hair.data.shape_keys.key_blocks:hair.data.shape_keys.key_blocks['capOn'].value=0
  bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'Ren_LOD1.blend'))
  bpy.ops.object.select_all(action='DESELECT');rig.select_set(True)
  for o in meshes:o.select_set(True)
@@ -84,8 +89,9 @@ def main():
  for o in meshes:
   parent=o.parent
   while parent:parent.select_set(True);parent=parent.parent
- bpy.ops.export_scene.fbx(filepath=str(OUT/'Ren_LOD1.fbx'),use_selection=True,object_types={'ARMATURE','MESH','EMPTY'},axis_forward='-Z',axis_up='Y',add_leaf_bones=False,bake_anim=False,use_armature_deform_only=False,path_mode='COPY',embed_textures=True)
+ bpy.ops.export_scene.fbx(filepath=str(OUT/'Ren_LOD1.fbx'),use_selection=True,object_types={'ARMATURE','MESH','EMPTY'},axis_forward='-Z',axis_up='Y',apply_unit_scale=True,apply_scale_options='FBX_SCALE_UNITS',use_mesh_modifiers=False,add_leaf_bones=False,bake_anim=False,use_armature_deform_only=False,path_mode='COPY',embed_textures=True)
  scene.render.filepath=str(OUT/'lod1-full.png');bpy.ops.render.render(write_still=True)
  report['limitations']=['Local decimation with nearest source triangle morph delta transfer; endpoint shapes require visual review.','Component boundaries are preserved as separate objects; neck seam edge correspondence is not guaranteed after reduction.','LOD1 hair retains inherited bone weights and capOn morph; no new secondary-motion tuning.']
  (OUT/'manifest.json').write_text(json.dumps(report,indent=2));print('LOD1_DONE',report['triangles'])
 if __name__=='__main__':main()
+

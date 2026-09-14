@@ -1,0 +1,1 @@
+PASS: body topology and neutral retained (max error 0); corrected 15 shared female left digits, retargeted idle, imported 19 guarded pose bones.

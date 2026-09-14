@@ -9,11 +9,16 @@ namespace LucidLoop.CharacterArt
     public sealed class RenLOD0Controller : MonoBehaviour
     {
         public GameObject LOD0, LOD1, Cap;
+        public GameObject LOD1Cap, LOD1Headphones;
+        public LODGroup CharacterLODs;
         public Transform Head, Neck;
         public Camera ReviewCamera;
         public RenAssemblyHairMotion HairMotion;
         public Animator BodyAnimator;
         public AnimationClip BodyIdle;
+        public RenGuardedPose GuardedPose;
+        Transform[] guardedBones;
+        float guardedAmount;
         public GameObject BodyIdleRoot;
         float bodyTime;
         public Texture2D DesignerReference;
@@ -21,7 +26,7 @@ namespace LucidLoop.CharacterArt
         public bool MovingLights;
         public bool ShowControls = true;
         public bool IdleBlink = true, IdleActing = true, ShowReference;
-        public float HeadTurn, HeadTilt, BlinkL, BlinkR;
+        public float HeadTurn, HeadTilt, HeadRoll, BlinkL, BlinkR;
         public bool CaptureRequested;
         public string CapturePath;
         readonly Dictionary<string, float> values = new Dictionary<string, float>();
@@ -64,6 +69,8 @@ namespace LucidLoop.CharacterArt
             rigPositions = rigTransforms.Select(t => t.localPosition).ToArray();
             rigRotations = rigTransforms.Select(t => t.localRotation).ToArray();
             wasActing = IdleActing;
+            if (GuardedPose && BodyIdleRoot)
+                guardedBones = GuardedPose.Bones.Select(b => BodyIdleRoot.transform.Find(b.Path)).ToArray();
         }
         void Update()
         {
@@ -76,14 +83,30 @@ namespace LucidLoop.CharacterArt
             if (wasActing && !IdleActing)
                 for (int i = 0; i < rigTransforms.Length; i++) { rigTransforms[i].localPosition = rigPositions[i]; rigTransforms[i].localRotation = rigRotations[i]; }
             wasActing = IdleActing;
+            if (GuardedPose && guardedBones != null)
+            {
+                float target = values.Where(p => p.Key.EndsWith("emotion_Guarded", StringComparison.OrdinalIgnoreCase)).Select(p => p.Value).DefaultIfEmpty(0).Max();
+                float duration = target > guardedAmount ? GuardedPose.EnterSeconds : GuardedPose.ExitSeconds;
+                guardedAmount = Mathf.MoveTowards(guardedAmount, target, Time.deltaTime / Mathf.Max(.01f, duration));
+                float amount = Mathf.SmoothStep(0, 1, guardedAmount);
+                for (int i = 0; i < guardedBones.Length; i++)
+                {
+                    var bone = guardedBones[i]; if (!bone) continue;
+                    var pose = GuardedPose.Bones[i];
+                    bool fromIdle = IdleActing && BodyIdle && BodyIdleRoot;
+                    bone.localPosition = Vector3.Lerp(fromIdle ? bone.localPosition : pose.RestPosition, pose.Position, amount);
+                    bone.localRotation = Quaternion.Slerp(fromIdle ? bone.localRotation : pose.RestRotation, pose.Rotation, amount);
+                }
+            }
         }
         void LateUpdate()
         {
+            if (LOD1Cap && Cap && LOD1Cap.activeSelf != Cap.activeSelf) LOD1Cap.SetActive(Cap.activeSelf);
             if (Time.time >= nextBlink) { blinkStart = Time.time; nextBlink = Time.time + 2.8f + .6f * Mathf.Sin(Time.time); }
             float t = (Time.time - blinkStart) / .24f;
             float blink = IdleBlink && t >= 0 && t <= 1 ? Mathf.Sin(t * Mathf.PI) : 0;
             bool animated = (BodyAnimator && BodyAnimator.enabled) || (IdleActing && BodyIdle && BodyIdleRoot);
-            if (Head) Head.localRotation = (animated ? Head.localRotation : headRest) * Quaternion.Euler(HeadTilt + (!animated && IdleActing ? Mathf.Sin(Time.time * .7f) * 1.1f : 0), HeadTurn + (!animated && IdleActing ? Mathf.Sin(Time.time * .43f) * 1.5f : 0), 0);
+            if (Head) Head.localRotation = (animated ? Head.localRotation : headRest) * Quaternion.Euler(HeadTilt + (!animated && IdleActing ? Mathf.Sin(Time.time * .7f) * 1.1f : 0), HeadTurn + (!animated && IdleActing ? Mathf.Sin(Time.time * .43f) * 1.5f : 0), HeadRoll);
             if (Neck && !animated) Neck.localRotation = neckRest * Quaternion.Euler(IdleActing ? Mathf.Sin(Time.time * .8f) * .25f : 0, 0, 0);
             if (Head) foreach (var material in faceMaterials) { material.SetFloat("_UseWorldFace", 1); material.SetVector("_FaceForwardWorld", Head.rotation * Quaternion.Inverse(headWorldRest) * faceForwardRest); material.SetVector("_FaceRightWorld", Head.rotation * Quaternion.Inverse(headWorldRest) * faceRightRest); }
             if (MovingLights) { if (CyanLight) CyanLight.transform.position = new Vector3(Mathf.Sin(Time.time * .5f), 1.4f, -.7f); if (MagentaLight) MagentaLight.transform.position = new Vector3(Mathf.Cos(Time.time * .37f), 1.6f, .4f); }
@@ -101,7 +124,11 @@ namespace LucidLoop.CharacterArt
                 for (int i = 0; i < r.sharedMesh.blendShapeCount; i++)
                 {
                     string key = r.sharedMesh.GetBlendShapeName(i);
-                    float value = key.EndsWith("capOn", StringComparison.OrdinalIgnoreCase) ? (Cap && Cap.activeSelf ? 1 : 0) : mixed.TryGetValue(key, out var v) ? v : 0;
+                    // The cap fits the intact hair. The rejected legacy crown-tuck
+                    // target is never driven, including when the cap is visible.
+                    float value = key.EndsWith("capOn", StringComparison.OrdinalIgnoreCase) ? 0
+                        : key.EndsWith("guardedBodyCorrective", StringComparison.OrdinalIgnoreCase) ? Mathf.SmoothStep(0, 1, guardedAmount)
+                        : mixed.TryGetValue(key, out var v) ? v : 0;
                     r.SetBlendShapeWeight(i, Mathf.Clamp01(value) * 100);
                 }
             if (CaptureRequested) { CaptureRequested = false; ScreenCapture.CaptureScreenshot(CapturePath); }
@@ -125,6 +152,15 @@ namespace LucidLoop.CharacterArt
                 values[key]=float.IsFinite(value)?Mathf.Clamp01(value):0;
             }
         }
+        public void SetFacialControls(IReadOnlyDictionary<string, float> snapshot)
+        {
+            foreach (var key in values.Keys.ToArray())
+            {
+                var semantic = key.Substring(key.LastIndexOf('.') + 1);
+                values[key] = snapshot != null && snapshot.TryGetValue(semantic, out var weight) && float.IsFinite(weight)
+                    ? Mathf.Clamp01(weight) : 0;
+            }
+        }
         void OnGUI()
         {
             if (!ShowControls) return;
@@ -139,7 +175,11 @@ namespace LucidLoop.CharacterArt
             MovingLights = GUILayout.Toggle(MovingLights, "Moving club lights");
             if (HairMotion) HairMotion.MotionEnabled = GUILayout.Toggle(HairMotion.MotionEnabled, "Secondary hair motion");
             if (Cap) { bool on = GUILayout.Toggle(Cap.activeSelf, "Baseball cap"); Cap.SetActive(on); if (HairMotion) HairMotion.CapOn = on; }
-            if (LOD1) { useLOD1 = GUILayout.Toggle(useLOD1, "LOD1"); if (LOD0) LOD0.SetActive(!useLOD1); LOD1.SetActive(useLOD1); }
+            if (LOD1 && CharacterLODs)
+            {
+                useLOD1 = GUILayout.Toggle(useLOD1, "Preview LOD1");
+                CharacterLODs.ForceLOD(useLOD1 ? 1 : 0);
+            }
             bool nextClose = GUILayout.Toggle(closeUp, "Face close-up");
             if (nextClose != closeUp && ReviewCamera && Head)
             {
@@ -156,7 +196,7 @@ namespace LucidLoop.CharacterArt
             int pose = GUILayout.SelectionGrid(selectedPose, poses, 3);
             if (pose != selectedPose) SetPose(pose);
             scroll = GUILayout.BeginScrollView(scroll);
-            foreach (var key in values.Keys.ToArray()) { GUILayout.Label(key); values[key] = GUILayout.HorizontalSlider(values[key], 0, 1); }
+            foreach (var key in values.Keys.Where(k => !k.EndsWith("capOn", StringComparison.OrdinalIgnoreCase) && !k.EndsWith("guardedBodyCorrective", StringComparison.OrdinalIgnoreCase)).ToArray()) { GUILayout.Label(key); values[key] = GUILayout.HorizontalSlider(values[key], 0, 1); }
             GUILayout.EndScrollView();
             GUILayout.EndArea();
             if (ShowReference && DesignerReference) GUI.DrawTexture(new Rect(Screen.width / scale - 520, 20, 500, 334), DesignerReference, ScaleMode.ScaleToFit);

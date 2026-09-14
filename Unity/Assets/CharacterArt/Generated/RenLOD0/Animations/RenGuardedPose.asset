@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bfd50297f99d04aad85359c98e2a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LucidLoop.CharacterArt::LucidLoop.CharacterArt.RenGuardedPose
+  Bones:
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm
+    RestPosition: {x: 0.0000000033325822, y: 0.09811949, z: -0.00000036342507}
+    Position: {x: 0.000000011248824, y: 0.09811944, z: -0.00000036342507}
+    RestRotation: {x: 0.45101783, y: -0.4792313, z: -0.28861383, w: 0.6954296}
+    Rotation: {x: -0.20087107, y: -0.39417273, z: -0.19402708, w: 0.87557536}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm
+    RestPosition: {x: -0.0000017229468, y: 0.24526386, z: -0.00000028684735}
+    Position: {x: 0.00000023469329, y: 0.24526353, z: 0.0000001527369}
+    RestRotation: {x: -0.11877115, y: 0.06827566, z: 0.015551497, w: 0.9904494}
+    Rotation: {x: -0.063129015, y: 0.4959737, z: -0.8659159, w: 0.0146446815}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand
+    RestPosition: {x: -0.00000067288056, y: 0.25203365, z: 0.0000006360933}
+    Position: {x: 0.000000031664968, y: 0.25203356, z: 0.000000007450581}
+    RestRotation: {x: 0.05948363, y: -0.1015965, z: -0.100281715, w: 0.98796934}
+    Rotation: {x: 0.38276288, y: -0.12179949, z: 0.15172432, w: 0.90312636}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1
+    RestPosition: {x: -0.012410702, y: 0.079806566, z: -0.008980504}
+    Position: {x: -0.012410839, y: 0.079806626, z: -0.008980472}
+    RestRotation: {x: -0.13010003, y: 0.9545666, z: 0.21596722, w: 0.15885472}
+    Rotation: {x: -0.12015951, y: 0.93960166, z: 0.27383927, w: 0.16650082}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2
+    RestPosition: {x: 0.0000000065883796, y: 0.037692107, z: -0.000000053085387}
+    Position: {x: -0.00000003259629, y: 0.037692223, z: 0.000000044703484}
+    RestRotation: {x: 0.06218921, y: 0.0012862837, z: 0.001899479, w: 0.9980618}
+    Rotation: {x: 0.006224537, y: -0.016986344, z: 0.018082166, w: 0.99967283}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandIndex1/LeftHandIndex2/LeftHandIndex3
+    RestPosition: {x: -0.00000003771129, y: 0.022179265, z: -0.0000000055879354}
+    Position: {x: 0.000000012922101, y: 0.022179306, z: 0.00000007497147}
+    RestRotation: {x: -0.1745873, y: -0.0033416473, z: -0.0049657794, w: 0.9846235}
+    Rotation: {x: -0.21021779, y: -0.016438939, z: 0.0042357184, w: 0.9775072}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1
+    RestPosition: {x: -0.007332362, y: 0.08453166, z: 0.020144949}
+    Position: {x: -0.0073324423, y: 0.084531724, z: 0.020144997}
+    RestRotation: {x: -0.06146497, y: 0.981919, z: 0.04561925, w: 0.17313595}
+    Rotation: {x: -0.025713302, y: 0.95311165, z: 0.24046654, w: 0.18191439}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2
+    RestPosition: {x: -0.00000008242205, y: 0.03686005, z: -0.000000006373739}
+    Position: {x: -0.000000022933818, y: 0.036859903, z: -0.00000006053597}
+    RestRotation: {x: -0.25765282, y: -0.005280632, z: -0.006642833, w: 0.9662003}
+    Rotation: {x: -0.43157282, y: -0.04988176, z: 0.05187616, w: 0.89920276}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandMiddle1/LeftHandMiddle2/LeftHandMiddle3
+    RestPosition: {x: 0.000000043190084, y: 0.024332855, z: -0.000000014901161}
+    Position: {x: 0.000000056868885, y: 0.024332952, z: 0.0000000027939677}
+    RestRotation: {x: 0.24986589, y: 0.005090805, z: 0.0063898726, w: 0.968246}
+    Rotation: {x: 0.13064815, y: -0.024466686, z: 0.044214394, w: 0.9901402}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1
+    RestPosition: {x: 0.029332178, y: 0.07108695, z: 0.017133832}
+    Position: {x: 0.029332038, y: 0.071087, z: 0.017133974}
+    RestRotation: {x: -0.052231327, y: 0.9397682, z: 0.2928858, w: 0.168302}
+    Rotation: {x: -0.01762875, y: 0.86251, z: 0.47436568, w: 0.17533657}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2
+    RestPosition: {x: -0.00000004172034, y: 0.031911425, z: 0.000000007450581}
+    Position: {x: -0.00000006711343, y: 0.031911436, z: 0.000000008381903}
+    RestRotation: {x: 0.113121234, y: 0.0019800873, z: 0.0014277988, w: 0.9935782}
+    Rotation: {x: -0.07510345, y: -0.03032379, z: 0.062066708, w: 0.99478024}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandPinky1/LeftHandPinky2/LeftHandPinky3
+    RestPosition: {x: -0.00000013828685, y: 0.018054437, z: 0.000000014901161}
+    Position: {x: 0.0000000034924597, y: 0.018054405, z: -0.000000013969839}
+    RestRotation: {x: -0.12130396, y: -0.0021103271, z: -0.0015158332, w: 0.992612}
+    Rotation: {x: -0.24148867, y: -0.02347994, z: 0.03792698, w: 0.9693779}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1
+    RestPosition: {x: 0.0071377326, y: 0.07824626, z: 0.029149603}
+    Position: {x: 0.007137661, y: 0.07824629, z: 0.029149603}
+    RestRotation: {x: -0.043086648, y: 0.9815178, z: 0.07274627, w: 0.17168096}
+    Rotation: {x: -0.007993996, y: 0.9473103, z: 0.26696903, w: 0.17682439}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2
+    RestPosition: {x: -0.000000004270987, y: 0.03459854, z: -0.000000020954758}
+    Position: {x: -0.000000007683411, y: 0.03459841, z: 0.00000006146729}
+    RestRotation: {x: -0.010080282, y: -0.00024126525, z: -0.0002531516, w: 0.99994916}
+    Rotation: {x: -0.19672212, y: -0.022789853, z: 0.0655138, w: 0.9780026}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandRing1/LeftHandRing2/LeftHandRing3
+    RestPosition: {x: -0.000000022890163, y: 0.02088627, z: 0.000000011175871}
+    Position: {x: 0.0000000027939677, y: 0.020886257, z: -0.000000035390258}
+    RestRotation: {x: -0.20657021, y: -0.0040878304, z: -0.0043078624, w: 0.97841376}
+    Rotation: {x: -0.3238562, y: -0.028269548, z: 0.034957957, w: 0.94503754}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1
+    RestPosition: {x: 0.0076007987, y: 0.035442077, z: -0.01910423}
+    Position: {x: 0.0076007433, y: 0.035442084, z: -0.019104254}
+    RestRotation: {x: -0.24922399, y: 0.94870245, z: -0.034793507, w: 0.1914172}
+    Rotation: {x: -0.23159255, y: 0.94812477, z: 0.04802378, w: 0.21241002}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2
+    RestPosition: {x: 0.000000077998266, y: 0.040043063, z: 0.000000007450581}
+    Position: {x: -0.0000000018626451, y: 0.040043104, z: -0.00000005029142}
+    RestRotation: {x: 0.15929697, y: 0.0058888653, z: 0.011493477, w: 0.98714626}
+    Rotation: {x: 0.08899223, y: -0.02758473, z: 0.050157994, w: 0.9943861}
+  - Path: Hips/Spine02/Spine01/Spine/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandThumb1/LeftHandThumb2/LeftHandThumb3
+    RestPosition: {x: -3.4924597e-10, y: 0.027037643, z: -0.000000016763806}
+    Position: {x: 0.000000011175871, y: 0.027037552, z: -0.00000011269003}
+    RestRotation: {x: 0.027256617, y: 0.0013001555, z: 0.0021657497, w: 0.9996253}
+    Rotation: {x: -0.019135391, y: -0.014822568, z: 0.030526873, w: 0.9992408}
+  - Path: Hips/Spine02/Spine01/Spine/RightShoulder/RightArm
+    RestPosition: {x: 0.00000003423512, y: 0.09627016, z: -0.0000000035667482}
+    Position: {x: 0.00000003423512, y: 0.09627016, z: -0.0000000035667482}
+    RestRotation: {x: 0.4526962, y: 0.480912, z: 0.29271024, w: 0.69145536}
+    Rotation: {x: 0.5004853, y: 0.4309579, z: 0.36338353, w: 0.6570709}
+  EnterSeconds: 1.2
+  ExitSeconds: 1.4

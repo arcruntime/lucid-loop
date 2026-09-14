@@ -9,7 +9,7 @@ def inventory():
 bpy.ops.wm.open_mainfile(filepath=str(ROOT/'lod0-final-v1/Ren_LOD0.blend'));source=inventory()
 bpy.ops.wm.open_mainfile(filepath=str(OUT/'Ren_LOD1.blend'));expected=inventory()
 bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.fbx(filepath=str(OUT/'Ren_LOD1.fbx'),automatic_bone_orientation=False);actual=inventory()
-assert expected['triangles']==13418
+assert 10000<=expected['triangles']<=12000
 assert actual['rigs']==expected['rigs'],'FBX bone hierarchy differs'
 checks={}
 for name,row in expected['meshes'].items():
@@ -18,6 +18,6 @@ for name,row in expected['meshes'].items():
  rig_names={n for rig in expected['rigs'].values()for n in rig}
  assert set(got['skin_bones'])&rig_names==set(row['skin_bones'])&rig_names,name+' skin groups'
  checks[name]={'triangles':got['triangles'],'blend_triangles':row['triangles'],'triangle_delta':got['triangles']-row['triangles'],'shape_count':len(got['keys']),'shape_names':got['keys'],'material_names':got['materials'],'same_material_names_as_lod0':got['materials']==source['meshes'][name]['materials'],'skin_groups_match':True,'parent_bone':got['parent_bone']}
-manifest=json.loads((OUT/'manifest.json').read_text());source_path=ROOT/'lod0-final-v1/Ren_LOD0.blend';unchanged=hashlib.sha256(source_path.read_bytes()).hexdigest()==manifest['source_sha256'];assert unchanged
-report={'source_lod0_sha256':manifest['source_sha256'],'source_file_unchanged':unchanged,'triangles':actual['triangles'],'rigs':actual['rigs'],'rig_hierarchy_exact':True,'parts':checks,'protected_source_vertices':{p['name']:{'vertices':p['protected_vertices'],'maximum_position_error':p['protected_vertex_max_error']}for p in manifest['parts']if p['protected_vertices']},'budget_met':False,'status':'PROVISIONAL_CORRECTED_LOD1_13418_TRIANGLES'}
+manifest=json.loads((OUT/'manifest.json').read_text());source_path=ROOT/'lod0-final-v1/Ren_LOD0.blend';unchanged=hashlib.sha256(source_path.read_bytes()).hexdigest()==manifest['root_lod0_sha256'];assert unchanged
+report={'source_lod0_sha256':manifest['root_lod0_sha256'],'source_file_unchanged':unchanged,'triangles':actual['triangles'],'blend_triangles':expected['triangles'],'rigs':actual['rigs'],'rig_hierarchy_exact':True,'parts':checks,'protected_source_vertices':{p['name']:{'vertices':p['protected_vertices'],'maximum_position_error':p['protected_vertex_max_error']}for p in manifest['parts']if p['protected_vertices']},'budget_met':10000<=actual['triangles']<=12000,'status':'LOD1_WITHIN_BUDGET'}
 (OUT/'fbx-validation.json').write_text(json.dumps(report,indent=2));print('FBX_PROOF_PASS',actual['triangles'],[len(v)for v in actual['rigs'].values()])

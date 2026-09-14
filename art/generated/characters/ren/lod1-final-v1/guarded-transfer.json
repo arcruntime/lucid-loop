@@ -1,0 +1,29 @@
+{
+  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\guarded-final-v1\\RenGuarded_WeightAndDigitCorrection.blend",
+  "source_sha256": "b12980cdeaae08987d45626f802bfa2a87c05c0dc2a291deba9d482ef62a4c5a",
+  "digit_names": [
+    "LeftHandIndex1",
+    "LeftHandIndex2",
+    "LeftHandIndex3",
+    "LeftHandMiddle1",
+    "LeftHandMiddle2",
+    "LeftHandMiddle3",
+    "LeftHandPinky1",
+    "LeftHandPinky2",
+    "LeftHandPinky3",
+    "LeftHandRing1",
+    "LeftHandRing2",
+    "LeftHandRing3",
+    "LeftHandThumb1",
+    "LeftHandThumb2",
+    "LeftHandThumb3"
+  ],
+  "non_digit_rest_max_error": 0.0,
+  "neutral_vertices_unchanged": true,
+  "old_shape_coordinates_unchanged": true,
+  "shape_sha256": "c7673bdec2467de841d4edd77a1ce24dd4da862cdb5ca9fa22694e6d87fddcd2",
+  "maximum_body_weight_projection_distance_m": 0.09233716130256653,
+  "export_apply_scale_options": "FBX_SCALE_UNITS",
+  "export_apply_unit_scale": true,
+  "export_use_mesh_modifiers": false
+}

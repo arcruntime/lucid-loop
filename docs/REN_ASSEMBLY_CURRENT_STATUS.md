@@ -19,7 +19,7 @@ not establish either acceptance criterion.
 | Facial controls | Retained speech shapes, expressions, idle blink and eight independent per-eye gaze controls; bindings count renderer targets, not unique expressions. Gaze uses the same final writer and fades quadratically with each blink |
 | Hair | 12 animated hair bones plus a fixed anchor; runtime secondary movement |
 | Accessories | Separate toggleable baseball cap and standalone replacement headphones included in the assembly |
-| Body idle | Runtime playback of the female-v3 Walt observer idle through `RenLOD0Controller`; the complete scene is playing |
+| Body idle | Female-v3 Walt observer idle through `RenLOD0Controller`, with corrected left-digit rest tracks; GUARDED overlays 19 authored arm/finger targets with smooth entry and exit |
 | NPR shading | `RenLOD0Toon.shader`, white key light and cyan/magenta club-light controls in the complete-character scene |
 | Export | `art/generated/characters/ren/lod0-final-v1/Ren_LOD0.fbx`, portable Blender assembly, textures, and material mapping |
 | Neck motion | Final Blender assembly: 293 paired endpoints stayed coincident in 56 head/expression combinations; head vertices moved up to 0.1215 m, confirming actual deformation |
@@ -37,19 +37,26 @@ continuity, not shading, accessory contact or artistic acceptance.
 
 ## Remaining acceptance
 
+- Latest user correction: the cap-on crown tuck is rejected and disabled in
+  runtime. Full hair Basis is retained. A new standalone cap is being generated
+  and fitted to that intact hair through the headphone accessory workflow;
+  `cap-replacement-v1` records its references and paid task. Existing captures
+  below predate this cap replacement and do not approve its fit.
+
 - Designer approval of Ren's facial silhouette, eyes, expressions, and complete
   character likeness. Assembly/export success is not likeness approval.
-- The designer's GUARDED hand-to-mouth acting is being finished. The delivered
-  GUARDED facial shape is not yet the complete pose.
+- GUARDED now has hand-to-mouth acting. Source underarm bunching and angular
+  finger geometry still need artistic review; integration does not erase them.
 - Final moving-character inspection of neck seams, clothing, hands, cap/hair
   contact, and headphone clearance across controls and idle motion.
 - Sustained 30 fps on the minimum-spec iPhone 15 Plus in Unity 6.3 LTS,
   landscape 16:9, including the nightclub's dynamic lighting and intended crowd.
   Phone profiling and thermal testing have not been completed.
-- Corrected LOD1 is saved under `art/generated/characters/ren/lod1-final-v1`:
-  13,418 Blender triangles / 13,404 after FBX reimport. Source hair/neck boundary
-  positions, facial shape names and rig hierarchy are retained. It remains over
-  the 10–12k budget; Unity import, deformation and transition review are pending.
+- LOD1 is installed: **11,689 Unity triangles** (11,675 after Blender FBX
+  reimport), within 10–12k. Source hair/neck boundaries, speech and gaze shapes
+  are retained. Both levels use the same live skeleton and materials; the
+  renderer switch is at 27% screen height. Actual Play checks passed for both
+  bounds, shared pose, speech/blink, cap visibility and neutral restoration.
 - A spoken live-conversation acceptance test remains outstanding. Existing
   relay-session and analyzer checks do not establish a microphone-to-character
   conversation test.
@@ -82,4 +89,18 @@ Seven gaze/speech tests passed. Actual Play frames verified left/right travel
 and full-blink suppression while an A mouth remained active. Evidence is in
 `Generated/RenLOD0/Evidence/gaze-*`. The Unity captures show closed lids without
 exposed irises; they do not establish designer approval or complete articulation
-quality. LOD1 has not yet received this eye override.
+quality. LOD1 has its own eight gaze shapes transferred to its reduced topology.
+
+## Shared female rig and guarded acting
+
+The active `shared-rigs/female_base_v3` definition now includes the 15 corrected
+left-digit rests. The other 39 rests and all 54 names/hierarchy remain unchanged.
+Ren, Maya and Player are to bind to this same revised definition; the other two
+characters' meshes have not been migrated by this work.
+
+The Unity guarded installer preserves the body's neutral vertices/topology,
+uses the corrected skin weights and retargets the existing idle's finger tracks.
+The authored gesture contributes 19 arm/finger targets through the character
+controller. Selecting GUARDED enters over 1.2 seconds; selecting another expression
+returns over 1.4 seconds. Head, speech and blink still use the existing controller.
+Source and contact checks live in `art/generated/characters/ren/guarded-final-v1`.

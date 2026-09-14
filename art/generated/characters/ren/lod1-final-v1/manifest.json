@@ -1,11 +1,11 @@
 {
-  "source": "B:\\lucid-loop\\art\\generated\\characters\\ren\\lod0-final-v1\\Ren_LOD0.blend",
-  "source_sha256": "aafa6f9a17c0d6da47930ea9c2f9f6bb82284635059af47970c7f966d6983df7",
+  "source": "B:\\lucid-loop\\.local\\ren-lod1-final-preserved\\Ren_LOD1_corrected_13418.blend",
+  "source_sha256": "a26a0cfce94a0f57ff9054129cedc11c9b8d5d4ce937dca1ac258401fbff574a",
   "parts": [
     {
       "name": "RenBody_LOD0",
-      "before_triangles": 10799,
-      "triangles": 1999,
+      "before_triangles": 1999,
+      "triangles": 1399,
       "shape_names": [],
       "max_projection_distance_local": 0.09233716130256653,
       "protected_vertices": 35,
@@ -16,11 +16,11 @@
     },
     {
       "name": "RenNeckChest_LOD0",
-      "before_triangles": 1199,
+      "before_triangles": 400,
       "triangles": 400,
       "shape_names": [],
-      "max_projection_distance_local": 0.005168105009943247,
-      "protected_vertices": 371,
+      "max_projection_distance_local": 0,
+      "protected_vertices": 372,
       "protected_vertex_max_error": 0.0,
       "parent": "RenFemaleV3",
       "parent_bone": "",
@@ -28,8 +28,8 @@
     },
     {
       "name": "RenHeadSkin",
-      "before_triangles": 12907,
-      "triangles": 2849,
+      "before_triangles": 2849,
+      "triangles": 2199,
       "shape_names": [
         "Basis",
         "jawOpen",
@@ -68,8 +68,8 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 0.011749780736863613,
-      "protected_vertices": 400,
+      "max_projection_distance_local": 0.011668214574456215,
+      "protected_vertices": 2959,
       "protected_vertex_max_error": 0.0,
       "parent": "RenFemaleV3",
       "parent_bone": "",
@@ -77,14 +77,14 @@
     },
     {
       "name": "RenLiveHair",
-      "before_triangles": 8471,
+      "before_triangles": 5651,
       "triangles": 5651,
       "shape_names": [
         "Basis",
         "capOn"
       ],
-      "max_projection_distance_local": 0.020622756332159042,
-      "protected_vertices": 3917,
+      "max_projection_distance_local": 0.019815359264612198,
+      "protected_vertices": 3936,
       "protected_vertex_max_error": 0.0,
       "parent": "RenFemaleV3",
       "parent_bone": "",
@@ -92,10 +92,10 @@
     },
     {
       "name": "RenCap_Static",
-      "before_triangles": 1879,
-      "triangles": 450,
+      "before_triangles": 450,
+      "triangles": 240,
       "shape_names": [],
-      "max_projection_distance_local": 0.004102760925889015,
+      "max_projection_distance_local": 0.004426265135407448,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -104,10 +104,10 @@
     },
     {
       "name": "RenHeadphones_Static",
-      "before_triangles": 2998,
-      "triangles": 549,
+      "before_triangles": 549,
+      "triangles": 280,
       "shape_names": [],
-      "max_projection_distance_local": 0.0023365311790257692,
+      "max_projection_distance_local": 0.004075496923178434,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -116,7 +116,7 @@
     },
     {
       "name": "RenEyesShallow",
-      "before_triangles": 1480,
+      "before_triangles": 398,
       "triangles": 398,
       "shape_names": [
         "Basis",
@@ -156,7 +156,7 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 0.0003056700516026467,
+      "max_projection_distance_local": 0,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -165,7 +165,7 @@
     },
     {
       "name": "RenEarJewelry",
-      "before_triangles": 500,
+      "before_triangles": 179,
       "triangles": 179,
       "shape_names": [
         "Basis",
@@ -205,7 +205,7 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 0.003184298984706402,
+      "max_projection_distance_local": 0.0013346794294193387,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -214,7 +214,7 @@
     },
     {
       "name": "RenInkBrowsLashes",
-      "before_triangles": 500,
+      "before_triangles": 250,
       "triangles": 250,
       "shape_names": [
         "Basis",
@@ -254,7 +254,7 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 0.0004102034727111459,
+      "max_projection_distance_local": 0.0004337604914326221,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -263,7 +263,7 @@
     },
     {
       "name": "RenUpperTeeth",
-      "before_triangles": 196,
+      "before_triangles": 70,
       "triangles": 70,
       "shape_names": [
         "Basis",
@@ -303,7 +303,7 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 8.170432556653395e-05,
+      "max_projection_distance_local": 0,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -312,7 +312,7 @@
     },
     {
       "name": "RenLowerTeeth",
-      "before_triangles": 196,
+      "before_triangles": 70,
       "triangles": 70,
       "shape_names": [
         "Basis",
@@ -352,7 +352,7 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 6.090406168368645e-05,
+      "max_projection_distance_local": 0,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -361,7 +361,7 @@
     },
     {
       "name": "RenUpperGums",
-      "before_triangles": 196,
+      "before_triangles": 60,
       "triangles": 60,
       "shape_names": [
         "Basis",
@@ -401,7 +401,7 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 9.681721712695435e-05,
+      "max_projection_distance_local": 0,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -410,7 +410,7 @@
     },
     {
       "name": "RenLowerGums",
-      "before_triangles": 196,
+      "before_triangles": 60,
       "triangles": 60,
       "shape_names": [
         "Basis",
@@ -450,7 +450,7 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 6.436360854422674e-05,
+      "max_projection_distance_local": 0,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -459,7 +459,7 @@
     },
     {
       "name": "RenTongue",
-      "before_triangles": 360,
+      "before_triangles": 140,
       "triangles": 140,
       "shape_names": [
         "Basis",
@@ -499,7 +499,7 @@
         "eyeSquintR",
         "eyeWideR"
       ],
-      "max_projection_distance_local": 0.0002937506069429219,
+      "max_projection_distance_local": 0,
       "protected_vertices": 0,
       "protected_vertex_max_error": 0,
       "parent": "RenFemaleV3",
@@ -2332,8 +2332,8 @@
     "Hair_Rear_R_1": "Hair_Anchor",
     "Hair_Rear_R_2": "Hair_Rear_R_1"
   },
-  "triangles": 13418,
-  "within_budget": false,
+  "triangles": 11689,
+  "within_budget": true,
   "protected_boundaries_preserved": true,
   "rig_rest_unchanged": true,
   "native_source_unchanged": true,
@@ -2342,8 +2342,9 @@
     "Component boundaries are preserved as separate objects; neck seam edge correspondence is not guaranteed after reduction.",
     "LOD1 hair retains inherited bone weights and capOn morph; no new secondary-motion tuning."
   ],
-  "hair_zero_ratio_protected_floor": 5619,
-  "minimum_with_other_current_components": 13386,
+  "root_lod0_source": "art/generated/characters/ren/lod0-final-v1/Ren_LOD0.blend",
+  "root_lod0_sha256": "aafa6f9a17c0d6da47930ea9c2f9f6bb82284635059af47970c7f966d6983df7",
+  "status": "LOD1_WITHIN_BUDGET",
   "shape_max_deltas": {
     "RenUpperTeeth": {
       "jawOpen": 0.0,
@@ -2570,30 +2571,30 @@
     "RenHeadSkin": {
       "jawOpen": 0.021607639392896515,
       "jawForward": 0.0031104012901079408,
-      "jawSide": 0.0025920048617227983,
+      "jawSide": 0.002592001089710136,
       "mouthWide": 0.004200482750020685,
-      "mouthPucker": 0.008653073610719726,
+      "mouthPucker": 0.008643217411683788,
       "mouthFunnel": 0.016027594128417057,
-      "lipPress": 0.002571469793767137,
-      "lipSeal": 0.0023531913274206524,
-      "lowerLipRollIn": 0.003297875008151674,
+      "lipPress": 0.002569944155658127,
+      "lipSeal": 0.002351522433592197,
+      "lowerLipRollIn": 0.003297537847371212,
       "tongueOut": 0.0,
       "tongueUp": 0.0,
       "speech_A": 0.021607639392896515,
       "speech_I": 0.0056179060683097005,
-      "speech_U": 0.008653073610719726,
+      "speech_U": 0.008643217411683788,
       "speech_E": 0.008825404663512566,
       "speech_O": 0.016027594128417057,
-      "speech_MBP": 0.002571469793767137,
-      "speech_FV": 0.0036465850207418006,
+      "speech_MBP": 0.002569944155658127,
+      "speech_FV": 0.00361624823681649,
       "speech_TH": 0.00962680632831852,
       "speech_L": 0.011228885390005878,
       "speech_SZ": 0.0036119446883123604,
       "speech_CH_SH_J": 0.006018990013926783,
       "speech_R": 0.007622957375023281,
-      "speech_W_OO": 0.008653073610719726,
-      "emotion_Amused": 0.003247829421123802,
-      "emotion_Skeptical": 0.002591967579961311,
+      "speech_W_OO": 0.008643217411683788,
+      "emotion_Amused": 0.003239006594755799,
+      "emotion_Skeptical": 0.0025913715252870576,
       "emotion_Focused": 0.0018143653869628906,
       "emotion_Alert": 0.00280933135055403,
       "emotion_Guarded": 0.0018143653869628906,
@@ -2681,6 +2682,5 @@
     "RenLiveHair": {
       "capOn": 0.11378223456812922
     }
-  },
-  "status": "PROTECTED_CORRECTION_OVER_12K_BUDGET"
+  }
 }

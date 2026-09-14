@@ -1,0 +1,1 @@
+PASS: 11689 LOD1 triangles; shared LOD0 bones with matching rest transforms; retained material instances; rigid cap/headphones remapped to Head/Spine.

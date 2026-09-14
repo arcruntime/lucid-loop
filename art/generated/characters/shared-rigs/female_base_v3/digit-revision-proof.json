@@ -1,0 +1,26 @@
+{
+  "previous_identity": "f8b9ea26b1c099e4c4149793302868be4f732b3ee1bc4c2390248ca9b29da352",
+  "new_identity": "262fd90ef64af0453fc4580dc3a7948dd26b15f3bd0b66b943b97e9b2f2e6831",
+  "revised_bones": [
+    "LeftHandIndex1",
+    "LeftHandIndex2",
+    "LeftHandIndex3",
+    "LeftHandMiddle1",
+    "LeftHandMiddle2",
+    "LeftHandMiddle3",
+    "LeftHandPinky1",
+    "LeftHandPinky2",
+    "LeftHandPinky3",
+    "LeftHandRing1",
+    "LeftHandRing2",
+    "LeftHandRing3",
+    "LeftHandThumb1",
+    "LeftHandThumb2",
+    "LeftHandThumb3"
+  ],
+  "preserved_bone_count": 39,
+  "preserved_rest_max_matrix_error": 0.0,
+  "canonical_mesh_count": 0,
+  "canonical_names_and_hierarchy_unchanged": true,
+  "source_sha256": "b12980cdeaae08987d45626f802bfa2a87c05c0dc2a291deba9d482ef62a4c5a"
+}

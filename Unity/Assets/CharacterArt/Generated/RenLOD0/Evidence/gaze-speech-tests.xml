@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="7" result="Passed" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.4120846">
+  <test-suite type="TestSuite" id="1000" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="206" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.412085" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1126" name="LucidLoop.CharacterArt.Tests.dll" fullname="B:/lucid-loop/Unity/Library/ScriptAssemblies/LucidLoop.CharacterArt.Tests.dll" runstate="Runnable" testcasecount="102" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.235972" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="110796" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1127" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="83" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.233554" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1128" name="CharacterArt" fullname="LucidLoop.CharacterArt" runstate="Runnable" testcasecount="83" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.232117" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1129" name="Tests" fullname="LucidLoop.CharacterArt.Tests" runstate="Runnable" testcasecount="83" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.230818" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1109" name="RenGazeMixerTests" fullname="LucidLoop.CharacterArt.Tests.RenGazeMixerTests" classname="LucidLoop.CharacterArt.Tests.RenGazeMixerTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.114806" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1110" name="ClosedEyeSuppressesOnlyItsGazeWhileSpeechSurvives" fullname="LucidLoop.CharacterArt.Tests.RenGazeMixerTests.ClosedEyeSuppressesOnlyItsGazeWhileSpeechSurvives" methodname="ClosedEyeSuppressesOnlyItsGazeWhileSpeechSurvives" classname="LucidLoop.CharacterArt.Tests.RenGazeMixerTests" runstate="Runnable" seed="1772911580" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.096205" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1112" name="HalfBlinkUsesQuadraticGazeSuppression" fullname="LucidLoop.CharacterArt.Tests.RenGazeMixerTests.HalfBlinkUsesQuadraticGazeSuppression" methodname="HalfBlinkUsesQuadraticGazeSuppression" classname="LucidLoop.CharacterArt.Tests.RenGazeMixerTests" runstate="Runnable" seed="1286792902" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.000294" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1111" name="OppositeDirectionsCancelAndDiagonalCannotExceedAuthoredRadius" fullname="LucidLoop.CharacterArt.Tests.RenGazeMixerTests.OppositeDirectionsCancelAndDiagonalCannotExceedAuthoredRadius" methodname="OppositeDirectionsCancelAndDiagonalCannotExceedAuthoredRadius" classname="LucidLoop.CharacterArt.Tests.RenGazeMixerTests" runstate="Runnable" seed="1578796240" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.000901" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1113" name="RenLOD0SpeechTests" fullname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests" classname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.111348" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1115" name="BilabialContactUsesAssemblyMixerAndNullSnapshotClearsMouth" fullname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests.BilabialContactUsesAssemblyMixerAndNullSnapshotClearsMouth" methodname="BilabialContactUsesAssemblyMixerAndNullSnapshotClearsMouth" classname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests" runstate="Runnable" seed="873383039" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.023039" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Instantiating material due to calling renderer.material during edit mode. This will leak materials into the scene. You most likely want to use renderer.sharedMaterial instead.
+]]></output>
+              </test-case>
+              <test-case id="1114" name="FullSpeechSnapshotReplacesPreviousPoseWithoutTouchingBlinkOrCap" fullname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests.FullSpeechSnapshotReplacesPreviousPoseWithoutTouchingBlinkOrCap" methodname="FullSpeechSnapshotReplacesPreviousPoseWithoutTouchingBlinkOrCap" classname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests" runstate="Runnable" seed="698540403" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.002978" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Instantiating material due to calling renderer.material during edit mode. This will leak materials into the scene. You most likely want to use renderer.sharedMaterial instead.
+]]></output>
+              </test-case>
+              <test-case id="1117" name="InvalidAndEmptySnapshotsCannotLeaveStaleSpeech" fullname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests.InvalidAndEmptySnapshotsCannotLeaveStaleSpeech" methodname="InvalidAndEmptySnapshotsCannotLeaveStaleSpeech" classname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests" runstate="Runnable" seed="499801009" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.001810" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Instantiating material due to calling renderer.material during edit mode. This will leak materials into the scene. You most likely want to use renderer.sharedMaterial instead.
+]]></output>
+              </test-case>
+              <test-case id="1116" name="MixedContactIsNormalizedOnceAndSuppressesOpenMouth" fullname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests.MixedContactIsNormalizedOnceAndSuppressesOpenMouth" methodname="MixedContactIsNormalizedOnceAndSuppressesOpenMouth" classname="LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests" runstate="Runnable" seed="136306305" result="Passed" start-time="2026-09-14 13:09:56Z" end-time="2026-09-14 13:09:56Z" duration="0.001468" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Instantiating material due to calling renderer.material during edit mode. This will leak materials into the scene. You most likely want to use renderer.sharedMaterial instead.
+Saving results to: C:/Users/jetha/AppData/LocalLow/Lucid Loop/Lucid Loop · Gyms\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

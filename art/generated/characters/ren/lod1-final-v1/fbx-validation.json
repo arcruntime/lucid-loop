@@ -1,7 +1,8 @@
 {
   "source_lod0_sha256": "aafa6f9a17c0d6da47930ea9c2f9f6bb82284635059af47970c7f966d6983df7",
   "source_file_unchanged": true,
-  "triangles": 13404,
+  "triangles": 11675,
+  "blend_triangles": 11689,
   "rigs": {
     "RenFemaleV3": {
       "Hips": null,
@@ -76,8 +77,8 @@
   "rig_hierarchy_exact": true,
   "parts": {
     "RenBody_LOD0": {
-      "triangles": 1997,
-      "blend_triangles": 1999,
+      "triangles": 1397,
+      "blend_triangles": 1399,
       "triangle_delta": -2,
       "shape_count": 0,
       "shape_names": [],
@@ -398,8 +399,8 @@
       "parent_bone": ""
     },
     "RenHeadSkin": {
-      "triangles": 2849,
-      "blend_triangles": 2849,
+      "triangles": 2199,
+      "blend_triangles": 2199,
       "triangle_delta": 0,
       "shape_count": 35,
       "shape_names": [
@@ -452,7 +453,7 @@
       "triangles": 398,
       "blend_triangles": 398,
       "triangle_delta": 0,
-      "shape_count": 35,
+      "shape_count": 43,
       "shape_names": [
         "jawOpen",
         "jawForward",
@@ -488,7 +489,15 @@
         "eyeWideL",
         "eyeBlinkR",
         "eyeSquintR",
-        "eyeWideR"
+        "eyeWideR",
+        "gazeLeftL",
+        "gazeRightL",
+        "gazeUpL",
+        "gazeDownL",
+        "gazeLeftR",
+        "gazeRightR",
+        "gazeUpR",
+        "gazeDownR"
       ],
       "material_names": [
         "tripo_mat_2a21d92d",
@@ -566,8 +575,8 @@
       "parent_bone": ""
     },
     "RenCap_Static": {
-      "triangles": 450,
-      "blend_triangles": 450,
+      "triangles": 240,
+      "blend_triangles": 240,
       "triangle_delta": 0,
       "shape_count": 0,
       "shape_names": [],
@@ -579,8 +588,8 @@
       "parent_bone": "Head"
     },
     "RenHeadphones_Static": {
-      "triangles": 549,
-      "blend_triangles": 549,
+      "triangles": 280,
+      "blend_triangles": 280,
       "triangle_delta": 0,
       "shape_count": 0,
       "shape_names": [],
@@ -611,18 +620,18 @@
       "maximum_position_error": 0.0
     },
     "RenNeckChest_LOD0": {
-      "vertices": 371,
+      "vertices": 372,
       "maximum_position_error": 0.0
     },
     "RenHeadSkin": {
-      "vertices": 400,
+      "vertices": 2959,
       "maximum_position_error": 0.0
     },
     "RenLiveHair": {
-      "vertices": 3917,
+      "vertices": 3936,
       "maximum_position_error": 0.0
     }
   },
-  "budget_met": false,
-  "status": "PROVISIONAL_CORRECTED_LOD1_13418_TRIANGLES"
+  "budget_met": true,
+  "status": "LOD1_WITHIN_BUDGET"
 }

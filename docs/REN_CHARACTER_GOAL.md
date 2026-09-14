@@ -1,7 +1,29 @@
 # Ren character implementation goal
 
-See [current H construction status](REN_H_CURRENT_WORK.md) for the latest frozen
-source handoffs, unresolved work and the scene that can actually be opened.
+**Latest cap/hair correction:** the user rejected the cap-on hair tuck. Preserve
+Ren's full uncompressed hair Basis, including under the cap. The cap must follow
+the standalone headphone workflow: designer-matched accessory references,
+generated mesh, fitting to the intact hair, rigid Head-joint attachment and an
+independent toggle. Do not delete, flatten or fold hair to fit the cap. The
+historical `capOn` compression target must remain zero in the delivered character.
+
+**Current execution (2026-09-14):** follow
+[Ren assembly execution plan](REN_ASSEMBLY_EXECUTION_PLAN.md). The user authorized
+assembly from the new generated head/hair references and canonical female body,
+with bone-driven separate hair and a detachable cap. The latest target is about
+**40k rendered triangles total for LOD0 and 10–12k for LOD1**. These instructions
+supersede the older source restrictions and 50–80k allocation below. No technical
+checkpoint constitutes likeness approval.
+
+The approved body is `art/generated/characters/ren/meshy/rigged-character.glb`.
+Its proportions define `shared-rigs/female_base_v3`; the old female-v2 rest fit
+and rejected `assembled-v1/integration` body are not integration inputs. The user
+subsequently requested a newly generated standalone headphone accessory instead
+of salvaging the fused headphones. Current work and acceptance evidence are
+tracked in [the assembly status](REN_ASSEMBLY_CURRENT_STATUS.md).
+
+The [H construction status](REN_H_CURRENT_WORK.md) and requirements below are
+historical context; they are not the current assembly handoff.
 
 ## Current acceptance and delivery requirements
 
@@ -22,9 +44,10 @@ External scratch scenes are historical work pending verified migration, not
 the intended delivery location. Older bilingual requirements below describe
 the broader pipeline and do not authorize resumed Japanese-specific work.
 
-The user's latest triangle targets, relayed by the lead and recorded in
+The following historical triangle targets, previously relayed by the lead and recorded in
 [iOS rendering requirements](IOS_RENDERING.md), supersede the historical 40k
-allocation below: **50–80k triangles for the complete Ren**, with approximately
+allocation below, but are superseded by the current 40k assembly target above:
+**50–80k triangles for the complete Ren**, with approximately
 20–25k for head/face, 15–30k for hair and 15–25k for visible body/clothing.
 Choose component allocations whose sum stays within the overall target; account
 for eyes, oral parts, accessories and rendered outline shells explicitly.

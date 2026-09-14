@@ -1,0 +1,26 @@
+{
+  "bones": 67,
+  "mesh_objects": 0,
+  "actions": [
+    "RenFemaleV3|Scene"
+  ],
+  "animated_left_hand_bones": [
+    "LeftHand",
+    "LeftHandThumb1",
+    "LeftHandThumb2",
+    "LeftHandThumb3",
+    "LeftHandIndex1",
+    "LeftHandIndex2",
+    "LeftHandIndex3",
+    "LeftHandMiddle1",
+    "LeftHandMiddle2",
+    "LeftHandMiddle3",
+    "LeftHandRing1",
+    "LeftHandRing2",
+    "LeftHandRing3",
+    "LeftHandPinky1",
+    "LeftHandPinky2",
+    "LeftHandPinky3"
+  ],
+  "clip_file_bytes": 866780
+}

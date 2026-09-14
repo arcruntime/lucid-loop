@@ -1,32 +1,19 @@
-# Ren LOD1 correction — 13,418 triangles, budget unfinished
+# Ren LOD1 — 11,675 rendered triangles
 
-Ren_LOD1.blend and Ren_LOD1.fbx contain the targeted boundary-preserving correction derived solely from final lod0-final-v1/Ren_LOD0.blend. The source is unchanged. This corrects the first pass's hair destruction but does not meet the 10–12k target.
+Ren_LOD1.blend and Ren_LOD1.fbx are ready for integration. The Blender mesh totals 11,689 triangles; an independent FBX reimport measures **11,675**, within the requested 10–12k budget. The export/import path drops 14 triangles (body 2, ear jewelry 3, hair 9); the counts are recorded separately.
 
-All 3,917 protected hair boundary/tip vertices survive at exactly their source positions. The 35 body, 371 neck-chest and 400 head protected neck-boundary vertices also have zero measured displacement. Split normals were transferred from the approved source onto head, neck and hair. Female-v3 plus hair-bone rest matrices remain unchanged; named morph controls, UVs, skin groups and separate cap/headphones remain present.
+This finishes the corrected 13,418-triangle model by reducing the cap to 240, headphones to 280, body to 1,399 and head to 2,199 triangles. Head reduction protects the visible front and neck while simplifying the rear. Corrected hair remains **5,651 triangles**, preserving its protected boundary/tip positions exactly. All protected neck endpoints remain exact. No uniform hair reduction was made.
 
-| Component | Triangles |
-|---|---:|
-| Body | 1,999 |
-| Neck/chest | 400 |
-| Head skin | 2,849 |
-| Hair | 5,651 |
-| Cap | 450 |
-| Headphones | 549 |
-| Eyes | 398 |
-| Ear jewelry | 179 |
-| Brows/lashes | 250 |
-| Upper/lower teeth | 140 |
-| Upper/lower gums | 120 |
-| Tongue | 140 |
-| Neck join | 293 |
-| Total | 13,418 |
+The source final LOD0 remains unchanged. The finishing script preserves a private copy of the corrected intermediate under .local/ren-lod1-final-preserved; manifest.json records that input hash and the authoritative LOD0 hash. Rig rest transforms and hierarchy remain unchanged by reduction. All material names remain identical to LOD0, allowing the same mapping. The 67-bone hierarchy, named speech/blink/emotion shape counts and weighted rig-bone sets pass independent FBX reimport validation.
 
-A read-only zero-ratio decimator audit reaches 5,619 hair triangles with these protected vertices: only 32 additional triangles can disappear under the current hair restriction. The resulting total floor with all other current components fixed is 13,386; this is not proof of a global minimum for the character. The required 4,233-triangle hair allocation is not attainable with the current protected boundaries.
+Eight per-eye gaze shapes were subsequently transferred from gaze-final-v1/Ren_LOD0_Gaze.blend by nearest-triangle barycentric interpolation: gazeLeftL, gazeRightL, gazeUpL, gazeDownL and the corresponding R names. Existing eye shape coordinates and neutral geometry remain exactly unchanged; gaze-transfer.json records hashes. Fresh FBX validation after this addition retains all eight shapes with the same triangle total and materials.
 
-Matched source-full.png/lod1-full.png, source-face.png/lod1-face.png and native 240-pixel-high source-gameplay240.png/lod1-gameplay240.png are included. Visual inspection shows recognizable layered hair again, without the first pass's large temple wedges. Close-up neck/chest and headphone shading remain coarse; gameplay-size views reduce their prominence but do not excuse visible defects.
+Matched face and 240px gameplay renders compare final LOD0 and this LOD1. The full LOD1 image shows its complete body. Hair and facial structure remain recognizable; cap/headphone faceting and lower body detail are intentionally coarser and visible at close range. Use LOD0 for close conversation shots. Render inspection does not certify final live animation contacts or phone performance.
 
-manifest.json records source hash, component counts, exact rig matrices, protected-vertex errors and shape displacement maxima. Reduced speech_A remains nonzero (21.6 mm maximum head delta); hair retains capOn. These checks establish surviving controls, not final lip contacts or collision approval. FBX import and final Unity LOD-switch review remain outstanding. No Unity edits or paid provider jobs occurred. No further head/body reductions were made after measuring the protected hair floor.
+Evidence: manifest.json, fbx-validation.json, gaze-transfer.json; source-face.png/lod1-face.png and source-gameplay240.png/lod1-gameplay240.png. No Unity Editor changes or paid generations occurred. A separately planned guarded left-finger rig/weight update is not yet included and awaits its authoritative handoff.
 
-## FBX reimport proof
+## Guarded hand and corrected export units
 
-Independent fresh FBX import measures **13,404 rendered triangles**, versus **13,418 polygon-derived triangles in the saved blend**. The export/import path drops 14 triangles: body 2, ear jewelry 3, hair 9. This discrepancy is recorded rather than claimed as exact preservation. All named shape counts match per component; all 67 skeleton bone names and hierarchy match (54 female-v3 plus 13 hair bones), and the sets of actually weighted rig bones match. All material names are unchanged from LOD0, so existing material mappings can be reused. Detailed per-part names/counts are in fbx-validation.json. This verification does not certify animation endpoint contact quality or unchanged skin weight magnitudes after export.
+The authoritative guarded-final-v1/RenGuarded_WeightAndDigitCorrection.blend correction is now included. Fifteen left digit rest transforms match that donor; corrected body weights were interpolated onto the reduced body, normalized to four influences. Non-digit rest transforms, neutral vertex coordinates and all preexisting shape coordinates remain unchanged. See guarded-transfer.json for donor hash and correspondence evidence.
+
+All LOD1 FBX exporters now match LOD0: apply_unit_scale=True, apply_scale_options=FBX_SCALE_UNITS, use_mesh_modifiers=False. This addresses the prior Unity Hips scale100 import rather than compensating in runtime. Fresh Blender FBX reimport still measures 11,675 triangles with all67 bone names/hierarchy, shape names/counts and materials preserved. Unity must reimport the updated FBX to verify its local scale contract.

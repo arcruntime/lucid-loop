@@ -1,0 +1,1 @@
+PASS: actual Play frames checked both LOD bounds, guarded enter/hold/exit, shared hand motion, speech A + independent blink on both LODs, synchronized cap toggle and exact hand return. Visual captures require separate art review.
