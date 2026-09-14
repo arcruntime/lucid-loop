@@ -28,6 +28,15 @@ namespace LucidLoop.Gyms.Editor
             runner.RegisterCallbacks(callbacks);
         }
 
+        [MenuItem("Lucid Loop/Validate art deco dialogue")]
+        public static void RunDialoguePlayMode()
+        {
+            if (!UnityEditor.SceneManagement.EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
+            UnityEditor.SceneManagement.EditorSceneManager.OpenScene("Assets/Gyms/Scenes/BeforeTheDrop.unity");
+            Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "dialogue-playmode", "DIALOGUE_TESTS", null,
+                new[] { "LucidLoop.Gyms.PlayModeTests.EncounterDialoguePlayModeTests.PortraitDialogueExpandsAndReturnsToExploration" });
+        }
+
         [MenuItem("Lucid Loop/Validate encounter EditMode tests")]
         public static void RunEditMode() => Run(TestMode.EditMode, "LucidLoop.Gyms.Tests", "gym-editmode", "GYM_TESTS");
 
