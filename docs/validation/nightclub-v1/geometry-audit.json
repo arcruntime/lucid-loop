@@ -1,0 +1,18 @@
+{
+    "scene": "Assets/Gyms/Scenes/BeforeTheDrop.unity",
+    "environmentTriangles": 109660,
+    "sceneTriangles": 166824,
+    "projectedWideTriangles": 247660,
+    "environmentRenderers": 38,
+    "materialSlots": 130,
+    "lights": 8,
+    "missingMeshes": 0,
+    "missingMaterials": 0,
+    "missingScripts": 0,
+    "notes": [
+        "Triangle totals count all dressed environment meshes, including zones outside the camera.",
+        "Projected wide frame reserves five 12k main cast, twelve 6k dancers and a 6k affair partner.",
+        "Current encounter still uses its existing placeholder characters; this change supplies environment art.",
+        "Physical iPhone frame time, thermal and memory acceptance require device profiling."
+    ]
+}

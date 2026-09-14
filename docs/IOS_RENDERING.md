@@ -8,13 +8,15 @@ The user set these approximate triangle budgets on 2026-09-14:
 
 | Scope | Triangle target |
 | --- | ---: |
-| Ren overall | 50–80k |
-| Head/face | 20–25k |
-| Hair | 15–30k |
-| Visible body/clothing | 15–25k |
+| Each main cast member, gameplay LOD1 | About 12k |
+| Main cast member, conversation close-up | About 40k |
+| Each dance-floor crowd member | At most 6k |
+| Dressed environment, all zones | 125k ceiling; current revision 121,850 |
 | Whole frame | Under roughly 250–300k |
 
-Component ranges guide allocation within Ren's overall budget. Report actual component totals and the worst visible club-frame total alongside art review. Also measure rendering passes, overdraw, skinning cost and device GPU time; triangle counts alone do not establish sustained 30 fps.
+These September 14 environment-art instructions supersede the earlier 50–80k Ren allocation and its component ranges. Five 12k main cast members plus twelve 6k dancers consume 132k; reserve another 6k for the affair partner. The revised environment brings the projected wide scene to 259,850 triangles. Actual environment totals and import evidence live in [the nightclub validation folder](validation/nightclub-v2/). These are allocations, not claims that character LODs are already integrated. The revised set has 13 additional short-range, unshadowed practical lights; per-object additional lights remain capped at four. Their device GPU cost still requires profiling.
+
+`GymCamera.Present` explicitly hides other `CharacterActor` renderers and the `ClubLighting.Dancers` during a conversation. One 40k character is visible there, but room geometry, shadows and textures still contribute. Hidden renderers do not establish that all animation or skinning CPU work has stopped. Report actual totals, rendering passes, overdraw, skinning cost and device GPU time; triangle counts alone do not establish sustained 30 fps.
 
 The club should look full of lights while using a small, stable set of lighting features. Adding another light of the same kind increases lighting work; it does not inherently add another independent shader keyword combination. Shadow modes, rendering paths, cookies, material features, and inconsistent pipeline assets cause the combination growth. Intimate and aggressive moods must share shaders and pipeline features; animate colors, intensities, emission values and music without enabling mood keywords.
 

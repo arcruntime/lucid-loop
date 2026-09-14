@@ -216,7 +216,7 @@ namespace LucidLoop.Gyms
         {
             if (world == null || world["ok"]?.Type != JTokenType.Boolean || !(bool)world["ok"] ||
                 world["version"]?.Type != JTokenType.String || world["loopId"]?.Type != JTokenType.String ||
-                (string)world["version"] != "club-plan-1" || (string)world["loopId"] != State.LoopId ||
+                (string)world["version"] != "club-plan-2" || (string)world["loopId"] != State.LoopId ||
                 world["frame"]?.Type != JTokenType.Integer || world["sequence"]?.Type != JTokenType.Integer ||
                 !(world["actors"] is JObject body)) return;
             long frame, sequence;

@@ -1,0 +1,11 @@
+{
+  "endpoint": "/v3/generation/text-to-model",
+  "prompt": "One luxurious contemporary nightclub lounge armchair. Low rounded tub back wrapping continuously into two arms, deep plum purple velvet upholstery, broad thick rounded seat cushion with piping, subtle vertical stitched channels in back, recessed charcoal plinth with narrow brushed brass base trim. Stylized painterly 3D game art, refined clean silhouette, visible fabric variation, no baked lighting. One meter wide, 0.9 meters deep, 0.85 meters high. Single isolated furniture object only, no table, no room, no text.",
+  "model": "v3.1-20260211",
+  "face_limit": 1800,
+  "texture": true,
+  "pbr": true,
+  "texture_quality": "detailed",
+  "model_seed": 20260914,
+  "negative_prompt": "room, people, text, pedestal, background scene"
+}

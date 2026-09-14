@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-14 07:50:12Z" end-time="2026-09-14 07:50:43Z" duration="30.9064447">
+  <test-suite type="TestSuite" id="1029" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 07:50:12Z" end-time="2026-09-14 07:50:43Z" duration="30.906445" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1022" name="LucidLoop.Gyms.PlayModeTests.dll" fullname="B:/lucid-loop/.local/environment-review-project/Unity/Library/ScriptAssemblies/LucidLoop.Gyms.PlayModeTests.dll" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 07:50:12Z" end-time="2026-09-14 07:50:43Z" duration="30.893077" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="64528" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1023" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 07:50:12Z" end-time="2026-09-14 07:50:43Z" duration="30.891809" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1024" name="Gyms" fullname="LucidLoop.Gyms" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 07:50:12Z" end-time="2026-09-14 07:50:43Z" duration="30.890676" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1026" name="PlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-09-14 07:50:12Z" end-time="2026-09-14 07:50:43Z" duration="30.889540" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1016" name="EncounterScenePlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests" classname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-14 07:50:12Z" end-time="2026-09-14 07:50:43Z" duration="30.886501" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1017" name="OpeningMovementCatastropheAndRetainedReset" fullname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.OpeningMovementCatastropheAndRetainedReset" methodname="OpeningMovementCatastropheAndRetainedReset" classname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests" runstate="Explicit" seed="324207647" result="Passed" start-time="2026-09-14 07:50:12Z" end-time="2026-09-14 07:50:43Z" duration="30.866603" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="_SKIPREASON" value="Requires the built BeforeTheDrop scene and real localhost:8789/game relay." />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[ENCOUNTER_SCENE_SMOKE_PASSED: B:\lucid-loop\.local\environment-review-project\.local\validation\encounter-smoke-20260914-075012-173
+Saving results to: C:/Users/jetha/AppData/LocalLow/Lucid Loop/Lucid Loop · Gyms\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

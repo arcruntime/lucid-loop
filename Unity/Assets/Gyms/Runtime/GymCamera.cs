@@ -60,7 +60,8 @@ namespace LucidLoop.Gyms
             float t = Immediate ? 1 : 1 - Mathf.Exp(-delta * 7);
             transform.position = Vector3.Lerp(transform.position, position, t);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, t);
-            Camera.orthographic = true;
+            Camera.orthographic = !Target || Studio;
+            if (Target && !Studio) Camera.fieldOfView = 2 * Mathf.Atan(size / 3f) * Mathf.Rad2Deg;
             Camera.orthographicSize = Mathf.Lerp(Camera.orthographicSize, size, t);
         }
     }

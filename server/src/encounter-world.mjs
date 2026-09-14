@@ -1,4 +1,5 @@
 import { NPC_IDS, ACTOR_IDS } from './encounter.mjs';
+import dressing from './nightclub-dressing.json' with { type: 'json' };
 
 const point = (x, z) => ({ x, z });
 const distance = (a, b) => Math.hypot(a.x - b.x, a.z - b.z);
@@ -11,7 +12,7 @@ const inside = (p, r, margin = 0) => p.x >= r.minX - margin && p.x <= r.maxX + m
  * blocks locomotion; low tables/counters do not occlude an eye-height sightline.
  */
 export const CLUB_WORLD_CONFIG = {
-  version: 'club-plan-1', bounds: rect('floor', 0, 0, 26, 22), radius: 0.35,
+  version: 'club-plan-2', bounds: rect('floor', 0, 0, 26, 22), radius: 0.35,
   playerSpeed: 3.7, npcSpeed: 3, followDistance: 1.2, conversationDistance: 2.2,
   approachDistance: 1.25, agreedDistance: 2.5, safeDistance: 4,
   spawns: { player: point(0, -8), maya: point(-2.8, -2), ren: point(2.5, 7.4), luca: point(-7, 2), theo: point(7, -1), affair_partner: point(8, -0.8) },
@@ -19,6 +20,7 @@ export const CLUB_WORLD_CONFIG = {
   destinations: { vip: point(10.5, 4) },
   fall: { anchor: point(8.65, -1.5), tolerance: 0.9, tableId: 'table-vip-south', endpoint: point(9, -3) },
   obstacles: [
+    ...dressing.obstacles.map(o => rect(o.id, o.x, o.z, o.width, o.depth)),
     rect('bar', -10.3, 1, 2.5, 13.3), rect('dj-booth', 0, 8.2, 4, 1.2),
     ...[-5, 5].map(x => rect(`speaker-${x}`, x, 9.4, 0.9, 0.8, true)),
     ...[-4, -2, 0, 2, 4, 6].map(z => rect(`stool-${z}`, -8.2, z, 0.64, 0.64)),

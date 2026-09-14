@@ -1,0 +1,11 @@
+{
+  "version": "club-dressing-1",
+  "obstacles": [
+    {"id":"west-booth-back","x":-7,"z":-9.2,"width":3.5,"depth":0.75,"height":0.95},
+    {"id":"west-booth-rail-left","x":-8.95,"z":-8.45,"width":0.10,"depth":2.6,"height":1.25},
+    {"id":"west-booth-rail-right","x":-5.05,"z":-8.45,"width":0.10,"depth":2.6,"height":1.25},
+    {"id":"east-booth-back","x":6,"z":-9.2,"width":3.5,"depth":0.75,"height":0.95},
+    {"id":"east-booth-rail-left","x":4.05,"z":-8.45,"width":0.10,"depth":2.6,"height":1.25},
+    {"id":"east-booth-rail-right","x":7.95,"z":-8.45,"width":0.10,"depth":2.6,"height":1.25}
+  ]
+}

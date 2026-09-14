@@ -6,6 +6,8 @@ The project logo appears while the game connects or resumes a night, with a Canc
 
 The [arcruntime checkpoint review](docs/ARCRUNTIME_REVIEW.md) records the selective integration of her conversation portraits and rewind cue, plus preserved paintings and voiced story assets. The authoritative encounter and iOS relay remain the gameplay implementation.
 
+The [dressed nightclub](docs/ENVIRONMENT_ART.md) supplies the 3D room, furnishings, raised VIP area, lighting artwork and conversation backgrounds. [Unity captures](docs/validation/nightclub-v2/overview.png) and the geometry audit document the environment independently of the unfinished character models.
+
 The primary game prototype is **Before the Drop**: a server-authoritative nightclub encounter with an authored catastrophe, rewind, retained clues, and OpenAI Live conversation integration. The original offline nightclub and separate Live voice studio remain available as diagnostic gyms. Final character animation and physical iPhone acceptance remain in progress. Japanese voice support is excluded from shipping and its implementation is paused.
 
 **Try the encounter:** open `Unity/` in Unity 6000.3.24f1 and load `Assets/Gyms/Scenes/BeforeTheDrop.unity`. Start the local relay and follow the [encounter quickstart](docs/ENCOUNTER_QUICKSTART.md). Use **Walk toward Theo** to see the opening, then **Rewind** to begin another attempt with the witnessed clue retained. Real NPC conversations require an OpenAI key in the relay process environment; the GitHub CI secret is not automatically available locally.
@@ -74,7 +76,7 @@ The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored 
 - Game design source: the Game Design Document, REWIND gameplay concept, and Character Guide sections of the [design document](https://docs.google.com/document/d/1JxbEgu6D5qHtuyGlwKqmO1IJJdrY7MZikN055f87FXA/edit).
 - Earlier exploratory work lives in the separate `openai-hackathon-game` repository.
 - Current character work: [Ren implementation goal](docs/REN_CHARACTER_GOAL.md) and [Japanese creator workflow research](research/japanese-anime-character-workflows-2026-09.md).
-- Ren's complete LOD0 target is **50–80k triangles**, including clothing and accessories; the whole-frame target is **250–300k**. See the [current component budgets](docs/IOS_RENDERING.md#user-specified-geometry-targets). Earlier 40k reduction studies are historical.
+- Main cast targets are **12k triangles at gameplay LOD1** and **40k in solo conversation close-ups**; crowd members are **at most 6k each**. The whole-frame target is **250–300k**. See the [current allocations](docs/IOS_RENDERING.md#user-specified-geometry-targets).
 
 ## Open the current Ren character review
 
