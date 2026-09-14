@@ -14,29 +14,21 @@ namespace LucidLoop.Gyms
         public Transform Mouth;
         public bool IsPlayer;
         public bool HighContrastLabel;
-        Transform labelBacking;
         Material labelMaterial;
         TextMesh label;
         Camera view;
-        void Start(){
-            label=GetComponentInChildren<TextMesh>();view=Camera.main;
-            if(HighContrastLabel && label){
-                label.color=Color.white;
-                var backing=GameObject.CreatePrimitive(PrimitiveType.Quad);backing.name="Name label backing";
-                Destroy(backing.GetComponent<Collider>());labelBacking=backing.transform;labelBacking.SetParent(label.transform,false);
-                labelMaterial=new Material(Shader.Find("Universal Render Pipeline/Unlit"));labelMaterial.SetColor("_BaseColor",new Color(.015f,.02f,.035f));
-                backing.GetComponent<Renderer>().sharedMaterial=labelMaterial;
-            }
-        }
+        void Start(){label=GetComponentInChildren<TextMesh>();view=Camera.main;}
         void LateUpdate()
         {
             if(!label||!view)return;
             label.transform.rotation=view.transform.rotation;
             label.characterSize=view.orthographicSize*.012f;
-            if(labelBacking){
-                var bounds=label.GetComponent<Renderer>().localBounds;
-                labelBacking.localPosition=new Vector3(bounds.center.x,bounds.center.y,.025f);
-                labelBacking.localScale=new Vector3(bounds.size.x+.18f,bounds.size.y+.10f,1);
+            if(HighContrastLabel)
+            {
+                if(!labelMaterial){labelMaterial=new Material(Shader.Find("BTD/OutlinedName"));label.GetComponent<Renderer>().sharedMaterial=labelMaterial;}
+                label.color=Color.white;
+                // Font atlases can rebuild; always use the font's current texture.
+                labelMaterial.mainTexture=label.font.material.mainTexture;
             }
         }
         void OnDestroy(){if(labelMaterial)Destroy(labelMaterial);}

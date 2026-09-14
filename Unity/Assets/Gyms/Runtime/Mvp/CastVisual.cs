@@ -56,7 +56,7 @@ namespace LucidLoop.Gyms.Mvp
             var emerald=Paint("Emerald coat",C(.015f,.36f,.19f));var purple=Paint("Violet jacket",C(.21f,.085f,.31f));var burgundy=Paint("Burgundy apron",C(.39f,.055f,.095f));
             var pink=Paint("Magenta hair",C(.92f,.035f,.28f));var brown=Paint("Chestnut hair",C(.17f,.085f,.044f));var silver=Paint("Silver hair",C(.8f,.76f,.64f));
             bool maya=id=="maya",theo=id=="theo",ren=id=="ren",luca=id=="luca",pc=id=="player";
-            var cloth=theo?emerald:id=="partner"?burgundy:black;var hairMat=maya?pink:theo||ren?silver:pc?black:brown;
+            var cloth=theo?emerald:id=="partner"?Paint("Partner pale turquoise",C(.30f,.90f,.86f)):black;var hairMat=maya?pink:theo||ren?silver:pc?black:brown;
             var legMat=maya?ivory:theo?black:cloth;
             Form(visual,"Torso",Vector3.zero,new[]{.95f,1.06f,1.38f,1.55f,1.61f},new[]{.19f,.21f,.29f,.3f,.12f},new[]{.12f,.13f,.16f,.13f,.07f},cloth);
             if(maya)Form(visual,"Midriff",new Vector3(0,0,.01f),new[]{1.0f,1.13f,1.2f},new[]{.2f,.2f,.21f},new[]{.13f,.135f,.14f},skin);
