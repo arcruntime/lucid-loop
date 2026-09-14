@@ -38,12 +38,27 @@ jobs:
       UNITY_EDITOR: ${{ vars[matrix.editor_variable] }}
     steps:
       - uses: actions/checkout@v4
+        # Fetch Unity payloads while checkout still has authentication. Keep
+        # authoring-only art as pointers; materialize Unity in the next step.
+        env:
+          GIT_LFS_SKIP_SMUDGE: "1"
+          GIT_CONFIG_COUNT: "3"
+          GIT_CONFIG_KEY_0: lfs.fetchinclude
+          GIT_CONFIG_VALUE_0: Unity/**
+          GIT_CONFIG_KEY_1: lfs.fetchexclude
+          GIT_CONFIG_VALUE_1: ""
+          GIT_CONFIG_KEY_2: lfs.fetchrecentalways
+          GIT_CONFIG_VALUE_2: "false"
         with:
           lfs: true
           persist-credentials: false
           clean: true
       - name: Validate CI script checks
         run: ${{ matrix.python }} -m unittest discover -s tools/ci -v
+      - name: Reclaim authoring-only LFS payloads in the CI checkout
+        run: ${{ matrix.python }} tools/ci/materialize_unity_lfs.py --apply
+      - name: Materialize fetched Unity assets
+        run: git lfs checkout "Unity/**"
       - name: Test and build both gyms
         run: ${{ matrix.python }} tools/ci/build_gyms.py --platform ${{ matrix.platform }}
       - name: Upload playable build
