@@ -78,7 +78,8 @@ and press **Play** after import/compilation finishes. Use the open-A and seal
 controls to inspect the working mouth. Reuse the existing Editor if it is open.
 
 The scene and its dependencies have been copied and hash-verified in this project;
-main Editor runtime validation is pending. Its previous captured Windows player
+main Editor import and Play Mode mouth validation passed. An [actual main-project
+render](docs/validation/ren-main-review/main-render.png) is preserved. Its previous captured Windows player
 is `.local/ren-designer-mouth-v1/RenDesignerMouthReview.exe`. Ren's likeness and
 NPR shading remain unfinished, and this scene does not yet provide the new blink,
 gaze, full speech or six-expression system. See [current work and evidence](docs/REN_H_CURRENT_WORK.md).

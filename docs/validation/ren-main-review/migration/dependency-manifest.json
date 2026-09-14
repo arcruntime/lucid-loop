@@ -1,0 +1,3339 @@
+{
+  "status": "READ_ONLY_CLOSURE_MAIN_MUTATION_PENDING",
+  "sourceProject": "C:\\Users\\jetha\\AppData\\Local\\LucidLoopScratch\\ren-eye-import-verification",
+  "destinationProject": "B:\\lucid-loop\\Unity",
+  "scene": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+  "assetCount": 117,
+  "fileCount": 255,
+  "requiredNewBytes": 98746425,
+  "counts": {
+    "already-identical": 16,
+    "copy-new": 235,
+    "destination-conflict": 4
+  },
+  "files": [
+    {
+      "relativePath": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+      "status": "copy-new",
+      "bytes": 248514,
+      "sourceSha256": "5850411648751ffc7bfd66f3bdd65d9d9aa56343b3428990bd8195d0d5351d85",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity.meta",
+      "status": "copy-new",
+      "bytes": 155,
+      "sourceSha256": "9f4a21e84a49228cec907268d9746f8ca9d83f2ba8c679b514fd5d71e90dac03",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "0d9f5cac3d3f312498aa266497f8f23c",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "9ea906e1ba25339e62e2033dc3c004482f45317e27bb8e6032d83a25c5e6fc22",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "0f5811f3bd02e9c46a32960ce8dcb7fb",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "6a6f1f4d445971f9d8498a4c96720928778576788b70be69412026d466279039",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "53ac95b5215d58346aba8af016b00def",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset",
+      "status": "copy-new",
+      "bytes": 23257303,
+      "sourceSha256": "d9bdd80ab254c00bd5542960c2a43fe2742ff1152bffe392063628d474225fb9",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "eefd349f98b400aa07dc9e71592f0f791827fcbac321b5c30a8c9de125c99495",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "344881b61a589a0428eb2932d53a9d46",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset",
+      "status": "copy-new",
+      "bytes": 587195,
+      "sourceSha256": "a3c0deb5a45cc518ee88525fd640fe7e637e800f4556089b8173b0b7cc649d16",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "9f776eca85f42792e6eb5a98d29211381cfb16ba2ddf4d3b0f0504f18b88ad39",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c993ec211cbafdf41add4150c05eb28e",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset",
+      "status": "copy-new",
+      "bytes": 1714945,
+      "sourceSha256": "80ce657caa02ca981b563aba3a3af9b1b91bf338782fc558b11877dc6eb3c105",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "5ff2d3683975d705ac3b1889135f3ede34745df1413dec55f9287b4d50c5cb43",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "19d9c1ccb585f964f8b6adac4c9ad15d",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset",
+      "status": "copy-new",
+      "bytes": 1404421,
+      "sourceSha256": "18fa671929032a8ee2ce3381eeecaf19272b6410b9bd65dfbb525998a3bdcb79",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "6d1d24c18be39228888c07977e06f6f9c16f5e73781effa262bdfd777eb782e7",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c562b2f0f9b58b241ac025464c881469",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "50e02018560066a7e6051dfba208849de3530cf3b45ed041b2349bdc301b0b90",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "a7dd3d7d396ddf049b8098aaad434b8d",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "82439f60485393b7cfbaa44a40e72a049edd66bca9886b7b5e713bab286a8937",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "5685bef31f3794e4cbfbf97e2c1a58cd",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Base_4K.png",
+      "status": "copy-new",
+      "bytes": 5952924,
+      "sourceSha256": "5bc80c29f63b3770ca5708560f46f3efa9f256a323481d289a9eb5b5ca3ace76",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Base_4K.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "4ba1169f0c2bd6dcde09dee87191a4fe5637c72c8f4f92a7d555971d35a815ce",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "b90a958cc7813ad49975bf32e0a74cc2",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Shadow_2K.png",
+      "status": "copy-new",
+      "bytes": 2367044,
+      "sourceSha256": "3f4553af7a54777827c528df285094dbde2e3df62d38dc0fbdd29aa695b04829",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Shadow_2K.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "c9d394bb1f0e28589f3cc3ecee5699e0c8aea1dc1d1b62a2bcb82b7f23fed02d",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "2794da9d58919364e8cb0048d92c53e5",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "275bbc034002b3ea6138b3b4c12f3484f7f99a5883b3ef008ab4901341ab5a54",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "cecab9dea5bc7ce409925e696a8c2fe7",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_L_Iris_PigmentCandidate.asset",
+      "status": "copy-new",
+      "bytes": 27454,
+      "sourceSha256": "9034a5ea2df0f75c53d4064e76859381255e17c0c380ee69169f55f57e9a6269",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_L_Iris_PigmentCandidate.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "baf538e428ac73c1765eb3572e46ccc7292b8609bae84af5d19ba8bef2c776b4",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "9e29f42ca854bf24fabf7550fd300468",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_R_Iris_PigmentCandidate.asset",
+      "status": "copy-new",
+      "bytes": 27456,
+      "sourceSha256": "377603f1e411053366ec8070f78a5a511bfe70f5fa92a6cac38501f2ff907fff",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_R_Iris_PigmentCandidate.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "0965a45e5c3f59421ab74be924204d478fa567ec75f84434c9930c8b4900c243",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "3fbd546dd40a9534cb29f13a3d43675c",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "53824655dcad1e85cc8d5b8365000e832f6a6e020242504c53f976c7c0a443b4",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "035831748e434e44fa549e2275b637dd",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/MatchedBacking.mat",
+      "status": "copy-new",
+      "bytes": 2319,
+      "sourceSha256": "01ab97505a9d95478c4291a0dcee773d2ad7b12013f46f283ec3009f1ee1ae21",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/MatchedBacking.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "2710b9c971858f6914463036f73a9039a9034deef8e3cffa6754c9d9dfa71403",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "7f6213573bf4ad84f85486309919696b",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/Ren_DesignerEye_ApertureReturn.fbx",
+      "status": "copy-new",
+      "bytes": 25052,
+      "sourceSha256": "eab8459a8b5f11d45f710b9a394a3702c77216691eb2cffe322ede42c6556e2c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/Ren_DesignerEye_ApertureReturn.fbx.meta",
+      "status": "copy-new",
+      "bytes": 2891,
+      "sourceSha256": "94e0bb901b9d3723ff5c728857ff6a33fe367ec87795d94b7bcf786a9f7469ac",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "922dd41d060c68e48b2395e2042aea69",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "f282fc9577a419cead8cbad1312a623e8b1531a39e2a28595cbb4d185a4cc37c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "be226143c3292804480fc24eae59a6aa",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "85150d2ba86046fd83d14068c000e908f4b5ec901a48ce3fe88e046896dd080c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "609ed1ece6bc4c84e97fd63daeb84177",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Backing.mat",
+      "status": "copy-new",
+      "bytes": 2330,
+      "sourceSha256": "5c11c7829082b3ac93a0ee904303328da818c7b32d9d7dc456bbf9d9efe6097f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Backing.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "457870a8c057f064a46280afbb396767bb046b1dbf9b6b8194fca9a4a296e9df",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "4057a8a4aaca21941ace4b6f16e2fe52",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Crease.mat",
+      "status": "copy-new",
+      "bytes": 2329,
+      "sourceSha256": "69bb6599aca3ed3ff3239c47af8836b69e2316f1ae53016a1be3ad47336b3bc8",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Crease.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "916ea1f6023f250081aee474b8599325fd84c6d56bad78c1257233e9c6d6bf97",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "b2ba0665d2303a94ea1349dce3e9b48b",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_0.mat",
+      "status": "copy-new",
+      "bytes": 2334,
+      "sourceSha256": "150781dcceee1c0a02b699e894fb69a0af077f76bf9d2016d97477ac63e53514",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_0.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "69af198f9a0db0682c0818b3cca570967ac17e5d68ae434c83d39f8e739c25da",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "55e406a94cebd5049a4a7d0d6560281b",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_1.mat",
+      "status": "copy-new",
+      "bytes": 2334,
+      "sourceSha256": "8b4e1fe52e18b21fd70ff7a0556876a4eb49bdbcc756cee44f649ad31b1fc14e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_1.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "69ab3bf92dc85f172ace554581dfdd01876995a0bbe948d235e99f7ec382d7e2",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "09bd413855431e44a8db0fe2197d4d69",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Iris.mat",
+      "status": "copy-new",
+      "bytes": 2327,
+      "sourceSha256": "e5776ae97871055e6a545a161095912579ed3bc77b8fa875a36fdaa8102d88a7",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Iris.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "e3b59ebf543de5f32f3f46dad922bf8e465ed399a6da98a5f8fc4a4189101b8c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "182809aae57ad7740ae7a51c9408c0a4",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_LowerInk.mat",
+      "status": "copy-new",
+      "bytes": 2331,
+      "sourceSha256": "e3ef47f4023881452159bbb020526a8f7250e5f916b8ab9f430e6e100c685bf4",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_LowerInk.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "d20aee72e6f340172a5e248846a9cdafd0cb38bfa9961c30e05f3f8c9b811122",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "6862ee0b174dc914bbf53ef245b38405",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Pupil.mat",
+      "status": "copy-new",
+      "bytes": 2328,
+      "sourceSha256": "7b51ca841d754c5af8b6bd4e197a988dc05f78912c55ae1ddefcf1f67acadf09",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Pupil.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "6580a6f035a26d063d53899e91a987513b56516c381468217dc789d0cfc4a477",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "db7f5d24623c37a4bbb44f9f370e4a69",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_SkinShutter.mat",
+      "status": "copy-new",
+      "bytes": 2336,
+      "sourceSha256": "c4db3c3d1a7bfc93b77cdbe1c38ceb3a83aef70b79158c33877f249b46ce00b0",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_SkinShutter.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "9d341840c0d59e358bd220e1b0d02d316aec3285f9198aae05b19ec787269eed",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "1f35f6d2a6d7b6145858a04a13349931",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_UpperInk.mat",
+      "status": "copy-new",
+      "bytes": 2331,
+      "sourceSha256": "2bc6cb788c542120196fb5809aa2dd13ed09e4494bfff3f39dede3cdc9713bf5",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_UpperInk.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "7366ca2496c709ee1932748f199e6fd876ba8071f7a16a554db7d316c0c5aae1",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "13a2105ec74e5214a826added00dfa9f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_0.mat",
+      "status": "copy-new",
+      "bytes": 2335,
+      "sourceSha256": "90ec1743893557c9e6c06fb30495ca86f9ad3f9973c208b874f753c2488602c5",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_0.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "1ceb4b422161db2abae5da8939419d55cd8283e4e27dbf21395262f48e0e9668",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "4ce8d9aaac3e1e445852af52a4b16d57",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerFine.mat",
+      "status": "copy-new",
+      "bytes": 2343,
+      "sourceSha256": "d28dad74f5e2b5177d47a80dae5fd6dbf8e922d709450c04353d445e7cdc00dd",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerFine.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "c35aff43f478b62b929a9e059152f78721db99bb89eda9c9fc67a622ba7cdce5",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "e604bc3181180a84d89198e5079478a1",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat",
+      "status": "copy-new",
+      "bytes": 2343,
+      "sourceSha256": "f179a274c133e36c75f7ec116c8d6074e867ab8438ca85e190ccb103cc468b04",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "6c4d2fdde4fd0eab8f237b00b4e6acbabb97777f80b30a59ac6a1cc2c5e54672",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "8c389321195b4864f942456f5380efa7",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat",
+      "status": "copy-new",
+      "bytes": 2343,
+      "sourceSha256": "d08a4292365936087d404cec15da7ae2fb94d4310e388698175d3d6db88d1a09",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "075f5dbd396abdc41f591b16cbfdc4df4e28717599b47727fc9ab4cc43dae30c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "1ccd062ce292b294aba425694fcb1d27",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Backing.mat",
+      "status": "copy-new",
+      "bytes": 2330,
+      "sourceSha256": "d0276797e70052a93c9471b7f63f93297ecf2744e60b24700913a7b584731359",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Backing.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "b09b8412394fc01dcf929b86589cde394d672135377430a262232927abb21ff3",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "e8c253abbbd29444b95a56a66a50743a",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Crease.mat",
+      "status": "copy-new",
+      "bytes": 2329,
+      "sourceSha256": "d8afa11d45cb8d5a121c2e9b4d37b7220e9209293fa24662509bcdeeb55ff98d",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Crease.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "2f324844bc7ff9736ef3e6d8b47262c488818f3e352595f4fcddf5c56134bf1f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "9314739869dc6d34ea7117602b136fb4",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_0.mat",
+      "status": "copy-new",
+      "bytes": 2334,
+      "sourceSha256": "84a74b611a3f6c0a364f78e4dfd16c216deac103e83f81d76911b04fa22b7211",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_0.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "723ac3a8d686c6948149c627f10944a4c233c5a977b86f2f4ffbcb22315246bf",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "9b31093b066a1ad4087ba7a953da81b0",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_1.mat",
+      "status": "copy-new",
+      "bytes": 2334,
+      "sourceSha256": "f9843ced1f0b1ef1524c288db33f101a89e7a61d4dc337b98f648cfef8dffa93",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_1.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "34cdcde8b1b37a1ae19da8282767bfaa0d24644f979096a09a8c6a25cc6c7445",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "44a756a75525f9441bcec1ad350fa126",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Iris.mat",
+      "status": "copy-new",
+      "bytes": 2327,
+      "sourceSha256": "5ff426a5b0679eee277975e820466c77e9cda32c59eb1c903bd73d9aece94349",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Iris.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "64a5d39e3f522f6259ebc89755d1a598208db6dce1a9d9e3fdf7fc6ba5c29283",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "5e31094e5d345e8429b3d2bdc261c92a",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_LowerInk.mat",
+      "status": "copy-new",
+      "bytes": 2331,
+      "sourceSha256": "bee12cb3f5eaba00451a7983e5e3a8b36473dbe0894cbdcdd401cd3e055af849",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_LowerInk.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "28ecea88c8076a2dc9bcfb7e6e350f4b4d549f81dac8e9547eb4b9453ee9ff7a",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "19ac5e424f941c34c98b9500fbafe435",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Pupil.mat",
+      "status": "copy-new",
+      "bytes": 2328,
+      "sourceSha256": "21933a9daa33b781706583cad5767879566112f2d87f1349a04c33c9eaff12ac",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Pupil.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "973d0e49ed4e4a769801b6f4b7a98a61a2e53c21ba9e9424e3191804eab408b6",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "4bf4d09fdfd262540994eb3a503c59bb",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_SkinShutter.mat",
+      "status": "copy-new",
+      "bytes": 2336,
+      "sourceSha256": "fc9f6b201ee941643baa4f419971eba9f1900aeda5559485e01b68fa88e86c89",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_SkinShutter.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "9f81173b3007adb4af00296ce104397c9ef4887c6f1d830235711fe309b3502d",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c11575dde9669204cb1f4c5df42ef96b",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_UpperInk.mat",
+      "status": "copy-new",
+      "bytes": 2331,
+      "sourceSha256": "acb96fa302c926ac7e2b3b380abbb1590ffe79b618f64a88f99cc7c925382ec6",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_UpperInk.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "197f4b2e088a3f228bf44f9a357499293835895c8ace3b8a882618161926553d",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "2c735a44c1e528744aaaa36bf6fc989a",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat",
+      "status": "copy-new",
+      "bytes": 2574,
+      "sourceSha256": "46eca4f4bcbb3ac9b2fbe49951bc8745cfd47f08efd2399a90db1e0f5795cca9",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "1770a57512208ce1aae3b09413321ca58533ce0183f3ca567401c3b0eb047831",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "95bbc5db091f43e46be63b230e4bac0a",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat",
+      "status": "copy-new",
+      "bytes": 2447,
+      "sourceSha256": "0ab707b2f46a710092fdf3287c707caff2bb3c75cb8c09d996265c3e870fbf04",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "71dec747c3dec565e6868ffae11e34c29d6725c18d1b4c608447ecd00ac8a025",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "3985bc6a3377f16419ba2ab96c5f0ba1",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat",
+      "status": "copy-new",
+      "bytes": 2409,
+      "sourceSha256": "56e9771c7cd69def66b80c2a238a928b93ed42fa745fd7b61c78a3f87c33b74f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "00f7ce98a4af25c161a1f544c4151fd60a4ae8f42f71d7230af14d399e41f9d4",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c4addb0346e2ead4281f22462689b5d8",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat",
+      "status": "copy-new",
+      "bytes": 2407,
+      "sourceSha256": "f80d9ddf80489e3d380ce40dcd627121beea1949f4305885b794f49408e66b77",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "f6a16880ad6e8fa08cd75c54f7dc684b84081b930f8c432fa949f62c6a4b4ebd",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "e51d4a8d4d072614ea8013935e0a2d03",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat",
+      "status": "copy-new",
+      "bytes": 2407,
+      "sourceSha256": "7519ed05b91b41e6b6b27d2fd0649dde32df042aaaea75c7a6cbbf8892e7cef0",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "e74174791b319d84553b9c50d4d11945c057e2b73809e5f36a59063cc4cd1995",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "688e8b7371cc2f34ebf3ee55f399d26e",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat",
+      "status": "copy-new",
+      "bytes": 2681,
+      "sourceSha256": "b68c12708496113707b237612f7f213cba25867fc2018bf46df6a0f881540e2c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "a19542f3113bd55813cc36857bf19b0c3a42a8e8fa51f5c8830c3823dd579019",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "f1afda5543674c34da8e6f2c0333e1ba",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat",
+      "status": "copy-new",
+      "bytes": 2571,
+      "sourceSha256": "6033ffc807bfa311743c3d151a89b7a812ce128ec15462b9a2c316a64e77c173",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "bafc7822fc84bd048cce7abb1dd717025c0acd7e99de799541ab058fa34a1943",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "895337e4321039d40a634ed2097d0715",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat",
+      "status": "copy-new",
+      "bytes": 2574,
+      "sourceSha256": "d2b1f3c7c06a1035d241ab78421b3e951bcefa76f8ccd4a665d899ec38eb9e89",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "1f0036bd9e768ec43c2b40b27d04ce47eca084497c576039ba199d280d709ee0",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "ad056ac5663d25947a6a1a5982701960",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat",
+      "status": "copy-new",
+      "bytes": 2424,
+      "sourceSha256": "e454d2e084b4b342efde6e7a80469ed70bd263c86a989b5704b2263914ea28f0",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "41a4e8c3c44febb8fb43d013f9930410c78e476d299722a7aca0be3dec6590d2",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "46eca3bfa879d17449982cf0b62df8dd",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat",
+      "status": "copy-new",
+      "bytes": 2581,
+      "sourceSha256": "7df8b0c39c27af5eb05728755441a730a39f6565801b05d2047e5648ad77c44c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "4c93859f17acf17a9f2b0c39cbe5cc0fa190e7bf63da4960b6efc5510c6df686",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "85d2548cff906634f9783e3b38644a51",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat",
+      "status": "copy-new",
+      "bytes": 2458,
+      "sourceSha256": "a95f6a464c1503e6e85701193fcde005309f02dcfec417cfd11da35553ccccfa",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "b799d5a057b3d84d6daa6484ff70790d953bbb6ba74e5a20dae42f49161a0fb0",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "1268c4eeca0188944a0e2798b085f398",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat",
+      "status": "copy-new",
+      "bytes": 2493,
+      "sourceSha256": "73c2a6b436ab94c51b899d80583f2b276b3f5ea030fbfda188fc925ba1f1677e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "c17917f7deafad12b9525d9feaf165e93af9f0480f4c0df96b6c620495fee888",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c9c1bf0f65ae249439301003f4f55275",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat",
+      "status": "copy-new",
+      "bytes": 2493,
+      "sourceSha256": "cfb0d629f151fe0d0d770facb42d6973289f193e290baacfc12e5fbb1ec8a7f0",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "354d50702e7a326d8bcc3df9c83fc10a874ae82923c52b59b27c9a2933cb9567",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "f0a17916f1a21ae458310602b2dfbb53",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat",
+      "status": "copy-new",
+      "bytes": 2410,
+      "sourceSha256": "8fcdca393d83d2d57c4de2f45a2cba443b78533d9c2c93b9e4e175e7eb28f673",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "b2397b5b1f1e3d9b0175e3ca7b2d0ec730ace277f71486acb1e93779269a031f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c3ecba22efb87254c9607610ca90a287",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat",
+      "status": "copy-new",
+      "bytes": 2420,
+      "sourceSha256": "3f8122e00e489f87b2a0b418bc47ae5fd9d1177761b8b1e52f2a1194d7e8483f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "9446b38845e04a38de5e22d80a3021e17acca16ca1b45a92651e9cdf1eccdc99",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "42cc4af5b016225439bc569ed2de3777",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat",
+      "status": "copy-new",
+      "bytes": 2406,
+      "sourceSha256": "2e021a9950719e152d0ae882d4d40fa9417231e95f37fd79dbaaa16b65cce541",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "b3cee43b314c652c6a35983dc6898b7a3746c9c6725113143fe1d3e71bdb241e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "36124cfadbb626d4d936858a2722faca",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat",
+      "status": "copy-new",
+      "bytes": 2412,
+      "sourceSha256": "5da9d99e857b1edd921ca7d3f9ad3be858f5f2c688107c42ee96ab3b132f6c0e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "a70f6e486f867893dc9ae4cf269c8442da886700d2b0134418dce9ea5482f550",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "707860c0d73be944287dcc3ad9b6e3a6",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat",
+      "status": "copy-new",
+      "bytes": 2486,
+      "sourceSha256": "63644577ce5c57a34dc772e00686b251f0cd502d58088e584a3043aa35872bf4",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "54f510bc701b1c0521f4653332fc7fc72243c840b17e988540b0e331d2f9f4ed",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "7d98088697aa8284e882c9dd497ec3fe",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx",
+      "status": "copy-new",
+      "bytes": 377484,
+      "sourceSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx.meta",
+      "status": "copy-new",
+      "bytes": 2891,
+      "sourceSha256": "1ad563a222a261c9ae222bb479b733d239a67092acef59e5c8d5f1ae21c5e856",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "70476c66f2208bad1aa5ca0c56cd957fb9c0eff660e4fa6bb4baaaa036c925cb",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "4183b6577634e24469399b5b37cdf132",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl",
+      "status": "copy-new",
+      "bytes": 9761,
+      "sourceSha256": "d74c36c325280c8081009f097cf3f63e71e9fd05ab258d1e45ce90d984789699",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl.meta",
+      "status": "copy-new",
+      "bytes": 161,
+      "sourceSha256": "2b342f60e9fccb708c5d249ca7fffa0005e6f6d8cc40dcf3f0a9665956c7659a",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "e06ca3cbb2241874f9c0ec0fbf6eba0b",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.shader",
+      "status": "copy-new",
+      "bytes": 5374,
+      "sourceSha256": "1f8cb8811dfaa3d3872ab01dc5534fb12195a8329dc55c74103f78611f54cf4a",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.shader.meta",
+      "status": "copy-new",
+      "bytes": 204,
+      "sourceSha256": "f9a6c5dc83ae3b986e26f66fc2419830730757c6c6022be93b5b2182b5c82607",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "0248543be1ba23248b06e8db122d699e",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.asset",
+      "status": "copy-new",
+      "bytes": 97330,
+      "sourceSha256": "b36649634d39772a1f9dbdf558de3ec55c816a14939c37f131e689a17d050c8d",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "60203042d0311b82924db4baffc133733e11e1045195eecf637f344d8c8c072d",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "553831cbb068ac24fb2e5d8da1955a0f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.mat",
+      "status": "copy-new",
+      "bytes": 2402,
+      "sourceSha256": "59e9899623e67fbf829c4cdad69c39d1deb053f6e5ab71483e883071b43e3a59",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "103e22c1949d41916a4594a3ee44a2d5922f57731427e4103bf851a78b6e67dc",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "e8234d3af27d7f34bbc043045b63e727",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "e4a518933b2c2ebb21153698be5ac357be90d80c94d6d1166ad79f5c45b6a52b",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "ca843241224690a47bb9f148652272c6",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/Support-ForeheadPartition 1.asset",
+      "status": "copy-new",
+      "bytes": 83855,
+      "sourceSha256": "bc61aae8bc48bcab45c5beb2d0b1deea6ffaca67bb2499acf880dc218a9aabf0",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/Support-ForeheadPartition 1.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "83d1c46649a261c9f569669cc0cd9d3caca98a3c6868ad16ec1b7b8f5eb048c6",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c3caf8de5a3038a459350e58dbdcb487",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion0 1.mat",
+      "status": "copy-new",
+      "bytes": 2358,
+      "sourceSha256": "1773f022cdeb303d375b5a9dcada0d47f82d205176faeb4540455526aa863478",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion0 1.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "6ad7f6575ebc7621ab2b1c9c706cb1a6da053ee276f5b43b202c569a05f6e4fb",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "fb95a731aaf3224458b80dd865a2cb62",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion1 1.mat",
+      "status": "copy-new",
+      "bytes": 2358,
+      "sourceSha256": "65df43663d4f96eff3db58a2744a456b75d453c84d757d370cc83e923b72b9d9",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion1 1.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "97794140a9d8036b649e30698ecb83783152273673a40967990e3052c2d0ca01",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "b47ded6f38f9cf743a4ca8b2bc524368",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "b9affe0a16d77fe85df5f914f7968e92d48647684e3c7694124a109b33164b3f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "92e48cd95079bd34581f4136d38eb2fb",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "6d530931338878632ce34d7160517c0fa34957710a93999249969548e63e82a5",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "f9ce51a3762c2ee4b97a6c96cf32b81e",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_4K.png",
+      "status": "copy-new",
+      "bytes": 1292614,
+      "sourceSha256": "c6b2949a8038ded557c38a8b529674229b2e454e4f830aec0c0679acbc57627d",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_4K.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "7f54ad0811bddffbd9d0990448f774a7c2e8057d8814502398a64dd911071550",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "1fc2260375c08f44eb30806d499b02b5",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_Shadow_2K.png",
+      "status": "copy-new",
+      "bytes": 574260,
+      "sourceSha256": "e18bc57739e0942b81387b079947b9ccd473a898f4443aea97a722d4115b179a",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_Shadow_2K.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "3b6cd1aeb99ac5a774e22c2fcbd66954da9d7a236066a9a4bc258da085c2d9f2",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "93fb1972230efb2409833cef5ae6d111",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "64da50bd19304f87979e7b3c1a4ed02fb33405618f0a37918cfc38d761c45040",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "be6dd3553299f34458fd2eb7ca60f4ef",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/MatchedSkin.mat",
+      "status": "copy-new",
+      "bytes": 2318,
+      "sourceSha256": "434a64fb6c1a14e931678e2428ed041ea4053870dd725256a02b195de472be89",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/MatchedSkin.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "f8dd33b29a1234141cc7c95f4618d7ebe1fffc29e0d699e834b42e2ea0b96fe9",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "21ed791103d33f34c965da3270670b7f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/Ren_H_EyeInterfacePatch.fbx",
+      "status": "copy-new",
+      "bytes": 24764,
+      "sourceSha256": "45edb235b532efe14941c7782e131a526e1971d1db22e24a5a1c97acd8186106",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/Ren_H_EyeInterfacePatch.fbx.meta",
+      "status": "copy-new",
+      "bytes": 2891,
+      "sourceSha256": "d8816965e9f8ac130badb3049c5ff2fc27364ce0da95d259b6f3d0ba6da1af7c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "5f3aa15fc298e754781847439ddf128b",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_L_SkinShutter-ReceiverCandidate.mat",
+      "status": "copy-new",
+      "bytes": 2354,
+      "sourceSha256": "599ddc0bbb631b451d130b75f01f4a698d238d99187a221eb1f56ddf9c3f6cee",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_L_SkinShutter-ReceiverCandidate.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "b1e50beef0c754b1a4a5a0a84161f1f0432157e52c84965e3897172b77dd8fc7",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "715d5e4dceb6cb64db52c765dcfad3ad",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_R_SkinShutter-ReceiverCandidate.mat",
+      "status": "copy-new",
+      "bytes": 2354,
+      "sourceSha256": "80117c01b3a9b807a057675acfe5476dea90b9c044b79dbef6afdbebd79a45c1",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_R_SkinShutter-ReceiverCandidate.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "0472468e2a90f1184f9432660bff836bdd9ae24b625905a7ebbaa493c9afe668",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "ea1db50738a7c1741aea836544e09d5b",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat",
+      "status": "copy-new",
+      "bytes": 2699,
+      "sourceSha256": "e4435d94e64ac9f14f08c95c1104258d30e8a0dbe2d60eed5ff4c6140aa03b61",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "2e1b7ecb4c7c05e7870fded575635631df014601f2f025deb1a6d1a88f7b30ad",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "8efe5522f3cfc594b872fd690a40ed60",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat",
+      "status": "copy-new",
+      "bytes": 2589,
+      "sourceSha256": "681086ac0b59a72e8b8e5147d3bf2eb45a13c8cfd674c276a1df619cf21c1ff3",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "443cddbba299275540e0ecd946f85df33761d9c20f8ba99d18918e7975043b26",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "1d8f23a2e53d44a4db780e0294be3e3d",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat",
+      "status": "copy-new",
+      "bytes": 2592,
+      "sourceSha256": "8bc1b38bd7289b305cd52fc6a477374aa8707475580af0c92c2318ed680aaccd",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "2b44f1a8d910b844e30caff11d68c38c71848290ede141207c0b76246ef81689",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "b3f90a22eab83664784fd114ce62dc95",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "1975fe60841740f44b03419a82fed1d14ee7ef400b8970f2a06366150c0d798f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "da8bfd0c08d42dd4a96d9be939dfc8c8",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl",
+      "status": "copy-new",
+      "bytes": 9290,
+      "sourceSha256": "1c4a197d5724e638b78205ec05794f97fb5b176ec57623b9707453a0c1f5787b",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl.meta",
+      "status": "copy-new",
+      "bytes": 161,
+      "sourceSha256": "a61afdf7e9d32eb46ad0a634637593101d8fd60c366a2d3f46928fc007520010",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "f57d440678c8c634c8a34251f1ec20a7",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonReceiverNPR.shader",
+      "status": "copy-new",
+      "bytes": 5159,
+      "sourceSha256": "5d78c781490de5f00b7545a36a7372b06ff32a861f58da9bbbc5c0de112152fb",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonReceiverNPR.shader.meta",
+      "status": "copy-new",
+      "bytes": 204,
+      "sourceSha256": "5f174c291b68ffb15af5ecd8983f0e1a4b59cb18b61c433d1624a058973e2e64",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "4a0b903ed0b9a444c91d1d84b113a621",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "76e8ad608069a841b9cdf9c74e677ebbdd6f83dc04765ff5c25a65a65cc0bf1e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "1101a66f453a523468924f3481d5f617",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/OriginalArtist.png",
+      "status": "copy-new",
+      "bytes": 2426678,
+      "sourceSha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/OriginalArtist.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "216a9f46ef0212107ff97d1b3ab3c32e75913a45f96a3ca9704adbb1a1516ea7",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c46a3363a51f5b04c9e22758478e9b54",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_JawSideBridge_R-MatchedSkin.mat",
+      "status": "copy-new",
+      "bytes": 2375,
+      "sourceSha256": "29134ff59725110945c8ae0097d2efa1d8570713510460bc389a2165499ef238",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_JawSideBridge_R-MatchedSkin.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "03f864e17190c917d5fb8b4e1ea7d570b8b1864ee4b1cbf3f7ccddae059648bf",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "bfd62da96103b4b478a94c5198751e74",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_Support_JawBridge_Linear.fbx",
+      "status": "copy-new",
+      "bytes": 71756,
+      "sourceSha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_Support_JawBridge_Linear.fbx.meta",
+      "status": "copy-new",
+      "bytes": 2891,
+      "sourceSha256": "8f0e426f5d25e3866e611dd9231b67891d292802f023dd62fa5cb7c42a71f3c6",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "4b221d8a2324a9c4f8dc6e7999c4f292",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "156fad8bd54c100ac156e680e65488910b2587b223c4e5eaa85b091a136dda6a",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "716cc2cc3e072b144bddb6d0a2750b52",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "b13af3fe39d9cc65868586f7cd46760c25bc1219fd6e6a4eeca76442a2cd74d5",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "65995231d18cd4a4da0a22a1743c8206",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx",
+      "status": "copy-new",
+      "bytes": 9240988,
+      "sourceSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx.meta",
+      "status": "copy-new",
+      "bytes": 2891,
+      "sourceSha256": "67be53dbff7797d436e31191b6c3ed7952cce98d9395cc74f2a72892c64e00b7",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "da1e70fc56987cc46995e18007fa4674",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "082208b397cc4d924cd94bbec81f81154a5bf012d251247407433f6ab278e75c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "315830f5a65b05344a133c36f1c50a7f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_Cap_V2_Cloth.png",
+      "status": "copy-new",
+      "bytes": 739906,
+      "sourceSha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_Cap_V2_Cloth.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "06a050c4ddc1243446be92c10b06b9905a0c6feaed4d968cca54080431715881",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "9995f94a51cfc8a43884ac45f54a1203",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Hair_Painted_PaleBlond.png",
+      "status": "copy-new",
+      "bytes": 9669189,
+      "sourceSha256": "bc2a04f4f4c426521fd2050b569f8c0d08eff12ad1065df2512bdd6b40543c6f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Hair_Painted_PaleBlond.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "9f3a80fdcfdf23e874e80f5f5277a599e20eb5524ba22172f9a2c3b238f3450f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "d3d0796c9500b8849b184c9a363d2dc3",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_IrisBlueGrey.png",
+      "status": "copy-new",
+      "bytes": 75324,
+      "sourceSha256": "67c155b71cb8f368932e90af489bcdad9edfff5ad40675cdafa09c82d3a09b59",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_IrisBlueGrey.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "92220b931e7f346aa7a512e48943d2f374b4003b879639e2ed073ae6fd3e4eb5",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "cebeb4fbfb36af049bdfb218cb16849c",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_L_Pigment.png",
+      "status": "copy-new",
+      "bytes": 38945,
+      "sourceSha256": "13d93b922cf065d5911eaeea68e4bec7dedd6e6f0daa4ebcdb17ce9c2dd121ac",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_L_Pigment.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "f89d3cc9f539486577c2ef4e394633a1a4b2f2a798d01f98ac164883eaacb198",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "db8f125d0cc370c40afe21367bd6e2ae",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_R_Pigment.png",
+      "status": "copy-new",
+      "bytes": 43681,
+      "sourceSha256": "c7a8975bf2f51bbafb4f3c49cc1ff31e8d0a373efedbcd34f7d293dfb447334f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_R_Pigment.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "fad5ceb7608f00e751ed13c79a2b66b828ce517e4103885c14ad23ec444516fa",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "184cf08fc1598e844805372c329fd5c2",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.jpg",
+      "status": "copy-new",
+      "bytes": 1768797,
+      "sourceSha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.jpg.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "b9c7e4a95a599ffa706ed69594de4993aeccc0ff0d16d3ddee049c7c2000c07e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "7d6183f3d9be10f4ca8a67c3684c092f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "cd69ead8fc064d0df6951288ed0114fec6b0e405bf601756b9e5732bcd20434f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "cb6c5bd458b499a40872a2bc829f436e",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "41af760e4cda0966b2ae386fea064617df30c6db494a898b0fc53444691189a2",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "5b61309276948224aa8636349d93d0d7",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Cap-RestoredNormals.asset",
+      "status": "copy-new",
+      "bytes": 83276,
+      "sourceSha256": "4b41279a8f39db2de7e08851695c1489b6e94b558c40ba068978e612c814111f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Cap-RestoredNormals.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "8a02e7f3bae27af38335adff703486145ed4f7cdb0f87c9b60f6f247f31e5620",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "744987e6e39fc004582e9d8d4af2cd0f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairLayers-RestoredNormals.asset",
+      "status": "copy-new",
+      "bytes": 1841056,
+      "sourceSha256": "08e214883a8493e9333eb475fa762129ab25ad27a8f33d79786ab413ca319c8c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairLayers-RestoredNormals.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "45fa9cc1407dda95e9dcc9f15a2ef47db9b88c2b042889c07cc13ce3ecc36970",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c062f3f1047906348812dd8fda8e6e39",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairRoot-RestoredNormals.asset",
+      "status": "copy-new",
+      "bytes": 48303,
+      "sourceSha256": "99a50747ac0328fe1063515066383ac1775f5a3e816cb8154f4125181989e92b",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairRoot-RestoredNormals.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "99388588046988b620a0e79f634adfe47b78c07554fc512af0904beeb9d5ac41",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "514d2abe1a470764aabd38ea66f4dea4",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Head-RestoredNormals.asset",
+      "status": "copy-new",
+      "bytes": 13726171,
+      "sourceSha256": "3e596b0903bbb30b94869f0839341a49fd329eb04f19fbdd33afd3ef41760859",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Head-RestoredNormals.asset.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "74e14fc46a1005873e279f067087eb54aa716f5bbcea947fe061dfb3f67c3565",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "d24a64deb870ad14580237bc0743a6ab",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenTokonOutline.mat",
+      "status": "copy-new",
+      "bytes": 1028,
+      "sourceSha256": "da151ebb6ed0d0a59a73d332a0314af086f093a964e34a63151111776178ac4e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenTokonOutline.mat.meta",
+      "status": "copy-new",
+      "bytes": 188,
+      "sourceSha256": "642610b839607b9ae54076d83fe23631ace3cf10cced40a029a6bc812d931151",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "206756637c507f247b213576cb19a1aa",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset",
+      "status": "copy-new",
+      "bytes": 4708,
+      "sourceSha256": "c4e0177852721f073f0a4306db5be601a13e63e854aeadc41d041e76bf613483",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset.meta",
+      "status": "copy-new",
+      "bytes": 189,
+      "sourceSha256": "166d8869ae3f045858f35fcb40b828cd6fc43ba1462f51029b712fe1def93c41",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "2909dd07bbbbad1448c574ba81ddff58",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures.meta",
+      "status": "copy-new",
+      "bytes": 172,
+      "sourceSha256": "205bbb8c5b2bc98755ecf3a4e5a5e4a1e399e92ab98f84beba9dd73b31f1177e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "eb5da6d11841ddb40bdb0df261b7b467",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_SeamHighlightControls.64775ed0ff.png",
+      "status": "copy-new",
+      "bytes": 28456,
+      "sourceSha256": "64775ed0ff290029904be007690d75aca1aa762bd957a994481d61368f0174bb",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_SeamHighlightControls.64775ed0ff.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "d2bd392c7bead93a6085d2ed0d4cd36f95877e89e0b9d701aa212f10f8b1ae2f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "d491aba55ed97c54c8309e9f73e6bbcb",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_V2_Cloth_Shadow.9a61268d64.png",
+      "status": "copy-new",
+      "bytes": 1254744,
+      "sourceSha256": "9a61268d644c10a3e439a871b2eb2798447f6e13aeb4a56a91eb302a4e8ebf77",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_V2_Cloth_Shadow.9a61268d64.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "912f51c7fbe6fe813485dc69e825fa70f68084871dea9d72b5aff0ac94db46a9",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c054903fe4d7e394695ea960b320742a",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.0ebe7a875d.png",
+      "status": "copy-new",
+      "bytes": 25752,
+      "sourceSha256": "0ebe7a875d79714807261c5a20b9397e016b48bd836acdd612aebe711ed302fc",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.0ebe7a875d.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "a8f132c3b6a1d47fc13c393bd3edefdada3ab4c1d56e061853083a462de7a519",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "bba2e8e0083216e4caaab3b7b4853050",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.4415c3673c.png",
+      "status": "copy-new",
+      "bytes": 18418,
+      "sourceSha256": "4415c3673cf7f6504e18b3c1066f7c90d210489053444c83dc06d3f966039138",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.4415c3673c.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "03f850176bef6d1676346a7d9690593041d53f6cf3b81f454c1fc8382e720402",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "48cd206ea39bd884faa5a6cf6f3ce0dd",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_ClosedLip_BaseColor.25af841b45.png",
+      "status": "copy-new",
+      "bytes": 11752215,
+      "sourceSha256": "25af841b4553a84ababa4eb96fec0dd4cb28b32796e7f6a3601c11b90ea5f6ea",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_ClosedLip_BaseColor.25af841b45.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "0928ea3a9ab9704067095ce9b957e916186287f1103ea38b9755bbc255c4a75a",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "2b9fc9400364a5749912140942326c22",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Controls.a350e5bbfe.png",
+      "status": "copy-new",
+      "bytes": 271,
+      "sourceSha256": "a350e5bbfe460347244bd57dbecfb11fe1c267497dc3225dd38f17345a72c143",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Controls.a350e5bbfe.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "5db01747f8f2b19fc8a650fa8cf5611f6957abccf7ffcd4eb54a6bb37219978f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "3b40328bf989c5248a93395dcd2d1f2f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51.png",
+      "status": "copy-new",
+      "bytes": 3757916,
+      "sourceSha256": "345d61ff51b1edda270c67efc67692845fde7ca84befc4b5978a47c70bc293be",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "72dedc5e5cb66b9b0df39fb42acf4d6e524bd2cc6588253ee4e10b039c2e5816",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "79f1e49b1544b274f80a0d6165822fe3",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_ClosedShadow.a5721c1ec9.png",
+      "status": "copy-new",
+      "bytes": 837685,
+      "sourceSha256": "a5721c1ec947a812690b2cbda2dea2341d031857c066f34506e4127772e8e93c",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_ClosedShadow.a5721c1ec9.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "e4163d803a1f8914687ce7fd85df2a0dd4112b84e9001f67f9598591898ea864",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "1e13fa93fc25d214cba4e3cd6e132c44",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_Controls.e45237a76c.png",
+      "status": "copy-new",
+      "bytes": 218777,
+      "sourceSha256": "e45237a76c7c39a014b93dd818a5b5aabdc9bcae24f5f59d50ecd364c3ebb4ed",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_Controls.e45237a76c.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "f8ae4426dbd3f4ff7f79d32753c2974774440df17d0c625d84c411eb9506b2b8",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "9213590842a6cbe4c9f2544b1ce74f92",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_OpenShadow.586e569150.png",
+      "status": "copy-new",
+      "bytes": 783651,
+      "sourceSha256": "586e569150cd041058719cc0eb2c7a0b747752e6ea21db0229c70bb6e5e7e8e7",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_OpenShadow.586e569150.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "6379571e8d7e936475aebf32eb0784e2615a3656e756371eb4bf351594a9a6cb",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "0fce3dec0620dcf4b83d1f8cff6f70cc",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_Controls.dec1b97601.png",
+      "status": "copy-new",
+      "bytes": 73989,
+      "sourceSha256": "dec1b97601655a60578ea71fa031b7db9297bc4160fd00f3edfa7f798f72c815",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_Controls.dec1b97601.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "d1be74865d23206c7bdfc765b3631dab0d425dee6e8b9b0426c4480ada14544e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "9081fee1dbefb4c4381c770431880a20",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_OpenShadow.ef56ebea5f.png",
+      "status": "copy-new",
+      "bytes": 21168,
+      "sourceSha256": "ef56ebea5f765ba8bf7ffdee149d0bf278fd4284fa4215b8987883334c156fe3",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_OpenShadow.ef56ebea5f.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "a5739c7b529396cb62984b11b246b1dc842a40ec80f402d6cb17f066437cc51b",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "b1e9cd400362e834e8da3ed307fb5270",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_Controls.74fd449c20.png",
+      "status": "copy-new",
+      "bytes": 10404,
+      "sourceSha256": "74fd449c204f1765d41519175b5b77aa839d82d86e96922eafcf774d0388f74a",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_Controls.74fd449c20.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "4f07181d5403b0a3a11adb459d984f5693e63afb45d875c843914c91e0d56610",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c42ba07eaf01a4d44838abf6dd7c3c62",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_OpenShadow.8f68fb18e2.png",
+      "status": "copy-new",
+      "bytes": 15565,
+      "sourceSha256": "8f68fb18e2848656675fdd795e8c60c95666e0c2591d42ce68833cbb325f1943",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_OpenShadow.8f68fb18e2.png.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "25fa7d95836bad69a3bf0346bd916280df66159d0f3e35eab69cbcd6bfdd5e92",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "930b880edaaa492449ec3032ba697bff",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/image-0.9750e636f5.jpg",
+      "status": "copy-new",
+      "bytes": 1768797,
+      "sourceSha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/image-0.9750e636f5.jpg.meta",
+      "status": "copy-new",
+      "bytes": 3717,
+      "sourceSha256": "5cf726f2cc2b7e4f650dbda201700b7903ed7becf1a624d019019effe8b65e38",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "0363801998351794291f25369cfd404a",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/NPR/TokonStudy/RenTokonInk.shader",
+      "status": "already-identical",
+      "bytes": 2830,
+      "sourceSha256": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+      "destinationSha256": "80e3bdf6b66cb497dc9207a41daa9596675973e08066702ed96eca1bf306177c",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/NPR/TokonStudy/RenTokonInk.shader.meta",
+      "status": "destination-conflict",
+      "bytes": 204,
+      "sourceSha256": "2561e0b60956eb427bf6edf4210051f61b68ac367edfad2c27f9a00a186938b6",
+      "destinationSha256": "939aaf36fcd84040e8bd00c1e508537bd2bc37002d67b330a7fea858692fcda1",
+      "alreadyTracked": true,
+      "guid": "82bcd3f82bc4c444ebf04e9d9a57f0ea",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl",
+      "status": "already-identical",
+      "bytes": 9188,
+      "sourceSha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a",
+      "destinationSha256": "d4c43b883d965e036c56157ee798bcfd714310bdc8c736859361e32d5bd3fa1a",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl.meta",
+      "status": "destination-conflict",
+      "bytes": 161,
+      "sourceSha256": "045821b1d25253d5e57feecaade7927facf2f4e52c6b4ecda928b73942b2f75b",
+      "destinationSha256": "31665044bad3feb1f8c258505d61ef9b956c028d74951daae333eba4128d4187",
+      "alreadyTracked": true,
+      "guid": "caf13a03c412dbe42bdde05fc05f6456",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.shader",
+      "status": "already-identical",
+      "bytes": 5149,
+      "sourceSha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+      "destinationSha256": "32354c6a49ef1ea14d6562445cb5e7339a4cccd548b7c570b759353acbf919a6",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.shader.meta",
+      "status": "destination-conflict",
+      "bytes": 204,
+      "sourceSha256": "ab28b68e435d2c8e54a62a1622dad360d8e7551b7fc122a113ec702ee7201477",
+      "destinationSha256": "c229dba752c73c47bee90ab42c2c7973bd77cac7290bb44a6520b507aee9038d",
+      "alreadyTracked": true,
+      "guid": "96c3d5b3456529a4095581f7e2e4183f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/LucidLoop.CharacterArt.asmdef",
+      "status": "destination-conflict",
+      "bytes": 182,
+      "sourceSha256": "5ffd1d9668e7f7ca1cb285e8f92faf500f8fc7618fd8c2105c09436dc565408e",
+      "destinationSha256": "e80e7ade627854c84ffcf66a98580b65e7b6765515677586d75ece690ccb38eb",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/LucidLoop.CharacterArt.asmdef.meta",
+      "status": "already-identical",
+      "bytes": 166,
+      "sourceSha256": "1ef75e26a1bfe0836b3f3607e08bc684aad766c48bb7aecce56a0967cbcd2bd1",
+      "destinationSha256": "1ef75e26a1bfe0836b3f3607e08bc684aad766c48bb7aecce56a0967cbcd2bd1",
+      "alreadyTracked": true,
+      "guid": "b3f411d29b749b7499f00b903609d9a0",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenBustComparisonViewer.cs",
+      "status": "already-identical",
+      "bytes": 18855,
+      "sourceSha256": "e71e5b394550498b38650b33fddcd5744e8ee86a7bb02a622b9ec55b9e16fbf8",
+      "destinationSha256": "e71e5b394550498b38650b33fddcd5744e8ee86a7bb02a622b9ec55b9e16fbf8",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenBustComparisonViewer.cs.meta",
+      "status": "already-identical",
+      "bytes": 60,
+      "sourceSha256": "51e4e1d39a517945d7c44152339db609a3deeb94bba693bedaa4e5e0f4928eb5",
+      "destinationSha256": "51e4e1d39a517945d7c44152339db609a3deeb94bba693bedaa4e5e0f4928eb5",
+      "alreadyTracked": true,
+      "guid": "5f9fa42fc96345f6be4a33cc9e8539a1",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs",
+      "status": "already-identical",
+      "bytes": 20097,
+      "sourceSha256": "7a6c4de86a12abfd436e876a8695b6b404aa9b490a53e5e92cffc6c4df76c933",
+      "destinationSha256": "7a6c4de86a12abfd436e876a8695b6b404aa9b490a53e5e92cffc6c4df76c933",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs.meta",
+      "status": "already-identical",
+      "bytes": 60,
+      "sourceSha256": "ea4335ab5784d92be3aa35bef2308a5aa8bbde1e3ef5f1b7c61babf095055477",
+      "destinationSha256": "ea4335ab5784d92be3aa35bef2308a5aa8bbde1e3ef5f1b7c61babf095055477",
+      "alreadyTracked": true,
+      "guid": "ef10b26b6c76471dabd4e909086c4c4a",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs",
+      "status": "already-identical",
+      "bytes": 5317,
+      "sourceSha256": "107576e9c37e0946846915eccf48e3c46ab2a732c0bf38ea5ca4e4c757eff4cd",
+      "destinationSha256": "107576e9c37e0946846915eccf48e3c46ab2a732c0bf38ea5ca4e4c757eff4cd",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs.meta",
+      "status": "already-identical",
+      "bytes": 60,
+      "sourceSha256": "1abb9f9c8a826c060089b5055e1751e2bda355f8549f0d726f2209418f0c4794",
+      "destinationSha256": "1abb9f9c8a826c060089b5055e1751e2bda355f8549f0d726f2209418f0c4794",
+      "alreadyTracked": true,
+      "guid": "9bd981cc125143e39790e7ca963a958f",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs",
+      "status": "copy-new",
+      "bytes": 10620,
+      "sourceSha256": "6679daf3c9d23586036b622f489647e6c290753d490c7d5376caf3657600287f",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs.meta",
+      "status": "copy-new",
+      "bytes": 59,
+      "sourceSha256": "314ad1e71c74ce9fb3060d36fe39295e810f1d5d100a1ae37d5337298b2f25c3",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "e2b057b7356390b47a9322f67cb4c8a5",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs",
+      "status": "copy-new",
+      "bytes": 11991,
+      "sourceSha256": "857aefb4abbee090089034cc5d1215f0aa07b7a637f45ff93a835b78ca586ec2",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs.meta",
+      "status": "copy-new",
+      "bytes": 60,
+      "sourceSha256": "45ed1da9d567ed96a7abb7b8938d7ef0cc21e5f82aada3f2fd6cf999113325a8",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "932e8160e9664087a9c8af903caa0a4c",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs",
+      "status": "copy-new",
+      "bytes": 6600,
+      "sourceSha256": "c8f8a20327a1ccf15cd29a5b68544c9e24358934efc64a7fc4805436542906e6",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs.meta",
+      "status": "copy-new",
+      "bytes": 59,
+      "sourceSha256": "b3181ef17fa5e203c1f1e9135dc641fd60c4afefbc1f69a4e95aa15cefbfc426",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "2b3340abc42f8be40932e9576bc15468",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs",
+      "status": "copy-new",
+      "bytes": 8156,
+      "sourceSha256": "7fbc1812f722460100bf3a844268ba5e916da7ba67edceb7fbbb12bf0772566b",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs.meta",
+      "status": "copy-new",
+      "bytes": 59,
+      "sourceSha256": "228181c4a98fa7038b5319dc43fc26306303f6561652b60a26efbe919a48ed9e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "f94d02ac7cbd5974f983552943281b51",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs",
+      "status": "copy-new",
+      "bytes": 8429,
+      "sourceSha256": "88495379afe0229094e44a15d78549cee5daa8d3b6d8dd88f928c2b51825cfd3",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs.meta",
+      "status": "copy-new",
+      "bytes": 59,
+      "sourceSha256": "c152af82438fe55dfd8fb0f489333937772f86ec381fa7e65a770c15360764b7",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "17d6ecf69897d7045a1e91f3ee20146a",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs",
+      "status": "copy-new",
+      "bytes": 9951,
+      "sourceSha256": "1359408f214970284540087ee03269991949dcf4a614dec593ccde48b790d665",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs.meta",
+      "status": "copy-new",
+      "bytes": 59,
+      "sourceSha256": "1a422fb1917594fbab55ddde24b847d0183965eaf3996d845e9a92716b92113e",
+      "destinationSha256": null,
+      "alreadyTracked": false,
+      "guid": "c0e0792387c099c4292c43d2a8fc5926",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenFaceStudyController.cs",
+      "status": "already-identical",
+      "bytes": 17312,
+      "sourceSha256": "ac20f3ea62cefd4d9c482a4ea2668460c16f4a49090867de1991226a294067d1",
+      "destinationSha256": "ac20f3ea62cefd4d9c482a4ea2668460c16f4a49090867de1991226a294067d1",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenFaceStudyController.cs.meta",
+      "status": "already-identical",
+      "bytes": 60,
+      "sourceSha256": "0637bce945a518df0ef753e895c6847dea52a24c5f7afcb4e1c60c039a342b7e",
+      "destinationSha256": "0637bce945a518df0ef753e895c6847dea52a24c5f7afcb4e1c60c039a342b7e",
+      "alreadyTracked": true,
+      "guid": "4fa79877b2c04681b97ac2d95a63c01b",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenNprReviewController.cs",
+      "status": "already-identical",
+      "bytes": 18625,
+      "sourceSha256": "b0cd23114dc9ac0acddaa54be84945795e7995a24d87858884ab9463c0a026e2",
+      "destinationSha256": "b0cd23114dc9ac0acddaa54be84945795e7995a24d87858884ab9463c0a026e2",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenNprReviewController.cs.meta",
+      "status": "already-identical",
+      "bytes": 62,
+      "sourceSha256": "015c64365490f08a1bd5a4dedb4fa0238c98d3c9d6c45b638f412dfc04f4a64a",
+      "destinationSha256": "015c64365490f08a1bd5a4dedb4fa0238c98d3c9d6c45b638f412dfc04f4a64a",
+      "alreadyTracked": true,
+      "guid": "0ba76dbf1d0f46539d94d2890170631e",
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/Gyms/Generated/GymRenderer.asset",
+      "status": "already-identical",
+      "bytes": 1888,
+      "sourceSha256": "3484b5d36c22008f3f70b1f88cd9d0bf58c1794ac64a6a0613c4224b516902ae",
+      "destinationSha256": "3484b5d36c22008f3f70b1f88cd9d0bf58c1794ac64a6a0613c4224b516902ae",
+      "alreadyTracked": true,
+      "guid": null,
+      "guidOtherPaths": []
+    },
+    {
+      "relativePath": "Assets/Gyms/Generated/GymRenderer.asset.meta",
+      "status": "already-identical",
+      "bytes": 189,
+      "sourceSha256": "9d1222df809b8eae6ce1e9d1fe6288db357376c97a61276fbebeaa293b28b490",
+      "destinationSha256": "9d1222df809b8eae6ce1e9d1fe6288db357376c97a61276fbebeaa293b28b490",
+      "alreadyTracked": true,
+      "guid": "f810d14b9af4ad143ba7b8fd1ac6e472",
+      "guidOtherPaths": []
+    }
+  ],
+  "unresolvedGuids": {
+    "474bcb49853aa07438625e644c072ee6": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity"
+    ],
+    "bf2edee5c58d82540a51f03df9d42094": [
+      "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset"
+    ],
+    "e3d24661c1e055f45a7560c033dbb837": [
+      "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset"
+    ],
+    "f9ee4ed84c1d10c49aabb9b210b0fc44": [
+      "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset"
+    ],
+    "de640fe3d0db1804a85f9fc8f5cadab6": [
+      "Assets/Gyms/Generated/GymRenderer.asset"
+    ],
+    "cf852408f2e174538bcd9b7fda1c5ae7": [
+      "Assets/Gyms/Generated/GymRenderer.asset"
+    ],
+    "573620ae32aec764abd4d728906d2587": [
+      "Assets/Gyms/Generated/GymRenderer.asset"
+    ],
+    "53626a513ea68ce47b59dc1299fe3959": [
+      "Assets/Gyms/Generated/GymRenderer.asset"
+    ]
+  },
+  "sourceDuplicateGuids": [],
+  "externalIncludes": [
+    {
+      "from": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl",
+      "include": "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl",
+      "include": "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl",
+      "include": "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl",
+      "include": "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl",
+      "include": "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl",
+      "include": "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/NPR/TokonStudy/RenTokonInk.shader",
+      "include": "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl",
+      "include": "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl",
+      "include": "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+    },
+    {
+      "from": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl",
+      "include": "Packages/com.unity.render-pipelines.core/ShaderLibrary/Color.hlsl"
+    }
+  ],
+  "reasons": {
+    "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity": [
+      "selected verified mouth scene",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity.meta GUID 0d9f5cac3d3f312498aa266497f8f23c"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 707860c0d73be944287dcc3ad9b6e3a6",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 707860c0d73be944287dcc3ad9b6e3a6",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 707860c0d73be944287dcc3ad9b6e3a6",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 707860c0d73be944287dcc3ad9b6e3a6",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 707860c0d73be944287dcc3ad9b6e3a6",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat.meta GUID 707860c0d73be944287dcc3ad9b6e3a6"
+    ],
+    "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID da1e70fc56987cc46995e18007fa4674",
+      "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx.meta GUID da1e70fc56987cc46995e18007fa4674"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e8234d3af27d7f34bbc043045b63e727",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e8234d3af27d7f34bbc043045b63e727",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.mat.meta GUID e8234d3af27d7f34bbc043045b63e727"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 553831cbb068ac24fb2e5d8da1955a0f",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.asset.meta GUID 553831cbb068ac24fb2e5d8da1955a0f"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenTokonOutline.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 206756637c507f247b213576cb19a1aa",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 206756637c507f247b213576cb19a1aa",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 206756637c507f247b213576cb19a1aa",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 206756637c507f247b213576cb19a1aa",
+      "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenTokonOutline.mat.meta GUID 206756637c507f247b213576cb19a1aa"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairLayers-RestoredNormals.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c062f3f1047906348812dd8fda8e6e39",
+      "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairLayers-RestoredNormals.asset.meta GUID c062f3f1047906348812dd8fda8e6e39"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9c3b9fd8937c4b44e99dafeeb1dada9e",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx.meta GUID 9c3b9fd8937c4b44e99dafeeb1dada9e"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_0.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9b31093b066a1ad4087ba7a953da81b0",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9b31093b066a1ad4087ba7a953da81b0",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9b31093b066a1ad4087ba7a953da81b0",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_0.mat.meta GUID 9b31093b066a1ad4087ba7a953da81b0"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Iris.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 182809aae57ad7740ae7a51c9408c0a4",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 182809aae57ad7740ae7a51c9408c0a4",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 182809aae57ad7740ae7a51c9408c0a4",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Iris.mat.meta GUID 182809aae57ad7740ae7a51c9408c0a4"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Crease.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9314739869dc6d34ea7117602b136fb4",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9314739869dc6d34ea7117602b136fb4",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9314739869dc6d34ea7117602b136fb4",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Crease.mat.meta GUID 9314739869dc6d34ea7117602b136fb4"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerFine.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e604bc3181180a84d89198e5079478a1",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e604bc3181180a84d89198e5079478a1",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e604bc3181180a84d89198e5079478a1",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerFine.mat.meta GUID e604bc3181180a84d89198e5079478a1"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c4addb0346e2ead4281f22462689b5d8",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c4addb0346e2ead4281f22462689b5d8",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c4addb0346e2ead4281f22462689b5d8",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c4addb0346e2ead4281f22462689b5d8",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c4addb0346e2ead4281f22462689b5d8",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat.meta GUID c4addb0346e2ead4281f22462689b5d8"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Backing.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e8c253abbbd29444b95a56a66a50743a",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e8c253abbbd29444b95a56a66a50743a",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e8c253abbbd29444b95a56a66a50743a",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Backing.mat.meta GUID e8c253abbbd29444b95a56a66a50743a"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 42cc4af5b016225439bc569ed2de3777",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 42cc4af5b016225439bc569ed2de3777",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 42cc4af5b016225439bc569ed2de3777",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat.meta GUID 42cc4af5b016225439bc569ed2de3777"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 7d98088697aa8284e882c9dd497ec3fe",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 7d98088697aa8284e882c9dd497ec3fe",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 7d98088697aa8284e882c9dd497ec3fe",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat.meta GUID 7d98088697aa8284e882c9dd497ec3fe"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_0.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4ce8d9aaac3e1e445852af52a4b16d57",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4ce8d9aaac3e1e445852af52a4b16d57",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4ce8d9aaac3e1e445852af52a4b16d57",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_0.mat.meta GUID 4ce8d9aaac3e1e445852af52a4b16d57"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Pupil.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID db7f5d24623c37a4bbb44f9f370e4a69",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID db7f5d24623c37a4bbb44f9f370e4a69",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID db7f5d24623c37a4bbb44f9f370e4a69",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Pupil.mat.meta GUID db7f5d24623c37a4bbb44f9f370e4a69"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Backing.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4057a8a4aaca21941ace4b6f16e2fe52",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4057a8a4aaca21941ace4b6f16e2fe52",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4057a8a4aaca21941ace4b6f16e2fe52",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Backing.mat.meta GUID 4057a8a4aaca21941ace4b6f16e2fe52"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID f1afda5543674c34da8e6f2c0333e1ba",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID f1afda5543674c34da8e6f2c0333e1ba",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID f1afda5543674c34da8e6f2c0333e1ba",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat.meta GUID f1afda5543674c34da8e6f2c0333e1ba"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 895337e4321039d40a634ed2097d0715",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 895337e4321039d40a634ed2097d0715",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 895337e4321039d40a634ed2097d0715",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat.meta GUID 895337e4321039d40a634ed2097d0715"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID ad056ac5663d25947a6a1a5982701960",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID ad056ac5663d25947a6a1a5982701960",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID ad056ac5663d25947a6a1a5982701960",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat.meta GUID ad056ac5663d25947a6a1a5982701960"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID f0a17916f1a21ae458310602b2dfbb53",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID f0a17916f1a21ae458310602b2dfbb53",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat.meta GUID f0a17916f1a21ae458310602b2dfbb53"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_1.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 44a756a75525f9441bcec1ad350fa126",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 44a756a75525f9441bcec1ad350fa126",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 44a756a75525f9441bcec1ad350fa126",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_1.mat.meta GUID 44a756a75525f9441bcec1ad350fa126"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 36124cfadbb626d4d936858a2722faca",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 36124cfadbb626d4d936858a2722faca",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 36124cfadbb626d4d936858a2722faca",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat.meta GUID 36124cfadbb626d4d936858a2722faca"
+    ],
+    "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 344881b61a589a0428eb2932d53a9d46",
+      "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset.meta GUID 344881b61a589a0428eb2932d53a9d46"
+    ],
+    "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 932e8160e9664087a9c8af903caa0a4c",
+      "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs C# type RenDesignerEyeReview",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs C# type RenDesignerEyeReview",
+      "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs C# type RenDesignerEyeReview",
+      "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs C# type RenDesignerEyeReview",
+      "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs.meta GUID 932e8160e9664087a9c8af903caa0a4c"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 95bbc5db091f43e46be63b230e4bac0a",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 95bbc5db091f43e46be63b230e4bac0a",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat.meta GUID 95bbc5db091f43e46be63b230e4bac0a"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 3985bc6a3377f16419ba2ab96c5f0ba1",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 3985bc6a3377f16419ba2ab96c5f0ba1",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat.meta GUID 3985bc6a3377f16419ba2ab96c5f0ba1"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 46eca3bfa879d17449982cf0b62df8dd",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 46eca3bfa879d17449982cf0b62df8dd",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat.meta GUID 46eca3bfa879d17449982cf0b62df8dd"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c9c1bf0f65ae249439301003f4f55275",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c9c1bf0f65ae249439301003f4f55275",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat.meta GUID c9c1bf0f65ae249439301003f4f55275"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c3ecba22efb87254c9607610ca90a287",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c3ecba22efb87254c9607610ca90a287",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c3ecba22efb87254c9607610ca90a287",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat.meta GUID c3ecba22efb87254c9607610ca90a287"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1268c4eeca0188944a0e2798b085f398",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1268c4eeca0188944a0e2798b085f398",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1268c4eeca0188944a0e2798b085f398",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat.meta GUID 1268c4eeca0188944a0e2798b085f398"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 688e8b7371cc2f34ebf3ee55f399d26e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 688e8b7371cc2f34ebf3ee55f399d26e",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 688e8b7371cc2f34ebf3ee55f399d26e",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat.meta GUID 688e8b7371cc2f34ebf3ee55f399d26e"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e51d4a8d4d072614ea8013935e0a2d03",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e51d4a8d4d072614ea8013935e0a2d03",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat.meta GUID e51d4a8d4d072614ea8013935e0a2d03"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 85d2548cff906634f9783e3b38644a51",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 85d2548cff906634f9783e3b38644a51",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 85d2548cff906634f9783e3b38644a51",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat.meta GUID 85d2548cff906634f9783e3b38644a51"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_SkinShutter.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c11575dde9669204cb1f4c5df42ef96b",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c11575dde9669204cb1f4c5df42ef96b",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_SkinShutter.mat.meta GUID c11575dde9669204cb1f4c5df42ef96b"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_LowerInk.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 19ac5e424f941c34c98b9500fbafe435",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 19ac5e424f941c34c98b9500fbafe435",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 19ac5e424f941c34c98b9500fbafe435",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_LowerInk.mat.meta GUID 19ac5e424f941c34c98b9500fbafe435"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Iris.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 5e31094e5d345e8429b3d2bdc261c92a",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 5e31094e5d345e8429b3d2bdc261c92a",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 5e31094e5d345e8429b3d2bdc261c92a",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Iris.mat.meta GUID 5e31094e5d345e8429b3d2bdc261c92a"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Pupil.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4bf4d09fdfd262540994eb3a503c59bb",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4bf4d09fdfd262540994eb3a503c59bb",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4bf4d09fdfd262540994eb3a503c59bb",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Pupil.mat.meta GUID 4bf4d09fdfd262540994eb3a503c59bb"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_SkinShutter.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1f35f6d2a6d7b6145858a04a13349931",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1f35f6d2a6d7b6145858a04a13349931",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_SkinShutter.mat.meta GUID 1f35f6d2a6d7b6145858a04a13349931"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_LowerInk.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 6862ee0b174dc914bbf53ef245b38405",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 6862ee0b174dc914bbf53ef245b38405",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 6862ee0b174dc914bbf53ef245b38405",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_LowerInk.mat.meta GUID 6862ee0b174dc914bbf53ef245b38405"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_0.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 55e406a94cebd5049a4a7d0d6560281b",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 55e406a94cebd5049a4a7d0d6560281b",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 55e406a94cebd5049a4a7d0d6560281b",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_0.mat.meta GUID 55e406a94cebd5049a4a7d0d6560281b"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_1.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 09bd413855431e44a8db0fe2197d4d69",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 09bd413855431e44a8db0fe2197d4d69",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 09bd413855431e44a8db0fe2197d4d69",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_1.mat.meta GUID 09bd413855431e44a8db0fe2197d4d69"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_UpperInk.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 2c735a44c1e528744aaaa36bf6fc989a",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 2c735a44c1e528744aaaa36bf6fc989a",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 2c735a44c1e528744aaaa36bf6fc989a",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_UpperInk.mat.meta GUID 2c735a44c1e528744aaaa36bf6fc989a"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_UpperInk.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 13a2105ec74e5214a826added00dfa9f",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 13a2105ec74e5214a826added00dfa9f",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 13a2105ec74e5214a826added00dfa9f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_UpperInk.mat.meta GUID 13a2105ec74e5214a826added00dfa9f"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1ccd062ce292b294aba425694fcb1d27",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1ccd062ce292b294aba425694fcb1d27",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1ccd062ce292b294aba425694fcb1d27",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat.meta GUID 1ccd062ce292b294aba425694fcb1d27"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 8c389321195b4864f942456f5380efa7",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 8c389321195b4864f942456f5380efa7",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 8c389321195b4864f942456f5380efa7",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat.meta GUID 8c389321195b4864f942456f5380efa7"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Crease.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID b2ba0665d2303a94ea1349dce3e9b48b",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID b2ba0665d2303a94ea1349dce3e9b48b",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID b2ba0665d2303a94ea1349dce3e9b48b",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Crease.mat.meta GUID b2ba0665d2303a94ea1349dce3e9b48b"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_JawSideBridge_R-MatchedSkin.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID bfd62da96103b4b478a94c5198751e74",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID bfd62da96103b4b478a94c5198751e74",
+      "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_JawSideBridge_R-MatchedSkin.mat.meta GUID bfd62da96103b4b478a94c5198751e74"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/MatchedSkin.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 21ed791103d33f34c965da3270670b7f",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 21ed791103d33f34c965da3270670b7f",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/MatchedSkin.mat.meta GUID 21ed791103d33f34c965da3270670b7f"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion0 1.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID fb95a731aaf3224458b80dd865a2cb62",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID fb95a731aaf3224458b80dd865a2cb62",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion0 1.mat.meta GUID fb95a731aaf3224458b80dd865a2cb62"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion1 1.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID b47ded6f38f9cf743a4ca8b2bc524368",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID b47ded6f38f9cf743a4ca8b2bc524368",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion1 1.mat.meta GUID b47ded6f38f9cf743a4ca8b2bc524368"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/MatchedBacking.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 7f6213573bf4ad84f85486309919696b",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 7f6213573bf4ad84f85486309919696b",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 7f6213573bf4ad84f85486309919696b",
+      "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/MatchedBacking.mat.meta GUID 7f6213573bf4ad84f85486309919696b"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/OriginalArtist.png": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c46a3363a51f5b04c9e22758478e9b54",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c46a3363a51f5b04c9e22758478e9b54",
+      "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/OriginalArtist.png.meta GUID c46a3363a51f5b04c9e22758478e9b54"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 2909dd07bbbbad1448c574ba81ddff58",
+      "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset.meta GUID 2909dd07bbbbad1448c574ba81ddff58"
+    ],
+    "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c0e0792387c099c4292c43d2a8fc5926",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs C# type RenDesignerRefinementReview",
+      "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs C# type RenDesignerRefinementReview",
+      "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs.meta GUID c0e0792387c099c4292c43d2a8fc5926"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_4K.png": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1fc2260375c08f44eb30806d499b02b5",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1fc2260375c08f44eb30806d499b02b5",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_4K.png.meta GUID 1fc2260375c08f44eb30806d499b02b5"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_Shadow_2K.png": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 93fb1972230efb2409833cef5ae6d111",
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 93fb1972230efb2409833cef5ae6d111",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_Shadow_2K.png.meta GUID 93fb1972230efb2409833cef5ae6d111"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 8efe5522f3cfc594b872fd690a40ed60",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat.meta GUID 8efe5522f3cfc594b872fd690a40ed60"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 1d8f23a2e53d44a4db780e0294be3e3d",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat.meta GUID 1d8f23a2e53d44a4db780e0294be3e3d"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID b3f90a22eab83664784fd114ce62dc95",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat.meta GUID b3f90a22eab83664784fd114ce62dc95"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_L_SkinShutter-ReceiverCandidate.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 715d5e4dceb6cb64db52c765dcfad3ad",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_L_SkinShutter-ReceiverCandidate.mat.meta GUID 715d5e4dceb6cb64db52c765dcfad3ad"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_R_SkinShutter-ReceiverCandidate.mat": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID ea1db50738a7c1741aea836544e09d5b",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_R_SkinShutter-ReceiverCandidate.mat.meta GUID ea1db50738a7c1741aea836544e09d5b"
+    ],
+    "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.shader": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.shader.meta GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_SkinShutter.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_0.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_LowerInk.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_SkinShutter.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Crease.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_UpperInk.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Iris.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Pupil.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_LowerInk.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_UpperInk.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/MatchedSkin.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_JawSideBridge_R-MatchedSkin.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/MatchedBacking.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_1.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerFine.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_0.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Crease.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Pupil.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Iris.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Backing.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_1.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_0.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Backing.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat GUID 96c3d5b3456529a4095581f7e2e4183f",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat GUID 96c3d5b3456529a4095581f7e2e4183f"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonReceiverNPR.shader": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4a0b903ed0b9a444c91d1d84b113a621",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion1 1.mat GUID 4a0b903ed0b9a444c91d1d84b113a621",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonReceiverNPR.shader.meta GUID 4a0b903ed0b9a444c91d1d84b113a621",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion0 1.mat GUID 4a0b903ed0b9a444c91d1d84b113a621",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_R_SkinShutter-ReceiverCandidate.mat GUID 4a0b903ed0b9a444c91d1d84b113a621",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_L_SkinShutter-ReceiverCandidate.mat GUID 4a0b903ed0b9a444c91d1d84b113a621",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat GUID 4a0b903ed0b9a444c91d1d84b113a621",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat GUID 4a0b903ed0b9a444c91d1d84b113a621",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat GUID 4a0b903ed0b9a444c91d1d84b113a621"
+    ],
+    "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID f94d02ac7cbd5974f983552943281b51",
+      "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs C# type RenDesignerForeheadReview",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs C# type RenDesignerForeheadReview",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs.meta GUID f94d02ac7cbd5974f983552943281b51"
+    ],
+    "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID e2b057b7356390b47a9322f67cb4c8a5",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs C# type RenDesignerEyeHairReview",
+      "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs C# type RenDesignerEyeHairReview",
+      "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs.meta GUID e2b057b7356390b47a9322f67cb4c8a5"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_L_Iris_PigmentCandidate.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 9e29f42ca854bf24fabf7550fd300468",
+      "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_L_Iris_PigmentCandidate.asset.meta GUID 9e29f42ca854bf24fabf7550fd300468"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_R_Iris_PigmentCandidate.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 3fbd546dd40a9534cb29f13a3d43675c",
+      "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_R_Iris_PigmentCandidate.asset.meta GUID 3fbd546dd40a9534cb29f13a3d43675c"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Base_4K.png": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID b90a958cc7813ad49975bf32e0a74cc2",
+      "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Base_4K.png.meta GUID b90a958cc7813ad49975bf32e0a74cc2"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Shadow_2K.png": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 2794da9d58919364e8cb0048d92c53e5",
+      "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Shadow_2K.png.meta GUID 2794da9d58919364e8cb0048d92c53e5"
+    ],
+    "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 2b3340abc42f8be40932e9576bc15468",
+      "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs C# type RenDesignerForeheadFieldReview",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs C# type RenDesignerForeheadFieldReview",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs.meta GUID 2b3340abc42f8be40932e9576bc15468"
+    ],
+    "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 17d6ecf69897d7045a1e91f3ee20146a",
+      "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs C# type RenDesignerMouthReview",
+      "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs.meta GUID 17d6ecf69897d7045a1e91f3ee20146a"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Head-RestoredNormals.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID d24a64deb870ad14580237bc0743a6ab",
+      "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Head-RestoredNormals.asset.meta GUID d24a64deb870ad14580237bc0743a6ab"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/Ren_DesignerEye_ApertureReturn.fbx": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 922dd41d060c68e48b2395e2042aea69",
+      "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/Ren_DesignerEye_ApertureReturn.fbx.meta GUID 922dd41d060c68e48b2395e2042aea69"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_Support_JawBridge_Linear.fbx": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 4b221d8a2324a9c4f8dc6e7999c4f292",
+      "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_Support_JawBridge_Linear.fbx.meta GUID 4b221d8a2324a9c4f8dc6e7999c4f292"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/Ren_H_EyeInterfacePatch.fbx": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 5f3aa15fc298e754781847439ddf128b",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/Ren_H_EyeInterfacePatch.fbx.meta GUID 5f3aa15fc298e754781847439ddf128b"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairRoot-RestoredNormals.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 514d2abe1a470764aabd38ea66f4dea4",
+      "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairRoot-RestoredNormals.asset.meta GUID 514d2abe1a470764aabd38ea66f4dea4"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Cap-RestoredNormals.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 744987e6e39fc004582e9d8d4af2cd0f",
+      "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Cap-RestoredNormals.asset.meta GUID 744987e6e39fc004582e9d8d4af2cd0f"
+    ],
+    "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c993ec211cbafdf41add4150c05eb28e",
+      "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset.meta GUID c993ec211cbafdf41add4150c05eb28e"
+    ],
+    "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID 19d9c1ccb585f964f8b6adac4c9ad15d",
+      "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset.meta GUID 19d9c1ccb585f964f8b6adac4c9ad15d"
+    ],
+    "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c562b2f0f9b58b241ac025464c881469",
+      "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset.meta GUID c562b2f0f9b58b241ac025464c881469"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerForeheadReview/Support-ForeheadPartition 1.asset": [
+      "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity GUID c3caf8de5a3038a459350e58dbdcb487",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadReview/Support-ForeheadPartition 1.asset.meta GUID c3caf8de5a3038a459350e58dbdcb487"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonReceiverNPR.shader local include",
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl.meta GUID f57d440678c8c634c8a34251f1ec20a7"
+    ],
+    "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_IrisBlueGrey.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat GUID cebeb4fbfb36af049bdfb218cb16849c",
+      "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_IrisBlueGrey.png.meta GUID cebeb4fbfb36af049bdfb218cb16849c"
+    ],
+    "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl": [
+      "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.shader local include",
+      "Assets/CharacterArt/NPR/TokonStudy/RenTokonNPR.hlsl.meta GUID caf13a03c412dbe42bdde05fc05f6456"
+    ],
+    "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Hair_Painted_PaleBlond.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat GUID d3d0796c9500b8849b184c9a363d2dc3",
+      "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Hair_Painted_PaleBlond.png.meta GUID d3d0796c9500b8849b184c9a363d2dc3"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Controls.a350e5bbfe.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat GUID 3b40328bf989c5248a93395dcd2d1f2f",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Controls.a350e5bbfe.png.meta GUID 3b40328bf989c5248a93395dcd2d1f2f"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat GUID 79f1e49b1544b274f80a0d6165822fe3",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51.png.meta GUID 79f1e49b1544b274f80a0d6165822fe3"
+    ],
+    "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.jpg": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat GUID 7d6183f3d9be10f4ca8a67c3684c092f",
+      "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.jpg.meta GUID 7d6183f3d9be10f4ca8a67c3684c092f"
+    ],
+    "Assets/CharacterArt/NPR/TokonStudy/RenTokonInk.shader": [
+      "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenTokonOutline.mat GUID 82bcd3f82bc4c444ebf04e9d9a57f0ea",
+      "Assets/CharacterArt/NPR/TokonStudy/RenTokonInk.shader.meta GUID 82bcd3f82bc4c444ebf04e9d9a57f0ea"
+    ],
+    "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_L_Pigment.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat GUID db8f125d0cc370c40afe21367bd6e2ae",
+      "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_L_Pigment.png.meta GUID db8f125d0cc370c40afe21367bd6e2ae"
+    ],
+    "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_Cap_V2_Cloth.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat GUID 9995f94a51cfc8a43884ac45f54a1203",
+      "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_Cap_V2_Cloth.png.meta GUID 9995f94a51cfc8a43884ac45f54a1203"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_SeamHighlightControls.64775ed0ff.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat GUID d491aba55ed97c54c8309e9f73e6bbcb",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_SeamHighlightControls.64775ed0ff.png.meta GUID d491aba55ed97c54c8309e9f73e6bbcb"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_V2_Cloth_Shadow.9a61268d64.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat GUID c054903fe4d7e394695ea960b320742a",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_V2_Cloth_Shadow.9a61268d64.png.meta GUID c054903fe4d7e394695ea960b320742a"
+    ],
+    "Assets/CharacterArt/Runtime/LucidLoop.CharacterArt.asmdef": [
+      "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs assembly",
+      "Assets/CharacterArt/Runtime/LucidLoop.CharacterArt.asmdef.meta GUID b3f411d29b749b7499f00b903609d9a0",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs assembly",
+      "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs assembly",
+      "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs assembly",
+      "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs assembly",
+      "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs assembly",
+      "Assets/CharacterArt/Runtime/RenNprReviewController.cs assembly",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs assembly",
+      "Assets/CharacterArt/Runtime/RenFaceStudyController.cs assembly",
+      "Assets/CharacterArt/Runtime/RenBustComparisonViewer.cs assembly",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs assembly"
+    ],
+    "Assets/CharacterArt/Runtime/RenNprReviewController.cs": [
+      "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs C# type RenNprReviewController",
+      "Assets/CharacterArt/Runtime/RenNprReviewController.cs C# type RenNprReviewController",
+      "Assets/CharacterArt/Runtime/RenNprReviewController.cs.meta GUID 0ba76dbf1d0f46539d94d2890170631e"
+    ],
+    "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs": [
+      "Assets/CharacterArt/Runtime/RenNprReviewController.cs C# type RenCompleteHeadController",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs C# type RenCompleteHeadController",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs.meta GUID ef10b26b6c76471dabd4e909086c4c4a"
+    ],
+    "Assets/CharacterArt/Runtime/RenBustComparisonViewer.cs": [
+      "Assets/CharacterArt/Runtime/RenNprReviewController.cs C# type RenBustComparisonViewer",
+      "Assets/CharacterArt/Runtime/RenFaceStudyController.cs C# type RenBustComparisonViewer",
+      "Assets/CharacterArt/Runtime/RenBustComparisonViewer.cs C# type RenBustComparisonViewer",
+      "Assets/CharacterArt/Runtime/RenBustComparisonViewer.cs.meta GUID 5f9fa42fc96345f6be4a33cc9e8539a1",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs C# type RenBustComparisonViewer"
+    ],
+    "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs": [
+      "Assets/CharacterArt/Runtime/RenNprReviewController.cs C# type RenCompleteHeadRig",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs C# type RenCompleteHeadRig",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs.meta GUID 9bd981cc125143e39790e7ca963a958f",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs C# type RenCompleteHeadRig"
+    ],
+    "Assets/CharacterArt/Runtime/RenFaceStudyController.cs": [
+      "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs C# type RenFaceStudyController",
+      "Assets/CharacterArt/Runtime/RenFaceStudyController.cs C# type RenFaceStudyController",
+      "Assets/CharacterArt/Runtime/RenFaceStudyController.cs.meta GUID 4fa79877b2c04681b97ac2d95a63c01b",
+      "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs C# type RenFaceStudyController"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.4415c3673c.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat GUID 48cd206ea39bd884faa5a6cf6f3ce0dd",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.4415c3673c.png.meta GUID 48cd206ea39bd884faa5a6cf6f3ce0dd",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat GUID 48cd206ea39bd884faa5a6cf6f3ce0dd"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_Controls.74fd449c20.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat GUID c42ba07eaf01a4d44838abf6dd7c3c62",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_Controls.74fd449c20.png.meta GUID c42ba07eaf01a4d44838abf6dd7c3c62",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat GUID c42ba07eaf01a4d44838abf6dd7c3c62"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_OpenShadow.8f68fb18e2.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat GUID 930b880edaaa492449ec3032ba697bff",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_OpenShadow.8f68fb18e2.png.meta GUID 930b880edaaa492449ec3032ba697bff",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat GUID 930b880edaaa492449ec3032ba697bff"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.0ebe7a875d.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat GUID bba2e8e0083216e4caaab3b7b4853050",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.0ebe7a875d.png.meta GUID bba2e8e0083216e4caaab3b7b4853050",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat GUID bba2e8e0083216e4caaab3b7b4853050"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_Controls.dec1b97601.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat GUID 9081fee1dbefb4c4381c770431880a20",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_Controls.dec1b97601.png.meta GUID 9081fee1dbefb4c4381c770431880a20",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat GUID 9081fee1dbefb4c4381c770431880a20"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_OpenShadow.ef56ebea5f.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat GUID b1e9cd400362e834e8da3ed307fb5270",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_OpenShadow.ef56ebea5f.png.meta GUID b1e9cd400362e834e8da3ed307fb5270",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat GUID b1e9cd400362e834e8da3ed307fb5270"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/image-0.9750e636f5.jpg": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat GUID 0363801998351794291f25369cfd404a",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/image-0.9750e636f5.jpg.meta GUID 0363801998351794291f25369cfd404a",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat GUID 0363801998351794291f25369cfd404a"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_ClosedLip_BaseColor.25af841b45.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat GUID 2b9fc9400364a5749912140942326c22",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_ClosedLip_BaseColor.25af841b45.png.meta GUID 2b9fc9400364a5749912140942326c22",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat GUID 2b9fc9400364a5749912140942326c22"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_ClosedShadow.a5721c1ec9.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat GUID 1e13fa93fc25d214cba4e3cd6e132c44",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_ClosedShadow.a5721c1ec9.png.meta GUID 1e13fa93fc25d214cba4e3cd6e132c44",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat GUID 1e13fa93fc25d214cba4e3cd6e132c44"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_Controls.e45237a76c.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat GUID 9213590842a6cbe4c9f2544b1ce74f92",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_Controls.e45237a76c.png.meta GUID 9213590842a6cbe4c9f2544b1ce74f92",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat GUID 9213590842a6cbe4c9f2544b1ce74f92"
+    ],
+    "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_OpenShadow.586e569150.png": [
+      "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat GUID 0fce3dec0620dcf4b83d1f8cff6f70cc",
+      "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_OpenShadow.586e569150.png.meta GUID 0fce3dec0620dcf4b83d1f8cff6f70cc",
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat GUID 0fce3dec0620dcf4b83d1f8cff6f70cc"
+    ],
+    "Assets/Gyms/Generated/GymRenderer.asset": [
+      "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset GUID f810d14b9af4ad143ba7b8fd1ac6e472",
+      "Assets/Gyms/Generated/GymRenderer.asset.meta GUID f810d14b9af4ad143ba7b8fd1ac6e472"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.shader": [
+      "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.mat GUID 0248543be1ba23248b06e8db122d699e",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.shader.meta GUID 0248543be1ba23248b06e8db122d699e"
+    ],
+    "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl": [
+      "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.shader local include",
+      "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl.meta GUID e06ca3cbb2241874f9c0ec0fbf6eba0b"
+    ],
+    "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_R_Pigment.png": [
+      "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat GUID 184cf08fc1598e844805372c329fd5c2",
+      "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_R_Pigment.png.meta GUID 184cf08fc1598e844805372c329fd5c2"
+    ]
+  }
+}

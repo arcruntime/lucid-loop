@@ -62,6 +62,9 @@ Unity/Assets/CharacterArt/Generated/**/*.json -text whitespace=blank-at-eol,blan
 *.meta whitespace=-blank-at-eol
 *.mat whitespace=-blank-at-eol
 *.prefab whitespace=-blank-at-eol
+# Dense diagnostic mesh assets; retain exact authored/imported bytes in LFS.
+Unity/Assets/CharacterArt/Generated/RenCanonicalMorphRepair/**/*.asset filter=lfs diff=lfs merge=lfs -text
+Unity/Assets/CharacterArt/Generated/RenTokonReview/Outline/*.asset filter=lfs diff=lfs merge=lfs -text
 # Preserve upstream package formatting verbatim.
 Unity/Assets/Plugins/R3/** whitespace=-blank-at-eol,-blank-at-eof
 

@@ -7,8 +7,9 @@ Shared bus topic: `lucid-loop` (`b6db061cab`); character topic:
 **Current delivery correction:** the user requires the review in
 `B:\lucid-loop\Unity`. The working mouth scene and 235 dependency files have
 been copied there and verified against the migration manifest. Main Editor
-import and runtime validation are pending; external scratch paths below are
-historical source locations.
+import and Play Mode mouth validation passed, with an actual render in
+`docs/validation/ren-main-review/main-render.png`. External scratch paths below
+are historical source locations.
 Japanese voice work is deferred for this release; English articulation continues.
 The user reiterates that current art quality is insufficient. Slight Arcane
 influence does not relax the designer-eye or Tōkon NPRS acceptance requirements.
@@ -124,8 +125,11 @@ To inspect the migrated scene in Unity, open `B:\lucid-loop\Unity`
 with Unity 6000.3.24f1, then open
 `Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity`.
 Press Play for the mouth controls after compilation/import finishes. The copied
-scene is present in the main project; its main Editor runtime validation is still
-pending. The earlier eighteen captures above came from the historical project.
+scene has passed main Editor import and Play Mode mouth validation, and an actual
+main-project render is preserved in `docs/validation/ren-main-review/`.
+No scripts, meshes, materials or shaders were missing. The earlier eighteen
+captures above came from the historical project. Active scene renderers total
+337,248 triangles before visibility and extra-pass accounting: still over budget.
 Migration preserves existing main files and remaps 45 copied YAML references to
 identical main shaders. Do not open another Editor on the already-open project.
 The six-way comparison and other external scratch scenes remain historical;

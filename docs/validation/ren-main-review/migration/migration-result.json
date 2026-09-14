@@ -1,0 +1,950 @@
+{
+  "status": "COPIED_HASH_VERIFIED_MAIN_IMPORT_PENDING",
+  "scene": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+  "copiedFiles": 235,
+  "mainExistingFilesPreserved": true,
+  "newGuidDuplicates": {},
+  "files": [
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair.meta",
+      "sha256": "9ea906e1ba25339e62e2033dc3c004482f45317e27bb8e6032d83a25c5e6fc22"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview.meta",
+      "sha256": "50e02018560066a7e6051dfba208849de3530cf3b45ed041b2349bdc301b0b90"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview.meta",
+      "sha256": "f282fc9577a419cead8cbad1312a623e8b1531a39e2a28595cbb4d185a4cc37c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview.meta",
+      "sha256": "70476c66f2208bad1aa5ca0c56cd957fb9c0eff660e4fa6bb4baaaa036c925cb"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview.meta",
+      "sha256": "e4a518933b2c2ebb21153698be5ac357be90d80c94d6d1166ad79f5c45b6a52b"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview.meta",
+      "sha256": "b9affe0a16d77fe85df5f914f7968e92d48647684e3c7694124a109b33164b3f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review.meta",
+      "sha256": "76e8ad608069a841b9cdf9c74e677ebbdd6f83dc04765ff5c25a65a65cc0bf1e"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation.meta",
+      "sha256": "156fad8bd54c100ac156e680e65488910b2587b223c4e5eaa85b091a136dda6a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview.meta",
+      "sha256": "cd69ead8fc064d0df6951288ed0114fec6b0e405bf601756b9e5732bcd20434f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs.meta",
+      "sha256": "314ad1e71c74ce9fb3060d36fe39295e810f1d5d100a1ae37d5337298b2f25c3"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs",
+      "sha256": "6679daf3c9d23586036b622f489647e6c290753d490c7d5376caf3657600287f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs.meta",
+      "sha256": "45ed1da9d567ed96a7abb7b8938d7ef0cc21e5f82aada3f2fd6cf999113325a8"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs",
+      "sha256": "857aefb4abbee090089034cc5d1215f0aa07b7a637f45ff93a835b78ca586ec2"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs.meta",
+      "sha256": "b3181ef17fa5e203c1f1e9135dc641fd60c4afefbc1f69a4e95aa15cefbfc426"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs",
+      "sha256": "c8f8a20327a1ccf15cd29a5b68544c9e24358934efc64a7fc4805436542906e6"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs.meta",
+      "sha256": "228181c4a98fa7038b5319dc43fc26306303f6561652b60a26efbe919a48ed9e"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs",
+      "sha256": "7fbc1812f722460100bf3a844268ba5e916da7ba67edceb7fbbb12bf0772566b"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs.meta",
+      "sha256": "c152af82438fe55dfd8fb0f489333937772f86ec381fa7e65a770c15360764b7"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs",
+      "sha256": "88495379afe0229094e44a15d78549cee5daa8d3b6d8dd88f928c2b51825cfd3"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs.meta",
+      "sha256": "1a422fb1917594fbab55ddde24b847d0183965eaf3996d845e9a92716b92113e"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs",
+      "sha256": "1359408f214970284540087ee03269991949dcf4a614dec593ccde48b790d665"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1.meta",
+      "sha256": "6a6f1f4d445971f9d8498a4c96720928778576788b70be69412026d466279039"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair.meta",
+      "sha256": "82439f60485393b7cfbaa44a40e72a049edd66bca9886b7b5e713bab286a8937"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris.meta",
+      "sha256": "275bbc034002b3ea6138b3b4c12f3484f7f99a5883b3ef008ab4901341ab5a54"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return.meta",
+      "sha256": "53824655dcad1e85cc8d5b8365000e832f6a6e020242504c53f976c7c0a443b4"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials.meta",
+      "sha256": "85150d2ba86046fd83d14068c000e908f4b5ec901a48ce3fe88e046896dd080c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx.meta",
+      "sha256": "1ad563a222a261c9ae222bb479b733d239a67092acef59e5c8d5f1ae21c5e856"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Ren_DesignerEyes_Neutral.fbx",
+      "sha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl.meta",
+      "sha256": "2b342f60e9fccb708c5d249ca7fffa0005e6f6d8cc40dcf3f0a9665956c7659a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.hlsl",
+      "sha256": "d74c36c325280c8081009f097cf3f63e71e9fd05ab258d1e45ce90d984789699"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.shader.meta",
+      "sha256": "f9a6c5dc83ae3b986e26f66fc2419830730757c6c6022be93b5b2182b5c82607"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenForeheadVertexControlV2.shader",
+      "sha256": "1f8cb8811dfaa3d3872ab01dc5534fb12195a8329dc55c74103f78611f54cf4a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.asset.meta",
+      "sha256": "60203042d0311b82924db4baffc133733e11e1045195eecf637f344d8c8c072d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.asset",
+      "sha256": "b36649634d39772a1f9dbdf558de3ec55c816a14939c37f131e689a17d050c8d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.mat.meta",
+      "sha256": "103e22c1949d41916a4594a3ee44a2d5922f57731427e4103bf851a78b6e67dc"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadFieldReview/RenSupportForeheadField.mat",
+      "sha256": "59e9899623e67fbf829c4cdad69c39d1deb053f6e5ab71483e883071b43e3a59"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/Support-ForeheadPartition 1.asset.meta",
+      "sha256": "83d1c46649a261c9f569669cc0cd9d3caca98a3c6868ad16ec1b7b8f5eb048c6"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/Support-ForeheadPartition 1.asset",
+      "sha256": "bc61aae8bc48bcab45c5beb2d0b1deea6ffaca67bb2499acf880dc218a9aabf0"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion0 1.mat.meta",
+      "sha256": "6ad7f6575ebc7621ab2b1c9c706cb1a6da053ee276f5b43b202c569a05f6e4fb"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion0 1.mat",
+      "sha256": "1773f022cdeb303d375b5a9dcada0d47f82d205176faeb4540455526aa863478"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion1 1.mat.meta",
+      "sha256": "97794140a9d8036b649e30698ecb83783152273673a40967990e3052c2d0ca01"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/SupportRegion1 1.mat",
+      "sha256": "65df43663d4f96eff3db58a2744a456b75d453c84d757d370cc83e923b72b9d9"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair.meta",
+      "sha256": "6d530931338878632ce34d7160517c0fa34957710a93999249969548e63e82a5"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch.meta",
+      "sha256": "64da50bd19304f87979e7b3c1a4ed02fb33405618f0a37918cfc38d761c45040"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_L_SkinShutter-ReceiverCandidate.mat.meta",
+      "sha256": "b1e50beef0c754b1a4a5a0a84161f1f0432157e52c84965e3897172b77dd8fc7"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_L_SkinShutter-ReceiverCandidate.mat",
+      "sha256": "599ddc0bbb631b451d130b75f01f4a698d238d99187a221eb1f56ddf9c3f6cee"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_R_SkinShutter-ReceiverCandidate.mat.meta",
+      "sha256": "0472468e2a90f1184f9432660bff836bdd9ae24b625905a7ebbaa493c9afe668"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Ren_DesignerEye_R_SkinShutter-ReceiverCandidate.mat",
+      "sha256": "80117c01b3a9b807a057675acfe5476dea90b9c044b79dbef6afdbebd79a45c1"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat.meta",
+      "sha256": "2e1b7ecb4c7c05e7870fded575635631df014601f2f025deb1a6d1a88f7b30ad"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase-ReceiverCandidate.mat",
+      "sha256": "e4435d94e64ac9f14f08c95c1104258d30e8a0dbe2d60eed5ff4c6140aa03b61"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat.meta",
+      "sha256": "443cddbba299275540e0ecd946f85df33761d9c20f8ba99d18918e7975043b26"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase-ReceiverCandidate.mat",
+      "sha256": "681086ac0b59a72e8b8e5147d3bf2eb45a13c8cfd674c276a1df619cf21c1ff3"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat.meta",
+      "sha256": "2b44f1a8d910b844e30caff11d68c38c71848290ede141207c0b76246ef81689"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase-ReceiverCandidate.mat",
+      "sha256": "8bc1b38bd7289b305cd52fc6a477374aa8707475580af0c92c2318ed680aaccd"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders.meta",
+      "sha256": "1975fe60841740f44b03419a82fed1d14ee7ef400b8970f2a06366150c0d798f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/OriginalArtist.png.meta",
+      "sha256": "216a9f46ef0212107ff97d1b3ab3c32e75913a45f96a3ca9704adbb1a1516ea7"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/OriginalArtist.png",
+      "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_JawSideBridge_R-MatchedSkin.mat.meta",
+      "sha256": "03f864e17190c917d5fb8b4e1ea7d570b8b1864ee4b1cbf3f7ccddae059648bf"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_JawSideBridge_R-MatchedSkin.mat",
+      "sha256": "a439e60bdd19181c0a5fb98f6ef6c48094950c124302bd9840710dea06ff9e33"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_Support_JawBridge_Linear.fbx.meta",
+      "sha256": "8f0e426f5d25e3866e611dd9231b67891d292802f023dd62fa5cb7c42a71f3c6"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_Support_JawBridge_Linear.fbx",
+      "sha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources.meta",
+      "sha256": "b13af3fe39d9cc65868586f7cd46760c25bc1219fd6e6a4eeca76442a2cd74d5"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures.meta",
+      "sha256": "082208b397cc4d924cd94bbec81f81154a5bf012d251247407433f6ab278e75c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline.meta",
+      "sha256": "41af760e4cda0966b2ae386fea064617df30c6db494a898b0fc53444691189a2"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset.meta",
+      "sha256": "166d8869ae3f045858f35fcb40b828cd6fc43ba1462f51029b712fe1def93c41"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/RenTokonReviewPipeline.asset",
+      "sha256": "c4e0177852721f073f0a4306db5be601a13e63e854aeadc41d041e76bf613483"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures.meta",
+      "sha256": "205bbb8c5b2bc98755ecf3a4e5a5e4a1e399e92ab98f84beba9dd73b31f1177e"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity.meta",
+      "sha256": "9f4a21e84a49228cec907268d9746f8ca9d83f2ba8c679b514fd5d71e90dac03"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+      "sha256": "6cdd090e61433c4c3ae96f4c586e6e8350f2d7ebfbd08b1b216236043140d83d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset.meta",
+      "sha256": "eefd349f98b400aa07dc9e71592f0f791827fcbac321b5c30a8c9de125c99495"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset",
+      "sha256": "d9bdd80ab254c00bd5542960c2a43fe2742ff1152bffe392063628d474225fb9"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset.meta",
+      "sha256": "9f776eca85f42792e6eb5a98d29211381cfb16ba2ddf4d3b0f0504f18b88ad39"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset",
+      "sha256": "a3c0deb5a45cc518ee88525fd640fe7e637e800f4556089b8173b0b7cc649d16"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset.meta",
+      "sha256": "5ff2d3683975d705ac3b1889135f3ede34745df1413dec55f9287b4d50c5cb43"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset",
+      "sha256": "80ce657caa02ca981b563aba3a3af9b1b91bf338782fc558b11877dc6eb3c105"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset.meta",
+      "sha256": "6d1d24c18be39228888c07977e06f6f9c16f5e73781effa262bdfd777eb782e7"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset",
+      "sha256": "18fa671929032a8ee2ce3381eeecaf19272b6410b9bd65dfbb525998a3bdcb79"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Base_4K.png.meta",
+      "sha256": "4ba1169f0c2bd6dcde09dee87191a4fe5637c72c8f4f92a7d555971d35a815ce"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Base_4K.png",
+      "sha256": "5bc80c29f63b3770ca5708560f46f3efa9f256a323481d289a9eb5b5ca3ace76"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Shadow_2K.png.meta",
+      "sha256": "c9d394bb1f0e28589f3cc3ecee5699e0c8aea1dc1d1b62a2bcb82b7f23fed02d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Hair/Ren_H_Hair_DirectionalBlond_Shadow_2K.png",
+      "sha256": "3f4553af7a54777827c528df285094dbde2e3df62d38dc0fbdd29aa695b04829"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_L_Iris_PigmentCandidate.asset.meta",
+      "sha256": "baf538e428ac73c1765eb3572e46ccc7292b8609bae84af5d19ba8bef2c776b4"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_L_Iris_PigmentCandidate.asset",
+      "sha256": "9034a5ea2df0f75c53d4064e76859381255e17c0c380ee69169f55f57e9a6269"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_R_Iris_PigmentCandidate.asset.meta",
+      "sha256": "0965a45e5c3f59421ab74be924204d478fa567ec75f84434c9930c8b4900c243"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Iris/Ren_DesignerEye_R_Iris_PigmentCandidate.asset",
+      "sha256": "377603f1e411053366ec8070f78a5a511bfe70f5fa92a6cac38501f2ff907fff"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/MatchedBacking.mat.meta",
+      "sha256": "2710b9c971858f6914463036f73a9039a9034deef8e3cffa6754c9d9dfa71403"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/MatchedBacking.mat",
+      "sha256": "d22a1867f0dac817c10911b26df9a05529d0eef5084531be6d0840a1eaf9a189"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/Ren_DesignerEye_ApertureReturn.fbx.meta",
+      "sha256": "94e0bb901b9d3723ff5c728857ff6a33fe367ec87795d94b7bcf786a9f7469ac"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeHairReview/Return/Ren_DesignerEye_ApertureReturn.fbx",
+      "sha256": "eab8459a8b5f11d45f710b9a394a3702c77216691eb2cffe322ede42c6556e2c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Backing.mat.meta",
+      "sha256": "457870a8c057f064a46280afbb396767bb046b1dbf9b6b8194fca9a4a296e9df"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Backing.mat",
+      "sha256": "ba5fe4ae548ece52a526307c16343e39b00f80104a68faa2bb4efd768153597a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Crease.mat.meta",
+      "sha256": "916ea1f6023f250081aee474b8599325fd84c6d56bad78c1257233e9c6d6bf97"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Crease.mat",
+      "sha256": "d862475e15ad9111193429f836e942030f329256f5e3683b1036b26ffbef1dfc"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_0.mat.meta",
+      "sha256": "69af198f9a0db0682c0818b3cca570967ac17e5d68ae434c83d39f8e739c25da"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_0.mat",
+      "sha256": "4eedd66ec5555010e74edc79691edea6fa2559d473b6d9423db0ae9d57ec5c15"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_1.mat.meta",
+      "sha256": "69ab3bf92dc85f172ace554581dfdd01876995a0bbe948d235e99f7ec382d7e2"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Highlight_1.mat",
+      "sha256": "3163712d3cb8c184646c5a7f3cc7488f593afa4f12665fb1969f647a29219368"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Iris.mat.meta",
+      "sha256": "e3b59ebf543de5f32f3f46dad922bf8e465ed399a6da98a5f8fc4a4189101b8c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Iris.mat",
+      "sha256": "859d763573ed03a3410c6e88b088fb04677e473eaf1fe32b4f816c8d5c5cebbc"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_LowerInk.mat.meta",
+      "sha256": "d20aee72e6f340172a5e248846a9cdafd0cb38bfa9961c30e05f3f8c9b811122"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_LowerInk.mat",
+      "sha256": "569725c73dec18a6d86d6ffed667bf5efe16b5ca2433b2b4c585847f4280caea"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Pupil.mat.meta",
+      "sha256": "6580a6f035a26d063d53899e91a987513b56516c381468217dc789d0cfc4a477"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_Pupil.mat",
+      "sha256": "ec0c64beddb14098369830b888ebbaa9b944c608f4b2642e51ff385b431b4a50"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_SkinShutter.mat.meta",
+      "sha256": "9d341840c0d59e358bd220e1b0d02d316aec3285f9198aae05b19ec787269eed"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_SkinShutter.mat",
+      "sha256": "8d611cda5f0f128f29e4def566d258ab9d00ce5f93f64f13454fdb62ae20ccf2"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_UpperInk.mat.meta",
+      "sha256": "7366ca2496c709ee1932748f199e6fd876ba8071f7a16a554db7d316c0c5aae1"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_UpperInk.mat",
+      "sha256": "b09595f3b579813a3912ea6e6f2218cff8b67ad38104a66ec864018b06bdee19"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_0.mat.meta",
+      "sha256": "1ceb4b422161db2abae5da8939419d55cd8283e4e27dbf21395262f48e0e9668"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_0.mat",
+      "sha256": "22243028eca2322361c6d08bd6785b91cb9aec7887260a5cff703ac738200be9"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerFine.mat.meta",
+      "sha256": "c35aff43f478b62b929a9e059152f78721db99bb89eda9c9fc67a622ba7cdce5"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerFine.mat",
+      "sha256": "c57704e71db70504d6eaf6af5d9f5430a343b1adb07f0f728d80c9f7c63cf083"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat.meta",
+      "sha256": "6c4d2fdde4fd0eab8f237b00b4e6acbabb97777f80b30a59ac6a1cc2c5e54672"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat",
+      "sha256": "f2bd1138588ecba5ac0c6138d858e4e4296f6df7dfe6af776ddfb5f49a598f63"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat.meta",
+      "sha256": "075f5dbd396abdc41f591b16cbfdc4df4e28717599b47727fc9ab4cc43dae30c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat",
+      "sha256": "5eb188e9cc5c6fa67de91ab098d972e630cd6a7e511cd674a25332eec0bdc880"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Backing.mat.meta",
+      "sha256": "b09b8412394fc01dcf929b86589cde394d672135377430a262232927abb21ff3"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Backing.mat",
+      "sha256": "815a00a4fa7befb343af115d8933822598c17dcc1f9f497e72389316d7ce9699"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Crease.mat.meta",
+      "sha256": "2f324844bc7ff9736ef3e6d8b47262c488818f3e352595f4fcddf5c56134bf1f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Crease.mat",
+      "sha256": "0669eea9535e79c6869c6563e7314af6bb125e4ac9daa5844d856d33997c49d1"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_0.mat.meta",
+      "sha256": "723ac3a8d686c6948149c627f10944a4c233c5a977b86f2f4ffbcb22315246bf"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_0.mat",
+      "sha256": "4cfdaa5d44a9d896511583756ed54a5853b13c599b50e73d89b3c88e32e8f644"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_1.mat.meta",
+      "sha256": "34cdcde8b1b37a1ae19da8282767bfaa0d24644f979096a09a8c6a25cc6c7445"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Highlight_1.mat",
+      "sha256": "402cba0fdc61ca4203c29223afa5b091bd107ca15a58c601889b3a0580146732"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Iris.mat.meta",
+      "sha256": "64a5d39e3f522f6259ebc89755d1a598208db6dce1a9d9e3fdf7fc6ba5c29283"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Iris.mat",
+      "sha256": "162e97a0d723db5c03750dc45e5fd62da174fc5860957e59fbd39d3794fba302"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_LowerInk.mat.meta",
+      "sha256": "28ecea88c8076a2dc9bcfb7e6e350f4b4d549f81dac8e9547eb4b9453ee9ff7a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_LowerInk.mat",
+      "sha256": "d76b35827209fbcba85ed7df546f352a2b669dc2a0df5f1da0bc89a759e2aa7e"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Pupil.mat.meta",
+      "sha256": "973d0e49ed4e4a769801b6f4b7a98a61a2e53c21ba9e9424e3191804eab408b6"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_Pupil.mat",
+      "sha256": "4723fa93bb0aedf8e496147a39fcb74889042e49584821119b4a6447aa7bd512"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_SkinShutter.mat.meta",
+      "sha256": "9f81173b3007adb4af00296ce104397c9ef4887c6f1d830235711fe309b3502d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_SkinShutter.mat",
+      "sha256": "ea39a98605961b8f6058ba203cf7bbf726c565680c2f95eefc29014c3b217851"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_UpperInk.mat.meta",
+      "sha256": "197f4b2e088a3f228bf44f9a357499293835895c8ace3b8a882618161926553d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Ren_DesignerEye_R_UpperInk.mat",
+      "sha256": "a83c12ed4f2ec629af77da93601d789b5c1c999733ad5f7cc4becf63abc63c81"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat.meta",
+      "sha256": "1770a57512208ce1aae3b09413321ca58533ce0183f3ca567401c3b0eb047831"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_Cloth.mat",
+      "sha256": "f6db58cfaa364b5556f1bbb37e364ede96480e26afdaf5a7979fc18f1eb94d98"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat.meta",
+      "sha256": "71dec747c3dec565e6868ffae11e34c29d6725c18d1b4c608447ecd00ac8a025"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Cap-Ren_Cap_V2_InnerCloth.mat",
+      "sha256": "835c99d176d09d0f0a261622d94b1814329c9711314a335c4fd5bcb51b38936d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat.meta",
+      "sha256": "00f7ce98a4af25c161a1f544c4151fd60a4ae8f42f71d7230af14d399e41f9d4"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat",
+      "sha256": "f41b6d07a2b87008e5a62adf9ae818674a87cb97d308a932a14c489e8eea1210"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat.meta",
+      "sha256": "f6a16880ad6e8fa08cd75c54f7dc684b84081b930f8c432fa949f62c6a4b4ebd"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyEnamel.mat",
+      "sha256": "fce8ec3e4688b90a9cb71c3c4b0444e59441a4374336b8c6d2edcb7b07b887bb"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat.meta",
+      "sha256": "e74174791b319d84553b9c50d4d11945c057e2b73809e5f36a59063cc4cd1995"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat",
+      "sha256": "bd819b0eab56ac2fc2be1235f5a976ba046bcd3ef26657a404f01f1643c21be6"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat.meta",
+      "sha256": "a19542f3113bd55813cc36857bf19b0c3a42a8e8fa51f5c8830c3823dd579019"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat",
+      "sha256": "f3ba4ea5f8947072bed2fa9f0b25969f4b6ad063f4e885a4daec7f243d3f98fd"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat.meta",
+      "sha256": "bafc7822fc84bd048cce7abb1dd717025c0acd7e99de799541ab058fa34a1943"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat",
+      "sha256": "38d4b3427b4e870d79f18663e2500b18b018c09f808cecb597d6c86e794d34e7"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat.meta",
+      "sha256": "1f0036bd9e768ec43c2b40b27d04ce47eca084497c576039ba199d280d709ee0"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat",
+      "sha256": "c2118d38661f2891a49d2adc006b3e93dcd05a8126dec8b44190d2ab967fe930"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat.meta",
+      "sha256": "41a4e8c3c44febb8fb43d013f9930410c78e476d299722a7aca0be3dec6590d2"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ConcealedSkin.mat",
+      "sha256": "2bc4a7e27c1dff23bbd6feda0b71af794a6bf533f2fd06c847d2c1e70d7af259"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat.meta",
+      "sha256": "4c93859f17acf17a9f2b0c39cbe5cc0fa190e7bf63da4960b6efc5510c6df686"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond.mat",
+      "sha256": "3abf691ef7ba1ae1f64b58a8f35fe3bec0f8bcc405d63877f4653c3569795926"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat.meta",
+      "sha256": "b799d5a057b3d84d6daa6484ff70790d953bbb6ba74e5a20dae42f49161a0fb0"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_IrisBlueGrey.mat",
+      "sha256": "49448b6aa1574a78601e460827737ca07081f585be15e843ceb948ef46210f8a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat.meta",
+      "sha256": "c17917f7deafad12b9525d9feaf165e93af9f0480f4c0df96b6c620495fee888"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_L_Pigment.mat",
+      "sha256": "da776ac1c0f2bd7b450766d6f5ee47a1c89cb8ee916bc81575e3a7805c18b323"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat.meta",
+      "sha256": "354d50702e7a326d8bcc3df9c83fc10a874ae82923c52b59b27c9a2933cb9567"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Lid_R_Pigment.mat",
+      "sha256": "4750d8b7751e8a084b7f5a89795b60da6861097cd70c4b4bfaebd0bcfb5fe980"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat.meta",
+      "sha256": "b2397b5b1f1e3d9b0175e3ca7b2d0ec730ace277f71486acb1e93779269a031f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_LowerLash.mat",
+      "sha256": "64740c078475f5022c3aa445a2fb6fbc91f9699854b60f3f3ea1153779a18950"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat.meta",
+      "sha256": "9446b38845e04a38de5e22d80a3021e17acca16ca1b45a92651e9cdf1eccdc99"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ReviewSilverJewelry.mat",
+      "sha256": "818d55a78c9c617550530c2d745e05dd0bda32ab0b420f667bca769b27abe263"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat.meta",
+      "sha256": "b3cee43b314c652c6a35983dc6898b7a3746c9c6725113143fe1d3e71bdb241e"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_Sclera.mat",
+      "sha256": "0d9b2a8827d09f2a97348b898d0f0e9e14928c2b781ff87735940f275a896164"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat.meta",
+      "sha256": "a70f6e486f867893dc9ae4cf269c8442da886700d2b0134418dce9ea5482f550"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_UpperLash.mat",
+      "sha256": "8740089e34f6ec63bc37f440ba0c1c6c2823bb265b08b193624211e11a674999"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat.meta",
+      "sha256": "54f510bc701b1c0521f4653332fc7fc72243c840b17e988540b0e331d2f9f4ed"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.mat",
+      "sha256": "f02481e60382e0bdeccf83e06a04435ded5d641ef273fa77151a44c0252b52a1"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_4K.png.meta",
+      "sha256": "7f54ad0811bddffbd9d0990448f774a7c2e8057d8814502398a64dd911071550"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_4K.png",
+      "sha256": "c6b2949a8038ded557c38a8b529674229b2e454e4f830aec0c0679acbc57627d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_Shadow_2K.png.meta",
+      "sha256": "3b6cd1aeb99ac5a774e22c2fcbd66954da9d7a236066a9a4bc258da085c2d9f2"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Hair/Ren_H_Hair_ClumpPigment_Shadow_2K.png",
+      "sha256": "e18bc57739e0942b81387b079947b9ccd473a898f4443aea97a722d4115b179a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/MatchedSkin.mat.meta",
+      "sha256": "f8dd33b29a1234141cc7c95f4618d7ebe1fffc29e0d699e834b42e2ea0b96fe9"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/MatchedSkin.mat",
+      "sha256": "018bb5f08d8309c9f3437493b0ebc9c915f0eec9d2c4d3fe6ae7505e2e2f192d"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/Ren_H_EyeInterfacePatch.fbx.meta",
+      "sha256": "d8816965e9f8ac130badb3049c5ff2fc27364ce0da95d259b6f3d0ba6da1af7c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Patch/Ren_H_EyeInterfacePatch.fbx",
+      "sha256": "45edb235b532efe14941c7782e131a526e1971d1db22e24a5a1c97acd8186106"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl.meta",
+      "sha256": "a61afdf7e9d32eb46ad0a634637593101d8fd60c366a2d3f46928fc007520010"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonNPR.hlsl",
+      "sha256": "1c4a197d5724e638b78205ec05794f97fb5b176ec57623b9707453a0c1f5787b"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonReceiverNPR.shader.meta",
+      "sha256": "5f174c291b68ffb15af5ecd8983f0e1a4b59cb18b61c433d1624a058973e2e64"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenDesignerRefinementReview/Shaders/RenTokonReceiverNPR.shader",
+      "sha256": "5d78c781490de5f00b7545a36a7372b06ff32a861f58da9bbbc5c0de112152fb"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx.meta",
+      "sha256": "67be53dbff7797d436e31191b6c3ed7952cce98d9395cc74f2a72892c64e00b7"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx",
+      "sha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_Cap_V2_Cloth.png.meta",
+      "sha256": "06a050c4ddc1243446be92c10b06b9905a0c6feaed4d968cca54080431715881"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_Cap_V2_Cloth.png",
+      "sha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Hair_Painted_PaleBlond.png.meta",
+      "sha256": "9f3a80fdcfdf23e874e80f5f5277a599e20eb5524ba22172f9a2c3b238f3450f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Hair_Painted_PaleBlond.png",
+      "sha256": "bc2a04f4f4c426521fd2050b569f8c0d08eff12ad1065df2512bdd6b40543c6f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_IrisBlueGrey.png.meta",
+      "sha256": "92220b931e7f346aa7a512e48943d2f374b4003b879639e2ed073ae6fd3e4eb5"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_IrisBlueGrey.png",
+      "sha256": "67c155b71cb8f368932e90af489bcdad9edfff5ad40675cdafa09c82d3a09b59"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_L_Pigment.png.meta",
+      "sha256": "f89d3cc9f539486577c2ef4e394633a1a4b2f2a798d01f98ac164883eaacb198"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_L_Pigment.png",
+      "sha256": "13d93b922cf065d5911eaeea68e4bec7dedd6e6f0daa4ebcdb17ce9c2dd121ac"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_R_Pigment.png.meta",
+      "sha256": "fad5ceb7608f00e751ed13c79a2b66b828ce517e4103885c14ad23ec444516fa"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/Ren_H_Lid_R_Pigment.png",
+      "sha256": "c7a8975bf2f51bbafb4f3c49cc1ff31e8d0a373efedbcd34f7d293dfb447334f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.jpg.meta",
+      "sha256": "b9c7e4a95a599ffa706ed69594de4993aeccc0ff0d16d3ddee049c7c2000c07e"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Textures/tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.jpg",
+      "sha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Cap-RestoredNormals.asset.meta",
+      "sha256": "8a02e7f3bae27af38335adff703486145ed4f7cdb0f87c9b60f6f247f31e5620"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Cap-RestoredNormals.asset",
+      "sha256": "4b41279a8f39db2de7e08851695c1489b6e94b558c40ba068978e612c814111f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairLayers-RestoredNormals.asset.meta",
+      "sha256": "45fa9cc1407dda95e9dcc9f15a2ef47db9b88c2b042889c07cc13ce3ecc36970"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairLayers-RestoredNormals.asset",
+      "sha256": "08e214883a8493e9333eb475fa762129ab25ad27a8f33d79786ab413ca319c8c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairRoot-RestoredNormals.asset.meta",
+      "sha256": "99388588046988b620a0e79f634adfe47b78c07554fc512af0904beeb9d5ac41"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_HairRoot-RestoredNormals.asset",
+      "sha256": "99a50747ac0328fe1063515066383ac1775f5a3e816cb8154f4125181989e92b"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Head-RestoredNormals.asset.meta",
+      "sha256": "74e14fc46a1005873e279f067087eb54aa716f5bbcea947fe061dfb3f67c3565"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenInk_Head-RestoredNormals.asset",
+      "sha256": "3e596b0903bbb30b94869f0839341a49fd329eb04f19fbdd33afd3ef41760859"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenTokonOutline.mat.meta",
+      "sha256": "642610b839607b9ae54076d83fe23631ace3cf10cced40a029a6bc812d931151"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Outline/RenTokonOutline.mat",
+      "sha256": "b7765ead4470f1fc0849720b6d2ec73757e42cfb0b964b3d3b2ae47016040b10"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_SeamHighlightControls.64775ed0ff.png.meta",
+      "sha256": "d2bd392c7bead93a6085d2ed0d4cd36f95877e89e0b9d701aa212f10f8b1ae2f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_SeamHighlightControls.64775ed0ff.png",
+      "sha256": "64775ed0ff290029904be007690d75aca1aa762bd957a994481d61368f0174bb"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_V2_Cloth_Shadow.9a61268d64.png.meta",
+      "sha256": "912f51c7fbe6fe813485dc69e825fa70f68084871dea9d72b5aff0ac94db46a9"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_Cap_V2_Cloth_Shadow.9a61268d64.png",
+      "sha256": "9a61268d644c10a3e439a871b2eb2798447f6e13aeb4a56a91eb302a4e8ebf77"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.0ebe7a875d.png.meta",
+      "sha256": "a8f132c3b6a1d47fc13c393bd3edefdada3ab4c1d56e061853083a462de7a519"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.0ebe7a875d.png",
+      "sha256": "0ebe7a875d79714807261c5a20b9397e016b48bd836acdd612aebe711ed302fc"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.4415c3673c.png.meta",
+      "sha256": "03f850176bef6d1676346a7d9690593041d53f6cf3b81f454c1fc8382e720402"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_CheekPatch_BaseColor.4415c3673c.png",
+      "sha256": "4415c3673cf7f6504e18b3c1066f7c90d210489053444c83dc06d3f966039138"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_ClosedLip_BaseColor.25af841b45.png.meta",
+      "sha256": "0928ea3a9ab9704067095ce9b957e916186287f1103ea38b9755bbc255c4a75a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_ClosedLip_BaseColor.25af841b45.png",
+      "sha256": "25af841b4553a84ababa4eb96fec0dd4cb28b32796e7f6a3601c11b90ea5f6ea"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Controls.a350e5bbfe.png.meta",
+      "sha256": "5db01747f8f2b19fc8a650fa8cf5611f6957abccf7ffcd4eb54a6bb37219978f"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Controls.a350e5bbfe.png",
+      "sha256": "a350e5bbfe460347244bd57dbecfb11fe1c267497dc3225dd38f17345a72c143"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51.png.meta",
+      "sha256": "72dedc5e5cb66b9b0df39fb42acf4d6e524bd2cc6588253ee4e10b039c2e5816"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Hair_Painted_PaleBlond_Shadow.345d61ff51.png",
+      "sha256": "345d61ff51b1edda270c67efc67692845fde7ca84befc4b5978a47c70bc293be"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_ClosedShadow.a5721c1ec9.png.meta",
+      "sha256": "e4163d803a1f8914687ce7fd85df2a0dd4112b84e9001f67f9598591898ea864"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_ClosedShadow.a5721c1ec9.png",
+      "sha256": "a5721c1ec947a812690b2cbda2dea2341d031857c066f34506e4127772e8e93c"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_Controls.e45237a76c.png.meta",
+      "sha256": "f8ae4426dbd3f4ff7f79d32753c2974774440df17d0c625d84c411eb9506b2b8"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_Controls.e45237a76c.png",
+      "sha256": "e45237a76c7c39a014b93dd818a5b5aabdc9bcae24f5f59d50ecd364c3ebb4ed"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_OpenShadow.586e569150.png.meta",
+      "sha256": "6379571e8d7e936475aebf32eb0784e2615a3656e756371eb4bf351594a9a6cb"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin0_OpenShadow.586e569150.png",
+      "sha256": "586e569150cd041058719cc0eb2c7a0b747752e6ea21db0229c70bb6e5e7e8e7"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_Controls.dec1b97601.png.meta",
+      "sha256": "d1be74865d23206c7bdfc765b3631dab0d425dee6e8b9b0426c4480ada14544e"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_Controls.dec1b97601.png",
+      "sha256": "dec1b97601655a60578ea71fa031b7db9297bc4160fd00f3edfa7f798f72c815"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_OpenShadow.ef56ebea5f.png.meta",
+      "sha256": "a5739c7b529396cb62984b11b246b1dc842a40ec80f402d6cb17f066437cc51b"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin1_OpenShadow.ef56ebea5f.png",
+      "sha256": "ef56ebea5f765ba8bf7ffdee149d0bf278fd4284fa4215b8987883334c156fe3"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_Controls.74fd449c20.png.meta",
+      "sha256": "4f07181d5403b0a3a11adb459d984f5693e63afb45d875c843914c91e0d56610"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_Controls.74fd449c20.png",
+      "sha256": "74fd449c204f1765d41519175b5b77aa839d82d86e96922eafcf774d0388f74a"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_OpenShadow.8f68fb18e2.png.meta",
+      "sha256": "25fa7d95836bad69a3bf0346bd916280df66159d0f3e35eab69cbcd6bfdd5e92"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/Ren_H_Skin2_OpenShadow.8f68fb18e2.png",
+      "sha256": "8f68fb18e2848656675fdd795e8c60c95666e0c2591d42ce68833cbb325f1943"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/image-0.9750e636f5.jpg.meta",
+      "sha256": "5cf726f2cc2b7e4f650dbda201700b7903ed7becf1a624d019019effe8b65e38"
+    },
+    {
+      "relativePath": "Assets/CharacterArt/Generated/RenTokonReview/Textures/image-0.9750e636f5.jpg",
+      "sha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce"
+    }
+  ],
+  "limitation": "Filesystem dependency handoff only. Main Unity import/compile/open/Play validation is owned by engineering. No second Editor was launched; blink remains unintegrated."
+}
