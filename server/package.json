@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node src/main.mjs",
     "fixture": "node src/fixture-cli.mjs",
-    "test": "node --test",
+    "test": "node --test \"test/*.test.mjs\"",
     "test:live": "node --test test/live-smoke.test.mjs",
     "dialogue": "node src/dialogue.mjs"
   },

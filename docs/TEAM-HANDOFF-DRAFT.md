@@ -1,0 +1,5 @@
+# Discord handoff — draft for Arc to post
+
+The message below is ready once the linked branch is confirmed remotely. No Discord message has been sent by Codex.
+
+I've pushed our two-loop MVP for review: https://github.com/jethac/lucid-loop/tree/codex/btd-checkpoint-one — open the `Unity` project and `Assets/Gyms/Scenes/BeforeTheDrop.unity`. It includes the larger club/following camera, voiced opening, live voice-to-action conversations, Ren’s music buttons and a toggleable AI action observer for recording. I’ve kept the simpler isometric avatars: the Quaternius animation/body/hair were promising, but the clothing looked puffy, so that audition is shelved. Known follow-ups are Maya spotting Theo from VIP, smoother opening voice delivery, and further map/avatar polish. This is an Editor MVP; iPhone validation is still ahead. It’s a separate checkpoint from the newer gym/Ren work, so please pick/merge the useful pieces rather than treating it as already integrated. Setup and test notes: `docs/POLISH-HANDOFF.md`. Submission copy and the one-minute video beat sheet: `docs/SUBMISSION-DRAFT.md`.

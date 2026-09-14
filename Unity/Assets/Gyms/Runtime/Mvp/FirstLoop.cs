@@ -29,7 +29,7 @@ namespace LucidLoop.Gyms.Mvp
         GameObject phone;
         CharacterActor approaching;
         MoodMusic music;
-        const float TriggerX = 2.1f, TriggerZ = -4.1f;
+
         public string LastMoveError { get; private set; }
 
         void Start()
@@ -45,11 +45,13 @@ namespace LucidLoop.Gyms.Mvp
                 agent.acceleration = 18; agent.angularSpeed = 540; agent.stoppingDistance = .15f;
                 agents[a] = agent;
             }
+            gameObject.AddComponent<ClubArt>().Dress(this);
             foreach (var t in new[] {Player.transform, Maya.transform, Theo.transform, Luca.transform, Ren.transform})
             { starts[t] = t.position; rotations[t] = t.rotation; }
-            gameObject.AddComponent<ClubArt>().Dress(this);
             MakeUI();
             MakePortrait();
+            MakeObserver();
+            StartCoroutine(LoadStoryAudio());
             music=gameObject.AddComponent<MoodMusic>();
             phone = GameObject.CreatePrimitive(PrimitiveType.Cube); phone.name = "Maya recording phone";
             Destroy(phone.GetComponent<Collider>()); phone.transform.SetParent(Maya.Visual, false);
@@ -87,6 +89,7 @@ namespace LucidLoop.Gyms.Mvp
         }
         void Update()
         {
+            UpdateVoice();
             if (!Busy && !modal && !State.Resolved)
             {
                 if (Input.GetMouseButtonDown(0) && !(EventSystem.current && EventSystem.current.IsPointerOverGameObject()))
@@ -111,10 +114,10 @@ namespace LucidLoop.Gyms.Mvp
             if (Input.GetKeyDown(KeyCode.Escape) && modal && !Busy) CloseConversation();
             if (Input.GetKeyDown(KeyCode.Space) && Busy) advance = true;
             UpdateMusicMenu();
-            if(music) { music.Intimate=State.Intimate; music.Duck=Busy || (modal && chatActor!=Ren); }
+            if(music) { music.Intimate=State.Intimate; music.Duck=Busy || (modal && chatActor!=Ren) || (storySpeaker&&storySpeaker.isPlaying); }
         }
         bool CanRecognizeAffair()=>InRecognitionArea(Maya.transform.position) && Vector3.Distance(Theo.transform.position,Partner.position)<1.8f;
-        public static bool InRecognitionArea(Vector3 position) => position.x > TriggerX && position.x < 6.5f && position.z > TriggerZ && position.z < .8f;
+        public static bool InRecognitionArea(Vector3 position) => ExpandedClub.Recognition(position);
         public bool Walk(Vector3 point)
         {
             if (Busy || modal || State.Resolved) return false;
@@ -122,7 +125,7 @@ namespace LucidLoop.Gyms.Mvp
             // The first entrance route is authored; the second opens the full floor.
             if (State.Loop == 1)
             {
-                point.x = Mathf.Clamp(point.x,0,5.3f); point.z = Mathf.Clamp(point.z,-9,-2.3f);
+                point = ExpandedClub.ClampOpening(point);
             }
             bool moved=Move(Player,point);
             if(!moved) objective.text=LastMoveError;
@@ -162,7 +165,7 @@ namespace LucidLoop.Gyms.Mvp
         public void OpenConversation(CharacterActor actor)
         {
             if (Busy || State.Resolved) return;
-            Stop(Player); Stop(agents[Maya]); modal=true;ShowPortrait(actor.Id);
+            CancelChat(); Stop(Player); Stop(agents[Maya]); modal=true;ShowPortrait(actor.Id);
             foreach(Transform child in choices) { child.gameObject.SetActive(false); Destroy(child.gameObject); }
             choices.gameObject.SetActive(true);
             GymUI.Label(choices,actor.DisplayName.ToUpperInvariant(),20,15,460,35,26,GymUI.Cyan);
@@ -171,23 +174,24 @@ namespace LucidLoop.Gyms.Mvp
             choices.sizeDelta=new Vector2(505,420);
             GymUI.Label(choices,"Opening scene",20,57,460,45,18,GymUI.Muted);
             int row=0;
-            Choice("Let's find a spot on the floor.",()=> { CloseConversation(); Walk(new Vector3(4.7f,0,-2.6f)); },ref row);
+            Choice("Let's find a spot on the floor.",()=> { CloseConversation(); Walk(ExpandedClub.Opening); },ref row);
             Choice("End conversation",CloseConversation,ref row);
         }
         void Choice(string label,UnityEngine.Events.UnityAction action,ref int row)
         { GymUI.Button(GymUI.Box(choices,"Choice "+row,18,112+row*83,469,73),label,action); row++; }
         public void SetWaiting(bool wait)
         { if(State.Wait(wait)) { Stop(agents[Maya]); Refresh(); } }
-        void CloseConversation() { if(State.InVip && chatActor==Theo){State.LeaveVip();Move(agents[Theo],starts[Theo.transform]);} ShowPortrait(null); CancelChat(); modal=false; choices.gameObject.SetActive(false); Refresh(); }
+        void CloseConversation() { if(State.InVip && chatActor==Theo){State.LeaveVip();Move(agents[Theo],starts[Theo.transform]);} StopStoryLine();ShowPortrait(null); CancelChat(); modal=false; choices.gameObject.SetActive(false); Refresh(); }
         IEnumerator Reply(string name,string text) { Busy=true; yield return Say(name,text); Busy=false; Refresh(); }
         IEnumerator Say(string name,string text)
         {
             ShowPortrait(name.ToLowerInvariant()=="you"?"player":name.ToLowerInvariant());
-            SetActing(name,true);
+            SetActing(name,true);PlayStoryLine(text);
+            ObserverScene("Authored story beat",name+": "+text);
             speaker.text=name; line.text=text; dialogue.gameObject.SetActive(true); advance=false;
             if(AutoAdvance) yield return null;
             else { yield return null; while(!advance) yield return null; }
-            dialogue.gameObject.SetActive(false);SetActing(name,false);ShowPortrait(null);
+            StopStoryLine();dialogue.gameObject.SetActive(false);SetActing(name,false);ShowPortrait(null);
         }
         public void BeginEncounter()
         {
@@ -210,8 +214,8 @@ namespace LucidLoop.Gyms.Mvp
             if(State.CanPrevent)
             {
                 yield return Say("MAYA","Theo? Can we talk quietly for a second? My phone's away.");
-                yield return Go(agents[Theo],new Vector3(3.7f,0,-1.8f));
-                yield return Go(agents[Luca],new Vector3(1.6f,0,-1.3f));
+                yield return Go(agents[Theo],ExpandedClub.Point(.61f,.60f));
+                yield return Go(agents[Luca],ExpandedClub.Point(.56f,.60f));
                 yield return Say("LUCA","Let's take a little space. Nobody needs an audience.");
                 yield return Say("THEO","...Fine. Just stop staring.");
                 yield return Say("YOU","The moment passes. Luca is still standing. This time, the music keeps playing.");
@@ -220,12 +224,12 @@ namespace LucidLoop.Gyms.Mvp
             }
             phone.SetActive(!State.PrivateApproach);
             yield return Say("MAYA",State.PrivateApproach?"Theo. We need to talk about what you're doing.":"No way. I'm recording this. Theo—seriously?");
-            yield return Go(agents[Theo],new Vector3(3.7f,0,-2.4f));
+            yield return Go(agents[Theo],ExpandedClub.Point(.60f,.64f));
             yield return Say("THEO",State.PrivateApproach?"Keep your voice down. This is none of your business.":"Put the phone away. Give it to me.");
             yield return Say("MAYA",State.PrivateApproach?"Don't grab me.":"Don't touch my phone.");
-            yield return Go(agents[Luca],new Vector3(2.5f,0,-2.1f));
+            yield return Go(agents[Luca],ExpandedClub.Point(.565f,.635f));
             yield return Say("LUCA","Let go. You're done here.");
-            yield return Go(agents[Theo],new Vector3(3.15f,0,-2.1f));
+            yield return Go(agents[Theo],ExpandedClub.Point(.58f,.635f));
             yield return Say("THEO","Get off me!");
             float t=0; var start=Luca.Visual.localRotation;
             while(t<.55f) { t+=Time.deltaTime; Luca.Visual.localRotation=Quaternion.Slerp(start,Quaternion.Euler(0,0,82),t/.55f); yield return null; }
@@ -240,6 +244,7 @@ namespace LucidLoop.Gyms.Mvp
             music.Interrupt();
             for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,t/.6f); yield return null; }
             State.Rewind(); ResetActors();
+            ObserverScene("Rewind · game rule", "Luca collapsed. Ren interrupted the night. Characters return to their starting positions.");
             for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,1-t/.6f); yield return null; }
             curtain.color=Color.clear;
         }
@@ -255,7 +260,7 @@ namespace LucidLoop.Gyms.Mvp
         }
         public void Restart()
         {
-            CancelChat(); conversations.Clear(); StopAllCoroutines(); Busy=false; modal=false; State=new LoopState(); ResetActors();
+            StopStoryLine();CancelChat(); conversations.Clear(); StopAllCoroutines(); Busy=false; modal=false; State=new LoopState(); ResetActors();
             choices.gameObject.SetActive(false); dialogue.gameObject.SetActive(false); curtain.color=Color.clear;
             Refresh(); StartCoroutine(Arrival());
         }
@@ -272,13 +277,20 @@ namespace LucidLoop.Gyms.Mvp
         {
             yield return null;
             Capture("01-opening");
-            if(!Walk(new Vector3(4.7f,0,-2.6f))) throw new Exception("Opening path failed");
+            foreach(var actor in new[]{Maya,Theo,Luca,Ren}){
+                var route=new NavMeshPath();
+                if(!NavMesh.SamplePosition(actor.transform.position,out var destination,1.7f,NavMesh.AllAreas)||!Player.CalculatePath(destination.position,route)||route.status!=NavMeshPathStatus.PathComplete)
+                    throw new Exception("Expanded club route unavailable: "+actor.Id);
+            }
+            if(!Walk(ExpandedClub.Opening)) throw new Exception("Opening path failed");
             float timeout=Time.realtimeSinceStartup+45;
             while((State.Loop<2 || Busy) && Time.realtimeSinceStartup<timeout) yield return null;
             if(State.Loop!=2 || Busy || !State.RemembersRecording) throw new Exception("Opening did not rewind");
             Capture("02-rewound");
+            SetObserverVisible(true);
+            yield return VoiceSmoke();
             SetWaiting(true); var old=Maya.transform.position;
-            Walk(new Vector3(-5,0,-4)); yield return new WaitForSeconds(2);
+            Walk(ExpandedClub.LeftPreparation); yield return new WaitForSeconds(2);
             if(Vector3.Distance(old,Maya.transform.position)>.2f) throw new Exception("Waiting Maya moved");
             State.SetMusic(true);
             if(State.Resolved || State.CanPrevent) throw new Exception("Music/avoidance incorrectly wins");
@@ -288,7 +300,7 @@ namespace LucidLoop.Gyms.Mvp
                 yield return DialogueSmoke();
             }
             else { State.PrepareMaya(); State.PrepareLuca(); SetWaiting(false); }
-            if(!Walk(new Vector3(4.7f,0,-2.6f))) throw new Exception("Second path failed");
+            if(!Walk(ExpandedClub.Opening)) throw new Exception("Second path failed");
             timeout=Time.realtimeSinceStartup+45;
             while(!State.Resolved && Time.realtimeSinceStartup<timeout) yield return null;
             if(!State.Resolved) throw new Exception("Prepared encounter did not resolve");

@@ -41,9 +41,9 @@ namespace LucidLoop.Gyms.Tests
   }
   [Test] public void EntranceAndBarAreOutsideRecognitionArea()
   {
-   Assert.IsFalse(FirstLoop.InRecognitionArea(new Vector3(0,0,-9)));
-   Assert.IsFalse(FirstLoop.InRecognitionArea(new Vector3(-5,0,-3)));
-   Assert.IsTrue(FirstLoop.InRecognitionArea(new Vector3(4,0,-3)));
+   Assert.IsFalse(FirstLoop.InRecognitionArea(ExpandedClub.Point(.49f,.89f)));
+   Assert.IsFalse(FirstLoop.InRecognitionArea(ExpandedClub.LeftPreparation));
+   Assert.IsTrue(FirstLoop.InRecognitionArea(ExpandedClub.Opening));
   }
  }
 }

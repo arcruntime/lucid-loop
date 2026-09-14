@@ -52,6 +52,7 @@ namespace LucidLoop.Gyms.Mvp
                 vipButton=GymUI.Button(GymUI.Box(choices,"VIP invitation",20,565,575,50),"Follow Theo into VIP",BeginVipEscort);
                 vipButton.gameObject.SetActive(State.VipInvited&&!State.InVip);
             }
+            VoiceControls();
             chatInput.ActivateInputField();
         }
         void ShowHistory(string id)
@@ -88,7 +89,8 @@ namespace LucidLoop.Gyms.Mvp
         }
         void SelectMusic(bool intimate)
         {
-            State.SetMusic(intimate);music.Intimate=State.Intimate;Refresh();UpdateMusicMenu();
+            State.SetMusic(intimate);music.Intimate=State.Intimate;
+            ObserverScene("Player music selection", "Ren changes the track. Music supplies context for subsequent AI conversations.");Refresh();UpdateMusicMenu();PlayStoryLine(intimate?"Got it. Let's give the room a little space.":"All right. Bringing the energy up.");
         }
         void UpdateMusicMenu()
         {
@@ -105,6 +107,7 @@ namespace LucidLoop.Gyms.Mvp
         {
             sending=true;sendButton.interactable=false;chatInput.interactable=false;
             chatNotice.text=actor.DisplayName+" is considering what you said…";
+            ObserverPending(actor,message);
             int epoch=conversationEpoch;int loop=State.Loop;
             var payload=new ChatRequest{character=actor.Id,message=message,history=ModelHistory(actor.Id),state=new ChatState{
                 loop=State.Loop,intimate=State.Intimate,waiting=State.MayaWaiting,privateApproach=State.PrivateApproach,lucaPrepared=State.LucaPrepared,recognized=State.Recognized,resolved=State.Resolved,inVip=State.InVip}};
@@ -119,15 +122,16 @@ namespace LucidLoop.Gyms.Mvp
                 ChatDecision decision=null;
                 try{decision=JsonUtility.FromJson<ChatDecision>(request.downloadHandler.text);}catch{}
                 if(request.result!=UnityWebRequest.Result.Success || decision==null || decision.source!="openai")
-                    chatNotice.text=FailureMessage(decision?.error);
+                    { chatNotice.text=FailureMessage(decision?.error); ObserverFailed("Request failed."); }
                 else if(string.IsNullOrWhiteSpace(decision.reply) || decision.reply.Length>650 || !State.ApplyDecision(actor.Id,decision.actions))
-                    chatNotice.text="That response couldn't be applied. Nothing changed; try a different request.";
+                    { chatNotice.text="That response couldn't be applied. Nothing changed; try a different request."; ObserverFailed("Response rejected."); }
                 else
                 {
                     Stop(agents[Maya]);
                     var history=conversations[actor.Id];history.Add(new ChatTurn("user",message,State.Loop));history.Add(new ChatTurn("assistant",decision.reply,State.Loop));
                     ShowHistory(actor.Id);chatInput.text="";
                     lastDecision=DescribeActions(decision.actions);
+                    ObserverDecision(actor,message,decision.actions,true);
                     chatNotice.text="AI response · "+lastDecision;
                     if(actor==Theo && vipButton)vipButton.gameObject.SetActive(State.VipInvited&&!State.InVip);
                     Refresh();
@@ -159,9 +163,11 @@ namespace LucidLoop.Gyms.Mvp
         }
         void CancelChat()
         {
+            StopVoice();
+            if(sending)ObserverFailed("Request cancelled.");
             conversationEpoch++; if(activeRequest!=null){activeRequest.Abort();activeRequest=null;} sending=false;
         }
-        void OnDisable(){CancelChat();}
+        void OnDisable(){StopStoryLine();CancelChat();}
         IEnumerator DialogueSmoke()
         {
             if(!music.ClipsReady)throw new Exception("Music clips not loaded");
@@ -203,7 +209,7 @@ namespace LucidLoop.Gyms.Mvp
                 if(!State.InVip || Vector3.Distance(mayaPosition,Maya.transform.position)>.2f)throw new Exception("VIP escort failed or moved waiting Maya");
                 Capture("08-vip-arrival");CloseConversation();
                 Stop(Player);Stop(agents[Theo]);Stop(agents[Maya]);
-                Player.Warp(new Vector3(7.3f,0,3.5f));agents[Maya].Warp(new Vector3(7.1f,0,3.4f));
+                Player.Warp(ExpandedClub.Point(.765f,.68f));agents[Maya].Warp(ExpandedClub.Point(.75f,.68f));
                 State.Wait(false);State.ApplyDecision("theo",new[]{"invite_vip"});
                 yield return EscortVip();
                 if(!State.InVip || Vector3.Distance(Player.transform.position,Maya.transform.position)>2.6f)

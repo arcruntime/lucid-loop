@@ -19,7 +19,8 @@ namespace LucidLoop.Gyms
         int queuedAudio;
         volatile bool disposed;
         public bool TryRead(out JObject value)=>events.TryDequeue(out value);
-        public async Task Connect(string address,string character,string token)
+        public Task Connect(string address,string character,string token)=>Connect(address,new JObject{{"type","gym.start"},{"character",character},{"token",token}});
+        public async Task Connect(string address,JObject start)
         {
             try
             {
@@ -27,7 +28,7 @@ namespace LucidLoop.Gyms
                 if(uri.Scheme!="wss" && !(uri.Scheme=="ws"&&uri.IsLoopback))throw new ArgumentException("Use wss:// for remote servers, or ws:// for localhost.");
                 using(var timeout=CancellationTokenSource.CreateLinkedTokenSource(lifetime.Token))
                 {timeout.CancelAfter(TimeSpan.FromSeconds(12));await socket.ConnectAsync(uri,timeout.Token).ConfigureAwait(false);}
-                await Send(new JObject{{"type","gym.start"},{"character",character},{"token",token}}).ConfigureAwait(false);
+                await Send(start).ConfigureAwait(false);
                 await Receive().ConfigureAwait(false);
             }
             catch(OperationCanceledException){if(!disposed)Error("Connection timed out or was canceled.");}

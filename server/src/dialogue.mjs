@@ -1,4 +1,6 @@
 import http from 'node:http';
+import {attachMvpVoice} from './mvp-voice.mjs';
+import {storyVoiceService} from './story-voice.mjs';
 import { pathToFileURL } from 'node:url';
 
 export const ACTIONS = Object.freeze({
@@ -61,12 +63,14 @@ export async function adjudicate(input, {apiKey, model='gpt-4.1-mini', fetchImpl
   return {...validateDecision(input.character,result),source:'openai',model};
 }
 export function createDialogueServer({apiKey='',model='gpt-4.1-mini',fetchImpl=fetch}={}) {
-  let active=0; let recent=[];
+  let active=0; let recent=[];const story=storyVoiceService(apiKey);
   const reply=(res,code,value)=>{res.writeHead(code,{'content-type':'application/json','cache-control':'no-store'});res.end(JSON.stringify(value));};
-  return http.createServer(async(req,res)=>{
+  const server=http.createServer(async(req,res)=>{
     // Local native client only. Do not allow websites to spend the local project's key.
     if(req.headers.origin) return reply(res,403,{error:'browser_origin_not_allowed'});
-    if(req.method==='GET'&&req.url==='/health') return reply(res,apiKey?200:503,{ready:Boolean(apiKey),service:'btd-dialogue',revision:'vip-v3',model});
+    if(req.method==='GET'&&req.url==='/health') return reply(res,apiKey?200:503,{ready:Boolean(apiKey),service:'btd-dialogue',revision:'polish-v5',model,story:story.status()});
+    if(req.method==='POST'&&req.url==='/prepare-story-audio'){if(!apiKey)return reply(res,503,{error:'api_key_missing'});void story.prepare();return reply(res,202,{status:'preparing',...story.status()});}
+    if(req.method==='GET'&&req.url.startsWith('/story-audio/')){const audio=await story.audio(req.url.slice('/story-audio/'.length));if(!audio)return reply(res,404,{error:'not_prepared'});res.writeHead(200,{'content-type':'audio/wav','cache-control':'no-store'});res.end(audio);return;}
     if(req.method!=='POST'||req.url!=='/dialogue') return reply(res,404,{error:'not_found'});
     if(!apiKey) return reply(res,503,{error:'api_key_missing'});
     if(!(req.headers['content-type']??'').startsWith('application/json')) return reply(res,415,{error:'json_required'});
@@ -87,6 +91,8 @@ export function createDialogueServer({apiKey='',model='gpt-4.1-mini',fetchImpl=f
       if(!res.destroyed)reply(res,502,{error:controller.signal.aborted?'request_timeout':codes.has(e.message)?e.message:'connection_failed'});
     } finally {clearTimeout(timeout);active--;}
   });
+  attachMvpVoice(server,{apiKey,validateInput,characterInstructions,adjudicate:(input,options)=>adjudicate(input,{apiKey,model,fetchImpl,...options})});
+  return server;
 }
 if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href) {
   const model=process.env.BTD_MODEL||'gpt-4.1-mini';

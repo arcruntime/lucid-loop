@@ -39,7 +39,7 @@ namespace LucidLoop.Gyms.Mvp
         void SetActing(string name,bool speaking)
         {
             foreach(var actor in new[]{Maya,Theo,Luca,Ren})
-            {var figure=actor.Visual.GetComponent<CastVisual>();if(figure)figure.Speaking=speaking&&actor.DisplayName.Equals(name,StringComparison.OrdinalIgnoreCase);}
+            {if(!actor||!actor.Visual)continue;var figure=actor.Visual.GetComponent<CastVisual>();if(figure)figure.Speaking=speaking&&actor.DisplayName.Equals(name,StringComparison.OrdinalIgnoreCase);}
         }
         void BeginVipEscort()
         {
@@ -48,7 +48,7 @@ namespace LucidLoop.Gyms.Mvp
         }
         IEnumerator EscortVip()
         {
-            var goal=new Vector3(10.3f,0,-.85f);var playerGoal=new Vector3(9.0f,0,-.85f);
+            var goal=ExpandedClub.VipTheo;var playerGoal=ExpandedClub.VipPlayer;
             if(!Move(agents[Theo],goal) || !Move(Player,playerGoal))
             {Stop(agents[Theo]);Stop(Player);objective.text="The route is blocked. Try approaching VIP from the open side.";yield break;}
             Busy=true;objective.text="Following Theo into VIP…";

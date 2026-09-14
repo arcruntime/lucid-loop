@@ -82,7 +82,7 @@ namespace LucidLoop.Gyms.Mvp
                 var profile=vol.profile;
                 if(profile.TryGet<Bloom>(out var bloom)){bloom.intensity.Override(.65f);bloom.scatter.Override(.6f);}
             }
-            if(System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"-btd-art-reference")<0)gameObject.AddComponent<PaintedBackdrop>().Install(loop);
+            if(System.Array.IndexOf(System.Environment.GetCommandLineArgs(),"-btd-art-reference")<0)gameObject.AddComponent<ExpandedClub>().Install(loop);
         }
         void Screen(Vector3 p,float length)
         {
