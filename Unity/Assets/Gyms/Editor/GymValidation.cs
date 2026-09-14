@@ -96,6 +96,12 @@ namespace LucidLoop.Gyms.Editor
             "LucidLoop.Gyms.PlayModeTests.EncounterGuidancePlayModeTests.GuidanceFollowsPhaseAndDoesNotDeclareEarlyVictory"
         });
 
+        [MenuItem("Lucid Loop/Validate project logo loading")]
+        public static void RunLoadingPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "loading-playmode", "LOADING_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterLoadingPlayModeTests.LogoFollowsConnectionAndCancelRestoresTheGame"
+        });
+
         static void Run(TestMode mode, string assembly, string filename, string marker, string[] groups = null, string[] testNames = null)
         {
             if (runner != null || EditorApplication.isCompiling || EditorApplication.isUpdating || EditorApplication.isPlayingOrWillChangePlaymode)

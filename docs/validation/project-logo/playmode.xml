@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-14 05:55:03Z" end-time="2026-09-14 05:55:05Z" duration="2.185584">
+  <test-suite type="TestSuite" id="1047" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="25" result="Passed" start-time="2026-09-14 05:55:03Z" end-time="2026-09-14 05:55:05Z" duration="2.185584" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1040" name="LucidLoop.Gyms.PlayModeTests.dll" fullname="B:/lucid-loop/Unity/Library/ScriptAssemblies/LucidLoop.Gyms.PlayModeTests.dll" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 05:55:03Z" end-time="2026-09-14 05:55:05Z" duration="2.133690" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="110796" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1041" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 05:55:03Z" end-time="2026-09-14 05:55:05Z" duration="2.129775" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1042" name="Gyms" fullname="LucidLoop.Gyms" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 05:55:03Z" end-time="2026-09-14 05:55:05Z" duration="2.093187" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1044" name="PlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-09-14 05:55:03Z" end-time="2026-09-14 05:55:05Z" duration="2.062844" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1027" name="EncounterLoadingPlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests.EncounterLoadingPlayModeTests" classname="LucidLoop.Gyms.PlayModeTests.EncounterLoadingPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-14 05:55:03Z" end-time="2026-09-14 05:55:05Z" duration="2.023566" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1028" name="LogoFollowsConnectionAndCancelRestoresTheGame" fullname="LucidLoop.Gyms.PlayModeTests.EncounterLoadingPlayModeTests.LogoFollowsConnectionAndCancelRestoresTheGame" methodname="LogoFollowsConnectionAndCancelRestoresTheGame" classname="LucidLoop.Gyms.PlayModeTests.EncounterLoadingPlayModeTests" runstate="Runnable" seed="238354128" result="Passed" start-time="2026-09-14 05:55:03Z" end-time="2026-09-14 05:55:05Z" duration="1.982565" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: B:\lucid-loop\.local\validation\loading-playmode-20260914-055455-117.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

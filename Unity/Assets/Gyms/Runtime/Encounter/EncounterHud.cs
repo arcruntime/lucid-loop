@@ -130,6 +130,7 @@ namespace LucidLoop.Gyms
             var pauseRoot = GymUI.Rect(canvas, "Pause menu controller", Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero);
             PauseMenu = pauseRoot.gameObject.AddComponent<EncounterPauseMenu>();
             PauseMenu.Initialize(this, canvas);
+            canvas.gameObject.AddComponent<EncounterLoadingBrand>().Initialize(Coordinator, canvas);
         }
 
         void Wire()
