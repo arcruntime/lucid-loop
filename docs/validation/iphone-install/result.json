@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-14",
+  "bundle_id": "com.lucidloop.gyms",
+  "display_name": "Lucid Loop \u00b7 Gyms",
+  "version": "1.0",
+  "build": "0",
+  "device_product": "iPhone16,2",
+  "device_os": "26.6.1",
+  "developer_mode": true,
+  "usb_installation": "succeeded",
+  "installed_app_query": "confirmed",
+  "unsigned_build_run": 34786581140,
+  "signing_run": 34838941237,
+  "unsigned_export_source": "9744abc",
+  "ipa_sha256": "ffa30eddcc2f48551852882dabafe5fdc2f06ac1bb1897f1890a93550c458ab7",
+  "acceptance": "Installation verified. Launch, gameplay, voice, and performance not yet observed."
+}

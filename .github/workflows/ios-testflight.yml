@@ -1,0 +1,295 @@
+name: Build and upload TestFlight
+
+on:
+  push:
+    paths:
+      - '.github/workflows/ios-testflight.yml'
+      - 'tools/ios_testflight.py'
+      - 'tools/test_ios_testflight.py'
+      - 'tools/prepare_ios_export.py'
+      - 'tools/test_prepare_ios_export.py'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Marketing version (for example 1.0)
+        default: '1.0'
+        required: true
+        type: string
+      build_number:
+        description: New Apple build number (must exceed previous uploads)
+        required: true
+        type: string
+      upload:
+        description: Upload signed build to App Store Connect for TestFlight processing
+        default: true
+        type: boolean
+      release_tag:
+        description: "Draft release containing ios-xcode.tar.gz and export-manifest.json"
+        required: true
+        type: string
+      archive_sha256:
+        description: "Expected SHA-256 of ios-xcode.tar.gz"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  verify-tools:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tools -p test_prepare_ios_export.py -v
+      - run: python3 -m unittest discover -s tools -p test_ios_testflight.py -v
+
+  transfer:
+    name: Transfer draft export without executing it
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    if: github.event_name == 'workflow_dispatch'
+    needs: verify-tools
+    permissions:
+      contents: write
+    steps:
+      - name: Download exact assets from the named draft
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          EXPORT_SHA256: ${{ inputs.archive_sha256 }}
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^[A-Za-z0-9][A-Za-z0-9._/-]{0,127}$ ]] || { echo 'Invalid release tag'; exit 1; }
+          [[ "$EXPORT_SHA256" =~ ^[[:xdigit:]]{64}$ ]] || { echo 'Expected a 64-digit SHA-256'; exit 1; }
+          [[ "$(gh release view "$RELEASE_TAG" --json isDraft --jq '.isDraft')" == 'true' ]] || { echo 'Export transport must be a draft release'; exit 1; }
+          mkdir -p "$RUNNER_TEMP/ios-transfer"
+          gh release download "$RELEASE_TAG" \
+            --pattern ios-xcode.tar.gz \
+            --pattern export-manifest.json \
+            --dir "$RUNNER_TEMP/ios-transfer"
+          test -s "$RUNNER_TEMP/ios-transfer/ios-xcode.tar.gz"
+          test -s "$RUNNER_TEMP/ios-transfer/export-manifest.json"
+          printf '%s  %s\n' "$EXPORT_SHA256" "$RUNNER_TEMP/ios-transfer/ios-xcode.tar.gz" | sha256sum --check --strict
+      - name: Pass opaque export files to the read-only build job
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-export-input-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/ios-transfer/ios-xcode.tar.gz
+            ${{ runner.temp }}/ios-transfer/export-manifest.json
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+
+  archive:
+    name: Archive with SDK 26, sign and upload
+    needs: transfer
+    runs-on: macos-15
+    timeout-minutes: 100
+    permissions:
+      contents: read
+    defaults:
+      run:
+        shell: bash
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.3.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          lfs: false
+          persist-credentials: false
+      - name: Check required credentials before the expensive compile
+        env:
+          IOS_DISTRIBUTION_P12_BASE64: ${{ secrets.IOS_DISTRIBUTION_P12_BASE64 }}
+          IOS_DISTRIBUTION_P12_PASSWORD: ${{ secrets.IOS_DISTRIBUTION_P12_PASSWORD }}
+          IOS_DISTRIBUTION_PROFILE_BASE64: ${{ secrets.IOS_DISTRIBUTION_PROFILE_BASE64 }}
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_PRIVATE_KEY_BASE64: ${{ secrets.ASC_PRIVATE_KEY_BASE64 }}
+          UPLOAD_REQUESTED: ${{ inputs.upload }}
+        run: |
+          python3 - <<'PY'
+          import os
+          required = ['IOS_DISTRIBUTION_P12_BASE64', 'IOS_DISTRIBUTION_P12_PASSWORD', 'IOS_DISTRIBUTION_PROFILE_BASE64']
+          if os.environ['UPLOAD_REQUESTED'] == 'true':
+              required += ['ASC_KEY_ID', 'ASC_ISSUER_ID', 'ASC_PRIVATE_KEY_BASE64']
+          missing = [name for name in required if not os.environ.get(name)]
+          if missing:
+              raise SystemExit('Configure required repository secrets: ' + ', '.join(missing))
+          print('Required credential secrets are present; values are not logged.')
+          PY
+      - name: Verify actual Apple submission toolchain
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/ios-evidence"
+          test -d "$DEVELOPER_DIR"
+          xcodebuild -version | tee "$RUNNER_TEMP/ios-evidence/xcode-version.txt"
+          xcrun --sdk iphoneos --show-sdk-version | tee "$RUNNER_TEMP/ios-evidence/sdk-version.txt"
+          python3 - <<'PY'
+          import os, pathlib, re
+          root = pathlib.Path(os.environ['RUNNER_TEMP']) / 'ios-evidence'
+          assert int(re.search(r'Xcode (\d+)', (root / 'xcode-version.txt').read_text())[1]) >= 26
+          assert int((root / 'sdk-version.txt').read_text().split('.')[0]) >= 26
+          PY
+      - uses: actions/download-artifact@v4
+        with:
+          name: ios-export-input-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/ios-transfer
+      - name: Verify export provenance and submission inputs
+        env:
+          EXPORT_SHA256: ${{ inputs.archive_sha256 }}
+          APP_VERSION: ${{ inputs.version }}
+          APP_BUILD: ${{ inputs.build_number }}
+        run: |
+          set -euo pipefail
+          cp "$RUNNER_TEMP/ios-transfer/export-manifest.json" "$RUNNER_TEMP/ios-evidence/"
+          python3 tools/prepare_ios_export.py verify \
+            --archive "$RUNNER_TEMP/ios-transfer/ios-xcode.tar.gz" \
+            --manifest "$RUNNER_TEMP/ios-transfer/export-manifest.json" \
+            --sha256 "$EXPORT_SHA256" --destination "$RUNNER_TEMP/ios-export"
+          python3 tools/check_ios_native_export.py "$RUNNER_TEMP/ios-export/Xcode" \
+            --output "$RUNNER_TEMP/ios-evidence/native-packaging.json"
+          python3 tools/ios_testflight.py prepare "$RUNNER_TEMP/ios-export/Xcode" \
+            --version "$APP_VERSION" --build "$APP_BUILD" \
+            | tee "$RUNNER_TEMP/ios-evidence/submission-inputs.json"
+          case "$(uname -m)" in
+            arm64) host=arm64; bee=arm64 ;;
+            x86_64) host=x86_64; bee=x64 ;;
+            *) echo 'Unsupported hosted architecture'; exit 1 ;;
+          esac
+          deploy="$RUNNER_TEMP/ios-export/Xcode/Il2CppOutputProject/IL2CPP/build/deploy_$host"
+          chmod +x "$deploy/il2cpp" "$deploy/il2cpp-compile" "$deploy/bee_backend/mac-$bee/bee_backend"
+      - name: Compile application, UnityFramework and GameAssembly into archive
+        run: |
+          set -euo pipefail
+          xcodebuild -project "$RUNNER_TEMP/ios-export/Xcode/Unity-iPhone.xcodeproj" \
+            -scheme Unity-iPhone -configuration ReleaseForRunning -sdk iphoneos \
+            -destination 'generic/platform=iOS' -derivedDataPath "$RUNNER_TEMP/ios-derived" \
+            -archivePath "$RUNNER_TEMP/BeforeTheDrop.xcarchive" \
+            -resultBundlePath "$RUNNER_TEMP/ios-evidence/archive.xcresult" -jobs 2 \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= \
+            DEVELOPMENT_TEAM=59N33TEQ4C archive 2>&1 | tee "$RUNNER_TEMP/ios-evidence/archive.log"
+          python3 - <<'PY'
+          import os, pathlib, plistlib
+          root = pathlib.Path(os.environ['RUNNER_TEMP']) / 'BeforeTheDrop.xcarchive/Products/Applications'
+          apps = list(root.glob('*.app'))
+          assert len(apps) == 1, 'Archive must contain one application'
+          info = plistlib.loads((apps[0] / 'Info.plist').read_bytes())
+          assert info['CFBundleIdentifier'] == 'com.lucidloop.gyms'
+          assert int(info['DTSDKName'].removeprefix('iphoneos').split('.')[0]) >= 26
+          assert int(info['DTXcode']) >= 2600
+          assert (apps[0] / 'Frameworks/UnityFramework.framework/UnityFramework').is_file()
+          PY
+      - name: Import App Store distribution identity
+        env:
+          P12_BASE64: ${{ secrets.IOS_DISTRIBUTION_P12_BASE64 }}
+          P12_PASSWORD: ${{ secrets.IOS_DISTRIBUTION_P12_PASSWORD }}
+          PROFILE_BASE64: ${{ secrets.IOS_DISTRIBUTION_PROFILE_BASE64 }}
+        run: |
+          set -euo pipefail
+          umask 077
+          signing="$RUNNER_TEMP/testflight-signing"
+          mkdir -p "$signing"
+          python3 - <<'PY'
+          import base64, os, pathlib
+          root = pathlib.Path(os.environ['RUNNER_TEMP']) / 'testflight-signing'
+          for env, name in [('P12_BASE64', 'identity.p12'), ('PROFILE_BASE64', 'profile.mobileprovision')]:
+              value = os.environ.get(env)
+              if not value:
+                  raise SystemExit('Missing signing secret: ' + env)
+              (root / name).write_bytes(base64.b64decode(value, validate=True))
+          PY
+          security cms -D -i "$signing/profile.mobileprovision" > "$signing/profile.plist"
+          python3 tools/ios_testflight.py profile "$signing/profile.plist" --output "$signing"
+          keychain="$RUNNER_TEMP/testflight-signing.keychain-db"
+          password="$(openssl rand -hex 32)"
+          echo "::add-mask::$password"
+          security create-keychain -p "$password" "$keychain"
+          security set-keychain-settings -lut 7200 "$keychain"
+          security unlock-keychain -p "$password" "$keychain"
+          security import "$signing/identity.p12" -P "$P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security -k "$keychain"
+          curl --fail --silent --show-error https://www.apple.com/certificateauthority/AppleWWDRCAG3.cer -o "$signing/wwdr.cer"
+          security import "$signing/wwdr.cer" -k "$keychain"
+          security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$password" "$keychain" >/dev/null
+          security list-keychains -d user -s "$keychain"
+          identity="$(security find-identity -v -p codesigning "$keychain" | awk '/Apple Distribution/ {print $2; exit}')"
+          test -n "$identity"
+          grep -Fxq "$identity" "$signing/certificate-shas.txt"
+          profile_uuid="$(cat "$signing/profile-uuid.txt")"
+          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles" "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles"
+          cp "$signing/profile.mobileprovision" "$HOME/Library/MobileDevice/Provisioning Profiles/$profile_uuid.mobileprovision"
+          cp "$signing/profile.mobileprovision" "$HOME/Library/Developer/Xcode/UserData/Provisioning Profiles/$profile_uuid.mobileprovision"
+      - name: Export App Store signed IPA
+        id: export
+        run: |
+          set -euo pipefail
+          xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/BeforeTheDrop.xcarchive" \
+            -exportPath "$RUNNER_TEMP/testflight-ipa" \
+            -exportOptionsPlist "$RUNNER_TEMP/testflight-signing/ExportOptions.plist" \
+            2>&1 | tee "$RUNNER_TEMP/ios-evidence/export.log"
+          shasum -a 256 "$RUNNER_TEMP/testflight-ipa/"*.ipa > "$RUNNER_TEMP/ios-evidence/ipa-sha256.txt"
+      - name: Upload signed archive to App Store Connect
+        if: inputs.upload
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_PRIVATE_KEY_BASE64: ${{ secrets.ASC_PRIVATE_KEY_BASE64 }}
+        run: |
+          set -euo pipefail
+          umask 077
+          python3 - <<'PY'
+          import base64, os, pathlib, plistlib, re
+          root = pathlib.Path(os.environ['RUNNER_TEMP']) / 'testflight-signing'
+          assert re.fullmatch(r'[A-Z0-9]{10}', os.environ['ASC_KEY_ID']), 'Missing/invalid ASC key ID'
+          assert re.fullmatch(r'[a-fA-F0-9-]{36}', os.environ['ASC_ISSUER_ID']), 'Missing/invalid ASC issuer ID'
+          key = base64.b64decode(os.environ['ASC_PRIVATE_KEY_BASE64'], validate=True)
+          assert b'BEGIN PRIVATE KEY' in key, 'Missing/invalid ASC private key'
+          (root / 'AuthKey.p8').write_bytes(key)
+          options = plistlib.loads((root / 'ExportOptions.plist').read_bytes())
+          options['destination'] = 'upload'
+          (root / 'UploadOptions.plist').write_bytes(plistlib.dumps(options))
+          PY
+          xcodebuild -exportArchive -archivePath "$RUNNER_TEMP/BeforeTheDrop.xcarchive" \
+            -exportPath "$RUNNER_TEMP/testflight-upload" \
+            -exportOptionsPlist "$RUNNER_TEMP/testflight-signing/UploadOptions.plist" \
+            -authenticationKeyPath "$RUNNER_TEMP/testflight-signing/AuthKey.p8" \
+            -authenticationKeyID "$ASC_KEY_ID" -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
+            -allowProvisioningUpdates 2>&1 | tee "$RUNNER_TEMP/ios-evidence/upload.log"
+          echo 'Upload completed. Apple processing and TestFlight group assignment must still be checked in App Store Connect (app 6811879201).' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.export.outcome == 'success'
+        with:
+          name: ios-testflight-ipa-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/testflight-ipa/*.ipa
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+      - name: Remove temporary signing credentials
+        if: always()
+        run: |
+          security delete-keychain "$RUNNER_TEMP/testflight-signing.keychain-db" || true
+          python3 - <<'PY'
+          import os, pathlib, re, shutil
+          root = pathlib.Path(os.environ['RUNNER_TEMP']) / 'testflight-signing'
+          uuid_file = root / 'profile-uuid.txt'
+          if uuid_file.exists():
+              uuid = uuid_file.read_text()
+              if re.fullmatch(r'[a-fA-F0-9-]{36}', uuid):
+                  for directory in ['Library/MobileDevice/Provisioning Profiles', 'Library/Developer/Xcode/UserData/Provisioning Profiles']:
+                      (pathlib.Path.home() / directory / (uuid + '.mobileprovision')).unlink(missing_ok=True)
+          shutil.rmtree(root, ignore_errors=True)
+          PY
+      - name: Preserve build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-testflight-evidence-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/ios-evidence/
+          if-no-files-found: warn
+          retention-days: 14

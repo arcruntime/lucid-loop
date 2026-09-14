@@ -78,7 +78,8 @@ namespace LucidLoop.Gyms.Editor
             if (report.summary.platform != BuildTarget.iOS) return;
             string path = Path.Combine(report.summary.outputPath, "Info.plist");
             if (!File.Exists(path)) throw new BuildFailedException("The exported iOS Info.plist was not found.");
-            bool development = (report.summary.options & BuildOptions.Development) != 0;
+            bool development = (report.summary.options & BuildOptions.Development) != 0
+                || IosBuild.ExportingLocalRelayTestFlight;
             File.WriteAllText(path, IosLocalRelayPlist.Apply(File.ReadAllText(path), development));
         }
     }

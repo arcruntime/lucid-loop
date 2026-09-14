@@ -12,6 +12,7 @@ namespace LucidLoop.Gyms.Editor
     public static class IosBuild
     {
         const string RequiredVersion = "6000.3.24f1";
+        public static bool ExportingLocalRelayTestFlight { get; private set; }
 
         [MenuItem("Lucid Loop/iOS/Configure player settings")]
         public static void Configure()
@@ -49,6 +50,17 @@ namespace LucidLoop.Gyms.Editor
 
         [MenuItem("Lucid Loop/iOS/Export development Xcode project")]
         public static void ExportDevelopment()
+            => Export(BuildOptions.Development, "Builds/iOS/Xcode");
+
+        [MenuItem("Lucid Loop/iOS/Export internal TestFlight Xcode project")]
+        public static void ExportTestFlight()
+        {
+            ExportingLocalRelayTestFlight = true;
+            try { Export(BuildOptions.None, "Builds/iOS/TestFlightXcode"); }
+            finally { ExportingLocalRelayTestFlight = false; }
+        }
+
+        static void Export(BuildOptions options, string outputPath)
         {
             RequireSupport();
             if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.iOS)
@@ -61,7 +73,7 @@ namespace LucidLoop.Gyms.Editor
             foreach (var scene in scenes)
                 if (!File.Exists(scene)) throw new FileNotFoundException("Missing enabled build scene", scene);
             Directory.CreateDirectory("Builds/iOS");
-            var report = BuildPipeline.BuildPlayer(scenes, "Builds/iOS/Xcode", BuildTarget.iOS, BuildOptions.Development);
+            var report = BuildPipeline.BuildPlayer(scenes, outputPath, BuildTarget.iOS, options);
             if (report.summary.result != BuildResult.Succeeded)
                 throw new InvalidOperationException("iOS export failed: " + report.summary.result);
             foreach (var filename in new[] { "shader-stripping.json", "compute-shader-stripping.json" })
@@ -69,7 +81,7 @@ namespace LucidLoop.Gyms.Editor
                 string source = Path.Combine("Temp", filename);
                 if (File.Exists(source)) File.Copy(source, Path.Combine("Builds/iOS", filename), true);
             }
-            Debug.Log("IOS_XCODE_EXPORT_OK: Builds/iOS/Xcode");
+            Debug.Log("IOS_XCODE_EXPORT_OK: " + outputPath);
         }
 
         static void RequireSupport()
