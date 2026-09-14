@@ -23,3 +23,9 @@ The source checkpoint passed Unity two-loop, recognition/prevention, rewind/audi
 Open the `Unity` project, then `Assets/Gyms/Scenes/BeforeTheDrop.unity` for this branch's demo. Recording/submission references: `docs/RECORDING-READY.md` and `docs/SUBMISSION-DRAFT.md`.
 
 Known follow-up: VIP recognition coverage still needs review. For this checkpoint's prevention path, secure Maya's discreet/phone-away agreement and Luca's calm-intervention agreement before recognition; music alone does not prevent the shove. Main's server-owned encounter remains authoritative for the integrated version.
+
+## Voice agreement fix
+
+The MVP relay previously required a live-model delegation event to adjudicate a request but forwarded spontaneous speech immediately. A verbal agreement could therefore leave game state unchanged. The relay now adjudicates a settled transcript even without delegation, invalidates pending work on corrections, and gates outgoing speech until Unity acknowledges the validated decision. This changes only the MVP voice endpoint.
+
+Regression: “offline night tonight, no phones” without any delegation event now reaches the decision layer, and premature audio/transcript is suppressed. Exact reported wording returned `private_approach` in a live decision check. A synthetic spoken offline-night/no-phones/wait request passed end-to-end with `wait` + `private_approach`, game-commit acknowledgment and audible response. Server suite: 34 passed, 1 opt-in test skipped. Human microphone retest remains recommended. Server health revision: `polish-v6`.

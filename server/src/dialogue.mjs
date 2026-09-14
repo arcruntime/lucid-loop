@@ -68,7 +68,7 @@ export function createDialogueServer({apiKey='',model='gpt-4.1-mini',fetchImpl=f
   const server=http.createServer(async(req,res)=>{
     // Local native client only. Do not allow websites to spend the local project's key.
     if(req.headers.origin) return reply(res,403,{error:'browser_origin_not_allowed'});
-    if(req.method==='GET'&&req.url==='/health') return reply(res,apiKey?200:503,{ready:Boolean(apiKey),service:'btd-dialogue',revision:'polish-v5',model,story:story.status()});
+    if(req.method==='GET'&&req.url==='/health') return reply(res,apiKey?200:503,{ready:Boolean(apiKey),service:'btd-dialogue',revision:'polish-v6',model,story:story.status()});
     if(req.method==='POST'&&req.url==='/prepare-story-audio'){if(!apiKey)return reply(res,503,{error:'api_key_missing'});void story.prepare();return reply(res,202,{status:'preparing',...story.status()});}
     if(req.method==='GET'&&req.url.startsWith('/story-audio/')){const audio=await story.audio(req.url.slice('/story-audio/'.length));if(!audio)return reply(res,404,{error:'not_prepared'});res.writeHead(200,{'content-type':'audio/wav','cache-control':'no-store'});res.end(audio);return;}
     if(req.method!=='POST'||req.url!=='/dialogue') return reply(res,404,{error:'not_found'});

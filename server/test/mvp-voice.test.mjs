@@ -51,3 +51,21 @@ test('typed current-loop history seeds voice, without backend instructions in us
   assert.deepEqual(x.upstream.events[0].session.input.map(x=>({role:x.role,content:x.content[0].text})),history);
   assert.equal(x.upstream.events[0].session.input[1].content[0].type,'output_text');
 });
+
+test('offline-night request is adjudicated without delegation and speech waits for commit',async t=>{
+  let calls=0;
+  const request="Hey Maya, I've got a great idea. Let's have kind of an offline night tonight. No phones. Is that a deal";
+  const x=await setup(t,async input=>{calls++;assert.equal(input.message,request);return {reply:"Okay, I'll keep it tucked away.",actions:['private_approach'],source:'openai'};});
+  x.upstream.push({type:'session.input_transcript.delta',delta:request});
+  x.upstream.push({type:'session.output_transcript.delta',delta:"Sure, I'll keep it tucked away."});
+  x.upstream.push({type:'session.output_audio.delta',delta:'AAAA'});
+  await pause(1100);
+  const decision=x.events.find(e=>e.type==='mvp.decision');assert.ok(decision);assert.equal(calls,1);
+  assert.equal(x.events.some(e=>e.type.startsWith('session.output_')),false);
+  x.client.send(JSON.stringify({type:'mvp.commit',id:decision.id,accepted:true,state:{...state,privateApproach:true}}));await pause(40);
+  const reply=x.upstream.events.find(e=>e.type==='session.commentary.append');assert.equal(reply.delegation_id,null);
+  x.upstream.push({type:'session.output_transcript.delta',delta:reply.content});await pause(20);
+  assert.ok(x.events.some(e=>e.type==='session.output_transcript.delta'));
+  // A late delegation must not execute the already completed request a second time.
+  x.upstream.push({type:'session.delegation.created',delegation:{target:'client',id:'late'}});await pause(750);assert.equal(calls,1);
+});

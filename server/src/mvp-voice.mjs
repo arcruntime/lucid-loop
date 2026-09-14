@@ -15,7 +15,7 @@ export function attachMvpVoice(server,{apiKey,adjudicate,validateInput,character
     sessions++;
     let upstream,input,ready=false,closed=false,revision=0,sequence=0,pending=null,controller=null;
     let heard='',lastHearing=0,handledRevision=-1,delegationTimer,activeDelegation=null;
-    let requests=[];
+    let requests=[],speechApproved=false;
     const seen=new Set();
     const send=(ws,event)=>{if(ws?.readyState===WebSocket.OPEN&&ws.bufferedAmount<1024*1024)ws.send(JSON.stringify(event));};
     const status=message=>send(client,{type:'mvp.notice',message});
@@ -24,7 +24,7 @@ export function attachMvpVoice(server,{apiKey,adjudicate,validateInput,character
     const fail=()=>{status('Voice connection ended. You can retry or type instead.');cleanup();client.close();};
     const startup=setTimeout(fail,20000),duration=setTimeout(fail,5*60*1000);
     function changed() {
-      revision++;controller?.abort();controller=null;pending=null;clearTimeout(delegationTimer);
+      speechApproved=false;revision++;controller?.abort();controller=null;pending=null;clearTimeout(delegationTimer);
     }
     async function decide(id) {
       if(closed||!ready||!heard.trim()||handledRevision===revision)return;
@@ -66,14 +66,15 @@ export function attachMvpVoice(server,{apiKey,adjudicate,validateInput,character
               if(e.type==='session.input_transcript.delta'){
                 changed();heard+=(e.delta??'');lastHearing=Date.now();
                 if(heard.length>4000)return fail();
-                // Transcript grouping alone never authorizes a decision. A current
-                // delegation is required; later fragments refine that request.
-                if(activeDelegation)delegationTimer=setTimeout(()=>decide(activeDelegation),900);
+                // Always adjudicate completed speech, even if the live model skips delegation.
+                // The LLM still interprets intent; only a validated game commit authorizes speech.
+                delegationTimer=setTimeout(()=>decide(activeDelegation),900);
               }
               if(e.type==='session.delegation.created'&&e.delegation?.target==='client'&&typeof e.delegation.id==='string'&&!seen.has(e.delegation.id)){
                 seen.add(e.delegation.id);activeDelegation=e.delegation.id;clearTimeout(delegationTimer);delegationTimer=setTimeout(()=>decide(e.delegation.id),700);
               }
-              if(['session.input_transcript.delta','session.output_transcript.delta','session.output_audio.delta','session.input_audio.muted','session.input_audio.unmuted'].includes(e.type))send(client,e);
+              if(['session.output_transcript.delta','session.output_audio.delta'].includes(e.type)){if(speechApproved)send(client,e);}
+              else if(['session.input_transcript.delta','session.input_audio.muted','session.input_audio.unmuted'].includes(e.type))send(client,e);
               if(e.type==='error')status('Voice service reported an error. No unconfirmed action was applied.');
               if(e.type==='session.closed'){send(client,e);cleanup();client.close();}
             }catch{fail();}
@@ -90,7 +91,7 @@ export function attachMvpVoice(server,{apiKey,adjudicate,validateInput,character
           if(event.accepted!==true){append('session.instructions.append','The situation changed before that action could happen. Do not claim it happened. Ask the player to try again.',p.delegation);return;}
           input=validateInput({...input,state:event.state,message:'Continue.'});
           input.history=[...input.history,{role:'user',content:p.message},{role:'assistant',content:p.result.reply}].slice(-12);
-          heard='';activeDelegation=null;
+          heard='';activeDelegation=null;speechApproved=true;
           append('session.commentary.append',p.result.reply,p.delegation);
           send(client,{type:'mvp.committed',id:p.id});return;
         }
