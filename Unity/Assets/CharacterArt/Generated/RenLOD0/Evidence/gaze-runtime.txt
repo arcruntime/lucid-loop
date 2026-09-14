@@ -1,0 +1,1 @@
+PASS: actual Play frames drive left/right gaze and suppress gaze during bilateral blink with speech A; neutral and idle restored.

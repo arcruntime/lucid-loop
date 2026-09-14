@@ -114,6 +114,17 @@ namespace LucidLoop.CharacterArt
             string suffix = index <= 13 ? "speech_" + poses[index] : poses[index];
             foreach (var key in values.Keys.ToArray()) if (key.EndsWith(suffix, StringComparison.OrdinalIgnoreCase)) values[key] = 1;
         }
+        public void SetGaze(Vector2 left, Vector2 right)
+        {
+            foreach(var key in values.Keys.ToArray())
+            {
+                var name=key.Substring(key.LastIndexOf('.')+1);
+                if(!name.StartsWith("gaze",StringComparison.Ordinal))continue;
+                var point=name.EndsWith("L",StringComparison.Ordinal)?left:right;
+                float value=name.StartsWith("gazeRight")?point.x:name.StartsWith("gazeLeft")?-point.x:name.StartsWith("gazeUp")?point.y:-point.y;
+                values[key]=float.IsFinite(value)?Mathf.Clamp01(value):0;
+            }
+        }
         void OnGUI()
         {
             if (!ShowControls) return;

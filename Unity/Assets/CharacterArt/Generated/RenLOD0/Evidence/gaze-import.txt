@@ -1,0 +1,1 @@
+PASS: 1124 ordered vertices, identical triangles/UVs, neutral error 0; retained original skin bindings and 35 original shapes; added eight per-eye gaze shapes.

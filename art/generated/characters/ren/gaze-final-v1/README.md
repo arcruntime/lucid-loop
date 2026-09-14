@@ -1,0 +1,9 @@
+# Ren final gaze controls
+
+Open the checked-in `Ren_LOD0_Gaze.blend` for the complete source. The eye-only `RenEyesGaze.fbx` is the Unity donor. The optional full `Ren_LOD0_Gaze.fbx` is regenerated with `tools/character_art/build_ren_unified_gaze_export.py`; this redundant full export is not checked in. Its verified export retains 42,168 triangles, 15 mesh objects, 67 bones and zero animation actions. Existing material names and object names are preserved. Original source LOD0 files remain unchanged.
+
+Only `RenEyesShallow` gains controls: `gazeLeft`, `gazeRight`, `gazeUp`, `gazeDown`, plus per-eye equivalents suffixed `L` or `R`. Use either binocular or per-eye controls, never add both. Left means character left (+X). Clamp weights to 0–100, normalize opposing directions and clamp the combined horizontal/vertical vector to unit length. Multiply each eye's gaze by `(1 - blink)^2` using normalized blink weight. At full closure gaze is zero, retaining the existing exact closure.
+
+The two source eye components each have 397 vertices. Iris and sclera are baked into the same texture and surface. Controls move the original front interior tangentially by at most 2.5 mm horizontally or 1.8 mm vertically, with stationary rear and perimeter vertices. This provides subtle gaze without replacing the neutral eyes, changing lids/lashes, or adding geometry. Interior sclera moves slightly with the iris; this is not anatomical eyeball rotation.
+
+`neutral-existing-shape-sha256.json` and `export-validation.json` confirm exact source equivalence for Basis and all 35 existing eye shape arrays. UVs and topology are unchanged. Inspect neutral-eyes, left, right, up, down, left-halfblink and left-fullblink PNGs for the actual renders. Blender previews use the existing materials; runtime closed-eye texture correction remains the Unity shader's responsibility.

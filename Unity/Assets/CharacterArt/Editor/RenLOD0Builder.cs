@@ -93,6 +93,8 @@ namespace LucidLoop.CharacterArt.Editor
    var missing=AnimationUtility.GetCurveBindings(review.BodyIdle).Where(b=>b.type==typeof(Transform)&&!hips.parent.Find(b.path)).Select(b=>b.path).Distinct().ToArray();
    if(missing.Length>0)throw new InvalidOperationException("Idle skeleton mismatch: "+string.Join(",",missing));
    var renderers=model.GetComponentsInChildren<SkinnedMeshRenderer>(true);
+   var gaze=AssetDatabase.LoadAssetAtPath<Mesh>(RenGazeBuilder.MeshPath);
+   if(gaze)foreach(var renderer in renderers.Where(r=>r.name=="RenEyesShallow"))renderer.sharedMesh=gaze;
    long triangles=renderers.Sum(r=>(long)r.sharedMesh.triangles.Length/3)+model.GetComponentsInChildren<MeshFilter>(true).Sum(m=>(long)m.sharedMesh.triangles.Length/3);
    if(triangles>45000||triangles<30000)throw new InvalidOperationException("Unexpected complete LOD0 triangle count: "+triangles);
    EditorSceneManager.SaveScene(scene,ScenePath);AssetDatabase.SaveAssets();

@@ -42,6 +42,16 @@ namespace LucidLoop.CharacterArt
                 if (name.Equals("eyeBlinkR", StringComparison.OrdinalIgnoreCase)) value = closureR;
                 if (name == "eyeWideL" || name == "eyeSquintL") value *= 1 - closureL;
                 if (name == "eyeWideR" || name == "eyeSquintR") value *= 1 - closureR;
+                if (name.StartsWith("gaze", StringComparison.Ordinal))
+                {
+                    string side = name.EndsWith("L", StringComparison.Ordinal) ? "L" : "R";
+                    float x = Read("gazeRight" + side) - Read("gazeLeft" + side);
+                    float y = Read("gazeUp" + side) - Read("gazeDown" + side);
+                    float radius = Mathf.Max(1, Mathf.Sqrt(x * x + y * y));
+                    float direction = name.StartsWith("gazeRight") ? x : name.StartsWith("gazeLeft") ? -x : name.StartsWith("gazeUp") ? y : -y;
+                    float open = 1 - (side == "L" ? closureL : closureR);
+                    value = Mathf.Max(0, direction) / radius * open * open;
+                }
                 output[pair.Key] = Mathf.Clamp01(value);
             }
             return output;

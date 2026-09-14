@@ -229,6 +229,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 00dec2f606fd285499c88b90e9cba681, type: 2}
     - target: {fileID: -8758393728477293923, guid: 027c470658d57a64794fd63de26c4d58, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 9f9c235aa515b6b46adafcf63a392dbc, type: 2}
+    - target: {fileID: -8758393728477293923, guid: 027c470658d57a64794fd63de26c4d58, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 00dec2f606fd285499c88b90e9cba681, type: 2}
@@ -700,6 +704,7 @@ MonoBehaviour:
   CyanLight: {fileID: 1986397036}
   MagentaLight: {fileID: 703127332}
   MovingLights: 0
+  ShowControls: 1
   IdleBlink: 1
   IdleActing: 1
   ShowReference: 0
