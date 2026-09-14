@@ -10,7 +10,7 @@ namespace LucidLoop.Gyms
         {
             get
             {
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
+#if UNITY_EDITOR || DEVELOPMENT_BUILD || LUCID_LOOP_INTERNAL_TESTFLIGHT
                 return true;
 #else
                 return false;

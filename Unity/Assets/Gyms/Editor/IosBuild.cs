@@ -73,7 +73,11 @@ namespace LucidLoop.Gyms.Editor
             foreach (var scene in scenes)
                 if (!File.Exists(scene)) throw new FileNotFoundException("Missing enabled build scene", scene);
             Directory.CreateDirectory("Builds/iOS");
-            var report = BuildPipeline.BuildPlayer(scenes, outputPath, BuildTarget.iOS, options);
+            var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
+                scenes = scenes, locationPathName = outputPath, target = BuildTarget.iOS, options = options,
+                extraScriptingDefines = ExportingLocalRelayTestFlight
+                    ? new[] { "LUCID_LOOP_INTERNAL_TESTFLIGHT" } : Array.Empty<string>()
+            });
             if (report.summary.result != BuildResult.Succeeded)
                 throw new InvalidOperationException("iOS export failed: " + report.summary.result);
             foreach (var filename in new[] { "shader-stripping.json", "compute-shader-stripping.json" })
