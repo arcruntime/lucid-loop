@@ -191,7 +191,9 @@ export function createRelayServer(options = {}) {
           }
         } else if (event.type === "game.reset" && worldRecord) {
           const current = config.gameSessions.publicState(credentials);
-          if (!current.ok || !["catastrophe", "unresolved", "victory"].includes(current.snapshot.phase)) respond({ type: "game.error", code: "reset_unavailable" });
+          // The pause menu may restart an unfinished attempt. Preserve pause;
+          // the normal loop/revision fence still rejects duplicate/stale clicks.
+          if (!current.ok || (!worldRecord.paused && !["catastrophe", "unresolved", "victory"].includes(current.snapshot.phase))) respond({ type: "game.error", code: "reset_unavailable" });
           else respond({ type: "game.reset_result", ...worldRecord.world.reset({ loopId: event.loopId, revision: event.revision }) });
         } else if (event.type === "game.snapshot") {
           const result = config.gameSessions.publicState(credentials);

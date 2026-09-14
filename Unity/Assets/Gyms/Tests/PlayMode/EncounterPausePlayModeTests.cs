@@ -22,6 +22,49 @@ namespace LucidLoop.Gyms.PlayModeTests
         float savedPreference;
 
         [UnityTest, Explicit("Requires the authoritative relay on 8789; no provider.")]
+        public IEnumerator RestartNightFromPauseKeepsNewAttemptPaused()
+        {
+            var loading = SceneManager.LoadSceneAsync("BeforeTheDrop", LoadSceneMode.Single);
+            while (!loading.isDone) yield return null;
+            yield return null;
+            coordinator = UnityEngine.Object.FindFirstObjectByType<EncounterCoordinator>();
+            var hud = UnityEngine.Object.FindFirstObjectByType<EncounterHud>();
+            var layout = UnityEngine.Object.FindFirstObjectByType<EncounterHudLayout>();
+            layout.PreviewPhoneLayout = true;
+            var menu = hud.PauseMenu;
+            Assert.That(menu.RestartNight(), Is.False);
+            string relay = Environment.GetEnvironmentVariable("LUCID_LOOP_SMOKE_GAME_URL") ?? "ws://127.0.0.1:8789/game";
+            Assert.That(coordinator.ConnectNew(relay), Is.True);
+            float deadline = Time.realtimeSinceStartup + 30;
+            while (!coordinator.IsReady) { Before(deadline); yield return null; }
+            yield return new WaitForSecondsRealtime(.5f);
+            Assert.That(menu.RequestOpen(), Is.True);
+            while (!menu.IsVisible) { Before(deadline); yield return null; }
+            string loop = coordinator.State.LoopId;
+            var clues = coordinator.State.PlayerDiscoveries.ToString();
+            Click(menu, "Restart night");
+            Assert.That(menu.RestartNight(), Is.False, "Do not send duplicate restart while awaiting acknowledgement.");
+            while (coordinator.State.LoopId == loop) { Before(deadline); yield return null; }
+            yield return null;
+            Assert.That(menu.IsVisible, Is.True);
+            Assert.That(coordinator.IsPaused, Is.True);
+            Assert.That(coordinator.State.LoopIndex, Is.EqualTo(2));
+            Assert.That(coordinator.State.PlayerDiscoveries.ToString(), Is.EqualTo(clues));
+            Assert.That(coordinator.State.ElapsedSeconds, Is.Zero);
+            yield return new WaitForSecondsRealtime(.6f);
+            Assert.That(coordinator.State.ElapsedSeconds, Is.Zero, "New night must not run behind pause menu.");
+            Canvas.ForceUpdateCanvases();
+            foreach (var button in menu.GetComponentsInChildren<Button>())
+                Assert.That(((RectTransform)button.transform).rect.height * layout.SafeRoot.GetComponentInParent<Canvas>().scaleFactor,
+                    Is.GreaterThanOrEqualTo(131.9f), button.name + " phone touch target");
+            yield return Capture("restart", deadline);
+            Assert.That(menu.Resume(), Is.True);
+            while (coordinator.IsPaused || coordinator.State.ElapsedSeconds <= 0) { Before(deadline); yield return null; }
+            Assert.That(menu.IsVisible, Is.False);
+            LogAssert.NoUnexpectedReceived();
+        }
+
+        [UnityTest, Explicit("Requires the authoritative relay on 8789; no provider.")]
         public IEnumerator PauseMenuBlocksGameplayAndPreservesResumableNight()
         {
             hadPreference = PlayerPrefs.HasKey(MusicPreference);

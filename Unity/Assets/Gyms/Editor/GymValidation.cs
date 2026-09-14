@@ -83,6 +83,12 @@ namespace LucidLoop.Gyms.Editor
             "LucidLoop.Gyms.PlayModeTests.EncounterMarkersPlayModeTests.MarkersFollowAuthoritySelectionAndCameraVisibility"
         });
 
+        [MenuItem("Lucid Loop/Validate paused restart PlayMode")]
+        public static void RunRestartPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "restart-playmode", "RESTART_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterPausePlayModeTests.RestartNightFromPauseKeepsNewAttemptPaused"
+        });
+
         [MenuItem("Lucid Loop/Validate pause lifecycle PlayMode smoke")]
         public static void RunPausePlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "pause-playmode", "PAUSE_TESTS", null, new[]
         {
@@ -110,6 +116,9 @@ namespace LucidLoop.Gyms.Editor
 
         [MenuItem("Lucid Loop/Validate Ren live speech")]
         public static void RunRenLiveSpeech() => Run(TestMode.EditMode, "LucidLoop.LiveSpeech.Tests", "ren-live-speech", "REN_LIVE_SPEECH_TESTS", new[] { "LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests" });
+
+        [MenuItem("Lucid Loop/Validate Ren gaze and speech mixer")]
+        public static void RunRenGazeSpeech() => Run(TestMode.EditMode, "LucidLoop.CharacterArt.Tests", "ren-gaze-speech", "REN_GAZE_SPEECH_TESTS", new[] { "LucidLoop.CharacterArt.Tests.RenGazeMixerTests", "LucidLoop.CharacterArt.Tests.RenLOD0SpeechTests" });
 
         static void Run(TestMode mode, string assembly, string filename, string marker, string[] groups = null, string[] testNames = null)
         {

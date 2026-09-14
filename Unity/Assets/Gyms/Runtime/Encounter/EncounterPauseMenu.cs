@@ -7,7 +7,7 @@ namespace LucidLoop.Gyms
     public enum EncounterPausePage { Main, Settings, Controls }
 
     // The server acknowledgement owns visibility. This modal never reopens voice
-    // or resets the encounter; Main Menu keeps the coordinator's resume identity.
+    // automatically resumes the encounter; Main Menu keeps the coordinator's resume identity.
     [DefaultExecutionOrder(250)]
     public sealed class EncounterPauseMenu : MonoBehaviour
     {
@@ -32,6 +32,8 @@ namespace LucidLoop.Gyms
         Slider volumeSlider;
         float musicVolume = .32f;
         bool preferencesDirty;
+        Button restartButton;
+        string restartingLoop;
         CanvasGroup hudInteraction;
         bool interactionLocked, previousInteractable;
 
@@ -50,6 +52,7 @@ namespace LucidLoop.Gyms
             if (music) music.MusicVolume = musicVolume;
             Build();
             coordinator.PauseChanged += OnPause; coordinator.StatusChanged += OnStatus;
+            coordinator.StateChanged += OnState;
             OnPause(coordinator.IsPaused);
         }
 
@@ -68,6 +71,8 @@ namespace LucidLoop.Gyms
             mainPage = Page("Pause main"); settingsPage = Page("Pause settings"); controlsPage = Page("Pause controls");
             var buttons = new System.Collections.Generic.List<RectTransform>();
             buttons.Add(MainButton("Resume", () => Resume()));
+            var restart = MainButton("Restart night", () => RestartNight());
+            restartButton = restart.GetComponent<Button>(); buttons.Add(restart);
             buttons.Add(MainButton("Settings", OpenSettings));
             buttons.Add(MainButton("Controls", OpenControls));
             buttons.Add(MainButton("Main Menu", ReturnToMainMenu));
@@ -102,7 +107,7 @@ namespace LucidLoop.Gyms
             var content = GymUI.Rect(controlsViewport, "Controls text", new Vector2(0, 1), Vector2.one, Vector2.zero, Vector2.zero);
             content.pivot = new Vector2(.5f, 1);
             var text = GymUI.Text(content,
-                "WALK\nTap or click the club floor.\n\nTALK\nSelect a person or their name in the dock, then tap Talk / Walk & talk. You walk into range before voice opens.\n\nREPLY\nType a reply and tap Send. Enter sends while the reply field is focused. Mic on / Mic off toggles capture after voice is ready.\n\nLEAVE\nTap Leave to end voice and return to the club. Talking pauses the night.\n\nCLUES & HISTORY\nExpand Clues to review discoveries. History shows the selected person's conversation. Scroll long content.\n\nPAUSE\nTap Pause to open this menu. On desktop, Escape opens it, goes back from a submenu, or resumes. Escape does not interrupt typing.",
+                "WALK\nTap or click the club floor.\n\nTALK\nSelect a person or their name in the dock, then tap Talk / Walk & talk. You walk into range before voice opens.\n\nREPLY\nType a reply and tap Send. Enter sends while the reply field is focused. Mic on / Mic off toggles capture after voice is ready.\n\nLEAVE\nTap Leave to end voice and return to the club. Talking pauses the night.\n\nCLUES & HISTORY\nExpand Clues to review discoveries. History shows the selected person's conversation. Scroll long content.\n\nPAUSE\nTap Pause to open this menu. On desktop, Escape opens it, goes back from a submenu, or resumes. Escape does not interrupt typing.\n\nRESTART NIGHT\nRestart from this menu to try again and keep your discovered clues. The new night stays paused until you choose Resume.",
                 25, Color.white);
             text.verticalOverflow = VerticalWrapMode.Overflow;
             content.gameObject.AddComponent<ContentSizeFitter>().verticalFit = ContentSizeFitter.FitMode.PreferredSize;
@@ -123,6 +128,21 @@ namespace LucidLoop.Gyms
 
         public bool RequestOpen() => coordinator && coordinator.IsReady && coordinator.Pause(true);
         public bool Resume() => IsVisible && coordinator && coordinator.IsReady && coordinator.Pause(false);
+        public bool RestartNight()
+        {
+            if (!IsVisible || !coordinator || !coordinator.IsReady || !coordinator.IsPaused || restartingLoop != null) return false;
+            restartingLoop = coordinator.State.LoopId;
+            if (!coordinator.Reset()) { restartingLoop = null; return false; }
+            restartButton.interactable = false;
+            title.text = "RESTARTING NIGHT";
+            return true;
+        }
+        void OnState(EncounterClientState state)
+        {
+            if (restartingLoop == null || state.LoopId == restartingLoop) return;
+            restartingLoop = null; restartButton.interactable = true;
+            if (IsVisible) ShowPage(EncounterPausePage.Main);
+        }
         public void OpenSettings() { if (IsVisible) ShowPage(EncounterPausePage.Settings); }
         public void OpenControls() { if (IsVisible) ShowPage(EncounterPausePage.Controls); }
         public void Back() { if (IsVisible) ShowPage(EncounterPausePage.Main); }
@@ -203,9 +223,15 @@ namespace LucidLoop.Gyms
             { previousInteractable = hudInteraction.interactable; hudInteraction.interactable = false; interactionLocked = true; }
             ShowPage(EncounterPausePage.Main); overlay.gameObject.SetActive(true);
         }
-        void OnStatus(string status) { if (!coordinator || !coordinator.IsReady) Hide(); }
+        void OnStatus(string status)
+        {
+            if (restartingLoop != null && (status == "reset_unavailable" || status == "game_request_rejected"))
+            { restartingLoop = null; restartButton.interactable = true; if (IsVisible) title.text = "RESTART UNAVAILABLE"; }
+            if (!coordinator || !coordinator.IsReady) Hide();
+        }
         void Hide()
         {
+            restartingLoop = null; if (restartButton) restartButton.interactable = true;
             if (overlay && overlay.gameObject.activeSelf) { overlay.gameObject.SetActive(false); SavePreferences(); }
             if (interactionLocked) { if (hudInteraction) hudInteraction.interactable = previousInteractable; interactionLocked = false; }
         }
@@ -216,7 +242,7 @@ namespace LucidLoop.Gyms
         void OnDestroy()
         {
             SavePreferences();
-            if (coordinator) { coordinator.PauseChanged -= OnPause; coordinator.StatusChanged -= OnStatus; }
+            if (coordinator) { coordinator.PauseChanged -= OnPause; coordinator.StatusChanged -= OnStatus; coordinator.StateChanged -= OnState; }
         }
     }
 }

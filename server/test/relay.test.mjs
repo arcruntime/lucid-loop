@@ -91,6 +91,76 @@ test("world pause is authoritative across peers, reconnects and independent new 
   } finally { await bounded(relay.close(), "relay close"); }
 });
 
+test("paused nonterminal restart retains discoveries and resets the night without resuming it", async () => {
+  const games = createGameSessions({ definitionFactory: createDemoDefinition, encounterFactory: createDemoScenario });
+  const { relay, url } = await makeRelay({ apiKey: "", gameSessions: games, worldFactory: createEncounterWorld });
+  const send = (client, event) => client.send(JSON.stringify(event));
+  const fence = snapshot => ({ loopId: snapshot.loopId, revision: snapshot.revision });
+  try {
+    const client = await openClient(url.replace('/live', '/game'));
+    send(client, { type: "game.create" });
+    const ready = await untilJson(client, "game.ready");
+    const initial = (await untilJson(client, "game.world")).world;
+    send(client, { type: "game.walk", loopId: ready.snapshot.loopId, sequence: 1, destination: { x: 1, z: -5 } });
+    assert.equal((await untilJson(client, "game.move_result")).accepted, true);
+    let moved;
+    do { moved = (await untilJson(client, "game.world")).world; } while (moved.elapsedSeconds === 0);
+    assert.notDeepEqual(moved.actors.player.position, initial.actors.player.position);
+    send(client, { type: "game.pause", paused: true });
+    assert.equal((await untilJson(client, "game.pause")).paused, true);
+
+    // Trusted setup creates a discovery and accepted NPC behavior; neither is
+    // a player RPC. The operation under test goes through the public socket.
+    const credentials = ready.credentials;
+    const attached = games.attach(credentials, 'maya');
+    const lease = attached.lease.leaseId;
+    const learned = games.trustedWorld(credentials, 'observeVisibility', {
+      ...fence(attached.snapshot), observerId: 'maya', inRecognitionArea: true, visibleActorIds: ['theo', 'affair_partner'],
+    });
+    assert.equal(learned.outcome.accepted, true);
+    const waiting = games.submitAction(credentials, lease, {
+      ...fence(learned.snapshot), requestId: 'before-restart', actorId: 'maya', type: 'wait',
+    });
+    assert.equal(waiting.outcome.accepted, true);
+    assert.equal(waiting.snapshot.recording, true);
+    assert.equal(waiting.snapshot.actors.maya.action.type, 'wait');
+    assert.ok(games.npcContext(credentials, lease).context.knownFacts.some(f => f.factId === 'affair_seen'));
+
+    send(client, { type: "game.reset", ...fence(learned.snapshot) });
+    assert.equal((await untilJson(client, "game.reset_result")).outcome.reason, 'stale_revision');
+    assert.equal(games.publicState(credentials).snapshot.loopId, ready.snapshot.loopId);
+    send(client, { type: "game.reset", ...fence(waiting.snapshot) });
+    const reset = await untilJson(client, "game.reset_result");
+    assert.equal(reset.outcome.accepted, true);
+    assert.notEqual(reset.snapshot.loopId, ready.snapshot.loopId);
+    assert.deepEqual(reset.snapshot.playerDiscoveries, waiting.snapshot.playerDiscoveries);
+    assert.equal(reset.snapshot.recording, false);
+    assert.equal(reset.snapshot.phase, 'exploring');
+    assert.deepEqual(reset.snapshot.actors, ready.snapshot.actors);
+    assert.equal(reset.snapshot.elapsedSeconds, 0);
+    assert.equal(games.npcContext(credentials, lease).ok, false, 'Previous voice lease is invalidated');
+    const fresh = games.attach(credentials, 'maya');
+    assert.deepEqual(games.npcContext(credentials, fresh.lease.leaseId).context.knownFacts, []);
+    games.detach(credentials, fresh.lease.leaseId);
+    send(client, { type: "game.reset", ...fence(waiting.snapshot) });
+    assert.equal((await untilJson(client, "game.reset_result")).outcome.reason, 'stale_loop');
+    let restored;
+    do { restored = (await untilJson(client, "game.world")).world; } while (restored.loopId !== reset.snapshot.loopId);
+    for (const [id, actor] of Object.entries(initial.actors))
+      assert.deepEqual(restored.actors[id].position, actor.position, id + ' spawn restored');
+    for (let i = 0; i < 3; i++) {
+      const held = (await untilJson(client, "game.world")).world;
+      assert.equal(held.elapsedSeconds, 0, 'Restart must preserve the authoritative pause');
+      assert.deepEqual(held.actors, restored.actors);
+    }
+    send(client, { type: "game.pause", paused: false });
+    assert.equal((await untilJson(client, "game.pause")).paused, false);
+    let resumed;
+    do { resumed = (await untilJson(client, "game.world")).world; } while (resumed.elapsedSeconds === 0);
+    assert.equal(resumed.loopId, reset.snapshot.loopId);
+  } finally { await bounded(relay.close(), "relay close"); }
+});
+
 test("world channel advances server positions and rejects forged destinations and premature reset", async () => {
   const games = createGameSessions({ definitionFactory: createDemoDefinition, encounterFactory: createDemoScenario });
   const { relay, url } = await makeRelay({ apiKey: "", gameSessions: games, worldFactory: createEncounterWorld });
