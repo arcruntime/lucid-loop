@@ -4,7 +4,7 @@ Recorded 2026-09-14. These results distinguish executable checks from device and
 
 Japanese voice support is paused and excluded from the shipping scope. Japanese research entries below are historical evidence, not release requirements. Current device status is maintained in [iPhone installation](IOS_DEVICE_INSTALL.md) and [TestFlight builds](IOS_TESTFLIGHT.md).
 
-After mediation, Maya now refuses an incompatible wait request instead of falsely accepting it while continuing her safe departure. Scenario, world, and dialogue-delegation regressions pass (43 tests): refusal leaves state unchanged, compatible follow remains accepted, victory still completes, and rewind restores waiting. The dialogue bridge explains how to continue away from Theo.
+After mediation, Maya now refuses an incompatible wait request instead of falsely accepting it while continuing her safe departure. Scenario, world, and dialogue-delegation regressions pass (43 tests): refusal leaves state unchanged, compatible follow remains accepted, victory still completes, and rewind restores waiting. The dialogue bridge and HUD explain how to continue away from Theo. The [98-test Editor run](validation/safe-departure/editmode.xml) verifies that HUD refusal reaches voice status without falsely accepting the action or inventing transcript fragments; this run also includes the staged primitive-pose regressions, whose actual scene review remains pending.
 
 | Check | Evidence | Result |
 | --- | --- | --- |

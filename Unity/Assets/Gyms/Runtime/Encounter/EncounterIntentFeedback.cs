@@ -26,6 +26,7 @@ namespace LucidLoop.Gyms
                 {
                     case "calmer_music_needed": return "Not yet. Ask Ren for calmer, Intimate music, then ask Luca again.";
                     case "mediation_group_not_ready": return "Not yet. Leave so Luca, Maya and Theo can move together, then ask Luca to mediate again.";
+                    case "safe_departure_in_progress": return "Maya has chosen to leave with you. Leave the conversation and move away from Theo; she will follow until the set ends.";
                 }
             }
             return "The request was not carried out. Try a different approach.";

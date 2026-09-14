@@ -31,6 +31,7 @@ namespace LucidLoop.Gyms.Tests
         }
         [TestCase("calmer_music_needed", "Ask Ren")]
         [TestCase("mediation_group_not_ready", "Leave so Luca")]
+        [TestCase("safe_departure_in_progress", "move away from Theo")]
         public void ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript(string reason, string expected)
         {
             var host = new GameObject("Refusal feedback test");
