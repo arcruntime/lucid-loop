@@ -1,0 +1,347 @@
+{
+  "source_sha256": "a26a0cfce94a0f57ff9054129cedc11c9b8d5d4ce937dca1ac258401fbff574a",
+  "paired_vertices": 293,
+  "cases": 56,
+  "max_gap_metres": 0.0,
+  "max_head_vertex_movement_metres": 0.12159925313947738,
+  "cases_detail": [
+    {
+      "turn": 0,
+      "tilt": 0,
+      "expression": "Basis",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 0,
+      "expression": "speech_A",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 0,
+      "expression": "speech_MBP",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 0,
+      "expression": "speech_O",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 0,
+      "expression": "emotion_Amused",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 0,
+      "expression": "emotion_Guarded",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 0,
+      "expression": "eyeBlinkL",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 0,
+      "expression": "eyeBlinkR",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -45,
+      "tilt": 0,
+      "expression": "Basis",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -45,
+      "tilt": 0,
+      "expression": "speech_A",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -45,
+      "tilt": 0,
+      "expression": "speech_MBP",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -45,
+      "tilt": 0,
+      "expression": "speech_O",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -45,
+      "tilt": 0,
+      "expression": "emotion_Amused",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -45,
+      "tilt": 0,
+      "expression": "emotion_Guarded",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -45,
+      "tilt": 0,
+      "expression": "eyeBlinkL",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -45,
+      "tilt": 0,
+      "expression": "eyeBlinkR",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 45,
+      "tilt": 0,
+      "expression": "Basis",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 45,
+      "tilt": 0,
+      "expression": "speech_A",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 45,
+      "tilt": 0,
+      "expression": "speech_MBP",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 45,
+      "tilt": 0,
+      "expression": "speech_O",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 45,
+      "tilt": 0,
+      "expression": "emotion_Amused",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 45,
+      "tilt": 0,
+      "expression": "emotion_Guarded",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 45,
+      "tilt": 0,
+      "expression": "eyeBlinkL",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 45,
+      "tilt": 0,
+      "expression": "eyeBlinkR",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": -20,
+      "expression": "Basis",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": -20,
+      "expression": "speech_A",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": -20,
+      "expression": "speech_MBP",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": -20,
+      "expression": "speech_O",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": -20,
+      "expression": "emotion_Amused",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": -20,
+      "expression": "emotion_Guarded",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": -20,
+      "expression": "eyeBlinkL",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": -20,
+      "expression": "eyeBlinkR",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 20,
+      "expression": "Basis",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 20,
+      "expression": "speech_A",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 20,
+      "expression": "speech_MBP",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 20,
+      "expression": "speech_O",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 20,
+      "expression": "emotion_Amused",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 20,
+      "expression": "emotion_Guarded",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 20,
+      "expression": "eyeBlinkL",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 0,
+      "tilt": 20,
+      "expression": "eyeBlinkR",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -30,
+      "tilt": 15,
+      "expression": "Basis",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -30,
+      "tilt": 15,
+      "expression": "speech_A",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -30,
+      "tilt": 15,
+      "expression": "speech_MBP",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -30,
+      "tilt": 15,
+      "expression": "speech_O",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -30,
+      "tilt": 15,
+      "expression": "emotion_Amused",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -30,
+      "tilt": 15,
+      "expression": "emotion_Guarded",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -30,
+      "tilt": 15,
+      "expression": "eyeBlinkL",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": -30,
+      "tilt": 15,
+      "expression": "eyeBlinkR",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 30,
+      "tilt": -15,
+      "expression": "Basis",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 30,
+      "tilt": -15,
+      "expression": "speech_A",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 30,
+      "tilt": -15,
+      "expression": "speech_MBP",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 30,
+      "tilt": -15,
+      "expression": "speech_O",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 30,
+      "tilt": -15,
+      "expression": "emotion_Amused",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 30,
+      "tilt": -15,
+      "expression": "emotion_Guarded",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 30,
+      "tilt": -15,
+      "expression": "eyeBlinkL",
+      "max_gap_metres": 0.0
+    },
+    {
+      "turn": 30,
+      "tilt": -15,
+      "expression": "eyeBlinkR",
+      "max_gap_metres": 0.0
+    }
+  ],
+  "scope": "Evaluated Blender skinning at joined endpoints. Does not establish headphone clearance, cloth contacts, normals, or visual likeness.",
+  "passed": true
+}

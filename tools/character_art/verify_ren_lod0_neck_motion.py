@@ -3,11 +3,13 @@ from pathlib import Path
 import hashlib
 import json
 import math
+import sys
 import bpy
 from mathutils import kdtree
 
 ROOT = Path('B:/lucid-loop/art/generated/characters/ren/lod0-final-v1')
-source = ROOT / 'Ren_LOD0.blend'
+source = Path(sys.argv[sys.argv.index('--')+1]) if '--' in sys.argv else ROOT / 'Ren_LOD0.blend'
+ROOT = source.parent
 bpy.ops.wm.open_mainfile(filepath=str(source))
 join = bpy.data.objects['RenNeckJoin']
 sources = [bpy.data.objects[n] for n in ('RenNeckChest_LOD0', 'RenHeadSkin')]

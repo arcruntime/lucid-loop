@@ -21,4 +21,3 @@ for name,row in expected['meshes'].items():
 manifest=json.loads((OUT/'manifest.json').read_text());source_path=ROOT/'lod0-final-v1/Ren_LOD0.blend';unchanged=hashlib.sha256(source_path.read_bytes()).hexdigest()==manifest['source_sha256'];assert unchanged
 report={'source_lod0_sha256':manifest['source_sha256'],'source_file_unchanged':unchanged,'triangles':actual['triangles'],'rigs':actual['rigs'],'rig_hierarchy_exact':True,'parts':checks,'protected_source_vertices':{p['name']:{'vertices':p['protected_vertices'],'maximum_position_error':p['protected_vertex_max_error']}for p in manifest['parts']if p['protected_vertices']},'budget_met':False,'status':'PROVISIONAL_CORRECTED_LOD1_13418_TRIANGLES'}
 (OUT/'fbx-validation.json').write_text(json.dumps(report,indent=2));print('FBX_PROOF_PASS',actual['triangles'],[len(v)for v in actual['rigs'].values()])
-
