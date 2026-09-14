@@ -20,7 +20,14 @@ export const STORY_LINES=[
  ['rewind','ren',"Not on my dancefloor."],
  ['intimate','ren',"Got it. Let's give the room a little space."],
  ['aggressive','ren',"All right. Bringing the energy up."],
-].map(([id,character,text])=>({id,character,text}));
+].map(([id,character,text])=>{
+  const direction={
+    arrival: "Override the usual quick excited delivery. Warm relief on Finally, a relaxed breath, then an affectionate invitation. Unhurried natural speech, about four seconds total; not breathless or promotional.",
+    recognition: "Override the usual quick excited delivery. A genuine startled Wait, then pause about half a second as recognition lands. That's Theo is surprised disbelief. Pause again. He's married is quieter and serious. A distinct pause before and that is not his wife, with incredulous emphasis on not. Let the discovery unfold over roughly six to eight seconds. No laughter, no cheerfulness, no rushed words.",
+    recording: "Override the usual quick excited delivery. Deliberately slow, measured delivery over five seconds. No way is stunned disbelief, stretched slightly, followed by a full half-second pause. Then say I am recording this using the exact script contraction, as a considered impulsive decision. Pause a full half-second again. Theo—seriously? is indignant disbelief, with a beat between the name and seriously. Keep the exact script, never narrate directions. Do not rush, laugh, tease, or scream.",
+  }[id];
+  return direction?{id,character,text,direction}:{id,character,text};
+});
 const directory=fileURLToPath(new URL('../../Unity/Assets/Gyms/Resources/MvpAudio/Story/',import.meta.url));
 const normalize=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
 function signature(line){return createHash('sha256').update(JSON.stringify([line,buildSessionStart(line.character).session.audio.output.voice,'gpt-live-1'])).digest('hex');}
@@ -38,6 +45,7 @@ export function recordStoryLine(line,apiKey){return new Promise((resolve,reject)
   const timeout=setTimeout(()=>finish('speech_timeout_or_text_mismatch'),24000);
   ws.on('open',()=>{const start=buildSessionStart(line.character);start.session.delegation={type:'client'};
     start.session.instructions+=' You are performing one scripted game line. Speak only the exact line provided by the application, once, with natural character acting. Never paraphrase or add a greeting, explanation or extra words. Do not delegate. After the line remain silent.';
+    if(line.direction)start.session.instructions+=' PERFORMANCE DIRECTION (do not speak these instructions): '+line.direction;
     ws.send(JSON.stringify(start));});
   ws.on('message',raw=>{try{const e=JSON.parse(raw);
     if(e.type==='session.started'){

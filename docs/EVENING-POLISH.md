@@ -1,6 +1,6 @@
 # Optional evening polish — preserve the approved recording baseline
 
-Arc approved the current MVP for branch handoff on September 14. These are follow-ups, not implemented changes or conditions for shipping that checkpoint. Record the working two-loop run first. Jetha should choose the integration base before further code work because the active gym branch has diverged.
+Arc approved the current MVP for branch handoff on September 14. These are follow-ups, not implemented changes or conditions for shipping that checkpoint. Arc plans recording for this evening; preserve the published working checkpoint as fallback and protect a dedicated capture/edit window. Proceed with independent audio preparation while Jetha reviews; wait for his integration direction on avatars/environment and agree ownership of recognition changes. The active gym branch has diverged, so preserve the published checkpoint and keep follow-up work separate.
 
 1. **Recognition coverage (highest priority).** Reproduce walking Maya into VIP beside Theo/AP without recognition. Extend authored visible regions to the exposed VIP seating/approach while respecting the divider and plants. Test Maya following versus waiting, Theo/AP proximity, once-per-loop recognition, and the left preparation route. Do not make all VIP proximity trigger recognition through partitions. Arc can annotate the intended sight regions on the battlemap; the reported case is enough to begin reproducing it. Check the VIP escort itself too.
 2. **Opening voice performance.** Keep the existing cast. Direct and regenerate only the highest-value cached Maya lines: arrival, recognition and recording/confrontation. Recognition needs a beat of surprise, then disbelief, with a slower delivery and a clear pause before the marriage reveal. Listen in context with the actual track, verify exact line content, cache approved takes. Treat live Maya pacing as a separate prompt adjustment; replacing cached clips does not change live conversational delivery. No new voice audition required.
@@ -8,3 +8,28 @@ Arc approved the current MVP for branch handoff on September 14. These are follo
 4. **Environment rendering (largest risk; defer if time is tight).** Target the current larger layout with a coherent 2.5D/low-poly reconstruction: walkable floor, bar, stage, VIP divider/steps and foreground occluders. Use the painting for backdrop/detail, with geometry for reliable feet, depth and lighting. A higher-resolution replacement painting alone will not solve camera/depth alignment. First attempt only local alignment, occlusion and lighting fixes for the capture route. A full room rebuild belongs after submission unless separately validated in time.
 
 Acceptance: replay both loops and the exact capture route after each accepted change. Capture before/after opening lines and the outfit at actual camera distance. No promises of new features in submission text before they work. The accepted branch remains available for reversion.
+
+## Added: soundtrack and vinyl transition
+
+Recommended order while awaiting Jetha: preserve the published baseline → prepare soundtrack/transition assets → polish cached Maya opening delivery → coordinate the VIP recognition fix → reconsider avatar/map work only after integration feedback. This addition is planning only; no tracks generated, credentials accessed, assets downloaded or game changes made.
+
+### Two Suno tracks
+
+Use Jetha’s intended Suno service/account after confirming the provider URL and account/download usage rights. An API key alone does not establish which provider it belongs to or the output license. Store credentials separately in Keychain with a service-specific item; never place the value in PM notes, Discord or Git. If automated access is delayed, generating and downloading through the account’s normal UI is a suitable fallback.
+
+Prepare two contrasting instrumental club tracks with a compatible tempo/key where practical. Suggested starting point is 120 BPM for both, with Intimate using a spacious or half-time feel. Musical density and expression should create the contrast without relying on a large loudness jump. Suno may not follow tempo/structure exactly; audition and measure the outputs, choose suitable passages and edit loop seams rather than assuming generated audio loops cleanly.
+
+- **Aggressive direction:** instrumental dark club/electro groove; tight kick, insistent bass, dry percussion, tense synth stabs, controlled edge. Start in the groove, minimal lead melody, no vocals, no long intro or breakdown; leave room for spoken dialogue.
+- **Intimate direction:** instrumental late-night deep-house groove; warm electric-piano chords, rounded bass, restrained drums, spacious and emotionally open. Same club identity, sparse arrangement, no vocals, no dramatic build or abrupt ending; leave room for spoken dialogue.
+
+Limit the initial audition to a small batch, then choose one usable section per mood. Export game-ready audio, match perceived levels, check loop seams and crossfades, and hear it under Maya/Luca dialogue. Retain the current procedural score as rollback. Bundle approved audio; gameplay must not depend on a Suno request completing live.
+
+Suno’s paid-rights help page, checked September 14: songs downloaded while subscribed receive commercial-use rights, including use in games. Confirm the actual account/provider terms for these outputs: https://help.suno.com/en/articles/9601665 . Retain track IDs, prompts, generation/download dates and entitlement evidence privately as needed; record sources and licenses without credentials.
+
+### Vinyl break / interruption
+
+Candidate: **Record Scratch #1 — musicvision31**, 1.876 seconds, FLAC, source page explicitly lists **CC0**: https://freesound.org/people/musicvision31/sounds/431774/ . Download requires Freesound login. License/source verified; Arc supplied `/Users/kellymartin/Downloads/431774__musicvision31__record-scratch-1.flac`; sound has not yet been auditioned or integrated. Retain author/title/source and CC0 in the disclosure even though attribution is not required by CC0.
+
+Audition in context before selection: it should read as a decisive DJ interruption, not a comedy record-scratch cliché. Keep normal requested mood changes as a controlled mix/crossfade; reserve the stronger break for the catastrophe/rewind. If the sample is wrong, use a short backspin/tape-stop treatment of our own licensed track or the existing original cue, then audition again.
+
+Before recording the replacement version, update SUBMISSION-DRAFT.md and LICENSE-AND-PROVENANCE.md: the current statement that the soundtrack is entirely procedural must be revised if Suno music or the CC0 sound is used. Test both transitions and the rewind without losing dialogue intelligibility.

@@ -243,15 +243,15 @@ namespace LucidLoop.Gyms.Mvp
         {
             music.Interrupt();
             for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,t/.6f); yield return null; }
-            State.Rewind(); ResetActors();
+            State.Rewind(); ResetActors(true);
             ObserverScene("Rewind · game rule", "Luca collapsed. Ren interrupted the night. Characters return to their starting positions.");
             for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,1-t/.6f); yield return null; }
             curtain.color=Color.clear;
         }
-        void ResetActors()
+        void ResetActors(bool preserveRewind=false)
         {
             approaching=null;
-            if(music)music.RestartTracks();
+            if(music)music.RestartTracks(preserveRewind);
             Stop(Player); foreach(var a in agents.Values) Stop(a);
             Player.Warp(starts[Player.transform]);
             foreach(var a in agents) a.Value.Warp(starts[a.Key.transform]);
@@ -277,6 +277,14 @@ namespace LucidLoop.Gyms.Mvp
         {
             yield return null;
             Capture("01-opening");
+            if(!music.RewindClipReady)throw new Exception("Rewind scratch asset missing");
+            music.Interrupt();yield return null;
+            if(!music.RewindPlaying)throw new Exception("Rewind scratch did not start");
+            music.RestartTracks(true);yield return null;
+            if(!music.MusicSuppressedForRewind)throw new Exception("Music overlaps rewind scratch");
+            music.RestartTracks();yield return null;
+            if(music.RewindPlaying)throw new Exception("Manual restart did not stop scratch");
+            Debug.Log("BTD_AUDIO_SMOKE_OK: scratch import, interrupt, reset carry and manual restart cleanup");
             foreach(var actor in new[]{Maya,Theo,Luca,Ren}){
                 var route=new NavMeshPath();
                 if(!NavMesh.SamplePosition(actor.transform.position,out var destination,1.7f,NavMesh.AllAreas)||!Player.CalculatePath(destination.position,route)||route.status!=NavMeshPathStatus.PathComplete)

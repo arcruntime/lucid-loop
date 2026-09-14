@@ -29,7 +29,7 @@ These statements come from the team, not an inference from commit dates. WORKLOG
 - Original source images: team-owned/authorized per Arc, created by Steph with ChatGPT. Source export manifest and hashes: art/source/manifest.json. Figma was used for the design board.
 - Portrait atlas and club paintings: generated from those sources with OpenAI image generation; prompts retained in ART-PROMPTS.md. Service terms apply; do not invent a CC0/MIT license for these outputs.
 - Opening speech: cached OpenAI-generated cast lines; live speech/decisions use the OpenAI API. No secret credentials are included.
-- Music and backspin: original procedural generation in tools/audio/generate_placeholders.py, no third-party samples.
+- Music and normal-change backspin: original procedural generation in tools/audio/generate_placeholders.py, no third-party samples. On the local audio-polish branch, rewind uses musicvision31’s Record Scratch #1 under CC0 1.0; source and conversion details are retained in [the notice](licenses/RecordScratch-CC0.md). Suno replacements are pending, not included.
 - Codex assisted implementation, debugging and generation; CapCut planned for the final edited video. Tools/services have their own applicable terms.
 - Quaternius rigs/clothing experiments, Steph animation downloads and nested empty Unity projects are local experiments not included in this published MVP branch. If later versions add them, update the disclosure and retain their actual licenses before submitting that version.
 - No external dataset was introduced by the MVP pass. The earlier MusicalDM project was inspected for observer presentation ideas; its implementation was not copied into this branch.
