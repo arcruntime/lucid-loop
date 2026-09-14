@@ -183,13 +183,21 @@ namespace LucidLoop.Gyms.Mvp
         { if(State.Wait(wait)) { Stop(agents[Maya]); Refresh(); } }
         void CloseConversation() { if(State.InVip && chatActor==Theo){State.LeaveVip();Move(agents[Theo],starts[Theo.transform]);} StopStoryLine();ShowPortrait(null); CancelChat(); modal=false; choices.gameObject.SetActive(false); Refresh(); }
         IEnumerator Reply(string name,string text) { Busy=true; yield return Say(name,text); Busy=false; Refresh(); }
-        IEnumerator Say(string name,string text)
+        IEnumerator Say(string name,string text,bool finishBeforeRewind=false)
         {
             ShowPortrait(name.ToLowerInvariant()=="you"?"player":name.ToLowerInvariant());
             SetActing(name,true);PlayStoryLine(text);
             ObserverScene("Authored story beat",name+": "+text);
             speaker.text=name; line.text=text; dialogue.gameObject.SetActive(true); advance=false;
-            if(AutoAdvance) yield return null;
+            if(finishBeforeRewind)
+            {
+                // This story beat completes even if Continue was pressed during the line.
+                if(storySpeaker && storySpeaker.isPlaying)
+                    while(storySpeaker.isPlaying) yield return null;
+                else if(!AutoAdvance) yield return new WaitForSecondsRealtime(2f);
+                yield return new WaitForSecondsRealtime(.55f);
+            }
+            else if(AutoAdvance) yield return null;
             else { yield return null; while(!advance) yield return null; }
             StopStoryLine();dialogue.gameObject.SetActive(false);SetActing(name,false);ShowPortrait(null);
         }
@@ -234,7 +242,7 @@ namespace LucidLoop.Gyms.Mvp
             float t=0; var start=Luca.Visual.localRotation;
             while(t<.55f) { t+=Time.deltaTime; Luca.Visual.localRotation=Quaternion.Slerp(start,Quaternion.Euler(0,0,82),t/.55f); yield return null; }
             yield return Say("YOU","Luca hits the floor. He isn't getting up.");
-            yield return Say("REN","Not on my dancefloor.");
+            yield return Say("REN","Not on my dancefloor.",true);
             yield return Rewind();
             Busy=false; Refresh();
             yield return Reply("YOU","Again. The same entrance. Before Maya sees him—let's go left, toward the bar.");
@@ -284,6 +292,15 @@ namespace LucidLoop.Gyms.Mvp
             if(!music.MusicSuppressedForRewind)throw new Exception("Music overlaps rewind scratch");
             music.RestartTracks();yield return null;
             if(music.RewindPlaying)throw new Exception("Manual restart did not stop scratch");
+            if(!music.ClipsReady)throw new Exception("Music assets missing");
+            float renStarted=Time.realtimeSinceStartup;
+            var renBeat=StartCoroutine(Say("REN","Not on my dancefloor.",true));
+            yield return null;advance=true;yield return new WaitForSecondsRealtime(.1f);
+            if(!storySpeaker.isPlaying || music.RewindPlaying)throw new Exception("Ren was cut off by Continue or scratch started early");
+            float renDuration=storySpeaker.clip.length;
+            yield return renBeat;
+            if(Time.realtimeSinceStartup-renStarted<renDuration+.5f)throw new Exception("Ren landing pause missing");
+            Debug.Log("BTD_REN_LANDING_OK: Continue cannot cut line; complete speech plus landing pause");
             Debug.Log("BTD_AUDIO_SMOKE_OK: scratch import, interrupt, reset carry and manual restart cleanup");
             foreach(var actor in new[]{Maya,Theo,Luca,Ren}){
                 var route=new NavMeshPath();

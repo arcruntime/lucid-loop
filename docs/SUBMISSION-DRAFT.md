@@ -54,7 +54,7 @@ All team-authored game code, story and art were created during the official chal
 
 Pre-existing dependencies include Unity 6.3 LTS and packages under applicable Unity/package terms; Node.js (MIT); ws (MIT); osu-framework-unity-di (MIT); R3 (MIT); and Newtonsoft.Json (MIT), whose Unity package wrapper uses the Unity Companion License. Bundled Microsoft/.NET support-library notices are retained.
 
-Steph created the source character and club art with ChatGPT; the team confirms permission to use it. OpenAI image generation adapted that art into game presentation assets. OpenAI APIs provide speech and dialogue decisions; Codex assisted development. These services are used under their applicable service terms. Music and the normal transition cue are procedural. The rewind uses “Record Scratch #1” by musicvision31 (Freesound, CC0 1.0). Figma supported design; CapCut is the planned video editor.
+Steph created the source character and club art with ChatGPT; the team confirms permission to use it. OpenAI image generation adapted that art into game presentation assets. OpenAI APIs provide speech and dialogue decisions; Codex assisted development. These services are used under their applicable service terms. Jetha supplied Suno-generated music; the normal transition cue is procedural. The rewind uses “Record Scratch #1” by musicvision31 (Freesound, CC0 1.0). Figma supported design; CapCut is the planned video editor.
 
 The shipped MVP excludes the local Quaternius audition. No separate dataset was introduced by this MVP pass.
 
