@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import {buildSessionStart} from './prompts.mjs';
 export const STORY_LINES=[
  ['arrival','maya',"Finally. Come on—let's get closer to the dancefloor."],
- ['recognition','maya',"Wait. That's Theo. He's married—and that is not his wife."],
+ ['recognition','maya',"Wait. That's Theo. He's famous… AND married… and that is not his wife."],
  ['private','maya',"Theo? Can we talk quietly for a second? My phone's away."],
  ['space','luca',"Let's take a little space. Nobody needs an audience."],
  ['fine','theo',"...Fine. Just stop staring."],
@@ -23,7 +23,7 @@ export const STORY_LINES=[
 ].map(([id,character,text])=>{
   const direction={
     arrival: "Override the usual quick excited delivery. Warm relief on Finally, a relaxed breath, then an affectionate invitation. Unhurried natural speech, about four seconds total; not breathless or promotional.",
-    recognition: "Override the usual quick excited delivery. A genuine startled Wait, then pause about half a second as recognition lands. That's Theo is surprised disbelief. Pause again. He's married is quieter and serious. A distinct pause before and that is not his wife, with incredulous emphasis on not. Let the discovery unfold over roughly six to eight seconds. No laughter, no cheerfulness, no rushed words.",
+    recognition: "Override the usual quick excited delivery. A genuine startled Wait, then pause about half a second as recognition lands. That's Theo is surprised disbelief. Pause again. He's famous establishes recognition of a public figure, not a personal acquaintance. Pause before AND married, with incredulous emphasis on AND and a more serious tone. A distinct pause before and that is not his wife, with incredulous emphasis on not. Let the discovery unfold over roughly six to eight seconds. No laughter, no cheerfulness, no rushed words.",
     recording: "Override the usual quick excited delivery. Deliberately slow, measured delivery over five seconds. No way is stunned disbelief, stretched slightly, followed by a full half-second pause. Then say I am recording this using the exact script contraction, as a considered impulsive decision. Pause a full half-second again. Theo—seriously? is indignant disbelief, with a beat between the name and seriously. Keep the exact script, never narrate directions. Do not rush, laugh, tease, or scream.",
   }[id];
   return direction?{id,character,text,direction}:{id,character,text};

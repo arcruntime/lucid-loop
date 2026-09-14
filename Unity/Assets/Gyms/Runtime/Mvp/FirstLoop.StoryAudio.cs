@@ -11,7 +11,7 @@ namespace LucidLoop.Gyms.Mvp
         readonly Dictionary<string,AudioClip> storyAudio=new Dictionary<string,AudioClip>();
         readonly Dictionary<string,string> storyIds=new Dictionary<string,string>{
             {"Finally. Come on—let's get closer to the dancefloor.","arrival"},
-            {"Wait. That's Theo. He's married—and that is not his wife.","recognition"},
+            {"Wait. That's Theo. He's famous… AND married… and that is not his wife.","recognition"},
             {"Theo? Can we talk quietly for a second? My phone's away.","private"},
             {"Let's take a little space. Nobody needs an audience.","space"},
             {"...Fine. Just stop staring.","fine"},

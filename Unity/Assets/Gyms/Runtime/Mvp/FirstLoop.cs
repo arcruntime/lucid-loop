@@ -210,7 +210,7 @@ namespace LucidLoop.Gyms.Mvp
         IEnumerator Encounter()
         {
             Busy=true; CloseConversation(); Stop(Player); Stop(agents[Maya]); Refresh();
-            yield return Say("MAYA","Wait. That's Theo. He's married—and that is not his wife.");
+            yield return Say("MAYA","Wait. That's Theo. He's famous… AND married… and that is not his wife.");
             if(State.CanPrevent)
             {
                 yield return Say("MAYA","Theo? Can we talk quietly for a second? My phone's away.");
