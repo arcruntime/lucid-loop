@@ -66,11 +66,13 @@ namespace LucidLoop.CharacterArt.Editor
     mat.SetTexture("_BaseMap",texture);
     mat.SetColor("_BaseColor",texture?Color.white:entry.baseColor!=null&&entry.baseColor.Length>=3?new Color(entry.baseColor[0],entry.baseColor[1],entry.baseColor[2],1):Color.white);
     if(entry.linearRgbGain!=null&&entry.linearRgbGain.Length>=3)mat.SetVector("_AlbedoGain",new Vector4(entry.linearRgbGain[0],entry.linearRgbGain[1],entry.linearRgbGain[2],1));
-    var name=original.name.ToLowerInvariant();bool face=entry.closedEye!=null||name.Contains("headskin")||name.Contains("faceskin")||name.Contains("head_skin");
+    // JsonUtility can create an empty nested object for an omitted JSON field.
+    // Eye-atlas sampling requires actual authored paths, not merely an object.
+    var name=original.name.ToLowerInvariant();bool eyelids=entry.closedEye!=null&&!string.IsNullOrWhiteSpace(entry.closedEye.color)&&!string.IsNullOrWhiteSpace(entry.closedEye.mask);bool face=eyelids||name.Contains("headskin")||name.Contains("faceskin")||name.Contains("head_skin")||name.Contains("lippatch");
     mat.SetFloat("_FaceLighting",face?1:0);mat.SetFloat("_AccentStrength",.28f);mat.SetFloat("_AccentCap",.45f);
     mat.SetFloat("_UseWorldFace",1);mat.SetVector("_FaceForwardWorld",Vector3.back);mat.SetVector("_FaceRightWorld",Vector3.left);
     if(name.Contains("cavity"))mat.SetFloat("_Unlit",1);
-    if(face){mat.SetTexture("_ClosedEyeMap",AssetDatabase.LoadAssetAtPath<Texture2D>(Root+"/Textures/closed-eye-color.png"));mat.SetTexture("_ClosedEyeMask",AssetDatabase.LoadAssetAtPath<Texture2D>(Root+"/Textures/closed-eye-mask.png"));mat.EnableKeyword("_CLOSED_EYE_CORRECTION");}
+    if(eyelids){mat.SetTexture("_ClosedEyeMap",AssetDatabase.LoadAssetAtPath<Texture2D>(Root+"/Textures/closed-eye-color.png"));mat.SetTexture("_ClosedEyeMask",AssetDatabase.LoadAssetAtPath<Texture2D>(Root+"/Textures/closed-eye-mask.png"));mat.EnableKeyword("_CLOSED_EYE_CORRECTION");}
     var path=Root+"/Materials/"+string.Concat(mat.name.Select(c=>Path.GetInvalidFileNameChars().Contains(c)?'_':c))+".mat";
     var old=AssetDatabase.LoadAssetAtPath<Material>(path);if(old){EditorUtility.CopySerialized(mat,old);UnityEngine.Object.DestroyImmediate(mat);mat=old;}else AssetDatabase.CreateAsset(mat,path);
     cache[original]=mat;return mat;

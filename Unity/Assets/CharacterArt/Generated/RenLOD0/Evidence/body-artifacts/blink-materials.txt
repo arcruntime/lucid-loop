@@ -1,0 +1,1 @@
+PASS: exactly one authored head-skin material uses eyelid correction; body/clothes/accessories have no eyelid maps or keyword. Optional JSON objects require populated color AND mask paths.

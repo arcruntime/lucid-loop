@@ -54,13 +54,15 @@ namespace LucidLoop.CharacterArt.Tests
             Assert.That(Weight("Face.speech_A"), Is.EqualTo(100));
             Assert.That(Weight("Face.eyeBlinkL"), Is.EqualTo(75));
             Assert.That(Weight("Face.eyeBlinkR"), Is.Zero);
-            Assert.That(Weight("Hair.capOn"), Is.EqualTo(100));
+            Assert.That(Weight("Hair.capOn"), Is.Zero);
+            Assert.That(controller.Cap.activeSelf, Is.True);
 
             controller.Cap.SetActive(false);
             controller.SetSpeechWeights(new Dictionary<string, float> { ["speech_FV"] = .8f });
             Invoke("LateUpdate");
             Assert.That(Weight("Face.speech_A"), Is.Zero);
             Assert.That(Weight("Face.speech_FV"), Is.EqualTo(80).Within(.001f));
+            Assert.That(controller.Cap.activeSelf, Is.False);
             Assert.That(Weight("Face.eyeBlinkL"), Is.EqualTo(75));
             Assert.That(Weight("Hair.capOn"), Is.Zero);
         }
@@ -78,7 +80,8 @@ namespace LucidLoop.CharacterArt.Tests
             Invoke("LateUpdate");
             Assert.That(Weight("Face.speech_MBP"), Is.Zero);
             Assert.That(Weight("Face.speech_A"), Is.Zero);
-            Assert.That(Weight("Hair.capOn"), Is.EqualTo(100));
+            Assert.That(Weight("Hair.capOn"), Is.Zero);
+            Assert.That(controller.Cap.activeSelf, Is.True);
         }
 
         [Test]

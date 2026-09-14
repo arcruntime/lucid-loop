@@ -1,0 +1,1 @@
+PASS: fixed LOD0 and LOD1 open/closed blink captures have zero changed pixels in the bottom62% (thighs/lower legs included). Full images retained to confirm eyelids still close.
