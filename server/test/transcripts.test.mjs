@@ -39,3 +39,21 @@ test("rejects malformed input and reports bounded history exhaustion", () => {
   assert.equal(store.snapshot().dropped, 1);
   assert.equal(store.snapshot().fragments.length, 1);
 });
+
+test('speech memory bounds serialized metadata and escaped Unicode without losing original source correlation', async () => {
+  const { createHash } = await import('node:crypto');
+  const store = createTranscriptStore();
+  const hugeId = 'provider-event-'.repeat(20000);
+  const text = '\u0000"\\\u65e5'.repeat(4000);
+  assert.equal(store.append('prior', 'theo', 'loop1', delta(hugeId, text, 'output')), true);
+  const memory = store.speechMemory('theo', 'loop1');
+  assert.ok(Buffer.byteLength(JSON.stringify(memory)) <= 32768);
+  assert.equal(memory.incomplete, true);
+  assert.equal(memory.observations[0].excerpt, true);
+  assert.deepEqual(memory.observations[0].eventId, {
+    sha256: createHash('sha256').update(hugeId).digest('hex'), digestOfOriginal: true,
+  });
+  assert.equal(store.snapshot().fragments[0].eventId, hugeId);
+  assert.ok(text.startsWith(memory.observations[0].text));
+  assert.deepEqual(store.speechMemory('theo', 'loop1', { excludeSessionId: 'prior' }).observations, []);
+});

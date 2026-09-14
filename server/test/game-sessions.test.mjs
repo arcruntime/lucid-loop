@@ -138,3 +138,79 @@ test('typed and spoken history use non-authorizing correlation IDs distinct from
   assert.equal(registry.npcContext(credentials, secondLease).ok, true);
   assert.equal(registry.appendTranscript(credentials, firstLease, { ...delta, event_id: 'old' }).ok, false);
 });
+
+test('NPC utterance memory survives startup window with contradictory claims, isolation and reset fences', () => {
+  const registry = createGameSessions({ definitionFactory }); const { credentials } = registry.create();
+  const first = registry.attach(credentials, 'theo'); const lease = first.lease.leaseId;
+  const output = (event_id, text) => ({ ...delta, type: 'session.output_transcript.delta', event_id, delta: text });
+  assert.equal(registry.appendTranscript(credentials, lease, output('denial', 'I have never met her.')).appended, true);
+  assert.equal(registry.appendTranscript(credentials, lease, output('denial', 'I have never met her.')).appended, false);
+  registry.appendTranscript(credentials, lease, output('admission', 'I know her; I denied it earlier.'));
+  registry.appendTranscript(credentials, lease, output('later', 'Later conversation. '.repeat(160)));
+  const snapshot = registry.publicSnapshot(credentials).snapshot;
+  assert.equal(snapshot.revision, 0, 'Unverified speech does not mutate gameplay revisions');
+  assert.deepEqual(snapshot.playerDiscoveries, []);
+  registry.detach(credentials, lease);
+  const second = registry.attach(credentials, 'theo');
+  assert.equal(registry.appendTranscript(credentials, lease, output('stale', 'Obsolete claim')).ok, false);
+  const reopened = registry.npcContext(credentials, second.lease.leaseId);
+  assert.doesNotMatch(JSON.stringify(reopened.history), /never met her|denied it earlier/);
+  const memory = reopened.context.speechMemory;
+  assert.equal(memory.kind, 'unverified_npc_speech_fragments');
+  assert.deepEqual(memory.audience, ['theo', 'player']);
+  assert.equal(memory.observations.length, 3);
+  assert.match(memory.observations[0].text, /never met her/);
+  assert.match(memory.observations[1].text, /denied it earlier/);
+  assert.equal(memory.observations[0].eventId, 'denial');
+  assert.match(memory.observations[0].sessionId, /^conversation_/);
+  assert.equal(memory.incomplete, false);
+  assert.equal(Object.hasOwn(memory.observations[0], 'knownLie'), false);
+  assert.deepEqual(reopened.context.knownFacts, []);
+  assert.deepEqual(reopened.context.claims, [], 'Unverified fragments do not become adjudicated claims');
+  const maya = registry.attach(credentials, 'maya');
+  assert.deepEqual(registry.npcContext(credentials, maya.lease.leaseId).context.speechMemory.observations, []);
+  const confirmed = registry.trustedMutation(credentials, maya.lease.leaseId, 'confirmFact', { ...fence(snapshot), factId: 'clue', recipients: ['player'], source: 'witness' });
+  const reset = registry.reset(credentials, fence(confirmed.snapshot));
+  assert.equal(reset.outcome.accepted, true);
+  assert.equal(registry.appendTranscript(credentials, maya.lease.leaseId, output('old-loop', 'Old loop claim')).ok, false);
+  const fresh = registry.attach(credentials, 'theo');
+  assert.deepEqual(registry.npcContext(credentials, fresh.lease.leaseId).context.speechMemory.observations, []);
+  assert.equal(reset.snapshot.playerDiscoveries.length, 1);
+  assert.equal(registry.history(credentials, { npcId: 'theo', loopIndex: 1 }).history.fragments.length, 3, 'Player history retains old-loop conversation');
+});
+
+test('NPC utterance memory retains its earliest evidence and explicitly reports capacity', () => {
+  const registry = createGameSessions({ definitionFactory }); const { credentials } = registry.create();
+  const { lease } = registry.attach(credentials, 'theo');
+  for (let i = 0; i < 140; i++) registry.appendTranscript(credentials, lease.leaseId,
+    { ...delta, type: 'session.output_transcript.delta', event_id: 'speech-' + i, delta: `${i}:` + 'x'.repeat(200) });
+  const reopened = registry.attach(credentials, 'theo');
+  const memory = registry.npcContext(credentials, reopened.lease.leaseId).context.speechMemory;
+  assert.equal(memory.observations[0].eventId, 'speech-0');
+  assert.equal(memory.incomplete, true);
+  assert.ok(memory.observations.length <= 128);
+  assert.ok(memory.observations.reduce((n, f) => n + f.text.length, 0) <= 16000);
+  assert.ok(Buffer.byteLength(JSON.stringify(memory)) <= 32768);
+  assert.equal(memory.observations.at(-1).excerpt, true);
+});
+
+test('speech memory accepts only validated NPC output provenance, not user assertions or spoofed authority', () => {
+  const registry = createGameSessions({ definitionFactory }); const { credentials } = registry.create();
+  const { lease } = registry.attach(credentials, 'theo');
+  registry.appendTranscript(credentials, lease.leaseId, delta);
+  registry.appendTyped(credentials, lease.leaseId, { requestId: 'typed1', text: 'You said Maya did it.' });
+  assert.equal(registry.appendTranscript(credentials, lease.leaseId, { ...delta, type: 'session.output_transcript.delta', event_id: 'invalid', start_ms: -1 }).appended, false);
+  registry.appendTranscript(credentials, lease.leaseId, { ...delta, type: 'session.output_transcript.delta', event_id: 'actual',
+    delta: 'Maya did it.', npcId: 'maya', audience: ['luca'], knownLie: false, factId: 'hidden', loopId: 'invented' });
+  assert.deepEqual(registry.npcContext(credentials, lease.leaseId).context.speechMemory.observations, [], 'Current session speech is already in provider context');
+  const reopened = registry.attach(credentials, 'theo');
+  const projection = registry.npcContext(credentials, reopened.lease.leaseId);
+  assert.equal(projection.context.speechMemory.observations.length, 1);
+  const observation = projection.context.speechMemory.observations[0];
+  assert.equal(observation.npcId, 'theo');
+  assert.notEqual(observation.loopId, 'invented');
+  assert.equal(Object.hasOwn(observation, 'factId'), false);
+  assert.equal(Object.hasOwn(observation, 'knownLie'), false);
+  assert.deepEqual(projection.context.speechMemory.audience, ['theo', 'player']);
+  assert.deepEqual(projection.context.knownFacts, []);
+});

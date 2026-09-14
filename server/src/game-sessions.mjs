@@ -97,7 +97,8 @@ export function createGameSessions({ definitionFactory, encounterFactory = creat
     npcContext(credentials, leaseId) {
       const game = leased(credentials, leaseId); if (!game) return unauthorized();
       const s = game.encounter.snapshot();
-      return { ok: true, context: game.encounter.context(game.active.npcId),
+      return { ok: true, context: { ...game.encounter.context(game.active.npcId),
+        speechMemory: game.transcripts.speechMemory(game.active.npcId, s.loopId, { excludeSessionId: game.active.correlationId }) },
         history: game.transcripts.history(game.active.npcId, s.loopId) };
     },
     history(credentials, { npcId, loopIndex } = {}) {

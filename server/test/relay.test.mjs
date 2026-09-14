@@ -651,23 +651,26 @@ test("invalid, oversized, and excess-session messages are bounded", async () => 
 
 test("client disconnect requests upstream close and waits only to the close timeout", async () => {
   let closeReceived = false;
-  let upstreamClosed = false;
+  let resolveUpstreamClose;
+  const upstreamClose = new Promise(resolve => resolveUpstreamClose = resolve);
   const upstream = await makeUpstream({ onConnection(socket) {
     socket.on("message", data => {
       const event = JSON.parse(data.toString());
       if (event.type === "session.start") socket.send(JSON.stringify({ type: "session.started", session: { id: "live_4" } }));
       if (event.type === "session.close") closeReceived = true;
     });
-    socket.on("close", () => upstreamClosed = true);
+    socket.on("close", code => resolveUpstreamClose(code));
   }});
   const { relay, url } = await makeRelay({ upstreamUrl: upstream.url, closeTimeoutMs: 30 });
   try {
     const client = await openClient(url); client.send(START);
     await nextJson(client); await nextJson(client); await nextJson(client);
     client.close(); await waitClosed(client);
-    await new Promise(resolve => setTimeout(resolve, 60));
-    assert.equal(closeReceived, true);
-    assert.equal(upstreamClosed, true);
+    // Observe the actual timeout-driven transport close. A fixed sleep races
+    // event-loop scheduling when the full test suite runs concurrently.
+    const code = await bounded(upstreamClose, "upstream close after unanswered session.close");
+    assert.equal(closeReceived, true, "The relay must request graceful finalization before its deadline");
+    assert.equal(code, 1006, "With no session.closed response, the close timeout must terminate upstream");
   } finally { await closeRelay(relay, upstream); }
 });
 
@@ -759,4 +762,46 @@ test("test mailbox rejects pending readers when the peer closes", async () => {
     await rejected;
     await waitClosed(client);
   } finally { client?.terminate(); await upstream.close(); }
+});
+
+test("real relay event path restores early NPC assertions beyond startup transcript window", async () => {
+  const games = createGameSessions({ definitionFactory: () => ({}) });
+  const created = games.create(); const starts = [];
+  const upstream = await makeUpstream({ onConnection(socket) {
+    socket.on("message", raw => {
+      const event = JSON.parse(raw);
+      if (event.type === "session.start") {
+        starts.push(event);
+        socket.send(JSON.stringify({ type: "session.started", session: { id: `memory_${starts.length}` } }));
+        if (starts.length === 1) {
+          const send = (id, text) => socket.send(JSON.stringify({ type: "session.output_transcript.delta", event_id: id, delta: text, start_ms: 0, end_ms: 100 }));
+          send("denial", "I have never met her.");
+          send("denial", "I have never met her.");
+          send("admission", "I know her; I denied it earlier.");
+          send("tail", "We discussed something else. ".repeat(100));
+        }
+      } else if (event.type === "session.close") socket.send(JSON.stringify({ type: "session.closed", usage: {} }));
+    });
+  } });
+  const { relay, url } = await makeRelay({ upstreamUrl: upstream.url, gameSessions: games });
+  try {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const client = await openClient(url);
+      client.send(JSON.stringify({ type: "gym.start", character: "theo", ...created.credentials }));
+      if (attempt === 0) {
+        let event;
+        do { event = await nextJson(client); } while (event.event_id !== "tail");
+      } else await untilJson(client, "session.started");
+      const closed = waitClosed(client); client.send(JSON.stringify({ type: "session.close" })); await closed;
+    }
+    assert.doesNotMatch(JSON.stringify(starts[1].session.input), /never met her|denied it earlier/);
+    const instructions = starts[1].session.instructions;
+    assert.match(instructions, /unverified_npc_speech_fragments/);
+    assert.match(instructions, /I have never met her/);
+    assert.match(instructions, /I know her; I denied it earlier/);
+    assert.match(instructions, /possibly incomplete or false/);
+    assert.equal(games.history(created.credentials).history.fragments.length, 3);
+    assert.equal(games.publicSnapshot(created.credentials).snapshot.revision, 0);
+    assert.deepEqual(games.publicSnapshot(created.credentials).snapshot.playerDiscoveries, []);
+  } finally { await closeRelay(relay, upstream); }
 });
