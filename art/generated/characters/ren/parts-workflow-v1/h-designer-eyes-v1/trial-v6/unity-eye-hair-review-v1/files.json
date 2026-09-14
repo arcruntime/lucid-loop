@@ -1,0 +1,319 @@
+{
+  "files": [
+    {
+      "file": "baseline--club-front.png",
+      "sha256": "32537516a4b868dd6066a79b74a3918130f65e08fe1354c174121457c7090af0",
+      "bytes": 543639
+    },
+    {
+      "file": "baseline--lower-eye-close.png",
+      "sha256": "ddd5c7c27553762388da5f68aaaff3a982dd59f060b05fe679ae6de40b534ab9",
+      "bytes": 23036
+    },
+    {
+      "file": "baseline--neutral-front.png",
+      "sha256": "48319d11e1264b2bdc2251162e39a8c390a919ca78debe28955775a669c1c076",
+      "bytes": 526446
+    },
+    {
+      "file": "baseline--neutral-other-profile.png",
+      "sha256": "a97e1ec2d06a1587ae39f879f5f894a65029f0caa4de8a9031b00d16a2ef29df",
+      "bytes": 532933
+    },
+    {
+      "file": "baseline--neutral-profile.png",
+      "sha256": "1357174c4b05fcb47a2c60ea0b1e22c989b980611c2a5cd74a636dd510cb2697",
+      "bytes": 504061
+    },
+    {
+      "file": "baseline--neutral-quarter.png",
+      "sha256": "b760118e1e266a9f8f135a5ac175acc4fa9295172ea55a31a3ee9c5abe9c1227",
+      "bytes": 522055
+    },
+    {
+      "file": "baseline--source-camera.png",
+      "sha256": "19f99b07ebe44590c1b681c4a179b07ceaecd0420c6bfccb012bff747a14e1c0",
+      "bytes": 138726
+    },
+    {
+      "file": "baseline--source-portrait-paired.png",
+      "sha256": "eaa0b7ebef4edb3f78a99fcd5fa9fae9f74bc84bafa7717bc9597f741c03a993",
+      "bytes": 1164379
+    },
+    {
+      "file": "baseline--unlit-front.png",
+      "sha256": "c8756c2e9f38eeae6d3473c171ffe8f240f91de52a093d35a6033afcf6aa626d",
+      "bytes": 415372
+    },
+    {
+      "file": "BuildProvenance.json",
+      "sha256": "89fb1fccfd23e82f600c95b37b010a94b8effdb2b464edfd8162701f842d1926",
+      "bytes": 4219
+    },
+    {
+      "file": "combined--club-front.png",
+      "sha256": "11e7f468ef69b191f679037ff0ea8b1d2d39779f0c44f9cbe6a8de5707c06ff2",
+      "bytes": 589095
+    },
+    {
+      "file": "combined--lower-eye-close.png",
+      "sha256": "63d384db3657ebe14ef24079a6eec7634a77b27a23736dd49e16f1265acec6e3",
+      "bytes": 23215
+    },
+    {
+      "file": "combined--neutral-front.png",
+      "sha256": "51a161dc8e277d8b5f465e1bcf7f80c12fb40bda6b2911cf60a17ef29ddb2861",
+      "bytes": 573850
+    },
+    {
+      "file": "combined--neutral-other-profile.png",
+      "sha256": "14a379326cf38f73da17c30eabc726fbec1e4e3ecd5c9e58c84d7672bccc5b42",
+      "bytes": 621150
+    },
+    {
+      "file": "combined--neutral-profile.png",
+      "sha256": "fe9a5bc2f8ec3c8f533983d6da25f65067c3d92f582ce7fcc73c046083c0dda6",
+      "bytes": 588514
+    },
+    {
+      "file": "combined--neutral-quarter.png",
+      "sha256": "4c7b5d25ace429cdfae55887854d5d119e49d538db915fbf18f0093bc32a58a2",
+      "bytes": 580582
+    },
+    {
+      "file": "combined--source-camera.png",
+      "sha256": "1eec928d85b6e921b7dc5066a4bbbbe50bd0d315f5b8cb0205ba8235f27c08e2",
+      "bytes": 147935
+    },
+    {
+      "file": "combined--source-portrait-paired.png",
+      "sha256": "f27e3affc4b681de1baba7c961bdc29de05a5afa1639df766580f66b5433db41",
+      "bytes": 1188131
+    },
+    {
+      "file": "combined--unlit-front.png",
+      "sha256": "ade133445a28277625d876f681f92cf7edba39e9a9801c646ba20084e63fe2da",
+      "bytes": 491818
+    },
+    {
+      "file": "directional-hair--club-front.png",
+      "sha256": "cc446804dbe676c62df2508419eb43e87f774c151075f78238ec7a7009df8a4a",
+      "bytes": 588690
+    },
+    {
+      "file": "directional-hair--neutral-front.png",
+      "sha256": "0d4f64153724a8e24e633398b38849d4df6461e4b7ec05181510e1373e35c9cc",
+      "bytes": 573499
+    },
+    {
+      "file": "directional-hair--neutral-other-profile.png",
+      "sha256": "a5bd27c8dc7ce42ffeda5d6fc0bee3d8379a5727f59554a3f26e7d27504df03d",
+      "bytes": 621030
+    },
+    {
+      "file": "directional-hair--neutral-profile.png",
+      "sha256": "fe9a5bc2f8ec3c8f533983d6da25f65067c3d92f582ce7fcc73c046083c0dda6",
+      "bytes": 588514
+    },
+    {
+      "file": "directional-hair--neutral-quarter.png",
+      "sha256": "3bb3a18f75ce87be973309a0452f92427160dab02d5d8455e0ad974212faa4a3",
+      "bytes": 580539
+    },
+    {
+      "file": "directional-hair--source-camera.png",
+      "sha256": "b436a6e815594db1c6810576907076f1ed740219ee4f3e71a729c3c221277e7d",
+      "bytes": 147870
+    },
+    {
+      "file": "directional-hair--source-portrait-paired.png",
+      "sha256": "1b413b18e8aeded057f8f5f17c520f37ebcb5cf04822797e08ba7cb184a1c02e",
+      "bytes": 1187971
+    },
+    {
+      "file": "directional-hair--unlit-front.png",
+      "sha256": "1ccff168700ff86020f6a9ea0e76c908289987d0d7fcc367b3140d1f6052b831",
+      "bytes": 491465
+    },
+    {
+      "file": "EyeHairLiveEvidence.json",
+      "sha256": "f53b3b5968c2a42bc1f7fc2482535543ae04aead1ccc15d1a586c6cd1e73037f",
+      "bytes": 114993
+    },
+    {
+      "file": "import-settings/Hair/Ren_H_Hair_DirectionalBlond_Base_4K.png.meta",
+      "sha256": "4ba1169f0c2bd6dcde09dee87191a4fe5637c72c8f4f92a7d555971d35a815ce",
+      "bytes": 3717
+    },
+    {
+      "file": "import-settings/Hair/Ren_H_Hair_DirectionalBlond_Shadow_2K.png.meta",
+      "sha256": "c9d394bb1f0e28589f3cc3ecee5699e0c8aea1dc1d1b62a2bcb82b7f23fed02d",
+      "bytes": 3717
+    },
+    {
+      "file": "import-settings/Iris/Ren_DesignerEye_L_Iris_PigmentCandidate.asset.meta",
+      "sha256": "baf538e428ac73c1765eb3572e46ccc7292b8609bae84af5d19ba8bef2c776b4",
+      "bytes": 188
+    },
+    {
+      "file": "import-settings/Iris/Ren_DesignerEye_R_Iris_PigmentCandidate.asset.meta",
+      "sha256": "0965a45e5c3f59421ab74be924204d478fa567ec75f84434c9930c8b4900c243",
+      "bytes": 188
+    },
+    {
+      "file": "import-settings/Return/Ren_DesignerEye_ApertureReturn.fbx.meta",
+      "sha256": "94e0bb901b9d3723ff5c728857ff6a33fe367ec87795d94b7bcf786a9f7469ac",
+      "bytes": 2891
+    },
+    {
+      "file": "iris-pigment--club-front.png",
+      "sha256": "27723ebf3eed01c35efe2d16b97ebaa2bdd80b58694b6f83aa74d06045ad2a7d",
+      "bytes": 544123
+    },
+    {
+      "file": "iris-pigment--neutral-front.png",
+      "sha256": "3228f348964c8b5fe7a2d6a51e97ea1f09d25f2aafe581ef9d2b1b6ac2dd225b",
+      "bytes": 526921
+    },
+    {
+      "file": "iris-pigment--neutral-other-profile.png",
+      "sha256": "1d0570cb0201d8f16cc98762f9fd354d3404b65c42a48ffd4c8db200faaad005",
+      "bytes": 532954
+    },
+    {
+      "file": "iris-pigment--neutral-profile.png",
+      "sha256": "1357174c4b05fcb47a2c60ea0b1e22c989b980611c2a5cd74a636dd510cb2697",
+      "bytes": 504061
+    },
+    {
+      "file": "iris-pigment--neutral-quarter.png",
+      "sha256": "036641edff997a509a1f79c01d8007499e28ff6d1a77806f34def62d59f4f684",
+      "bytes": 522181
+    },
+    {
+      "file": "iris-pigment--source-camera.png",
+      "sha256": "013a57362c1f79900c7e1e2dfe67678bd7eae3f53f9644a8f4e2f35fd0b567ef",
+      "bytes": 138795
+    },
+    {
+      "file": "iris-pigment--source-portrait-paired.png",
+      "sha256": "4e862518f94aaec8aef9dd8c3bbf42e4195114aba282ed9b3efe0f94b0945f22",
+      "bytes": 1164517
+    },
+    {
+      "file": "iris-pigment--unlit-front.png",
+      "sha256": "644fc64bc2312599eae48d3886165853287f35d4c358ae91f2f65cf38fb2cdff",
+      "bytes": 415791
+    },
+    {
+      "file": "IrisImportAudit.json",
+      "sha256": "58542caca57c102a73aaa48ac5cc92e0af704aa9e7d3840b10a109c95b1607f9",
+      "bytes": 14242
+    },
+    {
+      "file": "lower-return--club-front.png",
+      "sha256": "dea32b06a8a7719071cb5fc5b8fee9a7b96425ce2fd90b8c4f5cc74f1983fde1",
+      "bytes": 543563
+    },
+    {
+      "file": "lower-return--lower-eye-close.png",
+      "sha256": "68317327304c3f89f6217bef2a2ba07129a28f00399946598d4d127793bd1624",
+      "bytes": 22916
+    },
+    {
+      "file": "lower-return--neutral-front.png",
+      "sha256": "444b589c1566a260dc8ba9d97083f263875c9d7774796ff095616808d017b898",
+      "bytes": 526336
+    },
+    {
+      "file": "lower-return--neutral-other-profile.png",
+      "sha256": "7b380a8c57673f01ca7a537ac16af9504e514fd0ce3f0881e3b1554801defafe",
+      "bytes": 532946
+    },
+    {
+      "file": "lower-return--neutral-profile.png",
+      "sha256": "1357174c4b05fcb47a2c60ea0b1e22c989b980611c2a5cd74a636dd510cb2697",
+      "bytes": 504061
+    },
+    {
+      "file": "lower-return--neutral-quarter.png",
+      "sha256": "6dd2fe94c2b9ffaa034461ae3bfea66b9045af42bfd4acb9e44193635198e40b",
+      "bytes": 521882
+    },
+    {
+      "file": "lower-return--source-camera.png",
+      "sha256": "19f99b07ebe44590c1b681c4a179b07ceaecd0420c6bfccb012bff747a14e1c0",
+      "bytes": 138726
+    },
+    {
+      "file": "lower-return--source-portrait-paired.png",
+      "sha256": "eaa0b7ebef4edb3f78a99fcd5fa9fae9f74bc84bafa7717bc9597f741c03a993",
+      "bytes": 1164379
+    },
+    {
+      "file": "lower-return--unlit-front.png",
+      "sha256": "7d80a522a4ab2997b2a8c583ee56b5f2e5b6a254a8a6ccc989c01b3e1642a537",
+      "bytes": 415192
+    },
+    {
+      "file": "PixelVerification.json",
+      "sha256": "6d7c71e8db26e53656e4d3c6913385c502384246721006f7a61473ab0c9301f9",
+      "bytes": 6568
+    },
+    {
+      "file": "README.md",
+      "sha256": "39cc29cf4cfec7ab7e9cfba3175d4e5216dd41961ceeabc1171e0fe9e162f6b7",
+      "bytes": 4386
+    },
+    {
+      "file": "ReturnImportAudit.json",
+      "sha256": "31bf4fb47741f87e23c28f755c94b555859c91d09fb0e0c240c15c97772ac572",
+      "bytes": 2249
+    },
+    {
+      "file": "source/Editor/RenDesignerEyeHairReviewBuilder.cs",
+      "sha256": "11113e260c0660de9815d5eac17e43432ce1b940a3fe5c39e3610733d8c8bdd5",
+      "bytes": 4995
+    },
+    {
+      "file": "source/Editor/RenDesignerEyeHairReviewBuilder.cs.meta",
+      "sha256": "5ed3c0b567c84287481de74ef544f6e0b3d91d16368ec5d7b36fcb5d7358c073",
+      "bytes": 59
+    },
+    {
+      "file": "source/Editor/RenDesignerIrisColorImport.cs",
+      "sha256": "5ad2f8b522ab1a6c516a2e79f1424e5a72187404351df8b549114c848997d3fd",
+      "bytes": 9999
+    },
+    {
+      "file": "source/Editor/RenDesignerIrisColorImport.cs.meta",
+      "sha256": "d6fc14d519eba32894ec309d369bb170aafec6b6ad3018012e110b7103f1bf85",
+      "bytes": 59
+    },
+    {
+      "file": "source/Editor/RenDesignerReturnImport.cs",
+      "sha256": "92eb0f77e4069207455719bb08474fd4c833cd98d68814f74dbf92caf832e4e3",
+      "bytes": 33537
+    },
+    {
+      "file": "source/Editor/RenDesignerReturnImport.cs.meta",
+      "sha256": "404d4874010902d7fd1c878cbc83c42701eacd24ebb945adf871ad0e5dac21f7",
+      "bytes": 59
+    },
+    {
+      "file": "source/Runtime/RenDesignerEyeHairReview.cs",
+      "sha256": "6679daf3c9d23586036b622f489647e6c290753d490c7d5376caf3657600287f",
+      "bytes": 10620
+    },
+    {
+      "file": "source/Runtime/RenDesignerEyeHairReview.cs.meta",
+      "sha256": "314ad1e71c74ce9fb3060d36fe39295e810f1d5d100a1ae37d5337298b2f25c3",
+      "bytes": 59
+    },
+    {
+      "file": "verify_capture.py",
+      "sha256": "547234a6fd8d4aaf3a1baf0847379cf3634acea9f7328d49f448e87e887f219a",
+      "bytes": 3046
+    }
+  ]
+}

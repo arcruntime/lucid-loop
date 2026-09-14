@@ -1,0 +1,206 @@
+{
+  "captures": 18,
+  "allReadbacksAndFileHashesPass": true,
+  "resetPixelExact": {
+    "front": true,
+    "quarter": true,
+    "profile": true
+  },
+  "poses": {
+    "front": {
+      "25": {
+        "changedPixels": 37065,
+        "maximumByteDifference": 146,
+        "meanAbsoluteByteDifference": 0.13506896407515914,
+        "bbox": [
+          535,
+          478,
+          1058,
+          1362
+        ]
+      },
+      "50": {
+        "changedPixels": 47126,
+        "maximumByteDifference": 164,
+        "meanAbsoluteByteDifference": 0.2995280513057002,
+        "bbox": [
+          534,
+          474,
+          1069,
+          1386
+        ]
+      },
+      "75": {
+        "changedPixels": 50027,
+        "maximumByteDifference": 165,
+        "meanAbsoluteByteDifference": 0.42669056080005785,
+        "bbox": [
+          534,
+          473,
+          1069,
+          1387
+        ]
+      },
+      "100": {
+        "changedPixels": 50457,
+        "maximumByteDifference": 165,
+        "meanAbsoluteByteDifference": 0.5339578699182581,
+        "bbox": [
+          534,
+          473,
+          1069,
+          1387
+        ]
+      }
+    },
+    "quarter": {
+      "25": {
+        "changedPixels": 27598,
+        "maximumByteDifference": 154,
+        "meanAbsoluteByteDifference": 0.11722946166992188,
+        "bbox": [
+          406,
+          539,
+          1034,
+          1384
+        ]
+      },
+      "50": {
+        "changedPixels": 33831,
+        "maximumByteDifference": 164,
+        "meanAbsoluteByteDifference": 0.25260995935510705,
+        "bbox": [
+          404,
+          539,
+          1041,
+          1387
+        ]
+      },
+      "75": {
+        "changedPixels": 35507,
+        "maximumByteDifference": 165,
+        "meanAbsoluteByteDifference": 0.3542312339500145,
+        "bbox": [
+          404,
+          538,
+          1041,
+          1387
+        ]
+      },
+      "100": {
+        "changedPixels": 35866,
+        "maximumByteDifference": 165,
+        "meanAbsoluteByteDifference": 0.43206504539207174,
+        "bbox": [
+          404,
+          538,
+          1041,
+          1387
+        ]
+      }
+    },
+    "profile": {
+      "25": {
+        "changedPixels": 10835,
+        "maximumByteDifference": 209,
+        "meanAbsoluteByteDifference": 0.0893930505823206,
+        "bbox": [
+          436,
+          623,
+          1098,
+          1396
+        ]
+      },
+      "50": {
+        "changedPixels": 13583,
+        "maximumByteDifference": 209,
+        "meanAbsoluteByteDifference": 0.19387633712203414,
+        "bbox": [
+          382,
+          623,
+          1098,
+          1396
+        ]
+      },
+      "75": {
+        "changedPixels": 14329,
+        "maximumByteDifference": 209,
+        "meanAbsoluteByteDifference": 0.29284936410409435,
+        "bbox": [
+          381,
+          621,
+          1098,
+          1396
+        ]
+      },
+      "100": {
+        "changedPixels": 14481,
+        "maximumByteDifference": 209,
+        "meanAbsoluteByteDifference": 0.36959909509729455,
+        "bbox": [
+          381,
+          621,
+          1098,
+          1396
+        ]
+      }
+    }
+  },
+  "priorNeutralComparison": {
+    "front": {
+      "changedPixels": 252,
+      "maximumByteDifference": 140,
+      "meanAbsoluteByteDifference": 0.0008344297055844907,
+      "bbox": [
+        576,
+        528,
+        1071,
+        1390
+      ]
+    },
+    "quarter": {
+      "changedPixels": 113,
+      "maximumByteDifference": 139,
+      "meanAbsoluteByteDifference": 0.00028553715458622684,
+      "bbox": [
+        536,
+        557,
+        1040,
+        1300
+      ]
+    },
+    "profile": {
+      "changedPixels": 24,
+      "maximumByteDifference": 11,
+      "meanAbsoluteByteDifference": 1.1161521629050926e-05,
+      "bbox": [
+        498,
+        727,
+        1051,
+        1358
+      ]
+    }
+  },
+  "eyesDuringA": {
+    "changedPixels": 556,
+    "maximumByteDifference": 1,
+    "meanAbsoluteByteDifference": 0.0030153846153846155,
+    "bbox": [
+      56,
+      0,
+      498,
+      129
+    ]
+  },
+  "eyeRegionRestoredVsPrior": {
+    "changedPixels": 2,
+    "maximumByteDifference": 1,
+    "meanAbsoluteByteDifference": 1.0256410256410256e-05,
+    "bbox": [
+      118,
+      1,
+      261,
+      124
+    ]
+  }
+}

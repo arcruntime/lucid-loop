@@ -1,0 +1,342 @@
+{
+  "status": "PRECISE_HANDOFF_READY_GPU_INTEGRATION_NOT_EXECUTED",
+  "scope": "One new staged current-H head/oral GPU test after forehead/iris/return priorities. Exactly4 verified mesh assets; no rejected historical eyes, no new eye/support/patch replacement, no production/sharedrig promotion.",
+  "sourceFbx": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx",
+  "sourceSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+  "currentBindingSnapshot": "current-mouth-bindings.json",
+  "currentBindingSnapshotSha256": "33775aae26ca19520d6de5c03cfc38c75130ec9a28a53e292184cd84fe048402",
+  "snapshotScene": "C:\\Users\\jetha\\AppData\\Local\\LucidLoopScratch\\ren-eye-import-verification\\Assets\\CharacterArt\\Generated\\Preview\\Scenes\\RenDesignerForeheadReview.unity",
+  "latestSelectedScenePolicy": "Viewer owns the latest selected base scene. Preserve its actual current materials and all recent eye/support/forehead/iris work; update binding provenance if its paths change.",
+  "sourceCompatibilityEvidence": "Viewer read-only extraction confirms current four renderers still directly use original073e FBX; no head topology/UV/cut edits. New eyes, support and temporal interface patch are separate.",
+  "persistenceReport": "../persistence-scale10000-v1/restoration-result.json",
+  "persistenceReportSha256": "d12658b3cbd90ce81d33fb08095f1d3daf8d5558393f9f53ebfebd565426dca5",
+  "coordinateScale": 10000,
+  "attachmentRule": "Keep each existing source node and every parent TRS unchanged. Add child at local position0, rotationidentity, scale.0001, and put the saved mesh on a new bone-free SKMR child. Disable only its original renderer. Do not apply frozen audit world matrix directly; current parent hierarchy supplies current registration/animation. Never multiply morph weights by10000.",
+  "meshes": [
+    {
+      "name": "Ren_H_Head",
+      "currentRendererPath": "Ren H reference animation/Motion/Source/Head/Ren_H_Head",
+      "currentMeshIdentity": {
+        "fileID": 7176641938830419920,
+        "guid": "da1e70fc56987cc46995e18007fa4674",
+        "type": 3
+      },
+      "currentMaterialSlots": [
+        {
+          "fileID": 2100000,
+          "guid": "f1afda5543674c34da8e6f2c0333e1ba",
+          "type": 2
+        },
+        {
+          "fileID": 2100000,
+          "guid": "895337e4321039d40a634ed2097d0715",
+          "type": 2
+        },
+        {
+          "fileID": 2100000,
+          "guid": "ad056ac5663d25947a6a1a5982701960",
+          "type": 2
+        }
+      ],
+      "verifiedMeshAsset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset",
+      "verifiedMeshSha256": "d9bdd80ab254c00bd5542960c2a43fe2742ff1152bffe392063628d474225fb9",
+      "vertices": 121050,
+      "triangles": 195660,
+      "savedBaseDataSha256": "3cf0de8552abd3cf2b2109e9edc1297579d3a3820ac9d92e965c3419f898d542",
+      "newChildName": "Ren_H_Head_CanonicalRender",
+      "newChildLocalPosition": [
+        0,
+        0,
+        0
+      ],
+      "newChildLocalRotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "newChildLocalScale": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "renderer": "bone-free SkinnedMeshRenderer",
+      "orderedShapes": [
+        {
+          "name": "jawOpen_A",
+          "frameWeight": 100.0,
+          "deltaSha256": "fa7eb86881cdf3f31de92fc1d0c7bbcdbdfa5181fb0ba0affd307dd0b6ceabd4"
+        },
+        {
+          "name": "mouthSeal",
+          "frameWeight": 100.0,
+          "deltaSha256": "f383bce758a1e195f3519e603181b85fc6c94f0e6c6967e88164b87d21301acb"
+        }
+      ],
+      "defaultWeights": [
+        0,
+        100
+      ]
+    },
+    {
+      "name": "Ren_H_InnerLipWall",
+      "currentRendererPath": "Ren H reference animation/Motion/Source/Head/Ren_H_InnerLipWall",
+      "currentMeshIdentity": {
+        "fileID": -5749690729483675472,
+        "guid": "da1e70fc56987cc46995e18007fa4674",
+        "type": 3
+      },
+      "currentMaterialSlots": [
+        {
+          "fileID": 2100000,
+          "guid": "c4addb0346e2ead4281f22462689b5d8",
+          "type": 2
+        }
+      ],
+      "verifiedMeshAsset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset",
+      "verifiedMeshSha256": "a3c0deb5a45cc518ee88525fd640fe7e637e800f4556089b8173b0b7cc649d16",
+      "vertices": 1440,
+      "triangles": 2560,
+      "savedBaseDataSha256": "2161559c5cb8932b047ceca1435b226ae364d8aa8606fd143c2b91989903e6d7",
+      "newChildName": "Ren_H_InnerLipWall_CanonicalRender",
+      "newChildLocalPosition": [
+        0,
+        0,
+        0
+      ],
+      "newChildLocalRotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "newChildLocalScale": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "renderer": "bone-free SkinnedMeshRenderer",
+      "orderedShapes": [
+        {
+          "name": "jawOpen_A",
+          "frameWeight": 100.0,
+          "deltaSha256": "5075ff928f6da0d90f6f8a5599d6c790ff64dfd1d53db4f13999e6da33624063"
+        },
+        {
+          "name": "mouthSeal",
+          "frameWeight": 100.0,
+          "deltaSha256": "0ea3e82c7a948d79f288692cde7d6141ce001c074b7f54277c2f1e758265a0df"
+        }
+      ],
+      "defaultWeights": [
+        0,
+        100
+      ]
+    },
+    {
+      "name": "Ren_H_OralCavity",
+      "currentRendererPath": "Ren H reference animation/Motion/Source/Head/Ren_H_OralCavity",
+      "currentMeshIdentity": {
+        "fileID": 7003666531195172776,
+        "guid": "da1e70fc56987cc46995e18007fa4674",
+        "type": 3
+      },
+      "currentMaterialSlots": [
+        {
+          "fileID": 2100000,
+          "guid": "c4addb0346e2ead4281f22462689b5d8",
+          "type": 2
+        }
+      ],
+      "verifiedMeshAsset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset",
+      "verifiedMeshSha256": "80ce657caa02ca981b563aba3a3af9b1b91bf338782fc558b11877dc6eb3c105",
+      "vertices": 5304,
+      "triangles": 9575,
+      "savedBaseDataSha256": "d0b5c7acd70df28fb6b12c1725bf2dd2f5d86e5d30710928736d31bcf2b27a72",
+      "newChildName": "Ren_H_OralCavity_CanonicalRender",
+      "newChildLocalPosition": [
+        0,
+        0,
+        0
+      ],
+      "newChildLocalRotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "newChildLocalScale": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "renderer": "bone-free SkinnedMeshRenderer",
+      "orderedShapes": [
+        {
+          "name": "jawOpen_A",
+          "frameWeight": 100.0,
+          "deltaSha256": "eb74ef72d02865638f702fc947dc297c1ee3835f7bc8704d402238a02ebf72be"
+        }
+      ],
+      "defaultWeights": [
+        0
+      ]
+    },
+    {
+      "name": "Ren_H_Tongue",
+      "currentRendererPath": "Ren H reference animation/Motion/Source/Head/Ren_H_Tongue",
+      "currentMeshIdentity": {
+        "fileID": -2747230102670996766,
+        "guid": "da1e70fc56987cc46995e18007fa4674",
+        "type": 3
+      },
+      "currentMaterialSlots": [
+        {
+          "fileID": 2100000,
+          "guid": "688e8b7371cc2f34ebf3ee55f399d26e",
+          "type": 2
+        }
+      ],
+      "verifiedMeshAsset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset",
+      "verifiedMeshSha256": "18fa671929032a8ee2ce3381eeecaf19272b6410b9bd65dfbb525998a3bdcb79",
+      "vertices": 4201,
+      "triangles": 7701,
+      "savedBaseDataSha256": "a995fc9e3bf30c81fc8b51ae8084c15f64f907ff0be2569a47b1232181f6b82b",
+      "newChildName": "Ren_H_Tongue_CanonicalRender",
+      "newChildLocalPosition": [
+        0,
+        0,
+        0
+      ],
+      "newChildLocalRotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "newChildLocalScale": [
+        0.0001,
+        0.0001,
+        0.0001
+      ],
+      "renderer": "bone-free SkinnedMeshRenderer",
+      "orderedShapes": [
+        {
+          "name": "jawOpen_A",
+          "frameWeight": 100.0,
+          "deltaSha256": "0cf3a3ef634827263b28883995a7894e65082fb8728f93dd4207a18472a77412"
+        }
+      ],
+      "defaultWeights": [
+        0
+      ]
+    }
+  ],
+  "exclusions": [
+    "All Ren_H_Eye_* historical renderers and all8 saved historical eye/lash meshes",
+    "Both saved hair assets; current hair/cap/Head/CapSocket remain intact",
+    "Current NeutralDesignerEyes/DesignerEyeRegistration hierarchy and all recent eye/iris materials",
+    "Current supportv2/forehead material partition and temporal interface patch",
+    "Static teeth/ear/jewelry/cap/support meshes and all parent transforms",
+    "Existing historical source scenes, source FBX/import settings, saved measured mesh assets"
+  ],
+  "weights": {
+    "semanticInputs": "a=clamp(jawOpen_A,0,1), s=clamp(mouthSeal,0,1)",
+    "headAndInnerWall": "Set jawOpen_A=100*a; mouthSeal=100*s*(1-a). Ordered indices0/1 must be verified by name/frameWeight.",
+    "cavityAndTongue": "Set jawOpen_A=100*a; no seal key.",
+    "default": "a0,s1",
+    "staticTeeth": "retain source renderer and transform; no invented jaw transform",
+    "eyeInterfacePatch": "Current patch audit establishes canonical jawOpen_A and mouthSeal deltas are zero (shapes may be omitted by importer). Preserve it and all current eye geometry/attachments; do not add old eye controls."
+  },
+  "materials": {
+    "rule": "Retain actual donor sharedMaterials in identical submesh order, shader variants, texture hashes/ST, render-state and graphic masks. Update review.Head renderer reference to new head child while leaving FaceFrame and source-node hierarchy unchanged.",
+    "headSlots": "Three existing skin/cheek slots; primary ArtistRose slot alone has closed-lip endpoint maps. Never apply face atlas using another UV.",
+    "closedPaintFormula": "t=clamp(a/.75,0,1); _ClosedWeight=1-t*t*(3-2*t) on existing closed-endpoint slot(s), zero elsewhere. Preserve existing _BaseMap/_ShadowMap/_ClosedBaseMap/_ClosedShadowMap and control map references/ST.",
+    "runtimeOrdering": "RenDesignerEyeReview.Awake clones materials; refinement controllers can swap shader variants. Bind after those initializations or use per-slot property blocks for only _ClosedWeight, preserving all existing properties. Do not mutate shared .mat assets.",
+    "oral": "Retain current two-sided _Cull0 cavity/tongue materials; existing static enamel stays attached.",
+    "unsupportedExpressions": "This test only varies A+seal; no smile/pucker/funnel/performance controls or new language coverage claim."
+  },
+  "preflight": [
+    "Verify exact4 saved mesh SHA hashes and persistence report; reject unknown/extraneous asset names.",
+    "Verify current source FBX073e hash, direct mesh source identities and bone-free renderers. If head topology/UV/cuts changed, stop this swap and transfer canonical deltas to that exact later source.",
+    "Compare rendered Basis triangle corners/submesh material association and UVs between current imported mesh and saved scaled mesh with inverse attachment; imported vertex counts can differ because saved copy used weldfalse. Do not require equal vertex ordinals or silently remap by nearest point.",
+    "Preserve all old source-node TRS; recompute native frame from existing Head axis markers for checks. Do not substitute audit world transform into the live scene.",
+    "Freeze hashes/corners/transforms of current eyes/support/interface patch before and after; only4 old renderers disabled and4 replacement children added.",
+    "Rebind only current head/oral consumers to the4 new SKMRs; check default A0/seal100 and cavity/tongueA0 before capture. Old rejected eyes remain disabled, old outline shell remains off."
+  ],
+  "gpuTest": {
+    "builds": 1,
+    "scopes": "Use actual Windows GPU player after current visual priorities; no repeat14mesh280pose CPU sweep absent new failure.",
+    "poses": [
+      {
+        "label": "closed",
+        "semanticJawOpenA": 0,
+        "semanticSeal": 1,
+        "actualJawWeight100": 0,
+        "actualSealWeight100": 100,
+        "closedPaintWeight": 1.0
+      },
+      {
+        "label": "mixed-A-0.25",
+        "semanticJawOpenA": 0.25,
+        "semanticSeal": 1,
+        "actualJawWeight100": 25.0,
+        "actualSealWeight100": 75.0,
+        "closedPaintWeight": 0.7407407407407407
+      },
+      {
+        "label": "mixed-A-0.5",
+        "semanticJawOpenA": 0.5,
+        "semanticSeal": 1,
+        "actualJawWeight100": 50.0,
+        "actualSealWeight100": 50.0,
+        "closedPaintWeight": 0.2592592592592593
+      },
+      {
+        "label": "mixed-A-0.75",
+        "semanticJawOpenA": 0.75,
+        "semanticSeal": 1,
+        "actualJawWeight100": 75.0,
+        "actualSealWeight100": 25.0,
+        "closedPaintWeight": 0
+      },
+      {
+        "label": "open-A",
+        "semanticJawOpenA": 1,
+        "semanticSeal": 1,
+        "actualJawWeight100": 100,
+        "actualSealWeight100": 0,
+        "closedPaintWeight": 0
+      },
+      {
+        "label": "return-closed",
+        "semanticJawOpenA": 0,
+        "semanticSeal": 1,
+        "actualJawWeight100": 0,
+        "actualSealWeight100": 100,
+        "closedPaintWeight": 1.0
+      }
+    ],
+    "views": [
+      "front",
+      "three-quarter",
+      "screen-right profile"
+    ],
+    "lighting": "Keep selected neutral lighting, camera, cap/hair and latest eye/support/iris state fixed across all poses.",
+    "captureCount": 18,
+    "recordEachCapture": [
+      "semantic a/s and actual per-renderer blendshape names/weights",
+      "closed paint weight and actual map/material hashes",
+      "selected face-frame/bounds and child/source transforms",
+      "enabled replacement/disabled original and rejected-eye status",
+      "frame index, graphics API, screenshot dimensions/path/hash"
+    ],
+    "visualReview": [
+      "Check lip contour/paint follows opening without rose smearing or doubled surfaces",
+      "Check wall/cavity/tongue remain continuous and two-sided with static teeth in place",
+      "Check latest eye silhouette, temporal interface patch and forehead/support remain unchanged at every mouth pose",
+      "Check final return-closed matches initialclosed with identical camera/lighting and no retained open weights"
+    ]
+  },
+  "limits": "Tolerance-qualified position fidelity only:161 tiny nonzero rows zeroed across the full14mesh diagnostic; no above-tolerance loss. Current four meshes are a dense prototype, not40k-triangle/game-ready. GPU test pending, canonical female sharedrig binding remains separate."
+}

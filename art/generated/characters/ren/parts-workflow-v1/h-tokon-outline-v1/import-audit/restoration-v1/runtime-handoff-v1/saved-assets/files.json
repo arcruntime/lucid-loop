@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "file": "Ren_H_Head-CanonicalPositions.asset",
+      "unityPath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset",
+      "sha256": "d9bdd80ab254c00bd5542960c2a43fe2742ff1152bffe392063628d474225fb9"
+    },
+    {
+      "file": "Ren_H_Head-CanonicalPositions.asset.meta",
+      "unityPath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset.meta",
+      "sha256": "eefd349f98b400aa07dc9e71592f0f791827fcbac321b5c30a8c9de125c99495"
+    },
+    {
+      "file": "Ren_H_InnerLipWall-CanonicalPositions.asset",
+      "unityPath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset",
+      "sha256": "a3c0deb5a45cc518ee88525fd640fe7e637e800f4556089b8173b0b7cc649d16"
+    },
+    {
+      "file": "Ren_H_InnerLipWall-CanonicalPositions.asset.meta",
+      "unityPath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset.meta",
+      "sha256": "9f776eca85f42792e6eb5a98d29211381cfb16ba2ddf4d3b0f0504f18b88ad39"
+    },
+    {
+      "file": "Ren_H_OralCavity-CanonicalPositions.asset",
+      "unityPath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset",
+      "sha256": "80ce657caa02ca981b563aba3a3af9b1b91bf338782fc558b11877dc6eb3c105"
+    },
+    {
+      "file": "Ren_H_OralCavity-CanonicalPositions.asset.meta",
+      "unityPath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset.meta",
+      "sha256": "5ff2d3683975d705ac3b1889135f3ede34745df1413dec55f9287b4d50c5cb43"
+    },
+    {
+      "file": "Ren_H_Tongue-CanonicalPositions.asset",
+      "unityPath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset",
+      "sha256": "18fa671929032a8ee2ce3381eeecaf19272b6410b9bd65dfbb525998a3bdcb79"
+    },
+    {
+      "file": "Ren_H_Tongue-CanonicalPositions.asset.meta",
+      "unityPath": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset.meta",
+      "sha256": "6d1d24c18be39228888c07977e06f6f9c16f5e73781effa262bdfd777eb782e7"
+    }
+  ]
+}

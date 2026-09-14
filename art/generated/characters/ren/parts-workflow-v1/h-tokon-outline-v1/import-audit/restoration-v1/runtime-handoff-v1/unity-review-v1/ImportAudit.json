@@ -1,0 +1,438 @@
+{
+    "status": "PASS_FOUR_VERIFIED_MESH_BINDINGS_CURRENT_ATTACHMENTS_PRESERVED_GPU_PENDING",
+    "sourceScene": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerForeheadFieldReview.unity",
+    "unityVersion": "6000.3.24f1",
+    "handoffSha256": "9fa7b89b259e1305fe9d555f210110819bc5e5f1ec0f6c4c695c407a1fd09b86",
+    "bindingSnapshotSha256": "33775aae26ca19520d6de5c03cfc38c75130ec9a28a53e292184cd84fe048402",
+    "persistenceReportSha256": "d12658b3cbd90ce81d33fb08095f1d3daf8d5558393f9f53ebfebd565426dca5",
+    "sourceFbxSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+    "sourceMetaSha256": "67be53dbff7797d436e31191b6c3ed7952cce98d9395cc74f2a72892c64e00b7",
+    "exception": "",
+    "limitation": "Four unbound scratch renderers only, preserved selected materials and attachments. GPU mixtures pending; no production/shared-rig or historical-eye promotion. The selected meshes retain99 tiny zeroed head rows below2e-6 native-unit tolerance.",
+    "originalFilesUnchanged": true,
+    "existingTransformsUnchanged": true,
+    "unrelatedRendererReferencesAndStatesUnchanged": true,
+    "originalMaterialsUnchanged": true,
+    "faceFrameUnchanged": true,
+    "maximumFaceBoundsError": 1.1920928955078126e-7,
+    "existingTransformCount": 110,
+    "unrelatedRendererCount": 52,
+    "meshes": [
+        {
+            "name": "Ren_H_Head",
+            "sourcePath": "Ren H reference animation/Motion/Source/Head/Ren_H_Head",
+            "sourceMeshGuid": "da1e70fc56987cc46995e18007fa4674",
+            "savedMeshAsset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset",
+            "savedMeshSha256": "d9bdd80ab254c00bd5542960c2a43fe2742ff1152bffe392063628d474225fb9",
+            "childPath": "Ren H reference animation/Motion/Source/Head/Ren_H_Head/Ren_H_Head_CanonicalRender",
+            "sourceMeshFileID": 7176641938830419920,
+            "sourceVertices": 119741,
+            "savedVertices": 121050,
+            "triangles": 195660,
+            "subMeshes": 3,
+            "comparedCorners": 586980,
+            "cyclicallyRotatedTriangles": 0,
+            "maximumBasisErrorNative": 9.094592456904138e-8,
+            "maximumUvError": 0.0,
+            "maximumNormalError": 0.0,
+            "maximumTangentError": 0.0,
+            "maximumActualChildBasisErrorNative": 5.972094641037984e-8,
+            "originalWeights": [
+                0.0,
+                100.0
+            ],
+            "assignedWeights": [
+                0.0,
+                100.0
+            ],
+            "sourceLocalToNative": [
+                0.000016489824702148326,
+                -104.65116119384766,
+                1.486878003532921e-12,
+                -0.08941860496997833,
+                -104.65115356445313,
+                -0.00001648982652113773,
+                1.930459125887296e-9,
+                0.007325576618313789,
+                8.355153227057599e-7,
+                -3.4690653127888993e-13,
+                104.65116882324219,
+                -0.48848840594291689,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "childLocalToNative": [
+                1.6489826171195432e-9,
+                -0.010465115308761597,
+                1.4868780621899527e-16,
+                -0.08941860496997833,
+                -0.010465116240084172,
+                -1.6489825060972408e-9,
+                1.9298268766430177e-13,
+                0.007325576618313789,
+                8.355140190818844e-11,
+                -3.4690641327661249e-17,
+                0.010465116240084172,
+                -0.48848840594291689,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "sourceLocalPosition": {
+                "x": 0.0002941860584542155,
+                "y": 0.0000732558110030368,
+                "z": -0.002884883899241686
+            },
+            "sourceLocalScale": {
+                "x": 1.0465117692947388,
+                "y": 1.0465117692947388,
+                "z": 1.0465116500854493
+            },
+            "childLocalScale": {
+                "x": 0.00009999999747378752,
+                "y": 0.00009999999747378752,
+                "z": 0.00009999999747378752
+            },
+            "sourceLocalRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.7071068286895752,
+                "w": 0.7071067094802856
+            },
+            "materials": [
+                {
+                    "slot": 0,
+                    "instanceId": 33834,
+                    "name": "Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase",
+                    "asset": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_ArtistRose_NPRBase.mat",
+                    "assetSha256": "b68c12708496113707b237612f7f213cba25867fc2018bf46df6a0f881540e2c",
+                    "serializedSha256": "9997b994c09e1aa38c90a6761351a88b341eccd6817e2c0e03ad8e832b15a0ee",
+                    "shaderName": "LucidLoop/Characters/RenTokonNPR",
+                    "guid": "f1afda5543674c34da8e6f2c0333e1ba",
+                    "fileID": 2100000,
+                    "matchesEarlierSnapshot": true
+                },
+                {
+                    "slot": 1,
+                    "instanceId": 33932,
+                    "name": "Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase",
+                    "asset": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_NPRBase.mat",
+                    "assetSha256": "6033ffc807bfa311743c3d151a89b7a812ce128ec15462b9a2c316a64e77c173",
+                    "serializedSha256": "c46d8a63e4cc0ffc9948b35c1d8b586d4b3bc019ee153edb7b1afb0db1c021de",
+                    "shaderName": "LucidLoop/Characters/RenTokonNPR",
+                    "guid": "895337e4321039d40a634ed2097d0715",
+                    "fileID": 2100000,
+                    "matchesEarlierSnapshot": true
+                },
+                {
+                    "slot": 2,
+                    "instanceId": 33552,
+                    "name": "Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase",
+                    "asset": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-Ren_H_CheekPatch_R2_NPRBase.mat",
+                    "assetSha256": "d2b1f3c7c06a1035d241ab78421b3e951bcefa76f8ccd4a665d899ec38eb9e89",
+                    "serializedSha256": "3e367f7491579ca7c613b4805cb8be5764723499db9f8b2b64e0f49e6a90fd64",
+                    "shaderName": "LucidLoop/Characters/RenTokonNPR",
+                    "guid": "ad056ac5663d25947a6a1a5982701960",
+                    "fileID": 2100000,
+                    "matchesEarlierSnapshot": true
+                }
+            ]
+        },
+        {
+            "name": "Ren_H_InnerLipWall",
+            "sourcePath": "Ren H reference animation/Motion/Source/Head/Ren_H_InnerLipWall",
+            "sourceMeshGuid": "da1e70fc56987cc46995e18007fa4674",
+            "savedMeshAsset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset",
+            "savedMeshSha256": "a3c0deb5a45cc518ee88525fd640fe7e637e800f4556089b8173b0b7cc649d16",
+            "childPath": "Ren H reference animation/Motion/Source/Head/Ren_H_InnerLipWall/Ren_H_InnerLipWall_CanonicalRender",
+            "sourceMeshFileID": -5749690729483675472,
+            "sourceVertices": 1440,
+            "savedVertices": 1440,
+            "triangles": 2560,
+            "subMeshes": 1,
+            "comparedCorners": 7680,
+            "cyclicallyRotatedTriangles": 0,
+            "maximumBasisErrorNative": 5.3734972027541519e-8,
+            "maximumUvError": 0.0,
+            "maximumNormalError": 0.0,
+            "maximumTangentError": 0.0,
+            "maximumActualChildBasisErrorNative": 5.963374150042e-8,
+            "originalWeights": [
+                0.0,
+                100.0
+            ],
+            "assignedWeights": [
+                0.0,
+                100.0
+            ],
+            "sourceLocalToNative": [
+                0.000016489824702148326,
+                -104.65116119384766,
+                1.486878003532921e-12,
+                -0.08941860496997833,
+                -104.65115356445313,
+                -0.00001648982652113773,
+                1.930459125887296e-9,
+                0.007325576618313789,
+                8.355153227057599e-7,
+                -3.4690653127888993e-13,
+                104.65116882324219,
+                -0.48848840594291689,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "childLocalToNative": [
+                1.6489826171195432e-9,
+                -0.010465115308761597,
+                1.4868780621899527e-16,
+                -0.08941860496997833,
+                -0.010465116240084172,
+                -1.6489825060972408e-9,
+                1.9298268766430177e-13,
+                0.007325576618313789,
+                8.355140190818844e-11,
+                -3.4690641327661249e-17,
+                0.010465116240084172,
+                -0.48848840594291689,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "sourceLocalPosition": {
+                "x": 0.0002941860584542155,
+                "y": 0.0000732558110030368,
+                "z": -0.002884883899241686
+            },
+            "sourceLocalScale": {
+                "x": 1.0465117692947388,
+                "y": 1.0465117692947388,
+                "z": 1.0465116500854493
+            },
+            "childLocalScale": {
+                "x": 0.00009999999747378752,
+                "y": 0.00009999999747378752,
+                "z": 0.00009999999747378752
+            },
+            "sourceLocalRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.7071068286895752,
+                "w": 0.7071067094802856
+            },
+            "materials": [
+                {
+                    "slot": 0,
+                    "instanceId": 32988,
+                    "name": "Selected-Tokon-RenHReferenceAnimation-H_StudyCavity",
+                    "asset": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat",
+                    "assetSha256": "56e9771c7cd69def66b80c2a238a928b93ed42fa745fd7b61c78a3f87c33b74f",
+                    "serializedSha256": "92f1ad342922ad4d15d78452e1112e817bcb713471dd6b1025ca451840a1a8a9",
+                    "shaderName": "LucidLoop/Characters/RenTokonNPR",
+                    "guid": "c4addb0346e2ead4281f22462689b5d8",
+                    "fileID": 2100000,
+                    "matchesEarlierSnapshot": true
+                }
+            ]
+        },
+        {
+            "name": "Ren_H_OralCavity",
+            "sourcePath": "Ren H reference animation/Motion/Source/Head/Ren_H_OralCavity",
+            "sourceMeshGuid": "da1e70fc56987cc46995e18007fa4674",
+            "savedMeshAsset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset",
+            "savedMeshSha256": "80ce657caa02ca981b563aba3a3af9b1b91bf338782fc558b11877dc6eb3c105",
+            "childPath": "Ren H reference animation/Motion/Source/Head/Ren_H_OralCavity/Ren_H_OralCavity_CanonicalRender",
+            "sourceMeshFileID": 7003666531195172776,
+            "sourceVertices": 5304,
+            "savedVertices": 5304,
+            "triangles": 9575,
+            "subMeshes": 1,
+            "comparedCorners": 28725,
+            "cyclicallyRotatedTriangles": 0,
+            "maximumBasisErrorNative": 4.7706993910878739e-8,
+            "maximumUvError": 0.0,
+            "maximumNormalError": 0.0,
+            "maximumTangentError": 0.0,
+            "maximumActualChildBasisErrorNative": 3.0719530030864919e-8,
+            "originalWeights": [
+                0.0
+            ],
+            "assignedWeights": [
+                0.0
+            ],
+            "sourceLocalToNative": [
+                0.000016489824702148326,
+                -104.65116119384766,
+                1.486878003532921e-12,
+                -0.08941860496997833,
+                -104.65115356445313,
+                -0.00001648982652113773,
+                1.930459125887296e-9,
+                0.007325576618313789,
+                8.355153227057599e-7,
+                -3.4690653127888993e-13,
+                104.65116882324219,
+                -0.48848840594291689,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "childLocalToNative": [
+                1.6489826171195432e-9,
+                -0.010465115308761597,
+                1.4868780621899527e-16,
+                -0.08941860496997833,
+                -0.010465116240084172,
+                -1.6489825060972408e-9,
+                1.9298268766430177e-13,
+                0.007325576618313789,
+                8.355140190818844e-11,
+                -3.4690641327661249e-17,
+                0.010465116240084172,
+                -0.48848840594291689,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "sourceLocalPosition": {
+                "x": 0.0002941860584542155,
+                "y": 0.0000732558110030368,
+                "z": -0.002884883899241686
+            },
+            "sourceLocalScale": {
+                "x": 1.0465117692947388,
+                "y": 1.0465117692947388,
+                "z": 1.0465116500854493
+            },
+            "childLocalScale": {
+                "x": 0.00009999999747378752,
+                "y": 0.00009999999747378752,
+                "z": 0.00009999999747378752
+            },
+            "sourceLocalRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.7071068286895752,
+                "w": 0.7071067094802856
+            },
+            "materials": [
+                {
+                    "slot": 0,
+                    "instanceId": 32988,
+                    "name": "Selected-Tokon-RenHReferenceAnimation-H_StudyCavity",
+                    "asset": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyCavity.mat",
+                    "assetSha256": "56e9771c7cd69def66b80c2a238a928b93ed42fa745fd7b61c78a3f87c33b74f",
+                    "serializedSha256": "92f1ad342922ad4d15d78452e1112e817bcb713471dd6b1025ca451840a1a8a9",
+                    "shaderName": "LucidLoop/Characters/RenTokonNPR",
+                    "guid": "c4addb0346e2ead4281f22462689b5d8",
+                    "fileID": 2100000,
+                    "matchesEarlierSnapshot": true
+                }
+            ]
+        },
+        {
+            "name": "Ren_H_Tongue",
+            "sourcePath": "Ren H reference animation/Motion/Source/Head/Ren_H_Tongue",
+            "sourceMeshGuid": "da1e70fc56987cc46995e18007fa4674",
+            "savedMeshAsset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset",
+            "savedMeshSha256": "18fa671929032a8ee2ce3381eeecaf19272b6410b9bd65dfbb525998a3bdcb79",
+            "childPath": "Ren H reference animation/Motion/Source/Head/Ren_H_Tongue/Ren_H_Tongue_CanonicalRender",
+            "sourceMeshFileID": -2747230102670996766,
+            "sourceVertices": 4201,
+            "savedVertices": 4201,
+            "triangles": 7701,
+            "subMeshes": 1,
+            "comparedCorners": 23103,
+            "cyclicallyRotatedTriangles": 0,
+            "maximumBasisErrorNative": 4.7158408733594118e-8,
+            "maximumUvError": 0.0,
+            "maximumNormalError": 0.0,
+            "maximumTangentError": 0.0,
+            "maximumActualChildBasisErrorNative": 3.0719530030864919e-8,
+            "originalWeights": [
+                0.0
+            ],
+            "assignedWeights": [
+                0.0
+            ],
+            "sourceLocalToNative": [
+                0.000016489824702148326,
+                -104.65116119384766,
+                1.486878003532921e-12,
+                -0.08941860496997833,
+                -104.65115356445313,
+                -0.00001648982652113773,
+                1.930459125887296e-9,
+                0.007325576618313789,
+                8.355153227057599e-7,
+                -3.4690653127888993e-13,
+                104.65116882324219,
+                -0.48848840594291689,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "childLocalToNative": [
+                1.6489826171195432e-9,
+                -0.010465115308761597,
+                1.4868780621899527e-16,
+                -0.08941860496997833,
+                -0.010465116240084172,
+                -1.6489825060972408e-9,
+                1.9298268766430177e-13,
+                0.007325576618313789,
+                8.355140190818844e-11,
+                -3.4690641327661249e-17,
+                0.010465116240084172,
+                -0.48848840594291689,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "sourceLocalPosition": {
+                "x": 0.0002941860584542155,
+                "y": 0.0000732558110030368,
+                "z": -0.002884883899241686
+            },
+            "sourceLocalScale": {
+                "x": 1.0465117692947388,
+                "y": 1.0465117692947388,
+                "z": 1.0465116500854493
+            },
+            "childLocalScale": {
+                "x": 0.00009999999747378752,
+                "y": 0.00009999999747378752,
+                "z": 0.00009999999747378752
+            },
+            "sourceLocalRotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.7071068286895752,
+                "w": 0.7071067094802856
+            },
+            "materials": [
+                {
+                    "slot": 0,
+                    "instanceId": 33260,
+                    "name": "Selected-Tokon-RenHReferenceAnimation-H_StudyTongue",
+                    "asset": "Assets/CharacterArt/Generated/RenDesignerEyeReview/Materials/Selected-Tokon-RenHReferenceAnimation-H_StudyTongue.mat",
+                    "assetSha256": "7519ed05b91b41e6b6b27d2fd0649dde32df042aaaea75c7a6cbbf8892e7cef0",
+                    "serializedSha256": "0a40fda7c5acb8c11fb1079e18316d07dcd817ae9f9022eda303348ba908968d",
+                    "shaderName": "LucidLoop/Characters/RenTokonNPR",
+                    "guid": "688e8b7371cc2f34ebf3ee55f399d26e",
+                    "fileID": 2100000,
+                    "matchesEarlierSnapshot": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "ren-four-mouth-binding-verification-v1",
+  "status": "ACTUAL_UNITY_BINDING_PASS_GPU_CAPTURE_COMPLETED_VISUAL_REVIEW_PENDING",
+  "sourceAudit": "C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/Assets/CharacterArt/Generated/RenDesignerMouthReview/ImportAudit-20260913-231635-475-1751dec6.json",
+  "curatedAudit": "actual-binding-audit.json",
+  "auditSha256": "936a4780348b574dfd42cf128a7dfff412041e0766006f7176a86a80e196e980",
+  "executedHelperSha256": "3317e03c55177a68a644252e09f93845613ec42ec1ef764b466de7c0f32523f8",
+  "expectedHandoffSha256": "9fa7b89b259e1305fe9d555f210110819bc5e5f1ec0f6c4c695c407a1fd09b86",
+  "helperReportedStatus": "PASS_FOUR_VERIFIED_MESH_BINDINGS_CURRENT_ATTACHMENTS_PRESERVED_GPU_PENDING",
+  "comparedRenderedCorners": 646488.0,
+  "maxNativeBasisError": 9.094592456904138E-08,
+  "maxActualChildBasisErrorNative": 5.972094641037984E-08,
+  "maxUVError": 0.0,
+  "maxBaseNormalError": 0.0,
+  "maxBaseTangentError": 0.0,
+  "faceBoundsError": 1.1920928955078125E-07,
+  "preservedExistingTransforms": 110,
+  "preservedUnrelatedRendererReferencesAndStates": 52,
+  "originalFilesUnchanged": true,
+  "originalMaterialsUnchanged": true,
+  "captureLog": "B:/lucid-loop/.local/ren-designer-mouth-v1/capture.log",
+  "captureLogSha256": "695514b3e93a3e83500a505c7158db780795cace006e74bc5c142c4ceca4cf2d",
+  "captureTerminalMarker": "REN_DESIGNER_MOUTH_CAPTURE_OK",
+  "limitations": [
+    "Binding and capture completion do not establish visual acceptance.",
+    "Only four bone-free diagnostic meshes; no shared rig or production promotion.",
+    "99 tiny head deltas remain exactly zero, all below 2e-6 native-unit endpoint tolerance.",
+    "Current eyes, support, patch, hair, cap, teeth and attachments were not replaced."
+  ]
+}

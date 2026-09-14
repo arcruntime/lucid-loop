@@ -1,0 +1,23 @@
+{
+  "status": "ACTUAL_GLB_AND_FBX_ROUNDTRIP_VERIFIED",
+  "sourceBlendSha256": "216be081c450f81f60efc1ad1517b7c52246ecb7dd2afa97c1d6f06308615377",
+  "exports": [
+    {
+      "file": "Ren_H_CompleteHead_Review.glb",
+      "sha256": "6ace9af043ce8fcf12dd9da650565804172d81655b9836e47058facf0daf4254",
+      "bytes": 37490928
+    },
+    {
+      "file": "Ren_H_CompleteHead_Review.fbx",
+      "sha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+      "bytes": 9240988
+    }
+  ],
+  "triangleCount": 334768,
+  "materialContract": "material-contract.json",
+  "controlContract": "control-contract.json",
+  "hierarchyContract": "hierarchy-contract.json",
+  "headRenderer": "Ren_H_Head",
+  "capIncludedAsSeparateSubtree": true,
+  "verification": "export-verification.json"
+}

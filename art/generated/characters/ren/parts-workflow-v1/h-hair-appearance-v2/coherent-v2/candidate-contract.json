@@ -1,0 +1,608 @@
+{
+  "status": "DIRECTIONAL_HAIR_PIGMENT_CANDIDATE_REQUIRES_ROOT_AND_UNITY_REVIEW",
+  "sources": {
+    "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-fit-v1\\h-support-cap-v2\\normal-fix-v1\\Ren_H_Hair_CapFit.blend": "c759804c2826ab04ed29c2cf64456f893b0d2fc9c426782f0368457b52598c97",
+    "art\\characters\\ren-model-sheet.png": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+    "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-appearance-v1\\gutter-safe-v2\\Ren_H_Hair_MaterialCandidate.blend": "56312e215975184d8e81bc74a0528c040825f0ec8f2b6b24a66a003af2de405d",
+    "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-appearance-v2\\coherent-v2\\authoring-script-snapshot.py": "e4ae28a1adb0e3ca3f5fceb7f8710d59596be04ce7a65b278161e8fc800ed4d2"
+  },
+  "palette": {
+    "base_srgb": [
+      235,
+      225,
+      208
+    ],
+    "strand_ink_srgb": [
+      136,
+      132,
+      141
+    ],
+    "strand_light_srgb": [
+      251,
+      244,
+      228
+    ],
+    "root_srgb": [
+      199,
+      187,
+      180
+    ],
+    "shadow_base_srgb": [
+      186,
+      178,
+      176
+    ],
+    "shadow_ink_srgb": [
+      118,
+      114,
+      129
+    ],
+    "shadow_light_srgb": [
+      215,
+      204,
+      191
+    ],
+    "shadow_root_srgb": [
+      165,
+      153,
+      158
+    ],
+    "note": "Authored pale ivory-blond with muted grey-lilac separation strokes after direct artist-portrait comparison. These are proposed pigment swatches, not falsely claimed exact samples. Shadow is an independent cooler pigment family, not the old (.56,.48,.40) multiplier."
+  },
+  "geometry_uv_shapes": [
+    {
+      "object": "Ren_Hair_H_DetailedLayers",
+      "vertices": 5189,
+      "triangles": 8954,
+      "basis_sha256": "d4324f85c620151a167f1f26c2b8a3241722e44d97b6576f57b6bccc7d14b377",
+      "polygons_sha256": "d0ac3d3a4f3f8b385430983532cad2dd6f87acb7db771e07478c153c81f85ec4",
+      "loop_vertex_indices_sha256": "d0ac3d3a4f3f8b385430983532cad2dd6f87acb7db771e07478c153c81f85ec4",
+      "uv_name": "HairPaintUV_H_v1",
+      "uv_sha256": "141f8355a6baccd8789140726317859a458a35272ee6af044b06ae8796c0300c",
+      "shape_keys": {
+        "Basis": "d4324f85c620151a167f1f26c2b8a3241722e44d97b6576f57b6bccc7d14b377",
+        "capOn": "1bbf07359c9ef7dcec48d899fd6c27b86fa88b7cc4eef83753be66aac21710b1"
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "object": "Ren_Hair_H_RootBase",
+      "vertices": 288,
+      "triangles": 542,
+      "basis_sha256": "a001c2e2bd2ad47655032b484614c5ba55b2d8cda4068feb7680d26de2e6c8c9",
+      "polygons_sha256": "6eed2120c696f4e44ebb174b07dd932d0e1f2a4029ccd01e50f2309691377a59",
+      "loop_vertex_indices_sha256": "a87795634f639f7ea874c01f2d0619fbfbd6e7f24c9a9cf4587579d5b7890375",
+      "uv_name": "HairPaintUV_H_v1",
+      "uv_sha256": "554a43429945eef54351b29e23614cd5cd2aaea98cb759b79fb8581788b0efc4",
+      "shape_keys": {
+        "Basis": "a001c2e2bd2ad47655032b484614c5ba55b2d8cda4068feb7680d26de2e6c8c9",
+        "capOn": "599d02d4b6f30bc0ebc7cd95776c9d77612bb38981a93bb2b733ad571ff54749"
+      },
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "corner_normal_hashes": {
+    "Ren_Hair_H_DetailedLayers": "f0534108491b2dd460570da9b6d013fa7cfce743a9cd901d2c9bec9f21777d9d",
+    "Ren_Hair_H_RootBase": "4bbb29ef9d1f578dd278bf3cc43773912a69df34f059ff310893b09a8b706bf9"
+  },
+  "mesh_unchanged": true,
+  "uv_layer": "HairPaintUV_H_v1",
+  "strokes": [
+    {
+      "index": 0,
+      "kind": "cool separation",
+      "nominal_across": 0.049999999999999996
+    },
+    {
+      "index": 1,
+      "kind": "cool separation",
+      "nominal_across": 0.21666666666666667
+    },
+    {
+      "index": 2,
+      "kind": "cool separation",
+      "nominal_across": 0.3833333333333333
+    },
+    {
+      "index": 3,
+      "kind": "cool separation",
+      "nominal_across": 0.5499999999999999
+    },
+    {
+      "index": 4,
+      "kind": "cool separation",
+      "nominal_across": 0.7166666666666667
+    },
+    {
+      "index": 5,
+      "kind": "cool separation",
+      "nominal_across": 0.8833333333333333
+    },
+    {
+      "index": 6,
+      "kind": "light",
+      "nominal_across": 0.075
+    },
+    {
+      "index": 7,
+      "kind": "light",
+      "nominal_across": 0.325
+    },
+    {
+      "index": 8,
+      "kind": "light",
+      "nominal_across": 0.575
+    },
+    {
+      "index": 9,
+      "kind": "light",
+      "nominal_across": 0.825
+    }
+  ],
+  "authorship": "Finite differently curved/terminated tapered marks in each existing clump coordinate frame. Stable integer clump ID before hashing prevents barycentric float roundoff from dithering marks. 6 separation and4 light accents with clump-specific spacing, bow, tilt, start/end, width and opacity. Root shell accents attenuated. No theta/sine pattern, AO, normals or lighting in pigment.",
+  "maps": [
+    {
+      "role": "base",
+      "file": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-appearance-v2\\coherent-v2\\Ren_H_Hair_DirectionalBlond_Base_4K.png",
+      "sha256": "5bc80c29f63b3770ca5708560f46f3efa9f256a323481d289a9eb5b5ca3ace76",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "color_space": "sRGB"
+    },
+    {
+      "role": "shadow",
+      "file": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-appearance-v2\\coherent-v2\\Ren_H_Hair_DirectionalBlond_Shadow_2K.png",
+      "sha256": "3f4553af7a54777827c528df285094dbde2e3df62d38dc0fbdd29aa695b04829",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "color_space": "sRGB"
+    }
+  ],
+  "authoring_blend": {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-appearance-v2\\coherent-v2\\Ren_H_Hair_DirectionalPigment.blend",
+    "sha256": "b196e673c276a0b30ab65f23874faf5438a1f6463fad0b1ffc829ac97f403b14"
+  },
+  "integration": "MAPS ONLY on existing repaired Unity hair mesh. Base and independent shadow map are a required pair. White material tint, no additional brown shadow multiplier. Preserve controls, shader settings, alpha-free surface, UV0, geometry, normals and capOn. This derivative blend is authoring proof, not a replacement mesh import.",
+  "captures": [
+    {
+      "file": "directional--front.png",
+      "sha256": "46bff47f66eaf96576b27290a295a0e397a0f0c3f0276aa0337a52571f77bda3",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          -4.371138828673793e-08,
+          4.371138828673793e-08,
+          1.0,
+          2.9700000286102295
+        ],
+        [
+          1.0,
+          1.910685676922942e-15,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "directional--quarter.png",
+      "sha256": "a0207a76c9ac5a974f572197df403792f2d241c55c64220b9f57fdb4cf36fefd",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          0.5735763311386108,
+          1.7634279458889068e-07,
+          0.8191521167755127,
+          2.4274561405181885
+        ],
+        [
+          0.8191521167755127,
+          -3.2199917399111655e-08,
+          -0.5735763311386108,
+          -1.7207293510437012
+        ],
+        [
+          -7.476942442963264e-08,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "directional--profile.png",
+      "sha256": "b24c3fe752605f67d72238c1ea4c506a9f7c1aff5965bc04cd60421e4372c3fd",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.029999999329447746
+        ],
+        [
+          0.0,
+          -1.6292068494294654e-07,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.0,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "directional--cap-off-quarter.png",
+      "sha256": "630572535dc277b8a6b40fbf3c75d7e18f310e88b304d53c1a54c1c40309247e",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 0,
+      "camera": [
+        [
+          0.5735763311386108,
+          1.7634279458889068e-07,
+          0.8191521167755127,
+          2.4274561405181885
+        ],
+        [
+          0.8191521167755127,
+          -3.2199917399111655e-08,
+          -0.5735763311386108,
+          -1.7207293510437012
+        ],
+        [
+          -7.476942442963264e-08,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "shadow-pigment--front.png",
+      "sha256": "d179adcb902bd653001d38f037af2aa82d00f941a3c33f1a68353c45315b8ed7",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          -4.371138828673793e-08,
+          4.371138828673793e-08,
+          1.0,
+          2.9700000286102295
+        ],
+        [
+          1.0,
+          1.910685676922942e-15,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "shadow-pigment--quarter.png",
+      "sha256": "ff7e4179495fb78d67163e0b6463f0bdd6a8cc16e9a1ae91f6cbf4a687921371",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          0.5735763311386108,
+          1.7634279458889068e-07,
+          0.8191521167755127,
+          2.4274561405181885
+        ],
+        [
+          0.8191521167755127,
+          -3.2199917399111655e-08,
+          -0.5735763311386108,
+          -1.7207293510437012
+        ],
+        [
+          -7.476942442963264e-08,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "shadow-pigment--profile.png",
+      "sha256": "c427371d71c4dac40e3833f8d407083a9308c0f3cb4a2eec50170c6548862965",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.029999999329447746
+        ],
+        [
+          0.0,
+          -1.6292068494294654e-07,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.0,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "shadow-pigment--cap-off-quarter.png",
+      "sha256": "66160bf753b307350476a2ecf36c6646782394d6b9539ef084cf0883cab70b56",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 0,
+      "camera": [
+        [
+          0.5735763311386108,
+          1.7634279458889068e-07,
+          0.8191521167755127,
+          2.4274561405181885
+        ],
+        [
+          0.8191521167755127,
+          -3.2199917399111655e-08,
+          -0.5735763311386108,
+          -1.7207293510437012
+        ],
+        [
+          -7.476942442963264e-08,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "previous-quiet--front.png",
+      "sha256": "f4f26a6682465b5650b4db758d2369f7394f860f14bd5d01eb2d430d63ce0c80",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          -4.371138828673793e-08,
+          4.371138828673793e-08,
+          1.0,
+          2.9700000286102295
+        ],
+        [
+          1.0,
+          1.910685676922942e-15,
+          4.371138828673793e-08,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "previous-quiet--quarter.png",
+      "sha256": "1dac1393673c6ffb2bca6f9ef4e37cebf223848ef8df005c178a58162e596618",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          0.5735763311386108,
+          1.7634279458889068e-07,
+          0.8191521167755127,
+          2.4274561405181885
+        ],
+        [
+          0.8191521167755127,
+          -3.2199917399111655e-08,
+          -0.5735763311386108,
+          -1.7207293510437012
+        ],
+        [
+          -7.476942442963264e-08,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "previous-quiet--profile.png",
+      "sha256": "3cdaf264fd9443078c7ca7839ca1b67c3f22333c9dc1f6e18845b617839f0f11",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 1,
+      "camera": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.029999999329447746
+        ],
+        [
+          0.0,
+          -1.6292068494294654e-07,
+          -1.0,
+          -3.0
+        ],
+        [
+          0.0,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "file": "previous-quiet--cap-off-quarter.png",
+      "sha256": "e866fa5a8d1e9da55827b483856dd58efad38a9760bf5693b5749f1757ab1db2",
+      "display": "unlit pigment; shadow view displays independent shadow pigment directly, not simulated Unity lighting",
+      "capOn": 0,
+      "camera": [
+        [
+          0.5735763311386108,
+          1.7634279458889068e-07,
+          0.8191521167755127,
+          2.4274561405181885
+        ],
+        [
+          0.8191521167755127,
+          -3.2199917399111655e-08,
+          -0.5735763311386108,
+          -1.7207293510437012
+        ],
+        [
+          -7.476942442963264e-08,
+          1.0,
+          -1.6292068494294654e-07,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "frozen_sources_unchanged": true,
+  "authoring_snapshot_note": "Exact script bytes used by the successful bake, retained before a verification-only path-join typo fix. Geometry/pigment generation unchanged."
+}

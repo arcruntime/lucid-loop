@@ -1,0 +1,61 @@
+{
+  "captures": 16,
+  "allHashesAndVisibilityPassed": true,
+  "selectedPriorCombinedFrontPixelExact": true,
+  "unlitPairPixelExact": true,
+  "diffs": {
+    "neutral-front": {
+      "pixels": 2384,
+      "bbox": [
+        538,
+        505,
+        1037,
+        678
+      ]
+    },
+    "neutral-quarter": {
+      "pixels": 12,
+      "bbox": [
+        962,
+        541,
+        963,
+        547
+      ]
+    },
+    "neutral-profile": {
+      "pixels": 0,
+      "bbox": null
+    },
+    "club-front": {
+      "pixels": 2385,
+      "bbox": [
+        538,
+        505,
+        1037,
+        678
+      ]
+    },
+    "club-quarter": {
+      "pixels": 12,
+      "bbox": [
+        962,
+        541,
+        963,
+        547
+      ]
+    },
+    "unlit-front": {
+      "pixels": 0,
+      "bbox": null
+    },
+    "source-camera": {
+      "pixels": 1,
+      "bbox": [
+        576,
+        185,
+        576,
+        185
+      ]
+    }
+  }
+}

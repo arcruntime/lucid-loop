@@ -1,0 +1,312 @@
+{
+  "status": "ACTUAL_GPU_READBACK_AND_PIXEL_COMPARISON",
+  "captureCount": 40,
+  "priorSelectedForeheadBaseline": {
+    "changedPixels": 0,
+    "maximumByteDifference": 0,
+    "bboxInclusive": null
+  },
+  "diffs": {
+    "neutral-front": {
+      "iris-pigment": {
+        "changedPixels": 2007,
+        "maximumByteDifference": 45,
+        "bboxInclusive": [
+          575,
+          662,
+          946,
+          692
+        ]
+      },
+      "lower-return": {
+        "changedPixels": 492,
+        "maximumByteDifference": 168,
+        "bboxInclusive": [
+          849,
+          688,
+          985,
+          696
+        ]
+      },
+      "directional-hair": {
+        "changedPixels": 127691,
+        "maximumByteDifference": 62,
+        "bboxInclusive": [
+          238,
+          472,
+          1242,
+          1156
+        ]
+      },
+      "combined": {
+        "changedPixels": 130183,
+        "maximumByteDifference": 168,
+        "bboxInclusive": [
+          238,
+          472,
+          1242,
+          1156
+        ]
+      }
+    },
+    "neutral-quarter": {
+      "iris-pigment": {
+        "changedPixels": 732,
+        "maximumByteDifference": 45,
+        "bboxInclusive": [
+          738,
+          663,
+          1015,
+          696
+        ]
+      },
+      "lower-return": {
+        "changedPixels": 199,
+        "maximumByteDifference": 168,
+        "bboxInclusive": [
+          975,
+          692,
+          1038,
+          699
+        ]
+      },
+      "directional-hair": {
+        "changedPixels": 178698,
+        "maximumByteDifference": 62,
+        "bboxInclusive": [
+          156,
+          512,
+          1074,
+          1165
+        ]
+      },
+      "combined": {
+        "changedPixels": 179575,
+        "maximumByteDifference": 168,
+        "bboxInclusive": [
+          156,
+          512,
+          1074,
+          1165
+        ]
+      }
+    },
+    "neutral-profile": {
+      "iris-pigment": {
+        "changedPixels": 0,
+        "maximumByteDifference": 0,
+        "bboxInclusive": null
+      },
+      "lower-return": {
+        "changedPixels": 0,
+        "maximumByteDifference": 0,
+        "bboxInclusive": null
+      },
+      "directional-hair": {
+        "changedPixels": 267219,
+        "maximumByteDifference": 62,
+        "bboxInclusive": [
+          90,
+          504,
+          1102,
+          1159
+        ]
+      },
+      "combined": {
+        "changedPixels": 267219,
+        "maximumByteDifference": 62,
+        "bboxInclusive": [
+          90,
+          504,
+          1102,
+          1159
+        ]
+      }
+    },
+    "neutral-other-profile": {
+      "iris-pigment": {
+        "changedPixels": 89,
+        "maximumByteDifference": 46,
+        "bboxInclusive": [
+          565,
+          667,
+          571,
+          692
+        ]
+      },
+      "lower-return": {
+        "changedPixels": 28,
+        "maximumByteDifference": 36,
+        "bboxInclusive": [
+          554,
+          694,
+          567,
+          698
+        ]
+      },
+      "directional-hair": {
+        "changedPixels": 231024,
+        "maximumByteDifference": 62,
+        "bboxInclusive": [
+          428,
+          472,
+          1412,
+          1168
+        ]
+      },
+      "combined": {
+        "changedPixels": 231141,
+        "maximumByteDifference": 62,
+        "bboxInclusive": [
+          428,
+          472,
+          1412,
+          1168
+        ]
+      }
+    },
+    "club-front": {
+      "iris-pigment": {
+        "changedPixels": 2007,
+        "maximumByteDifference": 45,
+        "bboxInclusive": [
+          575,
+          662,
+          946,
+          692
+        ]
+      },
+      "lower-return": {
+        "changedPixels": 492,
+        "maximumByteDifference": 168,
+        "bboxInclusive": [
+          849,
+          688,
+          985,
+          696
+        ]
+      },
+      "directional-hair": {
+        "changedPixels": 127691,
+        "maximumByteDifference": 61,
+        "bboxInclusive": [
+          238,
+          472,
+          1242,
+          1156
+        ]
+      },
+      "combined": {
+        "changedPixels": 130183,
+        "maximumByteDifference": 168,
+        "bboxInclusive": [
+          238,
+          472,
+          1242,
+          1156
+        ]
+      }
+    },
+    "unlit-front": {
+      "iris-pigment": {
+        "changedPixels": 2007,
+        "maximumByteDifference": 45,
+        "bboxInclusive": [
+          575,
+          662,
+          946,
+          692
+        ]
+      },
+      "lower-return": {
+        "changedPixels": 492,
+        "maximumByteDifference": 168,
+        "bboxInclusive": [
+          849,
+          688,
+          985,
+          696
+        ]
+      },
+      "directional-hair": {
+        "changedPixels": 127691,
+        "maximumByteDifference": 41,
+        "bboxInclusive": [
+          238,
+          472,
+          1242,
+          1156
+        ]
+      },
+      "combined": {
+        "changedPixels": 130183,
+        "maximumByteDifference": 168,
+        "bboxInclusive": [
+          238,
+          472,
+          1242,
+          1156
+        ]
+      }
+    },
+    "source-camera": {
+      "iris-pigment": {
+        "changedPixels": 148,
+        "maximumByteDifference": 42,
+        "bboxInclusive": [
+          453,
+          154,
+          549,
+          215
+        ]
+      },
+      "lower-return": {
+        "changedPixels": 0,
+        "maximumByteDifference": 0,
+        "bboxInclusive": null
+      },
+      "directional-hair": {
+        "changedPixels": 25435,
+        "maximumByteDifference": 62,
+        "bboxInclusive": [
+          241,
+          64,
+          608,
+          350
+        ]
+      },
+      "combined": {
+        "changedPixels": 25583,
+        "maximumByteDifference": 62,
+        "bboxInclusive": [
+          241,
+          64,
+          608,
+          350
+        ]
+      }
+    }
+  },
+  "lowerIrisRoi": {
+    "sourcePixels": [
+      890,
+      685,
+      990,
+      710
+    ],
+    "exactBackgroundBefore": 273,
+    "formerBackgroundChanged": 273,
+    "remainingFormerBackground": 0,
+    "diff": {
+      "changedPixels": 310,
+      "maximumByteDifference": 168,
+      "bboxInclusive": [
+        0,
+        3,
+        95,
+        10
+      ]
+    }
+  },
+  "cropPolicy": "Actual source-pixel crop [855,610,1015,735], uniform6x nearest-neighbor. No retouching."
+}

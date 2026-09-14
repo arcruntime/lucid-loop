@@ -1,0 +1,415 @@
+{
+  "mainObject": "Ren_H_HeadControls",
+  "semanticMouth": {
+    "semantic_inputs": {
+      "jawOpen_A": [
+        0,
+        1
+      ],
+      "mouthSeal": [
+        0,
+        1
+      ]
+    },
+    "actual_jawOpen_A": "a",
+    "actual_mouthSeal": "s*(1-a)",
+    "formula": "Basis + a*(jawOpen_A-Basis) + s*(1-a)*(mouthSeal-Basis)",
+    "default": {
+      "a": 0,
+      "s": 1
+    },
+    "native_open": {
+      "a": 1,
+      "s": "any; actual seal zero"
+    }
+  },
+  "eyeContract": {
+    "status": "EYE_CONSTRUCTION_ACCEPTED_FOR_WHOLE_HEAD_REVIEW_NOT_FINAL_LIKENESS",
+    "frozen_artifacts": {
+      "Ren_H_Eyes.blend": {
+        "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-controls-v1/Ren_H_Eyes.blend",
+        "sha256": "b3be4465e3123bff78fe4ff99aaa855b2cc30a0d7eb482f325df96321df89d5b"
+      },
+      "Ren_H_Eyes.glb": {
+        "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-controls-v1/Ren_H_Eyes.glb",
+        "sha256": "4ea5de8560348b940f74c6f83c7b3d008b8a6b624605123e7e3f120559dbbd5a"
+      },
+      "Ren_H_Eyes.fbx": {
+        "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-controls-v1/Ren_H_Eyes.fbx",
+        "sha256": "f93afc7e46b1282d92950caf176194ddbadf4a632ad4f4c495d28d6fe4d2a753"
+      },
+      "Ren_H_Iris_BlueGrey.png": {
+        "path": "art/generated/characters/ren/parts-workflow-v1/h-eye-controls-v1/Ren_H_Iris_BlueGrey.png",
+        "sha256": "67c155b71cb8f368932e90af489bcdad9edfff5ad40675cdafa09c82d3a09b59"
+      }
+    },
+    "source_master_sha256": "9158e7e90ee22bce64154e2c2fe6d8880e9ab66de6f1a6c437c816f077049406",
+    "triangles": 3460,
+    "meshes": {
+      "Ren_H_Eye_L_LidAnnulus": {
+        "vertices": 448,
+        "triangles": 768,
+        "shape_names": [
+          "eyeBlinkL",
+          "eyeBlinkL_C25",
+          "eyeBlinkL_C50",
+          "eyeBlinkL_C75",
+          "eyeWideL",
+          "eyeSquintL"
+        ],
+        "uv_layers": [
+          "H_EyeLocalUV"
+        ],
+        "materials": [
+          "Ren_H_Eyelid_Skin"
+        ]
+      },
+      "Ren_H_Eye_L_UpperLash": {
+        "vertices": 66,
+        "triangles": 64,
+        "shape_names": [
+          "eyeBlinkL",
+          "eyeBlinkL_C25",
+          "eyeBlinkL_C50",
+          "eyeBlinkL_C75",
+          "eyeWideL",
+          "eyeSquintL"
+        ],
+        "uv_layers": [
+          "LashUV"
+        ],
+        "materials": [
+          "Ren_H_UpperLash"
+        ]
+      },
+      "Ren_H_Eye_L_LowerLash": {
+        "vertices": 66,
+        "triangles": 64,
+        "shape_names": [
+          "eyeBlinkL",
+          "eyeBlinkL_C25",
+          "eyeBlinkL_C50",
+          "eyeBlinkL_C75",
+          "eyeWideL",
+          "eyeSquintL"
+        ],
+        "uv_layers": [
+          "LashUV"
+        ],
+        "materials": [
+          "Ren_H_LowerLash"
+        ]
+      },
+      "Ren_H_Eye_L_OuterFlicks": {
+        "vertices": 6,
+        "triangles": 2,
+        "shape_names": [
+          "eyeBlinkL",
+          "eyeBlinkL_C25",
+          "eyeBlinkL_C50",
+          "eyeBlinkL_C75",
+          "eyeWideL",
+          "eyeSquintL"
+        ],
+        "uv_layers": [
+          "LashUV"
+        ],
+        "materials": [
+          "Ren_H_UpperLash"
+        ]
+      },
+      "Ren_H_Eye_L_Sclera": {
+        "vertices": 266,
+        "triangles": 528,
+        "shape_names": [],
+        "uv_layers": [
+          "UVMap"
+        ],
+        "materials": [
+          "Ren_H_Sclera"
+        ]
+      },
+      "Ren_H_Eye_L_Iris": {
+        "vertices": 187,
+        "triangles": 304,
+        "shape_names": [],
+        "uv_layers": [
+          "IrisUV"
+        ],
+        "materials": [
+          "Ren_H_IrisBlueGrey"
+        ]
+      },
+      "Ren_H_Eye_R_LidAnnulus": {
+        "vertices": 448,
+        "triangles": 768,
+        "shape_names": [
+          "eyeBlinkR",
+          "eyeBlinkR_C25",
+          "eyeBlinkR_C50",
+          "eyeBlinkR_C75",
+          "eyeWideR",
+          "eyeSquintR"
+        ],
+        "uv_layers": [
+          "H_EyeLocalUV"
+        ],
+        "materials": [
+          "Ren_H_Eyelid_Skin"
+        ]
+      },
+      "Ren_H_Eye_R_UpperLash": {
+        "vertices": 66,
+        "triangles": 64,
+        "shape_names": [
+          "eyeBlinkR",
+          "eyeBlinkR_C25",
+          "eyeBlinkR_C50",
+          "eyeBlinkR_C75",
+          "eyeWideR",
+          "eyeSquintR"
+        ],
+        "uv_layers": [
+          "LashUV"
+        ],
+        "materials": [
+          "Ren_H_UpperLash"
+        ]
+      },
+      "Ren_H_Eye_R_LowerLash": {
+        "vertices": 66,
+        "triangles": 64,
+        "shape_names": [
+          "eyeBlinkR",
+          "eyeBlinkR_C25",
+          "eyeBlinkR_C50",
+          "eyeBlinkR_C75",
+          "eyeWideR",
+          "eyeSquintR"
+        ],
+        "uv_layers": [
+          "LashUV"
+        ],
+        "materials": [
+          "Ren_H_LowerLash"
+        ]
+      },
+      "Ren_H_Eye_R_OuterFlicks": {
+        "vertices": 6,
+        "triangles": 2,
+        "shape_names": [
+          "eyeBlinkR",
+          "eyeBlinkR_C25",
+          "eyeBlinkR_C50",
+          "eyeBlinkR_C75",
+          "eyeWideR",
+          "eyeSquintR"
+        ],
+        "uv_layers": [
+          "LashUV"
+        ],
+        "materials": [
+          "Ren_H_UpperLash"
+        ]
+      },
+      "Ren_H_Eye_R_Sclera": {
+        "vertices": 266,
+        "triangles": 528,
+        "shape_names": [],
+        "uv_layers": [
+          "UVMap"
+        ],
+        "materials": [
+          "Ren_H_Sclera"
+        ]
+      },
+      "Ren_H_Eye_R_Iris": {
+        "vertices": 187,
+        "triangles": 304,
+        "shape_names": [],
+        "uv_layers": [
+          "IrisUV"
+        ],
+        "materials": [
+          "Ren_H_IrisBlueGrey"
+        ]
+      }
+    },
+    "coordinate_frame": {
+      "native": "H import coordinates: -Y front, +Z up; original units",
+      "registered": "fixed registration produces +X-front/Z-up review frame, no metre normalization",
+      "native_to_registered": [
+        [
+          -1.4060810826777015e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.4060810826777015e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "mesh_transforms": "Lid/lash meshes store native H positions and registration in matrix_world. EyeSpace stores registration for the gaze hierarchy. Preserve matrices and do not apply registration twice."
+    },
+    "attachment": {
+      "head_rigid_group": [
+        "Ren_H_EyeSpace",
+        "Ren_H_Eye_L_LidAnnulus",
+        "Ren_H_Eye_R_LidAnnulus",
+        "Ren_H_Eye_L_UpperLash",
+        "Ren_H_Eye_R_UpperLash",
+        "Ren_H_Eye_L_LowerLash",
+        "Ren_H_Eye_R_LowerLash",
+        "Ren_H_Eye_L_OuterFlicks",
+        "Ren_H_Eye_R_OuterFlicks"
+      ],
+      "no_skin_weights": true,
+      "boundary_contract": "eye-controller-contract.json -> eyes[].outer_h_boundary",
+      "boundary_indices": "Lid first64 vertices / h_outer_boundary_index POINT attribute 0..63; these anchors never move through eye morphs.",
+      "seam_status": "Not a production stitch. The prior source-ID removal is an overlay study; exact local native transition is separately under investigation in seam-contract-v1.",
+      "do_not": [
+        "Nearest-weld the orbital NPZ raw boundary to the64 ring",
+        "Use any P2 or generic fitted head",
+        "Move immutable H source vertices to fit the new eyelids"
+      ]
+    },
+    "controls": {
+      "object": "Ren_H_EyeControls",
+      "range_0_to_1": [
+        "eyeBlinkL",
+        "eyeBlinkR",
+        "eyeWideL",
+        "eyeWideR",
+        "eyeSquintL",
+        "eyeSquintR"
+      ],
+      "gaze_range_minus1_to_plus1": [
+        "gazeX",
+        "gazeY"
+      ],
+      "blink_full_morph_weight": "b",
+      "blink_correction_formula": "Cstage = max(0,1-abs(b-stage)/.25), stage=.25,.50,.75",
+      "half_blink_example": {
+        "eyeBlink": 0.5,
+        "C25": 0,
+        "C50": 1,
+        "C75": 0
+      },
+      "full_blink_example": {
+        "eyeBlink": 1,
+        "C25": 0,
+        "C50": 0,
+        "C75": 0
+      },
+      "expression_rule": "Wide and blink mutually exclusive; effective wide and squint are input*(1-blink).",
+      "gaze_rotate_local": "Rz(radians(12*gazeX)) @ Rx(radians(-8*gazeY))",
+      "gaze_order": "EyeSpace -> GazeEllipsoid_SIDE -> GazeBasis_SIDE -> GazeRotate_SIDE -> Iris. Fixed ellipsoid SVD basis and GazeBasis are required.",
+      "gaze_calibration": "Full native center/radii/basis/static basis per eye in eye-controller-contract.json. Angular limits refer to normalized sphere, not world optical degrees."
+    },
+    "materials": {
+      "lid": {
+        "name": "Ren_H_Eyelid_Skin",
+        "status": "placeholder; skin pigment derivative by material worker",
+        "uv": "H_EyeLocalUV",
+        "u": "(nativeX-cx)/.18+.5; cx L=.110/R=-.119",
+        "v": "(nativeZ-.552)/.12+.5",
+        "uv_limits": "Slightly outside0..1; keep original bytes and use explicit material UV scale/offset for a normalized bake. Never apply H face8K directly."
+      },
+      "iris": {
+        "name": "Ren_H_IrisBlueGrey",
+        "uv": "IrisUV",
+        "texture": "Ren_H_Iris_BlueGrey.png",
+        "colorspace": "sRGB",
+        "vertex_colors": "Removed from portable export to avoid multiplying iris atlas twice."
+      },
+      "lash_uv": "LashUV",
+      "sclera_uv": "UVMap",
+      "gltf_note": "glTF retains the first UV channel as TEXCOORD_0; layer names may become UVMap on reimport."
+    },
+    "verification_files": [
+      "first-fit-geometry-check.json",
+      "full-blink-gaze-occlusion.json",
+      "export-verification.json",
+      "visual-review.json"
+    ],
+    "pending": [
+      "Coherent production face seam",
+      "Material-worker lid pigment derivative and wholehead NPR review",
+      "Final original-designer likeness review",
+      "Runtime animated review and iPhone15Plus30fps measurement",
+      "Head bone binding and production topology/LOD"
+    ]
+  },
+  "cap": {
+    "rendererPath": "Head/CapSocket/CapAssetRoot/Ren_Cap",
+    "capRootPath": "Head/CapSocket/CapAssetRoot",
+    "separateAssetSource": "art/generated/characters/ren/parts-workflow-v1/h-hair-fit-v1/h-support-cap-v2/Ren_H_Cap.fbx",
+    "includedInCompleteExport": true,
+    "doNotInstantiateDuplicate": true,
+    "hairShapeKey": "capOn",
+    "hairRenderers": [
+      "Ren_Hair_H_DetailedLayers",
+      "Ren_Hair_H_RootBase"
+    ]
+  },
+  "temporaryRig": "Head and CapSocket are empty transforms only; no new armature, not yet canonical female skin binding.",
+  "canonicalRig": "art/generated/characters/shared-rigs/female_base_v2/rig.json",
+  "exportAxisMarkers": [
+    "Ren_H_HeadAxis_X",
+    "Ren_H_HeadAxis_Y",
+    "Ren_H_HeadAxis_Z",
+    "Ren_H_GazeAxis_L_X",
+    "Ren_H_GazeAxis_L_Y",
+    "Ren_H_GazeAxis_L_Z",
+    "Ren_H_GazeAxis_R_X",
+    "Ren_H_GazeAxis_R_Y",
+    "Ren_H_GazeAxis_R_Z"
+  ],
+  "defaultInputs": {
+    "jawOpen_A": 0,
+    "mouthSeal": 1,
+    "eyeBlinkL": 0,
+    "eyeBlinkR": 0,
+    "eyeWideL": 0,
+    "eyeWideR": 0,
+    "eyeSquintL": 0,
+    "eyeSquintR": 0,
+    "gazeX": 0,
+    "gazeY": 0,
+    "capOn": 1
+  },
+  "unsupportedPerformanceControls": [
+    "mouthSmileL",
+    "mouthSmileR",
+    "upperLipRaiseL",
+    "upperLipRaiseR",
+    "mouthPucker",
+    "mouthFunnel",
+    "mouthLeft",
+    "mouthRight",
+    "lipPress",
+    "browRaiseL",
+    "browRaiseR",
+    "browFrownL",
+    "browFrownR",
+    "tongueOut",
+    "tongueSide",
+    "noseWrinkle",
+    "gazeConverge"
+  ]
+}

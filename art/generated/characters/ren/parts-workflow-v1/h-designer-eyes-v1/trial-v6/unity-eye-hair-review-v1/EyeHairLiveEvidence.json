@@ -1,0 +1,3054 @@
+{
+    "status": "NEUTRAL_EYE_RETURN_HAIR_COMPARISON_NOT_LIKENESS_ACCEPTANCE",
+    "runtimeSha256": "6679daf3c9d23586036b622f489647e6c290753d490c7d5376caf3657600287f",
+    "builderSha256": "11113e260c0660de9815d5eac17e43432ce1b940a3fe5c39e3610733d8c8bdd5",
+    "irisAuditSha256": "58542caca57c102a73aaa48ac5cc92e0af704aa9e7d3840b10a109c95b1607f9",
+    "returnAuditSha256": "31bf4fb47741f87e23c28f755c94b555859c91d09fb0e0c240c15c97772ac572",
+    "hairBaseSha256": "5bc80c29f63b3770ca5708560f46f3efa9f256a323481d289a9eb5b5ca3ace76",
+    "hairShadowSha256": "3f4553af7a54777827c528df285094dbde2e3df62d38dc0fbdd29aa695b04829",
+    "unityVersion": "6000.3.24f1",
+    "graphicsApi": "Direct3D11",
+    "captures": [
+        {
+            "file": "baseline--neutral-front.png",
+            "sha256": "48319d11e1264b2bdc2251162e39a8c390a919ca78debe28955775a669c1c076",
+            "pose": "neutral-front",
+            "variant": "baseline",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "iris-pigment--neutral-front.png",
+            "sha256": "3228f348964c8b5fe7a2d6a51e97ea1f09d25f2aafe581ef9d2b1b6ac2dd225b",
+            "pose": "neutral-front",
+            "variant": "iris-pigment",
+            "irisPigment": true,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "lower-return--neutral-front.png",
+            "sha256": "444b589c1566a260dc8ba9d97083f263875c9d7774796ff095616808d017b898",
+            "pose": "neutral-front",
+            "variant": "lower-return",
+            "irisPigment": false,
+            "lowerReturn": true,
+            "directionalHair": false,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "directional-hair--neutral-front.png",
+            "sha256": "0d4f64153724a8e24e633398b38849d4df6461e4b7ec05181510e1373e35c9cc",
+            "pose": "neutral-front",
+            "variant": "directional-hair",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": true,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "combined--neutral-front.png",
+            "sha256": "51a161dc8e277d8b5f465e1bcf7f80c12fb40bda6b2911cf60a17ef29ddb2861",
+            "pose": "neutral-front",
+            "variant": "combined",
+            "irisPigment": true,
+            "lowerReturn": true,
+            "directionalHair": true,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--neutral-quarter.png",
+            "sha256": "b760118e1e266a9f8f135a5ac175acc4fa9295172ea55a31a3ee9c5abe9c1227",
+            "pose": "neutral-quarter",
+            "variant": "baseline",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 2.828427314758301,
+                "y": 0.824999988079071,
+                "z": 2.8284268379211427
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "iris-pigment--neutral-quarter.png",
+            "sha256": "036641edff997a509a1f79c01d8007499e28ff6d1a77806f34def62d59f4f684",
+            "pose": "neutral-quarter",
+            "variant": "iris-pigment",
+            "irisPigment": true,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 2.828427314758301,
+                "y": 0.824999988079071,
+                "z": 2.8284268379211427
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "lower-return--neutral-quarter.png",
+            "sha256": "6dd2fe94c2b9ffaa034461ae3bfea66b9045af42bfd4acb9e44193635198e40b",
+            "pose": "neutral-quarter",
+            "variant": "lower-return",
+            "irisPigment": false,
+            "lowerReturn": true,
+            "directionalHair": false,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 2.828427314758301,
+                "y": 0.824999988079071,
+                "z": 2.8284268379211427
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "directional-hair--neutral-quarter.png",
+            "sha256": "3bb3a18f75ce87be973309a0452f92427160dab02d5d8455e0ad974212faa4a3",
+            "pose": "neutral-quarter",
+            "variant": "directional-hair",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": true,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 2.828427314758301,
+                "y": 0.824999988079071,
+                "z": 2.8284268379211427
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "combined--neutral-quarter.png",
+            "sha256": "4c7b5d25ace429cdfae55887854d5d119e49d538db915fbf18f0093bc32a58a2",
+            "pose": "neutral-quarter",
+            "variant": "combined",
+            "irisPigment": true,
+            "lowerReturn": true,
+            "directionalHair": true,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 2.828427314758301,
+                "y": 0.824999988079071,
+                "z": 2.8284268379211427
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--neutral-profile.png",
+            "sha256": "1357174c4b05fcb47a2c60ea0b1e22c989b980611c2a5cd74a636dd510cb2697",
+            "pose": "neutral-profile",
+            "variant": "baseline",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "iris-pigment--neutral-profile.png",
+            "sha256": "1357174c4b05fcb47a2c60ea0b1e22c989b980611c2a5cd74a636dd510cb2697",
+            "pose": "neutral-profile",
+            "variant": "iris-pigment",
+            "irisPigment": true,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "lower-return--neutral-profile.png",
+            "sha256": "1357174c4b05fcb47a2c60ea0b1e22c989b980611c2a5cd74a636dd510cb2697",
+            "pose": "neutral-profile",
+            "variant": "lower-return",
+            "irisPigment": false,
+            "lowerReturn": true,
+            "directionalHair": false,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "directional-hair--neutral-profile.png",
+            "sha256": "fe9a5bc2f8ec3c8f533983d6da25f65067c3d92f582ce7fcc73c046083c0dda6",
+            "pose": "neutral-profile",
+            "variant": "directional-hair",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": true,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "combined--neutral-profile.png",
+            "sha256": "fe9a5bc2f8ec3c8f533983d6da25f65067c3d92f582ce7fcc73c046083c0dda6",
+            "pose": "neutral-profile",
+            "variant": "combined",
+            "irisPigment": true,
+            "lowerReturn": true,
+            "directionalHair": true,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--neutral-other-profile.png",
+            "sha256": "a97e1ec2d06a1587ae39f879f5f894a65029f0caa4de8a9031b00d16a2ef29df",
+            "pose": "neutral-other-profile",
+            "variant": "baseline",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": -3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "iris-pigment--neutral-other-profile.png",
+            "sha256": "1d0570cb0201d8f16cc98762f9fd354d3404b65c42a48ffd4c8db200faaad005",
+            "pose": "neutral-other-profile",
+            "variant": "iris-pigment",
+            "irisPigment": true,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": -3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "lower-return--neutral-other-profile.png",
+            "sha256": "7b380a8c57673f01ca7a537ac16af9504e514fd0ce3f0881e3b1554801defafe",
+            "pose": "neutral-other-profile",
+            "variant": "lower-return",
+            "irisPigment": false,
+            "lowerReturn": true,
+            "directionalHair": false,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": -3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "directional-hair--neutral-other-profile.png",
+            "sha256": "a5bd27c8dc7ce42ffeda5d6fc0bee3d8379a5727f59554a3f26e7d27504df03d",
+            "pose": "neutral-other-profile",
+            "variant": "directional-hair",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": true,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": -3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "combined--neutral-other-profile.png",
+            "sha256": "14a379326cf38f73da17c30eabc726fbec1e4e3ecd5c9e58c84d7672bccc5b42",
+            "pose": "neutral-other-profile",
+            "variant": "combined",
+            "irisPigment": true,
+            "lowerReturn": true,
+            "directionalHair": true,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": -3.999999761581421,
+                "y": 0.824999988079071,
+                "z": 2.384185791015625e-7
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--club-front.png",
+            "sha256": "32537516a4b868dd6066a79b74a3918130f65e08fe1354c174121457c7090af0",
+            "pose": "club-front",
+            "variant": "baseline",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "iris-pigment--club-front.png",
+            "sha256": "27723ebf3eed01c35efe2d16b97ebaa2bdd80b58694b6f83aa74d06045ad2a7d",
+            "pose": "club-front",
+            "variant": "iris-pigment",
+            "irisPigment": true,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "lower-return--club-front.png",
+            "sha256": "dea32b06a8a7719071cb5fc5b8fee9a7b96425ce2fd90b8c4f5cc74f1983fde1",
+            "pose": "club-front",
+            "variant": "lower-return",
+            "irisPigment": false,
+            "lowerReturn": true,
+            "directionalHair": false,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "directional-hair--club-front.png",
+            "sha256": "cc446804dbe676c62df2508419eb43e87f774c151075f78238ec7a7009df8a4a",
+            "pose": "club-front",
+            "variant": "directional-hair",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": true,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "combined--club-front.png",
+            "sha256": "11e7f468ef69b191f679037ff0ea8b1d2d39779f0c44f9cbe6a8de5707c06ff2",
+            "pose": "club-front",
+            "variant": "combined",
+            "irisPigment": true,
+            "lowerReturn": true,
+            "directionalHair": true,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--unlit-front.png",
+            "sha256": "c8756c2e9f38eeae6d3473c171ffe8f240f91de52a093d35a6033afcf6aa626d",
+            "pose": "unlit-front",
+            "variant": "baseline",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "iris-pigment--unlit-front.png",
+            "sha256": "644fc64bc2312599eae48d3886165853287f35d4c358ae91f2f65cf38fb2cdff",
+            "pose": "unlit-front",
+            "variant": "iris-pigment",
+            "irisPigment": true,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "lower-return--unlit-front.png",
+            "sha256": "7d80a522a4ab2997b2a8c583ee56b5f2e5b6a254a8a6ccc989c01b3e1642a537",
+            "pose": "unlit-front",
+            "variant": "lower-return",
+            "irisPigment": false,
+            "lowerReturn": true,
+            "directionalHair": false,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "directional-hair--unlit-front.png",
+            "sha256": "1ccff168700ff86020f6a9ea0e76c908289987d0d7fcc367b3140d1f6052b831",
+            "pose": "unlit-front",
+            "variant": "directional-hair",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": true,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "combined--unlit-front.png",
+            "sha256": "ade133445a28277625d876f681f92cf7edba39e9a9801c646ba20084e63fe2da",
+            "pose": "unlit-front",
+            "variant": "combined",
+            "irisPigment": true,
+            "lowerReturn": true,
+            "directionalHair": true,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 0.0,
+                "y": 0.824999988079071,
+                "z": 4.0
+            },
+            "orthographic": false,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--source-camera.png",
+            "sha256": "19f99b07ebe44590c1b681c4a179b07ceaecd0420c6bfccb012bff747a14e1c0",
+            "pose": "source-camera",
+            "variant": "baseline",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--source-portrait-paired.png",
+            "sha256": "eaa0b7ebef4edb3f78a99fcd5fa9fae9f74bc84bafa7717bc9597f741c03a993",
+            "pose": "source-portrait-paired",
+            "variant": "baseline",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "iris-pigment--source-camera.png",
+            "sha256": "013a57362c1f79900c7e1e2dfe67678bd7eae3f53f9644a8f4e2f35fd0b567ef",
+            "pose": "source-camera",
+            "variant": "iris-pigment",
+            "irisPigment": true,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "iris-pigment--source-portrait-paired.png",
+            "sha256": "4e862518f94aaec8aef9dd8c3bbf42e4195114aba282ed9b3efe0f94b0945f22",
+            "pose": "source-portrait-paired",
+            "variant": "iris-pigment",
+            "irisPigment": true,
+            "lowerReturn": false,
+            "directionalHair": false,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "lower-return--source-camera.png",
+            "sha256": "19f99b07ebe44590c1b681c4a179b07ceaecd0420c6bfccb012bff747a14e1c0",
+            "pose": "source-camera",
+            "variant": "lower-return",
+            "irisPigment": false,
+            "lowerReturn": true,
+            "directionalHair": false,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "lower-return--source-portrait-paired.png",
+            "sha256": "eaa0b7ebef4edb3f78a99fcd5fa9fae9f74bc84bafa7717bc9597f741c03a993",
+            "pose": "source-portrait-paired",
+            "variant": "lower-return",
+            "irisPigment": false,
+            "lowerReturn": true,
+            "directionalHair": false,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_ClumpPigment_4K",
+                    "shadowMap": "Ren_H_Hair_ClumpPigment_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "directional-hair--source-camera.png",
+            "sha256": "b436a6e815594db1c6810576907076f1ed740219ee4f3e71a729c3c221277e7d",
+            "pose": "source-camera",
+            "variant": "directional-hair",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": true,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "directional-hair--source-portrait-paired.png",
+            "sha256": "1b413b18e8aeded057f8f5f17c520f37ebcb5cf04822797e08ba7cb184a1c02e",
+            "pose": "source-portrait-paired",
+            "variant": "directional-hair",
+            "irisPigment": false,
+            "lowerReturn": false,
+            "directionalHair": true,
+            "returnEnabled": false,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris",
+                    "colorSha256": "9a5194f1ca762b56546e749c1c34ff2589fd9cfa6c0e6cb7744c4aa2725d951a",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris",
+                    "colorSha256": "e98a81564d4fc8d71e05960915369e160a84e4b59b84c8cd98b5fb0cf5c5dbc2",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "combined--source-camera.png",
+            "sha256": "1eec928d85b6e921b7dc5066a4bbbbe50bd0d315f5b8cb0205ba8235f27c08e2",
+            "pose": "source-camera",
+            "variant": "combined",
+            "irisPigment": true,
+            "lowerReturn": true,
+            "directionalHair": true,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "combined--source-portrait-paired.png",
+            "sha256": "f27e3affc4b681de1baba7c961bdc29de05a5afa1639df766580f66b5433db41",
+            "pose": "source-portrait-paired",
+            "variant": "combined",
+            "irisPigment": true,
+            "lowerReturn": true,
+            "directionalHair": true,
+            "returnEnabled": true,
+            "returnCaster": "Off",
+            "returnUnlit": 1.0,
+            "foreheadFaceMode": 0.8999999761581421,
+            "foreheadR": 1.0,
+            "receiverFaceCast": 0.05000000074505806,
+            "cameraRect": {
+                "serializedVersion": "2",
+                "x": 0.0,
+                "y": 0.0,
+                "width": 1.0,
+                "height": 1.0
+            },
+            "cameraPosition": {
+                "x": 1.9272632598876954,
+                "y": -0.5371739864349365,
+                "z": 4.684330463409424
+            },
+            "orthographic": true,
+            "iris": [
+                {
+                    "renderer": "Ren_DesignerEye_L_Iris",
+                    "mesh": "Ren_DesignerEye_L_Iris_PigmentCandidate",
+                    "colorSha256": "7aae6f9cb6c7adcf45fe780908a8a932a4d8a2c04e8a33cfa3032f333aa13e3f",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_DesignerEye_R_Iris",
+                    "mesh": "Ren_DesignerEye_R_Iris_PigmentCandidate",
+                    "colorSha256": "a00b3d6621c9b9474ab5307e8f58c8e913a800eb6b6008229d1b90f8ce48a621",
+                    "useVertexColor": 1.0,
+                    "vertexColorSrgb": 0.0,
+                    "useBaseMap": 0.0,
+                    "unlit": 1.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ],
+            "hair": [
+                {
+                    "material": "Selected-Tokon-RenHReferenceAnimation-Ren_H_Hair_Painted_PaleBlond",
+                    "baseMap": "Ren_H_Hair_DirectionalBlond_Base_4K",
+                    "shadowMap": "Ren_H_Hair_DirectionalBlond_Shadow_2K",
+                    "useBaseMap": 1.0,
+                    "useShadowMap": 1.0,
+                    "useVertexColor": 0.0,
+                    "tint": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        }
+    ],
+    "limitation": "Same historical H073e geometry, neutral designer-eye v6, corrected support v2, temporal patch, local189-triangle forehead response and receiver classification/.05 in all states. Only iris COLOR, one118-triangle lower return and paired hair maps vary independently. No new blink/gaze/mouth motion or phone-performance claim. Source portrait uses fixed source camera and identical430x400 source-pixel crop at2x; existing ~18pixel mouth/chin fit error remains. Skin boundary and silhouette defects remain diagnostic."
+}

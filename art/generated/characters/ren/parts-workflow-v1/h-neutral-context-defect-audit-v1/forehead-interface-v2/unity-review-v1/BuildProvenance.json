@@ -1,0 +1,19 @@
+{
+  "status": "SCRATCH_GPU_CAUSAL_PAIR",
+  "editorPid": 27312,
+  "editorTerminalExitCode": 0,
+  "playerPid": 135752,
+  "captureCompletion": "REN_DESIGNER_FOREHEAD_FIELD_CAPTURE_OK",
+  "scene": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerForeheadFieldReview.unity",
+  "sceneSha256": "f90e1b44dfe7b9d598bdbf9c959709c826ba400632607594411f50cb916fa817",
+  "player": "B:\\lucid-loop\\.local\\ren-designer-forehead-field-v1\\RenDesignerForeheadFieldReview.exe",
+  "newPrivateMeshAssets": [
+    {
+      "path": "Assets\\CharacterArt\\Generated\\RenDesignerForeheadFieldReview\\RenSupportForeheadField.asset",
+      "sha256": "b36649634d39772a1f9dbdf558de3ec55c816a14939c37f131e689a17d050c8d"
+    }
+  ],
+  "actualCaptureCount": 16,
+  "mainScenePromoted": false,
+  "rootSelection": "Graded field selected as provisional next baseline after actual front/quarter; side support/ear boundary unresolved."
+}

@@ -4,6 +4,21 @@ Updated 2026-09-14 JST. Character art owner: `astra-character-artist`.
 Shared bus topic: `lucid-loop` (`b6db061cab`); character topic:
 `lucid-loop/character-art` (`085285922e`). The other Astra owns non-character work.
 
+**Current delivery correction:** the user requires the review in
+`B:\lucid-loop\Unity`. The working mouth scene and 235 dependency files have
+been copied there and verified against the migration manifest. Main Editor
+import and runtime validation are pending; external scratch paths below are
+historical source locations.
+Japanese voice work is deferred for this release; English articulation continues.
+The user reiterates that current art quality is insufficient. Slight Arcane
+influence does not relax the designer-eye or Tōkon NPRS acceptance requirements.
+
+**Updated user budget:** complete Ren 50–80k triangles; head/face 20–25k,
+hair 15–30k, visible body/clothing 15–25k, with component sums constrained by
+the overall target. Whole-frame target is 250–300k. Earlier 40k allocations in
+historical studies are superseded. Dense review assets still exceed these
+targets; see [iOS rendering requirements](IOS_RENDERING.md).
+
 **Latest user review rejects the current H v1/v2 eye construction.** Its
 quasi-realistic eye structure does not match the designer's American-anime
 silhouettes. Existing captures and players are diagnostic history. Eye work is
@@ -69,24 +84,52 @@ upper temporal notch. It does not address the separate lower-iris slit or remain
 pale gaps between lash strokes. No blink/gaze or speech completion is implied by
 these neutral captures.
 
+The subsequent forehead-only comparison has fourteen valid actual captures in
+`.local/ren-designer-forehead-v1-retry2/live-review/`. Its baseline matches the
+frozen combined front exactly, and both unlit views match. Matching face response
+on 189 support triangles reduces the targeted jagged patches; the 1,698 changed
+front pixels stay within the forehead, with no neck/back change. Remaining edge
+and transition marks still need continuous control values. The first attempt's
+viewer initialization failed and produced invalid camera framing; those captures
+are rejected and preserved separately.
+
 ## What can be opened in Unity now
 
-The newest neutral designer-eye player is
-`.local/ren-designer-eye-v6/RenDesignerEyeReview.exe`. It shows the v6 eyes,
-selected Tokon materials and experimental closed-lip paint. Its 18 actual captures
-are in `h-designer-eyes-v1/trial-v6/unity-review-v1/`, relative to the construction
-root below. This version is explicitly diagnostic: shading seams and hair defects
-remain, and its full-sheet reference panel has an inherited NPOT resize error.
-Do not judge a 1:1 match from that panel. A separate corrected comparison is in work.
+The latest successfully captured local player is
+`.local/ren-designer-mouth-v1/RenDesignerMouthReview.exe`.
+It has working open-A and seal sliders on the current head, with graded forehead
+lighting, blue-grey irises, the lower-eye return and directional pale hair maps.
+Eighteen actual front/quarter/profile mouth captures passed weight, placement and
+lip-map checks. Each view returns pixel-identically to its starting rest image.
+The four restored meshes retain the original source's rendered UVs and normals;
+tiny neutral raster differences from the earlier import are documented. Teeth,
+tongue and open-lip painting remain provisional. Full speech, expressions and
+new-eye blink/gaze integration are not complete.
 
-To inspect this scene in Unity, open the existing isolated project
-`C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification`
+The preceding `.local/ren-designer-eye-hair-v1/RenDesignerEyeHairReview.exe`
+keeps the iris, return and directional hair changes independently selectable.
+Forty actual
+captures are in `.local/ren-designer-eye-hair-v1/live-review/`. The return fills all
+273 exact-background pixels in the disclosed lower-eye region. Root inspected
+combined front, quarter and artist-paired portrait and retained these three changes
+as the next provisional baseline. Hair currently reads cool/silver; skin boundaries
+and the overall style/likeness gap remain. New-eye blinks are still separate studies.
+
+For the six-way material and geometry comparison preserved in commit `54b5417`,
+run `.local/ren-designer-refinement-v1/RenDesignerRefinementReview.exe`.
+Its corrected artist-reference pairs and 42 captures are preserved in
+`h-designer-eyes-v1/trial-v6/unity-refinement-review-v1/`.
+
+To inspect the migrated scene in Unity, open `B:\lucid-loop\Unity`
 with Unity 6000.3.24f1, then open
-`Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerEyeReview.unity`.
-The scene exists in that project, not the main `B:\lucid-loop\Unity` project.
-The viewer worker uses this scratch project for batch builds; wait for its active
-Editor process to exit before opening the same project interactively. The local
-player can be inspected independently after its capture process exits.
+`Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity`.
+Press Play for the mouth controls after compilation/import finishes. The copied
+scene is present in the main project; its main Editor runtime validation is still
+pending. The earlier eighteen captures above came from the historical project.
+Migration preserves existing main files and remaps 45 copied YAML references to
+identical main shaders. Do not open another Editor on the already-open project.
+The six-way comparison and other external scratch scenes remain historical;
+future work belongs under `B:\lucid-loop`.
 
 ### Historical H animation prototype
 
@@ -125,6 +168,16 @@ inverse instance scale, reduced but did not eliminate the error: 292 returned
 endpoints still exceed the 2e-6 native-unit tolerance, with a maximum error of
 1.045e-5. No restored assets were saved. This is measured API behavior under these
 inputs, not proof of a universal threshold or a production rig solution.
+
+The following scale-10,000 experiment passed the declared 2e-6 position tolerance
+after saving and reloading all fourteen scratch assets. All 280 actual `BakeMesh`
+samples (five weights for each of 56 frames) passed; maximum endpoint and pose error
+was 1.740e-7 native units. There are still 161 tiny zeroed nonzero rows, so this is
+tolerance-qualified fidelity, not bit-exact preservation. Source FBX/meta and
+normal/tangent frame arrays remain unchanged. These are unbound diagnostic meshes
+requiring the recorded inverse-scale attachment. Only current head/oral integration
+is being prepared; rejected historical eye meshes must not replace the new eyes.
+Actual assembled GPU mixtures and shared-rig binding remain unverified.
 
 ### Source inventory
 

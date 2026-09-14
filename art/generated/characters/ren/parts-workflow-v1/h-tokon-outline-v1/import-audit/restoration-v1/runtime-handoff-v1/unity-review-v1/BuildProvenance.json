@@ -1,0 +1,40 @@
+{
+  "status": "ACTUAL_GPU_A_SEAL_MIXTURES_AND_REST_RETURN",
+  "editorPid": 115328,
+  "editorTerminalExitCode": 0,
+  "playerPid": 142296,
+  "captureCompletion": "REN_DESIGNER_MOUTH_CAPTURE_OK",
+  "handoffSha256": "9fa7b89b259e1305fe9d555f210110819bc5e5f1ec0f6c4c695c407a1fd09b86",
+  "executedHelperSha256": "3317e03c55177a68a644252e09f93845613ec42ec1ef764b466de7c0f32523f8",
+  "sourceScene": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerForeheadFieldReview.unity",
+  "savedScene": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity",
+  "savedSceneSha256": "5850411648751ffc7bfd66f3bdd65d9d9aa56343b3428990bd8195d0d5351d85",
+  "player": "B:\\lucid-loop\\.local\\ren-designer-mouth-v1\\RenDesignerMouthReview.exe",
+  "meshes": [
+    {
+      "name": "Ren_H_Head",
+      "asset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Head-CanonicalPositions.asset",
+      "sha256": "d9bdd80ab254c00bd5542960c2a43fe2742ff1152bffe392063628d474225fb9"
+    },
+    {
+      "name": "Ren_H_InnerLipWall",
+      "asset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_InnerLipWall-CanonicalPositions.asset",
+      "sha256": "a3c0deb5a45cc518ee88525fd640fe7e637e800f4556089b8173b0b7cc649d16"
+    },
+    {
+      "name": "Ren_H_OralCavity",
+      "asset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_OralCavity-CanonicalPositions.asset",
+      "sha256": "80ce657caa02ca981b563aba3a3af9b1b91bf338782fc558b11877dc6eb3c105"
+    },
+    {
+      "name": "Ren_H_Tongue",
+      "asset": "Assets/CharacterArt/Generated/RenCanonicalMorphRepair/source073e-scale10000-position-v1/Ren_H_Tongue-CanonicalPositions.asset",
+      "sha256": "18fa671929032a8ee2ce3381eeecaf19272b6410b9bd65dfbb525998a3bdcb79"
+    }
+  ],
+  "actualCaptureCount": 18,
+  "originalSourceUnchanged": true,
+  "mainUnityPromotion": false,
+  "shaderNormalsLimitation": "Imported normal/tangent deltas remain prior diagnostic data; this is not production normal authoring.",
+  "followupFailurePathNote": "Executed3317 helper successfully wrote its audit. A subsequent read-only reviewer identified an audit-write failure rollback edge; author is hardening separately. These source snapshots and actual result remain executed3317, not untested later bytes."
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ROOT_REVIEWED_DIRECTION_FOR_ISOLATED_UNITY_COMPARISON_NOT_FINAL_SELECTION",
+  "material_owner": "hair pigment only; shared shader and control-mask ownership unchanged",
+  "target_material_identity": "Ren_H_Hair_Painted_PaleBlond",
+  "apply_maps_only_to_existing_repaired_Unity_mesh": true,
+  "uv_layer": "HairPaintUV_H_v1",
+  "uv_channel": 0,
+  "base_map": {
+    "property": "_BaseMap",
+    "file": "Ren_H_Hair_DirectionalBlond_Base_4K.png",
+    "sha256": "5bc80c29f63b3770ca5708560f46f3efa9f256a323481d289a9eb5b5ca3ace76",
+    "dimensions": [4096, 4096],
+    "color_space": "sRGB"
+  },
+  "shadow_map": {
+    "property": "_ShadowMap",
+    "file": "Ren_H_Hair_DirectionalBlond_Shadow_2K.png",
+    "sha256": "3f4553af7a54777827c528df285094dbde2e3df62d38dc0fbdd29aa695b04829",
+    "dimensions": [2048, 2048],
+    "color_space": "sRGB",
+    "interpretation": "Independent cooler hair pigment. Do not multiply by the previous (.56,.48,.40) shadow palette."
+  },
+  "base_tint": [1, 1, 1, 1],
+  "control_map": "Preserve the current constant control map and existing shader fields for the initial A/B.",
+  "preserve": ["mesh", "topology", "UVs", "normals", "silhouette", "capOn", "alpha-free surface", "cap socket", "all non-hair materials"],
+  "geometry_triangles": 9496,
+  "canonical_hair_blend_sha256": "c759804c2826ab04ed29c2cf64456f893b0d2fc9c426782f0368457b52598c97",
+  "authoring_proof_blend_sha256": "b196e673c276a0b30ab65f23874faf5438a1f6463fad0b1ffc829ac97f403b14",
+  "verification": "verification.json",
+  "visual_proof": ["sampling-check-v1/atlas-front.png", "sampling-check-v1/atlas-quarter.png", "directional--profile.png", "sampling-check-v1/direct-authoring-quarter.png", "sampling-check-v1/shadow-quarter.png"],
+  "next_review": "Actual assembled Unity neutral front/quarter, unlit and club captures. No claim of final artist stroke acceptance."
+}

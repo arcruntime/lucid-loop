@@ -3,6 +3,34 @@
 See [current H construction status](REN_H_CURRENT_WORK.md) for the latest frozen
 source handoffs, unresolved work and the scene that can actually be opened.
 
+## Current acceptance and delivery requirements
+
+The latest user feedback says the art delivered so far is not good enough.
+Slight Arcane influence is permissible in paint and lighting; the designer's
+American-anime eye silhouettes and Marvel Tōkon-style NPRS remain the visual
+requirements. No current technical checkpoint constitutes likeness approval.
+Review the actual Unity face beside the artist's drawing at matched framing,
+including lid contours, iris exposure, lash masses and smoky eye shading.
+Preserve the accepted H cheeks, jaw, nose and mouth while correcting the eyes.
+
+The lead relayed two further user instructions on the shared project bus:
+Japanese voice work is deferred for this release, and project work belongs in
+`B:\lucid-loop`. Continue English articulation; preserve Japanese experiments
+as deferred evidence. Migrate the working mouth review and its dependencies into
+`B:\lucid-loop\Unity`, preserving GUIDs and unrelated main-project changes.
+External scratch scenes are historical work pending verified migration, not
+the intended delivery location. Older bilingual requirements below describe
+the broader pipeline and do not authorize resumed Japanese-specific work.
+
+The user's latest triangle targets, relayed by the lead and recorded in
+[iOS rendering requirements](IOS_RENDERING.md), supersede the historical 40k
+allocation below: **50–80k triangles for the complete Ren**, with approximately
+20–25k for head/face, 15–30k for hair and 15–25k for visible body/clothing.
+Choose component allocations whose sum stays within the overall target; account
+for eyes, oral parts, accessories and rendered outline shells explicitly.
+Keep the whole frame within approximately **250–300k triangles**. These are
+budgets, not evidence of sustained 30fps on iPhone 15 Plus.
+
 ## Next goal: a recognizable, complete Ren head for visual review
 
 Produce one head-and-neck Ren asset with her pale-blond asymmetric shag, main-look

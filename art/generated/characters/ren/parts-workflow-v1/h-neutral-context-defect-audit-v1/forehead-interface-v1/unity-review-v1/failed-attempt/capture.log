@@ -1,0 +1,68 @@
+Mono path[0] = 'B:/lucid-loop/.local/ren-designer-forehead-v1/RenDesignerForeheadReview_Data/Managed'
+Mono config path = 'B:/lucid-loop/.local/ren-designer-forehead-v1/MonoBleedingEdge/etc'
+Found 4 interfaces on host : 0) 192.168.1.87 1) 192.168.16.1 2) 172.29.32.1 3) 100.76.27.39
+Player connection [59892]  Target information:
+
+Player connection [59892]  * "[IP] 192.168.1.87 [Port] 55000 [Flags] 2 [Guid] 841595710 [EditorId] 2309427147 [Version] 1048832 [Id] WindowsPlayer(2,Jetha-WS3) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] Lucid Loop · Gyms" 
+
+Player connection [59892]  * "[IP] 192.168.16.1 [Port] 55000 [Flags] 2 [Guid] 841595710 [EditorId] 2309427147 [Version] 1048832 [Id] WindowsPlayer(2,Jetha-WS3) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] Lucid Loop · Gyms" 
+
+Player connection [59892]  * "[IP] 172.29.32.1 [Port] 55000 [Flags] 2 [Guid] 841595710 [EditorId] 2309427147 [Version] 1048832 [Id] WindowsPlayer(2,Jetha-WS3) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] Lucid Loop · Gyms" 
+
+Player connection [59892]  * "[IP] 100.76.27.39 [Port] 55000 [Flags] 2 [Guid] 841595710 [EditorId] 2309427147 [Version] 1048832 [Id] WindowsPlayer(2,Jetha-WS3) [Debug] 0 [PackageName] WindowsPlayer [ProjectName] Lucid Loop · Gyms" 
+
+Player connection [59892] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Initialize engine version: 6000.3.24f1 (4e7b9b5b6244)
+[Subsystems] Discovering subsystems at path B:/lucid-loop/.local/ren-designer-forehead-v1/RenDesignerForeheadReview_Data/UnitySubsystems
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 5060 Ti (ID=0x2d04)
+    Vendor:   NVIDIA
+    VRAM:     16052 MB
+    Driver:   32.0.15.9579
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.524 seconds
+- Finished resetting the current domain, in  0.006 seconds
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+UnloadTime: 15.175300 ms
+KeyNotFoundException: The given key 'Ren_H_ConcealedScalpBack-MatchedSkin (UnityEngine.Material)' was not present in the dictionary.
+  at System.Collections.Generic.Dictionary`2[TKey,TValue].get_Item (TKey key) [0x0001e] in <d49d4cb128564ee1b54a84338c98d353>:0 
+  at LucidLoop.CharacterArt.RenDesignerEyeReview.<Awake>b__40_0 (UnityEngine.Material m) [0x00000] in C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Assets\CharacterArt\Runtime\RenDesignerEyeReview.cs:47 
+  at System.Linq.Enumerable+SelectArrayIterator`2[TSource,TResult].MoveNext () [0x0003a] in <e1f614c5eede4689988594bcb9796955>:0 
+  at System.Linq.Set`1[TElement].UnionWith (System.Collections.Generic.IEnumerable`1[T] other) [0x00018] in <e1f614c5eede4689988594bcb9796955>:0 
+  at System.Linq.Enumerable+DistinctIterator`1[TSource].FillSet () [0x0000b] in <e1f614c5eede4689988594bcb9796955>:0 
+  at System.Linq.Enumerable+DistinctIterator`1[TSource].ToArray () [0x00000] in <e1f614c5eede4689988594bcb9796955>:0 
+  at System.Linq.Enumerable.ToArray[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x0001f] in <e1f614c5eede4689988594bcb9796955>:0 
+  at LucidLoop.CharacterArt.RenDesignerEyeReview.Awake () [0x000a0] in C:\Users\jetha\AppData\Local\LucidLoopScratch\ren-eye-import-verification\Assets\CharacterArt\Runtime\RenDesignerEyeReview.cs:47 
+
+(Filename: C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs Line: 47)
+
+REN_DESIGNER_FOREHEAD_CAPTURE_OK: B:\lucid-loop\.local\ren-designer-forehead-v1\live-review
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at C:/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:35)
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[]) (at C:/build/output/unity/unity/Runtime/Export/Logging/DebugLogHandler.cs:9)
+UnityEngine.Logger:Log (UnityEngine.LogType,object) (at C:/build/output/unity/unity/Runtime/Export/Logging/Logger.cs:60)
+UnityEngine.Debug:Log (object) (at C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs:123)
+LucidLoop.CharacterArt.RenDesignerForeheadReview/<Capture>d__15:MoveNext () (at C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs:58)
+LucidLoop.CharacterArt.RenDesignerForeheadReview/<Start>d__14:MoveNext () (at C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs:41)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr) (at C:/build/output/unity/unity/Runtime/Export/Scripting/Coroutines.cs:17)
+
+(Filename: C:/build/output/unity/unity/Runtime/Export/Debug/Debug.bindings.cs Line: 123)
+
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+PlayerConnection::Cleanup##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1789338241905,"processId":62612,"allocatedMemory":53762,"memoryLabels":[{"Default":136},{"NewDelete":104},{"Manager":9267},{"VertexData":576},{"GfxDevice":504},{"Audio":752},{"Serialization":520},{"JobScheduler":32768},{"String":399},{"DynamicArray":2688},{"HashMap":3584},{"PoolAlloc":192},{"CloudService":144},{"VR":1872},{"Video":144},{"Subsystems":96},{"CoreBusinessMetrics":120}]}

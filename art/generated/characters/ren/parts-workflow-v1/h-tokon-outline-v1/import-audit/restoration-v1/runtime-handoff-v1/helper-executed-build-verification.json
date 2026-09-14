@@ -1,0 +1,20 @@
+{
+  "schema": "ren-mouth-binding-helper-build-v1",
+  "helper": "RenDesignerMouthImport.cs",
+  "helperSha256": "3317e03c55177a68a644252e09f93845613ec42ec1ef764b466de7c0f32523f8",
+  "handoff": "runtime-handoff.json",
+  "handoffSha256": "9fa7b89b259e1305fe9d555f210110819bc5e5f1ec0f6c4c695c407a1fd09b86",
+  "status": "OFFLINE_COMPILE_PASSED_UNITY_BINDING_AND_GPU_PENDING",
+  "unityVersion": "6000.3.24f1",
+  "compiler": "C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/DotNetSdkRoslyn/csc.dll",
+  "actualRuntimeAssembly": "C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/Library/ScriptAssemblies/LucidLoop.CharacterArt.dll",
+  "actualRuntimeAssemblySha256": "ea722a403250864fe8ed13cf6eca577e297cb8b25070c9235440f098dbaa506f",
+  "responseFile": "B:/lucid-loop/.local/ren-canonical-repair-compile/mouth-import.rsp",
+  "compiledDllSha256": "007e9a6a77d9b37da8f05e6c4f4c307d59f668de537413a6ea22b735b5515f06",
+  "notes": [
+    "Compiled against actual current runtime assembly, not stubs.",
+    "No Unity Editor launched by the helper author.",
+    "The viewer owns actual scratch execution and rendering.",
+    "No GPU fidelity claim from compilation."
+  ]
+}

@@ -1,0 +1,502 @@
+{
+    "status": "LOCAL_FOREHEAD_RESPONSE_DIAGNOSTIC_NOT_SHADING_ACCEPTANCE",
+    "eyeSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+    "headSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+    "runtimeSha256": "7fbc1812f722460100bf3a844268ba5e916da7ba67edceb7fbbb12bf0772566b",
+    "builderSha256": "c4597c5119b4cae8e4abc92d24b3e298e3994b0ccff6fa876a6a9842375de993",
+    "referenceSha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+    "unityVersion": "6000.3.24f1",
+    "graphicsApi": "Direct3D11",
+    "unchangedEyeGeometry": true,
+    "unchangedHistoricalHead": true,
+    "outlineOff": true,
+    "noSupportBridge": false,
+    "referenceNpotNone": true,
+    "sourcePixelCrop": [
+        275.0,
+        25.0,
+        430.0,
+        400.0
+    ],
+    "cropDisplayScale": 2,
+    "partitionAuditSha256": "f11046e31ba181e595c528572c76a2e22b35bccd545fec275be10bb8bcbfd8fc",
+    "captures": [
+        {
+            "file": "baseline--neutral-front.png",
+            "sha256": "7292a6f2fb546da2fb0060358bdcf7b31c5ede52917fc820656b3b91f17c11b1",
+            "pose": "neutral-front",
+            "foreheadResponse": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "forehead-response--neutral-front.png",
+            "sha256": "48319d11e1264b2bdc2251162e39a8c390a919ca78debe28955775a669c1c076",
+            "pose": "neutral-front",
+            "foreheadResponse": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--neutral-quarter.png",
+            "sha256": "b413bdb87c62dcdf9485f1e67886a094c3e6bea45a360218eecce71a0edf5136",
+            "pose": "neutral-quarter",
+            "foreheadResponse": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "forehead-response--neutral-quarter.png",
+            "sha256": "b760118e1e266a9f8f135a5ac175acc4fa9295172ea55a31a3ee9c5abe9c1227",
+            "pose": "neutral-quarter",
+            "foreheadResponse": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--club-front.png",
+            "sha256": "a691ac366cb19d7a93b8a66ad3d84b46a9a9385af0ff8c46e08eeaac3f419e85",
+            "pose": "club-front",
+            "foreheadResponse": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "forehead-response--club-front.png",
+            "sha256": "32537516a4b868dd6066a79b74a3918130f65e08fe1354c174121457c7090af0",
+            "pose": "club-front",
+            "foreheadResponse": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--club-quarter.png",
+            "sha256": "5856af02e46b2d995c7d977cfcee8b9bf471e0a5f627be1391c9f76fcfeecfc4",
+            "pose": "club-quarter",
+            "foreheadResponse": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "forehead-response--club-quarter.png",
+            "sha256": "69ebad4b6198be5b0c6a78516acfef2c34b835400199cf619e44ff59ecd32b58",
+            "pose": "club-quarter",
+            "foreheadResponse": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--unlit-front.png",
+            "sha256": "c8756c2e9f38eeae6d3473c171ffe8f240f91de52a093d35a6033afcf6aa626d",
+            "pose": "unlit-front",
+            "foreheadResponse": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 1.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 1.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "forehead-response--unlit-front.png",
+            "sha256": "c8756c2e9f38eeae6d3473c171ffe8f240f91de52a093d35a6033afcf6aa626d",
+            "pose": "unlit-front",
+            "foreheadResponse": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 1.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 1.0,
+                    "controlFallback": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--source-camera.png",
+            "sha256": "9e4aae7c0d6cada792c6e5648b312c9a8cc861d606494cfb54c831d4ae4db210",
+            "pose": "source-camera",
+            "foreheadResponse": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "baseline--source-portrait-paired.png",
+            "sha256": "c8e9ba16e4ffd17c3afcc26214b2101f5d9466ad49d6848df063a54a9877fc99",
+            "pose": "source-portrait-paired",
+            "foreheadResponse": false,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "forehead-response--source-camera.png",
+            "sha256": "19f99b07ebe44590c1b681c4a179b07ceaecd0420c6bfccb012bff747a14e1c0",
+            "pose": "source-camera",
+            "foreheadResponse": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        },
+        {
+            "file": "forehead-response--source-portrait-paired.png",
+            "sha256": "eaa0b7ebef4edb3f78a99fcd5fa9fae9f74bc84bafa7717bc9597f741c03a993",
+            "pose": "source-portrait-paired",
+            "foreheadResponse": true,
+            "readback": [
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.15000000596046449,
+                    "faceMode": 0.0,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                },
+                {
+                    "renderer": "Ren_H_ConcealedScalpBack",
+                    "shadowStrength": 0.800000011920929,
+                    "faceCastShadowStrength": 0.05000000074505806,
+                    "faceMode": 0.8999999761581421,
+                    "unlit": 0.0,
+                    "controlFallback": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    }
+                }
+            ]
+        }
+    ],
+    "limits": "Only189 selected support triangles change FaceMode0 to.9, controlR0 to1, facial shadow.15 to.05. Neck/back/transition triangles stay original. Selected receiver.05, clean hair and temporal patch are fixed in both states. Other material values, source meshes/paint, camera and lights unchanged. Reference-only NPOT=None import fixes aspect; portrait pair samples identical source canvas crop and uniform2x scale, no XY warp. Source camera's existing mouth/chin residual ~18pixels remains. No final style, motion or phone result."
+}

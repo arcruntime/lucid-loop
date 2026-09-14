@@ -1,0 +1,269 @@
+{
+  "scene": "C:\\Users\\jetha\\AppData\\Local\\LucidLoopScratch\\ren-eye-import-verification\\Assets\\CharacterArt\\Generated\\Preview\\Scenes\\RenDesignerForeheadReview.unity",
+  "sourceFbx": "Assets/CharacterArt/Generated/RenHReferenceAnimation/Sources/Ren_H_CompleteHead_Review.fbx",
+  "sourceSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+  "sourceTopologyUnmodified": true,
+  "newEyesSupportPatchSeparate": true,
+  "rendererBindings": [
+    {
+      "name": "Ren_H_InnerLipWall",
+      "path": "Ren H reference animation/Motion/Source/Head/Ren_H_InnerLipWall",
+      "mesh": {
+        "fileID": -5749690729483675472,
+        "guid": "da1e70fc56987cc46995e18007fa4674",
+        "type": 3
+      },
+      "materials": [
+        {
+          "fileID": 2100000,
+          "guid": "c4addb0346e2ead4281f22462689b5d8",
+          "type": 2
+        }
+      ],
+      "localPosition": {
+        "x": 0.00029418606,
+        "y": 7.325581e-05,
+        "z": -0.002884884
+      },
+      "localRotation": {
+        "x": 0,
+        "y": 0,
+        "z": -0.7071068,
+        "w": 0.7071067
+      },
+      "localScale": {
+        "x": 1.0465118,
+        "y": 1.0465118,
+        "z": 1.0465117
+      },
+      "worldMatrix": [
+        [
+          168.24458368244865,
+          4.763960049301567e-13,
+          -8.952712301888986e-06,
+          -0.013223479348585759
+        ],
+        [
+          8.952711891265523e-06,
+          4.763960462722752e-13,
+          168.24457349370127,
+          5.49374266078928e-08
+        ],
+        [
+          2.05581349292172e-12,
+          -168.24459852311628,
+          4.763960007499938e-13,
+          -0.20791010309836847
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "weights": [
+        0,
+        100
+      ],
+      "bones": []
+    },
+    {
+      "name": "Ren_H_Head",
+      "path": "Ren H reference animation/Motion/Source/Head/Ren_H_Head",
+      "mesh": {
+        "fileID": 7176641938830419920,
+        "guid": "da1e70fc56987cc46995e18007fa4674",
+        "type": 3
+      },
+      "materials": [
+        {
+          "fileID": 2100000,
+          "guid": "f1afda5543674c34da8e6f2c0333e1ba",
+          "type": 2
+        },
+        {
+          "fileID": 2100000,
+          "guid": "895337e4321039d40a634ed2097d0715",
+          "type": 2
+        },
+        {
+          "fileID": 2100000,
+          "guid": "ad056ac5663d25947a6a1a5982701960",
+          "type": 2
+        }
+      ],
+      "localPosition": {
+        "x": 0.00029418606,
+        "y": 7.325581e-05,
+        "z": -0.002884884
+      },
+      "localRotation": {
+        "x": 0,
+        "y": 0,
+        "z": -0.7071068,
+        "w": 0.7071067
+      },
+      "localScale": {
+        "x": 1.0465118,
+        "y": 1.0465118,
+        "z": 1.0465117
+      },
+      "worldMatrix": [
+        [
+          168.24458368244865,
+          4.763960049301567e-13,
+          -8.952712301888986e-06,
+          -0.013223479348585759
+        ],
+        [
+          8.952711891265523e-06,
+          4.763960462722752e-13,
+          168.24457349370127,
+          5.49374266078928e-08
+        ],
+        [
+          2.05581349292172e-12,
+          -168.24459852311628,
+          4.763960007499938e-13,
+          -0.20791010309836847
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "weights": [
+        0,
+        100
+      ],
+      "bones": []
+    },
+    {
+      "name": "Ren_H_OralCavity",
+      "path": "Ren H reference animation/Motion/Source/Head/Ren_H_OralCavity",
+      "mesh": {
+        "fileID": 7003666531195172776,
+        "guid": "da1e70fc56987cc46995e18007fa4674",
+        "type": 3
+      },
+      "materials": [
+        {
+          "fileID": 2100000,
+          "guid": "c4addb0346e2ead4281f22462689b5d8",
+          "type": 2
+        }
+      ],
+      "localPosition": {
+        "x": 0.00029418606,
+        "y": 7.325581e-05,
+        "z": -0.002884884
+      },
+      "localRotation": {
+        "x": 0,
+        "y": 0,
+        "z": -0.7071068,
+        "w": 0.7071067
+      },
+      "localScale": {
+        "x": 1.0465118,
+        "y": 1.0465118,
+        "z": 1.0465117
+      },
+      "worldMatrix": [
+        [
+          168.24458368244865,
+          4.763960049301567e-13,
+          -8.952712301888986e-06,
+          -0.013223479348585759
+        ],
+        [
+          8.952711891265523e-06,
+          4.763960462722752e-13,
+          168.24457349370127,
+          5.49374266078928e-08
+        ],
+        [
+          2.05581349292172e-12,
+          -168.24459852311628,
+          4.763960007499938e-13,
+          -0.20791010309836847
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "weights": [
+        0
+      ],
+      "bones": []
+    },
+    {
+      "name": "Ren_H_Tongue",
+      "path": "Ren H reference animation/Motion/Source/Head/Ren_H_Tongue",
+      "mesh": {
+        "fileID": -2747230102670996766,
+        "guid": "da1e70fc56987cc46995e18007fa4674",
+        "type": 3
+      },
+      "materials": [
+        {
+          "fileID": 2100000,
+          "guid": "688e8b7371cc2f34ebf3ee55f399d26e",
+          "type": 2
+        }
+      ],
+      "localPosition": {
+        "x": 0.00029418606,
+        "y": 7.325581e-05,
+        "z": -0.002884884
+      },
+      "localRotation": {
+        "x": 0,
+        "y": 0,
+        "z": -0.7071068,
+        "w": 0.7071067
+      },
+      "localScale": {
+        "x": 1.0465118,
+        "y": 1.0465118,
+        "z": 1.0465117
+      },
+      "worldMatrix": [
+        [
+          168.24458368244865,
+          4.763960049301567e-13,
+          -8.952712301888986e-06,
+          -0.013223479348585759
+        ],
+        [
+          8.952711891265523e-06,
+          4.763960462722752e-13,
+          168.24457349370127,
+          5.49374266078928e-08
+        ],
+        [
+          2.05581349292172e-12,
+          -168.24459852311628,
+          4.763960007499938e-13,
+          -0.20791010309836847
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "weights": [
+        0
+      ],
+      "bones": []
+    }
+  ]
+}

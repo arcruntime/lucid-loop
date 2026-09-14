@@ -1,0 +1,89 @@
+{
+  "status": "SCRATCH_ONLY_ACTUAL_GPU_REVIEW_NO_ART_ACCEPTANCE",
+  "buildEditorPid": 106232,
+  "buildTerminalExitCode": 0,
+  "capturePlayerPid": 71684,
+  "captureCompletionMarker": "REN_DESIGNER_EYE_HAIR_CAPTURE_OK",
+  "actualCaptures": 40,
+  "additionalPixelCrops": 3,
+  "player": "B:\\lucid-loop\\.local\\ren-designer-eye-hair-v1\\RenDesignerEyeHairReview.exe",
+  "scene": "Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerEyeHairReview.unity",
+  "scratchProject": "C:\\Users\\jetha\\AppData\\Local\\LucidLoopScratch\\ren-eye-import-verification",
+  "generatedDependencies": [
+    {
+      "path": "Assets\\CharacterArt\\Generated\\RenDesignerEyeHairReview\\Hair\\Ren_H_Hair_DirectionalBlond_Base_4K.png",
+      "sha256": "5bc80c29f63b3770ca5708560f46f3efa9f256a323481d289a9eb5b5ca3ace76"
+    },
+    {
+      "path": "Assets\\CharacterArt\\Generated\\RenDesignerEyeHairReview\\Hair\\Ren_H_Hair_DirectionalBlond_Shadow_2K.png",
+      "sha256": "3f4553af7a54777827c528df285094dbde2e3df62d38dc0fbdd29aa695b04829"
+    },
+    {
+      "path": "Assets\\CharacterArt\\Generated\\RenDesignerEyeHairReview\\Return\\Ren_DesignerEye_ApertureReturn.fbx",
+      "sha256": "eab8459a8b5f11d45f710b9a394a3702c77216691eb2cffe322ede42c6556e2c"
+    },
+    {
+      "path": "Assets\\CharacterArt\\Generated\\RenDesignerEyeHairReview\\Iris\\SourceTransfer.json",
+      "sha256": "da81e1d8aab0c93ea06bfde97936795551a0b5e54cb9341d4dd827c25bca3907"
+    },
+    {
+      "path": "Assets\\CharacterArt\\Generated\\RenDesignerRefinementReview\\Shaders\\RenTokonReceiverNPR.shader",
+      "sha256": "5d78c781490de5f00b7545a36a7372b06ff32a861f58da9bbbc5c0de112152fb"
+    },
+    {
+      "path": "Assets\\CharacterArt\\Generated\\RenDesignerRefinementReview\\Shaders\\RenTokonNPR.hlsl",
+      "sha256": "1c4a197d5724e638b78205ec05794f97fb5b176ec57623b9707453a0c1f5787b"
+    },
+    {
+      "path": "Assets\\CharacterArt\\Generated\\Preview\\Scenes\\RenDesignerEyeHairReview.unity",
+      "sha256": "931faca963dfa911618fd2cca07e3e8633f94df37780b169fce15a17111f86e8"
+    }
+  ],
+  "sourceSnapshots": [
+    {
+      "path": "source\\Editor\\RenDesignerEyeHairReviewBuilder.cs",
+      "sha256": "11113e260c0660de9815d5eac17e43432ce1b940a3fe5c39e3610733d8c8bdd5"
+    },
+    {
+      "path": "source\\Editor\\RenDesignerEyeHairReviewBuilder.cs.meta",
+      "sha256": "5ed3c0b567c84287481de74ef544f6e0b3d91d16368ec5d7b36fcb5d7358c073"
+    },
+    {
+      "path": "source\\Editor\\RenDesignerIrisColorImport.cs",
+      "sha256": "5ad2f8b522ab1a6c516a2e79f1424e5a72187404351df8b549114c848997d3fd"
+    },
+    {
+      "path": "source\\Editor\\RenDesignerIrisColorImport.cs.meta",
+      "sha256": "d6fc14d519eba32894ec309d369bb170aafec6b6ad3018012e110b7103f1bf85"
+    },
+    {
+      "path": "source\\Editor\\RenDesignerReturnImport.cs",
+      "sha256": "92eb0f77e4069207455719bb08474fd4c833cd98d68814f74dbf92caf832e4e3"
+    },
+    {
+      "path": "source\\Editor\\RenDesignerReturnImport.cs.meta",
+      "sha256": "404d4874010902d7fd1c878cbc83c42701eacd24ebb945adf871ad0e5dac21f7"
+    },
+    {
+      "path": "source\\Runtime\\RenDesignerEyeHairReview.cs",
+      "sha256": "6679daf3c9d23586036b622f489647e6c290753d490c7d5376caf3657600287f"
+    },
+    {
+      "path": "source\\Runtime\\RenDesignerEyeHairReview.cs.meta",
+      "sha256": "314ad1e71c74ce9fb3060d36fe39295e810f1d5d100a1ae37d5337298b2f25c3"
+    }
+  ],
+  "failures": [
+    {
+      "log": "B:\\lucid-loop\\.local\\ren-designer-eye-hair-v1\\build.log",
+      "cause": "New transfer1e-6 position gate rejected existing historical Unity registration1.55\u20131.67e-6 error; stopped before any player build."
+    },
+    {
+      "log": "B:\\lucid-loop\\.local\\ren-designer-eye-hair-v1\\attempt-02-correspondence.log",
+      "cause": "Bounded exact XYZ/UV diagnostic reproduced historical Zscale99.9997253; UV exact. Raw-FBX\u2192transfer positions/UV/oldRGBA exact. Established actual Unity2e-6 gate retained, transfer\u2192raw1e-6 independently checked. No calibration/geometry/tolerance drift hidden."
+    }
+  ],
+  "priorBaselinePixelEqual": true,
+  "mainUnitySceneOrAssetsPromoted": false,
+  "noNewControls": true
+}

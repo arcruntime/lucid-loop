@@ -1,0 +1,28 @@
+{
+  "status": "ACTUAL_LOCAL_FOREHEAD_RESPONSE_PAIR_PROVISIONAL_BASELINE",
+  "captures": 14,
+  "verifiedActualMaterialStates": 14,
+  "baselineEqualsFrozenCombined": true,
+  "unlitParity": true,
+  "geometryIndexPartitionOnly": true,
+  "selectedTriangles": 189,
+  "unchangedRegionTriangles": 1289,
+  "sourceFbxSha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d",
+  "receiverHlslSha256": "1c4a197d5724e638b78205ec05794f97fb5b176ec57623b9707453a0c1f5787b",
+  "partitionAuditSha256": "f11046e31ba181e595c528572c76a2e22b35bccd545fec275be10bb8bcbfd8fc",
+  "buildLogSha256": "da790b1daf8e0dcac0b22de887399f5c6a8979e1c0a0ae574e0329e29b393c0f",
+  "captureLogSha256": "7ef7b2d56dffbeb4cec01f79fd455d7f08dbd4dd4d051b5532e21ecaf94d4479",
+  "pixelAudit": {
+    "baselineChangedVsFrozenCombined": 0,
+    "frontChangedPixels": 1698,
+    "changedBbox": [
+      594,
+      489,
+      1035,
+      611
+    ],
+    "unlitParity": true
+  },
+  "result": "Target jagged forehead response reduces; lower-confidence transition patches remain. Root selected local response as provisional next baseline. No pigment or head/eye geometry change.",
+  "failureHistory": "First runtime Awake failed because a now-unbound old support material remained in the base viewer material list. Those images had a stale camera rectangle and are invalid. Corrected new helper filters actual bound materials; capture checks actual full camera rect/projection/pose/unlit before image acceptance. First artifacts preserved separately."
+}

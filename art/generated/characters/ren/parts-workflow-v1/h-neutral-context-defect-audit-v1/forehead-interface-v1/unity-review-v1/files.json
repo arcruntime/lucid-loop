@@ -1,0 +1,144 @@
+{
+  "files": [
+    {
+      "file": "baseline--club-front.png",
+      "sha256": "a691ac366cb19d7a93b8a66ad3d84b46a9a9385af0ff8c46e08eeaac3f419e85",
+      "bytes": 543763
+    },
+    {
+      "file": "baseline--club-quarter.png",
+      "sha256": "5856af02e46b2d995c7d977cfcee8b9bf471e0a5f627be1391c9f76fcfeecfc4",
+      "bytes": 494828
+    },
+    {
+      "file": "baseline--neutral-front.png",
+      "sha256": "7292a6f2fb546da2fb0060358bdcf7b31c5ede52917fc820656b3b91f17c11b1",
+      "bytes": 526633
+    },
+    {
+      "file": "baseline--neutral-quarter.png",
+      "sha256": "b413bdb87c62dcdf9485f1e67886a094c3e6bea45a360218eecce71a0edf5136",
+      "bytes": 522179
+    },
+    {
+      "file": "baseline--source-camera.png",
+      "sha256": "9e4aae7c0d6cada792c6e5648b312c9a8cc861d606494cfb54c831d4ae4db210",
+      "bytes": 138811
+    },
+    {
+      "file": "baseline--source-portrait-paired.png",
+      "sha256": "c8e9ba16e4ffd17c3afcc26214b2101f5d9466ad49d6848df063a54a9877fc99",
+      "bytes": 1164985
+    },
+    {
+      "file": "baseline--unlit-front.png",
+      "sha256": "c8756c2e9f38eeae6d3473c171ffe8f240f91de52a093d35a6033afcf6aa626d",
+      "bytes": 415372
+    },
+    {
+      "file": "forehead-response--club-front.png",
+      "sha256": "32537516a4b868dd6066a79b74a3918130f65e08fe1354c174121457c7090af0",
+      "bytes": 543639
+    },
+    {
+      "file": "forehead-response--club-quarter.png",
+      "sha256": "69ebad4b6198be5b0c6a78516acfef2c34b835400199cf619e44ff59ecd32b58",
+      "bytes": 494786
+    },
+    {
+      "file": "forehead-response--neutral-front.png",
+      "sha256": "48319d11e1264b2bdc2251162e39a8c390a919ca78debe28955775a669c1c076",
+      "bytes": 526446
+    },
+    {
+      "file": "forehead-response--neutral-quarter.png",
+      "sha256": "b760118e1e266a9f8f135a5ac175acc4fa9295172ea55a31a3ee9c5abe9c1227",
+      "bytes": 522055
+    },
+    {
+      "file": "forehead-response--source-camera.png",
+      "sha256": "19f99b07ebe44590c1b681c4a179b07ceaecd0420c6bfccb012bff747a14e1c0",
+      "bytes": 138726
+    },
+    {
+      "file": "forehead-response--source-portrait-paired.png",
+      "sha256": "eaa0b7ebef4edb3f78a99fcd5fa9fae9f74bc84bafa7717bc9597f741c03a993",
+      "bytes": 1164379
+    },
+    {
+      "file": "forehead-response--unlit-front.png",
+      "sha256": "c8756c2e9f38eeae6d3473c171ffe8f240f91de52a093d35a6033afcf6aa626d",
+      "bytes": 415372
+    },
+    {
+      "file": "ForeheadLiveEvidence.json",
+      "sha256": "55c89b3e26657cb0ac08ce362949262a2dd00ed5c0364e3d7a113388ab059cba",
+      "bytes": 19302
+    },
+    {
+      "file": "PartitionAudit.json",
+      "sha256": "f11046e31ba181e595c528572c76a2e22b35bccd545fec275be10bb8bcbfd8fc",
+      "bytes": 967
+    },
+    {
+      "file": "pixel-audit.json",
+      "sha256": "fb13f1b6a71ebee66be739c2c3b19d00cf0b28af4c45fca08d4da6d20bca5da7",
+      "bytes": 167
+    },
+    {
+      "file": "README.md",
+      "sha256": "b95c67229562b10628ffe1e3207e44a10fadfb1af6bd65727f5cf0595786fb9c",
+      "bytes": 2173
+    },
+    {
+      "file": "review-evidence.json",
+      "sha256": "b465d050ef2c0ed79376dc91f1ab2e11c30c0367320a1fdfa090c116b5c9f0fc",
+      "bytes": 1513
+    },
+    {
+      "file": "SourcePartition.json",
+      "sha256": "eb10d72a09905ead86914cf58e7493c28d80182e8507b1a076e15deeb8ce5420",
+      "bytes": 310818
+    },
+    {
+      "file": "failed-attempt/capture.log",
+      "sha256": "374eec02f820bcf5fb1af2d0c3cd05e56c2c05e4f6d156be694a3f2451869a5c",
+      "bytes": 6042
+    },
+    {
+      "file": "failed-attempt/invalid-camera-front.png",
+      "sha256": "91e09ef7c49cf7d76b1972081fdd52e678de3f5bfb78f3b219e951f26ed8c8cd",
+      "bytes": 214502
+    },
+    {
+      "file": "tested-source/RenDesignerForeheadPartition.cs",
+      "sha256": "c9de2b94eff4149f8a98e8dd1bd677298a951704ec2076282f28e5606d0c3837",
+      "bytes": 7045
+    },
+    {
+      "file": "tested-source/RenDesignerForeheadPartition.cs.meta",
+      "sha256": "26727b6da42f7851ff10cc1664e5b1acf74f2f88ade172419eddc7678899db01",
+      "bytes": 59
+    },
+    {
+      "file": "tested-source/RenDesignerForeheadReview.cs",
+      "sha256": "7fbc1812f722460100bf3a844268ba5e916da7ba67edceb7fbbb12bf0772566b",
+      "bytes": 8156
+    },
+    {
+      "file": "tested-source/RenDesignerForeheadReview.cs.meta",
+      "sha256": "228181c4a98fa7038b5319dc43fc26306303f6561652b60a26efbe919a48ed9e",
+      "bytes": 59
+    },
+    {
+      "file": "tested-source/RenDesignerForeheadReviewBuilder.cs",
+      "sha256": "c4597c5119b4cae8e4abc92d24b3e298e3994b0ccff6fa876a6a9842375de993",
+      "bytes": 2964
+    },
+    {
+      "file": "tested-source/RenDesignerForeheadReviewBuilder.cs.meta",
+      "sha256": "14605f7742a3b241ec0afd0e1e43e85a8dee9106d2d0f80a54d8eab8c75ed73d",
+      "bytes": 59
+    }
+  ]
+}

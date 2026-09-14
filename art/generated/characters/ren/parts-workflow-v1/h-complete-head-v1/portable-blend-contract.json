@@ -1,0 +1,6376 @@
+{
+  "status": "PACKED_COPY_REOPEN_AND_MISSING_EXTERNAL_PATH_RENDER_PASS",
+  "source": {
+    "file": "Ren_H_CompleteHead_Review.blend",
+    "sha256": "216be081c450f81f60efc1ad1517b7c52246ecb7dd2afa97c1d6f06308615377",
+    "unchanged": true
+  },
+  "portable": {
+    "file": "Ren_H_CompleteHead_Portable.blend",
+    "sha256": "317b8f7379dcf8d2fe34501385e1da7cd91b3d057008d488db0c65ed3727b8f5",
+    "bytes": 38050551
+  },
+  "originalExternalImageCount": 6,
+  "originalImages": [
+    {
+      "name": "ren-tripo-studio-h3.1-a-open-original-8k_basecolor.jpg",
+      "source": "FILE",
+      "path": "",
+      "packed": true,
+      "packedBytes": 1768797,
+      "packedSha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce",
+      "dimensions": [
+        8192,
+        8192
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "ren-tripo-studio-h3.1-a-open-original-8k_normal.jpg",
+      "source": "FILE",
+      "path": "",
+      "packed": true,
+      "packedBytes": 303973,
+      "packedSha256": "8d4e8ad355ba215804091d896df74b9c0395936622773516f15e8bc918aa8124",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "colorSpace": "Non-Color"
+    },
+    {
+      "name": "ren-tripo-studio-h3.1-a-open-original-8k_rm.jpg",
+      "source": "FILE",
+      "path": "",
+      "packed": true,
+      "packedBytes": 659667,
+      "packedSha256": "7d2e5c74cd5b4551b9ea853188a62cb51a11a923668e5696d2c1d638f557f771",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "colorSpace": "Non-Color"
+    },
+    {
+      "name": "Ren_Cap_V2_BaseColor.png",
+      "source": "FILE",
+      "path": "//..\\head-accessories-v2\\Ren_Cap_V2_BaseColor.png",
+      "packed": true,
+      "packedBytes": 739906,
+      "packedSha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_ArtistRose_BaseColor.png",
+      "source": "FILE",
+      "path": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\final-material\\Ren_H_ArtistRose_BaseColor.png",
+      "packed": false,
+      "packedBytes": 0,
+      "packedSha256": null,
+      "dimensions": [
+        8192,
+        8192
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_CheekPatch_BaseColor",
+      "source": "FILE",
+      "path": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\patch-uv-paint\\Ren_H_CheekPatch_BaseColor.png",
+      "packed": false,
+      "packedBytes": 0,
+      "packedSha256": null,
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_CheekPatch_BaseColor.001",
+      "source": "FILE",
+      "path": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\patch-uv-region2\\Ren_H_CheekPatch_BaseColor.png",
+      "packed": false,
+      "packedBytes": 0,
+      "packedSha256": null,
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_Hair_BaseColor_4K",
+      "source": "FILE",
+      "path": "//..\\h-hair-fit-v1\\hair-only-selected-v2\\Ren_H_Hair_BaseColor_4K.png",
+      "packed": true,
+      "packedBytes": 9669189,
+      "packedSha256": "bc2a04f4f4c426521fd2050b569f8c0d08eff12ad1065df2512bdd6b40543c6f",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_Iris_BlueGrey.png",
+      "source": "FILE",
+      "path": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-eye-controls-v1\\Ren_H_Iris_BlueGrey.png",
+      "packed": false,
+      "packedBytes": 0,
+      "packedSha256": null,
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_Lid_L_BaseColor",
+      "source": "FILE",
+      "path": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\lid-material\\Ren_H_Lid_L_BaseColor.png",
+      "packed": false,
+      "packedBytes": 0,
+      "packedSha256": null,
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_Lid_R_BaseColor",
+      "source": "FILE",
+      "path": "B:\\lucid-loop\\art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\lid-material\\Ren_H_Lid_R_BaseColor.png",
+      "packed": false,
+      "packedBytes": 0,
+      "packedSha256": null,
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    }
+  ],
+  "portableImages": [
+    {
+      "name": "ren-tripo-studio-h3.1-a-open-original-8k_basecolor.jpg",
+      "source": "FILE",
+      "path": "//textures\\tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.jpg",
+      "packed": true,
+      "packedBytes": 1768797,
+      "packedSha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce",
+      "dimensions": [
+        8192,
+        8192
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "ren-tripo-studio-h3.1-a-open-original-8k_normal.jpg",
+      "source": "FILE",
+      "path": "//packed\\ren-tripo-studio-h3.1-a-open-original-8k_normal.jpg",
+      "packed": true,
+      "packedBytes": 303973,
+      "packedSha256": "8d4e8ad355ba215804091d896df74b9c0395936622773516f15e8bc918aa8124",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "colorSpace": "Non-Color"
+    },
+    {
+      "name": "ren-tripo-studio-h3.1-a-open-original-8k_rm.jpg",
+      "source": "FILE",
+      "path": "//packed\\ren-tripo-studio-h3.1-a-open-original-8k_rm.jpg",
+      "packed": true,
+      "packedBytes": 659667,
+      "packedSha256": "7d2e5c74cd5b4551b9ea853188a62cb51a11a923668e5696d2c1d638f557f771",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "colorSpace": "Non-Color"
+    },
+    {
+      "name": "Ren_Cap_V2_BaseColor.png",
+      "source": "FILE",
+      "path": "//textures\\Ren_Cap_V2_Cloth.png",
+      "packed": true,
+      "packedBytes": 739906,
+      "packedSha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_ArtistRose_BaseColor.png",
+      "source": "FILE",
+      "path": "//textures\\Ren_H_ArtistRose_NPRBase.png",
+      "packed": true,
+      "packedBytes": 11531523,
+      "packedSha256": "832aa11f9bf72fde13bbe31adcc8b5d35365a3a969d2274252ce1eb29e3b2f43",
+      "dimensions": [
+        8192,
+        8192
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_CheekPatch_BaseColor",
+      "source": "FILE",
+      "path": "//textures\\Ren_H_CheekPatch_NPRBase.png",
+      "packed": true,
+      "packedBytes": 25752,
+      "packedSha256": "0ebe7a875d79714807261c5a20b9397e016b48bd836acdd612aebe711ed302fc",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_CheekPatch_BaseColor.001",
+      "source": "FILE",
+      "path": "//textures\\Ren_H_CheekPatch_R2_NPRBase.png",
+      "packed": true,
+      "packedBytes": 18418,
+      "packedSha256": "4415c3673cf7f6504e18b3c1066f7c90d210489053444c83dc06d3f966039138",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_Hair_BaseColor_4K",
+      "source": "FILE",
+      "path": "//textures\\Ren_H_Hair_Painted_PaleBlond.png",
+      "packed": true,
+      "packedBytes": 9669189,
+      "packedSha256": "bc2a04f4f4c426521fd2050b569f8c0d08eff12ad1065df2512bdd6b40543c6f",
+      "dimensions": [
+        4096,
+        4096
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_Iris_BlueGrey.png",
+      "source": "FILE",
+      "path": "//textures\\Ren_H_IrisBlueGrey.png",
+      "packed": true,
+      "packedBytes": 75324,
+      "packedSha256": "67c155b71cb8f368932e90af489bcdad9edfff5ad40675cdafa09c82d3a09b59",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_Lid_L_BaseColor",
+      "source": "FILE",
+      "path": "//textures\\Ren_H_Lid_L_Pigment.png",
+      "packed": true,
+      "packedBytes": 38945,
+      "packedSha256": "13d93b922cf065d5911eaeea68e4bec7dedd6e6f0daa4ebcdb17ce9c2dd121ac",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    },
+    {
+      "name": "Ren_H_Lid_R_BaseColor",
+      "source": "FILE",
+      "path": "//textures\\Ren_H_Lid_R_Pigment.png",
+      "packed": true,
+      "packedBytes": 43681,
+      "packedSha256": "c7a8975bf2f51bbafb4f3c49cc1ff31e8d0a373efedbcd34f7d293dfb447334f",
+      "dimensions": [
+        512,
+        512
+      ],
+      "colorSpace": "sRGB"
+    }
+  ],
+  "imageOperations": [
+    {
+      "image": "ren-tripo-studio-h3.1-a-open-original-8k_basecolor.jpg",
+      "action": "retained exact packed bytes",
+      "sha256": "9750e636f595a01e2c1bfd00699b5bcd083e8f99a39a43adf8b1da68436e09ce",
+      "path": "//textures/tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57.jpg"
+    },
+    {
+      "image": "ren-tripo-studio-h3.1-a-open-original-8k_normal.jpg",
+      "action": "retained exact packed bytes",
+      "sha256": "8d4e8ad355ba215804091d896df74b9c0395936622773516f15e8bc918aa8124",
+      "path": "//packed/ren-tripo-studio-h3.1-a-open-original-8k_normal.jpg"
+    },
+    {
+      "image": "ren-tripo-studio-h3.1-a-open-original-8k_rm.jpg",
+      "action": "retained exact packed bytes",
+      "sha256": "7d2e5c74cd5b4551b9ea853188a62cb51a11a923668e5696d2c1d638f557f771",
+      "path": "//packed/ren-tripo-studio-h3.1-a-open-original-8k_rm.jpg"
+    },
+    {
+      "image": "Ren_Cap_V2_BaseColor.png",
+      "action": "retained exact packed bytes",
+      "sha256": "dece338e895699b884caa8d45100ed1e36eaeb8f2582be650ce0c7cfc5597eb0",
+      "path": "//textures/Ren_Cap_V2_Cloth.png"
+    },
+    {
+      "image": "Ren_H_ArtistRose_BaseColor.png",
+      "action": "packed exact staged texture bytes",
+      "sha256": "832aa11f9bf72fde13bbe31adcc8b5d35365a3a969d2274252ce1eb29e3b2f43",
+      "path": "//textures/Ren_H_ArtistRose_NPRBase.png"
+    },
+    {
+      "image": "Ren_H_CheekPatch_BaseColor",
+      "action": "packed exact staged texture bytes",
+      "sha256": "0ebe7a875d79714807261c5a20b9397e016b48bd836acdd612aebe711ed302fc",
+      "path": "//textures/Ren_H_CheekPatch_NPRBase.png"
+    },
+    {
+      "image": "Ren_H_CheekPatch_BaseColor.001",
+      "action": "packed exact staged texture bytes",
+      "sha256": "4415c3673cf7f6504e18b3c1066f7c90d210489053444c83dc06d3f966039138",
+      "path": "//textures/Ren_H_CheekPatch_R2_NPRBase.png"
+    },
+    {
+      "image": "Ren_H_Hair_BaseColor_4K",
+      "action": "retained exact packed bytes",
+      "sha256": "bc2a04f4f4c426521fd2050b569f8c0d08eff12ad1065df2512bdd6b40543c6f",
+      "path": "//textures/Ren_H_Hair_Painted_PaleBlond.png"
+    },
+    {
+      "image": "Ren_H_Iris_BlueGrey.png",
+      "action": "packed exact staged texture bytes",
+      "sha256": "67c155b71cb8f368932e90af489bcdad9edfff5ad40675cdafa09c82d3a09b59",
+      "path": "//textures/Ren_H_IrisBlueGrey.png"
+    },
+    {
+      "image": "Ren_H_Lid_L_BaseColor",
+      "action": "packed exact staged texture bytes",
+      "sha256": "13d93b922cf065d5911eaeea68e4bec7dedd6e6f0daa4ebcdb17ce9c2dd121ac",
+      "path": "//textures/Ren_H_Lid_L_Pigment.png"
+    },
+    {
+      "image": "Ren_H_Lid_R_BaseColor",
+      "action": "packed exact staged texture bytes",
+      "sha256": "c7a8975bf2f51bbafb4f3c49cc1ff31e8d0a373efedbcd34f7d293dfb447334f",
+      "path": "//textures/Ren_H_Lid_R_Pigment.png"
+    }
+  ],
+  "linkedLibraries": [],
+  "snapshotBefore": {
+    "objects": {
+      "CapAssetRoot": {
+        "type": "EMPTY",
+        "parent": "CapSocket",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0430000014603138
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.21799997985363007
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "CapAxis_Forward": {
+        "type": "EMPTY",
+        "parent": "CapAssetRoot",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.9570000171661377
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.21799997985363007
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "CapAxis_Right": {
+        "type": "EMPTY",
+        "parent": "CapAssetRoot",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0430000014603138
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.21799997985363007
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "CapAxis_Up": {
+        "type": "EMPTY",
+        "parent": "CapAssetRoot",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0430000014603138
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.2179999351501465
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.9999999403953552
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "CapSocket": {
+        "type": "EMPTY",
+        "parent": "Head",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0430000014603138
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.21799997985363007
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.016999997198581696
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.4179999828338623
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Head": {
+        "type": "EMPTY",
+        "parent": null,
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.05999999865889549
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.20000000298023224
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.05999999865889549
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.20000000298023224
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_Cap": {
+        "type": "MESH",
+        "parent": "CapAssetRoot",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0430000014603138
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.21799997985363007
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_CompleteHead_Camera": {
+        "type": "CAMERA",
+        "parent": null,
+        "world": [
+          [
+            -4.371138828673793e-08,
+            4.371138828673793e-08,
+            1.0,
+            3.0199999809265137
+          ],
+          [
+            1.0,
+            1.910685676922942e-15,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            -0.03999999910593033
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -4.371138828673793e-08,
+            4.371138828673793e-08,
+            1.0,
+            3.0199999809265137
+          ],
+          [
+            1.0,
+            1.910685676922942e-15,
+            4.371138828673793e-08,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            -4.371138828673793e-08,
+            -0.03999999910593033
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_CompleteHead_Fill": {
+        "type": "LIGHT",
+        "parent": null,
+        "world": [
+          [
+            -0.7106513381004333,
+            -0.24386829137802124,
+            0.6599264740943909,
+            2.0
+          ],
+          [
+            0.7035443782806396,
+            -0.24633167684078217,
+            0.6665928363800049,
+            2.0
+          ],
+          [
+            -6.454279599665824e-08,
+            0.9380026459693909,
+            0.3466280996799469,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -0.7106513381004333,
+            -0.24386829137802124,
+            0.6599264740943909,
+            2.0
+          ],
+          [
+            0.7035443782806396,
+            -0.24633167684078217,
+            0.6665928363800049,
+            2.0
+          ],
+          [
+            -6.454279599665824e-08,
+            0.9380026459693909,
+            0.3466280996799469,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_CompleteHead_Key": {
+        "type": "LIGHT",
+        "parent": null,
+        "world": [
+          [
+            0.7106510400772095,
+            -0.5162752270698547,
+            0.47794869542121887,
+            2.0
+          ],
+          [
+            0.7035446763038635,
+            0.5214900374412537,
+            -0.4827764332294464,
+            -2.0
+          ],
+          [
+            3.933390857469021e-08,
+            0.6793438196182251,
+            0.7338201403617859,
+            3.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            0.7106510400772095,
+            -0.5162752270698547,
+            0.47794869542121887,
+            2.0
+          ],
+          [
+            0.7035446763038635,
+            0.5214900374412537,
+            -0.4827764332294464,
+            -2.0
+          ],
+          [
+            3.933390857469021e-08,
+            0.6793438196182251,
+            0.7338201403617859,
+            3.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_CompleteHead_Rim": {
+        "type": "LIGHT",
+        "parent": null,
+        "world": [
+          [
+            -0.4436609148979187,
+            0.6013808846473694,
+            -0.664459228515625,
+            -2.0
+          ],
+          [
+            -0.8961946964263916,
+            -0.2977133095264435,
+            0.32894042134284973,
+            1.0
+          ],
+          [
+            1.3269118426251225e-07,
+            0.7414228320121765,
+            0.6710380911827087,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -0.4436609148979187,
+            0.6013808846473694,
+            -0.664459228515625,
+            -2.0
+          ],
+          [
+            -0.8961946964263916,
+            -0.2977133095264435,
+            0.32894042134284973,
+            1.0
+          ],
+          [
+            1.3269118426251225e-07,
+            0.7414228320121765,
+            0.6710380911827087,
+            2.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_ConcealedScalpBack": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.20000000298023224
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_EarJewelry_L": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_EarJewelry_R": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Ear_L": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Ear_R": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_EyeControls": {
+        "type": "EMPTY",
+        "parent": null,
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_EyeSpace": {
+        "type": "EMPTY",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_L_Iris": {
+        "type": "MESH",
+        "parent": "Ren_H_GazeRotate_L",
+        "world": [
+          [
+            -0.029433157294988632,
+            -0.0638372153043747,
+            -4.928440766605036e-09,
+            0.15337210893630981
+          ],
+          [
+            0.07848837226629257,
+            -7.450580596923828e-09,
+            -1.6471293218245364e-09,
+            0.12244191020727158
+          ],
+          [
+            1.0746205036937795e-09,
+            -4.909426642996095e-09,
+            0.06174418702721596,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            -1.6686179542786477e-15,
+            0.0,
+            0.0
+          ],
+          [
+            -2.9802322387695312e-08,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.552713678800501e-15,
+            7.105427357601002e-15,
+            0.9999999403953552,
+            -3.6955043469788507e-08
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999403953552
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_L_LidAnnulus": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_L_LowerLash": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_L_OuterFlicks": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_L_Sclera": {
+        "type": "MESH",
+        "parent": "Ren_H_GazeEllipsoid_L",
+        "world": [
+          [
+            0.05438155308365822,
+            -2.138027310749635e-09,
+            -0.04454377293586731,
+            0.15337210893630981
+          ],
+          [
+            -0.07058902829885483,
+            -1.6471288777353266e-09,
+            -0.034316375851631165,
+            0.12244191020727158
+          ],
+          [
+            0.0,
+            0.06174418702721596,
+            -2.4578712398692915e-09,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            9.933957936168704e-16,
+            2.9802322387695312e-08,
+            -8.195638656616211e-08
+          ],
+          [
+            3.552713678800501e-15,
+            1.0000001192092896,
+            0.0,
+            9.950373680567282e-08
+          ],
+          [
+            0.0,
+            0.0,
+            1.0000001192092896,
+            2.384185791015625e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999403953552
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_L_UpperLash": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_R_Iris": {
+        "type": "MESH",
+        "parent": "Ren_H_GazeRotate_R",
+        "world": [
+          [
+            0.046308137476444244,
+            -0.0638372153043747,
+            -4.691053767658104e-09,
+            0.1261628419160843
+          ],
+          [
+            0.07848839461803436,
+            -7.450580596923828e-09,
+            1.916183434147456e-09,
+            -0.1172092854976654
+          ],
+          [
+            -1.0103465841737602e-09,
+            -4.663992747566681e-09,
+            0.06174418702721596,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            1.8441389569383813e-15,
+            -1.7763568394002505e-15,
+            -1.1920928955078125e-07
+          ],
+          [
+            5.960464477539063e-08,
+            1.0,
+            0.0,
+            -2.384185791015625e-07
+          ],
+          [
+            1.7763568394002505e-15,
+            0.0,
+            0.9999999403953552,
+            -1.3634081597047043e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_R_LidAnnulus": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_R_LowerLash": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_R_OuterFlicks": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_R_Sclera": {
+        "type": "MESH",
+        "parent": "Ren_H_GazeEllipsoid_R",
+        "world": [
+          [
+            -0.07037336379289627,
+            -1.9006403118027038e-09,
+            -0.035598088055849075,
+            0.1261628419160843
+          ],
+          [
+            -0.06980253010988235,
+            1.916183656192061e-09,
+            0.03588920086622238,
+            -0.1172092854976654
+          ],
+          [
+            0.0,
+            0.06174418702721596,
+            -2.209591398738553e-09,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            1.0521673864203468e-16,
+            -9.911896541316522e-23,
+            -7.450580596923828e-09
+          ],
+          [
+            0.0,
+            0.9999999403953552,
+            3.552713678800501e-15,
+            -1.2181075703665556e-07
+          ],
+          [
+            5.960464477539063e-08,
+            0.0,
+            1.0,
+            2.384185791015625e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Eye_R_UpperLash": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_GazeBasis_L": {
+        "type": "EMPTY",
+        "parent": "Ren_H_GazeEllipsoid_L",
+        "world": [
+          [
+            -0.029433157294988632,
+            -0.0638372153043747,
+            -4.928440766605036e-09,
+            0.15337210893630981
+          ],
+          [
+            0.07848837226629257,
+            -7.450580596923828e-09,
+            -1.6471293218245364e-09,
+            0.12244191020727158
+          ],
+          [
+            1.0746205036937795e-09,
+            -4.909426642996095e-09,
+            0.06174418702721596,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -0.8993566036224365,
+            -0.4372159540653229,
+            -1.9111315197051226e-08,
+            -8.195638656616211e-08
+          ],
+          [
+            -1.7763568394002505e-15,
+            -4.371139183945161e-08,
+            1.0000001192092896,
+            9.950373680567282e-08
+          ],
+          [
+            -0.43721598386764526,
+            0.8993565440177917,
+            3.931212688712549e-08,
+            2.384185791015625e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999403953552
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_GazeBasis_R": {
+        "type": "EMPTY",
+        "parent": "Ren_H_GazeEllipsoid_R",
+        "world": [
+          [
+            0.046308137476444244,
+            -0.0638372153043747,
+            -4.691053767658104e-09,
+            0.1261628419160843
+          ],
+          [
+            0.07848839461803436,
+            -7.450580596923828e-09,
+            1.916183434147456e-09,
+            -0.1172092854976654
+          ],
+          [
+            -1.0103465841737602e-09,
+            -4.663992747566681e-09,
+            0.06174418702721596,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -0.8893356919288635,
+            0.45725494623184204,
+            1.9987249189057366e-08,
+            -7.450580596923828e-09
+          ],
+          [
+            3.552713678800501e-15,
+            -4.371139183945161e-08,
+            0.9999999403953552,
+            -1.2181075703665556e-07
+          ],
+          [
+            0.4572550058364868,
+            0.889335572719574,
+            3.887409860681146e-08,
+            2.384185791015625e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_GazeEllipsoid_L": {
+        "type": "EMPTY",
+        "parent": "Ren_H_EyeSpace",
+        "world": [
+          [
+            0.05438155308365822,
+            -2.138027310749635e-09,
+            -0.04454377293586731,
+            0.15337210893630981
+          ],
+          [
+            -0.07058902829885483,
+            -1.6471288777353266e-09,
+            -0.034316375851631165,
+            0.12244191020727158
+          ],
+          [
+            0.0,
+            0.06174418702721596,
+            -2.4578712398692915e-09,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -0.06745173782110214,
+            -1.5739226588706856e-09,
+            -0.03279119357466698,
+            0.10999999940395355
+          ],
+          [
+            -0.05196457728743553,
+            2.0430037661611777e-09,
+            0.04256404936313629,
+            -0.23200000822544098
+          ],
+          [
+            0.0,
+            0.05900000035762787,
+            -2.3486326217181386e-09,
+            0.5529999732971191
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_GazeEllipsoid_R": {
+        "type": "EMPTY",
+        "parent": "Ren_H_EyeSpace",
+        "world": [
+          [
+            -0.07037336379289627,
+            -1.9006403118027038e-09,
+            -0.035598088055849075,
+            0.1261628419160843
+          ],
+          [
+            -0.06980253010988235,
+            1.916183656192061e-09,
+            0.03588920086622238,
+            -0.1172092854976654
+          ],
+          [
+            0.0,
+            0.06174418702721596,
+            -2.209591398738553e-09,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -0.06670018285512924,
+            1.8310200022852996e-09,
+            0.03429412469267845,
+            -0.11900001019239426
+          ],
+          [
+            0.06724565476179123,
+            1.816166883550352e-09,
+            0.03401594236493111,
+            -0.20600000023841858
+          ],
+          [
+            0.0,
+            0.05900000035762787,
+            -2.1113872872291495e-09,
+            0.5529999732971191
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_GazeRotate_L": {
+        "type": "EMPTY",
+        "parent": "Ren_H_GazeBasis_L",
+        "world": [
+          [
+            -0.029433157294988632,
+            -0.0638372153043747,
+            -4.928440766605036e-09,
+            0.15337210893630981
+          ],
+          [
+            0.07848837226629257,
+            -7.450580596923828e-09,
+            -1.6471293218245364e-09,
+            0.12244191020727158
+          ],
+          [
+            1.0746205036937795e-09,
+            -4.909426642996095e-09,
+            0.06174418702721596,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            -1.6686179542786477e-15,
+            0.0,
+            0.0
+          ],
+          [
+            -2.9802322387695312e-08,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            3.552713678800501e-15,
+            7.105427357601002e-15,
+            0.9999999403953552,
+            -3.6955043469788507e-08
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999403953552
+          ]
+        ],
+        "drivers": [
+          {
+            "path": "rotation_euler",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "-min(1,max(-1,v))*0.13962634015954636",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"gazeY\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "rotation_euler",
+            "index": 2,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(-1,v))*0.20943951023931956",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"gazeX\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "hideRender": false
+      },
+      "Ren_H_GazeRotate_R": {
+        "type": "EMPTY",
+        "parent": "Ren_H_GazeBasis_R",
+        "world": [
+          [
+            0.046308137476444244,
+            -0.0638372153043747,
+            -4.691053767658104e-09,
+            0.1261628419160843
+          ],
+          [
+            0.07848839461803436,
+            -7.450580596923828e-09,
+            1.916183434147456e-09,
+            -0.1172092854976654
+          ],
+          [
+            -1.0103465841737602e-09,
+            -4.663992747566681e-09,
+            0.06174418702721596,
+            0.09023255109786987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            1.8441389569383813e-15,
+            -1.7763568394002505e-15,
+            -1.1920928955078125e-07
+          ],
+          [
+            5.960464477539063e-08,
+            1.0,
+            0.0,
+            -2.384185791015625e-07
+          ],
+          [
+            1.7763568394002505e-15,
+            0.0,
+            0.9999999403953552,
+            -1.3634081597047043e-07
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [
+          {
+            "path": "rotation_euler",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "-min(1,max(-1,v))*0.13962634015954636",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"gazeY\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "rotation_euler",
+            "index": 2,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(-1,v))*0.20943951023931956",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"gazeX\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "hideRender": false
+      },
+      "Ren_H_Head": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_HeadControls": {
+        "type": "EMPTY",
+        "parent": "Head",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.05999999865889549
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.20000000298023224
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_InnerLipWall": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_OralCavity": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_Tongue": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_H_UpperTeeth": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.08941860496997833
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.4884883761405945
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            -1.7049841005700728e-07,
+            -1.0465117692947388,
+            0.0,
+            -0.02941860631108284
+          ],
+          [
+            1.0465117692947388,
+            -1.7049841005700728e-07,
+            0.0,
+            0.0073255812749266624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0465116500854492,
+            -0.28848838806152344
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_Hair_H_DetailedLayers": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.20000000298023224
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      },
+      "Ren_Hair_H_RootBase": {
+        "type": "MESH",
+        "parent": "Head",
+        "world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "local": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.05999999865889549
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.20000000298023224
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "drivers": [],
+        "hideRender": false
+      }
+    },
+    "meshes": {
+      "Ren_Cap": {
+        "vertices": 657,
+        "triangles": 1110,
+        "positions": "98d7e304f7f16efcc43d828a9d052c701755fb0b69015b808db5a1ab1dc93393",
+        "loops": "d5c4b5fc1b8dc063f88a9c07247aca00cf7fe17757d68bcea5cfbbb713d5e502",
+        "polygonStarts": "42ed397594e1ffa2248c3eb421f1fd149f764d4604b2c21274f7903355768f79",
+        "polygonSizes": "a8e41a5f2d42920ccc6dd8cb351705848e9b9c4125e372535b11b8fe748bf6a8",
+        "materialIndices": "0ca9609dd4f5742efea424fb1907ae8cd6601d33ab7bf8bf99de96f6162a7a7e",
+        "materials": [
+          "Ren_Cap_V2_Cloth",
+          "Ren_Cap_V2_InnerCloth"
+        ],
+        "uv": {
+          "AccessoryUV": "2e284fa5e37ebb8c8937310343ded21cffd6092f5b6d266bad35675c094e46da"
+        },
+        "attributes": {
+          "AccessoryUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "2e284fa5e37ebb8c8937310343ded21cffd6092f5b6d266bad35675c094e46da"
+          },
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "12c7a5b667ba730d24ec806d1302b2ee414967cfd1d573fa7fc948ee39bb82e2"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "c8bbdcd8c94346e679d33ce7318adc41a2f7b676b3eea7676619323d97ea5c54"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "6bea9edcef440f412f7cf00cb8f91d94dac397c29ac59c911facacc9e4bb8a86"
+          },
+          ".uv_select_vert": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "039cba213e21efef79b47ce36bd69107ab812e1120bbb6dac9465a6272b2db89"
+          },
+          ".uv_select_edge": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "039cba213e21efef79b47ce36bd69107ab812e1120bbb6dac9465a6272b2db89"
+          },
+          ".uv_select_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "48fe23116c50ab68dafbb5ff3893d0b4770b496440443744b6badc0a831b476d"
+          },
+          "material_index": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "0ca9609dd4f5742efea424fb1907ae8cd6601d33ab7bf8bf99de96f6162a7a7e"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "98d7e304f7f16efcc43d828a9d052c701755fb0b69015b808db5a1ab1dc93393"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "4d62ec816ba5a13dfbd6ae7c9648c269d420c87cf5e27ac4b390940df392f73c"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "d5c4b5fc1b8dc063f88a9c07247aca00cf7fe17757d68bcea5cfbbb713d5e502"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "aeb9e0b530a3cda4e973c9ea4b55340742ff4f36ca79d48c64028299ee48f9ee"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_ConcealedScalpBack": {
+        "vertices": 574,
+        "triangles": 933,
+        "positions": "75cd47f18c17724ae0a5ed9f12d9307c2480db8c307bd03564e1118d66a79082",
+        "loops": "1f846daa93b2ced1164dfb52aab8b7ed047afb651f6319ff321accc7d6c773e7",
+        "polygonStarts": "6bb9ab520eeb36b63bd8dc76f3a2bba422106663434dda4c3f87d11865c33410",
+        "polygonSizes": "505bb0d0f9cad3d67281d14e315f2b01eabb07677f4ba017c8ff0f060cee86e7",
+        "materialIndices": "80b67b115f8e28f3b67fddcd4cd1daac24a054603d1dd0cb13793a299a5dadfc",
+        "materials": [
+          "Ren_H_ConcealedSkin"
+        ],
+        "uv": {
+          "HSupportUV": "ca9500942c29d938e851861b448fec8e8d5bfafd7a724d367d2d46f198b01288"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "cdafbcd6484ab2516ef49c067b0df78ac0d3dc7ed0672297e19a1856f0e847d0"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "75cd47f18c17724ae0a5ed9f12d9307c2480db8c307bd03564e1118d66a79082"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "1f846daa93b2ced1164dfb52aab8b7ed047afb651f6319ff321accc7d6c773e7"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "9f3e02342ec9404a852a46b17605e03de468e6722ba3ee90a96b2bb42b484fa8"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "97a93d04c8c6b09934b730c6e6e244ca75f2286f71750085141d7431f8fa37cb"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "8889eb3cdd3d0ac94711b47ce78b430d8e23a7b31ecc994c56d0c3310c87674a"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "b27461d1986fc827c335115737d22f9b58cd12189d54cb58fc52339e401ae0e9"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "4eddc4ad1066c0c41c1af6cfd88fbe8863b7e738c24f74ff8aee779065a858ea"
+          },
+          "HSupportUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "ca9500942c29d938e851861b448fec8e8d5bfafd7a724d367d2d46f198b01288"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_EarJewelry_L": {
+        "vertices": 4427,
+        "triangles": 7320,
+        "positions": "ca2d22fb7931f33c3d8ba6e95b160e2f01a0c4ed71a1e8adb9740c51bdcf570c",
+        "loops": "6f8a398b10daefb6a100bec154965c2e6cc6b85883b25979871669af606c5969",
+        "polygonStarts": "28be0a0d414a2e51ca480b6690fcf8609f48578417d47d1b5b316cd0d796ab1f",
+        "polygonSizes": "348b21b17d132770579c3584ab389cc8a4fe994e25daeeafb40fee73a1a602ee",
+        "materialIndices": "663bbdda6e7e5091ac736e5ab02fefeff26b4f5821f041986f2189ceb90b416f",
+        "materials": [
+          "tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57"
+        ],
+        "uv": {
+          "HNativeUV": "b30223f1f107b613ab53e5182c8df08ee64430df983584f52696e50efa7c5e61"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "aa0a912f9252a1ffc42ebee8ef8ec944614983b179d95b994f7ce89a2ea773b9"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "ca2d22fb7931f33c3d8ba6e95b160e2f01a0c4ed71a1e8adb9740c51bdcf570c"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "6f8a398b10daefb6a100bec154965c2e6cc6b85883b25979871669af606c5969"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "c0734136f2dfdb43fa4faa730682bf02e1d9c3efcd2c398cb6fefe2f7f5033ce"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "d48ec8f819bcef8a3c5a6b0e1095e357f7ddefbb70db85ad5eb61596408effe1"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "df29cfa198a342ae966eb5426ebacfb2dbe728f29e9520d6726dd7dca6f1ab2a"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "1ee647767013081f73b7af6d262b81b32c58528f002b88d88f82d82e48337973"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "765480f20cd864567e255c4439f69d3cd56f5fc06f34ea8ccd37a669df7c4ef2"
+          },
+          "HNativeUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "b30223f1f107b613ab53e5182c8df08ee64430df983584f52696e50efa7c5e61"
+          },
+          "source_h_vertex_id": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "cc5f073dc659e9cc70d44d40c9c38acedd91cc80e4eb3102d315408b3157fbfc"
+          },
+          "source_h_face_id": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "3eb0ac9942e562ce69a838e0ae788fbc782c07c7f52f7297af4a5c397e488665"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_EarJewelry_R": {
+        "vertices": 4503,
+        "triangles": 7509,
+        "positions": "c2b47273e9932e98981f5ed92fc87a9426e38b6189b22d991425b51f5a7ab2d2",
+        "loops": "d7ac437a92b34e73de0b07e86a490495e23acd2319409f234108aebb285d190b",
+        "polygonStarts": "3c8117593c6ad48b446735569ca507a34a344434894b4d6a24c315d08a1ee561",
+        "polygonSizes": "f6661412449add51b5c3802d187096931698ca0e9d60ab745d07df846b6b8bef",
+        "materialIndices": "02f7861fb25e69edb76c585223088ae2afd5ea309b5dddf63e6d160691c57520",
+        "materials": [
+          "tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57"
+        ],
+        "uv": {
+          "HNativeUV": "28749ded3644cd79a67d9367404e6f536c80feb020ac629c30720a88b0e2f5a2"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "cdc89def78461eddb2def41aa6ce3c01328eec7ba5906680b13692722435aa4c"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "c2b47273e9932e98981f5ed92fc87a9426e38b6189b22d991425b51f5a7ab2d2"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "d7ac437a92b34e73de0b07e86a490495e23acd2319409f234108aebb285d190b"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "036c3af6eea6ecda34d16c82b7b273f9c0e50516ae7428585c1b5e7089306a4d"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "22e5f158c6850d790485e3427bdc38c2e0f42de7e91050434fa70131ddef19ad"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "3f4598f7eeec43c5189315ec32b572f3b0a87e2e3d0f725c7abb894da6cd6779"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "00e96d79501719cb4367ad53a0e43f35f0b12b1c7b9577dc4bd6b64bf29a3ada"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "611970a46466ee18a01fd446770400a658fc8f7787b8ec295f16accde8daf535"
+          },
+          "HNativeUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "28749ded3644cd79a67d9367404e6f536c80feb020ac629c30720a88b0e2f5a2"
+          },
+          "source_h_vertex_id": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "98711ed6565c5271d6cbde6c459bce9085944f3d594ee83703fd57d88e32a720"
+          },
+          "source_h_face_id": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "35d09d72e4dbfc9013d6afaaba7a3c1cc38ee40c13253a4c511521a1303795c2"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_Ear_L": {
+        "vertices": 23185,
+        "triangles": 42002,
+        "positions": "25a2793cf3c3ed987a13d70b79ec66c273ce8b482175803d7309183b08746aed",
+        "loops": "b1ce1ce361a87a7997f1d4cc4b2a866a8d6e81c210013fc69a0fc1c591fc8648",
+        "polygonStarts": "e6e0093d272945efa1bf31db6963f4776c92061e2acd8465c06131ee9a392701",
+        "polygonSizes": "54b6ec3bd9a268d20695ac0044a9f9fbffbc7f0db7180503c3a3aee4e02f8c70",
+        "materialIndices": "76ec5d6c51c85c930cab9938bafe1bd05af318fbac69512cbca6cec7d57033f1",
+        "materials": [
+          "tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57"
+        ],
+        "uv": {
+          "HNativeUV": "41669425b17643b927ca0faa664ff00dfcb2ef97cb423a2103f46bf88a6fde2e"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "9e826fd5c07f28ab814f9a2cf6b41a89af3b178ed096fff844922aef3a1b88af"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "25a2793cf3c3ed987a13d70b79ec66c273ce8b482175803d7309183b08746aed"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "b1ce1ce361a87a7997f1d4cc4b2a866a8d6e81c210013fc69a0fc1c591fc8648"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "a2a5055bea33ea7e31d1b1af8a674fedc56e42643d67f77d5a6c536e5d5ba1ce"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "635bac04b70603702b685dd801005351a401d9a08d384cbf43b3745abbb7ff88"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "e338814bc63767b7b9d96ee073259909728bcf0ff8d27ea3b9f8440a9c7c53fb"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "cde026d4c1971d033c7214beea23f5dcf9e35e0027118839ad70eb468b2829e3"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "66f3a4694f512c040857389ab660cdb5b1991c17bc72c90db034ac67bb404030"
+          },
+          "HNativeUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "41669425b17643b927ca0faa664ff00dfcb2ef97cb423a2103f46bf88a6fde2e"
+          },
+          "source_h_vertex_id": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "863f104dfa42739b6161ce9fffb6052746dea1905ad50f76f01a7245489b5dc3"
+          },
+          "source_h_face_id": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "f87950ae1a9da5f8e82bc0e7c00f68d6b86f45b764355cc4578eac20c2df0ea4"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_Ear_R": {
+        "vertices": 25555,
+        "triangles": 45808,
+        "positions": "f476a05ad087d72933b90ce167a508e46b068425f0011d027e03642e1a2c1f1d",
+        "loops": "50cf3bd9bd4ceeb402ec4084bc9b99caac05e482655e56a62b9e9e34f0faa8bf",
+        "polygonStarts": "7983eee2778096184f258a7f7f974e7e6de326225a37527450dd44d49874fff8",
+        "polygonSizes": "6738ee289587507434e90655f78a9b2f1309a6c22609538a41a29d85a20da17b",
+        "materialIndices": "adba370492a3b2f481b49a20a5ad3c1183cd7dbf319cbffbd5f51efeadeac534",
+        "materials": [
+          "tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57"
+        ],
+        "uv": {
+          "HNativeUV": "02dcd84a3739dbaa86da8c0a8723269c3d2ba7b54e6996b5189bf23cda7ca730"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "59db84bbeaa1881a80eca1b2ba4148b137aef99793f84953c4e4f2f5d39439dd"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "f476a05ad087d72933b90ce167a508e46b068425f0011d027e03642e1a2c1f1d"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "50cf3bd9bd4ceeb402ec4084bc9b99caac05e482655e56a62b9e9e34f0faa8bf"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "724340aca4ca59b3fa9bd073c7be930b1026e397d855863db6bc0a089172ba6f"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "57f8ee5d77c337951bdfcdb7bab854ca23d29631f75aa072eda0a4ae093851a7"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "a2ab66af206ba45f2a3a9d04de44b1bb185da734f16b13bed43a2ea8e3c09e6f"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "ce44bc48508a7fcd2a474e466bcf1590f659afed35fd9a5a4011ce1f6370e8e6"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "9111d2f01a8fa9b204783be471221ea00e6001950ddcbe5c88d85b8d4e70b7ad"
+          },
+          "HNativeUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "02dcd84a3739dbaa86da8c0a8723269c3d2ba7b54e6996b5189bf23cda7ca730"
+          },
+          "source_h_vertex_id": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "7ef819aef05a0526b83d90163cadc297535db4ea5f0d6b2d95988a0db473b386"
+          },
+          "source_h_face_id": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "553dcfe967402a1588125b083dee5c8bc9805790f4528807ef3a637fadb3c71d"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_Eye_L_Iris": {
+        "vertices": 187,
+        "triangles": 304,
+        "positions": "3f2a3a73c6aa977c3b9904778848f7cd82e25b878ed14be412b45961cd0d6e44",
+        "loops": "cd965876683f755c607d53b27d1cf28d817c2d2f3d126386ce35b195b8f93eea",
+        "polygonStarts": "8b9bd1b2e7a32dc181f068b7bbe24674090f1839174275e04dffab58fb1e061c",
+        "polygonSizes": "04b38e136206576ea7b52d537b55c5381704a567610085896a631b32cac30c5a",
+        "materialIndices": "97d364e2d3d35f030a038c41bbadc42d0c15fa8d79ba569987e19fddb2e80f9a",
+        "materials": [
+          "Ren_H_IrisBlueGrey"
+        ],
+        "uv": {
+          "IrisUV": "ec1195786630c387759a68c8be46be3f9d1c4dc412cf911509874a9f26d86f46"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "d47dd228442f72230212024b0d0ccf87f2353bf73fdfdc999ef648b5f3396ad0"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "3f2a3a73c6aa977c3b9904778848f7cd82e25b878ed14be412b45961cd0d6e44"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "cd965876683f755c607d53b27d1cf28d817c2d2f3d126386ce35b195b8f93eea"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "42f899d591f7df73043038ee494af92b89452abbf976951c2460164d1bc185a9"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "29bbb7f704f76cdf92c002a1a267f6a819dab1ddc7e1457d488020c030031184"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "e2fc162ed9124452d23c85e81d60a0c228f414c3214a5de635737e25fbd29ac1"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "9a5d596c6463117b04079634e918ea8c236913be57fb8a8769a871b6d2a82b85"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "fb65750f4bd0a7eb642d22b488fd7e57df0fbd1f48f0a2c4d981a8d212681358"
+          },
+          "IrisUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "ec1195786630c387759a68c8be46be3f9d1c4dc412cf911509874a9f26d86f46"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_Eye_L_LidAnnulus": {
+        "vertices": 448,
+        "triangles": 768,
+        "positions": "60537ea2063055fac5da5083d458755c9e005b92fa62225bf494bfe35f95b72a",
+        "loops": "1696542bb705c08f8badb84af66e5a34073e877f970eb60b380d77ad38a7726a",
+        "polygonStarts": "847d999dbeccfeed1d5e8d562e0608d905318f546dc6e849b5312c49daa7234b",
+        "polygonSizes": "c01ef29b8cfe111d8c44defd693a4d3ce657486488ee2ef6ea6f5a66c932b6c8",
+        "materialIndices": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+        "materials": [
+          "Ren_H_Lid_L_Pigment"
+        ],
+        "uv": {
+          "H_EyeLocalUV": "91a35ee57bb981b8bb66a6518ae03761072651d6b929553c59ff08f04fdeaaa4"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "92bf953a8d434e1cec3be8e5748d5053877036fefa83f910668a51bf9f22e3b3"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "60537ea2063055fac5da5083d458755c9e005b92fa62225bf494bfe35f95b72a"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "1696542bb705c08f8badb84af66e5a34073e877f970eb60b380d77ad38a7726a"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "23f99ea0f6c72af0000fc633d1bbda1cdbf332991f03191e751e1c483a28c5dd"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "1b1c08af714b3f3f6f5cafb74783b571dc82d6ac612ecffbe816df938117b099"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "ef115a0e0c15cdc41958ca46b5b14b456115f4baec5e3ca68599d2a8f435e3b8"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "7a514fb8d18f97eafe9410dd2f996e2b3fab4a83b18589bc6cc609a4e28ef1e4"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "5190abd8de618d6e6a84b1b94fb9db5119e3d5e78a3a9aff47f0b6c420809933"
+          },
+          "H_EyeLocalUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "91a35ee57bb981b8bb66a6518ae03761072651d6b929553c59ff08f04fdeaaa4"
+          },
+          "h_outer_boundary_index": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "dbcc4a34df76c8eab5d4998a868147f84e34d1d99758a05dc89c7b2317e0dccd"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "60537ea2063055fac5da5083d458755c9e005b92fa62225bf494bfe35f95b72a",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL": {
+            "positions": "d25917aade7c646b2a27f1a7c856cfd3ba237d2b97a3080633ae923291340655",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C25": {
+            "positions": "5d7ec455c2e23baac9ed500690965232dae2803e705f2d4cc959f098bbc993e5",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C50": {
+            "positions": "8e86ac6e138622b6ae5447edb195fdb52a00d7433184f5e85b646da3b09c7d73",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C75": {
+            "positions": "8d12ca84bb7ad92c96ed346ac5fc0e135d2f5e366d1687d6ccc947dc70b5373f",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeWideL": {
+            "positions": "dc589a085a3dcae2fc28b456ab13e7e05045343f775e44b99de91d8b211c2596",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeSquintL": {
+            "positions": "0f7bcbed7da81c9be96e3bf0b9bf7007354596c755bc2eaaf288f5afdef4f3f4",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"eyeBlinkL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C25\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.25)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C50\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.5)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C75\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.75)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeWideL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeWideL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeSquintL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeSquintL\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Eye_L_LowerLash": {
+        "vertices": 66,
+        "triangles": 64,
+        "positions": "86c9df790b4dea40abc696427ad06f2d73833836520cd93faec2ed06f93d80b9",
+        "loops": "fa4ab9ecea0a9c9c6a67450d544517fbbd90d89e4ebee2bd5338781f03fd30fc",
+        "polygonStarts": "bce3ce5abdb1d74fe14867e0eb1d8929406c52f9628d27ced452b53436182cc8",
+        "polygonSizes": "58ce5c958c387d3bcad653fb2317b72fa16b44525b127a653c02195e01d9a168",
+        "materialIndices": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+        "materials": [
+          "Ren_H_LowerLash"
+        ],
+        "uv": {
+          "LashUV": "07b24cffbe0cdf3aaf8a81338016a56334aed91ee1da4457a1ee7b67afc77f27"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "ed66a52060042158939e719a3fa4593d162467d5c311df11cb17f92bca69ca4d"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "86c9df790b4dea40abc696427ad06f2d73833836520cd93faec2ed06f93d80b9"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "fa4ab9ecea0a9c9c6a67450d544517fbbd90d89e4ebee2bd5338781f03fd30fc"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "e08304a992adc0ac3d11afe7c406792944162cf2f77c0c8966a38cd733370ce1"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "7c8975e1e60a5c8337f28edf8c33c3b180360b7279644a9bc1af3c51e6220bf5"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "6f33ac6b3f23f83a218af43ef33db42329169a786d3bd51f3597c4a08a3b1c7b"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "578ff66d5dc9ee80e64f7a65af918d454f18ecfc926596f8c16f03239d2a3443"
+          },
+          "LashUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "07b24cffbe0cdf3aaf8a81338016a56334aed91ee1da4457a1ee7b67afc77f27"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "86c9df790b4dea40abc696427ad06f2d73833836520cd93faec2ed06f93d80b9",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL": {
+            "positions": "652bfaa246ca299e3f7c05fb6962b0ec4afa105c00622a7472afce9e48300822",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C25": {
+            "positions": "17d18ee7b2bc4d7e7d2c0ab36ae75276ebf635daa41ae061dc977deefbf75750",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C50": {
+            "positions": "1e830339bcba6109cdb5789b06338042c3e3354da66c5f64817ad812ed997c85",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C75": {
+            "positions": "8e265d701a7bd917b1f1128f0455c5556d2d3f837ea6f38bfe4fb2acb61666f8",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeWideL": {
+            "positions": "c493dd94c36510c88ac99c97940f1b39061e03fd40232f390283c655a71b2549",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeSquintL": {
+            "positions": "2c3bca6a044b2173d6db55e7c6dd88554bb44e0eeb42bdd109174ab790be005f",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"eyeBlinkL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C25\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.25)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C50\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.5)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C75\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.75)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeWideL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeWideL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeSquintL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeSquintL\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Eye_L_OuterFlicks": {
+        "vertices": 6,
+        "triangles": 2,
+        "positions": "80adfd39510546f946f2d0ec7cdee80f64059e95c2e640db0a24b16fe0adb0bd",
+        "loops": "0b77d6d33920cb76e3e07fe1dd3bfab2ce911c8cd3fb363480c9c4fa9bf38b69",
+        "polygonStarts": "9ae4c9d0864c30005acac91f21015f39e35691a056d606a097c8cf8380275a17",
+        "polygonSizes": "f9815db16d8d228cca743c75d4cb4ddffd3a6d7cd6518658c9d3bd0e4fe27c82",
+        "materialIndices": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+        "materials": [
+          "Ren_H_UpperLash"
+        ],
+        "uv": {
+          "LashUV": "87403756a51553a7093e5fb67aff2905bddd5c60c65623ecfe94940f8e6493fa"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "dfea2964b5deedea7b1ef077de529c3959e6788bdbb3441e70c77a1ae875bb48"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "80adfd39510546f946f2d0ec7cdee80f64059e95c2e640db0a24b16fe0adb0bd"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "0b77d6d33920cb76e3e07fe1dd3bfab2ce911c8cd3fb363480c9c4fa9bf38b69"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "d9c01d27ce30e9a23d9feef1fdf022320af1bb321ed97890422860ec376eae78"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "9dcf97a184f32623d11a73124ceb99a5709b083721e878a16d78f596718ba7b2"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "d75f56e91c42072860f2cc4f95d5a408f3ae64709c7f363de1db1060943358eb"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "dfea2964b5deedea7b1ef077de529c3959e6788bdbb3441e70c77a1ae875bb48"
+          },
+          "LashUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "87403756a51553a7093e5fb67aff2905bddd5c60c65623ecfe94940f8e6493fa"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "80adfd39510546f946f2d0ec7cdee80f64059e95c2e640db0a24b16fe0adb0bd",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL": {
+            "positions": "43a47d62c545a35892224e5a8984681d27e8a31721a8f27e24e4d9d4b7cca45e",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C25": {
+            "positions": "6023d532e9a40bf32b395e97ac694f3ce6082386ee97e79b9cc4ef6f17199bc0",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C50": {
+            "positions": "261c52f40cf33d557016641e720c25533a2b88a4a64350b98966631061e04dbf",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C75": {
+            "positions": "c26b50dd58950b59070e4a826ad425167f1c8881e1604e7dd479a7f087b437ad",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeWideL": {
+            "positions": "846cd9523e06cc5e4cebede067656888131d3bf20a315e4625fdd75a2426ec6e",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeSquintL": {
+            "positions": "69e7c58a5269fdc07dc58b288caca51fefbdf0f781a5acbe7cc9a7ba54e158fb",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"eyeBlinkL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C25\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.25)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C50\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.5)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C75\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.75)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeWideL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeWideL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeSquintL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeSquintL\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Eye_L_Sclera": {
+        "vertices": 266,
+        "triangles": 528,
+        "positions": "a721ddc58fc33f7b6d7990b3bfdd5e8c5e33e174236d5b320b40bb5cd34306f4",
+        "loops": "626aad866707d6cca8faef7e92d34baa531bdc4b0fda2f5aad40e3f2fe085e73",
+        "polygonStarts": "948d8e045617f5329b404f5a271bb05e98795c091729096c7c1cdf2fa5727ffa",
+        "polygonSizes": "edf433b92c8da5e13239be0ddbcb55b18c1d5337437382a331279bd6398fc96b",
+        "materialIndices": "4cf9816ed1062189ff0c8d427fba5e912cc68fc9af76cf7f08fd255977de3b33",
+        "materials": [
+          "Ren_H_Sclera"
+        ],
+        "uv": {
+          "UVMap": "eca69575e1b655ea0734b116c5993bbd806e28e0f99c78b9da70e4bc1920d091"
+        },
+        "attributes": {
+          "UVMap": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "eca69575e1b655ea0734b116c5993bbd806e28e0f99c78b9da70e4bc1920d091"
+          },
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "2eae271125da18c688f95e4c99507ea7b936c04147468e07ef5c090c0b495d61"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "37754f4351fba7c41197388ace139d413084e5f3a9d6ac445e004c38e21b559a"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "c3be2af8b2e98345a8cea9cf6862d443bd323fe273f4103d667529c6842a1cb8"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "2d5565fb483d8ea4525a7a9229677d1038ad34b6e22c8d5152e1d7f7b9817597"
+          },
+          ".uv_select_vert": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "9688ec46af8fa56e8423a06a9e420db47500eb701e44ba3855faf7984ed1a0a6"
+          },
+          ".uv_select_edge": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "9688ec46af8fa56e8423a06a9e420db47500eb701e44ba3855faf7984ed1a0a6"
+          },
+          ".uv_select_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "2d5565fb483d8ea4525a7a9229677d1038ad34b6e22c8d5152e1d7f7b9817597"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "a721ddc58fc33f7b6d7990b3bfdd5e8c5e33e174236d5b320b40bb5cd34306f4"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "a30f7206fd6f7d326bc107fcfc69d2bf55df53e32bdeed4edc9d3cd144c806cf"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "626aad866707d6cca8faef7e92d34baa531bdc4b0fda2f5aad40e3f2fe085e73"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "9079ed6875cdf4a291c63260dd99a389acce13ab6345fc02029f03f860a71cc8"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_Eye_L_UpperLash": {
+        "vertices": 66,
+        "triangles": 64,
+        "positions": "b82bfa36c4f926c53bab02c1c9b59296bf1a55460cba5747b74d7ef8ea791201",
+        "loops": "fa4ab9ecea0a9c9c6a67450d544517fbbd90d89e4ebee2bd5338781f03fd30fc",
+        "polygonStarts": "bce3ce5abdb1d74fe14867e0eb1d8929406c52f9628d27ced452b53436182cc8",
+        "polygonSizes": "58ce5c958c387d3bcad653fb2317b72fa16b44525b127a653c02195e01d9a168",
+        "materialIndices": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+        "materials": [
+          "Ren_H_UpperLash"
+        ],
+        "uv": {
+          "LashUV": "07b24cffbe0cdf3aaf8a81338016a56334aed91ee1da4457a1ee7b67afc77f27"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "ed66a52060042158939e719a3fa4593d162467d5c311df11cb17f92bca69ca4d"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "b82bfa36c4f926c53bab02c1c9b59296bf1a55460cba5747b74d7ef8ea791201"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "fa4ab9ecea0a9c9c6a67450d544517fbbd90d89e4ebee2bd5338781f03fd30fc"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "e08304a992adc0ac3d11afe7c406792944162cf2f77c0c8966a38cd733370ce1"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "7c8975e1e60a5c8337f28edf8c33c3b180360b7279644a9bc1af3c51e6220bf5"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "6f33ac6b3f23f83a218af43ef33db42329169a786d3bd51f3597c4a08a3b1c7b"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "578ff66d5dc9ee80e64f7a65af918d454f18ecfc926596f8c16f03239d2a3443"
+          },
+          "LashUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "07b24cffbe0cdf3aaf8a81338016a56334aed91ee1da4457a1ee7b67afc77f27"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "b82bfa36c4f926c53bab02c1c9b59296bf1a55460cba5747b74d7ef8ea791201",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL": {
+            "positions": "3fcc8288168e23eefe1ac0c978f53fe8a860cb4e05e1684da6933ea94fc4092b",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C25": {
+            "positions": "4a4056a88fa2164ce7f89c40db395fd62384d4a3cf8b9c5a5f56cc9bdd45e0da",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C50": {
+            "positions": "7e9c35204734af53f186bf2f9190d6aed92180f672ebfdb6ba7d39c5654297fb",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkL_C75": {
+            "positions": "4f23f68a446f153f51c5d16d15a4883602bcd82909bdb50c7bc40771d0cb7285",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeWideL": {
+            "positions": "d0aafbc2dedb24badefa43a7f048b5b809a041b123d467161a32024c18bf5cce",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeSquintL": {
+            "positions": "a34af7732d63c9eb8020fbaf1c58c4aea03b14d19bc607e09cf74ca7563dc5dd",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"eyeBlinkL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C25\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.25)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C50\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.5)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkL_C75\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.75)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeWideL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeWideL\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeSquintL\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeSquintL\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Eye_R_Iris": {
+        "vertices": 187,
+        "triangles": 304,
+        "positions": "3f2a3a73c6aa977c3b9904778848f7cd82e25b878ed14be412b45961cd0d6e44",
+        "loops": "cd965876683f755c607d53b27d1cf28d817c2d2f3d126386ce35b195b8f93eea",
+        "polygonStarts": "8b9bd1b2e7a32dc181f068b7bbe24674090f1839174275e04dffab58fb1e061c",
+        "polygonSizes": "04b38e136206576ea7b52d537b55c5381704a567610085896a631b32cac30c5a",
+        "materialIndices": "97d364e2d3d35f030a038c41bbadc42d0c15fa8d79ba569987e19fddb2e80f9a",
+        "materials": [
+          "Ren_H_IrisBlueGrey"
+        ],
+        "uv": {
+          "IrisUV": "ec1195786630c387759a68c8be46be3f9d1c4dc412cf911509874a9f26d86f46"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "d47dd228442f72230212024b0d0ccf87f2353bf73fdfdc999ef648b5f3396ad0"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "3f2a3a73c6aa977c3b9904778848f7cd82e25b878ed14be412b45961cd0d6e44"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "cd965876683f755c607d53b27d1cf28d817c2d2f3d126386ce35b195b8f93eea"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "42f899d591f7df73043038ee494af92b89452abbf976951c2460164d1bc185a9"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "29bbb7f704f76cdf92c002a1a267f6a819dab1ddc7e1457d488020c030031184"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "e2fc162ed9124452d23c85e81d60a0c228f414c3214a5de635737e25fbd29ac1"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "9a5d596c6463117b04079634e918ea8c236913be57fb8a8769a871b6d2a82b85"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "fb65750f4bd0a7eb642d22b488fd7e57df0fbd1f48f0a2c4d981a8d212681358"
+          },
+          "IrisUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "ec1195786630c387759a68c8be46be3f9d1c4dc412cf911509874a9f26d86f46"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_Eye_R_LidAnnulus": {
+        "vertices": 448,
+        "triangles": 768,
+        "positions": "19d11e7821a25bbda911ce1cd11d283cbf49a6b76c4e06e5f8a566085a0d7c99",
+        "loops": "54ed4787e5d7156e80750649919be3fb2fa332155b6d30090617574f739b4c73",
+        "polygonStarts": "847d999dbeccfeed1d5e8d562e0608d905318f546dc6e849b5312c49daa7234b",
+        "polygonSizes": "c01ef29b8cfe111d8c44defd693a4d3ce657486488ee2ef6ea6f5a66c932b6c8",
+        "materialIndices": "e80232b4d18d0bb7e794be263ba937626f383f9917d4b8a737ba893a8f752293",
+        "materials": [
+          "Ren_H_Lid_R_Pigment"
+        ],
+        "uv": {
+          "H_EyeLocalUV": "1bd483492cfda342e272c1026c5dd73109b64fc6e04de922cf248ee68a0030b5"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "92bf953a8d434e1cec3be8e5748d5053877036fefa83f910668a51bf9f22e3b3"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "19d11e7821a25bbda911ce1cd11d283cbf49a6b76c4e06e5f8a566085a0d7c99"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "54ed4787e5d7156e80750649919be3fb2fa332155b6d30090617574f739b4c73"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "9997de28ea6df9eff52810cd4e924c4096b7d95da0b3f5a93f1fdbacd3c58b17"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "1b1c08af714b3f3f6f5cafb74783b571dc82d6ac612ecffbe816df938117b099"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "ef115a0e0c15cdc41958ca46b5b14b456115f4baec5e3ca68599d2a8f435e3b8"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "05e238250a058daf370261918dfed47e876bca8cb2da3df7d4db1b90c3a4772e"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "5190abd8de618d6e6a84b1b94fb9db5119e3d5e78a3a9aff47f0b6c420809933"
+          },
+          "H_EyeLocalUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "1bd483492cfda342e272c1026c5dd73109b64fc6e04de922cf248ee68a0030b5"
+          },
+          "h_outer_boundary_index": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "dbcc4a34df76c8eab5d4998a868147f84e34d1d99758a05dc89c7b2317e0dccd"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "19d11e7821a25bbda911ce1cd11d283cbf49a6b76c4e06e5f8a566085a0d7c99",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR": {
+            "positions": "19881705cb250c5abf8e98696e91ed238ef078c6a05bb46ce4eab15ec9394794",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C25": {
+            "positions": "67067927acccda0536f21b9b99d7e98b9b6babc8475bd52888c2ff9a9ea7a191",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C50": {
+            "positions": "6fec5e2d593c3e3ba74e6d5f5d00a3f52609834697b6b525a102501afe305e21",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C75": {
+            "positions": "b5f6e431753b2f2ff270dec1f7867e7a770d9f4a67d15b039717707945f0cf7a",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeWideR": {
+            "positions": "b0ac8719e8b28441926d1ce144b9da3d2c4f45a3cd5957c1b239756d1bd48800",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeSquintR": {
+            "positions": "a91ddaf5490264928785daf0e50f6af7818421f22b42c73e309ae268a86fe584",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"eyeBlinkR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C25\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.25)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C50\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.5)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C75\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.75)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeWideR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeWideR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeSquintR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeSquintR\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Eye_R_LowerLash": {
+        "vertices": 66,
+        "triangles": 64,
+        "positions": "8d48bffa68aaa313524dc3690a68b63483d4607857aeadccda8546c4f587baa9",
+        "loops": "45f0875f584f4268eccae1e986f30bf10867dd10227c5aa7da3eee7917b5e90d",
+        "polygonStarts": "bce3ce5abdb1d74fe14867e0eb1d8929406c52f9628d27ced452b53436182cc8",
+        "polygonSizes": "58ce5c958c387d3bcad653fb2317b72fa16b44525b127a653c02195e01d9a168",
+        "materialIndices": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+        "materials": [
+          "Ren_H_LowerLash"
+        ],
+        "uv": {
+          "LashUV": "0cdeba2eeb28044be2c66eac2e832258b7b670df6e8fa54db330f23facbc486b"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "ed66a52060042158939e719a3fa4593d162467d5c311df11cb17f92bca69ca4d"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "8d48bffa68aaa313524dc3690a68b63483d4607857aeadccda8546c4f587baa9"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "45f0875f584f4268eccae1e986f30bf10867dd10227c5aa7da3eee7917b5e90d"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "cd4a508acb231f7aeaf40f3f8313b1307b9f536b77e2fd0196fdbf540174b752"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "7c8975e1e60a5c8337f28edf8c33c3b180360b7279644a9bc1af3c51e6220bf5"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "6c548eb9835e32d5377b3f485f978c67f43ee00be6154fd1f64e82981815b291"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "578ff66d5dc9ee80e64f7a65af918d454f18ecfc926596f8c16f03239d2a3443"
+          },
+          "LashUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "0cdeba2eeb28044be2c66eac2e832258b7b670df6e8fa54db330f23facbc486b"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "8d48bffa68aaa313524dc3690a68b63483d4607857aeadccda8546c4f587baa9",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR": {
+            "positions": "afe29ffc4180e8c23dd1511694a8d20dd5c3c0904e7df801d04f81755b727e7e",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C25": {
+            "positions": "8fcd424996ff857346fc7dd71a0df2d5f51a3f48edc419e2972f203dc953262a",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C50": {
+            "positions": "c7d3744f0076c06ecc20a3e35c0103feac43608fa0cdbefcf512255301953a0b",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C75": {
+            "positions": "24bd98bf3258e76416b5e39f256487b10699284a42ed82642db6bffe206bc855",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeWideR": {
+            "positions": "0c7be92f447553c23fa7941c08220b3388e0aec3fc395190f47d73751bf5d7b2",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeSquintR": {
+            "positions": "9a01b097160ceaf2b7238b73227f10a83a5442fa124cbc23072cf1873e1235ed",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"eyeBlinkR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C25\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.25)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C50\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.5)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C75\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.75)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeWideR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeWideR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeSquintR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeSquintR\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Eye_R_OuterFlicks": {
+        "vertices": 6,
+        "triangles": 2,
+        "positions": "f47e14fc3d9f06ddddd2df5f538f913e9584c6929fa0bb73cbb10a8d895f537d",
+        "loops": "cd9a54ed1f18bf97db08914e280ea7349e11ca2c4885a4d8052552ceba84208d",
+        "polygonStarts": "9ae4c9d0864c30005acac91f21015f39e35691a056d606a097c8cf8380275a17",
+        "polygonSizes": "f9815db16d8d228cca743c75d4cb4ddffd3a6d7cd6518658c9d3bd0e4fe27c82",
+        "materialIndices": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+        "materials": [
+          "Ren_H_UpperLash"
+        ],
+        "uv": {
+          "LashUV": "91f9880685614fac2aa66d5e09c5eee067b679bdcb969091055ad577f6f43bd5"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "dfea2964b5deedea7b1ef077de529c3959e6788bdbb3441e70c77a1ae875bb48"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "f47e14fc3d9f06ddddd2df5f538f913e9584c6929fa0bb73cbb10a8d895f537d"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "cd9a54ed1f18bf97db08914e280ea7349e11ca2c4885a4d8052552ceba84208d"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "d9c01d27ce30e9a23d9feef1fdf022320af1bb321ed97890422860ec376eae78"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "9dcf97a184f32623d11a73124ceb99a5709b083721e878a16d78f596718ba7b2"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "96a296d224f285c67bee93c30f8a309157f0daa35dc5b87e410b78630a09cfc7"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "6739a8ee9370e2e75a23722da2ae26d98d532951aa1053f59395e900f79b6331"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "dfea2964b5deedea7b1ef077de529c3959e6788bdbb3441e70c77a1ae875bb48"
+          },
+          "LashUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "91f9880685614fac2aa66d5e09c5eee067b679bdcb969091055ad577f6f43bd5"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "f47e14fc3d9f06ddddd2df5f538f913e9584c6929fa0bb73cbb10a8d895f537d",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR": {
+            "positions": "f1669359026eae11147c0b9a46b8bbb484507264ba04b0508c89d3a76802ed96",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C25": {
+            "positions": "f7208af2ae4844eb4e7dc062c03b64e48d0c551bffab0d10984f7a8f30a6985e",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C50": {
+            "positions": "ef405bf60eb15407629b092e038fb2b60e48ec1460924348deedf0a795fcb70b",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C75": {
+            "positions": "80b2812c6e3a0e73f3d170edd871fbf3749afd4ead42b2bcf7695ce2576298de",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeWideR": {
+            "positions": "d4e2bb30b2fb8a108c46d21f0181d4738b7a6195fbc2d551d70ea04e78d3e40a",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeSquintR": {
+            "positions": "bb2509c10bd3192992d37ee5dab2885e4ee3d7067448993143e2693c1f1ec285",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"eyeBlinkR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C25\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.25)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C50\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.5)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C75\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.75)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeWideR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeWideR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeSquintR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeSquintR\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Eye_R_Sclera": {
+        "vertices": 266,
+        "triangles": 528,
+        "positions": "a721ddc58fc33f7b6d7990b3bfdd5e8c5e33e174236d5b320b40bb5cd34306f4",
+        "loops": "82a18ba4e4bff8fa8e8e85e8efffa77c44f87a0171e1d569ab5442a008739c21",
+        "polygonStarts": "d715d05e13be1c172d4dddd40e7b265c4dea2e375ee715d8fd5927e8959ec64c",
+        "polygonSizes": "63fd71cf716a2ea3a3f332e490bc3773402d9faa6291d6219be772acfe31f71e",
+        "materialIndices": "4cf9816ed1062189ff0c8d427fba5e912cc68fc9af76cf7f08fd255977de3b33",
+        "materials": [
+          "Ren_H_Sclera"
+        ],
+        "uv": {
+          "UVMap": "0fc47dabd0cc0a9c872c3c34c9fd9302511808943cdc39d10a0585739f71eed5"
+        },
+        "attributes": {
+          "UVMap": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "0fc47dabd0cc0a9c872c3c34c9fd9302511808943cdc39d10a0585739f71eed5"
+          },
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "2eae271125da18c688f95e4c99507ea7b936c04147468e07ef5c090c0b495d61"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "37754f4351fba7c41197388ace139d413084e5f3a9d6ac445e004c38e21b559a"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "c3be2af8b2e98345a8cea9cf6862d443bd323fe273f4103d667529c6842a1cb8"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "2d5565fb483d8ea4525a7a9229677d1038ad34b6e22c8d5152e1d7f7b9817597"
+          },
+          ".uv_select_vert": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "9688ec46af8fa56e8423a06a9e420db47500eb701e44ba3855faf7984ed1a0a6"
+          },
+          ".uv_select_edge": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "9688ec46af8fa56e8423a06a9e420db47500eb701e44ba3855faf7984ed1a0a6"
+          },
+          ".uv_select_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "2d5565fb483d8ea4525a7a9229677d1038ad34b6e22c8d5152e1d7f7b9817597"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "a721ddc58fc33f7b6d7990b3bfdd5e8c5e33e174236d5b320b40bb5cd34306f4"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "bc195a8b61b5c53716735aeceb7ede39b1fa1fb18949bd05608c5abd27682a14"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "82a18ba4e4bff8fa8e8e85e8efffa77c44f87a0171e1d569ab5442a008739c21"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "928406968631ca58f3b32a77558832609a43b638d5cdea73d0585935d70496d8"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_H_Eye_R_UpperLash": {
+        "vertices": 66,
+        "triangles": 64,
+        "positions": "5d7a559398f2f599640d7808b389caa26c13e3fc32eef586a090fcbc75546db9",
+        "loops": "45f0875f584f4268eccae1e986f30bf10867dd10227c5aa7da3eee7917b5e90d",
+        "polygonStarts": "bce3ce5abdb1d74fe14867e0eb1d8929406c52f9628d27ced452b53436182cc8",
+        "polygonSizes": "58ce5c958c387d3bcad653fb2317b72fa16b44525b127a653c02195e01d9a168",
+        "materialIndices": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+        "materials": [
+          "Ren_H_UpperLash"
+        ],
+        "uv": {
+          "LashUV": "0cdeba2eeb28044be2c66eac2e832258b7b670df6e8fa54db330f23facbc486b"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "ed66a52060042158939e719a3fa4593d162467d5c311df11cb17f92bca69ca4d"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "5d7a559398f2f599640d7808b389caa26c13e3fc32eef586a090fcbc75546db9"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "45f0875f584f4268eccae1e986f30bf10867dd10227c5aa7da3eee7917b5e90d"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "cd4a508acb231f7aeaf40f3f8313b1307b9f536b77e2fd0196fdbf540174b752"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "7c8975e1e60a5c8337f28edf8c33c3b180360b7279644a9bc1af3c51e6220bf5"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "6c548eb9835e32d5377b3f485f978c67f43ee00be6154fd1f64e82981815b291"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "578ff66d5dc9ee80e64f7a65af918d454f18ecfc926596f8c16f03239d2a3443"
+          },
+          "LashUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "0cdeba2eeb28044be2c66eac2e832258b7b670df6e8fa54db330f23facbc486b"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "5d7a559398f2f599640d7808b389caa26c13e3fc32eef586a090fcbc75546db9",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR": {
+            "positions": "dc592c8342b687c393d53ca0939038fd6757561b90935d6ef6f0050382a92ef5",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C25": {
+            "positions": "352b2f9549e542764ae8ca05786ea72a540eddb7878dd751396e3935e119f29e",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C50": {
+            "positions": "94e812d5c74992e850f2e4b1d008939702365a15e7f269ee2dc3c9c2ac3817f9",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeBlinkR_C75": {
+            "positions": "3d7c73e500778dfd4a57cec7d9b4ef7756a8519772caff2f6970d172af28f823",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeWideR": {
+            "positions": "775c80d7493cb7aec18713e093a36c89d2091012be4afef9e7fcc0da6d37bbd6",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "eyeSquintR": {
+            "positions": "d15c1254b745cd9c6efe8a4b956b0bca6e572c0bdd4c45ecdb93ce2bbc80a55e",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"eyeBlinkR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C25\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.25)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C50\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.5)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeBlinkR_C75\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "max(0,1-abs(min(1,max(0,v))-0.75)/.25)",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeBlinkR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeWideR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeWideR\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"eyeSquintR\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "min(1,max(0,v))",
+            "variables": [
+              {
+                "name": "v",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_EyeControls",
+                    "path": "[\"eyeSquintR\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Head": {
+        "vertices": 120379,
+        "triangles": 195660,
+        "positions": "75d2ff17cb6a36c6cd76b7f33b2f162d21d27a8e0286129ad7dbfe20a6523b41",
+        "loops": "f8157ef330cc50188b592dd6f0eb4ddc92cbed57992b180dbf3a0a20d1042c3c",
+        "polygonStarts": "a3c04ef5975c00c7e0907ce43e6528262c275e3e05abe049d3f11bb988352ab9",
+        "polygonSizes": "ea05c4e8efea1743d18ce20b3b8249c8e5a923872b542f7ebaf9307bd164f9ad",
+        "materialIndices": "ed1b50a77b119847e4bc8329f94efb0da58155ee51d3229bf3b3415c76695e39",
+        "materials": [
+          "Ren_H_ArtistRose_NPRBase",
+          "Ren_H_CheekPatch_NPRBase",
+          "Ren_H_CheekPatch_R2_NPRBase"
+        ],
+        "uv": {
+          "HNativeUV": "d539db3ca33f82e8c0522752f8a2c824d34c744513ec026d3abd8c8c567a0ed1"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "4662b578ab5634508190ebddeab16c21de6fbfbe7c24d62869acc73da579ae7a"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "75d2ff17cb6a36c6cd76b7f33b2f162d21d27a8e0286129ad7dbfe20a6523b41"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "f8157ef330cc50188b592dd6f0eb4ddc92cbed57992b180dbf3a0a20d1042c3c"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "ea1e9a9c7ea3858df5976ab4a030d8e030a874096df72cbed38a89c87e6cf3a7"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "809cdee6c06ff2825f999ce91a5e9d6588cf0313d56df4fbced9cf9895c2a056"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "4dd28ef79a36fe96eac32d51e460f31aa57c1b25cf9ebc5e96d8009b09e0496a"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "c2ab98bea7dfeab632733b790879086124ee26dd905a7656a616f3be3d819090"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "4c48edca459a1e0cc066a8c063816092dfb828f3d6cf3d1556c2975598ddc986"
+          },
+          "material_index": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "ed1b50a77b119847e4bc8329f94efb0da58155ee51d3229bf3b3415c76695e39"
+          },
+          "HNativeUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "d539db3ca33f82e8c0522752f8a2c824d34c744513ec026d3abd8c8c567a0ed1"
+          },
+          "sharp_face.001": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "4dd28ef79a36fe96eac32d51e460f31aa57c1b25cf9ebc5e96d8009b09e0496a"
+          },
+          "source_h_vertex_id": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "00d9da220dd06173c96be1c1d556f53c625cd5c841c673c1a0124621aab09428"
+          },
+          "source_h_face_id": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "b9f97f7c76bba63d33a620b1fa8978442cfa425386a3fa87244f147ae10b385b"
+          },
+          "contact_region": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "ed1b50a77b119847e4bc8329f94efb0da58155ee51d3229bf3b3415c76695e39"
+          },
+          "uv_valid": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "048ff3dc5d3ca9f1a812cb8867876b9ce6b034a67433f34af4f6e4aa5e4d80d1"
+          },
+          "HCheekPatchLinear": {
+            "domain": "CORNER",
+            "type": "FLOAT_COLOR",
+            "sha256": "f22a4c5d6f109d2c63dd6f6c30e359407e6ef17bc8c0ed4a387e48e28378bf9a"
+          },
+          "HCheekPatchLinear.001": {
+            "domain": "CORNER",
+            "type": "FLOAT_COLOR",
+            "sha256": "e1420b16c90876bb268120a5d34d3ae8301717ede0846795aadab7da3870736e"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "75d2ff17cb6a36c6cd76b7f33b2f162d21d27a8e0286129ad7dbfe20a6523b41",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "jawOpen_A": {
+            "positions": "eae9457f330ea64923194c8d735383e7bb9f296c1eebe516d0bceaec1fa45d10",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "mouthSeal": {
+            "positions": "96786e0279a9b826b21f3366d392c755a2ffdaf54f2510fc338fc5b288e689bb",
+            "value": 1.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"jawOpen_A\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "a",
+            "variables": [
+              {
+                "name": "a",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"jawOpen_A\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"mouthSeal\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "s*(1-a)",
+            "variables": [
+              {
+                "name": "s",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"mouthSeal\"]"
+                  }
+                ]
+              },
+              {
+                "name": "a",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"jawOpen_A\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_InnerLipWall": {
+        "vertices": 1440,
+        "triangles": 2560,
+        "positions": "8fdc764ac6da5a345f2721ff2e9609dc0c0e5f62fa5df863edf407246432799e",
+        "loops": "978166d15be1a270d91858b0b0016ffe24cfb1547a978255850fb29c364244f1",
+        "polygonStarts": "994174aa6f37836a0976243b2a5f65eaa203ead8e835270989a8a08132bb3022",
+        "polygonSizes": "87db531be7c2eb4b785abb2073366a2982c91b2048a5fc32f34e3a57a7749d9a",
+        "materialIndices": "a11937f356a9b0ba592c82f5290bac8016cb33a3f9bc68d3490147c158ebb10d",
+        "materials": [
+          "H_StudyCavity"
+        ],
+        "uv": {},
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "17cb33907a33a7db76dfc06ec888de9201e7bb672d93711134c6a10f36d27aaf"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "8fdc764ac6da5a345f2721ff2e9609dc0c0e5f62fa5df863edf407246432799e"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "978166d15be1a270d91858b0b0016ffe24cfb1547a978255850fb29c364244f1"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "123dc737e77162dd02790856acbe81e87ce4490e088c178dd318ff5bbf618282"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "ff78f86be9213e50904a7510a9d6d8e050f2825254e70d18527a5682c3337434"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "bfe492baf731a0dbf6e1e050f5bc3fe8c1b049383194dcdf82f023bfa409f462"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "30f2f64c0be08c25e2fd143f6583d71f9b96d1c2f00759d2bbd0b3892af970a5"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "4ccc05222a2498cf430b23ac2d42973844684c3b1f26b0b22b2e191e35f646e6"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "8fdc764ac6da5a345f2721ff2e9609dc0c0e5f62fa5df863edf407246432799e",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "jawOpen_A": {
+            "positions": "33cadf5ed8f9a5a53ed93c94cc29418d27a42ecf60183909068886b281dfe2d1",
+            "value": 0.0,
+            "relative": "Basis"
+          },
+          "mouthSeal": {
+            "positions": "fc2fc219cd7fb12e89236a81b51bb41d4561b1169dabfa17f45396a0cffb49cf",
+            "value": 1.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"jawOpen_A\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "a",
+            "variables": [
+              {
+                "name": "a",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"jawOpen_A\"]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "path": "key_blocks[\"mouthSeal\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "s*(1-a)",
+            "variables": [
+              {
+                "name": "s",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"mouthSeal\"]"
+                  }
+                ]
+              },
+              {
+                "name": "a",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"jawOpen_A\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_OralCavity": {
+        "vertices": 5264,
+        "triangles": 9575,
+        "positions": "0036b4a936424ea4f6c75c18d788ecad3d1d6a06077e60a9a8f8a806aa45e6d2",
+        "loops": "f9e33b05a7656211d721084e99f309f6420d28bc54b7da2ef44a1f5e60f10637",
+        "polygonStarts": "759432361799dc0319a8f2051a66a3e56319e40ce0d144454d78cdb704625d99",
+        "polygonSizes": "72c3c1807154068b3e0179936d2eb8a293f834f09d7f376c4c4227249d37af15",
+        "materialIndices": "46ca1a8ce98a14a5f259e35575646503e933dcd21c33ace47d3909e9c43f2cab",
+        "materials": [
+          "H_StudyCavity"
+        ],
+        "uv": {
+          "HNativeUV": "56c0942487a524e470dc900ed772842a8ad6d5aa0decab9c0dce3309513f4d4a"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "05ecb77b22bb67ef4de9f1f13dd2b6308667a7ebde9587794ef65233cf709325"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "0036b4a936424ea4f6c75c18d788ecad3d1d6a06077e60a9a8f8a806aa45e6d2"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "f9e33b05a7656211d721084e99f309f6420d28bc54b7da2ef44a1f5e60f10637"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "fab6545a4b96a474f5e31706569d2e2fccc9b4c03e4bf8c7735a375367238492"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "39c74f4024c6d223859eedfd0f3312f10b1c99eac4369002a5f5379a17c9f355"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "f29013063c50e75d210c4290bf66ea74952daac536b1bac264f6ed8362157a9c"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "a809ef03b3660c28f38ee1f4ce042695c72a8ab3666c097d86c4f7145c621ed2"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "a8585482be5fd6d2c8f71beb229ea4e87767824e6599a9408b536a5878b51bb4"
+          },
+          "source_h_vertex_id": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "9a4a323ed5775818295df62d8e6745714de4151773b0c6f0a1ef8dd23f855ee8"
+          },
+          "source_h_face_id": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "6ae530c8a8e9dee85ef266424816642c927374538fb26376b9c4eba45bba0479"
+          },
+          "HNativeUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "56c0942487a524e470dc900ed772842a8ad6d5aa0decab9c0dce3309513f4d4a"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "c07dd9473e56febd9accacf11484e301cb4ae3065d741a88dd494b7d30492a4f",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "jawOpen_A": {
+            "positions": "0036b4a936424ea4f6c75c18d788ecad3d1d6a06077e60a9a8f8a806aa45e6d2",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"jawOpen_A\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "a",
+            "variables": [
+              {
+                "name": "a",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"jawOpen_A\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_Tongue": {
+        "vertices": 4154,
+        "triangles": 7701,
+        "positions": "b18a00c16bc184d9a00f6b4b9b55e040fb59f60efa2efb68f057718e4d8d5e34",
+        "loops": "4bba4832cf0177ca02576f3cb1d54083d1dc27dbec76ad3502626f67b5535df8",
+        "polygonStarts": "effb1f0ed0573ced15de67b8ff6653a1af7c452fae6c21786ab53ad0255a8f4f",
+        "polygonSizes": "4ec6b0a4e4d041096f6551c840a09925733f1fa9a38b84107e8736d261e292c9",
+        "materialIndices": "34129e0fa6fb6896f4cb69373776c72f0697344b137830bf9f8ce50bd1633246",
+        "materials": [
+          "H_StudyTongue"
+        ],
+        "uv": {
+          "HNativeUV": "d583427a39d0ed83b0090072da2fb2e9aa1b07fdd552f99286a789e79383329a"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "789794f7677325bd86036804f55fb77f3c2ff89e57761c966797b736c7acb5ee"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "b18a00c16bc184d9a00f6b4b9b55e040fb59f60efa2efb68f057718e4d8d5e34"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "4bba4832cf0177ca02576f3cb1d54083d1dc27dbec76ad3502626f67b5535df8"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "8ed29e835d2e874215f1c6a3a08e7ea8f93c698b57118b7df24ac6d3edb8d298"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "d520060815813e6613fb8cf36bc11fef3be0f9cf4d4a8cc475c5aaad6cfaacd7"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "596b98fa5e7891bdadf64da05b5b57261877f9df673bb8c765a22777f2fd7c79"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "367b3bda94ffcd9b9dd83da87778d8f87f31a7a4e8b9f7ce325b7df8c7d5f67a"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "a68a875d952ba9a2c364f18cbc5b0a54fb8993e0114e3653d0535a3159424e2b"
+          },
+          "source_h_vertex_id": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "a9e59a064eedb374914ada56c65fd01a7de0e524ec679f61ae78db6ae0ff3362"
+          },
+          "source_h_face_id": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "e8ebaee1d6670ca220d1bdd7d5976e70f01c752ad7852641d36d9d911310c1dc"
+          },
+          "HNativeUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "d583427a39d0ed83b0090072da2fb2e9aa1b07fdd552f99286a789e79383329a"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "798762a1d92434d9ca7b6a77e7aa43b8f49e4caec820d7041be05dfe4464f7d7",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "jawOpen_A": {
+            "positions": "b18a00c16bc184d9a00f6b4b9b55e040fb59f60efa2efb68f057718e4d8d5e34",
+            "value": 0.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"jawOpen_A\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "a",
+            "variables": [
+              {
+                "name": "a",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"jawOpen_A\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_H_UpperTeeth": {
+        "vertices": 943,
+        "triangles": 1634,
+        "positions": "8de5a0320787258e2ce2dcd13676a52869e8c1b6b413e5af5fabf6070f99130a",
+        "loops": "8caaf562fcd7190fe86b196a6c3b50ec5bda45989520e2e138ac6a932f645cc7",
+        "polygonStarts": "d25a110b6144fc17d2c1dd5cda48c24cc6e40ae08e846e1c757ca14be1e6de10",
+        "polygonSizes": "e7a527a05e7f5a461e86a73e3774a2b2c140b7049622b29a4a5522d738e247bb",
+        "materialIndices": "ea7149e8963c3be57060dbf813eef6c8224a36104aab13320bea05d8370a2302",
+        "materials": [
+          "H_StudyEnamel"
+        ],
+        "uv": {
+          "HNativeUV": "b83a6eba8d0114fe58574da6d2f654c89cb91eeb9e333c2b009f2fb4d83f4975"
+        },
+        "attributes": {
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "4a3185ebb6f8645e038b9c1647f642b5ea2d0b02b0dc3678af38798c5681c394"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "8de5a0320787258e2ce2dcd13676a52869e8c1b6b413e5af5fabf6070f99130a"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "8caaf562fcd7190fe86b196a6c3b50ec5bda45989520e2e138ac6a932f645cc7"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "9a196fda6ca4224204239307000d688b19df0377da587d0b2604bc418a68e025"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "702424c47a71c6fc676029a00ae6ef7b630992a65e4843173d792f52400c3275"
+          },
+          "sharp_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "50f85b8a6df04eb5633b5f5c584c989ce8441201a125565a3db63c1b1dda0c58"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "5e550d740fcc726e11b441930cae17ae3bbea8d5ac779f6f2966bdafe2e0aa91"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "3b5e24f1b9038c6911f93e964b2392aceec56426bcea566a76af9e2e2754b03a"
+          },
+          "source_h_vertex_id": {
+            "domain": "POINT",
+            "type": "INT",
+            "sha256": "0a6b7343c5e6b670604fdbbdb3776c49842343fa4c72d2987e8f7e6fb1d6e2f5"
+          },
+          "source_h_face_id": {
+            "domain": "FACE",
+            "type": "INT",
+            "sha256": "bc11c2a79831a04e76b07e65fc6e21892e2fd3440fa543144b315b395c81300f"
+          },
+          "HNativeUV": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "b83a6eba8d0114fe58574da6d2f654c89cb91eeb9e333c2b009f2fb4d83f4975"
+          }
+        },
+        "shapes": {},
+        "drivers": []
+      },
+      "Ren_Hair_H_DetailedLayers": {
+        "vertices": 5189,
+        "triangles": 8954,
+        "positions": "d4324f85c620151a167f1f26c2b8a3241722e44d97b6576f57b6bccc7d14b377",
+        "loops": "d0ac3d3a4f3f8b385430983532cad2dd6f87acb7db771e07478c153c81f85ec4",
+        "polygonStarts": "1a47b8d6d5a1d74daf03a55e9393674b0da4f3ddd1b0ffa13d79cc8e1881d355",
+        "polygonSizes": "7c39bda10177da46cb747a08fe2be6e90756d5b403488dfc65c3d2587a6037f1",
+        "materialIndices": "716278aacc5e49d1b2f5026b268d0224ab3f49c4fe66edac8447b3279ad736af",
+        "materials": [
+          "Ren_H_Hair_Painted_PaleBlond"
+        ],
+        "uv": {
+          "HairPaintUV_H_v1": "141f8355a6baccd8789140726317859a458a35272ee6af044b06ae8796c0300c"
+        },
+        "attributes": {
+          "HairStrandCoordinates": {
+            "domain": "CORNER",
+            "type": "FLOAT_VECTOR",
+            "sha256": "71d6d3894341d738a7011805733b7aae877d170f2704efbed29ebe0ae123c05f"
+          },
+          "HairPaintUV_H_v1": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "141f8355a6baccd8789140726317859a458a35272ee6af044b06ae8796c0300c"
+          },
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "ef8ad3af8d59ece9abcc60580821c4bb932508c31caaefafbcae7d0a0998175c"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "cb59a37da92b5452528169df4f49110765a1207d5b376308db9f148d9f4d077f"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "9813399f25902b73c4e6728343eeff68cac006b6fc5fdb88f925dfdbac6c677f"
+          },
+          ".uv_select_vert": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "25e6c0ff5db65d9b6eb9a2bfa1f930abe8792a2d9032c8d7ead7dc37d78ab17c"
+          },
+          ".uv_select_edge": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "25e6c0ff5db65d9b6eb9a2bfa1f930abe8792a2d9032c8d7ead7dc37d78ab17c"
+          },
+          ".uv_select_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "9813399f25902b73c4e6728343eeff68cac006b6fc5fdb88f925dfdbac6c677f"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "d4324f85c620151a167f1f26c2b8a3241722e44d97b6576f57b6bccc7d14b377"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "26ac33cc8945b0a66ff540554903b10a9ca7abef72282c3c1ceef8937ee61d08"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "d0ac3d3a4f3f8b385430983532cad2dd6f87acb7db771e07478c153c81f85ec4"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "aa2615c73c7801f49871645f3cf1c0ae61fd502eb679160c42eef7b8aaae3877"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "d4324f85c620151a167f1f26c2b8a3241722e44d97b6576f57b6bccc7d14b377",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "capOn": {
+            "positions": "1bbf07359c9ef7dcec48d899fd6c27b86fa88b7cc4eef83753be66aac21710b1",
+            "value": 1.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"capOn\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "c",
+            "variables": [
+              {
+                "name": "c",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"capOn\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "Ren_Hair_H_RootBase": {
+        "vertices": 288,
+        "triangles": 542,
+        "positions": "a001c2e2bd2ad47655032b484614c5ba55b2d8cda4068feb7680d26de2e6c8c9",
+        "loops": "a87795634f639f7ea874c01f2d0619fbfbd6e7f24c9a9cf4587579d5b7890375",
+        "polygonStarts": "2c6b9d473d01c3371dd089b571942472493b5a7691049044cada386dc4707c1c",
+        "polygonSizes": "dd5e7d0c18229e3f85e5a6d88de50cd471229e921e84ad2a669ce123c1d63949",
+        "materialIndices": "82823076344d2111f1047052202daf8028f30b99b902e4aa20169338762b6ef3",
+        "materials": [
+          "Ren_H_Hair_Painted_PaleBlond"
+        ],
+        "uv": {
+          "HairPaintUV_H_v1": "554a43429945eef54351b29e23614cd5cd2aaea98cb759b79fb8581788b0efc4"
+        },
+        "attributes": {
+          "HairStrandCoordinates": {
+            "domain": "CORNER",
+            "type": "FLOAT_VECTOR",
+            "sha256": "ea211b01c8fe100a102d1acf1a31966e50e595e3da388c7e5a2e6c861ee90e9a"
+          },
+          "HairPaintUV_H_v1": {
+            "domain": "CORNER",
+            "type": "FLOAT2",
+            "sha256": "554a43429945eef54351b29e23614cd5cd2aaea98cb759b79fb8581788b0efc4"
+          },
+          ".select_vert": {
+            "domain": "POINT",
+            "type": "BOOLEAN",
+            "sha256": "c3be2af8b2e98345a8cea9cf6862d443bd323fe273f4103d667529c6842a1cb8"
+          },
+          ".select_edge": {
+            "domain": "EDGE",
+            "type": "BOOLEAN",
+            "sha256": "23b05a15e8a51fc19ecedea57f24e21137dacca9d1b770a3c80c2b6c3724ae79"
+          },
+          ".select_poly": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "a72ae2671720d9d1a18980b8037351a2cb990db9e55075fe1055575d61b400f8"
+          },
+          ".uv_select_vert": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "a153e90b612b0ebbd8c628656a7670100558843e62d7eee1338200eef9d1f025"
+          },
+          ".uv_select_edge": {
+            "domain": "CORNER",
+            "type": "BOOLEAN",
+            "sha256": "a153e90b612b0ebbd8c628656a7670100558843e62d7eee1338200eef9d1f025"
+          },
+          ".uv_select_face": {
+            "domain": "FACE",
+            "type": "BOOLEAN",
+            "sha256": "a72ae2671720d9d1a18980b8037351a2cb990db9e55075fe1055575d61b400f8"
+          },
+          "position": {
+            "domain": "POINT",
+            "type": "FLOAT_VECTOR",
+            "sha256": "a001c2e2bd2ad47655032b484614c5ba55b2d8cda4068feb7680d26de2e6c8c9"
+          },
+          ".edge_verts": {
+            "domain": "EDGE",
+            "type": "INT32_2D",
+            "sha256": "253b5696ecc7863bb288ef4a7a30aaa59a9f5ecdb42a84d021f8a4dbcabbc7b4"
+          },
+          ".corner_vert": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "a87795634f639f7ea874c01f2d0619fbfbd6e7f24c9a9cf4587579d5b7890375"
+          },
+          ".corner_edge": {
+            "domain": "CORNER",
+            "type": "INT",
+            "sha256": "bc44c0c8fbe3a1f0e48b0f80b9e140135615caf436045a8074be25a79121cb95"
+          }
+        },
+        "shapes": {
+          "Basis": {
+            "positions": "a001c2e2bd2ad47655032b484614c5ba55b2d8cda4068feb7680d26de2e6c8c9",
+            "value": 1.0,
+            "relative": "Basis"
+          },
+          "capOn": {
+            "positions": "599d02d4b6f30bc0ebc7cd95776c9d77612bb38981a93bb2b733ad571ff54749",
+            "value": 1.0,
+            "relative": "Basis"
+          }
+        },
+        "drivers": [
+          {
+            "path": "key_blocks[\"capOn\"].value",
+            "index": 0,
+            "type": "SCRIPTED",
+            "expression": "c",
+            "variables": [
+              {
+                "name": "c",
+                "type": "SINGLE_PROP",
+                "targets": [
+                  {
+                    "id": "Ren_H_HeadControls",
+                    "path": "[\"capOn\"]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "snapshotAfterExactlyEqual": true,
+  "snapshotFields": "Exact float32 raw coordinates, all shape coordinates/weights, all UV corners, topology, material indices, all custom attribute values including native source IDs, object hierarchy/matrices, driver expressions/targets.",
+  "isolatedReopen": {
+    "externalPathsDeliberatelyUnavailable": true,
+    "images": [
+      {
+        "image": "ren-tripo-studio-h3.1-a-open-original-8k_basecolor.jpg",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          8192,
+          8192
+        ],
+        "finiteSamplePixels": [
+          0.8901961445808411,
+          0.8901961445808411,
+          1.0
+        ]
+      },
+      {
+        "image": "ren-tripo-studio-h3.1-a-open-original-8k_normal.jpg",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          4096,
+          4096
+        ],
+        "finiteSamplePixels": [
+          0.501960813999176,
+          0.501960813999176,
+          1.0
+        ]
+      },
+      {
+        "image": "ren-tripo-studio-h3.1-a-open-original-8k_rm.jpg",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          4096,
+          4096
+        ],
+        "finiteSamplePixels": [
+          1.0,
+          0.988235354423523,
+          1.0
+        ]
+      },
+      {
+        "image": "Ren_Cap_V2_BaseColor.png",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          1024,
+          1024
+        ],
+        "finiteSamplePixels": [
+          0.05490196496248245,
+          0.05098039656877518,
+          1.0
+        ]
+      },
+      {
+        "image": "Ren_H_ArtistRose_BaseColor.png",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          8192,
+          8192
+        ],
+        "finiteSamplePixels": [
+          0.8901961445808411,
+          0.8901961445808411,
+          1.0
+        ]
+      },
+      {
+        "image": "Ren_H_CheekPatch_BaseColor",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          512,
+          512
+        ],
+        "finiteSamplePixels": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "image": "Ren_H_CheekPatch_BaseColor.001",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          512,
+          512
+        ],
+        "finiteSamplePixels": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "image": "Ren_H_Hair_BaseColor_4K",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          4096,
+          4096
+        ],
+        "finiteSamplePixels": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "image": "Ren_H_Iris_BlueGrey.png",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          512,
+          512
+        ],
+        "finiteSamplePixels": [
+          0.1725490242242813,
+          0.18039216101169586,
+          1.0
+        ]
+      },
+      {
+        "image": "Ren_H_Lid_L_BaseColor",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          512,
+          512
+        ],
+        "finiteSamplePixels": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "image": "Ren_H_Lid_R_BaseColor",
+        "externalPathUnavailable": true,
+        "packedSha256Pass": true,
+        "decodedDimensions": [
+          512,
+          512
+        ],
+        "finiteSamplePixels": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ],
+    "geometrySnapshotIdentical": true,
+    "renderFile": "evidence/portable-packed-smoke-front.png",
+    "renderSha256": "f7cb5ccbeadaa2c96917d3c9ad5d21b54cfee0a967dc28bdbe7abb7b3bc80bf9",
+    "resolution": [
+      384,
+      384
+    ]
+  },
+  "materialLimitation": "This is the exact frozen construction shader setup, including mixed diagnostic emission/PBR. It does not reproduce the separate coherent-tone v2 review captures.",
+  "sourceRebuildLimitation": "Reassembling from independent source parts still needs the external frozen source contracts/libraries listed in assembly.json and README. Opening/rendering this packed checkpoint does not.",
+  "exportsUnchanged": {
+    "Ren_H_CompleteHead_Review.fbx": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+    "Ren_H_CompleteHead_Review.glb": "6ace9af043ce8fcf12dd9da650565804172d81655b9836e47058facf0daf4254"
+  }
+}

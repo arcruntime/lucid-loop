@@ -1,0 +1,82 @@
+{
+  "status": "ISOLATED_IRIS_PIGMENT_REVIEW_NOT_STYLE_APPROVAL",
+  "sourceSha256": "715617c4842029775dfdef0cd289648ea87883624fe693c61a5d374812a2b13d",
+  "outputSha256": "e83af5f722798de1999d841c91fe6ae3f5c616a9ed5862b33d3c5e1d524ad61b",
+  "geometryUVShapesMatricesUnchanged": true,
+  "otherPigmentUnchanged": true,
+  "sourceCamera": {
+    "matrix_world": [
+      [
+        0.6256607174873352,
+        -0.13553008437156677,
+        0.7682319283485413,
+        2.9536428451538086
+      ],
+      [
+        0.6674022078514099,
+        -0.41686761379241943,
+        -0.6170864105224609,
+        -1.1996915340423584
+      ],
+      [
+        0.40388479828834534,
+        0.8988063335418701,
+        -0.1703646034002304,
+        -0.8226205110549927
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "ortho_scale": 3.3022971153259277,
+    "actual_blender_projection_max_error_pixels": 0.00020350792145753594
+  },
+  "records": [
+    {
+      "object": "Ren_DesignerEye_L_Iris",
+      "attribute": "DesignerIrisColor",
+      "domain": "POINT",
+      "vertices": 257,
+      "oldColorSha256": "bfb6ad053cb99dffffda2a481538f9915b91505c74f6a18a88899b6dd5d74e5c",
+      "newColorSha256": "80d34762d43c91ce9485531f0ca66391b799c2d2ccf232068cd702fbbb2edf13",
+      "linearMin": [
+        0.0134117491543293,
+        0.01960664801299572,
+        0.043233636766672134,
+        1.0
+      ],
+      "linearMax": [
+        0.25312209129333496,
+        0.39320141077041626,
+        0.6009607315063477,
+        1.0
+      ]
+    },
+    {
+      "object": "Ren_DesignerEye_R_Iris",
+      "attribute": "DesignerIrisColor",
+      "domain": "POINT",
+      "vertices": 257,
+      "oldColorSha256": "5e6a9f9decfb633e5ef1b806d4c28e182f9b8dd27b7670ff4c3f1083f2d240ed",
+      "newColorSha256": "43bd39d2c483af3518f1197f33e45256670a94949427ad80297a7442c5ad202f",
+      "linearMin": [
+        0.0134117491543293,
+        0.01960664801299572,
+        0.043233636766672134,
+        1.0
+      ],
+      "linearMax": [
+        0.2528904378414154,
+        0.39278313517570496,
+        0.6002110242843628,
+        1.0
+      ]
+    }
+  ],
+  "encoding": "linear RGBA POINT colors; consume once with white tint; original separate pupil/highlight/ink/shutter pigment untouched",
+  "authorship": "Artist-guided authored broad blue-grey sectors and lower crescent; not exact pixel tracing, photographic fiber generation or new eye geometry",
+  "runtime": "Not exported/promoted; needs source-camera visual review and later matching original-index/color handoff"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "geometry_topology_UV_loop_order_Basis_capOn_corner_normals_exact": true,
+  "source_and_output_hashes_verified": true,
+  "authoring_blend_reopened_without_resave": true,
+  "capOn_default_zero": true,
+  "canonical_hair_sha256": "c759804c2826ab04ed29c2cf64456f893b0d2fc9c426782f0368457b52598c97",
+  "authoring_blend_sha256": "b196e673c276a0b30ab65f23874faf5438a1f6463fad0b1ffc829ac97f403b14"
+}

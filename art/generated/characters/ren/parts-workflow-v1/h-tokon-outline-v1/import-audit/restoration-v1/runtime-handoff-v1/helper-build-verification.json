@@ -1,0 +1,20 @@
+{
+  "schema": "ren-mouth-binding-helper-build-v1",
+  "helper": "RenDesignerMouthImport.cs",
+  "helperSha256": "98e5652d6fc605a213588a4e38260e955c241adf78376ae8e56ee7013d455fcd",
+  "handoff": "runtime-handoff.json",
+  "handoffSha256": "9fa7b89b259e1305fe9d555f210110819bc5e5f1ec0f6c4c695c407a1fd09b86",
+  "status": "OFFLINE_COMPILE_PASSED_AUDIT_ROLLBACK_FIX_NOT_EXECUTED",
+  "unityVersion": "6000.3.24f1",
+  "compiler": "C:/Program Files/Unity/Hub/Editor/6000.3.24f1/Editor/Data/DotNetSdkRoslyn/csc.dll",
+  "actualRuntimeAssembly": "C:/Users/jetha/AppData/Local/LucidLoopScratch/ren-eye-import-verification/Library/ScriptAssemblies/LucidLoop.CharacterArt.dll",
+  "actualRuntimeAssemblySha256": "ff5db76d7fa6e65040987b2a852ae5414f3329323936a799a9060b7a962d54e3",
+  "responseFile": "B:/lucid-loop/.local/ren-canonical-repair-compile/mouth-import.rsp",
+  "compiledDllSha256": "3972b411cb0dfd420ce31d04a391cc40eb1ce77314a02dbbb685354745e3ba53",
+  "notes": [
+    "Success-path Unity execution used the preserved RenDesignerMouthImport-executed.cs.txt SHA3317e03c55177a68a644252e09f93845613ec42ec1ef764b466de7c0f32523f8.",
+    "Current revision only moves success audit writing inside the transaction and makes failure logging best-effort.",
+    "Actual historical binding and GPU capture are not retroactively attributed to this revision.",
+    "No Unity execution or repeated numeric sweep requested for this failure-path-only correction."
+  ]
+}

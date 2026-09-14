@@ -1,0 +1,3204 @@
+{
+  "status": "COMPLETE_NATIVE_H_HEAD_REVIEW_PROTOTYPE_PROVISIONAL_EYE_SEAMS",
+  "inputs": {
+    "eyes": {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\lid-material\\Ren_H_Eyes_Pigment.blend",
+      "sha256": "f2c1a998ca91102f19591cebcd67b0aaf736b2c8d6cc739797070c5861a96cab"
+    },
+    "hair": {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-fit-v1\\h-support-cap-v2\\normal-fix-v1\\Ren_H_Hair_CapFit.blend",
+      "sha256": "c759804c2826ab04ed29c2cf64456f893b0d2fc9c426782f0368457b52598c97"
+    },
+    "support": {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-fit-v1\\h-support-cap-v2\\normal-fix-v1\\contact-backing-v1\\Ren_H_ConcealedSupport.blend",
+      "sha256": "ae6042c4091e82a7dd6ac2cc235015ca3ef6d453c52aaca140723834194adafc"
+    },
+    "socket": {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-fit-v1\\h-support-cap-v2\\Ren_H_BustSocket.blend",
+      "sha256": "2b730056fb021737cb3bac1dff5e475c7aa1c9db47500c191c7f62e3a64cbcf0"
+    },
+    "cap": {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-hair-fit-v1\\h-support-cap-v2\\Ren_H_Cap.blend",
+      "sha256": "56eeb539dd73f5211e6bf982107dc6255cb17bf35144e977add1258ac6396b0b"
+    },
+    "ears": {
+      "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-native-ears-v1\\strand-cleanup-v1\\Ren_H_NativeEars.blend",
+      "sha256": "5cfd5b57ad8adf30f334b15fd21bc5e09ecb5c32dabcd1d98bc7c1cfc00948da"
+    }
+  },
+  "materialReadyFace": {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-anime-paint-v1\\final-material\\Ren_H_NativeFace_MaterialReady.blend",
+    "sha256": "a0e1260bdbfbd85fa7797be0bd0745d1f963f4e8772a7dcdd0d713987ba1a405"
+  },
+  "mouthContract": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-expression-controls-v1\\closure-assembly-contract-v2\\mouth-control-contract.json",
+  "mouthMapping": {
+    "directIds": 120045,
+    "verifiedCoincidentCoordinateFallback": 0,
+    "generatedPatch": 334,
+    "generatedPatchMappingSha256": "4a97b992e01b337776f16770b527afcd54fc6b6737fbcff0f3312a4a7e3a82b2",
+    "nativeOpenEndpointError": 0.0
+  },
+  "eyeCut": {
+    "path": "art\\generated\\characters\\ren\\parts-workflow-v1\\h-eye-controls-v1\\study-removed-source-face-ids.json",
+    "sha256": "ea583299be017316b44209d0d1b4ef5aeb766f4abde08c2cea6fd27168a8573e",
+    "sourceIds": 43548,
+    "removedFacesPresentInBase": 31185,
+    "retainedNativeOpenCoordinatesExact": true,
+    "retainedUVLoopsExact": true,
+    "status": "PROVISIONAL_REVIEW_CUT_NO_WATERTIGHT_STITCH"
+  },
+  "objects": [
+    {
+      "name": "Ren_H_Head",
+      "vertices": 120379,
+      "polygons": 195660,
+      "triangles": 195660,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "75d2ff17cb6a36c6cd76b7f33b2f162d21d27a8e0286129ad7dbfe20a6523b41",
+      "materials": [
+        "Ren_H_ArtistRose_NPRBase",
+        "Ren_H_CheekPatch_NPRBase",
+        "Ren_H_CheekPatch_R2_NPRBase"
+      ],
+      "uvLayers": {
+        "HNativeUV": {
+          "sha256": "d539db3ca33f82e8c0522752f8a2c824d34c744513ec026d3abd8c8c567a0ed1",
+          "loops": 586980,
+          "min": [
+            0.007568359375,
+            0.001220703125
+          ],
+          "max": [
+            0.999755859375,
+            0.994384765625
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 120379
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 120379
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 586980
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 586980
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 195660
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 195660
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 298746
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 298746
+        },
+        {
+          "name": "material_index",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 195660
+        },
+        {
+          "name": "HNativeUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 586980
+        },
+        {
+          "name": "sharp_face.001",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 195660
+        },
+        {
+          "name": "source_h_vertex_id",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 120379
+        },
+        {
+          "name": "source_h_face_id",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 195660
+        },
+        {
+          "name": "contact_region",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 195660
+        },
+        {
+          "name": "uv_valid",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 195660
+        },
+        {
+          "name": "HCheekPatchLinear",
+          "domain": "CORNER",
+          "dataType": "FLOAT_COLOR",
+          "elements": 586980
+        },
+        {
+          "name": "HCheekPatchLinear.001",
+          "domain": "CORNER",
+          "dataType": "FLOAT_COLOR",
+          "elements": 586980
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "jawOpen_A",
+        "mouthSeal"
+      ],
+      "source_h_vertex_id": {
+        "min": -1,
+        "max": 922486,
+        "negative": 334,
+        "unique": 120046,
+        "sha256": "00d9da220dd06173c96be1c1d556f53c625cd5c841c673c1a0124621aab09428"
+      },
+      "source_h_face_id": {
+        "min": -1,
+        "max": 1727655,
+        "negative": 836,
+        "unique": 194825,
+        "sha256": "b9f97f7c76bba63d33a620b1fa8978442cfa425386a3fa87244f147ae10b385b"
+      },
+      "contact_region": {
+        "min": 0,
+        "max": 2,
+        "negative": 0,
+        "unique": 3,
+        "sha256": "ed1b50a77b119847e4bc8329f94efb0da58155ee51d3229bf3b3415c76695e39"
+      },
+      "uv_valid": {
+        "min": 1,
+        "max": 1,
+        "negative": 0,
+        "unique": 1,
+        "sha256": "048ff3dc5d3ca9f1a812cb8867876b9ce6b034a67433f34af4f6e4aa5e4d80d1"
+      }
+    },
+    {
+      "name": "Ren_H_UpperTeeth",
+      "vertices": 943,
+      "polygons": 1634,
+      "triangles": 1634,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "8de5a0320787258e2ce2dcd13676a52869e8c1b6b413e5af5fabf6070f99130a",
+      "materials": [
+        "H_StudyEnamel"
+      ],
+      "uvLayers": {
+        "HNativeUV": {
+          "sha256": "b83a6eba8d0114fe58574da6d2f654c89cb91eeb9e333c2b009f2fb4d83f4975",
+          "loops": 4902,
+          "min": [
+            0.533203125,
+            0.41943359375
+          ],
+          "max": [
+            0.5517578125,
+            0.46044921875
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 943
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 943
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 4902
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 4902
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 1634
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 1634
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 2583
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 2583
+        },
+        {
+          "name": "source_h_vertex_id",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 943
+        },
+        {
+          "name": "source_h_face_id",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 1634
+        },
+        {
+          "name": "HNativeUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 4902
+        }
+      ],
+      "shapeKeys": [],
+      "source_h_vertex_id": {
+        "min": 298902,
+        "max": 603067,
+        "negative": 0,
+        "unique": 943,
+        "sha256": "0a6b7343c5e6b670604fdbbdb3776c49842343fa4c72d2987e8f7e6fb1d6e2f5"
+      },
+      "source_h_face_id": {
+        "min": 556361,
+        "max": 1127734,
+        "negative": 0,
+        "unique": 1634,
+        "sha256": "bc11c2a79831a04e76b07e65fc6e21892e2fd3440fa543144b315b395c81300f"
+      }
+    },
+    {
+      "name": "Ren_H_Tongue",
+      "vertices": 4154,
+      "polygons": 7701,
+      "triangles": 7701,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "b18a00c16bc184d9a00f6b4b9b55e040fb59f60efa2efb68f057718e4d8d5e34",
+      "materials": [
+        "H_StudyTongue"
+      ],
+      "uvLayers": {
+        "HNativeUV": {
+          "sha256": "d583427a39d0ed83b0090072da2fb2e9aa1b07fdd552f99286a789e79383329a",
+          "loops": 23103,
+          "min": [
+            0.093994140625,
+            0.09130859375
+          ],
+          "max": [
+            0.73095703125,
+            0.8505859375
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 4154
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 4154
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 23103
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 23103
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 7701
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 7701
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 11851
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 11851
+        },
+        {
+          "name": "source_h_vertex_id",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 4154
+        },
+        {
+          "name": "source_h_face_id",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 7701
+        },
+        {
+          "name": "HNativeUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 23103
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "jawOpen_A"
+      ],
+      "source_h_vertex_id": {
+        "min": 439871,
+        "max": 652937,
+        "negative": 0,
+        "unique": 4154,
+        "sha256": "a9e59a064eedb374914ada56c65fd01a7de0e524ec679f61ae78db6ae0ff3362"
+      },
+      "source_h_face_id": {
+        "min": 820585,
+        "max": 1221948,
+        "negative": 0,
+        "unique": 7701,
+        "sha256": "e8ebaee1d6670ca220d1bdd7d5976e70f01c752ad7852641d36d9d911310c1dc"
+      }
+    },
+    {
+      "name": "Ren_H_OralCavity",
+      "vertices": 5264,
+      "polygons": 9575,
+      "triangles": 9575,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "0036b4a936424ea4f6c75c18d788ecad3d1d6a06077e60a9a8f8a806aa45e6d2",
+      "materials": [
+        "H_StudyCavity"
+      ],
+      "uvLayers": {
+        "HNativeUV": {
+          "sha256": "56c0942487a524e470dc900ed772842a8ad6d5aa0decab9c0dce3309513f4d4a",
+          "loops": 28725,
+          "min": [
+            0.109130859375,
+            0.0966796875
+          ],
+          "max": [
+            0.677490234375,
+            0.84765625
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 5264
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 5264
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 28725
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 28725
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 9575
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 9575
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 14832
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 14832
+        },
+        {
+          "name": "source_h_vertex_id",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 5264
+        },
+        {
+          "name": "source_h_face_id",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 9575
+        },
+        {
+          "name": "HNativeUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 28725
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "jawOpen_A"
+      ],
+      "source_h_vertex_id": {
+        "min": 298706,
+        "max": 652938,
+        "negative": 0,
+        "unique": 5264,
+        "sha256": "9a4a323ed5775818295df62d8e6745714de4151773b0c6f0a1ef8dd23f855ee8"
+      },
+      "source_h_face_id": {
+        "min": 555990,
+        "max": 1221949,
+        "negative": 0,
+        "unique": 9575,
+        "sha256": "6ae530c8a8e9dee85ef266424816642c927374538fb26376b9c4eba45bba0479"
+      }
+    },
+    {
+      "name": "Ren_H_InnerLipWall",
+      "vertices": 1440,
+      "polygons": 1280,
+      "triangles": 2560,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "8fdc764ac6da5a345f2721ff2e9609dc0c0e5f62fa5df863edf407246432799e",
+      "materials": [
+        "H_StudyCavity"
+      ],
+      "uvLayers": {},
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 1440
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 1440
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 5120
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 5120
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 1280
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 1280
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 2720
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 2720
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "jawOpen_A",
+        "mouthSeal"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_R_UpperLash",
+      "vertices": 66,
+      "polygons": 64,
+      "triangles": 64,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "5d7a559398f2f599640d7808b389caa26c13e3fc32eef586a090fcbc75546db9",
+      "materials": [
+        "Ren_H_UpperLash"
+      ],
+      "uvLayers": {
+        "LashUV": {
+          "sha256": "0cdeba2eeb28044be2c66eac2e832258b7b670df6e8fa54db330f23facbc486b",
+          "loops": 192,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 66
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 66
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 192
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 192
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 64
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 64
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 129
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 129
+        },
+        {
+          "name": "LashUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 192
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "eyeBlinkR",
+        "eyeBlinkR_C25",
+        "eyeBlinkR_C50",
+        "eyeBlinkR_C75",
+        "eyeWideR",
+        "eyeSquintR"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_R_Sclera",
+      "vertices": 266,
+      "polygons": 288,
+      "triangles": 528,
+      "matrix_world": [
+        [
+          -0.07037336379289627,
+          -1.9006403118027038e-09,
+          -0.035598088055849075,
+          0.1261628419160843
+        ],
+        [
+          -0.06980253010988235,
+          1.916183656192061e-09,
+          0.03588920086622238,
+          -0.1172092854976654
+        ],
+        [
+          0.0,
+          0.06174418702721596,
+          -2.209591398738553e-09,
+          0.09023255109786987
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "a721ddc58fc33f7b6d7990b3bfdd5e8c5e33e174236d5b320b40bb5cd34306f4",
+      "materials": [
+        "Ren_H_Sclera"
+      ],
+      "uvLayers": {
+        "UVMap": {
+          "sha256": "0fc47dabd0cc0a9c872c3c34c9fd9302511808943cdc39d10a0585739f71eed5",
+          "loops": 1104,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": "UVMap",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 1104
+        },
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 266
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 552
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 288
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 288
+        },
+        {
+          "name": ".uv_select_vert",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 1104
+        },
+        {
+          "name": ".uv_select_edge",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 1104
+        },
+        {
+          "name": ".uv_select_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 288
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 266
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 552
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 1104
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 1104
+        }
+      ],
+      "shapeKeys": []
+    },
+    {
+      "name": "Ren_H_Eye_R_OuterFlicks",
+      "vertices": 6,
+      "polygons": 2,
+      "triangles": 2,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "f47e14fc3d9f06ddddd2df5f538f913e9584c6929fa0bb73cbb10a8d895f537d",
+      "materials": [
+        "Ren_H_UpperLash"
+      ],
+      "uvLayers": {
+        "LashUV": {
+          "sha256": "91f9880685614fac2aa66d5e09c5eee067b679bdcb969091055ad577f6f43bd5",
+          "loops": 6,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 6
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 6
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 6
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 6
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 2
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 2
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 6
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 6
+        },
+        {
+          "name": "LashUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 6
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "eyeBlinkR",
+        "eyeBlinkR_C25",
+        "eyeBlinkR_C50",
+        "eyeBlinkR_C75",
+        "eyeWideR",
+        "eyeSquintR"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_R_LowerLash",
+      "vertices": 66,
+      "polygons": 64,
+      "triangles": 64,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "8d48bffa68aaa313524dc3690a68b63483d4607857aeadccda8546c4f587baa9",
+      "materials": [
+        "Ren_H_LowerLash"
+      ],
+      "uvLayers": {
+        "LashUV": {
+          "sha256": "0cdeba2eeb28044be2c66eac2e832258b7b670df6e8fa54db330f23facbc486b",
+          "loops": 192,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 66
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 66
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 192
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 192
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 64
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 64
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 129
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 129
+        },
+        {
+          "name": "LashUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 192
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "eyeBlinkR",
+        "eyeBlinkR_C25",
+        "eyeBlinkR_C50",
+        "eyeBlinkR_C75",
+        "eyeWideR",
+        "eyeSquintR"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_R_LidAnnulus",
+      "vertices": 448,
+      "polygons": 768,
+      "triangles": 768,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "19d11e7821a25bbda911ce1cd11d283cbf49a6b76c4e06e5f8a566085a0d7c99",
+      "materials": [
+        "Ren_H_Lid_R_Pigment"
+      ],
+      "uvLayers": {
+        "H_EyeLocalUV": {
+          "sha256": "1bd483492cfda342e272c1026c5dd73109b64fc6e04de922cf248ee68a0030b5",
+          "loops": 2304,
+          "min": [
+            0.030635925009846687,
+            -0.0040937322191894054
+          ],
+          "max": [
+            1.0138888359069824,
+            1.0041667222976685
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 448
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 448
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 2304
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 2304
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 768
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 768
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 1216
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 1216
+        },
+        {
+          "name": "H_EyeLocalUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 2304
+        },
+        {
+          "name": "h_outer_boundary_index",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 448
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "eyeBlinkR",
+        "eyeBlinkR_C25",
+        "eyeBlinkR_C50",
+        "eyeBlinkR_C75",
+        "eyeWideR",
+        "eyeSquintR"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_R_Iris",
+      "vertices": 187,
+      "polygons": 304,
+      "triangles": 304,
+      "matrix_world": [
+        [
+          0.046308137476444244,
+          -0.0638372153043747,
+          -4.691053767658104e-09,
+          0.1261628419160843
+        ],
+        [
+          0.07848839461803436,
+          -7.450580596923828e-09,
+          1.916183434147456e-09,
+          -0.1172092854976654
+        ],
+        [
+          -1.0103465841737602e-09,
+          -4.663992747566681e-09,
+          0.06174418702721596,
+          0.09023255109786987
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "3f2a3a73c6aa977c3b9904778848f7cd82e25b878ed14be412b45961cd0d6e44",
+      "materials": [
+        "Ren_H_IrisBlueGrey"
+      ],
+      "uvLayers": {
+        "IrisUV": {
+          "sha256": "ec1195786630c387759a68c8be46be3f9d1c4dc412cf911509874a9f26d86f46",
+          "loops": 912,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 187
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 187
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 912
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 912
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 304
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 304
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 488
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 488
+        },
+        {
+          "name": "IrisUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 912
+        }
+      ],
+      "shapeKeys": []
+    },
+    {
+      "name": "Ren_H_Eye_L_UpperLash",
+      "vertices": 66,
+      "polygons": 64,
+      "triangles": 64,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "b82bfa36c4f926c53bab02c1c9b59296bf1a55460cba5747b74d7ef8ea791201",
+      "materials": [
+        "Ren_H_UpperLash"
+      ],
+      "uvLayers": {
+        "LashUV": {
+          "sha256": "07b24cffbe0cdf3aaf8a81338016a56334aed91ee1da4457a1ee7b67afc77f27",
+          "loops": 192,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 66
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 66
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 192
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 192
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 64
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 64
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 129
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 129
+        },
+        {
+          "name": "LashUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 192
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "eyeBlinkL",
+        "eyeBlinkL_C25",
+        "eyeBlinkL_C50",
+        "eyeBlinkL_C75",
+        "eyeWideL",
+        "eyeSquintL"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_L_Sclera",
+      "vertices": 266,
+      "polygons": 288,
+      "triangles": 528,
+      "matrix_world": [
+        [
+          0.05438155308365822,
+          -2.138027310749635e-09,
+          -0.04454377293586731,
+          0.15337210893630981
+        ],
+        [
+          -0.07058902829885483,
+          -1.6471288777353266e-09,
+          -0.034316375851631165,
+          0.12244191020727158
+        ],
+        [
+          0.0,
+          0.06174418702721596,
+          -2.4578712398692915e-09,
+          0.09023255109786987
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "a721ddc58fc33f7b6d7990b3bfdd5e8c5e33e174236d5b320b40bb5cd34306f4",
+      "materials": [
+        "Ren_H_Sclera"
+      ],
+      "uvLayers": {
+        "UVMap": {
+          "sha256": "eca69575e1b655ea0734b116c5993bbd806e28e0f99c78b9da70e4bc1920d091",
+          "loops": 1104,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": "UVMap",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 1104
+        },
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 266
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 552
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 288
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 288
+        },
+        {
+          "name": ".uv_select_vert",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 1104
+        },
+        {
+          "name": ".uv_select_edge",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 1104
+        },
+        {
+          "name": ".uv_select_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 288
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 266
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 552
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 1104
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 1104
+        }
+      ],
+      "shapeKeys": []
+    },
+    {
+      "name": "Ren_H_Eye_L_OuterFlicks",
+      "vertices": 6,
+      "polygons": 2,
+      "triangles": 2,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "80adfd39510546f946f2d0ec7cdee80f64059e95c2e640db0a24b16fe0adb0bd",
+      "materials": [
+        "Ren_H_UpperLash"
+      ],
+      "uvLayers": {
+        "LashUV": {
+          "sha256": "87403756a51553a7093e5fb67aff2905bddd5c60c65623ecfe94940f8e6493fa",
+          "loops": 6,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 6
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 6
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 6
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 6
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 2
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 2
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 6
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 6
+        },
+        {
+          "name": "LashUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 6
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "eyeBlinkL",
+        "eyeBlinkL_C25",
+        "eyeBlinkL_C50",
+        "eyeBlinkL_C75",
+        "eyeWideL",
+        "eyeSquintL"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_L_LowerLash",
+      "vertices": 66,
+      "polygons": 64,
+      "triangles": 64,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "86c9df790b4dea40abc696427ad06f2d73833836520cd93faec2ed06f93d80b9",
+      "materials": [
+        "Ren_H_LowerLash"
+      ],
+      "uvLayers": {
+        "LashUV": {
+          "sha256": "07b24cffbe0cdf3aaf8a81338016a56334aed91ee1da4457a1ee7b67afc77f27",
+          "loops": 192,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 66
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 66
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 192
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 192
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 64
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 64
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 129
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 129
+        },
+        {
+          "name": "LashUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 192
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "eyeBlinkL",
+        "eyeBlinkL_C25",
+        "eyeBlinkL_C50",
+        "eyeBlinkL_C75",
+        "eyeWideL",
+        "eyeSquintL"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_L_LidAnnulus",
+      "vertices": 448,
+      "polygons": 768,
+      "triangles": 768,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "60537ea2063055fac5da5083d458755c9e005b92fa62225bf494bfe35f95b72a",
+      "materials": [
+        "Ren_H_Lid_L_Pigment"
+      ],
+      "uvLayers": {
+        "H_EyeLocalUV": {
+          "sha256": "91a35ee57bb981b8bb66a6518ae03761072651d6b929553c59ff08f04fdeaaa4",
+          "loops": 2304,
+          "min": [
+            -0.01944444514811039,
+            -0.0040937322191894054
+          ],
+          "max": [
+            0.9638085961341858,
+            1.0041667222976685
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 448
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 448
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 2304
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 2304
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 768
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 768
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 1216
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 1216
+        },
+        {
+          "name": "H_EyeLocalUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 2304
+        },
+        {
+          "name": "h_outer_boundary_index",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 448
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "eyeBlinkL",
+        "eyeBlinkL_C25",
+        "eyeBlinkL_C50",
+        "eyeBlinkL_C75",
+        "eyeWideL",
+        "eyeSquintL"
+      ]
+    },
+    {
+      "name": "Ren_H_Eye_L_Iris",
+      "vertices": 187,
+      "polygons": 304,
+      "triangles": 304,
+      "matrix_world": [
+        [
+          -0.029433157294988632,
+          -0.0638372153043747,
+          -4.928440766605036e-09,
+          0.15337210893630981
+        ],
+        [
+          0.07848837226629257,
+          -7.450580596923828e-09,
+          -1.6471293218245364e-09,
+          0.12244191020727158
+        ],
+        [
+          1.0746205036937795e-09,
+          -4.909426642996095e-09,
+          0.06174418702721596,
+          0.09023255109786987
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "3f2a3a73c6aa977c3b9904778848f7cd82e25b878ed14be412b45961cd0d6e44",
+      "materials": [
+        "Ren_H_IrisBlueGrey"
+      ],
+      "uvLayers": {
+        "IrisUV": {
+          "sha256": "ec1195786630c387759a68c8be46be3f9d1c4dc412cf911509874a9f26d86f46",
+          "loops": 912,
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 187
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 187
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 912
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 912
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 304
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 304
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 488
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 488
+        },
+        {
+          "name": "IrisUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 912
+        }
+      ],
+      "shapeKeys": []
+    },
+    {
+      "name": "Ren_Hair_H_RootBase",
+      "vertices": 288,
+      "polygons": 257,
+      "triangles": 542,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "a001c2e2bd2ad47655032b484614c5ba55b2d8cda4068feb7680d26de2e6c8c9",
+      "materials": [
+        "Ren_H_Hair_Painted_PaleBlond"
+      ],
+      "uvLayers": {
+        "HairPaintUV_H_v1": {
+          "sha256": "554a43429945eef54351b29e23614cd5cd2aaea98cb759b79fb8581788b0efc4",
+          "loops": 1056,
+          "min": [
+            0.3337825834751129,
+            0.1296299695968628
+          ],
+          "max": [
+            0.6055740714073181,
+            0.7089647650718689
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": "HairStrandCoordinates",
+          "domain": "CORNER",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 1056
+        },
+        {
+          "name": "HairPaintUV_H_v1",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 1056
+        },
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 288
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 544
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 257
+        },
+        {
+          "name": ".uv_select_vert",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 1056
+        },
+        {
+          "name": ".uv_select_edge",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 1056
+        },
+        {
+          "name": ".uv_select_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 257
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 288
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 544
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 1056
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 1056
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "capOn"
+      ]
+    },
+    {
+      "name": "Ren_Hair_H_DetailedLayers",
+      "vertices": 5189,
+      "polygons": 8954,
+      "triangles": 8954,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "d4324f85c620151a167f1f26c2b8a3241722e44d97b6576f57b6bccc7d14b377",
+      "materials": [
+        "Ren_H_Hair_Painted_PaleBlond"
+      ],
+      "uvLayers": {
+        "HairPaintUV_H_v1": {
+          "sha256": "141f8355a6baccd8789140726317859a458a35272ee6af044b06ae8796c0300c",
+          "loops": 26862,
+          "min": [
+            0.001762223313562572,
+            0.0017622261075302958
+          ],
+          "max": [
+            0.9982378482818604,
+            0.9943346381187439
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": "HairStrandCoordinates",
+          "domain": "CORNER",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 26862
+        },
+        {
+          "name": "HairPaintUV_H_v1",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 26862
+        },
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 5189
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 13748
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 8954
+        },
+        {
+          "name": ".uv_select_vert",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 26862
+        },
+        {
+          "name": ".uv_select_edge",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 26862
+        },
+        {
+          "name": ".uv_select_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 8954
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 5189
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 13748
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 26862
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 26862
+        }
+      ],
+      "shapeKeys": [
+        "Basis",
+        "capOn"
+      ]
+    },
+    {
+      "name": "Ren_H_ConcealedScalpBack",
+      "vertices": 574,
+      "polygons": 528,
+      "triangles": 933,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "75cd47f18c17724ae0a5ed9f12d9307c2480db8c307bd03564e1118d66a79082",
+      "materials": [
+        "Ren_H_ConcealedSkin"
+      ],
+      "uvLayers": {
+        "HSupportUV": {
+          "sha256": "ca9500942c29d938e851861b448fec8e8d5bfafd7a724d367d2d46f198b01288",
+          "loops": 1989,
+          "min": [
+            0.00657664006575942,
+            0.010364260524511337
+          ],
+          "max": [
+            1.0,
+            0.9449560642242432
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 574
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 574
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 1989
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 1989
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 528
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 528
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 1092
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 1092
+        },
+        {
+          "name": "HSupportUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 1989
+        }
+      ],
+      "shapeKeys": []
+    },
+    {
+      "name": "Ren_Cap",
+      "vertices": 657,
+      "polygons": 567,
+      "triangles": 1110,
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0430000014603138
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.21799997985363007
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "98d7e304f7f16efcc43d828a9d052c701755fb0b69015b808db5a1ab1dc93393",
+      "materials": [
+        "Ren_Cap_V2_Cloth",
+        "Ren_Cap_V2_InnerCloth"
+      ],
+      "uvLayers": {
+        "AccessoryUV": {
+          "sha256": "2e284fa5e37ebb8c8937310343ded21cffd6092f5b6d266bad35675c094e46da",
+          "loops": 2244,
+          "min": [
+            0.0,
+            0.02500000037252903
+          ],
+          "max": [
+            1.0,
+            0.9700000286102295
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": "AccessoryUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 2244
+        },
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 657
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 1218
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 567
+        },
+        {
+          "name": ".uv_select_vert",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 2244
+        },
+        {
+          "name": ".uv_select_edge",
+          "domain": "CORNER",
+          "dataType": "BOOLEAN",
+          "elements": 2244
+        },
+        {
+          "name": ".uv_select_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 567
+        },
+        {
+          "name": "material_index",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 567
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 657
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 1218
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 2244
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 2244
+        }
+      ],
+      "shapeKeys": []
+    },
+    {
+      "name": "Ren_H_EarJewelry_R",
+      "vertices": 4503,
+      "polygons": 7509,
+      "triangles": 7509,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "c2b47273e9932e98981f5ed92fc87a9426e38b6189b22d991425b51f5a7ab2d2",
+      "materials": [
+        "tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57"
+      ],
+      "uvLayers": {
+        "HNativeUV": {
+          "sha256": "28749ded3644cd79a67d9367404e6f536c80feb020ac629c30720a88b0e2f5a2",
+          "loops": 22527,
+          "min": [
+            0.00341796875,
+            0.004150390625
+          ],
+          "max": [
+            0.9970703125,
+            0.99853515625
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 4503
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 4503
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 22527
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 22527
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 7509
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 7509
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 11997
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 11997
+        },
+        {
+          "name": "HNativeUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 22527
+        },
+        {
+          "name": "source_h_vertex_id",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 4503
+        },
+        {
+          "name": "source_h_face_id",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 7509
+        }
+      ],
+      "shapeKeys": [],
+      "source_h_vertex_id": {
+        "min": 36924,
+        "max": 161227,
+        "negative": 0,
+        "unique": 4503,
+        "sha256": "98711ed6565c5271d6cbde6c459bce9085944f3d594ee83703fd57d88e32a720"
+      },
+      "source_h_face_id": {
+        "min": 68640,
+        "max": 300834,
+        "negative": 0,
+        "unique": 7509,
+        "sha256": "35d09d72e4dbfc9013d6afaaba7a3c1cc38ee40c13253a4c511521a1303795c2"
+      }
+    },
+    {
+      "name": "Ren_H_EarJewelry_L",
+      "vertices": 4427,
+      "polygons": 7320,
+      "triangles": 7320,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "ca2d22fb7931f33c3d8ba6e95b160e2f01a0c4ed71a1e8adb9740c51bdcf570c",
+      "materials": [
+        "tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57"
+      ],
+      "uvLayers": {
+        "HNativeUV": {
+          "sha256": "b30223f1f107b613ab53e5182c8df08ee64430df983584f52696e50efa7c5e61",
+          "loops": 21960,
+          "min": [
+            0.00244140625,
+            0.002197265625
+          ],
+          "max": [
+            0.998779296875,
+            0.98486328125
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 4427
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 4427
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 21960
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 21960
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 7320
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 7320
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 11741
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 11741
+        },
+        {
+          "name": "HNativeUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 21960
+        },
+        {
+          "name": "source_h_vertex_id",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 4427
+        },
+        {
+          "name": "source_h_face_id",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 7320
+        }
+      ],
+      "shapeKeys": [],
+      "source_h_vertex_id": {
+        "min": 851564,
+        "max": 1002986,
+        "negative": 0,
+        "unique": 4427,
+        "sha256": "cc5f073dc659e9cc70d44d40c9c38acedd91cc80e4eb3102d315408b3157fbfc"
+      },
+      "source_h_face_id": {
+        "min": 1595786,
+        "max": 1879518,
+        "negative": 0,
+        "unique": 7320,
+        "sha256": "3eb0ac9942e562ce69a838e0ae788fbc782c07c7f52f7297af4a5c397e488665"
+      }
+    },
+    {
+      "name": "Ren_H_Ear_R",
+      "vertices": 25555,
+      "polygons": 45808,
+      "triangles": 45808,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "f476a05ad087d72933b90ce167a508e46b068425f0011d027e03642e1a2c1f1d",
+      "materials": [
+        "tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57"
+      ],
+      "uvLayers": {
+        "HNativeUV": {
+          "sha256": "02dcd84a3739dbaa86da8c0a8723269c3d2ba7b54e6996b5189bf23cda7ca730",
+          "loops": 137424,
+          "min": [
+            0.0,
+            0.002197265625
+          ],
+          "max": [
+            0.999755859375,
+            0.999755859375
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 25555
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 25555
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 137424
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 137424
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 45808
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 45808
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 71309
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 71309
+        },
+        {
+          "name": "HNativeUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 137424
+        },
+        {
+          "name": "source_h_vertex_id",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 25555
+        },
+        {
+          "name": "source_h_face_id",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 45808
+        }
+      ],
+      "shapeKeys": [],
+      "source_h_vertex_id": {
+        "min": 682,
+        "max": 263929,
+        "negative": 0,
+        "unique": 25555,
+        "sha256": "7ef819aef05a0526b83d90163cadc297535db4ea5f0d6b2d95988a0db473b386"
+      },
+      "source_h_face_id": {
+        "min": 1242,
+        "max": 491383,
+        "negative": 0,
+        "unique": 45808,
+        "sha256": "553dcfe967402a1588125b083dee5c8bc9805790f4528807ef3a637fadb3c71d"
+      }
+    },
+    {
+      "name": "Ren_H_Ear_L",
+      "vertices": 23185,
+      "polygons": 42002,
+      "triangles": 42002,
+      "matrix_world": [
+        [
+          -1.7049841005700728e-07,
+          -1.0465117692947388,
+          0.0,
+          -0.08941860496997833
+        ],
+        [
+          1.0465117692947388,
+          -1.7049841005700728e-07,
+          0.0,
+          0.0073255812749266624
+        ],
+        [
+          0.0,
+          0.0,
+          1.0465116500854492,
+          -0.4884883761405945
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "positionSha256": "25a2793cf3c3ed987a13d70b79ec66c273ce8b482175803d7309183b08746aed",
+      "materials": [
+        "tripo_material_27b41192-2ccb-481a-ad4a-f12636133f57"
+      ],
+      "uvLayers": {
+        "HNativeUV": {
+          "sha256": "41669425b17643b927ca0faa664ff00dfcb2ef97cb423a2103f46bf88a6fde2e",
+          "loops": 126006,
+          "min": [
+            0.00634765625,
+            0.009521484375
+          ],
+          "max": [
+            0.99853515625,
+            0.98876953125
+          ]
+        }
+      },
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "dataType": "BOOLEAN",
+          "elements": 23185
+        },
+        {
+          "name": "position",
+          "domain": "POINT",
+          "dataType": "FLOAT_VECTOR",
+          "elements": 23185
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 126006
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "dataType": "INT",
+          "elements": 126006
+        },
+        {
+          "name": ".select_poly",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 42002
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "dataType": "BOOLEAN",
+          "elements": 42002
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "dataType": "INT32_2D",
+          "elements": 65171
+        },
+        {
+          "name": ".select_edge",
+          "domain": "EDGE",
+          "dataType": "BOOLEAN",
+          "elements": 65171
+        },
+        {
+          "name": "HNativeUV",
+          "domain": "CORNER",
+          "dataType": "FLOAT2",
+          "elements": 126006
+        },
+        {
+          "name": "source_h_vertex_id",
+          "domain": "POINT",
+          "dataType": "INT",
+          "elements": 23185
+        },
+        {
+          "name": "source_h_face_id",
+          "domain": "FACE",
+          "dataType": "INT",
+          "elements": 42002
+        }
+      ],
+      "shapeKeys": [],
+      "source_h_vertex_id": {
+        "min": 784473,
+        "max": 1024555,
+        "negative": 0,
+        "unique": 23185,
+        "sha256": "863f104dfa42739b6161ce9fffb6052746dea1905ad50f76f01a7245489b5dc3"
+      },
+      "source_h_face_id": {
+        "min": 1469799,
+        "max": 1920281,
+        "negative": 0,
+        "unique": 42002,
+        "sha256": "f87950ae1a9da5f8e82bc0e7c00f68d6b86f45b764355cc4578eac20c2df0ea4"
+      }
+    }
+  ],
+  "totalTriangles": 334768,
+  "coordinateFrame": "Registered +X forward/+Z up, native authoring units; no meter/54bone binding claim.",
+  "hierarchy": {
+    "headSocket": "Head",
+    "capSocket": "Head/CapSocket",
+    "capAssetRoot": "Head/CapSocket/CapAssetRoot",
+    "capRenderer": "Head/CapSocket/CapAssetRoot/Ren_Cap"
+  },
+  "controls": {
+    "mouth": {
+      "semantic_inputs": {
+        "jawOpen_A": [
+          0,
+          1
+        ],
+        "mouthSeal": [
+          0,
+          1
+        ]
+      },
+      "actual_jawOpen_A": "a",
+      "actual_mouthSeal": "s*(1-a)",
+      "formula": "Basis + a*(jawOpen_A-Basis) + s*(1-a)*(mouthSeal-Basis)",
+      "default": {
+        "a": 0,
+        "s": 1
+      },
+      "native_open": {
+        "a": 1,
+        "s": "any; actual seal zero"
+      }
+    },
+    "mainObject": "Ren_H_HeadControls",
+    "eyeObject": "Ren_H_EyeControls",
+    "capOn": "capOn morphs plus visibility of separate Ren_Cap"
+  },
+  "limitations": [
+    "Native eye cut/annulus seam is provisional overlay; no final transition/weld.",
+    "Dense source native ears retain cropped root hair; hair/support concealment remains provisional. Concha crossing strand removed in selected source.",
+    "Only basic open-A/seal and eye blink/wide/squint/gaze; full acting expression controls pending.",
+    "Prototype Head/CapSocket empties, no new armature and no canonical female54bones binding yet.",
+    "Not 40k-triangle production LOD, final likeness/style acceptance, or measured iPhone30fps."
+  ],
+  "blend": {
+    "file": "Ren_H_CompleteHead_Review.blend",
+    "sha256": "216be081c450f81f60efc1ad1517b7c52246ecb7dd2afa97c1d6f06308615377",
+    "bytes": 26348742
+  },
+  "allInputHashesUnchanged": true
+}

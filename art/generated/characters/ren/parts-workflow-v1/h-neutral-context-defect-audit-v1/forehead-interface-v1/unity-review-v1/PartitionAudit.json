@@ -1,0 +1,16 @@
+{
+    "status": "PASS_PRIVATE_SUPPORT_TRIANGLE_PARTITION",
+    "contractSha256": "eb10d72a09905ead86914cf58e7493c28d80182e8507b1a076e15deeb8ce5420",
+    "supportFbxSha256": "a74d5cfd934bf8ab177b6922ea0434be7baaae04da36d06e3f10f578ffcb7d0d",
+    "sourceMeshAsset": "Assets/CharacterArt/Generated/RenDesignerSupportV2Review/Ren_H_Support_JawBridge_Linear.fbx",
+    "cloneMeshAsset": "Assets/CharacterArt/Generated/RenDesignerForeheadReview/Support-ForeheadPartition 1.asset",
+    "sourceVertices": 864,
+    "sourceTriangles": 1478,
+    "region0Triangles": 1289,
+    "region1Triangles": 189,
+    "canonicalPositionError": 8.462232869987929e-8,
+    "positionNormalUvColorExact": true,
+    "allIndicesPreserved": true,
+    "sourceMeshUnchanged": true,
+    "scope": "Private static support mesh copy; only triangle-index partition into two material regions, no vertex or triangle geometry change. Face response changes only region1; transition/neck/back remain baseline."
+}

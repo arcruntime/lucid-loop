@@ -58,7 +58,7 @@ The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored 
 - Target **iOS** first, in **landscape orientation**. Use 16:9 as a composition reference while adapting UI to the device's actual aspect ratio and safe area.
 - Minimum-spec phone: **iPhone 15 Plus**.
 - Performance target: **sustained 30 fps on iPhone 15 Plus**.
-- Characters require **full expressive real-time lip-sync** for OpenAI live speech, with **English and Japanese facial coverage**.
+- Characters require **full expressive real-time lip-sync** for OpenAI live speech, with **English shipping support**. Japanese voice work is deferred for this release.
 - Lip-sync must use **open-source or project-owned code; no commercial lip-sync libraries**.
 - Use [osu-framework-unity-di](https://github.com/splatterfacegames/osu-framework-unity-di) as a core dependency for dependency injection.
 - Project: `Unity/`, pinned to **Unity 6000.3.24f1** (Unity 6.3 LTS), with URP 17.3.
@@ -68,7 +68,20 @@ The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored 
 - Game design source: the Game Design Document, REWIND gameplay concept, and Character Guide sections of the [design document](https://docs.google.com/document/d/1JxbEgu6D5qHtuyGlwKqmO1IJJdrY7MZikN055f87FXA/edit).
 - Earlier exploratory work lives in the separate `openai-hackathon-game` repository.
 - Current character work: [Ren implementation goal](docs/REN_CHARACTER_GOAL.md) and [Japanese creator workflow research](research/japanese-anime-character-workflows-2026-09.md).
-- Ren's complete LOD0 target is **40,000 rendered triangles**, including all clothing and accessories. See the [face-prioritized allocation and Tripo reduction study](docs/REN_POLYGON_BUDGET.md).
+- Ren's complete LOD0 target is **50–80k triangles**, including clothing and accessories; the whole-frame target is **250–300k**. See the [current component budgets](docs/IOS_RENDERING.md#user-specified-geometry-targets). Earlier 40k reduction studies are historical.
+
+## Open the current Ren character review
+
+Open the project `B:\lucid-loop\Unity` in Unity **6000.3.24f1**, then open
+`Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity`
+and press **Play** after import/compilation finishes. Use the open-A and seal
+controls to inspect the working mouth. Reuse the existing Editor if it is open.
+
+The scene and its dependencies have been copied and hash-verified in this project;
+main Editor runtime validation is pending. Its previous captured Windows player
+is `.local/ren-designer-mouth-v1/RenDesignerMouthReview.exe`. Ren's likeness and
+NPR shading remain unfinished, and this scene does not yet provide the new blink,
+gaze, full speech or six-expression system. See [current work and evidence](docs/REN_H_CURRENT_WORK.md).
 
 ## Launch the Ren bust comparisons
 
