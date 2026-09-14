@@ -22,12 +22,17 @@ not establish either acceptance criterion.
 | Body idle | Runtime playback of the female-v3 Walt observer idle through `RenLOD0Controller`; the complete scene is playing |
 | NPR shading | `RenLOD0Toon.shader`, white key light and cyan/magenta club-light controls in the complete-character scene |
 | Export | `art/generated/characters/ren/lod0-final-v1/Ren_LOD0.fbx`, portable Blender assembly, textures, and material mapping |
+| Neck motion | Final Blender assembly: 293 paired endpoints stayed coincident in 56 head/expression combinations; head vertices moved up to 0.1215 m, confirming actual deformation |
 
 Unity import evidence is
 `Unity/Assets/CharacterArt/Generated/RenLOD0/Evidence/import.json`.
 The same Evidence directory contains the complete-character capture and current
 face/control captures. Body reduction, neck-ring metadata, and FBX checks are in
 `art/generated/characters/ren/lod0-final-v1/body/`.
+`art/generated/characters/ren/lod0-final-v1/neck-motion-validation.json` records
+the motion cases and source hash. Reproduce with Blender background execution of
+`tools/character_art/verify_ren_lod0_neck_motion.py`. This checks geometric endpoint
+continuity, not shading, accessory contact or artistic acceptance.
 
 ## Remaining acceptance
 
