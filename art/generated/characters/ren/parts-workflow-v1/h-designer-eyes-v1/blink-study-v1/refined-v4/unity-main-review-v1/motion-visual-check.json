@@ -1,0 +1,103 @@
+{
+  "previousMainNeutralDifferenceLocalization": [
+    {
+      "thresholdExclusive": 0,
+      "count": 1283,
+      "bounds": [
+        537,
+        601,
+        1047,
+        762
+      ]
+    },
+    {
+      "thresholdExclusive": 1,
+      "count": 57,
+      "bounds": [
+        561,
+        644,
+        1003,
+        692
+      ]
+    },
+    {
+      "thresholdExclusive": 8,
+      "count": 8,
+      "bounds": [
+        561,
+        644,
+        976,
+        692
+      ]
+    },
+    {
+      "thresholdExclusive": 32,
+      "count": 7,
+      "bounds": [
+        561,
+        644,
+        941,
+        687
+      ]
+    },
+    {
+      "thresholdExclusive": 128,
+      "count": 3,
+      "bounds": [
+        634,
+        676,
+        890,
+        687
+      ]
+    }
+  ],
+  "motionFirstLastChangedPixels": 0,
+  "contactFrameIndices": [
+    0,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    45,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    110,
+    135,
+    149
+  ],
+  "contactIsDiagnosticCropOnly": true,
+  "stationaryIntervals": [
+    {
+      "firstFrame": 0,
+      "lastFrame": 27,
+      "maximumByteDifferenceFromRest": 0,
+      "maximumChangedPixelsFromRest": 0
+    },
+    {
+      "firstFrame": 35,
+      "lastFrame": 45,
+      "maximumByteDifferenceFromRest": 0,
+      "maximumChangedPixelsFromRest": 0
+    },
+    {
+      "firstFrame": 135,
+      "lastFrame": 149,
+      "maximumByteDifferenceFromRest": 0,
+      "maximumChangedPixelsFromRest": 0
+    }
+  ],
+  "visualInspection": "Reviewed actual24-frame contact across both full closures, reopenings, mixed mouth state andrest. No abrupt layer loss observed in inspected frames; existing fan geometry and skin seams remain. Encoded fixed-cadence evidence is not realtime performance."
+}

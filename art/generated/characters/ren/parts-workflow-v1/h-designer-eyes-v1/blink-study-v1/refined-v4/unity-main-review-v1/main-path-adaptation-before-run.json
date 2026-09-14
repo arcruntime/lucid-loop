@@ -1,0 +1,10 @@
+{
+  "status": "MAIN_PATH_ADAPTATION_ONLY_NOT_EXECUTED",
+  "sourceSha256": "8fa2864528eb0bfaa8aa2db9ab45087b9777e70019a3554cc9f1d24e13b54a9a",
+  "adaptedSha256": "4fe8a511b5426b6528dd3709f0218dadc727a52eae7342ebf456e8193510230e",
+  "changes": [
+    "Exact B:/lucid-loop/Unity/Assets guard replaces interim impossible external-scratch guard.",
+    "FramePath moved into new RenDesignerBlinkReview-owned folder; exact3fcdc bytes preserved."
+  ],
+  "restorationAlgorithmChanged": false
+}

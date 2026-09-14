@@ -1,0 +1,2205 @@
+{
+    "status": "PASS_ACTUAL_UNITY_NEUTRAL_COLORS_NATIVE_ENDPOINTS_AND_QUARTER_WEIGHT_BAKES",
+    "unityVersion": "6000.3.24f1",
+    "fbxSha256": "e201b5afede1c136356609b00dbf997f4702de80982c009170d5baf6c6f11149",
+    "contractSha256": "a31bcd6c92a51b80ba7de7d0d378bc9e57de3be05c864261d5639bc1139e9d21",
+    "frameAuditSha256": "3fcdc46f6d20074eed095ee45fbdba77fe14785bf48fddfafde3d449254df361",
+    "existingMarkerError": 4.889893645554366e-8,
+    "importedMarkerError": 4.889893645554366e-8,
+    "positionTolerance": 0.0000019999999949504856,
+    "uvTolerance": 0.000019999999494757503,
+    "colorTolerance": 0.001980784349143505,
+    "nativeToUnity": [
+        -1.6824461221694947,
+        9.003182199762705e-9,
+        -2.0053217042459438e-7,
+        -0.013223465532064438,
+        -1.871308938916627e-7,
+        3.0487490651617477e-14,
+        1.682445764541626,
+        6.958579490401462e-8,
+        -9.003202627866358e-9,
+        -1.6824462413787842,
+        0.0,
+        -0.20791010558605195,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+    ],
+    "meshes": [
+        {
+            "renderer": "Ren_DesignerEye_L_SkinShutter",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "188f1ed54b4b57cc78370740cbfcd7aa3ffb469567451b28d90fa78846e3d7ff",
+            "endpointSha256": "a5f51c2961f3f19738835daf73edea2fb7d01e6c47878bc58e8dc6d131611509",
+            "authoredVertices": 588,
+            "authoredReferencedVertices": 588,
+            "importedVertices": 588,
+            "drawnImportedVertices": 588,
+            "unusedImportedVertices": 0,
+            "triangles": 758,
+            "movingDrawnVertices": 312,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.0000017327046180071193,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.001960277557373047,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 1.86627957532437e-9,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                8.462232869987929e-8,
+                1.2310378849633708e-7,
+                1.2377833513710358e-7,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_SkinShutter.asset",
+                "savedAssetSha256": "92c9cf8fc8ab9149d9d402299866e4a7cc86a6ff008b5cd4329f345e8d220baf",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000017327046180071193,
+                "rawEndpointNativeError": 0.0008385817636735737,
+                "savedEndpointNativeError": 1.862645149230957e-9,
+                "rawLostMotionsOverTolerance": 8,
+                "authoredRowsCovered": 588,
+                "importedRowsMatched": 588,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 351,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000007152557373046875,
+                            "z": 0.00021666288375854492
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002167809143429622
+                    },
+                    {
+                        "importedVertex": 352,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000020951032638549805,
+                            "z": 0.0005353093147277832
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0005357191548682749
+                    },
+                    {
+                        "importedVertex": 353,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000374913215637207,
+                            "z": 0.0008377432823181152
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008385817636735737
+                    },
+                    {
+                        "importedVertex": 414,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000009119510650634766,
+                            "z": 0.0008308291435241699
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008308792021125555
+                    },
+                    {
+                        "importedVertex": 415,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000021457672119140626,
+                            "z": 0.000644683837890625
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0006446873885579407
+                    },
+                    {
+                        "importedVertex": 416,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000045299530029296878,
+                            "z": 0.00044542551040649414
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0004454485315363854
+                    },
+                    {
+                        "importedVertex": 417,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000009387731552124023,
+                            "z": 0.00023424625396728516
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002344342938158661
+                    },
+                    {
+                        "importedVertex": 513,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00002321600914001465,
+                            "z": 0.000531613826751709
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0005321205244399607
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_L_LowerInk",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "a40b2c33e49ac3e7943c9c67f323deed1806245059fef2180930296dd31f9818",
+            "endpointSha256": "d148e5dcd878a98d49313c2f5443eb190f6a823da7dec367a75a9a566c71a3da",
+            "authoredVertices": 276,
+            "authoredReferencedVertices": 274,
+            "importedVertices": 276,
+            "drawnImportedVertices": 274,
+            "unusedImportedVertices": 2,
+            "triangles": 272,
+            "movingDrawnVertices": 271,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.0000016138033060997259,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.0012433677911758423,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 4.658886054720313e-10,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                1.341104507446289e-7,
+                1.2287812012345967e-7,
+                1.2013700256829908e-7,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_LowerInk.asset",
+                "savedAssetSha256": "e9c1a179efe2a27f4c0ebf396c776863eb14af23960b3fe8f02cd8a6f4e9ea12",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000016138033060997259,
+                "rawEndpointNativeError": 0.0009748241282068193,
+                "savedEndpointNativeError": 2.3328494691554626e-10,
+                "rawLostMotionsOverTolerance": 31,
+                "authoredRowsCovered": 276,
+                "importedRowsMatched": 276,
+                "coincidentEquivalentAuthoredRows": 2,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 4,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000009328126907348633,
+                            "z": 0.00009042024612426758
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00009090013918466866
+                    },
+                    {
+                        "importedVertex": 5,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000007450580596923828,
+                            "z": 0.000046193599700927734
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00004679059566115029
+                    },
+                    {
+                        "importedVertex": 6,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000009745359420776367,
+                            "z": 0.00020569562911987305
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002059263497358188
+                    },
+                    {
+                        "importedVertex": 7,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00001004338264465332,
+                            "z": 0.00015336275100708008
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00015369126049336046
+                    },
+                    {
+                        "importedVertex": 8,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00000807642936706543,
+                            "z": 0.00031453371047973633
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0003146373783238232
+                    },
+                    {
+                        "importedVertex": 9,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00000908970832824707,
+                            "z": 0.00025850534439086914
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00025866509531624615
+                    },
+                    {
+                        "importedVertex": 10,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00000527501106262207,
+                            "z": 0.0004214644432067871
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00042149744695052505
+                    },
+                    {
+                        "importedVertex": 11,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000006973743438720703,
+                            "z": 0.0003604888916015625
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00036055632517673075
+                    },
+                    {
+                        "importedVertex": 12,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000002205371856689453,
+                            "z": 0.0005225539207458496
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0005225585773587227
+                    },
+                    {
+                        "importedVertex": 13,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000040531158447265628,
+                            "z": 0.0004622936248779297
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0004623113782145083
+                    },
+                    {
+                        "importedVertex": 14,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000013113021850585938,
+                            "z": 0.0006222128868103027
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0006222142837941647
+                    },
+                    {
+                        "importedVertex": 15,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 9.238719940185547e-7,
+                            "z": 0.0005601644515991211
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000560165208298713
+                    },
+                    {
+                        "importedVertex": 16,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000004649162292480469,
+                            "z": 0.0007154345512390137
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007154496852308512
+                    },
+                    {
+                        "importedVertex": 17,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000002592802047729492,
+                            "z": 0.000657498836517334
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0006575039587914944
+                    },
+                    {
+                        "importedVertex": 18,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000008195638656616211,
+                            "z": 0.0008067488670349121
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008067904855124652
+                    },
+                    {
+                        "importedVertex": 19,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000059604644775390628,
+                            "z": 0.0007500052452087402
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000750028935726732
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_L_UpperInk",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "6676e08b19197f7b1ce7b35efdc8f583339ce0bf94c14e178227280241489d32",
+            "endpointSha256": "7da3b2156a05e9128913b43e32f6e487d8a1e7211465f41850303d3b1a282b48",
+            "authoredVertices": 565,
+            "authoredReferencedVertices": 563,
+            "importedVertices": 608,
+            "drawnImportedVertices": 606,
+            "unusedImportedVertices": 2,
+            "triangles": 561,
+            "movingDrawnVertices": 597,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.000001673248448241793,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.0019606631249189378,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 1.877140665129673e-9,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                1.2310378849633708e-7,
+                1.2377833513710358e-7,
+                1.1944189282075968e-7,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_UpperInk.asset",
+                "savedAssetSha256": "7249597a420b6fd1c24d783129c6ebcbac280e6b3703fcf163de47403ae23da5",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.000001673248448241793,
+                "rawEndpointNativeError": 0.0008877904037944973,
+                "savedEndpointNativeError": 1.877140665129673e-9,
+                "rawLostMotionsOverTolerance": 23,
+                "authoredRowsCovered": 565,
+                "importedRowsMatched": 608,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 0,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0002263486385345459,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002263486385345459
+                    },
+                    {
+                        "importedVertex": 1,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0002262890338897705,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002262890338897705
+                    },
+                    {
+                        "importedVertex": 2,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0002263188362121582,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002263188362121582
+                    },
+                    {
+                        "importedVertex": 3,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00022616982460021973,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00022616982460021973
+                    },
+                    {
+                        "importedVertex": 4,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0002155900001525879,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002155900001525879
+                    },
+                    {
+                        "importedVertex": 5,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0002148151397705078,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002148151397705078
+                    },
+                    {
+                        "importedVertex": 6,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0002148747444152832,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002148747444152832
+                    },
+                    {
+                        "importedVertex": 7,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00021472573280334473,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00021472573280334473
+                    },
+                    {
+                        "importedVertex": 8,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00021478533744812012,
+                            "z": 0.0
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00021478533744812012
+                    },
+                    {
+                        "importedVertex": 9,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00023758411407470703,
+                            "z": -0.00010120868682861328
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00025824291515164077
+                    },
+                    {
+                        "importedVertex": 10,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00029608607292175293,
+                            "z": -0.0003618001937866211
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00046751080662943423
+                    },
+                    {
+                        "importedVertex": 11,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0002861320972442627,
+                            "z": -0.0006036162376403809
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0006680000806227326
+                    },
+                    {
+                        "importedVertex": 12,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00019481778144836426,
+                            "z": -0.0008230209350585938
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008457644144073129
+                    },
+                    {
+                        "importedVertex": 552,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000578463077545166,
+                            "z": -0.0008859038352966309
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008877904037944973
+                    },
+                    {
+                        "importedVertex": 553,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000039458274841308594,
+                            "z": -0.0006308555603027344
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0006320883403532207
+                    },
+                    {
+                        "importedVertex": 554,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000022590160369873047,
+                            "z": -0.0003739595413208008
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00037464124034158885
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_L_VisibleFan_0",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "bd9d47efe42dea8cd0f455a2c297e9becb8e9f2195f00314df5e3b840dfcc8a5",
+            "endpointSha256": "4bca025fb19d04abb20682af5edfbfa1a1cddca844992fc5027f4a83e9f4107f",
+            "authoredVertices": 9,
+            "authoredReferencedVertices": 9,
+            "importedVertices": 9,
+            "drawnImportedVertices": 9,
+            "unusedImportedVertices": 0,
+            "triangles": 9,
+            "movingDrawnVertices": 9,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.0000016734475138946437,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.001926717348396778,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 1.862645149230957e-9,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                6.828570064953965e-8,
+                6.664001972467304e-8,
+                6.664001972467304e-8,
+                6.143906006172983e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_0.asset",
+                "savedAssetSha256": "5cf0cd628a4c7e5d8a0940a6b2c7863203bb48cd2853d358eb7a8f986f432766",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000016734475138946437,
+                "rawEndpointNativeError": 6.162269983178703e-8,
+                "savedEndpointNativeError": 9.313225746154786e-10,
+                "rawLostMotionsOverTolerance": 0,
+                "authoredRowsCovered": 9,
+                "importedRowsMatched": 9,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": []
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_L_VisibleFan_UpperSpan",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "eaf94a7b57585d438fc652421bd35703fc6b686e3cef8cc0933934fec03be195",
+            "endpointSha256": "54731569bd78fe3924ecd7715c2b063dd30faf4bf598addcfcb827658b2b8e99",
+            "authoredVertices": 14,
+            "authoredReferencedVertices": 12,
+            "importedVertices": 14,
+            "drawnImportedVertices": 12,
+            "unusedImportedVertices": 2,
+            "triangles": 10,
+            "movingDrawnVertices": 12,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.664001972467304e-8,
+            "previousNeutralNativeError": 0.000001673248448241793,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.0019448865205049515,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 1.877140665129673e-9,
+            "actualNeutralBakeError": 6.664001972467304e-8,
+            "bakedQuarterWeightErrors": [
+                6.664001972467304e-8,
+                6.828570064953965e-8,
+                6.664001972467304e-8,
+                6.828570064953965e-8,
+                6.664001972467304e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_UpperSpan.asset",
+                "savedAssetSha256": "fac013e78012a9f6687bb3b7c5e10b4ebf35e4183bf981aea58ca6a605da069b",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.000001673248448241793,
+                "rawEndpointNativeError": 7.830796988628208e-8,
+                "savedEndpointNativeError": 1.86627957532437e-9,
+                "rawLostMotionsOverTolerance": 0,
+                "authoredRowsCovered": 14,
+                "importedRowsMatched": 14,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": []
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_L_VisibleFan_LowerSpan",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "7bdcb8899bd9805ec3a6da0a885912dae29b3f3fe2e80ee31e2c1782bdf27490",
+            "endpointSha256": "d26da0bc0e6b42c69aa5b8f3364fcd070499fb57b923bbb434ffaa4e22671347",
+            "authoredVertices": 6,
+            "authoredReferencedVertices": 6,
+            "importedVertices": 6,
+            "drawnImportedVertices": 6,
+            "unusedImportedVertices": 0,
+            "triangles": 4,
+            "movingDrawnVertices": 6,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 5.960464477539063e-8,
+            "previousNeutralNativeError": 0.0000016724520719435532,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.0016956990584731103,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 9.313225746154786e-10,
+            "actualNeutralBakeError": 5.960464477539063e-8,
+            "bakedQuarterWeightErrors": [
+                5.960464477539063e-8,
+                6.664001972467304e-8,
+                6.828570064953965e-8,
+                6.664001972467304e-8,
+                6.664001972467304e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerSpan.asset",
+                "savedAssetSha256": "711b12682cc35be16c540f2fd7f3b2b2cb9b20efd85dc4a0852207a33f16f6cb",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000016724520719435532,
+                "rawEndpointNativeError": 4.489093186066384e-8,
+                "savedEndpointNativeError": 4.692851662824182e-10,
+                "rawLostMotionsOverTolerance": 0,
+                "authoredRowsCovered": 6,
+                "importedRowsMatched": 6,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": []
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_L_VisibleFan_LowerFine",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "8693db4041b158bc93e5da2eca98ec0846d49aa3c2f1afb2d827727f4acb434e",
+            "endpointSha256": "916f4653d1e45047f64b5a45c0b7cb9cc1452ce45c951b89d99ba49686a781d0",
+            "authoredVertices": 6,
+            "authoredReferencedVertices": 6,
+            "importedVertices": 6,
+            "drawnImportedVertices": 6,
+            "unusedImportedVertices": 0,
+            "triangles": 4,
+            "movingDrawnVertices": 6,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.0000016138033060997259,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.001823239028453827,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 2.346425831412091e-10,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                1.2377833513710358e-7,
+                6.828570064953965e-8,
+                6.828570064953965e-8,
+                6.143906006172983e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerFine.asset",
+                "savedAssetSha256": "e31d4643703f2a673b4683763fe4ab986916f48e463886ccf86b56e068058d0d",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000016138033060997259,
+                "rawEndpointNativeError": 0.0007928230916149914,
+                "savedEndpointNativeError": 4.692851662824182e-10,
+                "rawLostMotionsOverTolerance": 1,
+                "authoredRowsCovered": 6,
+                "importedRowsMatched": 6,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 5,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00007355213165283203,
+                            "z": -0.0007894039154052734
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007928230916149914
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_L_Crease",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "d4ac86cb7fe5e4cc451346e7e305ef2cda91bd28a8a326e60ec59f40d57bf292",
+            "endpointSha256": "1eaf0f7e28d029099fdd276ba3b6fcca7bc60e9cced330e0751da18d10c16136",
+            "authoredVertices": 174,
+            "authoredReferencedVertices": 174,
+            "importedVertices": 266,
+            "drawnImportedVertices": 266,
+            "unusedImportedVertices": 0,
+            "triangles": 172,
+            "movingDrawnVertices": 186,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.000001673248448241793,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.001734316349029541,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 9.33139787662185e-10,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                6.828570064953965e-8,
+                1.1944189282075968e-7,
+                1.2310378849633708e-7,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_Crease.asset",
+                "savedAssetSha256": "9dcb9e2ddfb98954aeb9d5b5068f7d3d6bef92608a456fb8a518c4747d222f88",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.000001673248448241793,
+                "rawEndpointNativeError": 0.0007305226754397154,
+                "savedEndpointNativeError": 9.33139787662185e-10,
+                "rawLostMotionsOverTolerance": 7,
+                "authoredRowsCovered": 174,
+                "importedRowsMatched": 266,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 17,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000012010335922241211,
+                            "z": -0.00023281574249267578
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00023312531993724406
+                    },
+                    {
+                        "importedVertex": 18,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000040024518966674805,
+                            "z": -0.0006076693534851074
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000608986068982631
+                    },
+                    {
+                        "importedVertex": 154,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00004947185516357422,
+                            "z": -0.0007288455963134766
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007305226754397154
+                    },
+                    {
+                        "importedVertex": 155,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000007033348083496094,
+                            "z": -0.00015932321548461914
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00015947838255669922
+                    },
+                    {
+                        "importedVertex": 210,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000040024518966674805,
+                            "z": -0.0006076693534851074
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000608986068982631
+                    },
+                    {
+                        "importedVertex": 246,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000007033348083496094,
+                            "z": -0.00015932321548461914
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00015947838255669922
+                    },
+                    {
+                        "importedVertex": 249,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00004947185516357422,
+                            "z": -0.0007288455963134766
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007305226754397154
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_R_SkinShutter",
+            "key": "eyeBlinkR",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "292cc026782b583ccbe7733a31703cf45292684f2158b783f1c12a811b9de79f",
+            "endpointSha256": "8454711b1c033a7860d0d8b19bdef186848185126fe6ee9ee7df54301e3f708d",
+            "authoredVertices": 613,
+            "authoredReferencedVertices": 613,
+            "importedVertices": 613,
+            "drawnImportedVertices": 613,
+            "unusedImportedVertices": 0,
+            "triangles": 783,
+            "movingDrawnVertices": 312,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.0000017305887922702823,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.0019599497318267824,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 1.86627957532437e-9,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                6.828570064953965e-8,
+                1.2287812012345967e-7,
+                1.2105761015845929e-7,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkR"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_SkinShutter.asset",
+                "savedAssetSha256": "dcf08045001aed5972d382e62a6b7164f474f0beb0b241d52798eb3de7e02c75",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000017305887922702823,
+                "rawEndpointNativeError": 0.0009451507357880473,
+                "savedEndpointNativeError": 9.385703325648365e-10,
+                "rawLostMotionsOverTolerance": 12,
+                "authoredRowsCovered": 613,
+                "importedRowsMatched": 613,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 371,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00006696581840515137,
+                            "z": -0.000733494758605957
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00073654530569911
+                    },
+                    {
+                        "importedVertex": 373,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000012755393981933594,
+                            "z": 0.00045168399810791016
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00045186406350694597
+                    },
+                    {
+                        "importedVertex": 374,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00002586841583251953,
+                            "z": 0.0007368326187133789
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000737286580260843
+                    },
+                    {
+                        "importedVertex": 439,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00003269314765930176,
+                            "z": 0.0009188055992126465
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0009193870355375111
+                    },
+                    {
+                        "importedVertex": 440,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000021323561668395996,
+                            "z": 0.000705718994140625
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007060410571284592
+                    },
+                    {
+                        "importedVertex": 441,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00001023709774017334,
+                            "z": 0.0004837512969970703
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0004838595923501998
+                    },
+                    {
+                        "importedVertex": 442,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -1.9371509552001954e-7,
+                            "z": 0.00025153160095214844
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002515316882636398
+                    },
+                    {
+                        "importedVertex": 513,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000171661376953125,
+                            "z": 0.0005155801773071289
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0005158658605068922
+                    },
+                    {
+                        "importedVertex": 514,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00003007054328918457,
+                            "z": 0.0007659792900085449
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007665693410672247
+                    },
+                    {
+                        "importedVertex": 515,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000041097402572631836,
+                            "z": 0.0009442567825317383
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0009451507357880473
+                    },
+                    {
+                        "importedVertex": 610,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000028818845748901367,
+                            "z": 0.0008404850959777832
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008409790461882949
+                    },
+                    {
+                        "importedVertex": 611,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00002925097942352295,
+                            "z": 0.0008531808853149414
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008536821696907282
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_R_LowerInk",
+            "key": "eyeBlinkR",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "d85fd09e9dbbf285f3685d2d4499d324debe86f7f1f7fc2e651806aafe56b7f9",
+            "endpointSha256": "472700958bbacdb0d9c7ee1674058704ef6abba1f90d54ea636902ceb1b8d477",
+            "authoredVertices": 218,
+            "authoredReferencedVertices": 216,
+            "importedVertices": 218,
+            "drawnImportedVertices": 216,
+            "unusedImportedVertices": 2,
+            "triangles": 214,
+            "movingDrawnVertices": 213,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.705522537231445e-8,
+            "previousNeutralNativeError": 0.0000015520115539402469,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.0012433677911758423,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 4.657181307266001e-10,
+            "actualNeutralBakeError": 6.705522537231445e-8,
+            "bakedQuarterWeightErrors": [
+                6.705522537231445e-8,
+                6.828570064953965e-8,
+                1.1944189282075968e-7,
+                8.462232869987929e-8,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkR"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_LowerInk.asset",
+                "savedAssetSha256": "6b8ed8dfe5544503b2c837c71ff0161192c5523171f597819c6a676152ddbbd5",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000015520115539402469,
+                "rawEndpointNativeError": 0.0009840779239311815,
+                "savedEndpointNativeError": 2.3294430273601565e-10,
+                "rawLostMotionsOverTolerance": 22,
+                "authoredRowsCovered": 218,
+                "importedRowsMatched": 218,
+                "coincidentEquivalentAuthoredRows": 2,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 4,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000029802322387695314,
+                            "z": 0.0001653432846069336
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00016537014744244516
+                    },
+                    {
+                        "importedVertex": 5,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000004708766937255859,
+                            "z": 0.00006914138793945313
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00006930154631845653
+                    },
+                    {
+                        "importedVertex": 6,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000035017728805541994,
+                            "z": 0.00033932924270629883
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00033934731618501246
+                    },
+                    {
+                        "importedVertex": 7,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 3.5762786865234377e-7,
+                            "z": 0.00023818016052246094
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00023818042245693505
+                    },
+                    {
+                        "importedVertex": 8,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000011116266250610352,
+                            "z": 0.0005030632019042969
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0005031860200688243
+                    },
+                    {
+                        "importedVertex": 9,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000058710575103759769,
+                            "z": 0.00039333105087280273
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0003933748521376401
+                    },
+                    {
+                        "importedVertex": 10,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000018522143363952637,
+                            "z": 0.0006532669067382813
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000653529423289001
+                    },
+                    {
+                        "importedVertex": 11,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000130385160446167,
+                            "z": 0.0005441904067993164
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0005443465779535472
+                    },
+                    {
+                        "importedVertex": 12,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00002594292163848877,
+                            "z": 0.0007956027984619141
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007960256771184504
+                    },
+                    {
+                        "importedVertex": 13,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00002034008502960205,
+                            "z": 0.0006875395774841309
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0006878403946757317
+                    },
+                    {
+                        "importedVertex": 14,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000333636999130249,
+                            "z": 0.0009320378303527832
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0009326348081231117
+                    },
+                    {
+                        "importedVertex": 15,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000027686357498168945,
+                            "z": 0.0008281469345092773
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008286096272058785
+                    },
+                    {
+                        "importedVertex": 17,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00003606081008911133,
+                            "z": 0.00098341703414917
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0009840779239311815
+                    },
+                    {
+                        "importedVertex": 208,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00003725290298461914,
+                            "z": 0.0009524226188659668
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0009531509131193161
+                    },
+                    {
+                        "importedVertex": 209,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.00003466010093688965,
+                            "z": 0.0009046792984008789
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0009053429821506143
+                    },
+                    {
+                        "importedVertex": 210,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000027835369110107422,
+                            "z": 0.0007756948471069336
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007761940942145884
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_R_UpperInk",
+            "key": "eyeBlinkR",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "4e7e3a1cfd507ed7ba3eef5712cb3c5671b99e47a62fc161f91e3d298a5612ef",
+            "endpointSha256": "4d8f05fe8afbc4dfa8ff3d4c44f9e0b40ddae82f94c54a3839673363500f2aae",
+            "authoredVertices": 848,
+            "authoredReferencedVertices": 848,
+            "importedVertices": 960,
+            "drawnImportedVertices": 960,
+            "unusedImportedVertices": 0,
+            "triangles": 846,
+            "movingDrawnVertices": 932,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.0000016115315020215349,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.0019574053585529329,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 3.725290298461914e-9,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                1.2105761015845929e-7,
+                1.281846380152274e-7,
+                1.1920928955078126e-7,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkR"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_UpperInk.asset",
+                "savedAssetSha256": "02c2faaeb342f8d7671981a47b9affbf6d37e74884b6e6756cf8d579f3c3f092",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000016115315020215349,
+                "rawEndpointNativeError": 0.000923304061871022,
+                "savedEndpointNativeError": 1.877140665129673e-9,
+                "rawLostMotionsOverTolerance": 19,
+                "authoredRowsCovered": 848,
+                "importedRowsMatched": 960,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 423,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00008130073547363281,
+                            "z": -0.000834047794342041
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008380009094253182
+                    },
+                    {
+                        "importedVertex": 424,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00006082653999328613,
+                            "z": -0.0006241798400878906
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000627136614639312
+                    },
+                    {
+                        "importedVertex": 425,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000406801700592041,
+                            "z": -0.00041753053665161133
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0004195075889583677
+                    },
+                    {
+                        "importedVertex": 426,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000020116567611694336,
+                            "z": -0.00020629167556762695
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00020727019000332803
+                    },
+                    {
+                        "importedVertex": 449,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00007033348083496094,
+                            "z": -0.0007947683334350586
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007978743524290621
+                    },
+                    {
+                        "importedVertex": 450,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00007876753807067871,
+                            "z": -0.0009199380874633789
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000923304061871022
+                    },
+                    {
+                        "importedVertex": 843,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000055536627769470215,
+                            "z": -0.0007596611976623535
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007616885704919696
+                    },
+                    {
+                        "importedVertex": 844,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00002524256706237793,
+                            "z": -0.0003879070281982422
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0003887274651788175
+                    },
+                    {
+                        "importedVertex": 845,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000014901161193847657,
+                            "z": -0.00001537799835205078
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000015450024875462987
+                    },
+                    {
+                        "importedVertex": 848,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00007033348083496094,
+                            "z": -0.0007947683334350586
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007978743524290621
+                    },
+                    {
+                        "importedVertex": 851,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00007033348083496094,
+                            "z": -0.0007947683334350586
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007978743524290621
+                    },
+                    {
+                        "importedVertex": 853,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00007033348083496094,
+                            "z": -0.0007947683334350586
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007978743524290621
+                    },
+                    {
+                        "importedVertex": 855,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00007033348083496094,
+                            "z": -0.0007947683334350586
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007978743524290621
+                    },
+                    {
+                        "importedVertex": 856,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000020116567611694336,
+                            "z": -0.00020629167556762695
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00020727019000332803
+                    },
+                    {
+                        "importedVertex": 857,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00007033348083496094,
+                            "z": -0.0007947683334350586
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007978743524290621
+                    },
+                    {
+                        "importedVertex": 858,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000406801700592041,
+                            "z": -0.00041753053665161133
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0004195075889583677
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_R_Crease",
+            "key": "eyeBlinkR",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "9f2c6b3911add33fcb543190481b9cc50bd3687e4ee88223484b7f71a0d72fa5",
+            "endpointSha256": "4dff2c652cf11cbe4abc10e9e11484f5326b9cc671c85b2adf1fece234a4829a",
+            "authoredVertices": 198,
+            "authoredReferencedVertices": 198,
+            "importedVertices": 198,
+            "drawnImportedVertices": 198,
+            "unusedImportedVertices": 0,
+            "triangles": 196,
+            "movingDrawnVertices": 178,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.0000016708082739569364,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.001734316349029541,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 9.33139787662185e-10,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                6.828570064953965e-8,
+                1.2310378849633708e-7,
+                6.828570064953965e-8,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkR"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_Crease.asset",
+                "savedAssetSha256": "1991cc0606b436adbed594b9636f529cdb88a2ec3d129e2ec810f1067fa6c2e1",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000016708082739569364,
+                "rawEndpointNativeError": 0.0007140515954233706,
+                "savedEndpointNativeError": 4.692851662824182e-10,
+                "rawLostMotionsOverTolerance": 3,
+                "authoredRowsCovered": 198,
+                "importedRowsMatched": 198,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 10,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 9.5367431640625e-7,
+                            "z": -0.00003504753112792969
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.000035060504160355777
+                    },
+                    {
+                        "importedVertex": 11,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000055924057960510254,
+                            "z": -0.0007118582725524902
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0007140515954233706
+                    },
+                    {
+                        "importedVertex": 187,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.00003096461296081543,
+                            "z": -0.00041919946670532227
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.00042034153011627495
+                    }
+                ]
+            }
+        },
+        {
+            "renderer": "Ren_DesignerEye_L_ApertureReturn",
+            "key": "eyeBlinkL",
+            "colorFormat": "UNorm8",
+            "oldRendererType": "MeshRenderer",
+            "cornerSha256": "ab013803e40b32079f45657c07a9fefc87ef7f5c59dd765ae8db6cff600ed7da",
+            "endpointSha256": "ef8c89f6e598f35ec7caec2cd3b047e45b81701ddf02e795da85aa96137b9149",
+            "authoredVertices": 120,
+            "authoredReferencedVertices": 120,
+            "importedVertices": 133,
+            "drawnImportedVertices": 133,
+            "unusedImportedVertices": 0,
+            "triangles": 118,
+            "movingDrawnVertices": 66,
+            "lostDrawnMotionsOverTolerance": 0,
+            "neutralNativeError": 6.828570064953965e-8,
+            "previousNeutralNativeError": 0.0000015543704421361327,
+            "uv0Error": 0.0,
+            "openLinearColorError": 0.001096487045288086,
+            "closedLinearColorError": 0.0,
+            "actualNativeEndpointError": 4.658886054720313e-10,
+            "actualNeutralBakeError": 6.828570064953965e-8,
+            "bakedQuarterWeightErrors": [
+                6.828570064953965e-8,
+                6.828570064953965e-8,
+                8.429369557916289e-8,
+                1.2287812012345967e-7,
+                6.828570064953965e-8
+            ],
+            "shapeNames": [
+                "eyeBlinkL"
+            ],
+            "endpointFailures": [],
+            "originalDisabled": true,
+            "shaderAssignmentLeftToCaller": true,
+            "promotedFromMeshRenderer": true,
+            "canonicalPositionRestoration": {
+                "meshAsset": "Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_ApertureReturn.asset",
+                "savedAssetSha256": "c948c3ba503d82ec7488bad9c52bedc5b77e37915cb1141a9e3424a8677060e5",
+                "positionScale": 10000.0,
+                "childInverseScale": 0.00009999999747378752,
+                "rawNeutralNativeError": 0.0000015543704421361327,
+                "rawEndpointNativeError": 0.0008308792021125555,
+                "savedEndpointNativeError": 2.3283064365386965e-10,
+                "rawLostMotionsOverTolerance": 7,
+                "authoredRowsCovered": 120,
+                "importedRowsMatched": 133,
+                "coincidentEquivalentAuthoredRows": 0,
+                "allAuthoredRowsCovered": true,
+                "savedAndReloaded": true,
+                "topologyChannelsBaseNormalsTangentsExact": true,
+                "importedShapeNormalsTangentsExact": true,
+                "parentTransformUnchanged": true,
+                "rawEndpointFailures": [
+                    {
+                        "importedVertex": 1,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.000009387731552124023,
+                            "z": 0.00023424625396728516
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0002344342938158661
+                    },
+                    {
+                        "importedVertex": 2,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000045299530029296878,
+                            "z": 0.00044542551040649414
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0004454485315363854
+                    },
+                    {
+                        "importedVertex": 3,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000021457672119140626,
+                            "z": 0.000644683837890625
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0006446873885579407
+                    },
+                    {
+                        "importedVertex": 4,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000009119510650634766,
+                            "z": 0.0008308291435241699
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008308792021125555
+                    },
+                    {
+                        "importedVertex": 120,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0000045299530029296878,
+                            "z": 0.00044542551040649414
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0004454485315363854
+                    },
+                    {
+                        "importedVertex": 122,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.0000021457672119140626,
+                            "z": 0.000644683837890625
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0006446873885579407
+                    },
+                    {
+                        "importedVertex": 124,
+                        "expectedNativeDelta": {
+                            "x": 0.0,
+                            "y": -0.000009119510650634766,
+                            "z": 0.0008308291435241699
+                        },
+                        "actualNativeDelta": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "error": 0.0008308792021125555
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceUnchanged": true,
+    "unchangedStaticRendererBindings": true,
+    "returnReferenceRebound": true,
+    "newEyesRebound": true,
+    "materialListsRebound": true,
+    "canonicalPositionRestorationExplicitlyEnabled": true,
+    "limitation": "Explicit opt-in private position restoration: canonical Basis and position deltas x10000 with an inverse-scale child; imported base and shape normals/tangents retained and checked, not canonically rederived. Frozen art remains unchanged. Every saved/reloaded endpoint and quarter-weight BakeMesh must pass 2e-6 native tolerance. Neutral visual parity, blink clip, one pale return sample and terminal flicker still require GPU review; no likeness approval."
+}

@@ -1,0 +1,21 @@
+{
+    "status": "MAIN_EDITOR_SCENE_PREPARED_NUMERIC_IMPORT_PASSED_GPU_PENDING",
+    "project": "B:/lucid-loop/Unity",
+    "sourceSceneSha256": "6cdd090e61433c4c3ae96f4c586e6e8350f2d7ebfbd08b1b216236043140d83d",
+    "blinkSceneSha256": "2499ad9a36ce5ccc87fab6a8447e04eb951174366f98eee9944ea66d343c1b35",
+    "importAuditSha256": "a13c8e45c12c0d7941e4aead81a50ad62787ac56f43b746ff535ba255d0220cb",
+    "runtimeSha256": "7d3ac334aae2cff6a8f849db34fc899ed2dc697a99cc6bc8fb69880e0d344f7b",
+    "builderSha256": "2d8438cf4c1dc6bb3cccb2cde8674d559f1588b4a3a5b209310fb85c98026774",
+    "importerSha256": "4fe8a511b5426b6528dd3709f0218dadc727a52eae7342ebf456e8193510230e",
+    "shaderSha256": "b8e1fc754f7ad98fb704af9feaa0e716f09720d0569d3210c6bd128ebef91300",
+    "hlslSha256": "91d096f3465d3b979317d2fd5a9a847da335f08687913b24d6b9399f80bea113",
+    "workingMouthFileUnchanged": true,
+    "shaderHasError": false,
+    "passes": [
+        "TokonForward",
+        "DepthOnly",
+        "DepthNormals",
+        "ShadowCaster"
+    ],
+    "messages": []
+}

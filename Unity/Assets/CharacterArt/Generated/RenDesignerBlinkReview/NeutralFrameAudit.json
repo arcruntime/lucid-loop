@@ -1,0 +1,593 @@
+{
+    "status": "ACTUAL_UNITY_NEUTRAL_IMPORT_CALIBRATED",
+    "sourceSha256": "ee7fbae3066f0576328f32fd635583da0d419d8dcfd6033ed102d2695f6338fc",
+    "sourceContractSha256": "2408b6573519c144954ff96faca3594bd5632e4ac63240aaa4d3b766351c9f97",
+    "headSha256": "073e47cc05a2daea1db7c25152cc28a0c51b820c0a40153727f767285c4293ad",
+    "unityVersion": "6000.3.24f1",
+    "markerError": 4.889893645554366e-8,
+    "eyes": [
+        {
+            "name": "Ren_DesignerEye_R_SkinShutter",
+            "format": "UNorm8",
+            "cornersSha256": "616991235cde92c997e95653139a6ef322c7060dc15fe6379a51aaea2d984507",
+            "vertices": 613,
+            "triangles": 783,
+            "referencedVertices": 613,
+            "unusedVertices": 0,
+            "min": [
+                0.25882354378700259,
+                0.15294118225574494,
+                0.14901961386203767,
+                1.0
+            ],
+            "max": [
+                0.800000011920929,
+                0.5568627715110779,
+                0.46666666865348818,
+                1.0
+            ],
+            "rangeError": 0.0016478896141052247,
+            "maximumReferencedColorError": 0.0019599497318267824,
+            "maximumMatchedPositionError": 0.0000017305887922702823,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_R_Backing",
+            "format": "UNorm8",
+            "cornersSha256": "1d666e67eed9c0f40de8587e596544ded9b0f17fb0a4ba2b47d161c56ee8f42c",
+            "vertices": 145,
+            "triangles": 144,
+            "referencedVertices": 145,
+            "unusedVertices": 0,
+            "min": [
+                0.545098066329956,
+                0.47058823704719546,
+                0.5137255191802979,
+                1.0
+            ],
+            "max": [
+                0.545098066329956,
+                0.47058823704719546,
+                0.5137255191802979,
+                1.0
+            ],
+            "rangeError": 0.001096487045288086,
+            "maximumReferencedColorError": 0.001096487045288086,
+            "maximumMatchedPositionError": 0.000001611049128769082,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_R_LowerInk",
+            "format": "UNorm8",
+            "cornersSha256": "7ea662d716b7dc48ef8053f64988e62f653a6d1b39534056ddafbd9b1047728a",
+            "vertices": 216,
+            "triangles": 214,
+            "referencedVertices": 216,
+            "unusedVertices": 0,
+            "min": [
+                0.03921568766236305,
+                0.0235294122248888,
+                0.03529411926865578,
+                1.0
+            ],
+            "max": [
+                0.03921568766236305,
+                0.0235294122248888,
+                0.03529411926865578,
+                1.0
+            ],
+            "rangeError": 0.0012433677911758423,
+            "maximumReferencedColorError": 0.0012433677911758423,
+            "maximumMatchedPositionError": 0.0000015520115539402469,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_R_Iris",
+            "format": "UNorm8",
+            "cornersSha256": "7cae30b18c66e6a0e9d5e641a2f488619bc2daab7b123e7130a036369ec0c1ad",
+            "vertices": 257,
+            "triangles": 448,
+            "referencedVertices": 257,
+            "unusedVertices": 0,
+            "min": [
+                0.01568627543747425,
+                0.01568627543747425,
+                0.0313725508749485,
+                1.0
+            ],
+            "max": [
+                0.21176470816135407,
+                0.23137255012989045,
+                0.3450980484485626,
+                1.0
+            ],
+            "rangeError": 0.0015960093587636948,
+            "maximumReferencedColorError": 0.001960262656211853,
+            "maximumMatchedPositionError": 0.0000016703430674169795,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_R_Pupil",
+            "format": "UNorm8",
+            "cornersSha256": "57eb352dfba242bd31ba23a9acea993a8b8bb874e580c55398867c6557c754a3",
+            "vertices": 32,
+            "triangles": 30,
+            "referencedVertices": 32,
+            "unusedVertices": 0,
+            "min": [
+                0.007843137718737126,
+                0.003921568859368563,
+                0.0117647061124444,
+                1.0
+            ],
+            "max": [
+                0.007843137718737126,
+                0.003921568859368563,
+                0.0117647061124444,
+                1.0
+            ],
+            "rangeError": 0.0015117628499865533,
+            "maximumReferencedColorError": 0.0015117628499865533,
+            "maximumMatchedPositionError": 0.0000016105666418297915,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_R_Highlight_0",
+            "format": "UNorm8",
+            "cornersSha256": "72e165bdac896fc15d29fc5de3e22e08e45d6e60404730d00c032c2dacbd6459",
+            "vertices": 20,
+            "triangles": 18,
+            "referencedVertices": 20,
+            "unusedVertices": 0,
+            "min": [
+                0.5882353186607361,
+                0.6039215922355652,
+                0.6901960968971252,
+                1.0
+            ],
+            "max": [
+                0.5882353186607361,
+                0.6039215922355652,
+                0.6901960968971252,
+                1.0
+            ],
+            "rangeError": 0.0018749833106994629,
+            "maximumReferencedColorError": 0.0018749833106994629,
+            "maximumMatchedPositionError": 0.0000016105666418297915,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_R_Highlight_1",
+            "format": "UNorm8",
+            "cornersSha256": "fef9114c21037536f41be58d18c8578c67a89c28196596932540a9cc152ab63e",
+            "vertices": 20,
+            "triangles": 18,
+            "referencedVertices": 20,
+            "unusedVertices": 0,
+            "min": [
+                0.5882353186607361,
+                0.6039215922355652,
+                0.6901960968971252,
+                1.0
+            ],
+            "max": [
+                0.5882353186607361,
+                0.6039215922355652,
+                0.6901960968971252,
+                1.0
+            ],
+            "rangeError": 0.0018749833106994629,
+            "maximumReferencedColorError": 0.0018749833106994629,
+            "maximumMatchedPositionError": 0.0000016105666418297915,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_SkinShutter",
+            "format": "UNorm8",
+            "cornersSha256": "ead17c2f46d998c2192d02d93442764b991f1f48a5b2f75770afa7b6960246a7",
+            "vertices": 588,
+            "triangles": 758,
+            "referencedVertices": 588,
+            "unusedVertices": 0,
+            "min": [
+                0.2666666805744171,
+                0.16078431904315949,
+                0.15294118225574494,
+                1.0
+            ],
+            "max": [
+                0.800000011920929,
+                0.5568627715110779,
+                0.46666666865348818,
+                1.0
+            ],
+            "rangeError": 0.0017758756875991822,
+            "maximumReferencedColorError": 0.001960247755050659,
+            "maximumMatchedPositionError": 0.0000017327046180071193,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_Backing",
+            "format": "UNorm8",
+            "cornersSha256": "1ce8026f7ee47d90c62df560f4138080ebad4142eb597abf641c0176fc95f38c",
+            "vertices": 145,
+            "triangles": 144,
+            "referencedVertices": 145,
+            "unusedVertices": 0,
+            "min": [
+                0.545098066329956,
+                0.47058823704719546,
+                0.5137255191802979,
+                1.0
+            ],
+            "max": [
+                0.545098066329956,
+                0.47058823704719546,
+                0.5137255191802979,
+                1.0
+            ],
+            "rangeError": 0.001096487045288086,
+            "maximumReferencedColorError": 0.001096487045288086,
+            "maximumMatchedPositionError": 0.0000016138033060997259,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_LowerInk",
+            "format": "UNorm8",
+            "cornersSha256": "c3490091c9a395daa5cda601f7554de86440e926c36bcb0483b75a4ef4b7abdb",
+            "vertices": 274,
+            "triangles": 272,
+            "referencedVertices": 274,
+            "unusedVertices": 0,
+            "min": [
+                0.03921568766236305,
+                0.0235294122248888,
+                0.03529411926865578,
+                1.0
+            ],
+            "max": [
+                0.03921568766236305,
+                0.0235294122248888,
+                0.03529411926865578,
+                1.0
+            ],
+            "rangeError": 0.0012433677911758423,
+            "maximumReferencedColorError": 0.0012433677911758423,
+            "maximumMatchedPositionError": 0.0000016138033060997259,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_Iris",
+            "format": "UNorm8",
+            "cornersSha256": "38eb3fda7728a100161c0106fdaa47134befa70a653d3796fc62b7567c17aec9",
+            "vertices": 257,
+            "triangles": 448,
+            "referencedVertices": 257,
+            "unusedVertices": 0,
+            "min": [
+                0.01568627543747425,
+                0.01568627543747425,
+                0.0313725508749485,
+                1.0
+            ],
+            "max": [
+                0.21176470816135407,
+                0.23137255012989045,
+                0.3450980484485626,
+                1.0
+            ],
+            "rangeError": 0.0015960093587636948,
+            "maximumReferencedColorError": 0.0019568484276533128,
+            "maximumMatchedPositionError": 0.000001613338895367633,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_Pupil",
+            "format": "UNorm8",
+            "cornersSha256": "da43b845b6d7680c84b4a588a8bfe5e94596033e8fecf908acc987d28a330552",
+            "vertices": 32,
+            "triangles": 30,
+            "referencedVertices": 32,
+            "unusedVertices": 0,
+            "min": [
+                0.007843137718737126,
+                0.003921568859368563,
+                0.0117647061124444,
+                1.0
+            ],
+            "max": [
+                0.007843137718737126,
+                0.003921568859368563,
+                0.0117647061124444,
+                1.0
+            ],
+            "rangeError": 0.0015117628499865533,
+            "maximumReferencedColorError": 0.0015117628499865533,
+            "maximumMatchedPositionError": 0.0000016125128468047479,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_Highlight_0",
+            "format": "UNorm8",
+            "cornersSha256": "a09f1e39caba6f26c0dc69846c93ab36234084aca345875ce37fd0c99cadd497",
+            "vertices": 20,
+            "triangles": 18,
+            "referencedVertices": 20,
+            "unusedVertices": 0,
+            "min": [
+                0.5882353186607361,
+                0.6039215922355652,
+                0.6901960968971252,
+                1.0
+            ],
+            "max": [
+                0.5882353186607361,
+                0.6039215922355652,
+                0.6901960968971252,
+                1.0
+            ],
+            "rangeError": 0.0018749833106994629,
+            "maximumReferencedColorError": 0.0018749833106994629,
+            "maximumMatchedPositionError": 0.0000016129087043736945,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_Highlight_1",
+            "format": "UNorm8",
+            "cornersSha256": "4587bbaddb12a048c6490b8a3c84032bf9d847a84ed0a04236bb64804e745247",
+            "vertices": 20,
+            "triangles": 18,
+            "referencedVertices": 20,
+            "unusedVertices": 0,
+            "min": [
+                0.5882353186607361,
+                0.6039215922355652,
+                0.6901960968971252,
+                1.0
+            ],
+            "max": [
+                0.5882353186607361,
+                0.6039215922355652,
+                0.6901960968971252,
+                1.0
+            ],
+            "rangeError": 0.0018749833106994629,
+            "maximumReferencedColorError": 0.0018749833106994629,
+            "maximumMatchedPositionError": 0.0000015530306427535834,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_R_UpperInk",
+            "format": "UNorm8",
+            "cornersSha256": "7955188f812318f128a569241d1b19e0a1c667b2bdce56a9c513abdcd89e61a3",
+            "vertices": 960,
+            "triangles": 846,
+            "referencedVertices": 960,
+            "unusedVertices": 0,
+            "min": [
+                0.007843137718737126,
+                0.003921568859368563,
+                0.007843137718737126,
+                1.0
+            ],
+            "max": [
+                0.0313725508749485,
+                0.019607843831181527,
+                0.027450980618596078,
+                1.0
+            ],
+            "rangeError": 0.0017322152853012086,
+            "maximumReferencedColorError": 0.0019574053585529329,
+            "maximumMatchedPositionError": 0.0000016115315020215349,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_R_Crease",
+            "format": "UNorm8",
+            "cornersSha256": "8a02b734cc27be17eeac8f3582ffeb80204d27d6536fc9cccfcdd272ea972600",
+            "vertices": 198,
+            "triangles": 196,
+            "referencedVertices": 198,
+            "unusedVertices": 0,
+            "min": [
+                0.13333334028720857,
+                0.05882352963089943,
+                0.06666667014360428,
+                1.0
+            ],
+            "max": [
+                0.13333334028720857,
+                0.05882352963089943,
+                0.06666667014360428,
+                1.0
+            ],
+            "rangeError": 0.001734316349029541,
+            "maximumReferencedColorError": 0.001734316349029541,
+            "maximumMatchedPositionError": 0.0000016708082739569364,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_UpperInk",
+            "format": "UNorm8",
+            "cornersSha256": "dc72e1a05d079a60d94a263d59c7113f022e36d755e4a639442aeada95b4ba57",
+            "vertices": 608,
+            "triangles": 561,
+            "referencedVertices": 606,
+            "unusedVertices": 2,
+            "min": [
+                0.007843137718737126,
+                0.003921568859368563,
+                0.007843137718737126,
+                1.0
+            ],
+            "max": [
+                0.0313725508749485,
+                0.019607843831181527,
+                0.027450980618596078,
+                1.0
+            ],
+            "rangeError": 0.00173221156001091,
+            "maximumReferencedColorError": 0.0019606631249189378,
+            "maximumMatchedPositionError": 0.000001673248448241793,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_VisibleFan_0",
+            "format": "UNorm8",
+            "cornersSha256": "2adb2475912417cd89669156d5ff9725ae83d961c014a42520d3af17696ca38b",
+            "vertices": 9,
+            "triangles": 9,
+            "referencedVertices": 9,
+            "unusedVertices": 0,
+            "min": [
+                0.01568627543747425,
+                0.007843137718737126,
+                0.0117647061124444,
+                1.0
+            ],
+            "max": [
+                0.019607843831181527,
+                0.0117647061124444,
+                0.01568627543747425,
+                1.0
+            ],
+            "rangeError": 0.0016733594238758088,
+            "maximumReferencedColorError": 0.001926717348396778,
+            "maximumMatchedPositionError": 0.0000016734475138946437,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_VisibleFan_UpperSpan",
+            "format": "UNorm8",
+            "cornersSha256": "86b9b9cccb484f0b851db52b4adcb5bb26f73879b5f7c7716a0980e5bb1b70b6",
+            "vertices": 14,
+            "triangles": 10,
+            "referencedVertices": 12,
+            "unusedVertices": 2,
+            "min": [
+                0.01568627543747425,
+                0.007843137718737126,
+                0.01568627543747425,
+                1.0
+            ],
+            "max": [
+                0.0235294122248888,
+                0.0117647061124444,
+                0.019607843831181527,
+                1.0
+            ],
+            "rangeError": 0.0018086880445480347,
+            "maximumReferencedColorError": 0.0019448865205049515,
+            "maximumMatchedPositionError": 0.000001673248448241793,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_VisibleFan_LowerSpan",
+            "format": "UNorm8",
+            "cornersSha256": "3668e014080b57773795fa78f2c0170244cc640b4e86d75fac907667288ca7d5",
+            "vertices": 6,
+            "triangles": 4,
+            "referencedVertices": 6,
+            "unusedVertices": 0,
+            "min": [
+                0.0117647061124444,
+                0.007843137718737126,
+                0.0117647061124444,
+                1.0
+            ],
+            "max": [
+                0.01568627543747425,
+                0.007843137718737126,
+                0.01568627543747425,
+                1.0
+            ],
+            "rangeError": 0.0016901222988963128,
+            "maximumReferencedColorError": 0.0016956990584731103,
+            "maximumMatchedPositionError": 0.0000016724520719435532,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_VisibleFan_LowerFine",
+            "format": "UNorm8",
+            "cornersSha256": "fdac4eaaf6cea2cc4b90d65f7ee3cf1f2e407a338aa67dc3849eb97ad4416a33",
+            "vertices": 6,
+            "triangles": 4,
+            "referencedVertices": 6,
+            "unusedVertices": 0,
+            "min": [
+                0.0117647061124444,
+                0.007843137718737126,
+                0.0117647061124444,
+                1.0
+            ],
+            "max": [
+                0.01568627543747425,
+                0.007843137718737126,
+                0.01568627543747425,
+                1.0
+            ],
+            "rangeError": 0.001823239028453827,
+            "maximumReferencedColorError": 0.001823239028453827,
+            "maximumMatchedPositionError": 0.0000016138033060997259,
+            "maximumMatchedUvError": 0.0
+        },
+        {
+            "name": "Ren_DesignerEye_L_Crease",
+            "format": "UNorm8",
+            "cornersSha256": "7e55687941f260f4e94afffc686ff2b33bbe8c5793bdba38a100cb4d9bc73da3",
+            "vertices": 265,
+            "triangles": 172,
+            "referencedVertices": 265,
+            "unusedVertices": 0,
+            "min": [
+                0.13333334028720857,
+                0.05882352963089943,
+                0.06666667014360428,
+                1.0
+            ],
+            "max": [
+                0.13333334028720857,
+                0.05882352963089943,
+                0.06666667014360428,
+                1.0
+            ],
+            "rangeError": 0.001734316349029541,
+            "maximumReferencedColorError": 0.001734316349029541,
+            "maximumMatchedPositionError": 0.000001673248448241793,
+            "maximumMatchedUvError": 0.0
+        }
+    ],
+    "nativeToUnity": [
+        -1.6824461221694947,
+        9.003182199762705e-9,
+        -2.0053217042459438e-7,
+        -0.013223465532064438,
+        -1.871308938916627e-7,
+        3.0487490651617477e-14,
+        1.682445764541626,
+        6.958579490401462e-8,
+        -9.003202627866358e-9,
+        -1.6824462413787842,
+        0.0,
+        -0.20791010558605195,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+    ],
+    "oldEyesDisabled": [
+        "Ren_H_Eye_L_LidAnnulus",
+        "Ren_H_Eye_L_LowerLash",
+        "Ren_H_Eye_L_OuterFlicks",
+        "Ren_H_Eye_L_UpperLash",
+        "Ren_H_Eye_R_LidAnnulus",
+        "Ren_H_Eye_R_LowerLash",
+        "Ren_H_Eye_R_OuterFlicks",
+        "Ren_H_Eye_R_UpperLash",
+        "Ren_H_Eye_L_Sclera",
+        "Ren_H_Eye_L_Iris",
+        "Ren_H_Eye_R_Sclera",
+        "Ren_H_Eye_R_Iris"
+    ],
+    "limits": "Neutral only. Historical H source morphs unchanged. No canonical endpoint restoration. Color min/max audit permits documented Unity UNorm8 quantization within one linear byte; source FBX itself is float color."
+}

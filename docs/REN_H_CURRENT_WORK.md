@@ -96,6 +96,23 @@ are rejected and preserved separately.
 
 ## What can be opened in Unity now
 
+The newest working scene is
+`Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerBlinkReview.unity`
+in `B:\lucid-loop\Unity`. It adds independent blink sliders and an **Idle blink**
+toggle to the working mouth controls. Actual main Editor rendering produced 28
+static views and a 150-frame, five-second blink/mouth sequence. Root inspected
+open, half, closed and mixed-mouth poses and the closing/reopening contact sheet.
+Rest returns pixel-identically in front/quarter/profile, and the motion's final
+rest frame matches its first frame exactly. The blink shader at zero weight
+differs from the original shader by at most one color byte on the same geometry;
+the imported neutral also has small localized eye-edge raster changes.
+
+This verifies basic blink/mouth composition, not final eye likeness, gaze,
+complete speech, the requested 15.093-second reference performance, or device
+speed. The diagnostic clip is
+`.local/ren-main-blink-v1/Ren-Designer-Blink-and-Mouth-5s.mp4`.
+The preserved mouth-only scene below remains available.
+
 The latest successfully captured local player is
 `.local/ren-designer-mouth-v1/RenDesignerMouthReview.exe`.
 It has working open-A and seal sliders on the current head, with graded forehead

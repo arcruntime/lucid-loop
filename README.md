@@ -73,16 +73,21 @@ The [GDD](docs/GDD.md), [technical design](docs/TECHNICAL_DESIGN.md), [authored 
 ## Open the current Ren character review
 
 Open the project `B:\lucid-loop\Unity` in Unity **6000.3.24f1**, then open
-`Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity`
+`Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerBlinkReview.unity`
 and press **Play** after import/compilation finishes. Use the open-A and seal
-controls to inspect the working mouth. Reuse the existing Editor if it is open.
+controls for the mouth, the independent blink sliders for the eyes, and the
+**Idle blink** toggle. Reuse the existing Editor if it is open. The earlier
+mouth-only scene remains alongside it as `RenDesignerMouthReview.unity`.
 
 The scene and its dependencies have been copied and hash-verified in this project;
 main Editor import and Play Mode mouth validation passed. An [actual main-project
 render](docs/validation/ren-main-review/main-render.png) is preserved. Its previous captured Windows player
 is `.local/ren-designer-mouth-v1/RenDesignerMouthReview.exe`. Ren's likeness and
-NPR shading remain unfinished, and this scene does not yet provide the new blink,
-gaze, full speech or six-expression system. See [current work and evidence](docs/REN_H_CURRENT_WORK.md).
+NPR shading remain unfinished. The blink scene has actual main Editor static and
+five-second motion captures, but gaze, full speech and the six-expression system
+remain incomplete. The local clip is
+`.local/ren-main-blink-v1/Ren-Designer-Blink-and-Mouth-5s.mp4`.
+See [current work and evidence](docs/REN_H_CURRENT_WORK.md).
 
 ## Launch the Ren bust comparisons
 

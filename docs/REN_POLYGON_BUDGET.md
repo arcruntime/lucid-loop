@@ -1,6 +1,50 @@
 # Ren polygon budget and reduction decision
 
-2026-09-13. Planning checkpoint for Unity 6.3 LTS, landscape 16:9, sustained 30 fps on iPhone 15 Plus. The user suggested about 40k polygons for Ren including clothing and accessories. **This plan interprets that as a maximum of 40,000 rendered triangles for one complete LOD0 Ren, not 40,000 Blender quad faces.** It is an allocation proposal, not a measured phone-performance guarantee or a completed low-poly export.
+## Current user targets — 2026-09-14
+
+The user increased the complete Ren target to **50–80k triangles**, with
+**20–25k head/face**, **15–30k hair**, and **15–25k visible body/clothing**.
+The whole-frame target is **250–300k triangles**. Component choices must fit
+the complete-character total; accessories and outline shells are not free.
+These supersede the archived 40k allocation below. See
+[the iOS rendering requirements](IOS_RENDERING.md#user-specified-geometry-targets).
+Sustained 30fps on iPhone 15 Plus remains unmeasured.
+
+### Current dense review accounting
+
+The main-project mouth review reports **337,248 active-renderer triangles**.
+The frozen component counts reconcile exactly to that total:
+
+| Component | Triangles |
+| --- | ---: |
+| Native head skin | 195,660 |
+| Designer eye assemblies | 5,145 |
+| Lower-eye return | 118 |
+| Temporal patch | 62 |
+| Support and jaw bridge | 1,548 |
+| Oral parts, including teeth | 21,470 |
+| Ear skin | 87,810 |
+| Ear jewelry | 14,829 |
+| Hair | 9,496 |
+| Cap | 1,110 |
+| **Total** | **337,248** |
+
+This is a dense construction review, not a mobile LOD0. The main import report
+counts active renderers, not camera-visible triangles or extra rendering passes.
+See [actual main-project validation](validation/ren-main-review/README.md).
+
+Reducing head skin to 16k alone leaves **146,982 triangles before hair/cap**
+if the other head parts stay unchanged. Ears and jewelry must be included in
+every complete-head claim. The current 16k skin, approximately 2.3k ear/jewelry,
+and 27k hair studies remain separate candidates; their summed budget and visual
+quality have not passed. The skin UV bake and oral reduction are still open.
+
+## Archived 40k proposal and earlier experiments
+
+2026-09-13. Historical planning checkpoint for Unity 6.3 LTS, landscape 16:9,
+sustained 30 fps on iPhone 15 Plus. The earlier user target was approximately
+40,000 triangles for a complete dressed Ren. The following allocation and
+experiments preserve that earlier proposal; they are not the current limits.
 
 Protect the selected facial shape at LOD0. Reduce oversampled hair and sclera first, then fit and retopologize the body/clothing around the shared female rig. Ren's eyes, lips, face silhouette, and moving mouth matter more than hidden scalp, densely tessellated eye backs, or small clothing folds. The existing P2 construction face fits a 14k allowance, but the user has since selected a different H cheek/jaw surface; count compliance does not establish the correct shape. A uniform whole-character decimation would spend facial quality to solve excess elsewhere.
 

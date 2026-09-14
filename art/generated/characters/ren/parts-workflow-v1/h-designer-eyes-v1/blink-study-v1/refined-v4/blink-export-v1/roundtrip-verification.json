@@ -1,0 +1,150 @@
+{
+  "status": "FRESH_BLENDER_IMPORT_ALL_CONTROLLED_CORNERS_COLORS_AND_ENDPOINTS_PASS_UNITY_STILL_REQUIRED",
+  "fbx_sha256": "e201b5afede1c136356609b00dbf997f4702de80982c009170d5baf6c6f11149",
+  "objects": [
+    {
+      "object": "Ren_DesignerEye_L_SkinShutter",
+      "imported_vertices": 588,
+      "referenced_authored_vertices_verified": 588,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 6.322026990801533e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 2.9635684616242366e-09
+    },
+    {
+      "object": "Ren_DesignerEye_L_LowerInk",
+      "imported_vertices": 276,
+      "referenced_authored_vertices_verified": 274,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 5.625064858350015e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 5.77784395885307e-10
+    },
+    {
+      "object": "Ren_DesignerEye_L_UpperInk",
+      "imported_vertices": 565,
+      "referenced_authored_vertices_verified": 563,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 6.828570064953965e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 5.035031753848687e-09
+    },
+    {
+      "object": "Ren_DesignerEye_L_VisibleFan_0",
+      "imported_vertices": 9,
+      "referenced_authored_vertices_verified": 9,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 5.625064858350015e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 2.8935754093649936e-09
+    },
+    {
+      "object": "Ren_DesignerEye_L_VisibleFan_UpperSpan",
+      "imported_vertices": 14,
+      "referenced_authored_vertices_verified": 12,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 6.006850128414953e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 4.311478537928258e-09
+    },
+    {
+      "object": "Ren_DesignerEye_L_VisibleFan_LowerSpan",
+      "imported_vertices": 6,
+      "referenced_authored_vertices_verified": 6,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 6.828570064953965e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 1.569347642937126e-09
+    },
+    {
+      "object": "Ren_DesignerEye_L_VisibleFan_LowerFine",
+      "imported_vertices": 6,
+      "referenced_authored_vertices_verified": 6,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 6.006850128414953e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 8.7465671017839e-10
+    },
+    {
+      "object": "Ren_DesignerEye_L_Crease",
+      "imported_vertices": 174,
+      "referenced_authored_vertices_verified": 174,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 6.188916756855178e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 1.4803371314137087e-09
+    },
+    {
+      "object": "Ren_DesignerEye_R_SkinShutter",
+      "imported_vertices": 613,
+      "referenced_authored_vertices_verified": 613,
+      "key": "eyeBlinkR",
+      "maximum_registered_position_error": 6.828570064953965e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 2.6275446311197366e-09
+    },
+    {
+      "object": "Ren_DesignerEye_R_LowerInk",
+      "imported_vertices": 218,
+      "referenced_authored_vertices_verified": 216,
+      "key": "eyeBlinkR",
+      "maximum_registered_position_error": 6.322026990801533e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 5.158622241131889e-10
+    },
+    {
+      "object": "Ren_DesignerEye_R_UpperInk",
+      "imported_vertices": 848,
+      "referenced_authored_vertices_verified": 848,
+      "key": "eyeBlinkR",
+      "maximum_registered_position_error": 6.322026990801533e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 4.604662736501906e-09
+    },
+    {
+      "object": "Ren_DesignerEye_R_Crease",
+      "imported_vertices": 198,
+      "referenced_authored_vertices_verified": 198,
+      "key": "eyeBlinkR",
+      "maximum_registered_position_error": 6.322026990801533e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 1.3270797536993263e-09
+    },
+    {
+      "object": "Ren_DesignerEye_L_ApertureReturn",
+      "imported_vertices": 120,
+      "referenced_authored_vertices_verified": 120,
+      "key": "eyeBlinkL",
+      "maximum_registered_position_error": 5.625064858350015e-08,
+      "maximum_uv0_error": 0.0,
+      "maximum_open_linear_color_error": 0.0,
+      "maximum_closed_linear_color_error": 0.0,
+      "maximum_native_endpoint_delta_error": 5.784370855215024e-10
+    }
+  ],
+  "source_fbx_unchanged": true
+}

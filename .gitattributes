@@ -9,6 +9,8 @@ Unity/Assets/CharacterArt/Editor/RenNprReview*.cs text eol=lf
 Unity/Assets/CharacterArt/NPR/*.shader text eol=lf
 Unity/Assets/CharacterArt/NPR/*.hlsl text eol=lf
 Unity/Assets/CharacterArt/Runtime/RenHReference* text eol=lf
+Unity/Assets/CharacterArt/Runtime/RenDesignerBlink*.cs text eol=lf
+Unity/Assets/CharacterArt/Editor/RenDesignerBlink*.cs text eol=lf
 Unity/Assets/CharacterArt/Editor/RenHReference* text eol=lf
 art/generated/characters/ren/video-reference-v1/**/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 
@@ -65,6 +67,7 @@ Unity/Assets/CharacterArt/Generated/**/*.json -text whitespace=blank-at-eol,blan
 # Dense diagnostic mesh assets; retain exact authored/imported bytes in LFS.
 Unity/Assets/CharacterArt/Generated/RenCanonicalMorphRepair/**/*.asset filter=lfs diff=lfs merge=lfs -text
 Unity/Assets/CharacterArt/Generated/RenTokonReview/Outline/*.asset filter=lfs diff=lfs merge=lfs -text
+Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/*.asset filter=lfs diff=lfs merge=lfs -text
 # Preserve upstream package formatting verbatim.
 Unity/Assets/Plugins/R3/** whitespace=-blank-at-eol,-blank-at-eof
 

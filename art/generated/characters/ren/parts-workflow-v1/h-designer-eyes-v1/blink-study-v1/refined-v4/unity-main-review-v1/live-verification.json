@@ -1,0 +1,58 @@
+{
+  "status": "LIVE_READBACK_AND_IMAGE_COMPARISON_COMPLETE",
+  "motionFrames": 150,
+  "outputFps": 30,
+  "duration": 5,
+  "audioIncluded": false,
+  "sameImportedGeometryShaderControls": {
+    "front": {
+      "changedPixels": 1155,
+      "maximumByteDifference": 1,
+      "meanAbsoluteByteDifference": 0.00016431455258969908
+    },
+    "unlit-front": {
+      "changedPixels": 1117,
+      "maximumByteDifference": 1,
+      "meanAbsoluteByteDifference": 0.00016445583767361112
+    }
+  },
+  "restReturn": {
+    "front": {
+      "changedPixels": 0,
+      "maximumByteDifference": 0,
+      "meanAbsoluteByteDifference": 0.0
+    },
+    "quarter": {
+      "changedPixels": 0,
+      "maximumByteDifference": 0,
+      "meanAbsoluteByteDifference": 0.0
+    },
+    "profile": {
+      "changedPixels": 0,
+      "maximumByteDifference": 0,
+      "meanAbsoluteByteDifference": 0.0
+    }
+  },
+  "previousSelectedMouthNeutral": {
+    "front": {
+      "changedPixels": 38519,
+      "maximumByteDifference": 199,
+      "meanAbsoluteByteDifference": 0.006158899377893518
+    },
+    "quarter": {
+      "changedPixels": 33857,
+      "maximumByteDifference": 114,
+      "meanAbsoluteByteDifference": 0.005189824987340857
+    },
+    "profile": {
+      "changedPixels": 30643,
+      "maximumByteDifference": 3,
+      "meanAbsoluteByteDifference": 0.004559693513093171
+    }
+  },
+  "previousMainMouthFront": {
+    "changedPixels": 1283,
+    "maximumByteDifference": 199,
+    "meanAbsoluteByteDifference": 0.0005503054018373843
+  }
+}

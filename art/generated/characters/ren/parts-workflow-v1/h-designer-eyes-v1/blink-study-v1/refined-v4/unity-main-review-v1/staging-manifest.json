@@ -1,0 +1,385 @@
+{
+  "status": "CURATED_MAIN_BLINK_FUNCTIONAL_PROTOTYPE_NOT_ART_ACCEPTANCE",
+  "mainScene": "Unity/Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerBlinkReview.unity",
+  "mainSceneSha256": "2499ad9a36ce5ccc87fab6a8447e04eb951174366f98eee9944ea66d343c1b35",
+  "files": [
+    {
+      "path": "BlinkImportAudit.json",
+      "bytes": 93877,
+      "sha256": "a13c8e45c12c0d7941e4aead81a50ad62787ac56f43b746ff535ba255d0220cb"
+    },
+    {
+      "path": "BlinkLiveEvidence.json",
+      "bytes": 1036361,
+      "sha256": "8dd2709b3c3fc285c226783065467887cf96c1bd16d21ca1609fc1509b157a71"
+    },
+    {
+      "path": "captures/closed--front.png",
+      "bytes": 565310,
+      "sha256": "aa817758f68a24e3fcf7cde1090a04bf879a8d4cfe5922e0d51ee143e6326196"
+    },
+    {
+      "path": "captures/closed--profile.png",
+      "bytes": 589446,
+      "sha256": "902974916ef02f0dc3f7fe03bfaaa9d20c8e2d17744c5e20e3044fe36f1f4e97"
+    },
+    {
+      "path": "captures/closed--quarter.png",
+      "bytes": 577033,
+      "sha256": "5786330aedf1b94d1eeeeecbfef54ac7f4468a7dba043ab3ad21c898587a7927"
+    },
+    {
+      "path": "captures/closed--unlit-front.png",
+      "bytes": 482470,
+      "sha256": "6538af9b4be2a1783ae6d7b37824c1c288d9d73f6780ce683d7a41e4d0106bc9"
+    },
+    {
+      "path": "captures/half--front.png",
+      "bytes": 573268,
+      "sha256": "e53914d71c574661db5cf9d7acb328417297526404061c616738cec4b9c8976d"
+    },
+    {
+      "path": "captures/half--profile.png",
+      "bytes": 589614,
+      "sha256": "faa0f555e039c6351016b9031c781441a271ba957ff25bdc13dffc8e9f113379"
+    },
+    {
+      "path": "captures/half--quarter.png",
+      "bytes": 579425,
+      "sha256": "592532a822dd5c4a1b08669d1c810e3ee512f64dc2f11320dcf7e10fdc2f2ba4"
+    },
+    {
+      "path": "captures/left-closed--front.png",
+      "bytes": 568740,
+      "sha256": "5b3ff370bf101e983a70acfb517105b0b3e77045ef242ee0c4ba0983b7acc61a"
+    },
+    {
+      "path": "captures/left-closed--profile.png",
+      "bytes": 589481,
+      "sha256": "797634469b437df0ffea51d0bcb8be26bf4a2b1047679f3160db9917a3375936"
+    },
+    {
+      "path": "captures/left-closed--quarter.png",
+      "bytes": 578681,
+      "sha256": "f50f45d59c2698e07151510bb3acd314b4b58361fe18db3fbdd7408e34015cdf"
+    },
+    {
+      "path": "captures/mixed-closed--front.png",
+      "bytes": 554930,
+      "sha256": "48ad795cf48300ba7889cb6d0a959b79000d81b47329ef76c81b12bebd72689b"
+    },
+    {
+      "path": "captures/mixed-closed--profile.png",
+      "bytes": 585165,
+      "sha256": "1fc08d478bfcd4d00b7b5bb5b525b963bc25023a4dfeecd647fb1d237a8631d4"
+    },
+    {
+      "path": "captures/mixed-closed--quarter.png",
+      "bytes": 570042,
+      "sha256": "d2e39598424f434bee069461245d52b36105e87f126691ae04c225ffe13d7e3a"
+    },
+    {
+      "path": "captures/mixed-partial--front.png",
+      "bytes": 563414,
+      "sha256": "5f60abed21105a5ad642996813576adb28062eedd866e15814c00370b8fe0f4d"
+    },
+    {
+      "path": "captures/mixed-partial--profile.png",
+      "bytes": 585186,
+      "sha256": "6c9552640102858c84d22b3e407a1ff107837bcab5400402ff2c9835669b6707"
+    },
+    {
+      "path": "captures/mixed-partial--quarter.png",
+      "bytes": 573323,
+      "sha256": "b8c975d1e6e7b5c70ae380f49f509943010c10cc5f69a177e43f613eac4df567"
+    },
+    {
+      "path": "captures/rest--front.png",
+      "bytes": 575257,
+      "sha256": "ac5f1f3d7d3560247d2c3d06a9248fb851d357d18f9ba0fb8ad4327463adeec4"
+    },
+    {
+      "path": "captures/rest--original-shader-front.png",
+      "bytes": 575212,
+      "sha256": "8ef9597d16497f15cfdc36e994d80b13d6cafe3d1515b0151451949403d67dea"
+    },
+    {
+      "path": "captures/rest--original-shader-unlit-front.png",
+      "bytes": 494470,
+      "sha256": "62222e674da32da1a3da642903bb1886956027f95669847578fb087533dbb197"
+    },
+    {
+      "path": "captures/rest--profile.png",
+      "bytes": 589481,
+      "sha256": "797634469b437df0ffea51d0bcb8be26bf4a2b1047679f3160db9917a3375936"
+    },
+    {
+      "path": "captures/rest--quarter.png",
+      "bytes": 580212,
+      "sha256": "15f5ba5e6cac35adbeb120d1e623894cc920a5eb1adae7eca51ba9e507e4a1d2"
+    },
+    {
+      "path": "captures/rest--unlit-front.png",
+      "bytes": 494387,
+      "sha256": "5e6a5a639adbed8771831b04eeedc07859d617306379d5e1884e9a81dbbb8522"
+    },
+    {
+      "path": "captures/return-rest--front.png",
+      "bytes": 575257,
+      "sha256": "ac5f1f3d7d3560247d2c3d06a9248fb851d357d18f9ba0fb8ad4327463adeec4"
+    },
+    {
+      "path": "captures/return-rest--profile.png",
+      "bytes": 589481,
+      "sha256": "797634469b437df0ffea51d0bcb8be26bf4a2b1047679f3160db9917a3375936"
+    },
+    {
+      "path": "captures/return-rest--quarter.png",
+      "bytes": 580212,
+      "sha256": "15f5ba5e6cac35adbeb120d1e623894cc920a5eb1adae7eca51ba9e507e4a1d2"
+    },
+    {
+      "path": "captures/right-closed--front.png",
+      "bytes": 572170,
+      "sha256": "2d676e7edacd2b18e4d38850b09dee0f7e356746062a45a5c974d8e38c9d0d7f"
+    },
+    {
+      "path": "captures/right-closed--profile.png",
+      "bytes": 589446,
+      "sha256": "902974916ef02f0dc3f7fe03bfaaa9d20c8e2d17744c5e20e3044fe36f1f4e97"
+    },
+    {
+      "path": "captures/right-closed--quarter.png",
+      "bytes": 578679,
+      "sha256": "1c0f9f84cb21d7f35cbced6167dde39070621582e47fa0c55aaa6a15ac446fa4"
+    },
+    {
+      "path": "executed-source/RenDesignerBlinkImport.cs.txt",
+      "bytes": 42748,
+      "sha256": "4fe8a511b5426b6528dd3709f0218dadc727a52eae7342ebf456e8193510230e"
+    },
+    {
+      "path": "executed-source/RenDesignerBlinkMainBuilder.cs.txt",
+      "bytes": 6950,
+      "sha256": "2d8438cf4c1dc6bb3cccb2cde8674d559f1588b4a3a5b209310fb85c98026774"
+    },
+    {
+      "path": "executed-source/RenDesignerBlinkNPR.hlsl.txt",
+      "bytes": 9754,
+      "sha256": "91d096f3465d3b979317d2fd5a9a847da335f08687913b24d6b9399f80bea113"
+    },
+    {
+      "path": "executed-source/RenDesignerBlinkNPR.shader.txt",
+      "bytes": 5361,
+      "sha256": "b8e1fc754f7ad98fb704af9feaa0e716f09720d0569d3210c6bd128ebef91300"
+    },
+    {
+      "path": "executed-source/RenDesignerBlinkReview.cs.txt",
+      "bytes": 10494,
+      "sha256": "7d3ac334aae2cff6a8f849db34fc899ed2dc697a99cc6bc8fb69880e0d344f7b"
+    },
+    {
+      "path": "live-verification.json",
+      "bytes": 1566,
+      "sha256": "19145d9d024b731363556ea80a1de345b6e9300007b03c2932d9cd52180008d7"
+    },
+    {
+      "path": "main-dependency-manifest.json",
+      "bytes": 122878,
+      "sha256": "d65e6659b6c27849f330d3b83ce6dabf31623533aec958b37b6cfe108d7ae3ae"
+    },
+    {
+      "path": "main-execution-sanitized.log",
+      "bytes": 56644,
+      "sha256": "3b780688a91eca624a202ba652855caba32f52c37d1c23327fe2af21bb9ad014"
+    },
+    {
+      "path": "main-neutral-eye-comparison.png",
+      "bytes": 117653,
+      "sha256": "86670f82a91a02b4752494aba5934469b0d38e73494afcd0b6a3971faa275321"
+    },
+    {
+      "path": "main-path-adaptation-before-run.json",
+      "bytes": 494,
+      "sha256": "3e0849705322e66187d495534276e4d7c47e0d45951de1a17cc2a236bdfaea44"
+    },
+    {
+      "path": "MainPreparationEvidence.json",
+      "bytes": 1041,
+      "sha256": "326971a8c85c27ebfc5844a11bf0385c483f451157278e45de4d9a58c5e7ab0a"
+    },
+    {
+      "path": "motion-contact.png",
+      "bytes": 327574,
+      "sha256": "02291025b83454f6c6a940e4ee87b4dc4815fd7380c3bae24993f9bced62eafc"
+    },
+    {
+      "path": "motion-encoding.json",
+      "bytes": 3775,
+      "sha256": "60c1d63d4e9a96cfa9d4df016f4031b18696dd61ae9ee857295503f4d74f5ac5"
+    },
+    {
+      "path": "motion-visual-check.json",
+      "bytes": 1901,
+      "sha256": "2a3775b72829d2658ba3fa8c9c070a53ae08d5df91e8a040c1f2ed9005755135"
+    },
+    {
+      "path": "NeutralFrameAudit.json",
+      "bytes": 21014,
+      "sha256": "3fcdc46f6d20074eed095ee45fbdba77fe14785bf48fddfafde3d449254df361"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4665,
+      "sha256": "4e05a342ab49f1cb0648d2e33ff9b916312ff07dfd50ffb3cc00b534fb51e320"
+    },
+    {
+      "path": "Ren-Designer-Blink-and-Mouth-5s.mp4",
+      "bytes": 98116,
+      "sha256": "a96341a41b6bb33ea2b76836a40d6b1570cde04349becc7195ff7d435a7d4e1e"
+    },
+    {
+      "path": "reproduce/encode_motion.py",
+      "bytes": 1917,
+      "sha256": "cee364bd8f2b3bd3811fdddaeec6d09b73f514b8e9461801fb8caaa14ea67436"
+    },
+    {
+      "path": "reproduce/verify_live.py",
+      "bytes": 2352,
+      "sha256": "d110436c40807843d43d4539d34e3f29a01cd0a91f15d6a77bf95f62972ae779"
+    }
+  ],
+  "mainNewRequiredFiles": [
+    "Unity/Assets/CharacterArt/Editor/RenDesignerBlinkImport.cs",
+    "Unity/Assets/CharacterArt/Editor/RenDesignerBlinkImport.cs.meta",
+    "Unity/Assets/CharacterArt/Editor/RenDesignerBlinkMainBuilder.cs",
+    "Unity/Assets/CharacterArt/Editor/RenDesignerBlinkMainBuilder.cs.meta",
+    "Unity/Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerBlinkReview.unity",
+    "Unity/Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerBlinkReview.unity.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/BlinkImportAudit.json",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/BlinkImportAudit.json.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_ApertureReturn.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_ApertureReturn.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_ApertureReturn.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_ApertureReturn.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_Crease.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_Crease.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_Crease.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_Crease.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_LowerInk.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_LowerInk.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_LowerInk.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_LowerInk.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_SkinShutter.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_SkinShutter.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_SkinShutter.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_SkinShutter.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_UpperInk.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_UpperInk.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_UpperInk.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_UpperInk.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_0.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_0.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_0.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_0.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerFine.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerFine.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerFine.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerFine.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerSpan.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerSpan.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerSpan.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerSpan.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_UpperSpan.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_UpperSpan.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_UpperSpan.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_UpperSpan.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_Crease.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_Crease.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_Crease.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_Crease.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_LowerInk.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_LowerInk.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_LowerInk.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_LowerInk.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_SkinShutter.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_SkinShutter.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_SkinShutter.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_SkinShutter.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_UpperInk.corners.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_UpperInk.corners.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_UpperInk.endpoints.f32",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_UpperInk.endpoints.f32.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_ApertureReturn.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_ApertureReturn.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_Crease.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_Crease.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_LowerInk.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_LowerInk.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_SkinShutter.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_SkinShutter.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_UpperInk.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_UpperInk.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_0.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_0.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerFine.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerFine.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerSpan.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerSpan.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_UpperSpan.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_UpperSpan.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_Crease.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_Crease.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_LowerInk.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_LowerInk.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_SkinShutter.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_SkinShutter.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_UpperInk.asset",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_UpperInk.asset.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/NeutralFrameAudit.json",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/NeutralFrameAudit.json.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_ApertureReturn.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_ApertureReturn.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_Crease.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_Crease.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_LowerInk.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_LowerInk.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_SkinShutter.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_SkinShutter.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_UpperInk.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_UpperInk.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_0.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_0.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_LowerFine.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_LowerFine.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_Crease.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_Crease.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_LowerInk.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_LowerInk.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_SkinShutter.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_SkinShutter.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_UpperInk.mat",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_UpperInk.mat.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEyes_Blink.fbx",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEyes_Blink.fbx.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Shaders/RenDesignerBlinkNPR.hlsl",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Shaders/RenDesignerBlinkNPR.hlsl.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Shaders/RenDesignerBlinkNPR.shader",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Shaders/RenDesignerBlinkNPR.shader.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/Shaders.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/SourceContract.json",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview/SourceContract.json.meta",
+    "Unity/Assets/CharacterArt/Generated/RenDesignerBlinkReview.meta",
+    "Unity/Assets/CharacterArt/Runtime/RenDesignerBlinkReview.cs",
+    "Unity/Assets/CharacterArt/Runtime/RenDesignerBlinkReview.cs.meta"
+  ],
+  "captureCount": 28,
+  "motionVideo": "Ren-Designer-Blink-and-Mouth-5s.mp4",
+  "noMainSourceMutationByCuration": true
+}

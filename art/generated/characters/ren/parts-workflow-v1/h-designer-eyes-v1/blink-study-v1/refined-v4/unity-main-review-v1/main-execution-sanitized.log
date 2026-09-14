@@ -1,0 +1,644 @@
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview using Guid(3a6d943e91b4a5748802f7c1643279d9) (DefaultImporter) -> (artifact id: 'c45e8d4a2d48add8a9e8a1834829162b') in 0.0716364 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Shaders using Guid(9dfe5e532d45b0642a950565a4b99276) (DefaultImporter) -> (artifact id: 'd2b4b7ba07667a0421acbc0ca7bca454') in 0.0029843 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Shaders/RenDesignerBlinkNPR.hlsl using Guid(646597f73a6c28a4883eaff6d0866d59) (ShaderIncludeImporter) -> (artifact id: 'd34824dd36d6a4ac95350475272bb0e7') in 0.0474096 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Shaders/RenDesignerBlinkNPR.shader using Guid(a0f4233a1a3f45e4598f48ed2c5452f2) (ShaderImporter) -> (artifact id: 'bee1fc0217b80755749182c48f63a82b') in 0.166841 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/NeutralFrameAudit.json using Guid(7d56a63371a76d64a91e7e3b3964148e) (TextScriptImporter) -> (artifact id: '43812924cdc624a392a858e241799285') in 0.0037438 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b4cd44967b3607b4bb42ae18ba9eb5e0): Total: 1.082 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=5 (actual=5, local cache=0, cache server=0)
+		Asset DB Process Time: managed=18 ms, native=409 ms
+		Asset DB Callback time: managed=39 ms, native=615 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=917, non-scripts=2117
+		Asset File Changes: new=5, changed=5, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.179ms
+	Scan: 21.697ms
+	OnSourceAssetsModified: 11.513ms
+	CategorizeAssetsWithTransientArtifact: 0.016ms
+	ProcessAssetsWithTransientArtifactChanges: 0.050ms
+	CategorizeAssets: 40.964ms
+	ImportOutOfDateAssets: 328.733ms (23.763ms without children)
+		ImportManagerImport: 299.619ms (4.424ms without children)
+			ImportInProcess: 294.880ms
+			UpdateCategorizedAssets: 0.314ms
+		ReloadNativeAssets: 0.142ms
+		UnloadImportedAssets: 0.379ms
+		ReloadImportedAssets: 0.001ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.802ms
+		InitializingProgressBar: 0.014ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 4.012ms
+	PostProcessAllAssets: 628.352ms
+	Hotreload: 15.096ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.204ms
+	UnloadStreamsBegin: 0.004ms
+	PersistCurrentRevisions: 0.302ms
+	UnloadStreamsEnd: 0.003ms
+	Untracked: 34.891ms
+
+Opening scene 'Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity'
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerMouthReview.unity'
+	Deserialize:            12.992 ms
+	Integration:            1241.240 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.065 ms
+	Total Operation Time:   1254.299 ms
+Unloading 12 unused Assets / (322.5 KB). Loaded Objects now: 6230.
+Memory consumption went from 1.75 GB to 1.75 GB.
+Total: 178.785300 ms (FindLiveObjects: 0.889600 ms CreateObjectMapping: 0.933300 ms MarkObjects: 176.236700 ms  DeleteObjects: 0.723500 ms)
+
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical using Guid(b72fe3ac668ffdc45a19bfb3e53bdcf5) (DefaultImporter) -> (artifact id: '9ed1901b68593e030c93c67867d15845') in 0.0170287 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_SkinShutter.corners.f32 using Guid(a09da705e212f8642af989c79d3a3427) (DefaultImporter) -> (artifact id: 'f5d37649628df490e2f1a120263a6cb1') in 0.0283595 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_UpperSpan.endpoints.f32 using Guid(61dc3ae8f72fc2e438876161d1710ab1) (DefaultImporter) -> (artifact id: '97ed3282af9f4d68124b1e9304bf95c8') in 0.0029895 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_Crease.endpoints.f32 using Guid(0260afab19616f2478e38314c71b7c05) (DefaultImporter) -> (artifact id: '8b244811f885df82bca5de084bd93336') in 0.0038129 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_SkinShutter.endpoints.f32 using Guid(22588fb480c345645bb5dcf92ea6c4fb) (DefaultImporter) -> (artifact id: '88cb057ba0781f563eb496e3f1b6eedc') in 0.0031454 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_LowerInk.endpoints.f32 using Guid(828e824ed105d3a489041ade16b78e5e) (DefaultImporter) -> (artifact id: 'e50f1d07ea44f2f70d65e5b4312448c8') in 0.0029353 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_Crease.endpoints.f32 using Guid(925b64a1e6196c94296408c1b38c0b46) (DefaultImporter) -> (artifact id: 'c1554d76e704b696c1f2d9e333ef0a3b') in 0.0403017 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_UpperSpan.corners.f32 using Guid(d23bd7e0d9a49a64e8414277e329a74d) (DefaultImporter) -> (artifact id: '3a7b0a89167407c3b9f216148c5e19e5') in 0.0041226 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_ApertureReturn.corners.f32 using Guid(a3bc927398315464984ec40208203968) (DefaultImporter) -> (artifact id: '60212dcb40aabc33d4e6d1f2eb1eb5d8') in 0.0030857 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_SkinShutter.corners.f32 using Guid(14ff719b2ab181e4ab279b89d8ca62ba) (DefaultImporter) -> (artifact id: 'ca47cba634bffc2c379d0b04af0dbc6b') in 0.0045759 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_ApertureReturn.endpoints.f32 using Guid(548524741eba6a14d97ce9d18112968a) (DefaultImporter) -> (artifact id: '408b67639a39f2646e9000afe6636644') in 0.0039829 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_UpperInk.endpoints.f32 using Guid(8497c0520caf2144dadee8fa9c8c1d09) (DefaultImporter) -> (artifact id: '647333b2ba52e474bd3bcd6a92074e45') in 0.0270374 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_LowerInk.corners.f32 using Guid(55c4bb157e09cb847b1e4c0dfe50634d) (DefaultImporter) -> (artifact id: 'c393b59d98c94f5b5fdf8e5953066ed5') in 0.0068774 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerFine.corners.f32 using Guid(75cf09ca1ce13dc46ba7df283e4fb2a3) (DefaultImporter) -> (artifact id: '0328c5f25a2b8c7873099105cdae38fa') in 0.0047902 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_UpperInk.corners.f32 using Guid(86cef5e1cb38fd045ab9222ca7d9f236) (DefaultImporter) -> (artifact id: '653e7e3e83d1f71c763c87c25901aae2') in 0.0042449 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerSpan.corners.f32 using Guid(47086b87588a0b0489edf86608ba71c6) (DefaultImporter) -> (artifact id: '3a196a61124778a86388481630fff606') in 0.0045102 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_Crease.corners.f32 using Guid(d871a2225e2c3044aa8a6b08aefc4b84) (DefaultImporter) -> (artifact id: 'f4768f43281ef9077645ef70ececa515') in 0.0038046 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerFine.endpoints.f32 using Guid(190c0d43e12de084585ac5b2cd75cb29) (DefaultImporter) -> (artifact id: 'aef8716c2799b2bc4965abb5b7dc6b88') in 0.0037822 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_Crease.corners.f32 using Guid(6a1a851e28d1bf443bf02c5d65c46cb2) (DefaultImporter) -> (artifact id: 'cf4339be80f2c59613c285b7dfa7e901') in 0.003606 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_0.corners.f32 using Guid(bac386d71ab3aa643b2827e5efbf042d) (DefaultImporter) -> (artifact id: '0c9e63d8ed5e1319e8cd8786d70927d1') in 0.0047498 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_UpperInk.corners.f32 using Guid(7b13e109844a75749a211ca5cbb6057e) (DefaultImporter) -> (artifact id: '780ba4715980fdd70f6f35a7d4b08508') in 0.005182 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_LowerInk.corners.f32 using Guid(cbebc87a4115e9545a3c74367a0c5805) (DefaultImporter) -> (artifact id: '06c3972b596bc5e07ff4b228b9491679') in 0.0050018 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_UpperInk.endpoints.f32 using Guid(4de49ec4e214b0f4694d9eadde049738) (DefaultImporter) -> (artifact id: '016662129a0c2a700397f246c1d46b0d') in 0.0088734 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_0.endpoints.f32 using Guid(5db8d04e09ed472469ba4c26d8e748d5) (DefaultImporter) -> (artifact id: '906e2645b4fd87cd37319a494531f6b4') in 0.00492 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_SkinShutter.endpoints.f32 using Guid(9ebf7ed7578cd314faa6910ff43212e1) (DefaultImporter) -> (artifact id: 'bc32648dbd4af2d86c5a4ef031db4413') in 0.0046111 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_L_VisibleFan_LowerSpan.endpoints.f32 using Guid(ce4cf9131b8ea7044bcf87d266b354ec) (DefaultImporter) -> (artifact id: 'd767ab4f2ea7f534779164ea266bf6ad') in 0.0031744 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Canonical/Ren_DesignerEye_R_LowerInk.endpoints.f32 using Guid(6f641e1eab55d8241912c2c6e80abf2d) (DefaultImporter) -> (artifact id: '53dcf56994ad62a1b6acae89083deb7f') in 0.0028469 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEyes_Blink.fbx using Guid(7da224a0862a1aa42a1965e56a253972) (FBXImporter) -> (artifact id: 'c5ff391e2f39696fcdcc9f7e07556fd8') in 0.5673094 seconds
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/SourceContract.json using Guid(03dee88a3a871e743b793fde347ced60) (TextScriptImporter) -> (artifact id: 'ba4ec3b180773a3549fd28c62b7f701c') in 0.0571676 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8e67c04132beafe4fa7bfcf7001d2b95): Total: 1.170 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=29 (actual=29, local cache=0, cache server=0)
+		Asset DB Process Time: managed=195 ms, native=939 ms
+		Asset DB Callback time: managed=12 ms, native=22 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=918, non-scripts=2145
+		Asset File Changes: new=29, changed=29, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.332ms
+	Scan: 127.596ms
+	OnSourceAssetsModified: 0.407ms
+	CategorizeAssetsWithTransientArtifact: 0.040ms
+	ProcessAssetsWithTransientArtifactChanges: 0.091ms
+	CategorizeAssets: 53.582ms
+	ImportOutOfDateAssets: 910.988ms (20.267ms without children)
+		ImportManagerImport: 855.213ms (2.706ms without children)
+			ImportInProcess: 852.248ms
+			UpdateCategorizedAssets: 0.259ms
+		ReloadNativeAssets: 0.159ms
+		UnloadImportedAssets: 0.283ms
+		ReloadImportedAssets: 0.007ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.941ms
+		InitializingProgressBar: 0.013ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 34.102ms
+	PostProcessAllAssets: 9.974ms
+	Hotreload: 24.949ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.196ms
+	UnloadStreamsBegin: 0.039ms
+	PersistCurrentRevisions: 0.594ms
+	UnloadStreamsEnd: 0.003ms
+	Untracked: 40.845ms
+
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEyes_Blink.fbx using Guid(7da224a0862a1aa42a1965e56a253972) (FBXImporter)ImportFBX Warnings:
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_ApertureReturn' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_Crease' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_LowerInk' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_SkinShutter' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_UpperInk' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_VisibleFan_0' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_VisibleFan_LowerFine' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_VisibleFan_LowerSpan' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_L_VisibleFan_UpperSpan' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_Crease' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_LowerInk' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_SkinShutter' doesn't have any.
+Can't import tangents and binormals, because mesh 'Ren_DesignerEye_R_UpperInk' doesn't have any.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.AssetDatabase:ImportAsset (string,UnityEditor.ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset (string)
+UnityEditor.AssetImporter:SaveAndReimport ()
+LucidLoop.CharacterArt.Editor.RenDesignerBlinkImport:Add (LucidLoop.CharacterArt.RenDesignerEyeReview,string,bool) (at Assets/CharacterArt/Editor/RenDesignerBlinkImport.cs:116)
+LucidLoop.CharacterArt.Editor.RenDesignerBlinkMainBuilder:Prepare () (at Assets/CharacterArt/Editor/RenDesignerBlinkMainBuilder.cs:34)
+
+[Assets/CharacterArt/Editor/RenDesignerBlinkImport.cs line 116]
+
+ -> (artifact id: 'c76c27e3df18d093aa0c223dba3b2227') in 0.2036759 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a6c626e13a73943438403847abdd139a): Total: 0.441 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=354 ms
+		Asset DB Callback time: managed=83 ms, native=2 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=918, non-scripts=2145
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.277ms
+	Scan: 24.819ms
+	OnSourceAssetsModified: 0.068ms
+	CategorizeAssetsWithTransientArtifact: 0.017ms
+	ProcessAssetsWithTransientArtifactChanges: 0.101ms
+	CategorizeAssets: 77.539ms
+	ImportOutOfDateAssets: 235.534ms (8.963ms without children)
+		ImportManagerImport: 205.668ms (1.470ms without children)
+			ImportInProcess: 204.166ms
+			UpdateCategorizedAssets: 0.032ms
+		ReloadNativeAssets: 0.146ms
+		UnloadImportedAssets: 0.368ms
+		ReloadImportedAssets: 0.561ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.979ms
+		InitializingProgressBar: 0.019ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
+		OnDemandSchedulerStart: 18.827ms
+	PostProcessAllAssets: 1.952ms
+	Hotreload: 83.502ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.174ms
+	UnloadStreamsBegin: 0.105ms
+	PersistCurrentRevisions: 0.297ms
+	UnloadStreamsEnd: 0.002ms
+	Untracked: 16.925ms
+
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes using Guid(197cd431171307a428cd431542d2e3c2) (DefaultImporter) -> (artifact id: 'd30d0cf1b093afb8bad2b2c5ae9627c4') in 0.0040202 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=abc30cb182c66bd4482492a37af0b1b8): Total: 0.091 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_SkinShutter.asset using Guid(f387edeccf3a1df45871cf20242477de) (NativeFormatImporter) -> (artifact id: 'cef4ce861fca3eb6ca1a6dbee2d72234') in 0.0212322 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=802da9b5f5b1a444d86c00c854594eee): Total: 0.117 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_SkinShutter.asset using Guid(f387edeccf3a1df45871cf20242477de) (NativeFormatImporter) -> (artifact id: 'cef4ce861fca3eb6ca1a6dbee2d72234') in 0.0247559 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e6c61517f2dc3574793ab127e58dda3c): Total: 0.087 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_SkinShutter.mat using Guid(2a539c932c412934296c8116852fea42) (NativeFormatImporter) -> (artifact id: '7c35dbcc65cb848dbf6d95dd27859613') in 0.003898 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=03c9e6a0edf0ccd4bb3b2c5989fd5c0f): Total: 0.096 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=5fb805fb41f1e0a40be1a48c1921661c): Total: 0.028 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_LowerInk.asset using Guid(1041d1e453b4f8b4bac6efa2fd2d9cff) (NativeFormatImporter) -> (artifact id: '10d3dd8db0fe0f85fbfe08f0ae930163') in 0.0051977 seconds
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9986dc4f56400374c9b7042eaceb9038): Total: 0.119 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_LowerInk.asset using Guid(1041d1e453b4f8b4bac6efa2fd2d9cff) (NativeFormatImporter) -> (artifact id: '10d3dd8db0fe0f85fbfe08f0ae930163') in 0.0316711 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2c0251da04c5fdc419c989fd2511c51c): Total: 0.081 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_LowerInk.mat using Guid(8743b8f329f6d194195ce3a190f343c7) (NativeFormatImporter) -> (artifact id: '8446079155946840dc375e96703a5182') in 0.0037194 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=66d54175eb8625347b227e273cfb3af8): Total: 0.135 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=2cbaf8a6c83fca74d816cb0a42ed83d1): Total: 0.013 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_UpperInk.asset using Guid(0090bc3d79a751e40b60b15d264d16de) (NativeFormatImporter) -> (artifact id: 'a0f38189d4908f531f82e0387279ec07') in 0.0052135 seconds
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7ce44cdc69e81db41bc351167fd65889): Total: 0.195 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_UpperInk.asset using Guid(0090bc3d79a751e40b60b15d264d16de) (NativeFormatImporter) -> (artifact id: 'a0f38189d4908f531f82e0387279ec07') in 0.00659 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0abd526327b3f304986187e3ca59c27e): Total: 0.075 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_UpperInk.mat using Guid(c6bf6c4d1c906c048a8cf370085d8e34) (NativeFormatImporter) -> (artifact id: '6b079a6518a6a7fe53fcb71e037d9ae9') in 0.0039192 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9b9d78f0bbbc09f47bdba35b8323d103): Total: 0.197 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=65780094324b58a4ab6bb0aecafef9fb): Total: 0.013 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_0.asset using Guid(2231d9793684e704eb9a5f02acfa4f8e) (NativeFormatImporter) -> (artifact id: '8236eec353abd50a5c2494bbb35aed7d') in 0.0047684 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5242554067648a94b860e49619808c15): Total: 0.171 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_0.asset using Guid(2231d9793684e704eb9a5f02acfa4f8e) (NativeFormatImporter) -> (artifact id: '8236eec353abd50a5c2494bbb35aed7d') in 0.0050811 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=2834658125eee0c4599ecfb7fc9606b7): Total: 0.045 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_0.mat using Guid(4ce31eef6c7453e4999274213ad43f2a) (NativeFormatImporter) -> (artifact id: 'c5ef78b1bbde8b3b8e8df7dc7131dee2') in 0.0030267 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=71afa8bec3f938f40ba360dda1c145b2): Total: 0.101 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=239114c19d9dd12458a9f0f3538a5051): Total: 0.017 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_UpperSpan.asset using Guid(c1d0601dc1ff2624d8d11d025fe6c85e) (NativeFormatImporter) -> (artifact id: '028be920f29fffc1ca0233dac57f7507') in 0.0191992 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9d88751b13a6b604a9fcee9f0bc20122): Total: 0.113 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_UpperSpan.asset using Guid(c1d0601dc1ff2624d8d11d025fe6c85e) (NativeFormatImporter) -> (artifact id: '028be920f29fffc1ca0233dac57f7507') in 0.0111663 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bd9688abef8406d4389d5daa4b5c4cf5): Total: 0.045 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat using Guid(1a0b3f7c70c85bc429cb5df9e94b1b97) (NativeFormatImporter) -> (artifact id: '8a5ae945873367437d749ff40d41eff9') in 0.0056186 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=de3c9c711fe4e6240bd3b30a15479a73): Total: 0.150 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=bb599555d7d85784a867f03131413377): Total: 0.016 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerSpan.asset using Guid(0f28dc35b7a852a439bde985e3dcfcb0) (NativeFormatImporter) -> (artifact id: '258debcd10f37fb2cb8b91a80e473c41') in 0.0029384 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d96695cca4b1a6d43aea3c38f174d536): Total: 0.123 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerSpan.asset using Guid(0f28dc35b7a852a439bde985e3dcfcb0) (NativeFormatImporter) -> (artifact id: '258debcd10f37fb2cb8b91a80e473c41') in 0.0039816 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1f19b74b6320ab9409ac747625339627): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat using Guid(cf78733b75afe2c46a1710cf121da336) (NativeFormatImporter) -> (artifact id: '8ce88f4a7d87a4c55c7b730c66bf937e') in 0.0040307 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3d791c7e2e9fefc4a836fe86cf8a92ab): Total: 0.118 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=9077979cf3bfed94b8ee32aec922a10d): Total: 0.044 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerFine.asset using Guid(5974f2dbe04897749ad9667712ea7d97) (NativeFormatImporter) -> (artifact id: '40b598c8c1b189260e0c8efd86d05a90') in 0.0040668 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d1c7af2546963a244b662a3aef7fb673): Total: 0.165 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_VisibleFan_LowerFine.asset using Guid(5974f2dbe04897749ad9667712ea7d97) (NativeFormatImporter) -> (artifact id: '40b598c8c1b189260e0c8efd86d05a90') in 0.0270375 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b9d7152c5ec61334a9b059aed4664381): Total: 0.078 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_LowerFine.mat using Guid(f10bf4469d11d1443b4c9b64ec470051) (NativeFormatImporter) -> (artifact id: 'bf7d1fee58f8fb967b0991d55a3d0e88') in 0.0032105 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b9cc0f803f24d7d4aa22b169dc803bf0): Total: 0.102 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=9dacd07c793e1d546814e9fc3ba7fdff): Total: 0.027 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_Crease.asset using Guid(9bc4a9673f2a45c43bedcf5415142b8c) (NativeFormatImporter) -> (artifact id: 'af49712036c0afddd1e8fa99f945c9c6') in 0.0041621 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0e6cba3b5e26ce7439c2a5d57d1dfb60): Total: 0.224 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_Crease.asset using Guid(9bc4a9673f2a45c43bedcf5415142b8c) (NativeFormatImporter) -> (artifact id: 'af49712036c0afddd1e8fa99f945c9c6') in 0.0447548 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6ae7910865f8ead4ba6e67f8624cf222): Total: 0.112 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_Crease.mat using Guid(0b5fb168f6d38f2448d5c9b8fe1c92b0) (NativeFormatImporter) -> (artifact id: '3f66cd1e30cbc37925c3aa47e9ccb03c') in 0.0057815 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5ed0595a29211674c92d910a4d67c984): Total: 0.287 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=412bd65de852f4647afa1fee2f597c46): Total: 0.013 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_SkinShutter.asset using Guid(2035b3b64491b1c488a8934a11b3c7e1) (NativeFormatImporter) -> (artifact id: '93ac90daa8d2773a51478fa7eaf8929b') in 0.0044052 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c853104bd480f0a4e972ef9afb038545): Total: 0.149 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_SkinShutter.asset using Guid(2035b3b64491b1c488a8934a11b3c7e1) (NativeFormatImporter) -> (artifact id: '93ac90daa8d2773a51478fa7eaf8929b') in 0.024418 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8d77e3254384d634ebec9b3f9d389844): Total: 0.059 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_SkinShutter.mat using Guid(fb88250c781dd05428ab750e6ad46670) (NativeFormatImporter) -> (artifact id: '1d84abac7b3690186be82a0a95b6db0b') in 0.0032606 seconds
+Refreshing native plugins compatible for Editor in 1.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=56f677eb3bb89844f9719acf060293a3): Total: 0.517 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=500 ms
+		Asset DB Callback time: managed=8 ms, native=7 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=919, non-scripts=2163
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.172ms
+	Scan: 81.592ms
+	OnSourceAssetsModified: 0.177ms
+	CategorizeAssetsWithTransientArtifact: 0.007ms
+	ProcessAssetsWithTransientArtifactChanges: 0.073ms
+	CategorizeAssets: 234.796ms
+	ImportOutOfDateAssets: 145.273ms (6.234ms without children)
+		ImportManagerImport: 4.585ms (0.789ms without children)
+			ImportInProcess: 3.771ms
+			UpdateCategorizedAssets: 0.024ms
+		ReloadNativeAssets: 0.178ms
+		UnloadImportedAssets: 0.603ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 131.488ms
+		InitializingProgressBar: 0.025ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 2.159ms
+	PostProcessAllAssets: 1.233ms
+	Hotreload: 14.840ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.189ms
+	UnloadStreamsBegin: 0.015ms
+	PersistCurrentRevisions: 0.267ms
+	UnloadStreamsEnd: 0.112ms
+	Untracked: 37.987ms
+
+Asset Pipeline Refresh (id=4cff977084bb6ab46aa2a3c5963517a2): Total: 0.013 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_LowerInk.asset using Guid(5418dfe36df939049a250f4858f2679c) (NativeFormatImporter) -> (artifact id: '085b49ad03aa894c3ad679d2a5cc5490') in 0.0043286 seconds
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a65f868cf1ba7b14d9bf5e6ee57f9a3f): Total: 0.422 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=379 ms
+		Asset DB Callback time: managed=39 ms, native=3 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=919, non-scripts=2164
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 6
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.176ms
+	Scan: 56.794ms
+	OnSourceAssetsModified: 0.092ms
+	CategorizeAssetsWithTransientArtifact: 0.007ms
+	ProcessAssetsWithTransientArtifactChanges: 0.051ms
+	CategorizeAssets: 268.704ms
+	ImportOutOfDateAssets: 13.192ms (3.124ms without children)
+		ImportManagerImport: 5.377ms (0.454ms without children)
+			ImportInProcess: 4.897ms
+			UpdateCategorizedAssets: 0.026ms
+		ReloadNativeAssets: 0.224ms
+		UnloadImportedAssets: 0.456ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.164ms
+		InitializingProgressBar: 0.019ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 2.828ms
+	PostProcessAllAssets: 1.594ms
+	Hotreload: 41.328ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.193ms
+	UnloadStreamsBegin: 0.002ms
+	PersistCurrentRevisions: 0.360ms
+	UnloadStreamsEnd: 0.003ms
+	Untracked: 39.891ms
+
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_LowerInk.asset using Guid(5418dfe36df939049a250f4858f2679c) (NativeFormatImporter) -> (artifact id: '085b49ad03aa894c3ad679d2a5cc5490') in 0.0052289 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=53c3f95e659d95c47b16acb180d6be0c): Total: 0.080 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_LowerInk.mat using Guid(79dab85edbce4a54ba42cf9a7a609c9c) (NativeFormatImporter) -> (artifact id: '836180b55bb0ae7e2b2809298e7daafb') in 0.0035395 seconds
+Refreshing native plugins compatible for Editor in 1.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=07cd491f2ac64de4d86de5ea80f31350): Total: 0.122 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=41722cf81c103974db76e3013a8401cc): Total: 0.024 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_UpperInk.asset using Guid(20b9ce35fa485fc448e0716f08ea2b4c) (NativeFormatImporter) -> (artifact id: 'c3aa3b534b40b85cfb7757d8cda2f68e') in 0.0045637 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3d2ca1c79df36f04eb5654fd0db19525): Total: 0.219 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_UpperInk.asset using Guid(20b9ce35fa485fc448e0716f08ea2b4c) (NativeFormatImporter) -> (artifact id: 'c3aa3b534b40b85cfb7757d8cda2f68e') in 0.0065141 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0349d60a1c30d784bab7c90ccaddf1fa): Total: 0.070 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_UpperInk.mat using Guid(a1cc98c4ffbc99547a7101b8ccc66450) (NativeFormatImporter) -> (artifact id: 'f71d661a871ef74cbf3ed9a627c8763d') in 0.0069907 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=e70eb21928881bb4a98af99df9f6a873): Total: 0.097 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=4b208724425c7e44ea1bce5d5b60d6a4): Total: 0.018 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_Crease.asset using Guid(667fa04a5b1a54c41afbebd8af9510dc) (NativeFormatImporter) -> (artifact id: '91f31da65120bdda823bddc265b911cc') in 0.0153689 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9c8c8b3fb2a3e5a41b987d3df0b5c363): Total: 0.134 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_R_Crease.asset using Guid(667fa04a5b1a54c41afbebd8af9510dc) (NativeFormatImporter) -> (artifact id: '91f31da65120bdda823bddc265b911cc') in 0.0035739 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=489c3f6ce4a2cda4ca4e88a7ea189a94): Total: 0.064 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_Crease.mat using Guid(c582ca35e62d3c74e87cbc53aab28504) (NativeFormatImporter) -> (artifact id: 'cb05b2f9c5fc761e552c16febf66c490') in 0.0058533 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ea31db60f02faaa438221d2d3b7d77a4): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=1f311fa3267208c429305de5a670120a): Total: 0.011 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_ApertureReturn.asset using Guid(b837b1fd70b0c0845aadecb79c699fa3) (NativeFormatImporter) -> (artifact id: '34d0379b15acd7083f0983a41ddf8072') in 0.0031891 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fe2c7dee2df8c3e498e174b0c0d173f4): Total: 0.104 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/CanonicalPositionMeshes/Ren_DesignerEye_L_ApertureReturn.asset using Guid(b837b1fd70b0c0845aadecb79c699fa3) (NativeFormatImporter) -> (artifact id: '34d0379b15acd7083f0983a41ddf8072') in 0.0038324 seconds
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ea2483764f35e6742862e27a91971951): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_ApertureReturn.mat using Guid(aaae53826cfed34409528f3cecc571dc) (NativeFormatImporter) -> (artifact id: '33a8b529b9613729d9c9066e7f3df60d') in 0.0105106 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4c1910229fddb1e46b54c0690d7fffa5): Total: 0.190 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/BlinkImportAudit.json using Guid(3428980d2a30fca4dbc24da70f2ca093) (TextScriptImporter) -> (artifact id: 'afc8a7f78333a5ea75d41b86162d592b') in 0.0043228 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f980c487e8911144eac4a4e353daaca9): Total: 0.299 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_SkinShutter.mat using Guid(2a539c932c412934296c8116852fea42) (NativeFormatImporter) -> (artifact id: 'f25620b78fd2fc2b380131d22fd5b0a8') in 0.0054084 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=77c2678f27fdcf84c937eaddba12ad77): Total: 0.123 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_LowerInk.mat using Guid(8743b8f329f6d194195ce3a190f343c7) (NativeFormatImporter) -> (artifact id: '938ed8babcbfaf4ecaa93b98146c4934') in 0.0044816 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b2568b0afe9a06c4888563436f5013e3): Total: 0.327 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=321 ms
+		Asset DB Callback time: managed=2 ms, native=3 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=919, non-scripts=2172
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 5
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.211ms
+	Scan: 74.703ms
+	OnSourceAssetsModified: 0.088ms
+	CategorizeAssetsWithTransientArtifact: 0.009ms
+	ProcessAssetsWithTransientArtifactChanges: 0.051ms
+	CategorizeAssets: 192.132ms
+	ImportOutOfDateAssets: 43.202ms (30.446ms without children)
+		ImportManagerImport: 5.984ms (0.936ms without children)
+			ImportInProcess: 5.019ms
+			UpdateCategorizedAssets: 0.029ms
+		ReloadNativeAssets: 0.216ms
+		UnloadImportedAssets: 0.396ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.178ms
+		InitializingProgressBar: 0.021ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
+		OnDemandSchedulerStart: 4.960ms
+	PostProcessAllAssets: 2.907ms
+	Hotreload: 2.521ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.296ms
+	UnloadStreamsBegin: 0.023ms
+	PersistCurrentRevisions: 0.638ms
+	UnloadStreamsEnd: 0.145ms
+	Untracked: 9.816ms
+
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_UpperInk.mat using Guid(c6bf6c4d1c906c048a8cf370085d8e34) (NativeFormatImporter) -> (artifact id: '60c893ccda73a704648e82799cb9d397') in 0.021028 seconds
+Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6009f1f5ec2459647958068e1354e3f2): Total: 0.157 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_0.mat using Guid(4ce31eef6c7453e4999274213ad43f2a) (NativeFormatImporter) -> (artifact id: '0ac44f1dc142133a83093b064b5cfa06') in 0.0042259 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=9f5ed47ba20d79a4193fc912f2916d7f): Total: 0.259 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_UpperSpan.mat using Guid(1a0b3f7c70c85bc429cb5df9e94b1b97) (NativeFormatImporter) -> (artifact id: '4d96a316236e369187091086d4bc4fd8') in 0.0040336 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fe7bab8159688e84c8648ba4e1292224): Total: 0.127 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_LowerSpan.mat using Guid(cf78733b75afe2c46a1710cf121da336) (NativeFormatImporter) -> (artifact id: '161501d87f54f1108e385823b51c6172') in 0.0401251 seconds
+Refreshing native plugins compatible for Editor in 1.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a8e5bb8d489e7a24ca74323a6edb0a13): Total: 0.157 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_VisibleFan_LowerFine.mat using Guid(f10bf4469d11d1443b4c9b64ec470051) (NativeFormatImporter) -> (artifact id: 'b89b0a8ab9fb85c4c5639a2ef21190a2') in 0.0107685 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c37a239b1fe728745b0beaf8f9e4d304): Total: 0.133 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_Crease.mat using Guid(0b5fb168f6d38f2448d5c9b8fe1c92b0) (NativeFormatImporter) -> (artifact id: '6e0a49e3d93f949034f92766bea1ca12') in 0.0033548 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=02631853893f2ce43815e9515bc70342): Total: 0.111 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_SkinShutter.mat using Guid(fb88250c781dd05428ab750e6ad46670) (NativeFormatImporter) -> (artifact id: '148fa950ec12936ce95b622eec0b97c5') in 0.0030771 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=59cb8ea6b69e71443b986e4ecac11887): Total: 0.110 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_LowerInk.mat using Guid(79dab85edbce4a54ba42cf9a7a609c9c) (NativeFormatImporter) -> (artifact id: 'be05ba1ec007cd9c7a064e06d8ef61d5') in 0.0031463 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=00d778e21f471cf45bf15bce2fb915dc): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_UpperInk.mat using Guid(a1cc98c4ffbc99547a7101b8ccc66450) (NativeFormatImporter) -> (artifact id: '71855dfd7fccac42b1fc7bbe31766b13') in 0.0036645 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4a1e48445a4ab0646851428bd852a2b6): Total: 0.120 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_R_Crease.mat using Guid(c582ca35e62d3c74e87cbc53aab28504) (NativeFormatImporter) -> (artifact id: '38846f2a06a0b75d39b547dee5d58c5c') in 0.0029709 seconds
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=df27b454cc8e3f6438556b1c0407edbe): Total: 0.108 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/RenDesignerBlinkReview/Ren_DesignerEye_L_ApertureReturn.mat using Guid(aaae53826cfed34409528f3cecc571dc) (NativeFormatImporter) -> (artifact id: 'e0ced5d675dbb3a80cdbc862a83ac5b8') in 0.0036324 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=8973b7c7085cc45478a97282342b463d): Total: 0.212 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerBlinkReview.unity using Guid(02054ba701c2ad14a87a026b964a2acf) (DefaultImporter) -> (artifact id: '1a7338eaaa580645bd0f8405ea9476cc') in 0.0029496 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1a714345d4f8162408c2647635e5f157): Total: 0.181 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+REN_MAIN_BLINK_PREPARED: Assets/CharacterArt/Generated/Preview/Scenes/RenDesignerBlinkReview.unity
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+LucidLoop.CharacterArt.Editor.RenDesignerBlinkMainBuilder:Prepare () (at Assets/CharacterArt/Editor/RenDesignerBlinkMainBuilder.cs:44)
+
+(Filename: Assets/CharacterArt/Editor/RenDesignerBlinkMainBuilder.cs Line: 44)
+
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  3.272 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 0 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.627 seconds
+Domain Reload Profiling: 8893ms
+	BeginReloadAssembly (2269ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (547ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (1004ms)
+	RebuildCommonClasses (153ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (84ms)
+	LoadAllAssembliesAndSetupDomain (723ms)
+		LoadAssemblies (439ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (631ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (448ms)
+			ResolveRequiredComponents (150ms)
+	FinalizeReload (5628ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1687ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (131ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (645ms)
+			ProcessInitializeOnLoadAttributes (644ms)
+			ProcessInitializeOnLoadMethodAttributes (247ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1895ms)
+Asset Pipeline Refresh (id=c122b339ab1e86241a4b7991eee79e17): Total: 9.810 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=5976 ms
+		Asset DB Callback time: managed=122 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=3687 ms, compile time=23 ms, other=0 ms
+		Project Asset Count: scripts=919, non-scripts=2173
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 2.893ms
+	ApplyChangesToAssetFolders: 0.682ms
+	Scan: 0.001ms
+	OnSourceAssetsModified: 0.003ms
+	CategorizeAssetsWithTransientArtifact: 0.006ms
+	ProcessAssetsWithTransientArtifactChanges: 6.140ms
+	CategorizeAssets: 107.200ms
+	ImportOutOfDateAssets: 5641.874ms (5609.661ms without children)
+		CompileScripts: 23.375ms
+		CollectScriptTypesHashes: 1.644ms
+		ReloadNativeAssets: 1.991ms
+		UnloadImportedAssets: 0.230ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.690ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 3.281ms
+	PostProcessAllAssets: 122.638ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.315ms
+	UnloadStreamsBegin: 0.452ms
+	PersistCurrentRevisions: 0.186ms
+	UnloadStreamsEnd: 0.003ms
+	GenerateScriptTypeHashes: 7.158ms
+	Untracked: 3927.755ms
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            6.121 ms
+	Integration:            1702.190 ms
+	Integration of assets:  0.038 ms
+	Thread Wait Time:       0.027 ms
+	Total Operation Time:   1708.376 ms
+REN_DESIGNER_BLINK_CAPTURE_OK: B:\lucid-loop\.local\ren-main-blink-v1\live-review
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+LucidLoop.CharacterArt.RenDesignerBlinkReview/<Capture>d__32:MoveNext () (at Assets/CharacterArt/Runtime/RenDesignerBlinkReview.cs:66)
+LucidLoop.CharacterArt.RenDesignerBlinkReview/<RunCapture>d__30:MoveNext () (at Assets/CharacterArt/Runtime/RenDesignerBlinkReview.cs:43)
+UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+
+(Filename: Assets/CharacterArt/Runtime/RenDesignerBlinkReview.cs Line: 66)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            4.622 ms
+	Integration:            708.189 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.897 ms
+	Total Operation Time:   713.713 ms
+Unloading 229 unused Assets / (52.4 KB). Loaded Objects now: 6362.
+Memory consumption went from 2.59 GB to 2.59 GB.
+Total: 121.834800 ms (FindLiveObjects: 3.714000 ms CreateObjectMapping: 0.612400 ms MarkObjects: 115.932600 ms  DeleteObjects: 1.573300 ms)
+
