@@ -23,7 +23,7 @@ namespace LucidLoop.Gyms.Mvp
         }
         void MakePortrait()
         {
-            portrait=GymUI.Rect(hud,"Illustrated portrait",new Vector2(1,1),Vector2.one,new Vector2(-465,-920),new Vector2(-35,-175));
+            portrait=GymUI.Rect(hud,"Illustrated portrait",Vector2.zero,Vector2.zero,new Vector2(25,135),new Vector2(230,490));
             portraitImage=portrait.gameObject.AddComponent<RawImage>();portraitImage.texture=Resources.Load<Texture2D>("MvpArt/Portraits");portraitImage.raycastTarget=false;
             portrait.gameObject.SetActive(false);
             // Keep the rewind overlay above art.

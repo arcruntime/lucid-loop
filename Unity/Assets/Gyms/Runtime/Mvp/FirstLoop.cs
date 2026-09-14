@@ -63,22 +63,29 @@ namespace LucidLoop.Gyms.Mvp
             { AutoAdvance = true; StartCoroutine(Smoke()); }
             else StartCoroutine(Arrival());
         }
+        RectTransform memoryPanel;
         void MakeUI()
         {
             hud = GymUI.Canvas("Before the Drop checkpoint");
-            var header = GymUI.Box(hud,"Header",25,20,790,115); GymUI.Panel(header,GymUI.Ink);
+            var header = GymUI.Box(hud,"Header",25,20,590,115); GymUI.Panel(header,GymUI.Ink);
             GymUI.Label(header,"BEFORE THE DROP",20,12,740,36,30);
             status = GymUI.Label(header,"",20,54,740,40,20,GymUI.Cyan);
             var journal = GymUI.Rect(hud,"Memory",new Vector2(1,1),Vector2.one,new Vector2(-560,-170),new Vector2(-25,-20));
             GymUI.Panel(journal,GymUI.Ink); GymUI.Label(journal,"WHAT YOU REMEMBER",18,10,490,30,19,GymUI.Cyan);
             memories = GymUI.Label(journal,"",18,47,490,88,21);
+            memoryPanel=journal;memoryPanel.gameObject.SetActive(false);
+            GymUI.Button(GymUI.Box(hud,"Memory toggle",625,20,190,50),"Memories",()=>{
+                bool show=!memoryPanel.gameObject.activeSelf;
+                if(show)SetObserverVisible(false);
+                memoryPanel.gameObject.SetActive(show);
+            });
             var foot = GymUI.Rect(hud,"Objective",Vector2.zero,new Vector2(1,0),new Vector2(25,20),new Vector2(-25,112));
             GymUI.Panel(foot,GymUI.Ink); objective = GymUI.Label(foot,"",18,12,1750,68,24);
             choices = GymUI.Box(hud,"Conversation choices",25,155,505,420); GymUI.Panel(choices,GymUI.Ink); choices.gameObject.SetActive(false);
             dialogue = GymUI.Rect(hud,"Story",new Vector2(.15f,0),new Vector2(.85f,0),new Vector2(0,135),new Vector2(0,365));
             GymUI.Panel(dialogue,GymUI.Ink); speaker = GymUI.Label(dialogue,"",24,15,900,36,25,GymUI.Cyan);
             line = GymUI.Label(dialogue,"",24,60,1250,92,28);
-            next = GymUI.Button(GymUI.Box(dialogue,"Continue",1040,163,230,48),"Continue →",()=>advance=true);
+            next = GymUI.Button(GymUI.Box(dialogue,"Continue",1040,135,230,48),"Continue →",()=>advance=true);
             dialogue.gameObject.SetActive(false);
             var restart = GymUI.Rect(hud,"Restart",new Vector2(1,0),new Vector2(1,0),new Vector2(-240,122),new Vector2(-25,172));
             GymUI.Button(restart,"Restart demo",Restart);
@@ -90,6 +97,7 @@ namespace LucidLoop.Gyms.Mvp
         void Update()
         {
             UpdateVoice();
+            PositionObserver();
             if (!Busy && !modal && !State.Resolved)
             {
                 if (Input.GetMouseButtonDown(0) && !(EventSystem.current && EventSystem.current.IsPointerOverGameObject()))
@@ -185,10 +193,18 @@ namespace LucidLoop.Gyms.Mvp
         IEnumerator Reply(string name,string text) { Busy=true; yield return Say(name,text); Busy=false; Refresh(); }
         IEnumerator Say(string name,string text,bool finishBeforeRewind=false)
         {
+            if(memoryPanel)memoryPanel.gameObject.SetActive(false);
             ShowPortrait(name.ToLowerInvariant()=="you"?"player":name.ToLowerInvariant());
             SetActing(name,true);PlayStoryLine(text);
             ObserverScene("Authored story beat",name+": "+text);
             speaker.text=name; line.text=text; dialogue.gameObject.SetActive(true); advance=false;
+            if(AutoAdvance && text.StartsWith("Wait. That's Theo."))
+            {
+                yield return new WaitForSecondsRealtime(.8f);
+                SetObserverVisible(false);yield return null;Capture("12-recognition-clear");
+                SetObserverVisible(true);yield return null;Capture("13-recognition-observer");
+                SetObserverVisible(false);
+            }
             if(finishBeforeRewind)
             {
                 // This story beat completes even if Continue was pressed during the line.
@@ -308,6 +324,23 @@ namespace LucidLoop.Gyms.Mvp
             if(Time.realtimeSinceStartup-renStarted<renDuration+.5f)throw new Exception("Ren landing pause missing");
             Debug.Log("BTD_REN_LANDING_OK: Continue cannot cut line; complete speech plus landing pause");
             Debug.Log("BTD_AUDIO_SMOKE_OK: scratch import, interrupt, reset carry and manual restart cleanup");
+            int planterCount=0;
+            foreach(var obstacle in FindObjectsByType<NavMeshObstacle>(FindObjectsSortMode.None))
+            {
+                if(obstacle.name!="Painted planter exclusion")continue;
+                planterCount++;
+                if(NavMesh.SamplePosition(obstacle.transform.position,out var plantHit,.15f,NavMesh.AllAreas))
+                    throw new Exception("Plant footprint is still walkable: "+obstacle.transform.position);
+            }
+            if(planterCount!=6)throw new Exception("Missing planter exclusions");
+            Debug.Log("BTD_PLANTERS_OK: six plant footprints excluded from navigation");
+            var vipRoute=new NavMeshPath();
+            if(!NavMesh.CalculatePath(Theo.transform.position,ExpandedClub.Point(.60f,.64f),NavMesh.AllAreas,vipRoute) || vipRoute.status!=NavMeshPathStatus.PathComplete)
+                throw new Exception("VIP exit route is blocked");
+            bool usesStairs=false;
+            foreach(var corner in vipRoute.corners){var uv=ExpandedClub.UV(corner);if(uv.x>.745f && uv.y>.675f)usesStairs=true;}
+            if(!usesStairs)throw new Exception("Theo bypasses the VIP stairs");
+            Debug.Log("BTD_VIP_ROUTE_OK: complete route through front stairs");
             int theoLegs=0,theoTails=0;
             foreach(Transform part in Theo.Visual)
             {

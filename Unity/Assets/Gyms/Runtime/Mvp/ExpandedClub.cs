@@ -68,7 +68,11 @@ namespace LucidLoop.Gyms.Mvp
             var a=Point(.685f,.48f);var b=Point(.742f,.675f);
             var wall=GameObject.CreatePrimitive(PrimitiveType.Cube);wall.name="VIP partition — use the front stairs";wall.transform.SetParent(transform,false);wall.transform.position=(a+b)/2+Vector3.up*.6f;wall.transform.rotation=Quaternion.LookRotation(b-a);wall.transform.localScale=new Vector3(.32f,1.2f,Vector3.Distance(a,b));wall.GetComponent<Renderer>().sharedMaterial=depth;
             var screen=wall.AddComponent<NavMeshObstacle>();screen.shape=NavMeshObstacleShape.Box;screen.size=Vector3.one;screen.carving=true;
-            var planter=new GameObject("Entrance planter obstacle");planter.transform.SetParent(transform,false);planter.transform.position=Point(.588f,.748f);var plant=planter.AddComponent<NavMeshObstacle>();plant.shape=NavMeshObstacleShape.Capsule;plant.radius=.8f;plant.height=2;plant.carving=true;
+            foreach(var uv in new[]{new Vector2(.588f,.748f),new Vector2(.60f,.73f),new Vector2(.35f,.69f),new Vector2(.39f,.72f),new Vector2(.675f,.43f),new Vector2(.70f,.56f)})
+            {
+                var planter=new GameObject("Painted planter exclusion");planter.transform.SetParent(transform,false);planter.transform.position=Point(uv.x,uv.y);
+                var plant=planter.AddComponent<NavMeshObstacle>();plant.shape=NavMeshObstacleShape.Capsule;plant.radius=.85f;plant.height=2;plant.carving=true;
+            }
         }
         static void Place(NavMeshAgent agent,Vector3 point)
         {
@@ -93,7 +97,7 @@ namespace LucidLoop.Gyms.Mvp
             Polygon(.39f,.795f,.62f,.795f,.68f,.66f,.65f,.38f,.39f,.34f,.25f,.62f); // dancefloor
             Polygon(.13f,.58f,.28f,.625f,.39f,.36f,.32f,.32f); // bar aisle
             Polygon(.60f,.37f,.72f,.38f,.79f,.455f,.685f,.68f,.635f,.67f); // right aisle
-            Polygon(.60f,.68f,.71f,.75f,.805f,.69f,.79f,.615f,.675f,.625f); // VIP approach
+            Polygon(.60f,.68f,.71f,.75f,.79f,.71f,.758f,.69f,.735f,.65f,.675f,.625f); // VIP approach connects only to the foot of the stairs
             Polygon(.758f,.708f,.804f,.698f,.817f,.612f,.777f,.603f); // stairs into VIP
             Polygon(.777f,.626f,.875f,.615f,.881f,.544f,.804f,.527f,.768f,.565f); // private seating gap
             Polygon(.36f,.40f,.42f,.36f,.427f,.26f,.39f,.267f); // stage left stairs

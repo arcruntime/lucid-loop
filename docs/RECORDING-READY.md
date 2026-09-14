@@ -1,6 +1,6 @@
 # Recording handoff — September 14
 
-Use the local `codex/btd-audio-polish` branch, Unity project `Unity`, scene `Assets/Gyms/Scenes/BeforeTheDrop.unity`. The polish branch is not yet published. The older published `codex/btd-checkpoint-one` remains the fallback. Do not record from the nested `Unity/My project` folder.
+Use the local `codex/btd-audio-polish` branch, Unity project `Unity`, scene `Assets/Gyms/Scenes/BeforeTheDrop.unity`. The tested polish is published on `codex/btd-checkpoint-one`; the original baseline remains at commit `95aae5d`. Local development uses `codex/btd-audio-polish`. Do not record from the nested `Unity/My project` folder.
 
 ## Accepted / changed
 
@@ -30,3 +30,7 @@ The original PNGs are saved without modification under [media/branding](media/br
 Known limitations: Maya's VIP recognition coverage remains a reported issue pending coordination; use the tested opening/capture route. Production avatars and a new environment are deferred. Theo's visual fix has automated geometry coverage but needs the brief human appearance check above. The final uploaded video, team approvals and submission form are not completed by this handoff.
 
 Validation for this recording candidate: Unity compile and full two-loop smoke passed, including Theo’s two articulated legs/short coat geometry, Luca’s urgent run and speed restoration, Ren playback protection, scratch/reset handling, and voice UI fixture checks. The final gameplay capture was visually inspected. This does not replace checking the actual captured microphone/game audio or the uploaded video.
+
+Visibility/pathing pass: memories collapse, portraits stay lower-left, and the observer shifts left for authored story beats. Theo/AP remain visible at recognition. AP wears burgundy. Six planter exclusions and a narrowed VIP connection keep characters on the intended aisles/stair approach. Before recording, walk the entrance/plant detour and watch Theo descend the VIP route once.
+
+Final pass validation: both loops, all six planter footprint exclusions, complete VIP path through the stairs, Luca running and restoration, Theo geometry, Ren/scratch timing and voice UI fixture checks passed. Recognition screenshots with observer on/off were checked for scene visibility.

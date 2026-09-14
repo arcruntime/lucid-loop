@@ -27,11 +27,17 @@ namespace LucidLoop.Gyms.Mvp
             observerVisible=visible;
             if(observer)observer.gameObject.SetActive(visible);
             if(observerToggle)observerToggle.text=visible?"Hide AI observer":"Show AI observer";
-            if(portrait){
-                // Preserve the portrait proportions when making room for the observer.
-                portrait.offsetMin=visible?new Vector2(-342,-900):new Vector2(-465,-920);
-                portrait.offsetMax=visible?new Vector2(-189,-635):new Vector2(-35,-175);
-            }
+            if(visible && memoryPanel)memoryPanel.gameObject.SetActive(false);
+            PositionObserver();
+        }
+        void PositionObserver()
+        {
+            if(!observer)return;
+            // During authored world events, leave Theo and the VIP area visible.
+            bool worldBeat=dialogue && dialogue.gameObject.activeSelf;
+            observer.anchorMin=observer.anchorMax=worldBeat?new Vector2(0,1):Vector2.one;
+            observer.offsetMin=worldBeat?new Vector2(25,-590):new Vector2(-560,-620);
+            observer.offsetMax=worldBeat?new Vector2(560,-155):new Vector2(-25,-185);
         }
         static string ObserverExcerpt(string text,int limit=210)
         {
