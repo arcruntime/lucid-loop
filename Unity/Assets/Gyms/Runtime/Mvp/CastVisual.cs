@@ -112,14 +112,15 @@ namespace LucidLoop.Gyms.Mvp
         {
             if(!agent)agent=GetComponentInParent<NavMeshAgent>();
             float speed=agent&&agent.enabled&&agent.isOnNavMesh?agent.velocity.magnitude:0;
-            stride+=Time.deltaTime*(speed> .05f?speed*3.4f:2);
-            float swing=speed>.05f?Mathf.Sin(stride)*27:0;
+            bool running=speed>5f;
+            stride+=Time.deltaTime*(speed> .05f?Mathf.Min(speed*3.4f,18f):2);
+            float swing=speed>.05f?Mathf.Sin(stride)*(running?40:27):0;
             if(leftLeg)leftLeg.localRotation=Quaternion.Euler(swing,0,0);
             if(rightLeg)rightLeg.localRotation=Quaternion.Euler(-swing,0,0);
             if(leftArm)leftArm.localRotation=Quaternion.Euler(-swing*.7f+(Dancing?Mathf.Sin(Time.time*2)*30:0),0,Speaking?-22:8);
             if(rightArm)rightArm.localRotation=Quaternion.Euler(swing*.7f+(Speaking?-30+Mathf.Sin(Time.time*3)*8:0),0,-8);
             if(hair)hair.localRotation=Quaternion.Euler(speed*2+Mathf.Sin(stride)*speed*2,0,Mathf.Sin(stride*.5f)*3);
-            transform.localPosition=rest+Vector3.up*(speed>.05f?Mathf.Abs(Mathf.Sin(stride))*.035f:Mathf.Sin(Time.time*1.8f)*.009f);
+            transform.localPosition=rest+Vector3.up*(speed>.05f?Mathf.Abs(Mathf.Sin(stride))*(running?.065f:.035f):Mathf.Sin(Time.time*1.8f)*.009f);
         }
     }
 }

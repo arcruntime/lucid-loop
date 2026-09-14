@@ -32,3 +32,13 @@ Ren’s final authored line now completes despite Continue presses, holds 0.55 s
 Aggressive uses a 61.44-second extract (estimated 125 BPM); Intimate uses a 64-second extract (estimated 120 BPM). Existing backspin/crossfade handles mood changes; these are not claimed to be beatmatched. Original source files are untouched.
 
 Validation after integration: Unity compilation and full two-loop smoke passed (`/tmp/btd-tracks-smoke.log`). The new timing check presses Continue during Ren’s speech, verifies playback continues without rewind FX, and verifies the complete clip plus at least 0.5 seconds elapses. Music import, scratch/reset cleanup and voice UI fixture checks also passed. Both tracks have RMS approximately 0.10 and no clipping. Musical seam/transition quality still benefits from an in-game listen.
+
+## Follow-up: natural punctuation and urgent intervention
+
+Authored dialogue now uses commas/full stops instead of em dashes, including “Theo, seriously?” Arrival and recording speech were regenerated with the exact-transcript guard. Live dialogue style also requests no em dashes/double hyphens. Luca uses speed 8 (normal 3.6) and acceleration 32 only for the violent intervention; the calm prevention route remains a walk. Running has a larger stride/bob with capped cadence. Route completion restores his normal movement settings.
+
+Ren’s timing test passes, but the user still hears an abrupt delivery; this is not considered perceptually fixed. The cached clip contains about 0.39 seconds after its last audible sample, suggesting another performance take may help more than extending the runtime pause. Deferred as lower priority per user feedback.
+
+Avatar fallback remains the approved simple cast with illustrated close-ups; no clothing overhaul or map rollback in this pass.
+
+Validation: Unity full two-loop smoke, urgent Luca arrival/speed restoration, Ren playback protection, scratch/reset and voice UI fixture checks passed. Backend: 33 passed, one opt-in test skipped. The first arrival-generation attempt failed validation; the retry passed.

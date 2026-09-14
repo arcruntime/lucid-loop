@@ -159,7 +159,7 @@ namespace LucidLoop.Gyms.Mvp
         IEnumerator Arrival()
         {
             Busy=true;
-            yield return Say("MAYA","Finally. Come on—let's get closer to the dancefloor.");
+            yield return Say("MAYA","Finally. Come on, let's get closer to the dancefloor.");
             Busy=false; Refresh();
         }
         public void OpenConversation(CharacterActor actor)
@@ -207,13 +207,19 @@ namespace LucidLoop.Gyms.Mvp
             approaching=null;
             StartCoroutine(Encounter());
         }
-        IEnumerator Go(NavMeshAgent agent,Vector3 target)
+        IEnumerator Go(NavMeshAgent agent,Vector3 target,bool urgent=false)
         {
-            if(!Move(agent,target)) throw new InvalidOperationException(LastMoveError);
-            float until=Time.time+12;
-            do { yield return null; } while(Time.time<until && (agent.pathPending || agent.remainingDistance>.3f));
-            if(agent.pathPending || agent.remainingDistance>.5f) throw new InvalidOperationException("Story route did not arrive: "+agent.name);
-            Stop(agent);
+            float normalSpeed=agent.speed,normalAcceleration=agent.acceleration;
+            try
+            {
+                if(urgent){agent.speed=8f;agent.acceleration=32f;}
+                if(!Move(agent,target)) throw new InvalidOperationException(LastMoveError);
+                float until=Time.time+12;
+                do { yield return null; } while(Time.time<until && (agent.pathPending || agent.remainingDistance>.3f));
+                if(agent.pathPending || agent.remainingDistance>.5f) throw new InvalidOperationException("Story route did not arrive: "+agent.name);
+                Stop(agent);
+            }
+            finally {agent.speed=normalSpeed;agent.acceleration=normalAcceleration;}
         }
         IEnumerator Encounter()
         {
@@ -231,11 +237,11 @@ namespace LucidLoop.Gyms.Mvp
                 yield break;
             }
             phone.SetActive(!State.PrivateApproach);
-            yield return Say("MAYA",State.PrivateApproach?"Theo. We need to talk about what you're doing.":"No way. I'm recording this. Theo—seriously?");
+            yield return Say("MAYA",State.PrivateApproach?"Theo. We need to talk about what you're doing.":"No way. I'm recording this. Theo, seriously?");
             yield return Go(agents[Theo],ExpandedClub.Point(.60f,.64f));
             yield return Say("THEO",State.PrivateApproach?"Keep your voice down. This is none of your business.":"Put the phone away. Give it to me.");
             yield return Say("MAYA",State.PrivateApproach?"Don't grab me.":"Don't touch my phone.");
-            yield return Go(agents[Luca],ExpandedClub.Point(.565f,.635f));
+            yield return Go(agents[Luca],ExpandedClub.Point(.565f,.635f),true);
             yield return Say("LUCA","Let go. You're done here.");
             yield return Go(agents[Theo],ExpandedClub.Point(.58f,.635f));
             yield return Say("THEO","Get off me!");
@@ -245,7 +251,7 @@ namespace LucidLoop.Gyms.Mvp
             yield return Say("REN","Not on my dancefloor.",true);
             yield return Rewind();
             Busy=false; Refresh();
-            yield return Reply("YOU","Again. The same entrance. Before Maya sees him—let's go left, toward the bar.");
+            yield return Reply("YOU","Again. The same entrance. Before Maya sees him. Let's go left, toward the bar.");
         }
         IEnumerator Rewind()
         {
@@ -302,6 +308,14 @@ namespace LucidLoop.Gyms.Mvp
             if(Time.realtimeSinceStartup-renStarted<renDuration+.5f)throw new Exception("Ren landing pause missing");
             Debug.Log("BTD_REN_LANDING_OK: Continue cannot cut line; complete speech plus landing pause");
             Debug.Log("BTD_AUDIO_SMOKE_OK: scratch import, interrupt, reset carry and manual restart cleanup");
+            var lucaAgent=agents[Luca];float walkingSpeed=lucaAgent.speed;
+            var sprint=StartCoroutine(Go(lucaAgent,ExpandedClub.Point(.565f,.635f),true));
+            yield return null;
+            if(lucaAgent.speed<=walkingSpeed*2)throw new Exception("Luca intervention is not a run");
+            yield return sprint;
+            if(Mathf.Abs(lucaAgent.speed-walkingSpeed)>.01f)throw new Exception("Luca walk speed not restored");
+            lucaAgent.Warp(starts[Luca.transform]);
+            Debug.Log("BTD_LUCA_RUN_OK: urgent route arrived and normal speed restored");
             foreach(var actor in new[]{Maya,Theo,Luca,Ren}){
                 var route=new NavMeshPath();
                 if(!NavMesh.SamplePosition(actor.transform.position,out var destination,1.7f,NavMesh.AllAreas)||!Player.CalculatePath(destination.position,route)||route.status!=NavMeshPathStatus.PathComplete)

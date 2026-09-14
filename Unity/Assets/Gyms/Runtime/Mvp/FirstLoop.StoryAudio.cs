@@ -10,13 +10,13 @@ namespace LucidLoop.Gyms.Mvp
         AudioSource storySpeaker;
         readonly Dictionary<string,AudioClip> storyAudio=new Dictionary<string,AudioClip>();
         readonly Dictionary<string,string> storyIds=new Dictionary<string,string>{
-            {"Finally. Come on—let's get closer to the dancefloor.","arrival"},
+            {"Finally. Come on, let's get closer to the dancefloor.","arrival"},
             {"Wait. That's Theo. He's famous… AND married… and that is not his wife.","recognition"},
             {"Theo? Can we talk quietly for a second? My phone's away.","private"},
             {"Let's take a little space. Nobody needs an audience.","space"},
             {"...Fine. Just stop staring.","fine"},
             {"Theo. We need to talk about what you're doing.","confront"},
-            {"No way. I'm recording this. Theo—seriously?","recording"},
+            {"No way. I'm recording this. Theo, seriously?","recording"},
             {"Keep your voice down. This is none of your business.","quiet"},
             {"Put the phone away. Give it to me.","phone"},
             {"Don't grab me.","grab"},
