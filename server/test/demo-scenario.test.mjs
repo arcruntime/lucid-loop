@@ -85,6 +85,33 @@ test('active prevention needs evidence, commitments, completed mediation, separa
   f.tick(1); assert.equal(f.game.snapshot().victory, true);
 });
 
+test('Maya refuses to wait after choosing a safe departure, but can still follow and wait in a new loop', () => {
+  const f = fixture();
+  f.action('ren', 'request_music', { mood: 'Intimate' });
+  f.action('luca', 'ask_about_exposure');
+  f.action('maya', 'agree_private_approach');
+  f.recognize();
+  f.action('theo', 'agree_distance');
+  f.action('maya', 'stop_recording');
+  f.invoke('observeStage', { stage: { allInMediation: true } });
+  assert.equal(f.action('luca', 'mediate').accepted, true);
+  const departing = f.game.snapshot();
+  const refusal = f.action('maya', 'wait');
+  assert.equal(refusal.accepted, false);
+  assert.equal(refusal.reason, 'safe_departure_in_progress');
+  assert.deepEqual(f.game.snapshot(), departing, 'No hidden wait action or revision commits behind the departure projection');
+  assert.deepEqual(f.game.context('maya').action, { type: 'separate', targetId: 'player' });
+  assert.equal(f.action('maya', 'follow', { targetId: 'player' }).accepted, true);
+  assert.deepEqual(f.game.snapshot().actors.maya.action, { type: 'separate', targetId: 'player' });
+  f.invoke('observeStage', { stage: { separated: true } });
+  assert.equal(f.action('maya', 'wait').reason, 'safe_departure_in_progress');
+  f.tick(180);
+  assert.equal(f.game.snapshot().victory, true, 'Refusal and compatible follow preserve the authored safe outcome');
+  f.invoke('reset', {});
+  assert.equal(f.action('maya', 'wait').accepted, true);
+  assert.deepEqual(f.game.snapshot().actors.maya.action, { type: 'wait' });
+});
+
 test('exposure proposal cannot select arbitrary facts, bypass mood, replay, or impersonate Luca', () => {
   const f = fixture();
   assert.equal(f.action('luca', 'ask_about_exposure').reason, 'calmer_music_needed');

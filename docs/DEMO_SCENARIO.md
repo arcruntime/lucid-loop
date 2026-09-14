@@ -44,6 +44,8 @@ One set lasts **180 seconds of active simulation**, configurable from 30 to 900 
 
 Victory requires all of: completed mediation after recognition, stopped recording, Theo's distance agreement, physically confirmed separation, no catastrophe, and reaching the set's end. A safe arrangement established early remains binding for this short authored set; no random second attack is introduced. A later Aggressive track does not revoke an already completed agreement.
 
+After mediation, Maya follows the player as part of her agreed departure. A new request to wait is refused with an explanation to leave the conversation and move away from Theo; it cannot report success while her movement remains unchanged. Asking her to follow remains consistent with that departure. Restarting the night clears this commitment and makes waiting available again.
+
 If the set ends with Maya still waiting, or the encounter remains unmediated, show **“The set ended, but the danger is unresolved.”** Offer another attempt. This is neither victory nor an invented offscreen murder. A catastrophe likewise offers the rewind. A player-requested restart resets loop-local facts, plans, commitments, staging, timer, and conversations while retaining player discoveries. Choose **Pause → Restart night** to abandon an unfinished attempt. The new attempt stays paused until **Resume**; the terminal **Rewind** control remains available after an ending. The actual club need not be empty or evacuated to count as separated: Maya must be safely away from Theo and he must no longer approach her.
 
 ## State and implementation contract

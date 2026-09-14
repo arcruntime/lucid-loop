@@ -4,6 +4,8 @@ Recorded 2026-09-14. These results distinguish executable checks from device and
 
 Japanese voice support is paused and excluded from the shipping scope. Japanese research entries below are historical evidence, not release requirements. Current device status is maintained in [iPhone installation](IOS_DEVICE_INSTALL.md) and [TestFlight builds](IOS_TESTFLIGHT.md).
 
+After mediation, Maya now refuses an incompatible wait request instead of falsely accepting it while continuing her safe departure. Scenario, world, and dialogue-delegation regressions pass (43 tests): refusal leaves state unchanged, compatible follow remains accepted, victory still completes, and rewind restores waiting. The dialogue bridge explains how to continue away from Theo.
+
 | Check | Evidence | Result |
 | --- | --- | --- |
 | Player-requested paused restart | 57 related Node tests passed; [actual scene test](validation/paused-restart/playmode.xml), [phone-preview menu](validation/paused-restart/pause-menu.png) | Pause → Restart night resets an unfinished attempt through the loop/revision fence, retains discoveries and remains paused until Resume. WebSocket regression checks restored positions, cleared commitments/knowledge, stale requests and frozen clock; scene check covers button, duplicate suppression and touch targets. Physical iPhone acceptance remains pending. |

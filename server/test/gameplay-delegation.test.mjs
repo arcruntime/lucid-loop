@@ -223,6 +223,21 @@ test('demo disclosure speaks only the committed authored fact and route acknowle
   assert.match(mediation.sent.at(-1).content, /Maya chose to leave with the player/);
   assert.ok(Buffer.byteLength(mediation.sent.at(-1).content) <= 400);
   assert.equal(registry.publicState(credentials).snapshot.victory, false);
+  const departing = registry.publicState(credentials).snapshot;
+  const waitAfterMediation = await act('maya', 'wait');
+  assert.equal(waitAfterMediation.result.committed, false);
+  assert.equal(waitAfterMediation.result.outcome.reason, 'safe_departure_in_progress');
+  assert.equal(waitAfterMediation.sent.at(-1).type, 'session.commentary.append');
+  assert.match(waitAfterMediation.sent.at(-1).content, /Maya.*(chosen|chose).*leave/i);
+  assert.match(waitAfterMediation.sent.at(-1).content, /away from Theo/);
+  assert.doesNotMatch(waitAfterMediation.sent.at(-1).content, /now waiting|agreed to wait/i);
+  assert.ok(Buffer.byteLength(waitAfterMediation.sent.at(-1).content) <= 400);
+  assert.deepEqual(registry.publicState(credentials).snapshot, departing);
+  const following = await act('maya', 'follow', { targetId: 'player' });
+  assert.equal(following.result.committed, true);
+  assert.equal(following.sent.at(-1).type, 'session.commentary.append');
+  assert.match(following.sent.at(-1).content, /following/i);
+  assert.deepEqual(registry.publicState(credentials).snapshot.actors.maya.action, { type: 'separate', targetId: 'player' });
 });
 
 function appendUser(env, text, eventId, startMs = 600, endMs = 900) {

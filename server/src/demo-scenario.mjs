@@ -129,6 +129,9 @@ export function createDemoScenario(definition = createDemoDefinition(), { durati
       if (command.actorId !== principal?.npcId) return reject('unauthorized_actor');
       if (typeof command.requestId !== 'string' || !/^[a-zA-Z0-9_.:-]{1,128}$/.test(command.requestId)) return reject('invalid_request_id');
       if (requests.has(command.requestId)) return reject('duplicate_request');
+      // Mediation commits Maya to leaving with the player for this set. A wait
+      // must not be reported as accepted while the departure projection overrides it.
+      if (local.mediated && command.actorId === 'maya' && command.type === 'wait') return reject('safe_departure_in_progress');
       if (['wait', 'follow', 'request_music'].includes(command.type)) {
         const outcome = runBase('submitAction', command, principal);
         if (outcome.accepted) requests.add(command.requestId);

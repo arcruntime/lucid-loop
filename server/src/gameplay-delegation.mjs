@@ -165,6 +165,7 @@ export function createGameplayDelegation({ registry, credentials, leaseId, model
           const feedback = {
             calmer_music_needed: 'Luca is not ready to discuss this over the aggressive music. Ask Ren for a calmer, Intimate track, then ask Luca again.',
             mediation_group_not_ready: 'Luca cannot mediate until he, Maya and Theo are together. Leave the conversation so they can move into place, then ask Luca again.',
+            safe_departure_in_progress: 'Maya has chosen to leave with the player. Leave the conversation and move away from Theo; Maya will follow until the set ends.',
           }[outcome?.reason];
           if (feedback) {
             type = 'session.commentary.append';
