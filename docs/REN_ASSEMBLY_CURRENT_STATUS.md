@@ -46,7 +46,10 @@ continuity, not shading, accessory contact or artistic acceptance.
 - Sustained 30 fps on the minimum-spec iPhone 15 Plus in Unity 6.3 LTS,
   landscape 16:9, including the nightclub's dynamic lighting and intended crowd.
   Phone profiling and thermal testing have not been completed.
-- LOD1 and transition review remain separate from this LOD0 delivery.
+- Corrected LOD1 is saved under `art/generated/characters/ren/lod1-final-v1`:
+  13,418 Blender triangles / 13,404 after FBX reimport. Source hair/neck boundary
+  positions, facial shape names and rig hierarchy are retained. It remains over
+  the 10–12k budget; Unity import, deformation and transition review are pending.
 - A spoken live-conversation acceptance test remains outstanding. Existing
   relay-session and analyzer checks do not establish a microphone-to-character
   conversation test.
