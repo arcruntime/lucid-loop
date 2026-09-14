@@ -47,6 +47,12 @@ namespace LucidLoop.Gyms.Editor
             "LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.OpeningMovementCatastropheAndRetainedReset"
         });
 
+        [MenuItem("Lucid Loop/Validate DSP output PlayMode")]
+        public static void RunDspOutputPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "dsp-output-playmode", "DSP_OUTPUT_TESTS", null, new[]
+        {
+            "LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests.DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent"
+        });
+
         [MenuItem("Lucid Loop/Validate Ren real-provider encounter (paid)")]
         public static void RunRenProviderPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "ren-provider-playmode", "REN_PROVIDER_TESTS", null, new[]
         {

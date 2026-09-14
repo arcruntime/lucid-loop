@@ -9,7 +9,7 @@ using UnityEngine;
 namespace LucidLoop.Gyms
 {
     // Presentation-independent voice for a single foreground NPC. All Unity API calls
-    // and public events run on the main thread except AudioClip's private PCM reader.
+    // and public events run on the main thread; EncounterDspOutput consumes audio on the DSP thread.
     public sealed class EncounterVoiceController : MonoBehaviour
     {
         const int Rate = 24000, Packet = 480, PlaybackCapacity = Rate * 3;
@@ -35,12 +35,6 @@ namespace LucidLoop.Gyms
 
         sealed class Retired
         { public LiveConnection Connection; public float Deadline; public bool Final; }
-        sealed class Playback
-        {
-            public readonly AudioRingBuffer Ring = new AudioRingBuffer(PlaybackCapacity);
-            public long Consumed;
-            public volatile bool Starved = true, Active = true;
-        }
         readonly List<Retired> retired = new List<Retired>();
         LiveConnection connection;
         EncounterCoordinator subscribed;
@@ -49,7 +43,8 @@ namespace LucidLoop.Gyms
         int micCursor, generation, micAttempt, requestSequence, pendingCommands;
         float deadline, audioDebt;
         Task audioUpload;
-        Playback playback;
+        DspPcmPlayback playback;
+        EncounterDspOutput dspOutput;
         bool streamOpen;
         int audioDeviceChanged;
         string closeNotice;
@@ -83,11 +78,19 @@ namespace LucidLoop.Gyms
             CharacterId = request.CharacterId;
             FinalUsageConfirmed = false;
             if (!Output) { SetStatus("audio_output_missing"); return; }
-            var state = new Playback();
+            int outputRate = AudioSettings.outputSampleRate;
+            if (outputRate < Rate || outputRate > 192000) { SetStatus("audio_output_format_unavailable"); return; }
+            var state = new DspPcmPlayback(PlaybackCapacity, outputRate);
             playback = state;
-            // Callback captures this generation's buffer. Old callbacks cannot drain a new speaker's audio.
-            outputClip = AudioClip.Create("Encounter Live output", Rate, 1, Rate, true, data => ReadAudio(state, data));
-            Output.Stop(); Output.clip = outputClip; Output.loop = true; Output.Play();
+            Output.Stop();
+            dspOutput = Output.GetComponent<EncounterDspOutput>();
+            if (!dspOutput) dspOutput = Output.gameObject.AddComponent<EncounterDspOutput>();
+            dspOutput.enabled = true;
+            dspOutput.Bind(state);
+            // A non-streaming silent carrier keeps the DSP filter active. Its clip
+            // read/prefetch position never advances the live speech clock.
+            outputClip = AudioClip.Create("Encounter DSP carrier", outputRate, 1, outputRate, false);
+            Output.clip = outputClip; Output.loop = true; Output.Play();
             streamOpen = true; StreamStarted?.Invoke(generation);
             connection = new LiveConnection();
             IsConnecting = true; IsReady = IsClosing = false;
@@ -168,12 +171,12 @@ namespace LucidLoop.Gyms
             // Switch once per session. Explicitly discard the old renderer's queued
             // speech and reset the analyzer's clock before accepting native output.
             var oldPlayback = playback;
-            if (oldPlayback != null) oldPlayback.Active = false;
+            if (dspOutput) dspOutput.Unbind(oldPlayback);
             if (Output) { Output.Stop(); if (Output.clip == outputClip) Output.clip = null; }
             if (outputClip) Destroy(outputClip); outputClip = null;
             if (streamOpen)
             {
-                PlaybackProgress?.Invoke(generation, oldPlayback == null ? 0 : Interlocked.Read(ref oldPlayback.Consumed), Rate, true, true);
+                PlaybackProgress?.Invoke(generation, oldPlayback?.Snapshot().ConsumedSamples ?? 0, Rate, true, true);
                 StreamStopped?.Invoke(generation);
             }
             if (!nativeOwned || nativeOwner != this || !streamOpen || !IsReady || IsClosing ||
@@ -230,7 +233,10 @@ namespace LucidLoop.Gyms
             if (streamOpen && nativeOwned)
                 PlaybackProgress?.Invoke(generation, (long)IosNativeVoiceAudio.ConsumedOutputSamples, Rate, IosNativeVoiceAudio.IsStarved, false);
             else if (streamOpen && playback != null)
-                PlaybackProgress?.Invoke(generation, Interlocked.Read(ref playback.Consumed), Rate, playback.Starved, false);
+            {
+                var rendered = playback.Snapshot();
+                PlaybackProgress?.Invoke(generation, rendered.ConsumedSamples, Rate, rendered.Starved, false);
+            }
         }
 
         void PumpInput()
@@ -290,7 +296,7 @@ namespace LucidLoop.Gyms
                 try
                 {
                     var bytes = Convert.FromBase64String((string)message["delta"] ?? "");
-                    int queued = nativeOwned ? IosNativeVoiceAudio.QueuedOutputSamples : playback == null ? PlaybackCapacity : playback.Ring.Count;
+                    int queued = nativeOwned ? IosNativeVoiceAudio.QueuedOutputSamples : playback == null ? PlaybackCapacity : playback.Snapshot().QueuedSamples;
                     if (bytes.Length == 0 || bytes.Length % 2 != 0 || queued < 0 ||
                         bytes.Length / 2 > PlaybackCapacity - queued)
                     { Fail("audio_output_overflow_or_invalid"); return; }
@@ -307,7 +313,7 @@ namespace LucidLoop.Gyms
                         // Never analyze or silently discard an unqueued suffix.
                         if (written != samples.Length) { Fail("native_audio_output_partial_write"); return; }
                     }
-                    else playback.Ring.WritePcm16(bytes);
+                    else if (!playback.TryWritePcm16(bytes)) { Fail("audio_output_overflow_or_invalid"); return; }
                     int packetGeneration = generation;
                     Pcm16Output?.Invoke(bytes, packetGeneration);
                     if (!streamOpen || generation != packetGeneration) return;
@@ -355,16 +361,6 @@ namespace LucidLoop.Gyms
             else if (type == "game.error") { SetStatus("game_request_rejected"); }
             else if (type == "error")
             { if (IsConnecting) Fail("provider_startup_rejected"); else SetStatus("provider_command_rejected"); }
-        }
-
-        static void ReadAudio(Playback state, float[] data)
-        {
-            if (!state.Active) { Array.Clear(data, 0, data.Length); return; }
-            int available = Math.Min(data.Length, state.Ring.Count);
-            for (int i = 0; i < available; i++) data[i] = state.Ring.Read();
-            if (available < data.Length) Array.Clear(data, available, data.Length - available);
-            Interlocked.Add(ref state.Consumed, available);
-            state.Starved = available < data.Length;
         }
 
         public void Leave()
@@ -425,11 +421,12 @@ namespace LucidLoop.Gyms
         void StopStream()
         {
             long consumed = nativeOwned && nativeOwner == this ? (long)IosNativeVoiceAudio.ConsumedOutputSamples :
-                playback == null ? 0 : Interlocked.Read(ref playback.Consumed);
+                playback?.Snapshot().ConsumedSamples ?? 0;
             StopMic();
             if (nativeOwned && nativeOwner == this) { IosNativeVoiceAudio.Stop(); nativeOwner = null; }
             nativeOwned = nativeCaptureEnabled = false;
-            if (playback != null) playback.Active = false;
+            if (dspOutput) dspOutput.Unbind(playback);
+            else playback?.Deactivate();
             if (Output) { Output.Stop(); if (Output.clip == outputClip) Output.clip = null; }
             if (outputClip) Destroy(outputClip); outputClip = null;
             if (streamOpen)
