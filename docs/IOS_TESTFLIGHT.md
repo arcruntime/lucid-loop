@@ -49,3 +49,9 @@ Preflight tests exercise profile restrictions, export options, missing/transpare
 ## First signed build
 
 [Run 34844649999](https://github.com/jethac/lucid-loop/actions/runs/34844649999) successfully compiled and exported an App Store signed IPA with Xcode 26.3, version 1.0 (1), from the `testflight-b7e7032` export. This was an `upload=false` run: no build was sent to Apple. The artifact is `ios-testflight-ipa-34844649999-1`. App Store Connect API credentials remain required for upload. This export predates the complete Ren prefab installation in the encounter; a later export/build is required to distribute that integration.
+
+## Signed Ren encounter build
+
+[Run 34848429877](https://github.com/jethac/lucid-loop/actions/runs/34848429877) successfully compiled and exported version **1.0 (2)** with Xcode 26.3 and App Store distribution signing. The `testflight-ren-0b9d61d` export includes the assembled Ren encounter at source `0b9d61d13e02357d03b8046dbcffe3060b1b463e`. Its manifest records the shared workspace's dirty Unity inputs; it is not a clean-commit reproduction. This snapshot predates gaze, LOD1, and paused restart integration.
+
+The artifact is `ios-testflight-ipa-34848429877-1`; IPA SHA-256 is `a454f032bbc46acee64315476202ac440107366dd203cd67f167cb7debca0e9e`. Archive/export evidence is retained in the matching Actions evidence artifact and locally under `.local/testflight-ren-encounter/ci-evidence/`. The downloaded TestFlight provisioning profile matches the configured distribution profile. Upload was disabled: App Store Connect API credentials are still required, and Apple processing, internal group assignment, and physical-device acceptance remain outstanding.
