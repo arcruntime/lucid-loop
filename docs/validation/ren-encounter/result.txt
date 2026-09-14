@@ -1,0 +1,1 @@
+PASS: actual BeforeTheDrop Ren prefab/controller/adapter, bounds and conversation anchor; subscribed voice start/stop generation routing; deterministic A/blink/MBP/reset across real frames. No network, microphone, acoustic inference accuracy, or natural-conversation quality acceptance.

@@ -2,6 +2,8 @@
   "name": "LucidLoop.Gyms.PlayModeTests",
   "references": [
     "LucidLoop.Gyms",
+    "LucidLoop.CharacterArt",
+    "LucidLoop.LiveSpeech",
     "Unity.ugui"
   ],
   "optionalUnityReferences": [
@@ -13,3 +15,4 @@
     "Newtonsoft.Json.dll"
   ]
 }
+
