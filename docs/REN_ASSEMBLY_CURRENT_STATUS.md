@@ -45,6 +45,9 @@ face/control captures. Body reduction, neck-ring metadata, and FBX checks are in
 
 The preserved-body comparison remains
 `Unity/Assets/CharacterArt/Generated/RenBodyV3/Scenes/RenBodyV3Review.unity`.
-The separate conversation face scene remains
-`Unity/Assets/Gyms/Scenes/LiveGym.unity`. Earlier body/assembly studies are retained
+The conversation scene `Unity/Assets/Gyms/Scenes/LiveGym.unity` now uses the complete
+Ren prefab. Its speech adapter forwards mouth weights through the same controller
+that owns expressions and blinking. Actual Play-frame checks passed for A,
+bilabial closure, blink preservation and speech reset; a real spoken conversation
+is still pending. Earlier body/assembly studies are retained
 as development history; use the RenLOD0 scene above for the complete character.

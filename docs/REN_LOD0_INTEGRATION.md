@@ -27,8 +27,16 @@ rigid Spine attachment. Hair is skinned and must retain its internal bones.
 `RenLOD0Controller` owns body idle sampling and face weights. Disable its body
 idle before a gameplay animation system takes ownership of those bones.
 Do not simultaneously attach another component that overwrites the same facial
-weights: integrate speech through one face mixer. The complete prefab has no
-Live API connection; the existing LiveGym conversation adapter remains separate.
+weights. `RenLiveSpeechFaceAdapter.FaceController` forwards English speech
+snapshots through `RenLOD0Controller.SetSpeechWeights`; the controller remains
+the final mesh writer and applies blink, expression and lip-closure rules.
+Resetting speech sends an empty snapshot, clearing stale articulation.
+
+To install the complete prefab into the existing conversation gym, use
+**Lucid Loop → Ren LOD0 → Install into Live gym** outside Play mode. It replaces
+the old Ren face visual, retains the other cast entries and relay settings,
+and focuses the conversation camera on the animated head. The base prefab itself
+has no network connection; the gym owns relay/audio playback.
 
 Editor captures verify A, MBP, blink and cap-off controls. They do not establish
 designer likeness approval, full English speech quality, walking/contact quality,

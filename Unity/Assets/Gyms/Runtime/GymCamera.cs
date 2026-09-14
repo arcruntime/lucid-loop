@@ -43,13 +43,13 @@ namespace LucidLoop.Gyms
             Vector3 position;
             if (Target)
             {
-                focus = Target.FacePosition + Vector3.down * .14f;
+                focus = Target.FacePosition + Vector3.up * Target.ConversationVerticalOffset;
                 var direction = Target.transform.forward;
                 position = focus + direction * 3f + Vector3.up * .15f;
                 rotation = Quaternion.LookRotation(focus - position);
                 // Offset subject left to reserve the right third for conversation controls.
-                position += rotation * Vector3.right * .6f;
-                size = 1.05f;
+                position += rotation * Vector3.right * Target.ConversationHorizontalOffset;
+                size = Target.ConversationSize;
             }
             else
             {
@@ -61,7 +61,7 @@ namespace LucidLoop.Gyms
             transform.position = Vector3.Lerp(transform.position, position, t);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, t);
             Camera.orthographic = !Target || Studio;
-            if (Target && !Studio) Camera.fieldOfView = 2 * Mathf.Atan(size / 3f) * Mathf.Rad2Deg;
+            if(Target&&!Studio)Camera.fieldOfView=2*Mathf.Atan(size/3f)*Mathf.Rad2Deg;
             Camera.orthographicSize = Mathf.Lerp(Camera.orthographicSize, size, t);
         }
     }

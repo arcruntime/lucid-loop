@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-14 12:39:53Z" end-time="2026-09-14 12:39:54Z" duration="0.329848">
+  <test-suite type="TestSuite" id="1000" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="198" result="Passed" start-time="2026-09-14 12:39:53Z" end-time="2026-09-14 12:39:54Z" duration="0.329848" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1255" name="LucidLoop.LiveSpeech.Tests.dll" fullname="B:/lucid-loop/Unity/Library/ScriptAssemblies/LucidLoop.LiveSpeech.Tests.dll" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.188642" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="110796" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1256" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.187171" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1257" name="LiveSpeech" fullname="LucidLoop.LiveSpeech" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.186350" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1258" name="Tests" fullname="LucidLoop.LiveSpeech.Tests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.185672" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1250" name="RenLiveSpeechFaceAdapterTests" fullname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests" classname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.183250" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1251" name="BilabialSealExcludesVowelsAndPreservesOtherFacialChannels" fullname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests.BilabialSealExcludesVowelsAndPreservesOtherFacialChannels" methodname="BilabialSealExcludesVowelsAndPreservesOtherFacialChannels" classname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests" runstate="Runnable" seed="1688436879" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.092575" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1252" name="CompleteSnapshotsRemovePreviousContactAndNormalizeSharedTargets" fullname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests.CompleteSnapshotsRemovePreviousContactAndNormalizeSharedTargets" methodname="CompleteSnapshotsRemovePreviousContactAndNormalizeSharedTargets" classname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests" runstate="Runnable" seed="348857417" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.001572" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1254" name="HotReloadPartialCacheRestorationRebuildsMissingBindings" fullname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests.HotReloadPartialCacheRestorationRebuildsMissingBindings" methodname="HotReloadPartialCacheRestorationRebuildsMissingBindings" classname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests" runstate="Runnable" seed="377791958" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.002110" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1253" name="PrefixedFbxNamesBindAndMeshReplacementInvalidatesCache" fullname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests.PrefixedFbxNamesBindAndMeshReplacementInvalidatesCache" methodname="PrefixedFbxNamesBindAndMeshReplacementInvalidatesCache" classname="LucidLoop.LiveSpeech.Tests.RenLiveSpeechFaceAdapterTests" runstate="Runnable" seed="844321342" result="Passed" start-time="2026-09-14 12:39:54Z" end-time="2026-09-14 12:39:54Z" duration="0.002730" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: C:/Users/jetha/AppData/LocalLow/Lucid Loop/Lucid Loop · Gyms\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -25,6 +25,17 @@ namespace LucidLoop.CharacterArt
         public bool CaptureRequested;
         public string CapturePath;
         readonly Dictionary<string, float> values = new Dictionary<string, float>();
+        readonly Dictionary<string, float> speechWeights = new Dictionary<string, float>();
+        bool externalSpeech;
+        public void SetSpeechWeights(IReadOnlyDictionary<string, float> snapshot)
+        {
+            externalSpeech = true;
+            speechWeights.Clear();
+            if (snapshot == null) return;
+            foreach (var pair in snapshot)
+                if (pair.Key.StartsWith("speech_", StringComparison.Ordinal) && float.IsFinite(pair.Value))
+                    speechWeights[pair.Key] = Mathf.Clamp01(pair.Value);
+        }
         SkinnedMeshRenderer[] renderers;
         Quaternion headRest, neckRest;
         Quaternion headWorldRest;
@@ -76,6 +87,12 @@ namespace LucidLoop.CharacterArt
             if (Neck && !animated) Neck.localRotation = neckRest * Quaternion.Euler(IdleActing ? Mathf.Sin(Time.time * .8f) * .25f : 0, 0, 0);
             if (Head) foreach (var material in faceMaterials) { material.SetFloat("_UseWorldFace", 1); material.SetVector("_FaceForwardWorld", Head.rotation * Quaternion.Inverse(headWorldRest) * faceForwardRest); material.SetVector("_FaceRightWorld", Head.rotation * Quaternion.Inverse(headWorldRest) * faceRightRest); }
             if (MovingLights) { if (CyanLight) CyanLight.transform.position = new Vector3(Mathf.Sin(Time.time * .5f), 1.4f, -.7f); if (MagentaLight) MagentaLight.transform.position = new Vector3(Mathf.Cos(Time.time * .37f), 1.6f, .4f); }
+            if (externalSpeech)
+                foreach (var key in values.Keys.ToArray())
+                {
+                    var name = key.Substring(key.LastIndexOf('.') + 1);
+                    if (name.StartsWith("speech_", StringComparison.Ordinal)) values[key] = speechWeights.TryGetValue(name, out var weight) ? weight : 0;
+                }
             var mixed = RenAssemblyFaceMixer.Mix(values, Mathf.Max(BlinkL, blink), Mathf.Max(BlinkR, blink));
             float closedL=mixed.Where(p=>p.Key.EndsWith("eyeBlinkL",StringComparison.OrdinalIgnoreCase)).Select(p=>p.Value).DefaultIfEmpty(0).Max();
             float closedR=mixed.Where(p=>p.Key.EndsWith("eyeBlinkR",StringComparison.OrdinalIgnoreCase)).Select(p=>p.Value).DefaultIfEmpty(0).Max();

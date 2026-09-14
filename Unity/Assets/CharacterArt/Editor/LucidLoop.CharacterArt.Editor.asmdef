@@ -2,6 +2,8 @@
   "name": "LucidLoop.CharacterArt.Editor",
   "references": [
     "LucidLoop.CharacterArt",
+    "LucidLoop.Gyms",
+    "LucidLoop.LiveSpeech",
     "Unity.RenderPipelines.Universal.Runtime",
     "Unity.RenderPipelines.Core.Runtime",
     "Unity.ugui"

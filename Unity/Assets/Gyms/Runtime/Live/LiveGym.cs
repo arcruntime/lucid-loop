@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Newtonsoft.Json.Linq;
+using LucidLoop.LiveSpeech;
 
 namespace LucidLoop.Gyms
 {
@@ -12,9 +13,11 @@ namespace LucidLoop.Gyms
         public GymCamera Rig;
         public CharacterActor[] Characters;
         public AudioSource Speaker;
+        public RenLiveSpeechFaceAdapter RenSpeechFace;
         public string DefaultRelay="ws://localhost:8080/live";
         LiveConnection connection;
-        readonly AudioRingBuffer playback=new AudioRingBuffer(24000*3);
+        readonly ConsumedSpeechPlayback playback=new ConsumedSpeechPlayback(24000*3);
+        long speechGeneration;
         AudioClip microphone,outputClip;
         string device;
         int micCursor,selected;
@@ -48,13 +51,14 @@ namespace LucidLoop.Gyms
             transcript=GymUI.Label(panel,"Connect to speak with this character.\n\nThe project pays for live sessions. No ChatGPT sign-in is used.",26,522,468,235,22);
             meter=GymUI.Label(panel,"PLAYBACK  ────────────",26,785,468,34,19,GymUI.Muted);
             var foot=GymUI.Rect(canvas,"Study note",Vector2.zero,new Vector2(.65f,0),new Vector2(30,26),new Vector2(-10,100));GymUI.Panel(foot,GymUI.Ink);
-            GymUI.Text(GymUI.Rect(foot,"Text",Vector2.zero,Vector2.one,new Vector2(20,10),new Vector2(-20,-10)),"Voice & framing lab · primitive face / audio-driven mouth\nUse headphones to avoid microphone feedback.",21,Color.white,TextAnchor.MiddleLeft);
+            GymUI.Text(GymUI.Rect(foot,"Text",Vector2.zero,Vector2.one,new Vector2(20,10),new Vector2(-20,-10)),"Voice & framing lab · English speech face\nUse headphones to avoid microphone feedback.",21,Color.white,TextAnchor.MiddleLeft);
             outputClip=AudioClip.Create("Live output 24 kHz",24000,1,24000,true,ReadAudio);
             Speaker.clip=outputClip;Speaker.loop=true;Speaker.Play();Select(0);
         }
         public void Select(int index)
         {
-            if(ready||connecting||closing)return;selected=index;
+            if(ready||connecting||closing||index<0||index>=Characters.Length)return;
+            ResetPlayback(false);selected=index;
             for(int i=0;i<Characters.Length;i++)Characters[i].gameObject.SetActive(i==index);
             Rig.Present(Characters[index]);characterName.text=Characters[index].DisplayName+" / voice study";
         }
@@ -69,7 +73,7 @@ namespace LucidLoop.Gyms
             try{microphone=Microphone.Start(device,true,1,24000);}
             catch(Exception){Fail("Could not start microphone.");yield break;}
             if(!microphone||microphone.frequency!=24000){Fail("Microphone could not capture at 24 kHz.");yield break;}
-            micCursor=0;playerText=actorText="";playback.Clear();muted=muteRequested=mutePending=closing=finalUsageReceived=false;
+            micCursor=0;playerText=actorText="";ResetPlayback(true);muted=muteRequested=mutePending=closing=finalUsageReceived=false;
             connection=new LiveConnection();deadline=Time.unscaledTime+20;
             status.text="Connecting to relay…";
             _=connection.Connect(address.text.Trim(),Characters[selected].Id,access.text);
@@ -104,7 +108,12 @@ namespace LucidLoop.Gyms
                 }
             }
             if(meter)meter.text="PLAYBACK  "+new string('▰',Mathf.Clamp(Mathf.RoundToInt(level*18),0,12))+"  "+(playback.Count/24)+" ms queued";
-            if(Characters.Length>selected)Characters[selected].SetSpeech(Mathf.Clamp01(level*5));
+            if(UsesRenSpeech)
+            {
+                playback.Snapshot(out long consumed,out bool starved);
+                RenSpeechFace.UpdatePlayback(consumed,speechGeneration,starved);
+            }
+            else if(Characters.Length>selected)Characters[selected].SetSpeech(Mathf.Clamp01(level*5));
         }
         void Handle(JObject ev)
         {
@@ -112,7 +121,27 @@ namespace LucidLoop.Gyms
             if(type=="session.started")
             {status.text="Session started · waiting for relay…";}
             else if(type=="session.output_audio.delta")
-            {try{playback.WritePcm16(Convert.FromBase64String((string)ev["delta"]??""));}catch(Exception){Fail("Invalid audio received from relay.");}}
+            {
+                if(closing)return;
+                try
+                {
+                    var pcm=Convert.FromBase64String((string)ev["delta"]??"");
+                    if(pcm.Length%2!=0||pcm.Length>24000*6)throw new ArgumentException();
+                    if(!playback.TryWritePcm16(pcm))
+                    {
+                        // Never silently discard old samples while retaining their speech timeline.
+                        ResetPlayback(true);
+                        if(!playback.TryWritePcm16(pcm))throw new ArgumentException();
+                        status.text="Live · playback queue reset after overflow";
+                    }
+                    if(UsesRenSpeech&&RenSpeechFace.IsSupported&&!RenSpeechFace.PushPcm16(pcm,speechGeneration))
+                    {
+                        string diagnostic=RenSpeechFace.Diagnostic;
+                        ResetPlayback(true);status.text="Live · speech reset: "+diagnostic;
+                    }
+                }
+                catch(Exception){Fail("Invalid audio received from relay.");}
+            }
             else if(type=="session.input_transcript.delta") {playerText=Tail(playerText+(string)ev["delta"]);ShowTranscript();}
             else if(type=="session.output_transcript.delta") {actorText=Tail(actorText+(string)ev["delta"]);ShowTranscript();}
             else if(type=="session.input_audio.muted")
@@ -120,7 +149,7 @@ namespace LucidLoop.Gyms
             else if(type=="session.input_audio.unmuted")
             {muted=muteRequested=false;mutePending=false;SetButton(mute,"Mute mic");status.text="Live · listening and speaking";}
             else if(type=="session.closed")
-            {finalUsageReceived=true;ready=false;connecting=false;closing=true;deadline=Time.unscaledTime+2;StopMic();status.text="Final usage received · closing transport…";}
+            {finalUsageReceived=true;ready=false;connecting=false;closing=true;deadline=Time.unscaledTime+2;StopMic();ResetPlayback(false);status.text="Final usage received · closing transport…";}
             else if(type=="gym.transport.closed")
             {if(finalUsageReceived)CompleteClose();else if(ready||connecting||closing)Fail("Connection closed · final usage unconfirmed");}
             else if(type=="gym.status")
@@ -142,7 +171,15 @@ namespace LucidLoop.Gyms
         static string Tail(string s)=>s.Length>420?s.Substring(s.Length-420):s;
         void ShowTranscript(){transcript.text="YOU\n"+playerText+"\n\n"+Characters[selected].DisplayName.ToUpperInvariant()+"\n"+actorText;}
         void ReadAudio(float[] data)
-        {float sum=0;for(int i=0;i<data.Length;i++){float v=playback.Read();data[i]=v;sum+=v*v;}level=(float)Math.Sqrt(sum/Math.Max(1,data.Length));}
+        {level=playback.ReadBlock(data);}
+        bool UsesRenSpeech=>RenSpeechFace&&selected>=0&&selected<Characters.Length&&string.Equals(Characters[selected].Id,"ren",StringComparison.OrdinalIgnoreCase);
+        void ResetPlayback(bool beginSpeech)
+        {
+            playback.Clear();level=0;speechGeneration++;
+            if(RenSpeechFace)RenSpeechFace.ResetSpeech();
+            if(beginSpeech&&UsesRenSpeech&&!RenSpeechFace.BeginStream(speechGeneration)&&status)
+                status.text="Speech face unavailable · "+RenSpeechFace.Diagnostic;
+        }
         void ToggleMute()
         {
             if(!ready||closing||mutePending)return;muteRequested=!muted;mutePending=true;
@@ -153,14 +190,14 @@ namespace LucidLoop.Gyms
         {
             if(closing)return;
             if(!ready){Shutdown();if(status)status.text="Disconnected · microphone off";return;}
-            closing=true;deadline=Time.unscaledTime+16;StopMic();playback.Clear();status.text="Closing session · waiting for final usage…";
+            closing=true;deadline=Time.unscaledTime+16;StopMic();ResetPlayback(false);status.text="Closing session · waiting for final usage…";
             _=connection.Command("session.close");
         }
         void Fail(string message){Shutdown();if(status)status.text=message;}
         void CompleteClose(){Shutdown();if(status)status.text="Session closed · final usage received";}
         void StopMic(){if(device!=null)Microphone.End(device);if(microphone)Destroy(microphone);microphone=null;device=null;}
         void Shutdown()
-        {generation++;StopMic();connection?.Dispose();connection=null;ready=connecting=closing=muted=muteRequested=mutePending=finalUsageReceived=false;playback.Clear();SetButton(connect,"Connect");SetButton(mute,"Mute mic");}
+        {generation++;StopMic();connection?.Dispose();connection=null;ready=connecting=closing=muted=muteRequested=mutePending=finalUsageReceived=false;ResetPlayback(false);SetButton(connect,"Connect");SetButton(mute,"Mute mic");}
         static void SetButton(Button b,string text){if(b)b.GetComponentInChildren<Text>().text=text;}
         void OnApplicationPause(bool pause){if(pause){Shutdown();if(status)status.text="Paused · disconnected";}}
         void OnDisable(){Shutdown();if(Speaker)Speaker.Stop();if(outputClip)Destroy(outputClip);}

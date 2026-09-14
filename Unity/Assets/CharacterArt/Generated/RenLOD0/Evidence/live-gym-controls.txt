@@ -1,0 +1,1 @@
+PASS: actual LiveGym Play frames preserve A through controller LateUpdate, blink alongside speech, MBP closure with emotion suppression, and neutral after reset. No provider or microphone test claimed.
