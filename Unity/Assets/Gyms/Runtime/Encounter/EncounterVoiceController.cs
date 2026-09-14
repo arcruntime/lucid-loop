@@ -45,6 +45,7 @@ namespace LucidLoop.Gyms
         Task audioUpload;
         DspPcmPlayback playback;
         EncounterDspOutput dspOutput;
+        AudioSource configuredOutput, dedicatedOutput;
         bool streamOpen;
         int audioDeviceChanged;
         string closeNotice;
@@ -77,7 +78,7 @@ namespace LucidLoop.Gyms
             generation++;
             CharacterId = request.CharacterId;
             FinalUsageConfirmed = false;
-            if (!Output) { SetStatus("audio_output_missing"); return; }
+            if (!EnsureDedicatedOutput()) { SetStatus("audio_output_missing"); return; }
             int outputRate = AudioSettings.outputSampleRate;
             if (outputRate < Rate || outputRate > 192000) { SetStatus("audio_output_format_unavailable"); return; }
             var state = new DspPcmPlayback(PlaybackCapacity, outputRate);
@@ -98,6 +99,63 @@ namespace LucidLoop.Gyms
             audioDebt = 0; audioUpload = null;
             SetStatus("connecting");
             _ = connection.Connect(request.Address, request.Startup);
+        }
+
+        // OnAudioFilterRead must have an unambiguous AudioSource host. The scene's
+        // coordinator can also host nightclub music sources or an AudioListener.
+        bool EnsureDedicatedOutput()
+        {
+            if (dedicatedOutput && Output == dedicatedOutput) return true;
+            ReleaseDedicatedOutput();
+            if (!Output) return false;
+            configuredOutput = Output;
+            var host = new GameObject("Encounter voice DSP output");
+            host.transform.SetParent(configuredOutput.transform, false);
+            dedicatedOutput = host.AddComponent<AudioSource>();
+            dedicatedOutput.playOnAwake = false;
+            dedicatedOutput.outputAudioMixerGroup = configuredOutput.outputAudioMixerGroup;
+            dedicatedOutput.volume = configuredOutput.volume;
+            dedicatedOutput.mute = configuredOutput.mute;
+            dedicatedOutput.pitch = configuredOutput.pitch;
+            dedicatedOutput.priority = configuredOutput.priority;
+            dedicatedOutput.panStereo = configuredOutput.panStereo;
+            dedicatedOutput.spatialBlend = configuredOutput.spatialBlend;
+            dedicatedOutput.spatialize = configuredOutput.spatialize;
+            dedicatedOutput.spatializePostEffects = configuredOutput.spatializePostEffects;
+            dedicatedOutput.dopplerLevel = configuredOutput.dopplerLevel;
+            dedicatedOutput.spread = configuredOutput.spread;
+            dedicatedOutput.minDistance = configuredOutput.minDistance;
+            dedicatedOutput.maxDistance = configuredOutput.maxDistance;
+            dedicatedOutput.velocityUpdateMode = configuredOutput.velocityUpdateMode;
+            dedicatedOutput.reverbZoneMix = configuredOutput.reverbZoneMix;
+            dedicatedOutput.bypassEffects = configuredOutput.bypassEffects;
+            dedicatedOutput.bypassListenerEffects = configuredOutput.bypassListenerEffects;
+            dedicatedOutput.bypassReverbZones = configuredOutput.bypassReverbZones;
+            dedicatedOutput.ignoreListenerPause = configuredOutput.ignoreListenerPause;
+            dedicatedOutput.ignoreListenerVolume = configuredOutput.ignoreListenerVolume;
+            foreach (AudioSourceCurveType type in new[] { AudioSourceCurveType.CustomRolloff,
+                AudioSourceCurveType.SpatialBlend, AudioSourceCurveType.Spread, AudioSourceCurveType.ReverbZoneMix })
+            {
+                var curve = configuredOutput.GetCustomCurve(type);
+                if (curve != null) dedicatedOutput.SetCustomCurve(type, curve);
+            }
+            dedicatedOutput.rolloffMode = configuredOutput.rolloffMode;
+            Output = dedicatedOutput;
+            return true;
+        }
+
+        void ReleaseDedicatedOutput()
+        {
+            if (dedicatedOutput)
+            {
+                dedicatedOutput.Stop();
+                dedicatedOutput.gameObject.SetActive(false);
+                if (Output == dedicatedOutput) Output = configuredOutput;
+                Destroy(dedicatedOutput.gameObject);
+            }
+            dedicatedOutput = null;
+            configuredOutput = null;
+            dspOutput = null;
         }
 
         public bool SendText(string text)
@@ -452,6 +510,7 @@ namespace LucidLoop.Gyms
             Interlocked.Exchange(ref audioDeviceChanged, 0);
             if (subscribed) { subscribed.ConversationRequested -= Begin; subscribed.ConversationInvalidated -= Leave; }
             subscribed = null; DisposeCurrent();
+            ReleaseDedicatedOutput();
             foreach (var old in retired) old.Connection.Dispose(); retired.Clear();
         }
     }

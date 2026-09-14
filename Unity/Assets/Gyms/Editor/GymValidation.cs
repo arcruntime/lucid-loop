@@ -50,7 +50,8 @@ namespace LucidLoop.Gyms.Editor
         [MenuItem("Lucid Loop/Validate DSP output PlayMode")]
         public static void RunDspOutputPlayMode() => Run(TestMode.PlayMode, "LucidLoop.Gyms.PlayModeTests", "dsp-output-playmode", "DSP_OUTPUT_TESTS", null, new[]
         {
-            "LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests.DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent"
+            "LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests.DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent",
+            "LucidLoop.Gyms.PlayModeTests.EncounterDspSourceIsolationPlayModeTests.DedicatedVoiceDspIsIndependentOfMusicSourcesAndListenerOnCoordinator"
         });
 
         [MenuItem("Lucid Loop/Validate Ren real-provider encounter (paid)")]

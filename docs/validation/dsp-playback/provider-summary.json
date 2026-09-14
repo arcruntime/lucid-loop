@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "utc": "2026-09-14T14:59:34.6628477Z",
+  "scene": "BeforeTheDrop",
+  "npc": "ren",
+  "acceptedPcmPackets": 338,
+  "acceptedSamples": 811200,
+  "consumedSamples": 808352,
+  "movingPlaybackFrames": 23,
+  "nonzeroSpeechFrames": 24,
+  "peakSpeechWeight": 100.0,
+  "observedFrames": 1043,
+  "finalUsageConfirmed": true,
+  "streamStopped": true,
+  "remainingSpeechWeight": 0.0,
+  "microphoneObserved": false,
+  "seconds": 46.4822464,
+  "scope": "Real provider PCM through production encounter binding and actual Ren mesh. Renderer consumption does not prove acoustic output or subjective conversation quality."
+}

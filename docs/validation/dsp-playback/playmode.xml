@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-14 14:34:46Z" end-time="2026-09-14 14:34:49Z" duration="2.932767">
-  <test-suite type="TestSuite" id="1054" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="29" result="Passed" start-time="2026-09-14 14:34:46Z" end-time="2026-09-14 14:34:49Z" duration="2.932767" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-14 14:57:45Z" end-time="2026-09-14 14:57:48Z" duration="3.2281826">
+  <test-suite type="TestSuite" id="1056" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="30" result="Passed" start-time="2026-09-14 14:57:45Z" end-time="2026-09-14 14:57:48Z" duration="3.228183" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties>
       <property name="platform" value="PlayMode" />
     </properties>
-    <test-suite type="Assembly" id="1047" name="LucidLoop.Gyms.PlayModeTests.dll" fullname="B:/lucid-loop/Unity/Library/ScriptAssemblies/LucidLoop.Gyms.PlayModeTests.dll" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-09-14 14:34:48Z" end-time="2026-09-14 14:34:49Z" duration="1.753388" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1049" name="LucidLoop.Gyms.PlayModeTests.dll" fullname="B:/lucid-loop/Unity/Library/ScriptAssemblies/LucidLoop.Gyms.PlayModeTests.dll" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-09-14 14:57:46Z" end-time="2026-09-14 14:57:48Z" duration="2.896869" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
         <property name="_PID" value="110796" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
         <property name="EditorOnly" value="False" />
       </properties>
-      <test-suite type="TestSuite" id="1048" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-09-14 14:34:48Z" end-time="2026-09-14 14:34:49Z" duration="1.734204" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1050" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-09-14 14:57:46Z" end-time="2026-09-14 14:57:48Z" duration="2.884950" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestSuite" id="1049" name="Gyms" fullname="LucidLoop.Gyms" runstate="Runnable" testcasecount="17" result="Passed" start-time="2026-09-14 14:34:48Z" end-time="2026-09-14 14:34:49Z" duration="1.696054" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestSuite" id="1051" name="Gyms" fullname="LucidLoop.Gyms" runstate="Runnable" testcasecount="18" result="Passed" start-time="2026-09-14 14:57:46Z" end-time="2026-09-14 14:57:48Z" duration="2.847095" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-suite type="TestSuite" id="1051" name="PlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-09-14 14:34:48Z" end-time="2026-09-14 14:34:49Z" duration="1.672945" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="TestSuite" id="1053" name="PlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests" runstate="Runnable" testcasecount="15" result="Passed" start-time="2026-09-14 14:57:46Z" end-time="2026-09-14 14:57:48Z" duration="2.814881" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties />
-            <test-suite type="TestFixture" id="1025" name="EncounterDspOutputPlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests" classname="LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-14 14:34:48Z" end-time="2026-09-14 14:34:49Z" duration="1.641957" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <test-suite type="TestFixture" id="1025" name="EncounterDspOutputPlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests" classname="LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-14 14:57:46Z" end-time="2026-09-14 14:57:47Z" duration="1.465694" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
               <properties />
-              <test-case id="1026" name="DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent" fullname="LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests.DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent" methodname="DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent" classname="LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests" runstate="Runnable" seed="1671628703" result="Passed" start-time="2026-09-14 14:34:48Z" end-time="2026-09-14 14:34:49Z" duration="1.596223" asserts="0">
+              <test-case id="1026" name="DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent" fullname="LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests.DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent" methodname="DspOutputConsumesInSmallStepsAndRetiredGenerationStaysSilent" classname="LucidLoop.Gyms.PlayModeTests.EncounterDspOutputPlayModeTests" runstate="Runnable" seed="948451594" result="Passed" start-time="2026-09-14 14:57:46Z" end-time="2026-09-14 14:57:47Z" duration="1.426794" asserts="0">
                 <properties>
                   <property name="_JOINTYPE" value="UnityCombinatorial" />
                   <property name="retryIteration" value="0" />
                   <property name="repeatIteration" value="0" />
                 </properties>
-                <output><![CDATA[DSP_OUTPUT_PASSED: progressingFrames=17; largestConsumedStep=4096; outputRate=48000
-Saving results to: B:\lucid-loop\.local\validation\dsp-output-playmode-20260914-143408-780.xml
+                <output><![CDATA[DSP_OUTPUT_PASSED: progressingFrames=29; largestConsumedStep=1024; outputRate=48000
+]]></output>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1027" name="EncounterDspSourceIsolationPlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests.EncounterDspSourceIsolationPlayModeTests" classname="LucidLoop.Gyms.PlayModeTests.EncounterDspSourceIsolationPlayModeTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2026-09-14 14:57:47Z" end-time="2026-09-14 14:57:48Z" duration="1.315637" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1028" name="DedicatedVoiceDspIsIndependentOfMusicSourcesAndListenerOnCoordinator" fullname="LucidLoop.Gyms.PlayModeTests.EncounterDspSourceIsolationPlayModeTests.DedicatedVoiceDspIsIndependentOfMusicSourcesAndListenerOnCoordinator" methodname="DedicatedVoiceDspIsIndependentOfMusicSourcesAndListenerOnCoordinator" classname="LucidLoop.Gyms.PlayModeTests.EncounterDspSourceIsolationPlayModeTests" runstate="Runnable" seed="190702418" result="Passed" start-time="2026-09-14 14:57:47Z" end-time="2026-09-14 14:57:48Z" duration="1.308660" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[DSP_SOURCE_ISOLATION_PASSED: progressingFrames=31; largestConsumedStep=1024
+Saving results to: B:\lucid-loop\.local\validation\dsp-output-playmode-20260914-145720-012.xml
 ]]></output>
               </test-case>
             </test-suite>

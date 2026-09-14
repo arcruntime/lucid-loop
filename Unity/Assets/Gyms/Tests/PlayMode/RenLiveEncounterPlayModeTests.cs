@@ -70,6 +70,10 @@ namespace LucidLoop.Gyms.PlayModeTests
             Assert.That(hud, Is.Not.Null);
             if (layout.Connection.gameObject.activeSelf) layout.ConnectionButton.GetComponent<Button>().onClick.Invoke();
             layout.Conversation.GetComponentsInChildren<Button>(true).Single(b => b.name == "Select ren").onClick.Invoke();
+            // Loading and inspecting the assembled scene has its own bounded phase.
+            // Start the connection/provider budget here so a valid slow scene load
+            // cannot exhaust the connection deadline before its first yielded frame.
+            deadline = Time.realtimeSinceStartup + 100;
             Assert.That(coordinator.ConnectNew("ws://127.0.0.1:8790/game"), Is.True);
             while (!coordinator.IsReady) { Before(deadline - 55, "game ready"); yield return null; }
             // Wait for the actual authoritative world snapshot before approach eligibility.
