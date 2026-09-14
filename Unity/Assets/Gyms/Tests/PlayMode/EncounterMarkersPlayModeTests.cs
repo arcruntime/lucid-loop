@@ -55,6 +55,7 @@ namespace LucidLoop.Gyms.PlayModeTests
             markers.TryGetMarkerState("ren", out state);
             Assert.That(state, Is.EqualTo(EncounterMarkerState.OutOfRange), "Selection cannot bypass range eligibility.");
             string directory = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "..", ".local", "validation"));
+            Directory.CreateDirectory(directory);
             string capture = Path.Combine(directory, "interaction-markers-" + DateTime.UtcNow.ToString("yyyyMMdd-HHmmss-fff") + ".png");
             ScreenCapture.CaptureScreenshot(capture);
             deadline = Time.realtimeSinceStartup + 10;
