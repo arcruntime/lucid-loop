@@ -14,6 +14,15 @@ namespace LucidLoop.CharacterArt.Editor
 {
  public static class RenLOD0LiveGymBuilder
  {
+  [MenuItem("Lucid Loop/Ren LOD0/Open Live gym")]
+  public static void Open()
+  {
+   if(EditorApplication.isPlayingOrWillChangePlaymode||SceneManager.GetActiveScene().isDirty)
+    throw new InvalidOperationException("Exit Play and save the current scene first");
+   EditorSceneManager.OpenScene("Assets/Gyms/Scenes/LiveGym.unity");
+   EditorApplication.ExecuteMenuItem("Window/General/Game");
+   EditorApplication.isPlaying=true;
+  }
   [MenuItem("Lucid Loop/Ren LOD0/Install into Live gym")]
   public static void Build()
   {

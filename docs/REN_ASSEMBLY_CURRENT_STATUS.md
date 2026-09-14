@@ -16,13 +16,14 @@ not establish either acceptance criterion.
 | Unity import | 42,170 rendered triangles, 67 bones, 316 blendshape bindings across renderers, 12 materials |
 | Approved body | Derived from the approved Meshy body through female-v3 and the headphone-removal repair; original source remains immutable |
 | Body reduction | Headless body and neck/chest repair total 11,998 Blender triangles; source normals and baked colors restored after constrained reduction |
-| Facial controls | Expressive head with English/Japanese speech shapes, expression controls, gaze, and idle blink; 316 bindings are renderer bindings, not 316 unique expressions |
+| Facial controls | Expressive head with retained speech shapes, expression controls and idle blink; 316 bindings are renderer bindings, not 316 unique expressions. Independent gaze is not implemented in the delivered controller |
 | Hair | 12 animated hair bones plus a fixed anchor; runtime secondary movement |
 | Accessories | Separate toggleable baseball cap and standalone replacement headphones included in the assembly |
 | Body idle | Runtime playback of the female-v3 Walt observer idle through `RenLOD0Controller`; the complete scene is playing |
 | NPR shading | `RenLOD0Toon.shader`, white key light and cyan/magenta club-light controls in the complete-character scene |
 | Export | `art/generated/characters/ren/lod0-final-v1/Ren_LOD0.fbx`, portable Blender assembly, textures, and material mapping |
 | Neck motion | Final Blender assembly: 293 paired endpoints stayed coincident in 56 head/expression combinations; head vertices moved up to 0.1215 m, confirming actual deformation |
+| Main encounter | Complete prefab installed in `Assets/Gyms/Scenes/BeforeTheDrop.unity`; consumed-PCM speech binding integrated by lead in `cf06605`, with 91 passing encounter EditMode tests including five Ren binding tests |
 
 Unity import evidence is
 `Unity/Assets/CharacterArt/Generated/RenLOD0/Evidence/import.json`.
@@ -38,6 +39,8 @@ continuity, not shading, accessory contact or artistic acceptance.
 
 - Designer approval of Ren's facial silhouette, eyes, expressions, and complete
   character likeness. Assembly/export success is not likeness approval.
+- Independent gaze controls and the designer's GUARDED hand-to-mouth acting
+  remain missing. The delivered GUARDED facial shape is not the complete pose.
 - Final moving-character inspection of neck seams, clothing, hands, cap/hair
   contact, and headphone clearance across controls and idle motion.
 - Sustained 30 fps on the minimum-spec iPhone 15 Plus in Unity 6.3 LTS,

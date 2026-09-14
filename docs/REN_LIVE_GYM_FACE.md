@@ -2,6 +2,8 @@
 
 Open `B:\lucid-loop\Unity` in Unity 6000.3.24f1 and load
 `Assets/Gyms/Scenes/LiveGym.unity`. Enter Play Mode. Ren is selected first.
+Shortcut: **Lucid Loop → Ren LOD0 → Open Live gym** opens the saved scene and
+starts Play without rebuilding character assets.
 Enter a working relay WebSocket address and its access token if required, then
 press **Connect**. The OpenAI key belongs in the relay process environment,
 never in Unity or the gym access-token field.
