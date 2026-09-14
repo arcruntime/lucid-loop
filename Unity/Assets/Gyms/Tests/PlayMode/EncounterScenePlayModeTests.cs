@@ -177,7 +177,33 @@ namespace LucidLoop.Gyms.PlayModeTests
         IEnumerator Capture(string name)
         {
             string path = Path.Combine(evidence, name);
-            ScreenCapture.CaptureScreenshot(path);
+            if (Application.isBatchMode)
+            {
+                // Batch Editor has no Game view to service CaptureScreenshot.
+                // Capture the real scene camera; HUD text is asserted separately above.
+                var camera = UnityEngine.Object.FindFirstObjectByType<EncounterHud>().Rig.Camera;
+                var previousTarget = camera.targetTexture;
+                var previousActive = RenderTexture.active;
+                var target = RenderTexture.GetTemporary(1280, 720, 24, RenderTextureFormat.ARGB32, RenderTextureReadWrite.sRGB);
+                var pixels = new Texture2D(1280, 720, TextureFormat.RGB24, false);
+                try
+                {
+                    camera.targetTexture = target;
+                    camera.Render();
+                    RenderTexture.active = target;
+                    pixels.ReadPixels(new Rect(0, 0, 1280, 720), 0, 0);
+                    pixels.Apply();
+                    File.WriteAllBytes(path, pixels.EncodeToPNG());
+                }
+                finally
+                {
+                    camera.targetTexture = previousTarget;
+                    RenderTexture.active = previousActive;
+                    RenderTexture.ReleaseTemporary(target);
+                    UnityEngine.Object.Destroy(pixels);
+                }
+            }
+            else ScreenCapture.CaptureScreenshot(path);
             while (!File.Exists(path)) { CheckDeadline("screenshot " + name); yield return null; }
             // Completion is asynchronous; require readable PNG signature, not mere file existence.
             byte[] bytes = Array.Empty<byte>();

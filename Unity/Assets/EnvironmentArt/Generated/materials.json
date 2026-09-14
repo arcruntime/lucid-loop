@@ -1,0 +1,268 @@
+{
+  "materials": [
+    {
+      "name": "Obsidian",
+      "color": [
+        0.065,
+        0.065,
+        0.095
+      ],
+      "roughness": 0.43,
+      "metallic": 0.2,
+      "emission": 0,
+      "texture": "Obsidian_BaseColor.png"
+    },
+    {
+      "name": "Marble",
+      "color": [
+        0.24,
+        0.22,
+        0.25
+      ],
+      "roughness": 0.28,
+      "metallic": 0.08,
+      "emission": 0,
+      "texture": "Marble_BaseColor.png"
+    },
+    {
+      "name": "Gunmetal",
+      "color": [
+        0.15,
+        0.16,
+        0.21
+      ],
+      "roughness": 0.3,
+      "metallic": 0.75,
+      "emission": 0,
+      "texture": "Gunmetal_BaseColor.png"
+    },
+    {
+      "name": "Brass",
+      "color": [
+        0.58,
+        0.32,
+        0.12
+      ],
+      "roughness": 0.27,
+      "metallic": 0.8,
+      "emission": 0,
+      "texture": "Brass_BaseColor.png"
+    },
+    {
+      "name": "Velvet",
+      "color": [
+        0.16,
+        0.075,
+        0.12
+      ],
+      "roughness": 0.72,
+      "metallic": 0,
+      "emission": 0,
+      "texture": "Velvet_BaseColor.png"
+    },
+    {
+      "name": "RoseVelvet",
+      "color": [
+        0.29,
+        0.13,
+        0.19
+      ],
+      "roughness": 0.72,
+      "metallic": 0,
+      "emission": 0,
+      "texture": "RoseVelvet_BaseColor.png"
+    },
+    {
+      "name": "CyanNeon",
+      "color": [
+        0.018,
+        0.64,
+        0.9
+      ],
+      "roughness": 0.25,
+      "metallic": 0.25,
+      "emission": 3.5,
+      "texture": ""
+    },
+    {
+      "name": "MoodNeon",
+      "color": [
+        1,
+        0.018,
+        0.39
+      ],
+      "roughness": 0.25,
+      "metallic": 0.25,
+      "emission": 3.0,
+      "texture": ""
+    },
+    {
+      "name": "AmberPractical",
+      "color": [
+        1,
+        0.47,
+        0.12
+      ],
+      "roughness": 0.32,
+      "metallic": 0.1,
+      "emission": 3.0,
+      "texture": ""
+    },
+    {
+      "name": "Pearl",
+      "color": [
+        0.65,
+        0.69,
+        0.8
+      ],
+      "roughness": 0.25,
+      "metallic": 0.5,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "SmokedGlass",
+      "color": [
+        0.11,
+        0.12,
+        0.19
+      ],
+      "roughness": 0.1,
+      "metallic": 0.65,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "VortexScreen",
+      "color": [
+        0.33,
+        0.02,
+        0.7
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "emission": 1,
+      "texture": ""
+    },
+    {
+      "name": "BottleGreen",
+      "color": [
+        0.055,
+        0.32,
+        0.17
+      ],
+      "roughness": 0.17,
+      "metallic": 0.15,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "BottleAmber",
+      "color": [
+        0.52,
+        0.23,
+        0.055
+      ],
+      "roughness": 0.2,
+      "metallic": 0.1,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "BottleBlue",
+      "color": [
+        0.1,
+        0.36,
+        0.57
+      ],
+      "roughness": 0.16,
+      "metallic": 0.15,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "BottleLabel",
+      "color": [
+        0.7,
+        0.59,
+        0.38
+      ],
+      "roughness": 0.7,
+      "metallic": 0,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "PalmLeaf",
+      "color": [
+        0.055,
+        0.24,
+        0.09
+      ],
+      "roughness": 0.45,
+      "metallic": 0,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "PalmLeafLight",
+      "color": [
+        0.12,
+        0.34,
+        0.12
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "velvet-lounge-chair_0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "emission": 0,
+      "texture": "velvet-lounge-chair_0_BaseColor.png"
+    },
+    {
+      "name": "PartitionGlass",
+      "color": [
+        0.25,
+        0.3,
+        0.45
+      ],
+      "roughness": 0.17,
+      "metallic": 0.25,
+      "emission": 0,
+      "texture": ""
+    },
+    {
+      "name": "ShelfBacklight",
+      "color": [
+        0.015,
+        0.14,
+        0.55
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "emission": 1.5,
+      "texture": ""
+    },
+    {
+      "name": "CityWindow",
+      "color": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "roughness": 1,
+      "metallic": 0,
+      "emission": 0,
+      "texture": ""
+    }
+  ]
+}

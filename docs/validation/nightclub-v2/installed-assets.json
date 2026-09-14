@@ -1,0 +1,412 @@
+[
+  {
+    "path": "Assets/EnvironmentArt/Generated/AmberPractical.mat",
+    "before": "0d02d2bb0d6b0927831f092170132dce71b996aa2a80a6a20e47db2549d5bcc6",
+    "sha256": "0c20b7b9146f8fb06a45390988425969cf68cb03339053a268007cc5acd8b64f"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/AmberPractical.mat.meta",
+    "before": "d5a595919c48c4d65391d73142fcad79a5d1f1eaf0aa8c903fa119edec0d34e5",
+    "sha256": "d5a595919c48c4d65391d73142fcad79a5d1f1eaf0aa8c903fa119edec0d34e5"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BeamHaze.mat",
+    "before": "6117b14d69bdc85fd343b937f3b1518193730239408a93c8083ca0d6b63d1983",
+    "sha256": "6117b14d69bdc85fd343b937f3b1518193730239408a93c8083ca0d6b63d1983"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BeamHaze.mat.meta",
+    "before": "3bd70cd035fa805f34c9a7337730ce149b40be08ea1298b730c21329154565ce",
+    "sha256": "3bd70cd035fa805f34c9a7337730ce149b40be08ea1298b730c21329154565ce"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BeamMesh.asset",
+    "before": "520891ee8a255e945a74240c8b0bd576727d9bb3c81e1d96dd7487057a308d24",
+    "sha256": "520891ee8a255e945a74240c8b0bd576727d9bb3c81e1d96dd7487057a308d24"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BeamMesh.asset.meta",
+    "before": "dc9895a8621b420a2ebfe40750aeb9b119550cd072a7b37859f33ef0a519d551",
+    "sha256": "dc9895a8621b420a2ebfe40750aeb9b119550cd072a7b37859f33ef0a519d551"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BottleAmber.mat",
+    "before": "72331c7bcc6665e4f621cfb192b55bcc3b5fba8224bd80974059e2e8f4f84a83",
+    "sha256": "36c1899369da100409940f33b2ceb0891607e455c7d22645157ae10253e1de93"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BottleAmber.mat.meta",
+    "before": "01557d3a5671f1684411517073e737f33ae6759f86707a8d59dac00c50d42b86",
+    "sha256": "01557d3a5671f1684411517073e737f33ae6759f86707a8d59dac00c50d42b86"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BottleBlue.mat",
+    "before": "342c3fbdd63ce1c86bd908b4b6c5ae0abbd21da298cd4e2dcce8aabdfd867963",
+    "sha256": "694f05667d979d891792bc54c4a0e37eb50bde41764a8b5ee6bd664ce36f2080"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BottleBlue.mat.meta",
+    "before": "38d54f3e9673d12246dbe084c6c1d1b2ee003e3ad49499c33e4da2852fa30464",
+    "sha256": "38d54f3e9673d12246dbe084c6c1d1b2ee003e3ad49499c33e4da2852fa30464"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BottleGreen.mat",
+    "before": "4a01dec94e7d52edfb208478bb7f5f3663e3930b83a9d555a6d412939616c7d1",
+    "sha256": "30159730e6e0fb00fb5802b3432b7afc1494c8da09d4fe5ba02aee8d9aca4028"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BottleGreen.mat.meta",
+    "before": "011457dfde7a1e323ac9c3fee20990a6cf44fc7e7e26d58dd790d97103cbcf60",
+    "sha256": "011457dfde7a1e323ac9c3fee20990a6cf44fc7e7e26d58dd790d97103cbcf60"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BottleLabel.mat",
+    "before": "599feb4f7fd14f76bde1747d8347b84c484ec58d038c89e0a5c32599df084095",
+    "sha256": "599feb4f7fd14f76bde1747d8347b84c484ec58d038c89e0a5c32599df084095"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/BottleLabel.mat.meta",
+    "before": "fead6a6f752d80bf0921323b5ffd08f08f9d6394c2522a7718e7a2b8edd5ee8c",
+    "sha256": "fead6a6f752d80bf0921323b5ffd08f08f9d6394c2522a7718e7a2b8edd5ee8c"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Brass.mat",
+    "before": "d7b45c40bb8e39b523b266aa514f627ab4b7fba3c5776d78d3df2f0da5b473a4",
+    "sha256": "d7b45c40bb8e39b523b266aa514f627ab4b7fba3c5776d78d3df2f0da5b473a4"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Brass.mat.meta",
+    "before": "49b6ae5f6603d6573e2ad7da3897154f6991b1121b6c91873c33f08b0251c4fc",
+    "sha256": "49b6ae5f6603d6573e2ad7da3897154f6991b1121b6c91873c33f08b0251c4fc"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Brass_BaseColor.png",
+    "before": "f85c3019f9f6c8ab68b47354facd1099ff4300d092279d59025044d982411b9e",
+    "sha256": "f85c3019f9f6c8ab68b47354facd1099ff4300d092279d59025044d982411b9e"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Brass_BaseColor.png.meta",
+    "before": "6766a3c829eda3b5a55e13a260808f1d7a2fb38f6a24fea3a49027a84b5800ae",
+    "sha256": "6766a3c829eda3b5a55e13a260808f1d7a2fb38f6a24fea3a49027a84b5800ae"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/CityWindow.mat",
+    "before": null,
+    "sha256": "9ad775366b4cbc07ae849acb7dd5175285fd63623d4ac8ce4dc8cf45257da7b0"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/CityWindow.mat.meta",
+    "before": null,
+    "sha256": "148e083b5eb1eae4991a0e1c6aad62ac03a56761e4085625847a8b2798dac19b"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/ConversationFocus.asset",
+    "before": null,
+    "sha256": "4adc031bfada7b7b3912cbc650671fd52a5d6170a9ef08e6b8bc400ac75310db"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/ConversationFocus.asset.meta",
+    "before": null,
+    "sha256": "e480100c33f7cc43423ea7da03bac0702780cd99c06286c9d721de6b8650b44f"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/CyanNeon.mat",
+    "before": "3b401e49ffd16f38301edfa92cbdcd86156befcf1d0e5b0dd05a47896657b8ef",
+    "sha256": "3b401e49ffd16f38301edfa92cbdcd86156befcf1d0e5b0dd05a47896657b8ef"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/CyanNeon.mat.meta",
+    "before": "3e35f48b2a259f0ecb2b5e899ab914944e4cc3653e84dfb806e5fe5effa7530b",
+    "sha256": "3e35f48b2a259f0ecb2b5e899ab914944e4cc3653e84dfb806e5fe5effa7530b"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Gunmetal.mat",
+    "before": "e19b8635297d217fea1d5d304402edc52d75bd738cec0dda39f1631a94e849cd",
+    "sha256": "e19b8635297d217fea1d5d304402edc52d75bd738cec0dda39f1631a94e849cd"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Gunmetal.mat.meta",
+    "before": "753d030e31f9db342a7f6a2b8bc95f3c808a7debc04345c57ce083781f5f3ed9",
+    "sha256": "753d030e31f9db342a7f6a2b8bc95f3c808a7debc04345c57ce083781f5f3ed9"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Gunmetal_BaseColor.png",
+    "before": "cdfc6aff8a1d0867033e224ec02df4b8294a092d0b0b9c282f064002c8c93f96",
+    "sha256": "cdfc6aff8a1d0867033e224ec02df4b8294a092d0b0b9c282f064002c8c93f96"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Gunmetal_BaseColor.png.meta",
+    "before": "0fd3ee70e8480e08942fb9b448d6f1b3d234f1f4d61ce2a6caa0bb9b7b0e9a58",
+    "sha256": "0fd3ee70e8480e08942fb9b448d6f1b3d234f1f4d61ce2a6caa0bb9b7b0e9a58"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Marble.mat",
+    "before": "85d35205ca5409fe00baf3d6925975f18c7ed9b8fef6de4bfdc840218c9c199c",
+    "sha256": "52a9ea2256c450f07d0c97f34d748b7203fd14711d97fcf2eb8654cbfd95b2a2"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Marble.mat.meta",
+    "before": "ca61e2494e40d7348449e5d96c312611fccc1e4d62d8e79193b5d3f97f9270da",
+    "sha256": "ca61e2494e40d7348449e5d96c312611fccc1e4d62d8e79193b5d3f97f9270da"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Marble_BaseColor.png",
+    "before": "0187cbca76748cf453a8c06212690d1ba41c7241acb973d4d813c7e16809d161",
+    "sha256": "0187cbca76748cf453a8c06212690d1ba41c7241acb973d4d813c7e16809d161"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Marble_BaseColor.png.meta",
+    "before": "ecad4c19dd028a04b18f55c34d6e70d4e92fc6d6ac8ae210f6cb155e14bec124",
+    "sha256": "ecad4c19dd028a04b18f55c34d6e70d4e92fc6d6ac8ae210f6cb155e14bec124"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/materials.json",
+    "before": "f2a51a118dd32ab8262c36961c3aa37a0c23742df9cb31ae55ea8bd8420d475f",
+    "sha256": "f2a51a118dd32ab8262c36961c3aa37a0c23742df9cb31ae55ea8bd8420d475f"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/materials.json.meta",
+    "before": "f9b36d98a6a2896f423b899034a45feab8beafac96ab6d41e40b6d866bf06f3e",
+    "sha256": "f9b36d98a6a2896f423b899034a45feab8beafac96ab6d41e40b6d866bf06f3e"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/MetropolitanNightSky.mat",
+    "before": null,
+    "sha256": "1959bf5c7a1c97d9e40c64f8d082d201d035607cb34ed88c510e1497d8b26363"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/MetropolitanNightSky.mat.meta",
+    "before": null,
+    "sha256": "9b6bbacbe1786312f56e02180f202ca6bf34044ab444f58e183f144a5c47c4d6"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/MetropolitanNightSky.png",
+    "before": "2c4b39c7ae9c836b9eb2764cee414789352f7599d7511afefd18d256529aa7b5",
+    "sha256": "2c4b39c7ae9c836b9eb2764cee414789352f7599d7511afefd18d256529aa7b5"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/MetropolitanNightSky.png.meta",
+    "before": "194601d98cb77cc5b11fefafb501370d36e0f65c2671912c589d09c202487af4",
+    "sha256": "80b3febe734094fbcb44b02e12fdc0ebdef3cd7d4a8a9e064961200193ab178f"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/MoodNeon.mat",
+    "before": "d1d011367da7237b924aff669613e1749c61d9747f85709c387751020b28ee3f",
+    "sha256": "d1d011367da7237b924aff669613e1749c61d9747f85709c387751020b28ee3f"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/MoodNeon.mat.meta",
+    "before": "6f254c35190411d5bd67a9359534d4fbcdae0ae79053162fea23decd19f54372",
+    "sha256": "6f254c35190411d5bd67a9359534d4fbcdae0ae79053162fea23decd19f54372"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/NeutralRoomReflection.exr",
+    "before": "26a5ad400b268c231425725e643210612563a9499def99ea9ab535a7d558931e",
+    "sha256": "2ce1a9f2fdb05cbcb821f15b3d7be3baac29072a0e1f23ac7f345411a0dd3ec8"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/NeutralRoomReflection.exr.meta",
+    "before": "425d6a4bcf4b6c1a441f3e06958908ab86f7270e9942a798ebee8fa2a4fe876d",
+    "sha256": "425d6a4bcf4b6c1a441f3e06958908ab86f7270e9942a798ebee8fa2a4fe876d"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Nightclub.fbx",
+    "before": "3850a4572bbdadf547836616cca2599e27efc0dcf5b2278a0919965fdd60e9ec",
+    "sha256": "3850a4572bbdadf547836616cca2599e27efc0dcf5b2278a0919965fdd60e9ec"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Nightclub.fbx.meta",
+    "before": "2ce20030b35cd066066f02680a938935de44527e4fbe6f3e892d0110cb6c0f59",
+    "sha256": "f2f889563dfcd9596cc24f749528bd58bf2ea44a3537fba36556c6619f62c72c"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/NightclubAtmosphere.asset",
+    "before": "53f6944536b1cc888ea568df1db38f98f68073631e277c5b29ae6e53d1d788fa",
+    "sha256": "53f6944536b1cc888ea568df1db38f98f68073631e277c5b29ae6e53d1d788fa"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/NightclubAtmosphere.asset.meta",
+    "before": "c446ec29ead0808a21b836790e7ce002ee81d364f7897d80bef90b16153722fc",
+    "sha256": "c446ec29ead0808a21b836790e7ce002ee81d364f7897d80bef90b16153722fc"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Obsidian.mat",
+    "before": "69d027db6ad44f786f07e2f3bd7a17daaf0263c524351ab7ece1802a491c0250",
+    "sha256": "69d027db6ad44f786f07e2f3bd7a17daaf0263c524351ab7ece1802a491c0250"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Obsidian.mat.meta",
+    "before": "0b04ab22e53dd8c61ae782e0696a1cad7f95e68c6835ad962f7d1b5ceba2d9f8",
+    "sha256": "0b04ab22e53dd8c61ae782e0696a1cad7f95e68c6835ad962f7d1b5ceba2d9f8"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Obsidian_BaseColor.png",
+    "before": "a34ae3e490587b7c932733d50befac06f9231793596db9059219dc8e01c325c2",
+    "sha256": "a34ae3e490587b7c932733d50befac06f9231793596db9059219dc8e01c325c2"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Obsidian_BaseColor.png.meta",
+    "before": "a72cd03d0cbef50b319d8783e203bd48bdd6a85cb525f1c511d2861baa7c15b8",
+    "sha256": "a72cd03d0cbef50b319d8783e203bd48bdd6a85cb525f1c511d2861baa7c15b8"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PalmLeaf.mat",
+    "before": "dff8a2c2c496d55f39c99cdbe4804538a06247cede518cea8ed634e34090cdbf",
+    "sha256": "0f7271e8815a2a886a6ad0f82ae19d781149a61de4289931e96f4b9bec25a0e1"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PalmLeaf.mat.meta",
+    "before": "6e5acec59831403e04807e0b3cd8e9e85acf930d98c7832dd6124ae14312c9da",
+    "sha256": "6e5acec59831403e04807e0b3cd8e9e85acf930d98c7832dd6124ae14312c9da"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PalmLeafLight.mat",
+    "before": "75c6251a008b9e32f275fceee45ceae039042190c6bb73c060409cb0146ca830",
+    "sha256": "79dc323e6ea0b6fd9e781efaade0ccff25064d62b3ddead85c2b290fb9427cab"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PalmLeafLight.mat.meta",
+    "before": "b541fc039bbdc1d5022c2a007c50d1615d21772993a9cba536b3021af8b8bbca",
+    "sha256": "b541fc039bbdc1d5022c2a007c50d1615d21772993a9cba536b3021af8b8bbca"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PalmLeafLight_BaseColor.png",
+    "before": "5f709ad5cc0320efa259c86ebfdd80f8144cf8c254eea13b416cfb33fc41814e",
+    "sha256": "5f709ad5cc0320efa259c86ebfdd80f8144cf8c254eea13b416cfb33fc41814e"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PalmLeafLight_BaseColor.png.meta",
+    "before": "466efb80da5b42127381af88353f9ccef802e8232919d48cb06a4b3c05328645",
+    "sha256": "466efb80da5b42127381af88353f9ccef802e8232919d48cb06a4b3c05328645"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PalmLeaf_BaseColor.png",
+    "before": "cb5b07c979af22a0e2b94b2aa6b3f27c9fdd24e2446363e15a8f8cb8500a15bd",
+    "sha256": "cb5b07c979af22a0e2b94b2aa6b3f27c9fdd24e2446363e15a8f8cb8500a15bd"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PalmLeaf_BaseColor.png.meta",
+    "before": "3a6a4fe595afd70b0831cd004f26a505029227bb11b68da9b8a1be9f8a195997",
+    "sha256": "3a6a4fe595afd70b0831cd004f26a505029227bb11b68da9b8a1be9f8a195997"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PartitionGlass.mat",
+    "before": "e8b3db6d51b777c89b976fbeb62ffab80d841619a3f52b9204fc71e5c88f2ba4",
+    "sha256": "e8b3db6d51b777c89b976fbeb62ffab80d841619a3f52b9204fc71e5c88f2ba4"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/PartitionGlass.mat.meta",
+    "before": "26e55896058ea3e7026917a581bebabc5916b32fbbcf14f28d4307caee71c726",
+    "sha256": "26e55896058ea3e7026917a581bebabc5916b32fbbcf14f28d4307caee71c726"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Pearl.mat",
+    "before": "aba5128f58fb048ce02459461a3c46ca59993d64cd7b4c9a44c10d990b2e561c",
+    "sha256": "aba5128f58fb048ce02459461a3c46ca59993d64cd7b4c9a44c10d990b2e561c"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Pearl.mat.meta",
+    "before": "9600822c33aee5821e038d362a281a048d09d7758e9e49716e2c3ab15b0603e1",
+    "sha256": "9600822c33aee5821e038d362a281a048d09d7758e9e49716e2c3ab15b0603e1"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/RoseVelvet.mat",
+    "before": "8b2a79da3c299de41a98bdc3366ff5afe4b94c098c5bb871ddcb5a38f54bfc09",
+    "sha256": "28e72b7a8b0b4fd60f4733aa48686cde590f81e90581bb7b40d204e8549b35fc"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/RoseVelvet.mat.meta",
+    "before": "e79521f35ef21d8d0fa3947a4e49a62dea148b49c351c12c07eb220beaa97079",
+    "sha256": "e79521f35ef21d8d0fa3947a4e49a62dea148b49c351c12c07eb220beaa97079"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/RoseVelvet_BaseColor.png",
+    "before": "5c1f76718243d465d97b983771235d14be84de2d43afdea5d0527a2523f30d6a",
+    "sha256": "5c1f76718243d465d97b983771235d14be84de2d43afdea5d0527a2523f30d6a"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/RoseVelvet_BaseColor.png.meta",
+    "before": "939f022b6380b3522adda3b643af1b7a542e2a710625cab93e88e9e9bd4c4e9d",
+    "sha256": "939f022b6380b3522adda3b643af1b7a542e2a710625cab93e88e9e9bd4c4e9d"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/ShelfBacklight.mat",
+    "before": null,
+    "sha256": "db7a3e2700ce8808ff2bc7a2194252e7dd64f0775ee8e98bcc54377d04f21e28"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/ShelfBacklight.mat.meta",
+    "before": null,
+    "sha256": "72307de4eabd7a467876157722c3e69af51de6669d4574e2e8a52562358999e8"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/SmokedGlass.mat",
+    "before": "5dc4af664be562cae1eda7f64f726af66a9aafa121b0baddc9e0229d24c0ed72",
+    "sha256": "5dc4af664be562cae1eda7f64f726af66a9aafa121b0baddc9e0229d24c0ed72"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/SmokedGlass.mat.meta",
+    "before": "db2ffe410bc6309a986b917770e009d101b0f9fd3c8b24c8548b008ae9a6d59d",
+    "sha256": "db2ffe410bc6309a986b917770e009d101b0f9fd3c8b24c8548b008ae9a6d59d"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/velvet-lounge-chair_0.mat",
+    "before": "b5b7a6dab0f42aea0b282b1ce918783de3a601af2d4a27031e6e63fee3118929",
+    "sha256": "9a2ea55b631e26e9ee2d7c1fba1424f71bd38dfa1103b801cab44043e6b08f52"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/velvet-lounge-chair_0.mat.meta",
+    "before": "0587dcc19b3cf94814ee6ef91be17aefc86894a2d012dab53bee3f286cac64e1",
+    "sha256": "0587dcc19b3cf94814ee6ef91be17aefc86894a2d012dab53bee3f286cac64e1"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/velvet-lounge-chair_0_BaseColor.png",
+    "before": "485afe93cb56db6cab275c8e7851ce22930ab5c779632e910894dcccd5cff7f6",
+    "sha256": "485afe93cb56db6cab275c8e7851ce22930ab5c779632e910894dcccd5cff7f6"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/velvet-lounge-chair_0_BaseColor.png.meta",
+    "before": "922a0826af4cc1a3341834801e3ae6a450d4a0b91b5afafead28810394b58e4f",
+    "sha256": "922a0826af4cc1a3341834801e3ae6a450d4a0b91b5afafead28810394b58e4f"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Velvet.mat",
+    "before": "29ff4c681596dba1b6fdf2661892304dcaadddb5a55e6a740a63d9e636571faa",
+    "sha256": "abffab62a7acd9250feeb15300ea6d322ef3efc230fc33eb245bc7e7a707b8cf"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Velvet.mat.meta",
+    "before": "b9e3388b061f79a5f4c93a69b594744b3af06a7873d07dcd87cc38337f06d64f",
+    "sha256": "b9e3388b061f79a5f4c93a69b594744b3af06a7873d07dcd87cc38337f06d64f"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Velvet_BaseColor.png",
+    "before": "fb74c030fd04a46201c2203d61a45250a22a7111cad7b442f59483427acf0e43",
+    "sha256": "fb74c030fd04a46201c2203d61a45250a22a7111cad7b442f59483427acf0e43"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/Velvet_BaseColor.png.meta",
+    "before": "774a4844d76afd5d5d6c347ba154ed721a62062917d855bb050c0671b5a36726",
+    "sha256": "774a4844d76afd5d5d6c347ba154ed721a62062917d855bb050c0671b5a36726"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/VortexScreen.mat",
+    "before": "1fb9b0e0a6498c38036400efec9af4bf5ff782978ebaafd5200f6e8c0103d94e",
+    "sha256": "c1504671de11752cea21cee198fa727da5265d08f01a76290e4d39fa7539719a"
+  },
+  {
+    "path": "Assets/EnvironmentArt/Generated/VortexScreen.mat.meta",
+    "before": "95f960408968edbeb4c84942dcb5fbe779aa2a1217494f7e29a544773c5064ad",
+    "sha256": "95f960408968edbeb4c84942dcb5fbe779aa2a1217494f7e29a544773c5064ad"
+  },
+  {
+    "path": "Assets/Gyms/Scenes/BeforeTheDrop.unity",
+    "before": "377bfb2c2cc814adb90c4b7fdc27786039550f951beb301ec4532505169a1574",
+    "sha256": "199d5c48ea5871e46269dad8c7c35860e0fd0564fbb4fcd8b826240427a47c21"
+  },
+  {
+    "path": "Assets/Gyms/Shaders/CityWindow.shader.meta",
+    "before": "742dc5d86927f0d490070a41d2920589900ce7a86e51dc68467c1e2e2218aeb0",
+    "sha256": "742dc5d86927f0d490070a41d2920589900ce7a86e51dc68467c1e2e2218aeb0"
+  }
+]

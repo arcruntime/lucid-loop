@@ -1,0 +1,21 @@
+✔ input only accepts sequenced player destinations; collision routes and speed are bounded (395.5119ms)
+✔ approach chooses a reachable stand point around furniture and publishes the unchanged live gate (366.1468ms)
+✔ approach rejects noninteractive actors, fenced input and unreachable rooms without consuming sequence (143.4149ms)
+✔ approach goes around a sightline blocker instead of granting conversation through it (90.7ms)
+✔ pauses stop movement and clock, and catch-up drops stalls (42.7224ms)
+✔ default opening derives recognition, actual intervention at table, and a frozen catastrophe (460.339ms)
+✔ recognition requires both sightlines; no entry or timer invents a catastrophe (1205.6853ms)
+✔ an actual intervention away from the VIP table cannot invent the fatal collision (403.4392ms)
+✔ social agreement plus physically assembled mediation and actual separation wins (2232.5617ms)
+✔ conversation gate covers all four NPCs, and reset restores poses and fences old movement (363.8861ms)
+✔ second-loop prevention is reachable with every action spoken nearby and voice time paused (2274.5256ms)
+ℹ {"mediationReadyAt":17.2,"actors":{"player":{"position":{"x":9,"z":-1.7},"motion":"idle","action":{"type":"idle"}},"maya":{"position":{"x":7.395445489995694,"z":-2.0798421066354456},"motion":"idle","action":{"type":"wait"}},"ren":{"position":{"x":2.5,"z":7.4},"motion":"idle","action":{"type":"idle"}},"luca":{"position":{"x":6.192811901090059,"z":-1.7390013067948855},"motion":"idle","action":{"type":"approach","targetId":"maya"}},"theo":{"position":{"x":6.535760615629123,"z":0.2676974386726485},"motion":"idle","action":{"type":"keep_distance","targetId":"maya"}},"affair_partner":{"position":{"x":8,"z":-0.8},"motion":"idle","action":{"type":"idle"}}}}
+ℹ {"actions":[{"at":1.3,"id":"maya","type":"wait","player":{"x":-2,"z":-4}},{"at":4.4,"id":"ren","type":"request_music","player":{"x":2.5,"z":6.2}},{"at":7,"id":"luca","type":"ask_about_exposure","player":{"x":-6,"z":2}},{"at":9,"id":"maya","type":"agree_private_approach","player":{"x":-2,"z":-4}},{"at":9,"id":"maya","type":"follow","player":{"x":-2,"z":-4}},{"at":12.5,"id":"theo","type":"agree_distance","player":{"x":9,"z":-1.7}},{"at":12.5,"id":"maya","type":"stop_recording","player":{"x":9,"z":-1.7}},{"at":12.5,"id":"maya","type":"wait","player":{"x":9,"z":-1.7}},{"at":17.5,"id":"luca","type":"mediate","player":{"x":8,"z":-1.7}}],"safelySeparatedBy":30.3}
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8317.1241

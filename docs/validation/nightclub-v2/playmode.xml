@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-14 10:38:24Z" end-time="2026-09-14 10:38:59Z" duration="34.897207">
+  <test-suite type="TestSuite" id="1029" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 10:38:24Z" end-time="2026-09-14 10:38:59Z" duration="34.897207" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1022" name="LucidLoop.Gyms.PlayModeTests.dll" fullname="B:/lucid-loop/.local/environment-review-project/Unity/Library/ScriptAssemblies/LucidLoop.Gyms.PlayModeTests.dll" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 10:38:24Z" end-time="2026-09-14 10:38:59Z" duration="34.884802" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="4200" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1023" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 10:38:24Z" end-time="2026-09-14 10:38:59Z" duration="34.883322" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1024" name="Gyms" fullname="LucidLoop.Gyms" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 10:38:24Z" end-time="2026-09-14 10:38:59Z" duration="34.882312" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1026" name="PlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-09-14 10:38:24Z" end-time="2026-09-14 10:38:59Z" duration="34.881450" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1016" name="EncounterScenePlayModeTests" fullname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests" classname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-14 10:38:24Z" end-time="2026-09-14 10:38:59Z" duration="34.879071" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1019" name="ApproachStartsConversationOnlyAfterServerEligibility" fullname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.ApproachStartsConversationOnlyAfterServerEligibility" methodname="ApproachStartsConversationOnlyAfterServerEligibility" classname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests" runstate="Explicit" seed="1955490290" result="Passed" start-time="2026-09-14 10:38:24Z" end-time="2026-09-14 10:38:30Z" duration="6.025104" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="_SKIPREASON" value="Requires the local relay; validates approach without opening a paid voice session." />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1017" name="OpeningMovementCatastropheAndRetainedReset" fullname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests.OpeningMovementCatastropheAndRetainedReset" methodname="OpeningMovementCatastropheAndRetainedReset" classname="LucidLoop.Gyms.PlayModeTests.EncounterScenePlayModeTests" runstate="Explicit" seed="902822045" result="Passed" start-time="2026-09-14 10:38:30Z" end-time="2026-09-14 10:38:59Z" duration="28.835835" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="_SKIPREASON" value="Requires the built BeforeTheDrop scene and real localhost:8789/game relay." />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[ENCOUNTER_SCENE_SMOKE_PASSED: B:\lucid-loop\.local\environment-review-project\.local\validation\encounter-smoke-20260914-103830-529
+Saving results to: C:/Users/jetha/AppData/LocalLow/Lucid Loop/Lucid Loop · Gyms\TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

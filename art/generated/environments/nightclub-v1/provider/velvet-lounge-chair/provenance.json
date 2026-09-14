@@ -1,0 +1,40 @@
+{
+  "asset": "velvet-lounge-chair",
+  "created": "2026-09-14T06:46:39.759859Z",
+  "status": "downloaded",
+  "settings": {
+    "prompt": "One luxurious contemporary nightclub lounge armchair. Low rounded tub back wrapping continuously into two arms, deep plum purple velvet upholstery, broad thick rounded seat cushion with piping, subtle vertical stitched channels in back, recessed charcoal plinth with narrow brushed brass base trim. Stylized painterly 3D game art, refined clean silhouette, visible fabric variation, no baked lighting. One meter wide, 0.9 meters deep, 0.85 meters high. Single isolated furniture object only, no table, no room, no text.",
+    "model": "v3.1-20260211",
+    "face_limit": 1800,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed",
+    "model_seed": 20260914,
+    "negative_prompt": "room, people, text, pedestal, background scene"
+  },
+  "task_id": "b313e5bb-ab6c-4bfc-ab67-8cb0a19df422",
+  "credits_consumed": 30.0,
+  "downloads": [
+    {
+      "field": "output_model_url",
+      "file": "original/output_model_url.glb",
+      "sha256": "3bcea94800ec16ec1436ff9ecb074cf2316cef624de97f21883f9794a8a2c7d9",
+      "bytes": 1994632,
+      "source_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260914/b313e5bb-ab6c-4bfc-ab67-8cb0a19df422/tripo_pbr_model_b313e5bb-ab6c-4bfc-ab67-8cb0a19df422.glb?<redacted>"
+    },
+    {
+      "field": "output_rendered_image_url",
+      "file": "original/output_rendered_image_url.webp",
+      "sha256": "8516590e3e473521edae559ae99639950dab552d932894a0450511861f207434",
+      "bytes": 332691,
+      "source_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260914/b313e5bb-ab6c-4bfc-ab67-8cb0a19df422/legacy_mesh.webp?<redacted>"
+    },
+    {
+      "field": "output_generated_image_url",
+      "file": "original/output_generated_image_url.jpeg",
+      "sha256": "edb769b41dd63c921e42189596105724e75623d1d574bc695653d965576b56be",
+      "bytes": 130808,
+      "source_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260914/b313e5bb-ab6c-4bfc-ab67-8cb0a19df422/text2image_b313e5bb-ab6c-4bfc-ab67-8cb0a19df422.jpeg?<redacted>"
+    }
+  ]
+}

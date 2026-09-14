@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="86" result="Passed" total="86" passed="86" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.9823358">
+  <test-suite type="TestSuite" id="1000" name="Lucid Loop · Gyms" fullname="Lucid Loop · Gyms" runstate="Runnable" testcasecount="98" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.982336" total="86" passed="86" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1110" name="LucidLoop.Gyms.Tests.dll" fullname="B:/lucid-loop/.local/environment-review-project/Unity/Library/ScriptAssemblies/LucidLoop.Gyms.Tests.dll" runstate="Runnable" testcasecount="86" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.970157" total="86" passed="86" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="127552" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1111" name="LucidLoop" fullname="LucidLoop" runstate="Runnable" testcasecount="86" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.969254" total="86" passed="86" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1112" name="Gyms" fullname="LucidLoop.Gyms" runstate="Runnable" testcasecount="86" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.968842" total="86" passed="86" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1113" name="Tests" fullname="LucidLoop.Gyms.Tests" runstate="Runnable" testcasecount="86" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.968376" total="86" passed="86" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1002" name="AudioTests" fullname="LucidLoop.Gyms.Tests.AudioTests" classname="LucidLoop.Gyms.Tests.AudioTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.053007" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1004" name="BufferPreservesOrderAndUnderrunIsSilence" fullname="LucidLoop.Gyms.Tests.AudioTests.BufferPreservesOrderAndUnderrunIsSilence" methodname="BufferPreservesOrderAndUnderrunIsSilence" classname="LucidLoop.Gyms.Tests.AudioTests" runstate="Runnable" seed="754875150" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.024018" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="IncompletePcmIsRejected" fullname="LucidLoop.Gyms.Tests.AudioTests.IncompletePcmIsRejected" methodname="IncompletePcmIsRejected" classname="LucidLoop.Gyms.Tests.AudioTests" runstate="Runnable" seed="1001318542" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.004348" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="OverflowDropsOldAudioRatherThanBuildingLatency" fullname="LucidLoop.Gyms.Tests.AudioTests.OverflowDropsOldAudioRatherThanBuildingLatency" methodname="OverflowDropsOldAudioRatherThanBuildingLatency" classname="LucidLoop.Gyms.Tests.AudioTests" runstate="Runnable" seed="17933283" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001367" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="PcmIsLittleEndianAndClamped" fullname="LucidLoop.Gyms.Tests.AudioTests.PcmIsLittleEndianAndClamped" methodname="PcmIsLittleEndianAndClamped" classname="LucidLoop.Gyms.Tests.AudioTests" runstate="Runnable" seed="1517238768" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001533" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1007" name="EncounterApproachIntentTests" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.035458" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1011" name="CancelFencesLateAckAndEligibility" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.CancelFencesLateAckAndEligibility" methodname="CancelFencesLateAckAndEligibility" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="1965417136" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.008718" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="DeniedAndMalformedResultsCannotAuthorizeOpening" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.DeniedAndMalformedResultsCannotAuthorizeOpening" methodname="DeniedAndMalformedResultsCannotAuthorizeOpening" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="863425696" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.004504" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="EarlierWorldCannotConfirmPostAckEligibility" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.EarlierWorldCannotConfirmPostAckEligibility" methodname="EarlierWorldCannotConfirmPostAckEligibility" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="169697135" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000522" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="EligibleSnapshotsNeverCreateConversationIntent" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.EligibleSnapshotsNeverCreateConversationIntent" methodname="EligibleSnapshotsNeverCreateConversationIntent" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="785088475" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000318" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="MatchingAckAndFreshEligibilityOpenOnlyOnce" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.MatchingAckAndFreshEligibilityOpenOnlyOnce" methodname="MatchingAckAndFreshEligibilityOpenOnlyOnce" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="1659327693" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000525" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1017" name="MissingAndMalformedEligibilityFailClosed" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.MissingAndMalformedEligibilityFailClosed" methodname="MissingAndMalformedEligibilityFailClosed" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="1461143181" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.013320" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="OldReplyCannotCancelReplacementIntent" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.OldReplyCannotCancelReplacementIntent" methodname="OldReplyCannotCancelReplacementIntent" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="1573864377" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001177" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="PreTickIdleDoesNotCancelButArrivingAfterTargetMovedDoes" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.PreTickIdleDoesNotCancelButArrivingAfterTargetMovedDoes" methodname="PreTickIdleDoesNotCancelButArrivingAfterTargetMovedDoes" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="920658672" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000729" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="ResetAndReplacementMovementFenceEligibility" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.ResetAndReplacementMovementFenceEligibility" methodname="ResetAndReplacementMovementFenceEligibility" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="1091553922" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000592" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="TimeoutPreventsMuchLaterAutomaticConversation" fullname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests.TimeoutPreventsMuchLaterAutomaticConversation" methodname="TimeoutPreventsMuchLaterAutomaticConversation" classname="LucidLoop.Gyms.Tests.EncounterApproachIntentTests" runstate="Runnable" seed="1815177299" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000559" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1018" name="EncounterClientStateTests" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.028109" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1031" name="AuthoredDemoActionsSurviveProjection" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.AuthoredDemoActionsSurviveProjection" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.009797" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1026" name="AuthoredDemoActionsSurviveProjection(&quot;approach&quot;,&quot;maya&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.AuthoredDemoActionsSurviveProjection(&quot;approach&quot;,&quot;maya&quot;)" methodname="AuthoredDemoActionsSurviveProjection" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="1656438999" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.007027" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1027" name="AuthoredDemoActionsSurviveProjection(&quot;intervene&quot;,&quot;maya&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.AuthoredDemoActionsSurviveProjection(&quot;intervene&quot;,&quot;maya&quot;)" methodname="AuthoredDemoActionsSurviveProjection" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="60915765" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000350" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1028" name="AuthoredDemoActionsSurviveProjection(&quot;keep_distance&quot;,&quot;maya&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.AuthoredDemoActionsSurviveProjection(&quot;keep_distance&quot;,&quot;maya&quot;)" methodname="AuthoredDemoActionsSurviveProjection" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="1839637841" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000266" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1029" name="AuthoredDemoActionsSurviveProjection(&quot;separate&quot;,&quot;vip&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.AuthoredDemoActionsSurviveProjection(&quot;separate&quot;,&quot;vip&quot;)" methodname="AuthoredDemoActionsSurviveProjection" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="648858445" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000241" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1030" name="AuthoredDemoActionsSurviveProjection(&quot;fall&quot;,null)" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.AuthoredDemoActionsSurviveProjection(&quot;fall&quot;,null)" methodname="AuthoredDemoActionsSurviveProjection" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="1292164732" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000192" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1020" name="DuplicateAndStaleUpdatesCannotUndoAcceptedWait" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.DuplicateAndStaleUpdatesCannotUndoAcceptedWait" methodname="DuplicateAndStaleUpdatesCannotUndoAcceptedWait" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="320684677" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001749" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1022" name="InconsistentLoopIdentityCannotReplaceState" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.InconsistentLoopIdentityCannotReplaceState" methodname="InconsistentLoopIdentityCannotReplaceState" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="761552340" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000546" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1023" name="MalformedActorRejectsWholeUpdateWithoutPartialCommit" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.MalformedActorRejectsWholeUpdateWithoutPartialCommit" methodname="MalformedActorRejectsWholeUpdateWithoutPartialCommit" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="1135851642" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.003249" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1024" name="MissingFollowTargetAndNonIntegerRevisionAreRejected" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.MissingFollowTargetAndNonIntegerRevisionAreRejected" methodname="MissingFollowTargetAndNonIntegerRevisionAreRejected" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="127500764" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000593" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1021" name="NewLoopCanRestartRevisionButOldLoopCannotReturn" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.NewLoopCanRestartRevisionButOldLoopCannotReturn" methodname="NewLoopCanRestartRevisionButOldLoopCannotReturn" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="1554023806" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000676" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="ProjectionDropsUnrelatedServerFields" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.ProjectionDropsUnrelatedServerFields" methodname="ProjectionDropsUnrelatedServerFields" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="478716373" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001682" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1033" name="ServerClockIsPreservedAndNonFiniteTimeIsRejected" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.ServerClockIsPreservedAndNonFiniteTimeIsRejected" methodname="ServerClockIsPreservedAndNonFiniteTimeIsRejected" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="923432736" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.003390" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1019" name="SnapshotDoesNotShareMutableInputOrOutput" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.SnapshotDoesNotShareMutableInputOrOutput" methodname="SnapshotDoesNotShareMutableInputOrOutput" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="1742674042" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001868" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1032" name="UnknownActionTargetCannotEnterProjection" fullname="LucidLoop.Gyms.Tests.EncounterClientStateTests.UnknownActionTargetCannotEnterProjection" methodname="UnknownActionTargetCannotEnterProjection" classname="LucidLoop.Gyms.Tests.EncounterClientStateTests" runstate="Runnable" seed="1975822742" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000641" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1034" name="EncounterHudLayoutTests" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" testcasecount="9" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.401309" total="9" passed="9" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1045" name="CluesExpandWithScrollableContentAndCanBeClosed" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.CluesExpandWithScrollableContentAndCanBeClosed" methodname="CluesExpandWithScrollableContentAndCanBeClosed" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="1642483230" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.193143" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1039" name="ExplorationDockKeepsCentreClearAndExpansionRestoresReplyControls" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.ExplorationDockKeepsCentreClearAndExpansionRestoresReplyControls" methodname="ExplorationDockKeepsCentreClearAndExpansionRestoresReplyControls" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="898093659" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.038293" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1044" name="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.092094" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1040" name="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected(&quot;disconnected&quot;,True,&quot;Choose someone nearby&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected(&quot;disconnected&quot;,True,&quot;Choose someone nearby&quot;)" methodname="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="633204544" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.022301" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1041" name="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected(&quot;ready&quot;,True,&quot;Choose someone nearby&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected(&quot;ready&quot;,True,&quot;Choose someone nearby&quot;)" methodname="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="380970256" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.021933" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1042" name="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected(&quot;disconnected&quot;,False,&quot;disconnected&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected(&quot;disconnected&quot;,False,&quot;disconnected&quot;)" methodname="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="1802621351" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.021340" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1043" name="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected(&quot;microphone_denied&quot;,True,&quot;microphone_denied&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected(&quot;microphone_denied&quot;,True,&quot;microphone_denied&quot;)" methodname="IdleVoiceStatusDoesNotReportConnectedGameAsDisconnected" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="1528210189" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.018142" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1038" name="PhoneControlsMeet44PointTargetsAndKeyboardAvoidance" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.PhoneControlsMeet44PointTargetsAndKeyboardAvoidance" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.074502" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1035" name="PhoneControlsMeet44PointTargetsAndKeyboardAvoidance(2556,1179,177,63)" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.PhoneControlsMeet44PointTargetsAndKeyboardAvoidance(2556,1179,177,63)" methodname="PhoneControlsMeet44PointTargetsAndKeyboardAvoidance" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="664336753" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.023662" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1036" name="PhoneControlsMeet44PointTargetsAndKeyboardAvoidance(2796,1290,177,63)" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.PhoneControlsMeet44PointTargetsAndKeyboardAvoidance(2796,1290,177,63)" methodname="PhoneControlsMeet44PointTargetsAndKeyboardAvoidance" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="2089687259" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.022272" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1037" name="PhoneControlsMeet44PointTargetsAndKeyboardAvoidance(2556,1179,0,0)" fullname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests.PhoneControlsMeet44PointTargetsAndKeyboardAvoidance(2556,1179,0,0)" methodname="PhoneControlsMeet44PointTargetsAndKeyboardAvoidance" classname="LucidLoop.Gyms.Tests.EncounterHudLayoutTests" runstate="Runnable" seed="13336904" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.026162" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1046" name="EncounterIntentFeedbackTests" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" testcasecount="11" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.020344" total="11" passed="11" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1051" name="ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.009145" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1049" name="ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript(&quot;calmer_music_needed&quot;,&quot;Ask Ren&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript(&quot;calmer_music_needed&quot;,&quot;Ask Ren&quot;)" methodname="ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="302489187" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.007222" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1050" name="ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript(&quot;mediation_group_not_ready&quot;,&quot;Leave so Luca&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript(&quot;mediation_group_not_ready&quot;,&quot;Leave so Luca&quot;)" methodname="ActionableRefusalTravelsThroughVoiceStatusWithoutInventingTranscript" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="121385140" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000827" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1048" name="ConfirmedActionSurvivesSpeechDeliveryFailure" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.ConfirmedActionSurvivesSpeechDeliveryFailure" methodname="ConfirmedActionSurvivesSpeechDeliveryFailure" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="905219940" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001351" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1060" name="ConversationAndClarificationAreDistinct" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.ConversationAndClarificationAreDistinct" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.002158" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1058" name="ConversationAndClarificationAreDistinct(&quot;no_action&quot;,&quot;no action was taken&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.ConversationAndClarificationAreDistinct(&quot;no_action&quot;,&quot;no action was taken&quot;)" methodname="ConversationAndClarificationAreDistinct" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="1416261004" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000548" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1059" name="ConversationAndClarificationAreDistinct(&quot;clarification&quot;,&quot;clarify&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.ConversationAndClarificationAreDistinct(&quot;clarification&quot;,&quot;clarify&quot;)" methodname="ConversationAndClarificationAreDistinct" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="2029905730" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000225" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1057" name="InternalPolicyReasonIsNotExposedAsAClue" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.InternalPolicyReasonIsNotExposedAsAClue" methodname="InternalPolicyReasonIsNotExposedAsAClue" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="533874094" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000474" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1056" name="UnconfirmedActionsNeverDisplaySuccess" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.UnconfirmedActionsNeverDisplaySuccess" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.002488" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1052" name="UnconfirmedActionsNeverDisplaySuccess(&quot;{ok:true,committed:false,outcome:{accepted:false}}&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.UnconfirmedActionsNeverDisplaySuccess(&quot;{ok:true,committed:false,outcome:{accepted:false}}&quot;)" methodname="UnconfirmedActionsNeverDisplaySuccess" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="1049028809" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000565" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1053" name="UnconfirmedActionsNeverDisplaySuccess(&quot;{ok:true,committed:true,outcome:{accepted:false}}&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.UnconfirmedActionsNeverDisplaySuccess(&quot;{ok:true,committed:true,outcome:{accepted:false}}&quot;)" methodname="UnconfirmedActionsNeverDisplaySuccess" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="1460229476" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000257" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1054" name="UnconfirmedActionsNeverDisplaySuccess(&quot;{ok:true,committed:'true',outcome:{accepted:true}}&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.UnconfirmedActionsNeverDisplaySuccess(&quot;{ok:true,committed:'true',outcome:{accepted:true}}&quot;)" methodname="UnconfirmedActionsNeverDisplaySuccess" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="1128447634" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000205" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1055" name="UnconfirmedActionsNeverDisplaySuccess(&quot;{ok:false,committed:true,outcome:{accepted:true}}&quot;)" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.UnconfirmedActionsNeverDisplaySuccess(&quot;{ok:false,committed:true,outcome:{accepted:true}}&quot;)" methodname="UnconfirmedActionsNeverDisplaySuccess" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="390745342" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000192" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1047" name="VoiceTransportReportsCommitWithoutInventingTranscript" fullname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests.VoiceTransportReportsCommitWithoutInventingTranscript" methodname="VoiceTransportReportsCommitWithoutInventingTranscript" classname="LucidLoop.Gyms.Tests.EncounterIntentFeedbackTests" runstate="Runnable" seed="511876380" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001190" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1061" name="EncounterPrimitivePresentationTests" fullname="LucidLoop.Gyms.Tests.EncounterPrimitivePresentationTests" classname="LucidLoop.Gyms.Tests.EncounterPrimitivePresentationTests" runstate="Runnable" testcasecount="3" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.024288" total="3" passed="3" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1062" name="FallMovesOnlyVisualAndRemainsHeldAcrossFurtherUpdates" fullname="LucidLoop.Gyms.Tests.EncounterPrimitivePresentationTests.FallMovesOnlyVisualAndRemainsHeldAcrossFurtherUpdates" methodname="FallMovesOnlyVisualAndRemainsHeldAcrossFurtherUpdates" classname="LucidLoop.Gyms.Tests.EncounterPrimitivePresentationTests" runstate="Runnable" seed="1820707698" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.015022" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1063" name="NewLoopRestoresExactStandingPoseAndHidesPhone" fullname="LucidLoop.Gyms.Tests.EncounterPrimitivePresentationTests.NewLoopRestoresExactStandingPoseAndHidesPhone" methodname="NewLoopRestoresExactStandingPoseAndHidesPhone" classname="LucidLoop.Gyms.Tests.EncounterPrimitivePresentationTests" runstate="Runnable" seed="405832640" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.003421" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1064" name="RecordingRequiresAuthoritativeFlagAndRestoresBothArmAndHand" fullname="LucidLoop.Gyms.Tests.EncounterPrimitivePresentationTests.RecordingRequiresAuthoritativeFlagAndRestoresBothArmAndHand" methodname="RecordingRequiresAuthoritativeFlagAndRestoresBothArmAndHand" classname="LucidLoop.Gyms.Tests.EncounterPrimitivePresentationTests" runstate="Runnable" seed="683958123" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.003251" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1065" name="EncounterTapGestureTests" fullname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" classname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.008973" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1072" name="CancelRequiresANewBegin" fullname="LucidLoop.Gyms.Tests.EncounterTapGestureTests.CancelRequiresANewBegin" methodname="CancelRequiresANewBegin" classname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" runstate="Runnable" seed="1326395176" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001271" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1067" name="DragReturningToOriginRemainsCancelled" fullname="LucidLoop.Gyms.Tests.EncounterTapGestureTests.DragReturningToOriginRemainsCancelled" methodname="DragReturningToOriginRemainsCancelled" classname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" runstate="Runnable" seed="1448507470" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000568" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1066" name="FingerReplacementCannotCompleteTap" fullname="LucidLoop.Gyms.Tests.EncounterTapGestureTests.FingerReplacementCannotCompleteTap" methodname="FingerReplacementCannotCompleteTap" classname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" runstate="Runnable" seed="1337443883" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000436" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1071" name="SmallFingerJitterAcceptsOnlyOnce" fullname="LucidLoop.Gyms.Tests.EncounterTapGestureTests.SmallFingerJitterAcceptsOnlyOnce" methodname="SmallFingerJitterAcceptsOnlyOnce" classname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" runstate="Runnable" seed="732570614" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000348" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-suite type="ParameterizedMethod" id="1070" name="UiAtEitherEndRejectsFloorTap" fullname="LucidLoop.Gyms.Tests.EncounterTapGestureTests.UiAtEitherEndRejectsFloorTap" classname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001724" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1068" name="UiAtEitherEndRejectsFloorTap(True,False)" fullname="LucidLoop.Gyms.Tests.EncounterTapGestureTests.UiAtEitherEndRejectsFloorTap(True,False)" methodname="UiAtEitherEndRejectsFloorTap" classname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" runstate="Runnable" seed="482407104" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000503" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1069" name="UiAtEitherEndRejectsFloorTap(False,True)" fullname="LucidLoop.Gyms.Tests.EncounterTapGestureTests.UiAtEitherEndRejectsFloorTap(False,True)" methodname="UiAtEitherEndRejectsFloorTap" classname="LucidLoop.Gyms.Tests.EncounterTapGestureTests" runstate="Runnable" seed="769027072" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000167" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+            </test-suite>
+            <test-suite type="TestFixture" id="1073" name="GestureTests" fullname="LucidLoop.Gyms.Tests.GestureTests" classname="LucidLoop.Gyms.Tests.GestureTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.003935" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1077" name="CancelledFingerCannotBecomeTap" fullname="LucidLoop.Gyms.Tests.GestureTests.CancelledFingerCannotBecomeTap" methodname="CancelledFingerCannotBecomeTap" classname="LucidLoop.Gyms.Tests.GestureTests" runstate="Runnable" seed="1124923588" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.001109" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1075" name="CharacterHoldFiresOnceAndReleaseCannotWalk" fullname="LucidLoop.Gyms.Tests.GestureTests.CharacterHoldFiresOnceAndReleaseCannotWalk" methodname="CharacterHoldFiresOnceAndReleaseCannotWalk" classname="LucidLoop.Gyms.Tests.GestureTests" runstate="Runnable" seed="1363349691" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000494" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1076" name="DragCancelsInteraction" fullname="LucidLoop.Gyms.Tests.GestureTests.DragCancelsInteraction" methodname="DragCancelsInteraction" classname="LucidLoop.Gyms.Tests.GestureTests" runstate="Runnable" seed="2086417749" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000403" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1074" name="ShortGroundPressIsATap" fullname="LucidLoop.Gyms.Tests.GestureTests.ShortGroundPressIsATap" methodname="ShortGroundPressIsATap" classname="LucidLoop.Gyms.Tests.GestureTests" runstate="Runnable" seed="1826683090" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:37Z" duration="0.000271" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1078" name="GymMaterialEmissionTests" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" testcasecount="8" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.360436" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1086" name="AuthoredGlowSurvivesForcedReimport" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.AuthoredGlowSurvivesForcedReimport" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" testcasecount="7" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.357117" total="7" passed="7" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1079" name="AuthoredGlowSurvivesForcedReimport(&quot;Amber glow&quot;)" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.AuthoredGlowSurvivesForcedReimport(&quot;Amber glow&quot;)" methodname="AuthoredGlowSurvivesForcedReimport" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" seed="1286613293" result="Passed" start-time="2026-09-14 07:51:37Z" end-time="2026-09-14 07:51:38Z" duration="0.221725" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1080" name="AuthoredGlowSurvivesForcedReimport(&quot;Cyan glow&quot;)" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.AuthoredGlowSurvivesForcedReimport(&quot;Cyan glow&quot;)" methodname="AuthoredGlowSurvivesForcedReimport" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" seed="1035564615" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.021958" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1081" name="AuthoredGlowSurvivesForcedReimport(&quot;Magenta glow&quot;)" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.AuthoredGlowSurvivesForcedReimport(&quot;Magenta glow&quot;)" methodname="AuthoredGlowSurvivesForcedReimport" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" seed="648444691" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.026512" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1082" name="AuthoredGlowSurvivesForcedReimport(&quot;Screen purple&quot;)" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.AuthoredGlowSurvivesForcedReimport(&quot;Screen purple&quot;)" methodname="AuthoredGlowSurvivesForcedReimport" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" seed="843697341" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.025387" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1083" name="AuthoredGlowSurvivesForcedReimport(&quot;Bottle0&quot;)" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.AuthoredGlowSurvivesForcedReimport(&quot;Bottle0&quot;)" methodname="AuthoredGlowSurvivesForcedReimport" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" seed="27720758" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.020610" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1084" name="AuthoredGlowSurvivesForcedReimport(&quot;Bottle1&quot;)" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.AuthoredGlowSurvivesForcedReimport(&quot;Bottle1&quot;)" methodname="AuthoredGlowSurvivesForcedReimport" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" seed="497098734" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.020166" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1085" name="AuthoredGlowSurvivesForcedReimport(&quot;Bottle2&quot;)" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.AuthoredGlowSurvivesForcedReimport(&quot;Bottle2&quot;)" methodname="AuthoredGlowSurvivesForcedReimport" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" seed="1434301258" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.018819" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-case id="1087" name="GeneratorCanEnableAndClearEmissionThroughUrpValidation" fullname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests.GeneratorCanEnableAndClearEmissionThroughUrpValidation" methodname="GeneratorCanEnableAndClearEmissionThroughUrpValidation" classname="LucidLoop.Gyms.Tests.GymMaterialEmissionTests" runstate="Runnable" seed="463792525" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.002066" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1088" name="NpcActionExecutorTests" fullname="LucidLoop.Gyms.Tests.NpcActionExecutorTests" classname="LucidLoop.Gyms.Tests.NpcActionExecutorTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.007378" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1092" name="DisableCallbackClearsTargetModeAndFailure" fullname="LucidLoop.Gyms.Tests.NpcActionExecutorTests.DisableCallbackClearsTargetModeAndFailure" methodname="DisableCallbackClearsTargetModeAndFailure" classname="LucidLoop.Gyms.Tests.NpcActionExecutorTests" runstate="Runnable" seed="118511619" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.002683" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1090" name="MissingNavigationReportsFailureOnceWithoutPretendingToMove" fullname="LucidLoop.Gyms.Tests.NpcActionExecutorTests.MissingNavigationReportsFailureOnceWithoutPretendingToMove" methodname="MissingNavigationReportsFailureOnceWithoutPretendingToMove" classname="LucidLoop.Gyms.Tests.NpcActionExecutorTests" runstate="Runnable" seed="578468482" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.001251" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1091" name="MissingTargetIsReportedAndWaitCanSupersedeFailure" fullname="LucidLoop.Gyms.Tests.NpcActionExecutorTests.MissingTargetIsReportedAndWaitCanSupersedeFailure" methodname="MissingTargetIsReportedAndWaitCanSupersedeFailure" classname="LucidLoop.Gyms.Tests.NpcActionExecutorTests" runstate="Runnable" seed="259113812" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000523" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1089" name="WaitClearsFollowTargetAndDoesNotResumeWhenTargetMoves" fullname="LucidLoop.Gyms.Tests.NpcActionExecutorTests.WaitClearsFollowTargetAndDoesNotResumeWhenTargetMoves" methodname="WaitClearsFollowTargetAndDoesNotResumeWhenTargetMoves" classname="LucidLoop.Gyms.Tests.NpcActionExecutorTests" runstate="Runnable" seed="1141440278" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000592" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1093" name="RelayAddressPolicyTests" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" testcasecount="13" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.021100" total="13" passed="13" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="ParameterizedMethod" id="1099" name="EditorAllowsDevelopmentLan" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.EditorAllowsDevelopmentLan" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.015652" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1094" name="EditorAllowsDevelopmentLan(&quot;ws://192.168.1.20:8080/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.EditorAllowsDevelopmentLan(&quot;ws://192.168.1.20:8080/game&quot;)" methodname="EditorAllowsDevelopmentLan" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="106473375" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.008905" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1095" name="EditorAllowsDevelopmentLan(&quot;ws://10.10.0.4:8080/live&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.EditorAllowsDevelopmentLan(&quot;ws://10.10.0.4:8080/live&quot;)" methodname="EditorAllowsDevelopmentLan" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="217385264" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000259" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1096" name="EditorAllowsDevelopmentLan(&quot;ws://172.16.2.4:8080/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.EditorAllowsDevelopmentLan(&quot;ws://172.16.2.4:8080/game&quot;)" methodname="EditorAllowsDevelopmentLan" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="162631001" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000207" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1097" name="EditorAllowsDevelopmentLan(&quot;ws://[fd12::20]:8080/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.EditorAllowsDevelopmentLan(&quot;ws://[fd12::20]:8080/game&quot;)" methodname="EditorAllowsDevelopmentLan" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="383805848" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.003892" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1098" name="EditorAllowsDevelopmentLan(&quot;ws://relay.local:8080/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.EditorAllowsDevelopmentLan(&quot;ws://relay.local:8080/game&quot;)" methodname="EditorAllowsDevelopmentLan" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="1654822436" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000734" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1106" name="InvalidOrPublicInsecureAddressesAreRejected" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.InvalidOrPublicInsecureAddressesAreRejected" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" testcasecount="6" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.002477" total="6" passed="6" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1100" name="InvalidOrPublicInsecureAddressesAreRejected(&quot;ws://8.8.8.8:8080/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.InvalidOrPublicInsecureAddressesAreRejected(&quot;ws://8.8.8.8:8080/game&quot;)" methodname="InvalidOrPublicInsecureAddressesAreRejected" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="1776893437" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000427" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1101" name="InvalidOrPublicInsecureAddressesAreRejected(&quot;ws://172.32.0.1:8080/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.InvalidOrPublicInsecureAddressesAreRejected(&quot;ws://172.32.0.1:8080/game&quot;)" methodname="InvalidOrPublicInsecureAddressesAreRejected" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="1850426107" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000159" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1102" name="InvalidOrPublicInsecureAddressesAreRejected(&quot;ws://example.com/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.InvalidOrPublicInsecureAddressesAreRejected(&quot;ws://example.com/game&quot;)" methodname="InvalidOrPublicInsecureAddressesAreRejected" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="1558184480" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000187" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1103" name="InvalidOrPublicInsecureAddressesAreRejected(&quot;ws://192.168.1.20:8080/game?token=secret&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.InvalidOrPublicInsecureAddressesAreRejected(&quot;ws://192.168.1.20:8080/game?token=secret&quot;)" methodname="InvalidOrPublicInsecureAddressesAreRejected" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="233499745" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000119" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1104" name="InvalidOrPublicInsecureAddressesAreRejected(&quot;wss://user:password@example.com/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.InvalidOrPublicInsecureAddressesAreRejected(&quot;wss://user:password@example.com/game&quot;)" methodname="InvalidOrPublicInsecureAddressesAreRejected" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="1754388758" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000093" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1105" name="InvalidOrPublicInsecureAddressesAreRejected(&quot;wss://example.com/game#fragment&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.InvalidOrPublicInsecureAddressesAreRejected(&quot;wss://example.com/game#fragment&quot;)" methodname="InvalidOrPublicInsecureAddressesAreRejected" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="741696255" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000094" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+              </test-suite>
+              <test-suite type="ParameterizedMethod" id="1109" name="TlsAndLoopbackRemainSupported" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.TlsAndLoopbackRemainSupported" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.001721" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1107" name="TlsAndLoopbackRemainSupported(&quot;wss://example.com/game&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.TlsAndLoopbackRemainSupported(&quot;wss://example.com/game&quot;)" methodname="TlsAndLoopbackRemainSupported" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="566085252" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000403" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1108" name="TlsAndLoopbackRemainSupported(&quot;ws://127.0.0.1:8080/live&quot;)" fullname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests.TlsAndLoopbackRemainSupported(&quot;ws://127.0.0.1:8080/live&quot;)" methodname="TlsAndLoopbackRemainSupported" classname="LucidLoop.Gyms.Tests.RelayAddressPolicyTests" runstate="Runnable" seed="1789899387" result="Passed" start-time="2026-09-14 07:51:38Z" end-time="2026-09-14 07:51:38Z" duration="0.000149" asserts="0">
+                  <properties>
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[Saving results to: C:/Users/jetha/AppData/LocalLow/Lucid Loop/Lucid Loop · Gyms\TestResults.xml
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

@@ -1,0 +1,2591 @@
+{
+  "project": "B:\\lucid-loop\\.local\\environment-publish-worktree\\.local\\environment-review-project\\Unity",
+  "files": [
+    {
+      "path": "Assets/DefaultVolumeProfile.asset",
+      "sha256": "c72e06f2ba56c0c4729cab0fb2ae44a9597a33769924cc38b3c9dc31523a8acf",
+      "bytes": 21274
+    },
+    {
+      "path": "Assets/DefaultVolumeProfile.asset.meta",
+      "sha256": "3c38e67278512b94088ff617d63c6462c4b4249d0f74671ab83bb7c6dfcd2409",
+      "bytes": 197
+    },
+    {
+      "path": "Assets/UniversalRenderPipelineGlobalSettings.asset",
+      "sha256": "7870f69fa90a0f361b594e0783b8d300e108053f91476bc7fbdbe8d3c3e0948e",
+      "bytes": 26340
+    },
+    {
+      "path": "Assets/UniversalRenderPipelineGlobalSettings.asset.meta",
+      "sha256": "544b7a8f9d94f44ddfd6e6743612c290af15ce1d87cb73aa56f5c51b980ea35c",
+      "bytes": 197
+    },
+    {
+      "path": "Assets/Gyms/Audio.meta",
+      "sha256": "d52d1215c14d8a72f29e93d3372c2dc744d6cd20f47dd3f685a14d70d01109f1",
+      "bytes": 121
+    },
+    {
+      "path": "Assets/Gyms/Editor.meta",
+      "sha256": "e731e0e4b9178cb33c888c6e15558ac33f276197124973ca1f5a84a7aa8f6e4e",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Generated.meta",
+      "sha256": "1b22273fbec96e3b1e80fdd212dafe4db3f89aec72574b415d0caafa58b9d989",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Plugins.meta",
+      "sha256": "0ce5f3f7790dc987d5dd92d00748fe33f3f10da1dfd956d5dc607cc977913c82",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/References.meta",
+      "sha256": "0a2f6465e4029025a10e68ee071f1228dcab6a463b18882976ec6e9b9b3bcd0f",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Resources.meta",
+      "sha256": "d1c2b4406c8e707a13cf03a82482c37baa75284ab704f66877309e449d4830de",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Runtime.meta",
+      "sha256": "b15ff737133d9636cfcdf92c71334cbecdd9c204b26d499855e3e384f23188b0",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Scenes.meta",
+      "sha256": "cf44a923cee3496faa8a0078c99e4dac458128a3b3e43cc6473a783ad2f65ad0",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Shaders.meta",
+      "sha256": "330a4c427afdafd2257d111382d093693b4964a3e23c36cea0c96d5417883728",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/Gyms/Tests.meta",
+      "sha256": "a36de5e054e1944066996a414c4c29efc536371858b03eedea05b0502133abc7",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Audio/club_aggressive_120bpm.wav",
+      "sha256": "eaec24ccdb5decc6e53de70a28ad68d3306b79475d46d616998dac00f4136c15",
+      "bytes": 3072044
+    },
+    {
+      "path": "Assets/Gyms/Audio/club_aggressive_120bpm.wav.meta",
+      "sha256": "76d40e38e67bdbb6d3dbbcb2894eba2ea9c57cda8f408324331af7a176bc607f",
+      "bytes": 720
+    },
+    {
+      "path": "Assets/Gyms/Audio/club_intimate_96bpm.wav",
+      "sha256": "46a5e6220032cd91931369aa048d6bfdfa74ffbca18842fdd845615c62979f98",
+      "bytes": 3840044
+    },
+    {
+      "path": "Assets/Gyms/Audio/club_intimate_96bpm.wav.meta",
+      "sha256": "7115063f0a32178250a15ee182608bf57cde98116dac835d43986dc816b9555a",
+      "bytes": 720
+    },
+    {
+      "path": "Assets/Gyms/Audio/music-provenance.json",
+      "sha256": "cf6c702a9ab3ac54bb6efee4006883c0ecdc8a7b6aa7feef5faf356af9e5f685",
+      "bytes": 1484
+    },
+    {
+      "path": "Assets/Gyms/Audio/music-provenance.json.meta",
+      "sha256": "3905d22a1482d9273acb311fcd1aaab32fa7bfe9b79892ae7ec4d100bb2e5f32",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Audio/README.md",
+      "sha256": "0dca0fe6822d6806ca28197aa3e58f579c6f09d87a28ceaded08f8847b650962",
+      "bytes": 1926
+    },
+    {
+      "path": "Assets/Gyms/Audio/README.md.meta",
+      "sha256": "327927f4e641ab87d5d17d3623fad78996b981a7dbb37b6bd4933ecd198df466",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Editor/EncounterMoodSetup.cs",
+      "sha256": "c700e21c9689fdd4c448b40a8d6300e377200b42d09aa86accbfcd9e2264a866",
+      "bytes": 3494
+    },
+    {
+      "path": "Assets/Gyms/Editor/EncounterMoodSetup.cs.meta",
+      "sha256": "d208c7aca4a195a240c70bc4e6b3c5b4cd51fbad68bd1462f89e2bf11d72d51b",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Editor/EncounterSceneBuilder.cs",
+      "sha256": "a21a4afc6cb3da2590da0339efa087f91fb009c3a711db0c43fd78db31330e41",
+      "bytes": 7163
+    },
+    {
+      "path": "Assets/Gyms/Editor/EncounterSceneBuilder.cs.meta",
+      "sha256": "9e133687c596b5ff31fe86f48d75ea74a4d25593fb6d00b505646754043c02d2",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Editor/GymBuilder.cs",
+      "sha256": "43c4402d0f36db0a41b0b4aa7be22a13e5ee59b759d69240ce1b971aba4e178d",
+      "bytes": 24556
+    },
+    {
+      "path": "Assets/Gyms/Editor/GymBuilder.cs.meta",
+      "sha256": "382d68587ab10e57674272df118d4f7fc74111b59c0cb47f4a195f530759d0e6",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Editor/GymCIBuild.cs",
+      "sha256": "65ebf8c393b86c85e66c9df682e3eae028ce916cca01e09e874f1521f8a423b6",
+      "bytes": 1631
+    },
+    {
+      "path": "Assets/Gyms/Editor/GymCIBuild.cs.meta",
+      "sha256": "fce4f351f3a418ace6024817cfe09cad4056a968f44f71540b465427c4d4fe2c",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Editor/GymMaterialEmission.cs",
+      "sha256": "f46651ff9d413b6f11495d88a990b4181af80122fce70d7a1bce517faf0df3f8",
+      "bytes": 1085
+    },
+    {
+      "path": "Assets/Gyms/Editor/GymMaterialEmission.cs.meta",
+      "sha256": "46b7151be7c1cee57fa24e0661fad77a500c117f9854391ff08bf1f620d47843",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Editor/GymValidation.cs",
+      "sha256": "f5a5058c8d4d1ac15a3b35fca2b008606d39c715f0c9de8244cd0492ebd7da40",
+      "bytes": 10856
+    },
+    {
+      "path": "Assets/Gyms/Editor/GymValidation.cs.meta",
+      "sha256": "fc14b823157ba78a4b3e0fd55944bd9c8e802ff976ef99b72bd774c201c49beb",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Editor/IosBuild.cs",
+      "sha256": "cec27341bfddbaa8804aac8a277d91486281d79762e1c56038a5090434d8f359",
+      "bytes": 4533
+    },
+    {
+      "path": "Assets/Gyms/Editor/IosBuild.cs.meta",
+      "sha256": "c112f4d740997bb228aa5edd6059ee76514fe63b74e6a3c3618fbf7143e1ffba",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Editor/IosLocalRelayPostprocessor.cs",
+      "sha256": "98fafcd16a39c662b601bdcf8b4592f061fdbbe252f6eae757033f5ade2f3ac3",
+      "bytes": 4546
+    },
+    {
+      "path": "Assets/Gyms/Editor/IosLocalRelayPostprocessor.cs.meta",
+      "sha256": "453528ea6de4fe7b19fb9e0e437ab07552da8d28bbbea77810e55c692fcbd4ef",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Editor/IosRenderingPolicy.cs",
+      "sha256": "48fd82e2885137d978ea7da4e190b8d676fe3d2f0894880a1786a11d1039db3e",
+      "bytes": 5692
+    },
+    {
+      "path": "Assets/Gyms/Editor/IosRenderingPolicy.cs.meta",
+      "sha256": "2537d5415e9c0217f5d018c076ab8a98666b9bdfaaef08f1dbac4ee8e7692572",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Editor/LucidLoop.Gyms.Editor.asmdef",
+      "sha256": "157ef6bf1618a762fbd7a8e49523503684c97edd99b637126e77dfe2aad3aab1",
+      "bytes": 356
+    },
+    {
+      "path": "Assets/Gyms/Editor/LucidLoop.Gyms.Editor.asmdef.meta",
+      "sha256": "a094bb6da85eea2300b64df47ee2bb1460e612e74c8eefc1762ae4ba7c5f5945",
+      "bytes": 173
+    },
+    {
+      "path": "Assets/Gyms/Editor/NightclubEnvironmentBuilder.cs",
+      "sha256": "b9dbba4f2a248a528fb17cbd93a33645affc2226b2ffd463ccc7c08982e08a14",
+      "bytes": 32895
+    },
+    {
+      "path": "Assets/Gyms/Editor/NightclubEnvironmentBuilder.cs.meta",
+      "sha256": "9378c750f3344fc4b87f7ab1cbe9dd674c84adc83ef1cfc08a5e1558056e07f1",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Gyms/Editor/RenReviewMigrationCheck.cs",
+      "sha256": "d96d80d8ab21e60aa2f45e1928f5872f7227befd5e76272108fdac2612d41f17",
+      "bytes": 5272
+    },
+    {
+      "path": "Assets/Gyms/Editor/RenReviewMigrationCheck.cs.meta",
+      "sha256": "fe2db759f66a86a7ad4bce9d8c5a046b4449468c4378918d76386d9dfda29e82",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Generated/Amber glow.mat",
+      "sha256": "e51411fdb3bc3fa9f0f2036aceec7bc0de90d3d855b1a50ef21dc43a1c8baa90",
+      "bytes": 3957
+    },
+    {
+      "path": "Assets/Gyms/Generated/Amber glow.mat.meta",
+      "sha256": "4cdfe4cb5bb3a1e54403bbd2524bae5c51f2e37f76a4d0e220b6d3f815a4c2c9",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Apron.mat",
+      "sha256": "323abe890814e7e651f0952265b394e825190eba6f8aa95a85ea45f6d5d359c2",
+      "bytes": 3952
+    },
+    {
+      "path": "Assets/Gyms/Generated/Apron.mat.meta",
+      "sha256": "806f5135836b03e5892e144fc2df0a3e1ba4e28e64e90b12de62b445da98d5f2",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Atmosphere.asset",
+      "sha256": "32d9e028096689d902c68cd6e098be5ea4273e00619e423b5958f8e2a8c0ad15",
+      "bytes": 2772
+    },
+    {
+      "path": "Assets/Gyms/Generated/Atmosphere.asset.meta",
+      "sha256": "995523099703c04ae0aa881131bc8e89fac0a03d8a1e13870bd318c1b51a252e",
+      "bytes": 197
+    },
+    {
+      "path": "Assets/Gyms/Generated/Bottle0.mat",
+      "sha256": "84835b3588fd6b9ed2e8923b9cc81ab007b4c72c361460c8b2a52449088fa54b",
+      "bytes": 3969
+    },
+    {
+      "path": "Assets/Gyms/Generated/Bottle0.mat.meta",
+      "sha256": "81094ce3b2d0730fe3ed48a879b412162d45bc322a1579c6971476a131dd9b05",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Bottle1.mat",
+      "sha256": "a619cda98cbf8a61355e1dfe3f865934b6844f126558bc776c6bfff8df2860d9",
+      "bytes": 3958
+    },
+    {
+      "path": "Assets/Gyms/Generated/Bottle1.mat.meta",
+      "sha256": "1e87b7af1219806b0fa09bf45aea336bff219cf9df35ec8c5e5fe265130a5f6d",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Bottle2.mat",
+      "sha256": "d2a5a769ff26936599e825111aea79d2bd0b5cd0b48127fb147bebd1264ee4d2",
+      "bytes": 3964
+    },
+    {
+      "path": "Assets/Gyms/Generated/Bottle2.mat.meta",
+      "sha256": "ebbb5f84a909f702f9b2e339e07954d429dc3697f88d11c007354c34c3cc70f3",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/ClubNavMesh.asset",
+      "sha256": "9bbe0b4594991c045035c71f004ea57f38e329fde067cae84c9a1c48681025e5",
+      "bytes": 18920
+    },
+    {
+      "path": "Assets/Gyms/Generated/ClubNavMesh.asset.meta",
+      "sha256": "7a4707fbe9a7b995e9c01ef2ecae7a7126d819b1f922f661fe98802bd81bce20",
+      "bytes": 197
+    },
+    {
+      "path": "Assets/Gyms/Generated/Cyan glow.mat",
+      "sha256": "e4e949c39eae35bb2f36e1dad75f5639f7717d97d4925bf5cefa67063154ad27",
+      "bytes": 3951
+    },
+    {
+      "path": "Assets/Gyms/Generated/Cyan glow.mat.meta",
+      "sha256": "87c14b2f80d0dd0758010f04cb784e799bfef676ed70281cc40cda7963f125b6",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Dance surface.mat",
+      "sha256": "6e5fee739929a130b4873663b35534a3b9db781e2758b216eb72b2150bd5e20a",
+      "bytes": 3954
+    },
+    {
+      "path": "Assets/Gyms/Generated/Dance surface.mat.meta",
+      "sha256": "19c966b1d2d07875971f7490c83a3de743a2188fa4d9be34a13db6b5db2cdcda",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Floor.mat",
+      "sha256": "58860f4742a9aeb4f3b998bfd0f2ba09fc888b42617935bf75b0a789f2297270",
+      "bytes": 3955
+    },
+    {
+      "path": "Assets/Gyms/Generated/Floor.mat.meta",
+      "sha256": "8c831b07dd28318d72e8483958b92687792fad928bb0837b43195c322168af80",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/GymPipeline.asset",
+      "sha256": "b75871d229cf7700f1f5c115d09b4ce58c09bbc22fc2fca0dd5b3e2c0dd2ef18",
+      "bytes": 4833
+    },
+    {
+      "path": "Assets/Gyms/Generated/GymPipeline.asset.meta",
+      "sha256": "1681e655a454324093b9cc198941d7aedb5f366a92a66ccb321abcdeea3adbcd",
+      "bytes": 197
+    },
+    {
+      "path": "Assets/Gyms/Generated/GymRenderer.asset",
+      "sha256": "b237dcdcd2bfed80cb60484b261a1a60f5b52f867f8bd2ec782ed0c56c2f3421",
+      "bytes": 1944
+    },
+    {
+      "path": "Assets/Gyms/Generated/GymRenderer.asset.meta",
+      "sha256": "bcb6adae44d56aac8db6a0a33168b6235b70f65268f80671549d6037c6db6a2d",
+      "bytes": 197
+    },
+    {
+      "path": "Assets/Gyms/Generated/Ink.mat",
+      "sha256": "a137a5d2800fcb032ce9eaf4b526e480c583dea5ed709f096b2aa10f909314e8",
+      "bytes": 3957
+    },
+    {
+      "path": "Assets/Gyms/Generated/Ink.mat.meta",
+      "sha256": "69d6d4deb2d379fb039d868fd6d9bb08af169821e3f2fcc8d06dccb72b66034c",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Light fabric.mat",
+      "sha256": "d4174236a9c18f7d917ed654a599c1a4e31107526f829eb2ac877f9299c4ceed",
+      "bytes": 3948
+    },
+    {
+      "path": "Assets/Gyms/Generated/Light fabric.mat.meta",
+      "sha256": "c3320646653b7030e31c25c0d0b633c5f8516dfbd6b77b51d5ea4337be5879f3",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/luca cloth.mat",
+      "sha256": "66c2750f27eb31e07644f53c1c4710d978bace1f9d5c0a5fb1e7252a01754d93",
+      "bytes": 3957
+    },
+    {
+      "path": "Assets/Gyms/Generated/luca cloth.mat.meta",
+      "sha256": "b81ba913eca3080cbc77d06d7a2a4568cf5b724fc46d669107a753150d9ca190",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/luca hair.mat",
+      "sha256": "44066ad5c9c27744d2e50a035f8e046200b5c02ebfa29476cf6243327bb850e8",
+      "bytes": 3962
+    },
+    {
+      "path": "Assets/Gyms/Generated/luca hair.mat.meta",
+      "sha256": "e5782a90258527851986a9b82ee5c00952db6d1009fe2f9acb3d6aa4b4d8f1c6",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Magenta glow.mat",
+      "sha256": "879013a78a13b9aba0e23546a19c68522e6c109849bcd931501797c8ee733773",
+      "bytes": 3954
+    },
+    {
+      "path": "Assets/Gyms/Generated/Magenta glow.mat.meta",
+      "sha256": "65a645fd0dbe6eb2524fba6cd74fe7d83c289630a2cbaa933f2c9ed3969d98be",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/maya cloth.mat",
+      "sha256": "4579a76c68272282349297ae600a9fcc0d7a6605e886891e7e65e31c24b65842",
+      "bytes": 3952
+    },
+    {
+      "path": "Assets/Gyms/Generated/maya cloth.mat.meta",
+      "sha256": "01caf5d486237730b9bd0b5f2a4d5f2f8e62ad8ce499165bc3b2f9c70bbe9256",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/maya hair.mat",
+      "sha256": "d311d3066fb29f0ccc420bd6ba1091025bb476ed70faf88d09906103584569df",
+      "bytes": 3949
+    },
+    {
+      "path": "Assets/Gyms/Generated/maya hair.mat.meta",
+      "sha256": "566e7ab3f12d7a0b7e82d1cb9c4ec05315bf67293a6e52a1cdcfa00e5549309a",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Metal.mat",
+      "sha256": "65627deb6dfda0e430eb8ccd0e96613207408890257bad7e712c9c11a645fb25",
+      "bytes": 3953
+    },
+    {
+      "path": "Assets/Gyms/Generated/Metal.mat.meta",
+      "sha256": "6448680e30aa873a1926c758c80f64304516d34c6b86312e06a22ad6002f230d",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/player cloth.mat",
+      "sha256": "09c56e9953dd677b132a056765d88efc514ccf0e9ffb9d9e1b9dea58e61ecc2c",
+      "bytes": 3961
+    },
+    {
+      "path": "Assets/Gyms/Generated/player cloth.mat.meta",
+      "sha256": "30b343d2268ff611fdbd59cdc3e8539cbdf77f65ab961be1030e64cdc335fd9a",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/player hair.mat",
+      "sha256": "fab50f19eb6ac05999ea1e21c6e36ef68df7b187c61dfe6286773133fa5932a2",
+      "bytes": 3964
+    },
+    {
+      "path": "Assets/Gyms/Generated/player hair.mat.meta",
+      "sha256": "d46d3cbf4046784f78e502d19d89f992607fbe9f43dad2422c90683be90261b6",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/ren cloth.mat",
+      "sha256": "02fae173349a50e48037d57561cd01bc01e5b6038b7de9abfdd82fbc0def182f",
+      "bytes": 3957
+    },
+    {
+      "path": "Assets/Gyms/Generated/ren cloth.mat.meta",
+      "sha256": "d14cb8764ce54e43c81fe939fe7448c6f7ddb808194983d53ccfd514a7cb03b3",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/ren hair.mat",
+      "sha256": "693584b118a2890c17b9aaee0c434ee20367ea11dc0ece70419ff3d266d4874c",
+      "bytes": 3937
+    },
+    {
+      "path": "Assets/Gyms/Generated/ren hair.mat.meta",
+      "sha256": "c82a1d83f8a8dbda3a4ed60f564f7ee5b8177661c92ecd0d2895dc4d3f8c7923",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Screen purple.mat",
+      "sha256": "e5a1cf4c6af579001c214a633fcb1dcc6bf904e92f93d0941122e67ab9d2961d",
+      "bytes": 3988
+    },
+    {
+      "path": "Assets/Gyms/Generated/Screen purple.mat.meta",
+      "sha256": "0e864f3b50d3e3ac9baa07dc97fa959ccc233b5707c4d099c8df3210152b44f9",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Skin.mat",
+      "sha256": "fadc97f649caef3c375cf14272dc1e10953438b37476aabd1edb811aa79b6c97",
+      "bytes": 3938
+    },
+    {
+      "path": "Assets/Gyms/Generated/Skin.mat.meta",
+      "sha256": "f733c15e28db7a79f3086fa107381572006763815dea0b0653982816161a7c62",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/theo cloth.mat",
+      "sha256": "5ccc6d6ed6fcba7df953f728749ceb3d58f217e06830ced4b03b7f8a2abacd46",
+      "bytes": 3952
+    },
+    {
+      "path": "Assets/Gyms/Generated/theo cloth.mat.meta",
+      "sha256": "8bbfc3c37b2fda0b4a2ef7ae339cb2c04f4664a6622d09d06e01e4810cf02e95",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/theo hair.mat",
+      "sha256": "deda128e22bfc21b534b6c7d1af37f99bfc96dc76efa58f130ee80aac82fb001",
+      "bytes": 3951
+    },
+    {
+      "path": "Assets/Gyms/Generated/theo hair.mat.meta",
+      "sha256": "3437f573a2fe9c399319d29bf66b798de5f2f32ab1ed16cebc01c7e89281bfd2",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Generated/Velvet.mat",
+      "sha256": "84a2fd4f734edc5269ad9d635ff2335782570beed5551f1ba604f1a8cb7e4658",
+      "bytes": 3956
+    },
+    {
+      "path": "Assets/Gyms/Generated/Velvet.mat.meta",
+      "sha256": "eda7e2071401a3d9bbf11a7b35ef1d9e8b18260e7182f498abd3966ad4ddbb35",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS.meta",
+      "sha256": "57c61dca09f961ff145e476413755f33026728a002e4a6e4613a04ff630ecff1",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS/LLVoice.h",
+      "sha256": "7de1d53fd7c185dfff5302075908a7aa68825b4931b39cda20706dc121769539",
+      "bytes": 1639
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS/LLVoice.h.meta",
+      "sha256": "c79c8b20d905dfbf3874b50ab58367bda4ecd7373bd8495a09336bc3f373981e",
+      "bytes": 748
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS/LLVoice.mm",
+      "sha256": "555f18e6739ab19166103848950311af8738e694430cac70eabc8db673f49fa0",
+      "bytes": 18158
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS/LLVoice.mm.meta",
+      "sha256": "368d87e4af533f25d5bf71217b056915fe6e417765e01d500e2ae516f2b1211f",
+      "bytes": 814
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS/LLVoiceRing.h",
+      "sha256": "5b8bb357393dbd1d4a679844fb53853aba75dde49fad02dbb40dcc204297790a",
+      "bytes": 1973
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS/LLVoiceRing.h.meta",
+      "sha256": "e06688aa1431bbad5099d55bfb63f72ca55dbc9bff11fd325eb5d79a0e54a859",
+      "bytes": 748
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS/LLVoiceRingTests.cpp",
+      "sha256": "8c615cdcffb3c83710fb7fbd78d8ef21112790766bb246e5f73e137cc4417439",
+      "bytes": 1570
+    },
+    {
+      "path": "Assets/Gyms/Plugins/iOS/LLVoiceRingTests.cpp.meta",
+      "sha256": "257b44357aa3f7c04e8691074746ea45854cd8e979e9afd4eb56d12b87c02b8e",
+      "bytes": 783
+    },
+    {
+      "path": "Assets/Gyms/References/luca-model-sheet.png",
+      "sha256": "f7634b9cd55a592a0a174115f5c1525710e613340fff099eaea1385766c254b3",
+      "bytes": 2079649
+    },
+    {
+      "path": "Assets/Gyms/References/luca-model-sheet.png.meta",
+      "sha256": "5d3e0cf3e9fca1888f69a6e242fad82bf315a35ce78890969d2a76b41fced52a",
+      "bytes": 3873
+    },
+    {
+      "path": "Assets/Gyms/References/maya-model-sheet.png",
+      "sha256": "c324f2ee25ce7019faac83331ffea8163e356ff655a627c64172c043efb2b0c1",
+      "bytes": 2544183
+    },
+    {
+      "path": "Assets/Gyms/References/maya-model-sheet.png.meta",
+      "sha256": "d023974a7f24af8a7e3e2a7086e2c1ee7335c765a53f63944a11ecd63232799c",
+      "bytes": 3873
+    },
+    {
+      "path": "Assets/Gyms/References/player-avatar.png",
+      "sha256": "d547990863d0e81560af6aa75bdd8694c17a94b9b24adc3e315f3872dd10079f",
+      "bytes": 1749137
+    },
+    {
+      "path": "Assets/Gyms/References/player-avatar.png.meta",
+      "sha256": "ad80f4ea6d4fc40287f420d982797d139f8e670aef4f7c2b936716d3038f2d4a",
+      "bytes": 3873
+    },
+    {
+      "path": "Assets/Gyms/References/ren-model-sheet.png",
+      "sha256": "6eb977e2d736ccad2b9c6b966117b0f618c478550d8c067026758b2a3d319cfc",
+      "bytes": 2426678
+    },
+    {
+      "path": "Assets/Gyms/References/ren-model-sheet.png.meta",
+      "sha256": "8c14efa82d3d49e800f177fe2bebf35eb0ea7be6612bdfcd28b6660bb21643cb",
+      "bytes": 3873
+    },
+    {
+      "path": "Assets/Gyms/References/theo-model-sheet.png",
+      "sha256": "2409724132ad15f1b5a87521e41b3fed83dcfc13b104af13d3ee1b1b2babeb96",
+      "bytes": 2341964
+    },
+    {
+      "path": "Assets/Gyms/References/theo-model-sheet.png.meta",
+      "sha256": "7fe00315f783fcca18ba779123bbc0d85aef0756b8ef705d8270c71bd6258046",
+      "bytes": 3873
+    },
+    {
+      "path": "Assets/Gyms/Resources/Branding.meta",
+      "sha256": "5e86b69171da1e229d35a4a4f8a3d5e8ff81c73b3c5d44c36e99196be581b2d0",
+      "bytes": 80
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts.meta",
+      "sha256": "41475217bb5093a247546ab40d6cc7446e0b00a5b8e9b9da0794b75d056ee8d7",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Resources/MvpArt.meta",
+      "sha256": "d9ece3634f5f99462eb8c2558efa933f4b791b7f9989f48d62d98e3597a680d9",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Resources/MvpAudio.meta",
+      "sha256": "1b4a8817e4b29e30b0e690bbbad92df3be2f2c8dfb33a28cece1917dc20c4ac1",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Resources/Branding/BeforeTheDrop.png",
+      "sha256": "212937e8e5ee098bd39878f04a1ba32bd6fbddc70a1ab5e77009ecff46e23502",
+      "bytes": 790423
+    },
+    {
+      "path": "Assets/Gyms/Resources/Branding/BeforeTheDrop.png.meta",
+      "sha256": "5e9f700e5f2d81ef8da8f8fc8e21233bf76bc9a4f59867da38ae748c9d44d68c",
+      "bytes": 338
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts/NotoSansJP-Regular.otf",
+      "sha256": "dff723ba59d57d136764a04b9b2d03205544f7cd785a711442d6d2d085ac5073",
+      "bytes": 4533028
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts/NotoSansJP-Regular.otf.meta",
+      "sha256": "bc32a8b4a4507c240c0fecbd8606d3ce32cb7cf4d3b1cf60f48a93b21d2ebd29",
+      "bytes": 498
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts/OFL-NotoSansJP.txt",
+      "sha256": "88f117575237307bdd86a17ef15e21790fc9a662fe4dfb103ca1ca077f0d9982",
+      "bytes": 4393
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts/OFL-NotoSansJP.txt.meta",
+      "sha256": "16d91484f38c107daa04e8e9c12aca0809d1da2dcaac4f8274b01236c082b643",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts/provenance.json",
+      "sha256": "037613126aa9b23c9dc69624c7d2a84b884fdd16adccaa95a8ab1bb9d90ae745",
+      "bytes": 1313
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts/provenance.json.meta",
+      "sha256": "9643f569fd547f040f5cecb7fb5e7ec1c162c87f3914b5955969d3fbfafa515d",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts/README.md",
+      "sha256": "862d0082ae201d511568d6a7fe54b9f1329e09478bfa7717faaa5f4c51eb9dfb",
+      "bytes": 3236
+    },
+    {
+      "path": "Assets/Gyms/Resources/Fonts/README.md.meta",
+      "sha256": "5e86e35bc07a635483c7c64b6d39d1126fdbe71e5e3cb7f61ba4770046536ec4",
+      "bytes": 162
+    },
+    {
+      "path": "Assets/Gyms/Resources/MvpArt/Portraits.png",
+      "sha256": "6bf77975574fd17260815b459470072538438348ee1afe147c78e95848eaa08b",
+      "bytes": 2146434
+    },
+    {
+      "path": "Assets/Gyms/Resources/MvpArt/Portraits.png.meta",
+      "sha256": "700ac67c5d50cf718dd2995bbdb25fff9fe1b83f573253cbabaf8dbe185a45c2",
+      "bytes": 2769
+    },
+    {
+      "path": "Assets/Gyms/Resources/MvpAudio/Backspin.wav",
+      "sha256": "afc682e826fed9786238f28d40a63f789ad673573be20cd2e2ff9eab5a5e9ddd",
+      "bytes": 28708
+    },
+    {
+      "path": "Assets/Gyms/Resources/MvpAudio/Backspin.wav.meta",
+      "sha256": "412e4523337dec741a8ce3ceaebebb3880ae91d1909fee8d0c523ef67f6b3562",
+      "bytes": 508
+    },
+    {
+      "path": "Assets/Gyms/Runtime/AudioRingBuffer.cs",
+      "sha256": "2617047871793e57a6417d18dd981bd765932ee541875fdb2229a12e8f76bfc8",
+      "bytes": 1518
+    },
+    {
+      "path": "Assets/Gyms/Runtime/AudioRingBuffer.cs.meta",
+      "sha256": "527240b93ae0434487e50f2f6fb022d4d91402ff21c53c5a9b0ab3e2c1703f57",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/CharacterActor.cs",
+      "sha256": "df60d2a46a8f65101fa88d8a07aeb1d1784af2ba9aa48d4b390b29f75d09568a",
+      "bytes": 1035
+    },
+    {
+      "path": "Assets/Gyms/Runtime/CharacterActor.cs.meta",
+      "sha256": "e1541ba3f148201182eb27199538c23c008d7abf9c31a6ecf76e6b0325b4b112",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/ClubLighting.cs",
+      "sha256": "338ebdb7a2bcf5cd86959a2211715867ac8810d7da0df9cc0e407898f74ff20e",
+      "bytes": 1006
+    },
+    {
+      "path": "Assets/Gyms/Runtime/ClubLighting.cs.meta",
+      "sha256": "7667b429e2cd5db3ee9ecdfff7c9c38e0e32475c83284928d045e743c11f5458",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter.meta",
+      "sha256": "52318ca33d3c2fdb8d50455fbed19442b3d3f4dc0b1f4a3788cf21ad9a86953c",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Runtime/GymCamera.cs",
+      "sha256": "115e98dec3a7cb1f27d43de52e0628ce2d48c194465e7c242bf7adc5c721afeb",
+      "bytes": 3227
+    },
+    {
+      "path": "Assets/Gyms/Runtime/GymCamera.cs.meta",
+      "sha256": "f7c10a3719a64e259086cf59ba6cf890531d79d3356946c164d8821be3c1a915",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/GymRoot.cs",
+      "sha256": "3cd2377586c0390a093838d73a4043adf0738a023145ebbd620d71c87637a43e",
+      "bytes": 690
+    },
+    {
+      "path": "Assets/Gyms/Runtime/GymRoot.cs.meta",
+      "sha256": "9ec9899a7bf65dba79a585ad7c681e1219b7beb435631cdcb3a21ea85a59b50a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/GymSmoke.cs",
+      "sha256": "0e15d8219e4b18a7e8127d06803e73504f6b6f05da191321476f516d65598349",
+      "bytes": 7171
+    },
+    {
+      "path": "Assets/Gyms/Runtime/GymSmoke.cs.meta",
+      "sha256": "96e813bf621bc778ebedd7f24765f1929bd61e7a32945e58295d911ceecc2455",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/GymUI.cs",
+      "sha256": "955b60a6c5941905ec7aa886fba4b8ff4e893cc117a44bde5efe1c90988cd58f",
+      "bytes": 5138
+    },
+    {
+      "path": "Assets/Gyms/Runtime/GymUI.cs.meta",
+      "sha256": "2f179a3ac296adb6acffea168bd729a2aaeaf2afdafb5c4c52dbe3e1436fbff1",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/HoldGesture.cs",
+      "sha256": "6f3fab077f042646446d8463c86651a5f703e12b070405fd8d4eb2daa170cee0",
+      "bytes": 1054
+    },
+    {
+      "path": "Assets/Gyms/Runtime/HoldGesture.cs.meta",
+      "sha256": "18f001df2c3b3e97f0dd2dd4841d1db3e5908806741059c55aeff67bcb071ca7",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Live.meta",
+      "sha256": "4df0b6e12861836d330f4906bb28a65f064cc7f2a19de2f1d3c22b38e025699a",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Runtime/LucidLoop.Gyms.asmdef",
+      "sha256": "aee2f4c27c8b2f9750ee434fc4e95136cabca248a115c54d454653109dc10a97",
+      "bytes": 282
+    },
+    {
+      "path": "Assets/Gyms/Runtime/LucidLoop.Gyms.asmdef.meta",
+      "sha256": "4b8fb4606210868f826ccf1fe94f84ac3b0a92846991e572ac78b1083cc8f928",
+      "bytes": 173
+    },
+    {
+      "path": "Assets/Gyms/Runtime/OfflineGym.cs",
+      "sha256": "007a83ef346669ab62e3605207cf054ce1cfd1b927b11682985e915704ebd4c4",
+      "bytes": 9041
+    },
+    {
+      "path": "Assets/Gyms/Runtime/OfflineGym.cs.meta",
+      "sha256": "f9864d18a36f804d095ad7e6461244d4605919b78095c8f3e3a351197f7687fd",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/RelayAddressPolicy.cs",
+      "sha256": "7ad5826e4813a20566d643aabe4fbe24715e99db1199fcd8c127fb1cdb94acbc",
+      "bytes": 2024
+    },
+    {
+      "path": "Assets/Gyms/Runtime/RelayAddressPolicy.cs.meta",
+      "sha256": "46a76a39cdd5c3417b2ac26aadd8e3029dcc4af36c3967267f2ff1816180049e",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/ClubBeamMotion.cs",
+      "sha256": "b61caf105a9b671b3fdfb6ea9ae838f0ce3d14d8d18323e6f2d0e90fbb1e2ce6",
+      "bytes": 732
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/ClubBeamMotion.cs.meta",
+      "sha256": "fccc9808d85c87f9ca7c71605eb5bea033854fa9cbeae8920e3f7bbfdbf03abf",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/ClubCeilingVisibility.cs",
+      "sha256": "2740c2e212e096d35906b936f26585009e0f030962f130d8c12c681b20d83c8b",
+      "bytes": 3371
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/ClubCeilingVisibility.cs.meta",
+      "sha256": "06d00d4a82674fb97020dfb755aac5e8bdd61d1c3215769cf101ef8d6dbebe58",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/ClubEnvironmentPresentation.cs",
+      "sha256": "39883c961e96db75c75dc7734d6e2ffb88a5d0d2fd083ce5f91b25aefe3e9b9b",
+      "bytes": 3945
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/ClubEnvironmentPresentation.cs.meta",
+      "sha256": "eca9712bdbc0eb5c0aa77ece21563975bae199a855e6ca9c14c324c963cbea3b",
+      "bytes": 59
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterApproachIntent.cs",
+      "sha256": "2afdd74468884a3239f61af8eba7423fe7519b4187232afabe505d42ab4c216d",
+      "bytes": 3711
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterApproachIntent.cs.meta",
+      "sha256": "b0bf2031113420568c293923f0a2b2e1ff03a9c48cf5f7aee4440dc5e6be1004",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterClientState.cs",
+      "sha256": "12800536c70f4c04228cc51bbd7745faf5ddcb4708d880458e520ebc4987c25f",
+      "bytes": 7483
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterClientState.cs.meta",
+      "sha256": "14f9659c22f8c87879fb52a184c30cbfc6f3b74587a3f71dda24060c3f9b2c05",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterCoordinator.cs",
+      "sha256": "dbcbd878a7ef9e8fd607225841c667f8be299ea48bdebe1ac5a713e5f2acb209",
+      "bytes": 20478
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterCoordinator.cs.meta",
+      "sha256": "83cb1e04460280a025ae1b3a597123bdf71ab79d9199b8ba5218670d33a4de74",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterGameConnection.cs",
+      "sha256": "3216e0a696b0450f396a4c0fa89178c916b990a7dba24cf64af72fcda3a70200",
+      "bytes": 5319
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterGameConnection.cs.meta",
+      "sha256": "aadba2fa9a4fd177e19dd4a297951f3abb84b7224a8eeaa265e6921cafdecae9",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterHud.cs",
+      "sha256": "69d504e0ca3d953c2b70ad3eb2eec1d7b268865a184e34ad545719d097666764",
+      "bytes": 27564
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterHud.cs.meta",
+      "sha256": "d89fe3b8eddd052bcf72453221436f32ff98b7b73348275e5cf0a000763a7a10",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterHudLayout.cs",
+      "sha256": "aa4d6f7752cd79ba8ff51ce7623b90d18ebcaa5a47959900f48198a80cb46070",
+      "bytes": 12214
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterHudLayout.cs.meta",
+      "sha256": "6dba81cc72b427a02728f2d6f1001a82587d30ca2c31f9d0bd19d88f41201c94",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterIntentFeedback.cs",
+      "sha256": "0d3624c746636f294726269f654e319e4c984a31c5a2231960a613cfb65cc56b",
+      "bytes": 1977
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterIntentFeedback.cs.meta",
+      "sha256": "f67ca82b8db0c6f26efcf3c3693e6d37313004ef1bb93e442355bab3381b70f6",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterInteractionMarkers.cs",
+      "sha256": "0cad174a66518cf6fc1e27bc519e6510ffcf3b6b6fcb3be66118c793a35570fc",
+      "bytes": 9722
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterInteractionMarkers.cs.meta",
+      "sha256": "6aab52af26f5c0cb2912c0688e8913f51b531bde5fed3c457d270d352e7a93de",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterLoadingBrand.cs",
+      "sha256": "34e8639055d44a5bb7ab7e8338e712b8aa3cebce55a45c633ae6def16ecdcad6",
+      "bytes": 2830
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterLoadingBrand.cs.meta",
+      "sha256": "f6c122f6cd2def96e97970225c73ce74b6dfdc3ac941f83c673af3aa8bf2df31",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterMoodPresentation.cs",
+      "sha256": "4c53d7abe3b800590db294470b94d9e80e28e8c5d0d6c55e6422190e9449d646",
+      "bytes": 7165
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterMoodPresentation.cs.meta",
+      "sha256": "d8ec9fa1771c9819a760831021c0b10c7f84f3b2b6948a48c29e8ce331f2d153",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterPauseMenu.cs",
+      "sha256": "c5bf516a536dc8d396b51af9abdda9f002e4c20e07e81d65d496cb7d3482458a",
+      "bytes": 15955
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterPauseMenu.cs.meta",
+      "sha256": "9eb9dfa45c675adbe7d3994af52953c981661e2f5ab9e7b484b4b76382fbd40b",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterPrimitivePresentation.cs",
+      "sha256": "54a679d00a7d55a2702b631a317d0cae9f3f8493ab51c5bafc93dcdc53ad3d92",
+      "bytes": 8947
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterPrimitivePresentation.cs.meta",
+      "sha256": "10b547540eeb34a1b589cebfb882f8d4dce220c811fb55318bf575d27fe1d0dc",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterSpeechBinding.cs",
+      "sha256": "89758a7f1a38c0b424b2ec9b5313769aa8de6ace4906218896035ea701cad0ba",
+      "bytes": 2723
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterSpeechBinding.cs.meta",
+      "sha256": "249bcf66538ec743e991138b1528970ed49b2bbc78762761679582e813ab77fb",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterTapGesture.cs",
+      "sha256": "1d011f57cf493b394aec70bb52e53c743159a26780b1037970099422b84e8ce3",
+      "bytes": 911
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterTapGesture.cs.meta",
+      "sha256": "f35ceec95abdc448d4a6693f0bd44155feb8bb909fa290557c77f60aff7c378a",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterVoiceController.cs",
+      "sha256": "b3caf503fc09be5fdfb14e57476be4f00632b48171dd4264e2f410f42786c33b",
+      "bytes": 24978
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/EncounterVoiceController.cs.meta",
+      "sha256": "9aea1db0ba35133d3b9faf8cfb07fc54a48b1287366c29b73b741d79616b528b",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/IosNativeVoiceAudio.cs",
+      "sha256": "42e931cce167c14f37cd296ae0efe78c8e83ed1bcfcf5d8ad01d86b1cb96ca3d",
+      "bytes": 7708
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/IosNativeVoiceAudio.cs.meta",
+      "sha256": "3080477e6358050e941dcfb8fc2c2ccadb5e513c75e7c46e9c0eb0a7aadbb347",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/NpcActionExecutor.cs",
+      "sha256": "ed1fa83cd3c205ef2d411ba4c6142ca2fb78f52946205e195c8887530d74293f",
+      "bytes": 3703
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Encounter/NpcActionExecutor.cs.meta",
+      "sha256": "bec16bbd19c4d2d5ef94ca82de7bc262c390bae100e6b9fac47f7632f5b8ccf7",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Live/LiveConnection.cs",
+      "sha256": "e9b4293781e65080726a14bd69ca69286870dd7a6645c66294e0e743307dc09b",
+      "bytes": 5027
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Live/LiveConnection.cs.meta",
+      "sha256": "29a6f0e59ab3c18425b486926bc89226dac0d652d425ba301af15bc9be3d8dd8",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Live/LiveGym.cs",
+      "sha256": "fb2f6eb7c9416a8f697d2f846cd147250f6bd5be58ab3038b6009fbe931c38fe",
+      "bytes": 11336
+    },
+    {
+      "path": "Assets/Gyms/Runtime/Live/LiveGym.cs.meta",
+      "sha256": "24b8d0607346ee2b4b222df32f6e57fef01582b15a1ed65fcbdb933d113e38e3",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Scenes/BeforeTheDrop.unity",
+      "sha256": "199d5c48ea5871e46269dad8c7c35860e0fd0564fbb4fcd8b826240427a47c21",
+      "bytes": 1505312
+    },
+    {
+      "path": "Assets/Gyms/Scenes/BeforeTheDrop.unity.meta",
+      "sha256": "952812044d21469b0d2ccd4196be77dc1519d4b01b85b171bd63562d171b225b",
+      "bytes": 162
+    },
+    {
+      "path": "Assets/Gyms/Scenes/CharacterGym.unity",
+      "sha256": "e5894dbeaad54618d427451027a183933c3ca85727d1f0c76437df458f760ef2",
+      "bytes": 1457892
+    },
+    {
+      "path": "Assets/Gyms/Scenes/CharacterGym.unity.meta",
+      "sha256": "bcbbb29e11e32c49163ff8d68a01edba5172c2b948a962c05ed485afaaa72115",
+      "bytes": 162
+    },
+    {
+      "path": "Assets/Gyms/Scenes/LiveGym.unity",
+      "sha256": "97f7c0cae77f264b947100e50bc0d6343b74c71dc39026e6a03799b0951d5c84",
+      "bytes": 523337
+    },
+    {
+      "path": "Assets/Gyms/Scenes/LiveGym.unity.meta",
+      "sha256": "e522ecd522bd2ca681bf120ed9615cd00d7627d05fb4c7664c55d994b2664147",
+      "bytes": 162
+    },
+    {
+      "path": "Assets/Gyms/Shaders/CityWindow.shader",
+      "sha256": "9d7851e2797ebc6d5722f637bfe86b605b6488cf19f3c0a07f905034c2d43b1a",
+      "bytes": 1662
+    },
+    {
+      "path": "Assets/Gyms/Shaders/CityWindow.shader.meta",
+      "sha256": "742dc5d86927f0d490070a41d2920589900ce7a86e51dc68467c1e2e2218aeb0",
+      "bytes": 204
+    },
+    {
+      "path": "Assets/Gyms/Shaders/ClubBeam.shader",
+      "sha256": "49cd2fb729f3b34d28532949662b264b402a5166cc3b1b0e7dd1f7f8e1323077",
+      "bytes": 1360
+    },
+    {
+      "path": "Assets/Gyms/Shaders/ClubBeam.shader.meta",
+      "sha256": "8e5ecf38563140834540d32c98a1857eff4dc5939ba036b8505d9b4be8f0f588",
+      "bytes": 204
+    },
+    {
+      "path": "Assets/Gyms/Shaders/ClubVortex.shader",
+      "sha256": "221f3fccd71381ec7a8257a29d27994519e105aed150074a8430242292301f4c",
+      "bytes": 1964
+    },
+    {
+      "path": "Assets/Gyms/Shaders/ClubVortex.shader.meta",
+      "sha256": "7d2fd71f18c965afc3418825c6f62b1a36a7c7b1bd67d06605a944856e4c6abf",
+      "bytes": 204
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor.meta",
+      "sha256": "fbab80b68df38c87a382ab2415d1c5c3ccaaafdd87c25cf8e921d15ede98c078",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode.meta",
+      "sha256": "91eb2f542c0503f775b9a0fc1104bb9c72f22c042d8d0f2fd98fb77987a3e245",
+      "bytes": 177
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/AudioTests.cs",
+      "sha256": "10a0595404bb38698c2157db0b33660cdc4bba391e080a718e5e1d43881148b0",
+      "bytes": 1238
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/AudioTests.cs.meta",
+      "sha256": "bb3bba674bb37220b2ccaaa22803a663a860f702d8416e7d230dd1f66cd27349",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterApproachIntentTests.cs",
+      "sha256": "b34fa0a1d5383e7c99ee5b4a35c8746feee9649cbefa3af0a5c530a858e51b51",
+      "bytes": 4919
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterApproachIntentTests.cs.meta",
+      "sha256": "5a0798e9468175ed35c66906b329573b1c13003e6daf9bcfd980b704f4670866",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterClientStateTests.cs",
+      "sha256": "4543695a2d86322690af79ef3ef2c8ee93362279a4144357da0b1ebaf2830cd9",
+      "bytes": 6643
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterClientStateTests.cs.meta",
+      "sha256": "afee475051e529a7ce37474745646307c73b88a40721352b170305773a60f98e",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterHudLayoutTests.cs",
+      "sha256": "8945e6704ade8657854d0660ca986f1e29724f868380507b6a9fb64b67da2c5f",
+      "bytes": 7099
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterHudLayoutTests.cs.meta",
+      "sha256": "e2d8933e73fcc9df5451db2711a0a6eba0ccf74db5fe1183505f2fa6824c88de",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterIntentFeedbackTests.cs",
+      "sha256": "5b111a1832e82d03e124c9e12492e1770a8227ff7aae8403ca4fd91fbcaa21db",
+      "bytes": 3998
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterIntentFeedbackTests.cs.meta",
+      "sha256": "1c859ce1ef18c6fc22b110e8c790978da40717fe9d7b72da16140a00960fcf45",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterPrimitivePresentationTests.cs",
+      "sha256": "7fda2b892d5474a87a28bbbf5ed0734918385fb51db3d3d69152edc0629bf3c5",
+      "bytes": 5951
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterPrimitivePresentationTests.cs.meta",
+      "sha256": "d6bda820daeb2b9f255a15a8dade54ad48af915c385f4530949118c6191357a4",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterTapGestureTests.cs",
+      "sha256": "8480f3d4c392cfc6ce80b75f28ed0beae754230ec273eb5cd4cd5d1465d660dd",
+      "bytes": 1716
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/EncounterTapGestureTests.cs.meta",
+      "sha256": "3f694f5fb3f7161f463ebeee3d0a9208738d708282d2c68ec3f95e911dd20807",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/GestureTests.cs",
+      "sha256": "5cfed8be98f8ab105c295e6945b889c44baf50cc6425dfd9b730a50960ef8af8",
+      "bytes": 1275
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/GestureTests.cs.meta",
+      "sha256": "448d2cc7b97566eb9feb3a0f2d8c69e91aa0a3a19346b3211e9f3a549c9534eb",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/GymMaterialEmissionTests.cs",
+      "sha256": "1e0768af7849f6683c1b581241c7f9d928f4037365fae7dfe691043fbacb2daf",
+      "bytes": 2323
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/GymMaterialEmissionTests.cs.meta",
+      "sha256": "0e66a49598de6b81c6ff2828992780e2a2a4e43a7be7841fc0ef4dc3e64c8588",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/LucidLoop.Gyms.Tests.asmdef",
+      "sha256": "ca908a5b55212e038562667986d43901217338156638124505e065af3dac9ad2",
+      "bytes": 260
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/LucidLoop.Gyms.Tests.asmdef.meta",
+      "sha256": "587903ba865a3e1d166cdc09c47a7bb6ee7468737974b56ec871e407dbe69785",
+      "bytes": 173
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/NpcActionExecutorTests.cs",
+      "sha256": "a9bf7afeba062fae7063b8708d4bf4c680046e77723f8abd57880c46d35d2546",
+      "bytes": 3121
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/NpcActionExecutorTests.cs.meta",
+      "sha256": "300b7a33fac7f00d24d598ea653bc6c37f35b2ee895acd41446efcbd620ec22e",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/RelayAddressPolicyTests.cs",
+      "sha256": "294eecf00bd09e9a399831eda6d3a377183a8f8059d596c2a41ec490989ab8ad",
+      "bytes": 1267
+    },
+    {
+      "path": "Assets/Gyms/Tests/Editor/RelayAddressPolicyTests.cs.meta",
+      "sha256": "f089f6bc2e9f65334d1989f24d2539adecb9ef4a13a8f46e5f7a82c08d3a9b74",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterAudioDevicePlayModeTests.cs",
+      "sha256": "29bd89e9939f1bed5f1b2bc8294f8e69f98819963c5ce612d539d09c155849ef",
+      "bytes": 3723
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterAudioDevicePlayModeTests.cs.meta",
+      "sha256": "84b2fc29a4220642b28fabca074ae963604ab337e3b1f24160d60cd8e5aac0f8",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterGuidancePlayModeTests.cs",
+      "sha256": "7e6e81908a4e3d2ef0f0ecd67d849496cad1f6c4f844c11de065be08018cf9db",
+      "bytes": 2801
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterGuidancePlayModeTests.cs.meta",
+      "sha256": "a8e1ed5433e47cfd75e34615c7495bfa479d42441f0bf897fcd54048a846478b",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterLoadingPlayModeTests.cs",
+      "sha256": "724b59758e281bceec5d4b7fe929455489c5541d318fe5c168222941d5763b9d",
+      "bytes": 2413
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterLoadingPlayModeTests.cs.meta",
+      "sha256": "2f41048d93444fa951dfae7160aff1a23ff6b8b705219e1646f5a64e78b910f5",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterMarkersPlayModeTests.cs",
+      "sha256": "5f11351fcdf40002b504cbafb0d24e63ab69384682d493c6541a976af0d358b4",
+      "bytes": 5392
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterMarkersPlayModeTests.cs.meta",
+      "sha256": "98d91362f442f5532ff491d6436581f12c5b2f8543188a7d2454a677b74c3ace",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterMoodPlayModeTests.cs",
+      "sha256": "a91443b0b1761555395e425d618b4f4097296a0ca4d5f0bcd710712cdf6d556e",
+      "bytes": 8892
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterMoodPlayModeTests.cs.meta",
+      "sha256": "1bc80e7ca7bee55c3a833d6dcc437dc4cfb73c639f2a8f5e35fd99acd8334bd8",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterPausePlayModeTests.cs",
+      "sha256": "c32352a6372f4918e794a5bc431836323378a3b835a15ab93079c0134ed47657",
+      "bytes": 10273
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterPausePlayModeTests.cs.meta",
+      "sha256": "bbdd63093f7edba7bc6df028d8321c223835c1bfe4e148e52594bdfe2f93fd2d",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterScenePlayModeTests.cs",
+      "sha256": "105a9d55383789a8fa8f518f38bf8a0abe35ef1ea5c309dc5a0676dcf4c015cb",
+      "bytes": 14748
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterScenePlayModeTests.cs.meta",
+      "sha256": "3f66070c73441f4d3b7f6b221a9b8b6940bdcbcca431252d77c143b4e01fbfa4",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterTypographyPlayModeTests.cs",
+      "sha256": "a5017f8013a16b4845ec9a4bdb3196eca3fa98b3c0dd51cd99281f63c3028a63",
+      "bytes": 4102
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/EncounterTypographyPlayModeTests.cs.meta",
+      "sha256": "04a911f6630cd366158ec77e6be2361a66a59ddab1bd651ca30e0086b010fa29",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/LucidLoop.Gyms.PlayModeTests.asmdef",
+      "sha256": "41eee103f749a1b8e7fb246cb035f42b195eca17f5fb2eae161800f2072f9059",
+      "bytes": 296
+    },
+    {
+      "path": "Assets/Gyms/Tests/PlayMode/LucidLoop.Gyms.PlayModeTests.asmdef.meta",
+      "sha256": "7f8c25f41001170361961886df16e7ec8d82a62d791fc65a295086a5217088a8",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/LiveSpeech/README.md",
+      "sha256": "096848c9da40324d5ddfcad33904d1f5ce886cae93e89ff5f99396ffdbef444a",
+      "bytes": 2382
+    },
+    {
+      "path": "Assets/LiveSpeech/README.md.meta",
+      "sha256": "e095efa0b493a5867f198a1285354cc79595fab9d32fc5832a7ad93058580eb6",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/LiveSpeech/Resources.meta",
+      "sha256": "98d7b3efa770cee820f539ce320412d737988327518ee350329b1b7f30874ba7",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/LiveSpeech/Runtime.meta",
+      "sha256": "44f3b26edca33c45f9daa0283d22b4ffa7490ccb50415d469c5b71abeea91f47",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/LiveSpeech/Tests.meta",
+      "sha256": "2cf88413234d1b189384f9957087ebdb7a1d0d0fd7beba8387d2b62719ac86a9",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty.meta",
+      "sha256": "d0aaf0bc19fce3f22c3cf4a326575fee2846c589478309731e41a77a87198f4f",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/LiveSpeech/Resources/LiveSpeech.meta",
+      "sha256": "5233d4984ff01e0ed0a0ca056fff157425c9b02c9830100aff20a3cef0ea134d",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/LiveSpeech/Resources/LiveSpeech/model-en-mixed.bytes",
+      "sha256": "0358f68989b5861f9b7d18871b010fa6cbf88a53bda4954a954d8c548bbcf251",
+      "bytes": 14352
+    },
+    {
+      "path": "Assets/LiveSpeech/Resources/LiveSpeech/model-en-mixed.bytes.meta",
+      "sha256": "19418a86860a5a5d1df40cb1390f782fb8d428b440895b13531b2635de90cc35",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/LiveSpeech/Runtime/EnglishSpeechStream.cs",
+      "sha256": "2a2ae9c4b00ec83ea27d7aa260bc92155f6de9cd8b13e1aca284964d9b2e5ad1",
+      "bytes": 4659
+    },
+    {
+      "path": "Assets/LiveSpeech/Runtime/EnglishSpeechStream.cs.meta",
+      "sha256": "1dcaf4bdf64c627ae8366401720a5dbf9b120d32070523c3898b7cb60b4235d7",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/Runtime/LiveSpeechFaceAdapter.cs",
+      "sha256": "d5a37e6d949865af675f9254f09ad472a20642fcce7724349a2f4c191bcc3334",
+      "bytes": 3919
+    },
+    {
+      "path": "Assets/LiveSpeech/Runtime/LiveSpeechFaceAdapter.cs.meta",
+      "sha256": "4660344d5f3c5a8ea0528ff8d797ba0e1030229a5c70260fcadc7ed5e39c2591",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/Runtime/LucidLoop.LiveSpeech.asmdef",
+      "sha256": "4e4e7df9138c9a37f390a729545a8de9f5e4999b32ef4c8edd08a5984c8ddb1e",
+      "bytes": 146
+    },
+    {
+      "path": "Assets/LiveSpeech/Runtime/LucidLoop.LiveSpeech.asmdef.meta",
+      "sha256": "78c89788a00ed36c599116fd42c9cd687b52cdbd4c7d6d9349ff337daae3297b",
+      "bytes": 173
+    },
+    {
+      "path": "Assets/LiveSpeech/Tests/Editor.meta",
+      "sha256": "003ec633da51c356e622574128b447ec173cee4cac1412cf66f16dc444b0695e",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/LiveSpeech/Tests/Editor/EnglishSpeechStreamTests.cs",
+      "sha256": "5ddc1c22313cca9fff8d63167ec498376699c894599131dcada909efda50a19f",
+      "bytes": 5112
+    },
+    {
+      "path": "Assets/LiveSpeech/Tests/Editor/EnglishSpeechStreamTests.cs.meta",
+      "sha256": "578003f4b2df3f384018d2ad1881cd458aa5cee1af75a3b2ad5f58704354a9cc",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/Tests/Editor/LucidLoop.LiveSpeech.Tests.asmdef",
+      "sha256": "a233cd967b7932a0cedeeae80f9198e3cb041dda41be9445881b897f06a4609e",
+      "bytes": 236
+    },
+    {
+      "path": "Assets/LiveSpeech/Tests/Editor/LucidLoop.LiveSpeech.Tests.asmdef.meta",
+      "sha256": "214278b6cbf080c7ea5c9516db3237845afff2f56afd4590b18827e00a258937",
+      "bytes": 173
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core.meta",
+      "sha256": "2f64e9c5c20f3ee2ba8730563c9bea679f7a3f57222043b72a79bc229ff549cb",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/LICENSE.txt",
+      "sha256": "d54c8fb37fea2a8110f58eb4067a310708a1b34152c2b2b488a9432d6e11b1b8",
+      "bytes": 1067
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/LICENSE.txt.meta",
+      "sha256": "ede98e39f927e893e98153e92995073d464ebe95d2523639faf980a7782a6fff",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/provenance.json",
+      "sha256": "c0e319cdc53f2ed519a51f9c13d9641058a652e1650ca28678f65fb44b5d9f21",
+      "bytes": 2881
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/provenance.json.meta",
+      "sha256": "c03b6d20986767cdabddc37f5a5d1ac6dd4de467b6ad2eab98a914a34eaba700",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/THIRD-PARTY-NOTICES.md",
+      "sha256": "aa44b831328c7d7e4f4355a0c5da52d301148535f4d1dbdf838eee8bbfd81122",
+      "bytes": 1687
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/THIRD-PARTY-NOTICES.md.meta",
+      "sha256": "0c2cbdf7fe4eaeb150f3d848252d9893673b58951840fa127c271673f61cece3",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/GaussianClassifier.cs",
+      "sha256": "c1ca6f1ba578a8f7459c2ee6bb0635e679d9d6e36879a98e9f18f19afcbeae82",
+      "bytes": 5290
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/GaussianClassifier.cs.meta",
+      "sha256": "1b3af90e814980ae69f59b2e6e8ff83c5070f95d99a04ed54fe261ad1223b948",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/GaussianModel.cs",
+      "sha256": "cd518032adb6fad1e333f4c19ecda822ed3e7f2cd59071a44e66ee3fd1f43d2a",
+      "bytes": 4591
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/GaussianModel.cs.meta",
+      "sha256": "1affe50376878b297f3de542a19c139e2fcbed4af82bb8594cd0a86f29d4bcff",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/Mfcc.cs",
+      "sha256": "5f84334c25a3e4683ba7eb6ce26927142eb418ee07c7d0ac90d23439b4a8d368",
+      "bytes": 9229
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/Mfcc.cs.meta",
+      "sha256": "c71e4366d8bf276803b402ae7fe46c0fc15aae89f075ce8ac9b32b04ab4ac5d5",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/Parameters.cs",
+      "sha256": "62531c47a4b5d1949c6c6d91ebbf9af1d8cdb601f940ade85e87257c6cbb4a97",
+      "bytes": 2693
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/Parameters.cs.meta",
+      "sha256": "0f8d27ecd4ea169664128ba3707a0736a571beffba2d64c0959b0881a44ae043",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/Pcm16.cs",
+      "sha256": "a84423e9e1ec75f12c37500004bfe5dd96f2093f3706d3cee4b1721695b72165",
+      "bytes": 1660
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/Pcm16.cs.meta",
+      "sha256": "b1cf4b57d0ddea912b0a34ca194cee18c0542481dddf4efcb1d4ab3892973b04",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/RingBuffer.cs",
+      "sha256": "838e48add6adf93636dedb608163694cdc60897237c1e153292046f16ea4fb9e",
+      "bytes": 3939
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/RingBuffer.cs.meta",
+      "sha256": "9371a1b1085de015a89dacc8a3855af92700a9ca2106091adc5a6ac6af271b70",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/SplatterfaceGames.LipSync.Core.asmdef",
+      "sha256": "b2770a9e6e41999c02699a6b919be06efa1cee9185ae9b9932b217f2d5daae18",
+      "bytes": 158
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/SplatterfaceGames.LipSync.Core.asmdef.meta",
+      "sha256": "6bff6129698599155847c4901fb56d90aef2f9c67aa6432c1bec4287ebb3c7fd",
+      "bytes": 173
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/VadGate.cs",
+      "sha256": "53134d3ba8e593781ceae81ce2e9ea6ef02ba68778d5eac23b47cc355c4cb615",
+      "bytes": 2966
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/VadGate.cs.meta",
+      "sha256": "f29208c6cf6145295c81ce477b694e404c907203c8aa4e27356be12cc04e566b",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/VisemeAnalyzer.cs",
+      "sha256": "a903d87518619a7f7cdc019474b4f0c01b588a7ec816d846cec5c5372fecc12b",
+      "bytes": 14925
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/VisemeAnalyzer.cs.meta",
+      "sha256": "3106079bcc929d975d361544cef8e15db1b503d99b6efa683d990533d3c8d633",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/VisemeLabels.cs",
+      "sha256": "8a60b229109002745317c05cb513733f3773fc191603765f2b2f05f914c40c57",
+      "bytes": 1578
+    },
+    {
+      "path": "Assets/LiveSpeech/ThirdParty/Core/VisemeLabels.cs.meta",
+      "sha256": "aa523e1de13c1d23e77d081cc65da973acf6e8e7c4f2a75094013a966fff1909",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Plugins/R3.meta",
+      "sha256": "59f91158cf4f51bc9d91cb86ce5d98220232d5820fb7ea5adeb46bca76b2e95f",
+      "bytes": 180
+    },
+    {
+      "path": "Assets/Plugins/R3/microsoft.bcl.asyncinterfaces-LICENSE.TXT",
+      "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b",
+      "bytes": 1139
+    },
+    {
+      "path": "Assets/Plugins/R3/microsoft.bcl.asyncinterfaces-LICENSE.TXT.meta",
+      "sha256": "61b2a7219ef09b5e9097ac576556ce2a39ffc4b88b7ba32d31905f2436d3c797",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/microsoft.bcl.asyncinterfaces-THIRD-PARTY-NOTICES.TXT",
+      "sha256": "a6344bfb229bc08d1071cec400eea216e307439f961c5943ec1b56d2245acb95",
+      "bytes": 46990
+    },
+    {
+      "path": "Assets/Plugins/R3/microsoft.bcl.asyncinterfaces-THIRD-PARTY-NOTICES.TXT.meta",
+      "sha256": "95050a7075c23809c5078cb8a26bfe6508b45759795d4f4eac4ba3b320dd9e7d",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/Microsoft.Bcl.AsyncInterfaces.dll",
+      "sha256": "5705d245072d3eb78400547b32147dbb6e2c8b02ba8bda76729798f5efdeaecb",
+      "bytes": 16000
+    },
+    {
+      "path": "Assets/Plugins/R3/Microsoft.Bcl.AsyncInterfaces.dll.meta",
+      "sha256": "8696b44387015f4892ecf7c16c2daaa79d9e1703610e1e346f49052fe7da99aa",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Plugins/R3/Microsoft.Bcl.AsyncInterfaces.nuspec.txt",
+      "sha256": "3a965c424d56f1cee169d88cc9c04f2c04f01bd65f20147b26ac093d761beec9",
+      "bytes": 1559
+    },
+    {
+      "path": "Assets/Plugins/R3/Microsoft.Bcl.AsyncInterfaces.nuspec.txt.meta",
+      "sha256": "38d03e11efa03507d203adc5b23c81975a6dcc8a620cc086d59cd5119a39174a",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/microsoft.bcl.timeprovider-LICENSE.TXT",
+      "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b",
+      "bytes": 1139
+    },
+    {
+      "path": "Assets/Plugins/R3/microsoft.bcl.timeprovider-LICENSE.TXT.meta",
+      "sha256": "a18d7d6740084a82f345bd64eb4717ef64eb022dcc636a511ce852b23441c277",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/microsoft.bcl.timeprovider-THIRD-PARTY-NOTICES.TXT",
+      "sha256": "19c19dcac9f3ee6302cfbc6745bb8e79f08efc4c933eb8dc5509bf14b88347ec",
+      "bytes": 68911
+    },
+    {
+      "path": "Assets/Plugins/R3/microsoft.bcl.timeprovider-THIRD-PARTY-NOTICES.TXT.meta",
+      "sha256": "220c0eb24346159fa5ed62def85931441bc0a0c4202d357c7da7a846f5371e12",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/Microsoft.Bcl.TimeProvider.dll",
+      "sha256": "d9941b9603506c46e2aaf8b44166c93646b55ebea0d365792b405c2562753442",
+      "bytes": 32416
+    },
+    {
+      "path": "Assets/Plugins/R3/Microsoft.Bcl.TimeProvider.dll.meta",
+      "sha256": "68f709418f18e15dd14c59c300bf493bda4f4d27b94c6e1236fa3f9bf1492042",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Plugins/R3/Microsoft.Bcl.TimeProvider.nuspec.txt",
+      "sha256": "ad5e215b67577763536c58c90b9e4412b069b6542625a3ba4d084cf8e3f31ced",
+      "bytes": 1485
+    },
+    {
+      "path": "Assets/Plugins/R3/Microsoft.Bcl.TimeProvider.nuspec.txt.meta",
+      "sha256": "ff2a064097cdc98e25db78eb84b285b2a671cd06ede4c920f3adba18c89f6e9d",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/R3-LICENSE.txt",
+      "sha256": "8f5abaedfedd1444cdca8b7f1afc0aa59d54469d40954463c9d51b60493e90b8",
+      "bytes": 1091
+    },
+    {
+      "path": "Assets/Plugins/R3/R3-LICENSE.txt.meta",
+      "sha256": "5f4f1c7da557813f820c3b5ff31b4f72e8f73195d2df7e50ff4baee1bf8eeba8",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/R3.dll",
+      "sha256": "48af716f8ace2fd771241de7e3ebd9ee54bffeafeed14a1ddd69df4ac61226db",
+      "bytes": 601600
+    },
+    {
+      "path": "Assets/Plugins/R3/R3.dll.meta",
+      "sha256": "40611957dcd3aa9de4fdaf097d4664af8a00a45c02b81e3d613c088f673f25ca",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Plugins/R3/R3.nuspec.txt",
+      "sha256": "3e0ff2486db443bcc225d0843c6009e29fd9e58439e3691b8755d69051de8bea",
+      "bytes": 2049
+    },
+    {
+      "path": "Assets/Plugins/R3/R3.nuspec.txt.meta",
+      "sha256": "f4b917738a9f942e10f9c1cdd546d33c0075b0f78aebb9505cf170bde426f2b7",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/README.md",
+      "sha256": "aa699518f6552111dc305b93b2c77248cb416c34d44826aa813fc57f1de74eb3",
+      "bytes": 1176
+    },
+    {
+      "path": "Assets/Plugins/R3/README.md.meta",
+      "sha256": "adf891e24689ac2ddd489f02f3b7d50656c5744cb07d7aa6950d259b68e2b289",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/system.componentmodel.annotations-LICENSE.TXT",
+      "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b",
+      "bytes": 1139
+    },
+    {
+      "path": "Assets/Plugins/R3/system.componentmodel.annotations-LICENSE.TXT.meta",
+      "sha256": "34cf188e64c323a183be94697a130e3f5f37d7a40ba3f8b18939aafa233c8e96",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/system.componentmodel.annotations-THIRD-PARTY-NOTICES.TXT",
+      "sha256": "78e22d4d24a710d2a09426c09060f3448204778ed506b1da55447a6089b54fae",
+      "bytes": 44279
+    },
+    {
+      "path": "Assets/Plugins/R3/system.componentmodel.annotations-THIRD-PARTY-NOTICES.TXT.meta",
+      "sha256": "7cd18f6442cf9d3dd838bc34cd992da81f4d2cc46c827019579fe318288f01fc",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/System.ComponentModel.Annotations.dll",
+      "sha256": "c46069e29ad23fee7f5d2ced736ffea27b0177f82341296d9af6325acf821c69",
+      "bytes": 89992
+    },
+    {
+      "path": "Assets/Plugins/R3/System.ComponentModel.Annotations.dll.meta",
+      "sha256": "90c2a251126ebf2ac8226a80cfcae115389260718056e64506c16ae761a7e154",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Plugins/R3/system.componentmodel.annotations.nuspec.txt",
+      "sha256": "81b52aa34460e41f850b163546fa6e72e007499e2b8ed7396c217944b2ec778f",
+      "bytes": 3634
+    },
+    {
+      "path": "Assets/Plugins/R3/system.componentmodel.annotations.nuspec.txt.meta",
+      "sha256": "c4d379e642fa7d79a6fe2fdaf3d4e69d3df4c12b8f016d5163ae30eb7cd39f5a",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/system.runtime.compilerservices.unsafe-LICENSE.TXT",
+      "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b",
+      "bytes": 1139
+    },
+    {
+      "path": "Assets/Plugins/R3/system.runtime.compilerservices.unsafe-LICENSE.TXT.meta",
+      "sha256": "049b3bae38f6d679b747054e30fa560482ecf6214deac36c688f7b7aef5cbf17",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/system.runtime.compilerservices.unsafe-THIRD-PARTY-NOTICES.TXT",
+      "sha256": "a6344bfb229bc08d1071cec400eea216e307439f961c5943ec1b56d2245acb95",
+      "bytes": 46990
+    },
+    {
+      "path": "Assets/Plugins/R3/system.runtime.compilerservices.unsafe-THIRD-PARTY-NOTICES.TXT.meta",
+      "sha256": "335da034e20f558f7e362b4dbc746c8cadbdc5ae314102b7150c74b59f2e1eec",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/System.Runtime.CompilerServices.Unsafe.dll",
+      "sha256": "01748200f2400c742aa689f1f5101bd6298efdfd92c00c18f4fa473847235ba9",
+      "bytes": 18024
+    },
+    {
+      "path": "Assets/Plugins/R3/System.Runtime.CompilerServices.Unsafe.dll.meta",
+      "sha256": "f006e5e5448118c2ffdf479b51ece6c6b7097507cc9616d5a7966de603912af9",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Plugins/R3/system.runtime.compilerservices.unsafe.nuspec.txt",
+      "sha256": "edaccfd50eebadf418188db5a19cb7b24c887fbbc638f2e4d402ff94bbcc14dc",
+      "bytes": 1384
+    },
+    {
+      "path": "Assets/Plugins/R3/system.runtime.compilerservices.unsafe.nuspec.txt.meta",
+      "sha256": "b77abd33f4543f4d31e87d449dc509adcaa0416607c0efdfccb076352f440131",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/system.threading.channels-LICENSE.TXT",
+      "sha256": "d7a68596ab69b06f51ca278a6545148e4269a9381c26d597c13df5d88e08cf5b",
+      "bytes": 1139
+    },
+    {
+      "path": "Assets/Plugins/R3/system.threading.channels-LICENSE.TXT.meta",
+      "sha256": "e373b7c2d4ee689a9e639d9f890cf71e7cf5dcc61d4403ce648d942b1597f3d9",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/system.threading.channels-THIRD-PARTY-NOTICES.TXT",
+      "sha256": "19c19dcac9f3ee6302cfbc6745bb8e79f08efc4c933eb8dc5509bf14b88347ec",
+      "bytes": 68911
+    },
+    {
+      "path": "Assets/Plugins/R3/system.threading.channels-THIRD-PARTY-NOTICES.TXT.meta",
+      "sha256": "9c10f3d7b0f0e93ca87957ca5727af4b1a4b9a619b2679f0b8f6cd35d0457f08",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/Plugins/R3/System.Threading.Channels.dll",
+      "sha256": "31c7e3704c0477c53d9306362dc6abe741088efb7a7b4e46cded0169cf7bb0b2",
+      "bytes": 75952
+    },
+    {
+      "path": "Assets/Plugins/R3/System.Threading.Channels.dll.meta",
+      "sha256": "327f138e8fefcb31fcd55519a322470169e1c805e28bf213b385dd44e67b66d2",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/Plugins/R3/System.Threading.Channels.nuspec.txt",
+      "sha256": "16e761e220f42a0b8c2ee470cd270356cc547fdceb29a598714bb521dce366e9",
+      "bytes": 1534
+    },
+    {
+      "path": "Assets/Plugins/R3/System.Threading.Channels.nuspec.txt.meta",
+      "sha256": "ff6d52573ace4579d260ea9787440d90265d16bc4c65be5ba254b203348d78a5",
+      "bytes": 165
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated.meta",
+      "sha256": "f67b8560514d325ab190622923ce3c328e26037973baa62a4edc9491e4738c73",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/AmberPractical.mat",
+      "sha256": "0c20b7b9146f8fb06a45390988425969cf68cb03339053a268007cc5acd8b64f",
+      "bytes": 3860
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/AmberPractical.mat.meta",
+      "sha256": "d5a595919c48c4d65391d73142fcad79a5d1f1eaf0aa8c903fa119edec0d34e5",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BeamHaze.mat",
+      "sha256": "6117b14d69bdc85fd343b937f3b1518193730239408a93c8083ca0d6b63d1983",
+      "bytes": 824
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BeamHaze.mat.meta",
+      "sha256": "3bd70cd035fa805f34c9a7337730ce149b40be08ea1298b730c21329154565ce",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BeamMesh.asset",
+      "sha256": "520891ee8a255e945a74240c8b0bd576727d9bb3c81e1d96dd7487057a308d24",
+      "bytes": 4748
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BeamMesh.asset.meta",
+      "sha256": "dc9895a8621b420a2ebfe40750aeb9b119550cd072a7b37859f33ef0a519d551",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BottleAmber.mat",
+      "sha256": "36c1899369da100409940f33b2ceb0891607e455c7d22645157ae10253e1de93",
+      "bytes": 3838
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BottleAmber.mat.meta",
+      "sha256": "01557d3a5671f1684411517073e737f33ae6759f86707a8d59dac00c50d42b86",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BottleBlue.mat",
+      "sha256": "694f05667d979d891792bc54c4a0e37eb50bde41764a8b5ee6bd664ce36f2080",
+      "bytes": 3848
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BottleBlue.mat.meta",
+      "sha256": "38d54f3e9673d12246dbe084c6c1d1b2ee003e3ad49499c33e4da2852fa30464",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BottleGreen.mat",
+      "sha256": "30159730e6e0fb00fb5802b3432b7afc1494c8da09d4fe5ba02aee8d9aca4028",
+      "bytes": 3847
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BottleGreen.mat.meta",
+      "sha256": "011457dfde7a1e323ac9c3fee20990a6cf44fc7e7e26d58dd790d97103cbcf60",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BottleLabel.mat",
+      "sha256": "599feb4f7fd14f76bde1747d8347b84c484ec58d038c89e0a5c32599df084095",
+      "bytes": 3827
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/BottleLabel.mat.meta",
+      "sha256": "fead6a6f752d80bf0921323b5ffd08f08f9d6394c2522a7718e7a2b8edd5ee8c",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Brass.mat",
+      "sha256": "d7b45c40bb8e39b523b266aa514f627ab4b7fba3c5776d78d3df2f0da5b473a4",
+      "bytes": 3911
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Brass.mat.meta",
+      "sha256": "49b6ae5f6603d6573e2ad7da3897154f6991b1121b6c91873c33f08b0251c4fc",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Brass_BaseColor.png",
+      "sha256": "f85c3019f9f6c8ab68b47354facd1099ff4300d092279d59025044d982411b9e",
+      "bytes": 352515
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Brass_BaseColor.png.meta",
+      "sha256": "6766a3c829eda3b5a55e13a260808f1d7a2fb38f6a24fea3a49027a84b5800ae",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/CityWindow.mat",
+      "sha256": "9ad775366b4cbc07ae849acb7dd5175285fd63623d4ac8ce4dc8cf45257da7b0",
+      "bytes": 934
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/CityWindow.mat.meta",
+      "sha256": "148e083b5eb1eae4991a0e1c6aad62ac03a56761e4085625847a8b2798dac19b",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/ConversationFocus.asset",
+      "sha256": "4adc031bfada7b7b3912cbc650671fd52a5d6170a9ef08e6b8bc400ac75310db",
+      "bytes": 1597
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/ConversationFocus.asset.meta",
+      "sha256": "e480100c33f7cc43423ea7da03bac0702780cd99c06286c9d721de6b8650b44f",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/CyanNeon.mat",
+      "sha256": "3b401e49ffd16f38301edfa92cbdcd86156befcf1d0e5b0dd05a47896657b8ef",
+      "bytes": 3862
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/CyanNeon.mat.meta",
+      "sha256": "3e35f48b2a259f0ecb2b5e899ab914944e4cc3653e84dfb806e5fe5effa7530b",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Gunmetal.mat",
+      "sha256": "e19b8635297d217fea1d5d304402edc52d75bd738cec0dda39f1631a94e849cd",
+      "bytes": 3914
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Gunmetal.mat.meta",
+      "sha256": "753d030e31f9db342a7f6a2b8bc95f3c808a7debc04345c57ce083781f5f3ed9",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Gunmetal_BaseColor.png",
+      "sha256": "cdfc6aff8a1d0867033e224ec02df4b8294a092d0b0b9c282f064002c8c93f96",
+      "bytes": 306277
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Gunmetal_BaseColor.png.meta",
+      "sha256": "0fd3ee70e8480e08942fb9b448d6f1b3d234f1f4d61ce2a6caa0bb9b7b0e9a58",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Marble.mat",
+      "sha256": "52a9ea2256c450f07d0c97f34d748b7203fd14711d97fcf2eb8654cbfd95b2a2",
+      "bytes": 3913
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Marble.mat.meta",
+      "sha256": "ca61e2494e40d7348449e5d96c312611fccc1e4d62d8e79193b5d3f97f9270da",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Marble_BaseColor.png",
+      "sha256": "0187cbca76748cf453a8c06212690d1ba41c7241acb973d4d813c7e16809d161",
+      "bytes": 320960
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Marble_BaseColor.png.meta",
+      "sha256": "ecad4c19dd028a04b18f55c34d6e70d4e92fc6d6ac8ae210f6cb155e14bec124",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/materials.json",
+      "sha256": "f2a51a118dd32ab8262c36961c3aa37a0c23742df9cb31ae55ea8bd8420d475f",
+      "bytes": 4767
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/materials.json.meta",
+      "sha256": "f9b36d98a6a2896f423b899034a45feab8beafac96ab6d41e40b6d866bf06f3e",
+      "bytes": 158
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/MetropolitanNightSky.mat",
+      "sha256": "1959bf5c7a1c97d9e40c64f8d082d201d035607cb34ed88c510e1497d8b26363",
+      "bytes": 1116
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/MetropolitanNightSky.mat.meta",
+      "sha256": "9b6bbacbe1786312f56e02180f202ca6bf34044ab444f58e183f144a5c47c4d6",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/MetropolitanNightSky.png",
+      "sha256": "2c4b39c7ae9c836b9eb2764cee414789352f7599d7511afefd18d256529aa7b5",
+      "bytes": 2076000
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/MetropolitanNightSky.png.meta",
+      "sha256": "80b3febe734094fbcb44b02e12fdc0ebdef3cd7d4a8a9e064961200193ab178f",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/MoodNeon.mat",
+      "sha256": "d1d011367da7237b924aff669613e1749c61d9747f85709c387751020b28ee3f",
+      "bytes": 3849
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/MoodNeon.mat.meta",
+      "sha256": "6f254c35190411d5bd67a9359534d4fbcdae0ae79053162fea23decd19f54372",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/NeutralRoomReflection.exr",
+      "sha256": "2ce1a9f2fdb05cbcb821f15b3d7be3baac29072a0e1f23ac7f345411a0dd3ec8",
+      "bytes": 377781
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/NeutralRoomReflection.exr.meta",
+      "sha256": "425d6a4bcf4b6c1a441f3e06958908ab86f7270e9942a798ebee8fa2a4fe876d",
+      "bytes": 3718
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Nightclub.fbx",
+      "sha256": "3850a4572bbdadf547836616cca2599e27efc0dcf5b2278a0919965fdd60e9ec",
+      "bytes": 4314380
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Nightclub.fbx.meta",
+      "sha256": "f2f889563dfcd9596cc24f749528bd58bf2ea44a3537fba36556c6619f62c72c",
+      "bytes": 6962
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/NightclubAtmosphere.asset",
+      "sha256": "53f6944536b1cc888ea568df1db38f98f68073631e277c5b29ae6e53d1d788fa",
+      "bytes": 2672
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/NightclubAtmosphere.asset.meta",
+      "sha256": "c446ec29ead0808a21b836790e7ce002ee81d364f7897d80bef90b16153722fc",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Obsidian.mat",
+      "sha256": "69d027db6ad44f786f07e2f3bd7a17daaf0263c524351ab7ece1802a491c0250",
+      "bytes": 3914
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Obsidian.mat.meta",
+      "sha256": "0b04ab22e53dd8c61ae782e0696a1cad7f95e68c6835ad962f7d1b5ceba2d9f8",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Obsidian_BaseColor.png",
+      "sha256": "a34ae3e490587b7c932733d50befac06f9231793596db9059219dc8e01c325c2",
+      "bytes": 223067
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Obsidian_BaseColor.png.meta",
+      "sha256": "a72cd03d0cbef50b319d8783e203bd48bdd6a85cb525f1c511d2861baa7c15b8",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PalmLeaf.mat",
+      "sha256": "0f7271e8815a2a886a6ad0f82ae19d781149a61de4289931e96f4b9bec25a0e1",
+      "bytes": 3841
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PalmLeaf.mat.meta",
+      "sha256": "6e5acec59831403e04807e0b3cd8e9e85acf930d98c7832dd6124ae14312c9da",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PalmLeafLight.mat",
+      "sha256": "79dc323e6ea0b6fd9e781efaade0ccff25064d62b3ddead85c2b290fb9427cab",
+      "bytes": 3849
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PalmLeafLight.mat.meta",
+      "sha256": "b541fc039bbdc1d5022c2a007c50d1615d21772993a9cba536b3021af8b8bbca",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PalmLeafLight_BaseColor.png",
+      "sha256": "5f709ad5cc0320efa259c86ebfdd80f8144cf8c254eea13b416cfb33fc41814e",
+      "bytes": 369502
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PalmLeafLight_BaseColor.png.meta",
+      "sha256": "466efb80da5b42127381af88353f9ccef802e8232919d48cb06a4b3c05328645",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PalmLeaf_BaseColor.png",
+      "sha256": "cb5b07c979af22a0e2b94b2aa6b3f27c9fdd24e2446363e15a8f8cb8500a15bd",
+      "bytes": 345024
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PalmLeaf_BaseColor.png.meta",
+      "sha256": "3a6a4fe595afd70b0831cd004f26a505029227bb11b68da9b8a1be9f8a195997",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PartitionGlass.mat",
+      "sha256": "e8b3db6d51b777c89b976fbeb62ffab80d841619a3f52b9204fc71e5c88f2ba4",
+      "bytes": 3938
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/PartitionGlass.mat.meta",
+      "sha256": "26e55896058ea3e7026917a581bebabc5916b32fbbcf14f28d4307caee71c726",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Pearl.mat",
+      "sha256": "aba5128f58fb048ce02459461a3c46ca59993d64cd7b4c9a44c10d990b2e561c",
+      "bytes": 3818
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Pearl.mat.meta",
+      "sha256": "9600822c33aee5821e038d362a281a048d09d7758e9e49716e2c3ab15b0603e1",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/RoseVelvet.mat",
+      "sha256": "28e72b7a8b0b4fd60f4733aa48686cde590f81e90581bb7b40d204e8549b35fc",
+      "bytes": 3921
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/RoseVelvet.mat.meta",
+      "sha256": "e79521f35ef21d8d0fa3947a4e49a62dea148b49c351c12c07eb220beaa97079",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/RoseVelvet_BaseColor.png",
+      "sha256": "5c1f76718243d465d97b983771235d14be84de2d43afdea5d0527a2523f30d6a",
+      "bytes": 364830
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/RoseVelvet_BaseColor.png.meta",
+      "sha256": "939f022b6380b3522adda3b643af1b7a542e2a710625cab93e88e9e9bd4c4e9d",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/ShelfBacklight.mat",
+      "sha256": "db7a3e2700ce8808ff2bc7a2194252e7dd64f0775ee8e98bcc54377d04f21e28",
+      "bytes": 3880
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/ShelfBacklight.mat.meta",
+      "sha256": "72307de4eabd7a467876157722c3e69af51de6669d4574e2e8a52562358999e8",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/SmokedGlass.mat",
+      "sha256": "5dc4af664be562cae1eda7f64f726af66a9aafa121b0baddc9e0229d24c0ed72",
+      "bytes": 3843
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/SmokedGlass.mat.meta",
+      "sha256": "db2ffe410bc6309a986b917770e009d101b0f9fd3c8b24c8548b008ae9a6d59d",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/velvet-lounge-chair_0.mat",
+      "sha256": "9a2ea55b631e26e9ee2d7c1fba1424f71bd38dfa1103b801cab44043e6b08f52",
+      "bytes": 3932
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/velvet-lounge-chair_0.mat.meta",
+      "sha256": "0587dcc19b3cf94814ee6ef91be17aefc86894a2d012dab53bee3f286cac64e1",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/velvet-lounge-chair_0_BaseColor.png",
+      "sha256": "485afe93cb56db6cab275c8e7851ce22930ab5c779632e910894dcccd5cff7f6",
+      "bytes": 1163078
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/velvet-lounge-chair_0_BaseColor.png.meta",
+      "sha256": "922a0826af4cc1a3341834801e3ae6a450d4a0b91b5afafead28810394b58e4f",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Velvet.mat",
+      "sha256": "abffab62a7acd9250feeb15300ea6d322ef3efc230fc33eb245bc7e7a707b8cf",
+      "bytes": 3917
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Velvet.mat.meta",
+      "sha256": "b9e3388b061f79a5f4c93a69b594744b3af06a7873d07dcd87cc38337f06d64f",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Velvet_BaseColor.png",
+      "sha256": "fb74c030fd04a46201c2203d61a45250a22a7111cad7b442f59483427acf0e43",
+      "bytes": 332989
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/Velvet_BaseColor.png.meta",
+      "sha256": "774a4844d76afd5d5d6c347ba154ed721a62062917d855bb050c0671b5a36726",
+      "bytes": 3717
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/VortexScreen.mat",
+      "sha256": "c1504671de11752cea21cee198fa727da5265d08f01a76290e4d39fa7539719a",
+      "bytes": 886
+    },
+    {
+      "path": "Assets/EnvironmentArt/Generated/VortexScreen.mat.meta",
+      "sha256": "95f960408968edbeb4c84942dcb5fbe779aa2a1217494f7e29a544773c5064ad",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/BilingualSpeechProfiles.cs",
+      "sha256": "1e6814b5dbb9e45faf3ecf61d02a89da2c97515f8215b937c615faad1c957511",
+      "bytes": 26181
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/BilingualSpeechProfiles.cs.meta",
+      "sha256": "cd601ac286dd424ab6051722949e2b830ea83df8e1e9bfaa32f9004ac752ac81",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/BlinkTimingState.cs",
+      "sha256": "862ac79e3fb8c6b2b540094ebf34ef82b86744c4ae578682284e56cedbe05648",
+      "bytes": 5417
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/BlinkTimingState.cs.meta",
+      "sha256": "d7e6d35d261a9079e5160df55ce76f3e5f175e5684e4bee6f5c22e05d5bec437",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/CharacterFaceDriver.cs",
+      "sha256": "e6490b7e016b075081b9439643566e3071790d79e92080c521abcf0c9dc9f7b6",
+      "bytes": 39502
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/CharacterFaceDriver.cs.meta",
+      "sha256": "91a50dd1fbb6f261ad6e81716b7e5897ae36d84eda81d1974a4feb3ea46f1b13",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/CharacterProfile.cs",
+      "sha256": "95c574fa6f45afb2ca629e7078236cc4e7e6f6edb46486b6428e12f4dd14b62c",
+      "bytes": 2474
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/CharacterProfile.cs.meta",
+      "sha256": "2605433017bcc6b5a304e2438a7b25205997aa251ddcf27e1b8d1373e14ecde2",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/FacePoseComposer.cs",
+      "sha256": "87233aada5b1a61121c4fa135a5cc7ab0ec7fc4208b030e3179e01c6b198d67f",
+      "bytes": 4592
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/FacePoseComposer.cs.meta",
+      "sha256": "cc8a948cf13dcb4dcc94890de56235696a8b27544da98072b4d2684672b13e3a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/GazeBlendshapeComposer.cs",
+      "sha256": "4101630ca22b119a0d930093b70f99ab973b20eee0e5970597f0a35b4ee12340",
+      "bytes": 2750
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/GazeBlendshapeComposer.cs.meta",
+      "sha256": "83e69e51e1c2c88ff3b2dc0a828c76ea5dcb4c11a830941f6b169a309dc2a4a9",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/IdlePlaybackMath.cs",
+      "sha256": "9193e1711bbbde80fc04c1df54bbf29ed030b269ba8c470a9c5538a784c6897c",
+      "bytes": 414
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/IdlePlaybackMath.cs.meta",
+      "sha256": "0c328f245d2c916d5abf3f714a9798c007e54afa76da90330be0cdf2b473ecc6",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/LucidLoop.CharacterArt.asmdef",
+      "sha256": "2f7d0f2fca194f15a5e185dc1a9634190d257018866f3fc407ec65c103dcabf5",
+      "bytes": 203
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/LucidLoop.CharacterArt.asmdef.meta",
+      "sha256": "8eb0dfa266c76cf3e8c852dccd360e41f9914a67efa3b3358f46cb074a3a0ef9",
+      "bytes": 173
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenBustComparisonViewer.cs",
+      "sha256": "d321e1b5a94abe938f7fa47635b35586b7098b09512c5972c14ba9c552ae233e",
+      "bytes": 19218
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenBustComparisonViewer.cs.meta",
+      "sha256": "5f0dc2d9304bad42fec245871f3a320e3897f26bd7fdd4f6fd3b8f1702bf0dcb",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs",
+      "sha256": "7a6c4de86a12abfd436e876a8695b6b404aa9b490a53e5e92cffc6c4df76c933",
+      "bytes": 20097
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenCompleteHeadController.cs.meta",
+      "sha256": "813fbf14a23181c45ebaa65dee63d1a14fbf48515d505b1ed48efbd6cdd18ba3",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs",
+      "sha256": "107576e9c37e0946846915eccf48e3c46ab2a732c0bf38ea5ca4e4c757eff4cd",
+      "bytes": 5317
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenCompleteHeadRig.cs.meta",
+      "sha256": "f4d9831c4f8fe5d0ef2217198fab670066870d61a21087e73021ad2accf929e7",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerBlinkReview.cs",
+      "sha256": "7d3ac334aae2cff6a8f849db34fc899ed2dc697a99cc6bc8fb69880e0d344f7b",
+      "bytes": 10494
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerBlinkReview.cs.meta",
+      "sha256": "2023e87c42f6de6802a95fa0aa38179814ae81e82518a50649c809483f63b4f2",
+      "bytes": 254
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs",
+      "sha256": "8c7b02d59bc54414c9a0ba739c39d5078700d81a66493ad955a77bafdf0871cf",
+      "bytes": 10686
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerEyeHairReview.cs.meta",
+      "sha256": "c3a7884e1ee7e881b50cec544e5c4514acc4513d48c6fb2ec6968139f65a610c",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs",
+      "sha256": "d00fea7a5a7a9e2ceca2199c6df2df88ba7a71636c3085ff39bfe26e49f0657c",
+      "bytes": 12161
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerEyeReview.cs.meta",
+      "sha256": "ad0f751de575bcb5c9e249d692011e16404aef8a02cf026b9b2af2bd80e26a8f",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs",
+      "sha256": "6d9bac6d959218799402bce1cbaaf376346fdabbed3ccc05c47e9c4bf975573b",
+      "bytes": 6643
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerForeheadFieldReview.cs.meta",
+      "sha256": "1eea3177bb14cfe2bc0a7633e3b47908c732a8262307c62545068628b4bb0a62",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs",
+      "sha256": "1ecf3aead1253c7353eb5d7c26c0beaa826477c3aa4db6d2c4ebd6398b68f6e2",
+      "bytes": 8239
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerForeheadReview.cs.meta",
+      "sha256": "9dc0484d55007d52920040e46ffb6b326687c3ee0158956da5c0e7e6bd6ffebf",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs",
+      "sha256": "e5df7b28420306af336574e5649dd85db1a93ad4e240fd1a1bf9fa7e2ad990d4",
+      "bytes": 8470
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerMouthReview.cs.meta",
+      "sha256": "55843a23018778fe4128449d829991190ea926ecfa6b54064b46f85e5415baaf",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs",
+      "sha256": "da305a705ec024337ecd1ba3a9db472e5f327b00bf979a8dce01521fe18f99d5",
+      "bytes": 10038
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenDesignerRefinementReview.cs.meta",
+      "sha256": "ac81aa5c721c05aa4cf9c68352313ed75dfa78ce2e3338ac99ee9ee5fc5b67ce",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenFaceStudyController.cs",
+      "sha256": "cb4ca8f97e56044f4bf2dcc6656a8dd46cfa9afd152dca3964320cfbdf69732f",
+      "bytes": 17559
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenFaceStudyController.cs.meta",
+      "sha256": "2a63ff50d9bb6c6a7bba4988246a68ef0ad48a24812a9e762c83e20e31bbe611",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenHReferenceAnimationController.cs",
+      "sha256": "7687d6d5863f5773917f607a8ca10cfd885f4b55ef84d2c29e5286bd33dac38a",
+      "bytes": 25554
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenHReferenceAnimationController.cs.meta",
+      "sha256": "37788216c27bf99b2b7fac71e7004d226abc56aee9b4d2d7de215bf9772521bf",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenHReferenceCapAttachment.cs",
+      "sha256": "6296c3a229e9c1ce7d48b1775b8a6adf56fd411ccd0a9167cb49bca5690f3ea3",
+      "bytes": 9065
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenHReferenceCapAttachment.cs.meta",
+      "sha256": "76f5404ef8a0382004eaa2f8139b730757b869f82695f66093ea27ddd56e5a4a",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenHReferenceVideoSmokeProbe.cs",
+      "sha256": "502f91dc97cbe7d65100677b05684cddf073f09d8030cd44f7c9e7c75747b501",
+      "bytes": 12566
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenHReferenceVideoSmokeProbe.cs.meta",
+      "sha256": "a0cf08fb997320ac4d739f1cc72301081867d73afb6b7c39452eea0607e997a4",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenHReferenceVideoTransport.cs",
+      "sha256": "efd996b0591141856b907ea6724d5c9fe0c8b950a348f54819e150a88d578bd1",
+      "bytes": 7347
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenHReferenceVideoTransport.cs.meta",
+      "sha256": "e5bcf43fa6c303f0eac48252b9f2e39b6b5dc3f9bc84a0745909582aed487085",
+      "bytes": 60
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenNprReviewController.cs",
+      "sha256": "b0cd23114dc9ac0acddaa54be84945795e7995a24d87858884ab9463c0a026e2",
+      "bytes": 18625
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/RenNprReviewController.cs.meta",
+      "sha256": "015c64365490f08a1bd5a4dedb4fa0238c98d3c9d6c45b638f412dfc04f4a64a",
+      "bytes": 62
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/SpeechFrameResolver.cs",
+      "sha256": "18ac380914f2dde1a45c693fc376ecc618cce113a7594c427a5748cdd1afabdf",
+      "bytes": 5349
+    },
+    {
+      "path": "Assets/CharacterArt/Runtime/SpeechFrameResolver.cs.meta",
+      "sha256": "054bbb19116d896c881b18e3375582a959ab3b2b69b50d2804dee97933d42ef0",
+      "bytes": 62
+    },
+    {
+      "path": "Packages/manifest.json",
+      "sha256": "8a6a100822b59469a695dcff961e4c0b3cc194724a0d50123e6571c9f381ab57",
+      "bytes": 2120
+    },
+    {
+      "path": "Packages/packages-lock.json",
+      "sha256": "d1a72217582dee747633c97f3ec2381a1de6f7b433e135fde483d85d82276b87",
+      "bytes": 12151
+    },
+    {
+      "path": "ProjectSettings/AudioManager.asset",
+      "sha256": "2e46c3310c149875bed869aa2d8cc26f01e9b052a6220ddd75a71c4c373444e4",
+      "bytes": 546
+    },
+    {
+      "path": "ProjectSettings/ClusterInputManager.asset",
+      "sha256": "06a192320121e445dcff1ae8ddad2a948ff671ca134603c043d9f4e920427ea9",
+      "bytes": 120
+    },
+    {
+      "path": "ProjectSettings/DynamicsManager.asset",
+      "sha256": "028dea927678e2cda1e22c16a8535bf496a2426a2d4c44d793d45cfd53312c72",
+      "bytes": 1620
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "sha256": "b5c026fcb28437a04900a395d45a6cbd7d8a54eb8e5080a93987b91d4da74f64",
+      "bytes": 519
+    },
+    {
+      "path": "ProjectSettings/EditorSettings.asset",
+      "sha256": "fdb907540f42dfcae70561b7e806e4e4c90ffed93ef5b0add81e9e33d2701aab",
+      "bytes": 1653
+    },
+    {
+      "path": "ProjectSettings/GraphicsSettings.asset",
+      "sha256": "4eb26e5971a91e3d363372a8057f6428464c97b10e0be7def65ab5e7dc9ccace",
+      "bytes": 2684
+    },
+    {
+      "path": "ProjectSettings/InputManager.asset",
+      "sha256": "17ebf6e47832d8e97feaa71831c075628aa112c4dfa6ad06b29427d731fac4ef",
+      "bytes": 10242
+    },
+    {
+      "path": "ProjectSettings/MemorySettings.asset",
+      "sha256": "54bf56c91ed16e5ab9a9f56fd8879312be930c04917399b094be260eaab581ee",
+      "bytes": 1262
+    },
+    {
+      "path": "ProjectSettings/MultiplayerManager.asset",
+      "sha256": "eb870831f00c2e99ca9f535b38d5b3c6489cb198925a247b2f7bac2db4f9de25",
+      "bytes": 241
+    },
+    {
+      "path": "ProjectSettings/NavMeshAreas.asset",
+      "sha256": "75da067e99628dc5c30d90492887cdaff68171e7b33d1217a1311b182aa47b50",
+      "bytes": 1454
+    },
+    {
+      "path": "ProjectSettings/Physics2DSettings.asset",
+      "sha256": "65b22f8cc5fd6fcc4636100739c9a1a7f7ce60202e3a1b17c919e40d740d7a79",
+      "bytes": 1919
+    },
+    {
+      "path": "ProjectSettings/PresetManager.asset",
+      "sha256": "6ba879310e2be2e5ba18702578cda93b26b030ecd88e883fef22ab456a9f9697",
+      "bytes": 153
+    },
+    {
+      "path": "ProjectSettings/ProjectSettings.asset",
+      "sha256": "0775fad613cb5d65d590610b8d80d5e3f85256a3cec3338f43f57f2dac97819e",
+      "bytes": 25325
+    },
+    {
+      "path": "ProjectSettings/ProjectVersion.txt",
+      "sha256": "7e6e20316f577ac297c3db263ee2357b7b63bbb9bf8cfe5a6ac3d5a6a93c4457",
+      "bytes": 87
+    },
+    {
+      "path": "ProjectSettings/QualitySettings.asset",
+      "sha256": "aa04b07fc06bad970b3e6fdd560615595116c84201d30398f25b677faa825792",
+      "bytes": 10205
+    },
+    {
+      "path": "ProjectSettings/SceneTemplateSettings.json",
+      "sha256": "e0cbb98bd0aa9449840ce663a4b81751ab0828f5d8d2bd37923644fee7095e62",
+      "bytes": 3655
+    },
+    {
+      "path": "ProjectSettings/ShaderGraphSettings.asset",
+      "sha256": "4eec1bfd8e8535afc13d08c409761d73412d1909ea94a2e9aa75c0ea9794e3f1",
+      "bytes": 652
+    },
+    {
+      "path": "ProjectSettings/TagManager.asset",
+      "sha256": "b5252f1beb6c0a6f84057aafeed330c699a80897a4bd9d8192f957dcdf936f26",
+      "bytes": 456
+    },
+    {
+      "path": "ProjectSettings/TimeManager.asset",
+      "sha256": "04c070e2f9716503b8014933b8603d21edbf3784afb00e32a2633a0ecee075f2",
+      "bytes": 319
+    },
+    {
+      "path": "ProjectSettings/UnityConnectSettings.asset",
+      "sha256": "84b91bd844e9632367405d0445062325e7fb80a18067a39930a1b874060707ed",
+      "bytes": 1103
+    },
+    {
+      "path": "ProjectSettings/VersionControlSettings.asset",
+      "sha256": "3fe15395f872b9cfe908a111a1e87be2055c6ee367e2876e7e83a408c2b89d57",
+      "bytes": 179
+    },
+    {
+      "path": "ProjectSettings/VFXManager.asset",
+      "sha256": "b61a694c821740d94f56270892b0c36c16dce80aaa0fec83fe1e17c41a385b20",
+      "bytes": 545
+    }
+  ],
+  "externalFiles": [
+    {
+      "path": "server/src/nightclub-dressing.json",
+      "sha256": "c6e77c7734c06a65fcf2e0281b24e6a50ebd0f33ceafc02a0b53e6e20f926012"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "asset": "areca-planter",
+  "created": "2026-09-14T06:46:36.953844Z",
+  "status": "downloaded",
+  "settings": {
+    "prompt": "One elegant tall indoor areca palm in a tapered rectangular charcoal black metal planter with a thin brushed brass rim. Dense arching dark olive green palm fronds with clear individual leaf silhouettes, several stems. Upscale neon nightclub furnishing, stylized painterly 3D game art with broad hand-painted leaf color variation, physically plausible materials, no baked colored light. Plant 2.2 meters tall, planter 0.55 meters wide. Single isolated complete object, no surrounding room, no floor platform, no text.",
+    "model": "v3.1-20260211",
+    "face_limit": 2500,
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed",
+    "model_seed": 20260914,
+    "negative_prompt": "room, people, text, pedestal, background scene"
+  },
+  "task_id": "f9e1e408-3455-4e3b-923a-d67c35e93bff",
+  "credits_consumed": 30.0,
+  "downloads": [
+    {
+      "field": "output_model_url",
+      "file": "original/output_model_url.glb",
+      "sha256": "d93ecb9e6268cf4b603f3caa59a2f689c8279327d6fa5cc947ba8a570edefcb3",
+      "bytes": 2257804,
+      "source_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260914/f9e1e408-3455-4e3b-923a-d67c35e93bff/tripo_pbr_model_f9e1e408-3455-4e3b-923a-d67c35e93bff.glb?<redacted>"
+    },
+    {
+      "field": "output_rendered_image_url",
+      "file": "original/output_rendered_image_url.webp",
+      "sha256": "6800a63f68f97c6c4511037268522fc8c2dce795f8e879727a325003b7cdd2f6",
+      "bytes": 220924,
+      "source_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260914/f9e1e408-3455-4e3b-923a-d67c35e93bff/legacy_mesh.webp?<redacted>"
+    },
+    {
+      "field": "output_generated_image_url",
+      "file": "original/output_generated_image_url.jpeg",
+      "sha256": "ed8418512dc5db0a7d0d40e27b16006f27f4dad95c51f9e1546a70c7d25eabf5",
+      "bytes": 186854,
+      "source_url": "https://tripo-data.rg1.data.tripo3d.com/tcli_25fb1983e04f4087a308f39eb984ec2d/20260914/f9e1e408-3455-4e3b-923a-d67c35e93bff/text2image_f9e1e408-3455-4e3b-923a-d67c35e93bff.jpeg?<redacted>"
+    }
+  ]
+}
