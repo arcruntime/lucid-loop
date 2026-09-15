@@ -14,6 +14,7 @@ namespace LucidLoop.Gyms
         public bool PreviewPhoneLayout;
         public bool ConversationExpanded;
         float lastKeyboardInset, keyboardHoldUntil;
+        public bool UseInformationOverlay;
         public bool CluesExpanded { get; private set; }
         public void ToggleClues() { CluesExpanded = !CluesExpanded; }
         // 44 points at native iPhone 15/15 Plus scale (3 pixels per point).
@@ -60,6 +61,7 @@ namespace LucidLoop.Gyms
 
         void LayoutClues(float width, float height, float top, float target, float x = 24)
         {
+            if(UseInformationOverlay){if(Clues)Clues.gameObject.SetActive(false);return;}
             SetTopLeft(Clues, x, top, width, height);
             SetTopLeft(ClueToggle, 12, 8, width - 24, target);
             if (ClueViewport) { ClueViewport.offsetMax = new Vector2(-18, -target - 20); ClueViewport.gameObject.SetActive(CluesExpanded); }
@@ -89,7 +91,7 @@ namespace LucidLoop.Gyms
             SetTopRight(OpeningRoute, 16, 32, 320, target);
             LayoutClues(left, CluesExpanded ? size.y - 240 : target + 16, 196, target);
             Header.gameObject.SetActive(!typing); Guidance.gameObject.SetActive(!typing);
-            Pause.gameObject.SetActive(!typing); Reset.gameObject.SetActive(!typing); Clues.gameObject.SetActive(!typing);
+            Pause.gameObject.SetActive(!typing); Reset.gameObject.SetActive(!typing); Clues.gameObject.SetActive(!typing && !UseInformationOverlay);
             foreach (var name in new[] { "Select maya", "Select ren", "Select luca", "Select theo", "Talk", "History" })
                 Child(Conversation, name).gameObject.SetActive(!typing);
             SetTopLeft(Conversation.GetChild(0) as RectTransform, 80, 10, width - 100, 48);

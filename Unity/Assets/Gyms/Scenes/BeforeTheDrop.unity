@@ -27651,6 +27651,9 @@ GameObject:
   - component: {fileID: 1112044005}
   - component: {fileID: 1112044004}
   - component: {fileID: 1112044012}
+  - component: {fileID: 1112044015}
+  - component: {fileID: 1112044014}
+  - component: {fileID: 1112044013}
   m_Layer: 0
   m_Name: Before the Drop encounter
   m_TagString: Untagged
@@ -27885,6 +27888,64 @@ MonoBehaviour:
   Coordinator: {fileID: 1112044010}
   ReviewedBodyPresentation: {fileID: 0}
   FallSeconds: 0.45
+--- !u!114 &1112044013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112044003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579b05a28e98434298c6866b51cad2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LucidLoop.Gyms::LucidLoop.Gyms.EncounterInformationBridge
+  Coordinator: {fileID: 1112044010}
+  Manager: {fileID: 1112044015}
+  UI: {fileID: 1112044014}
+--- !u!114 &1112044014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112044003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 318cc7178b16482583bd1bd53c238d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LucidLoop.Gyms::LucidLoop.Gyms.InformationNotificationUI
+  Manager: {fileID: 1112044015}
+  HeadingFont: {fileID: 0}
+  BodyFont: {fileID: 0}
+  UnreadIconSprite: {fileID: 0}
+  ReadIconSprite: {fileID: 0}
+  Gold: {r: 0.94, g: 0.77, b: 0.31, a: 1}
+  Ivory: {r: 0.93, g: 0.88, b: 0.84, a: 1}
+  PanelColor: {r: 0.025, g: 0.013, b: 0.024, a: 0.94}
+  BorderColor: {r: 0.56, g: 0.43, b: 0.23, a: 0.6}
+  HeadingSize: 31
+  BodySize: 27
+  EdgeMargin: 28
+  RowSpacing: 22
+  AnimationDuration: 0.28
+  PulseDuration: 3.5
+  GlowStrength: 0.16
+  BannerWidth: 640
+  PanelWidth: 610
+--- !u!114 &1112044015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112044003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16591c4cd8e54c8f956a2c91afc2aea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LucidLoop.Gyms::LucidLoop.Gyms.LearnedInformationManager
+  entries: []
 --- !u!1 &1116408888
 GameObject:
   m_ObjectHideFlags: 0
