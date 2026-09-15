@@ -144,11 +144,26 @@ namespace LucidLoop.Gyms.PlayModeTests
             }
             yield return Capture("02-catastrophe.png");
             string firstLoop = coordinator.State.LoopId;
-            Assert.That(coordinator.Reset(), Is.True);
+            hud.RewindTransition.Request();
+            Assert.That(hud.RewindTransition.IsPlaying, Is.True);
+            Assert.That(coordinator.SendDestination(Vector3.zero),Is.False,"Movement must be blocked while rewinding.");
+            Assert.That(coordinator.RequestConversation("maya"),Is.False,"Delayed/queued interactions must be fenced.");
+            Assert.That(coordinator.PendingConversationNpc,Is.Null);
+            hud.RewindTransition.Request(); // A second tap must not queue another reset.
+            while(hud.RewindTransition.Progress<.25f){CheckDeadline("record overlay");yield return null;}
+            yield return Capture("03-vinyl-record.png");
+            while(hud.RewindTransition.Progress<.60f){CheckDeadline("spiral");yield return null;}
+            yield return Capture("04-vinyl-spiral.png");
+            while(hud.RewindTransition.Progress<.96f){CheckDeadline("loop title");yield return null;}
+            yield return Capture("05-loop-title.png");
+            while(hud.RewindTransition.IsPlaying){CheckDeadline("rewind transition");yield return null;}
+            Assert.That(GameObject.Find("Vinyl rewind transition"), Is.Null);
             while (coordinator.State.LoopIndex != 2) { CheckDeadline("reset"); yield return null; }
             yield return null;
             Assert.That(coordinator.State.LoopId, Is.Not.EqualTo(firstLoop));
             Assert.That(coordinator.State.Phase, Is.EqualTo("exploring"));
+            Assert.That(UnityEngine.Object.FindFirstObjectByType<TimeLoopTransitionController>().SuccessfulResets,Is.EqualTo(1));
+            Assert.That(coordinator.TransitionLocked,Is.False);
             Assert.That(coordinator.State.PlayerDiscoveries.Select(c => (string)c["factId"]), Is.SupersetOf(clueIds));
             Assert.That(VisibleHudText(), Does.Contain("LOOP 2").And.Contain("Aggressive"));
             Assert.That(Quaternion.Angle(standingRotation, actors["luca"].Visual.localRotation), Is.LessThan(.01f), "Loop reset must restore the standing visual.");
@@ -161,7 +176,7 @@ namespace LucidLoop.Gyms.PlayModeTests
             Assert.That(VisibleHudText(), Does.Contain("Theo shoved Luca"), "Retained clue must be readable after expansion.");
             yield return Capture("03-loop-two.png");
             LogAssert.NoUnexpectedReceived();
-            File.WriteAllText(Path.Combine(evidence, "result.txt"), "PASS: real scene + local authoritative relay; movement, opening phases, catastrophe, HUD, screenshots, retained reset. No voice/model/phoneme/production-art acceptance claimed.\n");
+            File.WriteAllText(Path.Combine(evidence, "result.txt"), "PASS: real scene + local authoritative relay; movement, opening phases, catastrophe, HUD, retained reset (screenshots only outside batch mode). No voice/model/phoneme/production-art acceptance claimed.\n");
             Debug.Log("ENCOUNTER_SCENE_SMOKE_PASSED: " + evidence);
         }
 
@@ -176,6 +191,9 @@ namespace LucidLoop.Gyms.PlayModeTests
         static string VisibleHudText() => string.Join("\n", UnityEngine.Object.FindObjectsByType<Text>(FindObjectsSortMode.None).Where(text => text.isActiveAndEnabled).Select(text => text.text));
         IEnumerator Capture(string name)
         {
+            // Unity does not service ScreenCapture's end-of-frame callback in batch mode.
+            // Gameplay assertions still run; visual evidence is captured in the interactive Editor.
+            if(Application.isBatchMode)yield break;
             string path = Path.Combine(evidence, name);
             if (Application.isBatchMode)
             {

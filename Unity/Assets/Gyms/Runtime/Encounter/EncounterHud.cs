@@ -20,6 +20,7 @@ namespace LucidLoop.Gyms
         public event Action<bool> MicrophoneRequested;
         public event Action LeaveRequested;
 
+        public EncounterRewindTransition RewindTransition { get; private set; }
         RectTransform canvas, connectionPanel;
         EncounterHudLayout responsiveLayout;
         Text stateLabel, clueLabel, statusLabel, speakerLabel, transcript, guidance;
@@ -47,6 +48,8 @@ namespace LucidLoop.Gyms
         void Build()
         {
             canvas = GymUI.Canvas("Before the Drop HUD");
+            RewindTransition=gameObject.AddComponent<EncounterRewindTransition>();
+            RewindTransition.Initialize(Coordinator,Voice,canvas.GetComponentInParent<Canvas>());
             var top = GymUI.Box(canvas, "Encounter state", 24, 24, 1275, 116); GymUI.Panel(top, GymUI.Ink);
             var headerTitle = GymUI.Label(top, "BEFORE THE DROP", 20, 10, 850, 40, 30, Gold);
             stateLabel = GymUI.Label(top, "Connect to begin", 20, 58, 1160, 36, 23);
@@ -63,7 +66,7 @@ namespace LucidLoop.Gyms
             clueContent.gameObject.AddComponent<ContentSizeFitter>().verticalFit = ContentSizeFitter.FitMode.PreferredSize;
             clueScroll.content = clueContent; clueScroll.viewport = clueViewport;
             pause = GymUI.Button(GymUI.Box(canvas, "Pause encounter", 24, 830, 200, 58), "Pause", () => Coordinator.Pause(!paused));
-            reset = GymUI.Button(GymUI.Box(canvas, "Rewind encounter", 242, 830, 212, 58), "Rewind", () => Coordinator.Reset());
+            reset = GymUI.Button(GymUI.Box(canvas, "Rewind encounter", 242, 830, 212, 58), "Rewind", () => RewindTransition.Request());
             var guide = GymUI.Box(canvas, "Encounter guidance", 24, 916, 1275, 140); GymUI.Panel(guide, GymUI.Ink);
             guidance = GymUI.Label(guide, "Start a night, then tap the floor to walk. Select someone nearby and tap Talk.", 20, 18, 900, 108, 24);
             openingRoute = GymUI.Button(GymUI.Box(guide, "Opening route", 950, 36, 305, 65), "Walk toward Theo", () =>
@@ -146,6 +149,7 @@ namespace LucidLoop.Gyms
 
         void Update()
         {
+            if(RewindTransition && RewindTransition.IsPlaying)return;
             if (resume) resume.interactable = Coordinator && Coordinator.CanResume && !Coordinator.IsConnecting;
             if (reply && reply.isFocused) { responsiveLayout.ConversationExpanded = true; if (Input.GetKeyDown(KeyCode.Return)) SendReply(); }
             if (reset) reset.interactable = Coordinator.IsReady && (Coordinator.State.Phase == "catastrophe" || Coordinator.State.Phase == "unresolved" || Coordinator.State.Phase == "victory");

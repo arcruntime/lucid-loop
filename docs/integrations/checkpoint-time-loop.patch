@@ -1,0 +1,1151 @@
+
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.cs b/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.cs
+--- a/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.cs
++++ b/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.cs
+@@ -8,7 +8,7 @@
+ 
+ namespace LucidLoop.Gyms.Mvp
+ {
+-    public partial class FirstLoop : MonoBehaviour
++    public partial class FirstLoop : MonoBehaviour, ITimeLoopSceneProvider
+     {
+         public NavMeshAgent Player;
+         public GymCamera Rig;
+@@ -97,6 +97,8 @@
+         }
+         void Update()
+         {
++            if(TimeLoopTransitionController.InputBlocked)return;
++            LoopClock+=Time.deltaTime;
+             UpdateVoice();
+             PositionObserver();
+             if (!Busy && !modal && !State.Resolved)
+@@ -129,7 +131,7 @@
+         public static bool InRecognitionArea(Vector3 position) => ExpandedClub.Recognition(position);
+         public bool Walk(Vector3 point)
+         {
+-            if (Busy || modal || State.Resolved) return false;
++            if (TimeLoopTransitionController.InputBlocked || Busy || modal || State.Resolved) return false;
+             approaching=null;
+             // The first entrance route is authored; the second opens the full floor.
+             if (State.Loop == 1)
+@@ -178,7 +180,7 @@
+         }
+         public void OpenConversation(CharacterActor actor)
+         {
+-            if (Busy || State.Resolved) return;
++            if (TimeLoopTransitionController.InputBlocked || Busy || State.Resolved) return;
+             CancelChat(); Stop(Player); Stop(agents[Maya]); modal=true;ShowPortrait(actor.Id);
+             foreach(Transform child in choices) { child.gameObject.SetActive(false); Destroy(child.gameObject); }
+             choices.gameObject.SetActive(true);
+@@ -225,7 +227,7 @@
+         }
+         public void BeginEncounter()
+         {
+-            if (Busy || !State.Recognize()) return;
++            if (TimeLoopTransitionController.InputBlocked || Busy || !State.Recognize()) return;
+             approaching=null;
+             StartCoroutine(Encounter());
+         }
+@@ -280,13 +282,12 @@
+         }
+         IEnumerator Rewind()
+         {
+-            music.Interrupt();
+-            for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,t/.6f); yield return null; }
+-            State.Rewind(); ResetActors(true);
+-            ObserverScene("Rewind · game rule", "Luca collapsed. Ren interrupted the night. Characters return to their starting positions.");
+-            for(float t=0;t<.6f;t+=Time.deltaTime) { curtain.color=new Color(.18f,.85f,.9f,1-t/.6f); yield return null; }
+-            curtain.color=Color.clear;
+-        }
++            EnsureTimeLoop();timeLoop.TriggerLoop();
++            while(timeLoop.IsTransitioning)yield return null;
++        }
++#if UNITY_EDITOR
++        public void PreviewVinylRewind(){EnsureTimeLoop();timeLoop.TriggerLoop();}
++#endif
+         void ResetActors(bool preserveRewind=false)
+         {
+             FocusRen=false;
+@@ -300,6 +301,7 @@
+         }
+         public void Restart()
+         {
++            if(TimeLoopTransitionController.InputBlocked)return;
+             StopStoryLine();CancelChat(); conversations.Clear(); StopAllCoroutines(); Busy=false; modal=false; State=new LoopState(); ResetActors();
+             choices.gameObject.SetActive(false); dialogue.gameObject.SetActive(false); curtain.color=Color.clear;
+             Refresh(); StartCoroutine(Arrival());
+diff --git a/Unity/Assets/Gyms/Runtime/Mvp/MoodMusic.cs b/Unity/Assets/Gyms/Runtime/Mvp/MoodMusic.cs
+--- a/Unity/Assets/Gyms/Runtime/Mvp/MoodMusic.cs
++++ b/Unity/Assets/Gyms/Runtime/Mvp/MoodMusic.cs
+@@ -5,6 +5,9 @@
+     {
+         AudioSource aggressive,intimate,transitionFx,rewindFx;
+         public bool Intimate, Duck, Muted;
++        public bool TransitionOwnsAudio;
++        public AudioSource[] LoopSources=>new[]{aggressive,intimate};
++        public void RestoreLoopMix(){Intimate=previousMood=false;transition=0;gain=.36f;Duck=false;}
+         bool previousMood;
+         float transition, gain=.36f;
+         public bool ClipsReady => aggressive && intimate && aggressive.clip && intimate.clip && transitionFx.clip;
+@@ -32,6 +35,7 @@
+         }
+         void Update()
+         {
++            if(TransitionOwnsAudio)return;
+             if(Intimate!=previousMood)
+             {
+                 previousMood=Intimate;
+diff --git a/Unity/Assets/Gyms/Runtime/Mvp/ExpandedClub.cs b/Unity/Assets/Gyms/Runtime/Mvp/ExpandedClub.cs
+--- a/Unity/Assets/Gyms/Runtime/Mvp/ExpandedClub.cs
++++ b/Unity/Assets/Gyms/Runtime/Mvp/ExpandedClub.cs
+@@ -120,7 +120,8 @@
+             var data=NavMeshBuilder.BuildNavMeshData(settings,new List<NavMeshBuildSource>{source},new Bounds(Vector3.zero,new Vector3(120,20,120)),Vector3.zero,Quaternion.identity);
+             if(!data)throw new InvalidOperationException("Expanded club navigation failed");navigation=NavMesh.AddNavMeshData(data);
+         }
+-        void LateUpdate(){ApplyCamera(false);if(paint)paint.SetFloat("_Mood",loop.State.Intimate?1:0);}
++        public void RestoreLoopMaterial(){if(paint)paint.SetFloat("_Mood",loop.State.Intimate?1:0);}
++        void LateUpdate(){ApplyCamera(false);RestoreLoopMaterial();}
+         void ApplyCamera(bool instant)
+         {
+             if(!view||!loop)return;
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LoopResetAdapter.cs.meta b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopResetAdapter.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopResetAdapter.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 79cba8ae5d1724520aa44972a49127f3
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LoopObjectCheckpoint.cs b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopObjectCheckpoint.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopObjectCheckpoint.cs
+@@ -0,0 +1,11 @@
++using System;
++using UnityEngine;
++namespace LucidLoop.Gyms
++{
++    public sealed class LoopObjectCheckpoint : LoopCheckpointParticipant
++    {
++        public GameObject[] Objects=Array.Empty<GameObject>();
++        public override object CaptureLoopState(){var state=new bool[Objects.Length];for(int i=0;i<state.Length;i++)state[i]=Objects[i]&&Objects[i].activeSelf;return state;}
++        public override void RestoreLoopState(object state){var values=(bool[])state;for(int i=0;i<values.Length;i++)if(Objects[i])Objects[i].SetActive(values[i]);}
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LoopObjectCheckpoint.cs.meta b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopObjectCheckpoint.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopObjectCheckpoint.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 96f5da16c7c2b4c1c90c4adae6165bd5
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LoopActivityLease.cs b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopActivityLease.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopActivityLease.cs
+@@ -0,0 +1,29 @@
++using System;
++using System.Collections.Generic;
++using UnityEngine;
++namespace LucidLoop.Gyms
++{
++    // Cooperative ownership: nested pause owners must release their own lease.
++    public sealed class LoopActivityLease : IDisposable
++    {
++        sealed class Entry { public int Count; public bool WasEnabled; }
++        static readonly Dictionary<Behaviour,Entry> Owners=new Dictionary<Behaviour,Entry>();
++        readonly List<Behaviour> owned=new List<Behaviour>();
++        public void Pause(Behaviour component)
++        {
++            if(!component || owned.Contains(component))return;
++            if(!Owners.TryGetValue(component,out var entry))Owners.Add(component,entry=new Entry{WasEnabled=component.enabled});
++            entry.Count++;component.enabled=false;owned.Add(component);
++        }
++        public void Dispose()
++        {
++            foreach(var component in owned)
++            {
++                if(!Owners.TryGetValue(component,out var entry))continue;
++                if(--entry.Count==0){Owners.Remove(component);if(component && entry.WasEnabled)component.enabled=true;}
++            }
++            owned.Clear();
++        }
++        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)] static void Clear(){Owners.Clear();}
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LoopResetAdapter.cs b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopResetAdapter.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopResetAdapter.cs
+@@ -0,0 +1,21 @@
++using System;
++using System.Collections;
++using UnityEngine;
++namespace LucidLoop.Gyms
++{
++    public sealed class LoopResetResult { public bool Success; public int LoopNumber; public string Error; }
++    public abstract class LoopResetAdapter : MonoBehaviour
++    {
++        public abstract bool CanTrigger { get; }
++        public abstract int LoopNumber { get; }
++        public virtual void BeginFreeze(){}
++        public abstract IEnumerator RestoreCheckpoint(LoopResetResult result);
++        public virtual void EndFreeze(bool successful){}
++    }
++    // Implement this for game-specific routines, clocks, doors or interactables.
++    public abstract class LoopCheckpointParticipant : MonoBehaviour
++    {
++        public abstract object CaptureLoopState();
++        public abstract void RestoreLoopState(object state);
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopFullScreenFeature.cs.meta b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopFullScreenFeature.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopFullScreenFeature.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 1219738db38754d23a77419eb12d57de
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopAutoSetup.cs b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopAutoSetup.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopAutoSetup.cs
+@@ -0,0 +1,61 @@
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++namespace LucidLoop.Gyms
++{
++    public interface ITimeLoopSceneProvider { void ConfigureTimeLoop(TimeLoopTransitionController controller); }
++    [DisallowMultipleComponent]
++    public sealed class TimeLoopAutoSetup : MonoBehaviour
++    {
++        IEnumerator Start()
++        {
++            yield return null;yield return null;
++            var controller=GetComponent<TimeLoopTransitionController>();
++            if(controller.ResetAdapter || controller.IsTransitioning)yield break;
++            foreach(var behaviour in FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None))
++                if(behaviour is ITimeLoopSceneProvider provider){provider.ConfigureTimeLoop(controller);yield break;}
++            if(!controller.ResetAdapter)
++            {
++                ConfigureCommon(controller,Camera.main);
++                var local=Ensure<LocalLoopCheckpoint>(gameObject);
++                local.Actors=controller.Actors;local.Participants=FindObjectsByType<LoopCheckpointParticipant>(FindObjectsSortMode.None);local.CaptureCheckpoint();controller.ResetAdapter=local;
++            }
++        }
++        public static T Ensure<T>(GameObject gameObject) where T:Component
++        {var component=gameObject.GetComponent<T>();return component?component:gameObject.AddComponent<T>();}
++        public static void ConfigureCommon(TimeLoopTransitionController controller,Camera camera)
++        {
++            if(camera)controller.GameplayCamera=camera;
++            var registered=new List<LoopRewindActor>();var labels=new List<TextMesh>(controller.GameplayLabels);
++            foreach(var actor in FindObjectsByType<CharacterActor>(FindObjectsSortMode.None))
++            {
++                foreach(var label in actor.GetComponentsInChildren<TextMesh>(true))if(!labels.Contains(label))labels.Add(label);
++                var history=TimeLoopAutoSetup.Ensure<LoopRewindActor>(actor.gameObject);
++                if(actor.Visual && history.VisualTransforms.Length==0){var transforms=new List<Transform>();foreach(var t in actor.Visual.GetComponentsInChildren<Transform>(true))transforms.Add(t);history.VisualTransforms=transforms.ToArray();}
++                var writers=new List<Behaviour>(history.MovementWriters);
++                foreach(var b in actor.GetComponentsInChildren<MonoBehaviour>(true))if(IsKnownWriter(b) && !writers.Contains(b))writers.Add(b);
++                history.MovementWriters=writers.ToArray();history.Initialize();registered.Add(history);
++            }
++            foreach(var history in FindObjectsByType<LoopRewindActor>(FindObjectsSortMode.None))if(!registered.Contains(history))registered.Add(history);
++            foreach(var actor in controller.Actors)if(actor && !registered.Contains(actor))registered.Add(actor);
++            controller.Actors=registered.ToArray();controller.GameplayLabels=labels.ToArray();
++            var activity=new List<Behaviour>(controller.WorldActivity);
++            foreach(var b in FindObjectsByType<MonoBehaviour>(FindObjectsSortMode.None))if(IsKnownWriter(b) && !activity.Contains(b))activity.Add(b);
++            controller.WorldActivity=activity.ToArray();
++            var groups=new List<CanvasGroup>(controller.GameplayUI);
++            foreach(var canvas in FindObjectsByType<Canvas>(FindObjectsSortMode.None))
++            {
++                if(canvas.renderMode==RenderMode.WorldSpace || canvas.isRootCanvas){var group=TimeLoopAutoSetup.Ensure<CanvasGroup>(canvas.gameObject);if(!groups.Contains(group))groups.Add(group);}
++            }
++            controller.GameplayUI=groups.ToArray();
++            controller.GameplayAudio=FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
++            if(!controller.RewindClip)controller.RewindClip=Resources.Load<AudioClip>("MvpAudio/RecordScratch")??Resources.Load<AudioClip>("MvpAudio/Backspin");
++        }
++        static bool IsKnownWriter(MonoBehaviour b)
++        {
++            // Project adapters opt in by exact type; no arbitrary-script reversal.
++            string name=b.GetType().Name;
++            return name=="CastVisual" || name=="GymCamera" || name=="ClubLighting" || name=="NpcActionExecutor" || name=="EncounterPrimitivePresentation" || name=="CharacterActor" || name=="PlayerMotor";
++        }
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopTransitionController.cs b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopTransitionController.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopTransitionController.cs
+@@ -0,0 +1,264 @@
++using System;
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++using UnityEngine.Events;
++using UnityEngine.UI;
++namespace LucidLoop.Gyms
++{
++    [DisallowMultipleComponent]
++    public sealed class TimeLoopTransitionController : MonoBehaviour
++    {
++        [Serializable] public sealed class Stage
++        {
++            public string Name; [Min(0)] public float Duration;
++            public AnimationCurve Easing=AnimationCurve.EaseInOut(0,0,1,1);
++            public Stage(string name,float duration){Name=name;Duration=duration;}
++        }
++        public Stage[] Stages={new Stage("Freeze",.2f),new Stage("Grooves",.6f),new Stage("Rewind begins",.6f),new Stage("Recent history",1.5f),new Stage("Spiral inward",.8f),new Stage("Loop closes",1),new Stage("Reset cover",.3f),new Stage("Return",1)};
++        public Camera GameplayCamera;
++        public LoopResetAdapter ResetAdapter;
++        public LoopRewindActor[] Actors=Array.Empty<LoopRewindActor>();
++        public Behaviour[] WorldActivity=Array.Empty<Behaviour>();
++        public TextMesh[] GameplayLabels=Array.Empty<TextMesh>();
++        public CanvasGroup[] GameplayUI=Array.Empty<CanvasGroup>();
++        public AudioSource[] Music=Array.Empty<AudioSource>();
++        public AudioSource[] GameplayAudio=Array.Empty<AudioSource>();
++        [Tooltip("Optional explicit music mix; otherwise preserve the pre-transition volumes.")]
++        public float[] ReturnMusicVolumes=Array.Empty<float>();
++        [Min(0)] public float MusicStartPosition;
++        public AudioClip RewindClip,CloseClip;
++        [Range(0,1)] public float TransitionVolume=.35f;
++        public Sprite EmblemSprite;
++        public Font LoopTitleFont;
++        public bool ReducedMotion;
++        public bool EnableDebugInput=true;
++        public KeyCode DebugKey=KeyCode.F8;
++        public Vector2 EffectCenter=new Vector2(.5f,.5f);
++        public Transform MusicSourceCenter;
++        [Range(0,1)] public float GrooveOpacity=1;
++        [Range(0,2)] public float Rotation=1,Distortion=1,Blur=1;
++        [Range(0,1)] public float SpiralContraction=1,TonearmVisibility=1;
++        [Range(0,2)] public float Glow=1;
++        [Range(0,.9f)] public float Darkening=.48f;
++        public UnityEvent TransitionStarted=new UnityEvent(),CheckpointRestored=new UnityEvent(),TransitionCompleted=new UnityEvent();
++        public static TimeLoopTransitionController Active {get;private set;}
++        public static bool InputBlocked=>Active && Active.IsTransitioning;
++        public bool IsTransitioning {get;private set;}
++        public bool LastResetSucceeded {get;private set;}
++        public string LastError {get;private set;}
++        public int StageIndex {get;private set;}=-1;
++        public int SuccessfulResets {get;private set;}
++        public float Progress {get;private set;}
++        public Material EffectMaterial {get;private set;}
++        LoopActivityLease activity;
++        readonly Dictionary<LoopRewindActor,LoopRewindActor.Pose> before=new Dictionary<LoopRewindActor,LoopRewindActor.Pose>();
++        struct UIState{public CanvasGroup Group;public float Alpha;public bool Interactable,Raycasts;}
++        struct SoundState{public AudioSource Source;public bool Playing;public float Volume,Position;}
++        readonly Dictionary<TextMesh,Color> labelColors=new Dictionary<TextMesh,Color>();
++        readonly Dictionary<Renderer,bool> labelBackings=new Dictionary<Renderer,bool>();
++        readonly List<UIState> ui=new List<UIState>();
++        readonly List<SoundState> sounds=new List<SoundState>();
++        readonly List<Image> viewportBars=new List<Image>();
++        Canvas overlay;Text title,subtitle;Image emblem;AudioSource fx;Font fallbackSerif;
++        bool frozen,ownsFont,musicStarted;float effectClock;Vector2 center;
++        Coroutine running;IEnumerator resetRoutine;LoopResetResult resetResult;
++        public void ConfigureRendererMaterial()
++        {
++            if(EffectMaterial)return;
++            var shader=Resources.Load<Shader>("Rewind/TimeLoopFullscreen");
++            if(!shader || !shader.isSupported)throw new InvalidOperationException("Time-loop fullscreen shader is unavailable.");
++            EffectMaterial=new Material(shader){name="Time loop runtime material",hideFlags=HideFlags.DontSave};
++        }
++        void Update(){if(EnableDebugInput && DebugKey!=KeyCode.None && Input.GetKeyDown(DebugKey))TriggerLoop();}
++        [ContextMenu("Trigger loop transition")]
++        public void TriggerLoop()
++        {
++            if(!Application.isPlaying || IsTransitioning || Active || !ResetAdapter || !ResetAdapter.CanTrigger)return;
++            try {ConfigureRendererMaterial();}catch(Exception ex){LastError=ex.Message;Debug.LogError(ex.Message,this);return;}
++            if(!GameplayCamera)GameplayCamera=Camera.main;
++            if(!GameplayCamera){LastError="Assign a gameplay camera.";return;}
++            if(Stages==null || Stages.Length!=8){LastError="Eight stage settings are required.";return;}
++            IsTransitioning=true;Active=this;LastResetSucceeded=false;LastError=null;musicStarted=false;effectClock=0;
++            running=StartCoroutine(Run());
++        }
++        IEnumerator Run()
++        {
++            try
++            {
++                Freeze();MakeUI();TransitionStarted.Invoke();
++                for(int stage=0;stage<8;stage++)
++                {
++                    StageIndex=stage;
++                    if(stage==2 && RewindClip)fx.PlayOneShot(RewindClip,TransitionVolume);
++                    if(stage==5)
++                    {
++                        // Opaque cover first, reset command second. Exactly one command per run.
++                        SetEffect(.85f,1);title.text="";subtitle.text="";yield return null;
++                        resetResult=new LoopResetResult();
++                        try{resetRoutine=ResetAdapter.RestoreCheckpoint(resetResult);}catch(Exception ex){resetResult.Error=ex.Message;}
++                        while(resetRoutine!=null)
++                        {
++                            bool more=false;
++                            try{more=resetRoutine.MoveNext();}catch(Exception ex){resetResult.Error=ex.Message;}
++                            if(!more)break;
++                            yield return resetRoutine.Current;
++                        }
++                        (resetRoutine as IDisposable)?.Dispose();resetRoutine=null;
++                        if(!resetResult.Success)
++                        {
++                            LastError=resetResult.Error??"Checkpoint restoration did not succeed.";
++                            title.text="REWIND PAUSED";subtitle.text=LastError;
++                            Debug.LogError(LastError,this);
++                            var cancel=new GameObject("Cancel failed rewind",typeof(RectTransform),typeof(Image),typeof(Button));
++                            cancel.transform.SetParent(overlay.transform,false);
++                            Position((RectTransform)cancel.transform,.08f,.15f);
++                            cancel.GetComponent<Image>().color=new Color(.15f,.025f,.07f);
++                            cancel.GetComponent<Button>().onClick.AddListener(CancelTransition);
++                            var label=MakeText(cancel.transform,"Cancel label",22);label.text="Return to game";Position(label.rectTransform,0,1);
++                            // Never reveal a partially restored checkpoint. Cancel is explicit.
++                            while(IsTransitioning)yield return null;
++                            yield break;
++                        }
++                        LastResetSucceeded=true;SuccessfulResets++;CheckpointRestored.Invoke();
++                        title.text="LOOP "+resetResult.LoopNumber.ToString("D2");subtitle.text="You remember what happened.";
++                        title.font=LoopTitleFont?LoopTitleFont:fallbackSerif;title.fontSize=40;
++                        Position(title.rectTransform,.24f,.34f);
++                        if(CloseClip)fx.PlayOneShot(CloseClip,TransitionVolume*.65f);
++                    }
++                    if(stage==7)StartMusic();
++                    float duration=Mathf.Max(0,Stages[stage].Duration),elapsed=0;
++                    do
++                    {
++                        float raw=duration>0?Mathf.Clamp01(elapsed/duration):1;
++                        float eased=Stages[stage].Easing==null?raw:Mathf.Clamp01(Stages[stage].Easing.Evaluate(raw));
++                        Animate(stage,eased);
++                        yield return null;float dt=Time.unscaledDeltaTime;elapsed+=dt;effectClock+=dt;
++                    }while(elapsed<duration);
++                    Animate(stage,1);
++                }
++            }
++            finally { Cleanup(); }
++            TransitionCompleted.Invoke();
++        }
++        void Freeze()
++        {
++            if(UnityEngine.EventSystems.EventSystem.current)UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
++            frozen=true;activity=new LoopActivityLease();
++            before.Clear();foreach(var actor in Actors)if(actor && !before.ContainsKey(actor)){before.Add(actor,actor.Capture());actor.Pause();}
++            foreach(var behaviour in WorldActivity)if(behaviour && behaviour!=this && behaviour!=ResetAdapter)activity.Pause(behaviour);
++            labelColors.Clear();labelBackings.Clear();
++            foreach(var label in GameplayLabels)if(label)
++            {
++                labelColors[label]=label.color;
++                foreach(var renderer in label.GetComponentsInChildren<Renderer>(true))if(renderer.gameObject!=label.gameObject)
++                {labelBackings[renderer]=renderer.forceRenderingOff;renderer.forceRenderingOff=true;}
++            }
++            ui.Clear();foreach(var group in GameplayUI)if(group){ui.Add(new UIState{Group=group,Alpha=group.alpha,Interactable=group.interactable,Raycasts=group.blocksRaycasts});group.interactable=false;group.blocksRaycasts=false;}
++            sounds.Clear();var seen=new HashSet<AudioSource>();
++            foreach(var list in new[]{Music,GameplayAudio})foreach(var source in list)if(source && seen.Add(source))
++            {sounds.Add(new SoundState{Source=source,Playing=source.isPlaying,Volume=source.volume,Position=source.clip?source.time:0});source.Pause();}
++            ResetAdapter.BeginFreeze();
++            foreach(var entry in before)if(entry.Key)entry.Key.Apply(entry.Value);
++            center=EffectCenter;
++            if(MusicSourceCenter){var point=GameplayCamera.WorldToViewportPoint(MusicSourceCenter.position);if(point.z>0)center=new Vector2(Mathf.Clamp01(point.x),Mathf.Clamp01(point.y));}
++        }
++        void MakeUI()
++        {
++            var go=new GameObject("Time loop transition UI",typeof(RectTransform),typeof(Canvas),typeof(CanvasScaler),typeof(GraphicRaycaster));
++            overlay=go.GetComponent<Canvas>();overlay.renderMode=RenderMode.ScreenSpaceOverlay;overlay.sortingOrder=32000;
++            var scaler=go.GetComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(1920,1080);scaler.matchWidthOrHeight=1;
++            var blocker=new GameObject("Input shield",typeof(RectTransform),typeof(Image));blocker.transform.SetParent(go.transform,false);var rt=(RectTransform)blocker.transform;rt.anchorMin=Vector2.zero;rt.anchorMax=Vector2.one;rt.offsetMin=rt.offsetMax=Vector2.zero;blocker.GetComponent<Image>().color=Color.clear;
++            // Partial-viewport cameras do not clear the bars outside their rect.
++            // Cover those pixels explicitly so faded HUD pixels cannot persist there.
++            var viewport=GameplayCamera.rect;
++            AddViewportBar(go.transform,"Left viewport cover",Vector2.zero,new Vector2(viewport.xMin,1));
++            AddViewportBar(go.transform,"Right viewport cover",new Vector2(viewport.xMax,0),Vector2.one);
++            AddViewportBar(go.transform,"Bottom viewport cover",new Vector2(viewport.xMin,0),new Vector2(viewport.xMax,viewport.yMin));
++            AddViewportBar(go.transform,"Top viewport cover",new Vector2(viewport.xMin,viewport.yMax),new Vector2(viewport.xMax,1));
++            title=MakeText(go.transform,"Rewind title",24);subtitle=MakeText(go.transform,"Loop memory",22);Position(title.rectTransform,.45f,.55f);Position(subtitle.rectTransform,.18f,.25f);
++            title.text="";subtitle.text="";
++            var emblemGO=new GameObject("Loop emblem",typeof(RectTransform),typeof(Image));emblemGO.transform.SetParent(go.transform,false);emblem=emblemGO.GetComponent<Image>();emblem.sprite=EmblemSprite;emblem.preserveAspect=true;emblem.raycastTarget=false;var er=emblem.rectTransform;er.anchorMin=er.anchorMax=new Vector2(.5f,.595f);er.sizeDelta=new Vector2(190,190);emblem.color=Color.clear;
++            fallbackSerif=Font.CreateDynamicFontFromOSFont(new[]{"Georgia","Times New Roman","Times","Noto Serif"},40);
++            ownsFont=fallbackSerif;
++            if(!fallbackSerif)fallbackSerif=Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
++            fx=go.AddComponent<AudioSource>();fx.playOnAwake=false;fx.spatialBlend=0;fx.ignoreListenerPause=true;
++        }
++        void AddViewportBar(Transform parent,string name,Vector2 min,Vector2 max)
++        {
++            if(max.x-min.x<.0001f || max.y-min.y<.0001f)return;
++            var go=new GameObject(name,typeof(RectTransform),typeof(Image));go.transform.SetParent(parent,false);
++            var image=go.GetComponent<Image>();image.raycastTarget=false;image.color=Color.clear;
++            image.rectTransform.anchorMin=min;image.rectTransform.anchorMax=max;image.rectTransform.offsetMin=image.rectTransform.offsetMax=Vector2.zero;
++            viewportBars.Add(image);
++        }
++        static Text MakeText(Transform parent,string name,int size)
++        {
++            var go=new GameObject(name,typeof(RectTransform),typeof(Text));go.transform.SetParent(parent,false);var text=go.GetComponent<Text>();text.font=Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");text.fontSize=size;text.alignment=TextAnchor.MiddleCenter;text.raycastTarget=false;text.color=Color.white;return text;
++        }
++        static void Position(RectTransform rect,float bottom,float top){rect.anchorMin=new Vector2(.08f,bottom);rect.anchorMax=new Vector2(.92f,top);rect.offsetMin=rect.offsetMax=Vector2.zero;}
++        static readonly float[] StageProgress={0,.06f,.50f,.60f,.72f,.85f,1,1,1};
++        void Animate(int stage,float t)
++        {
++            foreach(var bar in viewportBars)if(bar)bar.color=new Color(0,0,0,stage==0?t:stage==7?1-t:1);
++            float[] boundaries=StageProgress;
++            float progress=Mathf.Lerp(boundaries[stage],boundaries[stage+1],t);
++            // Stage 5 cover guarantees black even when an external reset takes longer.
++            if(stage==5)progress=Mathf.Lerp(.85f,1,t);
++            SetEffect(progress,stage==7?1-t:1);
++            if(stage==0 || stage==7)foreach(var pair in labelColors)if(pair.Key){var color=pair.Value;color.a*=stage==0?1-t:t;pair.Key.color=color;}
++            if(stage==7)foreach(var pair in labelBackings)if(pair.Key)pair.Key.forceRenderingOff=pair.Value;
++            if(stage==0)foreach(var entry in ui)if(entry.Group)entry.Group.alpha=entry.Alpha*(1-t);
++            if(stage==3)foreach(var actor in Actors)if(actor)actor.Replay(ReducedMotion?0:t);
++            if(stage==2){title.text="R E W I N D I N G . . .";title.color=new Color(1,1,1,t);}
++            if(stage==3)title.color=new Color(1,1,1,1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(.65f,1,t)));
++            if(stage==4)title.text="";
++            if(stage>=5){title.color=new Color(1,.92f,.94f,stage==7?1-t:stage==6?1:Mathf.Clamp01(t*3));subtitle.color=new Color(.8f,.73f,.77f,stage==7?1-t:stage==6?1:Mathf.Clamp01(t*3));}
++            if(EmblemSprite){float alpha=stage==5?Mathf.SmoothStep(0,1,t):stage==6?1-t:0;emblem.color=new Color(1,.2f,.55f,alpha);}
++            if(stage>=6)EffectMaterial.SetFloat("_HasEmblem",stage==6?t:1); // procedural emblem fades, title stays.
++            if(stage==7){foreach(var entry in ui)if(entry.Group)entry.Group.alpha=entry.Alpha*t;FadeMusic(t);}
++        }
++        void SetEffect(float progress,float opacity)
++        {
++            Progress=progress;EffectMaterial.SetFloat("_Progress",progress);EffectMaterial.SetFloat("_Opacity",opacity);
++            EffectMaterial.SetFloat("_Aspect",GameplayCamera.aspect);EffectMaterial.SetVector("_EffectCenter",new Vector4(center.x,center.y,0,0));
++            EffectMaterial.SetFloat("_EffectClock",effectClock);EffectMaterial.SetFloat("_ReducedMotion",ReducedMotion?1:0);
++            EffectMaterial.SetFloat("_GrooveOpacity",GrooveOpacity);EffectMaterial.SetFloat("_RotationStrength",Rotation);EffectMaterial.SetFloat("_DistortionStrength",Distortion);EffectMaterial.SetFloat("_BlurStrength",Blur);EffectMaterial.SetFloat("_SpiralStrength",SpiralContraction);EffectMaterial.SetFloat("_TonearmVisibility",TonearmVisibility);EffectMaterial.SetFloat("_Glow",Glow);EffectMaterial.SetFloat("_DimStrength",Darkening);EffectMaterial.SetFloat("_HasEmblem",EmblemSprite?1:0);
++        }
++        void StartMusic()
++        {
++            musicStarted=true;
++            for(int i=0;i<Music.Length;i++){var source=Music[i];if(!source || !source.clip)continue;bool originallyPlaying=sounds.Exists(x=>x.Source==source&&x.Playing);if(!originallyPlaying)continue;source.Stop();source.time=Mathf.Clamp(MusicStartPosition,0,Mathf.Max(0,source.clip.length-.01f));source.volume=0;source.Play();}
++        }
++        void FadeMusic(float fraction)
++        {
++            for(int i=0;i<Music.Length;i++){var source=Music[i];if(!source)continue;float volume=i<ReturnMusicVolumes.Length?ReturnMusicVolumes[i]:sounds.Find(x=>x.Source==source).Volume;source.volume=volume*fraction;}
++        }
++        [ContextMenu("Cancel transition")]
++        public void CancelTransition(){if(!IsTransitioning)return;if(running!=null)StopCoroutine(running);Cleanup();}
++        void Cleanup()
++        {
++            if(!IsTransitioning)return;
++            (resetRoutine as IDisposable)?.Dispose();resetRoutine=null;
++            foreach(var entry in before)if(entry.Key){if(!LastResetSucceeded)entry.Key.Apply(entry.Value);entry.Key.Resume(LastResetSucceeded);}
++            before.Clear();activity?.Dispose();activity=null;
++            foreach(var pair in labelColors)if(pair.Key)pair.Key.color=pair.Value;labelColors.Clear();
++            foreach(var pair in labelBackings)if(pair.Key)pair.Key.forceRenderingOff=pair.Value;labelBackings.Clear();
++            foreach(var entry in ui)if(entry.Group){entry.Group.alpha=entry.Alpha;entry.Group.interactable=entry.Interactable;entry.Group.blocksRaycasts=entry.Raycasts;}ui.Clear();
++            foreach(var saved in sounds)if(saved.Source)
++            {
++                bool isMusic=Array.IndexOf(Music,saved.Source)>=0;
++                saved.Source.volume=saved.Volume;
++                if(saved.Playing){if(isMusic && LastResetSucceeded){if(!musicStarted){saved.Source.time=MusicStartPosition;saved.Source.Play();}}else saved.Source.UnPause();}
++            }
++            if(LastResetSucceeded)FadeMusic(1);sounds.Clear();
++            if(frozen){frozen=false;try{ResetAdapter.EndFreeze(LastResetSucceeded);}catch(Exception ex){Debug.LogException(ex,this);}}
++            if(overlay)Destroy(overlay.gameObject);overlay=null;viewportBars.Clear();
++            if(fallbackSerif && ownsFont)Destroy(fallbackSerif);fallbackSerif=null;
++            IsTransitioning=false;StageIndex=-1;running=null;if(Active==this)Active=null;
++        }
++        void OnDisable(){CancelTransition();}
++        void OnDestroy(){CancelTransition();if(EffectMaterial)Destroy(EffectMaterial);}
++        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]static void ClearActive(){Active=null;}
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LocalLoopCheckpoint.cs.meta b/Unity/Assets/Gyms/Runtime/TimeLoop/LocalLoopCheckpoint.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LocalLoopCheckpoint.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 6161b325375884539a65744e97da97fa
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopAutoSetup.cs.meta b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopAutoSetup.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopAutoSetup.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 2595bae7a0b7a4e26b320a16dc94bc38
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LoopRewindActor.cs b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopRewindActor.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopRewindActor.cs
+@@ -0,0 +1,89 @@
++using System;
++using UnityEngine;
++using UnityEngine.AI;
++namespace LucidLoop.Gyms
++{
++    [DisallowMultipleComponent]
++    public sealed class LoopRewindActor : MonoBehaviour
++    {
++        [Min(.1f)] public float HistorySeconds=6;
++        [Range(1,60)] public int SampleRate=20;
++        [Tooltip("Optional local visual transforms (e.g. articulated limbs). Root is always recorded.")]
++        public Transform[] VisualTransforms=Array.Empty<Transform>();
++        public SpriteRenderer[] Sprites=Array.Empty<SpriteRenderer>();
++        [Tooltip("Only explicitly supported animation/AI writers. Do not include billboard-facing scripts.")]
++        public Behaviour[] MovementWriters=Array.Empty<Behaviour>();
++        public sealed class Pose
++        {
++            public Vector3 Position,Scale; public Quaternion Rotation;
++            public Vector3[] LocalPositions,LocalScales; public Quaternion[] LocalRotations; public bool[] VisualActive;
++            public Sprite[] Frames; public bool[] SpriteEnabled,FlipX,FlipY; public Color[] Colors;
++            public Pose(int transforms,int sprites){LocalPositions=new Vector3[transforms];LocalRotations=new Quaternion[transforms];LocalScales=new Vector3[transforms];VisualActive=new bool[transforms];Frames=new Sprite[sprites];SpriteEnabled=new bool[sprites];FlipX=new bool[sprites];FlipY=new bool[sprites];Colors=new Color[sprites];}
++        }
++        Pose[] samples; double[] times; int next,count; double nextSample;
++        LoopActivityLease lease; NavMeshAgent agent; Rigidbody body; bool wasKinematic; Vector3 velocity,angularVelocity;
++        public int SampleCount=>count;
++        public bool IsPaused=>lease!=null;
++        void Start(){Initialize();Record(Time.unscaledTimeAsDouble);}
++        public void Initialize()
++        {
++            if(Sprites.Length==0)Sprites=GetComponentsInChildren<SpriteRenderer>(true);
++            if(samples!=null && samples[0].LocalPositions.Length==VisualTransforms.Length && samples[0].Frames.Length==Sprites.Length)return;
++            count=next=0;
++            int capacity=Mathf.Clamp(Mathf.CeilToInt(HistorySeconds*SampleRate)+1,2,3601);
++            samples=new Pose[capacity];times=new double[capacity];for(int i=0;i<capacity;i++)samples[i]=NewPose();
++            agent=GetComponent<NavMeshAgent>();body=GetComponent<Rigidbody>();
++        }
++        Pose NewPose()=>new Pose(VisualTransforms.Length,Sprites.Length);
++        void LateUpdate(){if(!IsPaused && Time.unscaledTimeAsDouble>=nextSample){Record(Time.unscaledTimeAsDouble);nextSample=Time.unscaledTimeAsDouble+1.0/Mathf.Max(1,SampleRate);}}
++        public void Record(double time){Initialize();CaptureInto(samples[next]);times[next]=time;next=(next+1)%samples.Length;count=Mathf.Min(count+1,samples.Length);}
++        public Pose Capture(){Initialize();var pose=NewPose();CaptureInto(pose);return pose;}
++        void CaptureInto(Pose pose)
++        {
++            pose.Position=transform.position;pose.Rotation=transform.rotation;pose.Scale=transform.localScale;
++            for(int i=0;i<VisualTransforms.Length;i++)if(VisualTransforms[i]){pose.LocalPositions[i]=VisualTransforms[i].localPosition;pose.LocalRotations[i]=VisualTransforms[i].localRotation;pose.LocalScales[i]=VisualTransforms[i].localScale;pose.VisualActive[i]=VisualTransforms[i].gameObject.activeSelf;}
++            for(int i=0;i<Sprites.Length;i++)if(Sprites[i]){pose.Frames[i]=Sprites[i].sprite;pose.SpriteEnabled[i]=Sprites[i].enabled;pose.FlipX[i]=Sprites[i].flipX;pose.FlipY[i]=Sprites[i].flipY;pose.Colors[i]=Sprites[i].color;}
++        }
++        public void Apply(Pose pose)=>Blend(pose,pose,0);
++        void Blend(Pose a,Pose b,float t)
++        {
++            transform.SetPositionAndRotation(Vector3.Lerp(a.Position,b.Position,t),Quaternion.Slerp(a.Rotation,b.Rotation,t));
++            transform.localScale=Vector3.Lerp(a.Scale,b.Scale,t);
++            for(int i=0;i<VisualTransforms.Length;i++)if(VisualTransforms[i]){VisualTransforms[i].localPosition=Vector3.Lerp(a.LocalPositions[i],b.LocalPositions[i],t);VisualTransforms[i].localRotation=Quaternion.Slerp(a.LocalRotations[i],b.LocalRotations[i],t);VisualTransforms[i].localScale=Vector3.Lerp(a.LocalScales[i],b.LocalScales[i],t);VisualTransforms[i].gameObject.SetActive((t>=1?b:a).VisualActive[i]);}
++            var selected=t>=1?b:a;
++            for(int i=0;i<Sprites.Length;i++)if(Sprites[i]){Sprites[i].sprite=selected.Frames[i];Sprites[i].enabled=selected.SpriteEnabled[i];Sprites[i].flipX=selected.FlipX[i];Sprites[i].flipY=selected.FlipY[i];Sprites[i].color=selected.Colors[i];}
++        }
++        public void Replay(float normalized)
++        {
++            if(count<1)return;
++            int oldest=(next-count+samples.Length)%samples.Length,newest=(next-1+samples.Length)%samples.Length;
++            double target=times[newest]+(times[oldest]-times[newest])*Mathf.Clamp01(normalized);
++            int prior=oldest;
++            for(int n=1;n<count;n++)
++            {
++                int current=(oldest+n)%samples.Length;
++                if(times[current]>=target){float t=(float)((target-times[prior])/Math.Max(.00001,times[current]-times[prior]));Blend(samples[prior],samples[current],t);return;}
++                prior=current;
++            }
++            Apply(samples[newest]);
++        }
++        public void Pause()
++        {
++            Initialize();if(IsPaused)return;Record(Time.unscaledTimeAsDouble);lease=new LoopActivityLease();
++            if(agent && agent.enabled && agent.isOnNavMesh){agent.ResetPath();agent.velocity=Vector3.zero;}
++            lease.Pause(agent);foreach(var writer in MovementWriters)lease.Pause(writer);
++            foreach(var animator in GetComponentsInChildren<Animator>(true))lease.Pause(animator);
++            if(body){wasKinematic=body.isKinematic;velocity=body.linearVelocity;angularVelocity=body.angularVelocity;body.isKinematic=true;}
++        }
++        public void Resume(bool resetSucceeded)
++        {
++            if(lease==null)return;
++            var position=transform.position;lease.Dispose();lease=null;
++            if(agent && agent.enabled){if(NavMesh.SamplePosition(position,out var hit,.5f,agent.areaMask))agent.Warp(hit.position);if(agent.isOnNavMesh){agent.ResetPath();agent.velocity=Vector3.zero;}}
++            if(body){body.isKinematic=wasKinematic;if(!wasKinematic){body.linearVelocity=resetSucceeded?Vector3.zero:velocity;body.angularVelocity=resetSucceeded?Vector3.zero:angularVelocity;}}
++            if(resetSucceeded)ClearHistory();
++        }
++        public void ClearHistory(){count=next=0;nextSample=0;}
++        void OnDisable(){Resume(false);}
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LoopActivityLease.cs.meta b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopActivityLease.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopActivityLease.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 8f7671c298dc748dc92f4fa2cc29d287
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopTransitionController.cs.meta b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopTransitionController.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopTransitionController.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 4e598bd68f3d746d787b18aafb4e8b90
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LocalLoopCheckpoint.cs b/Unity/Assets/Gyms/Runtime/TimeLoop/LocalLoopCheckpoint.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LocalLoopCheckpoint.cs
+@@ -0,0 +1,50 @@
++using System;
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++namespace LucidLoop.Gyms
++{
++    public sealed class LocalLoopCheckpoint : LoopResetAdapter
++    {
++        public LoopRewindActor[] Actors=Array.Empty<LoopRewindActor>();
++        public LoopCheckpointParticipant[] Participants=Array.Empty<LoopCheckpointParticipant>();
++        [SerializeField] int loopNumber=1;
++        public float LoopClock;
++        public List<string> DiscoveredClueIds=new List<string>();
++        public List<string> UnlockedDialogueIds=new List<string>();
++        readonly Dictionary<LoopRewindActor,LoopRewindActor.Pose> checkpoint=new Dictionary<LoopRewindActor,LoopRewindActor.Pose>();
++        readonly Dictionary<LoopCheckpointParticipant,object> participantStates=new Dictionary<LoopCheckpointParticipant,object>();
++        float startClock;bool frozen;
++        public override int LoopNumber=>loopNumber;
++        public override bool CanTrigger=>checkpoint.Count>0 && !frozen;
++        void Start(){CaptureCheckpoint();}
++        void Update(){if(!frozen)LoopClock+=Time.deltaTime;}
++        [ContextMenu("Capture loop-start checkpoint")]
++        public void CaptureCheckpoint()
++        {
++            if(frozen)return;checkpoint.Clear();participantStates.Clear();
++            foreach(var actor in Actors)if(actor)checkpoint[actor]=actor.Capture();
++            foreach(var participant in Participants)if(participant)participantStates[participant]=participant.CaptureLoopState();
++            startClock=LoopClock;
++        }
++        public override void BeginFreeze(){frozen=true;}
++        public override IEnumerator RestoreCheckpoint(LoopResetResult result)
++        {
++            var rollback=new Dictionary<LoopCheckpointParticipant,object>();
++            try
++            {
++                foreach(var pair in participantStates){if(!pair.Key)throw new InvalidOperationException("A checkpoint participant was removed.");rollback[pair.Key]=pair.Key.CaptureLoopState();}
++                foreach(var pair in participantStates)pair.Key.RestoreLoopState(pair.Value);
++                foreach(var pair in checkpoint){if(!pair.Key)throw new InvalidOperationException("A checkpoint actor was removed.");pair.Key.Apply(pair.Value);}
++                LoopClock=startClock;loopNumber++;result.Success=true;result.LoopNumber=loopNumber;
++            }
++            catch(Exception ex)
++            {
++                foreach(var pair in rollback)try{pair.Key.RestoreLoopState(pair.Value);}catch(Exception rollbackError){Debug.LogException(rollbackError);}
++                result.Error=ex.Message;
++            }
++            yield break;
++        }
++        public override void EndFreeze(bool successful){frozen=false;}
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/LoopRewindActor.cs.meta b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopRewindActor.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/LoopRewindActor.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 98221add26e29485d8cb109a935779c1
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopFullScreenFeature.cs b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopFullScreenFeature.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop/TimeLoopFullScreenFeature.cs
+@@ -0,0 +1,15 @@
++using UnityEngine.Rendering.Universal;
++namespace LucidLoop.Gyms
++{
++    // Uses URP 17's supported Full Screen Pass implementation, including Render Graph.
++    public sealed class TimeLoopFullScreenFeature : FullScreenPassRendererFeature
++    {
++        public override void AddRenderPasses(ScriptableRenderer renderer,ref RenderingData renderingData)
++        {
++            var controller=TimeLoopTransitionController.Active;
++            if(!controller || !controller.IsTransitioning || renderingData.cameraData.camera!=controller.GameplayCamera)return;
++            passMaterial=controller.EffectMaterial;
++            base.AddRenderPasses(renderer,ref renderingData);
++        }
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/TimeLoop.meta b/Unity/Assets/Gyms/Runtime/TimeLoop.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/TimeLoop.meta
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: a0c8719f9b8a34c418bd23de30355ca5
++folderAsset: yes
++DefaultImporter:
++  externalObjects: {}
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+diff --git a/Unity/Assets/Gyms/Resources/Rewind.meta b/Unity/Assets/Gyms/Resources/Rewind.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Resources/Rewind.meta
+@@ -0,0 +1,3 @@
++fileFormatVersion: 2
++guid: e6e00cbeed914c96a29237a0fe35a81d
++folderAsset: yes
+diff --git a/Unity/Assets/Gyms/Resources/Rewind/TimeLoopFullscreen.shader b/Unity/Assets/Gyms/Resources/Rewind/TimeLoopFullscreen.shader
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Resources/Rewind/TimeLoopFullscreen.shader
+@@ -0,0 +1,157 @@
++Shader "LucidLoop/TimeLoopFullscreen"
++{
++    Properties { _Progress("Progress",Range(0,1))=0 _Aspect("Aspect",Float)=1 _Opacity("Opacity",Range(0,1))=1 }
++    SubShader
++    {
++        Tags { "Queue"="Overlay" "RenderType"="Transparent" "IgnoreProjector"="True" }
++        Cull Off ZWrite Off ZTest Always
++        Pass
++        {
++            HLSLPROGRAM
++            #pragma target 3.0
++            #pragma vertex Vert
++            #pragma fragment frag
++            #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
++            #include "Packages/com.unity.render-pipelines.core/Runtime/Utilities/Blit.hlsl"
++            float _Progress,_Aspect,_Opacity,_EffectClock,_ReducedMotion;
++            float _GrooveOpacity,_RotationStrength,_DistortionStrength,_BlurStrength,_SpiralStrength,_TonearmVisibility,_Glow,_DimStrength,_HasEmblem;
++            float4 _EffectCenter;
++            float ring(float r,float at,float width){return 1-smoothstep(width,width+0.0025,abs(r-at));}
++            float segment(float2 p,float2 a,float2 b)
++            {float2 d=b-a;return length(p-a-d*saturate(dot(p-a,d)/dot(d,d)));}
++            half4 frag(Varyings i):SV_Target
++            {
++                float t=saturate(_Progress);
++                float2 p=(i.texcoord-_EffectCenter.xy)*float2(_Aspect,1);
++                float r=length(p), angle=atan2(p.y,p.x);
++                // Hold the scene readable under delicate circular grooves first.
++                float spin=smoothstep(.50,.73,t);
++                float collapse=smoothstep(.82,.92,t);
++                float vinyl=smoothstep(.72,.82,t);
++                float scale=max(.035,1-collapse*.965*(1-_ReducedMotion));
++                // Stage 3 accelerates backward rotation; the camera itself never moves.
++                float rotation=spin*6.283185*_RotationStrength*(1-_ReducedMotion);
++                float twist=(spin*1.8+collapse*12)*_DistortionStrength*(1-_ReducedMotion);
++                float theta=angle-rotation-twist*r;
++                float blur=spin*.30*_BlurStrength*(1-_ReducedMotion);
++
++                float3 scene=0;
++                float weight=0;
++                // Angular shutter samples produce a continuous rotational blur.
++                [unroll] for(int tap=0;tap<9;tap++)
++                {
++                    float offset=(tap-4)/4.0;
++                    float sampleAngle=theta+offset*blur;
++                    float2 uv=float2(cos(sampleAngle),sin(sampleAngle))*r/scale/float2(_Aspect,1)+_EffectCenter.xy;
++                    // Mirror the edges so rotation does not reveal black wedges.
++                    uv=1-abs(frac(uv*.5)*2-1);
++                    float w=1-abs(offset)*.65;
++                    scene+=SAMPLE_TEXTURE2D_X(_BlitTexture,sampler_LinearClamp,uv).rgb*w;
++                    weight+=w;
++                }
++                scene/=weight;
++                // Ease into a dim, dreamy backdrop as the rewind caption settles.
++                // Keep the record, tonearm and text bright above this scene-only grade.
++                float dream=smoothstep(0,.055,t);
++                float3 dreamTint=lerp(float3(1,1,1),float3(.98,.94,1),dream*.4);
++                float3 col=scene*dreamTint*(1-dream*_DimStrength)*(1-vinyl)*(1-spin*.18);
++                float appear=smoothstep(.06,.16,t)*(1-smoothstep(.89,.94,t));
++                float recordR=r/max(.035,1-collapse*.965*(1-_ReducedMotion));
++                float3 pink=float3(1,.09,.46);
++                // The record is larger than the viewport: no shrinking disc edge.
++                float surfaceFade=vinyl*(1-smoothstep(.89,.98,t));
++                float grooves=pow(.5+.5*cos(r*1100+sin(r*93)*.35),24);
++                // Four restrained rim reflections, aligned to the viewport corners.
++                float cornerAngle=atan2(abs(p.y),abs(p.x));
++                float cornerDirection=atan2(1.0,_Aspect);
++                float cornerLobe=exp(-pow((cornerAngle-cornerDirection)/.19,2));
++                float rimWeight=smoothstep(.28,.78,r);
++                float sheen=cornerLobe*rimWeight;
++                col+=float3(.007,.006,.008)*surfaceFade;
++                col+=float3(.032,.009,.019)*sheen*surfaceFade;
++                col+=float3(.030,.010,.019)*grooves*sheen*surfaceFade;
++                // Sparse, irregularly spaced grooves leave a large open label area.
++                // Static highlights vary each line without rotating the frozen scene.
++                float openingGrooves=0;
++                [unroll] for(int g=0;g<13;g++)
++                {
++                    float radius=.275+g*.0185+sin(g*2.31)*.004;
++                    float waviness=sin(angle*3+g*1.71)*.0009;
++                    float width=.00045+.00055*(.5+.5*sin(g*2.7));
++                    float grooveStroke=1-smoothstep(width,width+.001,abs(recordR-radius-waviness));
++                    float glint=.20+.80*pow(.5+.5*sin(angle*2+g*.79),3);
++                    float strength=.22+.28*(.5+.5*sin(g*1.93));
++                    openingGrooves+=grooveStroke*glint*strength;
++                    // A few close companion arcs add the layered, hand-drawn feel.
++                    if(g==2 || g==7 || g==11)
++                        openingGrooves+=(1-smoothstep(.0004,.0013,abs(recordR-radius-.004)))*glint*.13;
++                }
++                col+=pink*appear*(1-vinyl)*openingGrooves*_GrooveOpacity;
++                float centerDot=1-smoothstep(.012,.014,recordR);
++                col+=pink*appear*(1-vinyl)*centerDot*.86;
++                // Wind the same spiral into a ring and move it to the loop icon.
++                float morph=smoothstep(.82,.96,t)*_SpiralStrength;
++                float2 iconOffset=(float2(.5,.595)-_EffectCenter.xy)*float2(_Aspect,1);
++                float2 q=p-iconOffset*morph;
++                float qr=length(q),qa=atan2(q.y,q.x);
++                float spinAngle=rotation*1.3+(smoothstep(.70,.94,t)*8+_EffectClock*.3*spin)*(1-_ReducedMotion);
++                float wrapped=frac((qa+spinAngle)/6.283185)*6.283185;
++                float spiralInk=0;
++                [unroll] for(int winding=0;winding<5;winding++)
++                {
++                    float sourceRadius=(wrapped+6.283185*winding)/58;
++                    float targetRadius=lerp(sourceRadius,.072,morph);
++                    float strokeWidth=lerp(.0013,.006,smoothstep(.90,1,morph));
++                    float stroke=1-smoothstep(strokeWidth,strokeWidth+.0015,abs(qr-targetRadius));
++                    float tail=exp(-abs(qr-targetRadius-.004*(1-morph))*340)*.13*(1-morph);
++                    tail+=exp(-abs(qr-targetRadius)*110)*.08*(1-morph);
++                    float brightness=lerp(.30+.40*pow(.5+.5*sin(qa+sourceRadius*9-spinAngle),3),1,morph);
++                    float outerFade=1-smoothstep(.30,.54,sourceRadius);
++                    float windingFade=winding==0?1:1-smoothstep(.50,.95,morph);
++                    spiralInk=max(spiralInk,(stroke+tail)*brightness*lerp(outerFade,1,morph)*windingFade);
++                }
++                float gap=saturate(step(-.7854,qa)+step(qa,-2.3562));
++                spiralInk*=lerp(1,gap,smoothstep(.90,.96,t));
++                col+=pink*spiralInk*vinyl*(1-smoothstep(.95,.99,t))*_Glow;
++                col+=pink*vinyl*(1-morph)*exp(-qr*qr*26000)*.6;
++                // Tonearm stays outside the spinning grooves, then lifts away.
++                float armFade=smoothstep(.50,.65,t)*(1-smoothstep(.80,.89,t))*_TonearmVisibility;
++                float2 pivot=float2(.52,.57),elbow=float2(.40,.25),tip=float2(.28,.13);
++                float arm=min(segment(p,pivot,elbow),segment(p,elbow,tip));
++                // Narrow metal body, burgundy flank, and a fine hot-pink specular edge.
++                float body=1-smoothstep(.0035,.0055,arm);
++                col=lerp(col,float3(.25,.025,.085),body*armFade);
++                float highlightDistance=min(segment(p+float2(.0012,0),pivot,elbow),segment(p+float2(.0012,0),elbow,tip));
++                col+=float3(1,.38,.58)*armFade*.65*(1-smoothstep(.0007,.0018,highlightDistance));
++                col+=pink*armFade*.055*exp(-arm*140);
++                float2 head=p-tip;
++                float2 tilted=float2(head.x*.707+head.y*.707,-head.x*.707+head.y*.707);
++                float cartridge=(1-smoothstep(.028,.030,abs(tilted.x)))*(1-smoothstep(.011,.013,abs(tilted.y)));
++                float bevel=smoothstep(.006,.012,abs(tilted.y));
++                float3 cartridgeMetal=lerp(float3(.30,.035,.10),float3(.72,.20,.34),bevel);
++                col=lerp(col,cartridgeMetal,cartridge*armFade);
++                float screw=1-smoothstep(.0015,.0028,length(tilted-float2(.014,0)));
++                col=lerp(col,float3(.08,.012,.028),screw*cartridge*armFade);
++                float needle=segment(p,tip+float2(-.011,-.019),tip+float2(-.003,-.035));
++                col+=float3(.9,.25,.42)*armFade*(1-smoothstep(.0006,.0015,needle));
++                // The last groove resolves into the loop symbol, above the title.
++                q=p-iconOffset;qr=length(q);
++                qa=atan2(q.y,q.x);
++                gap=saturate(step(-.7854,qa)+step(qa,-2.3562));
++                float cap=min(length(q-float2(-.05091,-.05091)),length(q-float2(.05091,-.05091)));
++                float beacon=max(ring(qr,.072,.006)*gap,1-smoothstep(.006,.0085,cap));
++                float2 a=float2(-.024,-.062),b=float2(0,-.086),c=float2(.024,-.062);
++                float2 ab=b-a,bc=c-b;
++                float d1=length(q-a-ab*saturate(dot(q-a,ab)/dot(ab,ab)));
++                float d2=length(q-b-bc*saturate(dot(q-b,bc)/dot(bc,bc)));
++                beacon=max(beacon,1-smoothstep(.006,.009,min(d1,d2)));
++                float arcDistance=gap>0?abs(qr-.072):cap;
++                float glow=(exp(-arcDistance*110)*.22+exp(-min(d1,d2)*110)*.12)*(1+.06*sin(_EffectClock*5));
++                col+=pink*(beacon+glow)*smoothstep(.95,.99,t)*_Glow*(1-_HasEmblem);
++                float3 original=SAMPLE_TEXTURE2D_X(_BlitTexture,sampler_LinearClamp,i.texcoord).rgb;
++                return half4(lerp(original,col,_Opacity),1);
++            }
++            ENDHLSL
++        }
++    }
++}
+diff --git a/Unity/Assets/Gyms/Resources/Rewind/TimeLoopFullscreen.shader.meta b/Unity/Assets/Gyms/Resources/Rewind/TimeLoopFullscreen.shader.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Resources/Rewind/TimeLoopFullscreen.shader.meta
+@@ -0,0 +1,9 @@
++fileFormatVersion: 2
++guid: aa486e6cc9b6f426faa5b1fb164c44e5
++ShaderImporter:
++  externalObjects: {}
++  defaultTextures: []
++  nonModifiableTextures: []
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+diff --git a/Unity/Assets/Gyms/Editor/TimeLoopSetup.cs b/Unity/Assets/Gyms/Editor/TimeLoopSetup.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Editor/TimeLoopSetup.cs
+@@ -0,0 +1,51 @@
++using System.Linq;
++using UnityEditor;
++using UnityEditor.SceneManagement;
++using UnityEngine;
++using UnityEngine.Rendering.Universal;
++namespace LucidLoop.Gyms.Editor
++{
++    public static class TimeLoopSetup
++    {
++        [MenuItem("Lucid Loop/Time Loop/Set up current scene")]
++        public static void Setup()
++        {
++            if(EditorApplication.isPlaying){Debug.LogWarning("Stop Play mode before running setup.");return;}
++            var controller=Object.FindFirstObjectByType<TimeLoopTransitionController>();
++            if(!controller){var go=new GameObject("Time loop transition");Undo.RegisterCreatedObjectUndo(go,"Set up time loop");controller=go.AddComponent<TimeLoopTransitionController>();}
++            if(!controller.GetComponent<TimeLoopAutoSetup>())controller.gameObject.AddComponent<TimeLoopAutoSetup>();
++            controller.GameplayCamera=Camera.main;
++            ConfigureRenderer();EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());EditorSceneManager.SaveOpenScenes();
++            Debug.Log("TIME_LOOP_SETUP_OK: idempotent scene controller and URP Full Screen Pass after transparents");
++        }
++        public static void ConfigureRenderer()
++        {
++            var renderer=AssetDatabase.LoadAssetAtPath<UniversalRendererData>("Assets/Gyms/Generated/GymRenderer.asset");
++            if(!renderer)throw new System.InvalidOperationException("The project's GymRenderer asset is missing.");
++            var features=renderer.rendererFeatures.OfType<TimeLoopFullScreenFeature>().ToArray();
++            var feature=features.FirstOrDefault();
++            if(!feature){feature=ScriptableObject.CreateInstance<TimeLoopFullScreenFeature>();feature.name="Vinyl time loop (after transparents)";AssetDatabase.AddObjectToAsset(feature,renderer);renderer.rendererFeatures.Add(feature);}
++            foreach(var extra in features.Skip(1)){renderer.rendererFeatures.Remove(extra);Object.DestroyImmediate(extra,true);}
++            feature.injectionPoint=FullScreenPassRendererFeature.InjectionPoint.AfterRenderingPostProcessing;
++            feature.fetchColorBuffer=true;feature.requirements=ScriptableRenderPassInput.None;feature.bindDepthStencilAttachment=false;feature.SetActive(true);feature.Create();
++            EditorUtility.SetDirty(feature);renderer.SetDirty();EditorUtility.SetDirty(renderer);AssetDatabase.SaveAssets();
++        }
++        [MenuItem("Lucid Loop/Time Loop/Trigger in Play mode")]
++        public static void Trigger(){Object.FindFirstObjectByType<TimeLoopTransitionController>()?.TriggerLoop();}
++        public static void SetupEncounter()
++        {
++            EditorSceneManager.OpenScene("Assets/Gyms/Scenes/BeforeTheDrop.unity");
++            int cameras=Object.FindObjectsByType<Camera>(FindObjectsInactive.Include,FindObjectsSortMode.None).Length;
++            int events=Object.FindObjectsByType<UnityEngine.EventSystems.EventSystem>(FindObjectsInactive.Include,FindObjectsSortMode.None).Length;
++            Setup();Setup();
++            var renderer=AssetDatabase.LoadAssetAtPath<UniversalRendererData>("Assets/Gyms/Generated/GymRenderer.asset");
++            if(Object.FindObjectsByType<TimeLoopTransitionController>(FindObjectsInactive.Include,FindObjectsSortMode.None).Length!=1 || renderer.rendererFeatures.OfType<TimeLoopFullScreenFeature>().Count()!=1 ||
++                Object.FindObjectsByType<Camera>(FindObjectsInactive.Include,FindObjectsSortMode.None).Length!=cameras ||
++                Object.FindObjectsByType<UnityEngine.EventSystems.EventSystem>(FindObjectsInactive.Include,FindObjectsSortMode.None).Length!=events)
++                throw new System.InvalidOperationException("Time-loop setup introduced duplicate scene or renderer objects.");
++            if(ShaderUtil.ShaderHasError(Resources.Load<Shader>("Rewind/TimeLoopFullscreen")))throw new System.InvalidOperationException("Time-loop shader compilation failed.");
++            Debug.Log("TIME_LOOP_SETUP_VALIDATED: one controller, one feature, unchanged camera/EventSystem counts, shader compiled.");
++
++        }
++    }
++}
+diff --git a/Unity/Assets/Gyms/Editor/TimeLoopSetup.cs.meta b/Unity/Assets/Gyms/Editor/TimeLoopSetup.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Editor/TimeLoopSetup.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: f2e438820a623401d891d08754b9d8cf
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Editor/TimeLoopTransitionInspector.cs b/Unity/Assets/Gyms/Editor/TimeLoopTransitionInspector.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Editor/TimeLoopTransitionInspector.cs
+@@ -0,0 +1,19 @@
++using UnityEditor;
++using UnityEngine;
++namespace LucidLoop.Gyms.Editor
++{
++    [CustomEditor(typeof(TimeLoopTransitionController))]
++    public sealed class TimeLoopTransitionInspector : UnityEditor.Editor
++    {
++        public override void OnInspectorGUI()
++        {
++            DrawDefaultInspector();var controller=(TimeLoopTransitionController)target;
++            EditorGUILayout.Space();EditorGUILayout.LabelField("State",controller.IsTransitioning?"Transition · stage "+(controller.StageIndex+1):"Ready");
++            using(new EditorGUI.DisabledScope(!Application.isPlaying || controller.IsTransitioning))
++                if(GUILayout.Button("Trigger loop"))controller.TriggerLoop();
++            using(new EditorGUI.DisabledScope(!controller.IsTransitioning))
++                if(GUILayout.Button("Cancel and restore control"))controller.CancelTransition();
++            if(!string.IsNullOrEmpty(controller.LastError))EditorGUILayout.HelpBox(controller.LastError,MessageType.Warning);
++        }
++    }
++}
+diff --git a/Unity/Assets/Gyms/Editor/TimeLoopTransitionInspector.cs.meta b/Unity/Assets/Gyms/Editor/TimeLoopTransitionInspector.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Editor/TimeLoopTransitionInspector.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 1c5f536898a3947c2a60e62a459d4125
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.TimeLoop.cs b/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.TimeLoop.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.TimeLoop.cs
+@@ -0,0 +1,60 @@
++using System.Collections.Generic;
++using UnityEngine;
++namespace LucidLoop.Gyms.Mvp
++{
++    public partial class FirstLoop
++    {
++        TimeLoopTransitionController timeLoop;
++        readonly Dictionary<LoopRewindActor,LoopRewindActor.Pose> loopStartPoses=new Dictionary<LoopRewindActor,LoopRewindActor.Pose>();
++        public float LoopClock {get;private set;}
++        public void ConfigureTimeLoop(TimeLoopTransitionController controller)
++        {
++            timeLoop=controller;TimeLoopAutoSetup.ConfigureCommon(controller,Rig.Camera);
++            var activity=new List<Behaviour>(controller.WorldActivity);
++            foreach(var expanded in FindObjectsByType<ExpandedClub>(FindObjectsSortMode.None))if(!activity.Contains(expanded))activity.Add(expanded);
++            foreach(var backdrop in FindObjectsByType<PaintedBackdrop>(FindObjectsSortMode.None))if(!activity.Contains(backdrop))activity.Add(backdrop);
++            controller.WorldActivity=activity.ToArray();
++            var adapter=TimeLoopAutoSetup.Ensure<CheckpointLoopResetAdapter>(controller.gameObject);
++            adapter.Game=this;controller.ResetAdapter=adapter;
++            if(loopStartPoses.Count==0)foreach(var actor in controller.Actors)loopStartPoses[actor]=actor.Capture();
++            if(music){controller.Music=music.LoopSources;controller.ReturnMusicVolumes=new[]{music.Muted?0f:.36f,0f};}
++        }
++        void EnsureTimeLoop()
++        {
++            if(timeLoop)return;
++            var controller=FindFirstObjectByType<TimeLoopTransitionController>();
++            if(!controller)controller=new GameObject("Time loop transition").AddComponent<TimeLoopTransitionController>();
++            ConfigureTimeLoop(controller);
++        }
++#if UNITY_EDITOR
++        public void PrepareLoopValidation()
++        {StopAllCoroutines();CloseConversation();dialogue.gameObject.SetActive(false);Busy=false;}
++#endif
++        public void FreezeForTimeLoop()
++        {
++            // Invalidate story/chat coroutines and their delayed voice callbacks from this loop.
++            StopAllCoroutines();StopStoryLine();CloseConversation();
++            dialogue.gameObject.SetActive(false);Busy=true;approaching=null;advance=false;
++            if(music){music.TransitionOwnsAudio=true;timeLoop.ReturnMusicVolumes=new[]{music.Muted?0f:.36f,0f};}
++        }
++        public void RestoreTimeLoopCheckpoint()
++        {
++            foreach(var pair in loopStartPoses)
++            {if(!pair.Key)throw new System.InvalidOperationException("A checkpoint actor is missing.");pair.Key.Apply(pair.Value);}
++            foreach(var pair in starts)pair.Key.position=pair.Value;
++            foreach(var pair in rotations)pair.Key.rotation=pair.Value;
++            FocusRen=false;approaching=null;Luca.Visual.localRotation=Quaternion.identity;
++            phone.SetActive(false);followAt=Time.time+.3f;LoopClock=0;
++            if(music)music.RestoreLoopMix();
++            // Commit last. LoopState preserves remembered discoveries; conversations are retained.
++            State.Rewind();
++            foreach(var expanded in FindObjectsByType<ExpandedClub>(FindObjectsSortMode.None))expanded.RestoreLoopMaterial();
++        }
++        public void FinishTimeLoop(bool succeeded)
++        {
++            if(music)music.TransitionOwnsAudio=false;
++            Busy=false;modal=false;advance=false;approaching=null;Refresh();
++            if(succeeded)ObserverScene("Rewind · checkpoint restored","The new loop keeps your discoveries and restores the night.");
++        }
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.TimeLoop.cs.meta b/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.TimeLoop.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/Mvp/FirstLoop.TimeLoop.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 423544149c1a2414d956397e1d3feac8
+\ No newline at end of file
+diff --git a/Unity/Assets/Gyms/Runtime/Mvp/CheckpointLoopResetAdapter.cs b/Unity/Assets/Gyms/Runtime/Mvp/CheckpointLoopResetAdapter.cs
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/Mvp/CheckpointLoopResetAdapter.cs
+@@ -0,0 +1,16 @@
++using System.Collections;
++namespace LucidLoop.Gyms.Mvp
++{
++    public sealed class CheckpointLoopResetAdapter : LoopResetAdapter
++    {
++        public FirstLoop Game;
++        public override bool CanTrigger=>Game && !TimeLoopTransitionController.InputBlocked;
++        public override int LoopNumber=>Game.State.Loop;
++        public override void BeginFreeze()=>Game.FreezeForTimeLoop();
++        public override IEnumerator RestoreCheckpoint(LoopResetResult result)
++        {
++            Game.RestoreTimeLoopCheckpoint();result.LoopNumber=LoopNumber;result.Success=true;yield break;
++        }
++        public override void EndFreeze(bool successful){if(Game)Game.FinishTimeLoop(successful);}
++    }
++}
+diff --git a/Unity/Assets/Gyms/Runtime/Mvp/CheckpointLoopResetAdapter.cs.meta b/Unity/Assets/Gyms/Runtime/Mvp/CheckpointLoopResetAdapter.cs.meta
+new file mode 100644
+--- /dev/null
++++ b/Unity/Assets/Gyms/Runtime/Mvp/CheckpointLoopResetAdapter.cs.meta
+@@ -0,0 +1,2 @@
++fileFormatVersion: 2
++guid: 033e5a01d8e8945258844b27050838c2
+\ No newline at end of file
