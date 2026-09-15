@@ -40,6 +40,7 @@ namespace LucidLoop.Gyms
             if (!Coordinator) Coordinator = GetComponent<EncounterCoordinator>();
             if (!Voice) Voice = GetComponent<EncounterVoiceController>();
             if (!Coordinator) { enabled = false; return; }
+            if(!GetComponent<EncounterInformationBridge>())gameObject.AddComponent<EncounterInformationBridge>();
             Build(); Wire(); ShowState(Coordinator.State); ShowStatus(Coordinator.Status);
             UpdatePortrait();
         }
@@ -117,7 +118,7 @@ namespace LucidLoop.Gyms
             resume = GymUI.Button(GymUI.Box(connectionPanel, "Resume game", 282, 305, 242, 56), "Resume", () => Coordinator.Resume(address.text.Trim(), access.text));
             GymUI.Button(GymUI.Box(connectionPanel, "Disconnect", 26, 381, 498, 54), "Disconnect", Coordinator.Disconnect);
             var layout = canvas.gameObject.AddComponent<EncounterHudLayout>();
-            responsiveLayout = layout;
+            responsiveLayout = layout; layout.UseInformationOverlay = true; clueBox.gameObject.SetActive(false);
             layout.Conversation = panel; layout.Clues = clueBox; layout.ClueToggle = (RectTransform)clueToggle.transform; layout.ClueViewport = clueViewport;
             layout.SafeRoot = canvas; layout.Header = top; layout.HeaderTitle = headerTitle.rectTransform;
             layout.StateText = stateLabel.rectTransform; layout.ConnectionButton = (RectTransform)connectionButton.transform;
@@ -168,7 +169,7 @@ namespace LucidLoop.Gyms
 
         void ReadFloorTap()
         {
-            if (!Coordinator.IsReady || paused || !Rig || Rig.Target || (reply && reply.isFocused)) { floorTap.Cancel(); return; }
+            if (InformationNotificationUI.SuppressFloorTap || !Coordinator.IsReady || paused || !Rig || Rig.Target || (reply && reply.isFocused)) { floorTap.Cancel(); return; }
             Vector2 position;
             bool tap;
             if (Input.touchCount > 0)

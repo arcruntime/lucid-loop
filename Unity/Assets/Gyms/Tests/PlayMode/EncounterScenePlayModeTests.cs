@@ -155,10 +155,14 @@ namespace LucidLoop.Gyms.PlayModeTests
             Assert.That(Vector3.Distance(standingPosition, actors["luca"].Visual.localPosition), Is.LessThan(.001f));
             yield return new WaitForSecondsRealtime(.9f);
             Assert.That(musicSources.Sum(source => source.volume), Is.EqualTo(music.MusicVolume).Within(.001f), "Rewind restores the club mix at the selected volume.");
-            layout.ClueToggle.GetComponent<Button>().onClick.Invoke();
-            yield return null;
-            Assert.That(layout.CluesExpanded, Is.True);
-            Assert.That(VisibleHudText(), Does.Contain("Theo shoved Luca"), "Retained clue must be readable after expansion.");
+            var information=UnityEngine.Object.FindFirstObjectByType<InformationNotificationUI>();
+            Assert.That(information.IndicatorUnread,Is.True,"Retained clues must alert after the real server reset.");
+            information.ClickIcon();Assert.That(information.BannerOpen,Is.True);
+            information.ClickBanner();yield return null;
+            Assert.That(information.Panel.IsOpen,Is.True);
+            Assert.That(information.Manager.HasUnread,Is.False);
+            var clueText=string.Join("\n",information.GetComponentsInChildren<TMPro.TextMeshProUGUI>().Where(t=>t.isActiveAndEnabled).Select(t=>t.text));
+            Assert.That(clueText,Does.Contain("Theo shoved Luca"),"Confirmed server knowledge must appear in the new panel.");
             yield return Capture("03-loop-two.png");
             LogAssert.NoUnexpectedReceived();
             File.WriteAllText(Path.Combine(evidence, "result.txt"), "PASS: real scene + local authoritative relay; movement, opening phases, catastrophe, HUD, screenshots, retained reset. No voice/model/phoneme/production-art acceptance claimed.\n");
@@ -176,6 +180,7 @@ namespace LucidLoop.Gyms.PlayModeTests
         static string VisibleHudText() => string.Join("\n", UnityEngine.Object.FindObjectsByType<Text>(FindObjectsSortMode.None).Where(text => text.isActiveAndEnabled).Select(text => text.text));
         IEnumerator Capture(string name)
         {
+            if(Application.isBatchMode)yield break; // Visual evidence is captured separately in the interactive Editor.
             string path = Path.Combine(evidence, name);
             if (Application.isBatchMode)
             {
