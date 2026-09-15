@@ -40,7 +40,11 @@ namespace LucidLoop.Gyms
             if (!Coordinator) Coordinator = GetComponent<EncounterCoordinator>();
             if (!Voice) Voice = GetComponent<EncounterVoiceController>();
             if (!Coordinator) { enabled = false; return; }
-            Build(); Wire(); ShowState(Coordinator.State); ShowStatus(Coordinator.Status);
+            Build(); Wire();
+            var dialogueBridge=GetComponent<EncounterDialogueBoxBridge>();if(!dialogueBridge)dialogueBridge=gameObject.AddComponent<EncounterDialogueBoxBridge>();
+            dialogueBridge.Coordinator=Coordinator;dialogueBridge.Voice=Voice;
+            dialogueBridge.LegacyConversation=responsiveLayout.Conversation.GetComponent<CanvasGroup>();if(!dialogueBridge.LegacyConversation)dialogueBridge.LegacyConversation=responsiveLayout.Conversation.gameObject.AddComponent<CanvasGroup>();
+             ShowState(Coordinator.State); ShowStatus(Coordinator.Status);
             UpdatePortrait();
         }
 
@@ -168,6 +172,7 @@ namespace LucidLoop.Gyms
 
         void ReadFloorTap()
         {
+            if(DialogueBoxController.InputBlocked){floorTap.Cancel();return;}
             if (!Coordinator.IsReady || paused || !Rig || Rig.Target || (reply && reply.isFocused)) { floorTap.Cancel(); return; }
             Vector2 position;
             bool tap;
