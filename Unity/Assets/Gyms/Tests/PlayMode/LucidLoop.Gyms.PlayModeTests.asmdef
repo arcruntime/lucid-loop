@@ -4,7 +4,8 @@
     "LucidLoop.Gyms",
     "LucidLoop.CharacterArt",
     "LucidLoop.LiveSpeech",
-    "Unity.ugui"
+    "Unity.ugui",
+    "Unity.TextMeshPro"
   ],
   "optionalUnityReferences": [
     "TestAssemblies"
@@ -15,4 +16,3 @@
     "Newtonsoft.Json.dll"
   ]
 }
-
