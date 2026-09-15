@@ -78,3 +78,7 @@ Unity/Assets/LiveSpeech/ThirdParty/Core/*.cs -text
 Unity/Assets/LiveSpeech/ThirdParty/LICENSE.txt -text
 Unity/Assets/LiveSpeech/ThirdParty/THIRD-PARTY-NOTICES.md -text
 Unity/Assets/LiveSpeech/Resources/LiveSpeech/*.bytes -text
+
+# Preserve bundled TMP Essentials and font-license formatting.
+"Unity/Assets/TextMesh Pro/**" whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+Unity/Assets/Gyms/Resources/Victory/OFL.txt whitespace=-blank-at-eol

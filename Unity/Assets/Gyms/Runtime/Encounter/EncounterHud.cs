@@ -40,6 +40,7 @@ namespace LucidLoop.Gyms
             if (!Coordinator) Coordinator = GetComponent<EncounterCoordinator>();
             if (!Voice) Voice = GetComponent<EncounterVoiceController>();
             if (!Coordinator) { enabled = false; return; }
+            if (!GetComponent<EncounterVictoryPresentation>()) gameObject.AddComponent<EncounterVictoryPresentation>();
             Build(); Wire(); ShowState(Coordinator.State); ShowStatus(Coordinator.Status);
             UpdatePortrait();
         }

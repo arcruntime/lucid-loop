@@ -27651,6 +27651,8 @@ GameObject:
   - component: {fileID: 1112044005}
   - component: {fileID: 1112044004}
   - component: {fileID: 1112044012}
+  - component: {fileID: 1112044014}
+  - component: {fileID: 1112044013}
   m_Layer: 0
   m_Name: Before the Drop encounter
   m_TagString: Untagged
@@ -27885,6 +27887,66 @@ MonoBehaviour:
   Coordinator: {fileID: 1112044010}
   ReviewedBodyPresentation: {fileID: 0}
   FallSeconds: 0.45
+--- !u!114 &1112044013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112044003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa104bf94434591b7a788687b728cc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LucidLoop.Gyms::LucidLoop.Gyms.EncounterVictoryPresentation
+  Coordinator: {fileID: 1112044010}
+  Screen: {fileID: 1112044014}
+  ReturnToConnectionOnContinue: 1
+  AdditionalPausedActivity: []
+--- !u!114 &1112044014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112044003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c202271daa541809ef30d08e51930b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LucidLoop.Gyms::LucidLoop.Gyms.VictoryScreenController
+  Heading: 'THE NIGHT HAS BEEN
+
+    SUCCESSFULLY CHANGED.'
+  Subtitle: THE LOOP HAS BEEN BROKEN.
+  ContinuePrompt: PRESS ANY BUTTON
+  HeadingFont: {fileID: 0}
+  SmallFont: {fileID: 0}
+  HeadingSize: 76
+  LineSpacing: -5
+  SmallTextTracking: 14
+  Ivory: {r: 0.96, g: 0.92, b: 0.86, a: 1}
+  Magenta: {r: 0.72, g: 0.1, b: 0.37, a: 1}
+  ContentWidth: 1120
+  CircleDiameter: 600
+  UpperOrnamentY: 154
+  LowerOrnamentY: -130
+  SubtitleY: -190
+  DimOpacity: 0.48
+  VignetteOpacity: 0.5
+  GlowStrength: 0.22
+  RevealDuration: 1.8
+  ReadabilityDelay: 0.7
+  PromptPulseDuration: 4
+  Shown:
+    m_PersistentCalls:
+      m_Calls: []
+  Continued:
+    m_PersistentCalls:
+      m_Calls: []
+  Closed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1116408888
 GameObject:
   m_ObjectHideFlags: 0
