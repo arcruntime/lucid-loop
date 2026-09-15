@@ -42,6 +42,7 @@ namespace LucidLoop.Gyms
             if (!Coordinator) { enabled = false; return; }
             Build(); Wire(); ShowState(Coordinator.State); ShowStatus(Coordinator.Status);
             UpdatePortrait();
+            canvas.gameObject.AddComponent<EncounterDialogueStyle>().Initialize(this, responsiveLayout);
         }
 
         void Build()
