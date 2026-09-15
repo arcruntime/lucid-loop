@@ -52,7 +52,7 @@ namespace LucidLoop.Gyms
                 var go = new GameObject(id + " interaction marker", typeof(RectTransform), typeof(CanvasRenderer));
                 var rect = (RectTransform)go.transform; rect.SetParent(layer, false);
                 rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(.5f, .5f);
-                rect.sizeDelta = id == "player" ? new Vector2(42, 42) : new Vector2(54, 48);
+                rect.sizeDelta = id == "player" ? new Vector2(48, 48) : new Vector2(54, 48);
                 var graphic = go.AddComponent<EncounterInteractionMarkerGraphic>(); graphic.raycastTarget = false;
                 markers.Add(id, new Marker { Actor = actorTransform, Rect = rect, Graphic = graphic, State = EncounterMarkerState.Hidden });
                 go.SetActive(false);
@@ -70,8 +70,8 @@ namespace LucidLoop.Gyms
                 var marker = pair.Value;
                 if (!show || !marker.Actor || !marker.Actor.gameObject.activeInHierarchy) { Hide(marker); continue; }
                 bool player = pair.Key == "player";
-                float wave = Mathf.Sin(Time.unscaledTime * 2.6f);
-                var world = marker.Actor.position + Vector3.up * (player ? 2.85f + wave * .09f : 2.95f);
+                float wave = Mathf.Sin(Time.unscaledTime * (2f * Mathf.PI / 1.6f));
+                var world = marker.Actor.position + Vector3.up * (player ? 2.85f : 2.95f);
                 var screen = camera.WorldToScreenPoint(world);
                 var uiCamera = ownerCanvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : ownerCanvas.worldCamera;
                 if (screen.z <= 0 || !camera.pixelRect.Contains(new Vector2(screen.x, screen.y)) ||
@@ -80,6 +80,7 @@ namespace LucidLoop.Gyms
                 // Lift the whole bubble, including its tail, clear of that label
                 // in canvas units so CanvasScaler preserves the visual gap.
                 if (!player) local.y += 32f;
+                else local.y += wave * 3f; // Consistent gentle bob at every camera distance.
                 // Hide cropped symbols at safe-area edges; never pin an offscreen
                 // actor marker onto another actor or a touch control.
                 var bounds = layer.rect; var margin = marker.Rect.sizeDelta * .55f;
@@ -89,8 +90,8 @@ namespace LucidLoop.Gyms
                 marker.State = player ? EncounterMarkerState.PlayerBeacon : !eligible ? EncounterMarkerState.OutOfRange :
                     hud.SelectedNpcId == pair.Key ? EncounterMarkerState.Focused : EncounterMarkerState.Available;
                 marker.Rect.anchoredPosition = local;
-                marker.Rect.localScale = Vector3.one * (player ? 1f + wave * .06f : 1f);
-                marker.Graphic.SetPresentation(marker.State, player ? .82f + wave * .14f : 1f);
+                marker.Rect.localScale = Vector3.one * (player ? 1f + wave * .035f : 1f);
+                marker.Graphic.SetPresentation(marker.State, player ? .91f + wave * .07f : 1f);
                 marker.Rect.gameObject.SetActive(true);
                 if (player) PlayerBeaconVisible = true; else VisibleNpcCount++;
             }
@@ -104,6 +105,10 @@ namespace LucidLoop.Gyms
     sealed class EncounterInteractionMarkerGraphic : MaskableGraphic
     {
         EncounterMarkerState state;
+        static readonly Vector2[] BeaconArc = CreateBeaconArc();
+        static readonly Vector2[] BeaconTip = {
+            new Vector2(-.105f, -.245f), new Vector2(0, -.365f), new Vector2(.105f, -.245f)
+        };
         static readonly Vector2[] Bubble = {
             new Vector2(-.31f,-.19f), new Vector2(.31f,-.19f), new Vector2(.43f,-.07f), new Vector2(.43f,.22f),
             new Vector2(.31f,.34f), new Vector2(-.31f,.34f), new Vector2(-.43f,.22f), new Vector2(-.43f,-.07f)
@@ -111,7 +116,7 @@ namespace LucidLoop.Gyms
         public void SetPresentation(EncounterMarkerState value, float alpha)
         {
             if (state != value) { state = value; SetVerticesDirty(); }
-            var next = value == EncounterMarkerState.PlayerBeacon ? new Color(.24f, 1f, .53f, alpha) :
+            var next = value == EncounterMarkerState.PlayerBeacon ? new Color(.66f, 1f, .30f, alpha) :
                 value == EncounterMarkerState.OutOfRange ? new Color(.72f, .76f, .8f, .3f) : new Color(.96f, .83f, .56f, 1f);
             if (color != next) color = next;
         }
@@ -121,13 +126,12 @@ namespace LucidLoop.Gyms
             if (state == EncounterMarkerState.Hidden) return;
             if (state == EncounterMarkerState.PlayerBeacon)
             {
-                const int count = 24;
-                for (int i = 0; i < count; i++)
-                {
-                    float a = i * Mathf.PI * 2 / count, b = (i + 1) * Mathf.PI * 2 / count;
-                    Line(mesh, new Vector2(Mathf.Cos(a), Mathf.Sin(a)) * .32f, new Vector2(Mathf.Cos(b), Mathf.Sin(b)) * .32f, .07f, color);
-                }
-                Triangle(mesh, new Vector2(-.1f, -.04f), new Vector2(.1f, -.04f), new Vector2(0, -.2f), color);
+                // Layered translucent strokes provide a soft halo without bloom,
+                // so the same beacon works in the phone overlay and the Editor.
+                BeaconStroke(mesh, .19f, new Color(.34f, 1f, .08f, color.a * .035f));
+                BeaconStroke(mesh, .145f, new Color(.42f, 1f, .12f, color.a * .065f));
+                BeaconStroke(mesh, .105f, new Color(.51f, 1f, .18f, color.a * .14f));
+                BeaconStroke(mesh, .069f, color);
                 return;
             }
             bool filled = state == EncounterMarkerState.Focused;
@@ -142,6 +146,55 @@ namespace LucidLoop.Gyms
             else { Line(mesh, tailA, tailB, .045f, color); Line(mesh, tailB, tailC, .045f, color); }
             var dots = filled ? new Color(.045f, .065f, .08f, 1) : color;
             for (int i = -1; i <= 1; i++) Line(mesh, new Vector2(i * .19f - .025f, .075f), new Vector2(i * .19f + .025f, .075f), .065f, dots);
+        }
+        static Vector2[] CreateBeaconArc()
+        {
+            const int segments = 56;
+            var points = new Vector2[segments + 1];
+            for (int i = 0; i <= segments; i++)
+            {
+                float angle = Mathf.Lerp(-48f, 228f, i / (float)segments) * Mathf.Deg2Rad;
+                points[i] = new Vector2(Mathf.Cos(angle) * .285f, .07f + Mathf.Sin(angle) * .285f);
+            }
+            return points;
+        }
+        void BeaconStroke(VertexHelper mesh, float width, Color tint)
+        {
+            Stroke(mesh, BeaconArc, width, tint);
+            Stroke(mesh, BeaconTip, width, tint);
+        }
+        // Connected strips avoid dark seams where transparent glow segments meet.
+        void Stroke(VertexHelper mesh, Vector2[] points, float width, Color tint)
+        {
+            int start = mesh.currentVertCount;
+            for (int i = 0; i < points.Length; i++)
+            {
+                var incoming = (points[i] - points[Mathf.Max(0, i - 1)]).normalized;
+                var outgoing = (points[Mathf.Min(points.Length - 1, i + 1)] - points[i]).normalized;
+                if (i == 0) incoming = outgoing;
+                if (i == points.Length - 1) outgoing = incoming;
+                var tangent = (incoming + outgoing).normalized;
+                var normal = new Vector2(-tangent.y, tangent.x);
+                var side = normal * (width * .5f / Mathf.Max(.5f, Vector2.Dot(tangent, incoming)));
+                mesh.AddVert(Position(points[i] - side), tint, Vector2.zero);
+                mesh.AddVert(Position(points[i] + side), tint, Vector2.zero);
+                if (i == 0) continue;
+                int v = start + i * 2;
+                mesh.AddTriangle(v - 2, v - 1, v + 1);
+                mesh.AddTriangle(v - 2, v + 1, v);
+            }
+            RoundCap(mesh, points[0], points[0] - points[1], width, tint);
+            RoundCap(mesh, points[points.Length - 1], points[points.Length - 1] - points[points.Length - 2], width, tint);
+        }
+        void RoundCap(VertexHelper mesh, Vector2 center, Vector2 direction, float width, Color tint)
+        {
+            float angle = Mathf.Atan2(direction.y, direction.x) - Mathf.PI * .5f;
+            for (int i = 0; i < 8; i++)
+            {
+                float a = angle + Mathf.PI * i / 8f, b = angle + Mathf.PI * (i + 1) / 8f;
+                Triangle(mesh, center, center + new Vector2(Mathf.Cos(a), Mathf.Sin(a)) * (width * .5f),
+                    center + new Vector2(Mathf.Cos(b), Mathf.Sin(b)) * (width * .5f), tint);
+            }
         }
         Vector3 Position(Vector2 p) => new Vector3(p.x * rectTransform.rect.width, p.y * rectTransform.rect.height, 0);
         void Triangle(VertexHelper mesh, Vector2 a, Vector2 b, Vector2 c, Color tint)

@@ -26,7 +26,7 @@ Successful mediation now confirms Theo's admission and Maya's choice to leave wi
 
 **Shipping voice scope: English.** Japanese voice and lip-sync work is paused by the user's September 14 decision and is outside this release. The [Japanese investigation](docs/JAPANESE_NPC_ALIGNMENT.md) remains archived evidence, not a release gate.
 
-The player has a green overhead beacon. NPC speech bubbles show speaking availability: dim when out of range, outlined when available, and filled for an available selected character. See the [phone-layout capture](docs/images/encounter/interaction-markers.png).
+The player has a lime-green overhead loop beacon: an open ring and downward chevron with rounded ends, a soft glow, and a gentle 1.6-second bob/pulse. It tracks the player at a consistent UI size and hides during conversation close-ups. Its procedural UI geometry needs no texture or bloom and does not intercept taps. NPC speech bubbles show speaking availability: dim when out of range, outlined when available, and filled for an available selected character.
 
 Accepted mood changes now correctly update music and lighting. A protocol-casing regression was reproduced and fixed; the [validation ledger](docs/IMPLEMENTATION_VALIDATION.md) records the before/after checks.
 
