@@ -160,7 +160,7 @@ namespace LucidLoop.Gyms
 
         public bool SendText(string text)
         {
-            if (!IsReady || IsClosing || connection == null || pendingCommands >= 4 || string.IsNullOrWhiteSpace(text) || text.Length > 4000) return false;
+            if (VictoryScreenController.InputBlocked || !IsReady || IsClosing || connection == null || pendingCommands >= 4 || string.IsNullOrWhiteSpace(text) || text.Length > 4000) return false;
             var active = connection;
             pendingCommands++;
             _ = SendCommand(active, new JObject { ["type"] = "game.text",
@@ -179,7 +179,7 @@ namespace LucidLoop.Gyms
         {
             micAttempt++;
             if (!enabled) { StopMic(); if (IsReady) SetStatus("ready_typed"); return; }
-            if ((!IsReady && !IsConnecting) || IsClosing || MicrophoneEnabled) return;
+            if (VictoryScreenController.InputBlocked || (!IsReady && !IsConnecting) || IsClosing || MicrophoneEnabled) return;
             StartCoroutine(StartMic(generation, micAttempt));
         }
 
